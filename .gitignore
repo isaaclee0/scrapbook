@@ -52,6 +52,11 @@ logs/
 *.db
 *.sqlite3
 
+# Personal data - don't track user content
+pins/
+*.zip
+processed_boards.txt
+
 # Docker
 .dockerignore
 
