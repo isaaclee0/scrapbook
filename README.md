@@ -35,15 +35,15 @@ A Flask-based web application for organizing and managing personal image collect
    cd scrapbook
    ```
 
-2. **Copy and configure the example docker-compose file**:
+2. **Set up environment variables**:
    ```bash
-   cp docker-compose.example.yml docker-compose.prod.yml
-   # Edit docker-compose.prod.yml and change the passwords
+   cp .env.example .env
+   # Edit .env and set secure passwords
    ```
 
 3. **Deploy with Docker Compose**:
    ```bash
-   docker compose -f docker-compose.prod.yml up -d
+   docker compose up -d
    ```
 
 3. **Access the application**:
@@ -52,16 +52,19 @@ A Flask-based web application for organizing and managing personal image collect
 
 ### Configuration
 
-1. **Copy the example configuration**:
+1. **Set up environment variables**:
    ```bash
-   cp docker-compose.example.yml docker-compose.prod.yml
+   cp .env.example .env
    ```
 
-2. **Edit the production configuration**:
+2. **Edit the environment file**:
    - Change `your_secure_password_here` to a strong password
    - Change `your_secure_root_password_here` to a strong root password
-   - Adjust ports if needed
-   - Modify network configuration if not using Nginx Proxy Manager
+   - Adjust other settings as needed
+
+3. **For production deployment**:
+   - Copy `docker-compose.example.yml` to `docker-compose.prod.yml` if needed
+   - Adjust ports and network configuration as required
 
 ### Environment Variables
 
@@ -81,7 +84,9 @@ The application uses the following environment variables:
 scrapbook/
 ├── app.py                 # Main Flask application
 ├── Dockerfile            # Docker configuration
+├── docker-compose.yml    # Development Docker Compose
 ├── docker-compose.prod.yml # Production Docker Compose
+├── .env.example          # Example environment variables
 ├── requirements.txt      # Python dependencies
 ├── init.sql             # Database initialization
 ├── templates/           # HTML templates
@@ -135,6 +140,22 @@ The application uses the following main tables:
 - `sections`: Organizes content within boards
 - `pins`: Stores individual pin data
 - `url_health`: Tracks URL status and archives
+
+## Security
+
+### Environment Variables
+- **Never commit `.env` files** - they contain sensitive information
+- Use `.env.example` as a template for your environment configuration
+- All database passwords and sensitive configuration should be stored in environment variables
+
+### Password Management
+- Use strong, unique passwords for database access
+- Regularly rotate database passwords
+- Consider using a password manager for production deployments
+
+### Git History
+- Sensitive information has been removed from git history
+- If you accidentally commit sensitive data, use `git filter-repo` to remove it
 
 ## Contributing
 
