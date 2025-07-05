@@ -14,12 +14,10 @@ services:
     networks:
       - npm_proxy
       - scrapbook_net
+    env_file:
+      - .env
     environment:
       - FLASK_ENV=production
-      - DB_HOST=db
-      - DB_USER=db
-      - DB_PASSWORD=3Uy@7SGMAHVyC^Oo
-      - DB_NAME=db
       - REDIS_HOST=redis
       - REDIS_PORT=6379
     depends_on:
@@ -55,14 +53,14 @@ services:
       - db_config:/config
       - db:/var/lib/mysql
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    env_file:
+      - .env
     environment:
       - MYSQL_DATABASE=db
       - MYSQL_USER=db
-      - MYSQL_PASSWORD=3Uy@7SGMAHVyC^Oo
-      - MYSQL_ROOT_PASSWORD=3Uy@7SGMAHVyC^Oo
     command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --innodb-buffer-pool-size=256M
     healthcheck:
-      test: ["CMD", "mariadb-admin", "ping", "-h", "localhost", "-u", "db", "-p3Uy@7SGMAHVyC^Oo"]
+      test: ["CMD", "mariadb-admin", "ping", "-h", "localhost", "-u", "db", "-p${MYSQL_PASSWORD}"]
       interval: 30s
       timeout: 10s
       retries: 5

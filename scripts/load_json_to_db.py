@@ -7,7 +7,7 @@ try:
     db = mysql.connector.connect(
         host="db",
         user="db",
-        password="3Uy@7SGMAHVyC^Oo",
+        password=os.getenv('DB_PASSWORD'),
         database="db",
         charset='utf8mb4',
         collation='utf8mb4_unicode_ci'  # Change this line

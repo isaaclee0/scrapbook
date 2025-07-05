@@ -6,7 +6,7 @@ import os
 dbconfig = {
     "host": os.getenv('DB_HOST', 'db'),
     "user": os.getenv('DB_USER', 'db'),
-    "password": os.getenv('DB_PASSWORD', '3Uy@7SGMAHVyC^Oo'),
+    "password": os.getenv('DB_PASSWORD'),
     "database": os.getenv('DB_NAME', 'db'),
     "charset": 'utf8mb4',
     "collation": 'utf8mb4_unicode_ci'

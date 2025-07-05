@@ -12,7 +12,7 @@ docker exec -i scrapbook-db-1 mariadb -u db -p'3Uy@7SGMAHVyC^Oo' db < scripts/in
 
 # Wait for the web container to be ready
 echo "Waiting for web container to be ready..."
-until docker exec scrapbook-web-1 python3 -c "import mysql.connector; mysql.connector.connect(host='db', user='db', password='3Uy@7SGMAHVyC^Oo', database='db')" >/dev/null 2>&1; do
+until docker exec scrapbook-web-1 python3 -c "import mysql.connector; mysql.connector.connect(host='db', user='db', password='\${DB_PASSWORD}', database='db')" >/dev/null 2>&1; do
     sleep 2
 done
 

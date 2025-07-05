@@ -133,7 +133,7 @@ def sanitize_integer(value, min_value=None, max_value=None):
 dbconfig = {
     "host": os.getenv('DB_HOST', 'db'),
     "user": os.getenv('DB_USER', 'db'),
-    "password": os.getenv('DB_PASSWORD', '3Uy@7SGMAHVyC^Oo'),
+            "password": os.getenv('DB_PASSWORD'),
     "database": os.getenv('DB_NAME', 'db'),
     "pool_name": "mypool",
     "pool_size": 10,

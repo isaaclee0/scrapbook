@@ -10,7 +10,7 @@ from collections import defaultdict
 dbconfig = {
     "host": "db",
     "user": "db",
-    "password": "3Uy@7SGMAHVyC^Oo",
+    "password": os.getenv('DB_PASSWORD'),
     "database": "db",
     "pool_name": "mypool",
     "pool_size": 5,
