@@ -14,7 +14,7 @@ sleep 10
 
 # Initialize the database
 echo "Initializing database..."
-docker-compose -f scrapbook.yml exec db mysql -u db -p'3Uy@7SGMAHVyC^Oo' db < init.sql
+docker-compose -f scrapbook.yml exec db mysql -u db -p"${DB_PASSWORD}" db < init.sql
 
 echo "Setup complete! The application is running at http://localhost:8001"
 echo "To stop the containers, run: docker-compose -f scrapbook.yml down" 
