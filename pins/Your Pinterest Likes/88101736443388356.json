@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443388356/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443388356",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443388356",
+      "url": "https://www.pinterest.com/pin/88101736443388356/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "eBay - Page Not Found",
+      "description": "The Clive Stand :: Clive Coffee",
+      "link": "http://svpply.com/item/162964/The_Clive_Stand__Clive_Coffee",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a9/e0/a1/a9e0a105ca32532131c51f33c0a9991c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

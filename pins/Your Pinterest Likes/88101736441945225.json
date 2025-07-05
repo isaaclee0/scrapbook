@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441945225/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736441945225",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441945225",
+      "url": "https://www.pinterest.com/pin/88101736441945225/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "LOL!! Satan's Tic Tacs is right. Ugh, I hate steroids...they make me ache and feel so bad.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Bftgrits",
+        "url": "https://www.pinterest.com/Bftgrits/",
+        "name": "Lois"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/36/0c/61/360c61aac246082dd9b5c4d11f65d7df.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

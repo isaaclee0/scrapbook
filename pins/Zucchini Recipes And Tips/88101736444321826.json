@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444321826/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/zucchini-recipes-and-tips",
+    "CustomFileName": "88101736444321826",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444321826",
+      "url": "https://www.pinterest.com/pin/88101736444321826/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Zucchini Almond Butter Bar",
+      "description": "How to make Zucchini Almond Butter Bars.",
+      "link": "https://www.tastemade.com/videos/zucchini-almond-butter-bar",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemade",
+        "url": "https://www.pinterest.com/tastemade/",
+        "name": "Tastemade"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/zucchini-recipes-and-tips/",
+        "name": "Zucchini - recipes and tips",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/27/39/7a/27397a863324371afa4c962c6c76c105.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/v2/720p/1c/62/3d/1c623d4419c5bfb1c42e967d1b9ff93b_mobile.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453410419/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/biscuitscookies-and-slices",
+    "CustomFileName": "88101736453410419",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453410419",
+      "url": "https://www.pinterest.com/pin/88101736453410419/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Flake slice",
+      "description": " ",
+      "link": "https://www.taste.com.au/recipes/flake-slice-recipe/afqlk3ez",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "teamtaste",
+        "url": "https://www.pinterest.com/teamtaste/",
+        "name": "taste.com.au"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/biscuitscookies-and-slices/",
+        "name": "Biscuits/Cookies and Slices",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/81/89/c7/8189c783e59f9bc34571754209d5aac6.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/35/d4/53/35d4537e0afad75cc6b67115ec841580.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

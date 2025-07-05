@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436627160/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736436627160",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436627160",
+      "url": "https://www.pinterest.com/pin/88101736436627160/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Tiramisu Cheesecake Trifle",
+      "description": "Tiramisu Trifle",
+      "link": "http://www.shugarysweets.com/2013/01/tiramisu-cheesecake-trifle",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c8/eb/46/c8eb46c85d7c0d0e5932c4e6617bf2bf.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

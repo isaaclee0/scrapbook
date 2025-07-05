@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433683926/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736433683926",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433683926",
+      "url": "https://www.pinterest.com/pin/88101736433683926/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chocolate Covered Kiwi Pops - MyThirtySpot",
+      "description": "I want to see what other fruits I can do this with!",
+      "link": "http://www.mythirtyspot.com/2011/05/chocolate-covered-kiwi-pops.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6d/67/d9/6d67d9cfe0cb7fe7e6a9565745e5d9f5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

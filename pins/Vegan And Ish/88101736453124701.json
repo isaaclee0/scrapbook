@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453124701/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/vegan-and-ish",
+    "CustomFileName": "88101736453124701",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453124701",
+      "url": "https://www.pinterest.com/pin/88101736453124701/",
+      "type": "pin",
+      "title": "Delicious Vegan Bacon Recipe",
+      "gridTitle": "Delicious Vegan Bacon Recipe",
+      "description": " ",
+      "link": "https://www.veginnercooking.com/event-details/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "veginnercooking",
+        "url": "https://www.pinterest.com/veginnercooking/",
+        "name": "Veginner Cooking"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/vegan-and-ish/",
+        "name": "Vegan and ish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3c/2c/69/3c2c699b23cbb937d498e823a8e07744.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/03/10/99/0310990bca1b282a7dafb59b4a429ed2.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

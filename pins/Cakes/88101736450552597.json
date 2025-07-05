@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450552597/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736450552597",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450552597",
+      "url": "https://www.pinterest.com/pin/88101736450552597/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Flour & Stone's lemon dream",
+      "description": "Lemon dream recipe, Nadine Ingram, Flour & Stone, Sydney :: Gourmet Traveller",
+      "link": "http://www.gourmettraveller.com.au/recipes/recipe-search/chefs-recipes/2015/3/lemon-dream/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/67/69/48/676948df2004f75fb1acdfa727286ef9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

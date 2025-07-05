@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449395880/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pasta",
+    "CustomFileName": "88101736449395880",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449395880",
+      "url": "https://www.pinterest.com/pin/88101736449395880/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Creamy Spinach and Mushroom Lasagna",
+      "description": "Creamy Spinach and Mushroom Lasagna",
+      "link": "http://damndelicious.net/2015/03/07/creamy-spinach-and-mushroom-lasagna/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "nourishnestle",
+        "url": "https://www.pinterest.com/nourishnestle/",
+        "name": "lynn | nourish + nestle"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pasta/",
+        "name": "Pasta",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/30/e1/df/30e1df7b81d830c55333d36fa6187cdb.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443618869/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443618869",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443618869",
+      "url": "https://www.pinterest.com/pin/88101736443618869/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Great green wall of Africa - a project under way to plant trees along the  boundary between the Sahel and the Sahara to keep the desert from speading further. A huge concept, but if it happens it will be tremendously hopeful and could transform life in the Horn of Africa.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2d/cf/02/2dcf02f828ea8a06246832598f6a55f0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

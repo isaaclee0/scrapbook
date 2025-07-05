@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440890109/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/collies-and-shelties",
+    "CustomFileName": "88101736440890109",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440890109",
+      "url": "https://www.pinterest.com/pin/88101736440890109/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Our sweet Puppy Gracie",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "beaubaileyg",
+        "url": "https://www.pinterest.com/beaubaileyg/",
+        "name": "Nancy"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/collies-and-shelties/",
+        "name": "Collies and Shelties",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/95/96/35/9596355d8ef0f0b478dad4f95964fc36.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

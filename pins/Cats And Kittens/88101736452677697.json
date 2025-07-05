@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452677697/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736452677697",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452677697",
+      "url": "https://www.pinterest.com/pin/88101736452677697/",
+      "type": "pin",
+      "title": "Gotta get that workout in.",
+      "gridTitle": "Gotta get that workout in.",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "jdexports2000",
+        "url": "https://www.pinterest.com/jdexports2000/",
+        "name": "Happy Happy Joy Joy"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bc/8b/c9/bc8bc97af0f7efbc31737fc9c79d83b3.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/4e/f4/2c/4ef42cfb1326d741339498100d528b1a.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453220901/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/for-linda",
+    "CustomFileName": "88101736453220901",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453220901",
+      "url": "https://www.pinterest.com/pin/88101736453220901/",
+      "type": "pin",
+      "title": "DIY candle holder",
+      "gridTitle": "DIY candle holder",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "thebettyconcept",
+        "url": "https://www.pinterest.com/thebettyconcept/",
+        "name": "ShinyBetty"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/for-linda/",
+        "name": "For Linda",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/09/c2/f2/09c2f2baa1a7343cfdc56f5e5e6bda40.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/18/7a/b7/187ab7c6d23af9701249f137aaab8fe4.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452316920/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/teaching",
+    "CustomFileName": "88101736452316920",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452316920",
+      "url": "https://www.pinterest.com/pin/88101736452316920/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "easypeasykids",
+        "url": "https://www.pinterest.com/easypeasykids/",
+        "name": "Easy Peasy Kids"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/teaching/",
+        "name": "Teaching",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/90/d8/38/90d83819b226794054fa28eea1c6338c.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

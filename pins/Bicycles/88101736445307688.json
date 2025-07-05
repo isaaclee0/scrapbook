@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445307688/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bicycles",
+    "CustomFileName": "88101736445307688",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445307688",
+      "url": "https://www.pinterest.com/pin/88101736445307688/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Facebook",
+      "description": "#Netherlands #bicycles",
+      "link": "https://www.facebook.com/DreamworkWithTokopa?fref=nf",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "cloggiecentral",
+        "url": "https://www.pinterest.com/cloggiecentral/",
+        "name": "Cloggie Central"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bicycles/",
+        "name": "Bicycles",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/df/4b/b7/df4bb7f9f85a3a77f9c08dbbf83e37a0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

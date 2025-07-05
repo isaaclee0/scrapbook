@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443732738/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443732738",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443732738",
+      "url": "https://www.pinterest.com/pin/88101736443732738/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Tumblr",
+      "description": "wow!",
+      "link": "http://modernhepburn.tumblr.com/page/63",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8d/e4/7e/8de47e8d39d24bd0d038374d36c514a7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

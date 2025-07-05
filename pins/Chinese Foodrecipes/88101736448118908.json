@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448118908/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chinese-foodrecipes",
+    "CustomFileName": "88101736448118908",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448118908",
+      "url": "https://www.pinterest.com/pin/88101736448118908/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Kung Pao Brussels Sprouts Are Take-Out Of This World",
+      "description": "Salty, spicy, and addicting. #food #easyrecipe #healthyeating #cleaneating #vegetarian",
+      "link": "http://www.delish.com/cooking/recipe-ideas/recipes/a57880/kung-pao-brussels-sprouts-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Delish",
+        "url": "https://www.pinterest.com/Delish/",
+        "name": "Delish"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chinese-foodrecipes/",
+        "name": "Chinese Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/da/a5/41/daa5410fa931f0dfad16aea483b0e6d6.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/64/c8/96/64c896bc001f227c0ff870631b061d02.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

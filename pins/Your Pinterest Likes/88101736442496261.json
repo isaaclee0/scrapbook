@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442496261/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442496261",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442496261",
+      "url": "https://www.pinterest.com/pin/88101736442496261/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Innovative Electronic Gadgets",
+      "description": "Colour Picker Pen. It can scan colours from anything around and instantly use the colour for anything from drawing to writing. Great concept.",
+      "link": "http://innovativeelectronicgadgets.blogspot.com.au/2011_04_01_archive.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4b/c2/86/4bc2864ed40d02abca431838a7658550.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

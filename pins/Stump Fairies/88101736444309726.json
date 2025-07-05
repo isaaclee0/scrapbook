@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444309726/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/stump-fairies",
+    "CustomFileName": "88101736444309726",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444309726",
+      "url": "https://www.pinterest.com/pin/88101736444309726/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Fairy Tree Stump House - before and after",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/stump-fairies/",
+        "name": "Stump Fairies",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c4/35/22/c43522e0de38f5f5aabff6a6d83a690e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

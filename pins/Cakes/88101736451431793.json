@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451431793/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736451431793",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451431793",
+      "url": "https://www.pinterest.com/pin/88101736451431793/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Popular Boldomatic Posts",
+      "description": " ",
+      "link": "http://boldomatic.com/view/popular",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/be/d6/4d/bed64dc185669041d9f2119b4f4ff0f9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

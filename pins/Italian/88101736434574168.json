@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434574168/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/italian",
+    "CustomFileName": "88101736434574168",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434574168",
+      "url": "https://www.pinterest.com/pin/88101736434574168/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "cookglee.com",
+      "description": "Stromboli",
+      "link": "http://www.cookglee.com/2013/09/stromboli.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/italian/",
+        "name": "Italian",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/12/fc/00/12fc000e1bf6b72e19e247f196599b96.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

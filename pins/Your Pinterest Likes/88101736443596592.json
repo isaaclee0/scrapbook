@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443596592/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443596592",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443596592",
+      "url": "https://www.pinterest.com/pin/88101736443596592/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Ireland Calling Store",
+      "description": "The Vikings arrived in Ireland in the late 8th century. Over the next several decades they settled in the country and built towns which would grow to become the major Irish cities of today. Their key settlement was Dublin.",
+      "link": "https://www.irelandcalling.ie/the-rise-and-fall-of-the-vikings",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "irelandcalling",
+        "url": "https://www.pinterest.com/irelandcalling/",
+        "name": "Ireland Calling"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/44/ae/44/44ae4495770a578ab5a967364a2b50e2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

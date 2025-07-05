@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436350678/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/october-meals",
+    "CustomFileName": "88101736436350678",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436350678",
+      "url": "https://www.pinterest.com/pin/88101736436350678/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "A Really Good Hummus Recipe",
+      "description": "Homemade hummus recipe. Easy AND delicious!",
+      "link": "http://foodblogandthedog.wordpress.com/2012/05/09/a-really-good-hummus-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/october-meals/",
+        "name": "October meals",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8b/d9/e6/8bd9e69bce5a2fee0b88b9078cff2857.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453786193/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/laundry",
+    "CustomFileName": "88101736453786193",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453786193",
+      "url": "https://www.pinterest.com/pin/88101736453786193/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/laundry/",
+        "name": "Laundry",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c1/bf/fe/c1bffe9081e8cc858a5b815595debc38.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

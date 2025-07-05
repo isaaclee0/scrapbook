@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453665084/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/learn-to-paint",
+    "CustomFileName": "88101736453665084",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453665084",
+      "url": "https://www.pinterest.com/pin/88101736453665084/",
+      "type": "pin",
+      "title": "Please follow me",
+      "gridTitle": "Please follow me",
+      "description": "¿Cómo ser más productivo y eliminar actividades que desperdician tu tiempo usando la “Caja de Eisenhower”?",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "azizmajeed1711",
+        "url": "https://www.pinterest.com/azizmajeed1711/",
+        "name": "Aziz.majeed"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/learn-to-paint/",
+        "name": "Learn To Paint",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/50/95/75/50957585e7971b196f43375655ff4ee9.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/f0/3f/18/f03f18e48ca2e53b1fd31bd344e5e4c3.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

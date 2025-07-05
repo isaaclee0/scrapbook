@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451320652/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/exercise-it",
+    "CustomFileName": "88101736451320652",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451320652",
+      "url": "https://www.pinterest.com/pin/88101736451320652/",
+      "type": "pin",
+      "title": "Isometric Exercise for Full-body and Core Workout",
+      "gridTitle": "Isometric Exercise for Full-body and Core Workout",
+      "description": " ",
+      "link": "https://courses.justinagustin.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "justinagustin",
+        "url": "https://www.pinterest.com/justinagustin/",
+        "name": "Justin Agustin"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/exercise-it/",
+        "name": "Exercise it",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0c/b3/ce/0cb3ce976a51e0b496728d9f01e9ce2d.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/7f/d1/4e/7fd14eb6faa5cfc54f4f825da950146a.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

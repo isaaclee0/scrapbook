@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452484993/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/mend-itrepair-it",
+    "CustomFileName": "88101736452484993",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452484993",
+      "url": "https://www.pinterest.com/pin/88101736452484993/",
+      "type": "pin",
+      "title": "Trick",
+      "gridTitle": "Trick",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Parsafilm_com",
+        "url": "https://www.pinterest.com/Parsafilm_com/",
+        "name": "Dehkadezarrin"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/mend-itrepair-it/",
+        "name": "Mend it/Repair it",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ca/da/12/cada12df312cc0dbb4fd32601be8c9a8.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/d4/80/6d/d4806d094fb521d959d6adc108571c4a.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447901280/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/secret-part-ideas",
+    "CustomFileName": "88101736447901280",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447901280",
+      "url": "https://www.pinterest.com/pin/88101736447901280/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "aneetacarva1983",
+        "url": "https://www.pinterest.com/aneetacarva1983/",
+        "name": "Tania Carvalho"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/secret-part-ideas/",
+        "name": "Secret Part Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ee/68/a5/ee68a5c0ecc86ed12105575006a12c9e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

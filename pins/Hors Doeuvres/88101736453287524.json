@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453287524/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hors-doeuvres",
+    "CustomFileName": "88101736453287524",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453287524",
+      "url": "https://www.pinterest.com/pin/88101736453287524/",
+      "type": "pin",
+      "title": "Pear & Brie Cheese Salad Skewers | Walder Wellness, RD",
+      "gridTitle": "Pear & Brie Cheese Salad Skewers | Walder Wellness, RD",
+      "description": " ",
+      "link": "https://www.walderwellness.com/pear-brie-salad-skewers/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "walderwellness",
+        "url": "https://www.pinterest.com/walderwellness/",
+        "name": "Carrie Walder, MS, RD || Walder Wellness"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hors-doeuvres/",
+        "name": "Hors D'oeuvres",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8f/fc/3e/8ffc3e902f5d3c1fc7933befda534958.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/c6/5e/2d/c65e2d26f7b5a72ab1a25c7faa87f2ad.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445936764/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pastries",
+    "CustomFileName": "88101736445936764",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445936764",
+      "url": "https://www.pinterest.com/pin/88101736445936764/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Search - Macmillan Publishers",
+      "description": "Sausage, Bacon, and Egg Pie | Cookstr.com",
+      "link": "http://www.cookstr.com/Easter-Recipes/Sausage-Bacon-and-Egg-Pie",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 6,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pastries/",
+        "name": "pastries",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d4/d9/19/d4d919d98b58da7adb8e72b327314b16.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

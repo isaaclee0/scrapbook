@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444955538/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/stump-fairies",
+    "CustomFileName": "88101736444955538",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444955538",
+      "url": "https://www.pinterest.com/pin/88101736444955538/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Tree stump mosaic",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "janwhud",
+        "url": "https://www.pinterest.com/janwhud/",
+        "name": "Janice Whelan"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/stump-fairies/",
+        "name": "Stump Fairies",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/27/3c/47/273c472acde901afd3fea9fc43948af7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

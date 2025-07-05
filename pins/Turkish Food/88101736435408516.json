@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435408516/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/turkish-food",
+    "CustomFileName": "88101736435408516",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435408516",
+      "url": "https://www.pinterest.com/pin/88101736435408516/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Turkish delight",
+      "description": "turkish delight",
+      "link": "http://www.flickr.com/photos/sprinklebakes/5804127290/in/photostream/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/turkish-food/",
+        "name": "Turkish Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/75/80/69/758069c2f819ce5d5752527833d6fb1b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

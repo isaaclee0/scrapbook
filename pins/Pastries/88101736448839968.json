@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448839968/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pastries",
+    "CustomFileName": "88101736448839968",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448839968",
+      "url": "https://www.pinterest.com/pin/88101736448839968/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "foodgawker",
+      "description": "Smoked cheddar, walnut and broccoli tarts - these are perfect as little appetisers, or served for dinner with buttered potatoes and salad. They have so much flavour!",
+      "link": "http://www.foodgawker.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "wellseasonedstudio",
+        "url": "https://www.pinterest.com/wellseasonedstudio/",
+        "name": "Well Seasoned | Elevated Homemade Recipes"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pastries/",
+        "name": "pastries",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6a/a1/c8/6aa1c88c1e1e117908e5e9aa2f470cdb.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

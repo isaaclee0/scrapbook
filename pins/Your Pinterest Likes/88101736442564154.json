@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442564154/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442564154",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442564154",
+      "url": "https://www.pinterest.com/pin/88101736442564154/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Artists' Studio Bridge - Safdie Rabines Architects",
+      "description": "Library - reading nook idea",
+      "link": "http://www.safdierabines.com/residential/artists-studio/#img6",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/87/fb/41/87fb41cfe5b7c0c71bb5ae01a5179d9c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

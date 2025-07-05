@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443614751/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443614751",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443614751",
+      "url": "https://www.pinterest.com/pin/88101736443614751/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Vintage portrait",
+      "description": "Modesty is honorable",
+      "link": "http://www.flickr.com/photos/designbobo/3977343072/in/gallery-sarahlizzyphotos-72157622552432748/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/07/85/3e/07853e484f7a8c1edcfba40506cb1586.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

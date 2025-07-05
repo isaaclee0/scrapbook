@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440280739/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-dreams",
+    "CustomFileName": "88101736440280739",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440280739",
+      "url": "https://www.pinterest.com/pin/88101736440280739/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Loving the shutters",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "jordfuller",
+        "url": "https://www.pinterest.com/jordfuller/",
+        "name": "Jordan Reid"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-dreams/",
+        "name": "Cottage Dreams",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/83/02/ca/8302cada86e285737b87ed23501a1137.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

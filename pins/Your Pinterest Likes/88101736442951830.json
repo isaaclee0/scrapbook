@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442951830/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442951830",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442951830",
+      "url": "https://www.pinterest.com/pin/88101736442951830/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Famous People with Aspergers and Their Achievements",
+      "description": "Famous people with Aspergers and their achievements...",
+      "link": "http://www.myaspergerschild.com/2007/08/famous-people-with-aspergers-and-their.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/15/80/8e/15808ec6b4e08e3a077d0fa6ea79aa1a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

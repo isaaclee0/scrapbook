@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439989591/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-garden",
+    "CustomFileName": "88101736439989591",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439989591",
+      "url": "https://www.pinterest.com/pin/88101736439989591/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "painted flowers on wood - looks like a small fence. love this.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "sheamun",
+        "url": "https://www.pinterest.com/sheamun/",
+        "name": "Shea Munroe"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-garden/",
+        "name": "Cottage garden",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f6/d1/74/f6d1746f4159f938f8c724a8a33b0d50.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

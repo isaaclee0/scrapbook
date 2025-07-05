@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437487256/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bedrooms",
+    "CustomFileName": "88101736437487256",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437487256",
+      "url": "https://www.pinterest.com/pin/88101736437487256/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": ".",
+      "link": "http://media-cache-ec0.pinimg.com/1200x/b2/4b/ea/b24bea1551f24ff05fa439013cd54416.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 4,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bedrooms/",
+        "name": "Bedrooms",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/28/14/05/28140589f9d1371651d4f53c2c5caf99.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

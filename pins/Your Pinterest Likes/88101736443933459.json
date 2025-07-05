@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443933459/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443933459",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443933459",
+      "url": "https://www.pinterest.com/pin/88101736443933459/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Designer Clothes, Shoes & Bags for Women | SSENSE",
+      "description": "\"Untitled #1241\" by fabianarveloc on Polyvore featuring Bee Goddess, Rare London, Christian Louboutin, Yves Saint Laurent, NARS Cosmetics, Burberry, shu uemura, Benefit and Bulgari",
+      "link": "http://www.polyvore.com/untitled_1241/set?.embedder=4692368&.src=share_android&.svc=pinterest&id=182127125",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4a/d4/03/4ad403cb2279ab2aafd334698b9def89.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451870473/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736451870473",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451870473",
+      "url": "https://www.pinterest.com/pin/88101736451870473/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Meet Me in St. Louis (1944)",
+      "description": "Meet Me in St. Louis",
+      "link": "http://theblondeatthefilm.com/2013/12/19/meet-me-in-st-louis-1944/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/48/f4/88/48f4889f95c91cda15fca0e1f5eec866.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431305755/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736431305755",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431305755",
+      "url": "https://www.pinterest.com/pin/88101736431305755/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Health",
+      "description": "How a Sip of Soda Affects Your Health (Image)",
+      "link": "http://www.mindbodygreen.com/0-1282/How-a-Sip-of-Soda-Affects-Your-Health-Image.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b1/d6/b5/b1d6b5568ad76ed369aaf75f4a20b094.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

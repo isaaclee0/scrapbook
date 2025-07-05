@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442354146/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442354146",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442354146",
+      "url": "https://www.pinterest.com/pin/88101736442354146/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "When Homeschooling Gets Tough",
+      "description": "When Homeschooling Gets Tough",
+      "link": "http://www.freehomeschooldeals.com/homeschooling-gets-tough/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/76/2c/b9/762cb9a89fbb220c9b1cc7067c29cbf0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

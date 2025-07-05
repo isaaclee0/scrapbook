@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442364639/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442364639",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442364639",
+      "url": "https://www.pinterest.com/pin/88101736442364639/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Dear God, please save our country...",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tudot",
+        "url": "https://www.pinterest.com/tudot/",
+        "name": "Debbie"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a4/0d/f7/a40df7cc591b1ce5e88d09a0433e44f0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

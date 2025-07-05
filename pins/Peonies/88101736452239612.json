@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452239612/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/peonies",
+    "CustomFileName": "88101736452239612",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452239612",
+      "url": "https://www.pinterest.com/pin/88101736452239612/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/peonies/",
+        "name": "Peonies",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d5/3b/3b/d53b3b0eb7e63666840b2e03e1587253.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

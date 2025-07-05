@@ -1,0 +1,68 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452926484/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/salads",
+    "CustomFileName": "88101736452926484",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452926484",
+      "url": "https://www.pinterest.com/pin/88101736452926484/",
+      "type": "pin",
+      "title": "Kani Salad",
+      "gridTitle": "Kani Salad",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 6,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "cookingwithayeh",
+        "url": "https://www.pinterest.com/cookingwithayeh/",
+        "name": "Cooking With Ayeh"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/salads/",
+        "name": "Salads",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1e/19/f4/1e19f43ddfad20201acc68b127ba3a05.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/56/b9/47/56b947babc1d4078806f3931c6184ccc.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/f0/1f/a1/f01fa1a05057f92b48b4b2c71bae76bd.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/08/9f/99/089f993522ed90d15ea9f15a69372f29.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/ce/fa/2f/cefa2fafe95cec1913c367675e0fa9bb.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/bc/72/51/bc72515634b8eb9c72eb1f966475b079.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

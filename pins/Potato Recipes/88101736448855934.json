@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448855934/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potato-recipes",
+    "CustomFileName": "88101736448855934",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448855934",
+      "url": "https://www.pinterest.com/pin/88101736448855934/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Hairy Bikers' homity pie recipe",
+      "description": "Rich wholemeal pastry packed with a potato, onion and cheese filling. We’ve added spinach and a hint of nutmeg to our homity pie",
+      "link": "http://www.bbc.co.uk/food/recipes/deep-filled_homity_pie_48616",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "bbcfood",
+        "url": "https://www.pinterest.com/bbcfood/",
+        "name": "BBC Food"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potato-recipes/",
+        "name": "Potato Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/df/d6/d3/dfd6d380b26b9898a7e1832b0628c190.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

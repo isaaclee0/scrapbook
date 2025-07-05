@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436145487/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bathroom-inspiration",
+    "CustomFileName": "88101736436145487",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436145487",
+      "url": "https://www.pinterest.com/pin/88101736436145487/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Bath",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ems721",
+        "url": "https://www.pinterest.com/ems721/",
+        "name": "Emma Schelin"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bathroom-inspiration/",
+        "name": "Bathroom Inspiration",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b2/d7/b1/b2d7b1c98bd99c2942835c163332f635.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

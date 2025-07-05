@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442929980/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/breakfast",
+    "CustomFileName": "88101736442929980",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442929980",
+      "url": "https://www.pinterest.com/pin/88101736442929980/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Make Ahead Breakfast Casserole",
+      "description": "Make Ahead Breafkast Casserole | A super savory breakfast you can prep the night before.",
+      "link": "http://allrecipes.com/recipe/23905/make-ahead-breakfast-casserole/?lnkid=pin9263&crlt.pid=camp.z9YOhakODJhF",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "allrecipes",
+        "url": "https://www.pinterest.com/allrecipes/",
+        "name": "Allrecipes"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/breakfast/",
+        "name": "Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3a/ec/fe/3aecfed9b607197457fb409c93b64d80.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

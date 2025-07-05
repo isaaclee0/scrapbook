@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436177840/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pastries",
+    "CustomFileName": "88101736436177840",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436177840",
+      "url": "https://www.pinterest.com/pin/88101736436177840/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Holiday Danish",
+      "description": "Apple Danish",
+      "link": "http://theenglishkitchen.blogspot.com/2011/11/holiday-danish.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pastries/",
+        "name": "pastries",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/be/2b/d4/be2bd4e5c8bed3abc104da64f2a85d63.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

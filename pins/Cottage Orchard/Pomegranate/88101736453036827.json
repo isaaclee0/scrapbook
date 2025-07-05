@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453036827/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-orchard/pomegranate",
+    "CustomFileName": "88101736453036827",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453036827",
+      "url": "https://www.pinterest.com/pin/88101736453036827/",
+      "type": "pin",
+      "title": "How To Cut Pomegranate?",
+      "gridTitle": "How To Cut Pomegranate?",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "chennaigeekz",
+        "url": "https://www.pinterest.com/chennaigeekz/",
+        "name": "CHENNAI GEEKZ"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-orchard/",
+        "name": "Cottage Orchard",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/37/a8/12/37a812e170815b4e132113e0ad332fa4.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/9b/63/d7/9b63d705d67640facc48e51e67ab0c2f.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

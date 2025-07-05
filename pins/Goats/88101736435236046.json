@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435236046/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/goats",
+    "CustomFileName": "88101736435236046",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435236046",
+      "url": "https://www.pinterest.com/pin/88101736435236046/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "My backyard goat pen in suburbia!  Chickens are turned loose to keep the goats company!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/goats/",
+        "name": "Goats...",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ea/81/48/ea814873ae7407a3644bfd5eccdc514f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

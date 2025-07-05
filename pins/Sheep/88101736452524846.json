@@ -1,0 +1,47 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452524846/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/sheep",
+    "CustomFileName": "88101736452524846",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452524846",
+      "url": "https://www.pinterest.com/pin/88101736452524846/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/sheep/",
+        "name": "Sheep",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/82/e9/86/82e9867bf37d9f0f3f6df484c5940ac8.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/08/c9/1e/08c91e13805eda754fbc1c0dc5e853e7.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

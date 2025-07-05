@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443927129/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/irish-ness",
+    "CustomFileName": "88101736443927129",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443927129",
+      "url": "https://www.pinterest.com/pin/88101736443927129/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Kilchurn #Castle, #Scotland",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/irish-ness/",
+        "name": "Irish - ness",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d6/4e/95/d64e951b9b7be9d1a23cf6ccf4155ff8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

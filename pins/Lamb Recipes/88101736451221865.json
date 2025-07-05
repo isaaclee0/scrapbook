@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451221865/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/lamb-recipes",
+    "CustomFileName": "88101736451221865",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451221865",
+      "url": "https://www.pinterest.com/pin/88101736451221865/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Lamb Kleftiko",
+      "description": "Lamb Kleftiko from Rick Stein: From Venice to Istanbul",
+      "link": "http://thehappyfoodie.co.uk/recipes/lamb-kleftiko",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/lamb-recipes/",
+        "name": "Lamb Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9b/77/9b/9b779b2350b5822e39e2e3a55ecf6a68.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

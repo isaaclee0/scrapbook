@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442542581/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442542581",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442542581",
+      "url": "https://www.pinterest.com/pin/88101736442542581/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Dit item is niet beschikbaar - Etsy",
+      "description": "Hoi! Ik heb een geweldige listing gevonden op Etsy https://www.etsy.com/nl/listing/128243106/tiny-soft-pink-ring-made-by-polymer-clay",
+      "link": "https://www.etsy.com/nl/listing/128243106/tiny-soft-pink-ring-made-by-polymer-clay",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d4/bd/c6/d4bdc620b1b6e2233a68a7d6672cfc92.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

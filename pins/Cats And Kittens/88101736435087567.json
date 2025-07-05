@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435087567/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736435087567",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435087567",
+      "url": "https://www.pinterest.com/pin/88101736435087567/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Mother cat with baby ducks and her kittens....What a beautiful photo!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "nell1960",
+        "url": "https://www.pinterest.com/nell1960/",
+        "name": "Nell LaTesta"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/49/fd/1f/49fd1f23fc941a0e72e4b75dc89b2a0e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

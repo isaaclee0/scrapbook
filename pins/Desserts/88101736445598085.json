@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445598085/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736445598085",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445598085",
+      "url": "https://www.pinterest.com/pin/88101736445598085/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Key Lime Pie",
+      "description": "Simply the Best Key Lime Pie Recipe I've found! This recipe is so easy to make and is like a little taste of tropical paradise!",
+      "link": "http://www.moorecookin.com/2015/05/key-lime-pie/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "moorecookin",
+        "url": "https://www.pinterest.com/moorecookin/",
+        "name": "Moore Cookin"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d6/81/2f/d6812f156feb925872fdf6335f6f9159.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

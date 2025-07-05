@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447000219/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potato-recipes",
+    "CustomFileName": "88101736447000219",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447000219",
+      "url": "https://www.pinterest.com/pin/88101736447000219/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Yukon Gold Potato and Wild Mushroom Gratin",
+      "description": "Yukon Gold Potato and Wild Mushroom Gratin",
+      "link": "http://www.epicurious.com/recipes/food/views/yukon-gold-potato-and-wild-mushroom-gratin-231109",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potato-recipes/",
+        "name": "Potato Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/47/66/48/476648b677cad89e1165e1b672a13280.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

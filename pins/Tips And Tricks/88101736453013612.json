@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453013612/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tips-and-tricks",
+    "CustomFileName": "88101736453013612",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453013612",
+      "url": "https://www.pinterest.com/pin/88101736453013612/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ace218",
+        "url": "https://www.pinterest.com/ace218/",
+        "name": "Grace Hughes"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tips-and-tricks/",
+        "name": "Tips and Tricks",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ea/3f/11/ea3f1129b835d2ee907d4f98e6f71400.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

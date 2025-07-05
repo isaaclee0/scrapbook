@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453052493/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736453052493",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453052493",
+      "url": "https://www.pinterest.com/pin/88101736453052493/",
+      "type": "pin",
+      "title": "Basement cat litter idea",
+      "gridTitle": "Basement cat litter idea",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "rizz13",
+        "url": "https://www.pinterest.com/rizz13/",
+        "name": "Rachel Kinsey"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/44/f2/86/44f2864a4859a68e87b7a4b9d74ad306.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

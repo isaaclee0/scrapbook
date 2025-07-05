@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438047846/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bathroom-inspiration",
+    "CustomFileName": "88101736438047846",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438047846",
+      "url": "https://www.pinterest.com/pin/88101736438047846/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "small bathroom",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "elibigi",
+        "url": "https://www.pinterest.com/elibigi/",
+        "name": "Elisabetta Gatti Biggì"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bathroom-inspiration/",
+        "name": "Bathroom Inspiration",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/70/46/97/704697f1f9b0d2c48f057df13f93d101.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

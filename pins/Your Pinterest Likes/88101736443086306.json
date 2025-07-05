@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443086306/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443086306",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443086306",
+      "url": "https://www.pinterest.com/pin/88101736443086306/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "a beautiful world",
+      "description": "Harvest Mouse by Benjamin Joseph Andrew on Flickr.",
+      "link": "http://raspberrytart.tumblr.com/post/58497158787/harvest-mouse-by-benjamin-joseph-andrew-on-flickr",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bd/e6/47/bde6476ff787ab3dc19b7ffba275958a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

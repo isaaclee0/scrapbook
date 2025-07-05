@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453055609/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/for-linda",
+    "CustomFileName": "88101736453055609",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453055609",
+      "url": "https://www.pinterest.com/pin/88101736453055609/",
+      "type": "pin",
+      "title": "Gift wrapping for Christmas gifts",
+      "gridTitle": "Gift wrapping for Christmas gifts",
+      "description": " ",
+      "link": "https://amzn.to/30jFQdc",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ArtHomeMagic",
+        "url": "https://www.pinterest.com/ArtHomeMagic/",
+        "name": "ArtHomeMagic"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/for-linda/",
+        "name": "For Linda",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/99/a2/a0/99a2a0c4b986a3915adb09b0a6191a79.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/db/8c/08/db8c08aacfa5fbd4cf3373ebad857961.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

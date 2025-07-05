@@ -1,0 +1,47 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453156895/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736453156895",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453156895",
+      "url": "https://www.pinterest.com/pin/88101736453156895/",
+      "type": "pin",
+      "title": "Hair tips video for women",
+      "gridTitle": "Hair tips video for women",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/68/a8/5e/68a85ece33b0d7a29631143c01ce8167.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/27/ab/1a/27ab1a1c8c0b2b311aa7e901df267bc3.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

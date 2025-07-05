@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432850959/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/upcycling-ideas",
+    "CustomFileName": "88101736432850959",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432850959",
+      "url": "https://www.pinterest.com/pin/88101736432850959/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "recycled drawer planter",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 8,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "rachcode",
+        "url": "https://www.pinterest.com/rachcode/",
+        "name": "Rachel Stevens"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/upcycling-ideas/",
+        "name": "Upcycling Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a5/4b/97/a54b97fb0816a6c0565d4fa42ec7d9b5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

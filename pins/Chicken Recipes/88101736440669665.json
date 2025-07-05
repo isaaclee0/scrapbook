@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440669665/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736440669665",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440669665",
+      "url": "https://www.pinterest.com/pin/88101736440669665/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Haryali chicken tikka",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ak03040396",
+        "url": "https://www.pinterest.com/ak03040396/",
+        "name": "Aks"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b6/f7/e6/b6f7e6b223b8ee043f43fd5684abdb0e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

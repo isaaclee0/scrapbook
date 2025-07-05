@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452926575/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/japanese-food",
+    "CustomFileName": "88101736452926575",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452926575",
+      "url": "https://www.pinterest.com/pin/88101736452926575/",
+      "type": "pin",
+      "title": "Japanese Kani Salad | Chefjar",
+      "gridTitle": "Japanese Kani Salad | Chefjar",
+      "description": " ",
+      "link": "https://chefjar.com/kani-salad-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "chefjar",
+        "url": "https://www.pinterest.com/chefjar/",
+        "name": "Chefjar | Quick & Easy Recipes"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/japanese-food/",
+        "name": "Japanese Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1f/cb/c2/1fcbc2d951b6767722ed8e3ad83fd29b.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/28/74/db/2874db90bf3fd37b3b517605a728c2d9.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

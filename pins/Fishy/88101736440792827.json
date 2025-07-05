@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440792827/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fishy",
+    "CustomFileName": "88101736440792827",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440792827",
+      "url": "https://www.pinterest.com/pin/88101736440792827/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Calamars à l'ail et chorizo",
+      "description": "Calamars à l'ail et chorizo",
+      "link": "http://www.cuisineactuelle.fr/recettes/calamars-a-l-ail-et-chorizo-208254",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fishy/",
+        "name": "Fishy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/32/20/d7/3220d7b11ef6566e228eb1e808cb69c0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450933466/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/springer-spaniels",
+    "CustomFileName": "88101736450933466",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450933466",
+      "url": "https://www.pinterest.com/pin/88101736450933466/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Springer Spaniel Puppy",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/springer-spaniels/",
+        "name": "Springer Spaniels",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bd/4a/f4/bd4af45c6276e4a72a5e79affbe66fd3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

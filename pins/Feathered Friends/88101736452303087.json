@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452303087/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/feathered-friends",
+    "CustomFileName": "88101736452303087",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452303087",
+      "url": "https://www.pinterest.com/pin/88101736452303087/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Amazing World on Twitter",
+      "description": "Nesting black and red broadbills.. #birds #TopAmazingWorld",
+      "link": "https://twitter.com/TopAmazingWorld/status/514112784330915840/photo/1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/feathered-friends/",
+        "name": "Feathered friends",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/04/dc/0b/04dc0b0d98545a84aa8f15ce1cd60fa4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442521926/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442521926",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442521926",
+      "url": "https://www.pinterest.com/pin/88101736442521926/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Untitled",
+      "description": "A happy soul gets more   gets more beautiful  with age.",
+      "link": "http://www.flickr.com/photos/allthebeautifulthings/4767473828/in/set-72157623512330090/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bc/6d/fe/bc6dfe33d86836b1a8b472c8ab4aef78.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

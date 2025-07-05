@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438979322/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/ice-cream",
+    "CustomFileName": "88101736438979322",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438979322",
+      "url": "https://www.pinterest.com/pin/88101736438979322/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Blackberry Sorbet {Recipe}",
+      "description": "5-Minute Berry Sorbet - NO ice cream maker needed! This is delicious and only uses 4 ingredients!",
+      "link": "http://www.momscraftyspace.com/2011/06/blackberry-sorbet-recipe.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/ice-cream/",
+        "name": "Ice cream",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/96/e0/b5/96e0b5739f4319f62582fbe1cc1195ae.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

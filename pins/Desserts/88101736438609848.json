@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438609848/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736438609848",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438609848",
+      "url": "https://www.pinterest.com/pin/88101736438609848/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Where Do I Begin?",
+      "description": "Banana Pudding Pie",
+      "link": "http://lickthebowlgood.blogspot.com/2010/03/where-do-i-begin.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/28/c8/62/28c86277cd3b5499c2e71d1657d75da2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

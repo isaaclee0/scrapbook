@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443767238/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443767238",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443767238",
+      "url": "https://www.pinterest.com/pin/88101736443767238/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "How to Use Pinterest | The Hyper House",
+      "description": "very good tips here!!",
+      "link": "http://www.thehyperhouse.com/2012/02/7-new-ways-to-use-pinterest/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e8/e5/7f/e8e57f9d22f1e7ed04e531cb0fa372b2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

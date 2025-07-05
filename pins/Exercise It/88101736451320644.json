@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451320644/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/exercise-it",
+    "CustomFileName": "88101736451320644",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451320644",
+      "url": "https://www.pinterest.com/pin/88101736451320644/",
+      "type": "pin",
+      "title": "HIIT Workout for Two",
+      "gridTitle": "HIIT Workout for Two",
+      "description": " ",
+      "link": "http://www.justinagustin.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "justinagustin",
+        "url": "https://www.pinterest.com/justinagustin/",
+        "name": "Justin Agustin"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/exercise-it/",
+        "name": "Exercise it",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/37/2f/4e/372f4e4174d6e0bed7d6abe77aa0621d.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/60/03/e5/6003e5fb65642d7c4b14fe7686ebf638.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

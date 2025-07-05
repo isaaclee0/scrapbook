@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442102327/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/photography-tips/food",
+    "CustomFileName": "88101736442102327",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442102327",
+      "url": "https://www.pinterest.com/pin/88101736442102327/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "inbal87",
+        "url": "https://www.pinterest.com/inbal87/",
+        "name": "My Farmhouse"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/photography-tips/",
+        "name": "Photography tips",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e3/49/ca/e349ca102aa9e6040a3b0b8d0f3c04b2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434460428/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736434460428",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434460428",
+      "url": "https://www.pinterest.com/pin/88101736434460428/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "\"Ugly the Cat\" - One of the saddest things ever. I literally couldn't stop crying. Bless his poor little heart <\\3 :'(",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ca/7d/24/ca7d24d5eafba96ac0227ddc8d6af904.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

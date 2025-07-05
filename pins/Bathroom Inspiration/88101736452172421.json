@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452172421/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bathroom-inspiration",
+    "CustomFileName": "88101736452172421",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452172421",
+      "url": "https://www.pinterest.com/pin/88101736452172421/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Banheiro lindo",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bathroom-inspiration/",
+        "name": "Bathroom Inspiration",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0d/1f/25/0d1f251c71152c18ce4bc836a88308d5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

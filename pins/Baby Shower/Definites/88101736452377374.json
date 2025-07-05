@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452377374/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/baby-shower/definites",
+    "CustomFileName": "88101736452377374",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452377374",
+      "url": "https://www.pinterest.com/pin/88101736452377374/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/baby-shower/",
+        "name": "Baby shower",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2c/eb/e3/2cebe3b59f36bb0f6857b6dc8fa3c501.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

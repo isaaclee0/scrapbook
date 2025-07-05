@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437198232/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pasta",
+    "CustomFileName": "88101736437198232",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437198232",
+      "url": "https://www.pinterest.com/pin/88101736437198232/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Homemade Beet Pasta",
+      "description": "Home-made beetroot pasta",
+      "link": "http://deliciousshots.blogspot.com.br/2014/02/homemade-beet-pasta.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pasta/",
+        "name": "Pasta",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/22/0d/7d/220d7db1ea7ab6ac5a064769c0f27202.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

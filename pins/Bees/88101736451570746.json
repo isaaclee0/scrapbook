@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451570746/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bees",
+    "CustomFileName": "88101736451570746",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451570746",
+      "url": "https://www.pinterest.com/pin/88101736451570746/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Thirsty Honey Bee",
+      "description": " ",
+      "link": "http://www.flickr.com/photos/sloanbj/6597904317/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bees/",
+        "name": "Bees",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e4/dc/e8/e4dce8350e11feb52c5a902c24b0880d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452264672/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/autism",
+    "CustomFileName": "88101736452264672",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452264672",
+      "url": "https://www.pinterest.com/pin/88101736452264672/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "People might not believe this of me but it is true.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "meregreens",
+        "url": "https://www.pinterest.com/meregreens/",
+        "name": "Meredith G"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/autism/",
+        "name": "Autism",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9a/64/52/9a64520890f68163accdae992aa329c4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

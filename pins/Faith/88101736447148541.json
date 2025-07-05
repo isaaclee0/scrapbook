@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447148541/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736447148541",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447148541",
+      "url": "https://www.pinterest.com/pin/88101736447148541/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Wisdom",
+      "link": "http://www.pinterest.com/pin/368169338261443039/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a5/1b/d0/a51bd02fd36d6afbd1d034f7ed1147f8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

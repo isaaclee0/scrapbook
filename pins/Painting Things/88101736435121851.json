@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435121851/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painting-things",
+    "CustomFileName": "88101736435121851",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435121851",
+      "url": "https://www.pinterest.com/pin/88101736435121851/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Love",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "MarigoldPotager",
+        "url": "https://www.pinterest.com/MarigoldPotager/",
+        "name": "The Marigold Potager"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painting-things/",
+        "name": "Painting things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2c/0b/ff/2c0bff285771c0c321f411f5781bb8d8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

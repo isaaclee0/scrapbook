@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447195304/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736447195304",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447195304",
+      "url": "https://www.pinterest.com/pin/88101736447195304/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Best Banana Bread",
+      "description": "Best Banana Bread",
+      "link": "https://www.yourcupofcake.com/2012/07/the-best-banana-bread.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0d/e2/3d/0de23d86c9fc57e64ab4739a050d3983.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

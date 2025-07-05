@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440144172/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/summer-food",
+    "CustomFileName": "88101736440144172",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440144172",
+      "url": "https://www.pinterest.com/pin/88101736440144172/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Holiday Pavlova Wreath Recipe",
+      "description": "This festive Pavlova Wreath has a crispy crunchy shell and a marshmallowy interior topped with whipped cream, sugared cranberries and fresh mint.",
+      "link": "http://shewearsmanyhats.com/holiday-pavlova-wreath-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 31,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "suburbansoapbox",
+        "url": "https://www.pinterest.com/suburbansoapbox/",
+        "name": "The Suburban Soapbox"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/summer-food/",
+        "name": "Summer food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7c/fe/5e/7cfe5ed32721a3828aae2b46c79a7d3f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441174929/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hors-doeuvres",
+    "CustomFileName": "88101736441174929",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441174929",
+      "url": "https://www.pinterest.com/pin/88101736441174929/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "foodgawker",
+      "description": "#Pear slices with #goat cheese, #cranberries, and #pistachios.",
+      "link": "http://foodgawker.com/popular/favorites/page/44/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hors-doeuvres/",
+        "name": "Hors D'oeuvres",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/51/ba/97/51ba979e982905ae212977360c4a73d4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447130427/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/my-i/hot-pot",
+    "CustomFileName": "88101736447130427",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447130427",
+      "url": "https://www.pinterest.com/pin/88101736447130427/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Sichuan Hot Pot",
+      "description": "Hot Pot recipe by thewoksoflife.com",
+      "link": "http://thewoksoflife.com/2015/10/hot-pot/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/my-i/",
+        "name": "My I",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/da/f1/9a/daf19a6de7bf932434f7b88396c67a2d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

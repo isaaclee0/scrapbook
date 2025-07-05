@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433653489/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/craft-ideas",
+    "CustomFileName": "88101736433653489",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433653489",
+      "url": "https://www.pinterest.com/pin/88101736433653489/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Unpinning Pinterest 10/30/12",
+      "description": "This is BRILLIANT!! Upload a picture and it will turn it into a knitting or cross stich pattern for FREE! Takes seconds.",
+      "link": "http://www.mooglyblog.com/unpinning-pinterest-103012/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/craft-ideas/",
+        "name": "Craft Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d7/d0/9c/d7d09cfe75ed640d39238a265ad588d6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

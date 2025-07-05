@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450089527/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/teeth",
+    "CustomFileName": "88101736450089527",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450089527",
+      "url": "https://www.pinterest.com/pin/88101736450089527/",
+      "type": "pin",
+      "title": "Microdontia",
+      "gridTitle": "Microdontia",
+      "description": "Treating microdontia with composite build-up",
+      "link": "https://www.youtube.com/watch?v=4AI2d-0lkCM",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "dentagama",
+        "url": "https://www.pinterest.com/dentagama/",
+        "name": "DentaGama"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/teeth/",
+        "name": "Teeth",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/93/cf/97/93cf97dadf4ee0f2933c7ace3ea20736.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/e1/21/58/e12158e86948def48143af945326f207.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

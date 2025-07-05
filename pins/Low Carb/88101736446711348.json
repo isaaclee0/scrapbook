@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446711348/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/low-carb",
+    "CustomFileName": "88101736446711348",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446711348",
+      "url": "https://www.pinterest.com/pin/88101736446711348/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "These Burrito Zucchini Boats Cut The Carbs But Keep All The Flavor",
+      "description": "More meat. Less carbs. #food #easyrecipe #lowcarb #healthyeating #cleaneating",
+      "link": "https://www.delish.com/cooking/recipe-ideas/a19757076/burrito-zucchini-boats-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Delish",
+        "url": "https://www.pinterest.com/Delish/",
+        "name": "Delish"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/low-carb/",
+        "name": "Low Carb",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/40/27/4f/40274f1105f6a8ae75b96323766de8ee.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/47/2f/9e/472f9e28877317a0618a0f31febc8ec1.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

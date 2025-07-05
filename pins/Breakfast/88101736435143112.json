@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435143112/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/breakfast",
+    "CustomFileName": "88101736435143112",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435143112",
+      "url": "https://www.pinterest.com/pin/88101736435143112/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Quinoa, Fruit, and Nut Bars",
+      "description": "Quinoa, Fruit, and Nut Bars",
+      "link": "http://www.buzzfeed.com/rachelysanders/ways-to-eat-quinoa-and-succeed-in-life?sub=2068087_1004973",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/breakfast/",
+        "name": "Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/58/1f/57/581f57ef44a56d0082104c4087b93d58.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

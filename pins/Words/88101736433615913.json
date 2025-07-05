@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433615913/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736433615913",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433615913",
+      "url": "https://www.pinterest.com/pin/88101736433615913/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "SouthernBelleProbz on Twitter",
+      "description": "Amen",
+      "link": "https://mobile.twitter.com/SBProbz/status/230003589408493568?photo=1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ca/46/a6/ca46a6d739145bf0a761edc519ea3416.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

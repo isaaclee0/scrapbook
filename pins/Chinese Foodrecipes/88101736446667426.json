@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446667426/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chinese-foodrecipes",
+    "CustomFileName": "88101736446667426",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446667426",
+      "url": "https://www.pinterest.com/pin/88101736446667426/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Bang Bang Cauliflower (Vegan) | Olives for Dinner",
+      "description": "Bang Bang Caulilfower",
+      "link": "http://olivesfordinner.com/2016/05/bang-bang-cauliflower.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "mykoreankitchen",
+        "url": "https://www.pinterest.com/mykoreankitchen/",
+        "name": "My Korean Kitchen"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chinese-foodrecipes/",
+        "name": "Chinese Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/16/f5/81/16f5813b9f45d370150c6c28ee1fa517.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

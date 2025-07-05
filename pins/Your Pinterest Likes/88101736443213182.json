@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443213182/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443213182",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443213182",
+      "url": "https://www.pinterest.com/pin/88101736443213182/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Trädgårdsrundan - Gyllings trädgård i Glumslöv",
+      "description": "Covering 5 gal buckets with burlap and twine.",
+      "link": "http://purplearea.blogspot.com/2010/06/tradgardsrundan-gyllings-tradgard-i.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4d/22/9c/4d229c2a3f5b254ad0d9a0ba76a26a3d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

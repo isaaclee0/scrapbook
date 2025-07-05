@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446047114/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/collies-and-shelties",
+    "CustomFileName": "88101736446047114",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446047114",
+      "url": "https://www.pinterest.com/pin/88101736446047114/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Cute Shelties",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/collies-and-shelties/",
+        "name": "Collies and Shelties",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/80/0b/36/800b366977996ce56f6ee9d45923ae0c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

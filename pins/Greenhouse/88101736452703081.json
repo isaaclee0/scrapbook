@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452703081/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/greenhouse",
+    "CustomFileName": "88101736452703081",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452703081",
+      "url": "https://www.pinterest.com/pin/88101736452703081/",
+      "type": "pin",
+      "title": "Greenhouse | Fredericksburg, TX",
+      "gridTitle": "Greenhouse | Fredericksburg, TX",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "sagedove",
+        "url": "https://www.pinterest.com/sagedove/",
+        "name": "Stacey Smith"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/greenhouse/",
+        "name": "Greenhouse",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/11/ed/e7/11ede76e00098b38c8159afc90e21715.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

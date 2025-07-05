@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435961025/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/summer-food",
+    "CustomFileName": "88101736435961025",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435961025",
+      "url": "https://www.pinterest.com/pin/88101736435961025/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Zesty Lime Shrimp and Avocado Salad",
+      "description": "Lime, shrimp, & avocado salad",
+      "link": "http://www.skinnytaste.com/2011/05/zesty-lime-shrimp-and-avocado-salad.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/summer-food/",
+        "name": "Summer food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bf/0b/c5/bf0bc5e2813e056fa89fd8b13cdfac67.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

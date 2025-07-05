@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447209455/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736447209455",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447209455",
+      "url": "https://www.pinterest.com/pin/88101736447209455/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "ragdoll blue mitted",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "diamonds12345",
+        "url": "https://www.pinterest.com/diamonds12345/",
+        "name": "All that glistens"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/28/06/eb/2806eb9f1ba3f3507d19c231d71d4a06.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

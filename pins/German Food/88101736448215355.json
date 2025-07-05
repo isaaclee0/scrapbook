@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448215355/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/german-food",
+    "CustomFileName": "88101736448215355",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448215355",
+      "url": "https://www.pinterest.com/pin/88101736448215355/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Grandma Jeanette's Amazing German Red Cabbage",
+      "description": "Grandma Jeanette's Amazing German Red Cabbage Recipe \"will sub carrots for apples and caraway seeds for cloves.\"",
+      "link": "http://allrecipes.com/recipe/grandma-jeanettes-amazing-german-red-cabbage/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/german-food/",
+        "name": "German Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/eb/0c/69/eb0c69a0ce0d67bf9fb1b76c73429309.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

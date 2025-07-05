@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436875780/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/ice-cream",
+    "CustomFileName": "88101736436875780",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436875780",
+      "url": "https://www.pinterest.com/pin/88101736436875780/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "A Taste of Yellow (and A Little Bit of Orange)",
+      "description": "Not just for tea, chamomile and honey ice cream.",
+      "link": "http://www.nordljus.co.uk/en/a-taste-of-yellow-and-a-little-bit-of-orange",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/ice-cream/",
+        "name": "Ice cream",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c4/df/ed/c4dfedfc6f38502053f0e2987fedc8a2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442306943/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442306943",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442306943",
+      "url": "https://www.pinterest.com/pin/88101736442306943/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Trending Products",
+      "description": "The Lettermate is an address stencil that keeps your writing straight and aligned, as well as letting you decorate your envelopes with hand-drawn designs.",
+      "link": "https://www.thegrommet.com/the-lettermate",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "thegrommet",
+        "url": "https://www.pinterest.com/thegrommet/",
+        "name": "Grommet"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2c/9d/fc/2c9dfcc99167ef919a842738da496e8a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

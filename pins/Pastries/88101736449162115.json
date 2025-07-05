@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449162115/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pastries",
+    "CustomFileName": "88101736449162115",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449162115",
+      "url": "https://www.pinterest.com/pin/88101736449162115/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Sfogliatella",
+      "description": "How to make Sfogliatella.",
+      "link": "https://www.tastemade.com/videos/sfogliatella",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemade",
+        "url": "https://www.pinterest.com/tastemade/",
+        "name": "Tastemade"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pastries/",
+        "name": "pastries",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/65/5a/88/655a88310f94ae61943eb711f19b24e9.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/89/01/21/890121620aeb05a55f300994538c8fa8.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430542752/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430542752",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430542752",
+      "url": "https://www.pinterest.com/pin/88101736430542752/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Artichoke Spinach Cannelloni With Roasted Red Pepper Sauce",
+      "description": "Artichoke Spinach Canneloni with Roasted Red Pepper Sauce!",
+      "link": "http://www.miasdomain.com/2011/08/artichoke-spinach-cannelloni-with.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/16/0a/51/160a51a7a3ed4c091f636552edfc6cf8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

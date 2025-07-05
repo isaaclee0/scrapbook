@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437894120/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/italian",
+    "CustomFileName": "88101736437894120",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437894120",
+      "url": "https://www.pinterest.com/pin/88101736437894120/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Spinach with Pine Nuts and Raisins",
+      "description": "Spinach with Pine Nuts and Raisins Recipe | SAVEUR",
+      "link": "http://www.saveur.com/article/Recipes/Spinach-with-Pine-Nuts-and-Raisins",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/italian/",
+        "name": "Italian",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0f/9b/a3/0f9ba3eddcdc22ec349aacbcb9e60a29.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

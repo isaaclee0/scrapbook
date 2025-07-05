@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447006038/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/secret-part-ideas",
+    "CustomFileName": "88101736447006038",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447006038",
+      "url": "https://www.pinterest.com/pin/88101736447006038/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Chocolate brownie tower with fresh berries",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "nomnomcupcakery",
+        "url": "https://www.pinterest.com/nomnomcupcakery/",
+        "name": "Nom Nom Cupcakery"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/secret-part-ideas/",
+        "name": "Secret Part Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5b/05/b5/5b05b5e614e28b0a6b7c8d9942e75677.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442478177/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442478177",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442478177",
+      "url": "https://www.pinterest.com/pin/88101736442478177/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Evidence Based Terms Anchor Chart- Just a pic, no blog post.  But I like the sentence starters!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "jenna_kessler",
+        "url": "https://www.pinterest.com/jenna_kessler/",
+        "name": "J Kessler"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/75/a6/40/75a6400f585518caa3e3119d84cb9232.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431976647/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736431976647",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431976647",
+      "url": "https://www.pinterest.com/pin/88101736431976647/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Pesto Pasta with Chicken Sausage & Roasted Brussels Sprouts",
+      "description": "pesto pasta with chicken sausage & roasted brussel sprouts.",
+      "link": "http://piarecipes.blogspot.com/2012/10/pesto-pasta-with-chicken-sausage.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/01/1e/5a/011e5af9c3de533eeba365a0dc8034ca.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

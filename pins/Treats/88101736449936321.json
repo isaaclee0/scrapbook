@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449936321/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736449936321",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449936321",
+      "url": "https://www.pinterest.com/pin/88101736449936321/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Homemade Peppermint Bark Recipe {Super Easy with Video} - TipBuzz",
+      "description": "This holiday chocolate bark is a must-try homemade treat with only 4 ingredients… chocolatey with cookies and cream and a peppermint crunch. Also perfect as a holiday gift idea. #ad",
+      "link": "https://tipbuzz.com/holiday-chocolate-bark/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Tipbuzz",
+        "url": "https://www.pinterest.com/Tipbuzz/",
+        "name": "TipBuzz | Easy Recipe and DIY Tips"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/aa/d0/de/aad0de83eb40349607ed3c2361abf8eb.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/97/0d/bd/970dbd460cdfe7899a7a1577ee685ced.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

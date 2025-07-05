@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438442345/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/inspiring-peoplestories",
+    "CustomFileName": "88101736438442345",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438442345",
+      "url": "https://www.pinterest.com/pin/88101736438442345/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Awesome ad is awesome",
+      "description": "Too important not to pass on",
+      "link": "http://9gag.com/gag/arv6W95",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/inspiring-peoplestories/",
+        "name": "Inspiring people/stories",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/91/fe/b1/91feb1f49d2867b59755b66e5826b65e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

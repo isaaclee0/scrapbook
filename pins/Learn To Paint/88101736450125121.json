@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450125121/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/learn-to-paint",
+    "CustomFileName": "88101736450125121",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450125121",
+      "url": "https://www.pinterest.com/pin/88101736450125121/",
+      "type": "pin",
+      "title": "Every Watercolor Flower You'll Ever Need",
+      "gridTitle": "Every Watercolor Flower You'll Ever Need",
+      "description": "Every Watercolor Flower You'll Ever Need",
+      "link": "https://www.etsy.com/shop/ZehrArtStudio?ref=search_shop_redirect&section_id=27560156",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/learn-to-paint/",
+        "name": "Learn To Paint",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/77/d9/1c/77d91c92bb385356027dbcd77f7a1472.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/f3/71/61/f37161230b73fdc9e1daf6449eb9e573.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

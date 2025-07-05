@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450628214/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/soap",
+    "CustomFileName": "88101736450628214",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450628214",
+      "url": "https://www.pinterest.com/pin/88101736450628214/",
+      "type": "pin",
+      "title": "All Natural Carrot Soap Recipe with Real Carrots",
+      "gridTitle": "All Natural Carrot Soap Recipe with Real Carrots",
+      "description": "How to make natural carrot soap using the cold-process method. It’s simple homemade carrot purée that creates that sunny yellow color #soapmaking #soaprecipe #carrotrecipe",
+      "link": "https://lovelygreens.com/natural-carrot-soap-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "lovelygreens",
+        "url": "https://www.pinterest.com/lovelygreens/",
+        "name": "Lovely Greens • Creative Self-Sufficient Living"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/soap/",
+        "name": "Soap",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e1/f1/c3/e1f1c3cb758b79c4617e146c4ee26591.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/bf/d8/27/bfd82788fe4b461db1f88ce812df86e6.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

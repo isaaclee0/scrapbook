@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453390426/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-love",
+    "CustomFileName": "88101736453390426",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453390426",
+      "url": "https://www.pinterest.com/pin/88101736453390426/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Swinging with Abigail Jr",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "BrigitteDawnCarney",
+        "url": "https://www.pinterest.com/BrigitteDawnCarney/",
+        "name": "Brigitte Carney"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-love/",
+        "name": "Chicken love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6c/9b/56/6c9b562e3c7f307177bc2d47aaa8add2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

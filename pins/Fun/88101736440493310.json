@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440493310/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fun",
+    "CustomFileName": "88101736440493310",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440493310",
+      "url": "https://www.pinterest.com/pin/88101736440493310/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Water mat... sweet!!!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 4,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "emgoecks14",
+        "url": "https://www.pinterest.com/emgoecks14/",
+        "name": "Emily Goecks"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fun/",
+        "name": "Fun",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/41/6f/c9/416fc99243198809075aa5d3dd33bb34.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

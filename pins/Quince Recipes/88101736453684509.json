@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453684509/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/quince-recipes",
+    "CustomFileName": "88101736453684509",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453684509",
+      "url": "https://www.pinterest.com/pin/88101736453684509/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "link": "https://www.pinterest.com/pin/46654546116284131/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "biancapinpage",
+        "url": "https://www.pinterest.com/biancapinpage/",
+        "name": "Michelle Wilson"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/quince-recipes/",
+        "name": "Quince Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/18/b7/8e/18b78eae4186675ece9783c07d2dec99.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

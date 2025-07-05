@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435563884/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736435563884",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435563884",
+      "url": "https://www.pinterest.com/pin/88101736435563884/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "DIY Cat Tent",
+      "description": "DIY Cat Tent from a T-Shirt and a Wire Hanger #pet #upcycle",
+      "link": "http://www.instructables.com/id/DIY-cat-tent/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "instructables",
+        "url": "https://www.pinterest.com/instructables/",
+        "name": "Instructables"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c0/84/a1/c084a1615554bc9d10e7645f0002c6b2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

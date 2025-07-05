@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445309148/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736445309148",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445309148",
+      "url": "https://www.pinterest.com/pin/88101736445309148/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "1lifeinspired",
+      "description": "Perfect pieces and perfect cake.",
+      "link": "http://1lifeinspired.tumblr.com/post/99077213390",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d1/75/8d/d1758da94e09cc39e42ceae54928d82a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

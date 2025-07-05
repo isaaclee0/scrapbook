@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439649905/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736439649905",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439649905",
+      "url": "https://www.pinterest.com/pin/88101736439649905/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "shape",
+      "link": "http://yourbestdress.tumblr.com/post/6167926709",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ee/68/ed/ee68ed40c6d86b5e11ee00bc7dbe1e1e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

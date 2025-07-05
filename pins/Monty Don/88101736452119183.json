@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452119183/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/monty-don",
+    "CustomFileName": "88101736452119183",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452119183",
+      "url": "https://www.pinterest.com/pin/88101736452119183/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Monty and Nell",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/monty-don/",
+        "name": "Monty Don",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ee/0f/30/ee0f308a7534350edbeeac364b509b38.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

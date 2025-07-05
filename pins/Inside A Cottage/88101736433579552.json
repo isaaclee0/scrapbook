@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433579552/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/inside-a-cottage",
+    "CustomFileName": "88101736433579552",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433579552",
+      "url": "https://www.pinterest.com/pin/88101736433579552/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "cottage organization...",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Her_Stories",
+        "url": "https://www.pinterest.com/Her_Stories/",
+        "name": "Her Story"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/inside-a-cottage/",
+        "name": "Inside a cottage",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/55/70/96/557096ffc5415c74bef3d281979900b1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

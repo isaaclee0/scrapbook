@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436041671/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736436041671",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436041671",
+      "url": "https://www.pinterest.com/pin/88101736436041671/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "look at this add look please!!!!!!!!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "adiblondi",
+        "url": "https://www.pinterest.com/adiblondi/",
+        "name": "Adi Josef"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/46/40/d0/4640d0590affc6ce64a28aef2cbeb379.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

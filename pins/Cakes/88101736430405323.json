@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430405323/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736430405323",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430405323",
+      "url": "https://www.pinterest.com/pin/88101736430405323/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Cake Recipes and Free Cake Tutorials!",
+      "description": "Strawberry teapot cake",
+      "link": "http://www.mycakeschool.com/member/videos/wordpress/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/06/15/83/061583d467f94121a11cf08d8e7e2583.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

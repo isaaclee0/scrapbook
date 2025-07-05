@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452613662/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair/curly-hair",
+    "CustomFileName": "88101736452613662",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452613662",
+      "url": "https://www.pinterest.com/pin/88101736452613662/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "cabelo cacheado curto.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "naorepete",
+        "url": "https://www.pinterest.com/naorepete/",
+        "name": "guid"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/64/7d/fc/647dfccecf3b773f3dbad64e8ece5e9c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

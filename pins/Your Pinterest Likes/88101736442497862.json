@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442497862/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442497862",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442497862",
+      "url": "https://www.pinterest.com/pin/88101736442497862/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Un salón comedor romántico",
+      "description": "Sofás y zona comedor",
+      "link": "http://www.elmueble.com/articulo/salones/1102/salon_comedor_romantico.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/30/1e/cf/301ecf293130150103c3b8341c028118.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432754383/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/breakfast",
+    "CustomFileName": "88101736432754383",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432754383",
+      "url": "https://www.pinterest.com/pin/88101736432754383/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Bircher Chia Parfait",
+      "description": "layered yogurt and granola parfait. Granola, yogurt, fruit",
+      "link": "http://www.marthastewart.com/recipe/yogurt-parfait-with-granola-raspberries-and-candied-ginger",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/breakfast/",
+        "name": "Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fb/28/fa/fb28fa9dcd4ea708264cbd66a6791ae5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452342229/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/springer-spaniels",
+    "CustomFileName": "88101736452342229",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452342229",
+      "url": "https://www.pinterest.com/pin/88101736452342229/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Springer Spaniel Dog Cake",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "danehdee",
+        "url": "https://www.pinterest.com/danehdee/",
+        "name": "Danielle Dart"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/springer-spaniels/",
+        "name": "Springer Spaniels",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a9/67/01/a96701b2df8d62bb61a51d6b0e91a2a6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

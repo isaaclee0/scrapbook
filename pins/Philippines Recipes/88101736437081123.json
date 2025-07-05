@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437081123/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/philippines-recipes",
+    "CustomFileName": "88101736437081123",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437081123",
+      "url": "https://www.pinterest.com/pin/88101736437081123/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Cassava Suman Recipe",
+      "description": "Recipe for Cassava Suman. My grandmother used to make this. :)",
+      "link": "http://www.pinoyrecipe.net/cassava-suman-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/philippines-recipes/",
+        "name": "Philippines recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/24/3b/f8/243bf83a515f836508f95b13da259911.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

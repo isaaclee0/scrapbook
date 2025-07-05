@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445147000/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/agnes-st",
+    "CustomFileName": "88101736445147000",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445147000",
+      "url": "https://www.pinterest.com/pin/88101736445147000/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "article img",
+      "link": "http://www.endlessspa.com.au/news-article.asp?id=332&ref=admin",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/agnes-st/",
+        "name": "Agnes st",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c4/9d/e4/c49de48f92623dd62fec121520b0e3ea.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

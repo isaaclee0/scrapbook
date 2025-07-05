@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435866383/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/feathered-friends",
+    "CustomFileName": "88101736435866383",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435866383",
+      "url": "https://www.pinterest.com/pin/88101736435866383/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Awesome products designed by independent artists",
+      "description": "Variegated Fairy-wren",
+      "link": "http://www.redbubble.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/feathered-friends/",
+        "name": "Feathered friends",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f1/c1/a6/f1c1a6c75056c742aaf4a37d720b26aa.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438617187/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hip-health",
+    "CustomFileName": "88101736438617187",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438617187",
+      "url": "https://www.pinterest.com/pin/88101736438617187/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Piriformis Syndrome",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "drstevecho",
+        "url": "https://www.pinterest.com/drstevecho/",
+        "name": "Dr. Steve Cho"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hip-health/",
+        "name": "Hip health",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1a/a6/48/1aa648ba1861a391273f21e59c47f2f6.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

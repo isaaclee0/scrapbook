@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453147183/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/children",
+    "CustomFileName": "88101736453147183",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453147183",
+      "url": "https://www.pinterest.com/pin/88101736453147183/",
+      "type": "pin",
+      "title": "Have a kid, it'll be fun.",
+      "gridTitle": "Have a kid, it'll be fun.",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "jdexports2000",
+        "url": "https://www.pinterest.com/jdexports2000/",
+        "name": "Happy Happy Joy Joy"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/children/",
+        "name": "Children",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ca/86/61/ca8661d4f841bb8fc2c2954c0bdcf1e5.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/ff/f8/9a/fff89a4983b4d82dc8a576343b1d3e99.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437573497/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736437573497",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437573497",
+      "url": "https://www.pinterest.com/pin/88101736437573497/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Cinnamon Roll Cheesecake - The Girl Who Ate Everything",
+      "description": "Cinnamon Roll Cheesecake!",
+      "link": "http://www.the-girl-who-ate-everything.com/2012/10/cinnamon-roll-cheesecake.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/86/67/42/866742a2def4b022a40152beee97d718.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

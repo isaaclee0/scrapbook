@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453848744/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736453848744",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453848744",
+      "url": "https://www.pinterest.com/pin/88101736453848744/",
+      "type": "pin",
+      "title": "food",
+      "gridTitle": "food",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "lipibagumfreelancer",
+        "url": "https://www.pinterest.com/lipibagumfreelancer/",
+        "name": "Lipi Bagum: Freelancer & Food Enthusiast Extraordinaire"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/97/39/d6/9739d6850bec23d16aa8d118075b5f64.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

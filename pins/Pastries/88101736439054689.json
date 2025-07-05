@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439054689/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pastries",
+    "CustomFileName": "88101736439054689",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439054689",
+      "url": "https://www.pinterest.com/pin/88101736439054689/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Lattice + message imprint pie crust inspiration. Crostata di mele - In Cucina con Me",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Fairyskull",
+        "url": "https://www.pinterest.com/Fairyskull/",
+        "name": "In Cucina con Me"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pastries/",
+        "name": "pastries",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0b/48/91/0b4891c43d144f0f5eccf85af3fabb9d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442076778/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442076778",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442076778",
+      "url": "https://www.pinterest.com/pin/88101736442076778/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Colony Raised Rabbits",
+      "description": "Raising rabbits in colonies instead of those small hutches. My dream! #rabbits",
+      "link": "http://emancipationacres.com/rabbits/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "XBRosie",
+        "url": "https://www.pinterest.com/XBRosie/",
+        "name": "R. Nguyễn"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b6/27/94/b62794efe316faf961959976e14c4c58.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

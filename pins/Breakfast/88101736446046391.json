@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446046391/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/breakfast",
+    "CustomFileName": "88101736446046391",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446046391",
+      "url": "https://www.pinterest.com/pin/88101736446046391/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Baked Blueberry Oatmeal | Cup of Jo",
+      "description": "Baked Blueberry Oatmeal",
+      "link": "https://cupofjo.com/2014/03/baked-blueberry-oatmeal/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/breakfast/",
+        "name": "Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/74/00/96/740096c28c2f71c896b0e3451b911984.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

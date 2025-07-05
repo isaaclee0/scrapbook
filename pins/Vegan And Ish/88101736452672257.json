@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452672257/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/vegan-and-ish",
+    "CustomFileName": "88101736452672257",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452672257",
+      "url": "https://www.pinterest.com/pin/88101736452672257/",
+      "type": "pin",
+      "title": "Homemade Dairy-free Butter",
+      "gridTitle": "Homemade Dairy-free Butter",
+      "description": " ",
+      "link": "https://www.veginnercooking.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "veginnercooking",
+        "url": "https://www.pinterest.com/veginnercooking/",
+        "name": "Veginner Cooking"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/vegan-and-ish/",
+        "name": "Vegan and ish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/25/41/8f/25418fcd1254ffce9ab1f4ba4cbec639.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/a1/dc/2b/a1dc2bab25bf411522a5d309be893d46.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

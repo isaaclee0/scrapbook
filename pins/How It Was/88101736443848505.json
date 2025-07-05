@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443848505/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/how-it-was",
+    "CustomFileName": "88101736443848505",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443848505",
+      "url": "https://www.pinterest.com/pin/88101736443848505/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Woolies pick n mix",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "jordanlax5",
+        "url": "https://www.pinterest.com/jordanlax5/",
+        "name": "Jordan"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/how-it-was/",
+        "name": "How it was..",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ec/fa/2a/ecfa2a357429a498329d09f18005cdfc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

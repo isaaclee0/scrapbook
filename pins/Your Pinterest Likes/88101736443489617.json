@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443489617/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443489617",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443489617",
+      "url": "https://www.pinterest.com/pin/88101736443489617/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Preparedness Pro",
+      "description": "Awesome preparedness website. This lady is my hero! You wouldn't believe how you can store eggs!",
+      "link": "http://preparednesspro.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/08/36/76/0836769d0c1e33d56407c25f28974789.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

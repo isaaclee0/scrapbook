@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447119096/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/my-i/books",
+    "CustomFileName": "88101736447119096",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447119096",
+      "url": "https://www.pinterest.com/pin/88101736447119096/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Annals of a Country Doctor",
+      "description": "The Annals of a Country Doctor by Carl Matlock https://www.amazon.com/dp/B0786R2HWY/ref=cm_sw_r_pi_dp_U_x_7D5aCbWBXF1S9",
+      "link": "https://www.amazon.com/dp/B0786R2HWY/ref=cm_sw_r_pi_dp_U_x_7D5aCbWBXF1S9",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/my-i/",
+        "name": "My I",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8f/76/05/8f76058f5c75bef98308aa489d321da5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

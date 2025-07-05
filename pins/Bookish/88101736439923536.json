@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439923536/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736439923536",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439923536",
+      "url": "https://www.pinterest.com/pin/88101736439923536/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Ricordi",
+      "description": "A good book....",
+      "link": "http://500px.com/photo/6591000?from=popular",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/06/fd/36/06fd36f96bdbafac48c92bbebe75b59b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

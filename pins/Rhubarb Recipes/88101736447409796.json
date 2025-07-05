@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447409796/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/rhubarb-recipes",
+    "CustomFileName": "88101736447409796",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447409796",
+      "url": "https://www.pinterest.com/pin/88101736447409796/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "link": "https://www.instagram.com/p/BenFeYPFF5i/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/rhubarb-recipes/",
+        "name": "Rhubarb Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/76/87/8b/76878b79ae047783c64cfb295e79a939.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439054267/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fishy",
+    "CustomFileName": "88101736439054267",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439054267",
+      "url": "https://www.pinterest.com/pin/88101736439054267/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Grilled Salmon Kebabs",
+      "description": "Grilled Salmon Kebabs",
+      "link": "http://www.skinnytaste.com/2013/06/these-lovely-grilled-salmon-and-lemon.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fishy/",
+        "name": "Fishy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ed/a5/d5/eda5d56ad7d2085fb722b58d50c9c5cd.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451689003/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736451689003",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451689003",
+      "url": "https://www.pinterest.com/pin/88101736451689003/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Five Books to Watch For in January",
+      "description": " ",
+      "link": "http://bookriot.com/2013/01/07/five-books-to-watch-for-in-january/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8b/1f/c6/8b1fc6e996f3e504a6b99b0a507d7ddb.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

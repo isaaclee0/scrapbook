@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441789191/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/japanese-food",
+    "CustomFileName": "88101736441789191",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441789191",
+      "url": "https://www.pinterest.com/pin/88101736441789191/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Recipeslane.com",
+      "description": "RecipeTin Eats | 21 Delicious Vegan Japanese Recipes Get more latest recipes at http://epicurerecipe.com/",
+      "link": "http://recipeslane.com/category/vegan-recipes/page/2/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "christnejones",
+        "url": "https://www.pinterest.com/christnejones/",
+        "name": "Christine Jones"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/japanese-food/",
+        "name": "Japanese Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ea/b5/71/eab57141b1ff844e64d52ef7a7f446c2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

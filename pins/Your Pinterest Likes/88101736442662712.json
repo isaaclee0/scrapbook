@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442662712/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442662712",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442662712",
+      "url": "https://www.pinterest.com/pin/88101736442662712/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Thanksgiving \"Give Thanks\" Printables & Decor",
+      "description": "Thanksgiving Give Thanks Printables & Decor - Oh My Creative",
+      "link": "http://www.ohmy-creative.com/holiday-crafts/thanksgiving/thanksgiving-give-thanks-printables-decor/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/52/9d/9e/529d9e14e6d546b2628b31306ca93450.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

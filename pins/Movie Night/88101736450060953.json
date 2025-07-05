@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450060953/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736450060953",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450060953",
+      "url": "https://www.pinterest.com/pin/88101736450060953/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Best Buy: East of Eden [3 Discs] [DVD] [1981]",
+      "description": "East of Eden [3 Discs] [DVD] [1981]",
+      "link": "https://www.bestbuy.com/site/east-of-eden-3-discs-dvd-1981/17471512.p?skuId=17471512&cmp=RMX",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "bestbuy",
+        "url": "https://www.pinterest.com/bestbuy/",
+        "name": "Best Buy"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6b/88/29/6b882911955f74bc3e0352b405caf4b4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

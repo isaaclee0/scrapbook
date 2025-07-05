@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442653006/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442653006",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442653006",
+      "url": "https://www.pinterest.com/pin/88101736442653006/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "vaccines",
+      "link": "https://sphotos-b.xx.fbcdn.net/hphotos-snc6/208849_260372780738067_990639907_n.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "rawjuicepower",
+        "url": "https://www.pinterest.com/rawjuicepower/",
+        "name": "Raw Juice Guru"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c1/76/37/c17637667c416c843f7d42ccddf10163.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

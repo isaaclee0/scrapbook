@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437945207/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736437945207",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437945207",
+      "url": "https://www.pinterest.com/pin/88101736437945207/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "News on the Economy",
+      "description": "Garlic Ginger Bok Choy Sauté | Enjoying this Journey...",
+      "link": "http://enjoyingthisjourney.com/garlic-ginger-bok-choy-saute/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f3/90/7a/f3907a46316833c2e1a032202d3aa645.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

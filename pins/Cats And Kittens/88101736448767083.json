@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448767083/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736448767083",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448767083",
+      "url": "https://www.pinterest.com/pin/88101736448767083/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Kattenren - Pagina 7",
+      "description": "Afbeelding",
+      "link": "https://www.dekattensite.nl/phpBB2/viewtopic.php?t=5669&start=90",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 17,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c0/12/38/c012386e9192a0ed7d94f11ce5763f08.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

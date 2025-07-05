@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442980628/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442980628",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442980628",
+      "url": "https://www.pinterest.com/pin/88101736442980628/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Picture of The Waltons",
+      "description": "the waltons",
+      "link": "http://www.listal.com/viewimage/45714",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/27/44/c1/2744c19839f89f405f3a4b45c5081d32.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

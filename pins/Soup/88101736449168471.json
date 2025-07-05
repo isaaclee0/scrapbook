@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449168471/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/soup",
+    "CustomFileName": "88101736449168471",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449168471",
+      "url": "https://www.pinterest.com/pin/88101736449168471/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Mediterranean Spicy Lentil Soup",
+      "description": "Mediterranean Spicy Spinach Lentil Soup Recipe. A nutritious, flavor-packed lentil soup that comes together in minutes.",
+      "link": "http://www.themediterraneandish.com/mediterranean-spicy-spinach-lentil-soup/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "themeddish",
+        "url": "https://www.pinterest.com/themeddish/",
+        "name": "The Mediterranean Dish"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/soup/",
+        "name": "Soup",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e4/00/83/e40083501f371184cbb555bb9b075797.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

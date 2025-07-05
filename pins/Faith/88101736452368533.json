@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452368533/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736452368533",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452368533",
+      "url": "https://www.pinterest.com/pin/88101736452368533/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Lee Strobel former Atheist.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 8,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/00/9f/e3/009fe38064b4da39c4609151abf6d263.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

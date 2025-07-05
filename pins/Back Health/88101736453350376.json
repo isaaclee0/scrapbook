@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453350376/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/back-health",
+    "CustomFileName": "88101736453350376",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453350376",
+      "url": "https://www.pinterest.com/pin/88101736453350376/",
+      "type": "pin",
+      "title": "Spine mobility everyday",
+      "gridTitle": "Spine mobility everyday",
+      "description": " ",
+      "link": "https://www.thealife.com.au/online-membership",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "the_a_life",
+        "url": "https://www.pinterest.com/the_a_life/",
+        "name": "The A Life | Movement & Lifestyle brand"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/back-health/",
+        "name": "Back health",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ef/0f/a2/ef0fa2f3adc5b2a3b6ed1110f7a98071.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/f8/83/64/f8836409381c106cca6f5bc5fcc7f7dd.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

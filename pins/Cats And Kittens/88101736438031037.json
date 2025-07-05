@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438031037/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736438031037",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438031037",
+      "url": "https://www.pinterest.com/pin/88101736438031037/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "It is MeOW.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "adhdcoach",
+        "url": "https://www.pinterest.com/adhdcoach/",
+        "name": "Charlotte Hjorth"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f8/55/e9/f855e96cb2bd4d0f46411099d1db2e4c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

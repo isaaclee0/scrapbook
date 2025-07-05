@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450061476/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736450061476",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450061476",
+      "url": "https://www.pinterest.com/pin/88101736450061476/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "gospellightsoci",
+        "url": "https://www.pinterest.com/gospellightsoci/",
+        "name": "Gospel Light Society"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/73/7f/16/737f16921a3b5a082c2d9a30aa669c4d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

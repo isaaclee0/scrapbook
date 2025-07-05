@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452883351/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/photography",
+    "CustomFileName": "88101736452883351",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452883351",
+      "url": "https://www.pinterest.com/pin/88101736452883351/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "How time just flies by",
+      "description": " ",
+      "link": "https://www.reddit.com/r/pics/comments/51hlln/how_time_just_flies_by/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/photography/",
+        "name": "Photography",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/89/74/66/8974664c80e2525ed0b306a50efca237.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453008143/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pastries",
+    "CustomFileName": "88101736453008143",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453008143",
+      "url": "https://www.pinterest.com/pin/88101736453008143/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "%%title%% %%page%% %%sep%% %%sitename%% %%title%%",
+      "description": " ",
+      "link": "https://www.twiggstudios.com/2020/05/garden-pie-leek-and-potato/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pastries/",
+        "name": "pastries",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/81/b4/93/81b4936234aac41345428728b4d24ac8.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

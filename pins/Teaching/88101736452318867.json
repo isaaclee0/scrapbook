@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452318867/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/teaching",
+    "CustomFileName": "88101736452318867",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452318867",
+      "url": "https://www.pinterest.com/pin/88101736452318867/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "John Comegno on Twitter",
+      "description": " ",
+      "link": "https://twitter.com/johncomegno/status/1355662965605879823?s=12",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/teaching/",
+        "name": "Teaching",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/26/c8/4e/26c84edb221a0091908e2cd8070e95ee.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

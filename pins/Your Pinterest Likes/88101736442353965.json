@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442353965/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442353965",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442353965",
+      "url": "https://www.pinterest.com/pin/88101736442353965/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "reading-everyday.com",
+      "description": "• 50 pounds of wheat                • 280 pounds of pork                • 120 cartons of eggs                • 100 pounds of honey                • 25 to 75 pounds of nuts                • 600 pounds of fruit                • 2,000+ pounds of vegetables",
+      "link": "http://www.reading-everyday.com/15/The_Backyard_Homestead_split_006.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/45/a6/03/45a60307530a4b82a25881dc9ee27057.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

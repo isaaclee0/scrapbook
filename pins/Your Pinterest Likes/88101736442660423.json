@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442660423/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442660423",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442660423",
+      "url": "https://www.pinterest.com/pin/88101736442660423/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Love Notes",
+      "description": "Iralamija: Love Notes, 2010",
+      "link": "http://iralamija.blogspot.ca/2010/07/love-notes.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/33/c1/1c/33c11c2fc3d3b9a9a14adb3f332aee0b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

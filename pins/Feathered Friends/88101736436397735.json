@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436397735/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/feathered-friends",
+    "CustomFileName": "88101736436397735",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436397735",
+      "url": "https://www.pinterest.com/pin/88101736436397735/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Mountain Bluebirds",
+      "description": "Oompa loompa doobeedeedoo, here's a bird that looks like violet beauregarde for you! (Mountain Bluebird). Thus explaineth the reason for the look!",
+      "link": "http://www.fredmiranda.com/forum/topic/1116011",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/feathered-friends/",
+        "name": "Feathered friends",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/68/b8/d6/68b8d608b25feee3e381e3b657d4f182.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

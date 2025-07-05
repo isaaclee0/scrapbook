@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451793858/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/greek-food",
+    "CustomFileName": "88101736451793858",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451793858",
+      "url": "https://www.pinterest.com/pin/88101736451793858/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Greek Squid And Orzo",
+      "description": " ",
+      "link": "https://www.nigella.com/recipes/greek-squid-and-orzo",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/greek-food/",
+        "name": "Greek Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e7/66/5c/e7665ce67f62e54e80eadd2e48bfc628.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437704506/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bring-in-the-light",
+    "CustomFileName": "88101736437704506",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437704506",
+      "url": "https://www.pinterest.com/pin/88101736437704506/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "French Country Kitchen Window",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bring-in-the-light/",
+        "name": "Bring In The Light",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/45/2f/f0/452ff0f60fd662d8bb9e6c27b0ed851d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

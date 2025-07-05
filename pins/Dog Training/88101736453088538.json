@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453088538/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/dog-training",
+    "CustomFileName": "88101736453088538",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453088538",
+      "url": "https://www.pinterest.com/pin/88101736453088538/",
+      "type": "pin",
+      "title": "Teaching how to tell me a secret",
+      "gridTitle": "Teaching how to tell me a secret",
+      "description": " ",
+      "link": "https://sites.google.com/view/dogstrainingvideos",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 26,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "dogtrainingtips202",
+        "url": "https://www.pinterest.com/dogtrainingtips202/",
+        "name": "Dog Training Tips"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/dog-training/",
+        "name": "Dog Training",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/de/cf/eb/decfebd8f1f68b8fdaf4d67e8f78315a.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/11/6a/2c/116a2cbfd4eb4b595adb06497f4884e0.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

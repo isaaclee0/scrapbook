@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452721668/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/games-night",
+    "CustomFileName": "88101736452721668",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452721668",
+      "url": "https://www.pinterest.com/pin/88101736452721668/",
+      "type": "pin",
+      "title": "Shake your booty",
+      "gridTitle": "Shake your booty",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "mrunal0098",
+        "url": "https://www.pinterest.com/mrunal0098/",
+        "name": "Mrunal Thoolkar"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/games-night/",
+        "name": "Games night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f8/4d/31/f84d31110ceac9fb07ba9814010bc7fb.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/b8/cd/f9/b8cdf9ecbf8b0247e07484499baf2f65.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450120816/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cake-decorating",
+    "CustomFileName": "88101736450120816",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450120816",
+      "url": "https://www.pinterest.com/pin/88101736450120816/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Best Fluffy Buttercream Frosting Recipe",
+      "description": "The Best Fluffy Buttercream Frosting, light as air and not too sweet! #recipe from ThisSillyGirlsKitchen.com #buttercream #buttercreamfrosting #frosting #vanillafrosting #bestbuttercreamfrosting #fluffybuttercreamfrosting",
+      "link": "https://thissillygirlskitchen.com/the-best-fluffy-buttercream-frosting/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "danadevolk",
+        "url": "https://www.pinterest.com/danadevolk/",
+        "name": "This Silly Girls Kitchen"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cake-decorating/",
+        "name": "Cake Decorating",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b9/d9/16/b9d916d42aafccdcf2c6ed97242c8eb1.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/e4/21/a0/e421a04535d8b7a4a662de8bca904da6.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436475471/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/how-it-was",
+    "CustomFileName": "88101736436475471",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436475471",
+      "url": "https://www.pinterest.com/pin/88101736436475471/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "goody goody gumdrops",
+      "description": "\"Goody Goody Gumdrops!\"",
+      "link": "http://www.flickr.com/photos/jakig/3331456010/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/how-it-was/",
+        "name": "How it was..",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9d/7a/6f/9d7a6fa48e1f21792b31f0675d1c8477.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

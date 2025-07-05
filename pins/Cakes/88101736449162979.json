@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449162979/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736449162979",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449162979",
+      "url": "https://www.pinterest.com/pin/88101736449162979/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Mary Berry's Lemon meringue roulade  recipe",
+      "description": "Lemon meringue - in a roulade! Trust Mary Berry to reinvent the classic.",
+      "link": "http://www.bbc.co.uk/food/recipes/lemon_curd_and_pistachio_20948",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "abeautifulplate",
+        "url": "https://www.pinterest.com/abeautifulplate/",
+        "name": "A Beautiful Plate"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/18/3c/d4/183cd4531adfbe0fafa27c197b9cd266.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

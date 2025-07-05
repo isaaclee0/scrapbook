@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440036103/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/shelves",
+    "CustomFileName": "88101736440036103",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440036103",
+      "url": "https://www.pinterest.com/pin/88101736440036103/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Our kitchen",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "sanneboernl",
+        "url": "https://www.pinterest.com/sanneboernl/",
+        "name": "Sanne Boer | Vintage, Interior and Photography"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/shelves/",
+        "name": "Shelves",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ba/5e/c7/ba5ec7155f297f896fdc765da269a5d3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

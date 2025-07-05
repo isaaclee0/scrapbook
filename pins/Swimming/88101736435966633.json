@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435966633/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/swimming",
+    "CustomFileName": "88101736435966633",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435966633",
+      "url": "https://www.pinterest.com/pin/88101736435966633/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Account Suspended",
+      "description": "I need a modest bathing suit and I think I found it!",
+      "link": "http://www.swimwearplace.com/swimdress/#ty;pagination_contents;/swimdress/page-3/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/swimming/",
+        "name": "Swimming",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1c/ca/a2/1ccaa25007babb0080dd5f8452bcf130.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

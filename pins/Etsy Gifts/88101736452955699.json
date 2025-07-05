@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452955699/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/etsy-gifts",
+    "CustomFileName": "88101736452955699",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452955699",
+      "url": "https://www.pinterest.com/pin/88101736452955699/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Blog",
+      "description": " ",
+      "link": "https://lottie-day.myshopify.com/blogs/news",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/etsy-gifts/",
+        "name": "Etsy Gifts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/24/96/f7/2496f71de3132af8cea9a05af1d90a84.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

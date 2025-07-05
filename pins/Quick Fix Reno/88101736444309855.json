@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444309855/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/quick-fix-reno",
+    "CustomFileName": "88101736444309855",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444309855",
+      "url": "https://www.pinterest.com/pin/88101736444309855/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Refrigerator makeover!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/quick-fix-reno/",
+        "name": "Quick Fix Reno",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/aa/e8/ed/aae8ed1dd23115e05c03433769baddb7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

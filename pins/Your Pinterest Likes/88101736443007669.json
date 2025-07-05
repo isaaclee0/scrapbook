@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443007669/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443007669",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443007669",
+      "url": "https://www.pinterest.com/pin/88101736443007669/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "redhead wardrobe, red, hair, oh my dior, fashion, http://www.ohmydior.org/2013/01/hello-red-colour-guide-for-redheads.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "missohmydior",
+        "url": "https://www.pinterest.com/missohmydior/",
+        "name": "Oh my Dior"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bf/d6/92/bfd692ed023ad5f1527a8dbf6ef93d3b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

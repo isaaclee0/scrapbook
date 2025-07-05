@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439818436/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/summer-food",
+    "CustomFileName": "88101736439818436",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439818436",
+      "url": "https://www.pinterest.com/pin/88101736439818436/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Recette Tian d'abricots et de pêches à la crème d'amande",
+      "description": "Tian d'abricots et de pêches à la crème d'amande",
+      "link": "http://cuisine.larousse.fr/recettes/detail/tian-d-abricots-et-de-peches-a-la-creme-d-amande",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/summer-food/",
+        "name": "Summer food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/76/0a/d4/760ad4f32833ed697df58f188067b3c5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

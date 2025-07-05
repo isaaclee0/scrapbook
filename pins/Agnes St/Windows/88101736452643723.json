@@ -1,0 +1,60 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452643723/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/agnes-st/windows",
+    "CustomFileName": "88101736452643723",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452643723",
+      "url": "https://www.pinterest.com/pin/88101736452643723/",
+      "type": "pin",
+      "title": "Spring Morning Vibes",
+      "gridTitle": "Spring Morning Vibes",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 4,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "happydaisydais",
+        "url": "https://www.pinterest.com/happydaisydais/",
+        "name": "happy dais🌼"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/agnes-st/",
+        "name": "Agnes st",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ed/7c/75/ed7c7553402880d405f4891633e8e63c.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/5b/c5/fb/5bc5fbde1eafc25a55aaeee3a3158e19.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/60/ca/ea/60caea57f63271fac6c3a512415f8a4d.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/c0/36/86/c036861eea002b85fa5a701bc2e95550.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

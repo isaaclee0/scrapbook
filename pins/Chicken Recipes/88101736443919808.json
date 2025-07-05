@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443919808/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736443919808",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443919808",
+      "url": "https://www.pinterest.com/pin/88101736443919808/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Постила",
+      "description": "Нежнейшая фаршированная куриная грудка за 40 минут и без заморочек",
+      "link": "http://postila.ru/?pid=34859381",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bf/ce/6d/bfce6d4d8ff6ebaff43bdcf0f318e88b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446722017/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/dips",
+    "CustomFileName": "88101736446722017",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446722017",
+      "url": "https://www.pinterest.com/pin/88101736446722017/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Jambalaya Dip",
+      "description": "What's not to love about cheesy, Louisiana-inspired deliciousness stuffed into a crusty bread bowl? Save the recipe on our app! http://link.tastemade.com/HE7m/H1wHe4m2mA",
+      "link": "https://www.tastemade.com/videos/jambalaya-dip",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemade",
+        "url": "https://www.pinterest.com/tastemade/",
+        "name": "Tastemade"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/dips/",
+        "name": "Dips",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e0/ca/1a/e0ca1a809b08656819cdbc476cd432aa.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/fd/bf/df/fdbfdfbdde4c9b66f5a775cfc6349c17.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

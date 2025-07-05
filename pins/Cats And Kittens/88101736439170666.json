@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439170666/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736439170666",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439170666",
+      "url": "https://www.pinterest.com/pin/88101736439170666/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Syl loves",
+      "description": "Syl loves",
+      "link": "http://syllovesshabby.blogspot.de/search?updated-max=2014-10-15T04:36:00-07:00&max-results=1&start=14&by-date=false",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/00/db/c9/00dbc9b70a02523f6c641f7e7d3fa7c8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434440341/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/winter",
+    "CustomFileName": "88101736434440341",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434440341",
+      "url": "https://www.pinterest.com/pin/88101736434440341/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "..snow",
+      "link": "http://www.flickr.com/photos/42614687@N05/4249946514",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/winter/",
+        "name": "Winter",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/61/e1/17/61e1173b2d73083db4ca0696984bc1f0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

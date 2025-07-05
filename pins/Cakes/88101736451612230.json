@@ -1,0 +1,80 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451612230/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736451612230",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451612230",
+      "url": "https://www.pinterest.com/pin/88101736451612230/",
+      "type": "pin",
+      "title": "Classic Blueberry Buckle Recipe!",
+      "gridTitle": "Classic Blueberry Buckle Recipe!",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 9,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "graciouswife",
+        "url": "https://www.pinterest.com/graciouswife/",
+        "name": "The Gracious Wife"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/26/92/c2/2692c2e2b45a06200711566b08a811ec.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/78/4a/58/784a58f42c17c6a85a395103600f54d5.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/99/10/9f/99109fc8449bae934f41cec0c8da334d.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/55/77/c3/5577c300d98ebcfe19d1c546ad6d612a.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/73/a7/a7/73a7a7cb80567c32b50659f2824b2fa3.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/ef/be/1d/efbe1de94f5b29595a94f3c66ec0b3b9.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/8d/46/e4/8d46e48c5a948f734cc0ccf56bae38b2.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/18/df/8e/18df8ecf4bd731fbd26e658d2403c5fa.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/02/65/47/026547a0ba905cbfa5be9e68dae552f4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

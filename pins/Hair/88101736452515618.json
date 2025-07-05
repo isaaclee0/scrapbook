@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452515618/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736452515618",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452515618",
+      "url": "https://www.pinterest.com/pin/88101736452515618/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Deva cut and Deva 3 step by Leslie Braswell at Braswell Hair Skin Body.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "lesliebraswell",
+        "url": "https://www.pinterest.com/lesliebraswell/",
+        "name": "Leslie Braswell"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cd/2d/d4/cd2dd44f470fa229224142be81bd4a17.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

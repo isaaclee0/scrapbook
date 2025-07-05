@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433514170/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736433514170",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433514170",
+      "url": "https://www.pinterest.com/pin/88101736433514170/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Blackberry Cream Cheese Danish",
+      "description": "Easy Blackberry Cheese Danish",
+      "link": "http://www.laurenslatest.com/easy-blackberry-cheese-danish/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d1/56/52/d156521e24d7b7c860472ddcf1bed44a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

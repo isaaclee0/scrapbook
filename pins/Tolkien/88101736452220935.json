@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452220935/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tolkien",
+    "CustomFileName": "88101736452220935",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452220935",
+      "url": "https://www.pinterest.com/pin/88101736452220935/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Tweet / Twitter",
+      "description": " ",
+      "link": "https://twitter.com/AnnRhefn/status/642381219871764480/photo/1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tolkien/",
+        "name": "Tolkien",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7f/bc/85/7fbc85761b07dea402796830261f3c3d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

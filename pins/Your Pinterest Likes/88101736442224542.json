@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442224542/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442224542",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442224542",
+      "url": "https://www.pinterest.com/pin/88101736442224542/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Such Pretty Things",
+      "description": "treat when having company ~ especially with children",
+      "link": "http://suchprettythings.typepad.com/my_weblog/page/15/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/08/5d/8b/085d8b116d901ce9864821ea164dae60.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441896275/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736441896275",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441896275",
+      "url": "https://www.pinterest.com/pin/88101736441896275/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Best \"Cereal\" In the Whole Wide World - the Fitty",
+      "description": "Best “Cereal” - Vegan. Paleo. Primal. Keto. Low carb. http://thefitty.com/best-cereal-in-the-whole-wide-world/ #lowcarb shared on https://facebook.com/lowcarbzen",
+      "link": "http://thefitty.com/best-cereal-in-the-whole-wide-world/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e3/51/83/e351834927c2205c084b1a96e9bdee1f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

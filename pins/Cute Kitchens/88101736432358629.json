@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432358629/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cute-kitchens",
+    "CustomFileName": "88101736432358629",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432358629",
+      "url": "https://www.pinterest.com/pin/88101736432358629/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "witish",
+      "link": "http://angelattable.blogspot.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cute-kitchens/",
+        "name": "Cute Kitchens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9c/64/a6/9c64a633336896c30a534175c4c38ca3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

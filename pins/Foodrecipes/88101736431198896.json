@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431198896/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736431198896",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431198896",
+      "url": "https://www.pinterest.com/pin/88101736431198896/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Jalapeño Cheese Puffs",
+      "description": "Jalapeno Popper Wontons",
+      "link": "http://allrecipes.com/recipe/puffs-2/detail.aspx",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ae/59/a5/ae59a5f05ff31abceced4f2fa01e42c7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

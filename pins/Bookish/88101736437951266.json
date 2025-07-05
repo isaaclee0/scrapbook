@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437951266/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736437951266",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437951266",
+      "url": "https://www.pinterest.com/pin/88101736437951266/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Odd Bits: How to Cook the Rest of the Animal [A Cookbook]",
+      "description": ".",
+      "link": "http://www.amazon.com/exec/obidos/ASIN/158008334X/uncrate-20",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b6/a8/a9/b6a8a948c9a003ebd7a0d4488a86cf04.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

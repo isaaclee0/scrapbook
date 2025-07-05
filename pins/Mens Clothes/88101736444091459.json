@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444091459/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/mens-clothes",
+    "CustomFileName": "88101736444091459",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444091459",
+      "url": "https://www.pinterest.com/pin/88101736444091459/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Tweed + Flannel",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "essiewhitworth",
+        "url": "https://www.pinterest.com/essiewhitworth/",
+        "name": "ESTHER."
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/mens-clothes/",
+        "name": "Men's clothes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1f/54/1b/1f541b6d5d51cf831b74b7cfeb51ee0a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

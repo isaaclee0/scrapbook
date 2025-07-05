@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451808070/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736451808070",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451808070",
+      "url": "https://www.pinterest.com/pin/88101736451808070/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Where the Red Fern Grows - Wikipedia",
+      "description": " ",
+      "link": "https://en.m.wikipedia.org/wiki/Where_the_Red_Fern_Grows",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ca/70/c9/ca70c9fa843d869a3ae63427b3ef3b4b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

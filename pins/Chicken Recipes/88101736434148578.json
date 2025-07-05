@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434148578/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736434148578",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434148578",
+      "url": "https://www.pinterest.com/pin/88101736434148578/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "All Food",
+      "description": "The Very Best BBQ Chicken Legs Recipe",
+      "link": "http://www.yummymummyclub.ca/food",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c8/74/7a/c8747a79f20f0ad15bfe4e01c60f58f0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

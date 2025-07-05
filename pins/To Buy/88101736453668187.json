@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453668187/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/to-buy",
+    "CustomFileName": "88101736453668187",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453668187",
+      "url": "https://www.pinterest.com/pin/88101736453668187/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "images (450×599)",
+      "description": " ",
+      "link": "https://www.vermontcountrystore.com/ccstore/v1/images/?source=/file/v3666872271661083216/products/75212.blu.png&height=700&width=450&outputFormat=JPEG&quality=0.8",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/to-buy/",
+        "name": "To buy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6d/57/e6/6d57e6d04447aa324d8f285c2f0c6424.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

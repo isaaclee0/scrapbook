@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443321564/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443321564",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443321564",
+      "url": "https://www.pinterest.com/pin/88101736443321564/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "22 Words",
+      "description": "dad interrogates his baby girl about who her favorite parent is... Hilarious! :D",
+      "link": "http://twentytwowords.com/2012/01/09/dad-interrogates-his-baby-girl-about-who-her-favorite-parent-is/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1d/b3/b9/1db3b9759faff4f4744c82b50c970fee.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

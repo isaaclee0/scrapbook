@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441443270/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736441443270",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441443270",
+      "url": "https://www.pinterest.com/pin/88101736441443270/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Loving cats",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "abbeyally",
+        "url": "https://www.pinterest.com/abbeyally/",
+        "name": "Abbey Ally"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/08/bd/53/08bd53a681566c76efd29ce22b69ee3d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

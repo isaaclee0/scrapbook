@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435130396/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/narcolepsy",
+    "CustomFileName": "88101736435130396",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435130396",
+      "url": "https://www.pinterest.com/pin/88101736435130396/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Ehh!!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "teatime61",
+        "url": "https://www.pinterest.com/teatime61/",
+        "name": "Tammy Houser"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/narcolepsy/",
+        "name": "Narcolepsy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4d/a3/84/4da384c0f5169d6d92e68071c9e7df8e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

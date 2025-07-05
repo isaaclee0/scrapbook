@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452485060/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736452485060",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452485060",
+      "url": "https://www.pinterest.com/pin/88101736452485060/",
+      "type": "pin",
+      "title": "Slate Grey",
+      "gridTitle": "Slate Grey",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "LunarTidesHair",
+        "url": "https://www.pinterest.com/LunarTidesHair/",
+        "name": "Lunar Tides"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d2/3e/9b/d23e9b16e9fb02ba321c338a3e0cb425.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443675715/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443675715",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443675715",
+      "url": "https://www.pinterest.com/pin/88101736443675715/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Stonor Eagles",
+      "description": "The Stonor Eagles, by William Horwood.",
+      "link": "http://www.amazon.co.uk/The-Stonor-Eagles-William-Horwood/dp/0099455404/ref=ntt_at_ep_dpt_7",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/dc/28/2f/dc282f2da8a52b32a8b9765c1e6da121.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

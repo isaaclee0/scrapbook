@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447119186/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736447119186",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447119186",
+      "url": "https://www.pinterest.com/pin/88101736447119186/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Christmas at the Vicarage",
+      "description": "4 stars. Read in December.",
+      "link": "https://www.goodreads.com/book/show/25704416-christmas-at-the-vicarage",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/15/0d/32/150d3258de6ce5378530891914860c10.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

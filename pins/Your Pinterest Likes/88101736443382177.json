@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443382177/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443382177",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443382177",
+      "url": "https://www.pinterest.com/pin/88101736443382177/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Sammy Davis Jnr The Candy Man",
+      "description": "Sammy Davis Jr. - The Candy Man",
+      "link": "http://www.youtube.com/watch?v=zRf1Ad_Txsg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/45/69/4e/45694e781153a4ea1dfa275f591bdb30.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

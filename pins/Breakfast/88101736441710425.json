@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441710425/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/breakfast",
+    "CustomFileName": "88101736441710425",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441710425",
+      "url": "https://www.pinterest.com/pin/88101736441710425/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "paper & ink",
+      "description": "paper & ink: recipes",
+      "link": "http://bbpaperandink.blogspot.com.au/search/label/recipes",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/breakfast/",
+        "name": "Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/61/70/ac/6170ac0a3975c36ac1e36878df01a6e1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

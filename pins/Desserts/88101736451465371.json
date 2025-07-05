@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451465371/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736451465371",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451465371",
+      "url": "https://www.pinterest.com/pin/88101736451465371/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Sticky Toffee Pudding with Toffee Sauce",
+      "description": " ",
+      "link": "https://www.marthastewart.com/964319/sticky-toffee-pudding-toffee-sauce",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7c/64/2d/7c642db6d9905fb66246905d130fcced.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

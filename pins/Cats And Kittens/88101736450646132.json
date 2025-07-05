@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450646132/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736450646132",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450646132",
+      "url": "https://www.pinterest.com/pin/88101736450646132/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Jay Knuckles on X",
+      "description": "Sample of mischief",
+      "link": "https://twitter.com/Paw_Luv/status/516751107088216064/photo/1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e3/ca/08/e3ca08bc3e68062247f98614cd833216.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

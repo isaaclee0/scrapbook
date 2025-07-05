@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441601968/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/photography",
+    "CustomFileName": "88101736441601968",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441601968",
+      "url": "https://www.pinterest.com/pin/88101736441601968/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Meadows & Fields",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "WendalynnDreams",
+        "url": "https://www.pinterest.com/WendalynnDreams/",
+        "name": "Wendalynn Dreams"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/photography/",
+        "name": "Photography",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/59/f3/20/59f320cc31f6901ea876cce93114c919.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

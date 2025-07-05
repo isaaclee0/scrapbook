@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437945677/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736437945677",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437945677",
+      "url": "https://www.pinterest.com/pin/88101736437945677/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Homemade Italian Dressing (AIP, Paleo, Vegan)",
+      "description": "Don't Eat the Spatula: Homemade Italian Dressing (AIP, Paleo, Vegan)",
+      "link": "http://donteatthespatula.blogspot.com/2015/05/homemade-italian-dressing-aip-paleo.html?m=1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d1/d9/ed/d1d9ed5937f45eb90533876db47edb8a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

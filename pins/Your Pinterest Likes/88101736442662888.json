@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442662888/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442662888",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442662888",
+      "url": "https://www.pinterest.com/pin/88101736442662888/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "YouTube",
+      "description": "Self Defense for Women : How to Get Out of a Front Choke. Teaching my daughter all of these.",
+      "link": "http://www.youtube.com/watch/?v=CD8Sex72UVw",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fc/45/16/fc45168eaedbc71b590eb87fb6a3b0e5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

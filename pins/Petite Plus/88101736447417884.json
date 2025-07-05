@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447417884/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/petite-plus",
+    "CustomFileName": "88101736447417884",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447417884",
+      "url": "https://www.pinterest.com/pin/88101736447417884/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "É incrível ver a diferença, nem parece a mesma pessoa!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "e360graus",
+        "url": "https://www.pinterest.com/e360graus/",
+        "name": "Estilo 360 graus"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/petite-plus/",
+        "name": "Petite plus",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ab/4c/bb/ab4cbbe11879cce1a2406e1e7c876600.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448828301/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/birthday",
+    "CustomFileName": "88101736448828301",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448828301",
+      "url": "https://www.pinterest.com/pin/88101736448828301/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "dennistheprescott",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "kath1193",
+        "url": "https://www.pinterest.com/kath1193/",
+        "name": "Catherine"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/birthday/",
+        "name": "Birthday",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e8/af/b1/e8afb1769d8cfcb3f869232dadd814d1.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

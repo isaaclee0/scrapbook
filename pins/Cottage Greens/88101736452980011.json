@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452980011/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-greens",
+    "CustomFileName": "88101736452980011",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452980011",
+      "url": "https://www.pinterest.com/pin/88101736452980011/",
+      "type": "pin",
+      "title": "Colors",
+      "gridTitle": "Colors",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "maddlibbs",
+        "url": "https://www.pinterest.com/maddlibbs/",
+        "name": "Libby Morris"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-greens/",
+        "name": "Cottage Greens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c0/64/f9/c064f9db8267f0aaeb92c0af38f389be.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

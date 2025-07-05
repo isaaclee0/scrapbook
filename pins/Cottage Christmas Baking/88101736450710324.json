@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450710324/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-christmas-baking",
+    "CustomFileName": "88101736450710324",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450710324",
+      "url": "https://www.pinterest.com/pin/88101736450710324/",
+      "type": "pin",
+      "title": "EASY Decorated Sugar Cookies",
+      "gridTitle": "EASY Decorated Sugar Cookies",
+      "description": "All you need is the BEST sugar cookie frosting and pastry tip 98 to create easy Christmas cookies.",
+      "link": "https://www.skiptomylou.org/sugar-cookie-frosting/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "skiptomyloublog",
+        "url": "https://www.pinterest.com/skiptomyloublog/",
+        "name": "Skip to my Lou"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-christmas-baking/",
+        "name": "Cottage Christmas Baking",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/67/a8/99/67a899d610f6614ef1e87f4049169876.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/81/b2/6f/81b26f1211ed965a109202a29255c565.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

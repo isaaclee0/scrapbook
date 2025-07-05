@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453285018/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/collies-and-shelties",
+    "CustomFileName": "88101736453285018",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453285018",
+      "url": "https://www.pinterest.com/pin/88101736453285018/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Colin!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/collies-and-shelties/",
+        "name": "Collies and Shelties",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c4/d9/58/c4d958f22c91e46a11d052437c6aea7a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

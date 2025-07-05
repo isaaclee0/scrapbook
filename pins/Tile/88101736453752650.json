@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453752650/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tile",
+    "CustomFileName": "88101736453752650",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453752650",
+      "url": "https://www.pinterest.com/pin/88101736453752650/",
+      "type": "pin",
+      "title": "Moroccan Tiles ",
+      "gridTitle": "Moroccan Tiles",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "moroccanmosaic",
+        "url": "https://www.pinterest.com/moroccanmosaic/",
+        "name": "Sahara Tile"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tile/",
+        "name": "Tile",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/59/0a/92/590a92f2a528df78df4d3b9d42c20f01.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

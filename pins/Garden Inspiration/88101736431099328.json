@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431099328/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/garden-inspiration",
+    "CustomFileName": "88101736431099328",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431099328",
+      "url": "https://www.pinterest.com/pin/88101736431099328/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "home",
+      "description": "overgrown",
+      "link": "http://home-biba.blogspot.com/search?updated-max=2010-04-19T12:17:00%2B01:00&max-results=7",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/garden-inspiration/",
+        "name": "Garden Inspiration",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e9/44/b3/e944b3c2b13383ab117828c723859db6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

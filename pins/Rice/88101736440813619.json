@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440813619/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/rice",
+    "CustomFileName": "88101736440813619",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440813619",
+      "url": "https://www.pinterest.com/pin/88101736440813619/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Salmon Belly Recipe",
+      "description": "Salmon Belly",
+      "link": "http://www.notquitenigella.com/2016/04/10/salmon-belly-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "notquitenigella",
+        "url": "https://www.pinterest.com/notquitenigella/",
+        "name": "Not Quite Nigella"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/rice/",
+        "name": "Rice",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3d/67/e8/3d67e86f6f50ec1d9c4b923a1caa3001.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

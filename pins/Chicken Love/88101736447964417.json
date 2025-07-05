@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447964417/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-love",
+    "CustomFileName": "88101736447964417",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447964417",
+      "url": "https://www.pinterest.com/pin/88101736447964417/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "link": "https://www.instagram.com/p/BjAWZMIFbxH/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "sharpe_k",
+        "url": "https://www.pinterest.com/sharpe_k/",
+        "name": "Kimberly Sharpe"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-love/",
+        "name": "Chicken love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c0/d9/e1/c0d9e198c5dbc49bcb89655d4a46958d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

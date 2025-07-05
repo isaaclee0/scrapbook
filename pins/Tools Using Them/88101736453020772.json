@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453020772/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tools-using-them",
+    "CustomFileName": "88101736453020772",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453020772",
+      "url": "https://www.pinterest.com/pin/88101736453020772/",
+      "type": "pin",
+      "title": "Woodworking Tips",
+      "gridTitle": "Woodworking Tips",
+      "description": " ",
+      "link": "https://t.me/creative_woodworking",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "iazdblog",
+        "url": "https://www.pinterest.com/iazdblog/",
+        "name": "Home Improvement DIY Projects"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tools-using-them/",
+        "name": "Tools - using them",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e1/49/c3/e149c35ab883563f21a2b832aa1055f9.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/4a/eb/a7/4aeba7a32d57e5e17ac8451b2bc5e5f1.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

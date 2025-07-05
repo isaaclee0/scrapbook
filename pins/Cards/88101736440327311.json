@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440327311/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cards",
+    "CustomFileName": "88101736440327311",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440327311",
+      "url": "https://www.pinterest.com/pin/88101736440327311/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Shabby Spring",
+      "description": "Designs by Sharon: Shabby Spring",
+      "link": "http://www.inkwooddesign.com/2013/05/shabby-spring.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cards/",
+        "name": "Cards",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0b/8a/63/0b8a63f58c7e05ef2dc1a8b4558a09da.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

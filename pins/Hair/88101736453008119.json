@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453008119/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736453008119",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453008119",
+      "url": "https://www.pinterest.com/pin/88101736453008119/",
+      "type": "pin",
+      "title": "Just a little spin by Olivia Danielle",
+      "gridTitle": "Just a little spin by Olivia Danielle",
+      "description": " ",
+      "link": "http://www.pinterest.com/nothingbutpixies",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "nothingbutpixies",
+        "url": "https://www.pinterest.com/nothingbutpixies/",
+        "name": "Nothing But Pixies"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f8/18/98/f818984478e24ceeeb83e1c5cd3a0c84.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/f3/b9/16/f3b916aa0d8a36e6da91997518fa3d48.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

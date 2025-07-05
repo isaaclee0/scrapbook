@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443723380/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443723380",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443723380",
+      "url": "https://www.pinterest.com/pin/88101736443723380/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Simon & Garfunkel - Cecilia",
+      "description": "Repinning... want it near the top. Simon & Garfunkel - Cecilia... I can't resist turning this one up.",
+      "link": "http://www.youtube.com/watch?v=a5_QV97eYqM&feature=related",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/38/10/92/3810920dca3d775fb0e01667e7f991cc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453509153/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/rhubarb-recipes",
+    "CustomFileName": "88101736453509153",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453509153",
+      "url": "https://www.pinterest.com/pin/88101736453509153/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Gâteau à la rhubarbe - Maman...ça déborde",
+      "description": " ",
+      "link": "https://mamancadeborde.com/gateau-a-la-rhubarbe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/rhubarb-recipes/",
+        "name": "Rhubarb Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c3/a5/a7/c3a5a7954d9cc61382e1fae19f96f147.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

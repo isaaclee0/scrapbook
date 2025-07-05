@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442841301/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442841301",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442841301",
+      "url": "https://www.pinterest.com/pin/88101736442841301/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Farm Table Tutorial",
+      "link": "http://missmustardseed.com/2011/11/farm-table-tutorial/?utm_source=rss&utm_medium=rss&utm_campaign=farm-table-tutorial",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/90/57/ef/9057ef7a65cb8db81036a5c451a4582e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

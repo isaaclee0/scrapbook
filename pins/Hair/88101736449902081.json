@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449902081/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736449902081",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449902081",
+      "url": "https://www.pinterest.com/pin/88101736449902081/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Pinterest",
+      "description": "Pin by orni on Capelli e bellezza in 2019",
+      "link": "https://pin.it/6vtantg7m2wisz",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/79/70/67/79706744ae87d2bf0cc44073f402367b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

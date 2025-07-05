@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433337613/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/soup",
+    "CustomFileName": "88101736433337613",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433337613",
+      "url": "https://www.pinterest.com/pin/88101736433337613/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Smoky Corn Chowder - foodgawker",
+      "description": "An easy-to-make and flavorful smoky corn chowder, perfect for cool nights.",
+      "link": "http://foodgawker.com/post/2012/09/14/191589/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/soup/",
+        "name": "Soup",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1e/07/66/1e07668aff243a3259dea96de6eb6fef.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447070886/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/storage-ideas",
+    "CustomFileName": "88101736447070886",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447070886",
+      "url": "https://www.pinterest.com/pin/88101736447070886/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Organisation",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "YakoRhals",
+        "url": "https://www.pinterest.com/YakoRhals/",
+        "name": "Benjamin Yako-Rhals"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/storage-ideas/",
+        "name": "Storage ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ed/31/f0/ed31f0a527edb1989816fbbf9d473a94.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

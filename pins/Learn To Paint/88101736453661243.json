@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453661243/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/learn-to-paint",
+    "CustomFileName": "88101736453661243",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453661243",
+      "url": "https://www.pinterest.com/pin/88101736453661243/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "feliciaheesen_",
+        "url": "https://www.pinterest.com/feliciaheesen_/",
+        "name": "Felicia Heesen"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/learn-to-paint/",
+        "name": "Learn To Paint",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/43/c7/85/43c785fc2f9fa87cbea2b97b6fc05839.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/c9/58/52/c95852f4f75a6f182a76b0766b35a332.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

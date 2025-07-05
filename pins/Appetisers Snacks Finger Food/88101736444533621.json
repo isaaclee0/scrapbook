@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444533621/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/appetisers-snacks-finger-food",
+    "CustomFileName": "88101736444533621",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444533621",
+      "url": "https://www.pinterest.com/pin/88101736444533621/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Creamy Spinach-Stuffed Mushrooms Recipe by Tasty",
+      "description": "Creamy Spinach-Stuffed Mushrooms",
+      "link": "https://www.buzzfeed.com/clairenolan/creamy-spinach-stuffed-mushrooms?bffbtasty&ref=bffbtasty&utm_term=4ldradw#4ldradw",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "buzzfeedtasty",
+        "url": "https://www.pinterest.com/buzzfeedtasty/",
+        "name": "Tasty"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/appetisers-snacks-finger-food/",
+        "name": "Appetisers Snacks Finger Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/11/24/82/1124828350a1f1f84a8983bb78679187.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/ff/ef/c8/ffefc87f6e423a79ba5f51d72f87166a.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

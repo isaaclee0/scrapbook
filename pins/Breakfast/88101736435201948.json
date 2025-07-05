@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435201948/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/breakfast",
+    "CustomFileName": "88101736435201948",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435201948",
+      "url": "https://www.pinterest.com/pin/88101736435201948/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Breakfast Pizza Recipes",
+      "link": "http://www.recipe.com/recipes/breakfast-brunch/pizza/popular/?sssdmh=dm17.588172&esrc=nwdr032912c&email=4050810082",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/breakfast/",
+        "name": "Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/72/ee/bc/72eebc3fc52702b40b8996d73c486912.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

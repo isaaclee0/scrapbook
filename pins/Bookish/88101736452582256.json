@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452582256/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736452582256",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452582256",
+      "url": "https://www.pinterest.com/pin/88101736452582256/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Summer at Mulberry Cottage",
+      "description": " ",
+      "link": "https://www.amazon.com.au/dp/B00VM5B0FG/ref=cm_sw_r_pi_dp_7WIlwb1KY3XR6",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 14,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d2/ff/31/d2ff318331197181d43694da5572d57d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452794953/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/courtyardpatio",
+    "CustomFileName": "88101736452794953",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452794953",
+      "url": "https://www.pinterest.com/pin/88101736452794953/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Stoep voordeur",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "nijlandrene",
+        "url": "https://www.pinterest.com/nijlandrene/",
+        "name": "rene nijland"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/courtyardpatio/",
+        "name": "Courtyard/Patio",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ab/88/0e/ab880e5bfaa8b3c6c24dafcd45908cc7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

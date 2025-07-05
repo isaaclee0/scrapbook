@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443386108/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443386108",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443386108",
+      "url": "https://www.pinterest.com/pin/88101736443386108/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "The laundry tub",
+      "link": "http://nara.allehanda.se/nara.asp?pnr=8&ArtId=15849",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a4/48/57/a44857a9cdb2138c2a5df6fbe84e75d1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

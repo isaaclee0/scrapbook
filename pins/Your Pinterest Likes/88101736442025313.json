@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442025313/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442025313",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442025313",
+      "url": "https://www.pinterest.com/pin/88101736442025313/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "How to Make Baby Leg Warmers",
+      "description": "DIY baby leggings",
+      "link": "http://babymakingmachine.blogspot.com/2010/03/how-to-make-baby-leg-warmers.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/91/65/94/916594f96e00b3a74a3c4f0f7ab8d2da.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437896950/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/anti-pasti",
+    "CustomFileName": "88101736437896950",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437896950",
+      "url": "https://www.pinterest.com/pin/88101736437896950/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/anti-pasti/",
+        "name": "Anti Pasti",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d2/be/ef/d2beef81fe0d02abf4f8e89290b29a4f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

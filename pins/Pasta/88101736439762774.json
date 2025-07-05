@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439762774/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pasta",
+    "CustomFileName": "88101736439762774",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439762774",
+      "url": "https://www.pinterest.com/pin/88101736439762774/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Pesto Pasta with Sun Dried Tomatoes and Roasted Asparagus",
+      "description": "Pesto Pasta with Sun Dried Tomatoes and Roasted Asparagus",
+      "link": "http://damndelicious.net/2012/07/21/pesto-pasta-with-sun-dried-tomatoes-and-roasted/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pasta/",
+        "name": "Pasta",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/10/a1/d0/10a1d0f106d2af32fa4e2cff47849f24.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

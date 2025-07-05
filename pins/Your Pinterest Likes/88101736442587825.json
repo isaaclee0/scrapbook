@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442587825/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442587825",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442587825",
+      "url": "https://www.pinterest.com/pin/88101736442587825/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Facebook",
+      "description": "Best reason to be pro-life! What a great kid!!! :)",
+      "link": "https://www.facebook.com/photo.php?fbid=232331486826080&set=a.227189217340307.57113.165284543530775&type=1&theater",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b7/e1/fa/b7e1fa6879fb32ff8d114a22df991f33.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

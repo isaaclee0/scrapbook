@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439021794/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pasta",
+    "CustomFileName": "88101736439021794",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439021794",
+      "url": "https://www.pinterest.com/pin/88101736439021794/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Easy Spicy Southern Chicken Spaghetti",
+      "description": "Chicken spaghetti",
+      "link": "http://delightfuldeliciousdelovelyblog.wordpress.com/2013/12/11/easy-spicy-southern-chicken-spaghetti/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "cheryl_vanallen",
+        "url": "https://www.pinterest.com/cheryl_vanallen/",
+        "name": "Cheryl Van Allen"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pasta/",
+        "name": "Pasta",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1f/14/5f/1f145fb8a727124878ca2975c9beb5e6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

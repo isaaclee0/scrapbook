@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443309242/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443309242",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443309242",
+      "url": "https://www.pinterest.com/pin/88101736443309242/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "HugeDomains.com - Shop for over 300,000 Premium Domains",
+      "description": "Leaf stepping stones",
+      "link": "http://www.herbsinthegarden.com/concrete-leaves/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/13/37/96/1337960d6b4b52dd990bca081d9d8329.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

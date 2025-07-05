@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442463662/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442463662",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442463662",
+      "url": "https://www.pinterest.com/pin/88101736442463662/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Desserts - Fruits being bad!",
+      "description": "The newest camping dessert!     Strawberries dipped in marshmallow fluff and then roasted over a campfire.",
+      "link": "http://frostmeblog.blogspot.com/2012/02/desserts-fruits-being-bad.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/66/bc/e5/66bce5a867d0cce832a962ca8f6ab830.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

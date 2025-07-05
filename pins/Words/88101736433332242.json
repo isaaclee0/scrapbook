@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433332242/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736433332242",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433332242",
+      "url": "https://www.pinterest.com/pin/88101736433332242/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "We Heart It",
+      "description": "Depression",
+      "link": "http://weheartit.com/entry/17380218",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0c/7f/6e/0c7f6e5dc53c02938ca2442881558357.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444062822/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736444062822",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444062822",
+      "url": "https://www.pinterest.com/pin/88101736444062822/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Skip the Candy Store and Make Your Own Cola Gummies",
+      "description": "Cola Bottle Gummies",
+      "link": "https://www.thespruce.com/cola-gummies-520894",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0b/01/fa/0b01fad331b6e85a808a75f78d6272a3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

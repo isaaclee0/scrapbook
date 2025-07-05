@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442135945/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442135945",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442135945",
+      "url": "https://www.pinterest.com/pin/88101736442135945/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "I'm so like this. Infertility sucks!!!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "sosinf",
+        "url": "https://www.pinterest.com/sosinf/",
+        "name": "Asociatia Sos Infertilitatea"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e3/10/10/e31010a3326b97fc30be4aee0da6cd6d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

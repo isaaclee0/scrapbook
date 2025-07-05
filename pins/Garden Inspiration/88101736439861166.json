@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439861166/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/garden-inspiration",
+    "CustomFileName": "88101736439861166",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439861166",
+      "url": "https://www.pinterest.com/pin/88101736439861166/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Welcome to my front yard garden :-)",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/garden-inspiration/",
+        "name": "Garden Inspiration",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cf/00/55/cf0055682d387c00ee8897b71254f8ab.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

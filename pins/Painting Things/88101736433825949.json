@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433825949/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painting-things",
+    "CustomFileName": "88101736433825949",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433825949",
+      "url": "https://www.pinterest.com/pin/88101736433825949/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Pretty color next to the gray.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "jeannec58",
+        "url": "https://www.pinterest.com/jeannec58/",
+        "name": "Jeanne Scottiemom"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painting-things/",
+        "name": "Painting things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ca/4e/47/ca4e4727858a847254420a19f9b4355d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435760201/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736435760201",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435760201",
+      "url": "https://www.pinterest.com/pin/88101736435760201/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Gotta try this",
+      "link": "http://theberry.com/2012/02/12/sunday-brunch-60-photos-16/sb-random-50-16/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b3/99/b2/b399b26b368c4d6fe2282138cedef023.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

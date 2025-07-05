@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453638742/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tile",
+    "CustomFileName": "88101736453638742",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453638742",
+      "url": "https://www.pinterest.com/pin/88101736453638742/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Como",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "alebertoldini",
+        "url": "https://www.pinterest.com/alebertoldini/",
+        "name": "Alessandra Bertoldini"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tile/",
+        "name": "Tile",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/63/99/a5/6399a5184d5b5a671959e4f49ad79b93.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

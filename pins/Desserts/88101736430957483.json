@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430957483/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736430957483",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430957483",
+      "url": "https://www.pinterest.com/pin/88101736430957483/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Brownie Pudding - Everyday Annie",
+      "description": "brownie pudding",
+      "link": "http://annies-eats.net/2010/02/16/brownie-pudding/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ac/90/fe/ac90fef00c9292413ab85f248682cc7a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

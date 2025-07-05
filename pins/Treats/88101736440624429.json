@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440624429/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736440624429",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440624429",
+      "url": "https://www.pinterest.com/pin/88101736440624429/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Super-Fudgy Double Chocolate Brownie",
+      "description": "Fudgy, chocolatey, gooey, thick - you’re warned: this homemade brownie recipe is…",
+      "link": "http://www.eatwell101.com/double-chocolate-brownie-recipe",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9e/2e/05/9e2e05137dadad65fc477d46a60d7a2e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

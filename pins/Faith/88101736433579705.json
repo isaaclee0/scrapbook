@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433579705/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736433579705",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433579705",
+      "url": "https://www.pinterest.com/pin/88101736433579705/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Does this apply to dieting?",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "jolene89",
+        "url": "https://www.pinterest.com/jolene89/",
+        "name": "Jolene Combs"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e3/e1/ea/e3e1eaa70fca877603f0227fdd4f4ea7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

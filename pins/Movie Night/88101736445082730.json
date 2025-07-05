@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445082730/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736445082730",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445082730",
+      "url": "https://www.pinterest.com/pin/88101736445082730/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Bramwell is one of the best series EVER on Netflix.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9f/a3/ad/9fa3ad3fb860d5f2441fe7478d5e2cbd.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

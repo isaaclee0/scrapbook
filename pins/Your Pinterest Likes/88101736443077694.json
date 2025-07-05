@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443077694/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443077694",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443077694",
+      "url": "https://www.pinterest.com/pin/88101736443077694/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Wish more children would pick weeds and garden!",
+      "link": "http://ties2thepast.blogspot.com/2012/03/wood-box-cherry-pie-and-lilac-bush.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/38/07/ff/3807ff9ec0d17ae856e8aca8ef7e0e4f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

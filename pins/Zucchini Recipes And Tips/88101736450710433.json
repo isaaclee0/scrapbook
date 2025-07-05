@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450710433/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/zucchini-recipes-and-tips",
+    "CustomFileName": "88101736450710433",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450710433",
+      "url": "https://www.pinterest.com/pin/88101736450710433/",
+      "type": "pin",
+      "title": "APÉRO COURGETTE ",
+      "gridTitle": "APÉRO COURGETTE",
+      "description": " ",
+      "link": "https://www.chefclub.tv/fr/recettes/original/b5ae22d5-adf1-4d1f-924e-7ec87e16dc52/ap%C3%A9ro-courgette-petites-bouch%C3%A9es-croustillantes-et-leur-coeur-fondant-de-mozzarella/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 6,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "chefclubnw",
+        "url": "https://www.pinterest.com/chefclubnw/",
+        "name": "Chefclub"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/zucchini-recipes-and-tips/",
+        "name": "Zucchini - recipes and tips",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a2/af/e8/a2afe8bbd0584b88ae42b63376128bea.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/dc/ed/0b/dced0b6f23e741ef548c2cf0ab398d4b.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

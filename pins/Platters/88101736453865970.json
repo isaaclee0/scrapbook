@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453865970/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/platters",
+    "CustomFileName": "88101736453865970",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453865970",
+      "url": "https://www.pinterest.com/pin/88101736453865970/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Gourmet Chocolate Dessert Board",
+      "description": " ",
+      "link": "https://domesticallyblissful.com/gourmet-chocolate-dessert-board/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/platters/",
+        "name": "Platters",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5f/14/43/5f14430d1bd0a5e154fa333195f42219.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

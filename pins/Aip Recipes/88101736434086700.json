@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434086700/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736434086700",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434086700",
+      "url": "https://www.pinterest.com/pin/88101736434086700/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "A dozen grain-free breads/muffins (AIP friendly)",
+      "link": "http://www.tgipaleo.com/category/breads-muffins/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b2/28/e6/b228e6c9e6d13487b3b299945928d58e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

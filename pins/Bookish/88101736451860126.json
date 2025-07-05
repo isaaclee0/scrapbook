@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451860126/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736451860126",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451860126",
+      "url": "https://www.pinterest.com/pin/88101736451860126/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "1916 Kate Douglas Wiggin, The Romance of a Christmas Card",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 8,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/91/44/a2/9144a2c848c2955e4644f155e016b43c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

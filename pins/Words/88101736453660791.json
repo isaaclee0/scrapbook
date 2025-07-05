@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453660791/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736453660791",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453660791",
+      "url": "https://www.pinterest.com/pin/88101736453660791/",
+      "type": "pin",
+      "title": "Say it",
+      "gridTitle": "Say it",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "MichelleLeeKanides",
+        "url": "https://www.pinterest.com/MichelleLeeKanides/",
+        "name": "Michelle Lee"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6f/77/5e/6f775ef5b28e9dda0a2565aca15f1b07.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

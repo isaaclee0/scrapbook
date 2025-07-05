@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452529455/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tile",
+    "CustomFileName": "88101736452529455",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452529455",
+      "url": "https://www.pinterest.com/pin/88101736452529455/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Tidylife",
+      "description": " ",
+      "link": "http://www.tidyawaytoday.co.uk/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tile/",
+        "name": "Tile",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2b/23/48/2b2348427ef6f9d702ba297b0254d586.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

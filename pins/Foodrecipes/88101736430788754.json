@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430788754/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430788754",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430788754",
+      "url": "https://www.pinterest.com/pin/88101736430788754/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Eggs Benedict Casserole",
+      "description": "Eggs Benedict Casserole",
+      "link": "http://www.tasteofhome.com/Recipes/Eggs-Benedict-Casserole#.T8rwibKuy-5.pinterest",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a8/55/52/a85552bb76fd9779d188675a8f7238f5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

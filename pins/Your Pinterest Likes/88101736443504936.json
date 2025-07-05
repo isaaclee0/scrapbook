@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443504936/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443504936",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443504936",
+      "url": "https://www.pinterest.com/pin/88101736443504936/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "groomsmenswag.com",
+      "description": "Rustic wedding",
+      "link": "http://www.groomsmenswag.com/post/56791265788/classy-groomsmen",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/03/19/72/03197220a6159766fa24c8677db35aa4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

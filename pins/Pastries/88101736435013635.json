@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435013635/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pastries",
+    "CustomFileName": "88101736435013635",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435013635",
+      "url": "https://www.pinterest.com/pin/88101736435013635/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Caramelized Onion Tart with Gruyère & Fresh Thyme",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "marialivia01",
+        "url": "https://www.pinterest.com/marialivia01/",
+        "name": "Marialivia -"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pastries/",
+        "name": "pastries",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c9/2b/5d/c92b5d341168893a584b30650d53232a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

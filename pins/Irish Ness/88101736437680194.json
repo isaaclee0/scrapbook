@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437680194/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/irish-ness",
+    "CustomFileName": "88101736437680194",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437680194",
+      "url": "https://www.pinterest.com/pin/88101736437680194/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Luck Of The Irish",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "mayraven",
+        "url": "https://www.pinterest.com/mayraven/",
+        "name": "Elizabeth Wise"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/irish-ness/",
+        "name": "Irish - ness",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8d/1f/c9/8d1fc977dac4c5773fa6bacd5a5035ee.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

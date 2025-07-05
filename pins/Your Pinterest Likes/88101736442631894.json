@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442631894/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442631894",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442631894",
+      "url": "https://www.pinterest.com/pin/88101736442631894/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "theoldpaintedcottage.com -&nbsptheoldpaintedcottage Resources and Information.",
+      "description": "cake plate",
+      "link": "http://theoldpaintedcottage.com/pages/cotm-feb-12.htm",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4d/04/3f/4d043f6563a9d1047761e2444a3c9f89.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

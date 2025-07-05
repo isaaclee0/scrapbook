@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450066945/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/budgie-love",
+    "CustomFileName": "88101736450066945",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450066945",
+      "url": "https://www.pinterest.com/pin/88101736450066945/",
+      "type": "pin",
+      "title": "Follow @ HiddenHebrewess for more pins! ♡",
+      "gridTitle": "Follow @ HiddenHebrewess for more pins! ♡",
+      "description": " ",
+      "link": "http://www.bakedbubblegum.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "HiddenHebrewess",
+        "url": "https://www.pinterest.com/HiddenHebrewess/",
+        "name": "Jazmine 👑"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/budgie-love/",
+        "name": "Budgie Love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/02/52/2b/02522bd8b1db5108a01fc81e81440c4f.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/7b/9c/f4/7b9cf47e9e8be724496830e27bdbdbdd.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

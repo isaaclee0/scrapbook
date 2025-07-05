@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451092924/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/for-linda",
+    "CustomFileName": "88101736451092924",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451092924",
+      "url": "https://www.pinterest.com/pin/88101736451092924/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Rose 'super star'  for poppy",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/for-linda/",
+        "name": "For Linda",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/63/ab/f6/63abf6ae9337547b8ac5ab0d30f047f5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

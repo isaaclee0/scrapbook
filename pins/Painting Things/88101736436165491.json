@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436165491/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painting-things",
+    "CustomFileName": "88101736436165491",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436165491",
+      "url": "https://www.pinterest.com/pin/88101736436165491/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Audrey Hepburn Complex",
+      "description": "Letters",
+      "link": "http://audreyhepburncomplex.tumblr.com/page/44",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painting-things/",
+        "name": "Painting things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f6/13/6b/f6136b4e20382e700a03d43ab43e91e3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

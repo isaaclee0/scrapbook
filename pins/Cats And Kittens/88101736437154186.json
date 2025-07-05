@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437154186/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736437154186",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437154186",
+      "url": "https://www.pinterest.com/pin/88101736437154186/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Help a homeless stray.",
+      "link": "https://scontent-b-atl.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/10600617_663882010393713_1413763084189071550_n.jpg?oh=539b13ccf86485d77a1ce67f8dbf1aaa&oe=55678B04",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/09/20/de/0920de5e50b4b7971421dc0806a9ded8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453714355/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/budgie-love",
+    "CustomFileName": "88101736453714355",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453714355",
+      "url": "https://www.pinterest.com/pin/88101736453714355/",
+      "type": "pin",
+      "title": "Fresh Food for the Flock",
+      "gridTitle": "Fresh Food for the Flock",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "cayr",
+        "url": "https://www.pinterest.com/cayr/",
+        "name": "Cayr"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/budgie-love/",
+        "name": "Budgie Love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/71/a9/e9/71a9e950521754be3453ea629511b401.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

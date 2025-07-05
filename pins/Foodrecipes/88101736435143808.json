@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435143808/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736435143808",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435143808",
+      "url": "https://www.pinterest.com/pin/88101736435143808/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Scalloped Cabbage Casserole",
+      "description": "\"Scalloped Cabbage Casserole Recipe\" . This would be a great dish to go along side Corned Beef for St. Patty's Day !",
+      "link": "http://www.tasteofhome.com/recipes/Scalloped-Cabbage-Casserole",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c9/00/45/c900456dbc0b2ba0af92b6a4bbfcd441.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

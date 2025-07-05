@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453434801/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736453434801",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453434801",
+      "url": "https://www.pinterest.com/pin/88101736453434801/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Mothering Sunday",
+      "description": " ",
+      "link": "https://www.goodreads.com/book/show/3193004-mothering-sunday",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/16/33/d6/1633d668b33e311d6bd857d5b1bee8d4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

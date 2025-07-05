@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442940169/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442940169",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442940169",
+      "url": "https://www.pinterest.com/pin/88101736442940169/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "My Repurposed Life",
+      "description": "Repurposed FILING cabinet",
+      "link": "http://www.myrepurposedlife.net/2012/05/catch-as-catch-can-72.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0a/f9/d2/0af9d25cbbdc47f50eeb981bc5366c7d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

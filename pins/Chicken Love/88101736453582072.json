@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453582072/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-love",
+    "CustomFileName": "88101736453582072",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453582072",
+      "url": "https://www.pinterest.com/pin/88101736453582072/",
+      "type": "pin",
+      "title": "Chicken flock eating veggies threaded on wire",
+      "gridTitle": "Chicken flock eating veggies threaded on wire",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Justforanimallovers",
+        "url": "https://www.pinterest.com/Justforanimallovers/",
+        "name": "fig.animals"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-love/",
+        "name": "Chicken love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4b/f4/1b/4bf41b56d8305ac1686cb494cbb6c301.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/ce/ee/26/ceee26996f3dc24a013b8c7e07b3d61d.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433726745/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736433726745",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433726745",
+      "url": "https://www.pinterest.com/pin/88101736433726745/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Love me some tea",
+      "link": "http://theberry.com/2012/02/21/need-a-little-motivation-30-photos/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 8,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c2/10/a0/c210a0e4d81f8603be6d258dc0f4cbe3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446351735/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/landscaping-ideas",
+    "CustomFileName": "88101736446351735",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446351735",
+      "url": "https://www.pinterest.com/pin/88101736446351735/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Circular path",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/landscaping-ideas/",
+        "name": "landscaping ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/07/35/d9/0735d9f6e025f765935a62e8d60b8b00.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

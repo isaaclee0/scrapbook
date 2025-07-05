@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451611868/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736451611868",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451611868",
+      "url": "https://www.pinterest.com/pin/88101736451611868/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "SSO",
+      "description": "Shutterfly | Manage my pictures",
+      "link": "https://www.shutterfly.com/lightbox/view.sfly?fid=94b299bdf195bd2dc7e45aad1e0cdff4#1491156224616",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/de/42/46/de42468bd263a2697d9c4d92d86fd206.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

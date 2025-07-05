@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453497706/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-dishes",
+    "CustomFileName": "88101736453497706",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453497706",
+      "url": "https://www.pinterest.com/pin/88101736453497706/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "pears",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "fadedcharm",
+        "url": "https://www.pinterest.com/fadedcharm/",
+        "name": "Faded Charm Living"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-dishes/",
+        "name": "Cottage Dishes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/40/f4/7b/40f47b2d43b1b08b79cbe1dd9739b0a0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

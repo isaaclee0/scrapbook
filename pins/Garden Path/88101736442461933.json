@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442461933/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/garden-path",
+    "CustomFileName": "88101736442461933",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442461933",
+      "url": "https://www.pinterest.com/pin/88101736442461933/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "yellow border;)",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "siafanar",
+        "url": "https://www.pinterest.com/siafanar/",
+        "name": "Siafanar Bos"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/garden-path/",
+        "name": "Garden Path",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/91/b2/5e/91b25e25e7a6b172d4d7bf0bfcd5d628.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446368719/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/rabbit-care",
+    "CustomFileName": "88101736446368719",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446368719",
+      "url": "https://www.pinterest.com/pin/88101736446368719/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "One spoilt bunny!!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/rabbit-care/",
+        "name": "Rabbit care",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c6/c1/88/c6c1882a1cd83a05830b7b5af1f77c96.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441114082/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736441114082",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441114082",
+      "url": "https://www.pinterest.com/pin/88101736441114082/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Ciasto czekoladowe z bezą",
+      "description": "~ flourless chocolate cake + chocolate meringue ~",
+      "link": "http://www.kwestiasmaku.com/desery/czekolada/ciasto_czekoladowe_z_beza/przepis.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "bromabakery",
+        "url": "https://www.pinterest.com/bromabakery/",
+        "name": "Sarah Fennel | Broma Bakery"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4e/0a/99/4e0a99faee54121a4c95bb6f0452499a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

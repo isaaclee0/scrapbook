@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437655232/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736437655232",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437655232",
+      "url": "https://www.pinterest.com/pin/88101736437655232/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Marshmallow Popcorn Recipe - Today's Mama",
+      "description": "Butter, brown sugar and marshmellows....pour over popcorn....sinful!!",
+      "link": "http://portland.todaysmama.com/2012/04/marshmallow-popcorn-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/34/96/29/349629e53147742b45a868445cd76742.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

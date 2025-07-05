@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436475525/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736436475525",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436475525",
+      "url": "https://www.pinterest.com/pin/88101736436475525/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Birthday cakes for my 3 kids",
+      "description": "beach party cake",
+      "link": "http://www.flickr.com/photos/45637397@N03/5846176759/in/photostream",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/06/2f/01/062f01684fe25de2a15ae0865b22e034.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

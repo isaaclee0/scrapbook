@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430577608/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430577608",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430577608",
+      "url": "https://www.pinterest.com/pin/88101736430577608/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Chilis salsa",
+      "link": "http://sixsistersstuff.blogspot.com/2011/11/chilis-copycat-salsa-recipe.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f5/4f/93/f54f9340b2ead4f04a4c01af5adafcd0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

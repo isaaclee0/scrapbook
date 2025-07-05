@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452503597/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736452503597",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452503597",
+      "url": "https://www.pinterest.com/pin/88101736452503597/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "One year into transition..had it chopped off with some dyed ends left.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "kkuzak1",
+        "url": "https://www.pinterest.com/kkuzak1/",
+        "name": "Kitty Kuzak"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/29/b2/d7/29b2d7a307b17b918703320152c61c1c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

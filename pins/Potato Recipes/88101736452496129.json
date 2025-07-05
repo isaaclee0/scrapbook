@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452496129/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potato-recipes",
+    "CustomFileName": "88101736452496129",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452496129",
+      "url": "https://www.pinterest.com/pin/88101736452496129/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Easy Baked Gnocchi with Tomatoes and Mozzarella",
+      "description": "eintopf",
+      "link": "http://www.floatingkitchen.net/easy-baked-gnocchi-with-tomatoes-and-mozzarella/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "herzeliebblog",
+        "url": "https://www.pinterest.com/herzeliebblog/",
+        "name": "herzelieb"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potato-recipes/",
+        "name": "Potato Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/22/64/89/2264894150fee53fcb987a2feb953536.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445474861/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pots-eds",
+    "CustomFileName": "88101736445474861",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445474861",
+      "url": "https://www.pinterest.com/pin/88101736445474861/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Dysautonomia",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "sarahmar_r",
+        "url": "https://www.pinterest.com/sarahmar_r/",
+        "name": "Sarah Marie"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pots-eds/",
+        "name": "POTS EDS",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d1/af/f6/d1aff6c9196869fd7cf44603af406781.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

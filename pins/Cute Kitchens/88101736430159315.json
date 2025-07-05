@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430159315/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cute-kitchens",
+    "CustomFileName": "88101736430159315",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430159315",
+      "url": "https://www.pinterest.com/pin/88101736430159315/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "happy happy joy joy!",
+      "link": "http://blog.stylizimo.com/2010/04/green-gate-gives-you-summer.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cute-kitchens/",
+        "name": "Cute Kitchens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1c/ac/bc/1cacbc18dc63eb84896c84ce6490e4c7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445296784/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736445296784",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445296784",
+      "url": "https://www.pinterest.com/pin/88101736445296784/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Easy AIP Meals Without Meal Planning - meatified",
+      "description": "How I make easy AIP meals without meal planning from http://meatified.com",
+      "link": "http://meatified.com/easy-aip-meals/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/82/3b/27/823b2711e43c5eb35d3fd276d40244f9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

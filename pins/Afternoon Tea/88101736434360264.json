@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434360264/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736434360264",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434360264",
+      "url": "https://www.pinterest.com/pin/88101736434360264/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Cute minty teapot",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "sylloves",
+        "url": "https://www.pinterest.com/sylloves/",
+        "name": "Syl Gervais"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5f/97/77/5f977774834d3b1e2a571aef182d694a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

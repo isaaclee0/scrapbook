@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448644410/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736448644410",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448644410",
+      "url": "https://www.pinterest.com/pin/88101736448644410/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Pound Cake",
+      "description": "Pound Cake by Eva",
+      "link": "https://indulgy.com/post/hyQGJSsVX1/pound-cake",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/12/11/89/121189fc622ac22a3d4f6868f8d22cd6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

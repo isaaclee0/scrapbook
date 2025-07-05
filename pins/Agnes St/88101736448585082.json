@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448585082/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/agnes-st",
+    "CustomFileName": "88101736448585082",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448585082",
+      "url": "https://www.pinterest.com/pin/88101736448585082/",
+      "type": "pin",
+      "title": "How to make a Strawberry Pallet Planter",
+      "gridTitle": "How to make a Strawberry Pallet Planter",
+      "description": " ",
+      "link": "https://lovelygreens.com/how-to-make-better-strawberry-pallet/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "lovelygreens",
+        "url": "https://www.pinterest.com/lovelygreens/",
+        "name": "Lovely Greens • Creative Self-Sufficient Living"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/agnes-st/",
+        "name": "Agnes st",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6c/7d/0a/6c7d0aa6104840d527e13aaad62f4160.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/1b/bb/6e/1bbb6e881a24bb38f83a4fd6d0e75c01.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

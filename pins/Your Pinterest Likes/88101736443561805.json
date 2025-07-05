@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443561805/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443561805",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443561805",
+      "url": "https://www.pinterest.com/pin/88101736443561805/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Laughter is the Best Medicine",
+      "description": "chronic illness cat.",
+      "link": "http://chronicillnesscat.tumblr.com/post/25916309104/image-6-piece-blue-colored-background-with-a",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f6/cc/16/f6cc16a26eaa0c28bc77c00f05f3c0a1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

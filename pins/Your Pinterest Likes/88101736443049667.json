@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443049667/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443049667",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443049667",
+      "url": "https://www.pinterest.com/pin/88101736443049667/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "ohcupcakes.net",
+      "description": "baby shower cupcakes",
+      "link": "http://ohcupcakes.net/decoration-pacifier-cupcakes.php",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ef/92/c3/ef92c334748e75c2479ebbc2aef7d795.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

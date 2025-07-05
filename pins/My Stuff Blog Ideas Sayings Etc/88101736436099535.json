@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436099535/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/my-stuff-blog-ideas-sayings-etc",
+    "CustomFileName": "88101736436099535",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436099535",
+      "url": "https://www.pinterest.com/pin/88101736436099535/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Setting Up Pinterest Rich Pins for Wordpress and Blogger",
+      "description": "Blogging It Forward: Setting Up Pinterest Rich Pins for WordPress and Blogger",
+      "link": "http://bloggingitforward.com/2013/10/setting-up-pinterest-rich-pins-wordpress-blogger/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/my-stuff-blog-ideas-sayings-etc/",
+        "name": "My stuff - blog ideas, sayings etc",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/45/74/cd/4574cd24a5579133604ace16afe02628.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

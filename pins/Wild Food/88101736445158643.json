@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445158643/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/wild-food",
+    "CustomFileName": "88101736445158643",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445158643",
+      "url": "https://www.pinterest.com/pin/88101736445158643/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Eat the Weeds: Wild Weed Pesto",
+      "description": "Wild Weed Pesto",
+      "link": "http://nittygrittylife.com/eat-weeds-wild-weed-pesto/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "nittygrittylife",
+        "url": "https://www.pinterest.com/nittygrittylife/",
+        "name": "Nitty Gritty Life"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/wild-food/",
+        "name": "Wild food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bb/75/9d/bb759d7aeab4710257e826efc0c859b5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

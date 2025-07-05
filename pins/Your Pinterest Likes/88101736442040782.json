@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442040782/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442040782",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442040782",
+      "url": "https://www.pinterest.com/pin/88101736442040782/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Summer Snow Art - American Framed Artwork",
+      "description": ".",
+      "link": "http://www.summersnowart.com/index.php?cPath=100&sort=3a&page=8",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b8/04/83/b80483676cc391328192a19d0adf0ed3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

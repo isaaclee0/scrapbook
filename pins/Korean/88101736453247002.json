@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453247002/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/korean",
+    "CustomFileName": "88101736453247002",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453247002",
+      "url": "https://www.pinterest.com/pin/88101736453247002/",
+      "type": "pin",
+      "title": "KKANPUNGGI KOREAN SPICY GARLIC FRIED CHICKEN RECIPE",
+      "gridTitle": "KKANPUNGGI KOREAN SPICY GARLIC FRIED CHICKEN RECIPE",
+      "description": " ",
+      "link": "https://seonkyounglongest.com/kkanpuggi-spicy-garlic-fried-chicken/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "seonkyoung",
+        "url": "https://www.pinterest.com/seonkyoung/",
+        "name": "Seonkyoung Longest"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/korean/",
+        "name": "Korean",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0f/ef/9f/0fef9fcc7256150d710ab39d6d4b7d63.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/15/45/1b/15451b69a0e6ee46c7a6f9d70308e51a.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

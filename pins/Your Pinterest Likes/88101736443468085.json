@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443468085/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443468085",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443468085",
+      "url": "https://www.pinterest.com/pin/88101736443468085/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Sleep Calculator: Ideal Bedtime & Wake Up Times - Sleepytime",
+      "description": "Interesting. . . a calculator that tells you the best times to fall asleep depending on what time you need to wake up in the morning.",
+      "link": "http://sleepyti.me/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e8/1a/98/e81a98c5051dc51991c828e4f5dcf3be.gif",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

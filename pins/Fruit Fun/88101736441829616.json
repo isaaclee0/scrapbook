@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441829616/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fruit-fun",
+    "CustomFileName": "88101736441829616",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441829616",
+      "url": "https://www.pinterest.com/pin/88101736441829616/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Kelebek",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "handanyk",
+        "url": "https://www.pinterest.com/handanyk/",
+        "name": "hyk"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fruit-fun/",
+        "name": "Fruit Fun",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/95/59/e2/9559e277e49ff680c925653fb17b2d1a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

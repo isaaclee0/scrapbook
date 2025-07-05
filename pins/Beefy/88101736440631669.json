@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440631669/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/beefy",
+    "CustomFileName": "88101736440631669",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440631669",
+      "url": "https://www.pinterest.com/pin/88101736440631669/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Spaghetti Pie",
+      "description": "As seen on The Kitchen: the perfect use for spaghetti leftovers, Spaghetti Pie!",
+      "link": "http://www.foodnetwork.com/recipes/katie-lee/spaghetti-pie.html?soc=videosocialpinterest",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 15,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "foodnetwork",
+        "url": "https://www.pinterest.com/foodnetwork/",
+        "name": "Food Network"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/beefy/",
+        "name": "Beefy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d1/b7/5e/d1b75ef0556524274bac92325103f906.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/8c/50/0c/8c500cde094e1904c83003b0e977807b.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

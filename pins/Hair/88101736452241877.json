@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452241877/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736452241877",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452241877",
+      "url": "https://www.pinterest.com/pin/88101736452241877/",
+      "type": "pin",
+      "title": "Hairshark | Hair Inspo | Hair Looks",
+      "gridTitle": "Hairshark | Hair Inspo | Hair Looks",
+      "description": " ",
+      "link": "https://www.hairshark.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Hairshark1",
+        "url": "https://www.pinterest.com/Hairshark1/",
+        "name": "HairsharkUK"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/21/40/80/2140803d1549803966a70b032f98575a.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/e4/f3/05/e4f305050a14ac4e49cd05a7edba123a.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

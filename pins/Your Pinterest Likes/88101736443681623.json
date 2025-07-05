@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443681623/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443681623",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443681623",
+      "url": "https://www.pinterest.com/pin/88101736443681623/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Your Domains",
+      "description": "Spud Cake made with Gunns Plains Potato. Photo by Michelle Kneipp Pegler; recipe by Mrs Betty Holmes of Wynyard and article for www.think-tasmania.com",
+      "link": "http://www.think-tasmania.com/spud-cake/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2d/82/64/2d8264aec9f038f44fc99708db997ef2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

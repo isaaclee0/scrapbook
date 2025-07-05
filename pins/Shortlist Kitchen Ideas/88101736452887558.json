@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452887558/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/shortlist-kitchen-ideas",
+    "CustomFileName": "88101736452887558",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452887558",
+      "url": "https://www.pinterest.com/pin/88101736452887558/",
+      "type": "pin",
+      "title": "Kitchen Hacks",
+      "gridTitle": "Kitchen Hacks",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Galushastyle",
+        "url": "https://www.pinterest.com/Galushastyle/",
+        "name": "galushastyle"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/shortlist-kitchen-ideas/",
+        "name": "Shortlist  - kitchen ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fc/ec/65/fcec65f5ee2f467d14d77ee77bbe5ce5.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/eb/ff/e1/ebffe1bc6831cb992e27704794f7677c.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

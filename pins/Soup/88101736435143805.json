@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435143805/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/soup",
+    "CustomFileName": "88101736435143805",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435143805",
+      "url": "https://www.pinterest.com/pin/88101736435143805/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Country Cabbage Soup",
+      "description": "Country Cabbage Soup Recipe",
+      "link": "http://www.tasteofhome.com/recipes/Country-Cabbage-Soup",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/soup/",
+        "name": "Soup",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7c/81/6e/7c816e4845149827288823ea6ec90050.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447246074/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-floor",
+    "CustomFileName": "88101736447246074",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447246074",
+      "url": "https://www.pinterest.com/pin/88101736447246074/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Белая кухня",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "vtstatiana",
+        "url": "https://www.pinterest.com/vtstatiana/",
+        "name": "Тaтьяна Волкова"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-floor/",
+        "name": "Cottage Floor",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c1/fe/af/c1feaf33fcc009d4911d867534800c43.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

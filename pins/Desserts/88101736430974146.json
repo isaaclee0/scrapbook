@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430974146/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736430974146",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430974146",
+      "url": "https://www.pinterest.com/pin/88101736430974146/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Inside-Out Chocolate Strawberries",
+      "description": "Inside out Chocolate filled strawberries!",
+      "link": "http://www.verybestbaking.com/recipes/138874/Inside-Out-Chocolate-Strawberries/detail.aspx",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ae/90/c7/ae90c75bf18c4935405f9a2d007d9939.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430479900/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430479900",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430479900",
+      "url": "https://www.pinterest.com/pin/88101736430479900/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Baked Brownie",
+      "description": "The famed Baked brownie. Oprah says it’s one of her favorite things. America’s Test Kitchens says its their favorite brownie.",
+      "link": "http://www.browneyedbaker.com/2010/10/08/the-baked-brownie/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/80/d1/1a/80d11af3e720f6b8b2e3bfce18123ef0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

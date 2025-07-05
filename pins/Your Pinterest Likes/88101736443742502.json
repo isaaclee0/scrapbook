@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443742502/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443742502",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443742502",
+      "url": "https://www.pinterest.com/pin/88101736443742502/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Facebook",
+      "description": "gun control DOES NOT WORK!",
+      "link": "https://www.facebook.com/112415152112864/photos/a.112424005445312.11898.112415152112864/654536847900689/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d8/2e/22/d82e22246cf5e4d6c771b009a98855eb.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

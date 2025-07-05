@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432498714/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736432498714",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432498714",
+      "url": "https://www.pinterest.com/pin/88101736432498714/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Hawaiian Grilled Chicken (+VIDEO) | The Girl Who Ate Everything",
+      "description": "Hawaiian grilled chicken served with coconut rice.",
+      "link": "http://www.the-girl-who-ate-everything.com/2011/05/hawaiian-grilled-chicken.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/22/b7/db/22b7db5ec459d76d5b1e96df464ca975.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

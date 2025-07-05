@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432715665/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736432715665",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432715665",
+      "url": "https://www.pinterest.com/pin/88101736432715665/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Alice Springs Chicken I love this chicken. I have been making this for years and it tastes exactly like Outback Steakhouse version.",
+      "link": "http://www.favfamilyrecipes.com/2008/09/alice-springs-chicken.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4b/f5/4a/4bf54a38a2d1919e4c69d41f257c3970.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

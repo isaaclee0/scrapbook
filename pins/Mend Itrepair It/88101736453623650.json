@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453623650/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/mend-itrepair-it",
+    "CustomFileName": "88101736453623650",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453623650",
+      "url": "https://www.pinterest.com/pin/88101736453623650/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "batterypluses",
+        "url": "https://www.pinterest.com/batterypluses/",
+        "name": "batteryplus.es"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/mend-itrepair-it/",
+        "name": "Mend it/Repair it",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/58/2a/ff/582aff6b289ee1346367da57ee321ab9.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/e8/e5/07/e8e5072d0660bb7eb9b68913119be578.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

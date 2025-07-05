@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452493810/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/vegan-dessertstreats",
+    "CustomFileName": "88101736452493810",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452493810",
+      "url": "https://www.pinterest.com/pin/88101736452493810/",
+      "type": "pin",
+      "title": "Vegan Caramel Pecan Cheesecake Bars",
+      "gridTitle": "Vegan Caramel Pecan Cheesecake Bars",
+      "description": " ",
+      "link": "https://butternutbakeryblog.com/vegan-caramel-pecan-cheesecake-bars/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "butternutbakery",
+        "url": "https://www.pinterest.com/butternutbakery/",
+        "name": "Butternut Bakery"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/vegan-dessertstreats/",
+        "name": "Vegan Desserts/Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/35/dc/23/35dc23f280788edec98e0208dd93f4d1.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/1c/3c/eb/1c3ceb32bc53e4d256ce1b2628414108.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

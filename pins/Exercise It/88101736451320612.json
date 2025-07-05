@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451320612/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/exercise-it",
+    "CustomFileName": "88101736451320612",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451320612",
+      "url": "https://www.pinterest.com/pin/88101736451320612/",
+      "type": "pin",
+      "title": "Fix Your Bad Posture",
+      "gridTitle": "Fix Your Bad Posture",
+      "description": " ",
+      "link": "http://www.justinagustin.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "justinagustin",
+        "url": "https://www.pinterest.com/justinagustin/",
+        "name": "Justin Agustin"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/exercise-it/",
+        "name": "Exercise it",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f3/bb/04/f3bb047054e26e49d5137908c55543d1.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/1e/a1/b4/1ea1b45820cc8f53b28959ec81387044.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

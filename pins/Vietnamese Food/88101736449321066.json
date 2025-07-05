@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449321066/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/vietnamese-food",
+    "CustomFileName": "88101736449321066",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449321066",
+      "url": "https://www.pinterest.com/pin/88101736449321066/",
+      "type": "pin",
+      "title": "How To Make Banh Mi with Andrea Nguyen",
+      "gridTitle": "How To Make Banh Mi with Andrea Nguyen",
+      "description": "Andrea Nguyen, chef and author of Vietnamese Food Any Day, makes a char siu chicken banh mi in the MUNCHIES Test Kitchen. Andrea marinates and grills chicken thighs to crispy, caramelized perfection, makes quick pickles with daikon radishes and carrots, and slices up jalapeños and herbs to make the ultimate banh mi, all while explaining the origins of this now-classic Vietnamese sandwich.",
+      "link": "https://www.youtube.com/watch?v=k4HA1ejw_hA",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 34,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "munchies",
+        "url": "https://www.pinterest.com/munchies/",
+        "name": "MUNCHIES"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/vietnamese-food/",
+        "name": "Vietnamese Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1b/de/17/1bde179b85e4b9187a89ad056ba99dbb.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/c0/f6/70/c0f670e8a02d450191fe7676e1a2f633.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

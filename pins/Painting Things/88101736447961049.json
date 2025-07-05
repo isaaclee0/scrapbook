@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447961049/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painting-things",
+    "CustomFileName": "88101736447961049",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447961049",
+      "url": "https://www.pinterest.com/pin/88101736447961049/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "This is Why I DIY",
+      "description": "This is Why I DIY | So Much Better With Age",
+      "link": "https://somuchbetterwithage.com/this-is-why-i-diy/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painting-things/",
+        "name": "Painting things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/88/50/fe/8850fe09b656682fa00223611ce937f5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440960450/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/gifts-to-give",
+    "CustomFileName": "88101736440960450",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440960450",
+      "url": "https://www.pinterest.com/pin/88101736440960450/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Advent calendar",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "partitu",
+        "url": "https://www.pinterest.com/partitu/",
+        "name": "partitu"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/gifts-to-give/",
+        "name": "Gifts to give",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d0/69/22/d069221c0ffaa467c59dfe24eb336377.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

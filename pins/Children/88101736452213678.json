@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452213678/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/children",
+    "CustomFileName": "88101736452213678",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452213678",
+      "url": "https://www.pinterest.com/pin/88101736452213678/",
+      "type": "pin",
+      "title": "Time ins",
+      "gridTitle": "Time ins",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "zoebutler",
+        "url": "https://www.pinterest.com/zoebutler/",
+        "name": "Zoe Ashley"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/children/",
+        "name": "Children",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/79/d0/c7/79d0c78bc3d75ce1083565adf19f47c7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

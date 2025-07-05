@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438122387/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736438122387",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438122387",
+      "url": "https://www.pinterest.com/pin/88101736438122387/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Easy Eclair Cake - Chef in Training",
+      "description": "Eclair Cake! This cake is so easy to make and will completely wow your guests! It is delicious!",
+      "link": "http://www.chef-in-training.com/2012/08/easy-eclair-cake/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 5,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/66/34/0e/66340e88fdf71ed04689706c7c724eac.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

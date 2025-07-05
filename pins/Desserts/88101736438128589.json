@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438128589/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736438128589",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438128589",
+      "url": "https://www.pinterest.com/pin/88101736438128589/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Pecan Pie Cake",
+      "description": "Pecan Pie Cake. So amazingly delicious :) Make this if you want people to think you are a super genius in the kitchen!",
+      "link": "http://joandsue.blogspot.ca/2012/04/pecan-pie-cake.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/80/65/71/8065714aa33ae8babd54d16356cbc62e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

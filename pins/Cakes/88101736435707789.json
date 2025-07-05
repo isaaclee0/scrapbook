@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435707789/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736435707789",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435707789",
+      "url": "https://www.pinterest.com/pin/88101736435707789/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Microwave meringues in minutes",
+      "description": "Microwave meringues in minutes recipe - Recipes - BBC Good Food",
+      "link": "http://www.bbcgoodfood.com/recipes/1824/microwave-meringues-in-minutes",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/57/95/6c/57956c79202efb1e0e5ee7f2fa34bbe1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447304311/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/mushrooms",
+    "CustomFileName": "88101736447304311",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447304311",
+      "url": "https://www.pinterest.com/pin/88101736447304311/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Vegan Creamy Polenta and Red Wine Mushrooms",
+      "description": "Vegan Creamy Polenta and Red Wine Mushrooms - Rabbit and Wolves",
+      "link": "https://www.rabbitandwolves.com/vegan-creamy-polenta-red-wine-mushrooms/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/mushrooms/",
+        "name": "Mushrooms",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2a/72/1a/2a721a4c7881682d4800c9da395a56cd.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

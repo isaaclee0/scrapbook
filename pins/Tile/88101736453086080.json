@@ -1,0 +1,64 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453086080/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tile",
+    "CustomFileName": "88101736453086080",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453086080",
+      "url": "https://www.pinterest.com/pin/88101736453086080/",
+      "type": "pin",
+      "title": "Ideas para decorar tu hogar",
+      "gridTitle": "Ideas para decorar tu hogar",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 5,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "jennifer0102jej",
+        "url": "https://www.pinterest.com/jennifer0102jej/",
+        "name": "Jennifer Chacon"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tile/",
+        "name": "Tile",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d3/b5/4b/d3b54b3d74aeae5d871bd951d9d89cf2.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/e6/3a/32/e63a3255c9edbd3cf21d60376c7076ab.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/41/89/28/4189280195d480d4c0f772b219ea1e82.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/07/80/a6/0780a62c91270d2387ae6be97d10f29e.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/0b/50/1f/0b501ffb553cb89882d12e8f6ed375b3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441201906/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/ice-cream",
+    "CustomFileName": "88101736441201906",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441201906",
+      "url": "https://www.pinterest.com/pin/88101736441201906/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Recette Bûche « trop chou",
+      "description": "Yulelog made of vanilla custard cream filled puffs / Bûche « trop chou » - Larousse Cuisine",
+      "link": "http://cuisine.larousse.fr/recettes/detail/buche-trop-chou",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/ice-cream/",
+        "name": "Ice cream",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/12/f0/a5/12f0a5e08d580830e95593efe4f7d79e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450587619/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736450587619",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450587619",
+      "url": "https://www.pinterest.com/pin/88101736450587619/",
+      "type": "pin",
+      "title": "Hairstyles Tutorials",
+      "gridTitle": "Hairstyles Tutorials",
+      "description": "Hairstyles Tutorials",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "metdaanbeauty1",
+        "url": "https://www.pinterest.com/metdaanbeauty1/",
+        "name": "MetDaan Beauty"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b2/ec/a4/b2eca4c76bf833bfd1445c1e0eed8fa9.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/4c/4c/08/4c4c083d13943361481e46f3bd0c156a.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

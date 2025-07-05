@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435332076/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/rocket-mass-heating",
+    "CustomFileName": "88101736435332076",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435332076",
+      "url": "https://www.pinterest.com/pin/88101736435332076/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Cob Mass Heater",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 8,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "pollov",
+        "url": "https://www.pinterest.com/pollov/",
+        "name": "Pol Lov"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/rocket-mass-heating/",
+        "name": "Rocket Mass Heating",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/44/c1/e0/44c1e0f050decf6378bd17bed02e16b8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

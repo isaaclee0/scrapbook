@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451673566/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/travel",
+    "CustomFileName": "88101736451673566",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451673566",
+      "url": "https://www.pinterest.com/pin/88101736451673566/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Weston Winter",
+      "description": "Weston-Winter",
+      "link": "http://photosofvermont.com/?product=weston-winter",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/travel/",
+        "name": "Travel",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9e/98/5d/9e985d428d6f13ea99e1fe4d6385a6e9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

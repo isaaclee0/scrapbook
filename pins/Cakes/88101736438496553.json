@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438496553/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736438496553",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438496553",
+      "url": "https://www.pinterest.com/pin/88101736438496553/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Gâteau au chocolat de Noël | RICARDO",
+      "description": "Gâteau au chocolat de Noël",
+      "link": "http://www.ricardocuisine.com/recettes/3817-gateau-au-chocolat-de-noel",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/91/49/26/914926fa73e8bf3f8153c44e11407e84.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

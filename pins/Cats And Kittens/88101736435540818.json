@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435540818/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736435540818",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435540818",
+      "url": "https://www.pinterest.com/pin/88101736435540818/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "南海 | 区块链数字资产交易所",
+      "description": "DIY cat tree",
+      "link": "http://www.meow-cat.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a2/b7/03/a2b703c89b8f2887e2109b977fc3caf1.gif",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

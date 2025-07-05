@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437487259/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/feathered-friends",
+    "CustomFileName": "88101736437487259",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437487259",
+      "url": "https://www.pinterest.com/pin/88101736437487259/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Autumn in Plum",
+      "description": ".",
+      "link": "https://www.pinterest.com/pin/562457440937220763/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/feathered-friends/",
+        "name": "Feathered friends",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a0/38/c5/a038c55cf92c1a377b3064175764fce0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

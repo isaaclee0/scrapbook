@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434539742/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/animal-love",
+    "CustomFileName": "88101736434539742",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434539742",
+      "url": "https://www.pinterest.com/pin/88101736434539742/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "═►ADORABLE!◄═ #grenlist",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/animal-love/",
+        "name": "Animal love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1b/f3/ae/1bf3ae4add2e412ef7d1cd00473251a3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

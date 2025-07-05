@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432378514/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cute-kitchens",
+    "CustomFileName": "88101736432378514",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432378514",
+      "url": "https://www.pinterest.com/pin/88101736432378514/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Adorable Shelf",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "orz",
+        "url": "https://www.pinterest.com/orz/",
+        "name": "Or Zaccai"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cute-kitchens/",
+        "name": "Cute Kitchens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b9/43/38/b943383ec3726a899412d6a3f4f3d492.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440220358/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/photography",
+    "CustomFileName": "88101736440220358",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440220358",
+      "url": "https://www.pinterest.com/pin/88101736440220358/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Autumn's dream by Kristi Metsa / 500px",
+      "description": "A",
+      "link": "http://500px.com/photo/61616851",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/photography/",
+        "name": "Photography",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ad/b3/6c/adb36c8f277ba3513f4f8317c15546f0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

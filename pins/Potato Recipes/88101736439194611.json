@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439194611/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potato-recipes",
+    "CustomFileName": "88101736439194611",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439194611",
+      "url": "https://www.pinterest.com/pin/88101736439194611/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Low FODMAP Recipes",
+      "description": "Low FODMAP & Gluten free Recipe - Potato & spinach bake http://www.ibssano.com/low_fodmap_recipe_potato_spinach_bake.html",
+      "link": "http://www.ibssano.com/low_fodmap_recipe_potato_spinach_bake.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ibshealth",
+        "url": "https://www.pinterest.com/ibshealth/",
+        "name": "IBS-Health.com"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potato-recipes/",
+        "name": "Potato Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/49/df/2e/49df2e7207a3baf7ca2e5142b6e540d2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

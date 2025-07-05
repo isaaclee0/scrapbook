@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444533918/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/garden-travel",
+    "CustomFileName": "88101736444533918",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444533918",
+      "url": "https://www.pinterest.com/pin/88101736444533918/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Lost gardens of Heligan, I would love to visit there once more.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/garden-travel/",
+        "name": "Garden Travel",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ee/3d/16/ee3d165fac02db8ab124572333315370.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

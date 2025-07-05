@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451298040/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/dinner-with-hubby",
+    "CustomFileName": "88101736451298040",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451298040",
+      "url": "https://www.pinterest.com/pin/88101736451298040/",
+      "type": "pin",
+      "title": "Classic Tiramisu Recipe",
+      "gridTitle": "Classic Tiramisu Recipe",
+      "description": " ",
+      "link": "https://veronikaskitchen.com/classic-tiramisu/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "veronikaskitche",
+        "url": "https://www.pinterest.com/veronikaskitche/",
+        "name": "Veronika's Kitchen"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/dinner-with-hubby/",
+        "name": "Dinner with hubby",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/18/25/88/1825884f4fa42d196f4032f7ebe1adde.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/c0/9e/02/c09e022db587d96563443f3de3b527ae.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

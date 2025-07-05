@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443384573/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443384573",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443384573",
+      "url": "https://www.pinterest.com/pin/88101736443384573/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chiazze di poesia … Gli uomini vecchi",
+      "description": "I love, love, love this photo Men of Camerino Italy",
+      "link": "http://lortodirosanna.wordpress.com/2013/12/16/chiazze-di-poesia-gli-uomini-vecchi/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9d/53/d5/9d53d5ec436dec4366f87ab143237dc7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

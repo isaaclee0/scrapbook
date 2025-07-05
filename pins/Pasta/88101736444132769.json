@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444132769/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pasta",
+    "CustomFileName": "88101736444132769",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444132769",
+      "url": "https://www.pinterest.com/pin/88101736444132769/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Million Dollar Spaghetti",
+      "description": "Choose The Best Stuff: Million Dollar Spaghetti",
+      "link": "http://www.madefrompinterest.net/million-dollar-spaghetti/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "allongnecker",
+        "url": "https://www.pinterest.com/allongnecker/",
+        "name": "Alyssa Longnecker"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pasta/",
+        "name": "Pasta",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/47/de/71/47de718394313a0555213deae6351344.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

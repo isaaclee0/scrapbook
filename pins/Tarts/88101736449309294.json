@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449309294/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tarts",
+    "CustomFileName": "88101736449309294",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449309294",
+      "url": "https://www.pinterest.com/pin/88101736449309294/",
+      "type": "pin",
+      "title": "Torta Mousse de Arándanos",
+      "gridTitle": "Torta Mousse de Arándanos",
+      "description": " ",
+      "link": "https://es.tastemade.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemadees",
+        "url": "https://www.pinterest.com/tastemadees/",
+        "name": "Tastemade Español"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tarts/",
+        "name": "Tarts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/62/0e/a7/620ea781b0e3629722ac8d991cfd7476.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/f6/cc/60/f6cc609aff0e6afc0aebc065fb4c29c6.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

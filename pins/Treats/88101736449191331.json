@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449191331/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736449191331",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449191331",
+      "url": "https://www.pinterest.com/pin/88101736449191331/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Quick and Easy Strawberry Creams ~ Wholefood Simply",
+      "description": " ",
+      "link": "https://wholefoodsimply.com/quick-and-easy-strawberry-creams/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f7/51/ca/f751ca491cf12676c26c3139bcfcfbbb.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

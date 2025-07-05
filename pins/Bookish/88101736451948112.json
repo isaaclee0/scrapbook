@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451948112/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736451948112",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451948112",
+      "url": "https://www.pinterest.com/pin/88101736451948112/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Narnian Confessions",
+      "description": "Narnian Confessions",
+      "link": "http://narnianconfessions.tumblr.com/post/84860578502/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f7/71/f0/f771f056dd235f3ecbc9889d4aa5b56d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443919811/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fishy",
+    "CustomFileName": "88101736443919811",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443919811",
+      "url": "https://www.pinterest.com/pin/88101736443919811/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "РЫБА",
+      "description": "ВКУСНЫЙ И КРАСИВЫЙ РЫБНЫЙ ПИРОГ.",
+      "link": "http://postila.ru/post/2169767",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fishy/",
+        "name": "Fishy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9a/01/ac/9a01ac46150fba15f3b86bdf760c794b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

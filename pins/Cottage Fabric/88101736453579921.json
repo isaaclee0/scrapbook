@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453579921/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-fabric",
+    "CustomFileName": "88101736453579921",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453579921",
+      "url": "https://www.pinterest.com/pin/88101736453579921/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Emily Bond",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 21,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-fabric/",
+        "name": "Cottage Fabric",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/75/a2/26/75a22670da543f895501b686cf2b29c5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

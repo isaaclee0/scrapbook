@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452264812/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/autism",
+    "CustomFileName": "88101736452264812",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452264812",
+      "url": "https://www.pinterest.com/pin/88101736452264812/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Because they get bullied if they don't.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "6breens",
+        "url": "https://www.pinterest.com/6breens/",
+        "name": "Mel B4"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/autism/",
+        "name": "Autism",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8e/3d/43/8e3d43b3be562f86948113c7bdbc59e5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442081932/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442081932",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442081932",
+      "url": "https://www.pinterest.com/pin/88101736442081932/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "One Thing a Day until \"The Vintage Marketplace\"!",
+      "description": "Chateau De Fleurs: One Thing a Day until \"The Vintage Marketplace\"!",
+      "link": "http://chateaudefleurs.blogspot.com/2012/02/one-thing-day-until-vintage-marketplace.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2a/8c/b8/2a8cb887305723903b8b9a8025511c53.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

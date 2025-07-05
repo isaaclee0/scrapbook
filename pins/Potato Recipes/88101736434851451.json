@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434851451/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potato-recipes",
+    "CustomFileName": "88101736434851451",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434851451",
+      "url": "https://www.pinterest.com/pin/88101736434851451/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Lemon Garlic Baby Potatoes",
+      "description": "Lemon Garlic Baby Potatoes",
+      "link": "http://penniesonaplatter.com/2012/01/09/lemon-garlic-baby-potatoes/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potato-recipes/",
+        "name": "Potato Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ae/93/1f/ae931f8e9ae4c0c7dc29e6b5ee303cd2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449923820/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/baby-stuff",
+    "CustomFileName": "88101736449923820",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449923820",
+      "url": "https://www.pinterest.com/pin/88101736449923820/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "This is pretty cool",
+      "description": "medical helmets painted by arist... This is pretty cool",
+      "link": "https://imgur.com/gallery/gYDr0xN",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/baby-stuff/",
+        "name": "Baby stuff",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/05/36/1f/05361fc66f33ced95f983cc02eec34ef.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

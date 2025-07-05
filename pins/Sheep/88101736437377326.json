@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437377326/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/sheep",
+    "CustomFileName": "88101736437377326",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437377326",
+      "url": "https://www.pinterest.com/pin/88101736437377326/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "artisanfoodlaw",
+        "url": "https://www.pinterest.com/artisanfoodlaw/",
+        "name": "Artisan Food Law"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/sheep/",
+        "name": "Sheep",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/42/14/e6/4214e67d32a0166bbafec8411dc76477.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

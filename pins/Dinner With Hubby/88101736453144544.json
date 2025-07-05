@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453144544/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/dinner-with-hubby",
+    "CustomFileName": "88101736453144544",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453144544",
+      "url": "https://www.pinterest.com/pin/88101736453144544/",
+      "type": "pin",
+      "title": "Crème brûlée",
+      "gridTitle": "Crème brûlée",
+      "description": "Un classique de la pâtisserie française !",
+      "link": "https://www.tastemade.fr/videos/creme-brulee-a-la-vanille",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemadefrance",
+        "url": "https://www.pinterest.com/tastemadefrance/",
+        "name": "Tastemade France"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/dinner-with-hubby/",
+        "name": "Dinner with hubby",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/dd/a2/2a/dda22aed490923f3c6f456248375036a.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/v2/720p/1e/ea/7a/1eea7a2fe7f30422836b75831782ae43_mobile.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

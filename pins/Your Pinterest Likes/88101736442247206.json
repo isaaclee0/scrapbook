@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442247206/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442247206",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442247206",
+      "url": "https://www.pinterest.com/pin/88101736442247206/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Homemade Nutella",
+      "description": "Baked Perfection: Homemade Nutella",
+      "link": "http://www.bakedperfection.com/2012/02/homemade-nutella.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cc/81/8c/cc818ccd8075f3c9ef0283f37941bb45.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

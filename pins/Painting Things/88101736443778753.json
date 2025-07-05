@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443778753/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painting-things",
+    "CustomFileName": "88101736443778753",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443778753",
+      "url": "https://www.pinterest.com/pin/88101736443778753/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Perfect door color - Whythe Blue",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "raehjohnson",
+        "url": "https://www.pinterest.com/raehjohnson/",
+        "name": "Andrea Roan Johnson"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painting-things/",
+        "name": "Painting things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f9/4e/c5/f94ec522ccbd6655d6f0dbad1164307f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

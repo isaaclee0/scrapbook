@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442735859/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442735859",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442735859",
+      "url": "https://www.pinterest.com/pin/88101736442735859/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Antonio Capel",
+      "description": "Antonio Capel Painting",
+      "link": "http://www.antoniocapel.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/96/2b/2c/962b2c9c097256d1de7f4b6758abebb0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

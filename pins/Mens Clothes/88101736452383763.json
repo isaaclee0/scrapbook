@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452383763/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/mens-clothes",
+    "CustomFileName": "88101736452383763",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452383763",
+      "url": "https://www.pinterest.com/pin/88101736452383763/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "heleenitas",
+        "url": "https://www.pinterest.com/heleenitas/",
+        "name": "Helena C."
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/mens-clothes/",
+        "name": "Men's clothes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/43/b8/e1/43b8e1de003e94a6fd29b44bdd08eb48.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

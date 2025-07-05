@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442858101/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442858101",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442858101",
+      "url": "https://www.pinterest.com/pin/88101736442858101/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Survival Archives",
+      "description": "Survival Skills: How To Get Water And Syrup From Trees | Outdoor Life Survival",
+      "link": "http://survival.outdoorlife.com/blogs/survivalist/2013/02/survival-skills-how-get-water-and-syrup-trees?utm_medium=referral&utm_source=pulsenews",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/21/c7/c0/21c7c07b9310a81a0404a7e378285a23.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

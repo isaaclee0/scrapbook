@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450457293/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/no-bake",
+    "CustomFileName": "88101736450457293",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450457293",
+      "url": "https://www.pinterest.com/pin/88101736450457293/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Cherry Ripe Slice",
+      "description": "Classic Cherry Ripe Slice Recipe. No Bake, easy dessert and Thermomix instructions included.",
+      "link": "https://createbakemake.com/2018/10/26/classic-cherry-ripe-slice-recipe-no-bake/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "createbakemake",
+        "url": "https://www.pinterest.com/createbakemake/",
+        "name": "Create Bake Make"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/no-bake/",
+        "name": "No Bake",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1e/c6/8a/1ec68aeae7b534c35ad6cc01af44a52c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435350570/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/animal-love",
+    "CustomFileName": "88101736435350570",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435350570",
+      "url": "https://www.pinterest.com/pin/88101736435350570/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "mother's  love ...",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "veelyy",
+        "url": "https://www.pinterest.com/veelyy/",
+        "name": "Veronika Marchina"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/animal-love/",
+        "name": "Animal love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b8/42/6e/b8426e2a50efbdf9733b22588e70aa3b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453287295/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pasta",
+    "CustomFileName": "88101736453287295",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453287295",
+      "url": "https://www.pinterest.com/pin/88101736453287295/",
+      "type": "pin",
+      "title": "Easy Cauliflower Alfredo Pasta in 30 minutes",
+      "gridTitle": "Easy Cauliflower Alfredo Pasta in 30 minutes",
+      "description": " ",
+      "link": "https://theplantbasedschool.com/cauliflower-alfredo/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "theplantbasedschool",
+        "url": "https://www.pinterest.com/theplantbasedschool/",
+        "name": "The Plant Based School"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pasta/",
+        "name": "Pasta",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5e/4b/75/5e4b755345c56499742f4c79de190ab7.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/85/dc/f8/85dcf83c8579ad49c327747e23b75ba0.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

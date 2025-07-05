@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446679569/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/no-bake",
+    "CustomFileName": "88101736446679569",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446679569",
+      "url": "https://www.pinterest.com/pin/88101736446679569/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "20 moreish no-bake slices",
+      "description": "Easy no-bake slices. It's almost comical how easy these are!",
+      "link": "http://www.bestrecipes.com.au/galleries/easy-no-bake-slices",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/no-bake/",
+        "name": "No Bake",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b4/a2/52/b4a2520d5732dd9fd515b28e83569ef1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

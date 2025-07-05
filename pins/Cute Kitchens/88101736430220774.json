@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430220774/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cute-kitchens",
+    "CustomFileName": "88101736430220774",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430220774",
+      "url": "https://www.pinterest.com/pin/88101736430220774/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "A Look Inside: Cabin Fever",
+      "description": "kitchen",
+      "link": "http://gardenandgun.com/gallery/photos-cabin-fever",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cute-kitchens/",
+        "name": "Cute Kitchens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9c/f0/30/9cf030e31fca42f94ca6a41d6ab5dfdf.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

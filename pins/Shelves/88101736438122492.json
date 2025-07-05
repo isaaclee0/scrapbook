@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438122492/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/shelves",
+    "CustomFileName": "88101736438122492",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438122492",
+      "url": "https://www.pinterest.com/pin/88101736438122492/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "me and Alice",
+      "description": "white",
+      "link": "http://meandalice.blogspot.fi/search?updated-max=2012-08-08T12:27:00%2B02:00&max-results=20",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/shelves/",
+        "name": "Shelves",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f8/e5/71/f8e571fc414b2d915eef4df6fbc3a031.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448219232/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736448219232",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448219232",
+      "url": "https://www.pinterest.com/pin/88101736448219232/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "I Made Bread! - AIP Chapati - Adventures In Partaking",
+      "description": "This simple chapati bread is gluten free and 100% AIP/ Paleo compliant. You'll want this to be part of many of your family dinners.",
+      "link": "http://adventuresinpartaking.com/2016/03/i-made-bread-aip-chapati/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0a/06/c4/0a06c424455847628982be4f6610e2bd.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

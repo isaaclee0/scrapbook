@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452270135/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/ducks",
+    "CustomFileName": "88101736452270135",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452270135",
+      "url": "https://www.pinterest.com/pin/88101736452270135/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Finally finished My ducks enclosure",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/ducks/",
+        "name": "Ducks",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/09/b9/b5/09b9b5b6ca802e94803b6e6397445e34.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

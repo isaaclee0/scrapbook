@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452179927/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-christmas-2021",
+    "CustomFileName": "88101736452179927",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452179927",
+      "url": "https://www.pinterest.com/pin/88101736452179927/",
+      "type": "pin",
+      "title": "Flammekueche étoiles",
+      "gridTitle": "Flammekueche étoiles",
+      "description": " ",
+      "link": "https://www.demotivateur.fr/food/la-recette-des-flammekueches-etoile-11477",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "demotivateurFood",
+        "url": "https://www.pinterest.com/demotivateurFood/",
+        "name": "Demotivateur Food"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-christmas-2021/",
+        "name": "Cottage christmas 2021",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/db/42/3f/db423f5f885442d17054610531dfc903.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/v2/720p/7c/34/79/7c347930c96f68f7e176e2579fade2e8_mobile.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449162954/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/youth-food",
+    "CustomFileName": "88101736449162954",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449162954",
+      "url": "https://www.pinterest.com/pin/88101736449162954/",
+      "type": "pin",
+      "title": "Chicken Parmesan Slider Bake",
+      "gridTitle": "Chicken Parmesan Slider Bake",
+      "description": "Makes 1 dozen Chicken Parmesan Slider Bake Recipe",
+      "link": "https://cookerworld.com/category/chicken/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/youth-food/",
+        "name": "Youth food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a0/43/37/a04337566152ab1c4b9433bd5015f12c.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/82/de/c0/82dec0a15a892cc5b4b362953fbfca25.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449465025/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/summer-food",
+    "CustomFileName": "88101736449465025",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449465025",
+      "url": "https://www.pinterest.com/pin/88101736449465025/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Raspberry Ricotta Breakfast Cake",
+      "description": "Raspberry Ricotta Breakfast Cake - Saving Room for Dessert",
+      "link": "https://www.savingdessert.com/raspberry-ricotta-breakfast-cake/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/summer-food/",
+        "name": "Summer food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/06/00/99/060099eb052816f9e22aa8830db8d789.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

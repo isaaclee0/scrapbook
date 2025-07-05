@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447100062/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-dishes",
+    "CustomFileName": "88101736447100062",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447100062",
+      "url": "https://www.pinterest.com/pin/88101736447100062/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Register - Login",
+      "description": "teapot",
+      "link": "https://www.tumblr.com/dashboard",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-dishes/",
+        "name": "Cottage Dishes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6d/3c/77/6d3c77cd422efe510532c5fb29545e38.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

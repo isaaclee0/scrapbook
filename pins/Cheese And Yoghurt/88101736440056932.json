@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440056932/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cheese-and-yoghurt",
+    "CustomFileName": "88101736440056932",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440056932",
+      "url": "https://www.pinterest.com/pin/88101736440056932/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Learn How to Make Ricotta Cheese in 5 Minutes",
+      "description": "Homemade Ricotta Cheese Recipe. So easy to make, only takes 5 minutes!",
+      "link": "http://www.littlehouseliving.com/easy-homemade-ricotta-cheese-recipe.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "littlehouseliving",
+        "url": "https://www.pinterest.com/littlehouseliving/",
+        "name": "Merissa (Little House Living) | Simple Living + Frugal Living"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cheese-and-yoghurt/",
+        "name": "Cheese and Yoghurt",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/83/9c/39/839c39cc5889e851d525fc17d9723531.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

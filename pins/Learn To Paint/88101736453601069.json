@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453601069/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/learn-to-paint",
+    "CustomFileName": "88101736453601069",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453601069",
+      "url": "https://www.pinterest.com/pin/88101736453601069/",
+      "type": "pin",
+      "title": "Free full length tutorial on sunset peonies.com",
+      "gridTitle": "Free full length tutorial on sunset peonies.com",
+      "description": " ",
+      "link": "https://sunsetpeonies.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "sunset_peonies",
+        "url": "https://www.pinterest.com/sunset_peonies/",
+        "name": "Sunset Peonies"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/learn-to-paint/",
+        "name": "Learn To Paint",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9a/78/4e/9a784e5c7e1eba9b29c1707e00fdc7d5.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/08/5d/9c/085d9c756ae26a577490b5b77b73b6cc.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

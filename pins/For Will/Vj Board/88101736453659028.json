@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453659028/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/for-will/vj-board",
+    "CustomFileName": "88101736453659028",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453659028",
+      "url": "https://www.pinterest.com/pin/88101736453659028/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Green beadboard and trim with white walls",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/for-will/",
+        "name": "For Will",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7a/49/77/7a4977940f6447a485aaac2fe0306c6e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

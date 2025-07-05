@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445315846/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/gluten-free",
+    "CustomFileName": "88101736445315846",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445315846",
+      "url": "https://www.pinterest.com/pin/88101736445315846/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Is it Gluten Free List",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 5,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "mrspeereboom",
+        "url": "https://www.pinterest.com/mrspeereboom/",
+        "name": "MrsPeereboom"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/gluten-free/",
+        "name": "Gluten Free",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a6/7d/74/a67d7472ccb5ae2387a4757f57bb35ed.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

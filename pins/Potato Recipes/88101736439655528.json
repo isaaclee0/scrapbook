@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439655528/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potato-recipes",
+    "CustomFileName": "88101736439655528",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439655528",
+      "url": "https://www.pinterest.com/pin/88101736439655528/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Classic mashed potato recipe",
+      "description": "CWA Australia recipes • Classic mashed potato recipe with 22 reviews here",
+      "link": "http://www.taste.com.au/recipes/7752/classic+mashed+potato",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potato-recipes/",
+        "name": "Potato Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8b/fe/4d/8bfe4d56491aa688d45b9c59c72d6b38.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

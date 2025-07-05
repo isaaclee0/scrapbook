@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453727224/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/budgie-love",
+    "CustomFileName": "88101736453727224",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453727224",
+      "url": "https://www.pinterest.com/pin/88101736453727224/",
+      "type": "pin",
+      "title": "Little house",
+      "gridTitle": "Little house",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "SavonsLola",
+        "url": "https://www.pinterest.com/SavonsLola/",
+        "name": "Les Savons de Lola"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/budgie-love/",
+        "name": "Budgie Love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3f/c0/88/3fc0884c2a187644491fdf76c996dfc0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

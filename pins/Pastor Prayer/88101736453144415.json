@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453144415/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pastor-prayer",
+    "CustomFileName": "88101736453144415",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453144415",
+      "url": "https://www.pinterest.com/pin/88101736453144415/",
+      "type": "pin",
+      "title": "Prayer for a Clear Mind",
+      "gridTitle": "Prayer for a Clear Mind",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 2,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "wholestorychar",
+        "url": "https://www.pinterest.com/wholestorychar/",
+        "name": "Char Aukland| Christian|Health |Life|Fitness"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pastor-prayer/",
+        "name": "Pastor Prayer",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1f/7f/fb/1f7ffbd834d536ebf20cf7a60096c20e.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/a4/f5/88/a4f588b68cf2fe922fc5bf1600fcda32.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

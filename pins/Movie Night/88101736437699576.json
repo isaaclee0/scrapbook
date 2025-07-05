@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437699576/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736437699576",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437699576",
+      "url": "https://www.pinterest.com/pin/88101736437699576/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Last of the Summer Wine (BBC) \"Billy Hardcastle\" (Keith Clifford), \"Clegg\" ( Peter Sallis and \"Truly\" ( Frank Thornton)",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/64/88/0a/64880a346c17d054e6803854b12ae204.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

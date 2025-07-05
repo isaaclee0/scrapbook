@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439419862/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/coffee-spot",
+    "CustomFileName": "88101736439419862",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439419862",
+      "url": "https://www.pinterest.com/pin/88101736439419862/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "My new coffee bar =)",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "natasha3778",
+        "url": "https://www.pinterest.com/natasha3778/",
+        "name": "Natasha Flores"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/coffee-spot/",
+        "name": "Coffee Spot",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5f/9e/22/5f9e223b6714ae54e3eebd5fb35dd7f5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

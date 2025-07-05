@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442825006/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442825006",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442825006",
+      "url": "https://www.pinterest.com/pin/88101736442825006/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Like this hood better than the all steel one.  Country French Range Hood from Dollhouse Alley",
+      "link": "http://dollhousealley.com/products/country-french-range-hood",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5a/21/48/5a21482c5c260c7d8d470a48726d2c65.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

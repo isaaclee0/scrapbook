@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440090784/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736440090784",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440090784",
+      "url": "https://www.pinterest.com/pin/88101736440090784/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Purple high-heel shoe cake",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "danni1973",
+        "url": "https://www.pinterest.com/danni1973/",
+        "name": "Danielle"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/32/2f/c7/322fc7e27bba8137b3e8b11fb7e15e51.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

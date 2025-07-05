@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435660987/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/health-related",
+    "CustomFileName": "88101736435660987",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435660987",
+      "url": "https://www.pinterest.com/pin/88101736435660987/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Sarcoidosis 3",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "aliettejonkers",
+        "url": "https://www.pinterest.com/aliettejonkers/",
+        "name": "Aliëtte Jonkers"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/health-related/",
+        "name": "Health Related",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8e/33/93/8e3393f8a0146176ad828343316087ed.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

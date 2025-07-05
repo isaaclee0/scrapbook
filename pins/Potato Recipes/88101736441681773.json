@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441681773/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potato-recipes",
+    "CustomFileName": "88101736441681773",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441681773",
+      "url": "https://www.pinterest.com/pin/88101736441681773/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Black Bean Quinoa Enchilada Bake - Two Peas & Their Pod",
+      "description": "Black Bean and Quinoa Enchilada Bake Recipe ~ a healthy and delicious meal",
+      "link": "http://www.twopeasandtheirpod.com/black-bean-and-quinoa-enchilada-bake/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "pinchofyum",
+        "url": "https://www.pinterest.com/pinchofyum/",
+        "name": "Pinch of Yum"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potato-recipes/",
+        "name": "Potato Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/98/a3/30/98a330656daaafa43145be3c5366b276.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

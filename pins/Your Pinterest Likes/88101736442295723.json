@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442295723/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442295723",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442295723",
+      "url": "https://www.pinterest.com/pin/88101736442295723/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "World Cinema: Must-see Screens Around The Globe - Beers and Beans",
+      "description": "Must See Cinemas from around the world!",
+      "link": "http://beersandbeans.com/2012/07/04/world-cinema-must-see-screens-around-the-globe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/23/bc/d0/23bcd0ce226423035da8dba81b752466.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443828059/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/storage-ideas",
+    "CustomFileName": "88101736443828059",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443828059",
+      "url": "https://www.pinterest.com/pin/88101736443828059/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "House hint",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tapestri",
+        "url": "https://www.pinterest.com/tapestri/",
+        "name": "Andrea Bell {tapestri}"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/storage-ideas/",
+        "name": "Storage ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b7/a2/4b/b7a24b999369960df2bf4d275d6fd13b.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

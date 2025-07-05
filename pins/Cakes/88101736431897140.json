@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431897140/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736431897140",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431897140",
+      "url": "https://www.pinterest.com/pin/88101736431897140/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Bourbon chocolate cake",
+      "description": "Bourbon chocolate cake (GF)",
+      "link": "http://www.taste.com.au/recipes/25059/bourbon+chocolate+cake",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8d/7d/8d/8d7d8d2e12ec9fada4dc07a509b41f02.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

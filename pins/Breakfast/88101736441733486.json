@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441733486/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/breakfast",
+    "CustomFileName": "88101736441733486",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441733486",
+      "url": "https://www.pinterest.com/pin/88101736441733486/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Sausage and Cream Cheese Breakfast Casserole - Plain Chicken",
+      "description": "Sausage and Cream Cheese Breakfast Casserole",
+      "link": "http://www.plainchicken.com/2016/07/sausage-and-cream-cheese-breakfast.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/breakfast/",
+        "name": "Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a6/22/66/a622664514912e2955b304b885091ef7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

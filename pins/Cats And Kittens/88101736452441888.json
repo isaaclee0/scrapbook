@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452441888/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736452441888",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452441888",
+      "url": "https://www.pinterest.com/pin/88101736452441888/",
+      "type": "pin",
+      "title": "Outdoor tunnels for your cat ",
+      "gridTitle": "Outdoor tunnels for your cat",
+      "description": " ",
+      "link": "https://www.chirpycats.com/how-to-make-outdoor-cat-tunnels/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ChirpyCats",
+        "url": "https://www.pinterest.com/ChirpyCats/",
+        "name": "Chirpy Cats"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d0/09/cf/d009cfb8eb6dcd5e778d3d0d48fb570b.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/3b/fb/0d/3bfb0de1f36f1558ae457a4024bb56e8.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

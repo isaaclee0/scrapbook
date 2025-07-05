@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446041033/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/the-reds-have-it",
+    "CustomFileName": "88101736446041033",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446041033",
+      "url": "https://www.pinterest.com/pin/88101736446041033/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Shes so dang cute",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "LisaLaFa",
+        "url": "https://www.pinterest.com/LisaLaFa/",
+        "name": "Lisa LaF"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/the-reds-have-it/",
+        "name": "The Reds Have It",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1a/02/d4/1a02d4edf1c11736afbdb04a14ae0303.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

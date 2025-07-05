@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453441798/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-love",
+    "CustomFileName": "88101736453441798",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453441798",
+      "url": "https://www.pinterest.com/pin/88101736453441798/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "thehomesteadmother",
+        "url": "https://www.pinterest.com/thehomesteadmother/",
+        "name": "The Homestead Mother"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-love/",
+        "name": "Chicken love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/cb/51/ec/cb51ecd3bd507d2b80b30a9141b16494.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

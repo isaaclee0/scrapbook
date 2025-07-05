@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440413742/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736440413742",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440413742",
+      "url": "https://www.pinterest.com/pin/88101736440413742/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chocolate, Caramel, Marshmallow, Whiskey & Bacon Bark - The Kitchen Prep Blog",
+      "description": "Chocolate, Caramel, Marshmallow, Whiskey & Bacon Bark",
+      "link": "http://www.thekitchenprepblog.com/2012/09/chocolate-caramel-marshmallow-whiskey.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2a/b5/c5/2ab5c50fbd4544a4d6b7b0b0a269ddb6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

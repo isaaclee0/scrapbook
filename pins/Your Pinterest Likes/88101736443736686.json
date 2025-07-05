@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443736686/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443736686",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443736686",
+      "url": "https://www.pinterest.com/pin/88101736443736686/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "X",
+      "description": "Heavens Trail. A place in Ireland where every two years on June 10-18 the stars line up with this path. pic.twitter.com/UFYPnuQCnz",
+      "link": "https://twitter.com/NatGeopix/status/370077944053772288/photo/1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/96/67/8c/96678c39f875c3b41782f79efe3937ff.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

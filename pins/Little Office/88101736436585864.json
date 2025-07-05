@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436585864/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/little-office",
+    "CustomFileName": "88101736436585864",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436585864",
+      "url": "https://www.pinterest.com/pin/88101736436585864/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Photo by Swedish Pernilla Hed.",
+      "link": "http://www.fromscandinaviawithlove.com/post/2106589270/photo-by-swedish-pernilla-hed",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/little-office/",
+        "name": "Little Office",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f7/9c/9b/f79c9b636625889e7ad5ddfd0d85210f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

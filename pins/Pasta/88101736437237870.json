@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437237870/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pasta",
+    "CustomFileName": "88101736437237870",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437237870",
+      "url": "https://www.pinterest.com/pin/88101736437237870/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Creamy Cajun Chicken Pasta",
+      "description": "Cajun Chicken - Shrimp and Sausage Pasta",
+      "link": "http://passthesushi.com/recipe-redo-cajun-chicken-and-sausage-pasta",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pasta/",
+        "name": "Pasta",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2e/0b/b6/2e0bb6fa31aa56047cd3ac918aba5afe.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

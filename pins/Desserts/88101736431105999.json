@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431105999/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736431105999",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431105999",
+      "url": "https://www.pinterest.com/pin/88101736431105999/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Strawberry Honey Pistachio Cream Tart | Savory Sweet Life",
+      "description": "strawberry honey pistachio cream tart",
+      "link": "http://savorysweetlife.com/2012/04/strawberry-pistachio-cream-tart/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7b/fe/c0/7bfec0009ffc45ccf0b0d28644bdeb15.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

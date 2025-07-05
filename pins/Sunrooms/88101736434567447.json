@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434567447/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/sunrooms",
+    "CustomFileName": "88101736434567447",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434567447",
+      "url": "https://www.pinterest.com/pin/88101736434567447/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "i have the view, now need to add the room...",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/sunrooms/",
+        "name": "Sunrooms",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/dd/f7/b1/ddf7b1c33988fe38b37e967bb35d7528.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

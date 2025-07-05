@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440213222/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/italian",
+    "CustomFileName": "88101736440213222",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440213222",
+      "url": "https://www.pinterest.com/pin/88101736440213222/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Semifreddo al caffe', senza uova e senza colla di pesce",
+      "description": "Semifreddo al caffe'",
+      "link": "http://blog.giallozafferano.it/idolciditatam/semifreddo-al-caffe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/italian/",
+        "name": "Italian",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9f/14/d5/9f14d5ff14af40cd820013a76a04aa90.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

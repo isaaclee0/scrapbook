@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448844942/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pastries",
+    "CustomFileName": "88101736448844942",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448844942",
+      "url": "https://www.pinterest.com/pin/88101736448844942/",
+      "type": "pin",
+      "title": "Homemade Mini Meat Pies",
+      "gridTitle": "Homemade Mini Meat Pies",
+      "description": "Homemade Mini Meat Pies have a delicious flaky pie crust, are simple and quick to make and great for lunch boxes, parties, picnics and snacks. freezer friendly too!",
+      "link": "https://lovefoodies.com/homemade-mini-meat-pies/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "lovefoodies",
+        "url": "https://www.pinterest.com/lovefoodies/",
+        "name": "lovefoodies"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pastries/",
+        "name": "pastries",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f3/c6/94/f3c69456ba9f4c8b6da8a8598dfdd144.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/19/f7/8f/19f78f61ea1ea46abcecf8d72b8586ff.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

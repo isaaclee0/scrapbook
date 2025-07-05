@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443108616/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443108616",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443108616",
+      "url": "https://www.pinterest.com/pin/88101736443108616/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Some sweet words from Jesus...",
+      "description": "\"He is teaching me to stop for ONE. A changed life is worth it, even if only to ONE.\" -Katie Davis, Executive Director of Amazima Ministries",
+      "link": "http://kissesfromkatie.blogspot.com/2009/10/some-sweet-words-from-jesus.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "amazima",
+        "url": "https://www.pinterest.com/amazima/",
+        "name": "Amazima Ministries"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e5/ad/d7/e5add793da845660e9cd72037d1829a1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

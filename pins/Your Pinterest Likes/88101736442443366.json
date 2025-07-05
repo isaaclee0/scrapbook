@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442443366/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442443366",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442443366",
+      "url": "https://www.pinterest.com/pin/88101736442443366/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Tim McGraw & Faith Hill - It's Your Love",
+      "description": "Tim McGraw and Faith Hill - It's Your Love",
+      "link": "http://www.youtube.com/watch/?v=ohC7o_PPPtY",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2a/2f/74/2a2f74029d351dcebf6f089070936146.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

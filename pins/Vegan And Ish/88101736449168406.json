@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449168406/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/vegan-and-ish",
+    "CustomFileName": "88101736449168406",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449168406",
+      "url": "https://www.pinterest.com/pin/88101736449168406/",
+      "type": "pin",
+      "title": "Vegan Bourguignon",
+      "gridTitle": "Vegan Bourguignon",
+      "description": "Here's a vegan hack you weren't expecting, Bourguignon for the win!",
+      "link": "https://www.tastemade.co.uk/videos/vegan-bourguignon",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemadeuk",
+        "url": "https://www.pinterest.com/tastemadeuk/",
+        "name": "Tastemade UK"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/vegan-and-ish/",
+        "name": "Vegan and ish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d2/17/96/d217969840167773a92148db950ee849.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/v2/720p/db/b1/8e/dbb18e4c529b80d4279ab84d288be024_mobile.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

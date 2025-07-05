@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453008108/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736453008108",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453008108",
+      "url": "https://www.pinterest.com/pin/88101736453008108/",
+      "type": "pin",
+      "title": "Short hair",
+      "gridTitle": "Short hair",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "stylenshineco",
+        "url": "https://www.pinterest.com/stylenshineco/",
+        "name": "Style.n.shine.co"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/53/97/de/5397dee23ef23bf0f4a43da89c778b5c.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/3d/66/4a/3d664a4e2eb79b145802e988926b1531.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

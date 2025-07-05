@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440508953/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736440508953",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440508953",
+      "url": "https://www.pinterest.com/pin/88101736440508953/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Missionary",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f0/3f/8f/f03f8fee10b73511c381feb0f3e253e9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

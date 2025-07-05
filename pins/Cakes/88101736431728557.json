@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431728557/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736431728557",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431728557",
+      "url": "https://www.pinterest.com/pin/88101736431728557/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chocolate Caramel Pecan Souffle Cake",
+      "description": "Chocolate Caramel Pecan Souffle Cake",
+      "link": "http://pinlavie.com/chocolate-caramel-pecan-souffle-cake/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ff/2c/e7/ff2ce7af1cd37b50ce5871476d81a590.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

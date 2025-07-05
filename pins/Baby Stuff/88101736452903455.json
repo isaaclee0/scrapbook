@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452903455/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/baby-stuff",
+    "CustomFileName": "88101736452903455",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452903455",
+      "url": "https://www.pinterest.com/pin/88101736452903455/",
+      "type": "pin",
+      "title": "Gassy baby",
+      "gridTitle": "Gassy baby",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "imspecialk1972",
+        "url": "https://www.pinterest.com/imspecialk1972/",
+        "name": "Imaspecialk"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/baby-stuff/",
+        "name": "Baby stuff",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/87/f7/c9/87f7c91f16467956157d2d2cc80605a8.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/72/f7/75/72f77565f6c402ef512417a5bceffa2a.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

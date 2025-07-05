@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451733156/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736451733156",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451733156",
+      "url": "https://www.pinterest.com/pin/88101736451733156/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Black Cats",
+      "description": " ",
+      "link": "https://www.boredpanda.com/cute-black-cats/?media_id=2105297",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 8,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8b/ad/09/8bad0923d6c612a3731d79529d05f3a5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

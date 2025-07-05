@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434790001/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/breakfast",
+    "CustomFileName": "88101736434790001",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434790001",
+      "url": "https://www.pinterest.com/pin/88101736434790001/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Bacon Roses",
+      "description": "Bacon roses. I know what I am making for Valentine's Day Breakfast. I <3 you #bacon.",
+      "link": "http://www.foodista.com/blog/2011/04/19/bacon-roses",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/breakfast/",
+        "name": "Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/81/64/fb/8164fb1ecfe9d130ef6b942f63bbd74d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

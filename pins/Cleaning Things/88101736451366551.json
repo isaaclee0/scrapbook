@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451366551/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cleaning-things",
+    "CustomFileName": "88101736451366551",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451366551",
+      "url": "https://www.pinterest.com/pin/88101736451366551/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "7 Genius Uses For Dish Soap That Will Make Your Life So Much Easier",
+      "description": "7 Ways To Use Dish Soap That Will Change Your Life",
+      "link": "https://www.buzzfeed.com/stephaniecozza/7-genius-uses-for-dish-soap-that-will-make-your-life-so-much",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "buzzfeednifty",
+        "url": "https://www.pinterest.com/buzzfeednifty/",
+        "name": "Nifty"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cleaning-things/",
+        "name": "Cleaning Things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b8/ea/23/b8ea2397cf9729db80ef11d209e9eedc.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/90/9c/7c/909c7c209cf3b3abebc7d98c044c2aaf.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

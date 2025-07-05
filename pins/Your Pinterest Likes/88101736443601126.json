@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443601126/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443601126",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443601126",
+      "url": "https://www.pinterest.com/pin/88101736443601126/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "housedecorpins.com",
+      "description": "Sweet doggie door, you could actually put a lock on it for when you're not home. -- Hahaha it's so cute!",
+      "link": "http://housedecorpins.com/?p=38174",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d8/bf/da/d8bfda28fb624d64d94e2d2a00053aa7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

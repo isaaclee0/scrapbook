@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435759990/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736435759990",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435759990",
+      "url": "https://www.pinterest.com/pin/88101736435759990/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Snow Pudding for a Snowy Day",
+      "description": "snow pudding, (lemon with custard sauce)",
+      "link": "http://lazycookcrazycook.wordpress.com/2011/02/06/snow-pudding-for-a-snowy-day/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/28/2e/ba/282eba688a0175f494ca5ac410a5ff7f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

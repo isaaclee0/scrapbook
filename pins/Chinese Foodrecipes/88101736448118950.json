@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448118950/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chinese-foodrecipes",
+    "CustomFileName": "88101736448118950",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448118950",
+      "url": "https://www.pinterest.com/pin/88101736448118950/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "General Tso’s Tempeh Recipe by Tasty",
+      "description": "General Tso’s Tempeh by Tasty",
+      "link": "https://tasty.co/recipe/general-tsos-tempeh",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chinese-foodrecipes/",
+        "name": "Chinese Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/85/10/6b/85106be40a0aa52ac2daf4fcbc09884e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

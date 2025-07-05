@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446698752/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736446698752",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446698752",
+      "url": "https://www.pinterest.com/pin/88101736446698752/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "The Patriot [Special Edition] [DVD] [2000]",
+      "link": "https://www.bestbuy.com/site/the-patriot-special-edition-dvd-2000/4020428.p?skuId=4020428&cmp=RMX",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "bestbuy",
+        "url": "https://www.pinterest.com/bestbuy/",
+        "name": "Best Buy"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a7/a8/a8/a7a8a8b9b88386e1b7c07ba82e336ecf.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

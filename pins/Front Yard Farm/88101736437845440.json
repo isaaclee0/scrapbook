@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437845440/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/front-yard-farm",
+    "CustomFileName": "88101736437845440",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437845440",
+      "url": "https://www.pinterest.com/pin/88101736437845440/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Potager",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "shirlwallington",
+        "url": "https://www.pinterest.com/shirlwallington/",
+        "name": "Shirley Wallington"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/front-yard-farm/",
+        "name": "Front yard farm!",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8c/70/76/8c707637cebd5bbc2e967f4374c9c669.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

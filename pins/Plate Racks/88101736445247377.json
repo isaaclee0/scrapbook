@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445247377/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/plate-racks",
+    "CustomFileName": "88101736445247377",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445247377",
+      "url": "https://www.pinterest.com/pin/88101736445247377/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Estante para platos",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "francistacsan",
+        "url": "https://www.pinterest.com/francistacsan/",
+        "name": "Francis Tacsan"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/plate-racks/",
+        "name": "Plate racks",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fa/57/6b/fa576b11fa6cd34efbd7caf798e0a844.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

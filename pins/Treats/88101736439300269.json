@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439300269/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736439300269",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439300269",
+      "url": "https://www.pinterest.com/pin/88101736439300269/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Caramel Egg Stuffed Easter Croissants",
+      "description": "Cadbury's Caramel Eggs Stuffed Croissants",
+      "link": "http://www.tamingtwins.com/2014/03/26/caramel-egg-stuffed-easter-croissants/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tamingtwins",
+        "url": "https://www.pinterest.com/tamingtwins/",
+        "name": "Taming Twins"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/05/cb/16/05cb160f1a1ed068f6e094fcb233ff9d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

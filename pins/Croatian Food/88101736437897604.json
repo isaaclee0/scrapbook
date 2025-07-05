@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437897604/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/croatian-food",
+    "CustomFileName": "88101736437897604",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437897604",
+      "url": "https://www.pinterest.com/pin/88101736437897604/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Best Sweet Bread Recipe",
+      "description": "Croatian sweet bread recipe",
+      "link": "http://dzinepod.com/blog/the-best-sweet-bread-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/croatian-food/",
+        "name": "Croatian Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b0/37/f1/b037f13ed562ad4ba034e0cd2dd48196.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

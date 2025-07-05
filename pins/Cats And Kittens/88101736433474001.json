@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433474001/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736433474001",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433474001",
+      "url": "https://www.pinterest.com/pin/88101736433474001/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Joie De Vivre",
+      "description": "all in a row",
+      "link": "http://maluna.tumblr.com/post/416221542",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4e/7b/2c/4e7b2c54f2480568c752476d7cfebe66.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

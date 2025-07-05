@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442914560/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442914560",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442914560",
+      "url": "https://www.pinterest.com/pin/88101736442914560/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Internet's Most Asked Questions",
+      "description": "And now you know how to whistle with your fingers....and grandma wont be the only one",
+      "link": "http://themetapicture.com/and-now-you-know-how-to-whistle-with-your-fingers/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a4/3d/a4/a43da48311aad2c90b637d8eb528671d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

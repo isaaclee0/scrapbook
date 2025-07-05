@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445579052/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pools",
+    "CustomFileName": "88101736445579052",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445579052",
+      "url": "https://www.pinterest.com/pin/88101736445579052/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "0fc6e83944590849478ecb6716333348.jpg (650×975)",
+      "link": "http://media-cache-ec0.pinimg.com/736x/0f/c6/e8/0fc6e83944590849478ecb6716333348.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "kannelie",
+        "url": "https://www.pinterest.com/kannelie/",
+        "name": "Annelie Karlsson"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pools/",
+        "name": "Pools",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c1/c0/a4/c1c0a453eb9fffbc5a9761c50f4c0aef.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453222400/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/for-linda",
+    "CustomFileName": "88101736453222400",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453222400",
+      "url": "https://www.pinterest.com/pin/88101736453222400/",
+      "type": "pin",
+      "title": "PICTURE ON A CANVAS TUTORIAL",
+      "gridTitle": "PICTURE ON A CANVAS TUTORIAL",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "metdaancreative",
+        "url": "https://www.pinterest.com/metdaancreative/",
+        "name": "MetDaan Creative"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/for-linda/",
+        "name": "For Linda",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fb/fc/00/fbfc00226e3c1a9895fc2e64ebb263bf.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/f3/e6/1e/f3e61e8736df028024867f141767f022.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

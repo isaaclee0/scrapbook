@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453115706/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/goldens",
+    "CustomFileName": "88101736453115706",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453115706",
+      "url": "https://www.pinterest.com/pin/88101736453115706/",
+      "type": "pin",
+      "title": "A dog and the toy",
+      "gridTitle": "A dog and the toy",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Alatus1_",
+        "url": "https://www.pinterest.com/Alatus1_/",
+        "name": "Alatus"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/goldens/",
+        "name": "Goldens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/10/ed/ec/10edecf3a63aa00bc956dd6c9f5d1a2b.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/ba/83/0c/ba830c8ff2ed52f40448283a1b3f9778.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

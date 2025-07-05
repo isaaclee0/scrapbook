@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443658742/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443658742",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443658742",
+      "url": "https://www.pinterest.com/pin/88101736443658742/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Staining Wood with Cheap, Natural and Non-toxic Tea",
+      "description": "Great article about staining woods with cheap, natural and non-toxic items. Pennies in vinegar create a turquoise stain, etc..",
+      "link": "http://www.toolgirl.com/toolgirl/2010/03/staining-wood-with-cheap-natural-and-nontoxic-tea.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ea/42/68/ea4268520c9f9a5048c60b02fc209481.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

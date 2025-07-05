@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435961059/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736435961059",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435961059",
+      "url": "https://www.pinterest.com/pin/88101736435961059/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Best Brownies in the World",
+      "description": "The Best Brownies in the World",
+      "link": "http://www.cravingsofalunatic.com/2011/08/the-best-brownies-in-the-world.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9c/97/0a/9c970abcd8f39c111da06d573faf74d3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

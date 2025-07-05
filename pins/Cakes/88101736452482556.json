@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452482556/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736452482556",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452482556",
+      "url": "https://www.pinterest.com/pin/88101736452482556/",
+      "type": "pin",
+      "title": "Classic Coffee Cake",
+      "gridTitle": "Classic Coffee Cake",
+      "description": " ",
+      "link": "https://www.tastemade.co.uk/videos/classic-coffee-cake",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 6,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemadeindia",
+        "url": "https://www.pinterest.com/tastemadeindia/",
+        "name": "Tastemade India"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/61/bf/77/61bf7758d8c78aff57b4416bc669f8b8.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/38/64/1e/38641ec1d2fd4c1905af13ecdd8cb07d.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

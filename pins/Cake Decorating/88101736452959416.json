@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452959416/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cake-decorating",
+    "CustomFileName": "88101736452959416",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452959416",
+      "url": "https://www.pinterest.com/pin/88101736452959416/",
+      "type": "pin",
+      "title": "Pastel de Tronco del Bosque",
+      "gridTitle": "Pastel de Tronco del Bosque",
+      "description": " ",
+      "link": "https://www.youtube.com/channel/UCBqqYdsRG_JXAapOu6MbqLQ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "deliwow",
+        "url": "https://www.pinterest.com/deliwow/",
+        "name": "DeliWow"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cake-decorating/",
+        "name": "Cake Decorating",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e1/65/bc/e165bcbcb0c4571acbc25ef0535fddf0.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/19/6c/e7/196ce71a004e5b351bbee1acbc0771b1.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

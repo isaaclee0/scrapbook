@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453509184/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736453509184",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453509184",
+      "url": "https://www.pinterest.com/pin/88101736453509184/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Mason Jar Lemon Pies with Meringue Clouds",
+      "description": " ",
+      "link": "https://www.sunkist.com/recipes/mason-jar-lemon-pies-with-meringue-clouds/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/af/b9/02/afb90289ab7296da4bf03e6fb354e001.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

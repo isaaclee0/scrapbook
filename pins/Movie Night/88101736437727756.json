@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437727756/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736437727756",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437727756",
+      "url": "https://www.pinterest.com/pin/88101736437727756/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Matilda house",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "seeinstars92",
+        "url": "https://www.pinterest.com/seeinstars92/",
+        "name": "Hannah Akridge"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b5/06/4d/b5064df805b3022258d1d7b4d7a3419a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

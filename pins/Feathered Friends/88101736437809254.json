@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437809254/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/feathered-friends",
+    "CustomFileName": "88101736437809254",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437809254",
+      "url": "https://www.pinterest.com/pin/88101736437809254/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": ".",
+      "link": "http://25.media.tumblr.com/tumblr_mdqfj4dwqW1rkj0i5o1_500.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/feathered-friends/",
+        "name": "Feathered friends",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b8/fe/78/b8fe78361a6b8717350b7765aee1656b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

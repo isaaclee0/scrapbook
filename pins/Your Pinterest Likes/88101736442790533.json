@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442790533/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442790533",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442790533",
+      "url": "https://www.pinterest.com/pin/88101736442790533/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": ".Prayer",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "bresp3",
+        "url": "https://www.pinterest.com/bresp3/",
+        "name": "Brenda Speirs"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8f/bf/18/8fbf181147b44f64b3e7d02277af88db.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444473431/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tarts",
+    "CustomFileName": "88101736444473431",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444473431",
+      "url": "https://www.pinterest.com/pin/88101736444473431/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "This Refreshing Mango Tart Looks Fancy But Is Easier Than You Think",
+      "description": "Mango Tart",
+      "link": "http://bzfd.it/2sauwgE",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "buzzfeedtasty",
+        "url": "https://www.pinterest.com/buzzfeedtasty/",
+        "name": "Tasty"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tarts/",
+        "name": "Tarts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1f/c5/b2/1fc5b2fbbdf1cdd16dfdd0e92b07e67b.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/83/81/34/8381348a839c8307247e2e3912bccc07.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

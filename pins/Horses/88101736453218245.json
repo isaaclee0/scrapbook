@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453218245/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/horses",
+    "CustomFileName": "88101736453218245",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453218245",
+      "url": "https://www.pinterest.com/pin/88101736453218245/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "X",
+      "description": " ",
+      "link": "https://twitter.com/freedom4horses/status/900035424290131968",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/horses/",
+        "name": "Horses",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/91/52/1c/91521c1b5f2e7201234fd0b5ba32e167.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

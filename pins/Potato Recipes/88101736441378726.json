@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441378726/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potato-recipes",
+    "CustomFileName": "88101736441378726",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441378726",
+      "url": "https://www.pinterest.com/pin/88101736441378726/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Potato Kugel Recipe",
+      "description": "potato kugel",
+      "link": "http://www.seriouseats.com/recipes/2010/03/potato-kugel-arthur-schwartz-passover-recipe.html#.T4UZgoPp_yg.pinterest",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potato-recipes/",
+        "name": "Potato Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/61/04/1d/61041d27ef9b44c5ceda812e96be086e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

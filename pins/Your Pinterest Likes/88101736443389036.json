@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443389036/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443389036",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443389036",
+      "url": "https://www.pinterest.com/pin/88101736443389036/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Planter DIY Water Reservoir (Dabbletree)",
+      "description": "Water reservoir for container plantings ~",
+      "link": "http://dabbletree.vrya.net/content.php?p=22",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ab/5f/32/ab5f32c65589973c8316b41d40c43cf3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

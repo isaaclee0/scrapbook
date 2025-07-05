@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444045276/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736444045276",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444045276",
+      "url": "https://www.pinterest.com/pin/88101736444045276/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Don Mashak (@DMashak) / X",
+      "description": "Perfect #gift from a 1950s @Sears #Christmas Catalog for #Patriots",
+      "link": "http://twitter.com/DMashak",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a1/ab/c2/a1abc247c106991857291c60ce621bed.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

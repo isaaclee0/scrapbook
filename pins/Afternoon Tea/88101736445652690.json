@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445652690/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736445652690",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445652690",
+      "url": "https://www.pinterest.com/pin/88101736445652690/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Yummy Mini Victoria Sponge Naked cakes",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "meadowcottage",
+        "url": "https://www.pinterest.com/meadowcottage/",
+        "name": "Meadow Cottage Bakery"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/02/7e/16/027e1638f3b8e9c522d58b3bde3337ce.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449901449/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pasta",
+    "CustomFileName": "88101736449901449",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449901449",
+      "url": "https://www.pinterest.com/pin/88101736449901449/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Delicious spinach & ricotta cannelloni bake recipe",
+      "description": "spinach & ricotta cannelloni bake",
+      "link": "http://drizzleanddip.com/2017/02/17/spinach-ricotta-cannelloni-bake",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pasta/",
+        "name": "Pasta",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/73/da/2e/73da2e073f64b99f732b55cb52aa44b2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

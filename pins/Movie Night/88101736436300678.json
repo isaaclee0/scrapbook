@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436300678/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736436300678",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436300678",
+      "url": "https://www.pinterest.com/pin/88101736436300678/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "My favorite show! - (Larkrise to Candleford, Wonderful drama, available through BBC and PBS)",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b4/d1/50/b4d150d8e9748435bffa2b53f9d389c5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

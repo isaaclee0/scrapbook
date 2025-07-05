@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443356977/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443356977",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443356977",
+      "url": "https://www.pinterest.com/pin/88101736443356977/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Create a Magical Miniature Garden",
+      "description": "~ fairy garden in a drawer",
+      "link": "http://www.midwestliving.com/garden/container/miniature-garden/?catref=bcat603&page=4",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a3/13/c9/a313c9ce9e1b301a8203edf7b9c555ba.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

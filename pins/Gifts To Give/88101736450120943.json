@@ -1,0 +1,47 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450120943/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/gifts-to-give",
+    "CustomFileName": "88101736450120943",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450120943",
+      "url": "https://www.pinterest.com/pin/88101736450120943/",
+      "type": "pin",
+      "title": "Wrapping Hacks 🎁 🎄",
+      "gridTitle": "Wrapping Hacks 🎁 🎄",
+      "description": "Wrapping Hacks 🎁 🎄 #Christmas #christmasgifts #giftwrapping",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/gifts-to-give/",
+        "name": "Gifts to give",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6a/04/e1/6a04e134d371c08170808d2a6ca44684.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/46/0d/e8/460de856db6cb221913b0808b4e187af.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

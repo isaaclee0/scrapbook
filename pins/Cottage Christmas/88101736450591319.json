@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450591319/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-christmas",
+    "CustomFileName": "88101736450591319",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450591319",
+      "url": "https://www.pinterest.com/pin/88101736450591319/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "My Mother's Bread Sauce",
+      "description": "My Mother's Bread Sauce",
+      "link": "http://www.nigella.com/recipes/view/my-mothers-bread-sauce",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-christmas/",
+        "name": "Cottage Christmas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f5/6e/94/f56e9469bae84312de3607b970ff8454.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443340602/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443340602",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443340602",
+      "url": "https://www.pinterest.com/pin/88101736443340602/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Thanks, I'll stick with French Fries",
+      "description": "\"I was born in the wrong era.\"",
+      "link": "http://fiveanddiamond.blogspot.co.il/2009/06/thanks-ill-stick-with-french-fries.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/47/29/9d/47299ddbf3f7ea767e7dc2602d1e29c7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

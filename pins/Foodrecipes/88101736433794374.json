@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433794374/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736433794374",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433794374",
+      "url": "https://www.pinterest.com/pin/88101736433794374/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Domain Details Page",
+      "description": "Pulled shoulder of lamb recipe | Meat | Lemon Squeezy",
+      "link": "http://www.lemonsqueezy.eu/recipes/category/meat/pulled-shoulder-of-lamb",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c3/71/f4/c371f4eea872e86956025f63fb2acef9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

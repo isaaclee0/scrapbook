@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451411631/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/petite-plus",
+    "CustomFileName": "88101736451411631",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451411631",
+      "url": "https://www.pinterest.com/pin/88101736451411631/",
+      "type": "pin",
+      "title": "How to tie a wrap dress",
+      "gridTitle": "How to tie a wrap dress",
+      "description": " ",
+      "link": "https://www.caralynmirand.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "caralynmirand",
+        "url": "https://www.pinterest.com/caralynmirand/",
+        "name": "Caralyn Mirand Koch | Curvy Style + Fashion + Beauty"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/petite-plus/",
+        "name": "Petite plus",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f3/c9/8c/f3c98cc9e5836247a35a9215cd2c5762.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/6b/e4/0e/6be40ea276fc45fc5381ed3f97272a06.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

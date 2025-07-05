@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431903024/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736431903024",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431903024",
+      "url": "https://www.pinterest.com/pin/88101736431903024/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "White Chocolate Mousse Cake Recipe",
+      "description": "White Chocolate Mousse Cake",
+      "link": "http://www.cooksrecipes.com/cake/white_chocolate_mousse_cake_recipe.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7f/e4/fb/7fe4fb732cdb7cf2e82003f1a3cbf8a4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446507191/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736446507191",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446507191",
+      "url": "https://www.pinterest.com/pin/88101736446507191/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Messy ponytail",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9a/be/23/9abe23dd37180bd1494bda23f06a5d24.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

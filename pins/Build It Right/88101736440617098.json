@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440617098/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/build-it-right",
+    "CustomFileName": "88101736440617098",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440617098",
+      "url": "https://www.pinterest.com/pin/88101736440617098/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "BSI-059: Slab Happy",
+      "description": "BSI-059: Slab Happy",
+      "link": "http://buildingscience.com/documents/insights/bsi-059-slab-happy",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/build-it-right/",
+        "name": "Build it right.",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ee/a8/12/eea8126befa5e2bbe522c4a2e7534e00.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

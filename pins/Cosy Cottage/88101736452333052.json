@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452333052/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cosy-cottage",
+    "CustomFileName": "88101736452333052",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452333052",
+      "url": "https://www.pinterest.com/pin/88101736452333052/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "catherinew1258",
+        "url": "https://www.pinterest.com/catherinew1258/",
+        "name": "Best Interiors"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cosy-cottage/",
+        "name": "Cosy Cottage",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7c/cf/a4/7ccfa48188ee5b8034dbe6b408d432f1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

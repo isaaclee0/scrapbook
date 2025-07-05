@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450476950/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tried-it-liked-it",
+    "CustomFileName": "88101736450476950",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450476950",
+      "url": "https://www.pinterest.com/pin/88101736450476950/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Crispy Mongolian Tofu",
+      "description": "Crispy Mongolian Tofu – Chez Jorge",
+      "link": "https://chejorge.com/2020/07/06/crispy-mongolian-tofu/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tried-it-liked-it/",
+        "name": "Tried It Liked It",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/89/ec/f7/89ecf71966d09dc9f89caf513037359f.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

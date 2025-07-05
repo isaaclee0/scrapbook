@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450867361/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/gingerbread-houses",
+    "CustomFileName": "88101736450867361",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450867361",
+      "url": "https://www.pinterest.com/pin/88101736450867361/",
+      "type": "pin",
+      "title": "How to Decorate a Gingerbread House",
+      "gridTitle": "How to Decorate a Gingerbread House",
+      "description": "Christmas in July! Check out my gingerbread house and let me know what you think.",
+      "link": "https://www.tiktok.com/@maddie.quinn/video/6851987723385900293",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 6,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "maddienquinn",
+        "url": "https://www.pinterest.com/maddienquinn/",
+        "name": "Maddie Quinn"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/gingerbread-houses/",
+        "name": "Gingerbread Houses",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3f/b6/38/3fb63853a92108d186df350671bbd0db.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/13/79/69/137969f8d53b00718bcb60fd90f201fb.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

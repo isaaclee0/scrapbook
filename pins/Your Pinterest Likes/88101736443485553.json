@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443485553/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443485553",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443485553",
+      "url": "https://www.pinterest.com/pin/88101736443485553/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "33 True Facts About Famous People",
+      "description": "Theodore was hardcore!",
+      "link": "http://www.cracked.com/photoplasty_523_33-facts-about-famous-people-you-wont-believe-are-true_p33/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a4/7a/04/a47a0408306852e54817819c26e67622.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

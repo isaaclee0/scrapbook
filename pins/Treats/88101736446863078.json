@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446863078/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736446863078",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446863078",
+      "url": "https://www.pinterest.com/pin/88101736446863078/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Candied Strawberries",
+      "description": "These Candied strawberries are easy to make and a fun unique way to enjoy fresh strawberries. A thin crisp candy shell over a sweet strawberry - like a strawberry lollipop",
+      "link": "https://ashleemarie.com/candied-strawberries/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ashleemariecakes",
+        "url": "https://www.pinterest.com/ashleemariecakes/",
+        "name": "Ashlee Marie | Cakes, Recipes, How-to, Videos and Crafts"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/26/4b/63/264b6321db033a84a2c12ed5e7667dde.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/76/a9/e8/76a9e802877c7f0f6233360163660472.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

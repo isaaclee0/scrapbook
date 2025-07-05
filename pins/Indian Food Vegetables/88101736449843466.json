@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449843466/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/indian-food-vegetables",
+    "CustomFileName": "88101736449843466",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449843466",
+      "url": "https://www.pinterest.com/pin/88101736449843466/",
+      "type": "pin",
+      "title": "Kadai Paneer Recipe",
+      "gridTitle": "Kadai Paneer Recipe",
+      "description": " ",
+      "link": "https://www.mygingergarlickitchen.com/kadai-paneer/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "mygingergarlickitchen",
+        "url": "https://www.pinterest.com/mygingergarlickitchen/",
+        "name": "My Ginger Garlic Kitchen"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/indian-food-vegetables/",
+        "name": "Indian Food - Vegetables",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8d/12/ac/8d12ac79d4406f97f4e0739c0563c8bf.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/ff/6e/8f/ff6e8f720e272fa253def26365642980.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

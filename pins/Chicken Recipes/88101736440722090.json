@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440722090/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736440722090",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440722090",
+      "url": "https://www.pinterest.com/pin/88101736440722090/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Brown Stew Chicken: Popular Foolproof Recipe",
+      "description": "Jamaican Brown Stew Chicken Recipe http://cooklikeajamaican.com/new-recipe-brown-stew-chicken/",
+      "link": "http://cooklikeajamaican.com/new-recipe-brown-stew-chicken/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5b/76/dc/5b76dc8d57308d73d7f5bd2c1d72955e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

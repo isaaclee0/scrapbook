@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444545006/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/gifts-to-make-for-me-and-others",
+    "CustomFileName": "88101736444545006",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444545006",
+      "url": "https://www.pinterest.com/pin/88101736444545006/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Monogram",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "yummyarts",
+        "url": "https://www.pinterest.com/yummyarts/",
+        "name": "Kelly Ramirez"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/gifts-to-make-for-me-and-others/",
+        "name": "Gifts to make for me and others",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5e/e6/93/5ee693b59dd12cb424f3fcb13b999468.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

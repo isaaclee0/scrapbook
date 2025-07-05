@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445334161/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/garden-gear",
+    "CustomFileName": "88101736445334161",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445334161",
+      "url": "https://www.pinterest.com/pin/88101736445334161/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Ultra Light High Wellingtons, 30% lighter http://www.gardengirl.se",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 5,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "gardengirlab",
+        "url": "https://www.pinterest.com/gardengirlab/",
+        "name": "GardenGirl AB"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/garden-gear/",
+        "name": "Garden Gear",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3e/4c/5b/3e4c5b91deb8d25267dbb624121a989d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

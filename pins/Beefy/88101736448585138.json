@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448585138/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/beefy",
+    "CustomFileName": "88101736448585138",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448585138",
+      "url": "https://www.pinterest.com/pin/88101736448585138/",
+      "type": "pin",
+      "title": "Ground Beef and Leek Risotto",
+      "gridTitle": "Ground Beef and Leek Risotto",
+      "description": "You haven't had leeks like this before. Perfectly diced leek combined with ground beef, seasonings and herbs for a SUCCULENT risotto.",
+      "link": "https://balkanlunchbox.com/leek-ground-beef-risotto/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "balkanlunchbox",
+        "url": "https://www.pinterest.com/balkanlunchbox/",
+        "name": "Balkan Lunch Box"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/beefy/",
+        "name": "Beefy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fc/18/a5/fc18a566937faa8692f32729f11b8f1f.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/v2/720p/14/9d/c4/149dc4745a46f4c1e22909c8d6fc308a_mobile.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

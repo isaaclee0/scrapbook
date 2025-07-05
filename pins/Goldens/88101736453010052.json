@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453010052/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/goldens",
+    "CustomFileName": "88101736453010052",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453010052",
+      "url": "https://www.pinterest.com/pin/88101736453010052/",
+      "type": "pin",
+      "title": "Dog Being Mom to Kittens",
+      "gridTitle": "Dog Being Mom to Kittens",
+      "description": " ",
+      "link": "https://ilovekittys.com/collections/cat-beds",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ilovekittysandcats",
+        "url": "https://www.pinterest.com/ilovekittysandcats/",
+        "name": "I Love Kittys"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/goldens/",
+        "name": "Goldens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bc/9c/a2/bc9ca2d956bd417073395b3acfb38354.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/f0/81/52/f08152537539e20ba2d950135d704c0f.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

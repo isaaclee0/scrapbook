@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453217924/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/summer-food",
+    "CustomFileName": "88101736453217924",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453217924",
+      "url": "https://www.pinterest.com/pin/88101736453217924/",
+      "type": "pin",
+      "title": "Black Forest Icebox Cake",
+      "gridTitle": "Black Forest Icebox Cake",
+      "description": " ",
+      "link": "https://www.thereciperebel.com/3-ingredient-no-bake-black-forest-icebox-cake/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ashleyfehr",
+        "url": "https://www.pinterest.com/ashleyfehr/",
+        "name": "Ashley | The Recipe Rebel"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/summer-food/",
+        "name": "Summer food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f9/01/d6/f901d69d293c44d4d65025b9e65921d6.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/5b/1e/77/5b1e77804538d6e0074cee094bf26c56.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

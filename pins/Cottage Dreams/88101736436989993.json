@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436989993/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-dreams",
+    "CustomFileName": "88101736436989993",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436989993",
+      "url": "https://www.pinterest.com/pin/88101736436989993/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Cottage in the Dordogne region of France.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-dreams/",
+        "name": "Cottage Dreams",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/37/1f/ba/371fbab9278cef9355185cbd0d7a34d2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

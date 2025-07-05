@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440690964/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/budgie-love",
+    "CustomFileName": "88101736440690964",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440690964",
+      "url": "https://www.pinterest.com/pin/88101736440690964/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Real love",
+      "description": "best friends",
+      "link": "http://imgur.com/DEpKU",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/budgie-love/",
+        "name": "Budgie Love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/93/82/2b/93822b2dda038f28b73691e0901d06db.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

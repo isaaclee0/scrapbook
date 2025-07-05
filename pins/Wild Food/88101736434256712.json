@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434256712/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/wild-food",
+    "CustomFileName": "88101736434256712",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434256712",
+      "url": "https://www.pinterest.com/pin/88101736434256712/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Dandelion",
+      "description": "Herb Of The Day: Dandelion",
+      "link": "http://www.herbs-info.com/dandelion.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/wild-food/",
+        "name": "Wild food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6d/e8/62/6de8622e8e5f87f43efeda2327b3bbe5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

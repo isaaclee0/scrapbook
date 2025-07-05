@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445937046/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736445937046",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445937046",
+      "url": "https://www.pinterest.com/pin/88101736445937046/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Dark chocolate mousse cake",
+      "description": " ",
+      "link": "https://www.taste.com.au/recipes/dark-chocolate-mousse-cake/0bb5bad0-84ba-4fa3-8e38-6c9a4af39d93",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "teamtaste",
+        "url": "https://www.pinterest.com/teamtaste/",
+        "name": "taste.com.au"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8a/8d/90/8a8d90dbcf2afa0d94854048e4a6b243.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

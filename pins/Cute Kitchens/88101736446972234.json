@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446972234/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cute-kitchens",
+    "CustomFileName": "88101736446972234",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446972234",
+      "url": "https://www.pinterest.com/pin/88101736446972234/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "irish cottage interior",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "paulineshea3",
+        "url": "https://www.pinterest.com/paulineshea3/",
+        "name": "Pauline O'Shea"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cute-kitchens/",
+        "name": "Cute Kitchens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f7/68/2b/f7682b80c0f4bd2a039c367815a77758.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

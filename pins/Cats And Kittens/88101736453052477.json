@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453052477/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736453052477",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453052477",
+      "url": "https://www.pinterest.com/pin/88101736453052477/",
+      "type": "pin",
+      "title": "Cat Scratcher Ideas",
+      "gridTitle": "Cat Scratcher Ideas",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "RyannAutry",
+        "url": "https://www.pinterest.com/RyannAutry/",
+        "name": "Ryann Autry"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8d/f6/77/8df67791f1fb4edecd60c995b06f1506.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/57/90/d7/5790d7cbee30e05523372cf433d074a8.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

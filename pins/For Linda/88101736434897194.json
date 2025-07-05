@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434897194/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/for-linda",
+    "CustomFileName": "88101736434897194",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434897194",
+      "url": "https://www.pinterest.com/pin/88101736434897194/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "80th birthday",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "diannefarmdog",
+        "url": "https://www.pinterest.com/diannefarmdog/",
+        "name": "Dianne Weidner Farmer"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/for-linda/",
+        "name": "For Linda",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/23/7e/4b/237e4b1ab8554961f135806d15fd3a34.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

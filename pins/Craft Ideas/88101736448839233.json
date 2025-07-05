@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448839233/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/craft-ideas",
+    "CustomFileName": "88101736448839233",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448839233",
+      "url": "https://www.pinterest.com/pin/88101736448839233/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Inspiring terrain",
+      "description": "Texture imitation.",
+      "link": "https://warzone40k.com/wargame-terrain",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/craft-ideas/",
+        "name": "Craft Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/06/74/d9/0674d95c0158df6391e35895c738589b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

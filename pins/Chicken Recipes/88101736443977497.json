@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443977497/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736443977497",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443977497",
+      "url": "https://www.pinterest.com/pin/88101736443977497/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Triple Dipped Fried Chicken Recipe",
+      "description": "Triple Dipped Fried Chicken",
+      "link": "http://www.keyingredient.com/recipes/1590285033/triple-dipped-fried-chicken/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 4,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c7/2a/5c/c72a5c85c4e34c38afe9e554acd1408d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

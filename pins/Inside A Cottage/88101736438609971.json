@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438609971/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/inside-a-cottage",
+    "CustomFileName": "88101736438609971",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438609971",
+      "url": "https://www.pinterest.com/pin/88101736438609971/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "dog days...",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "beaner4685",
+        "url": "https://www.pinterest.com/beaner4685/",
+        "name": "Colleen Owens"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/inside-a-cottage/",
+        "name": "Inside a cottage",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2e/7b/42/2e7b42f5c9d0e122b11ca47485498636.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

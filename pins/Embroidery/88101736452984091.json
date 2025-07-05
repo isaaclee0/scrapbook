@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452984091/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/embroidery",
+    "CustomFileName": "88101736452984091",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452984091",
+      "url": "https://www.pinterest.com/pin/88101736452984091/",
+      "type": "pin",
+      "title": "Embroidery for beginners",
+      "gridTitle": "Embroidery for beginners",
+      "description": " ",
+      "link": "https://m.youtube.com/channel/UCugZ3xxl6WYBs2-nTyGb2GQ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "EmbroideryHandArt",
+        "url": "https://www.pinterest.com/EmbroideryHandArt/",
+        "name": "EmbroideryArt"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/embroidery/",
+        "name": "Embroidery",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3f/43/a1/3f43a1352b74c54828ecd3d1af58e6cd.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/ea/b1/e7/eab1e7013ea08b1a06c2ce7ec069a0bc.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

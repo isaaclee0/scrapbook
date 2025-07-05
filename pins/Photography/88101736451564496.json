@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451564496/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/photography",
+    "CustomFileName": "88101736451564496",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451564496",
+      "url": "https://www.pinterest.com/pin/88101736451564496/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "\"***\" by Dmitry Ageev, via 500px.",
+      "link": "http://500px.com/photo/28296149?from=popular&page=11",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/photography/",
+        "name": "Photography",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d9/76/55/d97655c4fa872891e56de94c55df1fbf.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

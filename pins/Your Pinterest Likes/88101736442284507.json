@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442284507/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442284507",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442284507",
+      "url": "https://www.pinterest.com/pin/88101736442284507/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Decorate on a Budget With These Creative Style Tips and Tricks",
+      "description": ".",
+      "link": "http://www.countryliving.com/homes/how-to-get-the-look/budget-decorating-makeover-0109?click=main_sr",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2d/2d/ef/2d2def234c4b697552f184ffbd185a4e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

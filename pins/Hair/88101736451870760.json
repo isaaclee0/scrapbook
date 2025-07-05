@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451870760/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736451870760",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451870760",
+      "url": "https://www.pinterest.com/pin/88101736451870760/",
+      "type": "pin",
+      "title": "Coque trançado",
+      "gridTitle": "Coque trançado",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "theresayoung33",
+        "url": "https://www.pinterest.com/theresayoung33/",
+        "name": "Theresa Young"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9e/a0/f8/9ea0f856634aaada43e5105ce4aec0c4.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/8f/d5/6d/8fd56df8dab69e6baf9413fb8d5d91c5.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443402949/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443402949",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443402949",
+      "url": "https://www.pinterest.com/pin/88101736443402949/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "fight until you have won",
+      "description": "turn to you",
+      "link": "http://this--too--shall--pass.tumblr.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e2/2e/6b/e22e6b4a9ee17ba226a742a233bfd6ab.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

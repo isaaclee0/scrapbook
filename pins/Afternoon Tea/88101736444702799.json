@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444702799/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736444702799",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444702799",
+      "url": "https://www.pinterest.com/pin/88101736444702799/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Jelly cakes",
+      "description": "Jelly cakes",
+      "link": "http://www.taste.com.au/recipes/jelly-cakes/a03da5d5-27d9-4eaf-9cb9-caee5a73cefa",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/17/cc/f2/17ccf230614ce224ff6f45c9413530ff.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

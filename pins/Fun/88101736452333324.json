@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452333324/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fun",
+    "CustomFileName": "88101736452333324",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452333324",
+      "url": "https://www.pinterest.com/pin/88101736452333324/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Hidden",
+      "description": " ",
+      "link": "https://www.reddit.com/r/funny/comments/fl90pu/hidden/?utm_source=ifttt",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fun/",
+        "name": "Fun",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/28/f6/ae/28f6ae13e7fc3169c4550f8d3461c5ce.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

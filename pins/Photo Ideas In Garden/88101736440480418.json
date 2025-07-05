@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440480418/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/photo-ideas-in-garden",
+    "CustomFileName": "88101736440480418",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440480418",
+      "url": "https://www.pinterest.com/pin/88101736440480418/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Alys Fowler",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ejridout",
+        "url": "https://www.pinterest.com/ejridout/",
+        "name": "Eliz Ridout"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/photo-ideas-in-garden/",
+        "name": "Photo ideas in garden",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9c/7e/8e/9c7e8e63dd95b41213fbf72b9307de8d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

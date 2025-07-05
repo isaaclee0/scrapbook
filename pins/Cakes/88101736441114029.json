@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441114029/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736441114029",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441114029",
+      "url": "https://www.pinterest.com/pin/88101736441114029/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "bonjourecipes",
+      "description": "Chocolate Mousse Cake",
+      "link": "http://bonjourecipes.wifeo.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/65/b5/19/65b519ed94b29e7e92c22fe7c6e3ecef.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

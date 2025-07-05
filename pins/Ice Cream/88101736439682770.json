@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439682770/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/ice-cream",
+    "CustomFileName": "88101736439682770",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439682770",
+      "url": "https://www.pinterest.com/pin/88101736439682770/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Homemade Fudgsicles - Recipe Boy",
+      "description": "Easy Homemade Fudgsicles Recipe",
+      "link": "http://www.recipeboy.com/2013/06/homemade-fudgsicles/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/ice-cream/",
+        "name": "Ice cream",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/81/0a/4a/810a4a2912818c8002a5709fc2063f8b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

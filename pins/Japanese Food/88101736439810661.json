@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439810661/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/japanese-food",
+    "CustomFileName": "88101736439810661",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439810661",
+      "url": "https://www.pinterest.com/pin/88101736439810661/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Pickled Ginger Recipe | Elephantastic Vegan",
+      "description": "Pickled Ginger | Elephantastic Vegan",
+      "link": "http://www.elephantasticvegan.com/pickled-ginger/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/japanese-food/",
+        "name": "Japanese Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e1/57/a1/e157a11f701349430654f1fafabb5f18.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

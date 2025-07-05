@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453407634/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/exercise-it",
+    "CustomFileName": "88101736453407634",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453407634",
+      "url": "https://www.pinterest.com/pin/88101736453407634/",
+      "type": "pin",
+      "title": "morning mobility routine ✨ FOLLOW @move.with.mer on INSTA/TIKTOK FOR MORE TIPS",
+      "gridTitle": "morning mobility routine ✨ FOLLOW @move.with.mer on INSTA/TIKTOK FOR MORE TIPS",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "theplaygroundapp",
+        "url": "https://www.pinterest.com/theplaygroundapp/",
+        "name": "The Playground App | Home Workouts"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/exercise-it/",
+        "name": "Exercise it",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/16/b2/fa/16b2fad93d4068b87a2bf16208e798cd.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

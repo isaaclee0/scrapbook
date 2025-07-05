@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451726217/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/spring-flowering",
+    "CustomFileName": "88101736451726217",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451726217",
+      "url": "https://www.pinterest.com/pin/88101736451726217/",
+      "type": "pin",
+      "title": "Secret Garden (Poem)",
+      "gridTitle": "Secret Garden (Poem)",
+      "description": "Excerpts from the poem \"Secret Garden\" by Ruth Marie Paterson, from her book \"Gently Planted\" (2021)",
+      "link": "https://ruthmariepaterson.ca/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": true,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 2,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ruthmariepaterson",
+        "url": "https://www.pinterest.com/ruthmariepaterson/",
+        "name": "rainydaypoet"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/spring-flowering/",
+        "name": "Spring Flowering",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8d/61/4c/8d614c57a29292edbb3e4166e24192be.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/93/44/a5/9344a50b6f9fcab18b9b64b1bb42cc4d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

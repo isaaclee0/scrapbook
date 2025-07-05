@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446176065/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cute-kitchens",
+    "CustomFileName": "88101736446176065",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446176065",
+      "url": "https://www.pinterest.com/pin/88101736446176065/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Cute kitchen with small, dining table.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 13,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "denise4749",
+        "url": "https://www.pinterest.com/denise4749/",
+        "name": "Denise Heather"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cute-kitchens/",
+        "name": "Cute Kitchens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/62/00/6a/62006a2708ad6eca706506dbe3425b45.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

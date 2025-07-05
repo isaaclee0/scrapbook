@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433472653/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-dreams",
+    "CustomFileName": "88101736433472653",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433472653",
+      "url": "https://www.pinterest.com/pin/88101736433472653/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Pretty cottage",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ducesakta",
+        "url": "https://www.pinterest.com/ducesakta/",
+        "name": "Ducesa Kta"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-dreams/",
+        "name": "Cottage Dreams",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4b/46/f2/4b46f2bbf886173a7d300ff0b750320b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

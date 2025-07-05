@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438572188/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736438572188",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438572188",
+      "url": "https://www.pinterest.com/pin/88101736438572188/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "KFC Baked Fried Chicken",
+      "description": "KFC Baked Fried Chicken! - This will be part of your weekly rotation - 5 ingredients, so easy!",
+      "link": "http://myfridgefood.com/ViewRecipe.aspx?recipe=21175",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bb/e2/7a/bbe27a68c9ea34453d76ce0c06a2d977.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

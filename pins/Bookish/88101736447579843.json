@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447579843/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736447579843",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447579843",
+      "url": "https://www.pinterest.com/pin/88101736447579843/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "I, Who Did Not Die",
+      "description": "I, Who Did Not Die by Zahed Haftlang https://www.amazon.com/dp/B01IA7TLL8/ref=cm_sw_r_pi_dp_U_x_TxhDCbND62W49",
+      "link": "https://www.amazon.com/dp/B01IA7TLL8/ref=cm_sw_r_pi_dp_U_x_TxhDCbND62W49",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/61/76/ee/6176ee6c831aaec02515d0d270e83cdf.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

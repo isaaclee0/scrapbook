@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453450788/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/breads-also-including-gf-paleo-indian-and-more",
+    "CustomFileName": "88101736453450788",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453450788",
+      "url": "https://www.pinterest.com/pin/88101736453450788/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "chefedharris",
+        "url": "https://www.pinterest.com/chefedharris/",
+        "name": "CHEF ED HARRIS"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/breads-also-including-gf-paleo-indian-and-more/",
+        "name": "Breads -also including GF, Paleo, Indian and more..",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/23/e9/89/23e98988ca2a0d56140f7fc212a9bef9.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/9c/1b/24/9c1b24a580a0ee7a4da03ced4c58d2b3.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

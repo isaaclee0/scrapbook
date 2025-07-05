@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450101723/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/biscuitscookies-and-slices",
+    "CustomFileName": "88101736450101723",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450101723",
+      "url": "https://www.pinterest.com/pin/88101736450101723/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Brownies",
+      "description": "Brownies",
+      "link": "http://www.nigella.com/recipes/brownies",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/biscuitscookies-and-slices/",
+        "name": "Biscuits/Cookies and Slices",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9b/d3/1b/9bd31bfdcfc4a2c19a48933ddff08ef4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

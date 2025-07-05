@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442230325/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/spiritual-stuff-to-ponder",
+    "CustomFileName": "88101736442230325",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442230325",
+      "url": "https://www.pinterest.com/pin/88101736442230325/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Meaning",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/spiritual-stuff-to-ponder/",
+        "name": "Spiritual stuff to ponder",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/43/ff/7e/43ff7eab88e5737931a5d7d98b8eac9b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

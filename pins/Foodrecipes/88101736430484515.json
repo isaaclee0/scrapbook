@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430484515/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430484515",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430484515",
+      "url": "https://www.pinterest.com/pin/88101736430484515/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Best Ever Red Velvet Cheesecake Brownies",
+      "description": "Red velvet cheesecake brownies.",
+      "link": "http://sweetpeaskitchen.com/2011/02/01/red-velvet-cheesecake-brownies/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4c/77/0f/4c770f65319733b012d6487f39fc9521.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

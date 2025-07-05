@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436177943/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pork",
+    "CustomFileName": "88101736436177943",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436177943",
+      "url": "https://www.pinterest.com/pin/88101736436177943/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Dublin Coddle (Irish Sausage and Bacon Stew)",
+      "description": "Dublin Coddle (Irish Sausage and Bacon Stew)",
+      "link": "http://cbsop.com/recipes/dublin-coddle/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pork/",
+        "name": "Pork",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ec/87/50/ec87500980d7d569fefe39aaeaac7804.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

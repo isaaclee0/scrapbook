@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435478127/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/craft-ideas",
+    "CustomFileName": "88101736435478127",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435478127",
+      "url": "https://www.pinterest.com/pin/88101736435478127/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Jaybird Quilts",
+      "description": "Julie of Jaybird Quilts shares her love of quilting with tips, tutorials, and quilt-a-longs.",
+      "link": "http://www.jaybirdquilts.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/craft-ideas/",
+        "name": "Craft Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b0/9f/a7/b09fa7bb711e2acb00aab9e99c202a58.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

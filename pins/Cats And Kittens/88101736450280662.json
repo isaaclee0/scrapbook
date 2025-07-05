@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450280662/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736450280662",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450280662",
+      "url": "https://www.pinterest.com/pin/88101736450280662/",
+      "type": "pin",
+      "title": "Cats",
+      "gridTitle": "Cats",
+      "description": "Save 20 % off Our Entire eBay Store",
+      "link": "http://ebay.us/gO9dqF",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "SunNaturalProducts",
+        "url": "https://www.pinterest.com/SunNaturalProducts/",
+        "name": "Sun Laboratories"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0f/79/9a/0f799a1ab054506995c09f0a72887124.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/b8/2f/5c/b82f5ccc94c5215bdb822c083a43064b.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

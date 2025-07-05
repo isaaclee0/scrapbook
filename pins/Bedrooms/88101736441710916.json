@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441710916/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bedrooms",
+    "CustomFileName": "88101736441710916",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441710916",
+      "url": "https://www.pinterest.com/pin/88101736441710916/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Amazing bedroom.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "connolly1561",
+        "url": "https://www.pinterest.com/connolly1561/",
+        "name": "Donna C"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bedrooms/",
+        "name": "Bedrooms",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3f/54/45/3f5445b6d5aef12f48ab484ba7e13c85.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

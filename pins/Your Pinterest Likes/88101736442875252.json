@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442875252/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442875252",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442875252",
+      "url": "https://www.pinterest.com/pin/88101736442875252/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "toshowthemjesus.com",
+      "description": "A printable prayer for the sad of heart...",
+      "link": "http://toshowthemjesus.com/2013/05/01/new-printable/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e6/83/75/e683757af432df273cf54a7ee5a25fdb.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

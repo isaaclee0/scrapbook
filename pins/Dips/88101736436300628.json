@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436300628/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/dips",
+    "CustomFileName": "88101736436300628",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436300628",
+      "url": "https://www.pinterest.com/pin/88101736436300628/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Crab and Artichoke Spread",
+      "link": "http://www.recipe.com/crab-and-artichoke-spread/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/dips/",
+        "name": "Dips",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d6/6d/8b/d66d8bf1b8192a1eb537ba69760c0a51.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

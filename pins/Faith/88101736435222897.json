@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435222897/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736435222897",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435222897",
+      "url": "https://www.pinterest.com/pin/88101736435222897/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Brian Tracy",
+      "description": " ",
+      "link": "http://www.tumblr.com/blog/briantracy",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c4/e2/58/c4e2586e4ee35c1d0096ca1d3d478919.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

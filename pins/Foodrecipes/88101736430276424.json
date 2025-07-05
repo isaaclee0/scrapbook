@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430276424/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430276424",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430276424",
+      "url": "https://www.pinterest.com/pin/88101736430276424/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Baked Eggs in Bread Bowls Recipe",
+      "description": "Baked Eggs in Bread Bowls",
+      "link": "http://www.myrecipes.com/recipe/baked-eggs-bread-bowls-10000001940815/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fe/b5/15/feb515c7c87f78735a0704f16bbd67a7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

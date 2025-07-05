@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432044834/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736432044834",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432044834",
+      "url": "https://www.pinterest.com/pin/88101736432044834/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Cranberry Kiss Meringues",
+      "link": "http://www.mymissourikitchen.com/2012/12/st-nicholas-approved-recipe-snow-covered-cranberry-kiss-meringues.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3b/27/33/3b2733c1a552a9612c268994e2549062.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

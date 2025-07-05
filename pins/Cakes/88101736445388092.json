@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445388092/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736445388092",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445388092",
+      "url": "https://www.pinterest.com/pin/88101736445388092/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Allrecipes | Recipes, How-Tos, Videos and More",
+      "description": "Gâteau basque facile",
+      "link": "http://allrecipes.fr/recette/13542/g-teau-basque-facile.aspx?o_ln=RD_MC_Photo:+5_SimilarRecipes&o_is=RD_More+Choices",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ff/17/b2/ff17b29af5a59bdafbceb6a0f408a611.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

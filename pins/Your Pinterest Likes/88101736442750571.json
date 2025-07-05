@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442750571/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442750571",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442750571",
+      "url": "https://www.pinterest.com/pin/88101736442750571/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "$8 Ruffle Curtain Tutorial",
+      "description": "diy ruffled curtain",
+      "link": "http://aboyagirlandapug.blogspot.com/2010/04/8-ruffle-curtain-tutorial.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a8/fb/88/a8fb88989a2cbf7973932ab01e9bad6d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

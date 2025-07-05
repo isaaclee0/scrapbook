@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435989654/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736435989654",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435989654",
+      "url": "https://www.pinterest.com/pin/88101736435989654/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "green fried tomatoes",
+      "description": "One of the best movies ever!",
+      "link": "http://search.aol.com/aol/image?s_it=topsearchbox.image&v_t=comsearch50-ac-video&imgsz=&imgtype=&imgc=&q=green+fried+tomatoes",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b6/9e/17/b69e17f88a5166c2e007f431e87a90c0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

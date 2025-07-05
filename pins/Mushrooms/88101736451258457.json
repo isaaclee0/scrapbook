@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451258457/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/mushrooms",
+    "CustomFileName": "88101736451258457",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451258457",
+      "url": "https://www.pinterest.com/pin/88101736451258457/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Mushroom Pâté — Tasting Page",
+      "description": "An easy, but sophisticated meatless pate filled with woodsy mushrooms, goat cheese and spices",
+      "link": "http://www.tastingpage.com/cooking/mushroom-pt/2013/12/19#_a5y_p=3963270",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastingpage",
+        "url": "https://www.pinterest.com/tastingpage/",
+        "name": "Tasting Page"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/mushrooms/",
+        "name": "Mushrooms",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/70/f5/7f/70f57fa85b57367c8b49dbb3b2ef2a21.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

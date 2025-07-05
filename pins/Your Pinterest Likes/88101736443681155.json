@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443681155/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443681155",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443681155",
+      "url": "https://www.pinterest.com/pin/88101736443681155/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Tumblr",
+      "description": "Making Maple Syrup kettle style",
+      "link": "http://modernhepburn.tumblr.com/post/12498700312/rod42-making-maple-syrup-canada",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/dc/a2/9d/dca29d34b77fd45b4c7ebe4608d09813.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

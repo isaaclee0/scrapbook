@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439101562/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736439101562",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439101562",
+      "url": "https://www.pinterest.com/pin/88101736439101562/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Pastry Affair | White Chocolate Espresso Cake",
+      "description": "white chocolate espresso cake",
+      "link": "http://www.pastryaffair.com/blog/white-chocolate-espresso-cake.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3b/16/18/3b161861c8d8c3c96bddd29b5d3a361d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

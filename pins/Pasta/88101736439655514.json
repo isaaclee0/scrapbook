@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439655514/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pasta",
+    "CustomFileName": "88101736439655514",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439655514",
+      "url": "https://www.pinterest.com/pin/88101736439655514/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Mushroom Spinach Lasagna",
+      "description": "CWA Australia recipes • Mushroom & Spinach Lasagna recipe via pinner Fiona Long recipe here",
+      "link": "http://www.lifeasastrawberry.com/mushroo-spinach-lasagna/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pasta/",
+        "name": "Pasta",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/21/21/6d/21216db1e4fdf528aea3d6722985c026.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

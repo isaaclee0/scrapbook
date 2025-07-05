@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451489586/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/garden-travel",
+    "CustomFileName": "88101736451489586",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451489586",
+      "url": "https://www.pinterest.com/pin/88101736451489586/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "jenniferstill33",
+        "url": "https://www.pinterest.com/jenniferstill33/",
+        "name": "Jennifer Still"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/garden-travel/",
+        "name": "Garden Travel",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/52/af/e6/52afe6fa674e2544f2f6ec2a63496080.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

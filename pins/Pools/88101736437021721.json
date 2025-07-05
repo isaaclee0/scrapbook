@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437021721/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pools",
+    "CustomFileName": "88101736437021721",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437021721",
+      "url": "https://www.pinterest.com/pin/88101736437021721/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Dipping pool",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pools/",
+        "name": "Pools",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c6/ef/bc/c6efbc48ac0698206e2c0b127ead4495.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

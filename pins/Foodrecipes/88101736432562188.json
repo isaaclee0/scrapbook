@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432562188/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736432562188",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432562188",
+      "url": "https://www.pinterest.com/pin/88101736432562188/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "rlbmut.com",
+      "description": "Stuffed Baby Artichokes....these look really good!",
+      "link": "http://www.rlbmut.com/pic-793.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ff/83/21/ff8321ff4138e930a840af3b0b0aa042.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

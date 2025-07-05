@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445827311/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736445827311",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445827311",
+      "url": "https://www.pinterest.com/pin/88101736445827311/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "A W Tozer: following Christ means forsaking the world.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "cubbies4me",
+        "url": "https://www.pinterest.com/cubbies4me/",
+        "name": "Thomas Cohoon"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fc/bc/61/fcbc617ea23e6a1656ab680f65fc7292.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

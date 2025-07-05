@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444334380/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736444334380",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444334380",
+      "url": "https://www.pinterest.com/pin/88101736444334380/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Dark and sticky gingerbread recipe",
+      "description": "Dark and sticky gingerbread with a whiskey glaze",
+      "link": "http://www.telegraph.co.uk/foodanddrink/9862438/The-new-baker-dark-and-sticky-gingerbread-with-a-whiskey-glaze.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3e/0f/5f/3e0f5fc660c1326673a4b84d7da3d7b3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443027739/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443027739",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443027739",
+      "url": "https://www.pinterest.com/pin/88101736443027739/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Goodreads",
+      "description": "There's a lot I could say about this book and the rest of the series. It is perhaps the greatest epic on the \"human\" condition I've ever read. But in the end I think I will simply stick to saying that even my mother couldn't put it down.",
+      "link": "http://www.goodreads.com/book/photo/878303.Duncton_Wood",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/96/c5/b5/96c5b5ad722e6ab3070474c56f9d0080.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

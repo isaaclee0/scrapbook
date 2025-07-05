@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453124249/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/animal-love",
+    "CustomFileName": "88101736453124249",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453124249",
+      "url": "https://www.pinterest.com/pin/88101736453124249/",
+      "type": "pin",
+      "title": "❤",
+      "gridTitle": "❤",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Worldofmysoul",
+        "url": "https://www.pinterest.com/Worldofmysoul/",
+        "name": "Worldofmysoul"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/animal-love/",
+        "name": "Animal love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e7/d9/42/e7d942c043ba06edc5a52882628351f2.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/e6/30/c2/e630c2cd2e124a20ccf65e11a4af8894.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

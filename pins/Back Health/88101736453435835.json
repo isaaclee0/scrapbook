@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453435835/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/back-health",
+    "CustomFileName": "88101736453435835",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453435835",
+      "url": "https://www.pinterest.com/pin/88101736453435835/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "nealiewilliams",
+        "url": "https://www.pinterest.com/nealiewilliams/",
+        "name": "Nealie Williams"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/back-health/",
+        "name": "Back health",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3e/bc/e0/3ebce04ac68e5923393899fe49324b43.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/fd/9c/27/fd9c2725a124f42cea6ae048d390d2b9.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453052513/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736453052513",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453052513",
+      "url": "https://www.pinterest.com/pin/88101736453052513/",
+      "type": "pin",
+      "title": "Powder puffs",
+      "gridTitle": "Powder puffs",
+      "description": " ",
+      "link": "https://www.bestrecipes.com.au/recipes/powder-puffs/pwy9yzht",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "bestrecipesau",
+        "url": "https://www.pinterest.com/bestrecipesau/",
+        "name": "Best Recipes"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6d/90/f7/6d90f7b10323ff1fcdf97f7baa403d75.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445030766/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/photography",
+    "CustomFileName": "88101736445030766",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445030766",
+      "url": "https://www.pinterest.com/pin/88101736445030766/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Oh me, Oh my",
+      "description": "I like the Paris from this view",
+      "link": "http://jillsaywhat.tumblr.com/post/13907748482",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/photography/",
+        "name": "Photography",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/75/ef/17/75ef170d561e41251e78dd2d66be7af5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

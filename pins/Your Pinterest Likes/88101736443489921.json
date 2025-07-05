@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443489921/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443489921",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443489921",
+      "url": "https://www.pinterest.com/pin/88101736443489921/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "A Few of My Favorite Things - Gustavian Furniture",
+      "description": ".",
+      "link": "http://henhurst.blogspot.com/2011/11/few-of-my-favorite-things-gustavian.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d3/ce/a7/d3cea78b64891ab237998e1a8d9cfc6d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

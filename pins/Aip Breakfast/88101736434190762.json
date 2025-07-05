@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434190762/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-breakfast",
+    "CustomFileName": "88101736434190762",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434190762",
+      "url": "https://www.pinterest.com/pin/88101736434190762/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Pumpkin Breakfast Cookies",
+      "description": "Paleo Pumpkin Breakfast Cookies: The Girl Who Went Paleo",
+      "link": "http://thegirlwhowentpaleo.blogspot.com/2012/08/pumpkin-breakfast-cookies.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-breakfast/",
+        "name": "AIP Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c3/c8/2c/c3c82c2afdee7c30cdf15e4108ea4e7b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

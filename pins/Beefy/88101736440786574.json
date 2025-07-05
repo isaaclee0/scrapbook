@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440786574/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/beefy",
+    "CustomFileName": "88101736440786574",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440786574",
+      "url": "https://www.pinterest.com/pin/88101736440786574/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Blogger",
+      "description": "Moussaka",
+      "link": "http://christineitup.blogspot.ca/2015/01/moussaka.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "christineitup",
+        "url": "https://www.pinterest.com/christineitup/",
+        "name": "Christine It"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/beefy/",
+        "name": "Beefy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9a/72/28/9a722873cab9179966d9220765269925.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

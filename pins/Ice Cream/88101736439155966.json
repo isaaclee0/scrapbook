@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439155966/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/ice-cream",
+    "CustomFileName": "88101736439155966",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439155966",
+      "url": "https://www.pinterest.com/pin/88101736439155966/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Yummy Italian Gelato Recipes",
+      "description": "Yummy Italian Gelato Recipes; this will make the kids so happy...",
+      "link": "http://www.squidoo.com/Gelato-1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/ice-cream/",
+        "name": "Ice cream",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/70/46/7a/70467ab3a32960ed69e116c1ce45b383.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

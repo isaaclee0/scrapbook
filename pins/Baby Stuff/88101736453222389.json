@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453222389/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/baby-stuff",
+    "CustomFileName": "88101736453222389",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453222389",
+      "url": "https://www.pinterest.com/pin/88101736453222389/",
+      "type": "pin",
+      "title": "Sensory Play For Babies",
+      "gridTitle": "Sensory Play For Babies",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "momandtherestless",
+        "url": "https://www.pinterest.com/momandtherestless/",
+        "name": "Mom And The Restless \nPregnancy and Motherhood"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/baby-stuff/",
+        "name": "Baby stuff",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/42/7f/c4/427fc41331822c12797a74499756ec1a.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/3f/bc/bd/3fbcbd2d810a33c876922dbbb837f1b5.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

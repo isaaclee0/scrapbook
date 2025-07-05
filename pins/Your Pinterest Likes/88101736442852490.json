@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442852490/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442852490",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442852490",
+      "url": "https://www.pinterest.com/pin/88101736442852490/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Passion of cakes by Le Delizie di Amerilde",
+      "description": ".",
+      "link": "http://cakesdecor.com/cakes/25577",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0d/20/d4/0d20d41386b0cee53dec327eec0fdb0a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

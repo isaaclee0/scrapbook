@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436475454/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736436475454",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436475454",
+      "url": "https://www.pinterest.com/pin/88101736436475454/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Cat Tin Sign",
+      "description": "You know it!",
+      "link": "http://www.flickr.com/photos/43031309@N02/5076950270/sizes/z/in/photostream/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/47/f2/d9/47f2d9e5c0d2f765e5ce6fd62aa35b95.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

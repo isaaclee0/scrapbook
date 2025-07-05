@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442241784/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442241784",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442241784",
+      "url": "https://www.pinterest.com/pin/88101736442241784/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "chicken recipes, easy dinner ideas, find vegetarian recipes",
+      "description": "Remixable packing list to minimize luggage and maximize outfits.",
+      "link": "http://youfiverr.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b0/c9/32/b0c932c1597cfbfde3b655a5bb0c6421.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

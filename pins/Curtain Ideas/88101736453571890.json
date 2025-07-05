@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453571890/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/curtain-ideas",
+    "CustomFileName": "88101736453571890",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453571890",
+      "url": "https://www.pinterest.com/pin/88101736453571890/",
+      "type": "pin",
+      "title": "High End Hack for Curtains",
+      "gridTitle": "High End Hack for Curtains",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "klassydesignventures",
+        "url": "https://www.pinterest.com/klassydesignventures/",
+        "name": "Meredith Karcher"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/curtain-ideas/",
+        "name": "Curtain ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/05/47/29/054729424a2d3994439606200b87819d.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/58/1f/e9/581fe993b02ea06a4eb50d0cf721f623.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

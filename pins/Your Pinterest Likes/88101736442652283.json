@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442652283/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442652283",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442652283",
+      "url": "https://www.pinterest.com/pin/88101736442652283/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Amen!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "vdwanel",
+        "url": "https://www.pinterest.com/vdwanel/",
+        "name": "Anel V D Westhuizen"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b5/47/09/b54709f17fd03c3652a49a538ba8dd5a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

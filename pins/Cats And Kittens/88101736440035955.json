@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440035955/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736440035955",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440035955",
+      "url": "https://www.pinterest.com/pin/88101736440035955/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "a quieter storm",
+      "description": "Just peeking.",
+      "link": "http://aquieterstorm.tumblr.com/page/84",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8c/78/ec/8c78ecf0474c8b17025fcc511dc595a4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

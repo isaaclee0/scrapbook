@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452261823/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/make-up-etc/foundationconcealer-how-to",
+    "CustomFileName": "88101736452261823",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452261823",
+      "url": "https://www.pinterest.com/pin/88101736452261823/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "telapathetic",
+        "url": "https://www.pinterest.com/telapathetic/",
+        "name": "lilly"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/make-up-etc/",
+        "name": "Make-up etc",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/94/92/52/949252b812b4b577c81283457c4d594a.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/1a/7e/c8/1a7ec8edc49f739574dc12dd00d6962f.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

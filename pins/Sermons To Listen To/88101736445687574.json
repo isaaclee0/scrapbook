@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445687574/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/sermons-to-listen-to",
+    "CustomFileName": "88101736445687574",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445687574",
+      "url": "https://www.pinterest.com/pin/88101736445687574/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "You Will Change the World",
+      "description": "You Will Change the World",
+      "link": "http://www.desiringgod.org/articles/you-will-change-the-world",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/sermons-to-listen-to/",
+        "name": "Sermons to listen to",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/42/d5/36/42d5365092e6219eea6ab713ef6b74b9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

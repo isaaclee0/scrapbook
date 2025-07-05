@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434788702/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hors-doeuvres",
+    "CustomFileName": "88101736434788702",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434788702",
+      "url": "https://www.pinterest.com/pin/88101736434788702/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Savoury gourgeres",
+      "link": "http://www.delish.com/cm/delish/images/AG/living_cocktailpartyapp_p80_sm-2.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hors-doeuvres/",
+        "name": "Hors D'oeuvres",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c8/30/ed/c830ed5e929592b8f016b6eff9aef35d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

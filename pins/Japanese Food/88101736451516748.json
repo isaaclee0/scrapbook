@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451516748/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/japanese-food",
+    "CustomFileName": "88101736451516748",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451516748",
+      "url": "https://www.pinterest.com/pin/88101736451516748/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Mock Unagi (Grilled Eel) Donburi",
+      "description": "The grilled eel in this unadon may not be real, but it's still really tasty.",
+      "link": "https://www.tastemade.com/videos/Mock-Unagi-Grilled-Eel-Donburi",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemade",
+        "url": "https://www.pinterest.com/tastemade/",
+        "name": "Tastemade"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/japanese-food/",
+        "name": "Japanese Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7a/82/ab/7a82abaf491980dfa2835043509a2884.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/v2/720p/57/a4/84/57a484be36a71e842dfc11402456a272_mobile.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435245751/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/animal-love",
+    "CustomFileName": "88101736435245751",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435245751",
+      "url": "https://www.pinterest.com/pin/88101736435245751/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Twitter",
+      "description": "Love is love...",
+      "link": "https://twitter.com/i/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/animal-love/",
+        "name": "Animal love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5d/13/f9/5d13f911aa4ed1a323ebb4eab58a9a23.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

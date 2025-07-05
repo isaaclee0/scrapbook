@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446932426/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736446932426",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446932426",
+      "url": "https://www.pinterest.com/pin/88101736446932426/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Old Fashioned Banana Cake",
+      "description": "Old Fashioned Banana Cake the best and easy Cake Recipe, the perfect dessert or snack cake. Frosted or Plain it's perfect. #cake #bananacake #banana #dessert",
+      "link": "https://anitalianinmykitchen.com/banana-cake/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Italianinkitchn",
+        "url": "https://www.pinterest.com/Italianinkitchn/",
+        "name": "An Italian in my Kitchen"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/92/72/60/9272601bed43c31e4f39f5d4c45e2317.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/v2/720p/74/3e/cf/743ecf48c5702192cd7ee94d0606c195_mobile.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441919280/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736441919280",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441919280",
+      "url": "https://www.pinterest.com/pin/88101736441919280/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "A Quote for Today - Living Vintage",
+      "description": "An old Zen saying that reminds me of a conversation with my brother.",
+      "link": "http://livingvintageco.com/2014/11/a-quote-for-today-2/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e2/cb/f2/e2cbf2e1fb8fb60bd1150c25309b8ae1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

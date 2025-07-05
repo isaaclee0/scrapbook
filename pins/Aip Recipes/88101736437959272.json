@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437959272/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736437959272",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437959272",
+      "url": "https://www.pinterest.com/pin/88101736437959272/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Umeboshi and Cucumber Sushi",
+      "description": "umeboshi & cucumber sushi  [good idea, use cauliflower rice; AIP if you can have seaweed; HIGH FODMAP]",
+      "link": "http://www.flickr.com/photos/i_am_jacques_strappe/4606512818/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/dd/35/fb/dd35fb385a3e2e7bd7c8f6e06d8983ac.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

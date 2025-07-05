@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443235084/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443235084",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443235084",
+      "url": "https://www.pinterest.com/pin/88101736443235084/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "24 Cheap Summer Activities for Kids",
+      "description": "Camp Mom! 20 Activities to Make Summer Awesome for Everyone",
+      "link": "http://www.parents.com/fun/games/family/camp-mom-20-activities-to-make-summer-awesome-for-everyone/?page=9",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/88/ab/43/88ab4347bcb9be98e564ef31caa4f6cd.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

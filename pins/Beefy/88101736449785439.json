@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449785439/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/beefy",
+    "CustomFileName": "88101736449785439",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449785439",
+      "url": "https://www.pinterest.com/pin/88101736449785439/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Traditional Curried Sausage Recipe",
+      "description": "Traditional Curried Sausage Recipe @ Strayed from the Table",
+      "link": "http://www.strayedtable.com/traditional-curried-sausage-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/beefy/",
+        "name": "Beefy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7f/a0/94/7fa094c6cf7ab2d2208a474794322cdc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

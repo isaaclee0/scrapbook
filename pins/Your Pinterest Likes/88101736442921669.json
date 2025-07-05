@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442921669/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442921669",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442921669",
+      "url": "https://www.pinterest.com/pin/88101736442921669/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Edible Pine Bark",
+      "description": "Where others starve, expert survivors find food. Consuming pine trees for survival.",
+      "link": "http://survivaltopics.com/edible-pine-bark/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e0/61/e7/e061e7e64071c703024e792b919f7e81.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

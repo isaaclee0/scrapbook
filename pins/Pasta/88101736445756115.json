@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445756115/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pasta",
+    "CustomFileName": "88101736445756115",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445756115",
+      "url": "https://www.pinterest.com/pin/88101736445756115/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "a Sicilian tradition :: Pasta alla Norma recipe - Becca Garber",
+      "description": "a Sicilian tradition :: Pasta alla Norma recipe (eggplant and tomato)",
+      "link": "http://beccagarber.com/a-sicilian-tradition-pasta-all-norma-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pasta/",
+        "name": "Pasta",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a8/42/a5/a842a5df666f21b9c914cccc84bdec75.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

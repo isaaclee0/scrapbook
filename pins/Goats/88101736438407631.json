@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438407631/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/goats",
+    "CustomFileName": "88101736438407631",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438407631",
+      "url": "https://www.pinterest.com/pin/88101736438407631/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Goat feeder - bigger version for horse hay?",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "GrandmaDMay",
+        "url": "https://www.pinterest.com/GrandmaDMay/",
+        "name": "Grandma’s Place"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/goats/",
+        "name": "Goats...",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/01/08/fa/0108fa3d1deec989c6ae85894dc441bc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

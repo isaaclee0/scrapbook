@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434190745/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-breakfast",
+    "CustomFileName": "88101736434190745",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434190745",
+      "url": "https://www.pinterest.com/pin/88101736434190745/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "20 Egg and Grain Free Breakfast Recipes - Holistically Engineered",
+      "description": "Paleo Strawberry Breakfast Cookie",
+      "link": "http://holisticallyengineered.com/2014/01/20-egg-grain-free-breakfast-recipes.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-breakfast/",
+        "name": "AIP Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a6/f2/7a/a6f27a9b0b74eb4cf36cdd8fc5be2d67.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

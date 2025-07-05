@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450056970/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736450056970",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450056970",
+      "url": "https://www.pinterest.com/pin/88101736450056970/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "I Can Only Imagine DVD",
+      "description": "I Can Only Imagine DVD",
+      "link": "https://www.re-vived.com/products/i-can-only-imagine-dvd",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1d/0d/ef/1d0defd2ec5e3f0362c9cfcb3d8a1e55.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

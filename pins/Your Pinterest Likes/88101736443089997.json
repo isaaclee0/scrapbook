@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443089997/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443089997",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443089997",
+      "url": "https://www.pinterest.com/pin/88101736443089997/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Montgomery Ward",
+      "description": "I sooo need this. I hope it works.....No more \"I-won't-take-my-medicine\" wars! This everyday sippy cup has a brilliant secret: a hidden medicine dispenser inside!",
+      "link": "http://www.onestepahead.com/catalog/product.jsp?productId=537764&parentCategoryId=117763&categoryId=117218",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/14/a5/a7/14a5a7597468b8071c5f15734a20553f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

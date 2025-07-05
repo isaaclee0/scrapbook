@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439884580/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cards",
+    "CustomFileName": "88101736439884580",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439884580",
+      "url": "https://www.pinterest.com/pin/88101736439884580/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Creative home-made card",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cards/",
+        "name": "Cards",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cf/01/43/cf0143b02e0c44f1166d783d57c2398f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

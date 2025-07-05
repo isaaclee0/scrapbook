@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443196531/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443196531",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443196531",
+      "url": "https://www.pinterest.com/pin/88101736443196531/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Odds & Ends: My Best Flower Arranging Trick",
+      "description": "Flower Arranging Tricks",
+      "link": "http://laurenconrad.com/blog/2014/02/odds-ends-my-best-flower-arranging-trick/?crlt.pid=camp.8K6a186nmJaQ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c9/a7/73/c9a7734e277d23e0bae8c139637778d7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

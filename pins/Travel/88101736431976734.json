@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431976734/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/travel",
+    "CustomFileName": "88101736431976734",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431976734",
+      "url": "https://www.pinterest.com/pin/88101736431976734/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Steps to the Sea, Positano, Italy",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/travel/",
+        "name": "Travel",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0b/bd/12/0bbd12c62af05e8d741ba6afe4f60b7b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

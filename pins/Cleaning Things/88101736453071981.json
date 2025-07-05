@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453071981/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cleaning-things",
+    "CustomFileName": "88101736453071981",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453071981",
+      "url": "https://www.pinterest.com/pin/88101736453071981/",
+      "type": "pin",
+      "title": "How to remove stubborn product labels",
+      "gridTitle": "How to remove stubborn product labels",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "neatmethod",
+        "url": "https://www.pinterest.com/neatmethod/",
+        "name": "NEAT Method"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cleaning-things/",
+        "name": "Cleaning Things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/f9/01/ae/f901ae491bd799218dcb6481a19debb0.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

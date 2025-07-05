@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440412710/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potato-recipes",
+    "CustomFileName": "88101736440412710",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440412710",
+      "url": "https://www.pinterest.com/pin/88101736440412710/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Aloo Tikki Chole",
+      "description": "Aloo tikki chole",
+      "link": "http://www.vegrecipesofindia.com/aloo-tikki-chole/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potato-recipes/",
+        "name": "Potato Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/50/88/44/50884492cc30f41cb338b2c1d44109c7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

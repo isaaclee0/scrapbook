@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439300848/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/travel",
+    "CustomFileName": "88101736439300848",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439300848",
+      "url": "https://www.pinterest.com/pin/88101736439300848/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Oregon Trillium Lake",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "samanthaCdalton",
+        "url": "https://www.pinterest.com/samanthaCdalton/",
+        "name": "Samantha Dalton"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/travel/",
+        "name": "Travel",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c1/62/37/c162371a88d2b5da1c8d506422e92cf0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433682346/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736433682346",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433682346",
+      "url": "https://www.pinterest.com/pin/88101736433682346/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Sunlight and Old Lace",
+      "description": "Cat....",
+      "link": "http://www.flickr.com/photos/piper/6919147429/in/photostream",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9e/41/2a/9e412a7aa694dda2faaa0f1bc629b2df.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

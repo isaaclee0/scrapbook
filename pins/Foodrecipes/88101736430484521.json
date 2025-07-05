@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430484521/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430484521",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430484521",
+      "url": "https://www.pinterest.com/pin/88101736430484521/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "white chocolate raspberry truffle cheesecake | Sweet Anna's",
+      "description": "White Chocolate Raspberry Truffle Cheesecake",
+      "link": "http://www.sweetannas.com/2010/08/white-chocolate-raspberry-truffle.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c3/6f/dc/c36fdc1c69e9598358e50bb8d4b7d8fb.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453475671/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736453475671",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453475671",
+      "url": "https://www.pinterest.com/pin/88101736453475671/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Boo.",
+      "description": "hihi",
+      "link": "http://contentinacottage.blogspot.com/2013/05/boo.html?utm_source=feedly&utm_medium=feed&utm_campaign=Feed:+contentinacottage+(Content+in+a+Cottage)",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4c/7f/50/4c7f50936838894c6ea4c3108a24eabd.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

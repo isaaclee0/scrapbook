@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452286008/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cute-kitchens",
+    "CustomFileName": "88101736452286008",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452286008",
+      "url": "https://www.pinterest.com/pin/88101736452286008/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 12,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tiffanyturrill",
+        "url": "https://www.pinterest.com/tiffanyturrill/",
+        "name": "Tiffany Turrill"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cute-kitchens/",
+        "name": "Cute Kitchens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d6/ab/a8/d6aba82abef4e1e3932a271c4da52ac9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

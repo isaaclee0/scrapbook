@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434685270/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736434685270",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434685270",
+      "url": "https://www.pinterest.com/pin/88101736434685270/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "www.catissa.com",
+      "description": "Super cool wall-mounted cat house!",
+      "link": "http://imgur.com/a/Uzwji#3",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/38/74/32/387432fbcefa44823a47832b94464736.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

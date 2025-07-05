@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438584534/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pasta",
+    "CustomFileName": "88101736438584534",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438584534",
+      "url": "https://www.pinterest.com/pin/88101736438584534/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Mushroom Ragout with Creamy Polenta",
+      "description": "Truffled Gnocchi with Mushroom Ragu #Vegetarian #Recipe",
+      "link": "http://simply-delicious.co.za/2013/06/04/truffled-gnocchi-with-mushroom-ragu/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pasta/",
+        "name": "Pasta",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8c/79/7a/8c797a5674735cbfb5a415c95d6f20bb.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

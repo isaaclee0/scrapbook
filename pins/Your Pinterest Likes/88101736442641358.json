@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442641358/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442641358",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442641358",
+      "url": "https://www.pinterest.com/pin/88101736442641358/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Building a Cob Oven",
+      "description": "Build a cob oven",
+      "link": "http://sourdough.com/building-cob-oven",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/74/4e/4b/744e4b79510c00fd7e27174a24cdcf71.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444874585/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/greek-food",
+    "CustomFileName": "88101736444874585",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444874585",
+      "url": "https://www.pinterest.com/pin/88101736444874585/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "March 2017 – Maria Dernikos",
+      "description": "Greek dessert - filo pastry and amazing syrup.",
+      "link": "https://mariadernikos.com/2017/03/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/greek-food/",
+        "name": "Greek Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/59/b8/00/59b80082a40762f3466cc59dd4199534.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

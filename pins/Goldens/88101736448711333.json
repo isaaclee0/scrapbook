@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448711333/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/goldens",
+    "CustomFileName": "88101736448711333",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448711333",
+      "url": "https://www.pinterest.com/pin/88101736448711333/",
+      "type": "pin",
+      "title": "This is how you bathe tucker 😄😍",
+      "gridTitle": "This is how you bathe tucker 😄😍",
+      "description": "Booble.. Hahaha.",
+      "link": "https://funnyfoto.org/funny-animals/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "funmemepics",
+        "url": "https://www.pinterest.com/funmemepics/",
+        "name": "FunnyFoto 😁"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/goldens/",
+        "name": "Goldens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c9/18/7a/c9187a807491c72c5db63415a67286b2.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/69/0b/b2/690bb20812edb37c5ed0bf73bc4ac0bf.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

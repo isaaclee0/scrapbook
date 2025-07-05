@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443206333/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443206333",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443206333",
+      "url": "https://www.pinterest.com/pin/88101736443206333/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "A Family Guide to Narnia | The Horse and His Boy ~ Your Story  - Christin Ditchfield",
+      "description": "\"No one is told any story but their own...\" ~ The Horse and His Boy | The Chronicles of Narnia by C.S. Lewis",
+      "link": "http://www.christinditchfield.com/317-2/fg-narnia-hhb-story/#main",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "authorchristin",
+        "url": "https://www.pinterest.com/authorchristin/",
+        "name": "Christin Ditchfield"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/88/79/87/887987c66c7e3ad52f9bb37e3b4df6a3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434484084/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736434484084",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434484084",
+      "url": "https://www.pinterest.com/pin/88101736434484084/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "What Should I Read Next? Book recommendations from readers like you",
+      "description": "Cool site. Type in your favorite book and it will list 20 others similar to it.",
+      "link": "http://www.whatshouldireadnext.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/69/00/88/690088d9a79165c280563b7407772671.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

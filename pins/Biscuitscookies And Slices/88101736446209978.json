@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446209978/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/biscuitscookies-and-slices",
+    "CustomFileName": "88101736446209978",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446209978",
+      "url": "https://www.pinterest.com/pin/88101736446209978/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Save & Bake Cookie Dough",
+      "description": "Save & Bake Cookie Dough",
+      "link": "https://www.youtube.com/watch?v=A9pvNmQgucM",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "buzzfeedtasty",
+        "url": "https://www.pinterest.com/buzzfeedtasty/",
+        "name": "Tasty"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/biscuitscookies-and-slices/",
+        "name": "Biscuits/Cookies and Slices",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/21/4c/32/214c32bc2cf29b8795908c043f50eab6.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/22/80/38/228038b869b35526865e13e730d839e8.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

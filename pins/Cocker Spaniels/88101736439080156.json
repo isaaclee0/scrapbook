@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439080156/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cocker-spaniels",
+    "CustomFileName": "88101736439080156",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439080156",
+      "url": "https://www.pinterest.com/pin/88101736439080156/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Cooper on black - 20 weeks",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "pinligi",
+        "url": "https://www.pinterest.com/pinligi/",
+        "name": "Yweb design"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cocker-spaniels/",
+        "name": "Cocker Spaniels",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/20/2f/0f/202f0fae19b9f7660e7943f1d7f9564b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

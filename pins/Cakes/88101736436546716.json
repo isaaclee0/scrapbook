@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436546716/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736436546716",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436546716",
+      "url": "https://www.pinterest.com/pin/88101736436546716/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Coffee-Chocolate Layer Cake with Mocha-Mascarpone Frosting from @epicurious",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8b/b1/61/8bb161ec9c0e34e58b711fe9481a436b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

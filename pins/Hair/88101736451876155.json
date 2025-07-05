@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451876155/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736451876155",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451876155",
+      "url": "https://www.pinterest.com/pin/88101736451876155/",
+      "type": "pin",
+      "title": "How to style curtain bangs",
+      "gridTitle": "How to style curtain bangs",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "DesiSkies",
+        "url": "https://www.pinterest.com/DesiSkies/",
+        "name": "Desi Skies"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ca/54/64/ca5464f53a40fd98e6af48c0ea8ea0ad.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/ae/29/87/ae2987e7a697259be540ff521fd15a7d.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

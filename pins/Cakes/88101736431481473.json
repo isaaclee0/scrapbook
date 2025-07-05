@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431481473/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736431481473",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431481473",
+      "url": "https://www.pinterest.com/pin/88101736431481473/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Cactus Cupcakes",
+      "description": "// cactus cupcakes",
+      "link": "http://cutecupcakesallthetime.blogspot.com.au/2011/07/cactus-cupcakes.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1f/3d/f9/1f3df9607ef8701abe80018134f57191.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

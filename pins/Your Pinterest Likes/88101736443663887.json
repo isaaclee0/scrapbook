@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443663887/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443663887",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443663887",
+      "url": "https://www.pinterest.com/pin/88101736443663887/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Old Fashioned Sweet Violet Syrup for Easter & Mothering Sunday Cakes & Bakes - Lavender and Lovage",
+      "description": "Old Fashioned Sweet Violet Syrup",
+      "link": "http://www.lavenderandlovage.com/2012/02/old-fashioned-sweet-violet-syrup-for-easter-mothering-sunday-cakes-bakes.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3b/1c/48/3b1c4810456685f397bb960ddc89bca1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

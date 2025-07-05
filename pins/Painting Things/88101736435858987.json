@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435858987/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painting-things",
+    "CustomFileName": "88101736435858987",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435858987",
+      "url": "https://www.pinterest.com/pin/88101736435858987/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Scent Bottle ... Dulux Paint. THIS IS THE BEST GREY! GOES WITH EVERYTHING",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tonygrogan",
+        "url": "https://www.pinterest.com/tonygrogan/",
+        "name": "Tony Grogan"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painting-things/",
+        "name": "Painting things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/40/94/9e/40949e806634a88cb79be3f7debf06ad.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

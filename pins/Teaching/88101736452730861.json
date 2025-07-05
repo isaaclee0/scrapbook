@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452730861/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/teaching",
+    "CustomFileName": "88101736452730861",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452730861",
+      "url": "https://www.pinterest.com/pin/88101736452730861/",
+      "type": "pin",
+      "title": "Percentage Trick  | Edukators Club | Math Tricks #maths",
+      "gridTitle": "Percentage Trick  | Edukators Club | Math Tricks #maths",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 2,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "EdukatorsClub",
+        "url": "https://www.pinterest.com/EdukatorsClub/",
+        "name": "Edukators Club"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/teaching/",
+        "name": "Teaching",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/83/d8/70/83d87050899aa3f4882e566dd9a51fe1.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/c2/61/74/c261740c231a11cbe956b6b6d8345916.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443089524/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443089524",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443089524",
+      "url": "https://www.pinterest.com/pin/88101736443089524/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "a ribbon at a time",
+      "description": "Bubble Refill Station",
+      "link": "http://gardenofsimple.tumblr.com/post/6037548588/cajunmama-wow-what-a-simple-yet-brilliant",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/84/ee/03/84ee038b69ad326ac8ce43896ba40267.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

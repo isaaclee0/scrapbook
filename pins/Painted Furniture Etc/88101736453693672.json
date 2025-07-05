@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453693672/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painted-furniture-etc",
+    "CustomFileName": "88101736453693672",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453693672",
+      "url": "https://www.pinterest.com/pin/88101736453693672/",
+      "type": "pin",
+      "title": "White Wax on furniture ",
+      "gridTitle": "White Wax on furniture",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "click2restore",
+        "url": "https://www.pinterest.com/click2restore/",
+        "name": "Click2Restore | Furniture Artist - DIYer."
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painted-furniture-etc/",
+        "name": "Painted Furniture etc",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f4/ec/52/f4ec52e4d1f7f0a7a378bf49c0654fe4.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/e4/65/e4/e465e49ed224a5dfe5042d3aae631e68.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

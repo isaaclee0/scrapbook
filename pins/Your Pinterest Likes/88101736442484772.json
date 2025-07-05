@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442484772/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442484772",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442484772",
+      "url": "https://www.pinterest.com/pin/88101736442484772/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Old Glory Never Fades",
+      "description": "honoring the veterans",
+      "link": "http://www.flickr.com/photos/sunsetsailor/518695797/in/photostream/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e6/dc/d1/e6dcd1e0a0cce9f09e79a72dda0bf166.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

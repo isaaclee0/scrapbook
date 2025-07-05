@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430711124/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430711124",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430711124",
+      "url": "https://www.pinterest.com/pin/88101736430711124/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Yum - raw fish salad!",
+      "link": "http://www.justasdelish.com/wp-content/uploads/2012/01/YeeSang6.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/42/8e/15/428e154a5c7e7aad62d1aa4185caf7e9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

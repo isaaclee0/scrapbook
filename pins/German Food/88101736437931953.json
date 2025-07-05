@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437931953/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/german-food",
+    "CustomFileName": "88101736437931953",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437931953",
+      "url": "https://www.pinterest.com/pin/88101736437931953/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Pillekuchen (German Potato Cake)",
+      "link": "http://www.feelgoodfood.com.au/pillekuchen-german-potato-cake-recip/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/german-food/",
+        "name": "German Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9a/62/d3/9a62d3d430f6aa21210a39762979b4fa.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

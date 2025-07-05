@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441095697/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/collies-and-shelties",
+    "CustomFileName": "88101736441095697",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441095697",
+      "url": "https://www.pinterest.com/pin/88101736441095697/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "rough collies",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "neo912col",
+        "url": "https://www.pinterest.com/neo912col/",
+        "name": "Chiharu Murata"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/collies-and-shelties/",
+        "name": "Collies and Shelties",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/71/06/6d/71066d1be8f824111bc7e9b17c5ffb44.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

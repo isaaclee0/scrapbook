@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439151701/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736439151701",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439151701",
+      "url": "https://www.pinterest.com/pin/88101736439151701/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Kentucky Derby Cookie Pie with Bourbon Whipped Cream - Plain Chicken",
+      "description": "Kentucky Derby Pie with Bourbon Whipped Cream",
+      "link": "http://www.plainchicken.com/2013/05/kentucky-derby-pie-with-bourbon-whipped.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "rjtatum",
+        "url": "https://www.pinterest.com/rjtatum/",
+        "name": "Ronda Tatum"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/30/ad/be/30adbe0db44f919602c91110935771c7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

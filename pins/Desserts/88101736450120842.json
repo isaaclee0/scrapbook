@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450120842/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736450120842",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450120842",
+      "url": "https://www.pinterest.com/pin/88101736450120842/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "How to make caramel from sweetened condensed milk",
+      "description": "How to Make Caramel from Sweetened Condensed Milk",
+      "link": "http://www.flickr.com/photos/pinodita/2328315091/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "nerdymammablog",
+        "url": "https://www.pinterest.com/nerdymammablog/",
+        "name": "Chantal @ NerdyMamma.com"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/73/29/9e/73299e52359cacfdbcaf6c0ff4018200.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435830503/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736435830503",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435830503",
+      "url": "https://www.pinterest.com/pin/88101736435830503/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Strawberry Whipped Cream | Primal Palate | Paleo Recipes - Primal Palate | Paleo Recipes",
+      "description": "Strawberry Whipped Cream; Autoimmune Protocol Diet; Paleo",
+      "link": "http://www.primalpalate.com/paleo-recipe/strawberry-whipped-cream/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/95/e0/f3/95e0f3e911ab4b94a375029d87e24cf5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

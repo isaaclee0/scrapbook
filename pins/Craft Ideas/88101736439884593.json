@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439884593/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/craft-ideas",
+    "CustomFileName": "88101736439884593",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439884593",
+      "url": "https://www.pinterest.com/pin/88101736439884593/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Tres sencillos DIY con pasta de modelar",
+      "description": "DIY house from white clay",
+      "link": "http://www.lachicadelacasadecaramelo.com/2014/11/tres-sencillos-diy-con-pasta-de-modelar.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "chicacaramelo",
+        "url": "https://www.pinterest.com/chicacaramelo/",
+        "name": "La chica de la casa de caramelo"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/craft-ideas/",
+        "name": "Craft Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ef/5e/be/ef5ebec90047d37224c16e6346b7ea23.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

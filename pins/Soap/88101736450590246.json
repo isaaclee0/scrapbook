@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450590246/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/soap",
+    "CustomFileName": "88101736450590246",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450590246",
+      "url": "https://www.pinterest.com/pin/88101736450590246/",
+      "type": "pin",
+      "title": "Stamping Soaps",
+      "gridTitle": "Stamping Soaps",
+      "description": "I stamp each soap. I can do custom stamping as well. Or use decorative stamps.",
+      "link": "https://www.heavenlyhandcraftedsoaps.com.au/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "nadiaschoner",
+        "url": "https://www.pinterest.com/nadiaschoner/",
+        "name": "Heavenly Handcrafted Soaps of Australia"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/soap/",
+        "name": "Soap",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/72/9c/04/729c04be090cb3e0832a9d920528b12a.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/fc/6c/82/fc6c8272f503f97bfde260142d91b29c.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

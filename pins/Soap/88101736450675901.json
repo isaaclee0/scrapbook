@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450675901/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/soap",
+    "CustomFileName": "88101736450675901",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450675901",
+      "url": "https://www.pinterest.com/pin/88101736450675901/",
+      "type": "pin",
+      "title": "Handmade soap sea",
+      "gridTitle": "Handmade soap sea",
+      "description": " ",
+      "link": "https://www.etsy.com/shop/Kovace",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ErsennCloisonne",
+        "url": "https://www.pinterest.com/ErsennCloisonne/",
+        "name": "ERSENN"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/soap/",
+        "name": "Soap",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7e/67/3f/7e673f0648c4468b6082f52efe9ca663.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/b9/b9/e1/b9b9e1c56eedcbcffe6f4183ee238406.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

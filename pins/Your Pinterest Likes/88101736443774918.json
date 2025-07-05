@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443774918/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443774918",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443774918",
+      "url": "https://www.pinterest.com/pin/88101736443774918/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Realistic Home Security Tips and Tricks - Homestead Dreamer",
+      "description": "Realistic Home Security Tips and Tricks - Learn about some ways even renters can improve the security and response time against someone breaking in.",
+      "link": "http://www.homesteaddreamer.com/2014/05/06/home-security/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f8/44/ee/f844ee69bfca268dbc53c40089cdf57d.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

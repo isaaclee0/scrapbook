@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453646661/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/easter",
+    "CustomFileName": "88101736453646661",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453646661",
+      "url": "https://www.pinterest.com/pin/88101736453646661/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "C. H. Spurgeon",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "cinnersaved",
+        "url": "https://www.pinterest.com/cinnersaved/",
+        "name": "Cindy Ramm-Doucette"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/easter/",
+        "name": "Easter",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/af/9f/05/af9f05b34f05e0463a3fcb81ad7c7cc0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

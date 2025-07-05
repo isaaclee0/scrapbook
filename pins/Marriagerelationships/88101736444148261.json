@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444148261/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/marriagerelationships",
+    "CustomFileName": "88101736444148261",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444148261",
+      "url": "https://www.pinterest.com/pin/88101736444148261/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Wow",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "karchenbronn",
+        "url": "https://www.pinterest.com/karchenbronn/",
+        "name": "Kaitlyn"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/marriagerelationships/",
+        "name": "Marriage/relationships",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0b/f5/fe/0bf5fe25cce42968e69aaa93fdc4276a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

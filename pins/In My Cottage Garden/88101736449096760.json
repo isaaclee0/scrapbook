@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449096760/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/in-my-cottage-garden",
+    "CustomFileName": "88101736449096760",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449096760",
+      "url": "https://www.pinterest.com/pin/88101736449096760/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Soooo true!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "belinda8971",
+        "url": "https://www.pinterest.com/belinda8971/",
+        "name": "Belinda Briant"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/in-my-cottage-garden/",
+        "name": "In my cottage garden",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ce/68/43/ce684376097346d33100d60c21edff35.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

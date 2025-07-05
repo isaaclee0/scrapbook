@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447270117/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/photography",
+    "CustomFileName": "88101736447270117",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447270117",
+      "url": "https://www.pinterest.com/pin/88101736447270117/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "David Hamilton",
+      "description": "david hamilton",
+      "link": "http://onlythisnothingmore.blogspot.com/2010/06/david-hamilton.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/photography/",
+        "name": "Photography",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0e/1c/19/0e1c19102543f80de1919f07ed699e32.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

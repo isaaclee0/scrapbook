@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445881977/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736445881977",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445881977",
+      "url": "https://www.pinterest.com/pin/88101736445881977/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Quartet (2012)",
+      "description": "2012",
+      "link": "http://www.imdb.com/title/tt1441951/mediaviewer/rm436382720",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b3/3f/c1/b33fc1654fb45c8d8f4cbca725fea5e6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

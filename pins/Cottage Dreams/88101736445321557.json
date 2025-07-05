@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445321557/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-dreams",
+    "CustomFileName": "88101736445321557",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445321557",
+      "url": "https://www.pinterest.com/pin/88101736445321557/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Cottage with hedges of white roses leading to doorway.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 53,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-dreams/",
+        "name": "Cottage Dreams",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/76/81/f9/7681f976a2d6c53d29c8dd6219df31e8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

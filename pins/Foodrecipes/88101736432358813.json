@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432358813/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736432358813",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432358813",
+      "url": "https://www.pinterest.com/pin/88101736432358813/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "PBS: Public Broadcasting Service",
+      "description": "Dairy-Free Spinach Stuffed Shells",
+      "link": "http://www.pbs.org/food/fresh-tastes/stuffed-shells/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ae/1f/98/ae1f98fb761695134a40dce97970ee88.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

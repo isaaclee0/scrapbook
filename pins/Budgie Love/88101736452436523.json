@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452436523/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/budgie-love",
+    "CustomFileName": "88101736452436523",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452436523",
+      "url": "https://www.pinterest.com/pin/88101736452436523/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "link": "http://photos.zoochat.com/large/img_4035-85741.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/budgie-love/",
+        "name": "Budgie Love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b4/c2/61/b4c26123ec3f7b656f1cec41211483ca.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

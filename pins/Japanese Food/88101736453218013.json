@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453218013/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/japanese-food",
+    "CustomFileName": "88101736453218013",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453218013",
+      "url": "https://www.pinterest.com/pin/88101736453218013/",
+      "type": "pin",
+      "title": "Vegan Unagi (Eel)",
+      "gridTitle": "Vegan Unagi (Eel)",
+      "description": " ",
+      "link": "https://woonheng.com/vegan-unagi-eel/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "woonheng",
+        "url": "https://www.pinterest.com/woonheng/",
+        "name": "WoonHeng | Vegan Asian Recipes"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/japanese-food/",
+        "name": "Japanese Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/59/f4/6b/59f46bc3ae808ba9d554c1c3de78e7d0.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/6b/83/88/6b8388ed9360306aa4a596bc0038e784.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

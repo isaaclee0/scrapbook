@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453055522/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/agnes-st/flooring",
+    "CustomFileName": "88101736453055522",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453055522",
+      "url": "https://www.pinterest.com/pin/88101736453055522/",
+      "type": "pin",
+      "title": "Let’s go out!",
+      "gridTitle": "Let’s go out!",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 2,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "nansubak",
+        "url": "https://www.pinterest.com/nansubak/",
+        "name": "Subak"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/agnes-st/",
+        "name": "Agnes st",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/a0/fc/82/a0fc8278ced676a6185350be3c011cb5.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/bf/bf/c0/bfbfc0ef8e94dbf1bf5d11681a1254ac.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

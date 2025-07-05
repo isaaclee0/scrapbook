@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439013025/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736439013025",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439013025",
+      "url": "https://www.pinterest.com/pin/88101736439013025/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Rich Chocolate Cake with White Chocolate Mousse and Cherry Sauce",
+      "description": "Chocolate Cake with White Chocolate Mousse and Cherry Sauce",
+      "link": "http://www.sweetandsavorybyshinee.com/rich-chocolate-cake-white-chocolate-mousse-cherry-sauce/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "christyscripps",
+        "url": "https://www.pinterest.com/christyscripps/",
+        "name": "Christy Scripps"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/72/c7/94/72c7941483d8342f4c3e1fb7ce8dc6ab.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

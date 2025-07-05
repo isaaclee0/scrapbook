@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452160843/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/diy-home-and-beauty",
+    "CustomFileName": "88101736452160843",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452160843",
+      "url": "https://www.pinterest.com/pin/88101736452160843/",
+      "type": "pin",
+      "title": "How to make the last tile near the wall fit",
+      "gridTitle": "How to make the last tile near the wall fit",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ToDoEverythingInYourMind",
+        "url": "https://www.pinterest.com/ToDoEverythingInYourMind/",
+        "name": "To Do"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/diy-home-and-beauty/",
+        "name": "DIY Home and Beauty",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cc/0d/c7/cc0dc7db84896233bec698a6d392dc50.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/e0/4b/a8/e04ba8be5dc8d7a49bfc1c9427181270.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

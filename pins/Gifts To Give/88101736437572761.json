@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437572761/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/gifts-to-give",
+    "CustomFileName": "88101736437572761",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437572761",
+      "url": "https://www.pinterest.com/pin/88101736437572761/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Pude",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "dorendenner",
+        "url": "https://www.pinterest.com/dorendenner/",
+        "name": "Løppes Hygge"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/gifts-to-give/",
+        "name": "Gifts to give",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5f/31/b5/5f31b5c8b52bff6180770523910b548b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

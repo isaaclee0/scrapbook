@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439100856/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potato-recipes",
+    "CustomFileName": "88101736439100856",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439100856",
+      "url": "https://www.pinterest.com/pin/88101736439100856/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Dauphinoise potatoes",
+      "description": "Dauphinoise potatoes - this is richly delicious but be generous with a large pinch of nutmeg and salt and pepper to taste.",
+      "link": "http://www.bbcgoodfood.com/recipes/402620/dauphinoise-potatoes",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potato-recipes/",
+        "name": "Potato Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b9/87/5c/b9875c45d199c455f0d1c776b5081008.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

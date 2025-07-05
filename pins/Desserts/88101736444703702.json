@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444703702/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736444703702",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444703702",
+      "url": "https://www.pinterest.com/pin/88101736444703702/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Gordon Ramsey Lemon Posset Recipe  - Food.com",
+      "description": "Gordon Ramsey's Lemon Posset  http://www.food.com/recipe/gordon-ramsey-lemon-posset-463384",
+      "link": "http://www.food.com/recipe/gordon-ramsey-lemon-posset-463384",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 21,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Peeparoni07",
+        "url": "https://www.pinterest.com/Peeparoni07/",
+        "name": "Nicole Powell"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2f/c8/55/2fc85561ac513210af18d67615a3e530.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435745612/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/shelves",
+    "CustomFileName": "88101736435745612",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435745612",
+      "url": "https://www.pinterest.com/pin/88101736435745612/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Syl loves",
+      "description": "Sylloves...",
+      "link": "http://syllovesshabby.blogspot.de/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/shelves/",
+        "name": "Shelves",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/66/c4/38/66c438d510f12c11029674bbd68eeda0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451821619/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736451821619",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451821619",
+      "url": "https://www.pinterest.com/pin/88101736451821619/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "A happy alternative to the \"cone of shame\"",
+      "description": "A happy alternative to the \"cone of shame\" - aww",
+      "link": "https://www.reddit.com/r/aww/comments/9v7spu/a_happy_alternative_to_the_cone_of_shame/?utm_source=ifttt",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/78/70/09/7870093fc4cd5ebcb916c2ed49da2160.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

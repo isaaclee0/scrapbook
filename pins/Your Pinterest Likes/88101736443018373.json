@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443018373/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443018373",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443018373",
+      "url": "https://www.pinterest.com/pin/88101736443018373/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Menu Planner on Studio 5",
+      "description": "Menu",
+      "link": "http://heartlandpaper.typepad.com/heartland_paper/2010/08/menu-planner-on-studio-5.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b9/d2/46/b9d246c6734d8c5810232e9c9b0d67c3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

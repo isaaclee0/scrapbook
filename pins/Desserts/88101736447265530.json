@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447265530/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736447265530",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447265530",
+      "url": "https://www.pinterest.com/pin/88101736447265530/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Hot Winter Puddings",
+      "description": "Recipes Food Winter Puddings Seasonal ginger toffee pudding",
+      "link": "http://www.seasonalfoodrecipes.co.uk/hot-winter-puddings.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/72/62/26/726226ee6149b4d09469847a083dd2d2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

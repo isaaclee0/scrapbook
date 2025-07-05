@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442411070/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442411070",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442411070",
+      "url": "https://www.pinterest.com/pin/88101736442411070/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "BlueHost.com",
+      "description": "Recipes from Cranford. Cranford is a book and tv series about the lives of several quirky village spinsters living in Victorian England, recipes here",
+      "link": "http://www.picturebritain.com/2012/07/recipes-from-cranford.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a5/e3/bf/a5e3bfca73168dd7febc1663620ab758.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

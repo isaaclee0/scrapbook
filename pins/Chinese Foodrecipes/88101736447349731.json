@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447349731/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chinese-foodrecipes",
+    "CustomFileName": "88101736447349731",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447349731",
+      "url": "https://www.pinterest.com/pin/88101736447349731/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Sizzlin' Spicy Szechuan Stir-Fry",
+      "description": "Sizzlin' Spicy Szechuan Stir-Fry",
+      "link": "https://www.gimmesomeoven.com/sizzlin-spicy-szechuan-stir-fry/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "agoudalife",
+        "url": "https://www.pinterest.com/agoudalife/",
+        "name": "A Gouda Life"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chinese-foodrecipes/",
+        "name": "Chinese Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6e/f4/77/6ef477a3de5ee44f6742caf6ecc8aedb.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

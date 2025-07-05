@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451807909/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/in-my-cottage-garden",
+    "CustomFileName": "88101736451807909",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451807909",
+      "url": "https://www.pinterest.com/pin/88101736451807909/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/in-my-cottage-garden/",
+        "name": "In my cottage garden",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/89/a2/6c/89a26c9ac8fa08ce7b7cc9685f4a2af4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

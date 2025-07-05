@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433774251/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736433774251",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433774251",
+      "url": "https://www.pinterest.com/pin/88101736433774251/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Lemon Meringue Angel Cake",
+      "description": "lemon meringue angel cake recipe, my two favorite deserts ever made into one!!!!!",
+      "link": "http://www.tasteofhome.com/Recipes/Lemon-Meringue-Angel-Cake",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d4/b1/bc/d4b1bc4a5adc425e1f7d44b1fddef405.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

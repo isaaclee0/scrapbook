@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430209906/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/garden-inspiration",
+    "CustomFileName": "88101736430209906",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430209906",
+      "url": "https://www.pinterest.com/pin/88101736430209906/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "A Little Dirt Never Hurt",
+      "description": "We made an arch like this for beans last year and it was great!",
+      "link": "http://alittledirtneverhurt.blogspot.com/2008_06_01_archive.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/garden-inspiration/",
+        "name": "Garden Inspiration",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c8/eb/61/c8eb61cd5460e37d68dc68c36c123c20.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442760108/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442760108",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442760108",
+      "url": "https://www.pinterest.com/pin/88101736442760108/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Register - Login",
+      "description": "Tim Tebow <3 John 3:16!",
+      "link": "http://www.tumblr.com/reblog/19931202934/1fRWNGsR?redirect_to=/dashboard/4/19931421531%3Flite",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/dd/60/58/dd6058f7aabfc46cc07bc76ef04ddbf0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

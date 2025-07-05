@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438942584/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/rice",
+    "CustomFileName": "88101736438942584",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438942584",
+      "url": "https://www.pinterest.com/pin/88101736438942584/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "New Orleans Red Beans and Rice",
+      "description": "New Orleans Red Beans and Rice",
+      "link": "http://joythebaker.com/2015/03/new-orleans-red-beans-and-rice/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/rice/",
+        "name": "Rice",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c5/b8/b4/c5b8b46462892ce9c70dc74e53cafe66.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

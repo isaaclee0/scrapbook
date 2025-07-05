@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435278037/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/ice-cream",
+    "CustomFileName": "88101736435278037",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435278037",
+      "url": "https://www.pinterest.com/pin/88101736435278037/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Coconut Coffee Ice Cream",
+      "description": "Coconut coffee ice cream",
+      "link": "http://www.runningtothekitchen.com/2014/03/coconut-coffee-ice-cream/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/ice-cream/",
+        "name": "Ice cream",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a5/90/67/a590675c61e924a5a8970ea656193d0e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

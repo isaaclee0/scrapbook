@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434625516/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736434625516",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434625516",
+      "url": "https://www.pinterest.com/pin/88101736434625516/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Yahoo - login",
+      "description": "Simple and perfect...",
+      "link": "http://www.flickr.com/photos/mbuckley/5363871577/lightbox/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5b/8e/f9/5b8ef9850dfa7747d9a22f6f8897b62e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

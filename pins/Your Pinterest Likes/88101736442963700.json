@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442963700/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442963700",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442963700",
+      "url": "https://www.pinterest.com/pin/88101736442963700/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Before adoption and after adoption!!!!  <3",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "venusflytrap",
+        "url": "https://www.pinterest.com/venusflytrap/",
+        "name": "Stacey Eugenio"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/61/48/02/6148020db100d75f717ced0e94d1440d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

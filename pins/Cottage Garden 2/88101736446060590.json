@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446060590/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-garden-2",
+    "CustomFileName": "88101736446060590",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446060590",
+      "url": "https://www.pinterest.com/pin/88101736446060590/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": ".",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-garden-2/",
+        "name": "Cottage Garden 2",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/35/f8/80/35f880ca0f62097ee88b70b07e7260e9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

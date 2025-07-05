@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453771318/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-pinks",
+    "CustomFileName": "88101736453771318",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453771318",
+      "url": "https://www.pinterest.com/pin/88101736453771318/",
+      "type": "pin",
+      "title": "Scoopy Raspberry on natural linen",
+      "gridTitle": "Scoopy Raspberry on natural linen",
+      "description": "#dottedfabric\n#raspberrydots\n#linen",
+      "link": "https://www.cabbagesandroses.com/lifestyle/fabric.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": true,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 2,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "cabbagesroses",
+        "url": "https://www.pinterest.com/cabbagesroses/",
+        "name": "Cabbages & Roses"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-pinks/",
+        "name": "Cottage Pinks",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/82/dd/89/82dd892cfcc3ed88938378ec1deee62f.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/ca/8e/d4/ca8ed44304119c86f295d6ce482f00a9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

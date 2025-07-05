@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451378342/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/platters",
+    "CustomFileName": "88101736451378342",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451378342",
+      "url": "https://www.pinterest.com/pin/88101736451378342/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "grazing boards — Urban Radish",
+      "description": "grazing boards — Urban Radish",
+      "link": "http://www.urban-radish.com/boards/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/platters/",
+        "name": "Platters",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7e/98/de/7e98de8a58ecc679b1091eb8cd833ca8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443120574/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443120574",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443120574",
+      "url": "https://www.pinterest.com/pin/88101736443120574/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "How To Say 'I Love You' In Any Language",
+      "description": "This is how to say \"I love you\" in 50 languages",
+      "link": "http://www.huffingtonpost.com/2015/02/13/how-to-say-i-love-you_n_6652608.html?ncid=edlinkushpmg00000055",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7c/80/96/7c8096d0c9e0d9ad64c5b290eaa59338.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

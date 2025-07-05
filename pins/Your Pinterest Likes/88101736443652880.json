@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443652880/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443652880",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443652880",
+      "url": "https://www.pinterest.com/pin/88101736443652880/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Martha Stewart",
+      "link": "http://www.marthastewart.com/275064/marthas-scrapbook",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1b/d2/b6/1bd2b6856b0a4990e2ede97055dc3faf.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

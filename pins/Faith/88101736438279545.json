@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438279545/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736438279545",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438279545",
+      "url": "https://www.pinterest.com/pin/88101736438279545/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Truth",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "gloriaxxx",
+        "url": "https://www.pinterest.com/gloriaxxx/",
+        "name": "Gloria Tete"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/82/76/2f/82762f7bdf04a75a42ca50e26dbe3b4e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

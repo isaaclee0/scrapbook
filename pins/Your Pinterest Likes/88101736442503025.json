@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442503025/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442503025",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442503025",
+      "url": "https://www.pinterest.com/pin/88101736442503025/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Men Regret Lost Fatherhood",
+      "description": "Women are not the only ones who regret abortion...",
+      "link": "http://www.flickr.com/photos/mvjantzen/4328782817/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ed/ae/69/edae69e0b1b8860401cb38ce3b1ea593.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442521951/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442521951",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442521951",
+      "url": "https://www.pinterest.com/pin/88101736442521951/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The importance of a family password – [Mom Prepared]",
+      "description": "Do you have a family password to keep your kids safe during an emergency situation? Find out how at Mom with a PREP!",
+      "link": "http://momwithaprep.com/do-you-have-a-family-password/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/55/8d/82/558d820b8c3223b1b78240faf8dd6a66.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

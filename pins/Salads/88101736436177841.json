@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436177841/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/salads",
+    "CustomFileName": "88101736436177841",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436177841",
+      "url": "https://www.pinterest.com/pin/88101736436177841/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Tomato and Cucumber Salad",
+      "description": "The English Kitchen: Tomato and Cucumber Salad",
+      "link": "http://theenglishkitchen.blogspot.com/2011/06/tomato-and-cucumber-salad.html?m=1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/salads/",
+        "name": "Salads",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2e/67/c1/2e67c178bff42b65e3d22e9e2801aca5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

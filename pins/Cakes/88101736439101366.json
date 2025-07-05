@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439101366/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736439101366",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439101366",
+      "url": "https://www.pinterest.com/pin/88101736439101366/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Louise Read's Coffee crunch cake",
+      "description": "This recipe pairs a nutty meringue with coffee-flavoured Victoria sponge.",
+      "link": "http://www.bbcgoodfood.com/recipes/12980/louise-reads-coffee-crunch-cake",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a9/40/5d/a9405d3d2e45c870e06edd2d1927d428.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

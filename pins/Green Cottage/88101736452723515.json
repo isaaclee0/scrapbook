@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452723515/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/green-cottage",
+    "CustomFileName": "88101736452723515",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452723515",
+      "url": "https://www.pinterest.com/pin/88101736452723515/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "pullenj",
+        "url": "https://www.pinterest.com/pullenj/",
+        "name": "Jaime Pullen"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/green-cottage/",
+        "name": "Green Cottage",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/77/3e/bb/773ebb3e7c6f7534539a38e7e599ffbb.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448101393/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/ice-cream",
+    "CustomFileName": "88101736448101393",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448101393",
+      "url": "https://www.pinterest.com/pin/88101736448101393/",
+      "type": "pin",
+      "title": "Kit Kat Ice Cream Cake",
+      "gridTitle": "Kit Kat Ice Cream Cake",
+      "description": "Crispy kit kat contrast creamy ice cream in this chocolate covered ice cream cake.",
+      "link": "https://www.tastemade.com/videos/Kit-Kat-Ice-Cream-Cake",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemade",
+        "url": "https://www.pinterest.com/tastemade/",
+        "name": "Tastemade"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/ice-cream/",
+        "name": "Ice cream",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9b/16/24/9b1624fa782c362261bf1412827f7f34.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/c4/10/84/c41084345d9050c133fe57ac5e01f807.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443982541/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736443982541",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443982541",
+      "url": "https://www.pinterest.com/pin/88101736443982541/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Home - Grazed & Enthused",
+      "description": "Grazed and Enthused | AIP PMS Brownies",
+      "link": "http://www.grazedandenthused.com/#!AIP-PMS-Brownies/cu6k/553cdf1e0cf2adc1aced8675",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6a/4b/f8/6a4bf8ffbab7503542eb55d636c0d95f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

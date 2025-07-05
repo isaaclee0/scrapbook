@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445056556/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/beefy",
+    "CustomFileName": "88101736445056556",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445056556",
+      "url": "https://www.pinterest.com/pin/88101736445056556/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Famous Russian Foods",
+      "description": "Another traditional Russian food is piroggi",
+      "link": "http://www.guide-guru.com/blog/2012/03/22/famous-russian-foods/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/beefy/",
+        "name": "Beefy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/dc/54/72/dc5472fd39c76f6585db9f0bdbf15727.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

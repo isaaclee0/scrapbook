@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437626246/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potato-recipes",
+    "CustomFileName": "88101736437626246",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437626246",
+      "url": "https://www.pinterest.com/pin/88101736437626246/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Roasted Baby Potatoes in a Homemade Mushroom Sauce",
+      "description": "Roasted Baby Potatoes in a Homemade Mushroom Sauce",
+      "link": "http://thecookiewriter.com/2014/12/roasted-baby-potatoes-homemade-mushroom-sauce.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "showmetheyummy",
+        "url": "https://www.pinterest.com/showmetheyummy/",
+        "name": "Show Me the Yummy"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potato-recipes/",
+        "name": "Potato Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4f/92/29/4f9229a4a8132e93161549464ede718c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

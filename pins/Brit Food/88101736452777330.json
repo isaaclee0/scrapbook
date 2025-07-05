@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452777330/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/brit-food",
+    "CustomFileName": "88101736452777330",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452777330",
+      "url": "https://www.pinterest.com/pin/88101736452777330/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Cheese and onion pasties",
+      "description": " ",
+      "link": "https://www.deliciousmagazine.co.uk/recipes/cheese-and-onion-pasties/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/brit-food/",
+        "name": "Brit Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b7/ca/75/b7ca75679675bbb59299d173a39d25a0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

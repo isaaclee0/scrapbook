@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453059745/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/writing",
+    "CustomFileName": "88101736453059745",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453059745",
+      "url": "https://www.pinterest.com/pin/88101736453059745/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "#writing",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ea0165",
+        "url": "https://www.pinterest.com/ea0165/",
+        "name": "E.A. Monroe"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/writing/",
+        "name": "Writing",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ff/34/e7/ff34e797cfd311e61f2762c9d959ec9a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

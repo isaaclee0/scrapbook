@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432554041/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736432554041",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432554041",
+      "url": "https://www.pinterest.com/pin/88101736432554041/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Internet's Most Asked Questions",
+      "description": "This is the cutest thing I have ever seen",
+      "link": "http://themetapicture.com/just-because-youre-mad/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/28/93/38/28933897ed39107c45caef51457123cf.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

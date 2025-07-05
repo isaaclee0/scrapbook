@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439518485/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736439518485",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439518485",
+      "url": "https://www.pinterest.com/pin/88101736439518485/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chicken Gloria Casserole",
+      "description": "Chicken and mushrooms. such a delicious combination.",
+      "link": "http://www.bettycrocker.com/recipes/chicken-gloria-casserole/c055393d-73e1-4e1d-8b00-511903281da6",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 4,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e3/3d/71/e33d71acaee03174988594524aa6c23d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

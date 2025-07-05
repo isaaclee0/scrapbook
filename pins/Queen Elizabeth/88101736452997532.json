@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452997532/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/queen-elizabeth",
+    "CustomFileName": "88101736452997532",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452997532",
+      "url": "https://www.pinterest.com/pin/88101736452997532/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 5,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/queen-elizabeth/",
+        "name": "Queen Elizabeth",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/db/5e/5d/db5e5dad2a4b1a0907d73fa31b1d7d18.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

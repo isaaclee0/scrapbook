@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453130095/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/mariana",
+    "CustomFileName": "88101736453130095",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453130095",
+      "url": "https://www.pinterest.com/pin/88101736453130095/",
+      "type": "pin",
+      "title": "Scripture: lead by example",
+      "gridTitle": "Scripture: lead by example",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "alyssahepler",
+        "url": "https://www.pinterest.com/alyssahepler/",
+        "name": "Alyssa McFall"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/mariana/",
+        "name": "Mariana",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/79/01/ee/7901ee125d6a6ac9bb9135ad831ea62b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

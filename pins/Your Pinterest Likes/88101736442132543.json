@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442132543/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442132543",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442132543",
+      "url": "https://www.pinterest.com/pin/88101736442132543/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Free Printable: Helpful Ways To Say…NO",
+      "description": "Helpful Ways To Say NO  (Healthy Boundaries)",
+      "link": "http://www.juliehanks.com/2013/10/23/free-printable-helpful-ways-to-say-no/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/04/39/68/0439687153a83e3fd4adebcdc629692d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

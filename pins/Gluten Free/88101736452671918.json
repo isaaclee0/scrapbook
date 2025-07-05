@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452671918/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/gluten-free",
+    "CustomFileName": "88101736452671918",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452671918",
+      "url": "https://www.pinterest.com/pin/88101736452671918/",
+      "type": "pin",
+      "title": "Chocolate Covered Peanut Butter Crunch Balls",
+      "gridTitle": "Chocolate Covered Peanut Butter Crunch Balls",
+      "description": " ",
+      "link": "https://callascleaneats.com/chocolate-covered-peanut-butter-crunch-balls/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "callascleaneats",
+        "url": "https://www.pinterest.com/callascleaneats/",
+        "name": "Calla's Clean Eats"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/gluten-free/",
+        "name": "Gluten Free",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6f/aa/b2/6faab2db379b8c6d7614c3a5c924f39e.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/5e/73/8a/5e738aa99d0c4e18042f56cac2affecc.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

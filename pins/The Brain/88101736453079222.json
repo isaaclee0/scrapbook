@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453079222/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/the-brain",
+    "CustomFileName": "88101736453079222",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453079222",
+      "url": "https://www.pinterest.com/pin/88101736453079222/",
+      "type": "pin",
+      "title": "Neuro Exercises ",
+      "gridTitle": "Neuro Exercises",
+      "description": " ",
+      "link": "https://m.youtube.com/watch?feature=youtu.be&v=PDji8Q2lGQA",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "vidhishaa3",
+        "url": "https://www.pinterest.com/vidhishaa3/",
+        "name": "Cookie Monster"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/the-brain/",
+        "name": "The Brain",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0f/1a/63/0f1a636147bc7340490f39942c066050.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/79/3d/9a/793d9accc9721ef5a1b06136cc835f4c.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

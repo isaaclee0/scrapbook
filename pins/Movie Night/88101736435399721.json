@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435399721/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736435399721",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435399721",
+      "url": "https://www.pinterest.com/pin/88101736435399721/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "The Fox and the Child (2007), love this movie....",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "cgdmtr",
+        "url": "https://www.pinterest.com/cgdmtr/",
+        "name": "çiğdem turhan"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5c/2c/26/5c2c260c9cc019fe5b6a3c8fa2c2aafa.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

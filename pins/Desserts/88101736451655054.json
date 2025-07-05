@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451655054/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736451655054",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451655054",
+      "url": "https://www.pinterest.com/pin/88101736451655054/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Nigella's queen of puddings  recipe",
+      "description": "Yaaaaas, Queen! Nigella uses brioche crumbs and plum jam to make her queen of puddings completely regal.",
+      "link": "https://www.bbc.co.uk/food/recipes/queen_of_puddings_33046",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "bbcfood",
+        "url": "https://www.pinterest.com/bbcfood/",
+        "name": "BBC Food"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/87/4c/8d/874c8d6ad80c9e6f9678a8c0516e6323.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

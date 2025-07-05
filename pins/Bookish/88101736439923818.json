@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439923818/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736439923818",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439923818",
+      "url": "https://www.pinterest.com/pin/88101736439923818/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Animals of Farthing Wood",
+      "description": "The Animals of Farthing Wood by Colin Dann http://www.amazon.com/dp/1405225521/ref=cm_sw_r_pi_dp_O-Ouxb0YCVJG0",
+      "link": "http://www.amazon.com/dp/1405225521/ref=cm_sw_r_pi_dp_O-Ouxb0YCVJG0",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ad/92/21/ad92212e741a6d898350d859131b18fc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

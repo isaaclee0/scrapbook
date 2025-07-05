@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450622237/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736450622237",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450622237",
+      "url": "https://www.pinterest.com/pin/88101736450622237/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "New house",
+      "description": "window box",
+      "link": "http://www.jakeandkaren.com/housesite/catwindowsillperchhtml.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/32/1e/98/321e984ceda647c3e17fc12c1f6f33f4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

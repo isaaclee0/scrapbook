@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447819633/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/microwave-recipes",
+    "CustomFileName": "88101736447819633",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447819633",
+      "url": "https://www.pinterest.com/pin/88101736447819633/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Magic Microwave Cookies",
+      "description": "Make half a dozen cookies in your microwave - it's like magic!",
+      "link": "http://www.mrfood.com/Cookie-Recipes/Magic-Microwave-Cookies",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "mr_food",
+        "url": "https://www.pinterest.com/mr_food/",
+        "name": "Mr. Food Test Kitchen"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/microwave-recipes/",
+        "name": "Microwave Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a6/8b/d3/a68bd358872b754bae87f2c833d00bdf.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

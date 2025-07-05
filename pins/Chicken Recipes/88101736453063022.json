@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453063022/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736453063022",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453063022",
+      "url": "https://www.pinterest.com/pin/88101736453063022/",
+      "type": "pin",
+      "title": "Pechuga de pavo súper sabrosa",
+      "gridTitle": "Pechuga de pavo súper sabrosa",
+      "description": " ",
+      "link": "https://www.chefclub.tv/es-mx/recetas/original/13fa36ec-1397-4406-921a-a1e7d8299065/pechuga-de-pavo-s%C3%BAper-sabrosa-la-mejor-manera-de-servir-un-d%C3%ADa-de-acci%C3%B3n-de-gracias/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "chefclubmexico",
+        "url": "https://www.pinterest.com/chefclubmexico/",
+        "name": "Chefclub México"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c9/5b/2b/c95b2b3a66dac5b2f84f416e1686a5c6.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/b3/af/ad/b3afad8510145c8a608a0d5e3fd03815.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

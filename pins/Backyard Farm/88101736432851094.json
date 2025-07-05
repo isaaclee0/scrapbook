@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432851094/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/backyard-farm",
+    "CustomFileName": "88101736432851094",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432851094",
+      "url": "https://www.pinterest.com/pin/88101736432851094/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Lettuce Spiral - what a great idea!",
+      "link": "http://www.gardencenterohio.com/veggies.php",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/backyard-farm/",
+        "name": "Backyard Farm",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/92/0e/20/920e201c8ddf4d8d3f365016fbd30c23.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

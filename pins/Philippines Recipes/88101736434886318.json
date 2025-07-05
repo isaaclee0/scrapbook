@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434886318/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/philippines-recipes",
+    "CustomFileName": "88101736434886318",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434886318",
+      "url": "https://www.pinterest.com/pin/88101736434886318/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Filipino Humba",
+      "description": "Filipino Humba - great pork belly recipe",
+      "link": "http://pinchofyum.com/filipino-humba",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/philippines-recipes/",
+        "name": "Philippines recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6d/c4/44/6dc444ad2a9f8d7017553f464abb7316.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

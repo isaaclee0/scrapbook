@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440075538/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736440075538",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440075538",
+      "url": "https://www.pinterest.com/pin/88101736440075538/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Old-Fashioned Sugar Cream Pie Recipe - Grit",
+      "description": "This Old-Fashioned Sugar Cream Pie Recipe uses brown sugar and half and half.",
+      "link": "http://www.grit.com/departments/sugar-cream-pie-recipe-zmrz13jfzgou.aspx",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/79/cb/51/79cb5155c2d6697aae4371cbf4defe4e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

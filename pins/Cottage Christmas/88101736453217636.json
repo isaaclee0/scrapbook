@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453217636/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-christmas",
+    "CustomFileName": "88101736453217636",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453217636",
+      "url": "https://www.pinterest.com/pin/88101736453217636/",
+      "type": "pin",
+      "title": "LES POIRES GOURMANDES ",
+      "gridTitle": "LES POIRES GOURMANDES",
+      "description": "Une poire au four avec son cœur coulant au chocolat ! Plus de conseils sur notre site.",
+      "link": "https://www.chefclub.tv/fr/recettes/original/36660e59-856b-4de5-8a21-9bcf4e27eba3/les-poires-gourmandes-et-leur-coeur-fondant-de-chocolat/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "chefclubnw",
+        "url": "https://www.pinterest.com/chefclubnw/",
+        "name": "Chefclub"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-christmas/",
+        "name": "Cottage Christmas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c8/16/e6/c816e60e732f88f323e39a7f50bd1c39.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/df/ac/b4/dfacb4f9a60b7fee901f5f9932245fd2.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

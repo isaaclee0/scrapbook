@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432890223/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/asian-food",
+    "CustomFileName": "88101736432890223",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432890223",
+      "url": "https://www.pinterest.com/pin/88101736432890223/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Filipino Sweet and Spicy Shrimp Recipe asian-food",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/asian-food/",
+        "name": "Asian Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3f/e6/5d/3fe65d803e0d1676696e8a7feb4ba79a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439518492/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/soup",
+    "CustomFileName": "88101736439518492",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439518492",
+      "url": "https://www.pinterest.com/pin/88101736439518492/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "French Onion Soup",
+      "description": "French Onion Soup",
+      "link": "http://blog.williams-sonoma.com/french-onion-soup/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/soup/",
+        "name": "Soup",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/50/b8/4b/50b84b8bbaafd555bee66b549db6b22d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

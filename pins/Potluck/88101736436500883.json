@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436500883/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potluck",
+    "CustomFileName": "88101736436500883",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436500883",
+      "url": "https://www.pinterest.com/pin/88101736436500883/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Thanksgiving Dinner Casserole",
+      "description": "Thanksgiving Dinner Casserole - This turkey and stuffing casserole combines your favorite Thanksgiving flavors in an easy dish.",
+      "link": "http://www.messforless.net/2013/09/thanksgiving-dinner-casserole.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potluck/",
+        "name": "Potluck",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/03/62/cd/0362cd33f7ecc8f2550eb1e3b280d3df.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

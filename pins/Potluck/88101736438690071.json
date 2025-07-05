@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438690071/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potluck",
+    "CustomFileName": "88101736438690071",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438690071",
+      "url": "https://www.pinterest.com/pin/88101736438690071/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "www.twirlandtaste.com",
+      "description": "Tennessee Honey Corn Pudding",
+      "link": "http://www.twirlandtaste.com/2012/08/tennessee-honey-corn-pudding.html?m=1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "princesssachs",
+        "url": "https://www.pinterest.com/princesssachs/",
+        "name": "Katie Sachs"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potluck/",
+        "name": "Potluck",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ca/24/b0/ca24b0e79cb77fb773ceb7e7c3888f5f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

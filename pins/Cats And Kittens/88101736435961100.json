@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435961100/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736435961100",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435961100",
+      "url": "https://www.pinterest.com/pin/88101736435961100/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Page 6 – The Internet's Most Asked Questions",
+      "description": "Aww",
+      "link": "http://themetapicture.com/page/6/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/70/f7/3c/70f73c66ff0e3dd3d844264bda00a81c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

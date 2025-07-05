@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450658466/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/indian-food-vegetables",
+    "CustomFileName": "88101736450658466",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450658466",
+      "url": "https://www.pinterest.com/pin/88101736450658466/",
+      "type": "pin",
+      "title": "Baingan Methi Video Recipe",
+      "gridTitle": "Baingan Methi Video Recipe",
+      "description": "Baingan Methi is a delicious everyday Indian sabji made using eggplant and fenugreek leaves. It’s easy to make and tastes delicious. Here is how to make it.",
+      "link": "https://www.whiskaffair.com/baingan-methi-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 34,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "whiskaffair",
+        "url": "https://www.pinterest.com/whiskaffair/",
+        "name": "Whisk Affair"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/indian-food-vegetables/",
+        "name": "Indian Food - Vegetables",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1c/4d/4d/1c4d4d85db3246539a85668dbe773df4.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/9a/e1/5f/9ae15fbc2fc1809e8a8a42985eaf4e36.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

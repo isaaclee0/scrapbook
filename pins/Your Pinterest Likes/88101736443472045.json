@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443472045/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443472045",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443472045",
+      "url": "https://www.pinterest.com/pin/88101736443472045/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Best kefir recipes (and a giveaway)",
+      "description": "Kefir ideas",
+      "link": "http://www.waldeneffect.org/blog/Best_kefir_recipes___40__and_a_giveaway__41__/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1e/42/8b/1e428b8abf89344b9b0778ed34d582e2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

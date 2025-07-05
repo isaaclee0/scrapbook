@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442507203/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442507203",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442507203",
+      "url": "https://www.pinterest.com/pin/88101736442507203/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Top 10 Best DIY Scarfs",
+      "description": "Good way to use curly willow branches.  Top 10 Best DIY Wall Decor  Jakes house",
+      "link": "http://topinspired.com/top-10-best-diy-wall-decor/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f3/e7/e0/f3e7e00efff7380e036a7e6b420393ee.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434148580/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/summer-food",
+    "CustomFileName": "88101736434148580",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434148580",
+      "url": "https://www.pinterest.com/pin/88101736434148580/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "WordPress › Installation",
+      "description": "freekeh salad with a blackberry vinaigrette",
+      "link": "http://www.blissfulbblog.com/blog/2011/8/25/blissful-eats-with-tina-jeffers-blackberries-every-which-way.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/summer-food/",
+        "name": "Summer food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ac/46/81/ac4681ed48b1902e2596feb8c8c0942f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

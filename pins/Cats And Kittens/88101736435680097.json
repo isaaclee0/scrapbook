@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435680097/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736435680097",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435680097",
+      "url": "https://www.pinterest.com/pin/88101736435680097/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Funny Grey Tabby Kitten",
+      "description": "So sweet",
+      "link": "http://www.flickr.com/photos/24415376@N06/2312591711/in/photostream/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/57/a1/5f/57a15f4e30763afb3b74410b913ca06f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

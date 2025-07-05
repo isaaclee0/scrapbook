@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452323965/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painted-furniture-etc",
+    "CustomFileName": "88101736452323965",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452323965",
+      "url": "https://www.pinterest.com/pin/88101736452323965/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "cchrisem",
+        "url": "https://www.pinterest.com/cchrisem/",
+        "name": "Eclectic Chateau"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painted-furniture-etc/",
+        "name": "Painted Furniture etc",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/73/ca/74/73ca74b38ed5538f05e064f0cf32197d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

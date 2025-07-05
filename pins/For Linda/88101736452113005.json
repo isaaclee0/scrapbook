@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452113005/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/for-linda",
+    "CustomFileName": "88101736452113005",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452113005",
+      "url": "https://www.pinterest.com/pin/88101736452113005/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "my little black (button) heart",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ginjaninja86",
+        "url": "https://www.pinterest.com/ginjaninja86/",
+        "name": "Baśka Maria"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/for-linda/",
+        "name": "For Linda",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c8/5a/62/c85a627970d7206a362aa7ae00c0ca2d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

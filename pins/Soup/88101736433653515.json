@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433653515/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/soup",
+    "CustomFileName": "88101736433653515",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433653515",
+      "url": "https://www.pinterest.com/pin/88101736433653515/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Creamy Tomato Tortellini Soup",
+      "description": "Creamy tomato tortellini soup. Sounds good for fall or a cool night :)",
+      "link": "http://tastykitchen.com/recipes/soups/creamy-tomato-tortellini-soup/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/soup/",
+        "name": "Soup",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0e/4d/a0/0e4da043105dcedb5e514c258f74f607.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449787143/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/goats",
+    "CustomFileName": "88101736449787143",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449787143",
+      "url": "https://www.pinterest.com/pin/88101736449787143/",
+      "type": "pin",
+      "title": "When baby goat sees a giant pup",
+      "gridTitle": "When baby goat sees a giant pup",
+      "description": "Baby goats are so fricken cute 😊💕💎💎♠",
+      "link": "http://petsabs.com/videos",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "petsabs",
+        "url": "https://www.pinterest.com/petsabs/",
+        "name": "Pets Abs"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/goats/",
+        "name": "Goats...",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ab/1e/99/ab1e9939e52aeaba0488fa4f00f63ed8.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/66/21/e2/6621e20b739368018990bd5a7e7dd83f.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

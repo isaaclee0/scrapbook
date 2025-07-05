@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442516234/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442516234",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442516234",
+      "url": "https://www.pinterest.com/pin/88101736442516234/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "What Body Type am I | Female Body Shapes",
+      "description": "Your virtual body... Enter your measurements and find out what is the best way to dress for your body type.",
+      "link": "http://mystylerules.com/AccountSetup.aspx",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/71/30/9a/71309a81c5da5ab16a79b05b8e1a87d1.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

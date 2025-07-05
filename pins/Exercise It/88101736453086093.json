@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453086093/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/exercise-it",
+    "CustomFileName": "88101736453086093",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453086093",
+      "url": "https://www.pinterest.com/pin/88101736453086093/",
+      "type": "pin",
+      "title": "Beginner Couch Abs Workout",
+      "gridTitle": "Beginner Couch Abs Workout",
+      "description": " ",
+      "link": "https://courses.justinagustin.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "justinagustin",
+        "url": "https://www.pinterest.com/justinagustin/",
+        "name": "Justin Agustin"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/exercise-it/",
+        "name": "Exercise it",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1d/a6/3b/1da63b982fe804f7fedaecd90f3959aa.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/68/84/61/688461f05017293dc7a8abd226646e12.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

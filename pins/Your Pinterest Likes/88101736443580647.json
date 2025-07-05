@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443580647/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443580647",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443580647",
+      "url": "https://www.pinterest.com/pin/88101736443580647/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "lol . . .",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "MrsSelaty",
+        "url": "https://www.pinterest.com/MrsSelaty/",
+        "name": "Kathy"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/36/34/7a/36347afb422ea91da77b369ab6a9baf4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

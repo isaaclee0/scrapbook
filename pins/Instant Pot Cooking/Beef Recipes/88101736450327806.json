@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450327806/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/instant-pot-cooking/beef-recipes",
+    "CustomFileName": "88101736450327806",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450327806",
+      "url": "https://www.pinterest.com/pin/88101736450327806/",
+      "type": "pin",
+      "title": "Instant Pot Pot Roast",
+      "gridTitle": "Instant Pot Pot Roast",
+      "description": " ",
+      "link": "https://thesaltymarshmallow.com/instant-pot-pot-roast/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "the_salty",
+        "url": "https://www.pinterest.com/the_salty/",
+        "name": "The Salty Marshmallow"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/instant-pot-cooking/",
+        "name": "Instant Pot Cooking",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b4/42/0a/b4420ac364428c7776b056ca2cfe3cb3.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/bb/44/e6/bb44e687b8f537b3d0d619f88bb688b8.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

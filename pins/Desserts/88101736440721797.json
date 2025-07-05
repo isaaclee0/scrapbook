@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440721797/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736440721797",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440721797",
+      "url": "https://www.pinterest.com/pin/88101736440721797/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Sticky Toffee Pudding",
+      "description": "Sticky Toffee Pudding | Homemade Dutch Apple Pie",
+      "link": "http://justtakeabite.com/sticky-toffee-pudding-grain-free-dairy-free-nut-free-corn-free/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d5/5d/c3/d55dc3aa832a60a6bee0b5076ce5d911.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

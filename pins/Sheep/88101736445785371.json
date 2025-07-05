@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445785371/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/sheep",
+    "CustomFileName": "88101736445785371",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445785371",
+      "url": "https://www.pinterest.com/pin/88101736445785371/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Pinterest boards are to be enjoyed- so enjoy yourself!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "MartiHart",
+        "url": "https://www.pinterest.com/MartiHart/",
+        "name": "•M💖H•"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/sheep/",
+        "name": "Sheep",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/01/67/0e/01670e44256e9449c745c9af310c0552.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

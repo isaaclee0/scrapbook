@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431399924/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/breakfast",
+    "CustomFileName": "88101736431399924",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431399924",
+      "url": "https://www.pinterest.com/pin/88101736431399924/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "raspberry breakfast bars",
+      "description": "Raspberry Breakfast Bars",
+      "link": "http://smittenkitchen.com/2008/09/raspberry-breakfast-bars/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/breakfast/",
+        "name": "Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/68/06/81/680681e1c4f32e128987802c9e5b1201.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

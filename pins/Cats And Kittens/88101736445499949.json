@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445499949/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736445499949",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445499949",
+      "url": "https://www.pinterest.com/pin/88101736445499949/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "~Chobbit Hobbit's Nature Corner~",
+      "description": "Cats spend the majority of their waking time looking out windows.",
+      "link": "http://chobbithobbit.tumblr.com/post/51158385305",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1b/91/f5/1b91f528c1ba2d0f8f6ad98761b673fa.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

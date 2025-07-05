@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453079137/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/vertigo",
+    "CustomFileName": "88101736453079137",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453079137",
+      "url": "https://www.pinterest.com/pin/88101736453079137/",
+      "type": "pin",
+      "title": "Dizziness",
+      "gridTitle": "Dizziness",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "chiariproject",
+        "url": "https://www.pinterest.com/chiariproject/",
+        "name": "Chiari Project"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/vertigo/",
+        "name": "Vertigo",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7a/0e/49/7a0e494825222af21357ef3072d0700b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

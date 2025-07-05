@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443442881/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443442881",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443442881",
+      "url": "https://www.pinterest.com/pin/88101736443442881/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Deadly Beauty - Poisonous Mushroom - Design Swan",
+      "description": "The \"Destroying Angel\" (Amanita bisporigera), is as deadly as it is beautiful.",
+      "link": "http://www.designswan.com/archives/deadly-beauty-poisonous-mushroom.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ba/41/f2/ba41f292439675f7f2e95bba19246e64.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

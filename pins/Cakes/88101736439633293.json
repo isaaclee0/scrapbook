@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439633293/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736439633293",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439633293",
+      "url": "https://www.pinterest.com/pin/88101736439633293/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "* gâteau au chocolat roulé *",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "catherinecoutur",
+        "url": "https://www.pinterest.com/catherinecoutur/",
+        "name": "Catherine Couture"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/69/13/c9/6913c9e15a52615a8537fded240abdac.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

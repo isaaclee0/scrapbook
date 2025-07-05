@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448797989/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736448797989",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448797989",
+      "url": "https://www.pinterest.com/pin/88101736448797989/",
+      "type": "pin",
+      "title": "This is normal, right?",
+      "gridTitle": "This is normal, right?",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "jdexports2000",
+        "url": "https://www.pinterest.com/jdexports2000/",
+        "name": "Happy Happy Joy Joy"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/25/9f/d5/259fd51d193219e7dc359be68df93fbd.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/b6/96/85/b696853194bf98cad063c7397f602b55.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

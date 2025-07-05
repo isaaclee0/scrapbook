@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442533958/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442533958",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442533958",
+      "url": "https://www.pinterest.com/pin/88101736442533958/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "HugeDomains.com",
+      "description": "Eva Suit (one of my favs!):  Very modest swimwear & totally chic too!  Probably some of my favorite suit styles, but would need a swim bra.  :-)",
+      "link": "http://modestsea.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c8/d0/b8/c8d0b8f26eeda59040c58cb6e4bf18a0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

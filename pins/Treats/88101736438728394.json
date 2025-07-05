@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438728394/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736438728394",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438728394",
+      "url": "https://www.pinterest.com/pin/88101736438728394/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Penuche",
+      "description": "Penuche  ~  brown sugar fudge is so creamy and delicious",
+      "link": "http://dianasdesserts.com/index.cfm/fuseaction/recipes.recipeListing/filter/dianas/recipeID/2494/Recipe.cfm",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/59/1d/87/591d877372643acd6436890ca1d47003.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

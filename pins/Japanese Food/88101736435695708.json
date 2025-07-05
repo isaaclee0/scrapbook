@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435695708/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/japanese-food",
+    "CustomFileName": "88101736435695708",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435695708",
+      "url": "https://www.pinterest.com/pin/88101736435695708/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Sushi - how to..",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "mdmilkov",
+        "url": "https://www.pinterest.com/mdmilkov/",
+        "name": "Maria ♡"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/japanese-food/",
+        "name": "Japanese Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bf/5b/9f/bf5b9f90b01fbd501f49e5382dc8c10e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

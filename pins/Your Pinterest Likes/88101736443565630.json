@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443565630/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443565630",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443565630",
+      "url": "https://www.pinterest.com/pin/88101736443565630/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Loading...",
+      "description": "How to 'braid' the collar of a plain tee - almost no sewing",
+      "link": "http://hernewleaf.com/2011/07/21/diy-banana-republic-braided-neck-tee-shirt/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/64/ee/fa/64eefac6904d5a998591d1aa4aa4cb02.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

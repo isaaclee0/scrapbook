@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442955275/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442955275",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442955275",
+      "url": "https://www.pinterest.com/pin/88101736442955275/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "adopting parents photo shoot idea",
+      "link": "http://sphotos-a.xx.fbcdn.net/hphotos-prn1/552541_4524276112601_26511269_n.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/44/6d/e8/446de8c815a360f0df748353a69a67b8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430784971/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430784971",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430784971",
+      "url": "https://www.pinterest.com/pin/88101736430784971/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Smile",
+      "description": "if I was crafty enough.",
+      "link": "http://www.watermelon.org/Carvings/Smile-31.aspx",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/de/8b/99/de8b996f80d7cd8becbd7e88f03a7dba.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

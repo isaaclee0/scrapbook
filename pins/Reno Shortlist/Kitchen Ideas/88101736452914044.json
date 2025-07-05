@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452914044/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/reno-shortlist/kitchen-ideas",
+    "CustomFileName": "88101736452914044",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452914044",
+      "url": "https://www.pinterest.com/pin/88101736452914044/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/reno-shortlist/",
+        "name": "Reno shortlist",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f5/eb/39/f5eb3903b6831d7cec910430359cce15.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

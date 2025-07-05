@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443842156/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/mexican-and-tex-mex",
+    "CustomFileName": "88101736443842156",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443842156",
+      "url": "https://www.pinterest.com/pin/88101736443842156/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Mexican chocolate pie",
+      "description": "Mexican chocolate pie",
+      "link": "http://ohmydish.com/recipe/mexican-chocolate-pie/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/mexican-and-tex-mex/",
+        "name": "Mexican and Tex Mex",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/54/2a/4d/542a4dfbe78b85847f696de17d5af468.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

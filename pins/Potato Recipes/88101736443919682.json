@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443919682/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potato-recipes",
+    "CustomFileName": "88101736443919682",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443919682",
+      "url": "https://www.pinterest.com/pin/88101736443919682/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Постила",
+      "description": "Жюльен в картофеле-кокотнице | Домохозяйки",
+      "link": "http://postila.ru/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potato-recipes/",
+        "name": "Potato Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6e/c2/99/6ec29955d5c734e5c676256a359edaba.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

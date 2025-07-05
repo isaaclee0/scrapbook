@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441174826/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736441174826",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441174826",
+      "url": "https://www.pinterest.com/pin/88101736441174826/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Cat Hammock. Enough Said.",
+      "description": "cat ♥",
+      "link": "http://m.imgur.com/Imbt6Jk",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7e/34/7d/7e347d9aac526e96a6f21c4ec5f74439.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

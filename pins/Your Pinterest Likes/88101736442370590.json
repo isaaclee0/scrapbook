@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442370590/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442370590",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442370590",
+      "url": "https://www.pinterest.com/pin/88101736442370590/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "It knows no age",
+      "link": "http://sunsurfer.tumblr.com/page/46",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "outburst62",
+        "url": "https://www.pinterest.com/outburst62/",
+        "name": "Karen Boisselle Resinski"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/52/55/eb/5255eba45b81c27745a94614ddfdb4ac.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

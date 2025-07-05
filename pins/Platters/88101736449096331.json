@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449096331/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/platters",
+    "CustomFileName": "88101736449096331",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449096331",
+      "url": "https://www.pinterest.com/pin/88101736449096331/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "link": "https://www.instagram.com/p/BdTXcW6gMT1/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/platters/",
+        "name": "Platters",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/34/1d/e7/341de7181ae9aee9da8c9bc34a12c3a7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434402971/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/packed-lunch",
+    "CustomFileName": "88101736434402971",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434402971",
+      "url": "https://www.pinterest.com/pin/88101736434402971/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "school lunch- kids bento",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "mrslag",
+        "url": "https://www.pinterest.com/mrslag/",
+        "name": "Melissa Foster"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/packed-lunch/",
+        "name": "Packed lunch",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3d/36/a6/3d36a6ab56353383c1eebeb387ce5afd.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

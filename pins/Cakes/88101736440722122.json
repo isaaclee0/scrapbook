@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440722122/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736440722122",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440722122",
+      "url": "https://www.pinterest.com/pin/88101736440722122/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chocolate Rum Cake Recipe",
+      "description": "Chocolate Rum Cake",
+      "link": "http://www.recipe4living.com/recipes/chocolate_rum_cake.htm/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2b/09/c7/2b09c7a82a9ce645a26c827b71c8f04a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

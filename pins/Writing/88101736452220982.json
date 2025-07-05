@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452220982/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/writing",
+    "CustomFileName": "88101736452220982",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452220982",
+      "url": "https://www.pinterest.com/pin/88101736452220982/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Tina_Rosburough",
+        "url": "https://www.pinterest.com/Tina_Rosburough/",
+        "name": "Tina Rosburough"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/writing/",
+        "name": "Writing",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b9/7c/ad/b97cad6ff1e4d84dced75c4d839884ab.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

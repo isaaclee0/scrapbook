@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452368915/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736452368915",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452368915",
+      "url": "https://www.pinterest.com/pin/88101736452368915/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Recipes | KitchenAid",
+      "description": "Recipe turned out perfectly. I just added a few veggies, browned the onion mixture a bit more and used chicken breast instead of mince",
+      "link": "http://www.yummly.com/recipe/Thai-Basil-Chicken-_Gai-Pad-Krapow_-1703889?utm_source=android-app&utm_medium=pinterest&utm_term=Thai-Basil-Chicken-_Gai-Pad-Krapow_-1703889&utm_campaign=app-social-recipe",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f2/a6/b7/f2a6b72710edaed6a382fc02eaf730f2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

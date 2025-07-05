@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449912774/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736449912774",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449912774",
+      "url": "https://www.pinterest.com/pin/88101736449912774/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Choc ripple condensed milk truffles",
+      "description": "#chocolate #condensedmilk #truffles #dessert",
+      "link": "https://www.taste.com.au/recipes/choc-ripple-condensed-milk-truffles-recipe/cwgdnou6",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "teamtaste",
+        "url": "https://www.pinterest.com/teamtaste/",
+        "name": "taste.com.au"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c3/34/c5/c334c56a1476b5fc80061ab9e3c120ff.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/6f/ae/59/6fae5957a4be5076edb6131551546b8f.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

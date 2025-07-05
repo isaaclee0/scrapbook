@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442910841/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442910841",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442910841",
+      "url": "https://www.pinterest.com/pin/88101736442910841/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "10 Herbal Activities for Kids",
+      "description": "10 Herbal Activities for Kids from mountainroseblog.com",
+      "link": "http://mountainroseblog.com/10-herbal-activities-children/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f3/d7/94/f3d7941869a094df3729c4d65e00563e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

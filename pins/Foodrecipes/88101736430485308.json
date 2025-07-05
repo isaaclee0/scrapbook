@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430485308/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430485308",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430485308",
+      "url": "https://www.pinterest.com/pin/88101736430485308/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Egg Onion Rings",
+      "description": "Onion Ring Eggs",
+      "link": "http://www.neatorama.com/2012/03/10/egg-onion-rings/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/06/90/e9/0690e9c3519ef793501aa66072565bb3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

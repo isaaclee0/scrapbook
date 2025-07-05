@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449629280/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/soap",
+    "CustomFileName": "88101736449629280",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449629280",
+      "url": "https://www.pinterest.com/pin/88101736449629280/",
+      "type": "pin",
+      "title": "Coconut Confetti Cold Process Soap",
+      "gridTitle": "Coconut Confetti Cold Process Soap",
+      "description": "This Coconut Confetti Cold Process Soap is a tropical delight. It is an amazing blend of coconut and island fruits and a touch of floral mixed in. It's like a vacation in the shower! #Naturesgarden #ArtisanSoap #SoapMaking",
+      "link": "https://aromaticsuds.blogspot.com/2018/11/its-confetti-time.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "aromaticsuds",
+        "url": "https://www.pinterest.com/aromaticsuds/",
+        "name": "Aromatic Suds Soapery"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/soap/",
+        "name": "Soap",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/88/32/40/883240971bad06cd10147689c46895cc.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/ae/24/ec/ae24ec03cd83335b72df3ba2370b086c.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

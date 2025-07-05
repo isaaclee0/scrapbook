@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433495003/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/garden-inspiration",
+    "CustomFileName": "88101736433495003",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433495003",
+      "url": "https://www.pinterest.com/pin/88101736433495003/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Daisies... always been my favourite",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "cheryl_tessier",
+        "url": "https://www.pinterest.com/cheryl_tessier/",
+        "name": "Cheryl Tessier"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/garden-inspiration/",
+        "name": "Garden Inspiration",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a0/8d/dc/a08ddc1418c7f96044e94893d2b29cbc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

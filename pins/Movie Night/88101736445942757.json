@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445942757/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736445942757",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445942757",
+      "url": "https://www.pinterest.com/pin/88101736445942757/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "YouTube",
+      "description": "Life on a Tudor monastery farm - documentary Epsiode 4",
+      "link": "https://www.youtube.com/watch?v=ZIbhoR1GBuI",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b3/98/aa/b398aa5a57592948428d8e5efda342f4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

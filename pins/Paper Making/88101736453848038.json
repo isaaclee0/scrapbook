@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453848038/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/paper-making",
+    "CustomFileName": "88101736453848038",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453848038",
+      "url": "https://www.pinterest.com/pin/88101736453848038/",
+      "type": "pin",
+      "title": "How to make paper",
+      "gridTitle": "How to make paper",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "fahy0863",
+        "url": "https://www.pinterest.com/fahy0863/",
+        "name": "Rose Fahy"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/paper-making/",
+        "name": "Paper Making",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ed/48/6e/ed486ea146d24236153e1ab397dc8816.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/12/b7/ed/12b7eda3b1575b125afe85b84547892d.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

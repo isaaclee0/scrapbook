@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438136019/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/daffodils",
+    "CustomFileName": "88101736438136019",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438136019",
+      "url": "https://www.pinterest.com/pin/88101736438136019/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Buttercups",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "pallen_smith",
+        "url": "https://www.pinterest.com/pallen_smith/",
+        "name": "P. Allen Smith"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/daffodils/",
+        "name": "Daffodils",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c6/de/ae/c6deaeef69a08a73941497be11aa01cf.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

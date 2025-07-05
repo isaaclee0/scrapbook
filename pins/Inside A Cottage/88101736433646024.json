@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433646024/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/inside-a-cottage",
+    "CustomFileName": "88101736433646024",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433646024",
+      "url": "https://www.pinterest.com/pin/88101736433646024/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "willvoelker",
+        "url": "https://www.pinterest.com/willvoelker/",
+        "name": "Will Voelker"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/inside-a-cottage/",
+        "name": "Inside a cottage",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cd/63/5b/cd635bef5f81cd824044024c392b8ab0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

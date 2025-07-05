@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443142653/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443142653",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443142653",
+      "url": "https://www.pinterest.com/pin/88101736443142653/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Somewhere Over the Rainbow - The Wizard of Oz (1/8) Movie CLIP (1939) HD",
+      "description": "Somewhere Over the Rainbow - The Wizard of Oz",
+      "link": "http://www.youtube.com/watch?v=PSZxmZmBfnU&feature=related",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4b/03/d8/4b03d8d58a5f545a5c8dabbf4b342be0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

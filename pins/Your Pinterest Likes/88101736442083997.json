@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442083997/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442083997",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442083997",
+      "url": "https://www.pinterest.com/pin/88101736442083997/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Something Delightful",
+      "description": "Pin!",
+      "link": "http://apreppystateofmind.blogspot.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/70/64/d2/7064d2eebcdeb2039c9a41f85ff7179f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

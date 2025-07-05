@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453407633/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/exercise-it",
+    "CustomFileName": "88101736453407633",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453407633",
+      "url": "https://www.pinterest.com/pin/88101736453407633/",
+      "type": "pin",
+      "title": "FOLLOW @move.with.mer ON INSTA/TIKTOK FOR MORE TIPS LIKE THIS ✨",
+      "gridTitle": "FOLLOW @move.with.mer ON INSTA/TIKTOK FOR MORE TIPS LIKE THIS ✨",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "theplaygroundapp",
+        "url": "https://www.pinterest.com/theplaygroundapp/",
+        "name": "The Playground App | Home Workouts"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/exercise-it/",
+        "name": "Exercise it",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/2b/93/5c/2b935c2d1f207ea89fa97422f6c2f0f2.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

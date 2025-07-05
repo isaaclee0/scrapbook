@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results - Scrapbook.io</title>
+    <style>
+        .boards-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+        .board {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        .board img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 0 auto 10px;
+            display: block;
+        }
+        .board h3 {
+            margin: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .pins-gallery {
+            column-count: 4;
+            column-gap: 16px;
+        }
+        .pin {
+            display: inline-block;
+            margin: 0 0 16px;
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            padding: 10px;
+            break-inside: avoid-column;
+        }
+        .pin-image-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 150%; /* 2:3 aspect ratio; tweak as needed */
+            overflow: hidden;
+        }
+        .pin-image-wrapper img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .pin p {
+            margin: 5px 0 0;
+        }
+        @media screen and (max-width: 1200px) { .pins-gallery { column-count: 3; } }
+        @media screen and (max-width: 800px) { .pins-gallery { column-count: 2; } }
+        @media screen and (max-width: 600px) { 
+            .pins-gallery { column-count: 1; }
+            .boards-gallery { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+            .board img { width: 100px; height: 100px; }
+        }
+        .search-container {
+            position: fixed;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            background: #fff;
+            padding: 10px;
+            border-radius: 25px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: width 0.3s ease;
+            z-index: 1000;
+        }
+        .search-container:hover {
+            width: 400px;
+        }
+        .search-container form {
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+        .search-container input[type="text"] {
+            width: 100%;
+            border: none;
+            outline: none;
+            padding: 5px;
+            font-size: 16px;
+        }
+        .search-container input[type="submit"] {
+            background: #333;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Search Results for "{{ query }}"</h1>
+    <a href="{{ url_for('gallery') }}">Back to Boards</a>
+
+    <h2>Matching Boards</h2>
+    {% if matching_boards %}
+    <div class="boards-gallery">
+        {% for board in matching_boards %}
+        <div class="board">
+            <a href="{{ url_for('board', board_id=board.id) }}">
+                <img src="{{ board.random_pin_image_url }}" alt="{{ board.name }} Pin">
+                <h3>{{ board.name }}</h3>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <p>No boards found matching "{{ query }}".</p>
+    {% endif %}
+
+    <h2>Matching Pins</h2>
+    {% if matching_pins %}
+    <div class="pins-gallery" id="lightgallery">
+        {% for pin in matching_pins %}
+        <div class="pin">
+            <div class="pin-image-wrapper">
+                {% if pin.link %}
+                <a href="{{ pin.link }}" target="_blank">
+                    <img src="{{ pin.image_url }}" alt="{{ pin.title }}">
+                </a>
+                {% else %}
+                <a href="{{ pin.image_url }}" data-sub-html="<h4>{{ pin.title }}</h4><p>{{ pin.description }}</p><p>Board: {{ pin.board_name }}</p><p>Created: {{ pin.created_at or 'N/A' }}</p>">
+                    <img src="{{ pin.image_url }}" alt="{{ pin.title }}">
+                </a>
+                {% endif %}
+            </div>
+            <p>{{ pin.description }} (Board: <a href="{{ url_for('board', board_id=pin.board_id) }}">{{ pin.board_name }}</a>)</p>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <p>No pins found matching "{{ query }}".</p>
+    {% endif %}
+
+    <div class="search-container">
+        <form action="{{ url_for('search') }}" method="get">
+            <input type="text" name="q" value="{{ query }}" placeholder="Search pins..." autocomplete="off">
+            <input type="submit" value="Go">
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js"></script>
+    <script>
+        lightGallery(document.getElementById('lightgallery'), {
+            selector: 'a:not([href^="http"])',
+            download: false,
+            counter: true,
+            subHtmlSelectorRelative: true
+        });
+    </script>
+</body>
+</html>

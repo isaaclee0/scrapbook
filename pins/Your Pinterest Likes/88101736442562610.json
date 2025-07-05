@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442562610/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442562610",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442562610",
+      "url": "https://www.pinterest.com/pin/88101736442562610/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The 101 Most Useful Websites on the Internet",
+      "description": "The 101 Most Useful Websites on the Internet",
+      "link": "http://www.labnol.org/internet/101-useful-websites/18078/?sub=dp",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/22/dd/a0/22dda02e80ce5f6f73f1f12b3f4da0cf.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

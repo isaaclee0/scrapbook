@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444148333/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/the-reds-have-it",
+    "CustomFileName": "88101736444148333",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444148333",
+      "url": "https://www.pinterest.com/pin/88101736444148333/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Red hair & Freckles.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "vickymetzger",
+        "url": "https://www.pinterest.com/vickymetzger/",
+        "name": "Vicky Metzger Barcelona"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/the-reds-have-it/",
+        "name": "The Reds Have It",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/47/27/ee/4727ee3e28526d4892691d9a2ed7568b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

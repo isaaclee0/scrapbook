@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446035840/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potluck",
+    "CustomFileName": "88101736446035840",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446035840",
+      "url": "https://www.pinterest.com/pin/88101736446035840/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Caramelised Onion, Feta & Roast Pumpkin Tart",
+      "description": "Roasted Pumpkin, Caramelised Onion & Feta Tart",
+      "link": "http://bakeplaysmile.com/roasted-pumpkin-caramelised-onion-feta-tart/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potluck/",
+        "name": "Potluck",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b3/4e/d5/b34ed55b824c8535c5f2afbeb5459ebc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

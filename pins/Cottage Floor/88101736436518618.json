@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436518618/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-floor",
+    "CustomFileName": "88101736436518618",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436518618",
+      "url": "https://www.pinterest.com/pin/88101736436518618/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Bedroom",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "riaverdoorn",
+        "url": "https://www.pinterest.com/riaverdoorn/",
+        "name": "Rietje"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-floor/",
+        "name": "Cottage Floor",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8a/30/9a/8a309a98ac1e78ec1cffda88183f8f6a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

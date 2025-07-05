@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436350663/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736436350663",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436350663",
+      "url": "https://www.pinterest.com/pin/88101736436350663/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Classic Jewish Deli Chicken Salad",
+      "description": "Classic Jewish Deli Chicken Salad",
+      "link": "http://www.joyofkosher.com/recipes/classic-jewish-deli-chicken-salad/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f8/a1/34/f8a134b64e4f2a94196fbddef95319ae.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

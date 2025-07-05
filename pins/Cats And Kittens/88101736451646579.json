@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451646579/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736451646579",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451646579",
+      "url": "https://www.pinterest.com/pin/88101736451646579/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Cozy in Concrete - Yanko Design",
+      "description": "My pup Nugget might not care what his bed looks like but I sure do! Read more at Yanko Design",
+      "link": "http://www.yankodesign.com/2016/05/20/cozy-in-concrete/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "yankodesign",
+        "url": "https://www.pinterest.com/yankodesign/",
+        "name": "Yanko Design - Form Beyond Function"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4f/f5/81/4ff581f04529433baecb39a1bea7e5f9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

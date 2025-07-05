@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448903089/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736448903089",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448903089",
+      "url": "https://www.pinterest.com/pin/88101736448903089/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "One-Pan Pesto Chicken & Veggies",
+      "description": "One-Pan Pesto Chicken With Veggies",
+      "link": "https://www.buzzfeed.com/jordankenna/one-pan-pesto-chicken-veggies?utm_term=.ul2jg69WG#.ma9EWMvV3",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "buzzfeedtasty",
+        "url": "https://www.pinterest.com/buzzfeedtasty/",
+        "name": "Tasty"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/77/76/a5/7776a5d2db4daac01f01da66a3e44f45.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/e0/3d/3f/e03d3fe0393db3d3b7ad1fa9510c3bc8.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

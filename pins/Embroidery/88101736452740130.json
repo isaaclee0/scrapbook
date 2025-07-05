@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452740130/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/embroidery",
+    "CustomFileName": "88101736452740130",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452740130",
+      "url": "https://www.pinterest.com/pin/88101736452740130/",
+      "type": "pin",
+      "title": "Chain stitch Embroidery",
+      "gridTitle": "Chain stitch Embroidery",
+      "description": " ",
+      "link": "https://knitdo.com/colorful-embroidery-flowers-stitches/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "knitdo",
+        "url": "https://www.pinterest.com/knitdo/",
+        "name": "knitdo"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/embroidery/",
+        "name": "Embroidery",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/77/e3/9f/77e39fb46013a554f91df4fbcac2fef0.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/ac/05/fd/ac05fd4f215007f050c3cb4ad884f772.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

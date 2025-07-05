@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452916169/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/baby-stuff",
+    "CustomFileName": "88101736452916169",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452916169",
+      "url": "https://www.pinterest.com/pin/88101736452916169/",
+      "type": "pin",
+      "title": "How To Teach Your Baby Sign Language",
+      "gridTitle": "How To Teach Your Baby Sign Language",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "momandtherestless",
+        "url": "https://www.pinterest.com/momandtherestless/",
+        "name": "Mom And The Restless \nPregnancy and Motherhood"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/baby-stuff/",
+        "name": "Baby stuff",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0b/1f/d9/0b1fd9de52724fb1bd1a1204346cd20e.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/06/63/79/0663790d65115a4ca4415128f0f9cc40.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

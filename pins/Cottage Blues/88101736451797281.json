@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451797281/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-blues",
+    "CustomFileName": "88101736451797281",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451797281",
+      "url": "https://www.pinterest.com/pin/88101736451797281/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "mmuffoletto",
+        "url": "https://www.pinterest.com/mmuffoletto/",
+        "name": "Mary-Ann Muffoletto"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-blues/",
+        "name": "Cottage Blues",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a6/a4/f4/a6a4f4e36452a6cdb7018fff07945735.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

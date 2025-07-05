@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445017247/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cute-kitchens",
+    "CustomFileName": "88101736445017247",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445017247",
+      "url": "https://www.pinterest.com/pin/88101736445017247/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Image gallery",
+      "description": "Aga In Chalon Kitchen",
+      "link": "http://chalon.com/image-gallery/72157627682826991/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cute-kitchens/",
+        "name": "Cute Kitchens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e8/93/95/e89395be5f834a2534363bf9f1b8b043.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

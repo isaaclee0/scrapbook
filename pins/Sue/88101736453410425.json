@@ -1,0 +1,64 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453410425/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/sue",
+    "CustomFileName": "88101736453410425",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453410425",
+      "url": "https://www.pinterest.com/pin/88101736453410425/",
+      "type": "pin",
+      "title": "How to make  Aero mint slice",
+      "gridTitle": "How to make  Aero mint slice",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 5,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "teamtaste",
+        "url": "https://www.pinterest.com/teamtaste/",
+        "name": "taste.com.au"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/sue/",
+        "name": "Sue",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/84/36/52/843652044c9ea721749d9e698f292f34.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/7b/a0/bf/7ba0bf1604651328a879dfb858be4f78.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/d7/a2/7b/d7a27ba2694f40e6895e92a021b2a0ae.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/a2/c5/45/a2c545c4c42422e1ac2c6f497eeb47c2.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/35/fb/45/35fb454b83be259ec359aaa9c209b14d.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453808996/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/colour-palette",
+    "CustomFileName": "88101736453808996",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453808996",
+      "url": "https://www.pinterest.com/pin/88101736453808996/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "prairiefifi",
+        "url": "https://www.pinterest.com/prairiefifi/",
+        "name": "fifi o'neill"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/colour-palette/",
+        "name": "Colour palette",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/49/d0/1f/49d01f316ce77ae4109be1c7e19e46b6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

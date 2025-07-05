@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452788587/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736452788587",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452788587",
+      "url": "https://www.pinterest.com/pin/88101736452788587/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "DIY Cat Door",
+      "description": " ",
+      "link": "https://m.imgur.com/a/w20zB",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/59/b7/a9/59b7a9444998af564332b52ba40d80a3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

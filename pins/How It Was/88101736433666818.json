@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433666818/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/how-it-was",
+    "CustomFileName": "88101736433666818",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433666818",
+      "url": "https://www.pinterest.com/pin/88101736433666818/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "10 Color Pens - I loved these!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/how-it-was/",
+        "name": "How it was..",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9b/d5/78/9bd5786d41da337926620dd2cac1377e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

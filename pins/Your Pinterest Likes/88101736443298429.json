@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443298429/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443298429",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443298429",
+      "url": "https://www.pinterest.com/pin/88101736443298429/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Blogger",
+      "description": "rainbow in a bucket",
+      "link": "http://inspirationforhome.blogspot.com/search/label/Craft?updated-max=2012-02-17T01:57:00-08:00&max-results=20&start=4&by-date=false",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4a/77/94/4a7794c46da78148c7c10aa3ac92e4dd.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

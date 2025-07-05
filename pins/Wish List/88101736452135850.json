@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452135850/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/wish-list",
+    "CustomFileName": "88101736452135850",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452135850",
+      "url": "https://www.pinterest.com/pin/88101736452135850/",
+      "type": "pin",
+      "title": "Huckleberry Pie!",
+      "gridTitle": "",
+      "description": "US$44",
+      "link": "https://cdn.shopify.com/s/files/1/1013/1574/products/IMG_9402a_grande.jpg?v=1451495862",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/wish-list/",
+        "name": "Wish List..",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/28/79/f6/2879f6b0a7b8d7dcc760d3751d003122.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

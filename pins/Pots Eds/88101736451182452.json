@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451182452/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pots-eds",
+    "CustomFileName": "88101736451182452",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451182452",
+      "url": "https://www.pinterest.com/pin/88101736451182452/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "you know you have EDS when.....",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "vintagecherry11",
+        "url": "https://www.pinterest.com/vintagecherry11/",
+        "name": "Cher"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pots-eds/",
+        "name": "POTS EDS",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/86/0d/ba/860dba2356bd7449cdccd6676354e723.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

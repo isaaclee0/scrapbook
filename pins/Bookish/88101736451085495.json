@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451085495/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736451085495",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451085495",
+      "url": "https://www.pinterest.com/pin/88101736451085495/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "A Little Book on the Christian Life, Damask",
+      "description": "A Little Book on the Christian Life, Damask by John Calvin",
+      "link": "https://www.amazon.com/dp/1567697445/ref=cm_sw_r_pi_dp_G3BSG5A0ENT8SXP75PAW?_encoding=UTF8&psc=1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ce/9a/c6/ce9ac63705023bc8e4a740bc6115f5ca.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

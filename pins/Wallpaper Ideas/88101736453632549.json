@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453632549/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/wallpaper-ideas",
+    "CustomFileName": "88101736453632549",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453632549",
+      "url": "https://www.pinterest.com/pin/88101736453632549/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/wallpaper-ideas/",
+        "name": "Wallpaper ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/72/2f/d8/722fd84c384bbe11b67be9fb62295552.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

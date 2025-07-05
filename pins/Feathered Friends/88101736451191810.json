@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451191810/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/feathered-friends",
+    "CustomFileName": "88101736451191810",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451191810",
+      "url": "https://www.pinterest.com/pin/88101736451191810/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "budgies",
+      "description": "budgies | Flickr - Photo Sharing!",
+      "link": "https://www.flickr.com/photos/jim_bendon_1957/7856987838/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/feathered-friends/",
+        "name": "Feathered friends",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/df/54/54/df5454c78cb0ca4bb9889ff284a50b05.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

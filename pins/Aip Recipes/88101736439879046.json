@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439879046/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736439879046",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439879046",
+      "url": "https://www.pinterest.com/pin/88101736439879046/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "AIP Sweet Potato Casserole",
+      "description": "Autoimmune Paleo Sweet Potato Casserole AIP Lifestyle #autoimmune paleo #AIP #autoimmune protocol",
+      "link": "http://aiplifestyle.com/sweet-potato-casserole/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8d/38/28/8d3828aecf753651d81162e327f82cde.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

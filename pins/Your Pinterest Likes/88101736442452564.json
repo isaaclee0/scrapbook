@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442452564/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442452564",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442452564",
+      "url": "https://www.pinterest.com/pin/88101736442452564/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Though I still have trouble with \"lay\" and \"lie\".",
+      "link": "http://vickayyym.tumblr.com/post/1635970875",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/03/15/e0/0315e0368fff9abe0a9fe3d3e975c9c2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

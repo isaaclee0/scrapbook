@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447605161/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/craft-ideas",
+    "CustomFileName": "88101736447605161",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447605161",
+      "url": "https://www.pinterest.com/pin/88101736447605161/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Imagination",
+      "description": "With Hook and Needle",
+      "link": "http://kankerdoodle.blogspot.com/2015/06/imagination.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/craft-ideas/",
+        "name": "Craft Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bf/5b/30/bf5b3022e5997fc0a88b72fe2b25563b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

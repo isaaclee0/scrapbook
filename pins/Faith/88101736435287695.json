@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435287695/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736435287695",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435287695",
+      "url": "https://www.pinterest.com/pin/88101736435287695/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "#Scripture                                 James 1:21-22",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "phoebetroyer",
+        "url": "https://www.pinterest.com/phoebetroyer/",
+        "name": "Phoebe"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bd/28/03/bd2803f95eeceb86158d628f9a150c9c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

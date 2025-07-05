@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451160569/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bees",
+    "CustomFileName": "88101736451160569",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451160569",
+      "url": "https://www.pinterest.com/pin/88101736451160569/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Pearl",
+      "description": " ",
+      "link": "https://loggardenia.tumblr.com/post/186060147579",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 5,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bees/",
+        "name": "Bees",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f5/03/d2/f503d254d83f846edad6e60f17b0f16c.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

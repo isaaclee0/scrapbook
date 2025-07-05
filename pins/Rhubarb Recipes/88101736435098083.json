@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435098083/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/rhubarb-recipes",
+    "CustomFileName": "88101736435098083",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435098083",
+      "url": "https://www.pinterest.com/pin/88101736435098083/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Tarty rhubarb slice",
+      "description": "Tarty rhubarb slice - another tempting rhubarb recipe",
+      "link": "http://twospoons.wordpress.com/2011/06/07/tarty-rhubarb-slic/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/rhubarb-recipes/",
+        "name": "Rhubarb Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8a/11/ad/8a11adedb99885c1a94cc62b075d0f31.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

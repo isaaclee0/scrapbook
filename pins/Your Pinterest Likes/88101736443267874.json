@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443267874/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443267874",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443267874",
+      "url": "https://www.pinterest.com/pin/88101736443267874/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Discusses how to grow old gracefully while looking and feeling great without having to resort to plastic surgery.",
+      "link": "http://lincc.clermont.lib.oh.us/search~S0?/++ftlist/++ftlist/1,1,1,B/frameset~1984316%5Ebib13,1,8,20/mode=2",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/dd/d5/20/ddd52038f8f6f51d844e20d370f19930.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

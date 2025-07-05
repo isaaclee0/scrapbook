@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443905884/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736443905884",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443905884",
+      "url": "https://www.pinterest.com/pin/88101736443905884/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Behind the Waterfall",
+      "description": "Behind the Waterfall Family http://www.amazon.com/dp/B0001UOD5W/ref=cm_sw_r_pi_dp_Eyu7wb18H0V14",
+      "link": "http://www.amazon.com/dp/B0001UOD5W/ref=cm_sw_r_pi_dp_Eyu7wb18H0V14",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "lovbeingamommy",
+        "url": "https://www.pinterest.com/lovbeingamommy/",
+        "name": "Sapphire Ryun"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b8/06/7c/b8067c3a02cd6beee0843605c3a910a2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

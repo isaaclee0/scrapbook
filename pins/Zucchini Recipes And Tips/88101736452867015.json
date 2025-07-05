@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452867015/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/zucchini-recipes-and-tips",
+    "CustomFileName": "88101736452867015",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452867015",
+      "url": "https://www.pinterest.com/pin/88101736452867015/",
+      "type": "pin",
+      "title": "Greek Crustless Zucchini Pie - Batzina",
+      "gridTitle": "Greek Crustless Zucchini Pie - Batzina",
+      "description": " ",
+      "link": "https://www.mamazillafood.com/en/recipes/savoury-snacks/appetizers/breakfast/zucchini-quiche-crustless",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "mamazilla_moodforfood",
+        "url": "https://www.pinterest.com/mamazilla_moodforfood/",
+        "name": "Mamazilla - mood for food"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/zucchini-recipes-and-tips/",
+        "name": "Zucchini - recipes and tips",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/36/08/41/360841bb2dcef0428b726dd540eeadda.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/57/3f/89/573f89e0ad41563c4fbd0c69dbd17723.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

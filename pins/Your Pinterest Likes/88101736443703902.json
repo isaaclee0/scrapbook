@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443703902/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443703902",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443703902",
+      "url": "https://www.pinterest.com/pin/88101736443703902/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "100 FREE THINGS to do with your kids this summer",
+      "description": "Great Ideas",
+      "link": "http://www.digitalreflections.typepad.com/digital_reflections/2009/06/100-free-things-to-do-with-your-kids-this-summer.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9f/15/d0/9f15d0b47c510f57f921197746b6556b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

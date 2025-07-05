@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436177938/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potato-recipes",
+    "CustomFileName": "88101736436177938",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436177938",
+      "url": "https://www.pinterest.com/pin/88101736436177938/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Dublin Potato Salad",
+      "description": "Dublin Potato Salad ~ This unique and contest winning salad goes great with lots of different foods as a side dish. But it's also hearty enough to be a meal in itself.",
+      "link": "http://www.tasteofhome.com/Recipes/Dublin-Potato-Salad",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potato-recipes/",
+        "name": "Potato Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/eb/22/d0/eb22d0222cf57920af1bf0b5ac4b258c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

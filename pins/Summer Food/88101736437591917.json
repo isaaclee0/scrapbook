@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437591917/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/summer-food",
+    "CustomFileName": "88101736437591917",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437591917",
+      "url": "https://www.pinterest.com/pin/88101736437591917/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Korean Ice Cream",
+      "link": "http://annwissner.tumblr.com/post/3330562887",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/summer-food/",
+        "name": "Summer food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ec/e2/3f/ece23faab73536b9c59a1a8bf3754de6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

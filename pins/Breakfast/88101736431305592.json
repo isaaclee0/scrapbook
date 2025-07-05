@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431305592/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/breakfast",
+    "CustomFileName": "88101736431305592",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431305592",
+      "url": "https://www.pinterest.com/pin/88101736431305592/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Maple Pecan Cinnamon Rolls",
+      "description": "Easy-Homemade-Maple-Pecan-Cinnamon-Rolls",
+      "link": "http://bakingdom.com/2011/11/maple-pecan-cinnamon-rolls.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/breakfast/",
+        "name": "Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/11/a9/89/11a9893d503a8aac4ca838362de06f5f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

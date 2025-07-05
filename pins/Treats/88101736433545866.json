@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433545866/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736433545866",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433545866",
+      "url": "https://www.pinterest.com/pin/88101736433545866/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Lavender lollipops",
+      "description": "Recipe for lavender lollipops",
+      "link": "http://technicolorkitcheninenglish.blogspot.com/2009/08/lavender-lollipops.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/01/ae/4a/01ae4a84859b848d3908fd1c70f671d1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

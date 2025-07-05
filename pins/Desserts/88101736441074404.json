@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441074404/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736441074404",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441074404",
+      "url": "https://www.pinterest.com/pin/88101736441074404/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Swiss Meringues with White Chocolate Mousse - Paula Deen Magazine",
+      "description": "Swiss Meringues with White Chocolate Mousse",
+      "link": "http://www.pauladeenmagazine.com/swiss-meringue-chocolate-mousse-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "brucrewlife",
+        "url": "https://www.pinterest.com/brucrewlife/",
+        "name": "Inside BruCrew Life"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9c/e0/32/9ce032a20884fee3974c7a3066cba601.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434249714/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736434249714",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434249714",
+      "url": "https://www.pinterest.com/pin/88101736434249714/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Easy Black Forest Cake Recipe",
+      "description": "This is the best Black Forest Cake recipe I've ever used! Delicious!",
+      "link": "http://www.myrecipes.com/recipe/easy-black-forest-cake-10000001727434/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ff/81/3c/ff813c1e3ed42079ca07bacc67485d1e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

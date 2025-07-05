@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443374766/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443374766",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443374766",
+      "url": "https://www.pinterest.com/pin/88101736443374766/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Santi (@munozsanti) / Twitter",
+      "description": "Chronic pain can do this to you...",
+      "link": "https://twitter.com/munozsanti",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "JackReac",
+        "url": "https://www.pinterest.com/JackReac/",
+        "name": "Jack"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/53/fc/d6/53fcd6deaae0e2994daa3a35712ae028.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

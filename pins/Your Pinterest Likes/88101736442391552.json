@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442391552/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442391552",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442391552",
+      "url": "https://www.pinterest.com/pin/88101736442391552/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "This item is unavailable | Etsy",
+      "description": "Lemon Verbena",
+      "link": "http://www.etsy.com/listing/85672669/lemon-verbena-8oz-mason-jar-candle?ref=sr_gallery_10&ga_search_submit=&ga_search_query=candle&ga_view_type=gallery&ga_ship_to=US&ga_page=3&ga_search_type=all&ga_facet=",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/65/bd/98/65bd989e0dfb4f8914acdee62430a975.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

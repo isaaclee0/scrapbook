@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435059967/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tarts",
+    "CustomFileName": "88101736435059967",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435059967",
+      "url": "https://www.pinterest.com/pin/88101736435059967/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "food — CHRIS COURT",
+      "description": "raspberry chocolate tarts",
+      "link": "http://chriscourt.com/food/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tarts/",
+        "name": "Tarts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/58/8c/6e/588c6e75c90b251ace9a4d2c575a9002.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

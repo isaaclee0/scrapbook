@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437880048/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/mens-clothes",
+    "CustomFileName": "88101736437880048",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437880048",
+      "url": "https://www.pinterest.com/pin/88101736437880048/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "404 Not Found",
+      "description": "Brunello Cucinelli ftw",
+      "link": "http://boutique.brunellocucinelli.com/us/men/fashionshow",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/mens-clothes/",
+        "name": "Men's clothes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/34/9e/39/349e39bd2c38700a6e81e83f0e1d7942.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

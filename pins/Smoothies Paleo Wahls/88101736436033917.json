@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436033917/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/smoothies-paleo-wahls",
+    "CustomFileName": "88101736436033917",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436033917",
+      "url": "https://www.pinterest.com/pin/88101736436033917/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Detox",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/smoothies-paleo-wahls/",
+        "name": "Smoothies - paleo - wahls",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/03/12/03/031203d1b3ea4b35ab46e79151e44c96.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435695577/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fun",
+    "CustomFileName": "88101736435695577",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435695577",
+      "url": "https://www.pinterest.com/pin/88101736435695577/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Internet's Most Asked Questions",
+      "description": "Awesome.",
+      "link": "http://themetapicture.com/a-new-way-to-wake-up/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fun/",
+        "name": "Fun",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2a/4c/82/2a4c825779de95ed06be903f6c78ec9e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

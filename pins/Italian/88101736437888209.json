@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437888209/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/italian",
+    "CustomFileName": "88101736437888209",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437888209",
+      "url": "https://www.pinterest.com/pin/88101736437888209/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Tuscan Apple Cake",
+      "description": "Tuscan Apple Cake",
+      "link": "http://www.thedailymeal.com/tuscan-apple-cake",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/italian/",
+        "name": "Italian",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/85/33/f6/8533f648410ed9c226e1a793ca5deb48.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

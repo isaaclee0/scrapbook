@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453660748/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/exercise-it",
+    "CustomFileName": "88101736453660748",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453660748",
+      "url": "https://www.pinterest.com/pin/88101736453660748/",
+      "type": "pin",
+      "title": "Beginner Routine To Awaken Dormant Muscles",
+      "gridTitle": "Beginner Routine To Awaken Dormant Muscles",
+      "description": " ",
+      "link": "http://justinagustin.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "justinagustin",
+        "url": "https://www.pinterest.com/justinagustin/",
+        "name": "Justin Agustin"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/exercise-it/",
+        "name": "Exercise it",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e1/9e/97/e19e97c1180ebff381d775d6f9a6030e.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/04/f7/8f/04f78f42575223a384d1e8fc239fa055.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

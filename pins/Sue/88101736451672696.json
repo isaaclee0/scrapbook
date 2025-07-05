@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451672696/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/sue",
+    "CustomFileName": "88101736451672696",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451672696",
+      "url": "https://www.pinterest.com/pin/88101736451672696/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "pampethigal",
+        "url": "https://www.pinterest.com/pampethigal/",
+        "name": "Pam Pethigal"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/sue/",
+        "name": "Sue",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ea/fb/bc/eafbbc43f52823833c51b558021b4d73.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

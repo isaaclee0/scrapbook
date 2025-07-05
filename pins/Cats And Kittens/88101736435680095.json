@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435680095/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736435680095",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435680095",
+      "url": "https://www.pinterest.com/pin/88101736435680095/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Muffi&Zazza",
+      "description": "don't.  stop.  now.",
+      "link": "http://www.flickr.com/photos/matsomuffi/4287569889/in/faves-coorabella/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2b/cb/5d/2bcb5d038bfbf5c35de24f0acf667918.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

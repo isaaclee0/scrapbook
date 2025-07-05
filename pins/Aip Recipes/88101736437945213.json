@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437945213/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736437945213",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437945213",
+      "url": "https://www.pinterest.com/pin/88101736437945213/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Tangy Marinated Slaw, No-Mayo (Paleo, Autoimmune Protocol, Whole30)",
+      "description": "Tangy Marinated Slaw, No-Mayo (Paleo, Autoimmune, Whole30)",
+      "link": "http://livinthecrunchylife.blogspot.com/2014/04/tangy-slaw-no-mayo.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/97/b9/51/97b951729f3c21ec63b337601ef4ca19.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

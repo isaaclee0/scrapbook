@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451724729/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/learn-to-paint",
+    "CustomFileName": "88101736451724729",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451724729",
+      "url": "https://www.pinterest.com/pin/88101736451724729/",
+      "type": "pin",
+      "title": "Floral art. Easy floral art. Floral art bookmark. Cherry blossoms painting.",
+      "gridTitle": "Floral art. Easy floral art. Floral art bookmark. Cherry blossoms painting.",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 2,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "atuflower_",
+        "url": "https://www.pinterest.com/atuflower_/",
+        "name": "Atuflower"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/learn-to-paint/",
+        "name": "Learn To Paint",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/5c/c8/79/5cc879679dbabec963172b487ee95af0.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/17/6c/44/176c44f9e583be3a60d565329a43c7e2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

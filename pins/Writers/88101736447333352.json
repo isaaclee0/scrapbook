@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447333352/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/writers",
+    "CustomFileName": "88101736447333352",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447333352",
+      "url": "https://www.pinterest.com/pin/88101736447333352/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Bleed...",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "stevester69",
+        "url": "https://www.pinterest.com/stevester69/",
+        "name": "Steve Morrison"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/writers/",
+        "name": "Writers",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ab/c8/9e/abc89e90310255c7c6db6bb6eb57248b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

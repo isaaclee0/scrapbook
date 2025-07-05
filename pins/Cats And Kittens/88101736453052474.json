@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453052474/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736453052474",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453052474",
+      "url": "https://www.pinterest.com/pin/88101736453052474/",
+      "type": "pin",
+      "title": "Easy DIY Cat Perch 😻",
+      "gridTitle": "Easy DIY Cat Perch 😻",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Furmia",
+        "url": "https://www.pinterest.com/Furmia/",
+        "name": "Furmia"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/ec/d5/96/ecd596259c2d9b3689a5b02f78dbe1b5.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

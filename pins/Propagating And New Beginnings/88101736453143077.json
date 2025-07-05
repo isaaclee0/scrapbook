@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453143077/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/propagating-and-new-beginnings",
+    "CustomFileName": "88101736453143077",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453143077",
+      "url": "https://www.pinterest.com/pin/88101736453143077/",
+      "type": "pin",
+      "title": "Lavender Tree DIY ",
+      "gridTitle": "Lavender Tree DIY",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "faustisland",
+        "url": "https://www.pinterest.com/faustisland/",
+        "name": "Amber Faust - mom blogger"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/propagating-and-new-beginnings/",
+        "name": "Propagating and new beginnings",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a1/90/7a/a1907a13315d4d8abdae9a73d634fe3a.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/44/e6/c3/44e6c37c433168b4aca4fed42b291fb3.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

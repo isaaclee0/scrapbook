@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440268050/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/italian",
+    "CustomFileName": "88101736440268050",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440268050",
+      "url": "https://www.pinterest.com/pin/88101736440268050/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Classic Lasagna",
+      "description": "A classic Lasagna recipe - everyone should have this recipe in their collection!",
+      "link": "http://www.afamilyfeast.com/classic-lasagna/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/italian/",
+        "name": "Italian",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a4/61/82/a461827720d380c2abce10c8d563b5b1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

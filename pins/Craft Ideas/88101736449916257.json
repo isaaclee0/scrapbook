@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449916257/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/craft-ideas",
+    "CustomFileName": "88101736449916257",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449916257",
+      "url": "https://www.pinterest.com/pin/88101736449916257/",
+      "type": "pin",
+      "title": "Genius DIYs! 😍",
+      "gridTitle": "Genius DIYs! 😍",
+      "description": " ",
+      "link": "https://smartexplores.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "smartexplore1",
+        "url": "https://www.pinterest.com/smartexplore1/",
+        "name": "Smart Explore"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/craft-ideas/",
+        "name": "Craft Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/be/61/0f/be610fb4919931cd2f1c4783961f7c35.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/dc/df/e1/dcdfe17509f1802650f990c8a5b6b86e.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

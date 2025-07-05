@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452859180/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736452859180",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452859180",
+      "url": "https://www.pinterest.com/pin/88101736452859180/",
+      "type": "pin",
+      "title": "DIY Fenstersicherung für Katzen ohne Bohren",
+      "gridTitle": "DIY Fenstersicherung für Katzen ohne Bohren",
+      "description": " ",
+      "link": "https://fensterkatzen.de/diy/fenstersicherung/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "fensterkatzen",
+        "url": "https://www.pinterest.com/fensterkatzen/",
+        "name": "FENSTERKATZEN | Katzenblog für Katzenanfänger"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/39/0e/37/390e374cae04d2d0c96058520fa30203.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/84/be/d3/84bed34ce7e91ae13ccb4369926faf62.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

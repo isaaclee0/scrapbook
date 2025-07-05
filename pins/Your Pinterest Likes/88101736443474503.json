@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443474503/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443474503",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443474503",
+      "url": "https://www.pinterest.com/pin/88101736443474503/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Transparent Camping Tent",
+      "description": "Inflatable lawn tent. Imagine laying in this when it's raining..now that's genius.",
+      "link": "http://www.toxel.com/tech/2010/11/20/transparent-camping-tent/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d3/1b/19/d31b1988f1d02668ae928129a790299b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

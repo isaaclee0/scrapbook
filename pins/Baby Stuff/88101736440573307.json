@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440573307/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/baby-stuff",
+    "CustomFileName": "88101736440573307",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440573307",
+      "url": "https://www.pinterest.com/pin/88101736440573307/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Sad but true. Isaiah 5:20",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "katielwillis",
+        "url": "https://www.pinterest.com/katielwillis/",
+        "name": "katie willis"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/baby-stuff/",
+        "name": "Baby stuff",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b6/db/5b/b6db5b8e77b72a6ecbaf40a30475ee2c.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

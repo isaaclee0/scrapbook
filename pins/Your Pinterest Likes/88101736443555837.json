@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443555837/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443555837",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443555837",
+      "url": "https://www.pinterest.com/pin/88101736443555837/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Wedding Baking - Tea Cup Biscuits | Baking, Recipes and Tutorials - The Pink Whisk",
+      "description": "Tea Cup Cookies..How Fun for Tea Time!",
+      "link": "http://www.thepinkwhisk.co.uk/2011/04/wedding-baking-tea-cup-biscuits.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/59/cb/6a/59cb6ac2ba472f61a08f2f35c67bc5d2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

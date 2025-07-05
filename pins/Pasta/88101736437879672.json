@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437879672/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pasta",
+    "CustomFileName": "88101736437879672",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437879672",
+      "url": "https://www.pinterest.com/pin/88101736437879672/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Lidia's Italy: Recipes: Homemade Bigoli Pasta",
+      "link": "http://www.lidiasitaly.com/recipes/detail/860",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pasta/",
+        "name": "Pasta",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/68/71/f1/6871f13284c1fc95602711fee47f4f0e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

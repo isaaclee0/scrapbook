@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435266988/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736435266988",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435266988",
+      "url": "https://www.pinterest.com/pin/88101736435266988/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Tales from Grace Chapel Inn",
+      "link": "http://d202m5krfqbpi5.cloudfront.net/books/1388371147l/256800.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fe/f0/86/fef0868f31a8dfc2069ddd03aa8356b0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437879623/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/italian",
+    "CustomFileName": "88101736437879623",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437879623",
+      "url": "https://www.pinterest.com/pin/88101736437879623/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Lidia's Italy: Recipes: Stuffed Artichokes",
+      "link": "http://www.lidiasitaly.com/recipes/detail/817",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/italian/",
+        "name": "Italian",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5c/ee/f8/5ceef866f533f39df1abe0b5ccd6f354.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

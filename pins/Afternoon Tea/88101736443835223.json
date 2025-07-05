@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443835223/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736443835223",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443835223",
+      "url": "https://www.pinterest.com/pin/88101736443835223/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Blueberry Banana Zucchini Bread",
+      "description": "Blueberry Banana Zucchini Bread from madetobeamomma.com",
+      "link": "http://www.madetobeamomma.com/blueberry-banana-zucchini-bread/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d8/ff/47/d8ff472e199e4c376c700028882c433a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

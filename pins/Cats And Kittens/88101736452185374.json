@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452185374/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736452185374",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452185374",
+      "url": "https://www.pinterest.com/pin/88101736452185374/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "The wee in her christmas hat.... persian cat...",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "b_lamport",
+        "url": "https://www.pinterest.com/b_lamport/",
+        "name": "Brandin Lamport"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/40/50/e9/4050e9dcd9a387e7232fbf438f6bcaa3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

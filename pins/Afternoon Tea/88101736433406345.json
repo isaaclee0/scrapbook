@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433406345/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736433406345",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433406345",
+      "url": "https://www.pinterest.com/pin/88101736433406345/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Tea in the Rose Garden",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "claragillow",
+        "url": "https://www.pinterest.com/claragillow/",
+        "name": "Clara Gillow Clark"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fe/7c/2e/fe7c2e92e940454901ab4d097bb45b47.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

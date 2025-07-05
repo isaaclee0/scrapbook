@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442404295/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442404295",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442404295",
+      "url": "https://www.pinterest.com/pin/88101736442404295/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "A No-Hassle Garden: Square Foot Gardening",
+      "description": "Vegetable garden",
+      "link": "http://www.apartmenttherapy.com/a-nohassle-garden-square-foot-80486",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/29/ef/bf/29efbf4e43f238b3082feb6e51e91818.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

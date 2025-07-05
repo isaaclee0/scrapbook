@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451545676/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/learn-to-paint",
+    "CustomFileName": "88101736451545676",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451545676",
+      "url": "https://www.pinterest.com/pin/88101736451545676/",
+      "type": "pin",
+      "title": "Little Wildflowers - Gouache Painting by Philip Boelter",
+      "gridTitle": "Little Wildflowers - Gouache Painting by Philip Boelter",
+      "description": "See all Philip Boelter’s work on BoelterDesignCo. Beautiful flowers and desert inspired works of art for your decor. Original and produced by the artist. Check out more videos and all the artwork on my website or Instagram @boelterdesignco",
+      "link": "https://www.boelterdesignco.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "PhilipBoelter",
+        "url": "https://www.pinterest.com/PhilipBoelter/",
+        "name": "Philip Boelter"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/learn-to-paint/",
+        "name": "Learn To Paint",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/55/6f/68/556f68790671d8c34938e7cda1c53189.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/79/cb/ca/79cbcaa9ed5312d28d0e495aa15f5990.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

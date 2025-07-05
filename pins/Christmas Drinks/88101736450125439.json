@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450125439/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/christmas-drinks",
+    "CustomFileName": "88101736450125439",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450125439",
+      "url": "https://www.pinterest.com/pin/88101736450125439/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Blackberry Ombré Sparkler",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/christmas-drinks/",
+        "name": "CHRISTMAS DRINKS",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f3/bc/c5/f3bcc569cef0bca3a735aaba22ce3066.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

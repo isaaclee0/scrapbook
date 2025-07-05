@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444438786/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/roses-for-the-love-of",
+    "CustomFileName": "88101736444438786",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444438786",
+      "url": "https://www.pinterest.com/pin/88101736444438786/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Earl grey roses. Light grey rose with a lavender hued center.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "EfusionBotanic",
+        "url": "https://www.pinterest.com/EfusionBotanic/",
+        "name": "E fusion Botanicals"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/roses-for-the-love-of/",
+        "name": "Roses - for the love of..",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7e/d0/a9/7ed0a9a61500b998b2eda82d5b074da0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

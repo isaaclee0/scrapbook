@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453505786/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bathroom-another-list",
+    "CustomFileName": "88101736453505786",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453505786",
+      "url": "https://www.pinterest.com/pin/88101736453505786/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Bathroom",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "jbstyle",
+        "url": "https://www.pinterest.com/jbstyle/",
+        "name": "Justin Bishop"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bathroom-another-list/",
+        "name": "Bathroom - another list",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3f/ea/7f/3fea7f280baf3ed69361763b688453fc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

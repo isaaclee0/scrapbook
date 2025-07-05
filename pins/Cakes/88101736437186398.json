@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437186398/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736437186398",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437186398",
+      "url": "https://www.pinterest.com/pin/88101736437186398/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Gruffalo Christening Cake",
+      "description": "cake",
+      "link": "http://www.flickr.com/photos/10334272@N08/5709798197/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8b/dd/58/8bdd58b25056dcc758c7cf76083f16db.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

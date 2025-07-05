@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441935528/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736441935528",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441935528",
+      "url": "https://www.pinterest.com/pin/88101736441935528/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Tracy Byrd - The Keeper Of The Stars",
+      "description": "Tracy Byrd - The Keeper Of The Stars Definitely on the play list!",
+      "link": "http://www.youtube.com/watch/?v=Wngb5Mq1SQY",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/84/55/40/845540756cf2cdf0926cb6dc20c0f5bf.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439559377/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736439559377",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439559377",
+      "url": "https://www.pinterest.com/pin/88101736439559377/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "DSCN4539",
+      "description": "bee",
+      "link": "http://www.flickr.com/photos/angelcontreras/6278760952/in/photostream/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b5/68/f0/b568f0650f9a0c18789b06bf905f614a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

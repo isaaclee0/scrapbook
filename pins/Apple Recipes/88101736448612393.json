@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448612393/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/apple-recipes",
+    "CustomFileName": "88101736448612393",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448612393",
+      "url": "https://www.pinterest.com/pin/88101736448612393/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Vegan Apple Pie Bread",
+      "description": "Vegan Apple Pie Bread - Rabbit and Wolves",
+      "link": "https://www.rabbitandwolves.com/vegan-apple-pie-bread/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "dorastable",
+        "url": "https://www.pinterest.com/dorastable/",
+        "name": "Dora's Table | Vegan Mexican Recipes"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/apple-recipes/",
+        "name": "Apple Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7e/f3/f7/7ef3f7f2572e5943001043b30e093588.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

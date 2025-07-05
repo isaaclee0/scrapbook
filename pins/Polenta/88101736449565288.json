@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449565288/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/polenta",
+    "CustomFileName": "88101736449565288",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449565288",
+      "url": "https://www.pinterest.com/pin/88101736449565288/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Easy Basic Polenta Recipe",
+      "description": "Easy Basic Polenta Recipe",
+      "link": "https://www.fusioncraftiness.com/easy-basic-polenta-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/polenta/",
+        "name": "Polenta",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4e/7e/8b/4e7e8b4e343f1b76f68853a08d1e2a98.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

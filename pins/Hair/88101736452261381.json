@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452261381/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736452261381",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452261381",
+      "url": "https://www.pinterest.com/pin/88101736452261381/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Haircuts",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "newyorkisdead",
+        "url": "https://www.pinterest.com/newyorkisdead/",
+        "name": "A McGowan"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ad/6e/b0/ad6eb068eb6c2e28c498f9b86ff9d9af.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

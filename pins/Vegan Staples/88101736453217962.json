@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453217962/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/vegan-staples",
+    "CustomFileName": "88101736453217962",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453217962",
+      "url": "https://www.pinterest.com/pin/88101736453217962/",
+      "type": "pin",
+      "title": "Vegan TOFU RICOTTA Cheese",
+      "gridTitle": "Vegan TOFU RICOTTA Cheese",
+      "description": " ",
+      "link": "https://www.veginnercooking.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "veginnercooking",
+        "url": "https://www.pinterest.com/veginnercooking/",
+        "name": "Veginner Cooking"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/vegan-staples/",
+        "name": "Vegan Staples",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d3/7e/9b/d37e9b2b577de43f442777238e5027ae.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/36/cc/77/36cc772ff0a1ddd6f996ebc9dcdf7dd1.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

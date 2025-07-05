@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450089598/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/apple-recipes",
+    "CustomFileName": "88101736450089598",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450089598",
+      "url": "https://www.pinterest.com/pin/88101736450089598/",
+      "type": "pin",
+      "title": "Puff Pastry Wrapped Apples",
+      "gridTitle": "Puff Pastry Wrapped Apples",
+      "description": "Warning: If you have an unhealthy addiction to caramel apples, do NOT watch this video.",
+      "link": "https://www.tastemade.com/videos/puff-pastry-wrapped-apples",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemade",
+        "url": "https://www.pinterest.com/tastemade/",
+        "name": "Tastemade"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/apple-recipes/",
+        "name": "Apple Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/57/3a/ca/573aca9df2b0d4dedf5a84e26ae02307.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/aa/1c/c7/aa1cc74cc84a0800df4e5e37597afa19.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

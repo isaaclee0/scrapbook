@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430711926/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430711926",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430711926",
+      "url": "https://www.pinterest.com/pin/88101736430711926/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "vegetable dumplings",
+      "description": "vegetable dumplings, I really want to have time to try this at home...",
+      "link": "http://smittenkitchen.com/2007/02/on-obsessiveness-and-ollies/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/95/60/1c/95601cef73b6ae2e9d8850d6b12e53bc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

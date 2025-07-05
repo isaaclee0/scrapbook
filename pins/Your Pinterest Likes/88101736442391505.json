@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442391505/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442391505",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442391505",
+      "url": "https://www.pinterest.com/pin/88101736442391505/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Appalachian English",
+      "description": "Appalachian English: Really cool clip.  Was totally unfamiliar with the Appalachia variety of English.  Partially because I've never particularly liked the sound of southern accents (Shhhh! I know I'm a bad linguist!)  I think my favourite words in here are [skoʊw], ['a͡ɪ.ɚ], ['aɻ.ɪʃ].  That and how they raise their schwas to [ʊ].  That's pretty cool.",
+      "link": "http://www.youtube.com/watch/?v=03iwAY4KlIU",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/20/73/47/2073476030b4e4a8a061b78f086e9e67.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

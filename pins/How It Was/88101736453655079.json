@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453655079/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/how-it-was",
+    "CustomFileName": "88101736453655079",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453655079",
+      "url": "https://www.pinterest.com/pin/88101736453655079/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "trcutter",
+        "url": "https://www.pinterest.com/trcutter/",
+        "name": "Tina Cutter"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/how-it-was/",
+        "name": "How it was..",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fe/01/de/fe01dece487b128abc44b3ed92d09831.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

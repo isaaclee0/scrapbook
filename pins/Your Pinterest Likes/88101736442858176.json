@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442858176/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442858176",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442858176",
+      "url": "https://www.pinterest.com/pin/88101736442858176/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Barbara Goodman 01b 1954",
+      "description": "back when women weren't afraid of their curves, when it wasn't called being \"fat,\" when women could eat without feeling guilty.",
+      "link": "http://www.flickr.com/photos/lovethegals/4276436848/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/54/e2/c3/54e2c31f8b067c312d006979dab24dfb.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

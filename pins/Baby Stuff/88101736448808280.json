@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448808280/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/baby-stuff",
+    "CustomFileName": "88101736448808280",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448808280",
+      "url": "https://www.pinterest.com/pin/88101736448808280/",
+      "type": "pin",
+      "title": "This is adorable 😍",
+      "gridTitle": "This is adorable 😍",
+      "description": "Found on Instagram",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "natpt1",
+        "url": "https://www.pinterest.com/natpt1/",
+        "name": "nat"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/baby-stuff/",
+        "name": "Baby stuff",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/aa/76/85/aa7685aef6f0857c1b358445865e0950.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/29/13/ce/2913cef2205d7f0f0f3ce46fe03484f8.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

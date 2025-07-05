@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448844955/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/food-prep",
+    "CustomFileName": "88101736448844955",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448844955",
+      "url": "https://www.pinterest.com/pin/88101736448844955/",
+      "type": "pin",
+      "title": "Crispy Spring Rolls",
+      "gridTitle": "Crispy Spring Rolls",
+      "description": "Crispy fried spring rolls stuffed with bean threads, cabbage, carrots, and celery. An easy freezer-friendly spring roll recipe everyone will love! #springrolls #chineesescpringroll #lumpia #eggrolls #asianappetizers",
+      "link": "http://simplyhomecooked.com/crispy-spring-rolls/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Simpyhomecooked",
+        "url": "https://www.pinterest.com/Simpyhomecooked/",
+        "name": "simplyhomecooked"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/food-prep/",
+        "name": "Food prep",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a1/9e/b6/a19eb6a533a310bccfe8db877a6edc59.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/77/26/2e/77262ea06e7915225fd69da60ad33e40.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433586532/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/how-it-was",
+    "CustomFileName": "88101736433586532",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433586532",
+      "url": "https://www.pinterest.com/pin/88101736433586532/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "One of the first known pictures from 9/11",
+      "description": "One of the first known pictures from 9/11",
+      "link": "http://imgur.com/oH1Ly",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/how-it-was/",
+        "name": "How it was..",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1c/04/b0/1c04b0e936cee7915ec4718c4da2e95e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

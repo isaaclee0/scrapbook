@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444321705/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736444321705",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444321705",
+      "url": "https://www.pinterest.com/pin/88101736444321705/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Buttermilk Pie",
+      "description": "This is my Grandmothers recipe and I have so many fond memories of her in the kitchen making this pie.  It has to be one of my favorites and I hope it will become yours too.",
+      "link": "http://www.justapinch.com/recipes/dessert/dessert-pie/buttermilk-pie-4.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/14/8b/53/148b53b1dcc98235504b960e5a0bf4a6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

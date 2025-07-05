@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439022132/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fishy",
+    "CustomFileName": "88101736439022132",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439022132",
+      "url": "https://www.pinterest.com/pin/88101736439022132/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Pastel de Salmón y Pan de Molde - Receta de DIVINA COCINA",
+      "description": "pastel de salmon y pan de molde",
+      "link": "http://www.divinacocina.es/pastel-de-salmon-y-pan-de-molde/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fishy/",
+        "name": "Fishy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ac/54/79/ac5479abc783c63398e4c824ea14819f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

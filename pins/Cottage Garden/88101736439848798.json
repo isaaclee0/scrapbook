@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439848798/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-garden",
+    "CustomFileName": "88101736439848798",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439848798",
+      "url": "https://www.pinterest.com/pin/88101736439848798/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Cottage Garden",
+      "link": "http://www.fredholm.no/statusoppdatering/#more-2503",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-garden/",
+        "name": "Cottage garden",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fb/ec/4c/fbec4c019b5427b215e71823d3cd26c9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

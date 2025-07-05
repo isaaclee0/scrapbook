@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437198246/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potato-recipes",
+    "CustomFileName": "88101736437198246",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437198246",
+      "url": "https://www.pinterest.com/pin/88101736437198246/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "potato curry recipe",
+      "description": "Potato curry",
+      "link": "http://www.mydarlinglemonthyme.com/2013/06/potato-curry-recipe.html#more",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potato-recipes/",
+        "name": "Potato Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7b/c8/a9/7bc8a913b9bc173dc2019041a36b05b0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

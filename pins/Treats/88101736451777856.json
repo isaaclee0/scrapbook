@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451777856/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736451777856",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451777856",
+      "url": "https://www.pinterest.com/pin/88101736451777856/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Old Fashioned Hard Fudge Recipe | CDKitchen.com",
+      "description": "Made with vanilla extract, sugar, cocoa powder, salt, milk, butter or margarine | CDKitchen.com",
+      "link": "http://www.cdkitchen.com/recipes/recs/35/Old_Fashioned_Hard_Fudge21684.shtml",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "cdkitchen",
+        "url": "https://www.pinterest.com/cdkitchen/",
+        "name": "CDKitchen"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6b/7e/59/6b7e59425b5a862a013e9037add1db3a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

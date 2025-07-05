@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445214044/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pools",
+    "CustomFileName": "88101736445214044",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445214044",
+      "url": "https://www.pinterest.com/pin/88101736445214044/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Decoración",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "noemiag72",
+        "url": "https://www.pinterest.com/noemiag72/",
+        "name": "Noemi Aguila"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pools/",
+        "name": "Pools",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2e/7b/37/2e7b375d7cb48fb4c3b48c1597364971.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

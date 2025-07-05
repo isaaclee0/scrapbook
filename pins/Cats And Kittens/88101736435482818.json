@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435482818/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736435482818",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435482818",
+      "url": "https://www.pinterest.com/pin/88101736435482818/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "cat",
+      "link": "http://lh3.ggpht.com/-eKEQ5UhlqHU/TmssFWe-JWI/AAAAAAAAPwc/8MiNP_BznQY/s1600-h/0156.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b9/ff/e8/b9ffe83adfe575aef361fff03a9933b3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

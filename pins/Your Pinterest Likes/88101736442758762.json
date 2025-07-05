@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442758762/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442758762",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442758762",
+      "url": "https://www.pinterest.com/pin/88101736442758762/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Rock Candy-Hard Candy",
+      "description": "Hard Candy Recipe",
+      "link": "http://www.countrykitchensa.com/idea/recipes-candy/rock-candy-hard-candy/49/215/1045/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/81/12/5b/81125b6f2e2927a74f26a58ea2c4b545.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

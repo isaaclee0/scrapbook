@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452555704/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/autism",
+    "CustomFileName": "88101736452555704",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452555704",
+      "url": "https://www.pinterest.com/pin/88101736452555704/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Being is exhausting.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "71sandra",
+        "url": "https://www.pinterest.com/71sandra/",
+        "name": "Sandra Revet Loohuis"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/autism/",
+        "name": "Autism",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/df/9f/a8/df9fa82d0cbbcaef78f61f134cc11f00.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

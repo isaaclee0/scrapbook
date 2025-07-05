@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439126619/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bedrooms",
+    "CustomFileName": "88101736439126619",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439126619",
+      "url": "https://www.pinterest.com/pin/88101736439126619/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Big cozy bed",
+      "link": "http://rstyle.me/~1icYJ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bedrooms/",
+        "name": "Bedrooms",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/25/90/6c/25906c313cf1d156512c1f8ceb352693.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

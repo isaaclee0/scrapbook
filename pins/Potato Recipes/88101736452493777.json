@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452493777/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potato-recipes",
+    "CustomFileName": "88101736452493777",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452493777",
+      "url": "https://www.pinterest.com/pin/88101736452493777/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "French Potato Recipes",
+      "description": " ",
+      "link": "https://chezlerevefrancais.com/french-potato-recipes/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 4,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potato-recipes/",
+        "name": "Potato Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ea/fe/d4/eafed46df3cefb132cd13018a9659fbf.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

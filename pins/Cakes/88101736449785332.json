@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449785332/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736449785332",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449785332",
+      "url": "https://www.pinterest.com/pin/88101736449785332/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Simple Whole Orange Cake Recipe | Yummly",
+      "description": "Simple Whole Orange Cake with Orange, Orange, Butter, Sugar, Vanilla Bean Paste, Self Raising Flour, Eggs.",
+      "link": "https://www.yummly.com/recipe/Simple-Whole-Orange-Cake-2182326",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/93/50/20/93502088c9fd88f2bff157fc512376f0.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435523616/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/squirrels",
+    "CustomFileName": "88101736435523616",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435523616",
+      "url": "https://www.pinterest.com/pin/88101736435523616/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Nom nom nom!  #squirrel",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "michidermot",
+        "url": "https://www.pinterest.com/michidermot/",
+        "name": "Linda Kloran"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/squirrels/",
+        "name": "Squirrels",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f0/6b/88/f06b881f292a9696fb74759ea8c2e882.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

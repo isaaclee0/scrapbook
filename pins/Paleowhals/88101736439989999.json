@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439989999/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/paleowhals",
+    "CustomFileName": "88101736439989999",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439989999",
+      "url": "https://www.pinterest.com/pin/88101736439989999/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Light BBQ Chicken Pizza",
+      "description": "Cauliflower crust chicken BBQ pizza. Yum!",
+      "link": "http://pinchofyum.com/light-bbq-chicken-pizza",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/paleowhals/",
+        "name": "Paleo/Whals",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/64/76/2b/64762b2a4e7a4ce4201ce3e3a131e26c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

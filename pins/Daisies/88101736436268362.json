@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436268362/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/daisies",
+    "CustomFileName": "88101736436268362",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436268362",
+      "url": "https://www.pinterest.com/pin/88101736436268362/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Vicky's Home",
+      "description": "Vicky's Home",
+      "link": "http://vickys-home.blogspot.com.es/search?updated-max=2013-06-12T20:52:00%2B02:00&max-results=10",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/daisies/",
+        "name": "Daisies",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e7/f8/c7/e7f8c7e3296c77f9254a31c60260a7fe.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

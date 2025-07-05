@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438571831/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/for-the-home",
+    "CustomFileName": "88101736438571831",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438571831",
+      "url": "https://www.pinterest.com/pin/88101736438571831/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "On life and time.",
+      "description": "This is so interesting! And weird. Very weird.",
+      "link": "http://iwastesomuchtime.com/on/?i=88020",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/for-the-home/",
+        "name": "For the Home",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b9/f7/ac/b9f7ac6075812ba62e79af08ab780b77.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

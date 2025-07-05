@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450734418/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/dinner-with-hubby",
+    "CustomFileName": "88101736450734418",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450734418",
+      "url": "https://www.pinterest.com/pin/88101736450734418/",
+      "type": "pin",
+      "title": "LA SUPER BELLE HÉLÈNE",
+      "gridTitle": "LA SUPER BELLE HÉLÈNE",
+      "description": " ",
+      "link": "https://www.chefclub.tv/fr/recettes/original/7fd610ad-fc64-4841-b152-a77055014c41/la-super-belle-h%C3%A9l%C3%A8ne-cette-poire-a-quelque-chose-en-plus/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "chefclubnw",
+        "url": "https://www.pinterest.com/chefclubnw/",
+        "name": "Chefclub"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/dinner-with-hubby/",
+        "name": "Dinner with hubby",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1a/f9/4e/1af94e089b73f9c4e8ea34117b98c478.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/60/6e/0a/606e0a399cef275d6392c27ed513092c.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433506566/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736433506566",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433506566",
+      "url": "https://www.pinterest.com/pin/88101736433506566/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Fairy Cake",
+      "link": "http://www.tumblr.com/dashboard/36/20300918518?lite",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/64/7e/66/647e66beb329b9cbefe5dd4b69b155ef.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

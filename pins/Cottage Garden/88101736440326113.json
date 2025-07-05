@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440326113/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-garden",
+    "CustomFileName": "88101736440326113",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440326113",
+      "url": "https://www.pinterest.com/pin/88101736440326113/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Garden wisdom",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "twowomenandahoe",
+        "url": "https://www.pinterest.com/twowomenandahoe/",
+        "name": "Two Women and a Hoe®"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-garden/",
+        "name": "Cottage garden",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/79/70/d1/7970d177d933a5b9bba750d343ff9317.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

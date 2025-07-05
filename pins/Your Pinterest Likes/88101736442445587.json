@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442445587/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442445587",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442445587",
+      "url": "https://www.pinterest.com/pin/88101736442445587/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Pussycats and Angels",
+      "description": "Our little haven",
+      "link": "http://pussycatsandangels.blogspot.co.uk/search?updated-max=2011-12-31T23:03:00Z&max-results=3&start=3&by-date=false",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0b/be/60/0bbe609fd788196b5773fbab43d9cca2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

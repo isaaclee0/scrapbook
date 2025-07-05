@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443982405/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736443982405",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443982405",
+      "url": "https://www.pinterest.com/pin/88101736443982405/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Pear and Parsnip Teacake {AIP, Paleo}",
+      "description": "Pear and Parsnip Teacake {AIP, Paleo}",
+      "link": "http://healingfamilyeats.com/pear-and-parsnip-teacake-aip-paleo/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/75/2e/3a/752e3a3f1e8d524a07468736def76e4e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

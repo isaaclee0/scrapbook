@@ -1,0 +1,47 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453139834/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/ballet",
+    "CustomFileName": "88101736453139834",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453139834",
+      "url": "https://www.pinterest.com/pin/88101736453139834/",
+      "type": "pin",
+      "title": "how to improve relève",
+      "gridTitle": "how to improve relève",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/ballet/",
+        "name": "Ballet",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a3/5a/7e/a35a7e7896ca03d79f5094657ab57c21.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/97/5d/90/975d900c79be00a2db5cb12f9767bfae.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

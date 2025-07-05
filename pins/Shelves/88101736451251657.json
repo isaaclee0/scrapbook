@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451251657/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/shelves",
+    "CustomFileName": "88101736451251657",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451251657",
+      "url": "https://www.pinterest.com/pin/88101736451251657/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Mademoiselle Poirot",
+      "description": "Mademoiselle Poirot",
+      "link": "https://www.mademoisellepoirot.com/blog/learning-to-love-my-imperfect-diy-kitchen",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "trendymood",
+        "url": "https://www.pinterest.com/trendymood/",
+        "name": "Trendy Mood"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/shelves/",
+        "name": "Shelves",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9e/22/73/9e22739b9b7efcf71e75d1fe3e5b07f8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

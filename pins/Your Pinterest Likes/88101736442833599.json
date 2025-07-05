@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442833599/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442833599",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442833599",
+      "url": "https://www.pinterest.com/pin/88101736442833599/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "LEAST Little THING...: Photo",
+      "description": "...this pic of shirley",
+      "link": "http://leastlittlething.tumblr.com/image/32561396179",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "clothandthread",
+        "url": "https://www.pinterest.com/clothandthread/",
+        "name": "cloth + thread"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b8/e2/bf/b8e2bff68214ec3a55e60075f684418c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

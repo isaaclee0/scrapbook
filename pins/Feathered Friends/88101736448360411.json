@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448360411/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/feathered-friends",
+    "CustomFileName": "88101736448360411",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448360411",
+      "url": "https://www.pinterest.com/pin/88101736448360411/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Early Bird - Funny",
+      "description": "The Early Bird \"gets\" the worm. Omgee the smartest pun even encountered. Period.",
+      "link": "http://9gag.com/gag/aEz92qO",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "9gag",
+        "url": "https://www.pinterest.com/9gag/",
+        "name": "9GAG"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/feathered-friends/",
+        "name": "Feathered friends",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/76/04/16/760416200a060899572673a0848393c2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

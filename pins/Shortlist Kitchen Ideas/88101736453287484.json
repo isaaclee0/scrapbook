@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453287484/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/shortlist-kitchen-ideas",
+    "CustomFileName": "88101736453287484",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453287484",
+      "url": "https://www.pinterest.com/pin/88101736453287484/",
+      "type": "pin",
+      "title": "Pocket Door Appliance Cabinet",
+      "gridTitle": "Pocket Door Appliance Cabinet",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "TheHacksLife",
+        "url": "https://www.pinterest.com/TheHacksLife/",
+        "name": "The Hacks Life"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/shortlist-kitchen-ideas/",
+        "name": "Shortlist  - kitchen ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1b/43/1d/1b431d034e148f7fe875a20cbc8b3366.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/4f/1b/a2/4f1ba2d0e08a796be2fdf4cd9d08bd5d.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

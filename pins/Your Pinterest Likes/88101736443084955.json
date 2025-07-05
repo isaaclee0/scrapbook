@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443084955/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443084955",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443084955",
+      "url": "https://www.pinterest.com/pin/88101736443084955/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Loading...",
+      "description": "Pro-life",
+      "link": "http://pinstamatic.com/?_src=quote",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ab/2c/98/ab2c98c6e511e5f61d5b6c80599889f7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433280177/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736433280177",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433280177",
+      "url": "https://www.pinterest.com/pin/88101736433280177/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Strawberry curd sponge drops",
+      "description": "Sponge drops with strawberry curd and chantilly cream",
+      "link": "http://www.deliciousmagazine.co.uk/recipes/sponge-drops-with-strawberry-curd-and-chantilly-cream",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ba/93/b2/ba93b22988638bb3a95b82977f186512.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

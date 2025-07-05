@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439155530/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/rhubarb-recipes",
+    "CustomFileName": "88101736439155530",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439155530",
+      "url": "https://www.pinterest.com/pin/88101736439155530/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Raspberry-Rhubarb Slab Pie",
+      "description": "Raspberry-Rhubarb Slab Pie",
+      "link": "http://www.tasteofhome.com/recipes/raspberry-rhubarb-slab-pie",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/rhubarb-recipes/",
+        "name": "Rhubarb Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/70/40/e4/7040e4e4186e0795e5d0a07b697104c2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

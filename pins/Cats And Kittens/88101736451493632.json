@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451493632/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736451493632",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451493632",
+      "url": "https://www.pinterest.com/pin/88101736451493632/",
+      "type": "pin",
+      "title": "I don’t think anything is cat proof. 🙄",
+      "gridTitle": "I don’t think anything is cat proof. 🙄",
+      "description": " ",
+      "link": "https://www.lepeto.com/matchpet-bracelets-simple-leather-pet-collars-lpcb301/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "LepetoPin",
+        "url": "https://www.pinterest.com/LepetoPin/",
+        "name": "Lepeto"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/78/4a/85/784a85949395f805a8535fd6fb92548f.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/ea/1c/3f/ea1c3fe96ca19a5ab8de80f14b113c95.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

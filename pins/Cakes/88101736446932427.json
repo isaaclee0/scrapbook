@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446932427/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736446932427",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446932427",
+      "url": "https://www.pinterest.com/pin/88101736446932427/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "This Cheesecake Tastes Just Like A Cinnamon Roll",
+      "description": "The inside of this cheesecake though. #food #easyrecipe #dessert #cheesecake #baking",
+      "link": "http://www.delish.com/cooking/recipe-ideas/recipes/a57988/cinnamon-roll-cheesecake-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Delish",
+        "url": "https://www.pinterest.com/Delish/",
+        "name": "Delish"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/34/6f/5a/346f5aeac0ce4014eab48bc18c7ae662.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/0c/ac/0f/0cac0fdf9f19d0537bcc59ea05621354.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

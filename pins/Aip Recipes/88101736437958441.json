@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437958441/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736437958441",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437958441",
+      "url": "https://www.pinterest.com/pin/88101736437958441/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Private Site",
+      "description": "I can still take a packet of Pontefract Cakes to the movies!",
+      "link": "http://petra8paleo.wordpress.com/?blogsub=confirming#blog_subscription-2",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7d/34/3c/7d343ca619d84b2b6b80297b02185538.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

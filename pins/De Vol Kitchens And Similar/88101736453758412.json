@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453758412/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/de-vol-kitchens-and-similar",
+    "CustomFileName": "88101736453758412",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453758412",
+      "url": "https://www.pinterest.com/pin/88101736453758412/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/de-vol-kitchens-and-similar/",
+        "name": "De Vol Kitchens and Similar",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cb/0c/03/cb0c03332fae091ef106c3b4b352f958.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

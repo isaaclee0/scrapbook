@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453246980/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/korean",
+    "CustomFileName": "88101736453246980",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453246980",
+      "url": "https://www.pinterest.com/pin/88101736453246980/",
+      "type": "pin",
+      "title": "Ssamjang - Korean Dip",
+      "gridTitle": "Ssamjang - Korean Dip",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Thinkinghijabi",
+        "url": "https://www.pinterest.com/Thinkinghijabi/",
+        "name": "Cutty"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/korean/",
+        "name": "Korean",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1e/af/ea/1eafea1423a38c2d4c65fbc9d08197b1.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/a3/4e/79/a34e791f9599e8c1ea2b7f6798d69572.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

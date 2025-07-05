@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434184331/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736434184331",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434184331",
+      "url": "https://www.pinterest.com/pin/88101736434184331/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "German Chocolate Pecan Pie Bars - Pecan Bars with a Chocolate Crust!",
+      "description": "German Chocolate Pecan Pie Bars",
+      "link": "http://www.bakeorbreak.com/2012/10/german-chocolate-pecan-pie-bars/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/84/b4/c6/84b4c620ea35c2c509bcbac6c0f402ee.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

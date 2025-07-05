@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450221326/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/janes-visit",
+    "CustomFileName": "88101736450221326",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450221326",
+      "url": "https://www.pinterest.com/pin/88101736450221326/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Mother's Day Gift Ideas",
+      "description": "Get dad to get the champagne for mom",
+      "link": "http://crispcollective.org/mothers-day-gift-ideas/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "crispcollective",
+        "url": "https://www.pinterest.com/crispcollective/",
+        "name": "Crisp Collective"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/janes-visit/",
+        "name": "Jane's Visit",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ed/e9/4f/ede94ff435a592d050d5166288a1b063.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

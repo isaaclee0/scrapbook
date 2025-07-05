@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452464975/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/backyard-farm",
+    "CustomFileName": "88101736452464975",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452464975",
+      "url": "https://www.pinterest.com/pin/88101736452464975/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/backyard-farm/",
+        "name": "Backyard Farm",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/33/d0/0d/33d00dd0d1e9f13ec144dfe9f1525684.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

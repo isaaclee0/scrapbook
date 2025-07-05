@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439101004/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potato-recipes",
+    "CustomFileName": "88101736439101004",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439101004",
+      "url": "https://www.pinterest.com/pin/88101736439101004/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Baked Garlic Mashed Potatoes",
+      "description": "Baked Garlic Mashed Potatoes | Real Housemoms",
+      "link": "http://realhousemoms.com/baked-garlic-mashed-potatoes/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "slperk5",
+        "url": "https://www.pinterest.com/slperk5/",
+        "name": "Sharon Perkins"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potato-recipes/",
+        "name": "Potato Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d6/8c/74/d68c7408597182b9ecf6474c4eb3f802.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

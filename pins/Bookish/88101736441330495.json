@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441330495/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736441330495",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441330495",
+      "url": "https://www.pinterest.com/pin/88101736441330495/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Books",
+      "description": "Tad Williams : Otherland",
+      "link": "http://www.tadwilliams.com/books/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bf/b2/ef/bfb2efab58155d87384b490c247499c2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

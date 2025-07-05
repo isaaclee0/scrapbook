@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442597688/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442597688",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442597688",
+      "url": "https://www.pinterest.com/pin/88101736442597688/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "\"I think we’ve overshot paradise with a lot of things in life, we need to get the flag back out on the porch and God to the supper table.\" -Garth Brooks",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "TapHaps",
+        "url": "https://www.pinterest.com/TapHaps/",
+        "name": "Tapworthy Happenings"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b9/ab/10/b9ab10f08b853b1cf20fbbbc0875480f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

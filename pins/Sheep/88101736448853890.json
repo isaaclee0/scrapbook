@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448853890/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/sheep",
+    "CustomFileName": "88101736448853890",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448853890",
+      "url": "https://www.pinterest.com/pin/88101736448853890/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Mackenzie Brown",
+      "description": "Photo My blog posts",
+      "link": "https://mackenzie-brown.tumblr.com/post/183646762142",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/sheep/",
+        "name": "Sheep",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e9/29/9e/e9299e96609734f9f9d426f3b8610d7a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

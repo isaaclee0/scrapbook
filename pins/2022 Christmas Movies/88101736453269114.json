@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453269114/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/2022-christmas-movies",
+    "CustomFileName": "88101736453269114",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453269114",
+      "url": "https://www.pinterest.com/pin/88101736453269114/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Favorite...another  Christmas movie",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "kellymoody",
+        "url": "https://www.pinterest.com/kellymoody/",
+        "name": "Kelly Moody"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/2022-christmas-movies/",
+        "name": "2022 Christmas movies",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ac/48/41/ac484172a51deae6a72dc74a15d53f53.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

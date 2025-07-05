@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433793934/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736433793934",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433793934",
+      "url": "https://www.pinterest.com/pin/88101736433793934/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Cinnamon Roll Cake - Chef in Training",
+      "description": "Cinnamon Roll Cake! An easy way to get the same delicious cinnamon roll flavor you love without all the work!",
+      "link": "http://www.chef-in-training.com/2012/01/cinnamon-roll-cake.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bb/8a/5c/bb8a5c111a1612a43006c1d4db34fbaf.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

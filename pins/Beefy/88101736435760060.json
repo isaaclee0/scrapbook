@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435760060/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/beefy",
+    "CustomFileName": "88101736435760060",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435760060",
+      "url": "https://www.pinterest.com/pin/88101736435760060/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Le Creuset",
+      "description": "Osso Bucco Le Creuset - Recipes",
+      "link": "http://www.lecreusetshop.co.za/recipedetails.asp?id=11",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/beefy/",
+        "name": "Beefy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e1/f9/25/e1f9252352f312ea96dc6694c4e8989c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

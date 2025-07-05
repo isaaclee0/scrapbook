@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442393677/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442393677",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442393677",
+      "url": "https://www.pinterest.com/pin/88101736442393677/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "pretty much. To the ones who've been brave enough to stay by my side, words can never express my love and gratitude...",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "MzJhnsn",
+        "url": "https://www.pinterest.com/MzJhnsn/",
+        "name": "Mz J Johnson"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/27/54/34/275434ceddd9a62b7fd610fb2d5b6d5a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

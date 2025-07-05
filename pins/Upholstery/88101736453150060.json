@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453150060/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/upholstery",
+    "CustomFileName": "88101736453150060",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453150060",
+      "url": "https://www.pinterest.com/pin/88101736453150060/",
+      "type": "pin",
+      "title": "Sewing Piping! ",
+      "gridTitle": "Sewing Piping!",
+      "description": " ",
+      "link": "https://www.sailrite.com/Notions/Trims/Pipings",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "sailrite",
+        "url": "https://www.pinterest.com/sailrite/",
+        "name": "Sailrite • Online Fabric Store | DIY Projects | Boat DIY"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/upholstery/",
+        "name": "Upholstery",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/58/25/d7/5825d7cfa40f1fe6013a369b5053c7fa.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/v2/720p/29/75/f3/2975f384ef948c44de2f96bb0e428e50_mobile.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

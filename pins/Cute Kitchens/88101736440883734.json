@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440883734/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cute-kitchens",
+    "CustomFileName": "88101736440883734",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440883734",
+      "url": "https://www.pinterest.com/pin/88101736440883734/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "http://www.ultimatekitchens.com.au/wp-content/uploads/2013/04/french1.jpg",
+      "link": "http://www.ultimatekitchens.com.au/wp-content/uploads/2013/04/french1.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cute-kitchens/",
+        "name": "Cute Kitchens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c2/44/b8/c244b88bdc51010084a72537df1e1afd.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

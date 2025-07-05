@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442363747/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442363747",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442363747",
+      "url": "https://www.pinterest.com/pin/88101736442363747/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "My Uncommon Slice of Suburbia is under construction",
+      "description": "Hide thermostat, garage door opener, anything else permanent.   # Pin++ for Pinterest #",
+      "link": "http://www.myuncommonsliceofsuburbia.com/2011/01/what-garage-door-opener.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+MyUncommonSliceOfSuburbia+(My+Uncommon+Slice+of+Suburbia)",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ca/03/8a/ca038ae41550fd504da563cef361b379.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

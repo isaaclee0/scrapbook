@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451177219/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736451177219",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451177219",
+      "url": "https://www.pinterest.com/pin/88101736451177219/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Banana Cake with Cream Cheese Frosting",
+      "description": "Moist banana cake with cinnamon-brown sugar cream cheese frosting recipe from @bakedbyrachel",
+      "link": "http://www.bakedbyrachel.com/banana-cake-with-cinnamon-brown-sugar-cream-cheese-frosting/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "kitchconfidante",
+        "url": "https://www.pinterest.com/kitchconfidante/",
+        "name": "Liren Baker | Kitchen Confidante®"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/61/7f/9e/617f9e97fd0ccd53802aa98ac0ecc139.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

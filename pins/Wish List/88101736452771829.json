@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452771829/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/wish-list",
+    "CustomFileName": "88101736452771829",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452771829",
+      "url": "https://www.pinterest.com/pin/88101736452771829/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "An English Homestead",
+      "description": " ",
+      "link": "http://www.englishhomestead.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "kevalviti",
+        "url": "https://www.pinterest.com/kevalviti/",
+        "name": "An English Homestead"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/wish-list/",
+        "name": "Wish List..",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4e/54/4c/4e544c7ee04ba951731e29b4b2fa355a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

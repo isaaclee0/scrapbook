@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439100989/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potato-recipes",
+    "CustomFileName": "88101736439100989",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439100989",
+      "url": "https://www.pinterest.com/pin/88101736439100989/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Cheesy Roasted Garlic Potato Balls Recipe",
+      "description": "Cheesy Roasted Garlic Potato Balls. (great way to use leftover mashed potatoes!)",
+      "link": "http://www.lifesambrosia.com/2009/12/cheesy-roasted-garlic-potato-balls-recipe.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potato-recipes/",
+        "name": "Potato Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2d/a9/75/2da97555b9fac12247f38e32aa90ff9e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

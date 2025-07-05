@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451320656/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/exercise-it",
+    "CustomFileName": "88101736451320656",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451320656",
+      "url": "https://www.pinterest.com/pin/88101736451320656/",
+      "type": "pin",
+      "title": "Beginner Kitchen Home Workout",
+      "gridTitle": "Beginner Kitchen Home Workout",
+      "description": "Beginner Home Workout You can do with kitchen pots For full-length beginner workout routines, sign up to: courses.justinagustin.com! Exercise from the comfort of your own home with zero gym equipment! #homeworkout #beginnerworkout",
+      "link": "https://courses.justinagustin.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 20,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "justinagustin",
+        "url": "https://www.pinterest.com/justinagustin/",
+        "name": "Justin Agustin"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/exercise-it/",
+        "name": "Exercise it",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b4/cb/d3/b4cbd36c2508bbb603d5274a4d0d234a.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/5d/ce/bc/5dcebc202ce96adc23a249dfa56d1706.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

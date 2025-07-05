@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442157171/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442157171",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442157171",
+      "url": "https://www.pinterest.com/pin/88101736442157171/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "﻿I opened two gifts this morning. They were my eyes.",
+      "description": "Thank you God!",
+      "link": "http://www.livelifehappy.com/life-quotes/i-opened-two-gifts-this-morning-they-were-my-eyes/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f3/18/9e/f3189e7efa9c1a1b55d86028d2fb988d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

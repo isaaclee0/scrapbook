@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446182369/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736446182369",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446182369",
+      "url": "https://www.pinterest.com/pin/88101736446182369/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Apricot yoghurt cake",
+      "description": "Apricot yoghurt cake",
+      "link": "https://www.taste.com.au/recipes/apricot-yoghurt-cake/fa106f7b-a2de-4106-b824-ec987e1339e0?r=baking/jojcbyv8",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2d/82/91/2d82918461bb898fabe3f260a7f176b0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

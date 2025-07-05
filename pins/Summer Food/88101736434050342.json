@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434050342/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/summer-food",
+    "CustomFileName": "88101736434050342",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434050342",
+      "url": "https://www.pinterest.com/pin/88101736434050342/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Grandma’s Potato Salad",
+      "description": "Grandma's Potato Salad Recipe",
+      "link": "http://www.tasteofhome.com/Recipes/Grandma-s-Potato-Salad?pmcode=IMFDV04T&_mid=2366771&_rid=2366771.558202.212604",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/summer-food/",
+        "name": "Summer food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/17/fb/1e/17fb1ec677a615906d7bca8bace34bc9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443291092/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443291092",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443291092",
+      "url": "https://www.pinterest.com/pin/88101736443291092/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "ABC News – Breaking News, Latest News and Videos",
+      "description": "The HapiFork pairs with your phone via Bluetooth to tell you about your eating habits. It also vibrates when you are eating too fast.    STORY: http://abcn.ws/WrDT03",
+      "link": "http://abcn.ws/WrDT03",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "abcnews",
+        "url": "https://www.pinterest.com/abcnews/",
+        "name": "ABC News"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/de/34/17/de3417a4c8247a2ae6dbf3214f7319d3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

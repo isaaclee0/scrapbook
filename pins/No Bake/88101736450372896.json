@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450372896/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/no-bake",
+    "CustomFileName": "88101736450372896",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450372896",
+      "url": "https://www.pinterest.com/pin/88101736450372896/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Honeycomb Slice",
+      "description": "Biscuit and Crunchie bar base with chocolate topping. This is one of the easiest slices you will ever make.",
+      "link": "http://www.bestrecipes.com.au/recipe/honeycomb-slice-L3444.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/no-bake/",
+        "name": "No Bake",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/54/02/68/540268f6f09419a1ec59bf46f83aa4d0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

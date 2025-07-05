@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437186405/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736437186405",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437186405",
+      "url": "https://www.pinterest.com/pin/88101736437186405/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Use Tuna cans for cake molds. Personal size super cute",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "myenlight",
+        "url": "https://www.pinterest.com/myenlight/",
+        "name": "Pao' Martinez"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/72/a1/39/72a139a7fb1b36aa58044b167ffb9116.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451257721/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/budgie-love",
+    "CustomFileName": "88101736451257721",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451257721",
+      "url": "https://www.pinterest.com/pin/88101736451257721/",
+      "type": "pin",
+      "title": "Parakeets love corn as a treat",
+      "gridTitle": "Parakeets love corn as a treat",
+      "description": "Whether it’s fresh corn or thawed from frozen my flock goes crazy for it!",
+      "link": "https://homekeethome.com/2017/08/04/summer-treat-parakeets-fresh-corn-cob/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/budgie-love/",
+        "name": "Budgie Love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/40/6a/4d/406a4ded99a95d354dbb88881c59cfe8.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/bd/32/27/bd32275367792b225afe7ccb852c429c.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

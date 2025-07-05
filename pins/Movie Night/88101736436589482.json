@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436589482/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736436589482",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436589482",
+      "url": "https://www.pinterest.com/pin/88101736436589482/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "The Fairy - very quirky French film - like Napoleon Dynamite on steroids.",
+      "link": "http://www.amazon.com/The-Fairy-Dominique-Abel/dp/B007UQ8IIS/ref=sr_1_1?ie=UTF8&qid=1359990977&sr=8-1&keywords=the+fairy",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/da/a9/57/daa957cbb8951d475a32ada3aaa786b5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450076474/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/russian-food",
+    "CustomFileName": "88101736450076474",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450076474",
+      "url": "https://www.pinterest.com/pin/88101736450076474/",
+      "type": "pin",
+      "title": "Russian Honey Cake Recipe",
+      "gridTitle": "Russian Honey Cake Recipe",
+      "description": "Russian Honey Cake | \"This cake is really something else and worth every second of it. Thank you so much for the delicious recipe, the entire family loved it, I’m planning on making this for Christmas.\" #cake #cakerecipes #cakeideas #desserts #sweettreats",
+      "link": "https://www.allrecipes.com/recipe/277220/russian-honey-cake/?utm_campaign=allrecipes_allrecipes_14344050&utm_term=_201911&utm_medium=social&utm_source=pinterest.com&utm_content=desserts_video",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "allrecipes",
+        "url": "https://www.pinterest.com/allrecipes/",
+        "name": "Allrecipes"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/russian-food/",
+        "name": "Russian Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/62/0f/6e/620f6e0f30ea59baa5cc8597223dd302.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/2c/e5/11/2ce511458e56e809304b6037aa2f02d1.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

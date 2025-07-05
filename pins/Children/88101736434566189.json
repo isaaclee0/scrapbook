@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434566189/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/children",
+    "CustomFileName": "88101736434566189",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434566189",
+      "url": "https://www.pinterest.com/pin/88101736434566189/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Children are not a distraction from more important work. They are the most important work.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/children/",
+        "name": "Children",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a8/b2/12/a8b2121f65b857d936e32f04005bb5e9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

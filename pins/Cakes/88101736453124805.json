@@ -1,0 +1,64 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453124805/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736453124805",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453124805",
+      "url": "https://www.pinterest.com/pin/88101736453124805/",
+      "type": "pin",
+      "title": "Almond Flour Carrot Cake Muffins",
+      "gridTitle": "Almond Flour Carrot Cake Muffins",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 5,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "nutrition_MN1234",
+        "url": "https://www.pinterest.com/nutrition_MN1234/",
+        "name": "NM1234"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c4/14/9a/c4149a55167e12fd6f961139a958ecbf.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/b5/c7/72/b5c77274ce4d8cd779fb98267047f1aa.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/af/82/a3/af82a3ed57fb4295b41eadaf0ccd5c8f.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/38/58/2c/38582cbe85f1c343b1c6f9c289d7d5ba.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/22/f7/0f/22f70f5a2dc39d08c75c346e0b0690e4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

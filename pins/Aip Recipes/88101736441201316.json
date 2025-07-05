@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441201316/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736441201316",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441201316",
+      "url": "https://www.pinterest.com/pin/88101736441201316/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "News on the Economy",
+      "description": "Beef and Brussels | Enjoying this Journey...",
+      "link": "http://enjoyingthisjourney.com/beef-and-brussels/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4f/e1/1f/4fe11fe1920d620556ef5ee5f4847002.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

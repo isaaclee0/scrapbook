@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443022780/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443022780",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443022780",
+      "url": "https://www.pinterest.com/pin/88101736443022780/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Manly Skills for men",
+      "description": "From: The Art of Manliness",
+      "link": "http://9gag.com/gag/a9de16L?ref=fbp",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/52/95/1d/52951de8514ab7ff4a9d851344a0a724.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

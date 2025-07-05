@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437244456/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736437244456",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437244456",
+      "url": "https://www.pinterest.com/pin/88101736437244456/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "- News of the West",
+      "description": "House cat Zeus has a staring match with a mountain lion that wandered on the home's deck in Boulder, Colorado. Wow, isn't this something else?",
+      "link": "http://www.my-west.com/news-of-the-west/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7a/21/b7/7a21b7ad90c3db6ae6dfab0df3aea707.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

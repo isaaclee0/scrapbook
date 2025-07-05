@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442673380/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442673380",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442673380",
+      "url": "https://www.pinterest.com/pin/88101736442673380/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Visual Stories",
+      "description": "Vintage red",
+      "link": "http://vintagerosebrocante.tumblr.com/post/5169119329/thenglishrose-i-need-this-dress",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/80/09/aa/8009aad8a29a461bdabaedc47cd4eac0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

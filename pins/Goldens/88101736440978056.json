@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440978056/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/goldens",
+    "CustomFileName": "88101736440978056",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440978056",
+      "url": "https://www.pinterest.com/pin/88101736440978056/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Looking up with Finn ..",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "mypal",
+        "url": "https://www.pinterest.com/mypal/",
+        "name": "patti and friends"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/goldens/",
+        "name": "Goldens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/70/8d/11/708d118d92207bd9af49f069249445ce.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

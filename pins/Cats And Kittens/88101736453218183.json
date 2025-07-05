@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453218183/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736453218183",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453218183",
+      "url": "https://www.pinterest.com/pin/88101736453218183/",
+      "type": "pin",
+      "title": "Cat Playground",
+      "gridTitle": "Cat Playground",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Furmia",
+        "url": "https://www.pinterest.com/Furmia/",
+        "name": "Furmia"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/e5/52/fa/e552fa9ef4a32e608aa1a3eec8a1779a.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

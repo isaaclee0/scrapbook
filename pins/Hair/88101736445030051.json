@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445030051/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736445030051",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445030051",
+      "url": "https://www.pinterest.com/pin/88101736445030051/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Strawberry blonde highlights                                                                                                                                                                                 More",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "jaimeebear",
+        "url": "https://www.pinterest.com/jaimeebear/",
+        "name": "jaimee"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1a/c5/2a/1ac52a1bd31d7cb0598f0cf541ed9556.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451297983/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736451297983",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451297983",
+      "url": "https://www.pinterest.com/pin/88101736451297983/",
+      "type": "pin",
+      "title": "best chocolate cake ever",
+      "gridTitle": "best chocolate cake ever",
+      "description": " ",
+      "link": "https://bakingenvy.com/one-bowl-moist-chocolate-cake/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "bakingenvy",
+        "url": "https://www.pinterest.com/bakingenvy/",
+        "name": "Baking Envy"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/84/c6/91/84c691e1a37da7f86eb18a87da5f7af7.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/3f/77/4b/3f774b8f183ae0a49f0779d7e66357a9.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

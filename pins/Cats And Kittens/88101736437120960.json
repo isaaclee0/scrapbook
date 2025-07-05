@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437120960/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736437120960",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437120960",
+      "url": "https://www.pinterest.com/pin/88101736437120960/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "キャベツ",
+      "description": "Cabbages keep Kitty cool part 1.",
+      "link": "http://kagonekoshiro.blog86.fc2.com/blog-entry-2308.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/df/be/14/dfbe142e9482f65ab1bb7758380857dc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

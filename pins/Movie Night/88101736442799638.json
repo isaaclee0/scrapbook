@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442799638/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736442799638",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442799638",
+      "url": "https://www.pinterest.com/pin/88101736442799638/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "A Midsummer Night's Dream (1999)",
+      "description": "A Midsummer Night's Dream",
+      "link": "http://letterboxd.com/film/a-midsummer-nights-dream-1999/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/65/10/eb/6510eb372705d818243dbe0da734ec43.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438931377/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/beefy",
+    "CustomFileName": "88101736438931377",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438931377",
+      "url": "https://www.pinterest.com/pin/88101736438931377/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chili",
+      "description": "Chili",
+      "link": "http://www.eatcakefordinner.net/2010/11/my-first-chili-attempt.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/beefy/",
+        "name": "Beefy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/26/f0/d9/26f0d96734d5f2338e7f0ab09d15ba6a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441710191/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736441710191",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441710191",
+      "url": "https://www.pinterest.com/pin/88101736441710191/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Brownie Pudding",
+      "description": "This Brownie Pudding is a chocolate lover's heaven.",
+      "link": "http://www.melskitchencafe.com/brownie-pudding/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "melskitchencafe",
+        "url": "https://www.pinterest.com/melskitchencafe/",
+        "name": "Mel's Kitchen Cafe"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/34/c7/7c/34c77ceb9163cdb8230a64aa1bd5015f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

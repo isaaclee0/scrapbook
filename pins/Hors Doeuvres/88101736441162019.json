@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441162019/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hors-doeuvres",
+    "CustomFileName": "88101736441162019",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441162019",
+      "url": "https://www.pinterest.com/pin/88101736441162019/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Smoked Salmon and Cream Cheese Cucumber Bites - Baker by Nature",
+      "description": "Smoked Salmon and Cream Cheese Cucumber Bites",
+      "link": "http://bakerbynature.com/smoked-salmon-cream-cheese-cucumber-bites/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "rjtatum",
+        "url": "https://www.pinterest.com/rjtatum/",
+        "name": "Ronda Tatum"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hors-doeuvres/",
+        "name": "Hors D'oeuvres",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/32/e7/bd/32e7bda160748f0a70a85a23e2a3846d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

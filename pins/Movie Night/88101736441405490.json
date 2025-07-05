@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441405490/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736441405490",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441405490",
+      "url": "https://www.pinterest.com/pin/88101736441405490/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "War and Peace 2016",
+      "link": "http://www.farfarawaysite.com/section/warpeace/gallery10/hires/29.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/94/4c/66/944c665d2d7274ecc3d5166da2b9a6a2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443065771/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443065771",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443065771",
+      "url": "https://www.pinterest.com/pin/88101736443065771/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "15 Poop Horror Stories That Will Make You Feel Better About Yourself",
+      "description": "I laughed so hard I cried!",
+      "link": "http://www.buzzfeed.com/kaylayandoli/hurbly-grblies",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/25/f5/88/25f588ebc7a02663e4fb654d370add69.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

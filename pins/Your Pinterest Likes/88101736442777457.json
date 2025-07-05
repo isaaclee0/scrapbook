@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442777457/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442777457",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442777457",
+      "url": "https://www.pinterest.com/pin/88101736442777457/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "This Is the Ultimate Full Core Workout, According to Trainers",
+      "description": "The Best Abs Exercises of All Time",
+      "link": "http://www.shape.com/fitness/workouts/trainers-reveal-best-abs-exercises-all-time",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/30/d1/d1/30d1d188aa3b3b31f567a79e1481f9ad.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434601914/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/salads",
+    "CustomFileName": "88101736434601914",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434601914",
+      "url": "https://www.pinterest.com/pin/88101736434601914/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Recipe: Broccoli and Feta Pasta Salad",
+      "description": "Broccoli and Feta Pasta Salad",
+      "link": "http://www.thekitchn.com/thekitchn/side-dish/recipe-broccoli-and-feta-pasta-salad-022620",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/salads/",
+        "name": "Salads",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/79/72/dc/7972dca19f757661a9df2355ddea4fa3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

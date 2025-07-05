@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437954819/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736437954819",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437954819",
+      "url": "https://www.pinterest.com/pin/88101736437954819/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Strawberry Rhubarb Sorbet (AIP-Friendly) - Guest Post by Jaime Hartman",
+      "description": "Guest Post by Jamie Hartman - Strawberry Rhubarb Sorbet (Autoimmune Protocol Friendly) - The Paleo Mom",
+      "link": "http://www.thepaleomom.com/2014/07/guest-post-jamie-hartman-strawberry-rhubarb-sorbet-autoimmune-protocol-friendly.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/40/b0/70/40b0709d59c7c1c93f855165e609eb34.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

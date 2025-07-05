@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442965060/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442965060",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442965060",
+      "url": "https://www.pinterest.com/pin/88101736442965060/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "vegan",
+      "link": "http://api.ning.com/files/pmps-SPv0oUHlURn9HjwnTgpvCPZdQCydP2JjbPTKT-H5vulBY0crfWDUZEh-efUlpKPaKe40V34*GDOqBkXXpdXWLF6h5JA/veg316846_249508898429123_100001100435813_707706_1038009005_n.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4d/82/1d/4d821dc1af8d125c8fe4ff2fc2cec8e1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433579503/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-dining",
+    "CustomFileName": "88101736433579503",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433579503",
+      "url": "https://www.pinterest.com/pin/88101736433579503/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "g u e s t c o t t a g e",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "pccraven",
+        "url": "https://www.pinterest.com/pccraven/",
+        "name": "Claire Craven"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-dining/",
+        "name": "Cottage dining",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9e/7f/da/9e7fda29610971b799ebd81acd01e9d4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

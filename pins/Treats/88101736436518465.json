@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436518465/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736436518465",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436518465",
+      "url": "https://www.pinterest.com/pin/88101736436518465/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Homemade Gumdrops",
+      "description": "Homemade Gumdrops ...gingham, burlap, crinkle ribbon",
+      "link": "http://www.tasteofhome.com/Recipes/Homemade-Gumdrops?pmcode=IMLDV02T&_mid=2396519&_rid=2396519.558202.546166",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/72/ce/b9/72ceb98d16e4b56f7b553bcdfb83718c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

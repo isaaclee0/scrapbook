@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448827951/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/birthday",
+    "CustomFileName": "88101736448827951",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448827951",
+      "url": "https://www.pinterest.com/pin/88101736448827951/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "DIY Box Lunch Picnic or Party",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "onsuttonplace",
+        "url": "https://www.pinterest.com/onsuttonplace/",
+        "name": "On Sutton Place"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/birthday/",
+        "name": "Birthday",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7e/57/3c/7e573cc901ca7c046957c5f7af7ef019.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

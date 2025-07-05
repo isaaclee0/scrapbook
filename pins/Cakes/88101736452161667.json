@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452161667/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736452161667",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452161667",
+      "url": "https://www.pinterest.com/pin/88101736452161667/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Cranberry, Orange & Pecan Muffins",
+      "description": "Cranberry, Orange & Pecan Muffins",
+      "link": "http://www.everylastbite.com/wprm_print/11287",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/08/c7/1f/08c71fd20eec9266da7753661268e98b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

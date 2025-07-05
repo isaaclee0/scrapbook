@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451320619/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/exercise-it",
+    "CustomFileName": "88101736451320619",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451320619",
+      "url": "https://www.pinterest.com/pin/88101736451320619/",
+      "type": "pin",
+      "title": "Beginner Towel Home Workout",
+      "gridTitle": "Beginner Towel Home Workout",
+      "description": "Beginner Towel Home Workout Full length workout videos at courses.justinagustin.com #homeworkout #beginnerworkout",
+      "link": "https://courses.justinagustin.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 5,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "justinagustin",
+        "url": "https://www.pinterest.com/justinagustin/",
+        "name": "Justin Agustin"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/exercise-it/",
+        "name": "Exercise it",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f6/f6/41/f6f6419026be732c8c2e4c90a498cc20.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/a8/e5/d7/a8e5d74aaf8653ce0493110eb36d0de5.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

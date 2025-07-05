@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431976650/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736431976650",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431976650",
+      "url": "https://www.pinterest.com/pin/88101736431976650/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Crisp Potato Cake (Galette de Pomme de Terre) Recipe",
+      "description": "Galette de Pomme de Terre (crisp potato cake)",
+      "link": "http://www.nytimes.com/2008/10/08/dining/081crex.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/12/41/7b/12417b868bf6a157759791c17fd38e6d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442543616/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442543616",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442543616",
+      "url": "https://www.pinterest.com/pin/88101736442543616/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "These Christmas Decorating Ideas Will Inspire You to Bring the Beauty of the Season Home",
+      "description": "Roll of cookies with recipe.  Perfect gift.",
+      "link": "http://www.southernliving.com/home-garden/holidays-occasions/christmas-decorating-ideas-00400000059442/page84.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/99/45/83/99458344974c3a33449b4f5c48758662.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

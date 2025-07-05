@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433867774/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/paleowhals",
+    "CustomFileName": "88101736433867774",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433867774",
+      "url": "https://www.pinterest.com/pin/88101736433867774/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Chicken and Spinach Paleo Ravioli",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/paleowhals/",
+        "name": "Paleo/Whals",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/21/62/6e/21626e9e1eca085b1d605966410532a8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

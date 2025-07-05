@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440171179/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/shelves",
+    "CustomFileName": "88101736440171179",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440171179",
+      "url": "https://www.pinterest.com/pin/88101736440171179/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Oma koti onnenpesä",
+      "description": "Oma koti onnenpesä",
+      "link": "http://omakotionnenpesa.blogspot.gr/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/shelves/",
+        "name": "Shelves",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/24/2a/12/242a12ce8770f0f8f9a09b54a0f9b60b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

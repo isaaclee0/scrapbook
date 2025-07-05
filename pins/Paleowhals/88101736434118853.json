@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434118853/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/paleowhals",
+    "CustomFileName": "88101736434118853",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434118853",
+      "url": "https://www.pinterest.com/pin/88101736434118853/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Paleo Drinking Cheat Sheet",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/paleowhals/",
+        "name": "Paleo/Whals",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7e/92/3a/7e923a22ab7f1bb47e6380b8f66e614b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

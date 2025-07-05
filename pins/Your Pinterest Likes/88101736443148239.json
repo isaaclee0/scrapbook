@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443148239/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443148239",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443148239",
+      "url": "https://www.pinterest.com/pin/88101736443148239/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "stovetec.net",
+      "description": "My brother bought this stove as a cooking source for his food storage. He uses it and loves it. It is extreamly fuel efficient!",
+      "link": "http://www.stovetec.net/shop/index.php?main_page=product_info&cPath=1&products_id=37",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a3/bb/39/a3bb39ef20ec47cdef81f326ad97c1bf.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

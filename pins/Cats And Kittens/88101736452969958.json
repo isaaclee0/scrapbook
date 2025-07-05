@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452969958/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736452969958",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452969958",
+      "url": "https://www.pinterest.com/pin/88101736452969958/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Keep Indoor Cats Entertained",
+      "description": " ",
+      "link": "http://cozywinters.com/blog/keep-indoor-cats-entertained.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e3/68/ae/e368ae6b1e71b49399ce63d93679b0eb.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

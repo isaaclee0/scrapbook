@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450089713/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/biscuitscookies-and-slices",
+    "CustomFileName": "88101736450089713",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450089713",
+      "url": "https://www.pinterest.com/pin/88101736450089713/",
+      "type": "pin",
+      "title": "Mint Chocolate Brownies",
+      "gridTitle": "Mint Chocolate Brownies",
+      "description": "Mint Chocolate Brownies that are easy and a family favorite!  Everyone always asks for the recipe for these amazing brownies! Because who can resist brownies with mint frosting?",
+      "link": "https://www.wineandglue.com/mint-chocolate-brownies/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "lisasimplejoy",
+        "url": "https://www.pinterest.com/lisasimplejoy/",
+        "name": "Simple Joy (formerly Wine & Glue)"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/biscuitscookies-and-slices/",
+        "name": "Biscuits/Cookies and Slices",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5f/40/fa/5f40fae6a82be13a374aee4207cc6121.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/00/8e/61/008e6191fd87080556cea0588633a078.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

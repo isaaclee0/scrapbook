@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452290707/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/massage",
+    "CustomFileName": "88101736452290707",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452290707",
+      "url": "https://www.pinterest.com/pin/88101736452290707/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "MatheusFaria23",
+        "url": "https://www.pinterest.com/MatheusFaria23/",
+        "name": "gandalf23"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/massage/",
+        "name": "Massage",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c1/de/f4/c1def4feeb60603a4487e10902316fdf.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439299365/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736439299365",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439299365",
+      "url": "https://www.pinterest.com/pin/88101736439299365/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "How to make Dry Cat Food",
+      "description": "Homemade dry cat food  We've been looking for an easy recipe and I think I just found it!",
+      "link": "http://www.youtube.com/watch?v=c6VPU3kSnEo",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e5/63/be/e563be96d07a77b1eda6197db189d54f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

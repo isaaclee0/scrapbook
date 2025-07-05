@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453450775/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-love",
+    "CustomFileName": "88101736453450775",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453450775",
+      "url": "https://www.pinterest.com/pin/88101736453450775/",
+      "type": "pin",
+      "title": "Blooming Coop",
+      "gridTitle": "Blooming Coop",
+      "description": " ",
+      "link": "http://www.fallenoakfarms.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "TampaGreenhouses",
+        "url": "https://www.pinterest.com/TampaGreenhouses/",
+        "name": "Fallen Oak Farms"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-love/",
+        "name": "Chicken love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/80/e2/25/80e2256d0a53df69d8a4b1dcd6cd7116.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/7a/9d/90/7a9d90f0f1260fa640b5f20ca18c4677.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

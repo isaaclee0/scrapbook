@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442747892/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442747892",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442747892",
+      "url": "https://www.pinterest.com/pin/88101736442747892/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "sarahorn.com",
+      "description": "sounds like she has practical insight into what it means to be a Proverbs 31 wife.",
+      "link": "http://www.sarahorn.com/my-so-called-life-as-a-proverbs-31-wife/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4c/a8/a7/4ca8a7f84a79be54bf4d9ca25ead9975.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435173878/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736435173878",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435173878",
+      "url": "https://www.pinterest.com/pin/88101736435173878/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Mes petites choses",
+      "description": "Mes petites choses",
+      "link": "http://melzinha1234.tumblr.com/post/34997405696",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0e/fb/6b/0efb6b7bef161d9ada9fd4dcea7adeda.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

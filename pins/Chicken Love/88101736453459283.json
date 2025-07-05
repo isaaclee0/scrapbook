@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453459283/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-love",
+    "CustomFileName": "88101736453459283",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453459283",
+      "url": "https://www.pinterest.com/pin/88101736453459283/",
+      "type": "pin",
+      "title": "Grazing boxes for chickens",
+      "gridTitle": "Grazing boxes for chickens",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "emshappyhens",
+        "url": "https://www.pinterest.com/emshappyhens/",
+        "name": "emshappyhens"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-love/",
+        "name": "Chicken love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/0f/5c/58/0f5c581d909a918aa548412791b9e095.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

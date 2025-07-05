@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452984052/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/squirrels",
+    "CustomFileName": "88101736452984052",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452984052",
+      "url": "https://www.pinterest.com/pin/88101736452984052/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "This is the happiest squirrel I have ever seen.",
+      "link": "http://www.avantipress.com/images/card-catalog/front/200230-1355870263.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/squirrels/",
+        "name": "Squirrels",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c1/20/ad/c120ad4baa0c004b68cdd1e685e8ad32.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

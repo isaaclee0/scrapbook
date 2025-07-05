@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446716732/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/brewing",
+    "CustomFileName": "88101736446716732",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446716732",
+      "url": "https://www.pinterest.com/pin/88101736446716732/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Feedly: Track the topics and trends that matter to you",
+      "description": "A Sketchy Past, The Art of Peter de Sève",
+      "link": "http://feedly.com/#subscription/feed/http://peterdeseve.blogspot.com/feeds/posts/default",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/brewing/",
+        "name": "Brewing",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0d/77/c8/0d77c85f9dde95bc6e630b8715e5d589.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

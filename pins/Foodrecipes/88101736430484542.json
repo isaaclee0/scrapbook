@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430484542/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430484542",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430484542",
+      "url": "https://www.pinterest.com/pin/88101736430484542/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Are these YOUR favorite?",
+      "description": "Homemade Cadbury Eggs",
+      "link": "http://eatingwelllivingthin.wordpress.com/2011/04/19/are-these-your-favorite/#comments",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f3/83/23/f38323c860bd2cec8bb6fb474e849d56.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

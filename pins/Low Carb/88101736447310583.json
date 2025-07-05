@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447310583/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/low-carb",
+    "CustomFileName": "88101736447310583",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447310583",
+      "url": "https://www.pinterest.com/pin/88101736447310583/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Keto bread",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/low-carb/",
+        "name": "Low Carb",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e6/48/61/e64861586c47b44abd26336ac500ff97.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

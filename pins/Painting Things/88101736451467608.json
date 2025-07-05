@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451467608/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painting-things",
+    "CustomFileName": "88101736451467608",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451467608",
+      "url": "https://www.pinterest.com/pin/88101736451467608/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Tvitter on Twitter",
+      "description": " ",
+      "link": "https://twitter.com/tvitter/status/620177706886524928/photo/1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painting-things/",
+        "name": "Painting things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1f/d4/c5/1fd4c53da1a3c1ad249e42bb1cd7a08c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

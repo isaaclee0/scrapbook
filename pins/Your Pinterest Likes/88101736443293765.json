@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443293765/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443293765",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443293765",
+      "url": "https://www.pinterest.com/pin/88101736443293765/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Travel Posters of James Northfield",
+      "description": "Poster - Fly Ansett-ANA to Tasmania for your next holiday",
+      "link": "http://www.jamesnorthfield.org.au/archives-travel-scenery.htm",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d8/3b/eb/d83beb27f2c620cc15af23dc76399f88.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

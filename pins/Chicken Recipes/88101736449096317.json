@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449096317/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736449096317",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449096317",
+      "url": "https://www.pinterest.com/pin/88101736449096317/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Moroccan Grilled Chicken with Herby Lemon Olive Vinaigrette.",
+      "description": "Moroccan Grilled Chicken with Lemon and Herb Olive Vinaigrette | halfbakedharvest.com",
+      "link": "https://www.halfbakedharvest.com/moroccan-grilled-chicken/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "norecipes",
+        "url": "https://www.pinterest.com/norecipes/",
+        "name": "No Recipes"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/85/c9/37/85c93737622770b1214c377c5d144334.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437765456/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-christmas",
+    "CustomFileName": "88101736437765456",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437765456",
+      "url": "https://www.pinterest.com/pin/88101736437765456/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "xmas living room",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tadown",
+        "url": "https://www.pinterest.com/tadown/",
+        "name": "Tracy Downes"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-christmas/",
+        "name": "Cottage Christmas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8f/d9/fe/8fd9fe627f4001d56578581a21c7755b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

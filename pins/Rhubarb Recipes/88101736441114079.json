@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441114079/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/rhubarb-recipes",
+    "CustomFileName": "88101736441114079",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441114079",
+      "url": "https://www.pinterest.com/pin/88101736441114079/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Ciasto z rabarbarem, serem i kruszonką",
+      "description": "rhubarb cake.",
+      "link": "http://www.kwestiasmaku.com/zielony_srodek/rabarbar/ciasto_z_rabarbarem_serem/przepis.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "bromabakery",
+        "url": "https://www.pinterest.com/bromabakery/",
+        "name": "Sarah Fennel | Broma Bakery"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/rhubarb-recipes/",
+        "name": "Rhubarb Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5d/c5/72/5dc5722b279437484d680ff96dd4bb6c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

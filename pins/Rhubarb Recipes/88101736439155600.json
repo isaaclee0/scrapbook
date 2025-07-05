@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439155600/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/rhubarb-recipes",
+    "CustomFileName": "88101736439155600",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439155600",
+      "url": "https://www.pinterest.com/pin/88101736439155600/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Lemon Rhubarb Tube Cake",
+      "description": "Rhubarb, rhubarb, rhubarb!",
+      "link": "http://www.tasteofhome.com/recipes/Rhubarb-Lemon-Coffee-Cake",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/rhubarb-recipes/",
+        "name": "Rhubarb Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/eb/75/41/eb7541044f133d176596208f2fa4b57b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

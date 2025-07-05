@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431899116/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736431899116",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431899116",
+      "url": "https://www.pinterest.com/pin/88101736431899116/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "red morning light",
+      "description": "Wow this looks divine @reneeupton",
+      "link": "http://redmorninglight.tumblr.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c0/2d/ad/c02dad7113e498c316da37abc07b745a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

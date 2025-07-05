@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433726740/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/packed-lunch",
+    "CustomFileName": "88101736433726740",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433726740",
+      "url": "https://www.pinterest.com/pin/88101736433726740/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "piewacketblog.com",
+      "description": "vintage picnic",
+      "link": "http://www.piewacketblog.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/packed-lunch/",
+        "name": "Packed lunch",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fd/95/2a/fd952a1eca0fd637e144d8eb6311189e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

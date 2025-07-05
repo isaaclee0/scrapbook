@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435200820/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736435200820",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435200820",
+      "url": "https://www.pinterest.com/pin/88101736435200820/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Persian Food: Tahcheen (saffron chicken & rice dish) w/ recipe",
+      "link": "http://mypersiankitchen.com/tahcheen/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c0/b6/f9/c0b6f9c515f7580348f883d466fb956a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433448470/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736433448470",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433448470",
+      "url": "https://www.pinterest.com/pin/88101736433448470/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "home",
+      "description": "home",
+      "link": "http://home-biba.blogspot.com/search?updated-max=2012-04-16T01:22:00%2B01:00&max-results=7",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/20/9d/6b/209d6bccbe6846b277a02c96b12bd89e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437910675/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736437910675",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437910675",
+      "url": "https://www.pinterest.com/pin/88101736437910675/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Healthy Snacking: Simple Plantain Chips and Guacamole",
+      "description": "Homemade Plantain Chips and Guacamole: These are my new favorite snack for satisfying my salty/crunchy cravings in a healthy way- super easy to make too!",
+      "link": "http://www.modernparentsmessykids.com/2015/02/five-ingredient-snack-simple-plantain-chips-guacamole.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e2/1f/61/e21f612273e19111ea6ef2ca23c08774.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

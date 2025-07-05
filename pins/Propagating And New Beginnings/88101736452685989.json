@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452685989/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/propagating-and-new-beginnings",
+    "CustomFileName": "88101736452685989",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452685989",
+      "url": "https://www.pinterest.com/pin/88101736452685989/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "becci2854",
+        "url": "https://www.pinterest.com/becci2854/",
+        "name": "VIDEOPINS"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/propagating-and-new-beginnings/",
+        "name": "Propagating and new beginnings",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b9/8a/a8/b98aa88d1eb2a92187c013d268cd6f21.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/e4/8e/c9/e48ec995cb7c1850a054ea589bce218d.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

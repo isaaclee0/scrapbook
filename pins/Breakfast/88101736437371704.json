@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437371704/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/breakfast",
+    "CustomFileName": "88101736437371704",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437371704",
+      "url": "https://www.pinterest.com/pin/88101736437371704/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Amish Breakfast Casserole",
+      "description": "Amish Breakfast Casserole",
+      "link": "http://centercutcook.com/amish-breakfast-casserole/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "bacon4me",
+        "url": "https://www.pinterest.com/bacon4me/",
+        "name": "Susanna Kettlewell"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/breakfast/",
+        "name": "Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/66/f3/88/66f388ea362a83ef24c98d316a81299e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

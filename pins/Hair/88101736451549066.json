@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451549066/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736451549066",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451549066",
+      "url": "https://www.pinterest.com/pin/88101736451549066/",
+      "type": "pin",
+      "title": "inverted bob",
+      "gridTitle": "inverted bob",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "artsypartner",
+        "url": "https://www.pinterest.com/artsypartner/",
+        "name": "Kim L"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9b/63/ac/9b63ac70714b4c5c573e96f9c40b2aea.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

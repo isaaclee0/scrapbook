@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432546789/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/breakfast",
+    "CustomFileName": "88101736432546789",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432546789",
+      "url": "https://www.pinterest.com/pin/88101736432546789/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "10 Best Seafood Breakfast Casserole Recipes | Yummly",
+      "description": "Seafood Breakfast Casserole Recipes",
+      "link": "http://www.yummly.com/recipes/seafood-breakfast-casserole",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/breakfast/",
+        "name": "Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/33/a1/21/33a12160b5e6ac86e7c5d0913f03bcb1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

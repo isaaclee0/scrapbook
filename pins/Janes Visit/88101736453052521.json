@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453052521/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/janes-visit",
+    "CustomFileName": "88101736453052521",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453052521",
+      "url": "https://www.pinterest.com/pin/88101736453052521/",
+      "type": "pin",
+      "title": "Bailey's Truffles",
+      "gridTitle": "Bailey's Truffles",
+      "description": " ",
+      "link": "https://bellyfull.net/baileys-chocolate-truffles/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "bellyfullblog",
+        "url": "https://www.pinterest.com/bellyfullblog/",
+        "name": "Belly Full | Family-Friendly Easy Recipes"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/janes-visit/",
+        "name": "Jane's Visit",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ba/ce/c8/bacec86796f87127890e7f740e36caa4.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/1f/ff/bc/1fffbc7621b6e4e26db6750335f8a54d.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

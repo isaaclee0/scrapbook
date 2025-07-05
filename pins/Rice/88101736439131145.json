@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439131145/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/rice",
+    "CustomFileName": "88101736439131145",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439131145",
+      "url": "https://www.pinterest.com/pin/88101736439131145/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Recipes",
+      "description": "Sticky Black Rice Pudding (SL - this one simmers in the coconut milk)",
+      "link": "http://www.ceres.co.nz/recipes/desserts/sticky-black-rice-pudding/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/rice/",
+        "name": "Rice",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ad/57/d2/ad57d2a779bd30a9a3dc4984c513d15f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

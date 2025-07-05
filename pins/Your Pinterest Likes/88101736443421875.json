@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443421875/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443421875",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443421875",
+      "url": "https://www.pinterest.com/pin/88101736443421875/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "wish!",
+      "description": "Priory house in Tasmania",
+      "link": "http://wishflowers.tumblr.com/page/2",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a6/45/23/a645239b314ab27718afdd09b2b592b8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

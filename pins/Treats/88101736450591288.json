@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450591288/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736450591288",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450591288",
+      "url": "https://www.pinterest.com/pin/88101736450591288/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chocolate Pistachio Fudge",
+      "description": "Chocolate Pistachio Fudge Nigella",
+      "link": "http://www.nigella.com/recipes/chocolate-pistachio-fudge?source=mailer_rotd_20181024",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "cath7472",
+        "url": "https://www.pinterest.com/cath7472/",
+        "name": "Cathy Biggs"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f3/a6/3a/f3a63af915a3aa08509ed2d7a45a2a51.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

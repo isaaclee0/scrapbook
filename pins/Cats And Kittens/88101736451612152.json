@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451612152/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736451612152",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451612152",
+      "url": "https://www.pinterest.com/pin/88101736451612152/",
+      "type": "pin",
+      "title": "20% Off Your First Bag!",
+      "gridTitle": "20% Off Your First Bag!",
+      "description": "5 Ways PrettyLitter Will Make You Forget You Have a Litterbox. TAKE 20% OFF YOUR FIRST BAG!",
+      "link": "https://prettylitter.com/blogs/prettylitter-blog/safe-cat-around-christmas-home-decor?utm_source=pinterest&utm_medium=paidsocial&utm_campaign=20-off",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "prettylitter",
+        "url": "https://www.pinterest.com/prettylitter/",
+        "name": "PrettyLitter"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/df/46/08/df46081bc9ba04cf46cdad425c550317.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/f6/b3/2d/f6b32d7c49e3487dcc6c176717ba15ed.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

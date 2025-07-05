@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439240766/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painting-things",
+    "CustomFileName": "88101736439240766",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439240766",
+      "url": "https://www.pinterest.com/pin/88101736439240766/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Bungalow Classic",
+      "description": "neutrals",
+      "link": "http://bungalowclassic.tumblr.com/post/47268286370",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painting-things/",
+        "name": "Painting things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/03/d6/95/03d695539bfab8a20bacea3c854be71f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434566255/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736434566255",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434566255",
+      "url": "https://www.pinterest.com/pin/88101736434566255/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "We Heart It",
+      "description": "Kindles don't have this kind of magic.",
+      "link": "http://weheartit.com/entry/2691883",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e9/05/f3/e905f3078cecac350fe12a1ebb30cdd0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

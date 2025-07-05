@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436866279/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fun",
+    "CustomFileName": "88101736436866279",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436866279",
+      "url": "https://www.pinterest.com/pin/88101736436866279/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Party",
+      "link": "http://www.griffinautos.co.uk/o/0978b73677",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fun/",
+        "name": "Fun",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9a/21/98/9a2198a8c00f892c767d8fac89dad3a3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

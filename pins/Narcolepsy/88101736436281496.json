@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436281496/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/narcolepsy",
+    "CustomFileName": "88101736436281496",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436281496",
+      "url": "https://www.pinterest.com/pin/88101736436281496/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Rose & Shine? Umm....no",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/narcolepsy/",
+        "name": "Narcolepsy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2a/11/ef/2a11ef1aed082e6f9ec29672370f7a0c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

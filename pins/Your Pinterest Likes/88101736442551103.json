@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442551103/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442551103",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442551103",
+      "url": "https://www.pinterest.com/pin/88101736442551103/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Topshop Clothing, Shoes & Accessories | ASOS",
+      "description": "Love the shape",
+      "link": "http://m.topshop.com/mt/www.topshop.com/webapp/wcs/stores/servlet/ProductDisplay?beginIndex=0&viewAllFlag=&catalogId=33057&storeId=12556&productId=5772834&langId=-1&sort_field=Relevance&categoryId=208523&parent_categoryId=203984&pageSize=20",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c0/ab/ae/c0abae4278251688290b28e230baefdf.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

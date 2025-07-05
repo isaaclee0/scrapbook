@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439559494/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736439559494",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439559494",
+      "url": "https://www.pinterest.com/pin/88101736439559494/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Lemon verbena brulee",
+      "description": "Lemon verbena creme brulee.",
+      "link": "http://m.goodfood.com.au/good-food/cook/recipe/lemon-verbena-brulee-20150330-3t54f.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a4/6c/11/a46c11e4ae0d47efa837a323c254947b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

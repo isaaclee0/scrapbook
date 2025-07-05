@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449831451/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/packed-lunch",
+    "CustomFileName": "88101736449831451",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449831451",
+      "url": "https://www.pinterest.com/pin/88101736449831451/",
+      "type": "pin",
+      "title": "Fresh Tex-Mex Lunch Bowls",
+      "gridTitle": "Fresh Tex-Mex Lunch Bowls",
+      "description": "Easy lunch prep that you can be excited about! Healthy plant based protein, lots of fresh veggies and avocado or guacamole, you choose! These lunch bowls will take your lunch game to the next level!",
+      "link": "https://www.glowinglywell.com/blog/2019/3/30/fresh-tex-mex-lunch-bowls-vegan-gluten-free",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "glowinglywell",
+        "url": "https://www.pinterest.com/glowinglywell/",
+        "name": "Glowingly Well"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/packed-lunch/",
+        "name": "Packed lunch",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5e/bf/4a/5ebf4aebfbeb6fbec52b1972ebf18e42.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/0f/0a/fc/0f0afc1cad8f04dd3801f3202ddfedef.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

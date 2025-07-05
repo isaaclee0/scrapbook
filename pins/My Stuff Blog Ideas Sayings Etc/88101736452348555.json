@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452348555/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/my-stuff-blog-ideas-sayings-etc",
+    "CustomFileName": "88101736452348555",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452348555",
+      "url": "https://www.pinterest.com/pin/88101736452348555/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Francês",
+      "link": "https://i.pinimg.com/564x/c3/95/b6/c395b62f543630ce96a3652d7e7ccc22.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "diariodenavegador",
+        "url": "https://www.pinterest.com/diariodenavegador/",
+        "name": "Diário de Navegador"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/my-stuff-blog-ideas-sayings-etc/",
+        "name": "My stuff - blog ideas, sayings etc",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/62/84/55/628455e2058d76d493d4c9b0382db4ed.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

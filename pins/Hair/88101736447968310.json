@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447968310/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736447968310",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447968310",
+      "url": "https://www.pinterest.com/pin/88101736447968310/",
+      "type": "pin",
+      "title": "1 minutes simple hairstyle",
+      "gridTitle": "1 minutes simple hairstyle",
+      "description": "1 minutes simple hairstyle",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "orosebest",
+        "url": "https://www.pinterest.com/orosebest/",
+        "name": "Orose"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c3/ec/81/c3ec8176658d6a61a30c755ad233d0d2.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/80/e4/d3/80e4d3af2c0bfcf3291ebcbe20801047.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

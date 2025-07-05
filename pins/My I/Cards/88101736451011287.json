@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451011287/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/my-i/cards",
+    "CustomFileName": "88101736451011287",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451011287",
+      "url": "https://www.pinterest.com/pin/88101736451011287/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "HAPPY THINGS",
+      "description": "Gerbara Owl by lovelimzy, via Flickr",
+      "link": "http://lovelimzy.blogspot.com/2013/09/happy-things.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/my-i/",
+        "name": "My I",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1b/44/9c/1b449c92002b867cd1d09c4256b9de44.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

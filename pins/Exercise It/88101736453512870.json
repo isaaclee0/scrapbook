@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453512870/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/exercise-it",
+    "CustomFileName": "88101736453512870",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453512870",
+      "url": "https://www.pinterest.com/pin/88101736453512870/",
+      "type": "pin",
+      "title": "Try this for chest, shoulders and triceps. I absolutely love it.",
+      "gridTitle": "Try this for chest, shoulders and triceps. I absolutely love it.",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "kbrobics",
+        "url": "https://www.pinterest.com/kbrobics/",
+        "name": "Easy Fitness over 50"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/exercise-it/",
+        "name": "Exercise it",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/35/54/0a/35540a79dc0e75b98bcc5d4d6ddc1f3e.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/e7/74/cc/e774cccdf4b2d074dcb67ed2128e3369.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

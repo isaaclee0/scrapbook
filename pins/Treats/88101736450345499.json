@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450345499/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736450345499",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450345499",
+      "url": "https://www.pinterest.com/pin/88101736450345499/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Musk sticks",
+      "description": "Line 3 baking trays with baking paper and set aside.",
+      "link": "http://cookprocessor.kitchenaid.com.au/recipes/57134",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5a/89/f9/5a89f9ec5eba1ce16448b91aec2ffed1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443006924/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443006924",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443006924",
+      "url": "https://www.pinterest.com/pin/88101736443006924/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "French white chalk pencil for writing on slate, chalk boards or chalk board paint",
+      "link": "http://www.etsy.com/treasury/NTUzMTQ2MXwyNzIzMzU1NDUy/woodland-spooky?ref=pr_treasury",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a7/4f/5e/a74f5e6d0f4896b38a2db24559fead16.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

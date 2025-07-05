@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438938472/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/rhubarb-recipes",
+    "CustomFileName": "88101736438938472",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438938472",
+      "url": "https://www.pinterest.com/pin/88101736438938472/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Rhubarb Custard Bars",
+      "description": "Rhubarb Custard Bars",
+      "link": "http://www.tasteofhome.com/recipes/rhubarb-custard-bars",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/rhubarb-recipes/",
+        "name": "Rhubarb Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8a/e6/8a/8ae68a51d82f6112f8ad9497be2f3454.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

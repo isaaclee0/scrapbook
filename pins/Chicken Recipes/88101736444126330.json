@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444126330/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736444126330",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444126330",
+      "url": "https://www.pinterest.com/pin/88101736444126330/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chicken & Bacon Lasagna Roll Ups - Simply Gloria",
+      "description": "Chicken & Bacon Lasagna Roll Ups",
+      "link": "http://simplygloria.com/chicken-bacon-lasagna-roll-ups/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/31/d7/65/31d7657df121634d357589c0702932b3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

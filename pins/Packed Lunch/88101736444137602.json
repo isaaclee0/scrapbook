@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444137602/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/packed-lunch",
+    "CustomFileName": "88101736444137602",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444137602",
+      "url": "https://www.pinterest.com/pin/88101736444137602/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "link": "http://asset.recipe-blog.jp/cache/images/item/23/b3/cb7d9ae04b366636091e10ef6db05f394ace23b3.400x0.none.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/packed-lunch/",
+        "name": "Packed lunch",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/89/dd/37/89dd37e3b1cf69a2d669e5bcc3d5981f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453119486/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-orchard/blueberries",
+    "CustomFileName": "88101736453119486",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453119486",
+      "url": "https://www.pinterest.com/pin/88101736453119486/",
+      "type": "pin",
+      "title": "@jennali134",
+      "gridTitle": "@jennali134",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "jennaa1945",
+        "url": "https://www.pinterest.com/jennaa1945/",
+        "name": "J"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-orchard/",
+        "name": "Cottage Orchard",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8b/33/56/8b33568511877eb0f18ff0e1f3097efb.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/68/fa/25/68fa25e4ea7f03e3d45b6a80ad1efeb3.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

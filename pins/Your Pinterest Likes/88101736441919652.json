@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441919652/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736441919652",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441919652",
+      "url": "https://www.pinterest.com/pin/88101736441919652/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Vegan India! - Veganism in India",
+      "description": "Vegan India!    In support of fair and compassionate consumership, one story at a time.",
+      "link": "http://vegan-india.blogspot.se/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ff/c9/b0/ffc9b0fd14c1553e5e1626f63c5e7d51.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

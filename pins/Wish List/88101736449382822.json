@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449382822/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/wish-list",
+    "CustomFileName": "88101736449382822",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449382822",
+      "url": "https://www.pinterest.com/pin/88101736449382822/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Tea towels, cotton",
+      "description": "Tea towels, cotton",
+      "link": "https://the-black-hen.myshopify.com/products/tea-towels-cotton",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/wish-list/",
+        "name": "Wish List..",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a7/8d/15/a78d15e6060788d6cb7107c08b9e3654.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

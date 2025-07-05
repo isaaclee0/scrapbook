@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447956346/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/mens-clothes",
+    "CustomFileName": "88101736447956346",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447956346",
+      "url": "https://www.pinterest.com/pin/88101736447956346/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "One Jacket, Two Ways to Wear It",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "rainboutiquefc",
+        "url": "https://www.pinterest.com/rainboutiquefc/",
+        "name": "Rain Boutique"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/mens-clothes/",
+        "name": "Men's clothes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1e/41/f9/1e41f91bf5df4bd19a92878dab7bf7bd.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

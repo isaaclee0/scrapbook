@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449847791/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/goldens",
+    "CustomFileName": "88101736449847791",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449847791",
+      "url": "https://www.pinterest.com/pin/88101736449847791/",
+      "type": "pin",
+      "title": "Cuddling pals ",
+      "gridTitle": "Cuddling pals",
+      "description": "#dog #dogs #cat #cats #funny #funnydogs",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "MsLaikaTheHusky",
+        "url": "https://www.pinterest.com/MsLaikaTheHusky/",
+        "name": "Ms. Laika The Husky"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/goldens/",
+        "name": "Goldens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/24/8e/ff/248eff9fc033d1879f6e8d7e0b7344e9.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/v2/720p/3e/a9/cf/3ea9cfda7bac42f7755582069753eef5_mobile.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

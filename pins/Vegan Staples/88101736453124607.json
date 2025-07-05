@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453124607/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/vegan-staples",
+    "CustomFileName": "88101736453124607",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453124607",
+      "url": "https://www.pinterest.com/pin/88101736453124607/",
+      "type": "pin",
+      "title": "Vegan Pastrami Recipe",
+      "gridTitle": "Vegan Pastrami Recipe",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "stephydiwa",
+        "url": "https://www.pinterest.com/stephydiwa/",
+        "name": "stephanie"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/vegan-staples/",
+        "name": "Vegan Staples",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/39/c3/cb/39c3cb9fd5ee25cd7c1091d0a8d94567.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/3a/a3/42/3aa342ffe787e8333c1d3972b9c44dff.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

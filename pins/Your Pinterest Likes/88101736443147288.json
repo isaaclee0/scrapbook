@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443147288/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443147288",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443147288",
+      "url": "https://www.pinterest.com/pin/88101736443147288/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Paul Young - Everytime You Go Away (Official Video)",
+      "description": "Paul Young - Everytime You Go Away - YouTube",
+      "link": "http://www.youtube.com/watch?v=nfk6sCzRTbM",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d8/05/8a/d8058a1886f1239346c76b74bb518969.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433732516/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736433732516",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433732516",
+      "url": "https://www.pinterest.com/pin/88101736433732516/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "lol",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "techconfusion",
+        "url": "https://www.pinterest.com/techconfusion/",
+        "name": "Technical Confusion"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c5/9f/2f/c59f2fccfb3e01c9db4a6ae33266090c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

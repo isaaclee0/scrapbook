@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430405440/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736430405440",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430405440",
+      "url": "https://www.pinterest.com/pin/88101736430405440/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Spongebob and Home Sweet Pineapple Cake",
+      "description": "Spongebob Cake!",
+      "link": "http://www.bakingobsession.com/2010/03/29/spongebob-and-home-sweet-pineapple-cake/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c6/b3/6f/c6b36f9084b2ae23344d1244ccfdf82c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453110275/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/dog-training",
+    "CustomFileName": "88101736453110275",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453110275",
+      "url": "https://www.pinterest.com/pin/88101736453110275/",
+      "type": "pin",
+      "title": "Impulse control",
+      "gridTitle": "Impulse control",
+      "description": " ",
+      "link": "https://sites.google.com/view/braintraindogathome/home",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "cutedogsociety",
+        "url": "https://www.pinterest.com/cutedogsociety/",
+        "name": "Dog Lovers"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/dog-training/",
+        "name": "Dog Training",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d7/be/38/d7be38110e58bc17b2799817ddd2cd29.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/01/21/f7/0121f7ec500a02733a8167df48078a89.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

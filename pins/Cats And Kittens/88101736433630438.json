@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433630438/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736433630438",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433630438",
+      "url": "https://www.pinterest.com/pin/88101736433630438/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "How my cats stand every day to watch the birds.",
+      "description": "\"How my cats stand every day to watch the birds.\"",
+      "link": "http://imgur.com/sW433",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6e/40/34/6e40340767ab8d5f3735e9dd50a6970a.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

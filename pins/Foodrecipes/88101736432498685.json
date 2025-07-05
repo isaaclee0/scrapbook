@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432498685/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736432498685",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432498685",
+      "url": "https://www.pinterest.com/pin/88101736432498685/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Easy Breakfast Casserole Recipe  - Food.com",
+      "description": "Breakfast casserole with bread stuffing, ham and eggs - could be tasty, if done with home made stuffing and good quality ham.",
+      "link": "http://www.food.com/recipe/easy-breakfast-casserole-38065",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f4/3f/69/f43f69da8bb6d716750cfa05cf482c3f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

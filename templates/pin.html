@@ -1,0 +1,1093 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Debug information -->
+<div style="display: none;">
+    Pin ID: {{ pin.id }}
+    Title: {{ pin.title }}
+    Board: {{ pin.board_name }}
+    Section: {{ pin.section_name }}
+</div>
+
+<div class="pin-lightbox">
+    <div class="pin-content">
+        <div class="pin-header">
+            <div class="title-container">
+                <h2 class="editable-title" contenteditable="false">{{ pin.title }}</h2>
+                <div class="title-buttons">
+                    <button class="edit-button" type="button" onclick="enableTitleEdit()">✎</button>
+                    <button class="save-button" type="button" onclick="saveTitle()" style="display: none;">Save</button>
+                </div>
+            </div>
+            <button class="close-button" onclick="window.history.back()">&times;</button>
+        </div>
+        
+        <div class="pin-body">
+            <div class="pin-image-container">
+                <img src="{{ pin.image_url }}" alt="{{ pin.title }}" class="pin-image">
+            </div>
+            
+            <div class="pin-details">
+                <div class="pin-details-content">
+                    <!-- Board Selector -->
+                    <label class="meta-label">Board</label>
+                    <div class="board-selector">
+                        <div class="current-board">
+                            {{ pin.board_name }}
+                            <span class="chevron">▼</span>
+                        </div>
+                        <div class="board-menu">
+                            <div class="board-menu-header">
+                                <h3>Select Board</h3>
+                                <button class="new-board-btn" onclick="showNewBoardForm()">+ New Board</button>
+                            </div>
+                            <div class="board-search">
+                                <input type="text" class="search-input" placeholder="Search boards...">
+                            </div>
+                            <div class="board-list">
+                                {% for board in boards %}
+                                <button class="board-option {% if board.id == pin.board_id %}current{% endif %}" data-board-id="{{ board.id }}">
+                                    {{ board.name }}
+                                    {% if board.id == pin.board_id %}
+                                    <span class="current-indicator">✓</span>
+                                    {% endif %}
+                                </button>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section Selector -->
+                    <label class="meta-label">Section</label>
+                    <div class="section-selector">
+                        <div class="current-section">
+                            {{ pin.section_name or 'No Section' }}
+                            <span class="chevron">▼</span>
+                        </div>
+                        <div class="section-menu">
+                            <div class="section-menu-header">
+                                <h3>Select Section</h3>
+                                <button class="new-section-btn" onclick="showNewSectionForm()">+ New Section</button>
+                            </div>
+                            <div class="section-list">
+                                {% for section in sections %}
+                                <button class="section-option {% if section.id == pin.section_id %}current{% endif %}" data-section-id="{{ section.id }}">
+                                    {{ section.name }}
+                                    {% if section.id == pin.section_id %}
+                                    <span class="current-indicator">✓</span>
+                                    {% endif %}
+                                </button>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Source -->
+                    <label class="meta-label">Source</label>
+                    <div class="source-link-container">
+                        {% if pin.link %}
+                        <div class="link-status-wrapper">
+                            <a href="{{ pin.link }}" class="source-link {% if pin.link_status == 'broken' %}broken-link{% elif pin.link_status == 'archived' %}archived-link{% endif %}" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i>
+                                {{ pin.link }}
+                            </a>
+                            <span class="url-status {% if pin.link_status == 'broken' %}broken{% elif pin.link_status == 'archived' %}archived{% elif pin.link_status == 'live' %}live{% else %}pending{% endif %}">
+                                {% if pin.link_status == 'broken' %}
+                                <i class="fas fa-times-circle"></i>
+                                {% elif pin.link_status == 'archived' %}
+                                <i class="fas fa-archive"></i>
+                                {% elif pin.link_status == 'live' %}
+                                <i class="fas fa-check-circle"></i>
+                                {% else %}
+                                <i class="fas fa-circle"></i>
+                                {% endif %}
+                            </span>
+                        </div>
+                        {% if pin.link_status == 'broken' %}
+                        <div class="archive-alternative">
+                            <p>This link appears to be broken. Check if it's archived:</p>
+                            <a href="https://archive.is/{{ pin.link }}" class="archive-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-archive"></i>
+                                View on Archive.is
+                            </a>
+                        </div>
+                        {% endif %}
+                        {% else %}
+                        <span class="no-source">No source link available</span>
+                        {% endif %}
+                    </div>
+
+                    <!-- Description -->
+                    <label class="meta-label">Description</label>
+                    <div class="description-text">
+                        {{ pin.description or 'No description available' }}
+                    </div>
+
+                    <!-- Notes -->
+                    <label class="meta-label">Notes</label>
+                    <textarea class="notes-textarea" placeholder="Add your notes here...">{{ pin.notes or '' }}</textarea>
+                </div>
+                
+                <div class="pin-actions">
+                    <button class="button secondary-button" onclick="window.history.back()">Cancel</button>
+                    <button class="button primary-button" onclick="savePin()">Save Changes</button>
+                    <button class="delete-button" onclick="confirmDelete()">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- New Board Form Modal -->
+<div class="modal" id="newBoardModal">
+    <div class="modal-content">
+        <h3>Create New Board</h3>
+        <input type="text" id="newBoardName" placeholder="Board name" class="board-input">
+        <div class="modal-actions">
+            <button class="button secondary-button" onclick="hideNewBoardForm()">Cancel</button>
+            <button class="button primary-button" onclick="createNewBoard()">Create</button>
+        </div>
+    </div>
+</div>
+
+<!-- New Section Form Modal -->
+<div class="modal" id="newSectionModal">
+    <div class="modal-content">
+        <h3>Create New Section</h3>
+        <input type="text" id="newSectionName" placeholder="Section name" class="section-input">
+        <div class="modal-actions">
+            <button class="button secondary-button" onclick="hideNewSectionForm()">Cancel</button>
+            <button class="button primary-button" onclick="createNewSection()">Create</button>
+        </div>
+    </div>
+</div>
+
+<style>
+.pin-lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Hide the floating add button when pin lightbox is open */
+.pin-lightbox ~ .floating-add-button {
+    display: none !important;
+    z-index: -1;
+}
+
+.pin-content {
+    background: white;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 1200px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 10000;
+}
+
+.pin-header {
+    padding: 16px 24px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.pin-header h2 {
+    margin: 0;
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #666;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+    margin-left: 16px;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 3;
+}
+
+.close-button:hover {
+    background-color: #f0f0f0;
+}
+
+.pin-body {
+    display: flex !important;
+    flex: 1;
+    overflow: hidden;
+    min-height: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.pin-image-container {
+    flex: 1 1 0;
+    min-width: 0;
+    min-height: 0;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f8f8;
+    overflow: hidden;
+}
+
+.pin-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.pin-details {
+    flex: 0 0 350px;
+    border-left: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    position: relative;
+    z-index: 2;
+    overflow-y: auto;
+    max-height: 100vh;
+    min-width: 0;
+}
+
+.pin-details-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 24px 0 24px;
+    flex: 1;
+    min-height: 0;
+}
+
+.pin-details-inner {
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.pin-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.meta-label {
+    color: #666;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    position: static !important;
+    float: none !important;
+    display: block;
+    width: 100%;
+}
+
+.board-selector, .section-selector {
+    position: relative;
+}
+
+.current-board, .current-section {
+    padding: 8px 12px;
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.current-board:hover, .current-section:hover {
+    background: #f0f0f0;
+}
+
+.chevron {
+    font-size: 12px;
+    color: #666;
+}
+
+.board-menu, .section-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1002;
+    margin-top: 4px;
+}
+
+.board-menu.active, .section-menu.active {
+    display: block;
+}
+
+.board-menu-header, .section-menu-header {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.board-menu-header h3, .section-menu-header h3 {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.new-board-btn, .new-section-btn {
+    background: none;
+    border: none;
+    color: #2980b9;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.new-board-btn:hover, .new-section-btn:hover {
+    background: #f0f7fb;
+}
+
+.board-search {
+    padding: 8px 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.search-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.board-list, .section-list {
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 8px 0;
+}
+
+.board-option, .section-option {
+    width: 100%;
+    padding: 8px 12px;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+    font-size: 14px;
+}
+
+.board-option:hover, .section-option:hover {
+    background: #f8f8f8;
+}
+
+.current-indicator {
+    color: #2980b9;
+}
+
+.source-link-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.source-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    background: #f8f8f8;
+    border-radius: 6px;
+    color: #2980b9;
+    text-decoration: none;
+    font-size: 14px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: all 0.2s;
+}
+
+.source-link:hover {
+    background: #f0f7fb;
+}
+
+.source-link.broken-link {
+    color: #e74c3c;
+    text-decoration: line-through;
+}
+
+.source-link.archived-link {
+    color: #8e44ad;
+}
+
+.url-status {
+    font-size: 12px;
+    margin-left: 4px;
+}
+
+.url-status.broken {
+    color: #e74c3c;
+}
+
+.url-status.archived {
+    color: #8e44ad;
+}
+
+.archive-alternative {
+    background: #f8f8f8;
+    padding: 12px;
+    border-radius: 6px;
+    border-left: 3px solid #8e44ad;
+}
+
+.archive-alternative p {
+    margin: 0 0 8px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.archive-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    background: #8e44ad;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.archive-link:hover {
+    background: #7d3c98;
+}
+
+.archive-icon {
+    font-size: 12px;
+}
+
+.pin-title {
+    margin: 0 0 24px 0;
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+}
+
+.pin-description label,
+.pin-notes label {
+    color: #666;
+    font-weight: 500;
+    margin-bottom: 8px;
+    display: block;
+    font-size: 14px;
+}
+
+.description-text {
+    background: #f8f8f8;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    min-height: 40px;
+    height: auto;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    margin-bottom: 16px;
+    flex-shrink: 0;
+}
+
+.pin-notes {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.notes-textarea {
+    min-height: 120px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    resize: vertical;
+    background: white;
+}
+
+.notes-textarea:focus {
+    outline: none;
+    border-color: #2980b9;
+    box-shadow: 0 0 0 2px rgba(41, 128, 185, 0.1);
+}
+
+.pin-actions {
+    padding: 16px 24px;
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    border-top: 1px solid #eee;
+    background: white;
+    position: relative;
+    z-index: 2;
+}
+
+.button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    transition: all 0.2s;
+}
+
+.primary-button {
+    background: #2980b9;
+    color: white;
+}
+
+.primary-button:hover {
+    background: #2472a4;
+}
+
+.secondary-button {
+    background: #f0f0f0;
+    color: #333;
+}
+
+.secondary-button:hover {
+    background: #e0e0e0;
+}
+
+.delete-button {
+    background: #f8f8f8;
+    color: #e74c3c;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    transition: all 0.2s;
+}
+
+.delete-button:hover {
+    background: #f0f0f0;
+    color: #c0392b;
+}
+
+/* Add styles for the confirmation dialog */
+.confirmation-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    z-index: 10001;
+    max-width: 400px;
+    width: 90%;
+}
+
+.confirmation-dialog h3 {
+    margin: 0 0 16px 0;
+    color: #333;
+}
+
+.confirmation-dialog p {
+    margin: 0 0 24px 0;
+    color: #666;
+}
+
+.confirmation-dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.confirmation-dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+}
+
+.no-source {
+    color: #666;
+    font-style: italic;
+    padding: 8px 12px;
+    background: #f8f8f8;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+}
+
+.title-buttons {
+    display: flex;
+    gap: 4px;
+}
+
+.editable-title {
+    margin: 0;
+    padding: 4px 8px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.editable-title[contenteditable="true"] {
+    border-color: #ddd;
+    background: #f8f8f8;
+}
+
+.edit-button, .save-button {
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    padding: 4px 8px;
+    font-size: 14px;
+    opacity: 0.6;
+    transition: all 0.2s;
+    border-radius: 4px;
+}
+
+.edit-button:hover, .save-button:hover {
+    opacity: 1;
+    background: #f0f0f0;
+}
+
+.save-button {
+    color: #2980b9;
+    font-weight: 500;
+}
+
+.link-status-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.url-status {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.url-status.live {
+    color: #27ae60;
+}
+
+.url-status.broken {
+    color: #e74c3c;
+}
+
+.url-status.archived {
+    color: #8e44ad;
+}
+
+.url-status.pending {
+    color: #f1c40f;
+}
+
+.archive-alternative {
+    margin-top: 12px;
+    padding: 12px;
+    background: #f8f8f8;
+    border-radius: 6px;
+    border-left: 3px solid #8e44ad;
+}
+
+.archive-alternative p {
+    margin: 0 0 8px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.archive-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    background: #8e44ad;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.archive-link:hover {
+    background: #7d3c98;
+}
+
+@media (max-width: 768px) {
+    .pin-lightbox {
+        padding: 0;
+    }
+
+    .pin-content {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .pin-body {
+        flex-direction: column;
+    }
+    
+    .pin-details {
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid #eee;
+    }
+    
+    .pin-image-container {
+        flex: none;
+        height: 40vh;
+        padding: 16px;
+    }
+    
+    .pin-details-content {
+        padding: 16px;
+    }
+    
+    .board-menu, .section-menu {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: auto;
+        margin: 0;
+        border-radius: 12px 12px 0 0;
+        max-height: 80vh;
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+    }
+    
+    .board-menu.active, .section-menu.active {
+        transform: translateY(0);
+    }
+    
+    .board-list, .section-list {
+        max-height: 50vh;
+    }
+}
+</style>
+
+<script>
+// Assign template variables to JS variables
+const pinId = {{ pin.id }};
+const boardId = {{ pin.board_id }};
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Board menu functionality
+    const boardSelector = document.querySelector('.board-selector');
+    const boardMenu = document.querySelector('.board-menu');
+    const currentBoard = document.querySelector('.current-board');
+    const boardSearch = document.querySelector('.board-search input');
+    const boardOptions = document.querySelectorAll('.board-option');
+
+    currentBoard.addEventListener('click', function() {
+        boardMenu.classList.toggle('active');
+    });
+
+    boardSearch.addEventListener('input', function(e) {
+        const searchTerm = e.target.value.toLowerCase();
+        boardOptions.forEach(option => {
+            const boardName = option.textContent.trim().toLowerCase();
+            option.style.display = boardName.includes(searchTerm) ? 'flex' : 'none';
+        });
+    });
+
+    boardOptions.forEach(option => {
+        option.addEventListener('click', function() {
+            const boardId = this.dataset.boardId;
+            moveToBoard(pinId, boardId);
+        });
+    });
+
+    // Section menu functionality
+    const sectionSelector = document.querySelector('.section-selector');
+    const sectionMenu = document.querySelector('.section-menu');
+    const currentSection = document.querySelector('.current-section');
+    const sectionOptions = document.querySelectorAll('.section-option');
+
+    currentSection.addEventListener('click', function() {
+        sectionMenu.classList.toggle('active');
+    });
+
+    sectionOptions.forEach(option => {
+        option.addEventListener('click', function() {
+            const sectionId = this.dataset.sectionId;
+            moveToSection(pinId, sectionId);
+        });
+    });
+
+    // Close menus when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!boardSelector.contains(e.target)) {
+            boardMenu.classList.remove('active');
+        }
+        if (!sectionSelector.contains(e.target)) {
+            sectionMenu.classList.remove('active');
+        }
+    });
+});
+
+function moveToBoard(pinId, boardId) {
+    fetch(`/move-pin/${pinId}`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ board_id: boardId })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            window.location.reload();
+        } else {
+            alert('Failed to move pin: ' + data.error);
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('An error occurred while moving the pin');
+    });
+}
+
+function moveToSection(pinId, sectionId) {
+    fetch(`/move-pin-to-section/${pinId}`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ section_id: sectionId })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            window.location.reload();
+        } else {
+            alert('Failed to move pin: ' + data.error);
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('An error occurred while moving the pin');
+    });
+}
+
+function savePin() {
+    const notes = document.querySelector('.notes-textarea').value;
+    
+    fetch(`/api/pins/${pinId}`, {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            notes: notes
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            window.location.reload();
+        } else {
+            alert('Failed to save changes: ' + data.error);
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('An error occurred while saving changes');
+    });
+}
+
+function confirmDelete() {
+    const dialog = document.createElement('div');
+    dialog.className = 'confirmation-dialog-overlay';
+    dialog.innerHTML = `
+        <div class="confirmation-dialog">
+            <h3>Delete Pin</h3>
+            <p>Are you sure you want to delete this pin? This action cannot be undone.</p>
+            <div class="confirmation-dialog-actions">
+                <button class="button secondary-button" onclick="this.closest('.confirmation-dialog-overlay').remove()">Cancel</button>
+                <button class="button primary-button" onclick="deletePin(pinId)">Delete</button>
+            </div>
+        </div>
+    `;
+    document.body.appendChild(dialog);
+}
+
+function deletePin(pinId) {
+    fetch(`/api/pins/${pinId}`, {
+        method: 'DELETE'
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            window.location.href = '/';
+        } else {
+            alert('Failed to delete pin: ' + data.error);
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('An error occurred while deleting the pin');
+    });
+}
+
+// Modal show/hide functions
+function showNewBoardForm() {
+    document.getElementById('newBoardModal').classList.add('active');
+    document.getElementById('newBoardName').value = '';
+    document.getElementById('newBoardName').focus();
+}
+
+function hideNewBoardForm() {
+    document.getElementById('newBoardModal').classList.remove('active');
+}
+
+function showNewSectionForm() {
+    document.getElementById('newSectionModal').classList.add('active');
+    document.getElementById('newSectionName').value = '';
+    document.getElementById('newSectionName').focus();
+}
+
+function hideNewSectionForm() {
+    document.getElementById('newSectionModal').classList.remove('active');
+}
+
+function createNewBoard() {
+    const boardName = document.getElementById('newBoardName').value.trim();
+    if (!boardName) {
+        alert('Please enter a board name');
+        return;
+    }
+    const createBtn = document.querySelector('#newBoardModal .primary-button');
+    createBtn.disabled = true;
+    createBtn.textContent = 'Creating...';
+    fetch('/create-board', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: boardName })
+    })
+    .then(res => res.json())
+    .then(data => {
+        if (data.success) {
+            hideNewBoardForm();
+            moveToBoard(pinId, data.board_id);
+        } else {
+            alert(data.error || 'Failed to create board');
+        }
+    })
+    .catch(() => alert('Failed to create board'))
+    .finally(() => {
+        createBtn.disabled = false;
+        createBtn.textContent = 'Create';
+    });
+}
+
+function createNewSection() {
+    const sectionName = document.getElementById('newSectionName').value.trim();
+    if (!sectionName) {
+        alert('Please enter a section name');
+        return;
+    }
+    const createBtn = document.querySelector('#newSectionModal .primary-button');
+    createBtn.disabled = true;
+    createBtn.textContent = 'Creating...';
+    fetch('/create-section', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ board_id: boardId, name: sectionName })
+    })
+    .then(res => res.json())
+    .then(data => {
+        if (data.success && data.section && data.section.id) {
+            hideNewSectionForm();
+            moveToSection(pinId, data.section.id);
+        } else {
+            alert(data.error || 'Failed to create section');
+        }
+    })
+    .catch(() => alert('Failed to create section'))
+    .finally(() => {
+        createBtn.disabled = false;
+        createBtn.textContent = 'Create';
+    });
+}
+</script>
+{% endblock %} 

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431341521/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/animal-love",
+    "CustomFileName": "88101736431341521",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431341521",
+      "url": "https://www.pinterest.com/pin/88101736431341521/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "A Golden Sandwich",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "pasonotti",
+        "url": "https://www.pinterest.com/pasonotti/",
+        "name": "Stephanie Stephenson Longinotti"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/animal-love/",
+        "name": "Animal love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1f/07/76/1f0776190f943b260c89c7efc4c0b38a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440234217/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pinterest",
+    "CustomFileName": "88101736440234217",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440234217",
+      "url": "https://www.pinterest.com/pin/88101736440234217/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Pinterest Humor",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "gzm0m",
+        "url": "https://www.pinterest.com/gzm0m/",
+        "name": "marcia lynn"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pinterest/",
+        "name": "Pinterest",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9c/54/bc/9c54bc0700ba359f133c034576d4cdc3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

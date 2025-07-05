@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453613479/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736453613479",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453613479",
+      "url": "https://www.pinterest.com/pin/88101736453613479/",
+      "type": "pin",
+      "title": "Selfisolating",
+      "gridTitle": "Selfisolating",
+      "description": " ",
+      "link": "http://catsfineart.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 13,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "catsfineart",
+        "url": "https://www.pinterest.com/catsfineart/",
+        "name": "Cats Fine Art"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e2/e4/cb/e2e4cbeebc4e8557b7882211c8772af6.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/f2/40/16/f240165f64f264be15d466b3eb8a82ff.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

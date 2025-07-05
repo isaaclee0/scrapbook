@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449912790/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/dinner-with-hubby",
+    "CustomFileName": "88101736449912790",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449912790",
+      "url": "https://www.pinterest.com/pin/88101736449912790/",
+      "type": "pin",
+      "title": "Torta de Manzanas y Frambuesas",
+      "gridTitle": "Torta de Manzanas y Frambuesas",
+      "description": "También llamada invisible, por lo rápido que desaparece del plato 😂",
+      "link": "https://es.tastemade.com/videos/torta-invisible",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemadees",
+        "url": "https://www.pinterest.com/tastemadees/",
+        "name": "Tastemade Español"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/dinner-with-hubby/",
+        "name": "Dinner with hubby",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5e/d7/2e/5ed72e6ecad8558115089d974f1e7e82.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/4b/05/a1/4b05a1ab416015005871b903e513b9cf.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

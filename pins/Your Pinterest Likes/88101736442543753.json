@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442543753/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442543753",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442543753",
+      "url": "https://www.pinterest.com/pin/88101736442543753/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "reupholster that old office chair!",
+      "link": "http://www.u-createcrafts.com/search?updated-max=2010-05-14T23:07:00-06:00&max-results=5",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/dd/69/d6/dd69d6828e835a016f87363f5938ed73.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

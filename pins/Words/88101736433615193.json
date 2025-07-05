@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433615193/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736433615193",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433615193",
+      "url": "https://www.pinterest.com/pin/88101736433615193/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Love this",
+      "link": "https://fbcdn-photos-d-a.akamaihd.net/hphotos-ak-ash4/1001047_592405714113949_1636113721_n.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a2/7d/23/a27d2373ab359fbe161a41002b54d193.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

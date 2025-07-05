@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452495960/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/springer-spaniels",
+    "CustomFileName": "88101736452495960",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452495960",
+      "url": "https://www.pinterest.com/pin/88101736452495960/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Springer Spaniel",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "austins28",
+        "url": "https://www.pinterest.com/austins28/",
+        "name": "Caustin"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/springer-spaniels/",
+        "name": "Springer Spaniels",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e9/d4/07/e9d40705716b8466172e83f0aa81ddad.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

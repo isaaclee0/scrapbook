@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442177818/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442177818",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442177818",
+      "url": "https://www.pinterest.com/pin/88101736442177818/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "PajasPUNTOcom - Piter-G (letra)",
+      "description": "so good!",
+      "link": "http://www.youtube.com/watch?v=q78BpntGgtY",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "cinnersaved",
+        "url": "https://www.pinterest.com/cinnersaved/",
+        "name": "Cindy Ramm-Doucette"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/db/cf/7f/dbcf7f13668329bd97795845319aeea3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

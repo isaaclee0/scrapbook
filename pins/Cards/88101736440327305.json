@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440327305/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cards",
+    "CustomFileName": "88101736440327305",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440327305",
+      "url": "https://www.pinterest.com/pin/88101736440327305/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Spring is Here",
+      "description": "Spring is Here",
+      "link": "http://www.flickr.com/photos/danielle_renee/8610734471/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cards/",
+        "name": "Cards",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/45/51/ec/4551ec131eea010c4480f035694a7ad3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

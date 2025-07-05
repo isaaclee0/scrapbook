@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447248265/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-market",
+    "CustomFileName": "88101736447248265",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447248265",
+      "url": "https://www.pinterest.com/pin/88101736447248265/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Google",
+      "description": "Cute French stall",
+      "link": "http://google.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "teakandthyme",
+        "url": "https://www.pinterest.com/teakandthyme/",
+        "name": "Teak & Thyme"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-market/",
+        "name": "Cottage Market",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/aa/e5/58/aae5588a038d073da84495995b7e47da.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

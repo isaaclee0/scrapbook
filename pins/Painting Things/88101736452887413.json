@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452887413/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painting-things",
+    "CustomFileName": "88101736452887413",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452887413",
+      "url": "https://www.pinterest.com/pin/88101736452887413/",
+      "type": "pin",
+      "title": "Painting bannister DIY",
+      "gridTitle": "Painting bannister DIY",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "gabriellemoussa1136",
+        "url": "https://www.pinterest.com/gabriellemoussa1136/",
+        "name": "Gabrielle Nicole Rhodes"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painting-things/",
+        "name": "Painting things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/09/dc/bd/09dcbd7a875462ec27191dd5532d12ff.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/b4/5d/aa/b45daa60b4c5bdecf3b2e2ae4ff2e850.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

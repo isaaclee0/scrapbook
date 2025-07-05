@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433732530/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/how-it-was",
+    "CustomFileName": "88101736433732530",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433732530",
+      "url": "https://www.pinterest.com/pin/88101736433732530/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Old days",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "carveapath",
+        "url": "https://www.pinterest.com/carveapath/",
+        "name": "Rose Wenzel"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/how-it-was/",
+        "name": "How it was..",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8e/b2/1b/8eb21b0cb34275d67a12048fb2d89822.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

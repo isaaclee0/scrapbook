@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452779557/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/migraine",
+    "CustomFileName": "88101736452779557",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452779557",
+      "url": "https://www.pinterest.com/pin/88101736452779557/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "lucyluloves",
+        "url": "https://www.pinterest.com/lucyluloves/",
+        "name": "Lucy Harrison"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/migraine/",
+        "name": "Migraine",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/51/54/a2/5154a2969ce568845052f019db56d879.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

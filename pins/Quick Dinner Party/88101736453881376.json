@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453881376/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/quick-dinner-party",
+    "CustomFileName": "88101736453881376",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453881376",
+      "url": "https://www.pinterest.com/pin/88101736453881376/",
+      "type": "pin",
+      "title": "Rice Paper Flower Chips",
+      "gridTitle": "Rice Paper Flower Chips",
+      "description": " ",
+      "link": "https://www.tiktok.com/@vvnjiejie?lang=en",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "mzmanerz",
+        "url": "https://www.pinterest.com/mzmanerz/",
+        "name": "Mz.Manerz"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/quick-dinner-party/",
+        "name": "Quick Dinner Party",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0b/0c/5e/0b0c5ee50c3a9cf7845ad561db8a6d8b.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/53/f8/e2/53f8e2e0beb83f8b55b3efdb7e1b8461.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

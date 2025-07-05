@@ -1,0 +1,56 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451531989/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736451531989",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451531989",
+      "url": "https://www.pinterest.com/pin/88101736451531989/",
+      "type": "pin",
+      "title": "Quoted from unknown🌸 ",
+      "gridTitle": "Quoted from unknown🌸",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 3,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "AbigayleFaith",
+        "url": "https://www.pinterest.com/AbigayleFaith/",
+        "name": "Abigayle Harrison"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0d/09/19/0d091914033f30cb469c97cdff4ac120.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/e0/17/5f/e0175fda7fdd43c4ddab83247a9cca71.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/8a/95/56/8a9556b9fa96c67dd6d08b4440a31eaf.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

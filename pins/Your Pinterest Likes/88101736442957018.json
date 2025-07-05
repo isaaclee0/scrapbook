@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442957018/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442957018",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442957018",
+      "url": "https://www.pinterest.com/pin/88101736442957018/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "This Weeks Loves- Oct 28 | DIY Glamour",
+      "description": " ",
+      "link": "http://www.diyglamour.com/2013/10/this-weeks-loves-oct-28/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/62/b2/35/62b2353befd23935224a8bcd1afb702f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445955557/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736445955557",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445955557",
+      "url": "https://www.pinterest.com/pin/88101736445955557/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "0aae76fc89c7d52bfe4c6d4952b052a3.jpg 540×720 pixels",
+      "link": "http://media-cache-ak0.pinimg.com/1200x/0a/ae/76/0aae76fc89c7d52bfe4c6d4952b052a3.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e5/7c/7f/e57c7f29d7389434fd0797de249c8bef.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

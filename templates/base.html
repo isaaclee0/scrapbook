@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrapbook</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .nav-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            z-index: 1000;
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-center {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .nav-right {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-icon {
+            font-size: 24px;
+            color: #333;
+            cursor: pointer;
+            transition: color 0.2s;
+            text-decoration: none;
+        }
+
+        .nav-icon:hover {
+            color: #2980b9;
+        }
+
+        .nav-center .logo {
+            font-family: 'Funnel Display', sans-serif !important;
+            font-size: 28px;
+            font-weight: 500;
+            color: #333;
+            text-decoration: none;
+            margin-right: 20px;
+            letter-spacing: -0.5px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            margin-top: 80px; /* Add space for the nav bar */
+            margin-bottom: 100px; /* Add space for the search bar */
+        }
+
+        .add-button {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            font-size: 30px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s;
+            z-index: 1000;
+        }
+
+        .add-button:hover {
+            transform: scale(1.1);
+            background-color: #2472a4;
+        }
+
+        .pin-details {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .pin-details-content {
+            background: white;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 800px;
+            max-height: 90vh;
+            overflow-y: auto;
+            padding: 20px;
+        }
+
+        .pin-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        .pin-title {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        .pin-notes {
+            margin: 20px 0;
+        }
+
+        .pin-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .button {
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            border: none;
+        }
+
+        .primary-button {
+            background: #2980b9;
+            color: white;
+        }
+
+        .primary-button:hover {
+            background: #2472a4;
+        }
+
+        .secondary-button {
+            background: #f5f5f5;
+            border: 1px solid #ddd;
+        }
+
+        .search-container {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 300px;
+            background: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: width 0.3s ease;
+            z-index: 999;
+        }
+
+        .search-container:hover {
+            width: 400px;
+        }
+
+        .search-container form {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .search-container input[type="text"] {
+            flex: 1;
+            border: none;
+            outline: none;
+            padding: 5px;
+            font-size: 14px;
+            background: transparent;
+        }
+
+        .search-container input[type="submit"] {
+            background: #2980b9;
+            color: white;
+            border: none;
+            padding: 5px 15px;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.2s;
+        }
+
+        .search-container input[type="submit"]:hover {
+            background: #2472a4;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-left">
+            <a href="/" class="nav-icon" title="Home">🏠</a>
+            <a href="javascript:history.back()" class="nav-icon" title="Back">↩️</a>
+            <a href="/random" class="nav-icon" title="Random Pin">🎲</a>
+        </div>
+        <div class="nav-center">
+            <a href="/" class="logo">scrapbook.io</a>
+        </div>
+        <div class="nav-right">
+            <!-- Add any right-side navigation items here -->
+        </div>
+    </nav>
+
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+
+    <button class="add-button" onclick="showAddContentDialog()">+</button>
+
+    <div class="search-container">
+        <form action="{{ url_for('search') }}" method="get">
+            <input type="text" name="q" placeholder="Search pins..." autocomplete="off">
+            <input type="submit" value="Go">
+        </form>
+    </div>
+
+    <script>
+        function showAddContentDialog() {
+            window.location.href = '/add-content';
+        }
+
+        function showPinDetails(pinId) {
+            fetch(`/pin/${pinId}`)
+                .then(response => response.json())
+                .then(pin => {
+                    const detailsHtml = `
+                        <div class="pin-details">
+                            <div class="pin-details-content">
+                                <img src="${pin.image_url}" alt="${pin.title}" class="pin-image">
+                                <h2 class="pin-title">${pin.title}</h2>
+                                <div class="pin-notes">
+                                    <textarea id="pin-notes" style="width: 100%; min-height: 100px;">${pin.notes || ''}</textarea>
+                                </div>
+                                <div class="pin-actions">
+                                    <button class="button secondary-button" onclick="closePinDetails()">Close</button>
+                                    <button class="button primary-button" onclick="savePinChanges(${pinId})">Save Changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    document.body.insertAdjacentHTML('beforeend', detailsHtml);
+                });
+        }
+
+        function closePinDetails() {
+            const details = document.querySelector('.pin-details');
+            if (details) {
+                details.remove();
+            }
+        }
+
+        function savePinChanges(pinId) {
+            const notes = document.getElementById('pin-notes').value;
+            
+            fetch(`/update-pin/${pinId}`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    notes: notes
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    closePinDetails();
+                    window.location.reload();
+                }
+            });
+        }
+    </script>
+</body>
+</html>

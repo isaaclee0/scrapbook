@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453848283/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/dinner-with-hubby",
+    "CustomFileName": "88101736453848283",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453848283",
+      "url": "https://www.pinterest.com/pin/88101736453848283/",
+      "type": "pin",
+      "title": "Baked Brie with Cranberry Sauce",
+      "gridTitle": "Baked Brie with Cranberry Sauce",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "hungryhappens",
+        "url": "https://www.pinterest.com/hungryhappens/",
+        "name": "hungry happens"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/dinner-with-hubby/",
+        "name": "Dinner with hubby",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/ee/15/c1/ee15c13bd0dfae240afc9d067755291e.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

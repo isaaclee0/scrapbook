@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430728066/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736430728066",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430728066",
+      "url": "https://www.pinterest.com/pin/88101736430728066/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Elegasense.com",
+      "description": "Banana Upside Down Muffins #recipe",
+      "link": "http://elegasense.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d7/08/a0/d708a02435dfb1d72ae3432546f5a708.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

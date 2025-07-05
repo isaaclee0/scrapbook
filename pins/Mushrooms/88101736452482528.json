@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452482528/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/mushrooms",
+    "CustomFileName": "88101736452482528",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452482528",
+      "url": "https://www.pinterest.com/pin/88101736452482528/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Mushroom stroganoff recipe",
+      "description": "Rich and savoury mushroom stroganoff with rice is the perfect comfort food.",
+      "link": "http://www.bbc.co.uk/food/recipes/mushroom_stroganoff_with_83256",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/mushrooms/",
+        "name": "Mushrooms",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d7/e5/53/d7e553468eda2f436a958eba2cc7317d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

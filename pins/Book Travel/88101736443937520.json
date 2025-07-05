@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443937520/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/book-travel",
+    "CustomFileName": "88101736443937520",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443937520",
+      "url": "https://www.pinterest.com/pin/88101736443937520/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "23 Darling Buds of May country.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "geoffbrennan",
+        "url": "https://www.pinterest.com/geoffbrennan/",
+        "name": "Geoff Brennan"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/book-travel/",
+        "name": "Book Travel!",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f9/09/c4/f909c4fcb84fc55e3483440a06e79751.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

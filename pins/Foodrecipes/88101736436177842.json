@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436177842/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736436177842",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436177842",
+      "url": "https://www.pinterest.com/pin/88101736436177842/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Pasty Pie",
+      "description": "The English Kitchen: Pasty Pie",
+      "link": "http://theenglishkitchen.blogspot.com/2010/01/pasty-pie.html?m=1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ff/17/09/ff170942a9bea639e6a87aa5da7658c8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

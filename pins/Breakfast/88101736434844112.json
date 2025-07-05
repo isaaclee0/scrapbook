@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434844112/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/breakfast",
+    "CustomFileName": "88101736434844112",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434844112",
+      "url": "https://www.pinterest.com/pin/88101736434844112/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Monterey Sausage Pie",
+      "description": "Monterey Sausage Pie",
+      "link": "http://tastykitchen.com/recipes/main-courses/monterey-sausage-pie/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/breakfast/",
+        "name": "Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/86/1e/68/861e68131a8e19a75a1bf1cefe2933f2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

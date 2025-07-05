@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441443274/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736441443274",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441443274",
+      "url": "https://www.pinterest.com/pin/88101736441443274/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Beautiful picture! #nature #cat @Henrik Horak Gray",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "michelemcabral",
+        "url": "https://www.pinterest.com/michelemcabral/",
+        "name": "Michele Cabral"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e8/73/93/e87393cd5082634e31740890e8a745aa.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

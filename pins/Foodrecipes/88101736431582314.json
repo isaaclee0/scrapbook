@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431582314/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736431582314",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431582314",
+      "url": "https://www.pinterest.com/pin/88101736431582314/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Caprese Ravioli with Roasted Tomato Pesto Sauce",
+      "description": "Caprese Ravioli with Roasted Tomato Pesto Sauce",
+      "link": "http://www.prouditaliancook.com/2012/04/caprese-ravioli-with-roasted-tomato.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/46/9d/d6/469dd6a44c218054df79548a843a2046.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

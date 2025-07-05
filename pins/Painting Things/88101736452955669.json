@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452955669/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painting-things",
+    "CustomFileName": "88101736452955669",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452955669",
+      "url": "https://www.pinterest.com/pin/88101736452955669/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 23,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "corinnemachon",
+        "url": "https://www.pinterest.com/corinnemachon/",
+        "name": "Corinne MacHon Two mice Cottage"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painting-things/",
+        "name": "Painting things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4e/ae/ce/4eaece0601111365ff84eff61543494d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

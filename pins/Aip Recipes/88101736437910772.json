@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437910772/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736437910772",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437910772",
+      "url": "https://www.pinterest.com/pin/88101736437910772/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Creamy Pulled Pork Soup - meatified",
+      "description": "Creamy Pulled Pork Soup from http://meatified.com (AIP, Whole30, Paleo, Coconut Free)",
+      "link": "http://meatified.com/creamy-pulled-pork-soup-aip/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/75/7d/61/757d612789c72374ee94a36216bc4916.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

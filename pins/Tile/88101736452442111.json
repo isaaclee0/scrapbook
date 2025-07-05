@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452442111/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tile",
+    "CustomFileName": "88101736452442111",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452442111",
+      "url": "https://www.pinterest.com/pin/88101736452442111/",
+      "type": "pin",
+      "title": "Perfectly cut floor tile",
+      "gridTitle": "Perfectly cut floor tile",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "rigalshop",
+        "url": "https://www.pinterest.com/rigalshop/",
+        "name": "RigalShop"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tile/",
+        "name": "Tile",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e8/cf/59/e8cf59461d0df724d7df9e32cb0d36dc.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/2a/11/4e/2a114eccae8fa34170f5ae6cdbc00828.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

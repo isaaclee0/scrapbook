@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453521945/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/dinner-with-hubby",
+    "CustomFileName": "88101736453521945",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453521945",
+      "url": "https://www.pinterest.com/pin/88101736453521945/",
+      "type": "pin",
+      "title": "Brie and cranberry crinkle pie",
+      "gridTitle": "Brie and cranberry crinkle pie",
+      "description": " ",
+      "link": "https://www.taste.com.au/recipes/brie-cranberry-crinkle-pie-recipe/n1qyvt0m",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "teamtaste",
+        "url": "https://www.pinterest.com/teamtaste/",
+        "name": "taste.com.au"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/dinner-with-hubby/",
+        "name": "Dinner with hubby",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/14/60/4c/14604c59dbde193ab0d01811bf39cfab.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/45/8c/46/458c46779ad72a45d252bc2cae61ac2f.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

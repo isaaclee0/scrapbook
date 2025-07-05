@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442753491/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442753491",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442753491",
+      "url": "https://www.pinterest.com/pin/88101736442753491/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chop and Drop Mulch: 12 Plants to Grow for Green Mulch",
+      "description": "We've been told for YEARS that grazing animals are the *cause of desertification. Turns out, we've been wrong.",
+      "link": "http://www.attainable-sustainable.net/reversing-desertification/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/56/a9/af/56a9aff387d882d0b2da7bbe010c8496.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

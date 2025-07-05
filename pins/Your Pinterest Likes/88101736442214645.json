@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442214645/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442214645",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442214645",
+      "url": "https://www.pinterest.com/pin/88101736442214645/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Permaculture magazine",
+      "description": "At Least 10 Uses for Wood Ash",
+      "link": "http://www.permaculture.co.uk/readers-solutions/least-10-uses-wood-ash",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1c/b8/b9/1cb8b9afd9da0fcb7cb215e273f37f65.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

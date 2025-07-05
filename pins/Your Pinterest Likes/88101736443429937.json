@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443429937/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443429937",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443429937",
+      "url": "https://www.pinterest.com/pin/88101736443429937/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "I have plans for the barn wood!!!",
+      "description": "love the table and baskets",
+      "link": "http://urbanfarmgirlandco.blogspot.com/2010/09/i-have-plans-for-barn-wood.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/41/14/6b/41146b6fd11f5eea49b8681ad056ccca.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

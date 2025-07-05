@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452318848/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/youth-food",
+    "CustomFileName": "88101736452318848",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452318848",
+      "url": "https://www.pinterest.com/pin/88101736452318848/",
+      "type": "pin",
+      "title": "Veggie cakes",
+      "gridTitle": "Veggie cakes",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "nealiewilliams",
+        "url": "https://www.pinterest.com/nealiewilliams/",
+        "name": "Nealie Williams"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/youth-food/",
+        "name": "Youth food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/39/ad/29/39ad294afeeb295100c5f4abc2f27dc3.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/95/2e/de/952ede0409dc277e9490f18cfb263f53.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

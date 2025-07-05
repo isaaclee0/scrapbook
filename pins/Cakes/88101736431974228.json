@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431974228/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736431974228",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431974228",
+      "url": "https://www.pinterest.com/pin/88101736431974228/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Espresso Mousse Brownies",
+      "description": "Espresso Mousse Brownies",
+      "link": "http://bakingdom.com/2012/08/espresso-mousse-brownies.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9b/a6/31/9ba631784253de1759f4862699e5c72e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438083217/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/japanese-food",
+    "CustomFileName": "88101736438083217",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438083217",
+      "url": "https://www.pinterest.com/pin/88101736438083217/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Homemade sushi rolls",
+      "description": "A step by step tutorial how to make sushi rolls at home. Click for recipe: http://irinascutebox.blogspot.com/2012/02/homemade-sushi-rolls.html",
+      "link": "http://irinascutebox.blogspot.com/2012/02/homemade-sushi-rolls.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "irinascutebox",
+        "url": "https://www.pinterest.com/irinascutebox/",
+        "name": "Irina's CuteBox"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/japanese-food/",
+        "name": "Japanese Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c7/65/e8/c765e8f75028346b246a97c839d779c4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

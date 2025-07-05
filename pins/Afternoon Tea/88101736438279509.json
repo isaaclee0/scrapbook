@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438279509/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736438279509",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438279509",
+      "url": "https://www.pinterest.com/pin/88101736438279509/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Tea party centerpiece!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "soniaevents",
+        "url": "https://www.pinterest.com/soniaevents/",
+        "name": "Sonia Sharma Events"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/57/83/54/5783543c2a2e7910a1ea48455d69774a.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

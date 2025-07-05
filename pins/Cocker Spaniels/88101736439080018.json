@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439080018/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cocker-spaniels",
+    "CustomFileName": "88101736439080018",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439080018",
+      "url": "https://www.pinterest.com/pin/88101736439080018/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Sleeping cocker spaniel puppy",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "catherinelux",
+        "url": "https://www.pinterest.com/catherinelux/",
+        "name": "Catherine Lux"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cocker-spaniels/",
+        "name": "Cocker Spaniels",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e6/d8/e1/e6d8e1bc87d12135be2e522a8cf88eb8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

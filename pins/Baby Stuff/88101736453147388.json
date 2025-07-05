@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453147388/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/baby-stuff",
+    "CustomFileName": "88101736453147388",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453147388",
+      "url": "https://www.pinterest.com/pin/88101736453147388/",
+      "type": "pin",
+      "title": "Parenthood's ❤",
+      "gridTitle": "Parenthood's ❤",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "dewtreats1991",
+        "url": "https://www.pinterest.com/dewtreats1991/",
+        "name": "Dew Treats"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/baby-stuff/",
+        "name": "Baby stuff",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1b/5e/80/1b5e80da071fe1f50b0e4ed959387c39.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/26/13/b8/2613b89d3f63b204cdfb7256d9e80870.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

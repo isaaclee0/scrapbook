@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442856639/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442856639",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442856639",
+      "url": "https://www.pinterest.com/pin/88101736442856639/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "My Memories of \"The Secret Garden\"",
+      "description": " ",
+      "link": "http://climbingthedigitalmountain.blogspot.com/2011/12/memories-of-secret-garden.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/10/dd/9e/10dd9eb8e4bf906020b4c171201a4c6e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

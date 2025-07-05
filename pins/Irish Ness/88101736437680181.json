@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437680181/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/irish-ness",
+    "CustomFileName": "88101736437680181",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437680181",
+      "url": "https://www.pinterest.com/pin/88101736437680181/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Irish Cottage Welcome",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "romom1",
+        "url": "https://www.pinterest.com/romom1/",
+        "name": "Romom"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/irish-ness/",
+        "name": "Irish - ness",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d7/07/7c/d7077c948f4219f96655d7b59c7f0661.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

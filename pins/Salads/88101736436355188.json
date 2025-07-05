@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436355188/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/salads",
+    "CustomFileName": "88101736436355188",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436355188",
+      "url": "https://www.pinterest.com/pin/88101736436355188/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Kerryann’s Turkish-style couscous | Jamie Oliver",
+      "description": "Kerryann’s Turkish-style couscous | Jamie Oliver | Food | Jamie Oliver (UK)",
+      "link": "http://www.jamieoliver.com/recipes/recipe/kerryann-s-turkish-style-couscous",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/salads/",
+        "name": "Salads",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f4/63/f7/f463f76e713295748213f929b574cd98.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

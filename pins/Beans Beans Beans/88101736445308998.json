@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445308998/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/beans-beans-beans",
+    "CustomFileName": "88101736445308998",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445308998",
+      "url": "https://www.pinterest.com/pin/88101736445308998/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Recipes | KitchenAid",
+      "description": "Bean Recipes",
+      "link": "http://www.yummly.com/recipes?q=beans&noUserSettings=true&allowedIngredient=&allowedIngredient=lentils&excludedIngredient=&maxTotalTimeInSeconds=Any+time&flavor.salty=+&flavor.savory=+&flavor.sour=+&flavor.bitter=+&flavor.sweet=+&flavor.spicy=+&allowedAllergy=396%5EDairy-Free&allowedAllergy=397%5EEgg-Free&allowedAllergy=393%5EGluten-Free&allowedAllergy=400%5ESoy-Free&allowedAllergy=392%5EWheat-Free&nutrition.cholesterol=+&nutrition.fat=+&nutrition.calories=+&nutrition.carbs=+&imagesOnly=false&blogsOnly=false&myRecipesOnly=false&sortBy=relevance",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/beans-beans-beans/",
+        "name": "Beans beans beans!",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/03/8e/d6/038ed648a066beefb28c6a69d5f5be37.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

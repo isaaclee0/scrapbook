@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452342231/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/springer-spaniels",
+    "CustomFileName": "88101736452342231",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452342231",
+      "url": "https://www.pinterest.com/pin/88101736452342231/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Love and Devotion",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "redflora",
+        "url": "https://www.pinterest.com/redflora/",
+        "name": "Sunflower25"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/springer-spaniels/",
+        "name": "Springer Spaniels",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8e/e9/e8/8ee9e8b9193dc5b2d9e6b8742ae1e8a0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

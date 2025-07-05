@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442804249/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442804249",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442804249",
+      "url": "https://www.pinterest.com/pin/88101736442804249/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Daily Classic",
+      "description": "fabulous",
+      "link": "http://dailyclassic.blogspot.com/2009_11_01_archive.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/50/cd/a6/50cda6ea8164a26dacdf2855b5017c8c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

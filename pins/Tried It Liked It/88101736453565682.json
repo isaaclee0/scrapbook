@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453565682/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tried-it-liked-it",
+    "CustomFileName": "88101736453565682",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453565682",
+      "url": "https://www.pinterest.com/pin/88101736453565682/",
+      "type": "pin",
+      "title": "How to peel garlic 👌",
+      "gridTitle": "How to peel garlic 👌",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Androf_canada",
+        "url": "https://www.pinterest.com/Androf_canada/",
+        "name": "Androf | Best DIY & Ideas | Unique Drawing | Amazing Art"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tried-it-liked-it/",
+        "name": "Tried It Liked It",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4d/ea/28/4dea28298ac3ea53c886d54a0b752ca5.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/c6/13/fb/c613fbeda3f47765389deb6c19dddedf.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

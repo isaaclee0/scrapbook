@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442475562/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442475562",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442475562",
+      "url": "https://www.pinterest.com/pin/88101736442475562/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "安全检测 - 认证线路",
+      "description": "Lassie & Timmy - it was reruns but heck I didnt know that and it was good enough for me! Better than most rubbish nowadays",
+      "link": "http://www.dogfigurinesinfo.com/a-walk-down-dog-memory-lane/580-a-walk-down-dog-memory-lane-with-lassie/attachment/lassie-and-timmy/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/94/3e/e8/943ee8e887c1ded65c8be2089acefc68.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

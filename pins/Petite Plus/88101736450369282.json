@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450369282/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/petite-plus",
+    "CustomFileName": "88101736450369282",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450369282",
+      "url": "https://www.pinterest.com/pin/88101736450369282/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Page 5",
+      "description": "Frocks and Frou Frou",
+      "link": "http://frocksandfroufrou.com/page/5/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/petite-plus/",
+        "name": "Petite plus",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ec/be/e2/ecbee2171f4b7b86e6b61194c25b2bc1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

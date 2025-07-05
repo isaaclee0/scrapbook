@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435695556/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fun",
+    "CustomFileName": "88101736435695556",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435695556",
+      "url": "https://www.pinterest.com/pin/88101736435695556/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Internet's Most Asked Questions",
+      "description": "This is awesome!",
+      "link": "http://themetapicture.com/its-not-really-summer-until-you-get-one-of-these/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fun/",
+        "name": "Fun",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/98/12/de/9812defa9b8bc9c1408eaf21e67a463b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451124819/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/plate-racks",
+    "CustomFileName": "88101736451124819",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451124819",
+      "url": "https://www.pinterest.com/pin/88101736451124819/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "primwithlove",
+        "url": "https://www.pinterest.com/primwithlove/",
+        "name": "Prim With Love"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/plate-racks/",
+        "name": "Plate racks",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ef/f6/ef/eff6ef3164f940b14841a340be52ab75.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452496046/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/egg-free-recipes",
+    "CustomFileName": "88101736452496046",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452496046",
+      "url": "https://www.pinterest.com/pin/88101736452496046/",
+      "type": "pin",
+      "title": "eggless banana bread recip",
+      "gridTitle": "eggless banana bread recip",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "recipesmaster1",
+        "url": "https://www.pinterest.com/recipesmaster1/",
+        "name": "cooking recipes master"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/egg-free-recipes/",
+        "name": "Egg free recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c6/f5/95/c6f595bc8fc8dad2f722b07968f54a84.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/29/f3/81/29f3810d1f91c61c2a239506bf4bf97f.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

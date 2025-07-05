@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444497414/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736444497414",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444497414",
+      "url": "https://www.pinterest.com/pin/88101736444497414/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Recipes from Milkbar Memories: Musk sticks, burger with the lot and chocolate ice cream",
+      "description": "Make your own musk sticks.",
+      "link": "http://www.goodfood.com.au/recipes/recipes-from-milkbar-memories-musk-sticks-burger-with-the-lot-and-chocolate-ice-cream-20160515-gog7cm",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bc/68/2c/bc682cf56618bec31e2d0c352103a48c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

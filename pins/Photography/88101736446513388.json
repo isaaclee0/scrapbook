@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446513388/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/photography",
+    "CustomFileName": "88101736446513388",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446513388",
+      "url": "https://www.pinterest.com/pin/88101736446513388/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Elena Shumilova's Photos & Galleries | 500px",
+      "description": "***",
+      "link": "https://500px.com/elenashumilova",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/photography/",
+        "name": "Photography",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cc/f8/19/ccf81920a7150f86a3f73cb510e269ed.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

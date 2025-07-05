@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436011608/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/japanese-food",
+    "CustomFileName": "88101736436011608",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436011608",
+      "url": "https://www.pinterest.com/pin/88101736436011608/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Hinamatsuri sushi",
+      "description": "sushi",
+      "link": "http://www.flickr.com/photos/bananagranola/2307196668/in/photostream/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/japanese-food/",
+        "name": "Japanese Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e2/16/fd/e216fd2018aefe1bb1b1065e21216f5a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

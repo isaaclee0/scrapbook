@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450581538/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736450581538",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450581538",
+      "url": "https://www.pinterest.com/pin/88101736450581538/",
+      "type": "pin",
+      "title": "Some stolen cuteness for you, because I think you all need it",
+      "gridTitle": "Some stolen cuteness for you, because I think you all need it",
+      "description": "Credit to u/secularflesh on reddit",
+      "link": "https://funnyfoto.org/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "funmemepics",
+        "url": "https://www.pinterest.com/funmemepics/",
+        "name": "FunnyFoto 😁"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7e/07/cb/7e07cb4c1ed345daa260d637338bc80c.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/eb/12/db/eb12db48611a9132ed7274cff8a46809.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

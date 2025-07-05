@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435930601/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736435930601",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435930601",
+      "url": "https://www.pinterest.com/pin/88101736435930601/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "kulfoto.com",
+      "description": "Kitteh with budgie friends",
+      "link": "http://www.kulfoto.com/new-pictures/40373/little-bird-friends",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/48/d6/78/48d678458753db41b8e33824d9ee2dc9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

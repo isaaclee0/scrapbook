@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449536284/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/rhubarb-recipes",
+    "CustomFileName": "88101736449536284",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449536284",
+      "url": "https://www.pinterest.com/pin/88101736449536284/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Rhubarb Creme Brulee",
+      "description": "Rhubarb Creme Brulee - Maggie Beer",
+      "link": "https://www.maggiebeer.com.au/recipes/oven-baked-ocean-trout-with-sourdough-thyme-and-lemon-stuffing",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Maggie_Beer",
+        "url": "https://www.pinterest.com/Maggie_Beer/",
+        "name": "Maggie Beer"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/rhubarb-recipes/",
+        "name": "Rhubarb Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c6/2c/df/c62cdfef6fc28a6a76768dd0c79061f3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434685228/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736434685228",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434685228",
+      "url": "https://www.pinterest.com/pin/88101736434685228/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Cat tree and walkway",
+      "description": "I want to do this one day for my cat.",
+      "link": "http://www.flickr.com/photos/r_knight/5449513888/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 9,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/99/3f/32/993f3201db7f682674a7083aa29cb51d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

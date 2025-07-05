@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442953093/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442953093",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442953093",
+      "url": "https://www.pinterest.com/pin/88101736442953093/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "47-mycottageofcontent",
+      "description": "My Cottage of Content: July 2008",
+      "link": "http://mycottageofcontent.blogspot.com/2008_07_01_archive.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/90/0d/41/900d41946f88eca8aaeaca73346a1187.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

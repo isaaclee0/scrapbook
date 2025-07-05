@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440220399/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736440220399",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440220399",
+      "url": "https://www.pinterest.com/pin/88101736440220399/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Lumber Jack cake. Kinda the cutest thing I've ever seen.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "cjaquez17",
+        "url": "https://www.pinterest.com/cjaquez17/",
+        "name": "Crystal Jaquez"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/22/f8/6f/22f86f88bee0da9c50e44a3bb5988245.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

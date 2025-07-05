@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445309656/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/apple-recipes",
+    "CustomFileName": "88101736445309656",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445309656",
+      "url": "https://www.pinterest.com/pin/88101736445309656/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Apple-Blackberry Cake",
+      "description": "The Ginger Cook: Apple-Blackberry Cake",
+      "link": "http://www.thegingercook.com/2012/05/apple-blackberry-cake.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/apple-recipes/",
+        "name": "Apple Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d1/2a/38/d12a3801f7af33f098ad16ab7b7a6832.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

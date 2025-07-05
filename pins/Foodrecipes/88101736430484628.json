@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430484628/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430484628",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430484628",
+      "url": "https://www.pinterest.com/pin/88101736430484628/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chocolate Buttercream Frosting | Savory Sweet Life",
+      "description": "some of the best chocolate buttercream frosting ever!",
+      "link": "http://savorysweetlife.com/2011/04/chocolate-buttercream-frosting/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/41/e1/cc/41e1cc38ff88ff13992b36a13fa78c8f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

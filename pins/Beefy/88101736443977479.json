@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443977479/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/beefy",
+    "CustomFileName": "88101736443977479",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443977479",
+      "url": "https://www.pinterest.com/pin/88101736443977479/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Pan-Seared Ribeye with Blue Cheese Butter",
+      "description": "Pan seared ribeye steak with rosemary and blue cheese butter.",
+      "link": "http://kitchenswagger.com/recipes/pan-seared-ribeye-steak-blue-cheese-butter-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Mirthmade",
+        "url": "https://www.pinterest.com/Mirthmade/",
+        "name": "MirthMade | Easy Recipes, Frugal Tips & Fun Crafts"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/beefy/",
+        "name": "Beefy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/57/8c/81/578c8116321079ea0a81fcfa4c8fa635.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

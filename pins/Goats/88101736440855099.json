@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440855099/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/goats",
+    "CustomFileName": "88101736440855099",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440855099",
+      "url": "https://www.pinterest.com/pin/88101736440855099/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Blog",
+      "description": "Suburban goats.",
+      "link": "http://goodlifepermaculture.com.au/blog/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/goats/",
+        "name": "Goats...",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/91/da/0e/91da0eee35ee928f42de89b2e5cdd9ad.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

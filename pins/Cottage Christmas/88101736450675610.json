@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450675610/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-christmas",
+    "CustomFileName": "88101736450675610",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450675610",
+      "url": "https://www.pinterest.com/pin/88101736450675610/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Home",
+      "description": "DIY Holiday Flannel Tin Cans",
+      "link": "http://hgtv.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "hgtv",
+        "url": "https://www.pinterest.com/hgtv/",
+        "name": "HGTV"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-christmas/",
+        "name": "Cottage Christmas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b0/d6/11/b0d611116101efd77bd5a1bb931279d4.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/fe/1a/e0/fe1ae06da2b93d0db59c2d7b17a633f8.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

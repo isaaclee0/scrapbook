@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452303142/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736452303142",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452303142",
+      "url": "https://www.pinterest.com/pin/88101736452303142/",
+      "type": "pin",
+      "title": "Easy Ham and Cheese Tea Sandwiches",
+      "gridTitle": "Easy Ham and Cheese Tea Sandwiches",
+      "description": " ",
+      "link": "https://www.ohhowcivilized.com/easy-ham-and-cheese-tea-sandwiches/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 22,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ohhowcivilized",
+        "url": "https://www.pinterest.com/ohhowcivilized/",
+        "name": "Oh, How Civilized | Tea Party Drinks & Food | Coffee Drinks"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/34/bf/26/34bf26e5cc1c2bba580518737ec87791.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/da/c7/9d/dac79d02819a878e516f693a4dd4cf4a.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

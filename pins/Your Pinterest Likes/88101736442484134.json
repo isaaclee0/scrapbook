@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442484134/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442484134",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442484134",
+      "url": "https://www.pinterest.com/pin/88101736442484134/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Royal Lounge",
+      "description": "Paradise!",
+      "link": "http://royal-lounge.tumblr.com/post/77274182093/luxyxoxo-http-luxyxoxo-tumblr-com",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5c/c2/65/5cc26518c6a3e4159741c9a2c701263c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

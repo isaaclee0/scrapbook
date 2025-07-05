@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434956532/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736434956532",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434956532",
+      "url": "https://www.pinterest.com/pin/88101736434956532/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Creamy Chicken & Mushroom Soup (dairy free & Paleo)",
+      "description": "Creamy Chicken & Mushroom Soup (dairy free & Paleo)",
+      "link": "http://www.allergyfreealaska.com/2013/04/23/creamy-chicken-mushroom-soup-dairy-free-paleo/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f3/1d/36/f31d36420a8fd48ada27ae0dc505ee47.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

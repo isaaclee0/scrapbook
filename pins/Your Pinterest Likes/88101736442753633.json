@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442753633/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442753633",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442753633",
+      "url": "https://www.pinterest.com/pin/88101736442753633/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Recipes.net",
+      "description": "Once a Month Shopping - Tips & Tricks",
+      "link": "http://www.blissfulanddomestic.com/2012/03/31-days-to-yumminess-grocery-shopping.html?showComment=1342681248761",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ed/a3/e6/eda3e6e2b3fb4905ddf088dc816766fe.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

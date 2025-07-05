@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441768130/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fun",
+    "CustomFileName": "88101736441768130",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441768130",
+      "url": "https://www.pinterest.com/pin/88101736441768130/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Picnic in the park",
+      "link": "http://everythingyouaskme.tumblr.com/post/22008175650",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fun/",
+        "name": "Fun",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/23/67/43/236743125c565332da442506cda7a477.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

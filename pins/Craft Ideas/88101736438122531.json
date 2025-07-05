@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438122531/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/craft-ideas",
+    "CustomFileName": "88101736438122531",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438122531",
+      "url": "https://www.pinterest.com/pin/88101736438122531/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "diy on Tumblr",
+      "description": "one of the best diy site ever!",
+      "link": "http://www.tumblr.com/tagged/diy",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/craft-ideas/",
+        "name": "Craft Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b3/70/21/b3702123774cb2ac70ff184f3071a2a6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

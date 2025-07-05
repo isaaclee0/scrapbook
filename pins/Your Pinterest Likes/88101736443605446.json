@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443605446/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443605446",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443605446",
+      "url": "https://www.pinterest.com/pin/88101736443605446/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "green sweater with striped shirt and add   purple as an accent color-total teacher outfit. like this idea, but don't have   the wardrobe to do it.",
+      "link": "http://laviepetite.blogspot.com/2011/02/jade.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/aa/4b/f1/aa4bf155d7b60b7754dbdd9d526f78d4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

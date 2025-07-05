@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452293948/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736452293948",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452293948",
+      "url": "https://www.pinterest.com/pin/88101736452293948/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "The Ancient Paths",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "sh4l0m",
+        "url": "https://www.pinterest.com/sh4l0m/",
+        "name": "Shalom Dickson"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bb/9d/af/bb9daf69efe9dd5ea19dd6f37efaad94.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

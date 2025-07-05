@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430542658/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/craft-ideas",
+    "CustomFileName": "88101736430542658",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430542658",
+      "url": "https://www.pinterest.com/pin/88101736430542658/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Make a chandelier out of plastic spoons and a plastic bottle.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "mvzl",
+        "url": "https://www.pinterest.com/mvzl/",
+        "name": "Mai Lee"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/craft-ideas/",
+        "name": "Craft Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2a/59/32/2a5932c8042c642ca6b97496540ea786.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

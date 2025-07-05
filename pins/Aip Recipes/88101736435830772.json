@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435830772/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736435830772",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435830772",
+      "url": "https://www.pinterest.com/pin/88101736435830772/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Seafood Chowder – Gluten Free, Dairy Free, AIP, Paleo",
+      "description": "Seafood Chowder - Gluten Free, Dairy Free, AIP, Paleo",
+      "link": "http://salixisme.wordpress.com/2014/03/28/seafood-chowder-gluten-free-dairy-free-aip-paleo/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a0/a5/6c/a0a56cb176af2e47f7186c06820fbaaf.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

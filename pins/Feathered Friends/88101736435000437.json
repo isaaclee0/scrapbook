@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435000437/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/feathered-friends",
+    "CustomFileName": "88101736435000437",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435000437",
+      "url": "https://www.pinterest.com/pin/88101736435000437/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "hummingbirds",
+      "link": "https://scontent-a-fra.xx.fbcdn.net/hphotos-prn1/t1/q71/1551599_743527285668285_954038215_n.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/feathered-friends/",
+        "name": "Feathered friends",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5b/d2/64/5bd2645159084b22308b9ae8804b384e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

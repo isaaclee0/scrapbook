@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440896076/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pallets",
+    "CustomFileName": "88101736440896076",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440896076",
+      "url": "https://www.pinterest.com/pin/88101736440896076/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Sooo gonna do this.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pallets/",
+        "name": "Pallets...",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/53/bc/ad/53bcad319b1b4447c0f83c45145cfd6c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

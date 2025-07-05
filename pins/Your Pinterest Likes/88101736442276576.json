@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442276576/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442276576",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442276576",
+      "url": "https://www.pinterest.com/pin/88101736442276576/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "a quieter storm",
+      "description": "Croyde Bay, England",
+      "link": "http://aquieterstorm.tumblr.com/post/86132504979/villesdeurope-croyde-bay-england",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/84/28/06/8428066d4e3083e65cf86e41ef99f692.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

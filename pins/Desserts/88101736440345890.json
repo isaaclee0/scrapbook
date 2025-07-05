@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440345890/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736440345890",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440345890",
+      "url": "https://www.pinterest.com/pin/88101736440345890/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Raspberry Custard Cake Recipe - Shaye Elliott",
+      "description": "Raspberry Custard Cake | The Elliott Homestead (.com)",
+      "link": "http://theelliotthomestead.com/2014/07/raspberry-custard-cake-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "shayeelliott",
+        "url": "https://www.pinterest.com/shayeelliott/",
+        "name": "The Elliott Homestead"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ae/db/a6/aedba66eae55b0cc6e176ef57b2cba96.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

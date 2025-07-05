@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443729608/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443729608",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443729608",
+      "url": "https://www.pinterest.com/pin/88101736443729608/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Dancing Cow",
+      "description": "What's the best way to shine in a a follow up email? Be unexpectedly generous.",
+      "link": "http://whenthecowscomedancinghome.blogspot.com/2013_10_01_archive.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "thedailymuse",
+        "url": "https://www.pinterest.com/thedailymuse/",
+        "name": "The Muse"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e9/7f/bf/e97fbfa635b038e8b6297e331c0edcea.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

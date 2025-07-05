@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449580108/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/animal-love",
+    "CustomFileName": "88101736449580108",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449580108",
+      "url": "https://www.pinterest.com/pin/88101736449580108/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Caturday",
+      "description": " ",
+      "link": "http://imgur.com/gallery/k4rKnK4",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/animal-love/",
+        "name": "Animal love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d0/be/c3/d0bec33c68e8ad44a6c1cac4742b30ec.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

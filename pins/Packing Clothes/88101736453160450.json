@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453160450/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/packing-clothes",
+    "CustomFileName": "88101736453160450",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453160450",
+      "url": "https://www.pinterest.com/pin/88101736453160450/",
+      "type": "pin",
+      "title": "towel folding",
+      "gridTitle": "towel folding",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "carlyv03",
+        "url": "https://www.pinterest.com/carlyv03/",
+        "name": "carly"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/packing-clothes/",
+        "name": "Packing clothes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6a/38/36/6a383662e19b9b3d6eaae00948d9a663.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/73/3b/df/733bdf5b38d4fe329c997ea7659887ee.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

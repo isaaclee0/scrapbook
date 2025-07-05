@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445618010/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/how-it-was",
+    "CustomFileName": "88101736445618010",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445618010",
+      "url": "https://www.pinterest.com/pin/88101736445618010/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "the Gravitron",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "gina66",
+        "url": "https://www.pinterest.com/gina66/",
+        "name": "Gina M."
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/how-it-was/",
+        "name": "How it was..",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a8/66/92/a8669283c586a29c60482c14d55678b5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

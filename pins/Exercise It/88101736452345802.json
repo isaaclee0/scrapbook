@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452345802/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/exercise-it",
+    "CustomFileName": "88101736452345802",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452345802",
+      "url": "https://www.pinterest.com/pin/88101736452345802/",
+      "type": "pin",
+      "title": "5 Pilates Moves for Better Balance",
+      "gridTitle": "5 Pilates Moves for Better Balance",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "kairastudios",
+        "url": "https://www.pinterest.com/kairastudios/",
+        "name": "Kaira Studios | Online Pilates Classes"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/exercise-it/",
+        "name": "Exercise it",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/fe/83/2b/fe832bbe249223e7d29ffe40750ab337.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

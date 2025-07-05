@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453147192/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/children",
+    "CustomFileName": "88101736453147192",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453147192",
+      "url": "https://www.pinterest.com/pin/88101736453147192/",
+      "type": "pin",
+      "title": "#funny #viral",
+      "gridTitle": "#funny #viral",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "moneywins123",
+        "url": "https://www.pinterest.com/moneywins123/",
+        "name": "Money Hacks!"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/children/",
+        "name": "Children",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/41/01/59/410159a53ce7cbc7385062cda8ac27b0.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

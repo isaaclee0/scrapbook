@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439260148/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736439260148",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439260148",
+      "url": "https://www.pinterest.com/pin/88101736439260148/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Gardening at Longmeadow",
+      "description": "Gardening at Longmeadow by Monty Don",
+      "link": "http://www.amazon.co.uk/dp/1849903786/ref=cm_sw_r_pi_dp_Yd35ub1G8TFVC",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/69/0a/e4/690ae4cb1f5a4f7cd87dd8bcfc5c079f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

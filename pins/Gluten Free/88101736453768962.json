@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453768962/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/gluten-free",
+    "CustomFileName": "88101736453768962",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453768962",
+      "url": "https://www.pinterest.com/pin/88101736453768962/",
+      "type": "pin",
+      "title": "How to Make Self-Rising Gluten Free Flour",
+      "gridTitle": "How to Make Self-Rising Gluten Free Flour",
+      "description": " ",
+      "link": "https://www.eatordrink.net/gluten-free-self-rising-flour-blend/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "eatordrink",
+        "url": "https://www.pinterest.com/eatordrink/",
+        "name": "Eat or Drink"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/gluten-free/",
+        "name": "Gluten Free",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/38/b2/28/38b228943685231454d8687e38d2f2da.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/v2/720p/bf/c4/51/bfc4510e1a51d85bba3ac000dc600e32_mobile.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439231498/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cute-kitchens",
+    "CustomFileName": "88101736439231498",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439231498",
+      "url": "https://www.pinterest.com/pin/88101736439231498/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Sagolika sinnen",
+      "description": "-",
+      "link": "http://sagolikasinnen.blogspot.se/?m=1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cute-kitchens/",
+        "name": "Cute Kitchens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/43/b4/ac/43b4ac632d64dea58b77757281340a1f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

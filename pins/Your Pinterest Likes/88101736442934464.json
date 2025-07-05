@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442934464/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442934464",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442934464",
+      "url": "https://www.pinterest.com/pin/88101736442934464/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "BlueHost.com",
+      "description": "pressure cooking tips",
+      "link": "http://www.itsoverflowing.com/2012/03/6-tips-to-speed-up-cooking.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e8/eb/8a/e8eb8a39686cd4051b33819bc8674d4a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

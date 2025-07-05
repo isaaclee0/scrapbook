@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433474080/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736433474080",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433474080",
+      "url": "https://www.pinterest.com/pin/88101736433474080/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Internet's Most Asked Questions",
+      "description": "Lolcats!",
+      "link": "http://themetapicture.com/if-not-for-sits/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/55/00/1d/55001d9cffc7562fc454c50628fc8b10.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437931942/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/german-food",
+    "CustomFileName": "88101736437931942",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437931942",
+      "url": "https://www.pinterest.com/pin/88101736437931942/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "German Apple Cake",
+      "description": "German Apple Cake",
+      "link": "http://www.marthastewart.com/343813/german-apple-cake",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/german-food/",
+        "name": "German Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/48/2f/13/482f13678055bfab438721a3500c3402.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

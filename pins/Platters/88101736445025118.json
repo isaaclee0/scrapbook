@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445025118/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/platters",
+    "CustomFileName": "88101736445025118",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445025118",
+      "url": "https://www.pinterest.com/pin/88101736445025118/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Free baked tomato, feta, garlic & thyme recipe | Photograph by Tasha Seccombe | Recipe by The Food Fox | https://www.theprettyblog.com/food/baked-tomato-with-feta-garlic-thyme/",
+      "link": "https://www.theprettyblog.com/food/baked-tomato-with-feta-garlic-thyme/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "theprettyblog",
+        "url": "https://www.pinterest.com/theprettyblog/",
+        "name": "The Pretty blog"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/platters/",
+        "name": "Platters",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ff/9f/7e/ff9f7e508e59222869fb64d2311dbe27.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

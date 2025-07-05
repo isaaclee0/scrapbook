@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442025593/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442025593",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442025593",
+      "url": "https://www.pinterest.com/pin/88101736442025593/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Ice Cream in a Bag",
+      "description": "Ice Cream in a bag! Everyone should do this with their kids!  Easy and yummy!",
+      "link": "http://www.relish.com/recipes/ice-cream-in-a-bag/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6e/9c/b1/6e9cb1661bf195b822e2f1fc0174dd56.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

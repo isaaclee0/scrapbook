@@ -1,0 +1,60 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453124820/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/vegan-dessertstreats",
+    "CustomFileName": "88101736453124820",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453124820",
+      "url": "https://www.pinterest.com/pin/88101736453124820/",
+      "type": "pin",
+      "title": "healthy small batch brownies (vegan, gluten free)!",
+      "gridTitle": "healthy small batch brownies (vegan, gluten free)!",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 4,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "nutritiousdelights",
+        "url": "https://www.pinterest.com/nutritiousdelights/",
+        "name": "Hannah | Nutritious Delights"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/vegan-dessertstreats/",
+        "name": "Vegan Desserts/Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/8b/d5/a3/8bd5a333878a104687c1b30316ca6f04.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/91/17/2e/91172ecf0b9d9a56f09ab6a5ae13cdbb.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/65/ae/fd/65aefd6d04527b77fe817b9b26e9e04b.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/2d/36/d9/2d36d9ea387a33556a9055df89b3a32e.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

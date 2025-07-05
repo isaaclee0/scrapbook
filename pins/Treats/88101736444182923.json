@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444182923/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736444182923",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444182923",
+      "url": "https://www.pinterest.com/pin/88101736444182923/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "fudge",
+      "description": "Peppermint Candy Recipe | Taste of Home Recipes by liza",
+      "link": "http://indulgy.com/post/FUgN4ArY61/peppermint-candy-recipe-taste-of-home-recipes",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d7/89/f5/d789f5efb516a2ff0ca5c3afce55198b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

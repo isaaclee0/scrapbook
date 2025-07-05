@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437945304/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736437945304",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437945304",
+      "url": "https://www.pinterest.com/pin/88101736437945304/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Grain Free Taco Shells {Paleo, Vegan}",
+      "description": "These Grain Free Taco Shells {Paleo, Vegan} are Autoimmune Paleo friendly! | predominantly paleo",
+      "link": "http://predominantlypaleo.com/grain-free-taco-shells-paleo-vegan/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/59/c4/ed/59c4ed60a46eb8cea15f8eaab8071175.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

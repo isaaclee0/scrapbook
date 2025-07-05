@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436252003/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cute-kitchens",
+    "CustomFileName": "88101736436252003",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436252003",
+      "url": "https://www.pinterest.com/pin/88101736436252003/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "kitchen island",
+      "description": "kitchen island",
+      "link": "http://www.flickr.com/photos/andrea98006/5328092891/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cute-kitchens/",
+        "name": "Cute Kitchens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f4/c0/3e/f4c03ec67bc32dd14cfa9e63a3f1cc02.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

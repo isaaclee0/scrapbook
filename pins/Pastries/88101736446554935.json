@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446554935/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pastries",
+    "CustomFileName": "88101736446554935",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446554935",
+      "url": "https://www.pinterest.com/pin/88101736446554935/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Easy Apple Strudel Recipe with Puff Pastry - Beyond Kimchee",
+      "description": "Apple Strudel using puff pastry - super easy but the pastry-to-filing ratio was off. Too much pastry",
+      "link": "http://www.beyondkimchee.com/apple-strudel/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pastries/",
+        "name": "pastries",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e0/32/2e/e0322e1f5550721accd1490dbbad0959.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

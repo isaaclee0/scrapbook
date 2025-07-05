@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430200831/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430200831",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430200831",
+      "url": "https://www.pinterest.com/pin/88101736430200831/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Cauliflower Crust Pizza",
+      "description": "Pizza crust made from cauliflower! This is INCREDIBLE...best discovery ever!!",
+      "link": "http://www.eat-drink-smile.com/2011/04/cauliflower-crust-pizza.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/18/46/ca/1846ca19172545bcbb6072f18da61668.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

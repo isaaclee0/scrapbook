@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452746024/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736452746024",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452746024",
+      "url": "https://www.pinterest.com/pin/88101736452746024/",
+      "type": "pin",
+      "title": "Hairstyle hack",
+      "gridTitle": "Hairstyle hack",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "megandres3",
+        "url": "https://www.pinterest.com/megandres3/",
+        "name": "Meg Andres"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f6/26/2e/f6262e9a6e2be9126e6c9ac2ec27185e.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/b0/e7/87/b0e7878908928c5a9b8d56aff824415a.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

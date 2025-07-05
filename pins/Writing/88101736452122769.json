@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452122769/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/writing",
+    "CustomFileName": "88101736452122769",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452122769",
+      "url": "https://www.pinterest.com/pin/88101736452122769/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Writing Tips",
+      "description": " ",
+      "link": "https://daily-writing-tips.tumblr.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/writing/",
+        "name": "Writing",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cb/39/08/cb39082a5e91503f26934aa93b12c439.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

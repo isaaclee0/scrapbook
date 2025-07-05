@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443282337/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443282337",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443282337",
+      "url": "https://www.pinterest.com/pin/88101736443282337/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Loading...",
+      "description": "Delicious Meliscious - a cooking blog by Melissa: Chicken Enchilada Dip Rollups",
+      "link": "http://www.deliciousmeliscious.com/2009/04/chicken-enchilada-dip-rollups.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/71/30/fd/7130fd50ce30c4b7787d0c7bcf875a22.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

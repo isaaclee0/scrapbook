@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451233813/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/for-linda",
+    "CustomFileName": "88101736451233813",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451233813",
+      "url": "https://www.pinterest.com/pin/88101736451233813/",
+      "type": "pin",
+      "title": "DIY Handmade Christmas Snowflake",
+      "gridTitle": "DIY Handmade Christmas Snowflake",
+      "description": " ",
+      "link": "https://www.tinkleo.com/goods/christmas/10047.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tinkleoshopping",
+        "url": "https://www.pinterest.com/tinkleoshopping/",
+        "name": "Tinkleo"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/for-linda/",
+        "name": "For Linda",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b2/71/bd/b271bd2e77339436b300abfe48214930.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/a2/6b/b1/a26bb1eaef70a17f185597780c493fd2.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

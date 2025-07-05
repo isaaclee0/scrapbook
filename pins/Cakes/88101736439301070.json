@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439301070/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736439301070",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439301070",
+      "url": "https://www.pinterest.com/pin/88101736439301070/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chocolate Cheesecake",
+      "description": "Chocolate Cheesecake",
+      "link": "http://homemadehooplah.com/recipes/chocolate-cheesecake/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "homemadehooplah",
+        "url": "https://www.pinterest.com/homemadehooplah/",
+        "name": "Chrisy | Homemade Hooplah"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/11/76/c6/1176c68b1509b1739aa55402be5f89f2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

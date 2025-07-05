@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435976901/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-fireplace",
+    "CustomFileName": "88101736435976901",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435976901",
+      "url": "https://www.pinterest.com/pin/88101736435976901/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": ".",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "missmaryeliza",
+        "url": "https://www.pinterest.com/missmaryeliza/",
+        "name": "Mary Fluaitt"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-fireplace/",
+        "name": "Cottage Fireplace",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/82/2a/63/822a6329a9fe56689742935856cf12da.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

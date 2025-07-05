@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443222104/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443222104",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443222104",
+      "url": "https://www.pinterest.com/pin/88101736443222104/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Just another WordPress site",
+      "description": "Ayana Resort and Spa, Bali",
+      "link": "http://www.luvimages.com/image/fancy_pool_design-2726.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c8/72/0e/c8720e82c9e2f3b04b255cdedb238f1a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442361418/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442361418",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442361418",
+      "url": "https://www.pinterest.com/pin/88101736442361418/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "An entry from Emilialua",
+      "description": "Summer cottage by ImagesByClaire",
+      "link": "http://emilialua1.tumblr.com/post/15266543631/summer-cottage-by-imagesbyclaire-on-flickr",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0f/70/32/0f703210fb4ab91d6556aba665fceea8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

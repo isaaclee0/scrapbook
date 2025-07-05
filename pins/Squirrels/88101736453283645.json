@@ -1,0 +1,47 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453283645/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/squirrels",
+    "CustomFileName": "88101736453283645",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453283645",
+      "url": "https://www.pinterest.com/pin/88101736453283645/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 7,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/squirrels/",
+        "name": "Squirrels",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/74/b8/1f/74b81f892986637f4975e8f6dd413bb2.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/f3/12/9a/f3129a2dbabc4c2507040ccc05a7dafc.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

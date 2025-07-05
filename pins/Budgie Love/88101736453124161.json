@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453124161/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/budgie-love",
+    "CustomFileName": "88101736453124161",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453124161",
+      "url": "https://www.pinterest.com/pin/88101736453124161/",
+      "type": "pin",
+      "title": "Badetag ",
+      "gridTitle": "Badetag",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 75,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "8andrea5",
+        "url": "https://www.pinterest.com/8andrea5/",
+        "name": "Andrea Art and more"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/budgie-love/",
+        "name": "Budgie Love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/32/5e/ad/325ead16685bef9bc5bf4d45887c6124.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/01/67/b2/0167b2dac0bdd99a4f87c882764a50c5.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

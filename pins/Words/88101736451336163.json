@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451336163/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736451336163",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451336163",
+      "url": "https://www.pinterest.com/pin/88101736451336163/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Ricky Gervais on X",
+      "description": "Embedded image",
+      "link": "https://mobile.twitter.com/rickygervais/status/371677541473726464/photo/1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b6/93/1e/b6931e281a7aa87fc91ae826fe04abda.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

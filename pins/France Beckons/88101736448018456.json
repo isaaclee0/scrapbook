@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448018456/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/france-beckons",
+    "CustomFileName": "88101736448018456",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448018456",
+      "url": "https://www.pinterest.com/pin/88101736448018456/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": ".",
+      "link": "http://www.helloitsvalentine.fr/search?updated-max=2012-11-15T12:08:00%2B01:00&max-results=1&start=1&by-date=false",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/france-beckons/",
+        "name": "France Beckons",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cf/0f/01/cf0f012191642bbc9e202368bdd9497a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

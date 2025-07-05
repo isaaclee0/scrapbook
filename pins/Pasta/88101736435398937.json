@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435398937/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pasta",
+    "CustomFileName": "88101736435398937",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435398937",
+      "url": "https://www.pinterest.com/pin/88101736435398937/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Mushroom, onion, and garlic cream sauce for pasta",
+      "link": "http://sweetpaul.typepad.com/my_weblog/2011/09/recipe-monday-1.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pasta/",
+        "name": "Pasta",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/de/ec/89/deec899ae9174daa4862849d144acd94.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

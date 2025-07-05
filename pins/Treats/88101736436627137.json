@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436627137/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736436627137",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436627137",
+      "url": "https://www.pinterest.com/pin/88101736436627137/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "tiramisu squares",
+      "link": "http://sweetpaul.typepad.com/my_weblog/2009/07/r-1.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/15/b0/3f/15b03f3b3fab27660e32eecc5e0864fa.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

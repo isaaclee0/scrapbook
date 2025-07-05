@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453808911/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pastries",
+    "CustomFileName": "88101736453808911",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453808911",
+      "url": "https://www.pinterest.com/pin/88101736453808911/",
+      "type": "pin",
+      "title": "Berry Danishes! Follow us for more food and cooking recipes!",
+      "gridTitle": "Berry Danishes! Follow us for more food and cooking recipes!",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "TheExoticFoodie",
+        "url": "https://www.pinterest.com/TheExoticFoodie/",
+        "name": "TheExotic Foodie"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pastries/",
+        "name": "pastries",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/1c/74/34/1c7434dc2704102e50a5f2a5b65a66d7.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

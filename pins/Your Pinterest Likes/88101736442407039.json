@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442407039/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442407039",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442407039",
+      "url": "https://www.pinterest.com/pin/88101736442407039/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "20 Clever Hidden Storage Ideas 2023",
+      "description": "Hidden space behind a picture, http://hative.com/clever-hidden-storage-ideas/",
+      "link": "http://hative.com/clever-hidden-storage-ideas/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "designlovelife",
+        "url": "https://www.pinterest.com/designlovelife/",
+        "name": "Annie | Design Love Life"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e7/4c/fa/e74cfa62f4b1d236fa595b33cf8842f2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

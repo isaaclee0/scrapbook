@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439298714/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736439298714",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439298714",
+      "url": "https://www.pinterest.com/pin/88101736439298714/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Beatrix Potter's Gardening Life",
+      "description": "Lucindaville: Garden",
+      "link": "http://lucindaville.blogspot.com/2014/02/beatrix-potters-gardening-life.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9f/d8/fd/9fd8fdc7b95ed4391ae5fd0fbc52dd48.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

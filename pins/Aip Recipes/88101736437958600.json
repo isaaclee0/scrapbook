@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437958600/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736437958600",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437958600",
+      "url": "https://www.pinterest.com/pin/88101736437958600/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "My Paleo Autoimmune Protocol Birthday Cake",
+      "description": "My Paleo Autoimmune Protocol Birthday Cake",
+      "link": "http://comfortbites.blogspot.co.uk/2015/06/my-paleo-autoimmune-protocol-birthday.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cd/0c/15/cd0c15a1c47e09efc592fb62c708c4b9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

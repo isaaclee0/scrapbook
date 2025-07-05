@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446767237/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/step-inside",
+    "CustomFileName": "88101736446767237",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446767237",
+      "url": "https://www.pinterest.com/pin/88101736446767237/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Narrow hallway design",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "sarbjitk",
+        "url": "https://www.pinterest.com/sarbjitk/",
+        "name": "Sarbjeet Kaur"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/step-inside/",
+        "name": "Step Inside..",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/90/62/86/90628649449bdd98bd187421e0b9f2b0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

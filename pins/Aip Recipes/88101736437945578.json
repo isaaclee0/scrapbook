@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437945578/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736437945578",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437945578",
+      "url": "https://www.pinterest.com/pin/88101736437945578/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Private Site",
+      "description": "AIP low-FODMAP 1.0",
+      "link": "http://petra8paleo.wordpress.com/2014/03/23/aip-low-fodmap-food-list/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 10,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b1/3e/4d/b13e4d9e3f9adf3cc0f4a3b4e763d750.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

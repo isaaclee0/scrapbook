@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436240104/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/shelves",
+    "CustomFileName": "88101736436240104",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436240104",
+      "url": "https://www.pinterest.com/pin/88101736436240104/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "kitchen",
+      "link": "http://mysweetsavannah.blogspot.com/2011/11/organization-101.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/shelves/",
+        "name": "Shelves",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/75/80/14/758014a5ebb50a16bebea4d3c124a1d3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

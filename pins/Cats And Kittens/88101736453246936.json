@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453246936/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736453246936",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453246936",
+      "url": "https://www.pinterest.com/pin/88101736453246936/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Sarah on Twitter",
+      "description": "(3) Home / Twitter",
+      "link": "https://twitter.com/sosomanysarahs/status/1189216957570138113/photo/1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/af/ad/34/afad3474ca3673d4a9001f662e1efce2.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

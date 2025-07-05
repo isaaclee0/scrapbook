@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436268634/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painting-things",
+    "CustomFileName": "88101736436268634",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436268634",
+      "url": "https://www.pinterest.com/pin/88101736436268634/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "the transplant",
+      "description": "wall color",
+      "link": "http://www.flickr.com/photos/ethanollie/3802924286/in/set-72157621985263278/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painting-things/",
+        "name": "Painting things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ee/11/c3/ee11c305f52324f31b7e684e6ee16ecb.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

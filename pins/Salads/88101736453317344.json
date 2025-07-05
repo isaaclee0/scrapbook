@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453317344/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/salads",
+    "CustomFileName": "88101736453317344",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453317344",
+      "url": "https://www.pinterest.com/pin/88101736453317344/",
+      "type": "pin",
+      "title": "Next Level Roasted Vegetables",
+      "gridTitle": "Next Level Roasted Vegetables",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "erekav",
+        "url": "https://www.pinterest.com/erekav/",
+        "name": "Ereka Vetrini | Food Blogger"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/salads/",
+        "name": "Salads",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/97/0f/b7/970fb7c9bda9e5ff78dba8421e83514f.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/ea/b5/6d/eab56dace79ec90cf7d1a4381f59e6fc.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

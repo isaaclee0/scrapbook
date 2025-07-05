@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453086096/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/exercise-it",
+    "CustomFileName": "88101736453086096",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453086096",
+      "url": "https://www.pinterest.com/pin/88101736453086096/",
+      "type": "pin",
+      "title": "500 Steps Walk Routine for Beginners",
+      "gridTitle": "500 Steps Walk Routine for Beginners",
+      "description": " ",
+      "link": "http://justinagustin.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "justinagustin",
+        "url": "https://www.pinterest.com/justinagustin/",
+        "name": "Justin Agustin"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/exercise-it/",
+        "name": "Exercise it",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0e/b0/8a/0eb08a826fbf2afa157a05939e56b68e.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/b0/d2/87/b0d28769a74c6a4522bf7e703638bb08.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

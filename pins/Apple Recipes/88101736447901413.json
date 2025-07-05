@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447901413/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/apple-recipes",
+    "CustomFileName": "88101736447901413",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447901413",
+      "url": "https://www.pinterest.com/pin/88101736447901413/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Vanilla Layer Cake with Vanilla Buttercream Frosting",
+      "description": "Caramel Apple Cake with Apple Cider Frosting",
+      "link": "http://www.ahintofhoney.com/2009/10/caramel-apple-layer-cake-with-apple.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/apple-recipes/",
+        "name": "Apple Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cf/57/4e/cf574e412299fec8ff73302f63e0414c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

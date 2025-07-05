@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436546093/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potluck",
+    "CustomFileName": "88101736436546093",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436546093",
+      "url": "https://www.pinterest.com/pin/88101736436546093/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Food blog",
+      "description": "Cheesy Mushroom Lasagna",
+      "link": "http://foodblogon.tumblr.com/post/67571397474/in-my-mouth-cheesy-mushroom-lasagna",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potluck/",
+        "name": "Potluck",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f8/a8/53/f8a85344dc1450bb6fa3314e3fef0663.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442810299/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442810299",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442810299",
+      "url": "https://www.pinterest.com/pin/88101736442810299/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The $10, 30 minute, Valance",
+      "description": "$10 thirty minute valance.  Interesting web site: Starter Home to Dream Home (affordable, doable diy home renovation and decor ideas).",
+      "link": "http://starterhometodreamhome.blogspot.com/2010/05/10-30-minute-valance.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ef/18/89/ef18898edd66ac1d807ffd2c26108530.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

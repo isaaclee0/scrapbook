@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443287565/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443287565",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443287565",
+      "url": "https://www.pinterest.com/pin/88101736443287565/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Blogger",
+      "description": "Green Green Green",
+      "link": "http://asortoffairytalegirl.blogspot.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9d/15/91/9d1591a4f3603a1c1c90d90dec54325b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447663604/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/laundry",
+    "CustomFileName": "88101736447663604",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447663604",
+      "url": "https://www.pinterest.com/pin/88101736447663604/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "A Laundry Room You'll Actually Want To Hang Out In",
+      "description": "Every space, even a cramped laundry room, can be efficient and chic. Find out how to transform your own laundry room in this DIY video.",
+      "link": "https://www.tastemade.com/shows/weekend-refresh/weekend-refresh-204-quintels-laundry-room",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemade",
+        "url": "https://www.pinterest.com/tastemade/",
+        "name": "Tastemade"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/laundry/",
+        "name": "Laundry",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c5/e2/15/c5e215e8e98c10624131bf37c8c974f1.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/v2/720p/1b/ad/2a/1bad2ad4e2a2f8d266696e23bd24c180_mobile.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

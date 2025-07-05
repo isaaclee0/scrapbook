@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437029069/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736437029069",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437029069",
+      "url": "https://www.pinterest.com/pin/88101736437029069/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Bûche tiramisu",
+      "description": "Recette de Bûche tiramisu",
+      "link": "http://cuisine.notrefamille.com/recettes-cuisine/buche-tiramisu-52545.html#TvJxhWTXOlVGUrFt.32",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/dd/ff/94/ddff946ec52fabdc9505e30e9d95bb76.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

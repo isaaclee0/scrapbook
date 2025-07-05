@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433533410/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/inside-a-cottage",
+    "CustomFileName": "88101736433533410",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433533410",
+      "url": "https://www.pinterest.com/pin/88101736433533410/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Look at the old screen door.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "patsybanks",
+        "url": "https://www.pinterest.com/patsybanks/",
+        "name": "Patsy Banks"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/inside-a-cottage/",
+        "name": "Inside a cottage",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d9/1a/f8/d91af8f1b418d557932e51678d54970c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

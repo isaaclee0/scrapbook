@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442784427/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442784427",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442784427",
+      "url": "https://www.pinterest.com/pin/88101736442784427/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "19 Mind-Blowing Tricks Every iPhone And iPad User Should Know",
+      "description": "19 Mind-Blowing Tricks Every iPhone And iPad User Should Know",
+      "link": "http://www.buzzfeed.com/peggy/mind-blowing-tricks-every-iphone-and-ipad-user-should-kno?s=mobile",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1e/b2/56/1eb256d2a2b787140d4fe2e4ac166d64.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

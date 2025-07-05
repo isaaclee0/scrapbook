@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446776518/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736446776518",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446776518",
+      "url": "https://www.pinterest.com/pin/88101736446776518/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Easy pikelets",
+      "description": "Easy Pikelets - Best Recipes",
+      "link": "http://www.bestrecipes.com.au/recipe/easy-pikelets-L1305.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e5/2e/62/e52e627e53988d4acf1ad20d40937368.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

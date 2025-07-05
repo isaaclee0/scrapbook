@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441681813/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736441681813",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441681813",
+      "url": "https://www.pinterest.com/pin/88101736441681813/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Recipe for a Food + Flowers Fête",
+      "description": "Raspberry Pistachio Wedding cake with Marscapone icing",
+      "link": "http://camillestyles.com/uncategorized/recipe-for-a-food-flowers-fete/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3c/ca/84/3cca84accdcd8ee9fc2a90a7f43eeb38.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

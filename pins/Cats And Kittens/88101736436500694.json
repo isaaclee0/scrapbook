@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436500694/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736436500694",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436500694",
+      "url": "https://www.pinterest.com/pin/88101736436500694/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "New community features for Google Chat and an update on Currents",
+      "description": "Google+",
+      "link": "https://plus.google.com/u/0/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8c/1f/23/8c1f232e526610dd7273b72dc9791a66.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

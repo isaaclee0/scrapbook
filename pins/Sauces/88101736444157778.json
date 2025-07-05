@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444157778/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/sauces",
+    "CustomFileName": "88101736444157778",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444157778",
+      "url": "https://www.pinterest.com/pin/88101736444157778/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Awesome Sauce Recipe: The Condiment Your Tofu Will Love",
+      "description": "Everything Sauce",
+      "link": "http://olivesfordinner.com/2013/06/everything-sauce.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/sauces/",
+        "name": "Sauces",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9e/4d/34/9e4d34b20d3b8eb05d476df0d8bb29bf.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

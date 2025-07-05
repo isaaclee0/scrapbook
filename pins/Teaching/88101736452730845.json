@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452730845/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/teaching",
+    "CustomFileName": "88101736452730845",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452730845",
+      "url": "https://www.pinterest.com/pin/88101736452730845/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 12,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "jjpremier",
+        "url": "https://www.pinterest.com/jjpremier/",
+        "name": "Jennifer Cadwell Johns"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/teaching/",
+        "name": "Teaching",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6a/06/cb/6a06cb3c35c40084d9211b5d0e0ce20d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

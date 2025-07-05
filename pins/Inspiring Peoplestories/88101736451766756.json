@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451766756/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/inspiring-peoplestories",
+    "CustomFileName": "88101736451766756",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451766756",
+      "url": "https://www.pinterest.com/pin/88101736451766756/",
+      "type": "pin",
+      "title": "Delivering smiles and joy",
+      "gridTitle": "Delivering smiles and joy",
+      "description": " ",
+      "link": "https://funnyfoto.org/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "funmemepics",
+        "url": "https://www.pinterest.com/funmemepics/",
+        "name": "FunnyFoto 😁"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/inspiring-peoplestories/",
+        "name": "Inspiring people/stories",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/31/f3/dd/31f3dda018192e5d2bbf4fee0f14d243.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/e5/c3/b2/e5c3b27127609219ac6382349ac9b873.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

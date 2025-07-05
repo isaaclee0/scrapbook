@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441959638/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736441959638",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441959638",
+      "url": "https://www.pinterest.com/pin/88101736441959638/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "A fathers job is not to teach his  daughter how to be a lady. It's to teach her how a lady should be treated.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "quotedthoughts",
+        "url": "https://www.pinterest.com/quotedthoughts/",
+        "name": "Quotes 'n Thoughts"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0c/b9/6f/0cb96fa7b4ed39729720f1cf11dd4d6b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

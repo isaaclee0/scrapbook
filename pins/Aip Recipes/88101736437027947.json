@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437027947/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736437027947",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437027947",
+      "url": "https://www.pinterest.com/pin/88101736437027947/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Zucchini Cheese (AIP, SCD) - Gutsy By Nature",
+      "description": "Zucchini Cheese (Dairy Free, Nut Free) - Gutsy By Nature",
+      "link": "http://gutsybynature.com/2014/07/19/zucchini-cheese-dairy-free-nut-free/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/08/a9/1d/08a91d5f7eb74f672105923e233a989f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443707043/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443707043",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443707043",
+      "url": "https://www.pinterest.com/pin/88101736443707043/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Potpurri av pyssel",
+      "description": "~ hagbacken.blogspot.se ~: Potpurri av pyssel",
+      "link": "http://hagbacken.blogspot.no/2015/11/potpurri-av-pyssel.html?m=1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b4/3f/46/b43f46adb01c7a4d81efa8e72900f038.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

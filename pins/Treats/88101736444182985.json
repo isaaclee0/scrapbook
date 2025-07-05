@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444182985/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736444182985",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444182985",
+      "url": "https://www.pinterest.com/pin/88101736444182985/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chewy caramel cobbers",
+      "description": "Chewy caramel cobbers (SL - see comments as it needs to cook for longer than the recipe says.)",
+      "link": "http://www.taste.com.au/recipes/chewy-caramel-cobbers/ab770af1-e81b-4c6e-ac3d-e46f581808e1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a0/16/46/a016468bf4b3bf6d2ffbcc83fd772d29.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

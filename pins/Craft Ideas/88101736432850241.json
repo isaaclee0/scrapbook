@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432850241/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/craft-ideas",
+    "CustomFileName": "88101736432850241",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432850241",
+      "url": "https://www.pinterest.com/pin/88101736432850241/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Denim Quilt",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "katokins",
+        "url": "https://www.pinterest.com/katokins/",
+        "name": "Karen"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/craft-ideas/",
+        "name": "Craft Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3b/9c/0d/3b9c0df81075d0d7d84561cc9d55f405.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

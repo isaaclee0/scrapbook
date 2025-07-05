@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436263949/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painting-things",
+    "CustomFileName": "88101736436263949",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436263949",
+      "url": "https://www.pinterest.com/pin/88101736436263949/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Old Homestead....Explore #448",
+      "description": "window",
+      "link": "http://www.flickr.com/photos/83341537@N00/1272819932/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painting-things/",
+        "name": "Painting things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/14/d4/ef/14d4ef0a147df5ee98878bbc280ba269.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

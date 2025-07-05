@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443078515/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443078515",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443078515",
+      "url": "https://www.pinterest.com/pin/88101736443078515/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "404 Page Not Found - The Wall Sticker Company",
+      "description": "live fully, laugh heartily, relax daily, love completely and enjoy the journey.",
+      "link": "https://www.thewallstickercompany.com.au/products/quote-%22live%22.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f1/89/a7/f189a7991b0c6789b294ebb7057412cc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

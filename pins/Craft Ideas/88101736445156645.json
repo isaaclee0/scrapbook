@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445156645/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/craft-ideas",
+    "CustomFileName": "88101736445156645",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445156645",
+      "url": "https://www.pinterest.com/pin/88101736445156645/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Pinterest",
+      "description": "Decoupage on Pinterest",
+      "link": "http://pin.it/7oOGQbi",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/craft-ideas/",
+        "name": "Craft Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d8/b8/99/d8b8990813bd827361b86e5808f5c604.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

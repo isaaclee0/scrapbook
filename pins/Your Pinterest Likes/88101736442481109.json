@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442481109/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442481109",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442481109",
+      "url": "https://www.pinterest.com/pin/88101736442481109/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "How to Build a Chicken Plucker",
+      "description": "How to Build a Chicken Plucker \"I caught, killed, and plucked seventeen 8-10lb birds in just 40 minutes by myself....\"",
+      "link": "http://achornfarm.blogspot.com/2009/06/how-to-build-chicken-plucker_30.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/38/a9/42/38a942cd6a9bd4a18a33adf1823fb2fa.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

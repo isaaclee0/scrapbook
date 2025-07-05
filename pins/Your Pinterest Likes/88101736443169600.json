@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443169600/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443169600",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443169600",
+      "url": "https://www.pinterest.com/pin/88101736443169600/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "BEATRIX POTTER'S HILL TOP HOUSE, NEAR SAWREY",
+      "description": "Beatrix Potter's House, The Lakes District, UK",
+      "link": "http://www.flickr.com/photos/45777493@N06/galleries/72157625549307765/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/98/25/88/982588680e4f9638b39d36deb9094210.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

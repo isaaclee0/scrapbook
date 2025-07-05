@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443263778/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443263778",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443263778",
+      "url": "https://www.pinterest.com/pin/88101736443263778/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "myfotolog",
+      "description": ".",
+      "link": "http://myfotolog.tumblr.com/post/23535176261",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f7/f5/28/f7f5289a6dc191aced897c32b9406cd8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

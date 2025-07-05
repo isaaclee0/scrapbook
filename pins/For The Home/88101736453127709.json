@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453127709/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/for-the-home",
+    "CustomFileName": "88101736453127709",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453127709",
+      "url": "https://www.pinterest.com/pin/88101736453127709/",
+      "type": "pin",
+      "title": "You: TV cords Me: Not anymore!",
+      "gridTitle": "You: TV cords Me: Not anymore!",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Design2Mine",
+        "url": "https://www.pinterest.com/Design2Mine/",
+        "name": "Design2Mine"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/for-the-home/",
+        "name": "For the Home",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/fc/46/a0/fc46a04239b6f317bc5c2504fd678ae4.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

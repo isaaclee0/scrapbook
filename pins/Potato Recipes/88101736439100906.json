@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439100906/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potato-recipes",
+    "CustomFileName": "88101736439100906",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439100906",
+      "url": "https://www.pinterest.com/pin/88101736439100906/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Neeps & tatties",
+      "description": "Scottish Neeps and Tatties! (turnips and potatoes) traditionally goes with Haggis but great as any side! Love the name!",
+      "link": "http://www.bbcgoodfood.com/recipes/1677/neeps-and-tatties",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potato-recipes/",
+        "name": "Potato Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7d/e6/32/7de632b4d13255d1dede8e553816c367.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

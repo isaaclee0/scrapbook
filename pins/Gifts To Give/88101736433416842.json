@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433416842/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/gifts-to-give",
+    "CustomFileName": "88101736433416842",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433416842",
+      "url": "https://www.pinterest.com/pin/88101736433416842/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "gifting it",
+      "description": "Congratulations",
+      "link": "http://giftingit.blogspot.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/gifts-to-give/",
+        "name": "Gifts to give",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5d/71/c1/5d71c14ac132cb372da885178be0db75.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

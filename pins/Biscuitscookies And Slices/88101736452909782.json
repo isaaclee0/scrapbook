@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452909782/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/biscuitscookies-and-slices",
+    "CustomFileName": "88101736452909782",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452909782",
+      "url": "https://www.pinterest.com/pin/88101736452909782/",
+      "type": "pin",
+      "title": "Easy coconut slice",
+      "gridTitle": "Easy coconut slice",
+      "description": " ",
+      "link": "https://www.bestrecipes.com.au/recipes/coconut-slice-easy-recipe-4/7hgz4s4l",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "bestrecipesau",
+        "url": "https://www.pinterest.com/bestrecipesau/",
+        "name": "Best Recipes"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/biscuitscookies-and-slices/",
+        "name": "Biscuits/Cookies and Slices",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/22/58/fb/2258fb22da240b090119e9230a00b73c.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/91/4e/93/914e93eef26f0130842081aed5cca1a9.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

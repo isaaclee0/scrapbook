@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439884769/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/gifts-to-give",
+    "CustomFileName": "88101736439884769",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439884769",
+      "url": "https://www.pinterest.com/pin/88101736439884769/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "My Homemade Gift I made for my fiancé for our 4 year Anniversary :)",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/gifts-to-give/",
+        "name": "Gifts to give",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bc/1b/ce/bc1bce9feb63d55a74cf3153e639fea7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

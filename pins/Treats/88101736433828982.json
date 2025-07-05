@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433828982/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736433828982",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433828982",
+      "url": "https://www.pinterest.com/pin/88101736433828982/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "This candy bar recipe makes many candy bars to wrap and share with friends, family, coworkers, and neighbors/dcc",
+      "link": "http://www.recipe.com/coconut-almond-candy-bars/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/18/c2/88/18c28809f626c3c96b04d63cfccda65d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

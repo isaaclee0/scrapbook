@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451141718/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736451141718",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451141718",
+      "url": "https://www.pinterest.com/pin/88101736451141718/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Lucky kitty has her own external house",
+      "description": " ",
+      "link": "https://www.reddit.com/r/aww/comments/7s0hzm/lucky_kitty_has_her_own_external_house/?utm_source=ifttt",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/54/82/a4/5482a4ea1a0ed9f7b6529fd9a43ebae7.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

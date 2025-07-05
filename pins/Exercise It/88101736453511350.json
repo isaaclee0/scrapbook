@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453511350/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/exercise-it",
+    "CustomFileName": "88101736453511350",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453511350",
+      "url": "https://www.pinterest.com/pin/88101736453511350/",
+      "type": "pin",
+      "title": "Standing Abs Workout!",
+      "gridTitle": "Standing Abs Workout!",
+      "description": "Do planks hurt your wrists, or crunches wreak havoc on your neck? Try some standing abs in your next ab session!",
+      "link": "https://youtu.be/LuKgokvD8XI",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tracysteen",
+        "url": "https://www.pinterest.com/tracysteen/",
+        "name": "https://www.movedaily.ca/"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/exercise-it/",
+        "name": "Exercise it",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/61/d2/1e/61d21e9914e3830d54e173ccc6a87ba3.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/c3/e3/4d/c3e34dbb442667cfffcd72c6b17c0450.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446721855/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736446721855",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446721855",
+      "url": "https://www.pinterest.com/pin/88101736446721855/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "doki.it",
+      "description": "Torrone , fantastic for kids ( with recipe)",
+      "link": "http://cucina.doki.it/dolci/torrone-bianco-ricetta-preparazione-dolce-natale-capodanno",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f8/b8/e3/f8b8e39a468519681d67576608ccdf8f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

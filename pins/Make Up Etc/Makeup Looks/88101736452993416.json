@@ -1,0 +1,56 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452993416/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/make-up-etc/makeup-looks",
+    "CustomFileName": "88101736452993416",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452993416",
+      "url": "https://www.pinterest.com/pin/88101736452993416/",
+      "type": "pin",
+      "title": "Cut Crease for Mature Hooded Eyes",
+      "gridTitle": "Cut Crease for Mature Hooded Eyes",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 3,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "modernfiftytv",
+        "url": "https://www.pinterest.com/modernfiftytv/",
+        "name": "Modern Fifty TV"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/make-up-etc/",
+        "name": "Make-up etc",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/7d/61/c2/7d61c238a5cda4b4546bacea669eee88.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/cf/5b/4e/cf5b4e7958ed6b7a6d3d4c41eef5dd3f.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/52/5d/4f/525d4fa51aa89780a7de1650298108c9.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452239622/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/autism",
+    "CustomFileName": "88101736452239622",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452239622",
+      "url": "https://www.pinterest.com/pin/88101736452239622/",
+      "type": "pin",
+      "title": "Stemming is the best",
+      "gridTitle": "Stemming is the best",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "purpleella",
+        "url": "https://www.pinterest.com/purpleella/",
+        "name": "Purple Ella"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/autism/",
+        "name": "Autism",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6a/fb/38/6afb38dc4ae8a6cc91994db8f082c3a3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

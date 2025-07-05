@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442626312/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442626312",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442626312",
+      "url": "https://www.pinterest.com/pin/88101736442626312/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "10 Things I'd Do Differently If I Had to Start Over as a Blogger",
+      "link": "http://www.littlenaturalcottage.com/7-years-of-blogging-what-id-do-if-i-had-to-start-all-over/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b7/cc/67/b7cc67f475977d7d91959e6bb0f59e61.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

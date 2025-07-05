@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453571919/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/for-the-home",
+    "CustomFileName": "88101736453571919",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453571919",
+      "url": "https://www.pinterest.com/pin/88101736453571919/",
+      "type": "pin",
+      "title": "swatter window",
+      "gridTitle": "swatter window",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "doan7360",
+        "url": "https://www.pinterest.com/doan7360/",
+        "name": "Children's creative"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/for-the-home/",
+        "name": "For the Home",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/32/bd/33/32bd3364ba1a78593b98bb50df97d96c.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

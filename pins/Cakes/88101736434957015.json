@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434957015/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736434957015",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434957015",
+      "url": "https://www.pinterest.com/pin/88101736434957015/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "duck 2",
+      "description": "adorable duck cake",
+      "link": "http://www.flickr.com/photos/sandrascakes/7533082642/in/photostream",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b3/cf/46/b3cf46f7d032dc3d009712f84d744410.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

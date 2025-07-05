@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435936255/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/how-it-was",
+    "CustomFileName": "88101736435936255",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435936255",
+      "url": "https://www.pinterest.com/pin/88101736435936255/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "girl scout promise",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "mallykiger",
+        "url": "https://www.pinterest.com/mallykiger/",
+        "name": "Marilyn Kiger"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/how-it-was/",
+        "name": "How it was..",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1e/ec/4b/1eec4b12af563e57694dfc62a8873b7c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

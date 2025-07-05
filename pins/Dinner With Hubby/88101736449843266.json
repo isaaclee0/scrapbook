@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449843266/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/dinner-with-hubby",
+    "CustomFileName": "88101736449843266",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449843266",
+      "url": "https://www.pinterest.com/pin/88101736449843266/",
+      "type": "pin",
+      "title": "Orange Creme Brûlée Cups",
+      "gridTitle": "Orange Creme Brûlée Cups",
+      "description": "A cheesecake, crème brûlée hybrid served in hollowed out oranges is sure to impress anyone at the dessert table.",
+      "link": "https://www.tastemade.com/videos/orange-cheese-brulee-cups",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemade",
+        "url": "https://www.pinterest.com/tastemade/",
+        "name": "Tastemade"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/dinner-with-hubby/",
+        "name": "Dinner with hubby",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/64/ba/89/64ba89bcb4ac7fb26996115a068f9e64.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/33/e8/71/33e8717319de200b4c3d9bf29385bba3.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

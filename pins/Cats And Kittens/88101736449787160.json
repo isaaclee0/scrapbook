@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449787160/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736449787160",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449787160",
+      "url": "https://www.pinterest.com/pin/88101736449787160/",
+      "type": "pin",
+      "title": "The only way to travel",
+      "gridTitle": "The only way to travel",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "jdexports2000",
+        "url": "https://www.pinterest.com/jdexports2000/",
+        "name": "Happy Happy Joy Joy"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bd/d4/93/bdd493ca1f8aa2b2d0308168d628d6ec.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/76/00/2f/76002fe7d3dce726b37a37a463a82d8f.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

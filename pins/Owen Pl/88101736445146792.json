@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445146792/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/owen-pl",
+    "CustomFileName": "88101736445146792",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445146792",
+      "url": "https://www.pinterest.com/pin/88101736445146792/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Like colour of bricks",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/owen-pl/",
+        "name": "Owen pl",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e4/e4/eb/e4e4eb5eede2e5c85351d01aabf2681d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

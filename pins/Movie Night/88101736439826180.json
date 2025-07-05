@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439826180/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736439826180",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439826180",
+      "url": "https://www.pinterest.com/pin/88101736439826180/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Good movie",
+      "link": "http://en.wikipedia.org/wiki/File:A_Walk_To_Remember_Poster.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/82/f0/e3/82f0e314ad7bca1a1b5ba283993f9c5a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

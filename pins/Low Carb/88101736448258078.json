@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448258078/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/low-carb",
+    "CustomFileName": "88101736448258078",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448258078",
+      "url": "https://www.pinterest.com/pin/88101736448258078/",
+      "type": "pin",
+      "title": "All Things Green Salad",
+      "gridTitle": "All Things Green Salad",
+      "description": "Everything you love about spring in one fresh and flavor-packed bowl 🍃   All Things #Green #Salad",
+      "link": "https://tastyfoodvideos.com/recipes/all-things-green-salad/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/low-carb/",
+        "name": "Low Carb",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/da/ce/52/dace521810928dc0ee35cfd7169994ab.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/28/b3/4d/28b34dea59fd507f399b2b2729fc6b00.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435540753/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/ice-cream",
+    "CustomFileName": "88101736435540753",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435540753",
+      "url": "https://www.pinterest.com/pin/88101736435540753/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Lemon Verbena Ice Cream Recipe",
+      "description": "\"I remember discovering lemon verbena one summer at the greenmarket in New York,\" says Chef Hatfield. \"The smell is intoxicating, and it stays with you forever.\"",
+      "link": "http://www.myrecipes.com/recipe/lemon-verbena-ice-cream-50400000121372/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/ice-cream/",
+        "name": "Ice cream",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b4/88/45/b48845e40a8dd703633be6196affe58a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444062824/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736444062824",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444062824",
+      "url": "https://www.pinterest.com/pin/88101736444062824/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Homemade Sugar-Free Gummy Candy",
+      "description": "Homemade Gummy Candies Recipe (Sugar Free)",
+      "link": "https://www.thespruce.com/sugar-free-gummy-candy-521022",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ed/e3/0a/ede30a57c9dbd063d477b0a3d8d8613e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

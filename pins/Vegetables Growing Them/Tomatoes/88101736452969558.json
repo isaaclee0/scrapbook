@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452969558/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/vegetables-growing-them/tomatoes",
+    "CustomFileName": "88101736452969558",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452969558",
+      "url": "https://www.pinterest.com/pin/88101736452969558/",
+      "type": "pin",
+      "title": "Peter Cundall on growing tomatoes",
+      "gridTitle": "",
+      "description": " ",
+      "link": "https://content.api.news/v3/images/bin/bc02698a3f5817b30485f742bc894ca4?width=1024",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/vegetables-growing-them/",
+        "name": "Vegetables  - growing them",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/28/de/54/28de5422163bb44fc983b506789dac77.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443276266/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443276266",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443276266",
+      "url": "https://www.pinterest.com/pin/88101736443276266/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "ideasforawedding",
+      "description": " ",
+      "link": "http://ideasforawedding.tumblr.com/post/34209100511/love-the-lacing",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5f/43/95/5f4395458df8fdd474fae2cd5d575910.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453711418/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736453711418",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453711418",
+      "url": "https://www.pinterest.com/pin/88101736453711418/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chocolate Midnight Pie",
+      "description": "Chocolate Midnight Pie Recipe",
+      "link": "https://www.kingarthurflour.com/recipes/chocolate-midnight-pie-recipe",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4d/72/b1/4d72b1deaf6c0478dd462e303d11a9ae.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430663238/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736430663238",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430663238",
+      "url": "https://www.pinterest.com/pin/88101736430663238/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Great Recipes",
+      "description": "Thai Tea Ice Cream",
+      "link": "http://greatrecipestomake.blogspot.com/?r=c79f64d830afef50e9f01ff850349af0",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/25/f5/3a/25f53ac93ff8461bef9fd0dec76e907b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

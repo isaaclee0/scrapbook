@@ -1,0 +1,47 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450373143/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/irish-ness",
+    "CustomFileName": "88101736450373143",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450373143",
+      "url": "https://www.pinterest.com/pin/88101736450373143/",
+      "type": "pin",
+      "title": "Perfectly Synced Irish dance group",
+      "gridTitle": "Perfectly Synced Irish dance group",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/irish-ness/",
+        "name": "Irish - ness",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2a/6e/bf/2a6ebf257da3317a7eea36200c0aee69.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/32/f3/31/32f331ee7deb540278ea3192aa2e3331.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

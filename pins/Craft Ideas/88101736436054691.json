@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436054691/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/craft-ideas",
+    "CustomFileName": "88101736436054691",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436054691",
+      "url": "https://www.pinterest.com/pin/88101736436054691/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "ao.com",
+      "description": "DIY: pom pom magnets. Nx",
+      "link": "http://ao.com/athome/diy-pom-pom-magnets",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/craft-ideas/",
+        "name": "Craft Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/15/02/b7/1502b74eeb4f283fcdb849225ff1ac28.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

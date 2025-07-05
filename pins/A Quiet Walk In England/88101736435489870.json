@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435489870/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/a-quiet-walk-in-england",
+    "CustomFileName": "88101736435489870",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435489870",
+      "url": "https://www.pinterest.com/pin/88101736435489870/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Sheringham Park in Norfolk",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "nationaltrust",
+        "url": "https://www.pinterest.com/nationaltrust/",
+        "name": "National Trust"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/a-quiet-walk-in-england/",
+        "name": "A quiet walk in England..",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d2/e4/1f/d2e41f930ea42fafff0c1541ef0a437f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

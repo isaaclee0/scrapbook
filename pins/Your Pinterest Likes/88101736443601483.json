@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443601483/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443601483",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443601483",
+      "url": "https://www.pinterest.com/pin/88101736443601483/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Log into Facebook",
+      "description": "So this is why we are so low on doggie treats!!",
+      "link": "https://www.facebook.com/home.php?ref=hp",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/14/32/db/1432db0ccb552b821dbcb34aa1ca2f1b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

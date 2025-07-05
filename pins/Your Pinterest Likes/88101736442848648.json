@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442848648/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442848648",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442848648",
+      "url": "https://www.pinterest.com/pin/88101736442848648/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Smart Product Technology",
+      "description": "Security Pod (aka Urban Foxhole) that can be installed under your existing garage floor or a concrete slab. The Security Pod can be used as a panic room, a secure storage vault or a survival bunker.",
+      "link": "http://smartproducttechnology.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/af/f3/31/aff331db85d944998fddb4b232e61835.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

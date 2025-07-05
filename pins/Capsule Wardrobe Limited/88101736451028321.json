@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451028321/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/capsule-wardrobe-limited",
+    "CustomFileName": "88101736451028321",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451028321",
+      "url": "https://www.pinterest.com/pin/88101736451028321/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "nillajoansson",
+        "url": "https://www.pinterest.com/nillajoansson/",
+        "name": "Nilla Maria Joansson"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/capsule-wardrobe-limited/",
+        "name": "Capsule Wardrobe limited.",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ad/82/73/ad82735d92f3e80d54c4415ecc1ac119.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

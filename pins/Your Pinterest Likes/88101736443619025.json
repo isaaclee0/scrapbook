@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443619025/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443619025",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443619025",
+      "url": "https://www.pinterest.com/pin/88101736443619025/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "My Daguerreotype Boyfriend",
+      "description": "Winston Churchill in his officer’s uniform, age 21, 1895.",
+      "link": "http://mydaguerreotypeboyfriend.tumblr.com/post/25026527177/winston-churchill-in-his-officers-uniform-age",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/86/5b/1d/865b1dbd1e3bbff974ea974d4d281731.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

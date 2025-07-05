@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453147323/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/baby-stuff",
+    "CustomFileName": "88101736453147323",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453147323",
+      "url": "https://www.pinterest.com/pin/88101736453147323/",
+      "type": "pin",
+      "title": "Adorable Outrage",
+      "gridTitle": "Adorable Outrage",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "howtobeadad",
+        "url": "https://www.pinterest.com/howtobeadad/",
+        "name": "HowToBeADad.com"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/baby-stuff/",
+        "name": "Baby stuff",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/93/eb/63/93eb63794e4e709c725b86a5250ed3f4.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/a9/7b/92/a97b9291ba29a5a35a0a331a937bfcdb.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

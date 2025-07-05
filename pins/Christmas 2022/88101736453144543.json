@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453144543/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/christmas-2022",
+    "CustomFileName": "88101736453144543",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453144543",
+      "url": "https://www.pinterest.com/pin/88101736453144543/",
+      "type": "pin",
+      "title": "Nougat Blanc",
+      "gridTitle": "Nougat Blanc",
+      "description": "Un nougat fait maison avec amour",
+      "link": "https://www.tastemade.fr/videos/nougat-blanc",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemadefrance",
+        "url": "https://www.pinterest.com/tastemadefrance/",
+        "name": "Tastemade France"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/christmas-2022/",
+        "name": "Christmas 2022",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/20/60/ac/2060ac9d641e88588bdbb0e5747f2170.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/v2/720p/05/0f/69/050f694bb95323f7185c8bff99d064a9_mobile.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

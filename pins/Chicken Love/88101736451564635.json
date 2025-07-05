@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451564635/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-love",
+    "CustomFileName": "88101736451564635",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451564635",
+      "url": "https://www.pinterest.com/pin/88101736451564635/",
+      "type": "pin",
+      "title": "Fluffy chickens",
+      "gridTitle": "Fluffy chickens",
+      "description": " ",
+      "link": "https://animalonplanet.com/tag/videos/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "animalonplanet",
+        "url": "https://www.pinterest.com/animalonplanet/",
+        "name": "Animal On Planet"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-love/",
+        "name": "Chicken love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f3/26/f7/f326f76d3d5439ba88a1ebfabd897a75.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/83/2d/b6/832db6835c744abd1c4d7832be993e45.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

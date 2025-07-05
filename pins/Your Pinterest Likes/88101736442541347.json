@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442541347/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442541347",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442541347",
+      "url": "https://www.pinterest.com/pin/88101736442541347/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Happy Birthday . . .",
+      "description": "M.E.",
+      "link": "http://carolsheirloomcollection.blogspot.com/2011/10/happy-birthday.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e9/b4/f5/e9b4f52f97f87f89eda21540787e7e73.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

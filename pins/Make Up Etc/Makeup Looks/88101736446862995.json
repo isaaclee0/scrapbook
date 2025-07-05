@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446862995/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/make-up-etc/makeup-looks",
+    "CustomFileName": "88101736446862995",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446862995",
+      "url": "https://www.pinterest.com/pin/88101736446862995/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Vanessa Redgrave, again, what a shining spirit.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/make-up-etc/",
+        "name": "Make-up etc",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f0/ae/54/f0ae545a1d3ec8af461c739057190429.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452221516/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/susie-watson-design",
+    "CustomFileName": "88101736452221516",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452221516",
+      "url": "https://www.pinterest.com/pin/88101736452221516/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Christmas lunch in the garden!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "susiewatsondesigns",
+        "url": "https://www.pinterest.com/susiewatsondesigns/",
+        "name": "Susie Watson Designs"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/susie-watson-design/",
+        "name": "Susie Watson Design",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0d/88/1a/0d881abbe85c1539b2d49830b3ec2071.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

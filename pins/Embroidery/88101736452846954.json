@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452846954/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/embroidery",
+    "CustomFileName": "88101736452846954",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452846954",
+      "url": "https://www.pinterest.com/pin/88101736452846954/",
+      "type": "pin",
+      "title": "Yarkaya 🔴 planeta",
+      "gridTitle": "Yarkaya 🔴 planeta",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "rosali_80",
+        "url": "https://www.pinterest.com/rosali_80/",
+        "name": "bright 🩵planet yarkaya🩵planeta"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/embroidery/",
+        "name": "Embroidery",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b4/cd/c7/b4cdc71dd54fbdfe18b6ed317adefe14.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/26/b9/10/26b9100d10bffb67c2f13c32e7c4bab7.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

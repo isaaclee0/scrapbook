@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446624581/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736446624581",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446624581",
+      "url": "https://www.pinterest.com/pin/88101736446624581/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chocolate cake with blackberries",
+      "description": "Chocolate Cake with Blackberries. One of our favorite easy chocolate cakes. Moist, rich and super chocolatey. #chocolate #cake #chocolatecake #blackberries #dessert #easy #recipe",
+      "link": "https://jernejkitchen.com/recipes/chocolate/chocolate-cake-blackberries",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "jernejkitchen",
+        "url": "https://www.pinterest.com/jernejkitchen/",
+        "name": "Jernej Kitchen"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9c/46/4c/9c464cb1464fa9ff01c3c59822daadce.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

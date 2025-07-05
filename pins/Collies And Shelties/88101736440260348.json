@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440260348/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/collies-and-shelties",
+    "CustomFileName": "88101736440260348",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440260348",
+      "url": "https://www.pinterest.com/pin/88101736440260348/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Every little girl needs a collie...and a horse! :)",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/collies-and-shelties/",
+        "name": "Collies and Shelties",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f7/10/25/f710253b57e7abdf77a6ff42c11fde90.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

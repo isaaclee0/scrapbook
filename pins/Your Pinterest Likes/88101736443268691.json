@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443268691/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443268691",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443268691",
+      "url": "https://www.pinterest.com/pin/88101736443268691/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "YouTube",
+      "description": "Trailer Tips and Tidbits. This is the guy who covers it ALL!",
+      "link": "http://www.youtube.com/watch/?v=Brf7Hcx4nr0",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e0/3e/70/e03e704318cb5ccf993a89fa060b60f4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

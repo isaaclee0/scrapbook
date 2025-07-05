@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447709484/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/in-my-cottage-garden",
+    "CustomFileName": "88101736447709484",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447709484",
+      "url": "https://www.pinterest.com/pin/88101736447709484/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Salvia 'Pink Velour' in our front garden",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 6,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/in-my-cottage-garden/",
+        "name": "In my cottage garden",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/04/5f/66/045f667374b3ab4d4f5609f98625cf79.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

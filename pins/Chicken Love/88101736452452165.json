@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452452165/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-love",
+    "CustomFileName": "88101736452452165",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452452165",
+      "url": "https://www.pinterest.com/pin/88101736452452165/",
+      "type": "pin",
+      "title": "Frozen Corn Chicken Treats 🌽🐓",
+      "gridTitle": "Frozen Corn Chicken Treats 🌽🐓",
+      "description": " ",
+      "link": "https://thesoccermomblog.com/frozen-corn-chicken-treats/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "soccermomblog",
+        "url": "https://www.pinterest.com/soccermomblog/",
+        "name": "Stacey | The Soccer Mom Blog"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-love/",
+        "name": "Chicken love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b4/33/69/b433693ec4495fa076a16789d1f4d4e0.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/0a/6e/ca/0a6eca3984de4678d4ff858d40d32a62.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

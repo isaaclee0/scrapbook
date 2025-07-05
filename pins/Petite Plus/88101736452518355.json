@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452518355/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/petite-plus",
+    "CustomFileName": "88101736452518355",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452518355",
+      "url": "https://www.pinterest.com/pin/88101736452518355/",
+      "type": "pin",
+      "title": "Sweater Tuck Hack!",
+      "gridTitle": "Sweater Tuck Hack!",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "indfwfamily",
+        "url": "https://www.pinterest.com/indfwfamily/",
+        "name": "in_DFW_Family"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/petite-plus/",
+        "name": "Petite plus",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/74/0c/6d/740c6deff93accc76bfa54d0b1bccf34.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/3e/f4/6d/3ef46df1d7d2a95c7e05bc717ec6b9c0.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

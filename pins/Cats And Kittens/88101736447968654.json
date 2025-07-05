@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447968654/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736447968654",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447968654",
+      "url": "https://www.pinterest.com/pin/88101736447968654/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Tweet / Twitter",
+      "description": "Lots of kittehs at the window!",
+      "link": "https://twitter.com/MariaBoedeker/status/448574045412655105/photo/1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/09/77/8c/09778c78c0ff415cef6b0b402cf5ddf9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446154287/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-dreams",
+    "CustomFileName": "88101736446154287",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446154287",
+      "url": "https://www.pinterest.com/pin/88101736446154287/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Sweet, thatched roof cottage",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-dreams/",
+        "name": "Cottage Dreams",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0f/6f/aa/0f6faae1073075b80a9bc679c6e4b2f7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

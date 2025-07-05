@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447920601/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736447920601",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447920601",
+      "url": "https://www.pinterest.com/pin/88101736447920601/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Susan Branch Blog",
+      "description": "Susan Branch's valentine/anniversary Sunday brunch",
+      "link": "http://www.susanbranch.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e3/76/6d/e3766de947a574fa7bc4dc1784450e4f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

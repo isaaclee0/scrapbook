@@ -1,0 +1,56 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453836915/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/for-linda",
+    "CustomFileName": "88101736453836915",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453836915",
+      "url": "https://www.pinterest.com/pin/88101736453836915/",
+      "type": "pin",
+      "title": "cloth work",
+      "gridTitle": "cloth work",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 3,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "manvikulshrestha",
+        "url": "https://www.pinterest.com/manvikulshrestha/",
+        "name": "Pragyakulmanvi"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/for-linda/",
+        "name": "For Linda",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/46/79/0b/46790b059a6790101ce57b1a9ae1905a.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/8a/8b/47/8a8b4772081db8335a50a5eaeec186d2.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/aa/da/55/aada551d74b5abb3a5ec80ce6e341f60.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437203820/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736437203820",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437203820",
+      "url": "https://www.pinterest.com/pin/88101736437203820/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "The Dawning of Indestructible Joy: Daily Readings for Advent by John Piper, http://www.amazon.com/dp/B00IFG0902/ref=cm_sw_r_pi_dp_pf78ub0H6BJ2F",
+      "link": "http://www.amazon.com/dp/B00IFG0902/ref=cm_sw_r_pi_dp_pf78ub0H6BJ2F",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/31/e9/3c/31e93cedca4e7bd40b91a7ceb547d5bd.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

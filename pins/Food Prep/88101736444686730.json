@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444686730/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/food-prep",
+    "CustomFileName": "88101736444686730",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444686730",
+      "url": "https://www.pinterest.com/pin/88101736444686730/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Perfect Caramelized Onions Recipe",
+      "description": "Freeze caramelized onions to make ice cubes of flavor, & other tips on making perfect caramelized onions.",
+      "link": "http://norecipes.com/blog/caramelized-onions-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/food-prep/",
+        "name": "Food prep",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/38/f1/52/38f152f8d99e1b00b8a44e3b3191b508.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

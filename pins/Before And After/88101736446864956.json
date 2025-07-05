@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446864956/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/before-and-after",
+    "CustomFileName": "88101736446864956",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446864956",
+      "url": "https://www.pinterest.com/pin/88101736446864956/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Fixer Upper",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "krystallouann",
+        "url": "https://www.pinterest.com/krystallouann/",
+        "name": "Krystal Marshall"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/before-and-after/",
+        "name": "Before and After",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ec/09/10/ec09102f70ae7b32e1758d042179bb9f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447900402/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painting-things",
+    "CustomFileName": "88101736447900402",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447900402",
+      "url": "https://www.pinterest.com/pin/88101736447900402/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "My Favorite Green Paint Colors - Room for Tuesday",
+      "description": "My Favorite Green Paint Colors - Room for Tuesday",
+      "link": "http://roomfortuesday.com/my-favorite-green-paint-colors/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painting-things/",
+        "name": "Painting things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ee/b1/7e/eeb17e88fa9a7437de92c212f4f19db7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

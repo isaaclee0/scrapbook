@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442189040/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442189040",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442189040",
+      "url": "https://www.pinterest.com/pin/88101736442189040/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Modesty – A Command, Not a Conviction.",
+      "description": "Family, Faith, and Fridays: Modesty – A Command, Not a Conviction.",
+      "link": "http://familyfaithandfridays.blogspot.com/2012/03/modesty-command-not-conviction.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/89/41/e8/8941e813740ea4b52dddba6046768c60.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

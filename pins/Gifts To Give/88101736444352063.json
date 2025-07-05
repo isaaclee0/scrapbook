@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444352063/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/gifts-to-give",
+    "CustomFileName": "88101736444352063",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444352063",
+      "url": "https://www.pinterest.com/pin/88101736444352063/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Box of Sunshine More",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "dara2dream",
+        "url": "https://www.pinterest.com/dara2dream/",
+        "name": "Dara Wilson"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/gifts-to-give/",
+        "name": "Gifts to give",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f4/88/fe/f488fe292fc8c1812cfb301d045bc408.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

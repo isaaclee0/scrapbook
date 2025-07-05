@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434986240/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-love",
+    "CustomFileName": "88101736434986240",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434986240",
+      "url": "https://www.pinterest.com/pin/88101736434986240/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chicken wire chickens",
+      "description": "chicken wire chickens",
+      "link": "http://www.flickr.com/photos/karlgercens/4861980566/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-love/",
+        "name": "Chicken love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/54/08/79/540879f4c36fcaed75e8909e64106609.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

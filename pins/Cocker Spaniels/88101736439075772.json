@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439075772/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cocker-spaniels",
+    "CustomFileName": "88101736439075772",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439075772",
+      "url": "https://www.pinterest.com/pin/88101736439075772/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Flow & Freddy kissing",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "xbyinc",
+        "url": "https://www.pinterest.com/xbyinc/",
+        "name": "Ingrid Metten"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cocker-spaniels/",
+        "name": "Cocker Spaniels",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6a/6f/32/6a6f32d7526df3810a3f497a0fcef129.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

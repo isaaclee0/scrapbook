@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451096866/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736451096866",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451096866",
+      "url": "https://www.pinterest.com/pin/88101736451096866/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Life Book",
+      "description": " ",
+      "link": "http://www.thelifebook.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "thelifebook",
+        "url": "https://www.pinterest.com/thelifebook/",
+        "name": "The Life Book"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/69/4b/8c/694b8ce1c102b2006baa296c25d98922.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

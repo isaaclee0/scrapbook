@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436171820/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736436171820",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436171820",
+      "url": "https://www.pinterest.com/pin/88101736436171820/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Warning signs for abusive relationships",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2c/05/12/2c05129606ea37684046cd98e696fec9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

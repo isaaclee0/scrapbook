@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434086616/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736434086616",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434086616",
+      "url": "https://www.pinterest.com/pin/88101736434086616/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Loading...",
+      "description": "chocolate chip cookies autoimmune paleo",
+      "link": "http://www.autoimmunepaleoandyou.com/2012/11/27/chocolate-chip-cookies-2/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/11/de/41/11de41c4445e628525396141dc0c2d6a.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

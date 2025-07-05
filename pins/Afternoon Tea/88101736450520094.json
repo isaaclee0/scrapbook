@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450520094/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736450520094",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450520094",
+      "url": "https://www.pinterest.com/pin/88101736450520094/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Custard sponge",
+      "description": "A very light and fluffy cake that melts in your mouth.",
+      "link": "https://www.bestrecipes.com.au/recipes/custard-sponge-recipe/rfk7iw6b",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f4/46/cc/f446cc2fcf1e95dc408b4dcff5ca3a33.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

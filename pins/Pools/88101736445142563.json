@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445142563/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pools",
+    "CustomFileName": "88101736445142563",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445142563",
+      "url": "https://www.pinterest.com/pin/88101736445142563/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "image2.jpg (456×342)",
+      "link": "https://i3.au.reastatic.net/456x342/ae7404afc155726b7a178070b51ee2f57f856b3f07fe7430d71e6a76cbf8b30f/image2.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pools/",
+        "name": "Pools",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5f/79/fd/5f79fdef1c4b5059fd368e6c3296255d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

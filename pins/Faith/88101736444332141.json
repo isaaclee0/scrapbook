@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444332141/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736444332141",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444332141",
+      "url": "https://www.pinterest.com/pin/88101736444332141/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Wisdom",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "priestlykingdom",
+        "url": "https://www.pinterest.com/priestlykingdom/",
+        "name": "Tyrone Forde"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/74/9a/9e/749a9e2bf81c4a0f4a223a879066ce29.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

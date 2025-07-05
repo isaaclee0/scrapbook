@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451042889/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736451042889",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451042889",
+      "url": "https://www.pinterest.com/pin/88101736451042889/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "I want to get color streaks in my hair but what color goes with this color? I don't want to just do blonde highlights. (Not me but very close to my hair color)",
+      "description": " ",
+      "link": "https://www.reddit.com/r/Hair/comments/945lhg/i_want_to_get_color_streaks_in_my_hair_but_what/?utm_source=ifttt",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1e/2d/06/1e2d06a443f6eeecf98ef46bb0cefcc1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

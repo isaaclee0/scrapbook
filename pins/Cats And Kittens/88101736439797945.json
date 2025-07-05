@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439797945/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736439797945",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439797945",
+      "url": "https://www.pinterest.com/pin/88101736439797945/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "A Public Service Announcement: Cats and Lilies",
+      "description": "lilies are harmful to cats & can cause kidney toxicity :(",
+      "link": "http://icanhascheezburger.com/2012/04/06/funny-pictures-cats-and-lilies/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6d/32/01/6d3201d37bd7f6272de6231b5d5ef738.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

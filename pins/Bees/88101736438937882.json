@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438937882/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bees",
+    "CustomFileName": "88101736438937882",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438937882",
+      "url": "https://www.pinterest.com/pin/88101736438937882/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Bee off",
+      "description": "Pesticides are killing bees. Please read the Economist article 'Bee Off' in the January 28th, 2012 issue.",
+      "link": "http://www.economist.com/node/21543469",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bees/",
+        "name": "Bees",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8d/f1/1b/8df11be9813a9b76c3c643cd93014045.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

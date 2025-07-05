@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443743650/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443743650",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443743650",
+      "url": "https://www.pinterest.com/pin/88101736443743650/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "M483",
+      "description": "The easiest Christmas ever! Imagine being able to choose any cookbook, organizer or calendar from our site!  Order our holiday gift certificate featuring original Gooseberry Patch artwork!  We'll send it directly to you or to that special someone on your list. Don’t forget, there’s no shipping",
+      "link": "http://www2.gooseberrypatch.com/gooseberry/products.nsf/v.weball/M483?editdocument&lid=is_M483&cartprocess=ihome",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/95/d2/2c/95d22cb53178bcf97613a70ca07daeb5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

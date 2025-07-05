@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445296738/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/breakfast",
+    "CustomFileName": "88101736445296738",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445296738",
+      "url": "https://www.pinterest.com/pin/88101736445296738/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Jimmy Dean Breakfast Casserole",
+      "description": "Jimmy Dean Breakfast Casserole Recipe- no overnight (optional) no toasting (optional)",
+      "link": "http://allrecipes.com/Recipe/Jimmy-Dean-Breakfast-Casserole/Detail.aspx",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/breakfast/",
+        "name": "Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/69/4b/bb/694bbbf0b77df4dd4bc5574293e23fc8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

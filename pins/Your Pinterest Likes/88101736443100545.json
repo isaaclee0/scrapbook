@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443100545/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443100545",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443100545",
+      "url": "https://www.pinterest.com/pin/88101736443100545/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Hon, I know where we keep everything in the house.   I live here, remember? Said no husband ever.",
+      "description": "My husband",
+      "link": "http://www.someecards.com/usercards/viewcard/MjAxMi01ZWIzMmM1ZmVjOTMwMjFh",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e5/d7/50/e5d7508fe16d824c5ad18854435749cb.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

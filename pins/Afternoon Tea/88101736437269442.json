@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437269442/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736437269442",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437269442",
+      "url": "https://www.pinterest.com/pin/88101736437269442/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Merle Parrish's Custard Slice",
+      "description": "CWA Merle Parrish’s Basic Scones recipe",
+      "link": "http://www.mindfood.com/recipe/merle-parrishs-custard-slice/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ad/52/6a/ad526ab80a82bc75762df1ece5de9041.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

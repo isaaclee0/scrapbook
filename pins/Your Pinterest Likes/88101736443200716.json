@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443200716/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443200716",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443200716",
+      "url": "https://www.pinterest.com/pin/88101736443200716/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "~Inspiration~",
+      "description": "daisies",
+      "link": "http://fairlightday.tumblr.com/post/90545406",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bd/f5/a5/bdf5a53d90b59e1ff75eb938b93b8c73.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

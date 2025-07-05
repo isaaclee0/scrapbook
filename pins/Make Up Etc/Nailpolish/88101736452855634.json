@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452855634/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/make-up-etc/nailpolish",
+    "CustomFileName": "88101736452855634",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452855634",
+      "url": "https://www.pinterest.com/pin/88101736452855634/",
+      "type": "pin",
+      "title": "CLASSIC FRENCH MANICURE TUTORIAL",
+      "gridTitle": "CLASSIC FRENCH MANICURE TUTORIAL",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "metdaannails",
+        "url": "https://www.pinterest.com/metdaannails/",
+        "name": "MetDaan Nails"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/make-up-etc/",
+        "name": "Make-up etc",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3d/0d/55/3d0d552d46ad050c1dc594c3d4c6ae78.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/1d/06/66/1d06665c279822902a38db1c823f5216.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

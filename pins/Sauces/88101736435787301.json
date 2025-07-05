@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435787301/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/sauces",
+    "CustomFileName": "88101736435787301",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435787301",
+      "url": "https://www.pinterest.com/pin/88101736435787301/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Onion Top Pesto Recipe",
+      "description": "This is my favorite pesto recipe. The secret ingredient will surprise you!",
+      "link": "http://www.cookthestory.com/2013/09/04/pesto-recipe-with-onion-tops/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/sauces/",
+        "name": "Sauces",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0b/37/60/0b37607f321e77bfd2d44b0b3e53f83e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

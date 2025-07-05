@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437048566/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736437048566",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437048566",
+      "url": "https://www.pinterest.com/pin/88101736437048566/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Precept",
+      "description": "Kay Arthur :-)",
+      "link": "http://www.precept.org/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3b/06/0c/3b060c629eaf2a6c780a53feb7410951.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436806251/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736436806251",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436806251",
+      "url": "https://www.pinterest.com/pin/88101736436806251/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Crockpot Chicken and Stuffing | Inspired Dreamer",
+      "description": "Crockpot Chicken and Stuffing",
+      "link": "http://inspiredreamer.com/crockpot-chicken-and-stuffing/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3c/6d/be/3c6dbe117e275ffe16ffaaf3d7b75b3a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

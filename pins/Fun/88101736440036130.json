@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440036130/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fun",
+    "CustomFileName": "88101736440036130",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440036130",
+      "url": "https://www.pinterest.com/pin/88101736440036130/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Snowshoes | REI Co-op",
+      "description": "A romantic snowshoe and fondue dinner for two! My perfect Valentine's Day date.",
+      "link": "http://www.rei.com/category/4500305?cm_mmc=sm_pin-_-disruptive",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "reicoop",
+        "url": "https://www.pinterest.com/reicoop/",
+        "name": "REI"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fun/",
+        "name": "Fun",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1c/e3/bf/1ce3bf047ff3cdd7cb0a25e4fd20cc8d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

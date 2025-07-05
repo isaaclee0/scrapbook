@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453831715/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/laundry",
+    "CustomFileName": "88101736453831715",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453831715",
+      "url": "https://www.pinterest.com/pin/88101736453831715/",
+      "type": "pin",
+      "title": "pink laundry room",
+      "gridTitle": "pink laundry room",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "kaleytatumm",
+        "url": "https://www.pinterest.com/kaleytatumm/",
+        "name": "Kaley"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/laundry/",
+        "name": "Laundry",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/68/5b/df/685bdf763914e325a3c6de8d0b83d06b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

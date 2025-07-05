@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443395387/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443395387",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443395387",
+      "url": "https://www.pinterest.com/pin/88101736443395387/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Tithe Barn",
+      "description": "selworthy somerset - a quintessentially English village",
+      "link": "http://www.selworthycottage.co.uk/selworthy.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ca/06/19/ca0619353e755514d48c95df65a38fc7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

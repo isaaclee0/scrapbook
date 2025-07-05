@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442183256/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442183256",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442183256",
+      "url": "https://www.pinterest.com/pin/88101736442183256/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Wanna Be Silkies & Holder - Infarrantly Creative",
+      "description": "Melt down crayon pieces and pour into glue stick containers to harden. Big crayons that can be rolled up as they are used.",
+      "link": "http://www.infarrantlycreative.net/2007/12/wanna-be-silkies-holder.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/34/c9/61/34c9618bb20e8e6002b125fe3ba5d086.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440786330/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/ice-cream",
+    "CustomFileName": "88101736440786330",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440786330",
+      "url": "https://www.pinterest.com/pin/88101736440786330/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Orange Sherbet Ice Cream - Recipe",
+      "description": "Soda Pop Ice Cream ~ Easy and Yummy!  Just choose your Favorite Soda (2 liters) and add 2 cans of sweetened condensed milk",
+      "link": "http://www.cooks.com/rec/view/0,1813,147167-231193,00.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/ice-cream/",
+        "name": "Ice cream",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/07/1c/24/071c2447c5ea77497a0e7f4d2a944c07.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

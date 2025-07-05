@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450120849/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pasta",
+    "CustomFileName": "88101736450120849",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450120849",
+      "url": "https://www.pinterest.com/pin/88101736450120849/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Olive Garden Alfredo Sauce Recipe",
+      "description": "Olive Garden Alfredo Sauce | Print | Key Ingredient",
+      "link": "https://www.keyingredient.com/recipes/912025035/olive-garden-alfredo-sauce/print/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pasta/",
+        "name": "Pasta",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c3/0f/ce/c30fce981a7f3917b45814c8990e3814.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

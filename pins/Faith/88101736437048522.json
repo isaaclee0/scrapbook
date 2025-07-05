@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437048522/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736437048522",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437048522",
+      "url": "https://www.pinterest.com/pin/88101736437048522/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Amen!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "cdsmith1957",
+        "url": "https://www.pinterest.com/cdsmith1957/",
+        "name": "Connie Smith"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8d/eb/e6/8debe6f21badd7802d480022975725da.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

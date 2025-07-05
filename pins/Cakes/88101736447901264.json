@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447901264/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736447901264",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447901264",
+      "url": "https://www.pinterest.com/pin/88101736447901264/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Strawberry Sour Cream Streusel Cake Recipe",
+      "description": "NYT Cooking: This strawberry streusel cake is the perfect end to a summer meal. But here's the interesting thing: Eat it slightly warm and it's dessert",
+      "link": "http://cooking.nytimes.com/recipes/7265-strawberry-sour-cream-streusel-cake",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/26/90/f3/2690f3d3654398af5e5f99cafd309f2d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

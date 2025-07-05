@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443057509/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443057509",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443057509",
+      "url": "https://www.pinterest.com/pin/88101736443057509/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Isolation Bag on 'Anna Russian' Tomato",
+      "description": "Seed saving idea",
+      "link": "http://www.flickr.com/photos/megz/5851910368/in/photostream/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/50/a1/3d/50a13d2166a153e30a764be41dc16119.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447237408/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/writers",
+    "CustomFileName": "88101736447237408",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447237408",
+      "url": "https://www.pinterest.com/pin/88101736447237408/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "C.S. Lewis",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "johnwolfe37",
+        "url": "https://www.pinterest.com/johnwolfe37/",
+        "name": "John Kolesa writing as Ben Wolfe"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/writers/",
+        "name": "Writers",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5f/97/cd/5f97cd5eb19c744da6f7d8f7bad40750.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

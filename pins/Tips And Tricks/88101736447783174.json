@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447783174/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tips-and-tricks",
+    "CustomFileName": "88101736447783174",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447783174",
+      "url": "https://www.pinterest.com/pin/88101736447783174/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Sydney Morning Herald on Twitter",
+      "description": "A few tips on how to avoid being tracked online",
+      "link": "https://twitter.com/smh/status/293488687625433088/photo/1/large",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tips-and-tricks/",
+        "name": "Tips and Tricks",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a9/b0/91/a9b0919263bdc69ec9168cf18ef2e3d0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

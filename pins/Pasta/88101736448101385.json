@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448101385/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pasta",
+    "CustomFileName": "88101736448101385",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448101385",
+      "url": "https://www.pinterest.com/pin/88101736448101385/",
+      "type": "pin",
+      "title": "Save & Bake Beef and Cheese Rigatoni",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "buzzfeedlatam",
+        "url": "https://www.pinterest.com/buzzfeedlatam/",
+        "name": "BuzzFeed LATAM"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pasta/",
+        "name": "Pasta",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4b/13/0b/4b130bc6b8f89fc181b696925bbb4408.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/15/1a/92/151a926f81efa70d9c36e6edc0852b0d.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

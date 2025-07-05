@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441122129/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/beefy",
+    "CustomFileName": "88101736441122129",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441122129",
+      "url": "https://www.pinterest.com/pin/88101736441122129/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Tomates Farcies au boeuf haché",
+      "description": "Découvrez la recette tomates farcies au boeuf haché sur cuisineactuelle.fr.",
+      "link": "http://www.cuisineactuelle.fr/recettes/tomates-farcies-au-boeuf-hache-209505",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/beefy/",
+        "name": "Beefy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/49/cc/28/49cc28b0b8ea8e58b5ac2573957eacbc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

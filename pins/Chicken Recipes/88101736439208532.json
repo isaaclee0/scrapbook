@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439208532/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736439208532",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439208532",
+      "url": "https://www.pinterest.com/pin/88101736439208532/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Chicken Cannelloni Recipe",
+      "link": "http://www.parmesan.com/recipes/chicken-cannelloni-recipe/102/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/63/0a/c1/630ac10ddd88f4a01a533419f42edfc3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

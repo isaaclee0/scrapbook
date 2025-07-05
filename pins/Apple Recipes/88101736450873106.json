@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450873106/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/apple-recipes",
+    "CustomFileName": "88101736450873106",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450873106",
+      "url": "https://www.pinterest.com/pin/88101736450873106/",
+      "type": "pin",
+      "title": "Apple Tree Tart",
+      "gridTitle": "Apple Tree Tart",
+      "description": "Grow your own chocolate orchard! 🌳  Find the full recipe at www.chefclub.tv!",
+      "link": "https://www.chefclub.tv/en-us/recipes/original/b3e8a1cb-0ebe-4e67-9c86-d988904f78a7/apple-tree-tart-grow-your-own-orchard/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "chefclubnetwork",
+        "url": "https://www.pinterest.com/chefclubnetwork/",
+        "name": "Chefclub Network"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/apple-recipes/",
+        "name": "Apple Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e0/a7/5c/e0a75c92498a1dbe018a1a11a1973b0b.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/a8/85/46/a88546b52f3984f3c38054fea1e889f4.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

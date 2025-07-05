@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441633642/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/for-the-home",
+    "CustomFileName": "88101736441633642",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441633642",
+      "url": "https://www.pinterest.com/pin/88101736441633642/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Family hand prints",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tamby244",
+        "url": "https://www.pinterest.com/tamby244/",
+        "name": "Tamby Pace"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/for-the-home/",
+        "name": "For the Home",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d6/79/bd/d679bd3eb2e8ce7902da78ee021a0035.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

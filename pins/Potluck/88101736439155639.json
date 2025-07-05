@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439155639/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potluck",
+    "CustomFileName": "88101736439155639",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439155639",
+      "url": "https://www.pinterest.com/pin/88101736439155639/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Taco Pie Recipe by Glenn",
+      "description": "Tacos without all of the mess.  If you like Taco you have got to like Taco Pie and it is really easy to make.  Enjoy.",
+      "link": "http://cookeatshare.com/recipes/taco-pie-664647",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potluck/",
+        "name": "Potluck",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/02/58/72/02587293c8dc1a67c2c12ae450bbf60c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

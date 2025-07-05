@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440075504/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/photo-ideas-in-garden",
+    "CustomFileName": "88101736440075504",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440075504",
+      "url": "https://www.pinterest.com/pin/88101736440075504/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "farmhouse",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "esthermomma",
+        "url": "https://www.pinterest.com/esthermomma/",
+        "name": "a plAcE of promise.©"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/photo-ideas-in-garden/",
+        "name": "Photo ideas in garden",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c4/39/49/c439497d57335ee59bbc27c0ef27e78b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

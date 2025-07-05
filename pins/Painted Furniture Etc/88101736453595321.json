@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453595321/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painted-furniture-etc",
+    "CustomFileName": "88101736453595321",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453595321",
+      "url": "https://www.pinterest.com/pin/88101736453595321/",
+      "type": "pin",
+      "title": "Upsell furniture",
+      "gridTitle": "Upsell furniture",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "abpepple",
+        "url": "https://www.pinterest.com/abpepple/",
+        "name": "Delivering Memories Photography"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painted-furniture-etc/",
+        "name": "Painted Furniture etc",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/15/75/1f/15751f704102cacd84af7f2da4c3abd8.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/e1/5f/15/e15f155fd21f13a951e225244f2cb61e.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

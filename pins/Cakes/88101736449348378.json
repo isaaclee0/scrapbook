@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449348378/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736449348378",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449348378",
+      "url": "https://www.pinterest.com/pin/88101736449348378/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chocolate Mascarpone Cheesecake - Baker by Nature",
+      "description": "Chocolate Mascarpone Cheesecake",
+      "link": "http://bakerbynature.com/chocolate-mascarpone-cheesecake/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/71/af/71/71af712b9303be19aadf089318839a81.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449135795/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potato-recipes",
+    "CustomFileName": "88101736449135795",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449135795",
+      "url": "https://www.pinterest.com/pin/88101736449135795/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Crispy Potato Tacos",
+      "description": "Crispy Potato Tacos - She Likes Food",
+      "link": "https://www.shelikesfood.com/crispy-potato-tacos/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potato-recipes/",
+        "name": "Potato Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9b/38/a7/9b38a77f0dfb0e1ea836e728e68236bf.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

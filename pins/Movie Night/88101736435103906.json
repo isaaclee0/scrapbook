@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435103906/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736435103906",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435103906",
+      "url": "https://www.pinterest.com/pin/88101736435103906/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Julie & Julia",
+      "description": "Julie & Julia",
+      "link": "http://www.amazon.com/Julie-Julia/dp/B002VXGW2E/ref=sr_1_1?s=movies-tv&ie=UTF8&qid=1345765342&sr=1-1&keywords=julie+and+julia",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7a/91/54/7a9154a7e0a569797786d48a7c1e379c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

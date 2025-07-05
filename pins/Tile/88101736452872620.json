@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452872620/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tile",
+    "CustomFileName": "88101736452872620",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452872620",
+      "url": "https://www.pinterest.com/pin/88101736452872620/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Terra.Art",
+      "description": " ",
+      "link": "https://www.marcacorona.it/it/collezioni/1741/terra-art/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 4,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tile/",
+        "name": "Tile",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/45/e3/09/45e3092500ef47a9e90c765d0bc872a2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

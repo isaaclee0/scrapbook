@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435605148/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pastries",
+    "CustomFileName": "88101736435605148",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435605148",
+      "url": "https://www.pinterest.com/pin/88101736435605148/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Eclairs",
+      "description": "Eclairs.",
+      "link": "http://www.pastrypal.com/2012/03/pate-a-choux-bless-you-for-eclairs/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pastries/",
+        "name": "pastries",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c3/a8/e4/c3a8e4339a53bc37f80fe856604dea5d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445153026/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/gifts-to-give",
+    "CustomFileName": "88101736445153026",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445153026",
+      "url": "https://www.pinterest.com/pin/88101736445153026/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "do it yourself",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "kasiazerkowski",
+        "url": "https://www.pinterest.com/kasiazerkowski/",
+        "name": "Kasia Zerkowski"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/gifts-to-give/",
+        "name": "Gifts to give",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/16/18/51/161851d96d11ccefe29f1789638931fd.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

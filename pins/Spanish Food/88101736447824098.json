@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447824098/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/spanish-food",
+    "CustomFileName": "88101736447824098",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447824098",
+      "url": "https://www.pinterest.com/pin/88101736447824098/",
+      "type": "pin",
+      "title": "Paella a la Senora Gonzalez",
+      "gridTitle": "Senora Gonzalez's Paella with Alioli — the hungry chook",
+      "description": "How to make a proper paella - includes video  :)",
+      "link": "https://www.thehungrychook.com/blog/paella",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/spanish-food/",
+        "name": "Spanish food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3f/df/81/3fdf81d3df5d15dc5ac704a0bc79c2f1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433466400/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-love",
+    "CustomFileName": "88101736433466400",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433466400",
+      "url": "https://www.pinterest.com/pin/88101736433466400/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Facebook",
+      "description": "Oh what a beautiful mother.",
+      "link": "https://www.facebook.com/photo.php?fbid=502312973132096&set=a.393575227339205.106069.391586644204730&type=1&theater&notif_t=photo_comment",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-love/",
+        "name": "Chicken love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/19/a8/32/19a83218a8721bdb944d6398971cd153.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

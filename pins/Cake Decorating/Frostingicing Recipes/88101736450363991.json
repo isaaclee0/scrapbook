@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450363991/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cake-decorating/frostingicing-recipes",
+    "CustomFileName": "88101736450363991",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450363991",
+      "url": "https://www.pinterest.com/pin/88101736450363991/",
+      "type": "pin",
+      "title": "Healthy Frosting",
+      "gridTitle": "Healthy Frosting",
+      "description": "Easy to make and healthy frosting recipes that are all vegan and made from whole food ingredients. Includes recipes for chocolate avocado frosting, cashew vanilla frosting, white chocolate frosting, orange frosting, mango lemon frosting and more. #vegan #veganrecipe #healthyrecipe #healthycake #healthy",
+      "link": "https://www.nestandglow.com/healthy-food/healthy-frostings",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "nestandglow",
+        "url": "https://www.pinterest.com/nestandglow/",
+        "name": "Nest and Glow"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cake-decorating/",
+        "name": "Cake Decorating",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/39/7f/44/397f44254d8ae877f52fb5a3ffba11d3.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/0c/5d/64/0c5d644498b6302a769d3a04d2c50e81.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

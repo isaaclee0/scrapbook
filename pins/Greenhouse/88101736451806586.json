@@ -1,0 +1,60 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451806586/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/greenhouse",
+    "CustomFileName": "88101736451806586",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451806586",
+      "url": "https://www.pinterest.com/pin/88101736451806586/",
+      "type": "pin",
+      "title": "Building a greenhouse with upcycled windows.",
+      "gridTitle": "Building a greenhouse with upcycled windows.",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 4,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ASmallLife",
+        "url": "https://www.pinterest.com/ASmallLife/",
+        "name": "Melanie (A Small Life)"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/greenhouse/",
+        "name": "Greenhouse",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/a1/9b/fc/a19bfc876a0e743ef52bf5beaaa94ea9.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/70/09/37/700937e41ab1f040a0c1bdcae5ab24ac.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/9e/ca/30/9eca302d5857f301be7c07f272101ada.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/84/67/c5/8467c553482698fd83f7496af31dc452.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

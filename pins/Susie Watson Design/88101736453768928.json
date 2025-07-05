@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453768928/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/susie-watson-design",
+    "CustomFileName": "88101736453768928",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453768928",
+      "url": "https://www.pinterest.com/pin/88101736453768928/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Susie Watson design bathroom",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/susie-watson-design/",
+        "name": "Susie Watson Design",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fa/cc/12/facc12fa4eef46010cc50a06fb9ea5a4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

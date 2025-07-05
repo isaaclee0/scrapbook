@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444101316/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cute-kitchens",
+    "CustomFileName": "88101736444101316",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444101316",
+      "url": "https://www.pinterest.com/pin/88101736444101316/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Love this Ikea Kitchen!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "relle2002",
+        "url": "https://www.pinterest.com/relle2002/",
+        "name": "Narelle Pollock"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cute-kitchens/",
+        "name": "Cute Kitchens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bc/99/bb/bc99bb53fb871ee09a05f9d902a2cf14.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

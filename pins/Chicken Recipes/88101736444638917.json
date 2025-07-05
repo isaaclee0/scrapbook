@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444638917/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736444638917",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444638917",
+      "url": "https://www.pinterest.com/pin/88101736444638917/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Indulgy",
+      "description": "no butter chiken",
+      "link": "http://indulgy.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/95/32/81/953281e2ab1c49d8d2c62136163f7daf.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452588604/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736452588604",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452588604",
+      "url": "https://www.pinterest.com/pin/88101736452588604/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Reba McEntire",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/eb/c2/d3/ebc2d3812907e3b4c313377557a314a1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431106057/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pasta",
+    "CustomFileName": "88101736431106057",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431106057",
+      "url": "https://www.pinterest.com/pin/88101736431106057/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "How to Make Spinach Pasta",
+      "description": "Make your own spinach fettuccine pasta.",
+      "link": "http://www.bellalimento.com/2012/02/29/how-to-make-spinach-pasta/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pasta/",
+        "name": "Pasta",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/05/ae/3e/05ae3e7980f4d9966540d76590754496.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

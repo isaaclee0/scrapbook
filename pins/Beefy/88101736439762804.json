@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439762804/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/beefy",
+    "CustomFileName": "88101736439762804",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439762804",
+      "url": "https://www.pinterest.com/pin/88101736439762804/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Classic Chili Con Carne Recipe",
+      "description": "Recipe: Classic Chili Con Carne || Photo: Eva Baughman for The New York Times",
+      "link": "http://www.nytimes.com/recipes/1016037/classic-chili-con-carne.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/beefy/",
+        "name": "Beefy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f9/1b/44/f91b4448e6342ab92423a40734c69f51.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

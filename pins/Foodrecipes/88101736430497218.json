@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430497218/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430497218",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430497218",
+      "url": "https://www.pinterest.com/pin/88101736430497218/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Mini Lentil Meatballs Recipe  - Food.com",
+      "description": "WOOT! Mini Lentil Meatballs #vegan",
+      "link": "http://www.food.com/recipe/mini-lentil-meatballs-453044",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/69/c0/8f/69c08fa400bbc597e7a1199acc1a6100.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

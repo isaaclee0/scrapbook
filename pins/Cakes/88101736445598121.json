@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445598121/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736445598121",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445598121",
+      "url": "https://www.pinterest.com/pin/88101736445598121/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Decadent Flourless Chocolate Torte - Pretty. Simple. Sweet.",
+      "description": "Chocolate Almond Torte - Pretty. Simple. Sweet.",
+      "link": "https://prettysimplesweet.com/chocolate-almond-torte/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Carolagrecipes",
+        "url": "https://www.pinterest.com/Carolagrecipes/",
+        "name": "Carol | All good Recipes"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5e/03/c7/5e03c768d1057c820665c98a44a840de.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

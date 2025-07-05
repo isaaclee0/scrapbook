@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434360314/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/baby-stuff",
+    "CustomFileName": "88101736434360314",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434360314",
+      "url": "https://www.pinterest.com/pin/88101736434360314/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "A good reminder of how very precious all life is :)",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 40,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/baby-stuff/",
+        "name": "Baby stuff",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/28/79/30/2879304ee797d9f682b480972cb49e89.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

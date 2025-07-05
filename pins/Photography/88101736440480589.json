@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440480589/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/photography",
+    "CustomFileName": "88101736440480589",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440480589",
+      "url": "https://www.pinterest.com/pin/88101736440480589/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "homegrown happiness.",
+      "description": "homegrown happiness",
+      "link": "http://junkgypsyblog.com/homegrown-happiness/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/photography/",
+        "name": "Photography",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/90/9d/5e/909d5e3470675ff4287b713af2e5f26f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

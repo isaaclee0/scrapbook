@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451366555/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/laundry",
+    "CustomFileName": "88101736451366555",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451366555",
+      "url": "https://www.pinterest.com/pin/88101736451366555/",
+      "type": "pin",
+      "title": "Installing an ironing board",
+      "gridTitle": "Installing an ironing board",
+      "description": " ",
+      "link": "https://amzn.to/2IlW50R",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/laundry/",
+        "name": "Laundry",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c8/82/ab/c882ab95c7af8fa3b2dafe1e3664e405.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/f2/09/30/f2093039a7e20ea937abd4679b404982.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

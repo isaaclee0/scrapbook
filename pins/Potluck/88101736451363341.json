@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451363341/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potluck",
+    "CustomFileName": "88101736451363341",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451363341",
+      "url": "https://www.pinterest.com/pin/88101736451363341/",
+      "type": "pin",
+      "title": "Sausage and Mash Pie",
+      "gridTitle": "Sausage and Mash Pie",
+      "description": "Cheesy mustard mashed potato resting on a layer of sausage and onions in a rich gravy – this truly is the ULTIMATE sausage pie! #sausage #mashedpotato #pie | www.dontgobaconmyheart.co.uk",
+      "link": "https://www.dontgobaconmyheart.co.uk/sausage-and-mash-pie/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "chrisdgbmh",
+        "url": "https://www.pinterest.com/chrisdgbmh/",
+        "name": "Don't Go Bacon My Heart"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potluck/",
+        "name": "Potluck",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fa/61/b7/fa61b75b4f5b1c6b18ebebafe5e7a6b3.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/ac/d1/f4/acd1f49ecfd871070da16c4f343143d4.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

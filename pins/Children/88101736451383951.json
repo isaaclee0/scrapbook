@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451383951/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/children",
+    "CustomFileName": "88101736451383951",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451383951",
+      "url": "https://www.pinterest.com/pin/88101736451383951/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Eeny Meeny Miney Mo Foundation",
+      "description": " ",
+      "link": "https://emmm.org.au/parents",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "nelefoerster",
+        "url": "https://www.pinterest.com/nelefoerster/",
+        "name": "Nele"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/children/",
+        "name": "Children",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f4/91/85/f49185bcf7adcda0df000c920246ef0f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

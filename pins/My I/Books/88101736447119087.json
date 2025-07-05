@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447119087/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/my-i/books",
+    "CustomFileName": "88101736447119087",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447119087",
+      "url": "https://www.pinterest.com/pin/88101736447119087/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Young Country Doctor Book 1: Bilbury Chronicles",
+      "description": "The Young Country Doctor Book 1: Bilbury Chronicles by Ve... https://www.amazon.com/dp/B00JQLB940/ref=cm_sw_r_pi_dp_U_x_Hy5aCb5SGYQNS",
+      "link": "https://www.amazon.com/dp/B00JQLB940/ref=cm_sw_r_pi_dp_U_x_Hy5aCb5SGYQNS",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/my-i/",
+        "name": "My I",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e2/3c/f5/e23cf56a22bfd6c82d2fb9eac3ea1230.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

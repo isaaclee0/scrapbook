@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442517640/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442517640",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442517640",
+      "url": "https://www.pinterest.com/pin/88101736442517640/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Bedtime passes...cute for stockings...to stay up an extra 15 or 20 minutes. This is cute, I'll have to remember this one day!",
+      "link": "http://angieasplund.blogspot.com/2011/04/bedtime-passes.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b2/57/2d/b2572db5cf05ce624f2c5eeb0bf1fe78.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

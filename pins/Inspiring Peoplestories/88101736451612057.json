@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451612057/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/inspiring-peoplestories",
+    "CustomFileName": "88101736451612057",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451612057",
+      "url": "https://www.pinterest.com/pin/88101736451612057/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "seedyvampire",
+        "url": "https://www.pinterest.com/seedyvampire/",
+        "name": "Seedy Vampire"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/inspiring-peoplestories/",
+        "name": "Inspiring people/stories",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/19/bc/78/19bc78652f1b493a37a42d7cc8c05f5f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

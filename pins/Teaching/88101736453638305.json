@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453638305/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/teaching",
+    "CustomFileName": "88101736453638305",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453638305",
+      "url": "https://www.pinterest.com/pin/88101736453638305/",
+      "type": "pin",
+      "title": "Math",
+      "gridTitle": "Math",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "imspecialk1972",
+        "url": "https://www.pinterest.com/imspecialk1972/",
+        "name": "Imaspecialk"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/teaching/",
+        "name": "Teaching",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b9/96/61/b99661f731a27b5b1d8d2c1641d49c5e.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/49/d2/92/49d2923533d0e3da97d149ea365140e0.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

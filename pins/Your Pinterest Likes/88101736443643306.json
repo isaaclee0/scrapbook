@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443643306/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443643306",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443643306",
+      "url": "https://www.pinterest.com/pin/88101736443643306/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "HTML SiteMap",
+      "description": "Trina-5-Tips-for-Successful-Sponsored-Posts",
+      "link": "http://wellyoked.com/blog/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c9/cd/6f/c9cd6f7452f93b206f4a6ecdccfdcedb.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

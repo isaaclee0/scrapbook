@@ -1,0 +1,56 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451529090/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/apple-recipes",
+    "CustomFileName": "88101736451529090",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451529090",
+      "url": "https://www.pinterest.com/pin/88101736451529090/",
+      "type": "pin",
+      "title": "Apple Pecan Cake with Caramel Glaze",
+      "gridTitle": "Apple Pecan Cake with Caramel Glaze",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 3,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "terri040",
+        "url": "https://www.pinterest.com/terri040/",
+        "name": "Great Grub, Delicious Treats"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/apple-recipes/",
+        "name": "Apple Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/89/ba/fa/89bafafa61d527752c94a57d9268f262.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/59/b4/03/59b4031076c1b03ca39bac4f4799e1c7.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/74/10/ad/7410ad209e588c818cab0a43f7156870.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

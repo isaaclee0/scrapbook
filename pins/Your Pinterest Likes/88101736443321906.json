@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443321906/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443321906",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443321906",
+      "url": "https://www.pinterest.com/pin/88101736443321906/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "How to Remove a Splinter with Baking Soda: 10 Steps",
+      "description": "how to remove a splinter with baking soda",
+      "link": "http://www.wikihow.com/Remove-a-Splinter-with-Baking-Soda",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ea/1b/2e/ea1b2e308f8dcc8bcd58d10cb2c15c31.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

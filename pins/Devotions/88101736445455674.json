@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445455674/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/devotions",
+    "CustomFileName": "88101736445455674",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445455674",
+      "url": "https://www.pinterest.com/pin/88101736445455674/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Tim Challies",
+      "description": ".",
+      "link": "http://www.challies.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/devotions/",
+        "name": "Devotions",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1d/ce/33/1dce33413747e29a134503c8bf29a8db.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

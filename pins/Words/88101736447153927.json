@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447153927/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736447153927",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447153927",
+      "url": "https://www.pinterest.com/pin/88101736447153927/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Because juicy gossip is always more interesting yo some people than the truth.",
+      "link": "https://i.pinimg.com/1200x/8a/8c/5b/8a8c5b897b474408352c435d7583a884.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8a/8c/5b/8a8c5b897b474408352c435d7583a884.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

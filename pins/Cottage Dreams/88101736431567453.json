@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431567453/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-dreams",
+    "CustomFileName": "88101736431567453",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431567453",
+      "url": "https://www.pinterest.com/pin/88101736431567453/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "You can keep the mansions, just give me a storybook cottage!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "frollicker",
+        "url": "https://www.pinterest.com/frollicker/",
+        "name": "Elizabeth Hegeman"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-dreams/",
+        "name": "Cottage Dreams",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d3/df/b1/d3dfb1ed9ca3489532600a844ab8d90b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

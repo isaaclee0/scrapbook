@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442336698/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442336698",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442336698",
+      "url": "https://www.pinterest.com/pin/88101736442336698/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Mazurek różany",
+      "description": "Rose mazurek with toasted almonds and rose",
+      "link": "http://www.kwestiasmaku.com/desery/mazurki/mazurek_rozany_z_migdalami/przepis.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/81/fa/54/81fa546ef391de70142d04000bfcddaa.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

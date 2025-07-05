@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440984883/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736440984883",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440984883",
+      "url": "https://www.pinterest.com/pin/88101736440984883/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Beginner's Guide to Autoimmune Protocol Diet",
+      "description": "Autoimmune Protocol Paleo_AIP",
+      "link": "http://ultimatepaleoguide.com/autoimmune-protocol/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/95/b6/fc/95b6fc5cca38a8c1711b6af2ebc1411d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

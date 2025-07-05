@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437927237/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/italy-day-dreams",
+    "CustomFileName": "88101736437927237",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437927237",
+      "url": "https://www.pinterest.com/pin/88101736437927237/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Col du Soulor",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "eendmans",
+        "url": "https://www.pinterest.com/eendmans/",
+        "name": "Jeroen van Tongeren"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/italy-day-dreams/",
+        "name": "Italy - Day Dreams",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8d/37/f1/8d37f182e5d57a3a2a0cc6d67f9dc6c8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

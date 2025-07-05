@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448748254/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736448748254",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448748254",
+      "url": "https://www.pinterest.com/pin/88101736448748254/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Bea's 1937 Spice Cake",
+      "description": "Bea's 1937 Spice Cake Recipe",
+      "link": "http://www.justapinch.com/recipes/dessert/dessert-cake/beas-prune-spice-cake.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5c/23/aa/5c23aa72294bea871a258c610b00ac05.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

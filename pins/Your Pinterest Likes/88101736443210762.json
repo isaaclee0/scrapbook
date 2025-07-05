@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443210762/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443210762",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443210762",
+      "url": "https://www.pinterest.com/pin/88101736443210762/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "DropCatch.com",
+      "description": "I use to love growing crystals when i was a kid. crystal recipe using epsom salt easy and lovely!",
+      "link": "http://www.naturalparentingtips.com/homeschooling/grow-salt-crystals/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/37/7d/6d/377d6ddbab885ad84d5a77c2a005137a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

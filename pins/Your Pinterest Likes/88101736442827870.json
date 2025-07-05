@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442827870/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442827870",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442827870",
+      "url": "https://www.pinterest.com/pin/88101736442827870/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "How to Store Fresh Asparagus",
+      "description": "How to store fresh asparagus up to two weeks. Also works for cilantro and celery",
+      "link": "http://urbanstrawberries.wordpress.com/2012/04/12/how-to-store-fresh-asparagus/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4e/21/8c/4e218c2fc19555b17ca2ca2d1b0e9458.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

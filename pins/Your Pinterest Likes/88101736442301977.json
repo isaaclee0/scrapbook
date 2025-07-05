@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442301977/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442301977",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442301977",
+      "url": "https://www.pinterest.com/pin/88101736442301977/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "A Rocket Stove Made From a Five Gallon Metal Bucket",
+      "description": "A Rocket Stove Made From a Five Gallon Metal Bucket",
+      "link": "http://www.rootsimple.com/2012/03/rocket-stove-made-from-five-gallon.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c0/f4/55/c0f455b62d0da9de3c7cc84d3af64c5c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

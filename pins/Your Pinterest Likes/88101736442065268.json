@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442065268/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442065268",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442065268",
+      "url": "https://www.pinterest.com/pin/88101736442065268/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Target's mark down schedule. (where has this been all my life?!?)",
+      "link": "http://www.mommysavers.com/2011/01/deals-at-target-clearance/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a5/c3/73/a5c3730346a560349a6a8e82384cfb93.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

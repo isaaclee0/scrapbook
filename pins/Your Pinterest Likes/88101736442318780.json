@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442318780/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442318780",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442318780",
+      "url": "https://www.pinterest.com/pin/88101736442318780/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Why Mike Bickle's IHOP needs a warning label for teens - Berean Research",
+      "description": "Why Mike Bickle’s IHOP needs a warning label for teens",
+      "link": "http://bereanresearch.org/mike-bickles-ihop-needs-warning-label-teens/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cc/7d/d1/cc7dd1797d1ec2e24ff5bdc9edc81f09.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

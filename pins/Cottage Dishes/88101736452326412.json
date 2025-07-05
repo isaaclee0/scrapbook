@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452326412/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-dishes",
+    "CustomFileName": "88101736452326412",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452326412",
+      "url": "https://www.pinterest.com/pin/88101736452326412/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Royal Winton Petunia Flower Handle",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ADressedUpHome",
+        "url": "https://www.pinterest.com/ADressedUpHome/",
+        "name": "Emily Gill"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-dishes/",
+        "name": "Cottage Dishes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b2/81/d7/b281d7af5005ba85260c367f5fb084f6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

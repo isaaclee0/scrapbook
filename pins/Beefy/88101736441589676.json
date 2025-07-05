@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441589676/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/beefy",
+    "CustomFileName": "88101736441589676",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441589676",
+      "url": "https://www.pinterest.com/pin/88101736441589676/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Minced Beef Wellington",
+      "description": "Minced Beef Wellington",
+      "link": "http://tastykitchen.com/recipes/main-courses/minced-beef-wellington/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/beefy/",
+        "name": "Beefy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/85/58/b5/8558b5b785349ddb88bf31900d9e984b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

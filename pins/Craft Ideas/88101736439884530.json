@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439884530/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/craft-ideas",
+    "CustomFileName": "88101736439884530",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439884530",
+      "url": "https://www.pinterest.com/pin/88101736439884530/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Facebook",
+      "description": "DIY Decoupage with images from Graphics Fairy",
+      "link": "https://www.facebook.com/photo.php?fbid=541120502639772&set=a.421949667890190.97386.135781656506994&type=1&theater",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/craft-ideas/",
+        "name": "Craft Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c4/78/fc/c478fc4cea82c1acad6eeade26f4dcd1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

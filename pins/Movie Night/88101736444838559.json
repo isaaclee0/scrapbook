@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444838559/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736444838559",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444838559",
+      "url": "https://www.pinterest.com/pin/88101736444838559/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Apple Nut",
+      "description": "15 amazing TV series you can watch in a week",
+      "link": "http://applenut.net/category/watch/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 4,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/96/ff/bd/96ffbd90d721df51c794ab9757b07a8c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

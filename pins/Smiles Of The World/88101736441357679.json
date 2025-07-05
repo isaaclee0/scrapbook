@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441357679/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/smiles-of-the-world",
+    "CustomFileName": "88101736441357679",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441357679",
+      "url": "https://www.pinterest.com/pin/88101736441357679/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Smiling Aboriginal Brother and Sister, too sweet.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/smiles-of-the-world/",
+        "name": "Smiles of the World",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8b/ab/30/8bab308c934bebdf2d40b358f663425b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

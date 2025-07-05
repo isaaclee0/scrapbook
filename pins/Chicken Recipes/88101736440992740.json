@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440992740/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736440992740",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440992740",
+      "url": "https://www.pinterest.com/pin/88101736440992740/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chicken Stroganoff with Mushrooms",
+      "description": "Creamy Chicken Stroganoff with Mushrooms",
+      "link": "http://thecozyapron.com/chicken-stroganoff/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e8/33/7c/e8337c2a2c198fa2d4b99455907dd64c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

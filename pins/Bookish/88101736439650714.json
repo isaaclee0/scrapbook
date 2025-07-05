@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439650714/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736439650714",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439650714",
+      "url": "https://www.pinterest.com/pin/88101736439650714/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Inklings: C. S. Lewis, J. R. R. Tolkien, Charles Williams and Their Friends",
+      "description": "The Inklings: C. S. Lewis, J. R. R. Tolkien and Their Fri... http://www.amazon.com/dp/0007748698/ref=cm_sw_r_pi_dp_Z20gxb0TZN872",
+      "link": "http://www.amazon.com/dp/0007748698/ref=cm_sw_r_pi_dp_Z20gxb0TZN872",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a7/56/7f/a7567ff10dc751b6bd19f065c540660b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

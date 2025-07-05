@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438609979/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cheese-and-yoghurt",
+    "CustomFileName": "88101736438609979",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438609979",
+      "url": "https://www.pinterest.com/pin/88101736438609979/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Colby Recipe",
+      "description": "Making a Colby cheese. This is perhaps one of the easiest cheeses to start with since it is so simple to make and needs only a very short aging to see how it went",
+      "link": "http://www.cheesemaking.com/Colby.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cheese-and-yoghurt/",
+        "name": "Cheese and Yoghurt",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e4/39/db/e439dbe8e94539f8a7775ce1a238e076.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

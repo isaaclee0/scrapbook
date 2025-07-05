@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452909667/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/journalling",
+    "CustomFileName": "88101736452909667",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452909667",
+      "url": "https://www.pinterest.com/pin/88101736452909667/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Christie Zimmer",
+      "description": " ",
+      "link": "https://www.christiezimmer.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/journalling/",
+        "name": "Journalling",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/39/7a/d9/397ad9e920cd627c6d6003762165224b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437424836/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736437424836",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437424836",
+      "url": "https://www.pinterest.com/pin/88101736437424836/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Hugh Laurie and Stephen Fry -- Jeeves and Wooster",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "kirstyh",
+        "url": "https://www.pinterest.com/kirstyh/",
+        "name": "kirsty h"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/49/62/f4/4962f4cfe32d78835b7f3386d80e2168.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

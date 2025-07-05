@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439224999/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/health-related",
+    "CustomFileName": "88101736439224999",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439224999",
+      "url": "https://www.pinterest.com/pin/88101736439224999/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Vaccines",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "healinglotus50",
+        "url": "https://www.pinterest.com/healinglotus50/",
+        "name": "The Healing Lotus"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/health-related/",
+        "name": "Health Related",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/87/99/cf/8799cf91123258aa2b237aa075f4f665.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

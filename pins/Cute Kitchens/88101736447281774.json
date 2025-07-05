@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447281774/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cute-kitchens",
+    "CustomFileName": "88101736447281774",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447281774",
+      "url": "https://www.pinterest.com/pin/88101736447281774/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "the fisherman's cottage",
+      "description": "The Fisherman's cottage",
+      "link": "http://thefishermanscottage.blogspot.fr/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cute-kitchens/",
+        "name": "Cute Kitchens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e7/18/3c/e7183c323185bdb06f0031468d93533c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

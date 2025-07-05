@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443048533/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443048533",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443048533",
+      "url": "https://www.pinterest.com/pin/88101736443048533/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Hillbilly Housewife",
+      "description": "Could have gone under \"Recipes\" but there's too much here about frugal living and self sufficiency",
+      "link": "http://www.hillbillyhousewife.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/eb/6d/05/eb6d05a851b70be6691347b71b5ffb7f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

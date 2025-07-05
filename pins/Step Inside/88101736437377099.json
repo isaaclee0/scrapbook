@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437377099/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/step-inside",
+    "CustomFileName": "88101736437377099",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437377099",
+      "url": "https://www.pinterest.com/pin/88101736437377099/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Dutch door, might be cute as double door to replace sliding glass door in kitchen.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/step-inside/",
+        "name": "Step Inside..",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d6/17/76/d61776228a659ef58b5399f7b7b24b57.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

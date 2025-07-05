@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453139789/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/ballet",
+    "CustomFileName": "88101736453139789",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453139789",
+      "url": "https://www.pinterest.com/pin/88101736453139789/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Kirby_cute",
+        "url": "https://www.pinterest.com/Kirby_cute/",
+        "name": "Jeon Jungkook"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/ballet/",
+        "name": "Ballet",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c0/90/26/c09026c2b9a29da7625f17f642cf4dc9.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/f3/08/55/f30855b9d01e2c2e95eaa1dfa4c2d530.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

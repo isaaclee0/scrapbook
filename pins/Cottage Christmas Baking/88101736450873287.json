@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450873287/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-christmas-baking",
+    "CustomFileName": "88101736450873287",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450873287",
+      "url": "https://www.pinterest.com/pin/88101736450873287/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Eggnog Fudge",
+      "description": "Eggnog in fudge? What the fudge!",
+      "link": "https://www.tastemade.com/shows/hungry-af/eggnog-fudge?rse=1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemade",
+        "url": "https://www.pinterest.com/tastemade/",
+        "name": "Tastemade"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-christmas-baking/",
+        "name": "Cottage Christmas Baking",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cf/6d/85/cf6d85663bbd2f578932a8f5df3756a1.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/8e/94/34/8e943467d3d9a5a9dd12e37d588b5245.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

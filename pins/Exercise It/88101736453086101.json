@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453086101/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/exercise-it",
+    "CustomFileName": "88101736453086101",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453086101",
+      "url": "https://www.pinterest.com/pin/88101736453086101/",
+      "type": "pin",
+      "title": "500 step in 10 minutes for weight loss",
+      "gridTitle": "500 step in 10 minutes for weight loss",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "gyanendramaurya1996",
+        "url": "https://www.pinterest.com/gyanendramaurya1996/",
+        "name": "Health and Fitness yt short"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/exercise-it/",
+        "name": "Exercise it",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/42/1b/a7/421ba7f6e30deff6a84a3766bc2ffdbf.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/98/3e/e1/983ee1ec55dc2b6b42c54deafdd516bd.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

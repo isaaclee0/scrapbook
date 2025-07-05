@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452723974/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/platters",
+    "CustomFileName": "88101736452723974",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452723974",
+      "url": "https://www.pinterest.com/pin/88101736452723974/",
+      "type": "pin",
+      "title": "How to Style a Charcuterie Board",
+      "gridTitle": "How to Style a Charcuterie Board",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "lorileeelliott",
+        "url": "https://www.pinterest.com/lorileeelliott/",
+        "name": "Lori-Lee Elliott"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/platters/",
+        "name": "Platters",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e6/81/fb/e681fb393e7ad4d4506af1cb6d841ddd.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/37/33/d7/3733d7d7e8917cd5faced0d74a5d92eb.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

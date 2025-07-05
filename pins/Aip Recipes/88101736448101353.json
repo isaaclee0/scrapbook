@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448101353/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736448101353",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448101353",
+      "url": "https://www.pinterest.com/pin/88101736448101353/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Aip Sweet and Sour Sauce",
+      "description": "Aip Sweet and Sour Sauce | Tbaxter | Copy Me That",
+      "link": "https://www.copymethat.com/r/TMN8b8B/aip-sweet-and-sour-sauce/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 4,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7d/4a/50/7d4a50fedecf543b53e1e4b96896788f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

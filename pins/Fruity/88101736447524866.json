@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447524866/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fruity",
+    "CustomFileName": "88101736447524866",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447524866",
+      "url": "https://www.pinterest.com/pin/88101736447524866/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "my mom also just told me today, rub baking powder on it and rinse it off☺",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fruity/",
+        "name": "Fruity",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/56/60/63/566063cec3268e2c8d8a5be30b091938.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

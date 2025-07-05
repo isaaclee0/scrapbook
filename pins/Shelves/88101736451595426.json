@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451595426/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/shelves",
+    "CustomFileName": "88101736451595426",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451595426",
+      "url": "https://www.pinterest.com/pin/88101736451595426/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Complete with chandelier!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "juliesherrill59",
+        "url": "https://www.pinterest.com/juliesherrill59/",
+        "name": "Julie...Sugar Maple Farm Sherrill"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/shelves/",
+        "name": "Shelves",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f7/69/de/f769deb78047459448f45f801a5966e6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

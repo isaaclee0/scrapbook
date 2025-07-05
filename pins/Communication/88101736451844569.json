@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451844569/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/communication",
+    "CustomFileName": "88101736451844569",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451844569",
+      "url": "https://www.pinterest.com/pin/88101736451844569/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "karmajustice8255",
+        "url": "https://www.pinterest.com/karmajustice8255/",
+        "name": "Grace.Jp"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/communication/",
+        "name": "Communication",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/48/b5/60/48b56028516500e2a1197c112c8037a4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

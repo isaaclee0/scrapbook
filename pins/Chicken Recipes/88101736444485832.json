@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444485832/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736444485832",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444485832",
+      "url": "https://www.pinterest.com/pin/88101736444485832/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Wait, the recipe will appear in a few seconds",
+      "description": "This marinade will have all your neighbors coming out of their homes wondering what's grilling that smells so good!",
+      "link": "http://sperge8.blogspot.co.uk/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/db/df/e5/dbdfe53df5fe0ca6a28f5a5d0de19738.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

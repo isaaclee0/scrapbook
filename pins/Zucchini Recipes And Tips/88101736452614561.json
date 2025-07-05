@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452614561/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/zucchini-recipes-and-tips",
+    "CustomFileName": "88101736452614561",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452614561",
+      "url": "https://www.pinterest.com/pin/88101736452614561/",
+      "type": "pin",
+      "title": "Zucchini Corn Casserole",
+      "gridTitle": "Zucchini Corn Casserole",
+      "description": " ",
+      "link": "https://www.fromachefskitchen.com/layered-zucchini-corn-casserole/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "chefcarolb",
+        "url": "https://www.pinterest.com/chefcarolb/",
+        "name": "From A Chef's Kitchen - Restaurant-Quality Recipes"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/zucchini-recipes-and-tips/",
+        "name": "Zucchini - recipes and tips",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5d/dd/f5/5dddf512a2eb8a7bec121f9382b15dc5.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/1c/49/c7/1c49c700872382c5c5ce09c84a4939c4.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

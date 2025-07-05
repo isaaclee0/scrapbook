@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445564500/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-orchard",
+    "CustomFileName": "88101736445564500",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445564500",
+      "url": "https://www.pinterest.com/pin/88101736445564500/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Pear guild",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "smilinggardener",
+        "url": "https://www.pinterest.com/smilinggardener/",
+        "name": "Smiling Gardener"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-orchard/",
+        "name": "Cottage Orchard",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ae/7d/5a/ae7d5a3bed0bbd3b5782af9cba9aaee9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440985833/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736440985833",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440985833",
+      "url": "https://www.pinterest.com/pin/88101736440985833/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Grandma's Super Easy Caramel Chews",
+      "description": "Grandma's Super Easy Caramel Chews",
+      "link": "http://www.instructables.com/id/Grandmas-Super-Easy-Caramel-Chews/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/77/14/3d/77143d7dcc6ddc70a0b153ed91cde3b9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

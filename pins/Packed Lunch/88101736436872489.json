@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436872489/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/packed-lunch",
+    "CustomFileName": "88101736436872489",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436872489",
+      "url": "https://www.pinterest.com/pin/88101736436872489/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "School Lunches in Japan.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/packed-lunch/",
+        "name": "Packed lunch",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fa/9a/c3/fa9ac3f3176cad2c73b2f91e333b15af.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

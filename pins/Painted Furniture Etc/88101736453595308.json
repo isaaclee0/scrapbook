@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453595308/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painted-furniture-etc",
+    "CustomFileName": "88101736453595308",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453595308",
+      "url": "https://www.pinterest.com/pin/88101736453595308/",
+      "type": "pin",
+      "title": "Antique Oak Dresser",
+      "gridTitle": "Antique Oak Dresser",
+      "description": " ",
+      "link": "https://shackteauinteriors.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "shackteauinteriors",
+        "url": "https://www.pinterest.com/shackteauinteriors/",
+        "name": "Shackteau Interiors®"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painted-furniture-etc/",
+        "name": "Painted Furniture etc",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5b/03/a8/5b03a8bd07b29cabbd5265f60b1c7c08.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/fb/63/5d/fb635d4bb2eb13f86ee2cffa47e05433.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

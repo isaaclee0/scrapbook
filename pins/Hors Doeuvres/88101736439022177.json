@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439022177/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hors-doeuvres",
+    "CustomFileName": "88101736439022177",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439022177",
+      "url": "https://www.pinterest.com/pin/88101736439022177/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Party Frosting",
+      "description": "appetizer",
+      "link": "http://frostmeblog.blogspot.com/search/label/appetizers",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hors-doeuvres/",
+        "name": "Hors D'oeuvres",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/45/15/97/4515972907c2c3aa8bb70b295ab08ffe.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

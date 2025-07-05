@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442263103/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442263103",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442263103",
+      "url": "https://www.pinterest.com/pin/88101736442263103/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "YouTube",
+      "description": "If this does not endear you to bunnies, nothing will.",
+      "link": "http://www.youtube.com/watch?v=OC4blr88jCw&feature=player_embedded",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2b/b1/8b/2bb18b6f00c50b16c88d95afb239c6b7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434625509/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736434625509",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434625509",
+      "url": "https://www.pinterest.com/pin/88101736434625509/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Birds nest cake",
+      "description": "Birds nest cake",
+      "link": "http://www.flickr.com/photos/niceicing/4396564496/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/68/18/a8/6818a83135a3942971c9e01f6f763f2d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

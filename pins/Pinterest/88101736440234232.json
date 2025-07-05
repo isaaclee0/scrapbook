@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440234232/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pinterest",
+    "CustomFileName": "88101736440234232",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440234232",
+      "url": "https://www.pinterest.com/pin/88101736440234232/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Sexy Lingerie Shop, Discount Lingerie, Sexy Clothing - Threadz",
+      "description": "Pinterest. So. TRUE!",
+      "link": "http://imgfave.com/popular/page:5",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pinterest/",
+        "name": "Pinterest",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/30/77/8a/30778a9087cbd42381ff8b78c2aabbb6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

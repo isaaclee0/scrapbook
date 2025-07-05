@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453032914/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736453032914",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453032914",
+      "url": "https://www.pinterest.com/pin/88101736453032914/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "My Favorite Books - Courtney DeFeo",
+      "description": "My Favorite Books - Courtney DeFeo",
+      "link": "https://courtneydefeo.com/my-favorite-books/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b9/54/6d/b9546df7ef1af06934551d56bcb33771.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

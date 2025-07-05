@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446823273/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736446823273",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446823273",
+      "url": "https://www.pinterest.com/pin/88101736446823273/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Mango Cheesecake Charlotte",
+      "description": "No Bake Mango Cheesecake – the most beautiful and unbelievably delicious mango cheesecake. All you need is some simple ingredients: mango juice, ladyfingers, cream cheese, sugar, whipped cream, mango and gelatin. Perfect for a holiday party or a special occasion such as birthday and Mother’s Day! #MangoCheesecake #NobakeCheesecake",
+      "link": "https://tipbuzz.com/mango-charlotte-cake/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Tipbuzz",
+        "url": "https://www.pinterest.com/Tipbuzz/",
+        "name": "TipBuzz | Easy Recipe and DIY Tips"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ee/33/c8/ee33c8a98aecae371f4046e0bbf83a65.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/2c/00/2d/2c002d36a4fd5f3d78a7585535721aac.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

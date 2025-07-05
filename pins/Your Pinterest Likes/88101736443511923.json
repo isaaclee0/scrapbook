@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443511923/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443511923",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443511923",
+      "url": "https://www.pinterest.com/pin/88101736443511923/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "I am the 1 in 100 whose babies died from recurrent miscarriage. I am Still a Mother.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "stillmothers",
+        "url": "https://www.pinterest.com/stillmothers/",
+        "name": "Still Mothers"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/10/fe/4f/10fe4f924e208795aa0d8299f5092f07.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

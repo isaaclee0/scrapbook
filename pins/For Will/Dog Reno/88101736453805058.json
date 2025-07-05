@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453805058/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/for-will/dog-reno",
+    "CustomFileName": "88101736453805058",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453805058",
+      "url": "https://www.pinterest.com/pin/88101736453805058/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "home_decor",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "golczewski",
+        "url": "https://www.pinterest.com/golczewski/",
+        "name": "Sally Golczewski"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/for-will/",
+        "name": "For Will",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/18/9c/c3/189cc3a5f892f1c5590da92e95104fd6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

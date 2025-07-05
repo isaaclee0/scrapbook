@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452326430/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painting-things",
+    "CustomFileName": "88101736452326430",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452326430",
+      "url": "https://www.pinterest.com/pin/88101736452326430/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Gorgeous yellow door!!!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "sometimesLottie",
+        "url": "https://www.pinterest.com/sometimesLottie/",
+        "name": "Charlotte"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painting-things/",
+        "name": "Painting things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/71/8f/50/718f509ac8ca49da74439c187bc47bf7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

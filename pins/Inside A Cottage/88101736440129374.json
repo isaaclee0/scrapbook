@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440129374/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/inside-a-cottage",
+    "CustomFileName": "88101736440129374",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440129374",
+      "url": "https://www.pinterest.com/pin/88101736440129374/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Shabby & charme blog",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "lorr22",
+        "url": "https://www.pinterest.com/lorr22/",
+        "name": "Lilly"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/inside-a-cottage/",
+        "name": "Inside a cottage",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/67/da/7f/67da7f00ccc3865440f70ec2d6be6718.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437699648/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736437699648",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437699648",
+      "url": "https://www.pinterest.com/pin/88101736437699648/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Gut wrenching book about the Holocaust.",
+      "link": "http://www.syndetics.com/index.aspx?isbn=0226979725/LC.JPG&client=stjo&type=rn12&upc=&oclc=%7C",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e9/e1/fe/e9e1fe17cbca7eb2cd1b4bf677d73f65.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

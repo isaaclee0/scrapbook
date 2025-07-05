@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439353328/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fishy",
+    "CustomFileName": "88101736439353328",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439353328",
+      "url": "https://www.pinterest.com/pin/88101736439353328/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Skinny Zesty Lime Shrimp and Avocado Salad",
+      "link": "http://luvskinny.com/skinny-zesty-lime-shrimp-and-avocado-salad",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fishy/",
+        "name": "Fishy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c7/bf/5a/c7bf5ad2284e7871f30ce4c72791746b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

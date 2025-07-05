@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445565212/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-birdhouse",
+    "CustomFileName": "88101736445565212",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445565212",
+      "url": "https://www.pinterest.com/pin/88101736445565212/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Cat in a Bird house",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tonip59",
+        "url": "https://www.pinterest.com/tonip59/",
+        "name": "Toni Pindak"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-birdhouse/",
+        "name": "Cottage birdhouse",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/01/bf/c1/01bfc1d7d3400aac6d78260c21b69a58.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

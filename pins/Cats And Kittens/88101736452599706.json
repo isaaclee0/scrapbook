@@ -1,0 +1,76 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452599706/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736452599706",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452599706",
+      "url": "https://www.pinterest.com/pin/88101736452599706/",
+      "type": "pin",
+      "title": "i love cats so very much 🤍",
+      "gridTitle": "i love cats so very much 🤍",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 8,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "rubyanncath",
+        "url": "https://www.pinterest.com/rubyanncath/",
+        "name": "ruby ⭐️"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/80/4c/77/804c77382f632fc19178dac8622edd40.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/31/1b/89/311b896c941ff861f891f49640dc5d4f.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/36/db/4d/36db4d42ea805bd5fbe3d3610d665358.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/7c/0d/c7/7c0dc7f2696dab197eb09eb570fd07bd.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/e7/d2/12/e7d212998597c2b3ebff79ea07ec20b1.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/79/14/a6/7914a606ed0ff630b29f2011bcb32b16.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/84/13/89/841389ff2d6378117330643831ae21e4.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/a1/1b/1a/a11b1a3f8dac9572049396e39f2c3cf6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

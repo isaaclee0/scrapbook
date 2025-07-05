@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443632326/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443632326",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443632326",
+      "url": "https://www.pinterest.com/pin/88101736443632326/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Not a bad idea, although Baby  Think it Over didn't work too well either.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2f/3a/b1/2f3ab11051b7ba1b40d0088adb8fa24f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

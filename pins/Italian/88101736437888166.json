@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437888166/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/italian",
+    "CustomFileName": "88101736437888166",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437888166",
+      "url": "https://www.pinterest.com/pin/88101736437888166/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "http://www.recipegirl.com/2007/02/20/chicken-marsala-with-sage/   Sicilian Dinner",
+      "link": "http://staging.recipegirl.com/wp-content/uploads/2007/02/Chicken-Marsala.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/italian/",
+        "name": "Italian",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/25/e9/4c/25e94c75d845a5f7d56081aa50853f21.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

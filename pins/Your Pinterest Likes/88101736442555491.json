@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442555491/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442555491",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442555491",
+      "url": "https://www.pinterest.com/pin/88101736442555491/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "thefancyfarmgirl.com",
+      "description": "crinolines",
+      "link": "http://www.thefancyfarmgirl.com/the-fancy-farmgirl-goes-to-the-farm-chicks/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2e/9c/35/2e9c3540fb1c35a0219f77835e3cdaac.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

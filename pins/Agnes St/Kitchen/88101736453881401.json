@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453881401/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/agnes-st/kitchen",
+    "CustomFileName": "88101736453881401",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453881401",
+      "url": "https://www.pinterest.com/pin/88101736453881401/",
+      "type": "pin",
+      "title": "Custom Kitchen Design Idea",
+      "gridTitle": "Custom Kitchen Design Idea",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "pureskinfactor",
+        "url": "https://www.pinterest.com/pureskinfactor/",
+        "name": "pureskinfactor"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/agnes-st/",
+        "name": "Agnes st",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/72/f5/b4/72f5b4ae161d01a40fbcb74ed81cfe61.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

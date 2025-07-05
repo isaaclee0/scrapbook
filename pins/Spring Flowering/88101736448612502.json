@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448612502/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/spring-flowering",
+    "CustomFileName": "88101736448612502",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448612502",
+      "url": "https://www.pinterest.com/pin/88101736448612502/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Home",
+      "description": "Tulips at Moss Mountain Farm",
+      "link": "http://pallensmith.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "pallen_smith",
+        "url": "https://www.pinterest.com/pallen_smith/",
+        "name": "P. Allen Smith"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/spring-flowering/",
+        "name": "Spring Flowering",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/36/f4/2e/36f42e37ccc05e64ae8aeda8e5b3fdb3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

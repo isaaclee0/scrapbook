@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442467953/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442467953",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442467953",
+      "url": "https://www.pinterest.com/pin/88101736442467953/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "TIP HER",
+      "description": "how cute!",
+      "link": "http://tiportiff.tumblr.com/post/20784899057",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fe/d9/93/fed99338ddcce037a2d00c95bbe0574a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

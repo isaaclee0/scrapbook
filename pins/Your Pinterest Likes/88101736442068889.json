@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442068889/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442068889",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442068889",
+      "url": "https://www.pinterest.com/pin/88101736442068889/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "likealaugh.org",
+      "description": "Every one of them! Ohmygoodness !! I didn't realize these things happened to other people. Especially 7 and 15.",
+      "link": "http://likealaugh.org/laugh/socially-awkward-things-we-all-do",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/26/45/ac/2645ac983d18d29432f46a1156f40ce8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

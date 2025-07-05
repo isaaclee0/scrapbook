@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450089678/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/biscuitscookies-and-slices",
+    "CustomFileName": "88101736450089678",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450089678",
+      "url": "https://www.pinterest.com/pin/88101736450089678/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Fudgy Brownie Recipe",
+      "description": "Ultimate Fudgy Brownies Recipe",
+      "link": "https://www.tasteofhome.com/recipes/ultimate-fudgy-brownies/?trkid=soc-toh-pinterest",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "taste_of_home",
+        "url": "https://www.pinterest.com/taste_of_home/",
+        "name": "Taste of Home"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/biscuitscookies-and-slices/",
+        "name": "Biscuits/Cookies and Slices",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9f/36/39/9f3639d1d952debfef63deebf346f4db.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/b3/8d/19/b38d193c0c7fdb2ee441dc72c641e4bb.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

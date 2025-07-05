@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445865495/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/collies-and-shelties",
+    "CustomFileName": "88101736445865495",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445865495",
+      "url": "https://www.pinterest.com/pin/88101736445865495/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "http://collie.kuvat.fi/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "randomop",
+        "url": "https://www.pinterest.com/randomop/",
+        "name": "Yan Last"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/collies-and-shelties/",
+        "name": "Collies and Shelties",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/81/6a/51/816a51a89d8b98e71e7ecad1039f81a4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

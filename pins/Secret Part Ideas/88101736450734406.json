@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450734406/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/secret-part-ideas",
+    "CustomFileName": "88101736450734406",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450734406",
+      "url": "https://www.pinterest.com/pin/88101736450734406/",
+      "type": "pin",
+      "title": "LE STEAK HACHÉ HALLOWEEN FAIT MAIN",
+      "gridTitle": "LE STEAK HACHÉ HALLOWEEN FAIT MAIN",
+      "description": " ",
+      "link": "https://www.chefclub.tv/fr/recettes/original/03725a4d-4e7b-4823-8d79-764bc1b5ead3/le-steak-hach%C3%A9-halloween-fait-main-et-sa-pizza-qui-a-du-c%C5%93ur/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "chefclubnw",
+        "url": "https://www.pinterest.com/chefclubnw/",
+        "name": "Chefclub"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/secret-part-ideas/",
+        "name": "Secret Part Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/23/e1/c7/23e1c72a3aba49a6f7489e31a45346e8.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/0c/9f/c5/0c9fc5bdebb8b595f3e0c368a84592d5.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

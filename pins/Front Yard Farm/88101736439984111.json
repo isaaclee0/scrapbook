@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439984111/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/front-yard-farm",
+    "CustomFileName": "88101736439984111",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439984111",
+      "url": "https://www.pinterest.com/pin/88101736439984111/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "edible landscape",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "charlottegroth",
+        "url": "https://www.pinterest.com/charlottegroth/",
+        "name": "Charlotte Groth"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/front-yard-farm/",
+        "name": "Front yard farm!",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/be/e6/ab/bee6ab7108f38b0e746ccd4f97092150.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

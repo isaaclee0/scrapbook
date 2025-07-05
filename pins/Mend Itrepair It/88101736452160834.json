@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452160834/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/mend-itrepair-it",
+    "CustomFileName": "88101736452160834",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452160834",
+      "url": "https://www.pinterest.com/pin/88101736452160834/",
+      "type": "pin",
+      "title": "How to fix loose drywall anchor",
+      "gridTitle": "How to fix loose drywall anchor",
+      "description": " ",
+      "link": "https://www.youtube.com/watch?v=NnHwvj6c730",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "thaitrick",
+        "url": "https://www.pinterest.com/thaitrick/",
+        "name": "Thaitrick"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/mend-itrepair-it/",
+        "name": "Mend it/Repair it",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8c/44/64/8c44646547b4616ecb17133594f8b3cd.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/98/b1/96/98b196c5dddf87e401a7db698f6d6ddc.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

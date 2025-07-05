@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442440028/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442440028",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442440028",
+      "url": "https://www.pinterest.com/pin/88101736442440028/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "krissys-creations.com",
+      "description": "Homemade Marshmallow Creme Recipe",
+      "link": "http://www.krissys-creations.com/2012/08/homemade-marshmallow-creme.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c4/02/2d/c4022d3c9e414ae97821d1e1dcfb1cda.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

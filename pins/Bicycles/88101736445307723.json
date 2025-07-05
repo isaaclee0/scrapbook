@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445307723/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bicycles",
+    "CustomFileName": "88101736445307723",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445307723",
+      "url": "https://www.pinterest.com/pin/88101736445307723/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "honden bakfiets",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "beateblonk",
+        "url": "https://www.pinterest.com/beateblonk/",
+        "name": "Beate Blonk"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bicycles/",
+        "name": "Bicycles",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b5/ce/18/b5ce18fa8414f17369d00da63ca64515.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

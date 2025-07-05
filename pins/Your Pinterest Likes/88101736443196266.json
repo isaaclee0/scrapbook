@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443196266/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443196266",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443196266",
+      "url": "https://www.pinterest.com/pin/88101736443196266/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Hog Panel Arbor ...Bittersweet has grown!",
+      "description": "arbour made from two old doors",
+      "link": "http://forums2.gardenweb.com/forums/load/junk/msg070038032220.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4a/d9/16/4ad916a3e68e608062341174f398426c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

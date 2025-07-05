@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450591416/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cake-decorating",
+    "CustomFileName": "88101736450591416",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450591416",
+      "url": "https://www.pinterest.com/pin/88101736450591416/",
+      "type": "pin",
+      "title": "Chocolate cake decor",
+      "gridTitle": "Chocolate cake decor",
+      "description": "Video by @cake_art_lookbook . \"When🎂 is art! This artistic creation",
+      "link": "https://putonapron.com/collections/baking",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 20,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "cakeideasforyou",
+        "url": "https://www.pinterest.com/cakeideasforyou/",
+        "name": "Bake the cake"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cake-decorating/",
+        "name": "Cake Decorating",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5d/f2/20/5df22043113d96583b122a7652efddbd.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/29/9c/f9/299cf941d495d3e6202accbd96cdd926.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452740119/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/mend-itrepair-it",
+    "CustomFileName": "88101736452740119",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452740119",
+      "url": "https://www.pinterest.com/pin/88101736452740119/",
+      "type": "pin",
+      "title": "Fantastic idea 😍",
+      "gridTitle": "Fantastic idea 😍",
+      "description": " ",
+      "link": "https://funnyfoto.org/lifehacks/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "funmemepics",
+        "url": "https://www.pinterest.com/funmemepics/",
+        "name": "FunnyFoto 😁"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/mend-itrepair-it/",
+        "name": "Mend it/Repair it",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/41/cd/2c/41cd2c672f29776000f3edb09cb5cd77.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/eb/7b/19/eb7b19a01f5deb40cf3b52ad89d6118a.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

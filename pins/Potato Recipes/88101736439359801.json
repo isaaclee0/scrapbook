@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439359801/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potato-recipes",
+    "CustomFileName": "88101736439359801",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439359801",
+      "url": "https://www.pinterest.com/pin/88101736439359801/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "На радость мясоедам",
+      "description": "Картофель запеченный в пакете | Рецепты моей мамы",
+      "link": "http://postila.ru/post/26923272",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potato-recipes/",
+        "name": "Potato Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/56/54/a5/5654a5b4b7a9988f5b01c8a502a512c5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

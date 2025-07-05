@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430544735/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/craft-ideas",
+    "CustomFileName": "88101736430544735",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430544735",
+      "url": "https://www.pinterest.com/pin/88101736430544735/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Popular Hair & Beauty from Pinterest",
+      "description": " ",
+      "link": "http://www.iknowhair.com/popular-hair-beauty-from-pinterest-13-march-2012/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/craft-ideas/",
+        "name": "Craft Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c0/69/3b/c0693be773805676d040c29aa962e510.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453886797/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/platters",
+    "CustomFileName": "88101736453886797",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453886797",
+      "url": "https://www.pinterest.com/pin/88101736453886797/",
+      "type": "pin",
+      "title": "salam",
+      "gridTitle": "salam",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "aneliqpen4eva",
+        "url": "https://www.pinterest.com/aneliqpen4eva/",
+        "name": "Ани Пенчева"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/platters/",
+        "name": "Platters",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/4f/50/9a/4f509ac281a03e5255555583c05ce8fc.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

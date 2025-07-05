@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435753868/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bees",
+    "CustomFileName": "88101736435753868",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435753868",
+      "url": "https://www.pinterest.com/pin/88101736435753868/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Warre Hive",
+      "description": "A Warre Hive",
+      "link": "http://thebeespace.net/warre-hive/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bees/",
+        "name": "Bees",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8c/a6/41/8ca64191e845bd7fd69c6427077132eb.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442620271/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442620271",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442620271",
+      "url": "https://www.pinterest.com/pin/88101736442620271/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Maintenance Underway!",
+      "description": "Brush care and selection tutorial",
+      "link": "http://www.joggles.com/brushes-tutorial.htm",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e7/2a/ea/e72aeaba30eeb385c9df9a91f63cd186.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452470413/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/sue",
+    "CustomFileName": "88101736452470413",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452470413",
+      "url": "https://www.pinterest.com/pin/88101736452470413/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chocolate Mint Rocky Road",
+      "description": "Chocolate Mint Rocky Road Recipe",
+      "link": "https://createbakemake.com/2016/10/10/chocolate-mint-rocky-road/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/sue/",
+        "name": "Sue",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ab/66/ec/ab66ec2e2b21b70d6f91805fe2e0a1dc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

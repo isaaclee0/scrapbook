@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450389417/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/wild-food",
+    "CustomFileName": "88101736450389417",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450389417",
+      "url": "https://www.pinterest.com/pin/88101736450389417/",
+      "type": "pin",
+      "title": "Chicken of the Woods Mushroom wild harvested from a Hardwood Tree",
+      "gridTitle": "Chicken of the Woods Mushroom wild harvested from a Hardwood Tree",
+      "description": "Chicken of the Woods mushroom foraged in the wilderness.  Full video of foraging and cooking the mushroom is on Youtube.   #Chickenofthewoods #foraging #wildharvesting #mushroomforaging #Chickenofthewoodsrecipe #bushcraft #wildharvest #wildfood #wildedibles #wildediblemushrooms #mycology #",
+      "link": "https://www.youtube.com/watch?v=rQTNnBLWLmg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 4,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "sonofabear",
+        "url": "https://www.pinterest.com/sonofabear/",
+        "name": "Son of a Bear"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/wild-food/",
+        "name": "Wild food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a1/fc/b7/a1fcb739b1e4d334861964fb81aff5b5.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/v2/720p/e1/f8/d5/e1f8d5ad3e16a63d18e7b9b819237ca1_mobile.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

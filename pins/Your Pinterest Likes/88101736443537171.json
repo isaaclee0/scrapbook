@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443537171/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443537171",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443537171",
+      "url": "https://www.pinterest.com/pin/88101736443537171/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Owl Eyes Reviews",
+      "description": "Yes my boy's done this before",
+      "link": "http://owleyesreviews.tumblr.com/page/8",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/32/41/23/3241231696448d2fa53dcd1b88d65ea9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

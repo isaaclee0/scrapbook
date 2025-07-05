@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433788992/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/soup",
+    "CustomFileName": "88101736433788992",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433788992",
+      "url": "https://www.pinterest.com/pin/88101736433788992/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Spicy Sprouted Lentil Soup",
+      "description": "Spicy Sprouted Lentil Soup",
+      "link": "http://thecoconutmama.com/2012/10/spicy-sprouted-lentil-soup/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/soup/",
+        "name": "Soup",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e2/f8/14/e2f8141750097e6711578d7f6d806984.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453660751/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/writing",
+    "CustomFileName": "88101736453660751",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453660751",
+      "url": "https://www.pinterest.com/pin/88101736453660751/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "DrSGHirose",
+        "url": "https://www.pinterest.com/DrSGHirose/",
+        "name": "Bakku Shan"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/writing/",
+        "name": "Writing",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b0/d3/a2/b0d3a269c64547fccce4755dd3c30482.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

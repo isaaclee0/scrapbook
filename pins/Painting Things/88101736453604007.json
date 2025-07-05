@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453604007/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painting-things",
+    "CustomFileName": "88101736453604007",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453604007",
+      "url": "https://www.pinterest.com/pin/88101736453604007/",
+      "type": "pin",
+      "title": "Dulux nutmeg white",
+      "gridTitle": "Dulux nutmeg white",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "nodge86",
+        "url": "https://www.pinterest.com/nodge86/",
+        "name": "Emma Collins"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painting-things/",
+        "name": "Painting things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4b/53/3b/4b533b79f617ec9516ed772411e59745.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

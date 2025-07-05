@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453522342/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736453522342",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453522342",
+      "url": "https://www.pinterest.com/pin/88101736453522342/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "\"There is no excess of goodness. You cannot go too far in the right direction.\" -C.S. Lewis",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "binnie817",
+        "url": "https://www.pinterest.com/binnie817/",
+        "name": "Binnie"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/83/56/33/8356337bd158d1970f66de71bf6000b3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

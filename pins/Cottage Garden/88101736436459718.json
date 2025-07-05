@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436459718/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-garden",
+    "CustomFileName": "88101736436459718",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436459718",
+      "url": "https://www.pinterest.com/pin/88101736436459718/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Rustic front garden. Who needs lawn?",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "aquazia",
+        "url": "https://www.pinterest.com/aquazia/",
+        "name": "Elizabeth Riley"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-garden/",
+        "name": "Cottage garden",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8b/6a/89/8b6a8908a28a3f3a90bfaf3ed20a6489.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

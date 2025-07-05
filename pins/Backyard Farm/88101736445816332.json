@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445816332/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/backyard-farm",
+    "CustomFileName": "88101736445816332",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445816332",
+      "url": "https://www.pinterest.com/pin/88101736445816332/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "#herestothegirls",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "fresheggsdaily",
+        "url": "https://www.pinterest.com/fresheggsdaily/",
+        "name": "Fresh Eggs Daily | Lisa Steele"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/backyard-farm/",
+        "name": "Backyard Farm",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/39/09/92/3909926057ed7e0016fe065e39bd968e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

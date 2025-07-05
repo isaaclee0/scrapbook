@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452959445/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-christmas-baking",
+    "CustomFileName": "88101736452959445",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452959445",
+      "url": "https://www.pinterest.com/pin/88101736452959445/",
+      "type": "pin",
+      "title": "CRANBERRY ORANGE SHORTBREAD COOKIES",
+      "gridTitle": "CRANBERRY ORANGE SHORTBREAD COOKIES",
+      "description": " ",
+      "link": "https://www.momontimeout.com/cranberry-orange-shortbread-cookies-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "momontimeout",
+        "url": "https://www.pinterest.com/momontimeout/",
+        "name": "Mom on Timeout | Delicious, easy recipes for your family!"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-christmas-baking/",
+        "name": "Cottage Christmas Baking",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/10/fa/fe/10fafe4dddc64e57b56cde9b0ad86c55.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/f8/46/80/f84680e5ddf30482aff82400612a62fc.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

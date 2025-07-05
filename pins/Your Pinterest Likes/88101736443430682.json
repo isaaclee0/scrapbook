@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443430682/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443430682",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443430682",
+      "url": "https://www.pinterest.com/pin/88101736443430682/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Rivelin",
+      "description": "The Rivelin, a pub in the Rivelin Valley, Sheffield, England",
+      "link": "https://www.flickr.com/photos/bobasonic/854662883/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fb/9a/85/fb9a85c03c7f37b323a97623d82277a5.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

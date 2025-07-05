@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437958489/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736437958489",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437958489",
+      "url": "https://www.pinterest.com/pin/88101736437958489/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Private Site",
+      "description": "Strawberry-raspberry fudge",
+      "link": "http://petra8paleo.wordpress.com/2014/07/18/pbj-ice-cream-cupcake-fudge-aip-walhspaelo/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/20/05/3c/20053c8994da43ae85818a9319145069.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451986923/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/for-linda",
+    "CustomFileName": "88101736451986923",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451986923",
+      "url": "https://www.pinterest.com/pin/88101736451986923/",
+      "type": "pin",
+      "title": "Pom Pom Sheep",
+      "gridTitle": "Pom Pom Sheep",
+      "description": " ",
+      "link": "https://onelittleproject.com/pom-pom-sheep/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "onelittleproject",
+        "url": "https://www.pinterest.com/onelittleproject/",
+        "name": "One Little Project"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/for-linda/",
+        "name": "For Linda",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a4/90/cb/a490cb0d52ba6b3cbbead9f8cbd94c4a.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/1e/47/ea/1e47ea9cefa0689df576f4bc888f9dac.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

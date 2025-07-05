@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438147538/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/turkish-food",
+    "CustomFileName": "88101736438147538",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438147538",
+      "url": "https://www.pinterest.com/pin/88101736438147538/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Spinach Spiral",
+      "description": "love Turkish food",
+      "link": "http://cookingagent.blogspot.com/2011/05/spinach-spiral.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/turkish-food/",
+        "name": "Turkish Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8d/dc/4a/8ddc4a7f82b14a423c3a7c786a1a3c5a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443616065/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443616065",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443616065",
+      "url": "https://www.pinterest.com/pin/88101736443616065/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Get Inspiration for Your Project at Lowes.com",
+      "description": "Hosta leaf stepping stones.",
+      "link": "http://www.lowescreativeideas.com/idea-library/projects/Leaf_Stepping_Stones_0708.aspx",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c0/08/1c/c0081cbbdb25f5db1dabfde2dc9574fd.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

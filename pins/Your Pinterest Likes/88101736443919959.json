@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443919959/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443919959",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443919959",
+      "url": "https://www.pinterest.com/pin/88101736443919959/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Ошибка 429",
+      "description": "Новости",
+      "link": "https://vk.com/feed?z=photo-99561342_456239145/wall232048380_1038",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/80/b9/f6/80b9f685ca3c0d591b3062691e49bfc0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

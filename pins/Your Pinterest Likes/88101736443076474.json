@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443076474/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443076474",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443076474",
+      "url": "https://www.pinterest.com/pin/88101736443076474/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Why Tantrums Are Not A ‘Behavioural Issue’",
+      "description": "Why Tantrums Are Not A ‘Behavioural Issue’ | Kate Orson",
+      "link": "https://kateorson.com/2016/05/11/why-tantrums-are-not-a-behavioural-issue/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1c/eb/e2/1cebe25a318b9e337a7e424a7554c92c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

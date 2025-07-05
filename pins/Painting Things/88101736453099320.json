@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453099320/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painting-things",
+    "CustomFileName": "88101736453099320",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453099320",
+      "url": "https://www.pinterest.com/pin/88101736453099320/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Grey colours - Dulux",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "aprilminniep",
+        "url": "https://www.pinterest.com/aprilminniep/",
+        "name": "April-Minnie Potterton"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painting-things/",
+        "name": "Painting things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/71/50/c9/7150c9403cf52e677c46868b9c66ba77.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

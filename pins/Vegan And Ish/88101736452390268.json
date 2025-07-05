@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452390268/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/vegan-and-ish",
+    "CustomFileName": "88101736452390268",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452390268",
+      "url": "https://www.pinterest.com/pin/88101736452390268/",
+      "type": "pin",
+      "title": "Vegan Tortilla Wrap",
+      "gridTitle": "Vegan Tortilla Wrap",
+      "description": "Full recipe in link. This vegan tortilla wrap is a delicious and healthy lunch or dinner recipe that is so easy to make!",
+      "link": "https://veggieworldrecipes.com/vegan-tortilla-wrap/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "veggieworldrecipes",
+        "url": "https://www.pinterest.com/veggieworldrecipes/",
+        "name": "Veggie World Recipes"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/vegan-and-ish/",
+        "name": "Vegan and ish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a1/0e/35/a10e3518a029f572ee3048e73742d663.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/5e/f5/52/5ef552bebc98effd13f248f3a7dbdc96.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

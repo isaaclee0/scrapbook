@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444508832/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/thai-food",
+    "CustomFileName": "88101736444508832",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444508832",
+      "url": "https://www.pinterest.com/pin/88101736444508832/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Spicy Thai shrimp n chicken",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "cayneclarke3",
+        "url": "https://www.pinterest.com/cayneclarke3/",
+        "name": "Cayne Clarke"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/thai-food/",
+        "name": "Thai Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/52/c8/43/52c843e815a8fd6f1b3bb2e6d675b759.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

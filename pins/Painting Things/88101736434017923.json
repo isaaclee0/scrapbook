@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434017923/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painting-things",
+    "CustomFileName": "88101736434017923",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434017923",
+      "url": "https://www.pinterest.com/pin/88101736434017923/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Design Seeds",
+      "description": "oh...spring",
+      "link": "http://design-seeds.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painting-things/",
+        "name": "Painting things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/76/e1/41/76e141afe31b63f79037e002b8d77abc.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

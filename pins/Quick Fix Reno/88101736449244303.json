@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449244303/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/quick-fix-reno",
+    "CustomFileName": "88101736449244303",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449244303",
+      "url": "https://www.pinterest.com/pin/88101736449244303/",
+      "type": "pin",
+      "title": "DIY Armoire Makeover",
+      "gridTitle": "DIY Armoire Makeover",
+      "description": "Watch Heather update this old wardrobe to make it both fully functional and stylish!",
+      "link": "https://www.tastemade.com/videos/design-101-diy-wardrobe-makeover",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemade",
+        "url": "https://www.pinterest.com/tastemade/",
+        "name": "Tastemade"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/quick-fix-reno/",
+        "name": "Quick Fix Reno",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/99/0d/da/990dda476469ac2dde3d393603a8cd2a.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/65/64/f0/6564f080dd60544b181c63ffa4eab1c7.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

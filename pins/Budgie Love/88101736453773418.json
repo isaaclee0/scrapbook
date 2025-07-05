@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453773418/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/budgie-love",
+    "CustomFileName": "88101736453773418",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453773418",
+      "url": "https://www.pinterest.com/pin/88101736453773418/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Outdoor aviary",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "jm70033",
+        "url": "https://www.pinterest.com/jm70033/",
+        "name": "Jorge Martinez"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/budgie-love/",
+        "name": "Budgie Love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/eb/a8/36/eba8360823a6076ce7bd467386ebe7a8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

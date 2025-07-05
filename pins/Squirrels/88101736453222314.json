@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453222314/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/squirrels",
+    "CustomFileName": "88101736453222314",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453222314",
+      "url": "https://www.pinterest.com/pin/88101736453222314/",
+      "type": "pin",
+      "title": "wooo. a peel chestnut master",
+      "gridTitle": "wooo. a peel chestnut master",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "wangjianning745",
+        "url": "https://www.pinterest.com/wangjianning745/",
+        "name": "Pet&dog products manufacturer "
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/squirrels/",
+        "name": "Squirrels",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a1/ea/49/a1ea495aa0502f1784b02b613f1004e3.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/a3/75/eb/a375ebe66f17d28498449cae34a9fbff.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443054285/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443054285",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443054285",
+      "url": "https://www.pinterest.com/pin/88101736443054285/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Beautiful - MercyMe | With Lyrics",
+      "description": "Let’s call this our “Worship Wednesday” and sing to the Lord, giving Him our thanks and praise. He is worthy. And we know this, we can know peace. And then make peace. Even with the realities of our bodies.",
+      "link": "http://www.youtube.com/watch/?v=bmUfJtsaqps",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f1/fa/cc/f1facca4655effec7ea25d7335cf250d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

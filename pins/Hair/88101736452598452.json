@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452598452/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736452598452",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452598452",
+      "url": "https://www.pinterest.com/pin/88101736452598452/",
+      "type": "pin",
+      "title": "easy beginners curly hair routine",
+      "gridTitle": "easy beginners curly hair routine",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "valericruza",
+        "url": "https://www.pinterest.com/valericruza/",
+        "name": "valeri"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5f/4e/eb/5f4eeb3242a6897d7826862dd1ff6069.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/82/3b/10/823b10df3f36bb0509dd7d2945e5f7d8.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

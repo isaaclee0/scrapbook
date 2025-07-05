@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443807398/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443807398",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443807398",
+      "url": "https://www.pinterest.com/pin/88101736443807398/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Make one special photo charms for your pets, 100% compatible with your Pandora bracelets.  Stop the hypocrisy. #maketheconnection #govegan",
+      "link": "http://media-cache-ec0.pinimg.com/736x/5c/30/84/5c3084ecdd017e7c6c3c8986b2915b48.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/36/6b/d9/366bd9edbf7d0e8cb3e80a91237f14c2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

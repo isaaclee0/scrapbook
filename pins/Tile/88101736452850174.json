@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452850174/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tile",
+    "CustomFileName": "88101736452850174",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452850174",
+      "url": "https://www.pinterest.com/pin/88101736452850174/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Flooring - Emser Barn in Field",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 5,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "brockpointsighomes",
+        "url": "https://www.pinterest.com/brockpointsighomes/",
+        "name": "Brock Point"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tile/",
+        "name": "Tile",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5c/ab/62/5cab628d202a19e55077760c31a0664f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

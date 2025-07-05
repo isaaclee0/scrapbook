@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442371190/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442371190",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442371190",
+      "url": "https://www.pinterest.com/pin/88101736442371190/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Tumblr",
+      "description": "Open your eyes",
+      "link": "http://comeonandachewithme.tumblr.com/post/25595654044/open-your-eyes",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5e/0a/87/5e0a87bc1fbda5276e9d3e2719b2945e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

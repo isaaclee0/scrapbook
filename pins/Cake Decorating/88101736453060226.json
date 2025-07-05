@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453060226/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cake-decorating",
+    "CustomFileName": "88101736453060226",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453060226",
+      "url": "https://www.pinterest.com/pin/88101736453060226/",
+      "type": "pin",
+      "title": "The best Video tutorial on cake decoration design tips about flowers.🍰🍰🍰",
+      "gridTitle": "The best Video tutorial on cake decoration design tips about flowers.🍰🍰🍰",
+      "description": " ",
+      "link": "https://sateyr.com/blogs/cake-tutorials-recipes",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cake-decorating/",
+        "name": "Cake Decorating",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/41/86/d7/4186d7ff83b56cb4a5969cc698572fa2.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/2b/6b/81/2b6b8113f6fbfde539000cabbfc7903d.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

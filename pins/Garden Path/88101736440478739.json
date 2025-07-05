@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440478739/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/garden-path",
+    "CustomFileName": "88101736440478739",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440478739",
+      "url": "https://www.pinterest.com/pin/88101736440478739/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Garden path with pavers and gravel",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "smanna2",
+        "url": "https://www.pinterest.com/smanna2/",
+        "name": "Susan Manna"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/garden-path/",
+        "name": "Garden Path",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f2/25/e9/f225e93602f53c6e710c5cae8b6c9a93.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

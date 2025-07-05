@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442749198/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442749198",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442749198",
+      "url": "https://www.pinterest.com/pin/88101736442749198/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Mudroom Design - Cottage - laundry room - FGH Architects",
+      "description": "built ins for an entry",
+      "link": "http://www.decorpad.com/photo.htm?photoId=95776&currentPage=0&index=0&relatedPhotoId=",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2f/72/1d/2f721d71f0b935366ab28acabccda3bd.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

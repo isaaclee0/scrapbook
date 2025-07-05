@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452515475/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736452515475",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452515475",
+      "url": "https://www.pinterest.com/pin/88101736452515475/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Top 10 Memes of The Week - Cheezburger Users Edition #5",
+      "description": " ",
+      "link": "https://cheezburger.com/2287621/top-10-memes-of-the-week-cheezburger-users-edition-5",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/dd/c5/18/ddc518cd18041ee43d8072fa7b49d08b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

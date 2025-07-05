@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434190757/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-breakfast",
+    "CustomFileName": "88101736434190757",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434190757",
+      "url": "https://www.pinterest.com/pin/88101736434190757/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "HugeDomains.com",
+      "description": "Grain-Free, Egg-less Sausage Broccoli Bites",
+      "link": "http://www.thisflourishinglife.com/2013/05/recipe-grain-free-egg-less-sausage-broccoli-bites.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-breakfast/",
+        "name": "AIP Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/44/41/5d/44415d642c43c2e8405ee32c6efa3c35.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

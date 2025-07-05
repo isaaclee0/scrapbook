@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435680096/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736435680096",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435680096",
+      "url": "https://www.pinterest.com/pin/88101736435680096/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Untitled",
+      "description": "See, I don't shed.",
+      "link": "http://www.flickr.com/photos/chezneko/6060847068/in/contacts/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 24,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c6/51/ec/c651ec92633e856231ffbbd283f7bb9b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

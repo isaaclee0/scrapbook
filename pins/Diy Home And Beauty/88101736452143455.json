@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452143455/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/diy-home-and-beauty",
+    "CustomFileName": "88101736452143455",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452143455",
+      "url": "https://www.pinterest.com/pin/88101736452143455/",
+      "type": "pin",
+      "title": "A DIY hack you need to know!",
+      "gridTitle": "A DIY hack you need to know!",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "metdaanDIY",
+        "url": "https://www.pinterest.com/metdaanDIY/",
+        "name": "MetDaan DIY"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/diy-home-and-beauty/",
+        "name": "DIY Home and Beauty",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/71/84/ee/7184ee490b6034ed31acd106087cba91.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/54/df/cd/54dfcd61d5f564d29944c19076afd125.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

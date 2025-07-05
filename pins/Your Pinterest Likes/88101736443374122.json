@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443374122/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443374122",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443374122",
+      "url": "https://www.pinterest.com/pin/88101736443374122/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "can I go? Can I , Can I ??  http://LanieBlackmon.Minervaplace.com",
+      "link": "http://lanieblackmon.minervaplace.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "lanie51blackmon",
+        "url": "https://www.pinterest.com/lanie51blackmon/",
+        "name": "Lanie Blackmon"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6c/47/48/6c4748b377f3821e1aa56d55f44d7f5c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435337994/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cute-kitchens",
+    "CustomFileName": "88101736435337994",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435337994",
+      "url": "https://www.pinterest.com/pin/88101736435337994/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Romantiska Hem",
+      "description": "Romantiska Hem",
+      "link": "http://romantiskahem.blogspot.fr/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cute-kitchens/",
+        "name": "Cute Kitchens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/57/0e/47/570e47c2203c3d1b50e299ad9b6f6280.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

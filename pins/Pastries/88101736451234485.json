@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451234485/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pastries",
+    "CustomFileName": "88101736451234485",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451234485",
+      "url": "https://www.pinterest.com/pin/88101736451234485/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Meat and potato pie",
+      "description": "Considera la papa y la pasta prehecha. Sencillo y mas económico que el típico.",
+      "link": "http://www.express.co.uk/life-style/food/120531/Meat-and-potato-pie",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pastries/",
+        "name": "pastries",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/00/38/ac/0038ac6f0b44f590b4ce3f5bd5560a4e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453139703/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736453139703",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453139703",
+      "url": "https://www.pinterest.com/pin/88101736453139703/",
+      "type": "pin",
+      "title": "John 1:12",
+      "gridTitle": "John 1:12",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 5,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "jcprimm",
+        "url": "https://www.pinterest.com/jcprimm/",
+        "name": "JC Primm"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b8/b1/62/b8b162ef7d4589bab6a9a8fcc8a6b1f8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

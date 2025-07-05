@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431704437/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736431704437",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431704437",
+      "url": "https://www.pinterest.com/pin/88101736431704437/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Looking for the Perfect Fall Dessert? Try a Buttery Apple Torte",
+      "description": "Italian apple torte, a single layer buttery cake filled with apple slices.",
+      "link": "http://www.simplyrecipes.com/recipes/buttery_apple_torte/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0e/6b/04/0e6b046e8cd580bab9a85958b0c99a99.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442809693/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442809693",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442809693",
+      "url": "https://www.pinterest.com/pin/88101736442809693/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Creating Content Pinterest Users will LOVE",
+      "description": "9 Ways to Bring Pinterest Users to Your Blog",
+      "link": "http://www.theblogmaven.com/pinterest-tips-for-bloggers/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9a/88/64/9a8864d43e033601ca27bf03832e1157.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

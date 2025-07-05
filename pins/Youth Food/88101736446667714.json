@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446667714/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/youth-food",
+    "CustomFileName": "88101736446667714",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446667714",
+      "url": "https://www.pinterest.com/pin/88101736446667714/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Slow Cooker Cilantro Lime Chicken Tacos",
+      "description": "These Cilantro Lime Chicken Tacos are so delicious and simple to make! A five ingredient dump-and-go meal that takes minutes to prepare and cooks all day in the slow cooker!",
+      "link": "https://belleofthekitchen.com/2016/08/30/slow-cooker-cilantro-lime-chicken-tacos/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "belleofthekitchen",
+        "url": "https://www.pinterest.com/belleofthekitchen/",
+        "name": "Belle of the Kitchen"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/youth-food/",
+        "name": "Youth food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/65/20/42/652042800077d0fb3be1ff3466bcfe33.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/d7/1d/d1/d71dd1aeddb05d169e8bbecec6d81649.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

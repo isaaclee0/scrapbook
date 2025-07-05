@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437186888/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pastries",
+    "CustomFileName": "88101736437186888",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437186888",
+      "url": "https://www.pinterest.com/pin/88101736437186888/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Ham and Cheese Pastry Puffs {Football Friday} - Plain Chicken",
+      "description": "Ham and Cheese Pastry Puffs ~ These are easy to make and taste amazing",
+      "link": "http://www.plainchicken.com/2014/08/ham-and-cheese-pastry-puffs-football.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "christyscripps",
+        "url": "https://www.pinterest.com/christyscripps/",
+        "name": "Christy Scripps"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pastries/",
+        "name": "pastries",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1b/a7/6b/1ba76baf938c31fc1aa302751e805bd2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

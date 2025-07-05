@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452503048/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/easter",
+    "CustomFileName": "88101736452503048",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452503048",
+      "url": "https://www.pinterest.com/pin/88101736452503048/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": ".",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "flaviafiorillo",
+        "url": "https://www.pinterest.com/flaviafiorillo/",
+        "name": "Flavia Fiorillo"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/easter/",
+        "name": "Easter",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cc/e1/15/cce115f19ffd86519db45cd3bede4397.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

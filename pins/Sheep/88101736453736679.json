@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453736679/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/sheep",
+    "CustomFileName": "88101736453736679",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453736679",
+      "url": "https://www.pinterest.com/pin/88101736453736679/",
+      "type": "pin",
+      "title": "When she grew up with dogs 😀",
+      "gridTitle": "When she grew up with dogs 😀",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "wkdinu",
+        "url": "https://www.pinterest.com/wkdinu/",
+        "name": "W o r l d Me"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/sheep/",
+        "name": "Sheep",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/c8/b7/a5/c8b7a536548128e775c51376d1d32598.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

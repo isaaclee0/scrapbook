@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449489711/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pinterest",
+    "CustomFileName": "88101736449489711",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449489711",
+      "url": "https://www.pinterest.com/pin/88101736449489711/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "We found a donor to replace her Pinning finger..  but she wants a robotic finger to prevent this from happening again..",
+      "description": "We found a donor to replace her Pinning finger.. but she wants a robotic finger to prevent this from happening again..",
+      "link": "http://www.someecards.com/usercards/viewcard/MjAxMi03MGU5NWFjYTQxZmI1MzQ2",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pinterest/",
+        "name": "Pinterest",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5b/fd/64/5bfd64acc8e0871a0154d310b9194d7c.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

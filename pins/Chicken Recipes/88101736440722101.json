@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440722101/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736440722101",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440722101",
+      "url": "https://www.pinterest.com/pin/88101736440722101/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chicken Dishes",
+      "description": "Fay’s Jamaican Jerk Chicken Recipe",
+      "link": "http://cooklikeajamaican.com/category/chicken-dishes/?utm_source=sumome&utm_medium=pinterest&utm_campaign=sumome_share",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e3/ee/ad/e3eead8b30ca93eaadf3b1f565d011f0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

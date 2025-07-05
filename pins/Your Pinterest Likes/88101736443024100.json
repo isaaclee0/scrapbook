@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443024100/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443024100",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443024100",
+      "url": "https://www.pinterest.com/pin/88101736443024100/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Disney.com | The official home for all things Disney",
+      "description": "Love this outfit from Boden",
+      "link": "http://blogs.babble.com/family-style/2011/12/13/sale-alert-boden/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bd/d1/f4/bdd1f4cfd7f7212c11b555c8352bbb64.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

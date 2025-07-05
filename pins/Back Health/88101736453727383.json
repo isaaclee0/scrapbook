@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453727383/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/back-health",
+    "CustomFileName": "88101736453727383",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453727383",
+      "url": "https://www.pinterest.com/pin/88101736453727383/",
+      "type": "pin",
+      "title": "Tag someone who needs to see this 💙",
+      "gridTitle": "Tag someone who needs to see this 💙",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "HealthConcioustips",
+        "url": "https://www.pinterest.com/HealthConcioustips/",
+        "name": "Everyday Healthy"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/back-health/",
+        "name": "Back health",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e3/d5/b4/e3d5b4548cd6e24a812405b965f6c796.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/a0/d7/2d/a0d72d91cab4b296957262bd5e33c1a7.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

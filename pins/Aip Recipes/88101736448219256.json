@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448219256/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736448219256",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448219256",
+      "url": "https://www.pinterest.com/pin/88101736448219256/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Embarrassed Paleo Meal Prep Shrimp #paleobread #PaleoDietDinner",
+      "link": "http://meatpaleotips.tumblr.com/to/?5550543698",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ce/80/bb/ce80bb28ef4a3c925c257a26daeb46e6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435713725/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/beefy",
+    "CustomFileName": "88101736435713725",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435713725",
+      "url": "https://www.pinterest.com/pin/88101736435713725/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Romanian Grilled Minced Meat Rolls",
+      "description": "Romanian Grilled Minced Meat Rolls Allrecipes.com",
+      "link": "http://allrecipes.com/recipe/romanian-grilled-minced-meat-rolls/detail.aspx?lnkid=ARPinIt",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/beefy/",
+        "name": "Beefy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/86/8c/be/868cbe2ac882d9947289b54b4933e03e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

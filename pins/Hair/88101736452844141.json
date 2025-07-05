@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452844141/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736452844141",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452844141",
+      "url": "https://www.pinterest.com/pin/88101736452844141/",
+      "type": "pin",
+      "title": "Super-Cute Louisiana Summer Flip Back",
+      "gridTitle": "Super-Cute Louisiana Summer Flip Back",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "prettyberry2021",
+        "url": "https://www.pinterest.com/prettyberry2021/",
+        "name": "PrettyBerry"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/53/67/81/536781904e0db207038ac818b782488d.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/97/f5/98/97f598724ee4dce6a79ebe6080bc22ac.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

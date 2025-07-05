@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452321682/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736452321682",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452321682",
+      "url": "https://www.pinterest.com/pin/88101736452321682/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "To know what's biblical, one must actually read the Bible from the beginning",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 8,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ce/73/cf/ce73cfaf1348fe8174972515aec280db.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

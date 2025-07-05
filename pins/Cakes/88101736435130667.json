@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435130667/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736435130667",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435130667",
+      "url": "https://www.pinterest.com/pin/88101736435130667/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "For a lazy afternoon...",
+      "description": "pear bread",
+      "link": "http://www.flickr.com/photos/bollero4/4431644915/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ab/c8/26/abc826cf50f0ecdf2f8a1177226a37fb.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

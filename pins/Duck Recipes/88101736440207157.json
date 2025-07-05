@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440207157/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/duck-recipes",
+    "CustomFileName": "88101736440207157",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440207157",
+      "url": "https://www.pinterest.com/pin/88101736440207157/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Duck Recipes - Lifestyle",
+      "description": "Try this Raspberry Duck recipe by Chef Laura Calder. This recipe is from the show French Food At Home.",
+      "link": "http://www.lifestylefood.com.au/recipes/1788/raspberry-duck",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 33,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/duck-recipes/",
+        "name": "Duck Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e3/42/40/e34240722874fa5bfe5735955aa8738b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445617380/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/collies-and-shelties",
+    "CustomFileName": "88101736445617380",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445617380",
+      "url": "https://www.pinterest.com/pin/88101736445617380/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Collie balancing a ballon",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/collies-and-shelties/",
+        "name": "Collies and Shelties",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cb/92/40/cb9240f72b1028f1f42481773f8c1f5c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

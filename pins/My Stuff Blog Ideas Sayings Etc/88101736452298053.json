@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452298053/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/my-stuff-blog-ideas-sayings-etc",
+    "CustomFileName": "88101736452298053",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452298053",
+      "url": "https://www.pinterest.com/pin/88101736452298053/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "genericplanet",
+        "url": "https://www.pinterest.com/genericplanet/",
+        "name": "Generic Planet"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/my-stuff-blog-ideas-sayings-etc/",
+        "name": "My stuff - blog ideas, sayings etc",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/63/ed/7c/63ed7c81b35f528862309360d424d211.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

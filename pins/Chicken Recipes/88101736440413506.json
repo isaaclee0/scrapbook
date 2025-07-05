@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440413506/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736440413506",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440413506",
+      "url": "https://www.pinterest.com/pin/88101736440413506/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Super Easy Lemon and Herb Roasted Chicken Dinner",
+      "description": "Lemon and Herb Roasted Chicken",
+      "link": "http://www.iwashyoudry.com/2015/11/02/lemon-and-herb-roasted-chicken/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ec/88/3b/ec883bb4e267e6180ccc49b0d0a6ec72.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

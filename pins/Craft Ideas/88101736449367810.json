@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449367810/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/craft-ideas",
+    "CustomFileName": "88101736449367810",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449367810",
+      "url": "https://www.pinterest.com/pin/88101736449367810/",
+      "type": "pin",
+      "title": "Easy to make 💖",
+      "gridTitle": "Easy to make 💖",
+      "description": "cut it stick on the windows, doors ... #happynewyear #heart",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 27,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "SweetyCherry1",
+        "url": "https://www.pinterest.com/SweetyCherry1/",
+        "name": "Sweety Cherry 🍒"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/craft-ideas/",
+        "name": "Craft Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9c/4b/36/9c4b36e25a1b71eeccb6951c2323d7c4.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/df/7a/0b/df7a0b307eaffebf12a59b599e8513f4.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

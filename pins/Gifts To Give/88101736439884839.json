@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439884839/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/gifts-to-give",
+    "CustomFileName": "88101736439884839",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439884839",
+      "url": "https://www.pinterest.com/pin/88101736439884839/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Home made scrub",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "estelagtz",
+        "url": "https://www.pinterest.com/estelagtz/",
+        "name": "estela gutierrez"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/gifts-to-give/",
+        "name": "Gifts to give",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/51/70/f6/5170f6fc6bae0255b7ac2616475ecbc6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

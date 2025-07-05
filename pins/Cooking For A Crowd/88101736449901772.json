@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449901772/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cooking-for-a-crowd",
+    "CustomFileName": "88101736449901772",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449901772",
+      "url": "https://www.pinterest.com/pin/88101736449901772/",
+      "type": "pin",
+      "title": "Cook in bulk! Efficient ways to meal prep or cook for a crowd! ",
+      "gridTitle": "Cook in bulk! Efficient ways to meal prep or cook for a crowd!",
+      "description": " ",
+      "link": "https://safteyfood.blogspot.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cooking-for-a-crowd/",
+        "name": "Cooking for a Crowd",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/89/67/eb/8967ebf8cc29afde60f76b2a73047c31.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/8f/d8/9c/8fd89cfd194ba6d44dd2dd272233db38.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

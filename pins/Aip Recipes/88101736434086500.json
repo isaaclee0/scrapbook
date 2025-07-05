@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434086500/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736434086500",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434086500",
+      "url": "https://www.pinterest.com/pin/88101736434086500/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Raw Coconut Wraps Recipe",
+      "description": "Homemade version of Pure Wraps from The Coconut Mama",
+      "link": "http://thecoconutmama.com/2011/03/coconut-wraps-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6d/b2/95/6db295a11d8f2c753ee88012c20e505b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430568064/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430568064",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430568064",
+      "url": "https://www.pinterest.com/pin/88101736430568064/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Sushi panda!",
+      "link": "http://30.media.tumblr.com/tumblr_lkx5hkU1Kf1qisxvho1_500.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ea/1d/99/ea1d99abff63fa9cccf86181e94ec788.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

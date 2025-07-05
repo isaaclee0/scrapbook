@@ -1,0 +1,56 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453127721/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cleaning-things",
+    "CustomFileName": "88101736453127721",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453127721",
+      "url": "https://www.pinterest.com/pin/88101736453127721/",
+      "type": "pin",
+      "title": "Clean under your refrigerator NOW! Spring Cleaning Tips: Deep Cleaning Advice!",
+      "gridTitle": "Clean under your refrigerator NOW! Spring Cleaning Tips: Deep Cleaning Advice!",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 3,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "thehandcraftedhaven",
+        "url": "https://www.pinterest.com/thehandcraftedhaven/",
+        "name": "The Handcrafted Haven"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cleaning-things/",
+        "name": "Cleaning Things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/0d/8c/73/0d8c73e5ab53d6fc6119b6369126dc20.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/68/7f/1c/687f1c51929a447c367565c1725fdbb8.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/b3/02/c4/b302c4398ad5aee63fb7e2b3f02ea60a.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

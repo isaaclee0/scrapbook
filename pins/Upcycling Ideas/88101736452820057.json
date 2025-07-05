@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452820057/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/upcycling-ideas",
+    "CustomFileName": "88101736452820057",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452820057",
+      "url": "https://www.pinterest.com/pin/88101736452820057/",
+      "type": "pin",
+      "title": "How to Make Upcycled Glassware out of Old Bottles",
+      "gridTitle": "How to Make Upcycled Glassware out of Old Bottles",
+      "description": " ",
+      "link": "https://collectivegen.com/2021/01/how-to-make-upcycled-glassware-out-of-old-bottles/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "collectivegen",
+        "url": "https://www.pinterest.com/collectivegen/",
+        "name": "Geneva Vanderzeil / Collective Gen"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/upcycling-ideas/",
+        "name": "Upcycling Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/64/7b/a4/647ba44aa5e139ed24f4789bbc4db15c.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/16/b9/a6/16b9a638c30702151fe3878567ef2bfb.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

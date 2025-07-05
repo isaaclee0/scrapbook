@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451826291/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/my-i",
+    "CustomFileName": "88101736451826291",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451826291",
+      "url": "https://www.pinterest.com/pin/88101736451826291/",
+      "type": "pin",
+      "title": "30 Day gratitude",
+      "gridTitle": "30 Day gratitude",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 2,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "pakheedubeyy",
+        "url": "https://www.pinterest.com/pakheedubeyy/",
+        "name": "Pakhee Dubey"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/my-i/",
+        "name": "My I",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d9/93/22/d993224fd38e45da99d47b09f93f4361.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/67/ea/ce/67eace274c7f48f1d2cfba77705a6f83.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

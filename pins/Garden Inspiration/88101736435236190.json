@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435236190/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/garden-inspiration",
+    "CustomFileName": "88101736435236190",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435236190",
+      "url": "https://www.pinterest.com/pin/88101736435236190/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Recipes, DIY, Home Decor & Crafts",
+      "description": "See the \"Space for Repose\" in our  gallery",
+      "link": "http://www.marthastewart.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/garden-inspiration/",
+        "name": "Garden Inspiration",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0c/e8/70/0ce870d3178404d106270e0d379eddfa.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

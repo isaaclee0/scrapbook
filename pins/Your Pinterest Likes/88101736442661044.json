@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442661044/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442661044",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442661044",
+      "url": "https://www.pinterest.com/pin/88101736442661044/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Israel lives with terrorism 24-7....They need our support... G-D BLESS ISRAEL!!!!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7a/9e/fa/7a9efa45a07809719115af123a08e6e9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

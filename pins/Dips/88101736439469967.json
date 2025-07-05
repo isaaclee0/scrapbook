@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439469967/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/dips",
+    "CustomFileName": "88101736439469967",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439469967",
+      "url": "https://www.pinterest.com/pin/88101736439469967/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "My Favourite Tuna Salad Dip",
+      "description": "tuna salad dip recipe",
+      "link": "http://www.notquitenigella.com/2011/11/16/tuna-dip/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/dips/",
+        "name": "Dips",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0b/e5/62/0be5626f836255007be320224297919a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

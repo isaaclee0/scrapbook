@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449901288/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/gifts-to-make-for-me-and-others",
+    "CustomFileName": "88101736449901288",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449901288",
+      "url": "https://www.pinterest.com/pin/88101736449901288/",
+      "type": "pin",
+      "title": "Healthy Homemade Fruit Roll Ups    ",
+      "gridTitle": "Healthy Homemade Fruit Roll Ups",
+      "description": "Making all-natural homemade fruit rolls up is easier than you think.",
+      "link": "http://tastemade.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemade",
+        "url": "https://www.pinterest.com/tastemade/",
+        "name": "Tastemade"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/gifts-to-make-for-me-and-others/",
+        "name": "Gifts to make for me and others",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fc/82/cf/fc82cf07958cde69b6f32608564ce795.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/06/6c/37/066c371157353c7c78b2ad1ff60a92c9.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

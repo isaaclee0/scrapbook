@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448839941/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pastries",
+    "CustomFileName": "88101736448839941",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448839941",
+      "url": "https://www.pinterest.com/pin/88101736448839941/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Paul and Mary's favourite Bake Off recipes",
+      "description": "Paul Hollywood's pork pies with quail's eggs.  Photograph: Romas Foord for Observer Food Monthly",
+      "link": "http://www.theguardian.com/lifeandstyle/2014/jul/20/mary-berry-paul-hollywood-favourite-recipes-great-british-bake-off?CMP=EMCNEWEML6619I2",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pastries/",
+        "name": "pastries",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6b/8f/da/6b8fdadb457d323b734adec356dec2c0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

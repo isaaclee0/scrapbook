@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433630125/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736433630125",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433630125",
+      "url": "https://www.pinterest.com/pin/88101736433630125/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Adorable little salt and pepper kittens.",
+      "link": "http://agirlsrighttodream.tumblr.com/image/55475851049",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6a/dd/bc/6addbc0c0fc1426889372b845e5c98be.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

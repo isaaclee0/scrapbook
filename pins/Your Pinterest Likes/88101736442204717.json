@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442204717/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442204717",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442204717",
+      "url": "https://www.pinterest.com/pin/88101736442204717/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Self Architecture",
+      "description": "~",
+      "link": "http://arquitetura-pessoal.tumblr.com/post/15670834848",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bd/82/df/bd82dfaf779887cddb7b0b0a103bc9b7.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

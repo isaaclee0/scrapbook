@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451784207/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/teaching",
+    "CustomFileName": "88101736451784207",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451784207",
+      "url": "https://www.pinterest.com/pin/88101736451784207/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Tweet / Twitter",
+      "description": " ",
+      "link": "https://twitter.com/mythsysizer/status/647941044051443713/photo/1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/teaching/",
+        "name": "Teaching",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4d/92/d3/4d92d325f1114cd15fc00a71a7146b1d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

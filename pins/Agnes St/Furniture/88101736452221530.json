@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452221530/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/agnes-st/furniture",
+    "CustomFileName": "88101736452221530",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452221530",
+      "url": "https://www.pinterest.com/pin/88101736452221530/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "lilaclady2",
+        "url": "https://www.pinterest.com/lilaclady2/",
+        "name": "Rita Leydon"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/agnes-st/",
+        "name": "Agnes st",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/70/17/2a/70172ab158146a8df4f40b35e156bf7a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449843284/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/japanese-food",
+    "CustomFileName": "88101736449843284",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449843284",
+      "url": "https://www.pinterest.com/pin/88101736449843284/",
+      "type": "pin",
+      "title": "Cucumber Sushi Rolls",
+      "gridTitle": "Cucumber Sushi Rolls",
+      "description": "These aren't your plain, average cucumber rolls — these be pretty and fancy AF.",
+      "link": "https://www.tastemade.com/videos/cucumber-sushi-rolls",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemade",
+        "url": "https://www.pinterest.com/tastemade/",
+        "name": "Tastemade"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/japanese-food/",
+        "name": "Japanese Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/31/1d/44/311d4448315146752fc593b2c753c216.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/ad/fa/5e/adfa5e162899ffe7ee46cf11be4adfbd.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

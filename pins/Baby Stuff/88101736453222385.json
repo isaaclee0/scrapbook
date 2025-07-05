@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453222385/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/baby-stuff",
+    "CustomFileName": "88101736453222385",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453222385",
+      "url": "https://www.pinterest.com/pin/88101736453222385/",
+      "type": "pin",
+      "title": "Advice For New Moms",
+      "gridTitle": "Advice For New Moms",
+      "description": " ",
+      "link": "https://sites.google.com/view/babysleepmiracle201/home",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/baby-stuff/",
+        "name": "Baby stuff",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c9/a6/1e/c9a61e9e1249c5993ca62f3409c950a0.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/70/e6/41/70e6411aba6e5416674e6c6890c65b3b.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

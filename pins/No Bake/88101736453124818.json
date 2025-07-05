@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453124818/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/no-bake",
+    "CustomFileName": "88101736453124818",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453124818",
+      "url": "https://www.pinterest.com/pin/88101736453124818/",
+      "type": "pin",
+      "title": "4 Ingredient No Bake Cookies",
+      "gridTitle": "4 Ingredient No Bake Cookies",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "hellofrozenbananas",
+        "url": "https://www.pinterest.com/hellofrozenbananas/",
+        "name": "Krista | Food Blogger | Content Creator"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/no-bake/",
+        "name": "No Bake",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/3c/d3/a1/3cd3a104f2fdbf6b26986df95a2cc7ac.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

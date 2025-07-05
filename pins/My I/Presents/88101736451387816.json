@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451387816/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/my-i/presents",
+    "CustomFileName": "88101736451387816",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451387816",
+      "url": "https://www.pinterest.com/pin/88101736451387816/",
+      "type": "pin",
+      "title": "Cable Sticker! Best amazon find",
+      "gridTitle": "Cable Sticker! Best amazon find",
+      "description": " ",
+      "link": "https://amzn.to/2HvJGqj",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "wocommunity",
+        "url": "https://www.pinterest.com/wocommunity/",
+        "name": "Around Living Service"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/my-i/",
+        "name": "My I",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9c/ad/5e/9cad5ee5f802ca0e56bf484a76f6d85c.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/d8/63/ef/d863efc9c7f6199ad8bd1b7e27c19432.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

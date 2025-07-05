@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451341329/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/capsule-wardrobe-and-travel-ideas",
+    "CustomFileName": "88101736451341329",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451341329",
+      "url": "https://www.pinterest.com/pin/88101736451341329/",
+      "type": "pin",
+      "title": "The long scarf transforms into a coat 033",
+      "gridTitle": "The long scarf transforms into a coat 033",
+      "description": "womens Scarf(link)",
+      "link": "https://amzn.to/3vG5y6U",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/capsule-wardrobe-and-travel-ideas/",
+        "name": "Capsule wardrobe and travel ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/46/96/e8/4696e8e0bdf30df54b71db49d949638f.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/13/7a/36/137a3668d60ae90d76fd209a3e4949b3.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

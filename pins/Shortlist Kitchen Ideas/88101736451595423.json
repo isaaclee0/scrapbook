@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451595423/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/shortlist-kitchen-ideas",
+    "CustomFileName": "88101736451595423",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451595423",
+      "url": "https://www.pinterest.com/pin/88101736451595423/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/shortlist-kitchen-ideas/",
+        "name": "Shortlist  - kitchen ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9c/84/66/9c84668386128d9d216138465fe44c82.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450018405/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-fabric",
+    "CustomFileName": "88101736450018405",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450018405",
+      "url": "https://www.pinterest.com/pin/88101736450018405/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "peonyandsage",
+        "url": "https://www.pinterest.com/peonyandsage/",
+        "name": "P E O N Y  & S A G E"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-fabric/",
+        "name": "Cottage Fabric",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c9/b9/6d/c9b96da30c2c37e877f3e1ae3670c2ea.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

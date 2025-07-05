@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452632761/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/artpicturespretty-bits",
+    "CustomFileName": "88101736452632761",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452632761",
+      "url": "https://www.pinterest.com/pin/88101736452632761/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Poule",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "rparrow",
+        "url": "https://www.pinterest.com/rparrow/",
+        "name": "Roxanne Parrow"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/artpicturespretty-bits/",
+        "name": "Art/Pictures/Pretty bits",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b9/9c/87/b99c877c422c559d9fe57e7e7793d36a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

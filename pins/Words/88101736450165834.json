@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450165834/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736450165834",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450165834",
+      "url": "https://www.pinterest.com/pin/88101736450165834/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "We Heart It",
+      "description": "Dr. Suess",
+      "link": "http://weheartit.com/entry/54194007",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/dd/db/e5/dddbe58b6a07b2a827cb0f09a3633d54.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

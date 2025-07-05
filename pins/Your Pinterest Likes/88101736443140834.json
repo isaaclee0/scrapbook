@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443140834/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443140834",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443140834",
+      "url": "https://www.pinterest.com/pin/88101736443140834/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Meme Center - Largest Creative Humor Community",
+      "description": "This has nothing to do with funny animals, but I'm posting it on all my boards for everyone to see.",
+      "link": "http://www.memecenter.com/top/daily",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8f/4f/0e/8f4f0e9b6759842a003d90fc8462606e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

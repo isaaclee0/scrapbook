@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442562825/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442562825",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442562825",
+      "url": "https://www.pinterest.com/pin/88101736442562825/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "eBay - Page Not Found",
+      "description": "Book Hook",
+      "link": "http://svpply.com/item/29860/Book_Hook",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ac/62/68/ac6268ec0c3f1721f34229c006a54edb.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

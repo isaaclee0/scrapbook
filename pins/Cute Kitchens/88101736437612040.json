@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437612040/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cute-kitchens",
+    "CustomFileName": "88101736437612040",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437612040",
+      "url": "https://www.pinterest.com/pin/88101736437612040/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Neptune Suffolk Kitchen",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "distinctlyliving",
+        "url": "https://www.pinterest.com/distinctlyliving/",
+        "name": "Distinctly Living"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cute-kitchens/",
+        "name": "Cute Kitchens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/51/ba/db/51badb95072f784379f747b758174fe5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

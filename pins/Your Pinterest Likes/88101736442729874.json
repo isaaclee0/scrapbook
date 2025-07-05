@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442729874/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442729874",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442729874",
+      "url": "https://www.pinterest.com/pin/88101736442729874/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "21 jardins pour retrouver le sourire",
+      "description": " ",
+      "link": "http://www.cotemaison.fr/jardin-terrasse/diaporama/21-jardins-pour-retrouver-le-sourire_13084.html?p=4#diaporama",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/81/4c/8f/814c8f9d8bdbd8813f48ddddf8bb729c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

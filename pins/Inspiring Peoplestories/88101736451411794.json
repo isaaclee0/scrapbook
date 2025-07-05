@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451411794/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/inspiring-peoplestories",
+    "CustomFileName": "88101736451411794",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451411794",
+      "url": "https://www.pinterest.com/pin/88101736451411794/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "JasmineVoosen",
+        "url": "https://www.pinterest.com/JasmineVoosen/",
+        "name": "💕   Jasmine"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/inspiring-peoplestories/",
+        "name": "Inspiring people/stories",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/55/89/02/55890206f2266f0ab5408e6a467e3542.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

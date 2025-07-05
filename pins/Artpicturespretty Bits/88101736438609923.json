@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438609923/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/artpicturespretty-bits",
+    "CustomFileName": "88101736438609923",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438609923",
+      "url": "https://www.pinterest.com/pin/88101736438609923/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Arthur John Elsley (1860-1952)",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ludiko",
+        "url": "https://www.pinterest.com/ludiko/",
+        "name": "Ludiko Sior"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/artpicturespretty-bits/",
+        "name": "Art/Pictures/Pretty bits",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d2/3d/9b/d23d9b34f83515b02c93b8da38b5dcd6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

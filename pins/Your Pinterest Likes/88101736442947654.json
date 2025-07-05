@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442947654/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442947654",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442947654",
+      "url": "https://www.pinterest.com/pin/88101736442947654/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Little Hands, Little Books, But Not Just Little Words",
+      "description": "Why we need Beatrix Potter",
+      "link": "http://momentswithmotherculture.blogspot.com/2014/05/little-hands-little-books-no-just.html#.U3UvcXZ40Xg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/68/b5/1b/68b51be5644c7fb254be4c36b41a7b14.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

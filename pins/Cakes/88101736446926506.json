@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446926506/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736446926506",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446926506",
+      "url": "https://www.pinterest.com/pin/88101736446926506/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Pear and ginger upside-down cake",
+      "description": " ",
+      "link": "http://www.taste.com.au/recipes/19740/pear+and+ginger+upside+down+cake",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e7/1c/b4/e71cb442a7d853bd2aabe4fb524910f2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

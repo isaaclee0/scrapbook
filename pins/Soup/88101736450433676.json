@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450433676/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/soup",
+    "CustomFileName": "88101736450433676",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450433676",
+      "url": "https://www.pinterest.com/pin/88101736450433676/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Roasted Tomato Basil Soup",
+      "description": " ",
+      "link": "https://howtofeedaloon.com/roasted-tomato-basil-soup/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "divascancook",
+        "url": "https://www.pinterest.com/divascancook/",
+        "name": "Divas Can Cook"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/soup/",
+        "name": "Soup",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e8/c0/5c/e8c05cf09990fc4d9d449675f3f02505.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

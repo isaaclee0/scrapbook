@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439022134/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736439022134",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439022134",
+      "url": "https://www.pinterest.com/pin/88101736439022134/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Pechugas de pollo rellenas de jamón, queso y pimientos del piquillo - Recetín",
+      "description": "Pechugas de pollo rellenas de jamón, queso y pimientos del piquillo - Recetín",
+      "link": "http://www.recetin.com/pechugas-pollo-rellenas-jamon-queso-pimientos-del-piquillo.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b9/b3/26/b9b326a4a0572a4232d54aa40d07ee0b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

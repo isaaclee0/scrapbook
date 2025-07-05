@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440248865/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736440248865",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440248865",
+      "url": "https://www.pinterest.com/pin/88101736440248865/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chocolate Tacos",
+      "description": "Chocolate Tacos filled with vanilla ice cream, chocolate ice cream, whipped cream and strawberries. I used magnolia lace cookies made with cocoa so they had the crunch of a hard taco.",
+      "link": "http://www.cravingsofalunatic.com/2014/10/chocolate-tacos.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f5/ae/5d/f5ae5d2d6e0d90a86ba33f44ae88b8ed.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

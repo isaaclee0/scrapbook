@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439818437/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/ice-cream",
+    "CustomFileName": "88101736439818437",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439818437",
+      "url": "https://www.pinterest.com/pin/88101736439818437/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Snow Ice Cream | Gimme Some Oven",
+      "description": "Snow Ice Cream -- it's so tasty, made with just 4 easy ingredients and REAL SNOW! | gimmesomeoven.com",
+      "link": "http://www.gimmesomeoven.com/how-to-make-snow-ice-cream-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "gimmesomeoven",
+        "url": "https://www.pinterest.com/gimmesomeoven/",
+        "name": "Ali Martin (Gimme Some Oven)"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/ice-cream/",
+        "name": "Ice cream",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/aa/3d/e7/aa3de7b49db1788ba0dce4b4fa8f102d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

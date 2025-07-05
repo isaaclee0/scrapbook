@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451686669/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736451686669",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451686669",
+      "url": "https://www.pinterest.com/pin/88101736451686669/",
+      "type": "pin",
+      "title": "Let them in",
+      "gridTitle": "Kitty Korner® a New Kind of Cat Door",
+      "description": "Set your cat free",
+      "link": "http://www.kittykornerdoor.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/17/1f/0f/171f0fd4425a95c48e5bc882cbbf2103.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

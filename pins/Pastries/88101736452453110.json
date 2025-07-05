@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452453110/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pastries",
+    "CustomFileName": "88101736452453110",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452453110",
+      "url": "https://www.pinterest.com/pin/88101736452453110/",
+      "type": "pin",
+      "title": "Cooking Techniques",
+      "gridTitle": "Cooking Techniques",
+      "description": " ",
+      "link": "https://cookinginsights.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 18,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "COOKINGINSIGHTS",
+        "url": "https://www.pinterest.com/COOKINGINSIGHTS/",
+        "name": "Cooking Insights"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pastries/",
+        "name": "pastries",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ef/63/07/ef63071b7a81a5e2f7c11eafbfad5bb9.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/92/89/dc/9289dcd3cc6c57b3635b262b05dcbe9c.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

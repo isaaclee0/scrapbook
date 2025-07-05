@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453147118/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736453147118",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453147118",
+      "url": "https://www.pinterest.com/pin/88101736453147118/",
+      "type": "pin",
+      "title": "the silent ones get me 🤭😭",
+      "gridTitle": "the silent ones get me 🤭😭",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "catofday",
+        "url": "https://www.pinterest.com/catofday/",
+        "name": "CatOfDay"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/12/5a/3e/125a3e72a6fe06351ffc02a0b2dd81c1.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/d3/ed/87/d3ed87ed487db1fe48e1a106b1b89f79.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

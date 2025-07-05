@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442329920/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442329920",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442329920",
+      "url": "https://www.pinterest.com/pin/88101736442329920/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Neatorama",
+      "description": "caterpillar camouflaged as flower",
+      "link": "http://www.neatorama.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ca/ea/68/caea68507e6719584c04f38be196e3b4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

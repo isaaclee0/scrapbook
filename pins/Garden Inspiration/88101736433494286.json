@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433494286/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/garden-inspiration",
+    "CustomFileName": "88101736433494286",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433494286",
+      "url": "https://www.pinterest.com/pin/88101736433494286/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "lavender garden - sublime decor",
+      "description": "lavender garden",
+      "link": "http://sublime-decor.com/?p=9113",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/garden-inspiration/",
+        "name": "Garden Inspiration",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5b/e3/4d/5be34d9bcd63b4140404bb01571d1790.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

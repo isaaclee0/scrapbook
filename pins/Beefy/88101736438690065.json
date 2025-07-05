@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438690065/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/beefy",
+    "CustomFileName": "88101736438690065",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438690065",
+      "url": "https://www.pinterest.com/pin/88101736438690065/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Philly Cheese Meatloaf",
+      "description": "Philly Cheese Meatloaf",
+      "link": "http://ofthehearth.com/philly-cheese-meatloaf/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "rochyde",
+        "url": "https://www.pinterest.com/rochyde/",
+        "name": "Rochelle Hyde"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/beefy/",
+        "name": "Beefy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/67/78/15/677815621cf9e4292187ea5b55a17467.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

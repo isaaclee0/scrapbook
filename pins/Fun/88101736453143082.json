@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453143082/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fun",
+    "CustomFileName": "88101736453143082",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453143082",
+      "url": "https://www.pinterest.com/pin/88101736453143082/",
+      "type": "pin",
+      "title": "Winter fun.",
+      "gridTitle": "Winter fun.",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "BeautyOutfitsOfficial",
+        "url": "https://www.pinterest.com/BeautyOutfitsOfficial/",
+        "name": "Beauty Outfits"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fun/",
+        "name": "Fun",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a1/88/73/a188733ec146856d3498336b47f0f433.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/a1/37/93/a1379313dd7b943cde53fe27929600d2.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

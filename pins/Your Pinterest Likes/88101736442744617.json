@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442744617/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442744617",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442744617",
+      "url": "https://www.pinterest.com/pin/88101736442744617/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "How to make Iced Branches",
+      "description": "How to make iced branches, or \"ice\" anything for winter. This is a must!",
+      "link": "http://makethemwonderblog.blogspot.com/2011/12/how-to-make-iced-branches.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0f/b9/c2/0fb9c2c00a3445205b44d61fb6d3ca2b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

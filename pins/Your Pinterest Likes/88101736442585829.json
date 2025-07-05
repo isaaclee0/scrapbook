@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442585829/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442585829",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442585829",
+      "url": "https://www.pinterest.com/pin/88101736442585829/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "My book for the Pastor's Wife.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "kaycocklin",
+        "url": "https://www.pinterest.com/kaycocklin/",
+        "name": "Kay Cocklin"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4a/69/98/4a69981a1b0a3a78f1af0fd2e1de864e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439080095/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cocker-spaniels",
+    "CustomFileName": "88101736439080095",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439080095",
+      "url": "https://www.pinterest.com/pin/88101736439080095/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "a few days later",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 5,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "lefterispapacon",
+        "url": "https://www.pinterest.com/lefterispapacon/",
+        "name": "Lefteris Papaconstantinou"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cocker-spaniels/",
+        "name": "Cocker Spaniels",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0d/15/c4/0d15c4c42ba328ebd7265881155cfd61.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

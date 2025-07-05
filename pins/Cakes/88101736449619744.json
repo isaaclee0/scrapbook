@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449619744/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736449619744",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449619744",
+      "url": "https://www.pinterest.com/pin/88101736449619744/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Nanna's golden syrup custard cake",
+      "description": " ",
+      "link": "https://www.taste.com.au/recipes/nannas-golden-syrup-custard-cake-recipe/ktcy7b1z",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "teamtaste",
+        "url": "https://www.pinterest.com/teamtaste/",
+        "name": "taste.com.au"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1a/15/c5/1a15c51f4718622de3c84abe3bcf7e6a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

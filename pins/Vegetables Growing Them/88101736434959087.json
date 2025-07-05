@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434959087/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/vegetables-growing-them",
+    "CustomFileName": "88101736434959087",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434959087",
+      "url": "https://www.pinterest.com/pin/88101736434959087/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "corn maze...",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "kharramba",
+        "url": "https://www.pinterest.com/kharramba/",
+        "name": "Julie Puckett"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/vegetables-growing-them/",
+        "name": "Vegetables  - growing them",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/28/11/f3/2811f34573444f29cc26ec69b68e9e38.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451492742/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/feathered-friends",
+    "CustomFileName": "88101736451492742",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451492742",
+      "url": "https://www.pinterest.com/pin/88101736451492742/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Fancitaste",
+      "description": "Fanci-Taste",
+      "link": "http://fancitaste.tumblr.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 5,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/feathered-friends/",
+        "name": "Feathered friends",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/27/c4/6c/27c46c491af74f645ced8c7c70a06a87.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448018328/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/salads",
+    "CustomFileName": "88101736448018328",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448018328",
+      "url": "https://www.pinterest.com/pin/88101736448018328/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Taco Pasta Salad",
+      "description": "This Taco Pasta Salad is a family favorite! This pasta salad recipe is perfect for BBQs, potlucks and big family gatherings! It has a secret ingredient that stops everyone in their tracks! #pastasalad",
+      "link": "https://www.wineandglue.com/taco-pasta-salad/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "lisasimplejoy",
+        "url": "https://www.pinterest.com/lisasimplejoy/",
+        "name": "Simple Joy (formerly Wine & Glue)"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/salads/",
+        "name": "Salads",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/47/b0/ce/47b0ce26bd6481d0a26f8b9c8ac47e59.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

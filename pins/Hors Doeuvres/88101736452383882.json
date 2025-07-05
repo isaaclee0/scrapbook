@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452383882/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hors-doeuvres",
+    "CustomFileName": "88101736452383882",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452383882",
+      "url": "https://www.pinterest.com/pin/88101736452383882/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Canapes",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "easygourmet",
+        "url": "https://www.pinterest.com/easygourmet/",
+        "name": "Easy Gourmet"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hors-doeuvres/",
+        "name": "Hors D'oeuvres",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fb/25/4d/fb254daef6d8534442a91063df9f6626.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

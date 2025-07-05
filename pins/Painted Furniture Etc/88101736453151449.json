@@ -1,0 +1,47 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453151449/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painted-furniture-etc",
+    "CustomFileName": "88101736453151449",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453151449",
+      "url": "https://www.pinterest.com/pin/88101736453151449/",
+      "type": "pin",
+      "title": "Beautiful furniture",
+      "gridTitle": "Beautiful furniture",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painted-furniture-etc/",
+        "name": "Painted Furniture etc",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/97/de/4a/97de4a3a8e6ec54f3c3efae451017c50.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/e7/7b/d8/e77bd82c9f0d8aa6309b905e14af3975.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

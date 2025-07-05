@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451545737/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736451545737",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451545737",
+      "url": "https://www.pinterest.com/pin/88101736451545737/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Pippin looks out the window.",
+      "description": "“Even though the rain is gone, I’m not sure I can see clearly now.”",
+      "link": "http://imgur.com/OuLLXbG",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b0/10/b5/b010b54e6d1bd9905ce68e5bd5464ff4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

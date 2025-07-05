@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442616876/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442616876",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442616876",
+      "url": "https://www.pinterest.com/pin/88101736442616876/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Random Pictures Of The Day - 60 Pics",
+      "description": "Fact",
+      "link": "http://www.dumpaday.com/random-pictures/random-pictures-day-60-pics-5/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a9/ca/2d/a9ca2d92d4de6c20c4469d0001858af8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452678233/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/facial-exercises",
+    "CustomFileName": "88101736452678233",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452678233",
+      "url": "https://www.pinterest.com/pin/88101736452678233/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "T__R__E__N__D__Y",
+        "url": "https://www.pinterest.com/T__R__E__N__D__Y/",
+        "name": "TRENDY"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/facial-exercises/",
+        "name": "Facial Exercises",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/11/4f/33/114f337357bc886c9275a845cc0dc483.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/1e/9f/6a/1e9f6a2333c70934a1adc701800471d1.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445349403/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/vegetables-growing-them",
+    "CustomFileName": "88101736445349403",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445349403",
+      "url": "https://www.pinterest.com/pin/88101736445349403/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "jardin: I love this vege garden",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "35june",
+        "url": "https://www.pinterest.com/35june/",
+        "name": "Jaldo"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/vegetables-growing-them/",
+        "name": "Vegetables  - growing them",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0c/78/2e/0c782e5fc0bc0e76d65464c77de3a442.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

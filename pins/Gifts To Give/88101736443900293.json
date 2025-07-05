@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443900293/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/gifts-to-give",
+    "CustomFileName": "88101736443900293",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443900293",
+      "url": "https://www.pinterest.com/pin/88101736443900293/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Louiserrr... natural beauty!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/gifts-to-give/",
+        "name": "Gifts to give",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/09/58/c8/0958c8fa1a19f2e8b8957fcca368ad27.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

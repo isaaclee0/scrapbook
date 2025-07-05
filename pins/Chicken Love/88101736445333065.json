@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445333065/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-love",
+    "CustomFileName": "88101736445333065",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445333065",
+      "url": "https://www.pinterest.com/pin/88101736445333065/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Beautiful, winter chickens.",
+      "link": "https://www.instagram.com/p/BdXchAEFPRF/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 5,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-love/",
+        "name": "Chicken love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/29/38/18/293818cce2c147ab3155a6dc4ab84072.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

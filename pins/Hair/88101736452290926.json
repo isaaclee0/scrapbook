@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452290926/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736452290926",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452290926",
+      "url": "https://www.pinterest.com/pin/88101736452290926/",
+      "type": "pin",
+      "title": "Anaa Favaron",
+      "gridTitle": "Anaa Favaron",
+      "description": " ",
+      "link": "https://m.youtube.com/user/nothingbutpixies",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 11,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "nothingbutpixies",
+        "url": "https://www.pinterest.com/nothingbutpixies/",
+        "name": "Nothing But Pixies"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b0/89/98/b08998686a95ff3789ba4cfbeeaa21b5.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/c4/02/9b/c4029b675943cb788db18029e11a56ec.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

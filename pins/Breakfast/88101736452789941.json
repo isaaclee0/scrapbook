@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452789941/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/breakfast",
+    "CustomFileName": "88101736452789941",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452789941",
+      "url": "https://www.pinterest.com/pin/88101736452789941/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "BEST Crepe Recipe (with Video) - Lauren's Latest",
+      "description": " ",
+      "link": "https://laurenslatest.com/better-than-paris-crepes/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "laurenslatest",
+        "url": "https://www.pinterest.com/laurenslatest/",
+        "name": "Lauren's Latest"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/breakfast/",
+        "name": "Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8d/f7/55/8df7556e8af279aafee771e3a52f5076.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

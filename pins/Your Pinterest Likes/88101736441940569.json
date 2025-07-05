@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441940569/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736441940569",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441940569",
+      "url": "https://www.pinterest.com/pin/88101736441940569/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Frisky - Popular Web Magazine",
+      "description": "A great tongue-in-cheek PSA putting the responsibility of ending rape in the hands of those who are actually responsible for it!",
+      "link": "http://www.thefrisky.com/2011-10-18/10-top-tips-to-end-rape/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c0/bb/6b/c0bb6bd1c52a045bbd4844507c4dad3a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

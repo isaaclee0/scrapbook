@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444736924/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/the-reds-have-it",
+    "CustomFileName": "88101736444736924",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444736924",
+      "url": "https://www.pinterest.com/pin/88101736444736924/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "cornelialigthar",
+        "url": "https://www.pinterest.com/cornelialigthar/",
+        "name": "Cornelia Ligthart"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/the-reds-have-it/",
+        "name": "The Reds Have It",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/dc/23/10/dc2310ef6dc6bbab0676fba3ba3549d3.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

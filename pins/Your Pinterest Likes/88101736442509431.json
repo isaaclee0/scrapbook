@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442509431/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442509431",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442509431",
+      "url": "https://www.pinterest.com/pin/88101736442509431/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "DIY for a Fairy Tale Setting for a Wedding",
+      "description": "To get balloon to hang upside down... put a marble in the balloon before you blow it up.",
+      "link": "http://truebluemeandyou.tumblr.com/post/13595885160/diy-for-a-fairy-tale-setting-or-a-backwards",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/de/00/e0/de00e079433a1c45a8191925c3cfb0fb.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

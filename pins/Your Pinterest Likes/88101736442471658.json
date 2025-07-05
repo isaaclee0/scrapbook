@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442471658/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442471658",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442471658",
+      "url": "https://www.pinterest.com/pin/88101736442471658/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "This is not a caterpillar! It's amazing!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "revmccoy3",
+        "url": "https://www.pinterest.com/revmccoy3/",
+        "name": "Charley McCoy"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/22/e4/40/22e440116c3815ee132b7509a6627321.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433922397/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/mexican-and-tex-mex",
+    "CustomFileName": "88101736433922397",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433922397",
+      "url": "https://www.pinterest.com/pin/88101736433922397/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "ground beef chimichangas!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/mexican-and-tex-mex/",
+        "name": "Mexican and Tex Mex",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d2/7c/4f/d27c4f00469b2bdda817f744c27526b4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

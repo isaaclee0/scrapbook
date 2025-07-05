@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437269210/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-fireplace",
+    "CustomFileName": "88101736437269210",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437269210",
+      "url": "https://www.pinterest.com/pin/88101736437269210/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "primitive home",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "debkappler",
+        "url": "https://www.pinterest.com/debkappler/",
+        "name": "Debi"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-fireplace/",
+        "name": "Cottage Fireplace",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3d/cc/a1/3dcca10bf8b72422ee7d3905f64f4f9a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

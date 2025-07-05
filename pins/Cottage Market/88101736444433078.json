@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444433078/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-market",
+    "CustomFileName": "88101736444433078",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444433078",
+      "url": "https://www.pinterest.com/pin/88101736444433078/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "My Honesty Box. Fresh Eggs & Home Baking.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-market/",
+        "name": "Cottage Market",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c4/51/81/c45181e45dc283a85c1b42441c2e87f3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

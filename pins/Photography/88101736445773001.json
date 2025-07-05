@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445773001/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/photography",
+    "CustomFileName": "88101736445773001",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445773001",
+      "url": "https://www.pinterest.com/pin/88101736445773001/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Collie Rough",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/photography/",
+        "name": "Photography",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/75/81/2b/75812b0b7a0b9b25b23a8a1b923411f2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

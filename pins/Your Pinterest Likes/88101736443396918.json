@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443396918/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443396918",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443396918",
+      "url": "https://www.pinterest.com/pin/88101736443396918/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": ",",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "chinkyaku",
+        "url": "https://www.pinterest.com/chinkyaku/",
+        "name": "Chinkyaku San"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c5/82/47/c5824706d7e6aebd88a3ebf690ebcc9e.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

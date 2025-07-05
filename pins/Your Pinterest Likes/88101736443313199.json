@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443313199/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443313199",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443313199",
+      "url": "https://www.pinterest.com/pin/88101736443313199/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Banana Republic",
+      "description": "Minimalist wardrobe",
+      "link": "http://bananarepublic.gap.com/browse/category.do?cid=72560",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9c/b2/ad/9cb2ada94c2a3a366082fb9c351622ce.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

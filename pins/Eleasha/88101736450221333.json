@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450221333/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/eleasha",
+    "CustomFileName": "88101736450221333",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450221333",
+      "url": "https://www.pinterest.com/pin/88101736450221333/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Подарочный набор - 100",
+      "description": "Подарочный набор в ящике с вином",
+      "link": "https://boom-box.by/podarochniynabor100",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/eleasha/",
+        "name": "Eleasha",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cb/31/e8/cb31e84cb564e01c8c5b07bb99a72583.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

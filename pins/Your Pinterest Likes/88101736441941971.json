@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441941971/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736441941971",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441941971",
+      "url": "https://www.pinterest.com/pin/88101736441941971/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Cornstarch: your friend in the garden",
+      "description": "Cornstarch - Tomatoes best friend - safe alternative to poisons - helps deter many garden pests that feed on tomatoes",
+      "link": "http://oneparticularkitchen.com/2010/07/20/cornstarch-your-friend-in-the-garden/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5a/8a/22/5a8a224c349872b2950d9e66d0230c05.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

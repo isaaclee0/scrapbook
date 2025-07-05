@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431107095/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/upcycling-ideas",
+    "CustomFileName": "88101736431107095",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431107095",
+      "url": "https://www.pinterest.com/pin/88101736431107095/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Made from old windows!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "transmigration_vintage",
+        "url": "https://www.pinterest.com/transmigration_vintage/",
+        "name": "transmigration"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/upcycling-ideas/",
+        "name": "Upcycling Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3c/0b/5c/3c0b5ce9cfdf11c1af5f4e3e23f85606.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

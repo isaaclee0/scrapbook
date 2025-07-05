@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443303773/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443303773",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443303773",
+      "url": "https://www.pinterest.com/pin/88101736443303773/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Willow Creek TV",
+      "description": "Wow...very well said.",
+      "link": "http://media.willowcreek.org/weekend/prayer-together/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "willowcreekcc",
+        "url": "https://www.pinterest.com/willowcreekcc/",
+        "name": "Willow Creek Community Church"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/30/1b/b5/301bb53692fba640c4600ac89335d1bd.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

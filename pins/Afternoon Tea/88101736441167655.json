@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441167655/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736441167655",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441167655",
+      "url": "https://www.pinterest.com/pin/88101736441167655/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Oven Baked Fruit Scones - My Scottish grandmother always had egg in her recipe for scones.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b0/a6/6f/b0a66ff804b99e199588573bcf2e49b0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

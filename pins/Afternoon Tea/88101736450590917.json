@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450590917/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736450590917",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450590917",
+      "url": "https://www.pinterest.com/pin/88101736450590917/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Brown Sugar, Cinnamon and Hazelnut Meringues",
+      "description": "Brown sugar, cinnamon and hazelnut meringues",
+      "link": "http://www.poiresauchocolat.net/2010/10/brown-sugar-cinnamon-and-hazelnut.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "trendymood",
+        "url": "https://www.pinterest.com/trendymood/",
+        "name": "Trendy Mood"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b4/ce/5e/b4ce5e175afa4c4446e6a2de10427754.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

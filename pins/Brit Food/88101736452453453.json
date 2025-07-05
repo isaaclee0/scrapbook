@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452453453/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/brit-food",
+    "CustomFileName": "88101736452453453",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452453453",
+      "url": "https://www.pinterest.com/pin/88101736452453453/",
+      "type": "pin",
+      "title": "GBBO Cornish Pasties",
+      "gridTitle": "GBBO Cornish Pasties",
+      "description": "Beneath the Crust's Great British Bake Off Challenge: Cornish Pasties!",
+      "link": "https://www.beneaththecrust.com/blog/cornish-pasties",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "beneaththecrust",
+        "url": "https://www.pinterest.com/beneaththecrust/",
+        "name": "Beneath the Crust"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/brit-food/",
+        "name": "Brit Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a1/af/5e/a1af5e5c7864c1be691bcf669ce720a1.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

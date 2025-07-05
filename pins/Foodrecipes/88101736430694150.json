@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430694150/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430694150",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430694150",
+      "url": "https://www.pinterest.com/pin/88101736430694150/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "White Bean and Roasted Mushroom Soup",
+      "description": "White Bean and Roasted Mushroom Soup",
+      "link": "http://shewearsmanyhats.com/2011/10/roasted-mushroom-soup/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d7/b2/ed/d7b2ed4e362770084b6bfbfda7e15717.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445280093/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736445280093",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445280093",
+      "url": "https://www.pinterest.com/pin/88101736445280093/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chicken moussaka",
+      "description": "Chicken moussaka",
+      "link": "http://www.taste.com.au/recipes/21685/chicken+moussaka?ref=collections,roast-recipes",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3b/6c/07/3b6c07fdc2d9c219917392c4f72af930.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

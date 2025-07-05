@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433533617/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cute-kitchens",
+    "CustomFileName": "88101736433533617",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433533617",
+      "url": "https://www.pinterest.com/pin/88101736433533617/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "My Blog",
+      "description": "Kitchen recent",
+      "link": "http://fabulousfifi.typepad.com/photos/nest/kitchen_recent.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cute-kitchens/",
+        "name": "Cute Kitchens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6a/19/96/6a1996f436e2a7eebd55115a58b46f7a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

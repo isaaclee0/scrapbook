@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430607143/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430607143",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430607143",
+      "url": "https://www.pinterest.com/pin/88101736430607143/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Homemade Barbecue Potato Chips - Just a Taste",
+      "description": "Homemade Barbecue Potato Chips",
+      "link": "http://www.justataste.com/2011/05/homemade-barbecue-potato-chips/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b0/1f/e6/b01fe612975f250cb976381d38ba98f2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

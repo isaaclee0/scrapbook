@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432754344/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736432754344",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432754344",
+      "url": "https://www.pinterest.com/pin/88101736432754344/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Definitely our new favorite chicken recipe...sweet & spicy chicken (though not spicy at all...our kid eats it right up)",
+      "link": "http://joelens.blogspot.com/2007/05/sweet-spicy-evening.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/dc/e4/3b/dce43bc86865581ab3e67429d769e0ac.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

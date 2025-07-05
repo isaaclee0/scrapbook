@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452438902/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/photo-ideas-in-garden",
+    "CustomFileName": "88101736452438902",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452438902",
+      "url": "https://www.pinterest.com/pin/88101736452438902/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "emanino",
+        "url": "https://www.pinterest.com/emanino/",
+        "name": "enrico manino"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/photo-ideas-in-garden/",
+        "name": "Photo ideas in garden",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b0/3a/37/b03a3791d7ecadc7aa1c9559317a58cc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

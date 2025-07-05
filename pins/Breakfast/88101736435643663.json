@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435643663/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/breakfast",
+    "CustomFileName": "88101736435643663",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435643663",
+      "url": "https://www.pinterest.com/pin/88101736435643663/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Rebel Within Recipe - Soft Boiled Egg in a Cheddar Biscuit",
+      "description": "Soft Boiled Egg in a Biscuit by norecipes #Egg #Biscuit",
+      "link": "http://norecipes.com/recipe/egg-in-a-biscuit/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/breakfast/",
+        "name": "Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cd/73/71/cd73715968bb205bc45800b1407e1127.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

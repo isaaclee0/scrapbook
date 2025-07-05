@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438495099/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pork",
+    "CustomFileName": "88101736438495099",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438495099",
+      "url": "https://www.pinterest.com/pin/88101736438495099/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Untitled",
+      "description": "roast pork and pears",
+      "link": "http://www.flickr.com/photos/41315642@N04/6218908060/in/photostream",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pork/",
+        "name": "Pork",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4e/15/dc/4e15dcbddcb033e2879ac05e21768b3f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

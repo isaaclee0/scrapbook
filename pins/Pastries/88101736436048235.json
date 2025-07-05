@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436048235/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pastries",
+    "CustomFileName": "88101736436048235",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436048235",
+      "url": "https://www.pinterest.com/pin/88101736436048235/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "think healthy thoughts",
+      "description": "Perfect Apple Pie GF",
+      "link": "http://abakinglife.thedailymeal.com/2010/02/think-healthy-thoughts.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pastries/",
+        "name": "pastries",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/12/c3/f7/12c3f74b74def7d755e85d2de203ed09.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

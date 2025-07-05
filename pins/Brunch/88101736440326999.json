@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440326999/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/brunch",
+    "CustomFileName": "88101736440326999",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440326999",
+      "url": "https://www.pinterest.com/pin/88101736440326999/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Breakfast Puffins - Chef in Training",
+      "description": "Breakfast Puffins",
+      "link": "http://www.chef-in-training.com/2013/03/breakfast-puffins/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/brunch/",
+        "name": "Brunch",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/46/4c/cc/464ccc3074b976b8de087747b9e43bea.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

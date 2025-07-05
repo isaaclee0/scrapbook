@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437960173/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736437960173",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437960173",
+      "url": "https://www.pinterest.com/pin/88101736437960173/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Brown Betty Teapot",
+      "description": "afternoon  tea",
+      "link": "http://www.flickr.com/photos/clevercupcakes/2368914654/?reg=1&src=fave",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d5/be/5c/d5be5cfbeadb802930a740a6ca96e187.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

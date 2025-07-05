@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446468892/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736446468892",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446468892",
+      "url": "https://www.pinterest.com/pin/88101736446468892/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Afternoon Tea",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "duthiemelindam",
+        "url": "https://www.pinterest.com/duthiemelindam/",
+        "name": "Melinda Duthie"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fe/0b/51/fe0b518c035bb536d78983f32811f42c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

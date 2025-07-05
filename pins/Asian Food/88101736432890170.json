@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432890170/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/asian-food",
+    "CustomFileName": "88101736432890170",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432890170",
+      "url": "https://www.pinterest.com/pin/88101736432890170/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Soup anyone??",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/asian-food/",
+        "name": "Asian Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d7/5c/4f/d75c4f157b3c43db8b7a5670e3df28f2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

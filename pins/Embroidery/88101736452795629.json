@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452795629/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/embroidery",
+    "CustomFileName": "88101736452795629",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452795629",
+      "url": "https://www.pinterest.com/pin/88101736452795629/",
+      "type": "pin",
+      "title": "Hand embroidery",
+      "gridTitle": "Hand embroidery",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "malatordesign",
+        "url": "https://www.pinterest.com/malatordesign/",
+        "name": "Malator Design"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/embroidery/",
+        "name": "Embroidery",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c5/cb/73/c5cb73b2022f6afc26410c287c2e4edd.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/8b/86/74/8b86745756a8bf3f4be3eb33da3f5a31.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

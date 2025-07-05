@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443735565/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443735565",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443735565",
+      "url": "https://www.pinterest.com/pin/88101736443735565/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "..summer memories..",
+      "description": "Just a boy and his goose. . .",
+      "link": "https://www.flickr.com/photos/75571860@N06/22940481171/in/faves-135363417@N08/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Chmura4",
+        "url": "https://www.pinterest.com/Chmura4/",
+        "name": "Marie"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2f/b6/2a/2fb62ad02ab6878d5cd607ca380ea4d8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

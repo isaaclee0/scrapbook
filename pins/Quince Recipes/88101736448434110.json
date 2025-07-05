@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448434110/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/quince-recipes",
+    "CustomFileName": "88101736448434110",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448434110",
+      "url": "https://www.pinterest.com/pin/88101736448434110/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Nine-hour poached quince",
+      "description": "Slow-poached quince :: Gourmet Traveller Magazine Mobile",
+      "link": "http://m.gourmettraveller.com.au/recipes/recipe-search/feature-recipe/2014/5/slow-poached-quince/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/quince-recipes/",
+        "name": "Quince Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/88/27/ef/8827ef2772d3a085e1944db0283e3f47.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

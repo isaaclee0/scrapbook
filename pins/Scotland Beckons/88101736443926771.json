@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443926771/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/scotland-beckons",
+    "CustomFileName": "88101736443926771",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443926771",
+      "url": "https://www.pinterest.com/pin/88101736443926771/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Too Sweet",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "SacredHeartWitch",
+        "url": "https://www.pinterest.com/SacredHeartWitch/",
+        "name": "Sacred Heart Witch"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/scotland-beckons/",
+        "name": "Scotland Beckons",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b5/1d/1e/b51d1e60b3f09203dcbb0e542e5efb95.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

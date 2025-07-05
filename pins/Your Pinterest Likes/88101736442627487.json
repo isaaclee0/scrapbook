@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442627487/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442627487",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442627487",
+      "url": "https://www.pinterest.com/pin/88101736442627487/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Tunnel of Love 在烏克蘭。其實火車軌是用來運fiber board，每日三班",
+      "link": "http://a7.sphotos.ak.fbcdn.net/hphotos-ak-snc7/p480x480/575069_10150826554268978_1923789390_n.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e4/e3/8a/e4e38a53ecf88039fa8f890c2d460a77.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

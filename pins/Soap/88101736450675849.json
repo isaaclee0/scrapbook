@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450675849/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/soap",
+    "CustomFileName": "88101736450675849",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450675849",
+      "url": "https://www.pinterest.com/pin/88101736450675849/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Soaphistication",
+      "description": "Beautiful daisy soap.  Link doesn't go to this soap page.",
+      "link": "http://soaphistication.blogspot.ca/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/soap/",
+        "name": "Soap",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/34/65/15/346515d6916a9f4fd48c9f0c1cf624df.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

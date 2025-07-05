@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443926762/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/scotland-beckons",
+    "CustomFileName": "88101736443926762",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443926762",
+      "url": "https://www.pinterest.com/pin/88101736443926762/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Plockton in Autumn, Scottish Highlands.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/scotland-beckons/",
+        "name": "Scotland Beckons",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fa/6c/4f/fa6c4f4310dc64dfad8660dc45774eac.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451478456/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tips-and-tricks",
+    "CustomFileName": "88101736451478456",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451478456",
+      "url": "https://www.pinterest.com/pin/88101736451478456/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "1000 Life Hacks on X",
+      "description": "Image",
+      "link": "https://mobile.twitter.com/1000lifehacks/status/1085658064038985729/photo/1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tips-and-tricks/",
+        "name": "Tips and Tricks",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a7/19/2c/a7192ceba180f8af86af9ce36b4ebfea.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442230689/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442230689",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442230689",
+      "url": "https://www.pinterest.com/pin/88101736442230689/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "This item is unavailable - Etsy",
+      "description": "Northern Saw-whet owl.",
+      "link": "http://www.etsy.com/listing/43027688/northern-saw-whet-owl-8x10-unframed?ref=v1_other_2",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f7/2b/68/f72b682ca72950a9c779c6baa27f53c4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

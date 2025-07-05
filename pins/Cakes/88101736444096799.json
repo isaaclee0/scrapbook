@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444096799/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736444096799",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444096799",
+      "url": "https://www.pinterest.com/pin/88101736444096799/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Delicja makowa",
+      "description": "Poppy Seed and Cranberry Slice",
+      "link": "http://www.kwestiasmaku.com/kuchnia_polska/wigilia/delicja_makowa/przepis.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fd/57/58/fd57588026adb7e4b5470c26c8afe300.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

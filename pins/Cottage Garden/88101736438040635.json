@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438040635/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-garden",
+    "CustomFileName": "88101736438040635",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438040635",
+      "url": "https://www.pinterest.com/pin/88101736438040635/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "English Country rose archway",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "siafanar",
+        "url": "https://www.pinterest.com/siafanar/",
+        "name": "Siafanar Bos"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-garden/",
+        "name": "Cottage garden",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/29/ba/61/29ba61a9043eb45a506b2ac4768399c8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440079968/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736440079968",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440079968",
+      "url": "https://www.pinterest.com/pin/88101736440079968/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "EPHESIANS 4:31-32",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "phoebetroyer",
+        "url": "https://www.pinterest.com/phoebetroyer/",
+        "name": "Phoebe"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a4/e9/68/a4e9685dc7336da2db4c55752d7cb8d7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449536203/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/polenta",
+    "CustomFileName": "88101736449536203",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449536203",
+      "url": "https://www.pinterest.com/pin/88101736449536203/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Soft Polenta with Parmesan Recipe | Maggie Beer",
+      "description": "Soft Polenta with Parmesan - Maggie Beer",
+      "link": "https://www.maggiebeer.com.au/recipes/soft-polenta-with-parmesan",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Maggie_Beer",
+        "url": "https://www.pinterest.com/Maggie_Beer/",
+        "name": "Maggie Beer"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/polenta/",
+        "name": "Polenta",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/07/3b/d5/073bd5df2714709c0123874d53911981.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439826269/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736439826269",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439826269",
+      "url": "https://www.pinterest.com/pin/88101736439826269/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Sound of Music (1965)",
+      "description": "The Sound of Music",
+      "link": "http://www.imdb.com/media/rm1412865280/tt0059742",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ed/8e/cb/ed8ecb0f8571a7dececd15bd7b66fcb9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

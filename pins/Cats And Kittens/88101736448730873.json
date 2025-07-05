@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448730873/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736448730873",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448730873",
+      "url": "https://www.pinterest.com/pin/88101736448730873/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Rockcoo",
+      "description": "Remote Control Funny Joke Snake Toy",
+      "link": "https://www.rockcoo.com/products/remote-control-funny-joke-snake-toy?_pos=1&_sid=354da0df1&_ss=r",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "rockcoostyle",
+        "url": "https://www.pinterest.com/rockcoostyle/",
+        "name": "RockCoo"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/59/41/bf/5941bf2e82069363e367b7790a619b29.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/v2/720p/e2/67/52/e267525e1a56de329c5043aae9dd7e9a_mobile.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

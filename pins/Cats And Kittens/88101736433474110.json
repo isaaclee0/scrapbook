@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433474110/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736433474110",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433474110",
+      "url": "https://www.pinterest.com/pin/88101736433474110/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "perpetual-inspiration",
+      "description": "Kitty Speak: It all makes sense now...",
+      "link": "http://perpetual-inspiration.tumblr.com/post/26895375716",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/69/bd/10/69bd1087f092ce4251bd2efee5ed3ad2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

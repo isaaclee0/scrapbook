@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434148562/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736434148562",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434148562",
+      "url": "https://www.pinterest.com/pin/88101736434148562/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Nigel Slater's Coq au Riesling",
+      "description": "Coq au Riesling-Chicken with a white wine, bacon, and mushroom sauce",
+      "link": "http://simply-delicious.co.za/2013/06/26/nigel-slaters-coq-au-riesling/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/83/f1/76/83f17620fb18788d47de0068232616e9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

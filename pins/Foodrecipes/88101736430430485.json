@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430430485/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430430485",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430430485",
+      "url": "https://www.pinterest.com/pin/88101736430430485/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "HOWTO Make edible ice cream/pudding cups",
+      "description": "No instructions, just pictures but pretty easy. I bought the small water baloons and they are the perfect size",
+      "link": "http://imgur.com/gallery/1rhPi",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a5/79/04/a57904b412096a2885094c3e3a5ad389.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

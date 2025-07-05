@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443775744/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443775744",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443775744",
+      "url": "https://www.pinterest.com/pin/88101736443775744/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Blake Shelton - God Gave Me You (Official Music Video)",
+      "description": "Blake Shelton - God Gave Me You (Official Video)",
+      "link": "http://www.youtube.com/watch/?v=nCf2PoTuh4Q",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3e/21/e5/3e21e5ccc98205176137e8f417f89f36.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

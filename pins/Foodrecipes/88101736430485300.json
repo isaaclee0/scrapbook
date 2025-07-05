@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430485300/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430485300",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430485300",
+      "url": "https://www.pinterest.com/pin/88101736430485300/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Zucchini Ribbon Salad",
+      "description": "grilled zucchini ribbon & spinach salad with feta, roasted hazelnuts",
+      "link": "http://www.prouditaliancook.com/2010/04/zucchini-ribbon-salad.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/af/30/41/af3041daf2321fc7bbda28833520839a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

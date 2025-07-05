@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432163888/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/teaching",
+    "CustomFileName": "88101736432163888",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432163888",
+      "url": "https://www.pinterest.com/pin/88101736432163888/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "YouTube",
+      "description": "This is a GREAT example of what Guided Reading looks like! ...also a link to several other great videos including Daily 5",
+      "link": "http://www.youtube.com/watch/?v=3AHxqggc-yI",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/teaching/",
+        "name": "Teaching",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0c/ef/8e/0cef8ecf623bfdbf934019ff408b7dc0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

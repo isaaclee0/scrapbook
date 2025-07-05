@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446507464/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/teaching",
+    "CustomFileName": "88101736446507464",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446507464",
+      "url": "https://www.pinterest.com/pin/88101736446507464/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Facebook",
+      "description": "We know best practice, why do so many ignore it?",
+      "link": "https://www.facebook.com/media/set/?set=a.643275929025035.1073741840.112475372105096&type=3",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/teaching/",
+        "name": "Teaching",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e3/a2/97/e3a297a5f16daec39395be2683fc8b4a.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

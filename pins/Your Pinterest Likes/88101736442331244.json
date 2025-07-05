@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442331244/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442331244",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442331244",
+      "url": "https://www.pinterest.com/pin/88101736442331244/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Do not disturb.",
+      "link": "http://ddlax.hubpages.com/hub/How-do-i-get-followers-on-pinterest",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "caryleriksson",
+        "url": "https://www.pinterest.com/caryleriksson/",
+        "name": "Caryl Eriksson"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/12/0b/e9/120be9a34af75afb366743128a392635.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

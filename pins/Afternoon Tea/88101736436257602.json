@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436257602/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736436257602",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436257602",
+      "url": "https://www.pinterest.com/pin/88101736436257602/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Who's ready for a cup of tea with the Le Creuset Whistling Tea Kettle?",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "thechoppingbloc",
+        "url": "https://www.pinterest.com/thechoppingbloc/",
+        "name": "The Chopping Block"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8a/3f/46/8a3f469ea8a620f1a10d908eead4dddc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

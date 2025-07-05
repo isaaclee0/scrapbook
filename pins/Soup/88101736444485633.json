@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444485633/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/soup",
+    "CustomFileName": "88101736444485633",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444485633",
+      "url": "https://www.pinterest.com/pin/88101736444485633/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "This Is the Best French Onion Soup You Will Ever Have",
+      "description": "FRENCH ONION SOUP PRIMER [101] [France] [Rhoda Boone] [epicurious]",
+      "link": "http://www.epicurious.com/recipes-menus/how-to-make-best-french-onion-soup-recipe-article",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 4,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "FoodGeekGraze",
+        "url": "https://www.pinterest.com/FoodGeekGraze/",
+        "name": "FOOD GEEK GRAZE"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/soup/",
+        "name": "Soup",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1c/2e/ec/1c2eecea1fb89664a9a680b39a39ccb3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

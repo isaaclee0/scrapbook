@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449947085/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736449947085",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449947085",
+      "url": "https://www.pinterest.com/pin/88101736449947085/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Resources",
+      "description": "Cat training and management | Karen Pryor Clicker Training",
+      "link": "http://www.clickertraining.com/node/847",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/42/96/7b/42967bd68ec4a9542c36406630e6410b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

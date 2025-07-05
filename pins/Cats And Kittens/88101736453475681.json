@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453475681/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736453475681",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453475681",
+      "url": "https://www.pinterest.com/pin/88101736453475681/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "It's mine, all mine !",
+      "description": " ",
+      "link": "https://www.reddit.com/r/aww/comments/8c6y4r/its_mine_all_mine/?utm_source=ifttt",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bc/e1/41/bce1411dc80192044a9f6346a35e324f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

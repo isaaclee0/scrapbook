@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453147193/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/baby-stuff",
+    "CustomFileName": "88101736453147193",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453147193",
+      "url": "https://www.pinterest.com/pin/88101736453147193/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "cleantiktoks24",
+        "url": "https://www.pinterest.com/cleantiktoks24/",
+        "name": "𝚌𝚕𝚎𝚊𝚗 𝚝𝚒𝚔𝚝𝚘𝚔𝚜"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/baby-stuff/",
+        "name": "Baby stuff",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/86/df/ce/86dfce38bad39017e5a930be1dd887de.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/bb/4f/4a/bb4f4a75c5d2af17cda753d4a1121b2e.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

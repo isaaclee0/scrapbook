@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442771735/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442771735",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442771735",
+      "url": "https://www.pinterest.com/pin/88101736442771735/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Rudolph hair do (LOVE THIS!)",
+      "description": "Reindeer Bun for ugly sweater party!!! Hilarious! Too cute!",
+      "link": "http://ilikebigbows.blogspot.com/2011/12/rudolph-hair-do-love-this.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9e/04/a8/9e04a829f69a926aed089f9ed1baef2b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

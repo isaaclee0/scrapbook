@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430405353/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736430405353",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430405353",
+      "url": "https://www.pinterest.com/pin/88101736430405353/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Wild strawberries cake",
+      "description": "strawberries cake",
+      "link": "http://www.flickr.com/photos/41132251@N06/5473558919/in/photostream",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ad/28/7f/ad287f284dff9de1a98bbd42fd065b46.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

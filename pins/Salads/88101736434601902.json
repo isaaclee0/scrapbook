@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434601902/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/salads",
+    "CustomFileName": "88101736434601902",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434601902",
+      "url": "https://www.pinterest.com/pin/88101736434601902/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "insockmonkeyslippers.com",
+      "description": "Healthy Taco Salad with Cilantro Lime Vinaigrette",
+      "link": "http://www.insockmonkeyslippers.com/the-healthier-side-of-a-taco-salad",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/salads/",
+        "name": "Salads",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/49/29/b6/4929b6f014d3aecc229a1fd07b05a380.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

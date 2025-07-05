@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434601913/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/salads",
+    "CustomFileName": "88101736434601913",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434601913",
+      "url": "https://www.pinterest.com/pin/88101736434601913/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Now That's a Spicy Cucumber!",
+      "description": "spicy Asian cucumber salad",
+      "link": "http://pleasepassthepie.blogspot.com/2009/05/now-thats-spicy-cucumber.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/salads/",
+        "name": "Salads",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4f/b9/0e/4fb90e6d699cc050a721d2c2c581003b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

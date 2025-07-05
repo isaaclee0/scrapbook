@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451790821/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/greek-food",
+    "CustomFileName": "88101736451790821",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451790821",
+      "url": "https://www.pinterest.com/pin/88101736451790821/",
+      "type": "pin",
+      "title": "OVEN BAKED GREEK CHICKEN THIGHS",
+      "gridTitle": "OVEN BAKED GREEK CHICKEN THIGHS",
+      "description": " ",
+      "link": "https://www.foxandbriar.com/oven-baked-greek-chicken-thighs/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "foxandbriar",
+        "url": "https://www.pinterest.com/foxandbriar/",
+        "name": "Fox and Briar"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/greek-food/",
+        "name": "Greek Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/81/de/b3/81deb30653926d9df7c79b0bf0254897.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/f2/8c/35/f28c35845e0926c6287449bd6930f0d0.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444555911/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/squirrels",
+    "CustomFileName": "88101736444555911",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444555911",
+      "url": "https://www.pinterest.com/pin/88101736444555911/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Hot summer in Missouri,  this lil'fellow fell asleep in a bowl of ice left out for them.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/squirrels/",
+        "name": "Squirrels",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5c/fa/39/5cfa398689d43891f186802603db60fc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

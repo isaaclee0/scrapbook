@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434601916/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/salads",
+    "CustomFileName": "88101736434601916",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434601916",
+      "url": "https://www.pinterest.com/pin/88101736434601916/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Summer Recipes",
+      "description": "Cucumber-Honeydew Salad with Feta",
+      "link": "http://www.bhg.com/recipes/from-better-homes-and-gardens/june-2013-recipes/#page=3",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/salads/",
+        "name": "Salads",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/72/28/a6/7228a67dfd8f31fffd157f9ba609c1fa.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

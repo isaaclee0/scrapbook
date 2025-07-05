@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437910820/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736437910820",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437910820",
+      "url": "https://www.pinterest.com/pin/88101736437910820/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Paleo Recipes by Paleo Porn - Discover your next meal",
+      "description": "Baked Cauliflower Casserole; cauliflower, onion, garlic, bacon, dried chervil, sea salt, black pepper, coconut milk, onions",
+      "link": "http://paleoporn.net/cauliflower-casserole/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b4/4c/4b/b44c4b9fda2e7934e5f58450151918b7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450944973/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736450944973",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450944973",
+      "url": "https://www.pinterest.com/pin/88101736450944973/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Custom Formulated Hair Colour – eSalon",
+      "description": "Forget traditional hair colour, try this: \"Even my hairdresser thinks the colour is amazing!...Finding a product that works like I had it professionally done is a huge time and money saver.\"",
+      "link": "https://www.esalon.co.uk/lp2/former-salon-clients-uk?&utm_source=SN-ES_S-424_PR-1&utm_campaign=CA-PNT&utm_medium=AD-ES_CR-3235_B-1381_RG-8_LG-3_BI-1_PF-2_TG-2677_PD-1_FM-5",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "esalon",
+        "url": "https://www.pinterest.com/esalon/",
+        "name": "eSalon"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8d/64/8b/8d648b6ab6a30ee1f141462e8e8e9957.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/fb/dd/e3/fbdde388bd523009538e4379808673d7.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

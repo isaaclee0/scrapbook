@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432220862/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736432220862",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432220862",
+      "url": "https://www.pinterest.com/pin/88101736432220862/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Homemade Ricotta Cheese",
+      "description": "Make your own delicious Homemade Ricotta in less than 15 minutes... You'll never buy store ricotta again",
+      "link": "http://www.framedcooks.com/2011/08/how-to-make-fresh-ricotta.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f6/97/94/f6979443120ec253c8615dd9662baad1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

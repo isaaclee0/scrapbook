@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448018259/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736448018259",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448018259",
+      "url": "https://www.pinterest.com/pin/88101736448018259/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Cool kitty house",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tezlang",
+        "url": "https://www.pinterest.com/tezlang/",
+        "name": "Terri Langford"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/24/80/42/248042d888a85f7772d2473f9becca18.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

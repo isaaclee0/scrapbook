@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447901743/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736447901743",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447901743",
+      "url": "https://www.pinterest.com/pin/88101736447901743/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Cherry ripe brownie cake",
+      "description": "A cross between a mud cake and a brownie, this sweet treat is filled with Cherry Ripe bars and a cherry and coconut filling.",
+      "link": "http://www.taste.com.au/recipes/39629/cherry+ripe+brownie+cake",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a2/e9/73/a2e973f26b396042060b4e3e88c8f292.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

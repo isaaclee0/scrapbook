@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452903470/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/my-i/presents",
+    "CustomFileName": "88101736452903470",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452903470",
+      "url": "https://www.pinterest.com/pin/88101736452903470/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "ooak 4,5 cm",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "sheilamrofka",
+        "url": "https://www.pinterest.com/sheilamrofka/",
+        "name": "Sheila Mrofka Babies"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/my-i/",
+        "name": "My I",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/db/92/41/db92414805b75dfe6106c55a5015d8a2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

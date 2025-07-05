@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446876926/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/exercise-it",
+    "CustomFileName": "88101736446876926",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446876926",
+      "url": "https://www.pinterest.com/pin/88101736446876926/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Best Pilates Moves You Can Do Without a Reformer",
+      "description": " ",
+      "link": "http://greatist.com/move/pilates-best-exercises-to-do-without-reformer",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/exercise-it/",
+        "name": "Exercise it",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/34/f4/64/34f464c42ff9f1eee952ccb4db5b6326.gif",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438651276/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/duck-recipes",
+    "CustomFileName": "88101736438651276",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438651276",
+      "url": "https://www.pinterest.com/pin/88101736438651276/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "How to cook wild duck",
+      "link": "http://www.squidoo.com/wild-duck-recipe",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/duck-recipes/",
+        "name": "Duck Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/23/8c/99/238c991ad46345a22d769dc1b9a85382.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

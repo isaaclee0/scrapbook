@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444545929/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736444545929",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444545929",
+      "url": "https://www.pinterest.com/pin/88101736444545929/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Best Thanksgiving Dinner Desserts",
+      "description": "chocolate crumb cake",
+      "link": "https://www.mama-knows.com/recipes/best-thanksgiving-dinner-desserts.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/70/38/0f/70380f3000458bd939c4e34b97ace40e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

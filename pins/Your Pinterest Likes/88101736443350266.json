@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443350266/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443350266",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443350266",
+      "url": "https://www.pinterest.com/pin/88101736443350266/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Solar panels on pergola - what a good idea! Seems like it would blend in much better than a few random solar panels on a roof",
+      "link": "http://www.truebuilding.net/2011/06/28/solar-panel-project/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/14/07/4c/14074ca22f37f6f3177b497ad027fd53.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443286815/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443286815",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443286815",
+      "url": "https://www.pinterest.com/pin/88101736443286815/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Warming drawer pans",
+      "description": "Isn't this just amazing??!!! You have your dinner party and you can keep your dishes warm whilst you wait for them to arrive or keep the surplus warm!!! Love it.",
+      "link": "http://www.flickr.com/photos/88516512@N07/8103547817/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "housetrends",
+        "url": "https://www.pinterest.com/housetrends/",
+        "name": "Housetrends Magazine"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0f/5a/ac/0f5aac21aa7537c97b65c08d1334fbdb.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

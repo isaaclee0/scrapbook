@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452955761/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/brunch",
+    "CustomFileName": "88101736452955761",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452955761",
+      "url": "https://www.pinterest.com/pin/88101736452955761/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "TikTok - Make Your Day",
+      "description": " ",
+      "link": "https://vm.tiktok.com/ZMNdQ3YQY/?k=1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 5,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "RemaZarema",
+        "url": "https://www.pinterest.com/RemaZarema/",
+        "name": "Rema&Zarema"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/brunch/",
+        "name": "Brunch",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ee/d3/7c/eed37cd8397956e9a77b36fe89c0860e.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/20/69/d9/2069d9fc720d9d0e7cfb16f13d008e25.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

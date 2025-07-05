@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431403912/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736431403912",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431403912",
+      "url": "https://www.pinterest.com/pin/88101736431403912/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Creme Brulee Bites | Bakers Royale",
+      "description": "Creme Brulee Bites via Bakers Royale",
+      "link": "http://www.bakersroyale.com/custards/creme-brulee-bites/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/40/dc/47/40dc477b44f0c4454ea1fc9a98a6a819.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

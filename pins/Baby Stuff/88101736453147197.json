@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453147197/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/baby-stuff",
+    "CustomFileName": "88101736453147197",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453147197",
+      "url": "https://www.pinterest.com/pin/88101736453147197/",
+      "type": "pin",
+      "title": "When dad comes home",
+      "gridTitle": "When dad comes home",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tinyjumps",
+        "url": "https://www.pinterest.com/tinyjumps/",
+        "name": "TinyJumps"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/baby-stuff/",
+        "name": "Baby stuff",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/38/9e/6b/389e6be81ea582750fad594c5083efd9.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453345025/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-orchard/espalier",
+    "CustomFileName": "88101736453345025",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453345025",
+      "url": "https://www.pinterest.com/pin/88101736453345025/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "msbluestocking",
+        "url": "https://www.pinterest.com/msbluestocking/",
+        "name": "Carol Rybinski"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-orchard/",
+        "name": "Cottage Orchard",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/24/b7/c3/24b7c356b07aa61d1eab3035d08891cf.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

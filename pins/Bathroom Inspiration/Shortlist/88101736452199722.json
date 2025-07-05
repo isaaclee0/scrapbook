@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452199722/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bathroom-inspiration/shortlist",
+    "CustomFileName": "88101736452199722",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452199722",
+      "url": "https://www.pinterest.com/pin/88101736452199722/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Register - Login",
+      "description": " ",
+      "link": "https://www.tumblr.com/dashboard",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bathroom-inspiration/",
+        "name": "Bathroom Inspiration",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/51/93/74/5193746e4667af52f343c02502769d74.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

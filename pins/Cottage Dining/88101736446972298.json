@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446972298/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-dining",
+    "CustomFileName": "88101736446972298",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446972298",
+      "url": "https://www.pinterest.com/pin/88101736446972298/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "diningroom at Christmas",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "phoebetroyer",
+        "url": "https://www.pinterest.com/phoebetroyer/",
+        "name": "Phoebe"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-dining/",
+        "name": "Cottage dining",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a7/4f/fd/a74ffd9f03b8dd5b9d295cf9ea1b8e7f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

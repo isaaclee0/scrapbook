@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443220324/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443220324",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443220324",
+      "url": "https://www.pinterest.com/pin/88101736443220324/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Miguel Urquijo Rubio",
+      "description": "Lavender meadows in El Jardín Salamanca, by Estudio de Paisajismo",
+      "link": "http://www.flickr.com/photos/rudbekio/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "mureml",
+        "url": "https://www.pinterest.com/mureml/",
+        "name": "Miguel Urquijo"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ae/ae/64/aeae64084f032fdb94167a37fac8b3cc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

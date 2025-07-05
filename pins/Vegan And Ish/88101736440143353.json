@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440143353/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/vegan-and-ish",
+    "CustomFileName": "88101736440143353",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440143353",
+      "url": "https://www.pinterest.com/pin/88101736440143353/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Vegan Chorizo for Omnivores Recipe",
+      "description": "A vegan chorizo that cooks just like the real thing.",
+      "link": "http://www.seriouseats.com/2015/02/how-to-make-vegan-chorizo.html?utm_source=pin&utm_campaign=apr16",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "seriouseats",
+        "url": "https://www.pinterest.com/seriouseats/",
+        "name": "Serious Eats"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/vegan-and-ish/",
+        "name": "Vegan and ish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/00/ac/00/00ac006c11dab04c5c02ed3e190b7ce0.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

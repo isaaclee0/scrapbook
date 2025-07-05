@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441162040/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fishy",
+    "CustomFileName": "88101736441162040",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441162040",
+      "url": "https://www.pinterest.com/pin/88101736441162040/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Recette de Terrine de saumon et crevettes",
+      "description": "Terrine de saumon et crevettes",
+      "link": "http://www.recettes-dietetiques.fr/recette_terrine-de-saumon-et-crevettes_685.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 8,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fishy/",
+        "name": "Fishy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ee/29/c1/ee29c123e8744e82801a9f7a724abea6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

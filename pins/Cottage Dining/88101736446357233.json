@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446357233/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-dining",
+    "CustomFileName": "88101736446357233",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446357233",
+      "url": "https://www.pinterest.com/pin/88101736446357233/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "rustic kitchen",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "amandadunay",
+        "url": "https://www.pinterest.com/amandadunay/",
+        "name": "Amanda Dunay"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-dining/",
+        "name": "Cottage dining",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ae/5f/9c/ae5f9c3d22a021d740a1bb6b1c2cfae0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

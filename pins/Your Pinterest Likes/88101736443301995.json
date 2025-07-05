@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443301995/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443301995",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443301995",
+      "url": "https://www.pinterest.com/pin/88101736443301995/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Food Preparation & Recipes | Real Simple",
+      "description": "Because let's face it. The only thing better than Thanksgiving is two Thanksgivings.",
+      "link": "http://www.realsimple.com/food-recipes/recipe-collections-favorites/seasonal/friendsgiving?hootPostID=ccd57ba4fc76cef817fae1229f05b532&crlt.pid=camp.5VZCdvIoxdkr",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/89/f8/f8/89f8f84afdc9959b66901d342cb4cfea.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

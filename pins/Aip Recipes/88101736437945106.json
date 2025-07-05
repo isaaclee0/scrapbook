@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437945106/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736437945106",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437945106",
+      "url": "https://www.pinterest.com/pin/88101736437945106/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Banana Pumpkin Pucks",
+      "description": "Banana Pumpkin Pucks--not just Paleo, but the more restrictive autoimmune protocol that I want to try. Okay, (deep breath), I can do this. This site will be very useful for paleo recipes and more! Paleoparents.com",
+      "link": "http://paleoparents.com/featured/banana-pumpkin-pucks/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/68/7c/72/687c72496ca066d7ec3bba7cc53c7c71.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

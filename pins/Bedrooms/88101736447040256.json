@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447040256/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bedrooms",
+    "CustomFileName": "88101736447040256",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447040256",
+      "url": "https://www.pinterest.com/pin/88101736447040256/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "twin murphy bed / wall bed",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bedrooms/",
+        "name": "Bedrooms",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d9/f9/f0/d9f9f06d6652df03f87f3a62d2ffb10a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

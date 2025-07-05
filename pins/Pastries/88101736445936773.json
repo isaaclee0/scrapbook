@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445936773/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pastries",
+    "CustomFileName": "88101736445936773",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445936773",
+      "url": "https://www.pinterest.com/pin/88101736445936773/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Gala picnic pie - Recipes - Hairy Bikers",
+      "description": "Gala picnic pie",
+      "link": "http://www.hairybikers.com/recipes/view/gala-picnic-pie#r63LCGer4LACjiMS.97",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pastries/",
+        "name": "pastries",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c5/1a/b0/c51ab0372eb43f255777a0719a0bba13.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

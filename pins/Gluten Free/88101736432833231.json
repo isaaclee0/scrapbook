@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432833231/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/gluten-free",
+    "CustomFileName": "88101736432833231",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432833231",
+      "url": "https://www.pinterest.com/pin/88101736432833231/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Simple Roast Chicken",
+      "description": "Wheat Free Banana Bread",
+      "link": "http://simpleroastchicken.wordpress.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/gluten-free/",
+        "name": "Gluten Free",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ab/a7/9d/aba79dc69844d810d64cd432a2eedd39.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

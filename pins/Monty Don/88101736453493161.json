@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453493161/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/monty-don",
+    "CustomFileName": "88101736453493161",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453493161",
+      "url": "https://www.pinterest.com/pin/88101736453493161/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 10,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "caroleann455",
+        "url": "https://www.pinterest.com/caroleann455/",
+        "name": "CaroleAnn"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/monty-don/",
+        "name": "Monty Don",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/33/d8/ba/33d8bae7c61d50f7c4f6c371fb55d80a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

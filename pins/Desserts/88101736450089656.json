@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450089656/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736450089656",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450089656",
+      "url": "https://www.pinterest.com/pin/88101736450089656/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Baked Coconut",
+      "description": " ",
+      "link": "https://www.tastemade.com/videos/baked-coconut",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemade",
+        "url": "https://www.pinterest.com/tastemade/",
+        "name": "Tastemade"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e5/13/a3/e513a3a9cb544ac087340b383813d23c.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/09/04/72/090472bc136aaa362d29b11207c2422c.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

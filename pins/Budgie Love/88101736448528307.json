@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448528307/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/budgie-love",
+    "CustomFileName": "88101736448528307",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448528307",
+      "url": "https://www.pinterest.com/pin/88101736448528307/",
+      "type": "pin",
+      "title": "Wellensittiche spielen im Vogelzimmer ",
+      "gridTitle": "Wellensittiche spielen im Vogelzimmer",
+      "description": "Meine Wellis fühlen sich in ihrem neuen Vogelzimmer sehr wohl. Schau doch mal auf meiner Homepage vorbei und schau dir mehr Fotos an!",
+      "link": "https://wellensittiche-blog.de/portfolio/alles-neu-macht-der-mai/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "wellensitticheblog",
+        "url": "https://www.pinterest.com/wellensitticheblog/",
+        "name": "Wellensittiche Blog "
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/budgie-love/",
+        "name": "Budgie Love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4d/0b/f9/4d0bf926899316322d325f89e2f72fae.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/78/0c/fb/780cfb5a00129078ebd02231b14dd2e3.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

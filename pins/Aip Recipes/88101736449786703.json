@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449786703/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736449786703",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449786703",
+      "url": "https://www.pinterest.com/pin/88101736449786703/",
+      "type": "pin",
+      "title": "What AIP Bloggers are Doing to Make AIP More Simple - A Squirrel in the Kitchen",
+      "gridTitle": "What AIP Bloggers are Doing to Make AIP More Simple - A Squirrel in the Kitchen",
+      "description": "What AIP Bloggers are Doing to Make AIP More Simple",
+      "link": "https://asquirrelinthekitchen.com/aip-made-simple2/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "SquirrelKitchen",
+        "url": "https://www.pinterest.com/SquirrelKitchen/",
+        "name": "Sophie Van Tiggelen"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e1/a0/7f/e1a07f612518d3b32c09939068748866.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

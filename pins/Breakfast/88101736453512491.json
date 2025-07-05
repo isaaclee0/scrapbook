@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453512491/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/breakfast",
+    "CustomFileName": "88101736453512491",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453512491",
+      "url": "https://www.pinterest.com/pin/88101736453512491/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "White Chocolate Raspberry Banana Oatmeal Muffins",
+      "description": "Raspberry Banana Oatmeal Muffins with White Chocolate Chunks",
+      "link": "https://www.lordbyronskitchen.com/raspberry-banana-oatmeal-muffins-with-white-chocolate-chunks/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/breakfast/",
+        "name": "Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ce/67/32/ce67323bc763efea5663c1347268e9c6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

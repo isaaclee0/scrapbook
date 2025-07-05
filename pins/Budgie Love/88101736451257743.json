@@ -1,0 +1,47 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451257743/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/budgie-love",
+    "CustomFileName": "88101736451257743",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451257743",
+      "url": "https://www.pinterest.com/pin/88101736451257743/",
+      "type": "pin",
+      "title": "Green baby came by to say hello 😍",
+      "gridTitle": "Green baby came by to say hello 😍",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 32,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/budgie-love/",
+        "name": "Budgie Love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6f/94/62/6f94629f9eca60a2b800967a159a4808.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/04/47/9b/04479bc42ac3d418d0d06aa47db7ebce.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

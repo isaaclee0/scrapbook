@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437553800/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/winter",
+    "CustomFileName": "88101736437553800",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437553800",
+      "url": "https://www.pinterest.com/pin/88101736437553800/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Wow",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/winter/",
+        "name": "Winter",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1c/58/23/1c5823f30e08f3c0a2b1562bc86831ae.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

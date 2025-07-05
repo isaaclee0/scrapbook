@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435765304/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/inside-a-cottage",
+    "CustomFileName": "88101736435765304",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435765304",
+      "url": "https://www.pinterest.com/pin/88101736435765304/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "lovely country living room",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "lorr22",
+        "url": "https://www.pinterest.com/lorr22/",
+        "name": "Lilly"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/inside-a-cottage/",
+        "name": "Inside a cottage",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/12/ca/74/12ca7457ed3c6c276c0231498788a5f9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

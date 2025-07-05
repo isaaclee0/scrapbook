@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430405442/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736430405442",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430405442",
+      "url": "https://www.pinterest.com/pin/88101736430405442/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Last minute Easter eggs",
+      "description": "Cake in an Eggshell Recipe",
+      "link": "http://www.deliciousdays.com/archives/2007/04/08/last-minute-easter-eggs/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3b/d7/cc/3bd7cc4136d45263eb2f94ac10b6d792.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

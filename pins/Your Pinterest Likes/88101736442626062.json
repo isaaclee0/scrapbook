@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442626062/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442626062",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442626062",
+      "url": "https://www.pinterest.com/pin/88101736442626062/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Sign in",
+      "description": "Isle of Marken  Fisherman's Cottages",
+      "link": "https://picasaweb.google.com/112470228737824564613/AlbumMarkenMonnickendam_mcfDateien",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e3/fb/77/e3fb779001f61cf34ed24ebc5d82fb7f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451793870/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/greek-food",
+    "CustomFileName": "88101736451793870",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451793870",
+      "url": "https://www.pinterest.com/pin/88101736451793870/",
+      "type": "pin",
+      "title": "Greek Salmon Salad with Tahini Yogurt Dressing",
+      "gridTitle": "Greek Salmon Salad with Tahini Yogurt Dressing",
+      "description": " ",
+      "link": "https://reciperunner.com/greek-salmon-salad-tahini-yogurt-dressing/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/greek-food/",
+        "name": "Greek Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d2/c3/24/d2c3244a431b39a3f2a5353fcd5df350.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

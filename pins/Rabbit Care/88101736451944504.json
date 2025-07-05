@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451944504/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/rabbit-care",
+    "CustomFileName": "88101736451944504",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451944504",
+      "url": "https://www.pinterest.com/pin/88101736451944504/",
+      "type": "pin",
+      "title": "Chicken Run",
+      "gridTitle": "Chicken Run",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Juanhobbyfarm",
+        "url": "https://www.pinterest.com/Juanhobbyfarm/",
+        "name": "Juan Hobby Farm"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/rabbit-care/",
+        "name": "Rabbit care",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d5/63/ad/d563ad3427a8804f4e65b729fb5baf5a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445280081/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/greek-food",
+    "CustomFileName": "88101736445280081",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445280081",
+      "url": "https://www.pinterest.com/pin/88101736445280081/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Galaktoboureko (Greek Custard-Filled Phyllo Dessert)",
+      "description": "This is my favorite Greek dessert. My cousin grew up with a Greek girl and we've had this recipe in the family ever since!",
+      "link": "http://tastykitchen.com/recipes/desserts/galaktoboureko-greek-custard-filled-phyllo-dessert/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/greek-food/",
+        "name": "Greek Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5c/71/a7/5c71a7d52d37770da5786056d336e4ec.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

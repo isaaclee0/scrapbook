@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440090788/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736440090788",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440090788",
+      "url": "https://www.pinterest.com/pin/88101736440090788/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Who ever said teapots were just for tea? Fill them with flowers for a lovely, vintage centerpiece.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "homemakermag",
+        "url": "https://www.pinterest.com/homemakermag/",
+        "name": "Homemaker"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b5/6c/6b/b56c6ba7cfac88a943540d99924ffa48.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

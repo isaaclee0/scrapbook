@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447270345/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cocker-spaniels",
+    "CustomFileName": "88101736447270345",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447270345",
+      "url": "https://www.pinterest.com/pin/88101736447270345/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Cocker ma Lola deja 3 ans",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cocker-spaniels/",
+        "name": "Cocker Spaniels",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/24/4a/8b/244a8bc10da748ff808d7d6e4b1b0c3d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

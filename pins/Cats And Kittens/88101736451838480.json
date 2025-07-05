@@ -1,0 +1,60 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451838480/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736451838480",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451838480",
+      "url": "https://www.pinterest.com/pin/88101736451838480/",
+      "type": "pin",
+      "title": "Picnic with my friend",
+      "gridTitle": "Picnic with my friend",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 4,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "stellajace0136",
+        "url": "https://www.pinterest.com/stellajace0136/",
+        "name": "Stella Jace"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d0/46/69/d04669cab42d817dcc2a83dcfd3b8898.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/23/c0/27/23c027a0d7c863301c1cf507cad84b1c.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/45/41/7d/45417ded4a3285291d0679e04577fb26.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/c0/19/36/c01936a63f3282825e85b9ccaabe61a8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

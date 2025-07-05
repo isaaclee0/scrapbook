@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443485908/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443485908",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443485908",
+      "url": "https://www.pinterest.com/pin/88101736443485908/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Charles S L Baker - Inventor",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ladya48034",
+        "url": "https://www.pinterest.com/ladya48034/",
+        "name": "Andrea Fields"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1b/79/0e/1b790e7687d3cc4e3370043e52126747.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

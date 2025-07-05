@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440697299/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/italy-day-dreams",
+    "CustomFileName": "88101736440697299",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440697299",
+      "url": "https://www.pinterest.com/pin/88101736440697299/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Harvesting olives.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/italy-day-dreams/",
+        "name": "Italy - Day Dreams",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ce/7c/1a/ce7c1a7ad955a5c2bae4fbad32ae333a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

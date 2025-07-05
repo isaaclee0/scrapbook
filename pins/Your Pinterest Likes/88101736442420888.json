@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442420888/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442420888",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442420888",
+      "url": "https://www.pinterest.com/pin/88101736442420888/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "5 Ways to Get More Traffic from Pinterest",
+      "description": "5 Ways to Get More Traffic from Pinterest",
+      "link": "http://www.icanteachmychild.com/2012/06/5-ways-to-get-more-traffic-from-pinterest/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/19/fa/3a/19fa3a53ea3e502bbb07d159a0e63a5a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

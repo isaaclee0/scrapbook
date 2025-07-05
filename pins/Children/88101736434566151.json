@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434566151/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/children",
+    "CustomFileName": "88101736434566151",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434566151",
+      "url": "https://www.pinterest.com/pin/88101736434566151/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "// perspective.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ldsliving",
+        "url": "https://www.pinterest.com/ldsliving/",
+        "name": "LDS Living"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/children/",
+        "name": "Children",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/02/ba/70/02ba703ae14b36a0b451b2da98fa748a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

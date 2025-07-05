@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437866289/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/i-see",
+    "CustomFileName": "88101736437866289",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437866289",
+      "url": "https://www.pinterest.com/pin/88101736437866289/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "10/31 production test - concurrent upload 2",
+      "description": "Pamela Meyer: How to spot a liar. You need to watch this. Really.",
+      "link": "http://www.ted.com/talks/pamela_meyer_how_to_spot_a_liar.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/i-see/",
+        "name": "I see....",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1d/ae/6b/1dae6b4d84ba1c935117ae9e8ea64ed1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

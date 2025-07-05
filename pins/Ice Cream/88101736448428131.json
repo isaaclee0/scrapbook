@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448428131/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/ice-cream",
+    "CustomFileName": "88101736448428131",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448428131",
+      "url": "https://www.pinterest.com/pin/88101736448428131/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "loganberry and lavender sorbet",
+      "description": "loganberry and lavender ice cream - The Circus Gardener's Kitchen",
+      "link": "https://circusgardener.com/2015/08/08/loganberry-and-lavender-ice-cream/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/ice-cream/",
+        "name": "Ice cream",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/72/23/6f/72236f309fe43393a1d59d0ee5c42c9a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

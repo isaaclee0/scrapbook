@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446704458/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cocker-spaniels",
+    "CustomFileName": "88101736446704458",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446704458",
+      "url": "https://www.pinterest.com/pin/88101736446704458/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "What a Beauty! English Cocker Spaniel.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "cathyrrussell",
+        "url": "https://www.pinterest.com/cathyrrussell/",
+        "name": "Cathy Russell"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cocker-spaniels/",
+        "name": "Cocker Spaniels",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0b/39/fd/0b39fd011bde3608de3bcd7e9696b2db.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

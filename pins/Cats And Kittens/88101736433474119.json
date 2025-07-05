@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433474119/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736433474119",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433474119",
+      "url": "https://www.pinterest.com/pin/88101736433474119/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "FFFFOUND!",
+      "description": "kitty nose",
+      "link": "http://ffffound.com/?offset=290&",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0f/70/3b/0f703b0add9140ebf0c78d01b2d5d3b2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

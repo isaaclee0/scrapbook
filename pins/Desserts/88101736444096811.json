@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444096811/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736444096811",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444096811",
+      "url": "https://www.pinterest.com/pin/88101736444096811/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Kruche ciasto z wiśniami i czekoladą pod wiśniową pierzynką - PRZEPIS",
+      "description": "ciasto z wisniami",
+      "link": "http://www.malacukierenka.pl/kruche-ciasto-z-wisniami-i-czekolada-pod-wisniowa-pierzynka.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/14/ea/05/14ea05cd2132bf53015fca09715ff3dc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451063325/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736451063325",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451063325",
+      "url": "https://www.pinterest.com/pin/88101736451063325/",
+      "type": "pin",
+      "title": "Cat Fact",
+      "gridTitle": "Cat Fact",
+      "description": "Five interesting facts about cats for cat lovers and cat owners to know. #cat #cats #catowner #catlover #catblog #catspeople #catfact",
+      "link": "https://catspeople.com/blogs/cat-names/5-cats-facts-you-should-know",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "catspeople",
+        "url": "https://www.pinterest.com/catspeople/",
+        "name": "CatsPeople"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0c/75/e1/0c75e12a1b063e983dc316f2b2818f0d.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449901306/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/no-bake",
+    "CustomFileName": "88101736449901306",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449901306",
+      "url": "https://www.pinterest.com/pin/88101736449901306/",
+      "type": "pin",
+      "title": "No-Bake Espresso Chocolate Cheesecake",
+      "gridTitle": "No-Bake Espresso Chocolate Cheesecake",
+      "description": "This no-bake espresso chocolate cheesecake is the perfect afternoon pick-me-up.",
+      "link": "https://www.tastemade.com/videos/no-bake-espresso-chocolate-cheesecake",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemade",
+        "url": "https://www.pinterest.com/tastemade/",
+        "name": "Tastemade"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/no-bake/",
+        "name": "No Bake",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5c/b1/35/5cb135e8751e4b89a8410626e85fdc47.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/51/90/d5/5190d56c87335f1b8b72376027b75696.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

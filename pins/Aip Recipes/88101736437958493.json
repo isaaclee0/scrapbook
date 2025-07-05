@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437958493/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736437958493",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437958493",
+      "url": "https://www.pinterest.com/pin/88101736437958493/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Private Site",
+      "description": "Bone broth  | petra8paleo",
+      "link": "http://petra8paleo.wordpress.com/2014/07/22/bone-broth-aip-wahlspaleo/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/49/0d/6c/490d6c685ab544ba94c40899f7cf8215.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452257631/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736452257631",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452257631",
+      "url": "https://www.pinterest.com/pin/88101736452257631/",
+      "type": "pin",
+      "title": "Pixie su donna matura",
+      "gridTitle": "Pixie su donna matura",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 37,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "capellistyle_it",
+        "url": "https://www.pinterest.com/capellistyle_it/",
+        "name": "CapelliStyle"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/de/c0/bc/dec0bcfaa3e819b0f9051988d52132e2.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/87/96/43/879643fb1e5c5171a71ca197363d8836.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

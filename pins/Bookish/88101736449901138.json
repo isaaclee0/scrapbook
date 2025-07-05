@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449901138/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736449901138",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449901138",
+      "url": "https://www.pinterest.com/pin/88101736449901138/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Goodreads",
+      "description": "A Forest World by Felix Salten | Goodreads",
+      "link": "https://www.goodreads.com/book/photo/18246755-a-forest-world",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/77/66/43/77664398af9bcb1c9c8b4b26cd81790b.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

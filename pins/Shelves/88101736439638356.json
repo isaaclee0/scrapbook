@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439638356/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/shelves",
+    "CustomFileName": "88101736439638356",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439638356",
+      "url": "https://www.pinterest.com/pin/88101736439638356/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Pantries Gallery",
+      "description": "pantry... corners should be designed like this to avoid wasted space.",
+      "link": "http://www.cozyclosets.com/gallery/pantries",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/shelves/",
+        "name": "Shelves",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bd/d4/b2/bdd4b2000501daa2819064a8ec0d00ab.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

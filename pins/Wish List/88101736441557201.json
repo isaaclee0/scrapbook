@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441557201/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/wish-list",
+    "CustomFileName": "88101736441557201",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441557201",
+      "url": "https://www.pinterest.com/pin/88101736441557201/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "#craztcatlady",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/wish-list/",
+        "name": "Wish List..",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/98/51/75/985175d8f0b63493bd0b09c688f82fff.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432261995/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736432261995",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432261995",
+      "url": "https://www.pinterest.com/pin/88101736432261995/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Stop comparing.",
+      "link": "http://janrickmerso.tumblr.com/jewelry/456853",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/89/44/72/89447271527ce1e0a3d2263d07eb2a4b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

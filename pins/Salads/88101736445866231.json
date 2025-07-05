@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445866231/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/salads",
+    "CustomFileName": "88101736445866231",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445866231",
+      "url": "https://www.pinterest.com/pin/88101736445866231/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Salad from House of Prime Rib, so delicious!  If you are in SF, it's a must eat!",
+      "link": "http://sanfrancisco.foodmafia.com/restaurant/house-of-prime-rib",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/salads/",
+        "name": "Salads",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/91/7d/3d/917d3d39af3ae18fd7b86b4cb2376e11.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

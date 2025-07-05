@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452296440/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736452296440",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452296440",
+      "url": "https://www.pinterest.com/pin/88101736452296440/",
+      "type": "pin",
+      "title": "Cute Low Bun",
+      "gridTitle": "Cute Low Bun",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "gaga4beauty",
+        "url": "https://www.pinterest.com/gaga4beauty/",
+        "name": "GaGa4Beauty"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0b/b4/ef/0bb4ef4951c3b54f44aae099bcd191f9.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/46/76/3f/46763f2c03b4dcb1b2d99cb81b26734c.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

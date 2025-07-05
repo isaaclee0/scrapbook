@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438545683/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736438545683",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438545683",
+      "url": "https://www.pinterest.com/pin/88101736438545683/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "new toy",
+      "description": "DIY Cat Toy",
+      "link": "http://www.fourwhitepaws.net/2011/06/new-toy.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cc/32/af/cc32afa978f91dd7e965555c9d53097e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

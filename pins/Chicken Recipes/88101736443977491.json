@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443977491/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736443977491",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443977491",
+      "url": "https://www.pinterest.com/pin/88101736443977491/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Martha Stewart's Foolproof Fried Chicken Recipe",
+      "description": "Nothing here is hard to do — you just need to plan ahead to brine and marinate the chicken (the two secrets to this recipe’s success).",
+      "link": "https://www.yahoo.com/food/martha-stewart-country-glamour-martha-stewarts-87992775450.html?soc_src=mags&soc_trk=pi",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "jjones5421",
+        "url": "https://www.pinterest.com/jjones5421/",
+        "name": "julie jones"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7d/89/d5/7d89d579889aa7dc6974dda9a0fec32d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

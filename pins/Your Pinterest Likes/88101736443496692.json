@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443496692/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443496692",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443496692",
+      "url": "https://www.pinterest.com/pin/88101736443496692/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "YouTube",
+      "description": "Dolly Parton - I will always love you   # Pin++ for Pinterest #",
+      "link": "http://www.youtube.com/watch/?v=_utP1mGoutQ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b7/a6/f7/b7a6f79c9e7c2c6df1008ee9044db0df.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

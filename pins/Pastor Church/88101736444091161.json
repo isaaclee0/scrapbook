@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444091161/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pastor-church",
+    "CustomFileName": "88101736444091161",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444091161",
+      "url": "https://www.pinterest.com/pin/88101736444091161/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "dtorres40",
+        "url": "https://www.pinterest.com/dtorres40/",
+        "name": "Dominic Torres"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pastor-church/",
+        "name": "Pastor church",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e2/4e/02/e24e02e95072c710270217fa23acda0a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

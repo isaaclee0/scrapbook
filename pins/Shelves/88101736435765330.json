@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435765330/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/shelves",
+    "CustomFileName": "88101736435765330",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435765330",
+      "url": "https://www.pinterest.com/pin/88101736435765330/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Lulufant",
+      "description": "Cute shelves!",
+      "link": "http://lulufant.blogspot.co.uk/search?updated-max=2013-09-19T12:13:00%2B02:00&max-results=10&start=4&by-date=false",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/shelves/",
+        "name": "Shelves",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b2/28/ee/b228eecf0aaeff4a2df3daec5ed594b0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

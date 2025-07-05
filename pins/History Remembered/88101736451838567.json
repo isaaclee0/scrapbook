@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451838567/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/history-remembered",
+    "CustomFileName": "88101736451838567",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451838567",
+      "url": "https://www.pinterest.com/pin/88101736451838567/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "wilpamson",
+        "url": "https://www.pinterest.com/wilpamson/",
+        "name": "༻Pamela Anderson Wilson༺"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/history-remembered/",
+        "name": "History - remembered",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/46/54/de/4654dedfc0fea8431c3d7b4fd1b54aaf.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

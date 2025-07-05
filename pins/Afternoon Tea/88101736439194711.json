@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439194711/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736439194711",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439194711",
+      "url": "https://www.pinterest.com/pin/88101736439194711/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Mona Mina",
+      "description": "~",
+      "link": "http://mona-mina.tumblr.com/post/98747701483",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 6,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/99/c7/e1/99c7e1cc0520ee3c7d50aa59e27fcff2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430557928/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430557928",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430557928",
+      "url": "https://www.pinterest.com/pin/88101736430557928/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Easy Mini German Pancakes",
+      "description": "pancakes made in muffin/cupcake tins.  Only fill the tin 1/2 full and it will create the crater when it bakes.",
+      "link": "http://realmomkitchen.com/489/mini-german-pancakes/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a0/3a/cc/a03accc90efc1def79250c867b3d8948.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

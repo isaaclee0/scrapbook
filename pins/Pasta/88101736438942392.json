@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438942392/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pasta",
+    "CustomFileName": "88101736438942392",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438942392",
+      "url": "https://www.pinterest.com/pin/88101736438942392/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "easynquickrecipes.com",
+      "description": "Pasta with Fresh Tomato Sauce",
+      "link": "http://www.easynquickrecipes.com/2013/08/pasta-with-fresh-tomato-sauce.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pasta/",
+        "name": "Pasta",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/25/8d/20/258d20549fd55fe7a86940114678b55b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

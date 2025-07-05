@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445833963/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pots-eds",
+    "CustomFileName": "88101736445833963",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445833963",
+      "url": "https://www.pinterest.com/pin/88101736445833963/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "#pots",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "mugsy1976",
+        "url": "https://www.pinterest.com/mugsy1976/",
+        "name": "Jill Mulderig"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pots-eds/",
+        "name": "POTS EDS",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0f/f5/ad/0ff5ad3aea5ff50720b6e5d772ac9091.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

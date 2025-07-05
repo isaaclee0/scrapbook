@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435130409/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pasta",
+    "CustomFileName": "88101736435130409",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435130409",
+      "url": "https://www.pinterest.com/pin/88101736435130409/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Dandelion pasta and Garlic mustard pesto",
+      "description": "Dandelion pasta with garlic mustard pesto...go collect your ingredients in the woods :)",
+      "link": "http://ediblewildplants.wordpress.com/2010/04/09/dandelion-pasta-and-garlic-mustard-pesto/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pasta/",
+        "name": "Pasta",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/57/76/3c/57763c36b41264c04b1054884f1ec38a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

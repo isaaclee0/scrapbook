@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444485872/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736444485872",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444485872",
+      "url": "https://www.pinterest.com/pin/88101736444485872/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "My favourite recipe: Gary Rhodes",
+      "description": "Bread and Butter Pudding",
+      "link": "http://www.telegraph.co.uk/foodanddrink/recipes/3322602/My-favourite-recipe-Gary-Rhodes.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2d/b8/f3/2db8f32b45f1232a9d13c3f205a35c34.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

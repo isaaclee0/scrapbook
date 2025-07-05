@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441466719/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736441466719",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441466719",
+      "url": "https://www.pinterest.com/pin/88101736441466719/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Fairy Tales Written By Rabbits",
+      "description": "Fairy Tales Written By Rabbits by [Parker, Mary A]",
+      "link": "https://www.amazon.com.au/Fairy-Tales-Written-Rabbits-Parker-ebook/dp/B014N6OKMA",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c4/a5/90/c4a5904b19e003a56f63291ab291e9d5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

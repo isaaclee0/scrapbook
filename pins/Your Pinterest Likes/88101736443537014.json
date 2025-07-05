@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443537014/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443537014",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443537014",
+      "url": "https://www.pinterest.com/pin/88101736443537014/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "I Lilla Kamomillas Villa",
+      "description": "Potrack, Ikea utility rods.",
+      "link": "http://lillakamomilla.blogspot.com/search/label/K%C3%B6ket",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/16/18/92/1618925b738154d29987f0f9fd271a0c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

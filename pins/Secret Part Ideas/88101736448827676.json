@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448827676/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/secret-part-ideas",
+    "CustomFileName": "88101736448827676",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448827676",
+      "url": "https://www.pinterest.com/pin/88101736448827676/",
+      "type": "pin",
+      "title": "How to Make Sushi Pizzas",
+      "gridTitle": "Salmon Sushi Pizza",
+      "description": "We're adding fish to your pizza. And no, we're not talking anchovies.",
+      "link": "https://www.tastemade.com/videos/sushi-pizzas",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemade",
+        "url": "https://www.pinterest.com/tastemade/",
+        "name": "Tastemade"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/secret-part-ideas/",
+        "name": "Secret Part Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/be/65/96/be6596b690cf4bb2c9d7f697882a3709.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/23/9b/08/239b088a366ca6151c8542a4bce39846.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

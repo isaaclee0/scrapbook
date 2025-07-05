@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442193970/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442193970",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442193970",
+      "url": "https://www.pinterest.com/pin/88101736442193970/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Breakfast on a can! Use a buddy burner. 1st cook bacon on top, this creates enough grease to cook an egg. Next butter 2 slices of bread & hold them pressed against sides of can-heat will slightly toast it!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "cfikare",
+        "url": "https://www.pinterest.com/cfikare/",
+        "name": "VickiandJoey Froelich"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a0/5e/55/a05e55c7f8d3fb8a8aa27db7ba4b56e1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

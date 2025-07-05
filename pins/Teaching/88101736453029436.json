@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453029436/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/teaching",
+    "CustomFileName": "88101736453029436",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453029436",
+      "url": "https://www.pinterest.com/pin/88101736453029436/",
+      "type": "pin",
+      "title": "how to find a percent of a number🌼🌸🌺",
+      "gridTitle": "how to find a percent of a number🌼🌸🌺",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "chbillet856",
+        "url": "https://www.pinterest.com/chbillet856/",
+        "name": "chloe"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/teaching/",
+        "name": "Teaching",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/57/e5/9a/57e59a4bd1f3e89fe8774581fff818fd.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/34/2c/e7/342ce79e14b0bf2a859537f8c5c52eb9.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

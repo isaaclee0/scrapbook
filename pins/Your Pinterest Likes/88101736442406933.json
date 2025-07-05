@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442406933/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442406933",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442406933",
+      "url": "https://www.pinterest.com/pin/88101736442406933/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Dolly Parton Musical Suspended After Star Makes Abuse Allegations",
+      "description": "Buffy and Jody from Family Affair",
+      "link": "http://doyouremember.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b9/e0/17/b9e01784ff8bbf71866cdb40931d5748.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431090138/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736431090138",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431090138",
+      "url": "https://www.pinterest.com/pin/88101736431090138/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Homemade Cream Cheese Recipe  - Food.com",
+      "description": "Quote: \"Cream cheese is SO easy and it's so much richer in flavor that the blah store bought kind.\"",
+      "link": "http://www.food.com/recipe/homemade-cream-cheese-13373",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e0/f5/eb/e0f5eb501259a2c0c980d5ce93867e23.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

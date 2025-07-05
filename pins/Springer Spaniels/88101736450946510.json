@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450946510/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/springer-spaniels",
+    "CustomFileName": "88101736450946510",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450946510",
+      "url": "https://www.pinterest.com/pin/88101736450946510/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Natural Dog Hub",
+      "description": "Waiting their turn?",
+      "link": "http://www.thenaturaldoghub.co.uk/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "thenaturaldoghq",
+        "url": "https://www.pinterest.com/thenaturaldoghq/",
+        "name": "The Natural Dog Hub"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/springer-spaniels/",
+        "name": "Springer Spaniels",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ca/af/5a/caaf5ad091ed884422e995e1a77d3caa.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

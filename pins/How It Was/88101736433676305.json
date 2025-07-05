@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433676305/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/how-it-was",
+    "CustomFileName": "88101736433676305",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433676305",
+      "url": "https://www.pinterest.com/pin/88101736433676305/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Best Classes",
+      "description": "so true",
+      "link": "http://9gag.com/gag/1948050",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/how-it-was/",
+        "name": "How it was..",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f4/f9/d2/f4f9d2b1b26a174a80667ff88ac68bfb.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

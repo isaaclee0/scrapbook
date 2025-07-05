@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445147003/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pools",
+    "CustomFileName": "88101736445147003",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445147003",
+      "url": "https://www.pinterest.com/pin/88101736445147003/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Une mini piscine, un petit bijou en plein centre ville du Touquet.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "piscineetjardin",
+        "url": "https://www.pinterest.com/piscineetjardin/",
+        "name": "Piscine et Jardin"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pools/",
+        "name": "Pools",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/15/2e/bb/152ebb123bfcbf140022060a5ba32104.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

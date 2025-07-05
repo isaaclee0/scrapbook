@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443744459/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443744459",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443744459",
+      "url": "https://www.pinterest.com/pin/88101736443744459/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Pansy cake",
+      "description": "Pansy cake",
+      "link": "http://www.flickr.com/photos/41132251@N06/7002778135/in/photostream",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/76/c3/85/76c3857bdcdefe4f5b9419e9f780bf11.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

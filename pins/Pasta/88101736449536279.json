@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449536279/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pasta",
+    "CustomFileName": "88101736449536279",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449536279",
+      "url": "https://www.pinterest.com/pin/88101736449536279/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Baked Gnocchi Recipe | Maggie Beer",
+      "description": "Baked Gnocchi - Maggie Beer",
+      "link": "https://www.maggiebeer.com.au/recipes/baked-gnocchi",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Maggie_Beer",
+        "url": "https://www.pinterest.com/Maggie_Beer/",
+        "name": "Maggie Beer"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pasta/",
+        "name": "Pasta",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5b/3a/b3/5b3ab39ea2a1fea4823e9b07f7d7c4ed.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

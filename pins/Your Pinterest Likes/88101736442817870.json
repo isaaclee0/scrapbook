@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442817870/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442817870",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442817870",
+      "url": "https://www.pinterest.com/pin/88101736442817870/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Prayer for a weary soul",
+      "description": "A prayer for when you are tired and weary.",
+      "link": "http://prayerforanxiety.com/2014/09/04/prayer-for-a-weary-soul/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/11/36/a7/1136a746c16232666bfc5216c00520a4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

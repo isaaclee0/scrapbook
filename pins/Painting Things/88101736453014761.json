@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453014761/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painting-things",
+    "CustomFileName": "88101736453014761",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453014761",
+      "url": "https://www.pinterest.com/pin/88101736453014761/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Mulberry Burst",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "sangha0117",
+        "url": "https://www.pinterest.com/sangha0117/",
+        "name": "Sonia Sangha"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painting-things/",
+        "name": "Painting things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/84/62/52/846252586929665b9b58e1a7b0bd2aef.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

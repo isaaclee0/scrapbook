@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443680219/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443680219",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443680219",
+      "url": "https://www.pinterest.com/pin/88101736443680219/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "plus size outfit---i love when they make good looking plus size clothing suited for a plus size person! (not just expanding smaller sizes)",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/66/5f/bc/665fbc4f4a152c3634bf4ad468228ea2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

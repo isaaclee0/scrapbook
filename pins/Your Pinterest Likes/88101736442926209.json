@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442926209/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442926209",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442926209",
+      "url": "https://www.pinterest.com/pin/88101736442926209/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "I will be right here waiting for you - Richard Marx with lyrics",
+      "description": "I will be right here waiting for you - Richard Marx with lyrics - YouTube",
+      "link": "http://www.youtube.com/watch?v=m_uWS6K-VF8",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/92/cc/1a/92cc1ac03054fee281f1bbea65bae236.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

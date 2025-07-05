@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449916331/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potato-recipes",
+    "CustomFileName": "88101736449916331",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449916331",
+      "url": "https://www.pinterest.com/pin/88101736449916331/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Crispy Parmesan Roast Potatoes",
+      "description": "Crispy Parmesan Roast Potatoes",
+      "link": "http://www.closetcooking.com/2017/10/crispy-parmesan-roast-potatoes.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potato-recipes/",
+        "name": "Potato Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f9/5e/96/f95e968d0c0a22cb78678c97b345a7fd.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

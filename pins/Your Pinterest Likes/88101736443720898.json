@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443720898/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443720898",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443720898",
+      "url": "https://www.pinterest.com/pin/88101736443720898/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "It was God himself who united a man and a woman in marriage -Genesis 2.24",
+      "link": "http://mballestero.files.wordpress.com/2011/09/sft2chts.pdf",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a3/a8/5b/a3a85b0f5835502c9c7103be52df1f34.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

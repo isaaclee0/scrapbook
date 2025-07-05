@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433280114/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/inside-a-cottage",
+    "CustomFileName": "88101736433280114",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433280114",
+      "url": "https://www.pinterest.com/pin/88101736433280114/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Ridiculously cute",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "atolyebeyaz",
+        "url": "https://www.pinterest.com/atolyebeyaz/",
+        "name": "Atölye Beyaz"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/inside-a-cottage/",
+        "name": "Inside a cottage",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/45/55/ef/4555effbdd482b909901b07ab8bd28bc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438643774/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/rhubarb-recipes",
+    "CustomFileName": "88101736438643774",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438643774",
+      "url": "https://www.pinterest.com/pin/88101736438643774/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Rhubarb Pâte de Fruit",
+      "description": "Rhubarb Jelly Candies",
+      "link": "http://tastykitchen.com/recipes/desserts/rhubarb-pate-de-fruit/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/rhubarb-recipes/",
+        "name": "Rhubarb Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cd/18/97/cd1897635453568a62c6297f03f3da1b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452556486/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736452556486",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452556486",
+      "url": "https://www.pinterest.com/pin/88101736452556486/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Maple Crunch | RICARDO",
+      "description": "Maple Crunch | Ricardo",
+      "link": "https://www.ricardocuisine.com/en/recipes/4684-maple-crunch",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/de/0a/9e/de0a9e2c4a49a4a514ee0e85ca957039.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

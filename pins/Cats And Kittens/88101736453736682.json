@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453736682/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736453736682",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453736682",
+      "url": "https://www.pinterest.com/pin/88101736453736682/",
+      "type": "pin",
+      "title": "funny cat videos",
+      "gridTitle": "funny cat videos",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "KaliStudiosssss",
+        "url": "https://www.pinterest.com/KaliStudiosssss/",
+        "name": "Pure Games (Kali Studios)"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/d5/f6/14/d5f61431e839dfcfa0d368b98ecab062.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

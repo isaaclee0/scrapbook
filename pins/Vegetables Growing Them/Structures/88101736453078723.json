@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453078723/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/vegetables-growing-them/structures",
+    "CustomFileName": "88101736453078723",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453078723",
+      "url": "https://www.pinterest.com/pin/88101736453078723/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 27,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "vasylmartynyuk",
+        "url": "https://www.pinterest.com/vasylmartynyuk/",
+        "name": "Portugal"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/vegetables-growing-them/",
+        "name": "Vegetables  - growing them",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c6/7d/4e/c67d4ebaa0928e61f1168d14eb66d121.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

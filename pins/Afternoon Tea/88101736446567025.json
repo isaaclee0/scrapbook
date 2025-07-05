@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446567025/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736446567025",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446567025",
+      "url": "https://www.pinterest.com/pin/88101736446567025/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Please Log In",
+      "description": "Tea Lover's Devotional",
+      "link": "https://tea-by-two.myshopify.com/products/tea-lovers-devotional",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "teabytwo",
+        "url": "https://www.pinterest.com/teabytwo/",
+        "name": "Tea by Two"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e8/97/e3/e897e3509549a51f4428f4ccc99c410d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

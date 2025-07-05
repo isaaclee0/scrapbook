@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435293105/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/garden-inspiration",
+    "CustomFileName": "88101736435293105",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435293105",
+      "url": "https://www.pinterest.com/pin/88101736435293105/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "clovergnome",
+      "description": "A way to make a tiered garden from buckets and tubs",
+      "link": "http://clovergnome.com/?p=215",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/garden-inspiration/",
+        "name": "Garden Inspiration",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b2/3b/32/b23b32442bc08195f3144cd2b1db5666.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434153287/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736434153287",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434153287",
+      "url": "https://www.pinterest.com/pin/88101736434153287/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "That's Not Einstein",
+      "description": "Genius.",
+      "link": "http://imgur.com/a/pBBkt",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f7/bf/67/f7bf673e2dc5cf716fe19d15252878ad.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

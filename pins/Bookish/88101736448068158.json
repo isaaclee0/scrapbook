@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448068158/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736448068158",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448068158",
+      "url": "https://www.pinterest.com/pin/88101736448068158/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Secret Gardens of East Anglia",
+      "description": "Secret Gardens of East Anglia by Barbara Segall https://www.amazon.co.uk/dp/B071W1GGZH/ref=cm_sw_r_pi_dp_U_x_Qij9CbNEKHPJ7",
+      "link": "https://www.amazon.co.uk/dp/B071W1GGZH/ref=cm_sw_r_pi_dp_U_x_Qij9CbNEKHPJ7",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9e/f1/d5/9ef1d5984160432f998dce77e85da42f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

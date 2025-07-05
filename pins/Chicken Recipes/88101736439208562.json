@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439208562/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736439208562",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439208562",
+      "url": "https://www.pinterest.com/pin/88101736439208562/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chicken Marbella",
+      "description": "Chicken Marbella - A delicious paleo recipe. Roasted chicken with a fantastic sweet and sour Mediterranean-inspired flavor! So good and so easy to make too!",
+      "link": "http://www.afamilyfeast.com/chicken-marbella/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ad/4b/de/ad4bdeb4453432bbfadf132bb89396a4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

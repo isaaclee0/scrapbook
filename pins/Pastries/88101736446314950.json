@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446314950/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pastries",
+    "CustomFileName": "88101736446314950",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446314950",
+      "url": "https://www.pinterest.com/pin/88101736446314950/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Cornish Pasties",
+      "description": "Cornish Pasties Recipe | Just A Pinch Recipes",
+      "link": "http://www.justapinch.com/recipes/main-course/main-course-other-main-course/cornish-pasties.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pastries/",
+        "name": "pastries",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8d/0c/ba/8d0cba88ca3a25213db250c7337e3181.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

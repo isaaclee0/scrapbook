@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431225880/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/craft-ideas",
+    "CustomFileName": "88101736431225880",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431225880",
+      "url": "https://www.pinterest.com/pin/88101736431225880/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Cucumber Soap! Use homemade lard for tallow",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/craft-ideas/",
+        "name": "Craft Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/88/da/a8/88daa841681605f16a776da5f7d8ca3e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

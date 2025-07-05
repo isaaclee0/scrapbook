@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443746713/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443746713",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443746713",
+      "url": "https://www.pinterest.com/pin/88101736443746713/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Dotdash Meredith - America's Largest Digital & Print Publisher",
+      "description": "Pregnant Friendly Mocktails",
+      "link": "http://simplystated.realsimple.com/2009/10/07/preggatinis-mixology-for-momtobe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4f/40/3a/4f403a0a9f5224dcb16672c48ec73ce8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

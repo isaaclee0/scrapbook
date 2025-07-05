@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444703689/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736444703689",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444703689",
+      "url": "https://www.pinterest.com/pin/88101736444703689/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Homemade sticky toffee pudding - Pikalily food blog",
+      "description": "Homemade sticky toffee pudding recipe. http://pikalily.com/homemade-sticky-toffee-pudding-recipe/",
+      "link": "http://pikalily.com/homemade-sticky-toffee-pudding-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3f/9e/fa/3f9efaadcaa881aa462e86b6b3deee5b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452545602/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/laundry",
+    "CustomFileName": "88101736452545602",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452545602",
+      "url": "https://www.pinterest.com/pin/88101736452545602/",
+      "type": "pin",
+      "title": "Laundry",
+      "gridTitle": "Laundry",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 4,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "leske2124",
+        "url": "https://www.pinterest.com/leske2124/",
+        "name": "Matthew Leske"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/laundry/",
+        "name": "Laundry",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/22/75/4a/22754a81d9786a7b6392cd31fef6e1cf.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/9d/59/13/9d5913561afd62056551ec99027cce9f.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/24/71/0a/24710a9715174dedb39dd27f4122f098.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/2a/db/59/2adb59aa3a82e45dd4d533749fba96ec.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452795624/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/embroidery",
+    "CustomFileName": "88101736452795624",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452795624",
+      "url": "https://www.pinterest.com/pin/88101736452795624/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "li12na82",
+        "url": "https://www.pinterest.com/li12na82/",
+        "name": "Shany"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/embroidery/",
+        "name": "Embroidery",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a4/5a/bd/a45abdee4e5031fd900a276e595cb4d8.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/d5/bd/06/d5bd06ce0aea8c09f74e6887efc5b99a.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

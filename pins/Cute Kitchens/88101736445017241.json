@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445017241/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cute-kitchens",
+    "CustomFileName": "88101736445017241",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445017241",
+      "url": "https://www.pinterest.com/pin/88101736445017241/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Chalon | Pink Kitchen",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "chalonharrogate",
+        "url": "https://www.pinterest.com/chalonharrogate/",
+        "name": "Chalon Harrogate"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cute-kitchens/",
+        "name": "Cute Kitchens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/08/c9/85/08c98585af41db252a1908e3bca0f073.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

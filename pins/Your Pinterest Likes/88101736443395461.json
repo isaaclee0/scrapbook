@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443395461/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443395461",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443395461",
+      "url": "https://www.pinterest.com/pin/88101736443395461/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Oops!",
+      "description": "French Garden",
+      "link": "http://www.flickr.com/photos/corkbilly/6720159649/in/set-72157628732750733/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d5/6e/e5/d56ee50e905ba417cdd0863bb2acde19.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

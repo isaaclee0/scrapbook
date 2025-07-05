@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449901423/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pasta",
+    "CustomFileName": "88101736449901423",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449901423",
+      "url": "https://www.pinterest.com/pin/88101736449901423/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Roasted Pumpkin, Leek and Goat's Cheese Cannelloni Recipe",
+      "description": "Roasted Pumpkin, Leek & Goat's Cheese Cannelloni Recipe",
+      "link": "https://www.mindfood.com/recipe/recipe-pumpkin-leek-goats-cheese-cannelloni/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pasta/",
+        "name": "Pasta",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d0/ef/bf/d0efbfb890213e65b60a96598181442e.gif",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

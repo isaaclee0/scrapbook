@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453110213/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/dog-training",
+    "CustomFileName": "88101736453110213",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453110213",
+      "url": "https://www.pinterest.com/pin/88101736453110213/",
+      "type": "pin",
+      "title": "Learn “Focus” with your dog",
+      "gridTitle": "Learn “Focus” with your dog",
+      "description": " ",
+      "link": "https://www.waggingvictories.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "waggingvictories",
+        "url": "https://www.pinterest.com/waggingvictories/",
+        "name": "Wagging Victories"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/dog-training/",
+        "name": "Dog Training",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d6/8a/57/d68a57486213e41e6b50efbbccb13a19.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/b8/7c/ee/b87ceeb3dea93b4a73946853a04340d1.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

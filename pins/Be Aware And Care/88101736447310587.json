@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447310587/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/be-aware-and-care",
+    "CustomFileName": "88101736447310587",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447310587",
+      "url": "https://www.pinterest.com/pin/88101736447310587/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Black dot, violence",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "nitzamarin",
+        "url": "https://www.pinterest.com/nitzamarin/",
+        "name": "Nitza"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/be-aware-and-care/",
+        "name": "Be aware and care...",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a0/36/38/a0363876da82c542090b37c17227711d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

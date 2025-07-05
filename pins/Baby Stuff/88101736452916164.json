@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452916164/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/baby-stuff",
+    "CustomFileName": "88101736452916164",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452916164",
+      "url": "https://www.pinterest.com/pin/88101736452916164/",
+      "type": "pin",
+      "title": "Advice For New Moms",
+      "gridTitle": "Advice For New Moms",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "momandtherestless",
+        "url": "https://www.pinterest.com/momandtherestless/",
+        "name": "Mom And The Restless \nPregnancy and Motherhood"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/baby-stuff/",
+        "name": "Baby stuff",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e6/dd/b6/e6ddb6d17c29332c414ecab02251abf2.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/90/22/02/902202a4374a09be97fc2d6cacd75c8b.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447778999/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potato-recipes",
+    "CustomFileName": "88101736447778999",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447778999",
+      "url": "https://www.pinterest.com/pin/88101736447778999/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chicken Potato Bake",
+      "description": "Quick, easy, comforting dinner recipe - Chicken Potato Bake #dizzybusyandhungry #chicken",
+      "link": "http://www.dizzybusyandhungry.com/chicken-potato-bake/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "dizzybusyhungry",
+        "url": "https://www.pinterest.com/dizzybusyhungry/",
+        "name": "Kristin | Dizzy Busy and Hungry!"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potato-recipes/",
+        "name": "Potato Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/db/c1/2d/dbc12d8b402d06fb39083a93463dbda7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

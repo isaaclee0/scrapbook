@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444838531/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736444838531",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444838531",
+      "url": "https://www.pinterest.com/pin/88101736444838531/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "An Old Fashioned Thanksgiving - Trailer",
+      "description": "An Old Fashioned Thanksgiving - Trailer",
+      "link": "https://www.youtube.com/watch?v=3kA1viJ5OnU&feature=share",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9d/f7/1e/9df71e8cc899b2e0e3ef3ad41c860aaf.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430772749/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430772749",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430772749",
+      "url": "https://www.pinterest.com/pin/88101736430772749/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "mini tacos - step by step",
+      "description": "Mini tacos:  Won ton wrappers in muffin tins filled with taco seasoned ground meat, cheese & bake.",
+      "link": "http://www.flickr.com/photos/ginnerobot/3431227193",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4a/1e/07/4a1e07a2ea068baa2d99f725058dfa2c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

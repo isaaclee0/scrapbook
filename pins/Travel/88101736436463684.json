@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436463684/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/travel",
+    "CustomFileName": "88101736436463684",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436463684",
+      "url": "https://www.pinterest.com/pin/88101736436463684/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Beynac,France",
+      "link": "http://www.flickr.com/photos/saskya/4812548664/in/set-72157624320083925",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/travel/",
+        "name": "Travel",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9f/f8/0b/9ff80ba31298279dd164ff8bfad0dfa5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

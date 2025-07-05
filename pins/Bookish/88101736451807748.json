@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451807748/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736451807748",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451807748",
+      "url": "https://www.pinterest.com/pin/88101736451807748/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Enid Blyton's Nature Lover's Book",
+      "description": "Enid Blyton's Nature Lover's Book",
+      "link": "http://www.amazon.com/Blytons-Nature-Lovers-Centenary-Fiction/dp/0237535688/ref=pd_sim_b_16",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ea/df/c1/eadfc14140348df902aab66e307f2e25.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

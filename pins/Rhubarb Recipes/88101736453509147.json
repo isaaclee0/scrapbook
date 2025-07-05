@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453509147/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/rhubarb-recipes",
+    "CustomFileName": "88101736453509147",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453509147",
+      "url": "https://www.pinterest.com/pin/88101736453509147/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Tarte normande à la rhubarbe",
+      "description": "Tarte à la rhubarbe",
+      "link": "https://www.gourmandiseries.fr/tarte-a-la-rhubarbe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/rhubarb-recipes/",
+        "name": "Rhubarb Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e5/ca/c2/e5cac27f6e4d7c4d350dd7af1a8a70a0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

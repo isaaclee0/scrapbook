@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452482199/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/renovating-ideas",
+    "CustomFileName": "88101736452482199",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452482199",
+      "url": "https://www.pinterest.com/pin/88101736452482199/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "anastaciaeg",
+        "url": "https://www.pinterest.com/anastaciaeg/",
+        "name": "Anastacia Elena"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/renovating-ideas/",
+        "name": "Renovating ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a5/e3/8d/a5e38d194aa899ddf42040a3e188f166.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

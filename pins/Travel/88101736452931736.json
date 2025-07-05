@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452931736/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/travel",
+    "CustomFileName": "88101736452931736",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452931736",
+      "url": "https://www.pinterest.com/pin/88101736452931736/",
+      "type": "pin",
+      "title": "Nothing beats a trip to Weeki Wachee Springs",
+      "gridTitle": "Nothing beats a trip to Weeki Wachee Springs",
+      "description": " ",
+      "link": "https://authenticflorida.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "authenticflorida",
+        "url": "https://www.pinterest.com/authenticflorida/",
+        "name": "AuthenticFlorida.com"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/travel/",
+        "name": "Travel",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/47/48/6e/47486e034857840064dd4ca66506d7ef.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/bc/d7/57/bcd757e4a117b9a2f98519eeb391264d.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

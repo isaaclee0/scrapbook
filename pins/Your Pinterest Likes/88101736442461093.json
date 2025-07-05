@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442461093/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442461093",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442461093",
+      "url": "https://www.pinterest.com/pin/88101736442461093/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "milkandcookiesblog.com",
+      "description": "Inside My Head: an activity for kids",
+      "link": "http://www.milkandcookiesblog.com/2011/11/inside-my-head.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/83/6e/97/836e97ef9bc455ddf7a309d300a4304d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

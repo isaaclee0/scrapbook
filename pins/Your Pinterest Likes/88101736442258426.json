@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442258426/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442258426",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442258426",
+      "url": "https://www.pinterest.com/pin/88101736442258426/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Home Page",
+      "description": "Doctors and nurses heal lives, not destroy them. Inspiring: http://www.alliancedefendingfreedom.org/Faith-and-Justice/5-3/CoverStory",
+      "link": "http://www.alliancedefendingfreedom.org/Faith-and-Justice/5-3/CoverStory",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ad/0d/55/ad0d55b8a6ca53225928d7d6dac50c61.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

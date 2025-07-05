@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443900473/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443900473",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443900473",
+      "url": "https://www.pinterest.com/pin/88101736443900473/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "When Your Husband Doesn't Lead - Kaylene Yoder",
+      "description": "What a wife can do when her husband doesn't lead the way he should.",
+      "link": "http://kayleneyoder.com/husband-doesnt-lead/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/65/4e/89/654e8976be83f15ad3dd960a26a87873.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

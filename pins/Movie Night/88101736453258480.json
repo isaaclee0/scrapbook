@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453258480/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736453258480",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453258480",
+      "url": "https://www.pinterest.com/pin/88101736453258480/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Service Unavailable",
+      "description": " ",
+      "link": "https://saltypopcorn.com.au/the-guernsey-literary-potato-peel-pie-society-review/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastysalt",
+        "url": "https://www.pinterest.com/tastysalt/",
+        "name": "Salty Spoons"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c6/3c/7a/c63c7a4173b409ae0fde4cd2c8dac3ae.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

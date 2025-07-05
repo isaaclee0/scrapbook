@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447090732/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-dishes",
+    "CustomFileName": "88101736447090732",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447090732",
+      "url": "https://www.pinterest.com/pin/88101736447090732/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Rolls of twine and gorgeous crockery",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "katfanning4",
+        "url": "https://www.pinterest.com/katfanning4/",
+        "name": "Kathy Wall"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-dishes/",
+        "name": "Cottage Dishes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/38/e9/f8/38e9f8eb023876c70186de81b024395d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

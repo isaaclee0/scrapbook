@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440055469/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736440055469",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440055469",
+      "url": "https://www.pinterest.com/pin/88101736440055469/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Godly Conversation",
+      "description": "Godly Conversation by Joanne J. Jung https://www.amazon.com.au/dp/B00RZT2N8G/ref=cm_sw_r_pi_dp_KdjBxbGFXYTS4",
+      "link": "https://www.amazon.com.au/dp/B00RZT2N8G/ref=cm_sw_r_pi_dp_KdjBxbGFXYTS4",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/28/bc/55/28bc5568e51b7fbaaa314f16b84b93a3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

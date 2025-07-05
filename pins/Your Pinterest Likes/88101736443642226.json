@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443642226/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443642226",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443642226",
+      "url": "https://www.pinterest.com/pin/88101736443642226/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Picture Sundays: 100 Square Foot Off-Grid House",
+      "description": "Chicken coop made from a trampoline frame (@Dodi Fontenot)",
+      "link": "http://www.rootsimple.com/2013/03/picture-sundays-100-square-foot-off-grid-house/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a3/9d/36/a39d36cc7b8d4b45a87165ceadd3eab1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453021046/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/to-buy",
+    "CustomFileName": "88101736453021046",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453021046",
+      "url": "https://www.pinterest.com/pin/88101736453021046/",
+      "type": "pin",
+      "title": "Medicine holder",
+      "gridTitle": "Medicine holder",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "chvygrl27",
+        "url": "https://www.pinterest.com/chvygrl27/",
+        "name": "Chvygrl27"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/to-buy/",
+        "name": "To buy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9f/5f/93/9f5f934a15fe3cafef463849642469b0.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/26/de/7f/26de7fca8171fa9d19be8c63935e2e5d.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437687945/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/writing",
+    "CustomFileName": "88101736437687945",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437687945",
+      "url": "https://www.pinterest.com/pin/88101736437687945/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "I'm lovin' it!",
+      "description": " ",
+      "link": "http://missklohnsclassroom.blogspot.com/2011/12/im-lovin-it.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/writing/",
+        "name": "Writing",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/90/d9/63/90d963f59383f3c5983e92eab4645d1a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

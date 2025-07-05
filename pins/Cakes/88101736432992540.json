@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432992540/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736432992540",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432992540",
+      "url": "https://www.pinterest.com/pin/88101736432992540/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "A Pretty Daisy Cake and Daisy Cupcakes",
+      "description": "daisy cake",
+      "link": "http://www.tonyastaab.com/2010/05/daisies-daisies-daisies-.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/39/36/97/39369739c9e35c7eb9ea1f09a45f7ea6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

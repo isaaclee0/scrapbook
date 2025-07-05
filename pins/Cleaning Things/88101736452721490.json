@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452721490/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cleaning-things",
+    "CustomFileName": "88101736452721490",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452721490",
+      "url": "https://www.pinterest.com/pin/88101736452721490/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "bethperks0165",
+        "url": "https://www.pinterest.com/bethperks0165/",
+        "name": "Perks_of_being_Beth"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cleaning-things/",
+        "name": "Cleaning Things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/02/e1/d9/02e1d900acd1fafafb9441d650cbed56.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/dc/d1/54/dcd1540d846c34a1d29a77040c073f72.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443603662/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443603662",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443603662",
+      "url": "https://www.pinterest.com/pin/88101736443603662/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Invalid URL",
+      "description": "oh my, I l'd ol!",
+      "link": "https://fbcdn-sphotos-a.akamaihd.net/hphotos-ak-ash3/527786_307970565963394_1698429766_n.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/16/e3/e5/16e3e5d4584776e0490ced29992bc10c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

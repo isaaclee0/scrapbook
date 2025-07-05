@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438387470/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/craft-ideas",
+    "CustomFileName": "88101736438387470",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438387470",
+      "url": "https://www.pinterest.com/pin/88101736438387470/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "DIY Lace bowls...so easy!",
+      "link": "http://edwardkinsella.com/tag/lace/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/craft-ideas/",
+        "name": "Craft Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/72/fa/62/72fa62d96bfd4042d4c5c272f3042149.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

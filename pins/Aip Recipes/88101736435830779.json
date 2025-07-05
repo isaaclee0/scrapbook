@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435830779/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736435830779",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435830779",
+      "url": "https://www.pinterest.com/pin/88101736435830779/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "FitToBlog.org -",
+      "description": "Coconut Crusted Chicken with Avocado Sauce (AIP version), autoimmune paleo diet",
+      "link": "http://www.fittoblog.org/2013/12/coconut-crusted-chicken-with-avocado.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/38/40/8c/38408c4b2201c85ca7c0b4a1f4090e41.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

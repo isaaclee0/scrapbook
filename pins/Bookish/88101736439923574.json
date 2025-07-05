@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439923574/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736439923574",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439923574",
+      "url": "https://www.pinterest.com/pin/88101736439923574/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Perri - Felix Salten (from the author of Bambi)",
+      "link": "http://www.amazon.com/Perri-Felix-Salten/dp/B00085U2S2/ref=sr_1_9?s=books&ie=UTF8&qid=1365334532&sr=1-9&keywords=felix+salten",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5a/52/36/5a52360e1d77ca8b21e754773f95c6b6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

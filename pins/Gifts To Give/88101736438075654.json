@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438075654/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/gifts-to-give",
+    "CustomFileName": "88101736438075654",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438075654",
+      "url": "https://www.pinterest.com/pin/88101736438075654/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "chocolate filled eggs",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "sarajoypond",
+        "url": "https://www.pinterest.com/sarajoypond/",
+        "name": "SaraJoy Pond"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/gifts-to-give/",
+        "name": "Gifts to give",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/44/81/28/4481289e064f27368d690e4eb4945c5c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450280252/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/summer-food",
+    "CustomFileName": "88101736450280252",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450280252",
+      "url": "https://www.pinterest.com/pin/88101736450280252/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Pineapple Cucumber Salad",
+      "description": "Pineapple Cucumber Salad by momontimeout: Wonderfully easy to make and simply delicious. #Salad #Pineapple #Cucumber",
+      "link": "http://www.momontimeout.com/2014/06/pineapple-cucumber-salad/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "gernekochen",
+        "url": "https://www.pinterest.com/gernekochen/",
+        "name": "Gernekochen.de"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/summer-food/",
+        "name": "Summer food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/39/63/de/3963de2916fc4f973b06655ef22e0a45.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

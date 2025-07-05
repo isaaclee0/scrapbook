@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443468200/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443468200",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443468200",
+      "url": "https://www.pinterest.com/pin/88101736443468200/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Beach cottage",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "henmatz",
+        "url": "https://www.pinterest.com/henmatz/",
+        "name": "Henriette Matz"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e4/c9/23/e4c923ffa5394e6d8622023c8f337737.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

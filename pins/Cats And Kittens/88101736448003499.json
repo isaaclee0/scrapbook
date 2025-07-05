@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448003499/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736448003499",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448003499",
+      "url": "https://www.pinterest.com/pin/88101736448003499/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Cats are so considerate.",
+      "link": "https://i.pinimg.com/736x/ab/17/73/ab17734ad1bc78b2f257f6f181035a80.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "saving_cats_dogs_and_cash",
+        "url": "https://www.pinterest.com/saving_cats_dogs_and_cash/",
+        "name": "Saving Cats, Dogs & Cash"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7c/ce/a5/7ccea52075d67024899878b60c3fa014.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

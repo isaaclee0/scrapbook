@@ -1,0 +1,149 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="sort-container">
+        <select id="sortBoards" onchange="sortBoards()">
+            <option value="name_asc">Alphabetically (A to Z)</option>
+            <option value="name_desc">Alphabetically (Z to A)</option>
+            <option value="newest">Newest to Oldest</option>
+            <option value="oldest">Oldest to Newest</option>
+            <option value="largest">Largest to Smallest</option>
+            <option value="smallest">Smallest to Largest</option>
+        </select>
+    </div>
+
+    <div class="gallery" id="boardsGallery">
+        {% for board in boards %}
+        <div class="board" data-name="{{ board.name }}" data-created="{{ board.created_at }}" data-pin-count="{{ board.pin_count }}">
+            <a href="{{ url_for('board', board_id=board.id) }}">
+                <img src="{{ board.random_pin_image_url }}" 
+                     alt="{{ board.name }} Pin" 
+                     loading="lazy"
+                     class="board-image"
+                     onerror="this.src='/static/images/default_board.png'">
+                <h3>{{ board.name }}</h3>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+
+    <style>
+        .sort-container {
+            padding: 20px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        #sortBoards {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        #sortBoards:focus {
+            outline: none;
+            border-color: #2980b9;
+            box-shadow: 0 0 0 2px rgba(41, 128, 185, 0.1);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 16px;
+            padding: 20px;
+        }
+        .board {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            border-radius: 8px;
+            transition: transform 0.2s;
+            background: white;
+        }
+        .board:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .board-image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 0 auto 10px;
+            display: block;
+            background-color: #f0f0f0;
+        }
+        .board h3 {
+            margin: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            color: #333;
+        }
+        .board a {
+            text-decoration: none;
+        }
+        @media (max-width: 600px) {
+            .gallery { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+            .board-image { width: 100px; height: 100px; }
+        }
+    </style>
+
+    <script>
+        // Debounce the sort function to prevent rapid re-sorting
+        let sortTimeout;
+        function sortBoards() {
+            clearTimeout(sortTimeout);
+            sortTimeout = setTimeout(performSort, 100);
+        }
+
+        function performSort() {
+            const sortBy = document.getElementById('sortBoards').value;
+            const gallery = document.getElementById('boardsGallery');
+            const boards = Array.from(gallery.getElementsByClassName('board'));
+            
+            boards.sort((a, b) => {
+                switch(sortBy) {
+                    case 'name_asc':
+                        return a.dataset.name.localeCompare(b.dataset.name);
+                    case 'name_desc':
+                        return b.dataset.name.localeCompare(a.dataset.name);
+                    case 'newest':
+                        return new Date(b.dataset.created) - new Date(a.dataset.created);
+                    case 'oldest':
+                        return new Date(a.dataset.created) - new Date(b.dataset.created);
+                    case 'largest':
+                        return parseInt(b.dataset.pinCount) - parseInt(a.dataset.pinCount);
+                    case 'smallest':
+                        return parseInt(a.dataset.pinCount) - parseInt(b.dataset.pinCount);
+                    default:
+                        return 0;
+                }
+            });
+            
+            // Use requestAnimationFrame for smooth animations
+            requestAnimationFrame(() => {
+                gallery.innerHTML = '';
+                boards.forEach(board => gallery.appendChild(board));
+            });
+        }
+
+        // Preload images for better performance
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('.board-image');
+            images.forEach(img => {
+                if (img.complete) {
+                    img.style.opacity = '1';
+                } else {
+                    img.style.opacity = '0';
+                    img.addEventListener('load', function() {
+                        this.style.opacity = '1';
+                    });
+                }
+            });
+        });
+    </script>
+{% endblock %}

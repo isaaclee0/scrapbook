@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436274449/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painting-things",
+    "CustomFileName": "88101736436274449",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436274449",
+      "url": "https://www.pinterest.com/pin/88101736436274449/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "House of Turquoise",
+      "description": "Pastel.",
+      "link": "http://www.houseofturquoise.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painting-things/",
+        "name": "Painting things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7c/c0/b4/7cc0b46dd245c85fca004e9ee2bd5cf5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

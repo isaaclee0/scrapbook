@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450095379/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736450095379",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450095379",
+      "url": "https://www.pinterest.com/pin/88101736450095379/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Malinowa chmurka",
+      "description": "short pastry with raspberry jelly, vanilla cream cheese and almond meringue",
+      "link": "http://www.mojewypieki.com/przepis/malinowa-chmurka",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6e/c5/11/6ec5119943a17ec421d3f072811420cc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

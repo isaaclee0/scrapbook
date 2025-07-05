@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435237554/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/philippines-recipes",
+    "CustomFileName": "88101736435237554",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435237554",
+      "url": "https://www.pinterest.com/pin/88101736435237554/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Filipino Carioca Recipe.  Fried Sweet Rice Balls Dipped in Sweet Coconut Syrup",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/philippines-recipes/",
+        "name": "Philippines recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/80/2e/79/802e79db3fd75eb3cfb35609c5e88871.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

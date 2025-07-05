@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445333131/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/collies-and-shelties",
+    "CustomFileName": "88101736445333131",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445333131",
+      "url": "https://www.pinterest.com/pin/88101736445333131/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Australian Collie, 1950s-60s.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "sarahbrown31337",
+        "url": "https://www.pinterest.com/sarahbrown31337/",
+        "name": "Sarah Brown"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/collies-and-shelties/",
+        "name": "Collies and Shelties",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/75/61/58/7561585779d69f8ed04c36cd73aae3ba.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

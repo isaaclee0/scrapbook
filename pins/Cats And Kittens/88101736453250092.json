@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453250092/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736453250092",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453250092",
+      "url": "https://www.pinterest.com/pin/88101736453250092/",
+      "type": "pin",
+      "title": "Кот ",
+      "gridTitle": "Кот",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 8,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "mykhailovdmytro",
+        "url": "https://www.pinterest.com/mykhailovdmytro/",
+        "name": "Dmytro Mykhailov"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c8/58/91/c8589155b95ce9a1317af1d8f8253bfb.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/v2/720p/4e/c1/be/4ec1bef8629912da4eca28fb83e0cbdf_mobile.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

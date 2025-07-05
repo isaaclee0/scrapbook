@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442985755/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442985755",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442985755",
+      "url": "https://www.pinterest.com/pin/88101736442985755/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Fancy Girlie Easter Basket - My Insanity",
+      "description": "Printable poem from the Easter Bunny about the real gift of #Easter #religious",
+      "link": "http://meandmyinsanity.com/2014/04/fancy-girlie-easter-basket.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/71/46/7b/71467b3fc9551ac17bd6e9dce69fadc5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

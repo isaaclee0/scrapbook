@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452185381/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/baby-stuff",
+    "CustomFileName": "88101736452185381",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452185381",
+      "url": "https://www.pinterest.com/pin/88101736452185381/",
+      "type": "pin",
+      "title": "Reclaim the Magic of Motherhood",
+      "gridTitle": "Reclaim the Magic of Motherhood",
+      "description": " ",
+      "link": "https://thepeacefulsleeper.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ThePeacefulSleeper",
+        "url": "https://www.pinterest.com/ThePeacefulSleeper/",
+        "name": "The Peaceful Sleeper"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/baby-stuff/",
+        "name": "Baby stuff",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/47/1b/d3/471bd360dc235c8a022c69e6f34b682d.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/ae/48/3a/ae483aea142193d243a93dcd58f0da83.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

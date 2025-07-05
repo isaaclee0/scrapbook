@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444028153/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/breakfast-in-bed",
+    "CustomFileName": "88101736444028153",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444028153",
+      "url": "https://www.pinterest.com/pin/88101736444028153/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "engamanyalzamel",
+        "url": "https://www.pinterest.com/engamanyalzamel/",
+        "name": "Amany Alzamel"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/breakfast-in-bed/",
+        "name": "Breakfast In Bed",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f9/e3/ce/f9e3ce9faa5a8927631dda1ac6236d1c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

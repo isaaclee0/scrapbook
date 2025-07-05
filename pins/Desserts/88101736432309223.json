@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432309223/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736432309223",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432309223",
+      "url": "https://www.pinterest.com/pin/88101736432309223/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Roasted Banana Pudding",
+      "description": "roasted banana pudding",
+      "link": "http://www.feaststl.com/recipes/article_bd4530a6-a6d3-11e1-b867-001a4bcf6878.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5c/a7/2f/5ca72fe1057548cee17086180e89e2e5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433630956/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736433630956",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433630956",
+      "url": "https://www.pinterest.com/pin/88101736433630956/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Cottage Journal - Hoffman Media",
+      "description": "Frozen German Chocolate Pie",
+      "link": "http://www.thecottagejournal.com/content.aspx?id=22977",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a6/be/5a/a6be5ad27bc0ec72bacaeed6d7eb70ef.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

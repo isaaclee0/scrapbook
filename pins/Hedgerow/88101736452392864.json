@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452392864/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hedgerow",
+    "CustomFileName": "88101736452392864",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452392864",
+      "url": "https://www.pinterest.com/pin/88101736452392864/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "English hedgerows",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "dartmoordays",
+        "url": "https://www.pinterest.com/dartmoordays/",
+        "name": "Fox and Dahlia"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hedgerow/",
+        "name": "Hedgerow",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/44/2f/07/442f072cb7523106fcb40e2298eb4b99.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

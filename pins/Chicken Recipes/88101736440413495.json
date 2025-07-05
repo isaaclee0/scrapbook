@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440413495/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736440413495",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440413495",
+      "url": "https://www.pinterest.com/pin/88101736440413495/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Garlic and Paprika Chicken",
+      "description": "Garlic and Paprika Chicken",
+      "link": "http://www.jocooks.com/healthy-eating/garlic-and-paprika-chicken/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "inspiredtaste",
+        "url": "https://www.pinterest.com/inspiredtaste/",
+        "name": "Inspired Taste"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ec/77/b4/ec77b4e2d39014c7119b13431fdefa61.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452587678/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painting-things",
+    "CustomFileName": "88101736452587678",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452587678",
+      "url": "https://www.pinterest.com/pin/88101736452587678/",
+      "type": "pin",
+      "title": "All the paint colors in our house",
+      "gridTitle": "All the paint colors in our house",
+      "description": " ",
+      "link": "https://www.chrislovesjulia.com/all-the-paint-colors-in-our-house-and-why-paint-colors-you-see-online-might-look-different-in-person/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "chrislovesjulia",
+        "url": "https://www.pinterest.com/chrislovesjulia/",
+        "name": "Chris Loves Julia"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painting-things/",
+        "name": "Painting things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/04/1d/d7/041dd780e0ccc3a1d71ad0541fc7896b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

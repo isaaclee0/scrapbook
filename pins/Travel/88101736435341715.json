@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435341715/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/travel",
+    "CustomFileName": "88101736435341715",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435341715",
+      "url": "https://www.pinterest.com/pin/88101736435341715/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Cannelle et Vanille",
+      "description": "La Dordogne, France",
+      "link": "http://cannelle-vanille.blogspot.com/search?updated-max=2011-10-24T09%253A15%253A00-04%253A00&max-results=5",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/travel/",
+        "name": "Travel",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/90/b1/a0/90b1a02402e9aae7ed43aef1a0551a9a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

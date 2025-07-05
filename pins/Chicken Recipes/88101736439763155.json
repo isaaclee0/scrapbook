@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439763155/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736439763155",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439763155",
+      "url": "https://www.pinterest.com/pin/88101736439763155/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "French Onion Chicken",
+      "description": "French Onion Chicken",
+      "link": "http://www.closetcooking.com/2015/04/french-onion-chicken.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bc/88/9d/bc889d34ee3308a68d6571dd440eb703.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

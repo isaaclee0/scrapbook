@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439602153/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736439602153",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439602153",
+      "url": "https://www.pinterest.com/pin/88101736439602153/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Banana Upside Down Cake",
+      "description": "Banana Upside Down Cake - Sprinkle Some Sugar",
+      "link": "http://www.sprinklesomesugar.com/banana-upside-down-cake/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f4/f0/0f/f4f00ff080878a07e02bfbdb74e74d1e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

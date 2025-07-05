@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442524214/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442524214",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442524214",
+      "url": "https://www.pinterest.com/pin/88101736442524214/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Loose ponytail with flowers...",
+      "link": "http://www.flickr.com/photos/ianton/8615296281/lightbox/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/72/83/37/728337597be630fdb5fbbdcb94121a91.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

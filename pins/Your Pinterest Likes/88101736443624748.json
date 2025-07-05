@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443624748/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443624748",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443624748",
+      "url": "https://www.pinterest.com/pin/88101736443624748/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Boyz II Men - I'll Make Love To You (Official Music Video)",
+      "description": "Boyz II Men - I'll Make Love To You",
+      "link": "http://www.youtube.com/attribution_link?a=PBuAOam_6oI&u=/watch%3Fv%3DfV8vB1BB2qc%26feature%3Dshare",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ab/0f/ae/ab0faee0bf73c9f9e0018827c75e8219.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

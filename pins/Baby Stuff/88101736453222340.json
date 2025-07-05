@@ -1,0 +1,47 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453222340/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/baby-stuff",
+    "CustomFileName": "88101736453222340",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453222340",
+      "url": "https://www.pinterest.com/pin/88101736453222340/",
+      "type": "pin",
+      "title": "Lady, please exit the refrigerator",
+      "gridTitle": "Lady, please exit the refrigerator",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/baby-stuff/",
+        "name": "Baby stuff",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/38/fb/60/38fb60490b2b199ebfdd3ac61fe4e41b.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/c3/0d/a9/c30da90b9b02dfcb6dabf9c7ae27f777.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

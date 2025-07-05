@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450409035/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/secret-part-ideas",
+    "CustomFileName": "88101736450409035",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450409035",
+      "url": "https://www.pinterest.com/pin/88101736450409035/",
+      "type": "pin",
+      "title": "Elegante Arrollado de Fresas",
+      "gridTitle": "Elegante Arrollado de Fresas",
+      "description": "Te enseñamos cómo crear un elegante arrollado de fresas y crema con un diseño maravilloso.",
+      "link": "https://es.tastemade.com/videos/pionono-de-frutilla",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemadees",
+        "url": "https://www.pinterest.com/tastemadees/",
+        "name": "Tastemade Español"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/secret-part-ideas/",
+        "name": "Secret Part Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/78/75/f2/7875f2eaf2cb70bc04beb1e08cc02b34.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/08/82/fb/0882fb059a8d9aabd9ebe4d984219a2d.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

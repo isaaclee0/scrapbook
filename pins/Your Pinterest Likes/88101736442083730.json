@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442083730/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442083730",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442083730",
+      "url": "https://www.pinterest.com/pin/88101736442083730/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Kara's Party Ideas | Kids Birthday Party Themes",
+      "description": "this lady throws some AMAZING kid parties... you've got to check out her blog!  this was a cupcake for a campfire movie smore night",
+      "link": "http://www.karaspartyideas.blogspot.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/db/11/e9/db11e91d016a6a0db4c379ff89ea402b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

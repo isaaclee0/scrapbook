@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434154445/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736434154445",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434154445",
+      "url": "https://www.pinterest.com/pin/88101736434154445/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Recipes",
+      "description": "Crock pot chicken & gravy",
+      "link": "http://www.ziplist.com/recipes/69992-Simple_Crock_Pot_Chicken",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5b/a1/11/5ba1113aa27bb7112056c3b9cdbec011.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

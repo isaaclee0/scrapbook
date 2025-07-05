@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451851059/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736451851059",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451851059",
+      "url": "https://www.pinterest.com/pin/88101736451851059/",
+      "type": "pin",
+      "title": "Grey natural curls",
+      "gridTitle": "Grey natural curls",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "alliecwood",
+        "url": "https://www.pinterest.com/alliecwood/",
+        "name": "Allie Wood"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/53/08/98/530898cbec99f079d212ef5c7bd2fdf2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

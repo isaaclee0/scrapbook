@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451557637/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pots-eds",
+    "CustomFileName": "88101736451557637",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451557637",
+      "url": "https://www.pinterest.com/pin/88101736451557637/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "jehlef",
+        "url": "https://www.pinterest.com/jehlef/",
+        "name": "Jehle Flowers"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pots-eds/",
+        "name": "POTS EDS",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/44/5f/90/445f9049254b989f2afd3e8cdecc8301.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

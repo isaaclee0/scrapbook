@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453441814/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/vegetables-growing-them",
+    "CustomFileName": "88101736453441814",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453441814",
+      "url": "https://www.pinterest.com/pin/88101736453441814/",
+      "type": "pin",
+      "title": "gardening idea",
+      "gridTitle": "gardening idea",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Home_and_Gardening_Center",
+        "url": "https://www.pinterest.com/Home_and_Gardening_Center/",
+        "name": "Home and Gardening"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/vegetables-growing-them/",
+        "name": "Vegetables  - growing them",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/c0/fa/5b/c0fa5b4becaa99c4be078b63e1cce319.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

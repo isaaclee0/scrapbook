@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443933433/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/rabbit-care",
+    "CustomFileName": "88101736443933433",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443933433",
+      "url": "https://www.pinterest.com/pin/88101736443933433/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Feets ❤",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/rabbit-care/",
+        "name": "Rabbit care",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ad/62/58/ad6258c42844f44b208b28782982ecc4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

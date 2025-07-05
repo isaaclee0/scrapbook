@@ -1,0 +1,68 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453737345/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tile",
+    "CustomFileName": "88101736453737345",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453737345",
+      "url": "https://www.pinterest.com/pin/88101736453737345/",
+      "type": "pin",
+      "title": "Tiles",
+      "gridTitle": "Tiles",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 6,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Moonawithabrush",
+        "url": "https://www.pinterest.com/Moonawithabrush/",
+        "name": "Moona & DIY"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tile/",
+        "name": "Tile",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7e/0e/49/7e0e4956593dbb2b8619b9c6ee1ac18b.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/e0/1e/d4/e01ed48b171da5ce76b22c17f58e7e76.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/cb/70/3f/cb703f1a6f1379f93af5a5b92323488c.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/47/80/5e/47805edadfbd537430f00eefa52233d6.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/f6/b2/02/f6b202fe1f6a624d4c4496bfe308ea7c.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/e0/be/f3/e0bef379d88f0b7543446135b1b776a6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

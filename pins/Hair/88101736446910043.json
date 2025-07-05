@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446910043/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736446910043",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446910043",
+      "url": "https://www.pinterest.com/pin/88101736446910043/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Cut",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bf/d2/c9/bfd2c9112cd15d475559a3afc8a3f889.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

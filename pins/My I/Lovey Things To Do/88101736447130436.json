@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447130436/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/my-i/lovey-things-to-do",
+    "CustomFileName": "88101736447130436",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447130436",
+      "url": "https://www.pinterest.com/pin/88101736447130436/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Hot pot restaurant sauces",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "danmalm",
+        "url": "https://www.pinterest.com/danmalm/",
+        "name": "Dan Malm"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/my-i/",
+        "name": "My I",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/67/67/d8/6767d89a84516b09d95a3ffd506fd415.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

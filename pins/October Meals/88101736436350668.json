@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436350668/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/october-meals",
+    "CustomFileName": "88101736436350668",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436350668",
+      "url": "https://www.pinterest.com/pin/88101736436350668/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chicken with Pumpkin, Figs, and Honey",
+      "description": "Chicken with pumpkin, figs and honey",
+      "link": "http://www.joyofkosher.com/recipes/chicken-with-pumpkin-figs-and-honey/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/october-meals/",
+        "name": "October meals",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/39/0d/0f/390d0f9564abeddf51b4ccab4a0c1625.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

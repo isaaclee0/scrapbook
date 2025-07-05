@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450101729/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/summer-food",
+    "CustomFileName": "88101736450101729",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450101729",
+      "url": "https://www.pinterest.com/pin/88101736450101729/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Plum, Pistachio & Lemon Cake | The Brick Kitchen",
+      "description": "Raspberry, Rhubarb & Dark Chocolate Bread & Butter Pudding Cake - The Brick Kitchen",
+      "link": "http://www.thebrickkitchen.com/2017/02/plum-pistachio-lemon-cake/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "lounge20blog",
+        "url": "https://www.pinterest.com/lounge20blog/",
+        "name": "Lounge 20"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/summer-food/",
+        "name": "Summer food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fe/1a/bf/fe1abf500376305defe68b9e02fe49d1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

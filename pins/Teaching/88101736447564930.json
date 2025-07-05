@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447564930/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/teaching",
+    "CustomFileName": "88101736447564930",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447564930",
+      "url": "https://www.pinterest.com/pin/88101736447564930/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "#celebratemonday hashtag on Twitter",
+      "link": "https://twitter.com/hashtag/celebratemonday?f=tweets&vertical=default&src=hash",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/teaching/",
+        "name": "Teaching",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5f/41/b1/5f41b18fe7525777bafce8180b638cc9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

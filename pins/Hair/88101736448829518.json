@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448829518/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736448829518",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448829518",
+      "url": "https://www.pinterest.com/pin/88101736448829518/",
+      "type": "pin",
+      "title": "Hair styling for soft curly hair",
+      "gridTitle": "Hair styling for soft curly hair",
+      "description": "Hair styling for soft curly hair",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "metdaan",
+        "url": "https://www.pinterest.com/metdaan/",
+        "name": "MetDaan"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a0/9b/20/a09b204264aee5e5cc0f2f5a7367c01f.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/a0/3b/97/a03b979d0b6837b5a1c00d900bfd8a12.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438719092/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cheese-and-yoghurt",
+    "CustomFileName": "88101736438719092",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438719092",
+      "url": "https://www.pinterest.com/pin/88101736438719092/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Scamorza",
+      "description": "Scamorza",
+      "link": "http://www.cheese.com/scamorza/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cheese-and-yoghurt/",
+        "name": "Cheese and Yoghurt",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0b/52/6f/0b526f0df5db48fd8ebfd2d4be4394a3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

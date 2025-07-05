@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437894212/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pasta",
+    "CustomFileName": "88101736437894212",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437894212",
+      "url": "https://www.pinterest.com/pin/88101736437894212/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Gnocchi Verde, or The Redemption of Frozen Spinach",
+      "description": "Gnocchi Verde (Spinach and Ricotta Dumplings)",
+      "link": "http://food52.com/blog/12147-gnocchi-verde-or-the-redemption-of-frozen-spinach?utm_source=Sailthru&utm_medium=email&utm_term=Mon%20and%20Wed%20Email%20Send&utm_campaign=20150406_Eds_MeatlessMonday",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pasta/",
+        "name": "Pasta",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/90/cd/ec/90cdec6f09d67a7ae7447504fb5e4d2b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

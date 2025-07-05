@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448257821/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/brit-food",
+    "CustomFileName": "88101736448257821",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448257821",
+      "url": "https://www.pinterest.com/pin/88101736448257821/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Irish Bread Pudding With Whiskey Caramel Sauce Recipe  - Food.com",
+      "description": "Next-Level: Irish Bread Pudding with Whiskey Caramel Sauce",
+      "link": "http://www.food.com/recipe/irish-bread-pudding-with-whiskey-caramel-sauce-530327",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 17,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "fooddotcom",
+        "url": "https://www.pinterest.com/fooddotcom/",
+        "name": "Food.com"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/brit-food/",
+        "name": "Brit Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/51/16/cc/5116ccbf54c2f5cc1661111c0f55449e.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/v2/720p/68/37/70/68377098eed992242fd861e54c1652fc_mobile.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444806881/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cute-kitchens",
+    "CustomFileName": "88101736444806881",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444806881",
+      "url": "https://www.pinterest.com/pin/88101736444806881/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "YouTube",
+      "description": "Gorgeous kitchen.",
+      "link": "http://www.youtube.com/watch?v=qXxUpEyoUA8",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cute-kitchens/",
+        "name": "Cute Kitchens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/66/d4/95/66d495fdf7a075ceddf1668fd9e10604.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

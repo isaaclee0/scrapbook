@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443050097/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443050097",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443050097",
+      "url": "https://www.pinterest.com/pin/88101736443050097/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Homemade Lime Plaster for Earthbag/Superadobe House | Painting & Sponging Walls",
+      "description": "Homemade Lime Plaster for Earthbag/Superadobe House | Painting & Sponging Walls",
+      "link": "http://www.youtube.com/watch/?v=O3PaJAJN4EE",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1b/6b/57/1b6b5747043658a53580bab7875ab6b5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

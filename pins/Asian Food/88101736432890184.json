@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432890184/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/asian-food",
+    "CustomFileName": "88101736432890184",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432890184",
+      "url": "https://www.pinterest.com/pin/88101736432890184/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Fresh Lumpia!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/asian-food/",
+        "name": "Asian Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ef/ee/3e/efee3ec2eca7a655d8985a2d553c4a93.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

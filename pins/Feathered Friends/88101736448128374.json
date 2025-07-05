@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448128374/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/feathered-friends",
+    "CustomFileName": "88101736448128374",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448128374",
+      "url": "https://www.pinterest.com/pin/88101736448128374/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Loading...",
+      "description": " ",
+      "link": "http://www.hittechy.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/feathered-friends/",
+        "name": "Feathered friends",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f4/5c/2e/f45c2e08f70eca9fd9306f069dfb5b76.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/92/10/41/9210413239d00cc7ace61107a73fb194.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

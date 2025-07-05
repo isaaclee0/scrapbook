@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433596104/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fun",
+    "CustomFileName": "88101736433596104",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433596104",
+      "url": "https://www.pinterest.com/pin/88101736433596104/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Hello Spring.",
+      "description": " ",
+      "link": "http://pureandnoble.blogspot.com/2013/03/hello-spring.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fun/",
+        "name": "Fun",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/13/64/34/1364341a0fc04bec171ffd62d6c1563a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

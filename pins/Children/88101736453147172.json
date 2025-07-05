@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453147172/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/children",
+    "CustomFileName": "88101736453147172",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453147172",
+      "url": "https://www.pinterest.com/pin/88101736453147172/",
+      "type": "pin",
+      "title": "The Cutest Argument Ever 😊",
+      "gridTitle": "The Cutest Argument Ever 😊",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tinyjumps",
+        "url": "https://www.pinterest.com/tinyjumps/",
+        "name": "TinyJumps"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/children/",
+        "name": "Children",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/3c/8b/e1/3c8be1f0b3c7564dfb73b21f0fdb0000.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435953265/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/animal-love",
+    "CustomFileName": "88101736435953265",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435953265",
+      "url": "https://www.pinterest.com/pin/88101736435953265/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Dragonfly by Jesper Madsen / 500px",
+      "description": "Dragonflies by Jesper Madsen",
+      "link": "http://500px.com/photo/3758168",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/animal-love/",
+        "name": "Animal love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cd/4a/77/cd4a7787be61a097f7dc1a91c63f96fe.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453287624/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/brit-food",
+    "CustomFileName": "88101736453287624",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453287624",
+      "url": "https://www.pinterest.com/pin/88101736453287624/",
+      "type": "pin",
+      "title": "Eve’s Pudding",
+      "gridTitle": "Eve’s Pudding",
+      "description": " ",
+      "link": "https://www.supergoldenbakes.com/eves-pudding/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "supergolden88",
+        "url": "https://www.pinterest.com/supergolden88/",
+        "name": "Supergolden Bakes"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/brit-food/",
+        "name": "Brit Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/25/7f/40/257f4082db35acd4177820b7b8cb6179.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/4d/56/c0/4d56c032d23cd1d64eb73bacbaaf7ca1.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

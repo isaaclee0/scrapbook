@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448311375/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736448311375",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448311375",
+      "url": "https://www.pinterest.com/pin/88101736448311375/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Winnie the Pooh - A A. Milne ah wise words :)",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "josiemoakley",
+        "url": "https://www.pinterest.com/josiemoakley/",
+        "name": "Josie Oakley"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cc/37/cc/cc37cc41fcca4b89f9c0936cbbdacc3f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

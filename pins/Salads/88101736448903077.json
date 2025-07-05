@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448903077/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/salads",
+    "CustomFileName": "88101736448903077",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448903077",
+      "url": "https://www.pinterest.com/pin/88101736448903077/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Crab Pasta Salad",
+      "description": "This Crab Pasta Salad is a family recipe, one of my favorites!  Packed with veggies and delicious flavor, it’s a staple at summer BBQs!",
+      "link": "https://www.wineandglue.com/crab-pasta-salad/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "elamahler",
+        "url": "https://www.pinterest.com/elamahler/",
+        "name": "Zimt & Chili"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/salads/",
+        "name": "Salads",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ec/7b/5f/ec7b5f4cd44cd6e9f8d9b68d667fdb64.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

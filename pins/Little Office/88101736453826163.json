@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453826163/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/little-office",
+    "CustomFileName": "88101736453826163",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453826163",
+      "url": "https://www.pinterest.com/pin/88101736453826163/",
+      "type": "pin",
+      "title": "AMAZON HOME FAVORITES",
+      "gridTitle": "AMAZON HOME FAVORITES",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "oliviasilvafinds",
+        "url": "https://www.pinterest.com/oliviasilvafinds/",
+        "name": "Olivia Finds"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/little-office/",
+        "name": "Little Office",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/d5/08/c9/d508c99d3f8bed15b42891c2e881b298.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

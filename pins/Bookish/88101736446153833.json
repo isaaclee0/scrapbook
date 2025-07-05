@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446153833/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736446153833",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446153833",
+      "url": "https://www.pinterest.com/pin/88101736446153833/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Booked: Literature in the Soul of Me",
+      "description": "Booked: Literature in the Soul of Me by Karen Swallow Prior https://www.amazon.com/dp/0692014543/ref=cm_sw_r_pi_dp_U_x_QNCgBbNMVWE3X",
+      "link": "https://www.amazon.com/dp/0692014543/ref=cm_sw_r_pi_dp_U_x_QNCgBbNMVWE3X",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/be/f0/55/bef05591d0c67a286bd9d6b1729549c6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447537727/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/glasses",
+    "CustomFileName": "88101736447537727",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447537727",
+      "url": "https://www.pinterest.com/pin/88101736447537727/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Lazy eye joke",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ivcwerribee",
+        "url": "https://www.pinterest.com/ivcwerribee/",
+        "name": "Insight Vision Care"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/glasses/",
+        "name": "Glasses",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8a/e7/0d/8ae70d0597022d65509d1a73560f48c8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

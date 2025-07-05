@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436386674/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/brunch",
+    "CustomFileName": "88101736436386674",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436386674",
+      "url": "https://www.pinterest.com/pin/88101736436386674/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Sweet Crepes",
+      "description": "Crepe tips that most recipes leave out",
+      "link": "http://www.101cookbooks.com/archives/000162.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/brunch/",
+        "name": "Brunch",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/98/79/2a/98792a341a0be167f4ac84c47c29d0db.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

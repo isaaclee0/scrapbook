@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453139632/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/indoor-plants",
+    "CustomFileName": "88101736453139632",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453139632",
+      "url": "https://www.pinterest.com/pin/88101736453139632/",
+      "type": "pin",
+      "title": "Flower tip",
+      "gridTitle": "Flower tip",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "imspecialk1972",
+        "url": "https://www.pinterest.com/imspecialk1972/",
+        "name": "Imaspecialk"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/indoor-plants/",
+        "name": "Indoor plants",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/17/3c/bf/173cbf9dc64b0112dc06f8ccd5197dc4.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/23/83/4c/23834cbecc30314d5e51ffc09b024c9e.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437154163/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736437154163",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437154163",
+      "url": "https://www.pinterest.com/pin/88101736437154163/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "He brings his teddy bear into the sink with him.",
+      "link": "http://catsinsinks.tumblr.com/image/32968121073",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/03/ea/36/03ea36d95c72cb41044e980770126be8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

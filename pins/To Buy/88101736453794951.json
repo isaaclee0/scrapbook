@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453794951/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/to-buy",
+    "CustomFileName": "88101736453794951",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453794951",
+      "url": "https://www.pinterest.com/pin/88101736453794951/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Snowdrop Mug Hogben Pottery www.thereedwarbler.com",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/to-buy/",
+        "name": "To buy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6c/dc/84/6cdc84685d623ddfdb70cf7f078f5f9d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

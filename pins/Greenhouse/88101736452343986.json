@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452343986/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/greenhouse",
+    "CustomFileName": "88101736452343986",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452343986",
+      "url": "https://www.pinterest.com/pin/88101736452343986/",
+      "type": "pin",
+      "title": "I ❤️ my Greenhouse",
+      "gridTitle": "I ❤️ my Greenhouse",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "RachelPV",
+        "url": "https://www.pinterest.com/RachelPV/",
+        "name": "Rachel Gilders"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/greenhouse/",
+        "name": "Greenhouse",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ce/cd/23/cecd23173d79443178623e38be85dd0e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

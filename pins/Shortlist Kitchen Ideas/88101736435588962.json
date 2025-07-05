@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435588962/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/shortlist-kitchen-ideas",
+    "CustomFileName": "88101736435588962",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435588962",
+      "url": "https://www.pinterest.com/pin/88101736435588962/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "tea towels",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "sarahsmum",
+        "url": "https://www.pinterest.com/sarahsmum/",
+        "name": "Rachel Glancy"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/shortlist-kitchen-ideas/",
+        "name": "Shortlist  - kitchen ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/20/6c/78/206c78ce2eb36f3eb48cc78437a1fbb3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

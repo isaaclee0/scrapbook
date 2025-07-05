@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440676764/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736440676764",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440676764",
+      "url": "https://www.pinterest.com/pin/88101736440676764/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Love short wavy hair",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f3/dd/22/f3dd22deb4867f7d85aacbd756d42d05.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

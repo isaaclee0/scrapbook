@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450748215/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/springer-spaniels",
+    "CustomFileName": "88101736450748215",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450748215",
+      "url": "https://www.pinterest.com/pin/88101736450748215/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "13 weken",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 6,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "1966monique",
+        "url": "https://www.pinterest.com/1966monique/",
+        "name": "monique Oude Reimer"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/springer-spaniels/",
+        "name": "Springer Spaniels",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0a/40/37/0a4037fc30b37908a410af09c404a590.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440978309/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/vegan-and-ish",
+    "CustomFileName": "88101736440978309",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440978309",
+      "url": "https://www.pinterest.com/pin/88101736440978309/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Paleo and vegan 'snickers' bar.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "AoifeGallagherH",
+        "url": "https://www.pinterest.com/AoifeGallagherH/",
+        "name": "Aoife Gallagher"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/vegan-and-ish/",
+        "name": "Vegan and ish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ec/6f/18/ec6f18c2209f753f45c21d010991eea7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

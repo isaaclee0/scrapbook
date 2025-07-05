@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451317481/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/for-the-home",
+    "CustomFileName": "88101736451317481",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451317481",
+      "url": "https://www.pinterest.com/pin/88101736451317481/",
+      "type": "pin",
+      "title": "Oiling Spalted Hackberry Tabletop",
+      "gridTitle": "Oiling Spalted Hackberry Tabletop",
+      "description": " ",
+      "link": "https://www.hazeloakfarms.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 4,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "hazeloakfarms",
+        "url": "https://www.pinterest.com/hazeloakfarms/",
+        "name": "Hazel Oak Farms"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/for-the-home/",
+        "name": "For the Home",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1d/0c/cd/1d0ccdd788ec92f78a80e6a1766d6eeb.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/fe/f0/9a/fef09a0b86258a29ce909eaca173ba56.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

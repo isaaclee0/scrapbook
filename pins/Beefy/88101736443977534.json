@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443977534/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/beefy",
+    "CustomFileName": "88101736443977534",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443977534",
+      "url": "https://www.pinterest.com/pin/88101736443977534/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Red Wine Reduction Sauce",
+      "description": "Wine reduction sauce - for the rare (okay, never) occasion you have leftover red wine",
+      "link": "http://www.myrecipes.com/recipe/red-wine-reduction-50400000107440/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/beefy/",
+        "name": "Beefy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ad/ae/4d/adae4d7c3d4b86d3acda158a70415a0e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

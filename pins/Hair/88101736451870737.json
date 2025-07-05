@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451870737/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736451870737",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451870737",
+      "url": "https://www.pinterest.com/pin/88101736451870737/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "DIY Banana Bun - Say Yes",
+      "description": "DIY Banana Bun - Say Yes",
+      "link": "https://sayyes.com/2017/04/diy-banana-bun",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/95/ad/52/95ad5208282a0d896cce87764350a9e2.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

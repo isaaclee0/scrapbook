@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453063042/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/beefy",
+    "CustomFileName": "88101736453063042",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453063042",
+      "url": "https://www.pinterest.com/pin/88101736453063042/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Authentic Italian Bolognese Sauce Recipe (+ Video) - Oh Sweet Basil",
+      "description": " ",
+      "link": "https://ohsweetbasil.com/the-secret-to-authentic-italian-bolognese-sauce-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "snackable",
+        "url": "https://www.pinterest.com/snackable/",
+        "name": "Snackable"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/beefy/",
+        "name": "Beefy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7d/e7/7b/7de77be79018f57462cb8ddff65752e7.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/01/78/8c/01788c6945a452f9bfbc6aa71ae2fa83.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433726864/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/breakfast",
+    "CustomFileName": "88101736433726864",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433726864",
+      "url": "https://www.pinterest.com/pin/88101736433726864/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Herbed Buttermilk Biscuits with Sausage Gravy - Bev Cooks",
+      "description": "Herbed Buttermilk Biscuits with Sausage Gravy",
+      "link": "http://bevcooks.com/2013/01/herbed-buttermilk-biscuits-with-sausage-gravy/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/breakfast/",
+        "name": "Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b5/1c/bb/b51cbb36f515f548758e6e4da2c1a101.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

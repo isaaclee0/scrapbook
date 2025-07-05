@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433064812/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fun",
+    "CustomFileName": "88101736433064812",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433064812",
+      "url": "https://www.pinterest.com/pin/88101736433064812/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The essence of joy",
+      "description": "Picnic!",
+      "link": "http://the-essence-of-joy.tumblr.com/post/47143659857",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fun/",
+        "name": "Fun",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/95/16/12/9516124bf02e7e9cf060bebc39c64fd5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

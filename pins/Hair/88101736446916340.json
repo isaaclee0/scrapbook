@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446916340/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736446916340",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446916340",
+      "url": "https://www.pinterest.com/pin/88101736446916340/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Golden-Copper (Strawberry Blonde)...note to self, describe to hairdresser as \"Golden-copper).",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/45/18/3d/45183dc8cd9269cd4a2385ea8ac643d0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

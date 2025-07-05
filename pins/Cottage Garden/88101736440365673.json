@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440365673/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-garden",
+    "CustomFileName": "88101736440365673",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440365673",
+      "url": "https://www.pinterest.com/pin/88101736440365673/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Carolside, Scothland",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "otilliet",
+        "url": "https://www.pinterest.com/otilliet/",
+        "name": "Otillie Tol"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-garden/",
+        "name": "Cottage garden",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/08/38/3d/08383d9cbb615310cb97b58ae30e8d19.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

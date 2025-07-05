@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431653685/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736431653685",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431653685",
+      "url": "https://www.pinterest.com/pin/88101736431653685/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Homemade Bouillon",
+      "description": "How to Make Portable Soup: My Homemade Bouillon. Each cube makes 1 cup soup.",
+      "link": "http://nourishedkitchen.com/homemade-bouillon-portable-soup/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 4,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6b/00/20/6b0020f836afe97c86de784f86850506.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

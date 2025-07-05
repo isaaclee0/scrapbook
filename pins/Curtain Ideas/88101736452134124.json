@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452134124/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/curtain-ideas",
+    "CustomFileName": "88101736452134124",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452134124",
+      "url": "https://www.pinterest.com/pin/88101736452134124/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Peony & Sage Georgian Roses",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/curtain-ideas/",
+        "name": "Curtain ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a0/74/41/a07441a5e337b1579a1e957cdcd42d67.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

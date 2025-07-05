@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443541017/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443541017",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443541017",
+      "url": "https://www.pinterest.com/pin/88101736443541017/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "101 Decorating Secrets",
+      "description": "35 decorating secrets from top interior designers {House Beautiful}",
+      "link": "http://www.housebeautiful.com/decorating/ideas/how-to-choose-linens-and-towels",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/af/87/7e/af877e2f77446f319f6f1c9d28c8a1b6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

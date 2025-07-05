@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435027999/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/craft-ideas",
+    "CustomFileName": "88101736435027999",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435027999",
+      "url": "https://www.pinterest.com/pin/88101736435027999/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "rust",
+      "description": "rust: old cupboard door made beautiful",
+      "link": "http://janisgurney.blogspot.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/craft-ideas/",
+        "name": "Craft Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/49/72/e1/4972e1984ad6893b84ae996a9339c288.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432833218/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/gluten-free",
+    "CustomFileName": "88101736432833218",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432833218",
+      "url": "https://www.pinterest.com/pin/88101736432833218/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Simply Gourmet",
+      "description": "Nutella and Peanut Butter Cookies, wheat free",
+      "link": "http://www.simply-gourmet.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/gluten-free/",
+        "name": "Gluten Free",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c9/b4/1c/c9b41cb4c3bc84c984e573bd607d5fca.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440595136/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736440595136",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440595136",
+      "url": "https://www.pinterest.com/pin/88101736440595136/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Find everything but the ordinary",
+      "description": "Wolf by Albert Payson Terhune",
+      "link": "http://www.bonanza.com/listings/Wolf-by-Albert-Payson-Terhune/25460813",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/46/39/03/463903233a22f0cd5a95a3cbcd45081b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

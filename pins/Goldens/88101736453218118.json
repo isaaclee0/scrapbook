@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453218118/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/goldens",
+    "CustomFileName": "88101736453218118",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453218118",
+      "url": "https://www.pinterest.com/pin/88101736453218118/",
+      "type": "pin",
+      "title": "Tiktok dogs viral",
+      "gridTitle": "Tiktok dogs viral",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "PawNapsOfficial",
+        "url": "https://www.pinterest.com/PawNapsOfficial/",
+        "name": "Paw Naps"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/goldens/",
+        "name": "Goldens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e8/ee/1e/e8ee1ea5e95bf7d7d050e0d18e9dce00.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/82/b1/11/82b111f72edc428e7de47b45c00ea187.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

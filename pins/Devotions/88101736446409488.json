@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446409488/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/devotions",
+    "CustomFileName": "88101736446409488",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446409488",
+      "url": "https://www.pinterest.com/pin/88101736446409488/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "How Humble Are You? | Cheryl Cope",
+      "description": "Be Humble",
+      "link": "http://www.cherylcope.com/how-humble-are-you",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/devotions/",
+        "name": "Devotions",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8c/3d/b5/8c3db5e67dd09d53f9675a8cc740bd9f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

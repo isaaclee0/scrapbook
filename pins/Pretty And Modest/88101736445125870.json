@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445125870/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pretty-and-modest",
+    "CustomFileName": "88101736445125870",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445125870",
+      "url": "https://www.pinterest.com/pin/88101736445125870/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Pretty",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pretty-and-modest/",
+        "name": "Pretty - and modest..",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a1/81/1b/a1811b43c327c0adc6ca60ea0e0d34dc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451561902/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736451561902",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451561902",
+      "url": "https://www.pinterest.com/pin/88101736451561902/",
+      "type": "pin",
+      "title": "IF YOU LIKE IT PLS SUPPORT WITH ❤️",
+      "gridTitle": "IF YOU LIKE IT PLS SUPPORT WITH ❤️",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "buzzfeedpets",
+        "url": "https://www.pinterest.com/buzzfeedpets/",
+        "name": "bestmeows"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/34/06/59/340659c8bcbff8b92216c453bec85db0.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

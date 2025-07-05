@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443745045/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443745045",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443745045",
+      "url": "https://www.pinterest.com/pin/88101736443745045/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "World Figures as children",
+      "description": "Einstein at 12 yrs. old, 1891",
+      "link": "http://imgur.com/a/PITGO",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/18/a1/d0/18a1d0ce21253ed1f6fa526b8c3164fa.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

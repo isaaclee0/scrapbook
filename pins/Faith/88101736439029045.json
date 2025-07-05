@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439029045/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736439029045",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439029045",
+      "url": "https://www.pinterest.com/pin/88101736439029045/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "i love this; read too whenever you feel depressed:)",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fd/d0/63/fdd0630d82f35ecbd2fc99abd252f2d8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

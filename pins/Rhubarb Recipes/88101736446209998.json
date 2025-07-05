@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446209998/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/rhubarb-recipes",
+    "CustomFileName": "88101736446209998",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446209998",
+      "url": "https://www.pinterest.com/pin/88101736446209998/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Blueberry Rhubarb Bars",
+      "description": "Blueberry Rhubarb Bars - made these last night and they were delicious!",
+      "link": "http://tastykitchen.com/recipes/desserts/blueberry-rhubarb-bars/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/rhubarb-recipes/",
+        "name": "Rhubarb Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5b/6b/6c/5b6b6c686e8ae8bc1ec4b1cb160d6d79.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

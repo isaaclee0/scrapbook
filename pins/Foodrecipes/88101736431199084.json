@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431199084/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736431199084",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431199084",
+      "url": "https://www.pinterest.com/pin/88101736431199084/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Black-Eyed Pea Pasta Salad",
+      "description": "Black-Eyed Pea Pasta Salad",
+      "link": "http://www.tasteofhome.com/Recipes/Black-Eyed-Pea-Pasta-Salad#.UCJKDJHmmPg.pinterest",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f4/27/ed/f427ed057fffe528c49209c1a85b0f37.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

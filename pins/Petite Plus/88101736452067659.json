@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452067659/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/petite-plus",
+    "CustomFileName": "88101736452067659",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452067659",
+      "url": "https://www.pinterest.com/pin/88101736452067659/",
+      "type": "pin",
+      "title": "SIMPLE FASHION",
+      "gridTitle": "SIMPLE FASHION",
+      "description": " ",
+      "link": "https://www.tiktok.com/@thevictoryedit?lang=en&is_copy_url=1&is_from_webapp=v1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "thevictoryedit",
+        "url": "https://www.pinterest.com/thevictoryedit/",
+        "name": "The Victory Edit | Beauty, Fashion, Luxury"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/petite-plus/",
+        "name": "Petite plus",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/83/82/35/83823507619e4c131fda2c03b622fc26.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/55/63/61/556361c3d1c678139bf834fa243cbf8d.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

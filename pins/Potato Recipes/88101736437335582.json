@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437335582/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potato-recipes",
+    "CustomFileName": "88101736437335582",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437335582",
+      "url": "https://www.pinterest.com/pin/88101736437335582/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Smokywok.com",
+      "description": "Jamie Oliver's Perfect Roasted Potatoes... And they are Vegan!",
+      "link": "http://www.smokywok.com/2011/10/jamie-olivers-perfect-roasted-potatoes.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potato-recipes/",
+        "name": "Potato Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/59/6e/1c/596e1cc9c32c44629bdc6b713047de97.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

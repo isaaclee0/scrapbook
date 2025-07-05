@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433448410/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/craft-ideas",
+    "CustomFileName": "88101736433448410",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433448410",
+      "url": "https://www.pinterest.com/pin/88101736433448410/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Keltainen talo rannalla",
+      "description": "french country decor",
+      "link": "http://keltainentalorannalla.blogspot.com/search?updated-max=2010-11-12T01:06:00%2B02:00&max-results=10",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/craft-ideas/",
+        "name": "Craft Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a2/f7/e2/a2f7e2a29f6bbcfe4210f6c1657a040e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

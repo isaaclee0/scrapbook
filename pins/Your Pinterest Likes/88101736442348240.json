@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442348240/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442348240",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442348240",
+      "url": "https://www.pinterest.com/pin/88101736442348240/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "File:Marie Curie and Albert Einstein.jpg",
+      "description": "Marie Curie with Albert Einstein.  Can you imagine the conversation?",
+      "link": "http://fr.wikipedia.org/wiki/Fichier:Marie_Curie_and_Albert_Einstein.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/28/21/c3/2821c3d803d67f89541537c320aeac7f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

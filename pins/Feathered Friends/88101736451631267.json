@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451631267/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/feathered-friends",
+    "CustomFileName": "88101736451631267",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451631267",
+      "url": "https://www.pinterest.com/pin/88101736451631267/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Lit up",
+      "description": "Lit up by Greg.Magee",
+      "link": "http://flickr.com/photos/gjmphotos/4397160852/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/feathered-friends/",
+        "name": "Feathered friends",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fa/03/58/fa0358d68e01380539e4ec1784c35f69.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

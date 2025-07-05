@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435946599/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736435946599",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435946599",
+      "url": "https://www.pinterest.com/pin/88101736435946599/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Lemon Blueberry Yogurt Cake",
+      "link": "http://explorer.sheknows.com/a/52e2f6df0d2f37682b000003/lemon-blueberry-yogurt-cake",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d8/47/73/d847731711c639d5237dece09d9f795a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

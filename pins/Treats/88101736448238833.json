@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448238833/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736448238833",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448238833",
+      "url": "https://www.pinterest.com/pin/88101736448238833/",
+      "type": "pin",
+      "title": "Amazing Ways to Make Food 😍",
+      "gridTitle": "Amazing Ways to Make Food 😍",
+      "description": " ",
+      "link": "https://howtocook.pw/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "DailyMomsLife",
+        "url": "https://www.pinterest.com/DailyMomsLife/",
+        "name": "Daily Moms Life - Budgeting Tips and Finance  | Work at Home Jobs"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/73/cb/6a/73cb6adeae9cdfa83ce6d55505f03635.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/52/07/bd/5207bd15e767c201ec7baf386b75fcaa.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

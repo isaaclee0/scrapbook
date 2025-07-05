@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442250731/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442250731",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442250731",
+      "url": "https://www.pinterest.com/pin/88101736442250731/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Julie Andrews/Blake Edwards- were married for 41 years. He passed away in 2010",
+      "link": "http://www.achievement.org/autodoc/photocredit/achievers/and0-017",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a3/8d/91/a38d910d5703f4a3d06717d91dd8d7b8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

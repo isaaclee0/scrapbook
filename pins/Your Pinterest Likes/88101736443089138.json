@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443089138/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443089138",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443089138",
+      "url": "https://www.pinterest.com/pin/88101736443089138/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Amazing 100% Whole Wheat Flaky Homemade Biscuits - An Oregon Cottage",
+      "description": "Amazing Whole Wheat Flaky Biscuits",
+      "link": "http://www.anoregoncottage.com/2012/03/amazing-whole-wheat-flaky-biscuits.html#more",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d0/66/d4/d066d43fd44e73637c4e1039d045d39a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

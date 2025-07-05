@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442782689/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442782689",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442782689",
+      "url": "https://www.pinterest.com/pin/88101736442782689/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Westlife - I wanna grow old with you (Traducido al español)",
+      "description": "Westlife - I wanna grow old with you (Traducido al español)",
+      "link": "http://www.youtube.com/attribution_link?a=r5rr_GaExqk&u=/watch%3Fv%3D2eu58Kd1nvc%26list%3DRDXRuDQ6aYeD0%26feature%3Dshare",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c1/a8/4c/c1a84c801fa2f48f5ebeac7ee9a5efce.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

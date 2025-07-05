@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453181394/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair/curly-hair",
+    "CustomFileName": "88101736453181394",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453181394",
+      "url": "https://www.pinterest.com/pin/88101736453181394/",
+      "type": "pin",
+      "title": "credit: curlieswithjulia",
+      "gridTitle": "credit: curlieswithjulia",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "meez_beez",
+        "url": "https://www.pinterest.com/meez_beez/",
+        "name": "☀︎︎𝙼𝚎𝚎𝚣☀︎︎"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/27/5b/26/275b26b82a8ce8d346d87f89757d11b4.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/51/c7/12/51c7126630a6a127b1de46b76dc9c851.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

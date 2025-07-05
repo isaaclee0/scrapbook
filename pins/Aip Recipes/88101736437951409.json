@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437951409/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736437951409",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437951409",
+      "url": "https://www.pinterest.com/pin/88101736437951409/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "crispy baked sweet potato chips",
+      "description": "Crispy baked sweet potato chips - After 2 failed tries.  These are actually crispy.  Low and slow is the way to go.  :)",
+      "link": "http://baublesandbakedgoods.blogspot.com/2013/06/crispy-baked-sweet-potato-chips.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/06/66/a1/0666a1de1364e2493a8531e0716522a4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

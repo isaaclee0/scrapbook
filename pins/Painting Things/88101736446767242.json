@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446767242/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painting-things",
+    "CustomFileName": "88101736446767242",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446767242",
+      "url": "https://www.pinterest.com/pin/88101736446767242/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "High paneling",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "elsieboi",
+        "url": "https://www.pinterest.com/elsieboi/",
+        "name": "Elsieboi Coco"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painting-things/",
+        "name": "Painting things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c7/57/7b/c7577b653cde0c62bd90773ffe9044c8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

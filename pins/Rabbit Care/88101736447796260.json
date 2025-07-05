@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447796260/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/rabbit-care",
+    "CustomFileName": "88101736447796260",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447796260",
+      "url": "https://www.pinterest.com/pin/88101736447796260/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Bunnies get bored",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "sagelight",
+        "url": "https://www.pinterest.com/sagelight/",
+        "name": "Obsidian"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/rabbit-care/",
+        "name": "Rabbit care",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fc/76/84/fc768495327ae99f8a9a553fef3ee6f1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

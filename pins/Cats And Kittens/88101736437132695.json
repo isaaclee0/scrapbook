@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437132695/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736437132695",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437132695",
+      "url": "https://www.pinterest.com/pin/88101736437132695/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Looks just like my old cat, miss her<3",
+      "link": "http://theberry.com/2014/02/03/morning-coffee-39-photos-598/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/72/70/4d/72704d02b26663047688b6b0507a1ac5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

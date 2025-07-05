@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448840036/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/mushrooms",
+    "CustomFileName": "88101736448840036",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448840036",
+      "url": "https://www.pinterest.com/pin/88101736448840036/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Mushroom and Brie Pithiviers",
+      "description": "This is such a brilliant combination – intense, gooey melted cheese and mushroomy goodness encased in golden flaky pastry.",
+      "link": "http://www.dish.co.nz/recipes/mushroom-and-brie-pithiviers",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/mushrooms/",
+        "name": "Mushrooms",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b1/a8/3d/b1a83d415deee4156ee673a07fe97188.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

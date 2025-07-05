@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441121579/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/budgie-love",
+    "CustomFileName": "88101736441121579",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441121579",
+      "url": "https://www.pinterest.com/pin/88101736441121579/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Best flight aviary!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ceannelee",
+        "url": "https://www.pinterest.com/ceannelee/",
+        "name": "CeAnne Lee"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/budgie-love/",
+        "name": "Budgie Love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/08/73/d3/0873d3274f6df66b6e37515f56b89256.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

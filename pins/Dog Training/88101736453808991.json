@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453808991/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/dog-training",
+    "CustomFileName": "88101736453808991",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453808991",
+      "url": "https://www.pinterest.com/pin/88101736453808991/",
+      "type": "pin",
+      "title": "Dog dashing away problem !?",
+      "gridTitle": "Dog dashing away problem !?",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Dogtrainingguider",
+        "url": "https://www.pinterest.com/Dogtrainingguider/",
+        "name": "Dog training | Puppy training | Best training for dogs"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/dog-training/",
+        "name": "Dog Training",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/3e/6d/d0/3e6dd0be57603c538cb68c79c26be4a2.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

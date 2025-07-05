@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444131748/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fruit-fun",
+    "CustomFileName": "88101736444131748",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444131748",
+      "url": "https://www.pinterest.com/pin/88101736444131748/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "peces",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "sruedau",
+        "url": "https://www.pinterest.com/sruedau/",
+        "name": "Sandra Lucía Rueda Uribe"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fruit-fun/",
+        "name": "Fruit Fun",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cc/e1/e1/cce1e1ea552e571788638a333733aa6c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437896973/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/italian",
+    "CustomFileName": "88101736437896973",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437896973",
+      "url": "https://www.pinterest.com/pin/88101736437896973/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Torta alla Nutella e cioccolato... magica!",
+      "description": "Torta alla Nutella e cioccolato",
+      "link": "http://blog.giallozafferano.it/lifferia/torta-alla-nutella-e-cioccolato/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/italian/",
+        "name": "Italian",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/08/7d/d5/087dd5d5d8d134efa35575536eacd7d7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

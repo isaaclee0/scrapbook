@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452633102/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/storage-ideas",
+    "CustomFileName": "88101736452633102",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452633102",
+      "url": "https://www.pinterest.com/pin/88101736452633102/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "amyvanhecke",
+        "url": "https://www.pinterest.com/amyvanhecke/",
+        "name": "Amy Van Hecke"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/storage-ideas/",
+        "name": "Storage ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4d/1f/e9/4d1fe97da3fa4562e47e86a74793b99e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

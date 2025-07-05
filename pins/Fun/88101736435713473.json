@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435713473/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fun",
+    "CustomFileName": "88101736435713473",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435713473",
+      "url": "https://www.pinterest.com/pin/88101736435713473/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Yorkshire",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fun/",
+        "name": "Fun",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/36/e3/f8/36e3f8afd9f7f1b82dc2d99f4ec20c5d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

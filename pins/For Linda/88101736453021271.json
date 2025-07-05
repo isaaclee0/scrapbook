@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453021271/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/for-linda",
+    "CustomFileName": "88101736453021271",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453021271",
+      "url": "https://www.pinterest.com/pin/88101736453021271/",
+      "type": "pin",
+      "title": "FAIRY HOUSE\n",
+      "gridTitle": "FAIRY HOUSE",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "metdaan",
+        "url": "https://www.pinterest.com/metdaan/",
+        "name": "MetDaan"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/for-linda/",
+        "name": "For Linda",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c6/40/d6/c640d6de25ba5510e9b6f04ed4ba0551.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/b9/6b/c1/b96bc10a85f1c99b6850b921db05504c.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

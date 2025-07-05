@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443281672/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443281672",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443281672",
+      "url": "https://www.pinterest.com/pin/88101736443281672/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Enchanted Journal: shipping art",
+      "description": "Shipping Art What every artist needs to know about DIY packaging and shipping artwork.",
+      "link": "http://lauradenhertog.com/dataviewer.asp?keyvalue=10919&page=Blog&Topic=Shipping%20Art",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b6/77/af/b677afdc0eac8aa0723326470697a65d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

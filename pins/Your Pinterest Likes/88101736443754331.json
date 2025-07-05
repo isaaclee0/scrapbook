@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443754331/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443754331",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443754331",
+      "url": "https://www.pinterest.com/pin/88101736443754331/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Winston Churchill...this isn't new. Islam is evil, always has been.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f7/65/c8/f765c852f90d0fde7e32291d27b8ea0b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

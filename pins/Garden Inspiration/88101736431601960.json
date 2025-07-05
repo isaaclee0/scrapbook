@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431601960/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/garden-inspiration",
+    "CustomFileName": "88101736431601960",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431601960",
+      "url": "https://www.pinterest.com/pin/88101736431601960/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Oh wow.",
+      "link": "http://i.imgur.com/iQ6ZK.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/garden-inspiration/",
+        "name": "Garden Inspiration",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/39/30/73/393073bafd53c8694aeebca30d73c088.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

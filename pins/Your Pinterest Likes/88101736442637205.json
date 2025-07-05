@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442637205/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442637205",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442637205",
+      "url": "https://www.pinterest.com/pin/88101736442637205/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "You can't go wrong with shabby chic details, such as delicate floral prints, and wicker furniture.    http://www.bhg.com/decorating/decorating-style/cottage/fresh-frugal-cottage-style-decorating-ideas/?page=3",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/45/7c/57/457c57f47d0f6fbcd6716fa47f4cb76c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

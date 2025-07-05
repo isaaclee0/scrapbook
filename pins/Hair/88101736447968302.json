@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447968302/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736447968302",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447968302",
+      "url": "https://www.pinterest.com/pin/88101736447968302/",
+      "type": "pin",
+      "title": "BUN HAIRSTYLES\n",
+      "gridTitle": "BUN HAIRSTYLES",
+      "description": "A wide range of bun hairstyles you can try out!",
+      "link": "https://www.facebook.com/MetDaanMagazine/videos/2102950476487434/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "metdaan",
+        "url": "https://www.pinterest.com/metdaan/",
+        "name": "MetDaan"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/62/4f/f0/624ff03810cebb097301f6c9f6c437d1.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/91/5c/01/915c01ddfec4a491f5eb02974bac10ea.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

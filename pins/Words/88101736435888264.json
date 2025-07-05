@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435888264/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736435888264",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435888264",
+      "url": "https://www.pinterest.com/pin/88101736435888264/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "reminding myself :)",
+      "link": "http://www.etsy.com/shop/TheMotivatedType",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9d/a8/65/9da86526bf016c24c1f6a5590c8809f7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436412191/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pools",
+    "CustomFileName": "88101736436412191",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436412191",
+      "url": "https://www.pinterest.com/pin/88101736436412191/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "You know you want one",
+      "description": "Awesome!",
+      "link": "http://9gag.com/gag/3083234",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pools/",
+        "name": "Pools",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9d/3f/2e/9d3f2e122e424223791a86ee96e96e84.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

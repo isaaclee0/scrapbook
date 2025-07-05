@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437931941/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/german-food",
+    "CustomFileName": "88101736437931941",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437931941",
+      "url": "https://www.pinterest.com/pin/88101736437931941/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "apple Maultaschen",
+      "description": "Apfel Maultaschen - German apple filled sweet rolls",
+      "link": "http://www.kitchenproject.com/german/recipes/Desserts/Apfel-Maultaschen/index.htm",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/german-food/",
+        "name": "German Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/63/3e/8f/633e8f9684d030aad845cfa0a8a0fb64.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447276240/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pasta",
+    "CustomFileName": "88101736447276240",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447276240",
+      "url": "https://www.pinterest.com/pin/88101736447276240/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Pesto Shrimp Pasta",
+      "description": "Pesto Shrimp Fettuccine in Mushroom Garlic Sauce.",
+      "link": "http://whatsinthepan.com/2017/08/pesto-shrimp-fettuccine-in-mushroom-garlic-sauce/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "whatsinthepan",
+        "url": "https://www.pinterest.com/whatsinthepan/",
+        "name": "What's In The Pan?"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pasta/",
+        "name": "Pasta",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2f/8f/22/2f8f2231a758c19b06cb35206a7c5e29.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

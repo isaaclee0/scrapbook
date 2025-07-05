@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443075490/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443075490",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443075490",
+      "url": "https://www.pinterest.com/pin/88101736443075490/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "We should in arms defending our greatest allies not doing what stupid Obama is doing.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/aa/43/e2/aa43e29cd9e1478f0e640f584f5ba8c1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

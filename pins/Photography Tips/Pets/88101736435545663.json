@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435545663/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/photography-tips/pets",
+    "CustomFileName": "88101736435545663",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435545663",
+      "url": "https://www.pinterest.com/pin/88101736435545663/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Doggie snout",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/photography-tips/",
+        "name": "Photography tips",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/42/31/38/423138ebc32f91e4e7456d3355963c57.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442858422/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442858422",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442858422",
+      "url": "https://www.pinterest.com/pin/88101736442858422/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "X. It’s what’s happening",
+      "description": "Theodore Roosevelt",
+      "link": "https://twitter.com/#!/ryanflynn/media/slideshow?url=http%253A%252F%252Finstagr.am%252Fp%252Fg0IMQ%252F",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1c/ac/92/1cac927d7e9b6f5b4ccb35681201bd7a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

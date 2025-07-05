@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446704644/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736446704644",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446704644",
+      "url": "https://www.pinterest.com/pin/88101736446704644/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Can't wait to try this recipe! -TAFFY",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/94/35/2a/94352a135ba077a005064cdfffa28ab7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435787297/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736435787297",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435787297",
+      "url": "https://www.pinterest.com/pin/88101736435787297/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Honey Glazed Chicken & Bacon Bites",
+      "description": "The best snack ever! Chicken strips wrapped in bacon and lightly brushed with a honey mustard marinade.",
+      "link": "http://foodgawker.com/post/2010/03/10/53631/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/61/47/87/614787cdfc23a25541ef66a504f31468.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

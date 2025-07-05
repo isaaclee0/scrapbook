@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453115802/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736453115802",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453115802",
+      "url": "https://www.pinterest.com/pin/88101736453115802/",
+      "type": "pin",
+      "title": "professional haircare and tools for your hair type | amika",
+      "gridTitle": "professional haircare and tools for your hair type | amika",
+      "description": " ",
+      "link": "https://loveamika.com/Sharonoverton",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "sharonaoverton",
+        "url": "https://www.pinterest.com/sharonaoverton/",
+        "name": "SharonaOverton"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2d/5f/9c/2d5f9c05fa749660877cc411747a80f5.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/04/2a/a8/042aa88c37214871ac6f8b125dddd845.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

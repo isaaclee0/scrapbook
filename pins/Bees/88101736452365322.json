@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452365322/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bees",
+    "CustomFileName": "88101736452365322",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452365322",
+      "url": "https://www.pinterest.com/pin/88101736452365322/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "beeswax",
+      "description": " ",
+      "link": "https://www.flickr.com/photos/aviewto/4098993898",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "winterwares",
+        "url": "https://www.pinterest.com/winterwares/",
+        "name": "Winterwares | homewares, slow living, daily rituals"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bees/",
+        "name": "Bees",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/65/fd/76/65fd764aba4b252c7f99603800624bce.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

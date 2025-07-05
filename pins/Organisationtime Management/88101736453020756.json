@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453020756/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/organisationtime-management",
+    "CustomFileName": "88101736453020756",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453020756",
+      "url": "https://www.pinterest.com/pin/88101736453020756/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 6,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "bethperks0165",
+        "url": "https://www.pinterest.com/bethperks0165/",
+        "name": "Perks_of_being_Beth"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/organisationtime-management/",
+        "name": "Organisation/Time Management",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/88/bb/4f/88bb4f995ca86fbb7693e227d5da7d35.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/a4/75/30/a47530cb31742b8184b1dd9d30dcc8c7.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

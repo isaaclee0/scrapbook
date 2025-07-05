@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433320431/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/travel",
+    "CustomFileName": "88101736433320431",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433320431",
+      "url": "https://www.pinterest.com/pin/88101736433320431/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Inspiration lane",
+      "description": "Inspiration Lane",
+      "link": "http://inspirationlane.tumblr.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/travel/",
+        "name": "Travel",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/90/cd/0c/90cd0c1812beccc01db5110648da362c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

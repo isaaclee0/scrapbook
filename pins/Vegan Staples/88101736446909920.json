@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446909920/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/vegan-staples",
+    "CustomFileName": "88101736446909920",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446909920",
+      "url": "https://www.pinterest.com/pin/88101736446909920/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Vegan Tzatziki",
+      "description": "Vegan Tzatziki - This Greek sauce can be used as a dip or condiment. It pairs nicely with falafel or vegan gyros.",
+      "link": "http://createmindfully.com/vegan-tzatziki/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "createmindfully",
+        "url": "https://www.pinterest.com/createmindfully/",
+        "name": "Create Mindfully"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/vegan-staples/",
+        "name": "Vegan Staples",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a1/fa/0b/a1fa0b08bbc8a4512623aa845aba2789.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451804329/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/communication",
+    "CustomFileName": "88101736451804329",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451804329",
+      "url": "https://www.pinterest.com/pin/88101736451804329/",
+      "type": "pin",
+      "title": "How to Have a Hard Conversation",
+      "gridTitle": "How to Have a Hard Conversation",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 2,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "werenotreallystrangers",
+        "url": "https://www.pinterest.com/werenotreallystrangers/",
+        "name": "We're Not Really Strangers"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/communication/",
+        "name": "Communication",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/af/1f/a2/af1fa25348c5edaee34b0cf75f97d228.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/d9/44/2c/d9442c3a11faa2e955c7542f9bd7bf9a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

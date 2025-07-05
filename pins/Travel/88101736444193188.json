@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444193188/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/travel",
+    "CustomFileName": "88101736444193188",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444193188",
+      "url": "https://www.pinterest.com/pin/88101736444193188/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Bus stop in Fowey, Cornwall, UK. Yes, this is a the bus stop!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/travel/",
+        "name": "Travel",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/de/ba/9e/deba9ec59bf106b8161c9c9d67c95bae.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453363583/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fishy",
+    "CustomFileName": "88101736453363583",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453363583",
+      "url": "https://www.pinterest.com/pin/88101736453363583/",
+      "type": "pin",
+      "title": "Thai Inspired Steamed Salmon",
+      "gridTitle": "Thai Inspired Steamed Salmon",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "easygourmetbyjackie",
+        "url": "https://www.pinterest.com/easygourmetbyjackie/",
+        "name": "Jackie S"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fishy/",
+        "name": "Fishy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/06/72/c2/0672c22c43c2493be52c609a42168b4d.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

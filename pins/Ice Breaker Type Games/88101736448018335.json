@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448018335/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/ice-breaker-type-games",
+    "CustomFileName": "88101736448018335",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448018335",
+      "url": "https://www.pinterest.com/pin/88101736448018335/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Great collaboration excersize",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "mvraymundo",
+        "url": "https://www.pinterest.com/mvraymundo/",
+        "name": "Monica Raymundo"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/ice-breaker-type-games/",
+        "name": "Ice-breaker type games",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ff/6e/c7/ff6ec7a12bd8b214c7316dffee970884.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

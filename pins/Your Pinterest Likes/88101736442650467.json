@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442650467/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442650467",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442650467",
+      "url": "https://www.pinterest.com/pin/88101736442650467/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Golden Milk: An Ancient & Healing Remedy",
+      "description": "turmeric paste for healing",
+      "link": "http://www.wisewomantradition.com/wisewomanweb/2011/04/golden-milk-an-ancient-healing-remedy.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9a/37/97/9a3797827de47ad7bc130c1ed7d3788a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

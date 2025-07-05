@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440917951/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/salads",
+    "CustomFileName": "88101736440917951",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440917951",
+      "url": "https://www.pinterest.com/pin/88101736440917951/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Mexican Corn Dip",
+      "description": "Mexican Corn Dip #healthy #corn #dip",
+      "link": "http://damndelicious.net/2014/07/28/mexican-corn-dip/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "greatist",
+        "url": "https://www.pinterest.com/greatist/",
+        "name": "Greatist"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/salads/",
+        "name": "Salads",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3c/b4/43/3cb443984a9a32f69b653a621678338a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

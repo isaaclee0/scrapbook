@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448659360/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painting-things",
+    "CustomFileName": "88101736448659360",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448659360",
+      "url": "https://www.pinterest.com/pin/88101736448659360/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Remodelando la Casa",
+      "description": "Repaint handrail @ Remodelando la Casa",
+      "link": "http://www.remodelandolacasa.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painting-things/",
+        "name": "Painting things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/45/be/4e/45be4e8c2a67d275dd15fd4883e71881.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

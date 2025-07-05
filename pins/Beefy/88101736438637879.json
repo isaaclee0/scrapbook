@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438637879/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/beefy",
+    "CustomFileName": "88101736438637879",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438637879",
+      "url": "https://www.pinterest.com/pin/88101736438637879/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Homida",
+      "description": "Recipe: Bulgogi Steak {Korean BBQ Steak}",
+      "link": "http://heartmindandseoul.com/bulgogi-steak-korean-bbq-steak/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/beefy/",
+        "name": "Beefy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/da/01/62/da0162c531f97d6804800e0d38bf28f9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

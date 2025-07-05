@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443386659/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443386659",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443386659",
+      "url": "https://www.pinterest.com/pin/88101736443386659/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Food Rationing & Recipes in World War II",
+      "description": "Are you homeschooling? I have some free resources and printables all about WWII that you'll want to check out!",
+      "link": "http://www.triciagoyer.com/food-rationing-recipes-world-war-ii/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/64/76/74/64767437d39971ea1bd1739ca00fd58e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

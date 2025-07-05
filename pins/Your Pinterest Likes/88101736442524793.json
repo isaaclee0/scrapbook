@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442524793/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442524793",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442524793",
+      "url": "https://www.pinterest.com/pin/88101736442524793/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "drawer pulls on the wall as towel holders",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ashaynew",
+        "url": "https://www.pinterest.com/ashaynew/",
+        "name": "Amanda Wikle"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b2/e9/7a/b2e97a9d08e8c88ff572bf72c3c951fe.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453246564/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736453246564",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453246564",
+      "url": "https://www.pinterest.com/pin/88101736453246564/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Bûche façon Raffaello coco-noisettes-chocolat blanc",
+      "description": " ",
+      "link": "https://lesrecettesdekelou.com/2018/12/buche-facon-rafaello-coco-noisettes.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/74/f9/e3/74f9e3f6ef28d035ed41118fbeb3882c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

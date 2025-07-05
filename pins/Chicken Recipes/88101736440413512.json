@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440413512/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736440413512",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440413512",
+      "url": "https://www.pinterest.com/pin/88101736440413512/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "This Chicken Peanut Stew Couldn't Be Better",
+      "description": "African Chicken Peanut Stew",
+      "link": "http://www.simplyrecipes.com/recipes/african_chicken_peanut_stew/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/34/c3/3f/34c33f254646111135033ba1f032a133.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

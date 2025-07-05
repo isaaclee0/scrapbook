@@ -1,0 +1,47 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453181463/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736453181463",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453181463",
+      "url": "https://www.pinterest.com/pin/88101736453181463/",
+      "type": "pin",
+      "title": "✨Scarf Bun Tutorial✨",
+      "gridTitle": "✨Scarf Bun Tutorial✨",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8d/6b/bf/8d6bbfddd4d97aa0dd3ed57716593ccf.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/7b/12/7b/7b127b27b767cbdb9962abc63b199cd8.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

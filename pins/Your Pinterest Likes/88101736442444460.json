@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442444460/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442444460",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442444460",
+      "url": "https://www.pinterest.com/pin/88101736442444460/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "seen-sucht",
+      "description": "Friendship -",
+      "link": "http://seen-sucht.blogspot.com/2011_05_01_archive.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e0/17/66/e0176687f795e41b096802cc823b25b7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

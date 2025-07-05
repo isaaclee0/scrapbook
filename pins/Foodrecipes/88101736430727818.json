@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430727818/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430727818",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430727818",
+      "url": "https://www.pinterest.com/pin/88101736430727818/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Parmesan Roasted Potatoes - foodgawker",
+      "description": "Parmesan Roasted Potatoes. Crispy, salty, and completely divine.",
+      "link": "http://foodgawker.com/post/2010/05/07/59879/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4c/30/30/4c3030860c365ad9b528206121e6f887.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

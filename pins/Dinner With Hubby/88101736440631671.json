@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440631671/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/dinner-with-hubby",
+    "CustomFileName": "88101736440631671",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440631671",
+      "url": "https://www.pinterest.com/pin/88101736440631671/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "This pizza pot pie, though... Any volunteers to dive in?",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "foodnetwork",
+        "url": "https://www.pinterest.com/foodnetwork/",
+        "name": "Food Network"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/dinner-with-hubby/",
+        "name": "Dinner with hubby",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e4/1a/0f/e41a0fcd44d2702e7f0b1fac75fd3a5d.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/v2/720p/a4/97/d3/a497d3a808f2ae54d2a7c8fb1be74654_mobile.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

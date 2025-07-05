@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440082947/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/photography",
+    "CustomFileName": "88101736440082947",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440082947",
+      "url": "https://www.pinterest.com/pin/88101736440082947/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "6",
+      "link": "http://www.threenailsphotography.com/blog/cinderella/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/photography/",
+        "name": "Photography",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/49/32/9e/49329eb29261956ec66b5bcd3e489928.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

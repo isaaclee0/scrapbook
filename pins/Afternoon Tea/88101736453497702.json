@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453497702/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736453497702",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453497702",
+      "url": "https://www.pinterest.com/pin/88101736453497702/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "TikTok - Make Your Day",
+      "description": " ",
+      "link": "https://vm.tiktok.com/ZMLtgnbaH/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "RemaZarema",
+        "url": "https://www.pinterest.com/RemaZarema/",
+        "name": "Rema&Zarema"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/22/67/b8/2267b8f06e441c66e18c79312610abd6.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/70/ed/b2/70edb285565ba85df2fd773fa41b3cfa.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

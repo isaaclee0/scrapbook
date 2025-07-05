@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441457997/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/english-ness",
+    "CustomFileName": "88101736441457997",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441457997",
+      "url": "https://www.pinterest.com/pin/88101736441457997/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Pretty!!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "hall229",
+        "url": "https://www.pinterest.com/hall229/",
+        "name": "Ann-Walker Hall"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/english-ness/",
+        "name": "English-ness",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/63/3f/ab/633fab3e0b5d1792d0211f67e5f6be9c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

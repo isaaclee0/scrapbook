@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453693699/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/sewing-plus-tips-for-beginners",
+    "CustomFileName": "88101736453693699",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453693699",
+      "url": "https://www.pinterest.com/pin/88101736453693699/",
+      "type": "pin",
+      "title": "Манжета",
+      "gridTitle": "Манжета",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "henim0702",
+        "url": "https://www.pinterest.com/henim0702/",
+        "name": "Henim"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/sewing-plus-tips-for-beginners/",
+        "name": "Sewing (plus tips for beginners)",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f0/21/48/f02148b4e035a102a569686c9b282144.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/64/a8/61/64a861d019fa750bb024997829bbdc25.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

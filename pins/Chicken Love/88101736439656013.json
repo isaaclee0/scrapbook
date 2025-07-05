@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439656013/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-love",
+    "CustomFileName": "88101736439656013",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439656013",
+      "url": "https://www.pinterest.com/pin/88101736439656013/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Henhouse",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "primdoll",
+        "url": "https://www.pinterest.com/primdoll/",
+        "name": "Amy Ferringer"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-love/",
+        "name": "Chicken love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/07/8c/4a/078c4ad78b7e5a5c15c148ed3f0ef2e2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

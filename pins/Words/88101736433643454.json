@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433643454/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736433643454",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433643454",
+      "url": "https://www.pinterest.com/pin/88101736433643454/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Motivational Prints",
+      "description": "The Truth will set us free - if we let it.",
+      "link": "http://www.motivationblog.org/forget-the-past/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ec/32/f2/ec32f2abad93286afa38cca507702672.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

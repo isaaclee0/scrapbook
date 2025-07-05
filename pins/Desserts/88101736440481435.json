@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440481435/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736440481435",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440481435",
+      "url": "https://www.pinterest.com/pin/88101736440481435/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "5 Minute Pineapple Fantasy Pie - Chocolate Covered Katie",
+      "description": "5 Minute Pineapple Fantasy Pie",
+      "link": "http://chocolatecoveredkatie.com/2015/08/20/5-minute-pineapple-fantasy-pie/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2f/6a/6a/2f6a6a89a3f15e19d499b0caf7c34095.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

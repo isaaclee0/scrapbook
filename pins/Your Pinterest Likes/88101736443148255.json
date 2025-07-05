@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443148255/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443148255",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443148255",
+      "url": "https://www.pinterest.com/pin/88101736443148255/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Diy Rit dye projects {thinking outside the box} - Debbiedoo's",
+      "description": "#Diy #Rit #dye #projects {thinking outside the box}",
+      "link": "http://debbie-debbiedoos.com/diy-rit-dye-projects.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b1/89/de/b189de6d839e3ec3cc8566d999cd4b79.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430672722/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736430672722",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430672722",
+      "url": "https://www.pinterest.com/pin/88101736430672722/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Frozen Lemonade Pie",
+      "description": "Lemonade Pie... a summer dessert thats quick and easy",
+      "link": "http://www.foodnetwork.com/recipes/neelys/frozen-lemonade-pie-recipe/index.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b9/8e/b6/b98eb68b68b5b2d1f6eb0fd3767e9aa8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436653782/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736436653782",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436653782",
+      "url": "https://www.pinterest.com/pin/88101736436653782/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Greek Roasted Chicken",
+      "description": "Greek Roasted Chicken",
+      "link": "http://shewearsmanyhats.com/2013/09/greek-roasted-chicken/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c3/51/47/c351473e2f495b60635ed7d12d5d07a4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

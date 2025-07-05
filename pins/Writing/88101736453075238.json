@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453075238/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/writing",
+    "CustomFileName": "88101736453075238",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453075238",
+      "url": "https://www.pinterest.com/pin/88101736453075238/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Alex Corbitt on Twitter",
+      "description": " ",
+      "link": "https://twitter.com/alex_corbitt/status/757658211176607754",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/writing/",
+        "name": "Writing",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/01/ca/a7/01caa731c4370a73e82d82036ce2473c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439101008/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/beefy",
+    "CustomFileName": "88101736439101008",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439101008",
+      "url": "https://www.pinterest.com/pin/88101736439101008/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Recipes Archive - Campbell Soup Company",
+      "description": "It takes less than 45 minutes to make this delicious pub favorite, right in your own kitchen.  Cream of mushroom soup and instant mashed potatoes make it quick and easy!",
+      "link": "http://www.campbellskitchen.com/Recipes/RecipeDetails?RecipeID=50380&rewrite=true",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/beefy/",
+        "name": "Beefy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/54/a0/99/54a09902c1d9d2064cbc0cc28bc85014.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

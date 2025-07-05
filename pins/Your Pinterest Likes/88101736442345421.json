@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442345421/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442345421",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442345421",
+      "url": "https://www.pinterest.com/pin/88101736442345421/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Magazine",
+      "description": "North America’s 7 Best (and Secret) Swimming Holes  Lafayette Blue Springs State Park - Florida, USA",
+      "link": "https://roadtrippers.com/blog/7-amazing-and-secret-swimming-holes",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "taylor_horen",
+        "url": "https://www.pinterest.com/taylor_horen/",
+        "name": "Taylor Horen"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/81/49/ab/8149abee02fa1983323e230e62d21a90.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452920884/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/dinner-with-hubby",
+    "CustomFileName": "88101736452920884",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452920884",
+      "url": "https://www.pinterest.com/pin/88101736452920884/",
+      "type": "pin",
+      "title": "#foodtiktok #creativefood",
+      "gridTitle": "#foodtiktok #creativefood",
+      "description": " ",
+      "link": "https://vm.tiktok.com/ZMLTtR2hg/?k=1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "RemaZarema",
+        "url": "https://www.pinterest.com/RemaZarema/",
+        "name": "Rema&Zarema"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/dinner-with-hubby/",
+        "name": "Dinner with hubby",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c4/32/42/c43242634b1db34f35261800016e2dba.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/62/bb/94/62bb949d5d26b8494a45af78b3f26bdb.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

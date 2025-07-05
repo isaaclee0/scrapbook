@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439559386/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736439559386",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439559386",
+      "url": "https://www.pinterest.com/pin/88101736439559386/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "How to level a cake without slicing off any cake!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/aa/60/a8/aa60a8851a3bf3c8957b52d96f411cb2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

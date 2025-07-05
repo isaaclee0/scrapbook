@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431700604/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736431700604",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431700604",
+      "url": "https://www.pinterest.com/pin/88101736431700604/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Enchilada Lasagna",
+      "description": "Enchilada Lasagna :: One pinner wrote, \"LOVE this recipe. It's easy, has few ingredients, and is absolutely DELISH.\" Will have to try...",
+      "link": "http://www.mogwaisoup.com/2009/08/enchilada-lasagna.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/62/2e/11/622e11e80adf72ed309d227ec5a6e193.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

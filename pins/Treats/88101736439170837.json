@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439170837/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736439170837",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439170837",
+      "url": "https://www.pinterest.com/pin/88101736439170837/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Homemade Peppermint Patties",
+      "description": "Homemade Peppermint Patties are better than anything you can buy in the stores and easy to make!",
+      "link": "http://chocolatechocolateandmore.com/2014/06/homemade-peppermint-patties/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/20/ed/ef/20edef564a475fc6642351516ec7b4f4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

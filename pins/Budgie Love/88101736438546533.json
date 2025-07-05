@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438546533/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/budgie-love",
+    "CustomFileName": "88101736438546533",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438546533",
+      "url": "https://www.pinterest.com/pin/88101736438546533/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "diy bird cage! how beautiful!!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ingedegroot63",
+        "url": "https://www.pinterest.com/ingedegroot63/",
+        "name": "Just me Inge"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/budgie-love/",
+        "name": "Budgie Love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d2/6a/25/d26a25eee6cabd62139b6e7c53a81c9a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

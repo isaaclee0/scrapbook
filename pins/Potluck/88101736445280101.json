@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445280101/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potluck",
+    "CustomFileName": "88101736445280101",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445280101",
+      "url": "https://www.pinterest.com/pin/88101736445280101/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "GOURMET CHICKEN MOUSSAKA - Manitoba Chicken",
+      "description": "Gourmet Chicken Moussaka",
+      "link": "http://manitobachicken.ca/recipe/gourmet-chicken-moussaka/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potluck/",
+        "name": "Potluck",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/69/16/66/6916669ddbe665a8d0f1fc3b9c09b11d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

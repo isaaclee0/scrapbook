@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442010537/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442010537",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442010537",
+      "url": "https://www.pinterest.com/pin/88101736442010537/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Four-cornered Villa / Avanto Architects",
+      "description": "Wow.",
+      "link": "http://www.archdaily.com/129977/four-cornered-villa-avanto-architects/fourcorneredvilla024/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7d/d4/b9/7dd4b9b89190508be12717a9a0694490.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

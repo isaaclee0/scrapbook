@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439517967/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/exercise-it",
+    "CustomFileName": "88101736439517967",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439517967",
+      "url": "https://www.pinterest.com/pin/88101736439517967/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Blog - 20 something Allergies",
+      "description": "3 minute arm workout!",
+      "link": "http://www.20somethingallergies.com/oil-pulling-how-to-guide/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/exercise-it/",
+        "name": "Exercise it",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/19/e2/ed/19e2edd20f6676ec47927197dbc14b79.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

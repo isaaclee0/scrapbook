@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442228038/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442228038",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442228038",
+      "url": "https://www.pinterest.com/pin/88101736442228038/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Practically perfect in every way...",
+      "link": "http://www.allthingsfarmer.com/2012/12/atlanta-homes-and-lifestyles-christmas.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/07/8e/63/078e63953a1a0767435359b360fc8305.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

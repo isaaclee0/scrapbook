@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435261363/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painting-things",
+    "CustomFileName": "88101736435261363",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435261363",
+      "url": "https://www.pinterest.com/pin/88101736435261363/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Lila",
+      "description": "purple and green!",
+      "link": "http://ellmania.blogspot.com/2008/11/lila.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painting-things/",
+        "name": "Painting things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ce/a7/f5/cea7f50191995f4e814ea303fdf09a5a.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

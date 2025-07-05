@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435877902/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736435877902",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435877902",
+      "url": "https://www.pinterest.com/pin/88101736435877902/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "A classic tale of unlikely friendship set in 1940s Hollywood.  http://www.screenwritersmovie.com",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "staceybradshaw",
+        "url": "https://www.pinterest.com/staceybradshaw/",
+        "name": "Stacey Bradshaw"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/df/6c/31/df6c31b7f2339f36f36db8a41c2ba8cf.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

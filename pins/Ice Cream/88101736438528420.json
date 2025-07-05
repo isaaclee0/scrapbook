@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438528420/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/ice-cream",
+    "CustomFileName": "88101736438528420",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438528420",
+      "url": "https://www.pinterest.com/pin/88101736438528420/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "BlueHost.com",
+      "description": "Blueberry Ginger Nice Cream | UnCruel Eats",
+      "link": "http://theveggiecommunity.com/recipe/blueberry-ginger-nice-cream",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "veggiecommunity",
+        "url": "https://www.pinterest.com/veggiecommunity/",
+        "name": "The Veggie Community"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/ice-cream/",
+        "name": "Ice cream",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4b/84/af/4b84af9620fce0adcb41a47ef18b06ec.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

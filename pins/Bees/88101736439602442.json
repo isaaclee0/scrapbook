@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439602442/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bees",
+    "CustomFileName": "88101736439602442",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439602442",
+      "url": "https://www.pinterest.com/pin/88101736439602442/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Image Collection",
+      "description": "Honey bee worker showing Nasanov gland",
+      "link": "http://beeinformed.org/2013/03/image-collection/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bees/",
+        "name": "Bees",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/43/bc/42/43bc4206a030ee8d7777cb68e5076087.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

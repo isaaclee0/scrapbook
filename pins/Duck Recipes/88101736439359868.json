@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439359868/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/duck-recipes",
+    "CustomFileName": "88101736439359868",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439359868",
+      "url": "https://www.pinterest.com/pin/88101736439359868/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Cassoulet au Canard (Baked White Bean and Duck Casserole)",
+      "description": "Cassoulet au Canard (Baked White Bean and Duck Casserole) | SAVEUR",
+      "link": "http://www.saveur.com/article/Recipes/Cassoulet-Au-Canard-Duck-Casserole",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/duck-recipes/",
+        "name": "Duck Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/11/63/1e/11631e0ca31a56c9f0edd5c25e4d632c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

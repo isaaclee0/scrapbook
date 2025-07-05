@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442188846/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442188846",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442188846",
+      "url": "https://www.pinterest.com/pin/88101736442188846/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "10 Cool Dispensers You Can Actually Buy - cool dispensers - Oddee",
+      "description": "what a fun product for a kids bathroom!",
+      "link": "http://www.oddee.com/item_97110.aspx",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bf/fa/13/bffa13703aa0d767fa0bc6be7ca56ec8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

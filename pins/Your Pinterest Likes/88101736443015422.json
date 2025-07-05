@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443015422/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443015422",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443015422",
+      "url": "https://www.pinterest.com/pin/88101736443015422/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "thehappyluncher.nl - This website is for sale! - thehappyluncher Resources and Information.",
+      "description": "Emaille servies | The Happy Luncher",
+      "link": "http://www.thehappyluncher.nl/c-2004421/emaille-servies/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7c/33/6e/7c336e61790b45058888182be54f952d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

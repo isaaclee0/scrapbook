@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448018475/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/courtyardpatio",
+    "CustomFileName": "88101736448018475",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448018475",
+      "url": "https://www.pinterest.com/pin/88101736448018475/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "looking out the window",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "phoebetroyer",
+        "url": "https://www.pinterest.com/phoebetroyer/",
+        "name": "Phoebe"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/courtyardpatio/",
+        "name": "Courtyard/Patio",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/44/f2/5d/44f25d9a031f8a9fd93bddb3184f2351.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

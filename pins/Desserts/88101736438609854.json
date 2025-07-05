@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438609854/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736438609854",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438609854",
+      "url": "https://www.pinterest.com/pin/88101736438609854/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Hot. Sticky. Sweet. - Bakerella",
+      "description": "Sticky Toffee Pudding | Bakerella",
+      "link": "http://www.bakerella.com/hot-sticky-sweet/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/76/50/e4/7650e4582d035c1b59bffe35bcdd4fd6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

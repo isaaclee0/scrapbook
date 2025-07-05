@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452855806/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/lupus",
+    "CustomFileName": "88101736452855806",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452855806",
+      "url": "https://www.pinterest.com/pin/88101736452855806/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "link": "http://www.aafp.org/afp/2007/1201/afp20071201p1709-uf1.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/lupus/",
+        "name": "Lupus",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/81/6e/82/816e82adee4a5a4ee0023008de1243b7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

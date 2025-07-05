@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445025730/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/gifts-to-make-for-me-and-others",
+    "CustomFileName": "88101736445025730",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445025730",
+      "url": "https://www.pinterest.com/pin/88101736445025730/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Christmas Rocky Road",
+      "description": "Christmas Rocky Road - Packed with marshmallows, nuts and white chocolate, this might be the easiest and most addictive holiday treat ever.",
+      "link": "https://www.tastemade.com/videos/christmas-rocky-road",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemade",
+        "url": "https://www.pinterest.com/tastemade/",
+        "name": "Tastemade"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/gifts-to-make-for-me-and-others/",
+        "name": "Gifts to make for me and others",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bb/f2/2f/bbf22f1be1b5d35ebc9d7fd95d31a9d4.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/59/d0/cf/59d0cf21ccdf9d63f8e73be0c5a66df1.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

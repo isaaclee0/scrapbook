@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453836955/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736453836955",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453836955",
+      "url": "https://www.pinterest.com/pin/88101736453836955/",
+      "type": "pin",
+      "title": "Healthy Chocolate Mousse",
+      "gridTitle": "Healthy Chocolate Mousse",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "bromabakery",
+        "url": "https://www.pinterest.com/bromabakery/",
+        "name": "Sarah Fennel | Broma Bakery"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/80/aa/a9/80aaa951535e740dc4221ce9ef4b1623.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

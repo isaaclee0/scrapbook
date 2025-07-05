@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447245794/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bedrooms",
+    "CustomFileName": "88101736447245794",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447245794",
+      "url": "https://www.pinterest.com/pin/88101736447245794/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Reading Christmas stories and waiting for Santa.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Addyrover",
+        "url": "https://www.pinterest.com/Addyrover/",
+        "name": "Francine Falsone Haas"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bedrooms/",
+        "name": "Bedrooms",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/66/46/34/6646347e412129dd355e44b94f1937d1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

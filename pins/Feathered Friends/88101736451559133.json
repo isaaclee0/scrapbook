@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451559133/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/feathered-friends",
+    "CustomFileName": "88101736451559133",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451559133",
+      "url": "https://www.pinterest.com/pin/88101736451559133/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "r.sahin on Twitter",
+      "description": "@marie_nassar @PortlandRose143 @36Doris77",
+      "link": "https://twitter.com/r_sahin06/status/614009979935309824/photo/1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/feathered-friends/",
+        "name": "Feathered friends",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/69/93/00/6993009c9ddb0aa79bd168817ac6ce6c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

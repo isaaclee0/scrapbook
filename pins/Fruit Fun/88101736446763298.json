@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446763298/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fruit-fun",
+    "CustomFileName": "88101736446763298",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446763298",
+      "url": "https://www.pinterest.com/pin/88101736446763298/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Haha",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fruit-fun/",
+        "name": "Fruit Fun",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0b/b0/95/0bb0953425de05aa7ab01f7dc49438a4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

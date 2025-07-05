@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439440280/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/beefy",
+    "CustomFileName": "88101736439440280",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439440280",
+      "url": "https://www.pinterest.com/pin/88101736439440280/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Lorne Sausage",
+      "description": "Lorne Sausage 2",
+      "link": "https://braisinghell.wordpress.com/2011/08/15/lorne-sausage/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/beefy/",
+        "name": "Beefy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/15/75/86/157586cc0801138654ef330f599664b5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

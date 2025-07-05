@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434549543/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/animal-love",
+    "CustomFileName": "88101736434549543",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434549543",
+      "url": "https://www.pinterest.com/pin/88101736434549543/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Rabbits",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "chinkyaku",
+        "url": "https://www.pinterest.com/chinkyaku/",
+        "name": "Chinkyaku San"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/animal-love/",
+        "name": "Animal love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7c/89/0a/7c890acc0c5f2ea8c51502d36f737f0e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

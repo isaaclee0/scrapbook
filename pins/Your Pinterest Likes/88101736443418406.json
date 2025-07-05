@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443418406/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443418406",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443418406",
+      "url": "https://www.pinterest.com/pin/88101736443418406/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": ":",
+      "link": "http://sugarpinkboutique.com/images/thumbnails/il_fullxfull.177644723.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1b/72/83/1b7283a000b3d92fc429fd57339d4cd1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

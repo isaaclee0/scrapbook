@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446464160/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/writing",
+    "CustomFileName": "88101736446464160",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446464160",
+      "url": "https://www.pinterest.com/pin/88101736446464160/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Pinterest",
+      "description": "Ten Questions to Ask your Friend who Just Read your Novel",
+      "link": "http://pinterest.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "well_storied",
+        "url": "https://www.pinterest.com/well_storied/",
+        "name": "Kristen Kieffer"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/writing/",
+        "name": "Writing",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f4/2c/98/f42c98ae0cb74d331dc757577102ff3d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

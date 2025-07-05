@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446176344/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/swings",
+    "CustomFileName": "88101736446176344",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446176344",
+      "url": "https://www.pinterest.com/pin/88101736446176344/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "I want swings under our deck",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/swings/",
+        "name": "swings",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/46/5f/79/465f792f99cbd6e06f215af23b7c5a46.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

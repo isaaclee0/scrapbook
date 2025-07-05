@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442026656/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442026656",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442026656",
+      "url": "https://www.pinterest.com/pin/88101736442026656/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "A LITTLE SUSSY",
+      "description": "Pink tea",
+      "link": "http://nicolehill.blogspot.com/search?updated-max=2010-03-02T15:01:00-07:00&max-results=25",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2c/35/7c/2c357c7bf595a33f19707ca6c531bfa4.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

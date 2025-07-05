@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435307384/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pastries",
+    "CustomFileName": "88101736435307384",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435307384",
+      "url": "https://www.pinterest.com/pin/88101736435307384/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Tastycookingrecipes.com",
+      "description": "Easy as Pie - Shortcrust Pastry",
+      "link": "http://pies.tastycookingrecipes.com/easy-as-pie-shortcrust-pastry/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pastries/",
+        "name": "pastries",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4d/57/35/4d5735e136d63c2a5d0204748b54658a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446395048/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736446395048",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446395048",
+      "url": "https://www.pinterest.com/pin/88101736446395048/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The 23rd Psalm: A Holocaust Memoir",
+      "description": "The 23rd Psalm: A Holocaust Memoir",
+      "link": "https://www.goodreads.com/book/show/549227.The_23rd_Psalm",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cb/29/0a/cb290a8e40d7281f15d13734268c59d9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

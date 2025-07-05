@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450517855/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/springer-spaniels",
+    "CustomFileName": "88101736450517855",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450517855",
+      "url": "https://www.pinterest.com/pin/88101736450517855/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Springer Spaniel wanna play",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "aloprod",
+        "url": "https://www.pinterest.com/aloprod/",
+        "name": "Abigail LopRod"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/springer-spaniels/",
+        "name": "Springer Spaniels",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/45/d5/ea/45d5eadbc588d8712969bc54313429ac.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

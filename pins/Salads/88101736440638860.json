@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440638860/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/salads",
+    "CustomFileName": "88101736440638860",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440638860",
+      "url": "https://www.pinterest.com/pin/88101736440638860/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chopped Thai Salad with Sesame Garlic Dressing",
+      "description": "delicious",
+      "link": "http://pinchofyum.com/chopped-thai-salad-sesame-garlic-dressing",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/salads/",
+        "name": "Salads",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0c/95/72/0c9572d41a2a26dacbee06c8bcd9216a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

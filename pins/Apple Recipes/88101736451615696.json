@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451615696/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/apple-recipes",
+    "CustomFileName": "88101736451615696",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451615696",
+      "url": "https://www.pinterest.com/pin/88101736451615696/",
+      "type": "pin",
+      "title": "Apple and cinnamon slab cake",
+      "gridTitle": "Apple and cinnamon slab cake",
+      "description": " ",
+      "link": "https://www.bestrecipes.com.au/recipes/apple-cinnamon-slab-cake-recipe/ouzntp1e",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "bestrecipesau",
+        "url": "https://www.pinterest.com/bestrecipesau/",
+        "name": "Best Recipes"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/apple-recipes/",
+        "name": "Apple Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/00/94/96/0094969b3ece3971fdb30b3d279079f7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

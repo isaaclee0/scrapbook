@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449842962/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pasta",
+    "CustomFileName": "88101736449842962",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449842962",
+      "url": "https://www.pinterest.com/pin/88101736449842962/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Simple Beet Fettuccine",
+      "description": "Simple Beet Fettuccine",
+      "link": "https://www.101cookbooks.com/archives/simple-beet-fettuccine-recipe.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+101Cookbooks+(101+Cookbooks)",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "herzeliebblog",
+        "url": "https://www.pinterest.com/herzeliebblog/",
+        "name": "herzelieb"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pasta/",
+        "name": "Pasta",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/32/c4/05/32c405de5e3bdc403d8635333c9a0f25.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

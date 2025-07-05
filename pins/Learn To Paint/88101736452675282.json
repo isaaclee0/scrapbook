@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452675282/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/learn-to-paint",
+    "CustomFileName": "88101736452675282",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452675282",
+      "url": "https://www.pinterest.com/pin/88101736452675282/",
+      "type": "pin",
+      "title": "Love",
+      "gridTitle": "Love",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "imspecialk1972",
+        "url": "https://www.pinterest.com/imspecialk1972/",
+        "name": "Imaspecialk"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/learn-to-paint/",
+        "name": "Learn To Paint",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d6/bc/8e/d6bc8e0354e63b7eb182353bedcf0e87.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/b9/96/80/b996805de8ff8702be5a4cc22ff5bc54.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

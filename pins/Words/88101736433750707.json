@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433750707/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736433750707",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433750707",
+      "url": "https://www.pinterest.com/pin/88101736433750707/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Quozio",
+      "description": "Yes...",
+      "link": "http://quozio.com/quote/5a54eb93#!t=1007",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/30/d1/58/30d158f85ed05004fc768e73ef2e0d5d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

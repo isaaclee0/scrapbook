@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453536888/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736453536888",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453536888",
+      "url": "https://www.pinterest.com/pin/88101736453536888/",
+      "type": "pin",
+      "title": "English Scones Recipe",
+      "gridTitle": "English Scones Recipe",
+      "description": " ",
+      "link": "http://recipesbycarina.com/english-scones-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "recipesbycarina",
+        "url": "https://www.pinterest.com/recipesbycarina/",
+        "name": "Recipes by Carina"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ce/15/06/ce150601a1d1b25aa5017800287a60bc.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/fd/fb/f8/fdfbf85caa62ab3bcde62b2f59079eb3.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

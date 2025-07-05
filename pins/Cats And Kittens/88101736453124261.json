@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453124261/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736453124261",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453124261",
+      "url": "https://www.pinterest.com/pin/88101736453124261/",
+      "type": "pin",
+      "title": "How we found him 🐈🥰💗❤️",
+      "gridTitle": "How we found him 🐈🥰💗❤️",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "animaljungle",
+        "url": "https://www.pinterest.com/animaljungle/",
+        "name": "Animal JUNGLE"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/01/85/d4/0185d415160da54a099150ba9cc90f63.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/8c/de/ae/8cdeae45c1575d78ade668bec59d3aff.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

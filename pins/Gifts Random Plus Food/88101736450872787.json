@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450872787/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/gifts-random-plus-food",
+    "CustomFileName": "88101736450872787",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450872787",
+      "url": "https://www.pinterest.com/pin/88101736450872787/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Homemade \"Just add ice-cream\" box",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/gifts-random-plus-food/",
+        "name": "Gifts random plus food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/37/fb/c9/37fbc9b5b9393ee2496e10e44a5c13ea.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445833736/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pots-eds",
+    "CustomFileName": "88101736445833736",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445833736",
+      "url": "https://www.pinterest.com/pin/88101736445833736/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "From @StrongerThanPOTS on Instagram & Facebook",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "sarahmar_r",
+        "url": "https://www.pinterest.com/sarahmar_r/",
+        "name": "Sarah Marie"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pots-eds/",
+        "name": "POTS EDS",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bf/49/25/bf492557008f059f688d2b55690f1c1e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

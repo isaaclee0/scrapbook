@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443289718/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443289718",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443289718",
+      "url": "https://www.pinterest.com/pin/88101736443289718/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "YouTube",
+      "description": "Have you ever wondered how to react when a Jehovah Witness knocks at your door. Instead of pretending that you aren't home, learn how to open the door and talk to them in an efficient way so you won't feel overwhelmed.",
+      "link": "http://www.youtube.com/watch?v=nmLh6GUWQKU&feature=youtu.be",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e3/d0/eb/e3d0eb3fbc9eda5bae245e100a49565c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

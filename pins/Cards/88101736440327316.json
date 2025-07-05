@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440327316/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cards",
+    "CustomFileName": "88101736440327316",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440327316",
+      "url": "https://www.pinterest.com/pin/88101736440327316/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "LilyBean Paperie",
+      "description": "shabby",
+      "link": "http://lilybeanpaperie.typepad.com/lilybeans_paperie/2011/04/index.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cards/",
+        "name": "Cards",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c5/d2/bf/c5d2bf18af0843e1c31772653ba15684.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

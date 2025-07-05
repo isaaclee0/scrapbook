@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451336426/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736451336426",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451336426",
+      "url": "https://www.pinterest.com/pin/88101736451336426/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Jesus is coming soon..",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "phoebetroyer",
+        "url": "https://www.pinterest.com/phoebetroyer/",
+        "name": "Phoebe"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ad/01/b2/ad01b28322ae18b82e04ea5dcbff8cbe.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

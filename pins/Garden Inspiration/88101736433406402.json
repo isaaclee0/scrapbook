@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433406402/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/garden-inspiration",
+    "CustomFileName": "88101736433406402",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433406402",
+      "url": "https://www.pinterest.com/pin/88101736433406402/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "everythingfab.com",
+      "description": "mixed lavender garden",
+      "link": "http://www.everythingfab.com/search?updated-max=2012-03-29T20:30:00-04:00&max-results=6",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/garden-inspiration/",
+        "name": "Garden Inspiration",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a6/e5/56/a6e5568cacce7d3d1042e4c81f88a4a3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

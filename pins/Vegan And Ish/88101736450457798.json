@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450457798/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/vegan-and-ish",
+    "CustomFileName": "88101736450457798",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450457798",
+      "url": "https://www.pinterest.com/pin/88101736450457798/",
+      "type": "pin",
+      "title": "VEGAN BLACK BEAN BURGER",
+      "gridTitle": "VEGAN BLACK BEAN BURGER",
+      "description": "Hearty vegan black bean burger with lots of flavors! These tasty veggie burgers are a healthier fast-food option that is perfect for lunch or dinner. The recipe is plant-based, gluten-free, easy to make, and satisfying for vegans, vegetarians, and even meat-eaters!",
+      "link": "https://elavegan.com/vegan-black-bean-burger/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 114,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "veggiesociety",
+        "url": "https://www.pinterest.com/veggiesociety/",
+        "name": "Veggie Society"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/vegan-and-ish/",
+        "name": "Vegan and ish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1e/a0/cf/1ea0cf56e3e3e4cdde617e1aed9e192e.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/b7/2a/49/b72a494942ed9dbd25fb194e8bf3d64b.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

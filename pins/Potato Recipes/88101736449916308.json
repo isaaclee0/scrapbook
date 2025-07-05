@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449916308/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potato-recipes",
+    "CustomFileName": "88101736449916308",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449916308",
+      "url": "https://www.pinterest.com/pin/88101736449916308/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Potato Salad Recipe - Shugary Sweets",
+      "description": "Potato Salad recipe made the old fashioned way with a few simple ingredients. One bite and you’ll know why this classic dish is a hit at every holiday and potluck!",
+      "link": "https://www.shugarysweets.com/potato-salad/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potato-recipes/",
+        "name": "Potato Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/29/8a/02/298a028bdd209d21a844829589913385.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

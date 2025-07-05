@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441963347/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736441963347",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441963347",
+      "url": "https://www.pinterest.com/pin/88101736441963347/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "DECORAÇÃO ORIGINAL (E LINDA): VOCÊ JÁ TINHA PENSADO NISSO?",
+      "description": "Repurposed crib. Clever.",
+      "link": "http://achadosdedecoracao.blogspot.com/2011/09/decoracao-original-e-linda-voce-ja.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0b/12/82/0b128256a056732fd4a261fb2f2a4942.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

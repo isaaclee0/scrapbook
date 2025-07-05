@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440413504/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736440413504",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440413504",
+      "url": "https://www.pinterest.com/pin/88101736440413504/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "5 Ingredient Sticky Stove Top Balsamic Chicken Drumsticks",
+      "description": "5 Ingredient Sticky Stove Top Balsamic Drumsticks",
+      "link": "http://www.recipetineats.com/5-ingredient-sticky-stove-top-balsamic-drumsticks/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "recipetin",
+        "url": "https://www.pinterest.com/recipetin/",
+        "name": "RecipeTin Eats"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/97/d0/53/97d0537beae3d0a9f546294770786db6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

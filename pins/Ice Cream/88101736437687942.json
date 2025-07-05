@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437687942/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/ice-cream",
+    "CustomFileName": "88101736437687942",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437687942",
+      "url": "https://www.pinterest.com/pin/88101736437687942/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Recipes | Disney Family",
+      "description": "funny food - lustiges essen für gross und klein creativ zubereitet",
+      "link": "http://spoonful.com/recipes/sherbet-frog?CMP=NLC-NL_Recipe_060610_sherbet-the-frog",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/ice-cream/",
+        "name": "Ice cream",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/dd/02/b0/dd02b01740fe2a63cab46ba6db093cf9.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

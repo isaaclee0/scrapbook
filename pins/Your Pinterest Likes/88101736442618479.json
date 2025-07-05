@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442618479/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442618479",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442618479",
+      "url": "https://www.pinterest.com/pin/88101736442618479/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Splitcoaststampers : Card Making, Rubber Stamping & Paper Crafting",
+      "description": "Ideas for something to make with all my old sewing patterns, the one's I won't use for sewing.",
+      "link": "http://www.craftster.org/forum/index.php?topic=4569.0",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a2/74/2e/a2742ecdfa370be5732270f7c95a797d.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

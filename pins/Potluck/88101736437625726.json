@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437625726/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potluck",
+    "CustomFileName": "88101736437625726",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437625726",
+      "url": "https://www.pinterest.com/pin/88101736437625726/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Indoor s'mores",
+      "link": "http://www.repinyourphoto.com/2013/03/20/smore-bites/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potluck/",
+        "name": "Potluck",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/df/bf/42/dfbf4268d254226216c7fa2e516d63e4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

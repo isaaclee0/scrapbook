@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445059499/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/no-bake",
+    "CustomFileName": "88101736445059499",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445059499",
+      "url": "https://www.pinterest.com/pin/88101736445059499/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Creme Egg Rocky Road",
+      "description": "An Easter version of my easy-to-make rocky road recipe featuring Cadbury creme eggs",
+      "link": "http://charlotteslivelykitchen.com/creme-egg-rocky-road/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/no-bake/",
+        "name": "No Bake",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/86/d4/2a/86d42ade61d03d447946ab65b65fe743.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

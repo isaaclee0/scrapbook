@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433448735/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/craft-ideas",
+    "CustomFileName": "88101736433448735",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433448735",
+      "url": "https://www.pinterest.com/pin/88101736433448735/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "DSC_6147",
+      "description": ".",
+      "link": "http://www.flickr.com/photos/jenneliserose/5629769441/in/photostream/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/craft-ideas/",
+        "name": "Craft Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/15/4a/5d/154a5d51deaafb750a59ea314e94557b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

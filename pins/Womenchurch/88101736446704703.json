@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446704703/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/womenchurch",
+    "CustomFileName": "88101736446704703",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446704703",
+      "url": "https://www.pinterest.com/pin/88101736446704703/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chocolate-Dipped Strawberry Meringue Roses",
+      "description": " ",
+      "link": "https://www.tasteofhome.com/recipes/chocolate-dipped-strawberry-meringue-roses/?trkid=soc-toh-pinterest",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "taste_of_home",
+        "url": "https://www.pinterest.com/taste_of_home/",
+        "name": "Taste of Home"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/womenchurch/",
+        "name": "Women/Church",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/57/4f/be/574fbe2d32058e58c260cb72068bb1cd.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/1a/f0/40/1af04086ba4a47ee591e34d076928eec.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

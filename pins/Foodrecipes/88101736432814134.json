@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432814134/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736432814134",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432814134",
+      "url": "https://www.pinterest.com/pin/88101736432814134/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Lemon Parmesan Pasta with Chicken",
+      "description": "Lemon Parmesan Pasta with Chicken",
+      "link": "http://www.jamhands.net/2009/07/lemon-parmesan-pasta-with-chicken.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d9/37/e7/d937e78074b81a10dc7f0630617dbb12.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

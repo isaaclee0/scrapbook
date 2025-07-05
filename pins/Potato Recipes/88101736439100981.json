@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439100981/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potato-recipes",
+    "CustomFileName": "88101736439100981",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439100981",
+      "url": "https://www.pinterest.com/pin/88101736439100981/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Shepherd's Pie Potato Skins",
+      "description": "Shepherd's Pie Potato Skins",
+      "link": "http://www.recipetineats.com/shepherds-pie-potato-skins/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potato-recipes/",
+        "name": "Potato Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ba/51/8f/ba518f12d1bd173a9b3f66ecd48db965.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

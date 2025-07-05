@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431481418/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/animal-love",
+    "CustomFileName": "88101736431481418",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431481418",
+      "url": "https://www.pinterest.com/pin/88101736431481418/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "still crying...",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "warloque1",
+        "url": "https://www.pinterest.com/warloque1/",
+        "name": "Kirsten Valkyrie"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/animal-love/",
+        "name": "Animal love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/75/4e/e3/754ee32b54537d5dde7e794fd6644a55.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

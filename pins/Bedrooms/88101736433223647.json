@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433223647/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bedrooms",
+    "CustomFileName": "88101736433223647",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433223647",
+      "url": "https://www.pinterest.com/pin/88101736433223647/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "blogg - by mildred",
+      "description": "blogg - by mildred",
+      "link": "http://www.bymildred.blogspot.it/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bedrooms/",
+        "name": "Bedrooms",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fd/3d/5a/fd3d5ac6ad68df87da3111d4c8c16ae2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

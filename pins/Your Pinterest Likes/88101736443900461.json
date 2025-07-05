@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443900461/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443900461",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443900461",
+      "url": "https://www.pinterest.com/pin/88101736443900461/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Funny Pictures Of The Day – 26 Photos - Famepace",
+      "description": " ",
+      "link": "http://famepace.com/funny-pictures-day-26-photos-2/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "morably",
+        "url": "https://www.pinterest.com/morably/",
+        "name": "Morably"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/48/7c/7b/487c7b5da6f73d84845b3b0018436e92.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

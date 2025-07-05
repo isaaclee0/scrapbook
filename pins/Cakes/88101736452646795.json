@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452646795/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736452646795",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452646795",
+      "url": "https://www.pinterest.com/pin/88101736452646795/",
+      "type": "pin",
+      "title": "Best Mud Cake Ever",
+      "gridTitle": "Best Mud Cake Ever",
+      "description": " ",
+      "link": "https://queen.com.au/recipes/rich-chocolate-mud-cake/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "queenfinefoods",
+        "url": "https://www.pinterest.com/queenfinefoods/",
+        "name": "Queen"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a5/f8/1d/a5f81d30dfac00811a374dfd598720a0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

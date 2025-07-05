@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433711138/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/garden-inspiration",
+    "CustomFileName": "88101736433711138",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433711138",
+      "url": "https://www.pinterest.com/pin/88101736433711138/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Reminds me of Van Gogh's irises.",
+      "link": "http://sphotos-c.ak.fbcdn.net/hphotos-ak-ash3/537060_454869264567702_4970186_n.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/garden-inspiration/",
+        "name": "Garden Inspiration",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/99/8f/de/998fdef5f781ce8dc0d2aacf92473f74.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

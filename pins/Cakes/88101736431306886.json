@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431306886/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736431306886",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431306886",
+      "url": "https://www.pinterest.com/pin/88101736431306886/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Pinecone Cakes",
+      "link": "http://www.marthastewart.com/264562/pinecone-cakes-how-to",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/dd/8a/5d/dd8a5de7785d87993f2bdbd7c7345e51.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443926756/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/scotland-beckons",
+    "CustomFileName": "88101736443926756",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443926756",
+      "url": "https://www.pinterest.com/pin/88101736443926756/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Pittenweem. Fife, Scotland",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "madreper",
+        "url": "https://www.pinterest.com/madreper/",
+        "name": "Anne"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/scotland-beckons/",
+        "name": "Scotland Beckons",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/db/b1/c4/dbb1c4ed0a364e020382cae74ef2d616.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453086107/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/exercise-it",
+    "CustomFileName": "88101736453086107",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453086107",
+      "url": "https://www.pinterest.com/pin/88101736453086107/",
+      "type": "pin",
+      "title": "500 Steps In Sitting Position",
+      "gridTitle": "500 Steps In Sitting Position",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "fitfolks1",
+        "url": "https://www.pinterest.com/fitfolks1/",
+        "name": "Fitness Ace"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/exercise-it/",
+        "name": "Exercise it",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/9f/23/77/9f237720726a433c17121dae451b6b82.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

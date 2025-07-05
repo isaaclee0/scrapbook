@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436936088/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/soup",
+    "CustomFileName": "88101736436936088",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436936088",
+      "url": "https://www.pinterest.com/pin/88101736436936088/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Cauliflower Chowder",
+      "description": "Cauliflower Chowder - A creamy, low carb, hearty and wonderfully cozy soup for those chilly nights!",
+      "link": "http://damndelicious.net/2014/03/22/cauliflower-chowder/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/soup/",
+        "name": "Soup",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0d/52/3a/0d523ae853047698a2d227c06b9aac2c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

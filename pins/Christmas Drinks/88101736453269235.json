@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453269235/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/christmas-drinks",
+    "CustomFileName": "88101736453269235",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453269235",
+      "url": "https://www.pinterest.com/pin/88101736453269235/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Christmas Mimosa Cocktail Recipe | Total Wine & More",
+      "description": " ",
+      "link": "https://www.totalwine.com/cocktail-corner/christmas-mimosa?cid=social:cocktail:2018::christmas_mimosa_recipe_LP:",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "totalwine",
+        "url": "https://www.pinterest.com/totalwine/",
+        "name": "Total Wine & More"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/christmas-drinks/",
+        "name": "CHRISTMAS DRINKS",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/85/fb/0d/85fb0da290c01fe5736e50f536f439df.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/v2/720p/4b/25/6a/4b256a4026a159c969bbf7c616afbfbb_mobile.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

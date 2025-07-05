@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449191429/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tips-and-tricks",
+    "CustomFileName": "88101736449191429",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449191429",
+      "url": "https://www.pinterest.com/pin/88101736449191429/",
+      "type": "pin",
+      "title": "Stress-Free Moving Hacks",
+      "gridTitle": "Stress-Free Moving Hacks",
+      "description": "Brilliant moving hacks that will help you to save your expensive things.",
+      "link": "http://www.handyideas.org/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "HandyIdeasPins",
+        "url": "https://www.pinterest.com/HandyIdeasPins/",
+        "name": "Handy Ideas"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tips-and-tricks/",
+        "name": "Tips and Tricks",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/18/f9/a1/18f9a112b8368b546660eb659203195e.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/83/53/16/8353164947d1edd64e9e0ee8aedf7e5a.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

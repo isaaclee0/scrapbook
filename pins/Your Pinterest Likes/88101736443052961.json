@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443052961/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443052961",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443052961",
+      "url": "https://www.pinterest.com/pin/88101736443052961/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Field Trip :: A Cheese Tasting Party",
+      "description": "Cheese and Wine Tasting Class at Epicerie, Austin | Photos by Kate Lesueur for Camille Styles",
+      "link": "http://camillestyles.com/entertaining-2/a-cheese-tasting-party-at-epicerie/?slide=7",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/db/76/64/db76640daeb4eb56cc9bb8fbe07bb2c1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

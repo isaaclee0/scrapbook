@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447669651/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736447669651",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447669651",
+      "url": "https://www.pinterest.com/pin/88101736447669651/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Apache HTTP Server Test Page powered by CentOS",
+      "description": "As I'm typing this, the full weekend of Sidewalk is still in my head sinking in…",
+      "link": "http://www.lifeofaturnip.com/recipes-life-stories/8/292016/my-top-five-from-sidewalk-festival",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ad/b7/e7/adb7e798e2d0fbd8b88195f4f50e5692.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

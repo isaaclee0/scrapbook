@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442450846/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442450846",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442450846",
+      "url": "https://www.pinterest.com/pin/88101736442450846/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Book Seller",
+      "description": "a glimpse into the life of a used bookstore owner re-pinned by: http://sunnydaypublishing.com/books/",
+      "link": "http://www.flickr.com/photos/8107586@N08/6532967733/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7d/e7/46/7de7463865aed31e4390e6c80d7b187f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

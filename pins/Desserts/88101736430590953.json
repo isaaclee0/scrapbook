@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430590953/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736430590953",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430590953",
+      "url": "https://www.pinterest.com/pin/88101736430590953/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Toffee-apples.",
+      "link": "http://fb.sarie.404.co.za/recipe/288/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/52/b0/ae/52b0ae6dca3408851eea3bf3b2a9dcb5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

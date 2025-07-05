@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442487460/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442487460",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442487460",
+      "url": "https://www.pinterest.com/pin/88101736442487460/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "BlueHost.com",
+      "description": "Clip Art Resources (For Blogs!)",
+      "link": "http://www.inwardfacinggirl.com/blog/clip-art-resources-for-blogs.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/57/ca/7a/57ca7ab7fde8015e62eba8950508539f.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

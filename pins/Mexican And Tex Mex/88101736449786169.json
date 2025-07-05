@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449786169/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/mexican-and-tex-mex",
+    "CustomFileName": "88101736449786169",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449786169",
+      "url": "https://www.pinterest.com/pin/88101736449786169/",
+      "type": "pin",
+      "title": "Roasted Mango-Habanero Salsa",
+      "gridTitle": "Roasted Mango-Habanero Salsa",
+      "description": "Roasted habanero peppers and sauteed mango come together to create a highly flavorful salsa that is slightly sweet. It serves up great as a traditional salsa, but also as a topping for fish. #Salsa #Mango #Habanero",
+      "link": "https://www.chilipeppermadness.com/chili-pepper-recipes/salsas/roasted-mango-habanero-salsa/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "chilipeppermadness",
+        "url": "https://www.pinterest.com/chilipeppermadness/",
+        "name": "Chili Pepper Madness"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/mexican-and-tex-mex/",
+        "name": "Mexican and Tex Mex",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/28/62/19/2862199e454939fd11853a4325a45d42.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/v2/720p/6f/48/c1/6f48c1e03dee8120863fb7eeb9162ac1_mobile.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

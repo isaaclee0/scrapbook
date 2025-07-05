@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452453438/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/soup",
+    "CustomFileName": "88101736452453438",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452453438",
+      "url": "https://www.pinterest.com/pin/88101736452453438/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "lentil soup with sausage, potato and greens — Beneath the Crust",
+      "description": "Lentil Soup with Sausage Recipe",
+      "link": "https://www.beneaththecrust.com/blog/2018/3/6/lentil-soup-sausage-potato-greens",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "beneaththecrust",
+        "url": "https://www.pinterest.com/beneaththecrust/",
+        "name": "Beneath the Crust"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/soup/",
+        "name": "Soup",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/29/f7/6a/29f76a6f53f8bb4dd2a5e04090137f86.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

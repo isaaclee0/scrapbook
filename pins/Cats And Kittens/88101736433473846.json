@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433473846/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736433473846",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433473846",
+      "url": "https://www.pinterest.com/pin/88101736433473846/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "can opener",
+      "link": "http://www.dumpaday.com/random-pictures/funny-pictures/funny-pictures-41-pics-4/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/97/2b/f8/972bf89893c6625cea76dae8bf2c704f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

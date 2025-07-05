@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448580039/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736448580039",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448580039",
+      "url": "https://www.pinterest.com/pin/88101736448580039/",
+      "type": "pin",
+      "title": "Amazing change with hairstyle\n",
+      "gridTitle": "Amazing change with hairstyle",
+      "description": "Amazing change with hairstyle",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "metdaan",
+        "url": "https://www.pinterest.com/metdaan/",
+        "name": "MetDaan"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f1/d7/d4/f1d7d4a1fadb48a02b83218d6c9bcd41.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/v2/720p/ba/2e/35/ba2e352e3ef5bdfa7927680a23afbc04_mobile.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

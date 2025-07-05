@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442099993/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736442099993",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442099993",
+      "url": "https://www.pinterest.com/pin/88101736442099993/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Everything Is Illuminated (2005) | Cinematography by Matthew Libatique | Directed by Liev Schreiber",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "kamilkorcz",
+        "url": "https://www.pinterest.com/kamilkorcz/",
+        "name": "Kamil Korcz"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/49/f2/85/49f2858e96dad42b4d3fc30b7fcee78b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452354713/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/roses-for-the-love-of",
+    "CustomFileName": "88101736452354713",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452354713",
+      "url": "https://www.pinterest.com/pin/88101736452354713/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 9,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "lucafadini",
+        "url": "https://www.pinterest.com/lucafadini/",
+        "name": "Luca Guerrino Fadini"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/roses-for-the-love-of/",
+        "name": "Roses - for the love of..",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d8/c0/69/d8c06977d44ea75606f2a9103dd28ac8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

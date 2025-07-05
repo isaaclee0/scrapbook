@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431199067/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736431199067",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431199067",
+      "url": "https://www.pinterest.com/pin/88101736431199067/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "42 Home Recipes Of Famous Foods",
+      "description": "42 Home Recipes Of Famous Foods",
+      "link": "http://www.buzzfeed.com/keenan/42-home-recipes-of-famous-foods",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/af/cf/4f/afcf4f57ec07ee4a74ce798492a9abd7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

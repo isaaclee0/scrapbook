@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437979153/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736437979153",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437979153",
+      "url": "https://www.pinterest.com/pin/88101736437979153/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Betrayal is very sad and very painful ..",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d9/e8/47/d9e8475086adbf29e4f3f82983f41c1a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

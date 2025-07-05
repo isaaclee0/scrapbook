@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437311405/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/summer-food",
+    "CustomFileName": "88101736437311405",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437311405",
+      "url": "https://www.pinterest.com/pin/88101736437311405/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "PYSZNE Ciasto z agrestem - PRZEPIS - Mała Cukierenka",
+      "description": "Gooseberry cake",
+      "link": "http://www.malacukierenka.pl/ciasto-z-agrestem.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/summer-food/",
+        "name": "Summer food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/57/5e/9b/575e9b1f1efd991bda468ef9503a5c1d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

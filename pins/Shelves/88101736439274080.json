@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439274080/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/shelves",
+    "CustomFileName": "88101736439274080",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439274080",
+      "url": "https://www.pinterest.com/pin/88101736439274080/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Logo - visuell identitet - nettside | A Design Studio",
+      "description": "Living inspiration",
+      "link": "http://www.anetteshus.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/shelves/",
+        "name": "Shelves",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9e/c5/20/9ec5207d4292e72090275223bf6b040c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

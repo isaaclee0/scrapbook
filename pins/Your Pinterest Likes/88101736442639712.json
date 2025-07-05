@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442639712/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442639712",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442639712",
+      "url": "https://www.pinterest.com/pin/88101736442639712/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Oversized Frame Hangers",
+      "description": "Door knobs as picture hangers...",
+      "link": "http://www.potterybarn.com/products/oversized-wood-frame-hangers/?pkey=cframes-albums",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a1/45/d1/a145d1e771cbeee32bd0ddf7d3ce4770.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

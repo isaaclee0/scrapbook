@@ -1,0 +1,56 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453851572/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/shortlist-kitchen-ideas",
+    "CustomFileName": "88101736453851572",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453851572",
+      "url": "https://www.pinterest.com/pin/88101736453851572/",
+      "type": "pin",
+      "title": "English-Inspired Pantry Transformation",
+      "gridTitle": "English-Inspired Pantry Transformation",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 3,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "laineandlayne",
+        "url": "https://www.pinterest.com/laineandlayne/",
+        "name": "Laine and Layne"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/shortlist-kitchen-ideas/",
+        "name": "Shortlist  - kitchen ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3f/c8/8b/3fc88bc104446116f2d9bc331854d5d3.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/dd/6d/29/dd6d293cb89ab54ffdf31ac6548ce1b2.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/09/d3/70/09d370c58b7e13c30d601c02c89251f8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

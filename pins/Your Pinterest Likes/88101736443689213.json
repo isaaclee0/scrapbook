@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443689213/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443689213",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443689213",
+      "url": "https://www.pinterest.com/pin/88101736443689213/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Glitter Wall! HGTV says if you mix a gallon of glue with glitter, then paint with it, the glue will dry clear... Bam!! Glitter wall!!",
+      "link": "http://www.thebestwallpaperplace.com/browse-styles/glitter/glitter-sparkle-shades-of-white.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cf/c0/3c/cfc03c3687962e7c8e53ce693384af0e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

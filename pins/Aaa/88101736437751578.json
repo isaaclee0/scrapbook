@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437751578/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aaa",
+    "CustomFileName": "88101736437751578",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437751578",
+      "url": "https://www.pinterest.com/pin/88101736437751578/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Essential Weeknight Recipe: Thai Stir-Fried Greens with Oyster Sauce",
+      "description": "Thai Stir-Fried Greens with Oyster Sauce",
+      "link": "http://www.thekitchn.com/essential-weeknight-recipe-thai-stir-fried-greens-165551",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aaa/",
+        "name": "aaa",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/de/ce/99/dece99898c7c2e67b52a2c620de34d22.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

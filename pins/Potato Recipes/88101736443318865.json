@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443318865/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potato-recipes",
+    "CustomFileName": "88101736443318865",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443318865",
+      "url": "https://www.pinterest.com/pin/88101736443318865/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Recipes",
+      "description": "Cheese, potato and onion pie",
+      "link": "http://www.rivercottage.net/recipes/cheese-and-onion-pie/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potato-recipes/",
+        "name": "Potato Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a7/44/dc/a744dc9c7dff701a25c3524c7dc8d3d1.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

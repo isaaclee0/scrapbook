@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430731683/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430731683",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430731683",
+      "url": "https://www.pinterest.com/pin/88101736430731683/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Roasted Garlic Walnut Butter",
+      "description": "Roasted Garlic Walnut Butter",
+      "link": "http://www.heathersdish.com/1/roasted-garlic-walnut-butter/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/36/c8/ad/36c8adea7ceb207f1d997edd1772d9e3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

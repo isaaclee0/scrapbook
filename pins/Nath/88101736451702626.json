@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451702626/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/nath",
+    "CustomFileName": "88101736451702626",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451702626",
+      "url": "https://www.pinterest.com/pin/88101736451702626/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "did anyone order twins?",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "redheaddays",
+        "url": "https://www.pinterest.com/redheaddays/",
+        "name": "Redhead Days"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/nath/",
+        "name": "Nath",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5c/7b/8a/5c7b8ada2b00f28a75da0f7de17dce44.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

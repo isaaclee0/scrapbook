@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438309074/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bees",
+    "CustomFileName": "88101736438309074",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438309074",
+      "url": "https://www.pinterest.com/pin/88101736438309074/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Beehive Update",
+      "description": "What not to do: Beehive",
+      "link": "http://homesteadrevival.blogspot.com/2011/05/beehive-update.html?m=1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bees/",
+        "name": "Bees",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/22/89/92/2289926b3e95eb3e3da5aeb685d38405.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

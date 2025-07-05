@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452127158/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/make-up-etc/eyeshadow",
+    "CustomFileName": "88101736452127158",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452127158",
+      "url": "https://www.pinterest.com/pin/88101736452127158/",
+      "type": "pin",
+      "title": "eye maker",
+      "gridTitle": "eye maker",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/make-up-etc/",
+        "name": "Make-up etc",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/68/35/0d/68350df5e61f0468bdf405da089b120c.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

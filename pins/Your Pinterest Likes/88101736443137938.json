@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443137938/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443137938",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443137938",
+      "url": "https://www.pinterest.com/pin/88101736443137938/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Foodie - Live a Delicious Life: Kitchen Tips, Culinary History, Restaurant Recs",
+      "description": "How did I not know this? Brownies made in the waffle maker?? Brownies in 5 minutes??  Warm, and topped with ice cream? YUM.",
+      "link": "http://www.chow.com/food-news/54485/common-appliances-uncommon-uses/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e2/b6/ce/e2b6cea48b01700a61bc1146a26f4ca6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

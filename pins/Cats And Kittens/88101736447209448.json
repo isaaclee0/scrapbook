@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447209448/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736447209448",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447209448",
+      "url": "https://www.pinterest.com/pin/88101736447209448/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "FUNNIEST PERSIAN CATS EVER",
+      "description": "YES, it was a rough night.   And no, I'm not talking about it.",
+      "link": "http://catvix.com/persian/funniest-persian-cats-ever/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/83/92/cc/8392ccac2c5e76033936d80280692caa.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

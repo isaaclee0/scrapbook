@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441393607/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736441393607",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441393607",
+      "url": "https://www.pinterest.com/pin/88101736441393607/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Lemon-Herb Shortbread (AIP, Paleo) - Eat Heal Thrive",
+      "description": "Lemon-Herb Shortbread / AIP, Paleo",
+      "link": "http://eathealthrive.ca/lemon-herb-shortbread-aip-paleo/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/56/2a/c0/562ac0ae8b13d61555bbce5a61ea5f52.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

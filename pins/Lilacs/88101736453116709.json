@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453116709/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/lilacs",
+    "CustomFileName": "88101736453116709",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453116709",
+      "url": "https://www.pinterest.com/pin/88101736453116709/",
+      "type": "pin",
+      "title": "Lilac Simple Syrup",
+      "gridTitle": "Lilac Simple Syrup",
+      "description": " ",
+      "link": "https://familyspice.com/diy-gifts-lilac-simple-syrup/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "familyspice",
+        "url": "https://www.pinterest.com/familyspice/",
+        "name": "Laura | Family Spice"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/lilacs/",
+        "name": "Lilacs",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9e/ff/52/9eff52b81c86dd0441848f7dabcb3b0c.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/d7/c6/ce/d7c6ce919055ba071fd40edbefa95419.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

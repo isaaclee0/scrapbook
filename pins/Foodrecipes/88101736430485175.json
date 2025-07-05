@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430485175/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430485175",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430485175",
+      "url": "https://www.pinterest.com/pin/88101736430485175/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Spicy Lentils with Sweet Potatoes and Kale",
+      "description": "Spicy Lentils with sweet potatoes & Kale",
+      "link": "http://www.eatliverun.com/spicy-lentils-with-sweet-potatoes-and-kale/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/08/09/4c/08094cfdfb8596dadcb2b57595cbbb45.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

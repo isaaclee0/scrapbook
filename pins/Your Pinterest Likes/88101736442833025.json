@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442833025/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442833025",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442833025",
+      "url": "https://www.pinterest.com/pin/88101736442833025/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "My Dark Whisper.",
+      "description": " ",
+      "link": "http://mydarkwhisper.tumblr.com/post/52221979044",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1f/f4/1d/1ff41d6d16e6c53e93fe0fa2e870c818.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

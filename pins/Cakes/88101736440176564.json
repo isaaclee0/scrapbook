@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440176564/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736440176564",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440176564",
+      "url": "https://www.pinterest.com/pin/88101736440176564/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Seriously Delicious Hazelnut Sponge with Nutella Cream",
+      "description": "Hazelnut Sponge with Nutella Cream Cake",
+      "link": "http://bellyrumbles.com/hazelnut-sponge-with-nutella-cream-birthday-cake/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/22/c1/4f/22c14f7f144f9890b71796818a2404ea.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

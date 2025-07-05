@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439591208/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736439591208",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439591208",
+      "url": "https://www.pinterest.com/pin/88101736439591208/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Cat Door Window - Phase One - Doug's Blog",
+      "description": "DIY cat door in a window",
+      "link": "http://dougcone.com/blog/the-cat-door-window-phase-one/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a3/c2/78/a3c278b2cfda4fe6f6057b50ced46624.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

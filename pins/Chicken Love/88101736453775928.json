@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453775928/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-love",
+    "CustomFileName": "88101736453775928",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453775928",
+      "url": "https://www.pinterest.com/pin/88101736453775928/",
+      "type": "pin",
+      "title": "Swinging Chicken ",
+      "gridTitle": "Swinging Chicken",
+      "description": " ",
+      "link": "https://chickensontheranch.blog/2021/09/06/farmhouse-style-shedcoop/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ChickensontheRanch",
+        "url": "https://www.pinterest.com/ChickensontheRanch/",
+        "name": "Chickens |onthe| Ranch"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-love/",
+        "name": "Chicken love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d6/fa/16/d6fa169e3e090b11f752c7053810a5e8.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/86/b1/48/86b148a126f7c4f6384fc148ad68ee21.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

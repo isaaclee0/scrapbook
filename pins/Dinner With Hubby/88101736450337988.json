@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450337988/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/dinner-with-hubby",
+    "CustomFileName": "88101736450337988",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450337988",
+      "url": "https://www.pinterest.com/pin/88101736450337988/",
+      "type": "pin",
+      "title": "Stuffed Pears in Puff Pastry",
+      "gridTitle": "Stuffed Pears in Puff Pastry",
+      "description": "Cozy up to this warm, sweet chocolate-stuffed poached pear wrapped tight in a flaky puffed pastry.",
+      "link": "https://www.tastemade.com/videos/937_stuffed_pears_in_puff_pastry",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemade",
+        "url": "https://www.pinterest.com/tastemade/",
+        "name": "Tastemade"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/dinner-with-hubby/",
+        "name": "Dinner with hubby",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8a/88/8a/8a888a29aa42863b7d20a9864a393a7b.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/76/b7/78/76b7788ecdca14b009cd16ac623ea91f.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

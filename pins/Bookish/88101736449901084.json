@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449901084/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736449901084",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449901084",
+      "url": "https://www.pinterest.com/pin/88101736449901084/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Anne of Ingleside",
+      "description": "Anne of Ingleside by L.M. Montgomery",
+      "link": "http://kamislibrarythoughts.blogspot.com/2015/05/anne-of-ingleside.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f6/40/3b/f6403b3d4ee1eb8d55a13a916bdfd845.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

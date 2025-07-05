@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449847931/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736449847931",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449847931",
+      "url": "https://www.pinterest.com/pin/88101736449847931/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Grey Rabbit and the Wandering Hedgehog by Alison Uttley",
+      "description": "One of my favourite books as a child - Grey Rabbit and the Wandering Hedgehog by Alison Uttley",
+      "link": "http://childrensbookshop.com/book.php?cno=58198",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/da/03/ce/da03cebc218e41a22632a45df6d298a0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

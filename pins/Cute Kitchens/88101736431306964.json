@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431306964/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cute-kitchens",
+    "CustomFileName": "88101736431306964",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431306964",
+      "url": "https://www.pinterest.com/pin/88101736431306964/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "I like that green.",
+      "link": "http://che-amore.tumblr.com/page/10",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cute-kitchens/",
+        "name": "Cute Kitchens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/57/64/bd/5764bd1f15346c4d07677030482f23a4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

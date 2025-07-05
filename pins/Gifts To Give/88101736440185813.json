@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440185813/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/gifts-to-give",
+    "CustomFileName": "88101736440185813",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440185813",
+      "url": "https://www.pinterest.com/pin/88101736440185813/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Floral poodle",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "leikela12",
+        "url": "https://www.pinterest.com/leikela12/",
+        "name": "Rachel Paleafei"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/gifts-to-give/",
+        "name": "Gifts to give",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ab/06/b6/ab06b63cbb8e6f429eb53b0235aae8cd.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

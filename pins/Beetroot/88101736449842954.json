@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449842954/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/beetroot",
+    "CustomFileName": "88101736449842954",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449842954",
+      "url": "https://www.pinterest.com/pin/88101736449842954/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Beet Crust Pizza",
+      "description": "Beet Crust Pizza | Bakers Royale",
+      "link": "http://www.bakersroyale.com/savory/beet-crust-pizza/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/beetroot/",
+        "name": "Beetroot",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/94/06/ff/9406ff3b8cd6748c4d4b666d8be41a47.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

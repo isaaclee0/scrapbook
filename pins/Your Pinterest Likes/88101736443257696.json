@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443257696/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443257696",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443257696",
+      "url": "https://www.pinterest.com/pin/88101736443257696/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Simplifying Moves with Care and Precision",
+      "description": "Spring Door",
+      "link": "http://www.lidbeckbrent.com/portfolio2.php?portfolio=crafts",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7f/b9/d8/7fb9d8c46623248820716c18b15d6d71.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

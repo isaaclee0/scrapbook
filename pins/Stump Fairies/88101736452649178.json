@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452649178/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/stump-fairies",
+    "CustomFileName": "88101736452649178",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452649178",
+      "url": "https://www.pinterest.com/pin/88101736452649178/",
+      "type": "pin",
+      "title": "Window on the fairy house",
+      "gridTitle": "Window on the fairy house",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "anasego3",
+        "url": "https://www.pinterest.com/anasego3/",
+        "name": "Ana Sego"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/stump-fairies/",
+        "name": "Stump Fairies",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ad/c7/1a/adc71ad419fd99cdbb398edb0c521fc9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435448435/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/sunrooms",
+    "CustomFileName": "88101736435448435",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435448435",
+      "url": "https://www.pinterest.com/pin/88101736435448435/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "X",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/sunrooms/",
+        "name": "Sunrooms",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1a/29/dd/1a29dd35e948f3f61de37f8c93719144.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

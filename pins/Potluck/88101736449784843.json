@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449784843/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potluck",
+    "CustomFileName": "88101736449784843",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449784843",
+      "url": "https://www.pinterest.com/pin/88101736449784843/",
+      "type": "pin",
+      "title": "Cornetti party",
+      "gridTitle": "Cornetti party",
+      "description": "Dal cuore filante e saporito",
+      "link": "https://chefclubtv.app.link/p61z5EKFKS",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "chefclubitalia",
+        "url": "https://www.pinterest.com/chefclubitalia/",
+        "name": "Chefclub Italia"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potluck/",
+        "name": "Potluck",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/18/c8/de/18c8de26118396c4d0496c4318920ee7.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/v2/720p/b9/d4/03/b9d4031f3617d1d28e794df33cbb0fd5_mobile.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435261464/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736435261464",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435261464",
+      "url": "https://www.pinterest.com/pin/88101736435261464/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chocolate Chip Cherry Cheesecake",
+      "description": "Chocolate Chip Cherry Cheesecake by raspberri cupcakes",
+      "link": "http://www.raspberricupcakes.com/2012/02/chocolate-chip-cherry-cheesecake.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e0/5d/39/e05d39a80dd23d9088e4d61c43e4209a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

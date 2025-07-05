@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439231112/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736439231112",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439231112",
+      "url": "https://www.pinterest.com/pin/88101736439231112/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "24 Easy Meals You Can Make With Rotisserie Chicken",
+      "description": "Mini Tex-Mex Chicken and Cheese Pies",
+      "link": "http://www.buzzfeed.com/christinebyrne/rotisserie-me?utm_term=.fd9ZQP6nk",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1c/3d/52/1c3d52458173eb347bc5308303ce7ba8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

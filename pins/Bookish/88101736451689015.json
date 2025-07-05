@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451689015/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736451689015",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451689015",
+      "url": "https://www.pinterest.com/pin/88101736451689015/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Book Review: Sold On A Monday",
+      "description": "This book \"Sold On A Monday\" is a fictional account of the dire circumstance people found themselves in back in the 1930s.",
+      "link": "https://cozylittlehouse.com/2018/09/book-review-sold-on-a-monday.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/07/81/d1/0781d19c8d03f197fb3d255274d67e1e.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

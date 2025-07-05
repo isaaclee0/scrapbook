@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449830790/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/packed-lunch",
+    "CustomFileName": "88101736449830790",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449830790",
+      "url": "https://www.pinterest.com/pin/88101736449830790/",
+      "type": "pin",
+      "title": "EASY Mediterranean Lunch Bowls (vegan, gluten-free)",
+      "gridTitle": "EASY Mediterranean Lunch Bowls (vegan, gluten-free)",
+      "description": "A flavorful and veggie packed lunch in the amount of time it takes to cook quinoa!",
+      "link": "https://www.glowinglywell.com/blog/2019/3/10/easy-mediterranean-lunch-bowls-vegan-gluten-free-mealprep",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "glowinglywell",
+        "url": "https://www.pinterest.com/glowinglywell/",
+        "name": "Glowingly Well"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/packed-lunch/",
+        "name": "Packed lunch",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/eb/e3/bd/ebe3bd063694b6ad3c1ad1bb7e624b41.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/d2/e2/7a/d2e27a3b24248a0dc8e7f6112eed900d.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442904311/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442904311",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442904311",
+      "url": "https://www.pinterest.com/pin/88101736442904311/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Bailey Modest Dress in Mint",
+      "description": "Bailey Modest Dress in Mint ---> this site has super cute modest skirts and dresses!",
+      "link": "http://www.jenclothing.com/mi-9001-bailey-mint.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/19/c3/f0/19c3f0a1ec022eee7d7901ae2c823eb2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

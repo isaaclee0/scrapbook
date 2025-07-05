@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436304873/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/shelves",
+    "CustomFileName": "88101736436304873",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436304873",
+      "url": "https://www.pinterest.com/pin/88101736436304873/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Photo of the Day Winner's Gallery Page",
+      "description": "open shelving",
+      "link": "http://www.dailydigitalphoto.com/cgi-bin/potd/potd_gallery.pl?to_month=6&to_year=2009",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/shelves/",
+        "name": "Shelves",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3f/25/d9/3f25d991b073cd241f7a188b58730a47.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

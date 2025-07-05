@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453122814/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-dreams",
+    "CustomFileName": "88101736453122814",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453122814",
+      "url": "https://www.pinterest.com/pin/88101736453122814/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Red",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "barbrakip1",
+        "url": "https://www.pinterest.com/barbrakip1/",
+        "name": "barb chancey"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-dreams/",
+        "name": "Cottage Dreams",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9a/17/19/9a17194c107d8e5f3db3daaf59551609.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

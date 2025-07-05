@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443550714/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443550714",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443550714",
+      "url": "https://www.pinterest.com/pin/88101736443550714/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Make three ponytails, braid, then twist into three buns and pin.",
+      "description": "Make three ponytails, braid, then twist into three buns and pin. I wish I had the hair for this :)",
+      "link": "http://longhairstyleshowto.com/make-three-ponytails-braid-then-twist-into-three-buns-and-pin/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/79/dc/6a/79dc6a58f2ca06fda76399ed6bc02162.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441997544/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736441997544",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441997544",
+      "url": "https://www.pinterest.com/pin/88101736441997544/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Pass It On",
+      "description": "See how children around the world have acted on President Thomas S. Monson’s counsel to find a way to serve others.",
+      "link": "http://youtu.be/Tf0JeKDK8aA",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d0/ae/79/d0ae794d31fb904eeba0924ec4fd3280.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

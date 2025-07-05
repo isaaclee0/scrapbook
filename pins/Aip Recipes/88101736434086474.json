@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434086474/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736434086474",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434086474",
+      "url": "https://www.pinterest.com/pin/88101736434086474/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Need a Change of Pace? Try Rabbit Stew with Mushrooms",
+      "description": "Rabbit Stew with Mushrooms",
+      "link": "http://www.simplyrecipes.com/recipes/rabbit_stew_with_mushrooms/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5b/cb/43/5bcb432f4c524f66554e515e382ef511.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

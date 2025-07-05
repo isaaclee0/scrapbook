@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430457203/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430457203",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430457203",
+      "url": "https://www.pinterest.com/pin/88101736430457203/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Spinach and Artichoke Baked Pasta - Budget Savvy Diva",
+      "description": "Spinach and Artichoke Baked Pasta",
+      "link": "http://www.budgetsavvydiva.com/2012/02/spinach-artichoke-baked-pasta/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c7/3f/ee/c73fee20f653f0fb0c4d293076aacc72.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450865780/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/springer-spaniels",
+    "CustomFileName": "88101736450865780",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450865780",
+      "url": "https://www.pinterest.com/pin/88101736450865780/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "He Doesn't Like It",
+      "description": "He Doesn't Like It",
+      "link": "http://cheezburger.com/7754328576",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/springer-spaniels/",
+        "name": "Springer Spaniels",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4e/d2/fa/4ed2fa3d163a4a8057f894bff8b06161.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

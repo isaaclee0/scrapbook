@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453693679/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painted-furniture-etc",
+    "CustomFileName": "88101736453693679",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453693679",
+      "url": "https://www.pinterest.com/pin/88101736453693679/",
+      "type": "pin",
+      "title": "Painting Furniture",
+      "gridTitle": "Painting Furniture",
+      "description": " ",
+      "link": "https://www.thetopdrawerrva.com/blog",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "thetopdrawerrva",
+        "url": "https://www.pinterest.com/thetopdrawerrva/",
+        "name": "The Top Drawer RVA"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painted-furniture-etc/",
+        "name": "Painted Furniture etc",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bb/6d/25/bb6d2523b3a5f56eca0653c1da8e57c1.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/65/35/8e/65358eec54558fd84cc59ef34e3b25ea.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

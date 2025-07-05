@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434574187/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pasta",
+    "CustomFileName": "88101736434574187",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434574187",
+      "url": "https://www.pinterest.com/pin/88101736434574187/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Today's Sales",
+      "description": "The French Laundry’s Revolutionary (Gluten Free!) Pasta Dough Recipe",
+      "link": "http://www.gilttaste.com/stories/4964-the-french-laundry-s-revolutionary-gluten-free-pasta-dough-recipe",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pasta/",
+        "name": "Pasta",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ae/59/6b/ae596b3855b473722d13ce7fc20eebc3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

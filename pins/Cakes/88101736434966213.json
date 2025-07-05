@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434966213/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736434966213",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434966213",
+      "url": "https://www.pinterest.com/pin/88101736434966213/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Pink Peppercorn Brownies",
+      "description": "Pink Peppercorn Brownies",
+      "link": "http://www.raspberricupcakes.com/2013/01/pink-peppercorn-brownies.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/82/ef/88/82ef883909f0a612c65dde1a9920ce90.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

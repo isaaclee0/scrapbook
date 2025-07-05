@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450628312/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/vegetables-growing-them",
+    "CustomFileName": "88101736450628312",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450628312",
+      "url": "https://www.pinterest.com/pin/88101736450628312/",
+      "type": "pin",
+      "title": "Gardening Hacks You’ll Want To Know",
+      "gridTitle": "Gardening Hacks You’ll Want To Know",
+      "description": " ",
+      "link": "https://brightside.me/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "5minutecraftsofficial",
+        "url": "https://www.pinterest.com/5minutecraftsofficial/",
+        "name": "5-Minute Crafts"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/vegetables-growing-them/",
+        "name": "Vegetables  - growing them",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2c/99/69/2c9969db4de4ed34ccce2c826e13142d.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/d6/2f/a6/d62fa6c81b4750092d06a48b264d525c.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

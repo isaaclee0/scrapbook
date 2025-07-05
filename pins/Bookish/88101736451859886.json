@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451859886/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736451859886",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451859886",
+      "url": "https://www.pinterest.com/pin/88101736451859886/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The magic of Edward Ardizzone",
+      "description": " ",
+      "link": "https://andrejaaillustration.wordpress.com/2013/09/14/the-magic-of-edward-ardizzone/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c2/91/c8/c291c8d4bb18fab1d184c030b0f0ef25.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

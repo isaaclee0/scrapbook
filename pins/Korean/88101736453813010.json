@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453813010/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/korean",
+    "CustomFileName": "88101736453813010",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453813010",
+      "url": "https://www.pinterest.com/pin/88101736453813010/",
+      "type": "pin",
+      "title": "Easy 10-min. Korean Spinach Side Dish",
+      "gridTitle": "Easy 10-min. Korean Spinach Side Dish",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/korean/",
+        "name": "Korean",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/7b/cf/f5/7bcff5b12e5c9929c32d48e238e20a4d.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

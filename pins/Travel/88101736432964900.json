@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432964900/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/travel",
+    "CustomFileName": "88101736432964900",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432964900",
+      "url": "https://www.pinterest.com/pin/88101736432964900/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Garden Tomb - Wikipedia",
+      "description": "Garden Tomb, Jerusalem",
+      "link": "http://en.wikipedia.org/wiki/Garden_Tomb",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/travel/",
+        "name": "Travel",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/24/5b/01/245b015887bedc9beed66e5f2ea59359.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

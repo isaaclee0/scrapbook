@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445030823/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painting-things",
+    "CustomFileName": "88101736445030823",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445030823",
+      "url": "https://www.pinterest.com/pin/88101736445030823/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "I cannot put into words how much I love this. My favorite ever!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "pureevil",
+        "url": "https://www.pinterest.com/pureevil/",
+        "name": "Kate Clark"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painting-things/",
+        "name": "Painting things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ca/aa/7b/caaa7b3bdd642990ce7126554d8f62fe.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

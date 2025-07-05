@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450303462/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/for-the-home",
+    "CustomFileName": "88101736450303462",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450303462",
+      "url": "https://www.pinterest.com/pin/88101736450303462/",
+      "type": "pin",
+      "title": "Coin Sorter Tray",
+      "gridTitle": "Coin Sorter Tray",
+      "description": " ",
+      "link": "https://funnyfoto.org/gifs/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "funmemepics",
+        "url": "https://www.pinterest.com/funmemepics/",
+        "name": "FunnyFoto 😁"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/for-the-home/",
+        "name": "For the Home",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/61/27/d7/6127d751061c48449f6a7eec5e826979.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/f0/6d/60/f06d607b93c549bffc4656024b496dab.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

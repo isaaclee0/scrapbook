@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441113888/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/renovating-ideas",
+    "CustomFileName": "88101736441113888",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441113888",
+      "url": "https://www.pinterest.com/pin/88101736441113888/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "My deck.. Another drawer under the deck hidden by the skirting...",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/renovating-ideas/",
+        "name": "Renovating ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cc/e8/9e/cce89e7ea822974af89cc4d08981570d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

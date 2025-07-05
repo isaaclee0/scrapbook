@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437769513/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/soup",
+    "CustomFileName": "88101736437769513",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437769513",
+      "url": "https://www.pinterest.com/pin/88101736437769513/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Zupas Wisconsin Cauliflower Soup",
+      "description": "Cauliflower soup",
+      "link": "http://lecremedelacrumb.com/2014/10/zupas-wisconsin-cauliflower-soup.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "cremedelacrumb",
+        "url": "https://www.pinterest.com/cremedelacrumb/",
+        "name": "Creme De La Crumb | Simple & Tasty Recipes"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/soup/",
+        "name": "Soup",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a0/69/19/a06919efdcb711d638b04ea5502f88a5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

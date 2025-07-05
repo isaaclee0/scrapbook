@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452794729/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-love",
+    "CustomFileName": "88101736452794729",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452794729",
+      "url": "https://www.pinterest.com/pin/88101736452794729/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "PVC aviary netting chicken run",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "braddavison22",
+        "url": "https://www.pinterest.com/braddavison22/",
+        "name": "Brad Davison"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-love/",
+        "name": "Chicken love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1f/71/63/1f71634e3eb9cdc0ccda17d098f5bf7c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

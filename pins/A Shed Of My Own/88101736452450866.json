@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452450866/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/a-shed-of-my-own",
+    "CustomFileName": "88101736452450866",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452450866",
+      "url": "https://www.pinterest.com/pin/88101736452450866/",
+      "type": "pin",
+      "title": "Mornings in the garden",
+      "gridTitle": "Mornings in the garden",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "hydrandgeafarmhouse",
+        "url": "https://www.pinterest.com/hydrandgeafarmhouse/",
+        "name": "Hydrangea Farmhouse"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/a-shed-of-my-own/",
+        "name": "A Shed of My Own..",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b3/0b/e8/b30be8e121a06ea4a1cf4b155eb3cbdb.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

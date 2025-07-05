@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446995017/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/garden-travel",
+    "CustomFileName": "88101736446995017",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446995017",
+      "url": "https://www.pinterest.com/pin/88101736446995017/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "wildflowers - Kings park",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "mgrayden",
+        "url": "https://www.pinterest.com/mgrayden/",
+        "name": "Marina Grayden"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/garden-travel/",
+        "name": "Garden Travel",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/51/10/c7/5110c725e7151c1f52e37b1832f865d2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

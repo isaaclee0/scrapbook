@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452633160/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/laundry",
+    "CustomFileName": "88101736452633160",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452633160",
+      "url": "https://www.pinterest.com/pin/88101736452633160/",
+      "type": "pin",
+      "title": "Pull out laundry drawer",
+      "gridTitle": "Pull out laundry drawer",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "peculiarivy",
+        "url": "https://www.pinterest.com/peculiarivy/",
+        "name": "Domo"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/laundry/",
+        "name": "Laundry",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/eb/82/b1/eb82b1fcccfe1d86d7c5815d5a8d6bfc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

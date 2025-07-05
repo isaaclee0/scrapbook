@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438651273/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/duck-recipes",
+    "CustomFileName": "88101736438651273",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438651273",
+      "url": "https://www.pinterest.com/pin/88101736438651273/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Best Duck Recipes | MissHomemade.com",
+      "description": "Wild Duck Recipes, Roast Duck, Duckling Recipes - MissHomemade.com",
+      "link": "http://www.misshomemade.com/duckrecipes.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/duck-recipes/",
+        "name": "Duck Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e5/4d/02/e54d0217ba569893cc7f717b33a05388.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433653345/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/asian-food",
+    "CustomFileName": "88101736433653345",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433653345",
+      "url": "https://www.pinterest.com/pin/88101736433653345/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Girl Who Ate Everything",
+      "description": "Asian Turkey Meatballs with Lime Dipping Sauce",
+      "link": "http://www.the-girl-who-ate-everything.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/asian-food/",
+        "name": "Asian Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e0/3c/57/e03c57911e143d001bd3534fbb9ab1d7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

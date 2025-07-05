@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451482356/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/jam-relish-chutney",
+    "CustomFileName": "88101736451482356",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451482356",
+      "url": "https://www.pinterest.com/pin/88101736451482356/",
+      "type": "pin",
+      "title": "Homemade Mustard DIY",
+      "gridTitle": "Homemade Mustard DIY",
+      "description": "Learning how to make mustard is a lot easier than you'd think. In fact, this homemade mustard recipe is super simple and takes just under an hour to whip up a batch.",
+      "link": "https://www.alphafoodie.com/how-to-make-mustard-homemade-mustard",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "alphafoodie",
+        "url": "https://www.pinterest.com/alphafoodie/",
+        "name": "Alphafoodie"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/jam-relish-chutney/",
+        "name": "Jam, Relish, Chutney..",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/48/52/f4/4852f413a210ad349ff447749d87e74c.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/d7/8e/c5/d78ec5cbfd4c89fec4af14cfd8bb0a0d.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436269096/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-dreams",
+    "CustomFileName": "88101736436269096",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436269096",
+      "url": "https://www.pinterest.com/pin/88101736436269096/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "pretty little cottage",
+      "link": "http://tarahlowry.blogspot.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 5,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-dreams/",
+        "name": "Cottage Dreams",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/78/de/2d/78de2d691af99b2291a77e409f7135f2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

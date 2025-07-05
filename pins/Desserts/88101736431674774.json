@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431674774/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736431674774",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431674774",
+      "url": "https://www.pinterest.com/pin/88101736431674774/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Simple Baked Apples Recipe | My Baking Addiction",
+      "description": "Inside-Out Apple Crisp | My Baking Addiction",
+      "link": "http://www.mybakingaddiction.com/inside-out-apple-crisp/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/92/86/a6/9286a6bcb2843265d19bb1294a0a351a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

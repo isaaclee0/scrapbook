@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441506904/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736441506904",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441506904",
+      "url": "https://www.pinterest.com/pin/88101736441506904/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Tea with cookies",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Zoubeida",
+        "url": "https://www.pinterest.com/Zoubeida/",
+        "name": "ZouZou"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/32/3f/c0/323fc0ef114c526e8aa2ad94d6166108.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

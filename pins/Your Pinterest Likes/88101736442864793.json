@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442864793/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442864793",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442864793",
+      "url": "https://www.pinterest.com/pin/88101736442864793/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Apple Pie Cookies - falllllll",
+      "link": "http://www.sirchef.info/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/67/5c/1b/675c1b23dccf6994a49f69a87a439807.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

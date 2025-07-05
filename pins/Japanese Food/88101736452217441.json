@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452217441/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/japanese-food",
+    "CustomFileName": "88101736452217441",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452217441",
+      "url": "https://www.pinterest.com/pin/88101736452217441/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Sushi with flavored sesame seeds. (Wasabi or Soy Sauce)",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tapasmargarita",
+        "url": "https://www.pinterest.com/tapasmargarita/",
+        "name": "Marga Nijhuis"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/japanese-food/",
+        "name": "Japanese Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3d/a6/64/3da664ba6898bd32c8951df64e4efd58.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

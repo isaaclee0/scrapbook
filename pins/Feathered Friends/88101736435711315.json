@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435711315/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/feathered-friends",
+    "CustomFileName": "88101736435711315",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435711315",
+      "url": "https://www.pinterest.com/pin/88101736435711315/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Straight Line Designs",
+      "description": "bird house",
+      "link": "http://www.straightlinedesigns.com/bird.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/feathered-friends/",
+        "name": "Feathered friends",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5a/41/b8/5a41b8317f12ebe89d257afc9a321443.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

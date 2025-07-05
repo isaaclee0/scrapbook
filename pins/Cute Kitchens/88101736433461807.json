@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433461807/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cute-kitchens",
+    "CustomFileName": "88101736433461807",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433461807",
+      "url": "https://www.pinterest.com/pin/88101736433461807/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Vintage Mint Kitchen...",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ambungalow",
+        "url": "https://www.pinterest.com/ambungalow/",
+        "name": "American Bungalow Magazine"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cute-kitchens/",
+        "name": "Cute Kitchens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/63/3e/39/633e3956701738f50e937f00d7ac661b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453441832/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736453441832",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453441832",
+      "url": "https://www.pinterest.com/pin/88101736453441832/",
+      "type": "pin",
+      "title": "✨Twisted Headband✨",
+      "gridTitle": "✨Twisted Headband✨",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/31/1d/c8/311dc882d143de58f8976cdbb33ba194.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/1d/a7/02/1da702fe623c81a2d52046a0f2ecf066.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

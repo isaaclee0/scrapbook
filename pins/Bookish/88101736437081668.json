@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437081668/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736437081668",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437081668",
+      "url": "https://www.pinterest.com/pin/88101736437081668/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Charlotte Mason",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "simplycm",
+        "url": "https://www.pinterest.com/simplycm/",
+        "name": "Simply Charlotte Mason"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6a/52/4b/6a524b990016e763dd9809eb8b2b79e5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

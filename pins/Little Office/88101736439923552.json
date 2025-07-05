@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439923552/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/little-office",
+    "CustomFileName": "88101736439923552",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439923552",
+      "url": "https://www.pinterest.com/pin/88101736439923552/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Aspiring Writer",
+      "description": "This is brilliant.",
+      "link": "http://www.flickr.com/photos/gusparaguss/35677388/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/little-office/",
+        "name": "Little Office",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e1/b2/28/e1b2284b10d2b2fe6affc25bfbb330fd.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

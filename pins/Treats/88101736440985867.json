@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440985867/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736440985867",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440985867",
+      "url": "https://www.pinterest.com/pin/88101736440985867/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Philippa Sibley: Raspberry marshmallows",
+      "description": "Philippa Sibley: Raspberry marshmallows.",
+      "link": "http://www.gourmettraveller.com.au/philippa-sibley-raspberry-marshmallows.htm",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9f/71/93/9f7193b463becf7edf49a57d0564fdd9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

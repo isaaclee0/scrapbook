@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447356722/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/rabbit-care",
+    "CustomFileName": "88101736447356722",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447356722",
+      "url": "https://www.pinterest.com/pin/88101736447356722/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "sandraluthold",
+        "url": "https://www.pinterest.com/sandraluthold/",
+        "name": "Sandra Lüthold"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/rabbit-care/",
+        "name": "Rabbit care",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8e/0f/47/8e0f47b5f2efc68e27e32033a1ac973e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

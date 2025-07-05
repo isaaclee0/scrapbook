@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434956501/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736434956501",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434956501",
+      "url": "https://www.pinterest.com/pin/88101736434956501/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Lemon-Garlic Shrimp with Zucchini Noodles and Spinach (Gluten Free, AIP, Paleo)",
+      "description": "Lemon-Garlic Shrimp with Zucchini Noodles and Spinach - Leave out pepper for full AIP",
+      "link": "http://livinthecrunchylife.blogspot.com/2013/08/lemon-garlic-shrimp-with-zucchini.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/46/8f/1e/468f1e408ba125c2488f7b43c22aee50.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

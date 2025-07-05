@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453782212/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tile",
+    "CustomFileName": "88101736453782212",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453782212",
+      "url": "https://www.pinterest.com/pin/88101736453782212/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Devonstone Grey Tiles",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "emkforgione",
+        "url": "https://www.pinterest.com/emkforgione/",
+        "name": "Emily Forgione"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tile/",
+        "name": "Tile",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/33/ec/03/33ec0355486e24b4d2b2163de3b49be7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438122532/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/craft-ideas",
+    "CustomFileName": "88101736438122532",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438122532",
+      "url": "https://www.pinterest.com/pin/88101736438122532/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "DIY Vase of Glue",
+      "description": "DIY Vase of Glitter.",
+      "link": "http://www.usefuldiy.com/diy-vase-of-glue/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/craft-ideas/",
+        "name": "Craft Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3f/5c/66/3f5c666d352e18a171b4b0cea5dec66e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

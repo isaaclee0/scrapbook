@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434223478/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736434223478",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434223478",
+      "url": "https://www.pinterest.com/pin/88101736434223478/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Log in",
+      "description": "trees",
+      "link": "http://re-cycled.livejournal.com/362078.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c2/af/ae/c2afae54d03e39b3d3cf4519a2587e38.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

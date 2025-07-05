@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436312532/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736436312532",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436312532",
+      "url": "https://www.pinterest.com/pin/88101736436312532/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Paleo AIP Grocery List",
+      "description": "Autoimmune Paleo Shopping List",
+      "link": "http://www.phoenixhelix.com/2013/06/02/paleo-aip-grocery-list/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c4/a1/26/c4a1261e1b3c8d8d60a35c3e8b43e0ef.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

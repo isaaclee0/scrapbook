@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431481540/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736431481540",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431481540",
+      "url": "https://www.pinterest.com/pin/88101736431481540/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Kristen Welch",
+      "description": "<3",
+      "link": "http://wearethatfamily.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fd/c4/a2/fdc4a2cdb73e08f3fb2585d9ec935011.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

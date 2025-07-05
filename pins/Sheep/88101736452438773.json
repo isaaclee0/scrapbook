@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452438773/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/sheep",
+    "CustomFileName": "88101736452438773",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452438773",
+      "url": "https://www.pinterest.com/pin/88101736452438773/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "beautiful photo of Icelandic sheep",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/sheep/",
+        "name": "Sheep",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/77/09/37/7709376ab8d0440a842466cb119b5e3d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

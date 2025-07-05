@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441922195/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736441922195",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441922195",
+      "url": "https://www.pinterest.com/pin/88101736441922195/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Funny Pictures Of The Day - 93 Pics",
+      "description": "I think we have this book.",
+      "link": "http://www.dumpaday.com/random-pictures/funny-pictures/funny-pictures-of-the-day-93-pics-2/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9f/17/ec/9f17ecd15ea8c6257bccef5b9626542c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

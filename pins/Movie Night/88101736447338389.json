@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447338389/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736447338389",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447338389",
+      "url": "https://www.pinterest.com/pin/88101736447338389/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Lady Vanishes (2013)",
+      "description": "2013",
+      "link": "http://www.imdb.com/title/tt2183152/mediaviewer/rm945314816",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0f/34/7e/0f347edbeeadea9b21b667ca4110e1f5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

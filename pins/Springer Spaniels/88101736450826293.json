@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450826293/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/springer-spaniels",
+    "CustomFileName": "88101736450826293",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450826293",
+      "url": "https://www.pinterest.com/pin/88101736450826293/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Merry Christmas!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "alisaquint",
+        "url": "https://www.pinterest.com/alisaquint/",
+        "name": "ALISA QUINT INTERIOR DESIGN"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/springer-spaniels/",
+        "name": "Springer Spaniels",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c4/44/10/c44410cfbbb872d1dab1375e802a5659.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436197534/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bedrooms",
+    "CustomFileName": "88101736436197534",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436197534",
+      "url": "https://www.pinterest.com/pin/88101736436197534/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Cottage style bedroom",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bedrooms/",
+        "name": "Bedrooms",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d4/cc/25/d4cc253d606ff2b14d42c8423e55c213.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

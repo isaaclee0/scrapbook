@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453132578/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/exercise-it",
+    "CustomFileName": "88101736453132578",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453132578",
+      "url": "https://www.pinterest.com/pin/88101736453132578/",
+      "type": "pin",
+      "title": "Whole Body Fat Burning!",
+      "gridTitle": "Whole Body Fat Burning!",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "egellacom",
+        "url": "https://www.pinterest.com/egellacom/",
+        "name": "Egella"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/exercise-it/",
+        "name": "Exercise it",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8f/91/40/8f9140919baeacad48c731621bb0d472.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/8e/28/1e/8e281eafca2018cc451ba7014fc4323b.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

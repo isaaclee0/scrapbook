@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450734115/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/goldens",
+    "CustomFileName": "88101736450734115",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450734115",
+      "url": "https://www.pinterest.com/pin/88101736450734115/",
+      "type": "pin",
+      "title": "Winnie the Golden loves her mailman",
+      "gridTitle": "Winnie the Golden loves her mailman",
+      "description": " ",
+      "link": "https://animalonplanet.com/tag/videos/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "animalonplanet",
+        "url": "https://www.pinterest.com/animalonplanet/",
+        "name": "Animal On Planet"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/goldens/",
+        "name": "Goldens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6b/fd/26/6bfd260e6c5ddf2484a1784659e77f0f.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/62/b7/b1/62b7b10eb6183cfcaf0dd7c6648ebbcf.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

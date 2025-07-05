@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452333386/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/springer-spaniels",
+    "CustomFileName": "88101736452333386",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452333386",
+      "url": "https://www.pinterest.com/pin/88101736452333386/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Black & white and love all over.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "sheridananna",
+        "url": "https://www.pinterest.com/sheridananna/",
+        "name": "Anna Carpineta"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/springer-spaniels/",
+        "name": "Springer Spaniels",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/56/28/68/562868b0cf92f4dbc481d5c64b783bfa.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452524859/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pastries",
+    "CustomFileName": "88101736452524859",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452524859",
+      "url": "https://www.pinterest.com/pin/88101736452524859/",
+      "type": "pin",
+      "title": "Chicken Pot Pie Biscuits",
+      "gridTitle": "Chicken Pot Pie Biscuits",
+      "description": " ",
+      "link": "https://www.tastemade.com/videos/chicken-pot-pie-biscuits",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemade",
+        "url": "https://www.pinterest.com/tastemade/",
+        "name": "Tastemade"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pastries/",
+        "name": "pastries",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f6/2c/83/f62c8392444f189f281e45a626abb7c6.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/51/ec/b2/51ecb2736bfe723e5754f1f3f1301691.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

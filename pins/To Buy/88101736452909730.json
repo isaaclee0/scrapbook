@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452909730/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/to-buy",
+    "CustomFileName": "88101736452909730",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452909730",
+      "url": "https://www.pinterest.com/pin/88101736452909730/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Elevation: Doing It the Right Way",
+      "description": " ",
+      "link": "https://bonesmart.org/forum/threads/elevation-doing-it-the-right-way.7602/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/to-buy/",
+        "name": "To buy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4b/31/f3/4b31f30a55b0380912087c23ac59dd32.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

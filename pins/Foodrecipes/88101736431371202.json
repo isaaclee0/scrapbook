@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431371202/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736431371202",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431371202",
+      "url": "https://www.pinterest.com/pin/88101736431371202/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Chicken & Broccoli Alfredo (uses Greek yogurt and olive oil instead of heavy cream and butter)....",
+      "link": "http://www.celebrations.com/content/skinny-chicken-broccoli-alfredo",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2f/ae/4a/2fae4aa5c49f35742c5d7b870b26993b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

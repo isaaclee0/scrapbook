@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434471928/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/photography-tips/portraits",
+    "CustomFileName": "88101736434471928",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434471928",
+      "url": "https://www.pinterest.com/pin/88101736434471928/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Now & Then",
+      "description": "Now & Then portrait",
+      "link": "http://www.flickr.com/photos/7470307@N06/6841942291",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/photography-tips/",
+        "name": "Photography tips",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cc/df/e8/ccdfe888f49c9f8335dcc78c12e4abf2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441022213/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/soap",
+    "CustomFileName": "88101736441022213",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441022213",
+      "url": "https://www.pinterest.com/pin/88101736441022213/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "My Basic Soap Recipe",
+      "description": "My Basic Soap Recipe",
+      "link": "http://suburbanjubilee.blogspot.com.au/2014/02/my-basic-soap-recipe.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/soap/",
+        "name": "Soap",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fd/32/06/fd320623114c79643cf69678b0e833c5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

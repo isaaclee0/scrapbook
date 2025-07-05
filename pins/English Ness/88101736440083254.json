@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440083254/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/english-ness",
+    "CustomFileName": "88101736440083254",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440083254",
+      "url": "https://www.pinterest.com/pin/88101736440083254/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Tweed",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "biccard",
+        "url": "https://www.pinterest.com/biccard/",
+        "name": "John Biccard"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/english-ness/",
+        "name": "English-ness",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ba/bd/8e/babd8ed490c5276968eefb1abde7b5df.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

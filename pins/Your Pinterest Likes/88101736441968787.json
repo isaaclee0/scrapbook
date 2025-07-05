@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441968787/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736441968787",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441968787",
+      "url": "https://www.pinterest.com/pin/88101736441968787/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Mrs. Winterbourne",
+      "link": "http://www.amazon.com/Mrs-Winterbourne-Shirley-MacLaine/dp/B00005UM23/ref=sr_1_1?ie=UTF8&qid=1328303961&sr=8-1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d9/d2/f4/d9d2f49a778b342c47c47a43650e7e03.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451341232/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fruit-fun",
+    "CustomFileName": "88101736451341232",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451341232",
+      "url": "https://www.pinterest.com/pin/88101736451341232/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Báránykás reggeli - Konyhalál",
+      "description": "Báránykás reggeli",
+      "link": "http://konyhalal.cafeblog.hu/2015/05/18/baranykas-reggeli/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fruit-fun/",
+        "name": "Fruit Fun",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/52/7b/42/527b42857938ab450e168b3652d76ab9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

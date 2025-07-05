@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437591944/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/beefy",
+    "CustomFileName": "88101736437591944",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437591944",
+      "url": "https://www.pinterest.com/pin/88101736437591944/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "O'Charley's Prime Rib Pasta",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "shelbylcagle",
+        "url": "https://www.pinterest.com/shelbylcagle/",
+        "name": "Shelby Cagle"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/beefy/",
+        "name": "Beefy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c6/07/e1/c607e1fd3c9dd06e1a195d5acbfefe66.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

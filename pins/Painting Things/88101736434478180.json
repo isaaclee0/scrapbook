@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434478180/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painting-things",
+    "CustomFileName": "88101736434478180",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434478180",
+      "url": "https://www.pinterest.com/pin/88101736434478180/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "{Beautiful Nest}",
+      "description": "{Beautiful Nest} Cottage floors",
+      "link": "http://beautifulnest.blogspot.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painting-things/",
+        "name": "Painting things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3a/d5/12/3ad512e07215a3bec1b619fd91f4ac30.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

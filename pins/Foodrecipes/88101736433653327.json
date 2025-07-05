@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433653327/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736433653327",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433653327",
+      "url": "https://www.pinterest.com/pin/88101736433653327/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Traditional Shepherd’s Pie",
+      "description": "Best Shepherds Pie",
+      "link": "http://www.tasteofhome.com/Recipes/Best-Shepherd-s-Pie",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2c/22/ad/2c22adaea8774871a46ebd756ee93420.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

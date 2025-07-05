@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449489466/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/writers",
+    "CustomFileName": "88101736449489466",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449489466",
+      "url": "https://www.pinterest.com/pin/88101736449489466/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "It's my birthday and my favorite post. TREASURE IT!",
+      "description": "It's my birthday and my favorite post. TREASURE IT! - Imgur",
+      "link": "http://m.imgur.com/gallery/C4LJa",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/writers/",
+        "name": "Writers",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/59/1b/ca/591bca52ee42f8c213da9613502cc375.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443905307/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/my-stuff-blog-ideas-sayings-etc",
+    "CustomFileName": "88101736443905307",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443905307",
+      "url": "https://www.pinterest.com/pin/88101736443905307/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "B + P",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/my-stuff-blog-ideas-sayings-etc/",
+        "name": "My stuff - blog ideas, sayings etc",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d3/3d/73/d33d7303138a2ca5bf4f8d38e52a91ac.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

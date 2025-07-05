@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437237109/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736437237109",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437237109",
+      "url": "https://www.pinterest.com/pin/88101736437237109/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Paleo 4th of July, Autoimmune Protocol Style - meatified",
+      "description": "Paleo 4th of July - Autoimmune Protocol friendly recipes from http://meatified.com #paleo #glutenfree #autoimmunepaleo",
+      "link": "http://meatified.com/paleo-4th-july-autoimmune-protocol-style/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/31/6e/31/316e311113bab752eb2e9e6fe90e4a9d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

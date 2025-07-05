@@ -1,0 +1,56 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453826389/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/vegan-dessertstreats",
+    "CustomFileName": "88101736453826389",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453826389",
+      "url": "https://www.pinterest.com/pin/88101736453826389/",
+      "type": "pin",
+      "title": "Chocolate Raspberry Coconut Slices (vegan GF no-bake)",
+      "gridTitle": "Chocolate Raspberry Coconut Slices (vegan GF no-bake)",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 3,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "nourishingamy",
+        "url": "https://www.pinterest.com/nourishingamy/",
+        "name": "Nourishing Amy"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/vegan-dessertstreats/",
+        "name": "Vegan Desserts/Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/a9/51/c7/a951c7160ab64b7c1836d340dd96795f.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/4a/83/71/4a837139c2c7360f329394a54f045cb8.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/93/7f/c9/937fc96de240a973f44d4a5a952e92ba.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

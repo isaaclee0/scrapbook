@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439100815/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potluck",
+    "CustomFileName": "88101736439100815",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439100815",
+      "url": "https://www.pinterest.com/pin/88101736439100815/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Creamy Corn Pudding with Crispy Onions and Herbs",
+      "description": "Creamy Corn Pudding with Crispy Onions and Herbs",
+      "link": "http://pinchofyum.com/creamy-corn-pudding-with-crispy-onions-herbs",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potluck/",
+        "name": "Potluck",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f0/83/27/f08327ea5ab84f392517807cbff5a03c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453434803/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736453434803",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453434803",
+      "url": "https://www.pinterest.com/pin/88101736453434803/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Magic Summer",
+      "description": " ",
+      "link": "https://www.goodreads.com/book/show/1127086.The_Magic_Summer",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/99/c7/fb/99c7fb3ac4b255d7302bc13a44637e9a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

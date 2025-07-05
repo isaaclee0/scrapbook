@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452694158/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736452694158",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452694158",
+      "url": "https://www.pinterest.com/pin/88101736452694158/",
+      "type": "pin",
+      "title": "Daily Hairstyles For Short Hair",
+      "gridTitle": "Daily Hairstyles For Short Hair",
+      "description": " ",
+      "link": "https://youtu.be/xrfK0uSKQYY",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "foutlet47",
+        "url": "https://www.pinterest.com/foutlet47/",
+        "name": "Secret Fashion"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ed/0e/e5/ed0ee5f4aa3b0ecc86ea93bb42f75cc3.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/9a/90/e4/9a90e4773d9543761a865ed7f55a718d.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441633956/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736441633956",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441633956",
+      "url": "https://www.pinterest.com/pin/88101736441633956/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Berry Clafoutis with Blackberries and Blueberries",
+      "description": "Berry Clafoutis ~ Easy-to-make berry dessert. If you have lots of berries, this is a perfect recipe!",
+      "link": "http://juliasalbum.com/2013/03/berry-clafoutis-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "wickedgoodkitch",
+        "url": "https://www.pinterest.com/wickedgoodkitch/",
+        "name": "Stacy | Wicked Good Kitchen"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5a/f1/86/5af186d0ea801ffa27f0248dcdb085f2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

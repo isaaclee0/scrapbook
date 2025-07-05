@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450945356/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/petite-plus",
+    "CustomFileName": "88101736450945356",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450945356",
+      "url": "https://www.pinterest.com/pin/88101736450945356/",
+      "type": "pin",
+      "title": "How to tie the perfect knot",
+      "gridTitle": "How to tie the perfect knot",
+      "description": " ",
+      "link": "https://vm.tiktok.com/J8eaSWX/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "lizjim2006",
+        "url": "https://www.pinterest.com/lizjim2006/",
+        "name": "Liz Jim"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/petite-plus/",
+        "name": "Petite plus",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/02/a5/e4/02a5e4350cf9ae7a8b5a0be9ad1b50b1.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/ca/72/ee/ca72eed6dd8fab6ef78bc84562da549e.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

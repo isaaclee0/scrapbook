@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435264759/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736435264759",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435264759",
+      "url": "https://www.pinterest.com/pin/88101736435264759/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Lord Teach Me To Study the Bible in 28 Days",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/93/1e/d9/931ed9de8d7878c6b542c4ce49879b49.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

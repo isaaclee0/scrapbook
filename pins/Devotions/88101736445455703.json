@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445455703/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/devotions",
+    "CustomFileName": "88101736445455703",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445455703",
+      "url": "https://www.pinterest.com/pin/88101736445455703/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "christian quotes | John Owen quotes | lust",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/devotions/",
+        "name": "Devotions",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d5/b3/f0/d5b3f07991183db2529ba528a7e25ed6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

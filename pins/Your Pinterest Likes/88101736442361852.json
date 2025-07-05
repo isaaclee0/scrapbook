@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442361852/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442361852",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442361852",
+      "url": "https://www.pinterest.com/pin/88101736442361852/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "10 Ways to Organize the Laundry Room",
+      "description": "Laundry room island >> Smart, could use top as an ironing station too!",
+      "link": "http://www.southernliving.com/home-garden/solutions/laundry-room-organization-00400000063675/page9.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c5/79/3a/c5793a4867978ffae08af90ce1524dd3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

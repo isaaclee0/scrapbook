@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443197417/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443197417",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443197417",
+      "url": "https://www.pinterest.com/pin/88101736443197417/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "On The Anatomy Of Thrift: Harvest Day",
+      "description": "Great video on how to prepare the whole pig (blood sausage, pate, etc). \"On The Anatomy Of Thrift: Harvest Day by farmrun. The second episode in an instructional series in which we explore the economics of eating animals.\"",
+      "link": "http://vimeo.com/39451071",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d3/c7/af/d3c7af0a9501e09de7ce7ad6aeaf25ae.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

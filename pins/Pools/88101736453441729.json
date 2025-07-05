@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453441729/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pools",
+    "CustomFileName": "88101736453441729",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453441729",
+      "url": "https://www.pinterest.com/pin/88101736453441729/",
+      "type": "pin",
+      "title": "Sliding deck pool cover",
+      "gridTitle": "Sliding deck pool cover",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "littlemoonco",
+        "url": "https://www.pinterest.com/littlemoonco/",
+        "name": "Little Moon Clothing"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pools/",
+        "name": "Pools",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fe/d5/1e/fed51e82cce643a8808752d5bfd5cd2b.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/0f/64/93/0f6493ca45c5bf4bf71ace7c23d89c2f.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

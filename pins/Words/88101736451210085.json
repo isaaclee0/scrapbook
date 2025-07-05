@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451210085/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736451210085",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451210085",
+      "url": "https://www.pinterest.com/pin/88101736451210085/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "On life and time.",
+      "description": "I'm in love with my computer.",
+      "link": "http://iwastesomuchtime.com/on/?i=9414",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2a/e3/f1/2ae3f11ef9109135ceda0017367737a5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

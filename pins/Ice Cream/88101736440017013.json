@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440017013/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/ice-cream",
+    "CustomFileName": "88101736440017013",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440017013",
+      "url": "https://www.pinterest.com/pin/88101736440017013/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "3-Ingredient Coconut Mango Ice Cream",
+      "description": "Make your own creamy, soft-serve style ice cream using just three ingredients: coconut milk, frozen fruit, and honey. #mangoicecream #healthyicecream #cleaneatingrecipes",
+      "link": "http://skinnyms.com/coconut-mango-ice-cream-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "skinnyms",
+        "url": "https://www.pinterest.com/skinnyms/",
+        "name": "SkinnyMs."
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/ice-cream/",
+        "name": "Ice cream",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/29/40/3e/29403e785b559c2173343a097531db1a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

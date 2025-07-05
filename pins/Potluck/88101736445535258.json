@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445535258/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potluck",
+    "CustomFileName": "88101736445535258",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445535258",
+      "url": "https://www.pinterest.com/pin/88101736445535258/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Cheeseburger-Stuffed Garlic Bread",
+      "description": "You've never had bread like this before. This garlic great is stuffed with juicy meat and cheese and then dipped into thousand island dressing. Perfect for game day!",
+      "link": "https://www.tastemade.com/videos/cheeseburger-stuffed-garlic-bread",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemade",
+        "url": "https://www.pinterest.com/tastemade/",
+        "name": "Tastemade"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potluck/",
+        "name": "Potluck",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8b/70/ae/8b70ae6ba943ce048cfc5be32b2b5dae.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/ff/9f/5a/ff9f5aeaff2e71606a8eb4fdd0289b7c.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

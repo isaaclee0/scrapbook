@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436287423/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736436287423",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436287423",
+      "url": "https://www.pinterest.com/pin/88101736436287423/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Ever After: A Cinderella Story (1998)",
+      "description": "Ever After. Love the movie.",
+      "link": "http://www.imdb.com/media/rm599432704/tt0120631",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2d/e6/1b/2de61b896502810ac8f8c7bb037b7807.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

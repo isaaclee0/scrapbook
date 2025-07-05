@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444131724/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fruit-fun",
+    "CustomFileName": "88101736444131724",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444131724",
+      "url": "https://www.pinterest.com/pin/88101736444131724/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Banana/Strawberry cars:)",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fruit-fun/",
+        "name": "Fruit Fun",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/94/e1/1d/94e11d4618b6764a87fe103ae685dc7a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

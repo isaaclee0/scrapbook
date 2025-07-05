@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452969328/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/soup",
+    "CustomFileName": "88101736452969328",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452969328",
+      "url": "https://www.pinterest.com/pin/88101736452969328/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Bean Soup (El Bulli, world-famous restaurant)",
+      "description": " ",
+      "link": "https://www.recipetineats.com/el-bullis-bean-soup-with-picada/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/soup/",
+        "name": "Soup",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7f/39/e8/7f39e88639183032afa67228b545f2fe.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

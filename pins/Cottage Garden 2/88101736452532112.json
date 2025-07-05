@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452532112/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-garden-2",
+    "CustomFileName": "88101736452532112",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452532112",
+      "url": "https://www.pinterest.com/pin/88101736452532112/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "jo4designs",
+        "url": "https://www.pinterest.com/jo4designs/",
+        "name": "Joanne Alderson Design"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-garden-2/",
+        "name": "Cottage Garden 2",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8d/14/d7/8d14d7929bcacc650073925002e5069d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

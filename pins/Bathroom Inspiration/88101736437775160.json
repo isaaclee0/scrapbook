@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437775160/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bathroom-inspiration",
+    "CustomFileName": "88101736437775160",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437775160",
+      "url": "https://www.pinterest.com/pin/88101736437775160/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Awesome attic bathroom",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bathroom-inspiration/",
+        "name": "Bathroom Inspiration",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2a/6e/22/2a6e2204b0583299f63067de34028da0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

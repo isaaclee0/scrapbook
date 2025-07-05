@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435325508/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-love",
+    "CustomFileName": "88101736435325508",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435325508",
+      "url": "https://www.pinterest.com/pin/88101736435325508/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "page d'accueil anglais",
+      "description": "'Chocolate' eggs laid by a Maran chicken",
+      "link": "http://marans.eu/indexang.htm",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-love/",
+        "name": "Chicken love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/59/0d/fb/590dfbdd0cdc800a9ec1bdb2667f0b3a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

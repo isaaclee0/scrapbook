@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443008240/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443008240",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443008240",
+      "url": "https://www.pinterest.com/pin/88101736443008240/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Why Grieving is Essential for New Parents",
+      "link": "http://quentinhafner.com/parenting/why-grieving-is-essential-for-new-parents/?fb_action_ids=340560059418314&fb_action_types=og.likes&fb_source=other_multiline&action_object_map=[414608378671381]&action_type_map=[%22og.likes%22]&action_ref_map=[]",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/59/eb/58/59eb58cacab422080cabb289c3746682.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

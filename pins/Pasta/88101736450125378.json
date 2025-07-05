@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450125378/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pasta",
+    "CustomFileName": "88101736450125378",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450125378",
+      "url": "https://www.pinterest.com/pin/88101736450125378/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Gnocchi with Tomato and Basil - My Easy Cooking",
+      "description": " ",
+      "link": "http://www.my-easy-cooking.com/2012/05/02/gnocchi-with-tomato-and-basil/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pasta/",
+        "name": "Pasta",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/dd/ea/2b/ddea2b070f079c66ee7def9d52ac6efe.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

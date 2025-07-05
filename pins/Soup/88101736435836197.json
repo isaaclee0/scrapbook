@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435836197/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/soup",
+    "CustomFileName": "88101736435836197",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435836197",
+      "url": "https://www.pinterest.com/pin/88101736435836197/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Cream of Mushroom Soup",
+      "description": "Cream of Mushroom Soup - My Heart Beets (spicy)",
+      "link": "http://myheartbeets.com/cream-mushroom-soup-paleo/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/soup/",
+        "name": "Soup",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/64/a4/6b/64a46b49932f609652e564a9fe1e8997.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

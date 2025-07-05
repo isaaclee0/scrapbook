@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442704631/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442704631",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442704631",
+      "url": "https://www.pinterest.com/pin/88101736442704631/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "how to make honey barbeque potatoe chips",
+      "description": "how to make honey barbeque potatoe chips - YouTube",
+      "link": "https://www.youtube.com/results?search_query=how+to+make+honey+barbeque+potatoe+chips",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ae/b7/62/aeb76296305c77a34ecfc4020771e797.webp",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435983899/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/salads",
+    "CustomFileName": "88101736435983899",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435983899",
+      "url": "https://www.pinterest.com/pin/88101736435983899/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Brilliant Rice Salad - The Hungry Australian",
+      "description": "Brilliant Rice Salad (The Hungry Australian)",
+      "link": "http://hungryaustralian.com/2011/11/brilliant-rice-salad",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/salads/",
+        "name": "Salads",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cd/40/e2/cd40e201678b9e74444b38789034a691.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

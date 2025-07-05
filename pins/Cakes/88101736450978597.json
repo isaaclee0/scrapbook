@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450978597/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736450978597",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450978597",
+      "url": "https://www.pinterest.com/pin/88101736450978597/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Blueberry Coffee Cake (aka Boy Bait) - Once Upon a Chef",
+      "description": "Blueberry Coffee Cake (aka Boy Bait)",
+      "link": "https://www.onceuponachef.com/recipes/blueberry-coffee-cake.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d8/fd/4c/d8fd4ce5cea8e2719feaf85ff8ec2cc9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

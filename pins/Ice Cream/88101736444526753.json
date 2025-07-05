@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444526753/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/ice-cream",
+    "CustomFileName": "88101736444526753",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444526753",
+      "url": "https://www.pinterest.com/pin/88101736444526753/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Blueberry Ice Cream",
+      "description": "Creamy homemade blueberry ice cream recipe from @bakedbyrachel",
+      "link": "http://www.bakedbyrachel.com/blueberry-ice-cream/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "rainierfruit",
+        "url": "https://www.pinterest.com/rainierfruit/",
+        "name": "Rainier Fruit Company"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/ice-cream/",
+        "name": "Ice cream",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5d/63/eb/5d63eb97bb622ecf24759b5ad455604a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

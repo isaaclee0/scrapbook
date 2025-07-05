@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449901488/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/rice",
+    "CustomFileName": "88101736449901488",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449901488",
+      "url": "https://www.pinterest.com/pin/88101736449901488/",
+      "type": "pin",
+      "title": "Kedgeree Fish Pie",
+      "gridTitle": "Kedgeree Fish Pie",
+      "description": "I spy with my little eye a healthy savoury Kedgeree fish pie",
+      "link": "https://www.tastemade.co.uk/videos/kedgeree-fish-pie",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemadeuk",
+        "url": "https://www.pinterest.com/tastemadeuk/",
+        "name": "Tastemade UK"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/rice/",
+        "name": "Rice",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3a/9a/91/3a9a91059ee86d5265cf98c5cdb942f5.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/v2/720p/e5/f8/14/e5f814d62c0363343970282efd7c12dd_mobile.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

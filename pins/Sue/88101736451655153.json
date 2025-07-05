@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451655153/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/sue",
+    "CustomFileName": "88101736451655153",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451655153",
+      "url": "https://www.pinterest.com/pin/88101736451655153/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Anthropologie Strawberries Doormat",
+      "description": "Anthropologie Strawberries Doormat #affiliatelink",
+      "link": "https://api.shopstyle.com/action/apiVisitRetailer?id=635563338&pid=uid4409-32462403-89",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/sue/",
+        "name": "Sue",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/51/a6/95/51a695261a0f0b01502bb94f50f50bf1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

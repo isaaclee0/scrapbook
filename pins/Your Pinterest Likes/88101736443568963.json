@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443568963/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443568963",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443568963",
+      "url": "https://www.pinterest.com/pin/88101736443568963/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "20 Secrets to Help You Catch Fish All Summer Long",
+      "description": "20 Secrets To Help You Catch Fish All Summer Long | Field & Stream",
+      "link": "http://www.fieldandstream.com/articles/fishing/2013/05/welcome-your-perfect-summer?cmpid=enews052913&spPodID=020&spMailingID=5492609&spUserID=MjcwODMyMTU5ODgS1&spJobID=320880610&spReportId=MzIwODgwNjEwS0",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3a/0f/18/3a0f182fd784949bfcb6fdd65fdfe865.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

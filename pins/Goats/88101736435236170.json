@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435236170/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/goats",
+    "CustomFileName": "88101736435236170",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435236170",
+      "url": "https://www.pinterest.com/pin/88101736435236170/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "good idea old tires for the goats",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 8,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/goats/",
+        "name": "Goats...",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c8/76/02/c87602b2e40a90e7f3df7bd8345d38a2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

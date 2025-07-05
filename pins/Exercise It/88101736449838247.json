@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449838247/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/exercise-it",
+    "CustomFileName": "88101736449838247",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449838247",
+      "url": "https://www.pinterest.com/pin/88101736449838247/",
+      "type": "pin",
+      "title": "beginner core workout",
+      "gridTitle": "beginner core workout",
+      "description": "This gentle core workout is a great option if you are just starting to exercise. These core exercises will help you build muscle and provide low back pain relief.",
+      "link": "https://faithfulworkoutsplan.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "faithfulworkout",
+        "url": "https://www.pinterest.com/faithfulworkout/",
+        "name": "Faithful Workouts"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/exercise-it/",
+        "name": "Exercise it",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fa/54/90/fa549093891d1ca0f330e89e921fd329.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/7a/8e/26/7a8e267e4af29c4b999ab4ac938bc6ee.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

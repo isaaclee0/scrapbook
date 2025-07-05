@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434816723/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736434816723",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434816723",
+      "url": "https://www.pinterest.com/pin/88101736434816723/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "anicelittle",
+      "description": "So important",
+      "link": "http://anicelittle.tumblr.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/52/96/45/52964529ac82b777f14cad4e0aa11dfd.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

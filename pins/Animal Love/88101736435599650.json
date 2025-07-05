@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435599650/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/animal-love",
+    "CustomFileName": "88101736435599650",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435599650",
+      "url": "https://www.pinterest.com/pin/88101736435599650/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "A black swan feeds its fish friends every day.The swan picks up the feed and takes it to the mouths of the waiting fish.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "rebeccadoe",
+        "url": "https://www.pinterest.com/rebeccadoe/",
+        "name": "Rebecca Doerflinger"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/animal-love/",
+        "name": "Animal love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bb/d6/0c/bbd60cf9565203f07f1b5abe35ea3ae6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

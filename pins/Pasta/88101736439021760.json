@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439021760/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pasta",
+    "CustomFileName": "88101736439021760",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439021760",
+      "url": "https://www.pinterest.com/pin/88101736439021760/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Spinach, Ricotta & Pesto Lasagna Recipe",
+      "description": "Spinach pesto lasagna",
+      "link": "http://houseandhome.com/food/recipes/spinach-ricotta-and-pesto-lasagna-recipe",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pasta/",
+        "name": "Pasta",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/43/70/72/43707264fa3a863c61b1a8c0d7394028.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

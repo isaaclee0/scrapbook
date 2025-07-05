@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443970930/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/beefy",
+    "CustomFileName": "88101736443970930",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443970930",
+      "url": "https://www.pinterest.com/pin/88101736443970930/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Beef cuts with cooking guide",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "sachifer",
+        "url": "https://www.pinterest.com/sachifer/",
+        "name": "sachi fernando"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/beefy/",
+        "name": "Beefy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d4/d4/f2/d4d4f279f0daa288161ec09336893519.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

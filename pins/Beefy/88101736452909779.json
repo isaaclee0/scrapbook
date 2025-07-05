@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452909779/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/beefy",
+    "CustomFileName": "88101736452909779",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452909779",
+      "url": "https://www.pinterest.com/pin/88101736452909779/",
+      "type": "pin",
+      "title": "Stuffed Roast Beef",
+      "gridTitle": "Stuffed Roast Beef",
+      "description": "This cheesy mass of meat will make you feel things you've never felt before.",
+      "link": "https://www.tastemade.com/videos/stuffed-roast-beef",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemade",
+        "url": "https://www.pinterest.com/tastemade/",
+        "name": "Tastemade"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/beefy/",
+        "name": "Beefy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d1/b5/c7/d1b5c7215e6423e441b121c91155e072.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/8b/c1/ab/8bc1ab1e8c5d93a1f327bfedc9a04863.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

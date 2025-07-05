@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446415403/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/thai-food",
+    "CustomFileName": "88101736446415403",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446415403",
+      "url": "https://www.pinterest.com/pin/88101736446415403/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Thai Shrimp Soup with Coconut, Lemongrass & Red Curry",
+      "description": "Thai Shrimp Soup with Coconut, Lemongrass and Curry",
+      "link": "http://www.blueapron.com/recipes/thai-shrimp-soup-with-coconut-lemongrass-red-curry",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "blueapron",
+        "url": "https://www.pinterest.com/blueapron/",
+        "name": "Blue Apron"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/thai-food/",
+        "name": "Thai Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/70/b4/d6/70b4d6be9a700a0e775148e1c94fb4e9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

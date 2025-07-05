@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448850453/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/zucchini-recipes-and-tips",
+    "CustomFileName": "88101736448850453",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448850453",
+      "url": "https://www.pinterest.com/pin/88101736448850453/",
+      "type": "pin",
+      "title": "Creamy Zucchini Recipe",
+      "gridTitle": "Creamy Zucchini Recipe",
+      "description": "This Creamy Zucchini Sauce is bursting with flavor! Made with paprika-roasted zucchinis, sour cream, garlic, and fresh herbs, it tastes great with pasta, over rice, or just with a slice of bread.  #zucchini #dinner #lunch #whole30 #keto #ketosis #ketorecipe #vegetarian #mealprep #healthyrecipe #videorecipe",
+      "link": "https://cooktoria.com/creamy-zucchini-sauce/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "cooktoria",
+        "url": "https://www.pinterest.com/cooktoria/",
+        "name": "COOKTORIA {Tania Sheff}"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/zucchini-recipes-and-tips/",
+        "name": "Zucchini - recipes and tips",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1e/20/a4/1e20a47ac378ac545f101a4b2516fe62.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/a9/a8/8f/a9a88fbca44f4a5179f508a478abf594.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439267460/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/all-creatures-herriot",
+    "CustomFileName": "88101736439267460",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439267460",
+      "url": "https://www.pinterest.com/pin/88101736439267460/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "james herriot",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "hmcrew",
+        "url": "https://www.pinterest.com/hmcrew/",
+        "name": "Holly C"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/all-creatures-herriot/",
+        "name": "All Creatures - Herriot",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e2/42/93/e242933e0b25397da0582ccff1a1cd5a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

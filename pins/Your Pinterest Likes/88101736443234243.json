@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443234243/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443234243",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443234243",
+      "url": "https://www.pinterest.com/pin/88101736443234243/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Your Domains",
+      "description": "Robyn Klobusiak, owner of The Ugly Duck Out in Swansea. Photo by Dan Fellow, article for www.think-tasmania.com",
+      "link": "http://www.think-tasmania.com/the-ugly-duck-out/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6a/6a/86/6a6a86169fabfd6acda45da308dd59fb.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

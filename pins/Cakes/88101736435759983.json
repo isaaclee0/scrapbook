@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435759983/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736435759983",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435759983",
+      "url": "https://www.pinterest.com/pin/88101736435759983/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Baba Savarin (Enriched Dough Soaked in Rum Syrup, Vanilla Pastry Cream, Caramel Whipped Cream) - at Bakery Nouveau",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tuaudrey",
+        "url": "https://www.pinterest.com/tuaudrey/",
+        "name": "Tu Nguyen"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/04/df/c8/04dfc8d7c2bcff96671a675d6870d4e8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

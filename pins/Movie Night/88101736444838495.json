@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444838495/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736444838495",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444838495",
+      "url": "https://www.pinterest.com/pin/88101736444838495/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "So excited to watch this!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "graham_watson1",
+        "url": "https://www.pinterest.com/graham_watson1/",
+        "name": "Graham Watson"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/27/a0/a0/27a0a0be22adb2682d54149b93f94aa5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

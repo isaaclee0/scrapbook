@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442242960/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442242960",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442242960",
+      "url": "https://www.pinterest.com/pin/88101736442242960/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "A Clothes Horse",
+      "description": " ",
+      "link": "http://theclothes.blogspot.fi/search?updated-max=2014-05-14T08:00:00-07:00&max-results=7&start=28&by-date=false",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ce/44/8d/ce448d2009cd738cdfb653dd26e4e1de.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

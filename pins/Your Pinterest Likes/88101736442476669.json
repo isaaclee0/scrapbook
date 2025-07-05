@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442476669/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442476669",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442476669",
+      "url": "https://www.pinterest.com/pin/88101736442476669/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Bathing suit | American | The Metropolitan Museum of Art",
+      "description": "love plaid.",
+      "link": "http://www.metmuseum.org/Collections/search-the-collections/80008071?rpp=20&pg=7&ft=sports+clothing&pos=131",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/14/16/7c/14167c7f437a12a9dbdb4c4155d77558.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

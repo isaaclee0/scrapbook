@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430689667/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430689667",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430689667",
+      "url": "https://www.pinterest.com/pin/88101736430689667/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Home | Schnucks",
+      "description": "Brunch!!!",
+      "link": "http://marketplacegrocer.com/index.php/recipes/single/baked-eggs-in-roll-bowls",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e7/77/70/e777707cd988d3891773f0e5ff3032a2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440004856/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736440004856",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440004856",
+      "url": "https://www.pinterest.com/pin/88101736440004856/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Ice Cream Sundae Brownies",
+      "description": "Ice Cream Sundae Brownies, one of our favorite brownies by Picky Palate",
+      "link": "http://picky-palate.com/2010/06/14/ice-cream-sundae-brownies-2/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/38/54/be/3854beacbdbd981a8be89be977ffa5ba.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

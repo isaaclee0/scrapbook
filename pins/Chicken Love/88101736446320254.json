@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446320254/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-love",
+    "CustomFileName": "88101736446320254",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446320254",
+      "url": "https://www.pinterest.com/pin/88101736446320254/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Breeding chickens for egg color",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "harthomestead",
+        "url": "https://www.pinterest.com/harthomestead/",
+        "name": "Chantel Hart"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-love/",
+        "name": "Chicken love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d4/8b/9c/d48b9c7ee88901acb55034fb12641cdd.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

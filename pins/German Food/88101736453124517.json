@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453124517/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/german-food",
+    "CustomFileName": "88101736453124517",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453124517",
+      "url": "https://www.pinterest.com/pin/88101736453124517/",
+      "type": "pin",
+      "title": "DAMPFNUDELN",
+      "gridTitle": "DAMPFNUDELN",
+      "description": " ",
+      "link": "https://www.veginnercooking.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "veginnercooking",
+        "url": "https://www.pinterest.com/veginnercooking/",
+        "name": "Veginner Cooking"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/german-food/",
+        "name": "German Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/70/77/cb/7077cbe3403dbea49e84dcd0d21e2f05.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/b5/f5/e9/b5f5e96196d442cfdf43067eb82e8a3a.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

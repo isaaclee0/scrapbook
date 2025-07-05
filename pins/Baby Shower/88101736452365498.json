@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452365498/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/baby-shower",
+    "CustomFileName": "88101736452365498",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452365498",
+      "url": "https://www.pinterest.com/pin/88101736452365498/",
+      "type": "pin",
+      "title": "Mushroom Meringues",
+      "gridTitle": "Mushroom Meringues",
+      "description": "These might just be the world's sweetest meringues!",
+      "link": "https://www.tastemade.co.uk/videos/mushroom-meringues",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemadeuk",
+        "url": "https://www.pinterest.com/tastemadeuk/",
+        "name": "Tastemade UK"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/baby-shower/",
+        "name": "Baby shower",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e2/ab/47/e2ab47117b64557e670e61d932c396ee.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/v2/720p/aa/97/7d/aa977ddbaa3ee094ea82c8144612098c_mobile.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

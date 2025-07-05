@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453684161/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/quince-recipes",
+    "CustomFileName": "88101736453684161",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453684161",
+      "url": "https://www.pinterest.com/pin/88101736453684161/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Quince Pie Recipe | Yummly",
+      "description": " ",
+      "link": "http://www.yummly.com/recipe/Quince-Pie-632300",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/quince-recipes/",
+        "name": "Quince Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d1/cd/77/d1cd7788c418e77d1dd52d5dbed9be98.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

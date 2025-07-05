@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453020758/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/shorter-list",
+    "CustomFileName": "88101736453020758",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453020758",
+      "url": "https://www.pinterest.com/pin/88101736453020758/",
+      "type": "pin",
+      "title": "How to Add Panels to a Regular Refrigerator",
+      "gridTitle": "How to Add Panels to a Regular Refrigerator",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 2,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "themerrythought",
+        "url": "https://www.pinterest.com/themerrythought/",
+        "name": "The Merrythought"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/shorter-list/",
+        "name": "Shorter List",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a8/4f/a3/a84fa39d20ac5185aefd326b6099b3da.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/b9/7b/5e/b97b5ecad61b042f16729c0585c4e1e1.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

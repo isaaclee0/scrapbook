@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443926322/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-pot",
+    "CustomFileName": "88101736443926322",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443926322",
+      "url": "https://www.pinterest.com/pin/88101736443926322/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "i love the regimented look of the row of panted pots",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-pot/",
+        "name": "Cottage Pot",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c2/26/20/c2262053f08f380479ff30df5d9cd5dd.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437162451/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/teaching",
+    "CustomFileName": "88101736437162451",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437162451",
+      "url": "https://www.pinterest.com/pin/88101736437162451/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "This is an awesome view of what homeschooling is. Love it!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 4,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ntrbutterfly",
+        "url": "https://www.pinterest.com/ntrbutterfly/",
+        "name": "Just Jane"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/teaching/",
+        "name": "Teaching",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0b/b9/0a/0bb90aa7fc62a8df3d411ae4e1c335dd.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

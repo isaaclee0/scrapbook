@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453635327/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736453635327",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453635327",
+      "url": "https://www.pinterest.com/pin/88101736453635327/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Heidi",
+      "description": " ",
+      "link": "http://thebooksonmyshelf.blogspot.com/2011/02/heidi.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/11/45/99/114599820b26a9e80cabdf5f27b0660c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

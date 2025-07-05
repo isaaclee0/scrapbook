@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450409456/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/teaching",
+    "CustomFileName": "88101736450409456",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450409456",
+      "url": "https://www.pinterest.com/pin/88101736450409456/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "What are the basics of English grammar?",
+      "description": " ",
+      "link": "https://www.quora.com/What-are-the-basics-of-English-grammar",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/teaching/",
+        "name": "Teaching",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a7/eb/8f/a7eb8f8c56f4cda8f2f874d90ee8a6b9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

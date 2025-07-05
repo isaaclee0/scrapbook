@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434086678/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736434086678",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434086678",
+      "url": "https://www.pinterest.com/pin/88101736434086678/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Shrimp Salad (AIP, Paleo, GAPS, SCD)",
+      "description": "Cilantro shrimp salad AIP, Paleo",
+      "link": "http://mybigfatgrainfreelife.com/2013/06/aip-day-51.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0e/3a/7b/0e3a7b2008b9a3125655c6e9c87a35ae.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

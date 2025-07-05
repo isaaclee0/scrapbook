@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451728211/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-pot",
+    "CustomFileName": "88101736451728211",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451728211",
+      "url": "https://www.pinterest.com/pin/88101736451728211/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "yvonnegoodnight",
+        "url": "https://www.pinterest.com/yvonnegoodnight/",
+        "name": "Yvonne Goodnight"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-pot/",
+        "name": "Cottage Pot",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d4/65/5b/d4655bf45f4f9122bacfd1ae46079f86.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

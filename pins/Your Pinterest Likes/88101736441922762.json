@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441922762/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736441922762",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441922762",
+      "url": "https://www.pinterest.com/pin/88101736441922762/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "snow cat",
+      "link": "http://yesiamarayoffuckingsunshine.tumblr.com/post/3341968273/this-is-how-i-like-my-cats-frozen-like-a-snowman",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1a/96/84/1a9684e83919695fea27b2e8abd67767.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435742409/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fun",
+    "CustomFileName": "88101736435742409",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435742409",
+      "url": "https://www.pinterest.com/pin/88101736435742409/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Fun Fun",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "siafanar",
+        "url": "https://www.pinterest.com/siafanar/",
+        "name": "Siafanar Bos"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fun/",
+        "name": "Fun",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6a/0a/ee/6a0aee429b9dbacbe4240709f45e8313.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

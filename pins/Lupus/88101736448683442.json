@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448683442/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/lupus",
+    "CustomFileName": "88101736448683442",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448683442",
+      "url": "https://www.pinterest.com/pin/88101736448683442/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Lupus",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "LuvenMyLife",
+        "url": "https://www.pinterest.com/LuvenMyLife/",
+        "name": "~M~"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/lupus/",
+        "name": "Lupus",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/12/80/46/128046b31fcbfe31c4b634cd8393b3ea.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

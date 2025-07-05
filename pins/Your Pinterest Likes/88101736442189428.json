@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442189428/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442189428",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442189428",
+      "url": "https://www.pinterest.com/pin/88101736442189428/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "God Will Lift Us Up",
+      "description": "Rather than focus on her medical condition, Brittany has found comfort in serving others and trusting in the Lord.",
+      "link": "http://youtu.be/bhXPgZ4-krc",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/06/ee/b1/06eeb1d5e43e7e57e88be3f2f527b6fb.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

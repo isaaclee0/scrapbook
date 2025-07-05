@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453119293/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pasta",
+    "CustomFileName": "88101736453119293",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453119293",
+      "url": "https://www.pinterest.com/pin/88101736453119293/",
+      "type": "pin",
+      "title": "Oven Baked Spaghetti – Food Dolls",
+      "gridTitle": "Oven Baked Spaghetti – Food Dolls",
+      "description": " ",
+      "link": "https://www.fooddolls.com/oven-baked-spaghetti/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "fooddolls",
+        "url": "https://www.pinterest.com/fooddolls/",
+        "name": "Food Dolls"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pasta/",
+        "name": "Pasta",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/99/9a/90/999a908f59fcea3ca1ff8c79fff19415.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/ec/28/ed/ec28ed9d8c2e06395b5cd56959779b8c.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

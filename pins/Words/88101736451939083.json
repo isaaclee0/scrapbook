@@ -1,0 +1,60 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451939083/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736451939083",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451939083",
+      "url": "https://www.pinterest.com/pin/88101736451939083/",
+      "type": "pin",
+      "title": "I Am Thankful For Everything",
+      "gridTitle": "I Am Thankful For Everything",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 4,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "SparklesnGlitterrr",
+        "url": "https://www.pinterest.com/SparklesnGlitterrr/",
+        "name": "🤍SparklesnGlitterr🤍"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d9/f3/d5/d9f3d5712185cef11558deeb5a8a0cc0.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/5b/4c/be/5b4cbed8d6f6de351dc0e4b8d0805dd4.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/ec/24/2c/ec242cc766aebb53deb8726943907d20.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/d1/36/0f/d1360fff4fbef793deabac7857e2670b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

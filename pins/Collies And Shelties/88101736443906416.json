@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443906416/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/collies-and-shelties",
+    "CustomFileName": "88101736443906416",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443906416",
+      "url": "https://www.pinterest.com/pin/88101736443906416/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Just chiilin'",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "katynana47",
+        "url": "https://www.pinterest.com/katynana47/",
+        "name": "Kate Ashner"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/collies-and-shelties/",
+        "name": "Collies and Shelties",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d6/69/48/d669483c290d7c76ca197b0a69595cc2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

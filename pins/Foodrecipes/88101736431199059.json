@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431199059/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736431199059",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431199059",
+      "url": "https://www.pinterest.com/pin/88101736431199059/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Chili Rellenos Casserole",
+      "link": "http://carzycook.com/showthread.php?tid=4471",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3a/6b/b0/3a6bb09f313ea8ddf8c1fee558d40fa4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

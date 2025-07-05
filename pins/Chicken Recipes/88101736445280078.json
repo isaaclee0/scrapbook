@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445280078/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736445280078",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445280078",
+      "url": "https://www.pinterest.com/pin/88101736445280078/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chicken Florentine Phyllo Pie (Easy Chicken Dinner!)",
+      "description": "Chicken Florentine Phyllo Pie | www.diethood.com | Creamy, cheesy and delicious spinach and chicken nestled between buttery, flaky phyllo sheets. It's heavenly!",
+      "link": "http://diethood.com/chicken-florentine-phyllo-pie/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "diethood",
+        "url": "https://www.pinterest.com/diethood/",
+        "name": "Diethood®"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3e/b8/47/3eb84735cc6ebd3ed3ba3dce6d433c91.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

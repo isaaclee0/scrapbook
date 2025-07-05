@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451605160/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-love",
+    "CustomFileName": "88101736451605160",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451605160",
+      "url": "https://www.pinterest.com/pin/88101736451605160/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Buff Orpington.......just love these guys!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "bunnymorin",
+        "url": "https://www.pinterest.com/bunnymorin/",
+        "name": "Heidi M Morin"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-love/",
+        "name": "Chicken love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ef/11/21/ef1121a8d8dd8581b5a22d383a51d865.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

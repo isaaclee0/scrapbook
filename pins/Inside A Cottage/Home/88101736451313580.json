@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451313580/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/inside-a-cottage/home",
+    "CustomFileName": "88101736451313580",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451313580",
+      "url": "https://www.pinterest.com/pin/88101736451313580/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "- The Loft -",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "cabbagesroses",
+        "url": "https://www.pinterest.com/cabbagesroses/",
+        "name": "Cabbages & Roses"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/inside-a-cottage/",
+        "name": "Inside a cottage",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/17/4a/85/174a85c0bada663498d4f13c6d2b95ea.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

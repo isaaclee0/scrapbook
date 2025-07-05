@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451243827/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fishy",
+    "CustomFileName": "88101736451243827",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451243827",
+      "url": "https://www.pinterest.com/pin/88101736451243827/",
+      "type": "pin",
+      "title": "Classic Fish and Chips Recipe",
+      "gridTitle": "Classic Fish and Chips Recipe",
+      "description": " ",
+      "link": "https://www.allrecipes.com/recipe/16580/classic-fish-and-chips/?utm_source=pinterest.com&utm_medium=social&utm_campaign=allrecipes_allrecipes_6053264&utm_content=dinner_verticalimage&utm_term=fish_202003",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "allrecipes",
+        "url": "https://www.pinterest.com/allrecipes/",
+        "name": "Allrecipes"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fishy/",
+        "name": "Fishy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/63/3f/35/633f35fc5c16ade1742ea8c80972fae8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

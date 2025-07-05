@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451313180/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/learn-to-paint",
+    "CustomFileName": "88101736451313180",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451313180",
+      "url": "https://www.pinterest.com/pin/88101736451313180/",
+      "type": "pin",
+      "title": "Watercolor Violet Flower",
+      "gridTitle": "Watercolor Violet Flower",
+      "description": " ",
+      "link": "https://www.youtube.com/channel/UCh7y5mPjmnP9AiiWnhXzMCQ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "watercolorwithnina",
+        "url": "https://www.pinterest.com/watercolorwithnina/",
+        "name": "Watercolor With Nina"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/learn-to-paint/",
+        "name": "Learn To Paint",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/38/78/e3/3878e3f59cf0e8df859355dc7d64bd7b.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/42/7a/1a/427a1a3895cbcdc45d61b58346f4b95d.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

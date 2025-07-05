@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446711258/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/japanese-food",
+    "CustomFileName": "88101736446711258",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446711258",
+      "url": "https://www.pinterest.com/pin/88101736446711258/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Mosaic Block Sushi",
+      "description": "When sushi truly becomes an art form. #kombuchaguru #rawfood Also check out: http://kombuchaguru.com",
+      "link": "https://www.tastemade.com/videos/mosaic-block-sushi",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemade",
+        "url": "https://www.pinterest.com/tastemade/",
+        "name": "Tastemade"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/japanese-food/",
+        "name": "Japanese Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7e/cc/32/7ecc32885f72adfcdd3c19849995aca0.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/87/46/ac/8746ac2006b3e58597cff600e63ff783.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443084753/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443084753",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443084753",
+      "url": "https://www.pinterest.com/pin/88101736443084753/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "någon med vackra lampor på önskelistan?",
+      "description": "love that lampshade",
+      "link": "http://mokkasin.blogspot.co.nz/2012/05/nagon-med-vackra-lampor-pa-onskelistan.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/99/7d/e0/997de05a5aec96d15abb04b0c8f7a14a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

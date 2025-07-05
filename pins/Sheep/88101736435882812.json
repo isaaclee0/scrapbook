@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435882812/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/sheep",
+    "CustomFileName": "88101736435882812",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435882812",
+      "url": "https://www.pinterest.com/pin/88101736435882812/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "And my sheep shall know my voice...Jesus.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/sheep/",
+        "name": "Sheep",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cb/df/8e/cbdf8e4ba3b8d7d6b425dee59c0d3b2b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

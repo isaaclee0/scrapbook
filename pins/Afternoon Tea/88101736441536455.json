@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441536455/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736441536455",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441536455",
+      "url": "https://www.pinterest.com/pin/88101736441536455/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Chorley cakes (Royaume-Uni)",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "fsalih",
+        "url": "https://www.pinterest.com/fsalih/",
+        "name": "Fawzi Salih"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/39/22/09/392209a857f99ee592ab4835c5251f97.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

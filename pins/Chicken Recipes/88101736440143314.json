@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440143314/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736440143314",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440143314",
+      "url": "https://www.pinterest.com/pin/88101736440143314/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Maryland Fried Chicken With White Gravy Recipe",
+      "description": "Maryland fried chicken is lightly coated in seasoned flour, fried until golden, and then topped with a pan gravy.",
+      "link": "http://www.seriouseats.com/recipes/2015/01/maryland-fried-chicken-white-gravy-recipe.html?utm_source=pin&utm_campaign=may16",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 4,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "seriouseats",
+        "url": "https://www.pinterest.com/seriouseats/",
+        "name": "Serious Eats"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/80/46/4e/80464e2c35f4d1c56c7da66531008381.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

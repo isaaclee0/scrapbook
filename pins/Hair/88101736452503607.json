@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452503607/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736452503607",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452503607",
+      "url": "https://www.pinterest.com/pin/88101736452503607/",
+      "type": "pin",
+      "title": "friends",
+      "gridTitle": "friends",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "nymphlei",
+        "url": "https://www.pinterest.com/nymphlei/",
+        "name": "loopsy"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f6/f3/1a/f6f31ad2b749451d4ff950fe18f46cf4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

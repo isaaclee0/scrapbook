@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435830519/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736435830519",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435830519",
+      "url": "https://www.pinterest.com/pin/88101736435830519/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Nomato “Chilli” in the Slow Cooker",
+      "description": "No-tomato no-bean crockpot Chili",
+      "link": "http://salixisme.wordpress.com/2014/04/17/nomato-chilli-in-the-slow-cooker/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/db/d3/30/dbd330d845a9048ba4ebf25829d9d698.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

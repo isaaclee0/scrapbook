@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450095310/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-garden",
+    "CustomFileName": "88101736450095310",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450095310",
+      "url": "https://www.pinterest.com/pin/88101736450095310/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Growing dahlias - everything you need to know",
+      "description": "How to dead head dahlias - and find out more about growing dahlias, choosing dahlia varieties and protecting dahlias from slugs and snails on the Middlesized Garden blog.",
+      "link": "https://www.themiddlesizedgarden.co.uk/growing-dahlias-everything-need-know/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "midsizegarden",
+        "url": "https://www.pinterest.com/midsizegarden/",
+        "name": "The Middlesized Garden"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-garden/",
+        "name": "Cottage garden",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9a/82/d9/9a82d9661772201fa86204b8b7d4634e.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/v2/720p/f8/a8/3b/f8a83ba283379fa972f46aa467244c2b_mobile.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441378301/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/beans-beans-beans",
+    "CustomFileName": "88101736441378301",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441378301",
+      "url": "https://www.pinterest.com/pin/88101736441378301/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Black Bean & Corn Quesadillas | Dashing Dish",
+      "description": "10 Minute Black Bean and Corn Quesadillas",
+      "link": "https://dashingdish.com/recipe/10-minute-black-bean-corn-quesadillas/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/beans-beans-beans/",
+        "name": "Beans beans beans!",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/45/07/95/450795c7deda69f9efda19f54e553f1e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

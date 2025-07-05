@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443987590/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/travel",
+    "CustomFileName": "88101736443987590",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443987590",
+      "url": "https://www.pinterest.com/pin/88101736443987590/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Stowe, VT",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "wildtreesusan",
+        "url": "https://www.pinterest.com/wildtreesusan/",
+        "name": "Susan Volavka"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/travel/",
+        "name": "Travel",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e8/41/b9/e841b916807da4b596441fde764ddf63.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

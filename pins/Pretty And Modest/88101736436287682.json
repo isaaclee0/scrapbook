@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436287682/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pretty-and-modest",
+    "CustomFileName": "88101736436287682",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436287682",
+      "url": "https://www.pinterest.com/pin/88101736436287682/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Nicely put together outfit",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 5,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "revekkahellene",
+        "url": "https://www.pinterest.com/revekkahellene/",
+        "name": "Revekka Hellene"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pretty-and-modest/",
+        "name": "Pretty - and modest..",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/12/1f/9a/121f9a1c0a89a4e0bd4d7a570cde25d5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

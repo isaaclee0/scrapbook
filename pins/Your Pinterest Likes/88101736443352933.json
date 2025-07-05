@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443352933/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443352933",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443352933",
+      "url": "https://www.pinterest.com/pin/88101736443352933/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Elvis Presley - In The Ghetto (Music Video) (1969)",
+      "description": "▶ Elvis Presley - In The Ghetto (Music Video) (1969) - YouTube ~ One of my favorite songs growing up.",
+      "link": "http://www.youtube.com/watch?v=6am8V5KNJ4A",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/df/7f/a2/df7fa20db6cca5655f068b1a784043aa.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

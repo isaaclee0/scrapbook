@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439559378/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736439559378",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439559378",
+      "url": "https://www.pinterest.com/pin/88101736439559378/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Ferrero Rocher Cake Recipe",
+      "description": "The #1 fan favorite cake. This cake is always a hit.",
+      "link": "http://momsdish.com/r251",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "momsdish",
+        "url": "https://www.pinterest.com/momsdish/",
+        "name": "Momsdish"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/51/d1/e2/51d1e2c69acd3bac6a61e9c37136af10.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

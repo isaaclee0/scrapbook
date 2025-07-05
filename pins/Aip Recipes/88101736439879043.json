@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439879043/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736439879043",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439879043",
+      "url": "https://www.pinterest.com/pin/88101736439879043/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "All Purpose Seasoning Mix",
+      "description": "All Purpose Seasoning Mix Paleo, Gluten Free, Sea Salt, Autoimmune Protocol",
+      "link": "http://www.haveadeliciouslife.com/1/post/2013/12/all-purpose-seasoning-mix.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1f/17/d7/1f17d7d3aceb76347295056b4c1dc130.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

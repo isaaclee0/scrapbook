@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437894178/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736437894178",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437894178",
+      "url": "https://www.pinterest.com/pin/88101736437894178/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "有借无还网",
+      "description": "Tiramisu with raspberries...",
+      "link": "http://www.photoforumonline.net/topic/192-tiramisu-with-raspberry/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/88/ad/90/88ad90c8c452f7ef9c4e3bfb96677f60.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

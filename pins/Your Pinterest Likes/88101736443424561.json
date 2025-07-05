@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443424561/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443424561",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443424561",
+      "url": "https://www.pinterest.com/pin/88101736443424561/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Benson",
+      "description": "Benson cast",
+      "link": "http://www.sitcomsonline.com/benson.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/96/33/a4/9633a40e323d7d7793a67dd7c2260a9d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

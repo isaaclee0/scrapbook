@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440144093/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/ice-cream",
+    "CustomFileName": "88101736440144093",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440144093",
+      "url": "https://www.pinterest.com/pin/88101736440144093/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Healthy Chocolate Banana Ice Cream",
+      "description": "Made from frozen bananas, almond milk, almond butter and cacao powder. No ice cream maker needed! #vegan #dairyfree #healthy",
+      "link": "http://www.eatingbirdfood.com/healthy-chocolate-banana-ice-cream/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "eatingbirdfood",
+        "url": "https://www.pinterest.com/eatingbirdfood/",
+        "name": "Eating Bird Food"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/ice-cream/",
+        "name": "Ice cream",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4f/70/a0/4f70a01d29d9c6b2ded071ae73bbe4a0.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

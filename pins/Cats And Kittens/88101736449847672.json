@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449847672/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736449847672",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449847672",
+      "url": "https://www.pinterest.com/pin/88101736449847672/",
+      "type": "pin",
+      "title": "Cat vs hand drawn Spider",
+      "gridTitle": "Cat vs hand drawn Spider",
+      "description": " ",
+      "link": "http://avengerzilla.ml/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9a/f2/0a/9af20ad62265a9162dbaa6917925ad07.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/5e/7b/29/5e7b2979164c6af36e3a8d34143fceaf.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

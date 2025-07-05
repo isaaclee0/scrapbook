@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441167477/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/gifts-to-give",
+    "CustomFileName": "88101736441167477",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441167477",
+      "url": "https://www.pinterest.com/pin/88101736441167477/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Lebkuchenschmuck:)",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "martaoleszkiewicz",
+        "url": "https://www.pinterest.com/martaoleszkiewicz/",
+        "name": "Marta O."
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/gifts-to-give/",
+        "name": "Gifts to give",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b0/64/45/b06445dca4b50e54e3e26f4000267c8b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

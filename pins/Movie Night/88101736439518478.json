@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439518478/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736439518478",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439518478",
+      "url": "https://www.pinterest.com/pin/88101736439518478/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "The first movie that broke my heart!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "brancy",
+        "url": "https://www.pinterest.com/brancy/",
+        "name": "Nancy"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e3/92/6d/e3926d6e7c10e2ae2d2d0457e22ba1e6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

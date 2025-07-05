@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449413852/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736449413852",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449413852",
+      "url": "https://www.pinterest.com/pin/88101736449413852/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Coconut Bars",
+      "description": "Minus the almond, these coconut bars are just pure joy.",
+      "link": "https://www.tastemade.com/videos/chocolate-and-coconut-cake",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemade",
+        "url": "https://www.pinterest.com/tastemade/",
+        "name": "Tastemade"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bf/0a/2c/bf0a2c11f7c20ea6e7b5090f3e8b2aa7.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/38/cf/6e/38cf6eaaa118a50dbe5d6be018db1694.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

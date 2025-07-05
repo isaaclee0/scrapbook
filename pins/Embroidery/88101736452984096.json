@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452984096/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/embroidery",
+    "CustomFileName": "88101736452984096",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452984096",
+      "url": "https://www.pinterest.com/pin/88101736452984096/",
+      "type": "pin",
+      "title": "DIY EMBROIDERY LEAF",
+      "gridTitle": "DIY EMBROIDERY LEAF",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Threadzaaridesigner",
+        "url": "https://www.pinterest.com/Threadzaaridesigner/",
+        "name": "Threadz Aari Designer"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/embroidery/",
+        "name": "Embroidery",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/de/a7/21/dea7212f208d597eb194e19bff91471e.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/f9/08/ca/f908cac8cc0cc4b2afef93ad0528408e.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

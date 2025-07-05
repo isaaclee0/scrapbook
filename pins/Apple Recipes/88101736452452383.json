@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452452383/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/apple-recipes",
+    "CustomFileName": "88101736452452383",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452452383",
+      "url": "https://www.pinterest.com/pin/88101736452452383/",
+      "type": "pin",
+      "title": "Apple and pineapple tray cake",
+      "gridTitle": "Apple and pineapple tray cake",
+      "description": " ",
+      "link": "https://www.taste.com.au/recipes/apple-pineapple-tray-cake-recipe/g729r0oj",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "teamtaste",
+        "url": "https://www.pinterest.com/teamtaste/",
+        "name": "taste.com.au"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/apple-recipes/",
+        "name": "Apple Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/84/e3/fd/84e3fdbcafa76d8c4730a058978372b6.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/8c/a1/19/8ca119c7c44057125bff0002d631d45a.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

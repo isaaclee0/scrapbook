@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445226000/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/irish-ness",
+    "CustomFileName": "88101736445226000",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445226000",
+      "url": "https://www.pinterest.com/pin/88101736445226000/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Maeve Binchy-",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "westcoast44",
+        "url": "https://www.pinterest.com/westcoast44/",
+        "name": "Patricia Brennan"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/irish-ness/",
+        "name": "Irish - ness",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6a/1c/cd/6a1ccd9ffd2fca6dd7d73ca1d6952236.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441760366/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pools",
+    "CustomFileName": "88101736441760366",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441760366",
+      "url": "https://www.pinterest.com/pin/88101736441760366/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Deck para piscina",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "rodrigorebirth",
+        "url": "https://www.pinterest.com/rodrigorebirth/",
+        "name": "Rodrigo Galho"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pools/",
+        "name": "Pools",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/46/29/a9/4629a9b5e3cca1317ccbc1dc95973f1b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

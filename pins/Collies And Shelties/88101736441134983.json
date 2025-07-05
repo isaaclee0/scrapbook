@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441134983/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/collies-and-shelties",
+    "CustomFileName": "88101736441134983",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441134983",
+      "url": "https://www.pinterest.com/pin/88101736441134983/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Casey",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "donnakmarr",
+        "url": "https://www.pinterest.com/donnakmarr/",
+        "name": "Donna Marr"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/collies-and-shelties/",
+        "name": "Collies and Shelties",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/41/04/7f/41047fa659a5b3032123df51270183ec.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

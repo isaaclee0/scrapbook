@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443171175/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443171175",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443171175",
+      "url": "https://www.pinterest.com/pin/88101736443171175/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Classic Car Pillow",
+      "description": "pretty-pretty-pretty pillow!",
+      "link": "http://www.flickr.com/photos/patchworkpottery/2610264009/in/photostream/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a6/5a/58/a65a5858d9a93222128673502598c0c8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

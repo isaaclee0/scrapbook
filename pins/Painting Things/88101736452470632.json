@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452470632/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painting-things",
+    "CustomFileName": "88101736452470632",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452470632",
+      "url": "https://www.pinterest.com/pin/88101736452470632/",
+      "type": "pin",
+      "title": "Monochrome hallway at Willett Grove, Avenue Road by Artform",
+      "gridTitle": "Monochrome hallway at Willett Grove, Avenue Road by Artform",
+      "description": " ",
+      "link": "http://artformgroup.co.uk/properties/avenue-road/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "artformgroup_",
+        "url": "https://www.pinterest.com/artformgroup_/",
+        "name": "Artform"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painting-things/",
+        "name": "Painting things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2a/8e/a3/2a8ea38ccf008262c1e552d3a9d35485.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

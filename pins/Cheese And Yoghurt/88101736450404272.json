@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450404272/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cheese-and-yoghurt",
+    "CustomFileName": "88101736450404272",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450404272",
+      "url": "https://www.pinterest.com/pin/88101736450404272/",
+      "type": "pin",
+      "title": "Vegan Mini Mozzarella Cheese Balls - The BEST Recipe!",
+      "gridTitle": "Vegan Mini Mozzarella Cheese Balls - The BEST Recipe!",
+      "description": " ",
+      "link": "https://biancazapatka.com/en/vegan-mini-mozzarella-cheese-balls/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "biancazapatka",
+        "url": "https://www.pinterest.com/biancazapatka/",
+        "name": "Bianca Zapatka | Vegane Rezepte | schnell, gesund und lecker"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cheese-and-yoghurt/",
+        "name": "Cheese and Yoghurt",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0c/6c/39/0c6c390238ab1a35725b27bdae52b283.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/b5/66/cb/b566cb28b1ec758be727a31f4c1d733a.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

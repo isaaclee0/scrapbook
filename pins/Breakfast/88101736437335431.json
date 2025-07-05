@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437335431/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/breakfast",
+    "CustomFileName": "88101736437335431",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437335431",
+      "url": "https://www.pinterest.com/pin/88101736437335431/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Coconut Oil Crepes",
+      "description": "... ♥ ...",
+      "link": "http://www.littlebroken.com/2015/03/05/coconut-oil-crepes/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "franhanson",
+        "url": "https://www.pinterest.com/franhanson/",
+        "name": "Fran Hanson"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/breakfast/",
+        "name": "Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9d/6a/69/9d6a69a11d59b462da7704302ec490bc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

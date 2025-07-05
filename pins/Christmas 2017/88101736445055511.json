@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445055511/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/christmas-2017",
+    "CustomFileName": "88101736445055511",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445055511",
+      "url": "https://www.pinterest.com/pin/88101736445055511/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "The French Tangerine",
+      "link": "http://www.thefrenchtangerine.com/search?updated-max=2015-11-12T11:04:00-06:00&max-results=5&start=39&by-date=false",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/christmas-2017/",
+        "name": "Christmas 2017",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8e/b8/51/8eb851b1152f23b46999e77232f62793.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

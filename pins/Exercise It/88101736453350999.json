@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453350999/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/exercise-it",
+    "CustomFileName": "88101736453350999",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453350999",
+      "url": "https://www.pinterest.com/pin/88101736453350999/",
+      "type": "pin",
+      "title": "The World's Best Stretch Exercise Workout TikTok",
+      "gridTitle": "The World's Best Stretch Exercise Workout TikTok",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "bestoftiktoks",
+        "url": "https://www.pinterest.com/bestoftiktoks/",
+        "name": "BEST OF TIKTOK"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/exercise-it/",
+        "name": "Exercise it",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a5/f5/e6/a5f5e69be1f6d549a74c21adad6edf92.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/93/12/84/931284e5e9f2ca3d703bf66fbcbf0a7b.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

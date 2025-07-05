@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445388088/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736445388088",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445388088",
+      "url": "https://www.pinterest.com/pin/88101736445388088/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "⇒ La Recette du Far Breton Nature ou aux Pruneaux",
+      "description": "Recette bretonne du Far Breton facile à cuisiner et succulent !",
+      "link": "http://www.recettes-bretonnes.fr/gateaux-bretons/recette-far-breton.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/dc/f4/44/dcf444f495539a245225152ebde0233e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

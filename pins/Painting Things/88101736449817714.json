@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449817714/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painting-things",
+    "CustomFileName": "88101736449817714",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449817714",
+      "url": "https://www.pinterest.com/pin/88101736449817714/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Unauthorized Access",
+      "description": "Paint your porch wood floors with high gloss Fine Paints of Europe!",
+      "link": "http://paintingbyjason.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ProjectsByJB",
+        "url": "https://www.pinterest.com/ProjectsByJB/",
+        "name": "Jason Bertoniere Painting"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painting-things/",
+        "name": "Painting things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c1/fe/36/c1fe3655e3cc3cf20134dbed9c71f971.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/v2/720p/25/02/cf/2502cf9fc57a11fe1f796c388d05f6d7_mobile.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

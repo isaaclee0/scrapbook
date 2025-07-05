@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446823025/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/italian",
+    "CustomFileName": "88101736446823025",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446823025",
+      "url": "https://www.pinterest.com/pin/88101736446823025/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Best Tiramisu Recipe",
+      "description": "best tiramisu recipe from scratch italian",
+      "link": "https://cookingwithalison.com/2011/10/06/tiramisu-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/italian/",
+        "name": "Italian",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a7/11/7f/a7117f67a7a976171d2d51c251ae839a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

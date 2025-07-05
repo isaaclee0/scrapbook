@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442801696/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442801696",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442801696",
+      "url": "https://www.pinterest.com/pin/88101736442801696/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Facebook is not a clothesline.  Be a Dear and air your dirty laundry  elsewhere.",
+      "description": "seriously",
+      "link": "http://www.someecards.com/usercards/viewcard/MjAxMi1kNmEwMDVmMzk0OTE4MmY1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3f/cd/aa/3fcdaac035926661ca007b8c7d63f089.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

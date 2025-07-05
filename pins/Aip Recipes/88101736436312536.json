@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436312536/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736436312536",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436312536",
+      "url": "https://www.pinterest.com/pin/88101736436312536/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Autoimmune Paleo – AIP Cookie Recipe",
+      "description": "Autoimmune Paleo - AIP Cookie Recipe - The Real Food Guide therealfoodguide.com",
+      "link": "http://therealfoodguide.com/aip-cookie-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/77/1a/d3/771ad35e039893a575c14c6ef7818a2c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

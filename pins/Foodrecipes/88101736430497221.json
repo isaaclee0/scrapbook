@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430497221/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430497221",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430497221",
+      "url": "https://www.pinterest.com/pin/88101736430497221/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Campfire Cones",
+      "description": "Campfire Cones... filled with your favorite goodies and melted in tin foil on your fire!",
+      "link": "http://www.chefjessicabright.com/campfire-cones.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/65/32/b9/6532b9cf81a80ea72e0757b1c70ce0a4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

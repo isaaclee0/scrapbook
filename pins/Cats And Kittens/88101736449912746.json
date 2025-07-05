@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449912746/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736449912746",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449912746",
+      "url": "https://www.pinterest.com/pin/88101736449912746/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Stop Everything And Make This Tree Stump Cat Scratch Pad",
+      "description": "This is so satisfying somehow.                                                                                                                                                                                 More",
+      "link": "https://www.buzzfeed.com/margaretjung/stop-everything-and-make-this-tree-stump-cat-scratch-pad",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "buzzfeednifty",
+        "url": "https://www.pinterest.com/buzzfeednifty/",
+        "name": "Nifty"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/29/20/a0/2920a0a2c5b525cdd7452a7ff1ab902d.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/aa/3b/0c/aa3b0c6e866445a10da9cc5aa151355d.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

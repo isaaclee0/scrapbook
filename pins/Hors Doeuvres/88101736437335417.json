@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437335417/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hors-doeuvres",
+    "CustomFileName": "88101736437335417",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437335417",
+      "url": "https://www.pinterest.com/pin/88101736437335417/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Tuna Tartare with Nori Chips.",
+      "link": "http://feedly.com/e/M0xi66Z5",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hors-doeuvres/",
+        "name": "Hors D'oeuvres",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4d/ed/b8/4dedb8b328cd08ee54f5df149d835457.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

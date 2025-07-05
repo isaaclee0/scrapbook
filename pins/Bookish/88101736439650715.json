@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439650715/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736439650715",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439650715",
+      "url": "https://www.pinterest.com/pin/88101736439650715/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Inklings of Oxford: C. S. Lewis, J. R. R. Tolkien, and Their Friends",
+      "description": "The Inklings of Oxford: C. S. Lewis, J. R. R. Tolkien, an... http://www.amazon.com/dp/0310285038/ref=cm_sw_r_pi_dp_Y40gxb1TD9K35",
+      "link": "http://www.amazon.com/dp/0310285038/ref=cm_sw_r_pi_dp_Y40gxb1TD9K35",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4c/5c/82/4c5c82999621609c03f10874f70c396f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

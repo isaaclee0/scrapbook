@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446035838/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potluck",
+    "CustomFileName": "88101736446035838",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446035838",
+      "url": "https://www.pinterest.com/pin/88101736446035838/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Pumpkin, spinach and lentil lasagne",
+      "description": "This tasty recipe for Pumpkin, Spinach & Lentil Lasagne is also the perfect size for sharing with friends and family.",
+      "link": "http://www.taste.com.au/recipes/37178/pumpkin+spinach+and+lentil+lasagne",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potluck/",
+        "name": "Potluck",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0e/30/4f/0e304f3182cda9f38d4fee166adbb744.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

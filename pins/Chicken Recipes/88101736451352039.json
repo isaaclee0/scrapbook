@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451352039/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736451352039",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451352039",
+      "url": "https://www.pinterest.com/pin/88101736451352039/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Heston Blumenthal's roast chicken",
+      "description": " ",
+      "link": "https://www.sbs.com.au/food/recipes/heston-blumenthals-roast-chicken",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/13/04/88/13048850ff242161643f2a28b029fc99.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

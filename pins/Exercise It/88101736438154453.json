@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438154453/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/exercise-it",
+    "CustomFileName": "88101736438154453",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438154453",
+      "url": "https://www.pinterest.com/pin/88101736438154453/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "soon2befit",
+      "description": "4 minute workout",
+      "link": "http://soon2befit.tumblr.com/post/6805414737",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/exercise-it/",
+        "name": "Exercise it",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f1/24/e9/f124e966f7e07a210bb9b6ea8e0a01b7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

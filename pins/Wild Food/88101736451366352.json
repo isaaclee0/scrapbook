@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451366352/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/wild-food",
+    "CustomFileName": "88101736451366352",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451366352",
+      "url": "https://www.pinterest.com/pin/88101736451366352/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Incredible Wild Edibles",
+      "description": " ",
+      "link": "https://www.amazon.com/dp/0976626624/ref=cm_sw_r_pi_awdb_x_j07VzbDRQ7PMC",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/wild-food/",
+        "name": "Wild food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/63/90/89/63908942295dc0d4f7695c6b1f372a7c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

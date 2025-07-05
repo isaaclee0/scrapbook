@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436626565/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736436626565",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436626565",
+      "url": "https://www.pinterest.com/pin/88101736436626565/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Chocolate Pavlova with Honey-Roasted Pears",
+      "link": "http://ideasmag.co.za/food-entertaining/chocolate-pavlova/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9f/51/38/9f51388b44a7b74b36a13c6ee697788d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

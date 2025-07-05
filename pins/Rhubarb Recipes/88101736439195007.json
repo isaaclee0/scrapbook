@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439195007/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/rhubarb-recipes",
+    "CustomFileName": "88101736439195007",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439195007",
+      "url": "https://www.pinterest.com/pin/88101736439195007/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Rhubarb Custard Ice Cream",
+      "description": "Rhubarb and custard ice cream",
+      "link": "http://www.goboroot.com/rhubarb-custard-ice-cream/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/rhubarb-recipes/",
+        "name": "Rhubarb Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/04/53/78/045378c12db015af848c90a87bb514b1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

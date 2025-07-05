@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442985610/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442985610",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442985610",
+      "url": "https://www.pinterest.com/pin/88101736442985610/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Travel Tech: 10 Must-Pack Gadgets for Geeks on the Go",
+      "description": "For anyone who can never quite get a good nights sleep in a hotel room due to security worries, this gadget can help allay those fears a little. Its high-pitched 91-decibel alarm will alert you if your hotel room door is opened.",
+      "link": "http://mashable.com/2011/03/12/travel-gadgets/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/34/6d/19/346d19fece9a2719190cb73872ba2a72.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

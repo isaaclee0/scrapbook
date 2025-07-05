@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451778981/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736451778981",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451778981",
+      "url": "https://www.pinterest.com/pin/88101736451778981/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "pikkaraine on Twitter",
+      "description": " ",
+      "link": "https://twitter.com/pikkaraine2/status/640791251474874369/photo/1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a4/79/98/a47998feebfa6235c39213ff202864a4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

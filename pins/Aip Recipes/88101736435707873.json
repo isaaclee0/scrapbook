@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435707873/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736435707873",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435707873",
+      "url": "https://www.pinterest.com/pin/88101736435707873/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "What is the Autoimmune Protocol? - meatified",
+      "description": "Autoimmune Paleo: how to do it the happy way! from http://meatified.com #paleo #aip #autoimmune",
+      "link": "http://meatified.com/autoimmune-paleo/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/34/f4/e3/34f4e38a166a23fc69841446ade63272.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

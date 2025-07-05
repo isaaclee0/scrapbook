@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445225941/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cute-kitchens",
+    "CustomFileName": "88101736445225941",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445225941",
+      "url": "https://www.pinterest.com/pin/88101736445225941/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Whitby from the Laura Ashley Kitchen Collection  #lauraashleykitchens",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "symphonygroup",
+        "url": "https://www.pinterest.com/symphonygroup/",
+        "name": "Symphony Group"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cute-kitchens/",
+        "name": "Cute Kitchens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/56/43/39/564339b97985bd9883d63d788968c417.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

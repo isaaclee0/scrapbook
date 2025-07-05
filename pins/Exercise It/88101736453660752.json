@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453660752/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/exercise-it",
+    "CustomFileName": "88101736453660752",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453660752",
+      "url": "https://www.pinterest.com/pin/88101736453660752/",
+      "type": "pin",
+      "title": "Beginner Hip Flexor Strength Exerecises",
+      "gridTitle": "Beginner Hip Flexor Strength Exerecises",
+      "description": " ",
+      "link": "http://justinagustin.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "justinagustin",
+        "url": "https://www.pinterest.com/justinagustin/",
+        "name": "Justin Agustin"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/exercise-it/",
+        "name": "Exercise it",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c6/14/61/c61461b9ceba10d0dcfcef7e564c12e5.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/40/bb/63/40bb63850a31460f6029576b1ca34a2f.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

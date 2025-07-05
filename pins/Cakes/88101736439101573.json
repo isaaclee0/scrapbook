@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439101573/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736439101573",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439101573",
+      "url": "https://www.pinterest.com/pin/88101736439101573/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Cake Fest",
+      "description": "pretty cake. #purple #cake",
+      "link": "http://www.hkfashiongeek.com/2011/05/cake-fest.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/dc/0e/8f/dc0e8f72f6780febf482363129a04e9f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

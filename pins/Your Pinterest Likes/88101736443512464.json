@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443512464/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443512464",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443512464",
+      "url": "https://www.pinterest.com/pin/88101736443512464/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Site offline for maintenance",
+      "description": "I don't think I've ever read a book with a more profound impact on my view of the world. 'My Left Foot' might have opened the eyes of the world, but Skallagrig opened my heart.",
+      "link": "http://www.williamhorwood.co.uk/book-skallagrigg.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/be/9e/66/be9e66f918c8d3355e0d65e52e20faa4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

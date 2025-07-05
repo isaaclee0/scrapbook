@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435194207/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/jam-relish-chutney",
+    "CustomFileName": "88101736435194207",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435194207",
+      "url": "https://www.pinterest.com/pin/88101736435194207/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "dandelion jam",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/jam-relish-chutney/",
+        "name": "Jam, Relish, Chutney..",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b0/58/2a/b0582a0369d507959df8fddff83b719c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

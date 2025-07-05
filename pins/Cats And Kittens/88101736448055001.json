@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448055001/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736448055001",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448055001",
+      "url": "https://www.pinterest.com/pin/88101736448055001/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Cat Carpenter Patio Catio",
+      "description": "The Cat Carpenter Patio Catio",
+      "link": "http://www.thecatcarpenter.com/Classic-catio.htm",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "badd_cats",
+        "url": "https://www.pinterest.com/badd_cats/",
+        "name": "BaddCats"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/11/ec/b7/11ecb7267dea4560cf07723227aac292.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

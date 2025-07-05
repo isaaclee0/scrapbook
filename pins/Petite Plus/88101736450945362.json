@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450945362/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/petite-plus",
+    "CustomFileName": "88101736450945362",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450945362",
+      "url": "https://www.pinterest.com/pin/88101736450945362/",
+      "type": "pin",
+      "title": "Fashion Hack Bra",
+      "gridTitle": "Fashion Hack Bra",
+      "description": " ",
+      "link": "https://m.youtube.com/user/DiamondMakeUp01",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "glojoined",
+        "url": "https://www.pinterest.com/glojoined/",
+        "name": "glojoined"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/petite-plus/",
+        "name": "Petite plus",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/16/ae/cf/16aecf69e03bb23b516ad8955fd4b0fe.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/96/c5/b6/96c5b67538ba3a5bd423029b162373b3.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

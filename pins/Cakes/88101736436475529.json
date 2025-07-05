@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436475529/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736436475529",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436475529",
+      "url": "https://www.pinterest.com/pin/88101736436475529/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Peekaboo Pumpkin Pound Cake - Kids Kubby",
+      "description": "surprise pumpkin pound cake",
+      "link": "http://www.kidskubby.com/peekaboo-pumpkin-pound-cake/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/90/3b/2a/903b2a4c9b3da6a6f03c6b43007f5f25.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

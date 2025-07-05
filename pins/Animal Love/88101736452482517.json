@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452482517/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/animal-love",
+    "CustomFileName": "88101736452482517",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452482517",
+      "url": "https://www.pinterest.com/pin/88101736452482517/",
+      "type": "pin",
+      "title": "Baby mole crawling around",
+      "gridTitle": "Baby mole crawling around",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "jdexports2000",
+        "url": "https://www.pinterest.com/jdexports2000/",
+        "name": "Happy Happy Joy Joy"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/animal-love/",
+        "name": "Animal love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3c/78/20/3c7820024468599bfc9676028f46abb5.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/0e/da/94/0eda94111e49ea79bf314235b1a6e8d1.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

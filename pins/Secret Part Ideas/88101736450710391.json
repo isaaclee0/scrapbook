@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450710391/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/secret-part-ideas",
+    "CustomFileName": "88101736450710391",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450710391",
+      "url": "https://www.pinterest.com/pin/88101736450710391/",
+      "type": "pin",
+      "title": "LA FONDUE DE CAMEMBERT",
+      "gridTitle": "LA FONDUE DE CAMEMBERT",
+      "description": "Le fromage change mais la règle des gages est maintenue ! Parfait pour se regaler d'un camembert roti et profiter du soleil",
+      "link": "https://www.chefclub.tv/fr/recettes/original/1ff0738d-e611-4d30-86ce-c7a62442b993/la-fondue-de-camembert-le-fromage-change-mais-la-r%C3%A8gle-des-gages-est-maintenue/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "chefclubnw",
+        "url": "https://www.pinterest.com/chefclubnw/",
+        "name": "Chefclub"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/secret-part-ideas/",
+        "name": "Secret Part Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/25/ef/2e/25ef2efa40624f80f2e31c47f901e7e3.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/4c/43/4c/4c434c679ea747efeadff94b46dccb51.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

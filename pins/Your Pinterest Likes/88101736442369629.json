@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442369629/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442369629",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442369629",
+      "url": "https://www.pinterest.com/pin/88101736442369629/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "gracefashionstores.com",
+      "description": "Tiana B Women Fabulous and Flattering Dress",
+      "link": "http://www.gracefashionstores.com/party-dress/tiana-b-womens-fabulous-and-flattering-dress/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/da/94/d1/da94d191efc318113d254fffe2190389.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

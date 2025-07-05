@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451160525/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/craft-ideas",
+    "CustomFileName": "88101736451160525",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451160525",
+      "url": "https://www.pinterest.com/pin/88101736451160525/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "two kitties",
+      "description": " ",
+      "link": "http://twokitties.typepad.com/my_weblog/projects_on_my_work_table/page/2/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/craft-ideas/",
+        "name": "Craft Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d6/6d/a5/d66da5d3194b0eed5536abbf1747565b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

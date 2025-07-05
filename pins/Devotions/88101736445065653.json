@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445065653/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/devotions",
+    "CustomFileName": "88101736445065653",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445065653",
+      "url": "https://www.pinterest.com/pin/88101736445065653/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "\"I don't struggle with prayer. I struggle with my priorities.\" (Nathan W. Bingham)",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/devotions/",
+        "name": "Devotions",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c2/04/eb/c204ebbd9da1c6d3c7e11cae53fbb98c.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439526588/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736439526588",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439526588",
+      "url": "https://www.pinterest.com/pin/88101736439526588/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Lights, camera...cake!",
+      "description": "Vintage and Cake: Lights, camera...cake!",
+      "link": "http://vintageandcake.blogspot.com.ar/2011/02/lights-cameracake.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/04/d3/1e/04d31e79415e9fd596548330845ac1af.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

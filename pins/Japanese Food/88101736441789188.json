@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441789188/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/japanese-food",
+    "CustomFileName": "88101736441789188",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441789188",
+      "url": "https://www.pinterest.com/pin/88101736441789188/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "How to make okonomiyaki!",
+      "link": "http://www.cheftaro.com/recipes",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/japanese-food/",
+        "name": "Japanese Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/25/6f/d6/256fd6002ebe2ef9ac3185e67c8be3dc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

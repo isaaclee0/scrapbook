@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439879039/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736439879039",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439879039",
+      "url": "https://www.pinterest.com/pin/88101736439879039/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Account Suspended",
+      "description": "My Meals This Week: 5 Autoimmune Paleo Dinner",
+      "link": "http://popularpaleo.com/2014/07/28/autoimmune-paleo-meal-plan/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/84/00/74/840074fc31c86c220e3591cff41ddb5b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

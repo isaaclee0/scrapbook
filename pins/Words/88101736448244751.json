@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448244751/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736448244751",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448244751",
+      "url": "https://www.pinterest.com/pin/88101736448244751/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "C.S. Lewis",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Larissa713",
+        "url": "https://www.pinterest.com/Larissa713/",
+        "name": "L C"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/01/d0/dd/01d0ddf3f9acdbbea608bab9208e6b59.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

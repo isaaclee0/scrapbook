@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449916315/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/salads",
+    "CustomFileName": "88101736449916315",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449916315",
+      "url": "https://www.pinterest.com/pin/88101736449916315/",
+      "type": "pin",
+      "title": "Chick-fil-A Cole Slaw",
+      "gridTitle": "Chick-fil-A Cole Slaw",
+      "description": "If you’re looking to make the very best coleslaw recipe, this copycat Chick-fil-A Cole Slaw is made for you! #potlucks #coleslaw #chickfila",
+      "link": "https://www.shugarysweets.com/chick-fil-a-cole-slaw/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "shugarysweets",
+        "url": "https://www.pinterest.com/shugarysweets/",
+        "name": "Shugary Sweets"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/salads/",
+        "name": "Salads",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e7/5f/d3/e75fd314f397c7befd5239d85ffbd52c.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/c5/3c/f0/c53cf0f8ff980fb3097a296d1e8f13ae.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

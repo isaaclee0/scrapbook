@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451797287/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736451797287",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451797287",
+      "url": "https://www.pinterest.com/pin/88101736451797287/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Mars Bar Slice | 5 Ingredient No Bake Slice",
+      "description": "Easy Thermomix Mars Bar Slice - Create Bake Make",
+      "link": "https://createbakemake.com/easy-thermomix-mars-bar-slice/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/66/eb/da/66ebdafcc32a06eb8b449204f18bebc4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

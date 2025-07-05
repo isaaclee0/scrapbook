@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439884923/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/dips",
+    "CustomFileName": "88101736439884923",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439884923",
+      "url": "https://www.pinterest.com/pin/88101736439884923/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Rosemary, Lemon, & Feta Spread",
+      "description": "Rosemary, Lemon, & Feta Spread recipe - easy homemade spread and dip | SnappyGourmet.com",
+      "link": "http://snappygourmet.com/rosemary-lemon-feta-spread/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "snappygourmet",
+        "url": "https://www.pinterest.com/snappygourmet/",
+        "name": "Snappy Gourmet"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/dips/",
+        "name": "Dips",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e7/d4/05/e7d405b036b974594ca3ec158a5b55a3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

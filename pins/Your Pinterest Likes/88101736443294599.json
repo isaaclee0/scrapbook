@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443294599/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443294599",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443294599",
+      "url": "https://www.pinterest.com/pin/88101736443294599/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Filming police brutality? Not on an iPhone, you're not.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ubermudskipper",
+        "url": "https://www.pinterest.com/ubermudskipper/",
+        "name": "Chris Michael"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bb/8b/0b/bb8b0b5b403d805a1cb7272cc7fa07e1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

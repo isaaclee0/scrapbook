@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443222498/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443222498",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443222498",
+      "url": "https://www.pinterest.com/pin/88101736443222498/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Free Beef Building Plans",
+      "description": "Free building plans for pretty much anything on your homestead/farm.",
+      "link": "http://www.public.iastate.edu/~mwps_dis/mwps_web/bf_plans.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a1/49/02/a14902524c319ca420f9b957e90a9dc7.gif",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

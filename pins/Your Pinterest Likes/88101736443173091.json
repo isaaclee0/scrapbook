@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443173091/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443173091",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443173091",
+      "url": "https://www.pinterest.com/pin/88101736443173091/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Tumblr",
+      "description": "your move... >> I need to find people that will do this with me!",
+      "link": "http://alexandersattler.tumblr.com/post/19203206611",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ff/01/28/ff0128fcb799c628807502149e2f12bb.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

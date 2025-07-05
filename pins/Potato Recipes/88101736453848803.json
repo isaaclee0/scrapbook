@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453848803/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potato-recipes",
+    "CustomFileName": "88101736453848803",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453848803",
+      "url": "https://www.pinterest.com/pin/88101736453848803/",
+      "type": "pin",
+      "title": "Parmesan Crusted Potatoes",
+      "gridTitle": "Parmesan Crusted Potatoes",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "fooddolls",
+        "url": "https://www.pinterest.com/fooddolls/",
+        "name": "Food Dolls"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potato-recipes/",
+        "name": "Potato Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/d5/4e/62/d54e620f104d1411d2d7d3547437e56e.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

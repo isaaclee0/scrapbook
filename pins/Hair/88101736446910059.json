@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446910059/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736446910059",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446910059",
+      "url": "https://www.pinterest.com/pin/88101736446910059/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Fringe",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "nataleacourt",
+        "url": "https://www.pinterest.com/nataleacourt/",
+        "name": "Natalea Court"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1a/af/6f/1aaf6fb7742ce234b57b460b593b37fc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

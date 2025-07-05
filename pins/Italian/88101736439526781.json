@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439526781/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/italian",
+    "CustomFileName": "88101736439526781",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439526781",
+      "url": "https://www.pinterest.com/pin/88101736439526781/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "My homemade gnudi balls! ricotta spinach and flour do wonders! Plus a tomato sauce yum!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "curiosappetite",
+        "url": "https://www.pinterest.com/curiosappetite/",
+        "name": "Curious Appetite"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/italian/",
+        "name": "Italian",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a2/5c/de/a25cde3ced0989d1acdeb4c0a4c7a0ef.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

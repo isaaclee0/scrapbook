@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443732250/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443732250",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443732250",
+      "url": "https://www.pinterest.com/pin/88101736443732250/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "47 Skills You Need to Survive Homeownership",
+      "description": "47 skills you need to survive homeownership... I'll be happy later that I pinned this.",
+      "link": "http://www.thisoldhouse.com/toh/photos/0,,20434090_20863388,00.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9f/dd/0a/9fdd0ae0c2736dcae6a5d49b245d6392.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

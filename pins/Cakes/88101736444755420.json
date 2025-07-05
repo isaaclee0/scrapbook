@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444755420/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736444755420",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444755420",
+      "url": "https://www.pinterest.com/pin/88101736444755420/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Default Web Site Page",
+      "description": "Strawberry Chocolate Cake is like the best chocolate covered strawberries you’ve ever eaten!!!",
+      "link": "http://allofdessert.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ab/6f/3d/ab6f3d26f64da7acafd9fb32eb62e305.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

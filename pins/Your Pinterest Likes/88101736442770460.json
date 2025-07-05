@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442770460/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442770460",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442770460",
+      "url": "https://www.pinterest.com/pin/88101736442770460/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "50 Online Tools to Better Your Blog - IFB",
+      "description": "tools to better your blog",
+      "link": "http://heartifb.com/2012/03/27/50-online-tools-to-better-your-blog/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d1/91/a1/d191a1cb17cedd897ac48e3855c196b3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

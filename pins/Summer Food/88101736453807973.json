@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453807973/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/summer-food",
+    "CustomFileName": "88101736453807973",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453807973",
+      "url": "https://www.pinterest.com/pin/88101736453807973/",
+      "type": "pin",
+      "title": "Watermelon Popsicles",
+      "gridTitle": "Watermelon Popsicles",
+      "description": " ",
+      "link": "https://veggieworldrecipes.com/watermelon-popsicles/",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "veggieworldrecipes",
+        "url": "https://www.pinterest.com/veggieworldrecipes/",
+        "name": "Veggie World Recipes"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/summer-food/",
+        "name": "Summer food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/87/e7/46/87e74640f22c49e575c474e0d48601bc.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

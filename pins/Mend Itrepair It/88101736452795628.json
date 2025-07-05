@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452795628/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/mend-itrepair-it",
+    "CustomFileName": "88101736452795628",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452795628",
+      "url": "https://www.pinterest.com/pin/88101736452795628/",
+      "type": "pin",
+      "title": "Embroidery and stitch fix",
+      "gridTitle": "Embroidery and stitch fix",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "grace_ann3",
+        "url": "https://www.pinterest.com/grace_ann3/",
+        "name": "GRACE ANN ☻"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/mend-itrepair-it/",
+        "name": "Mend it/Repair it",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/76/e9/fd/76e9fdf8cb1a13516c51f828e40abdd7.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/84/b4/53/84b453c243039804c22ac6b8deab866f.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

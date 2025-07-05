@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431199039/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736431199039",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431199039",
+      "url": "https://www.pinterest.com/pin/88101736431199039/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "potato and onion tart",
+      "link": "http://hizzoners.com/recipes/vegetables/285-upside-down-potato-a-onion-tart-",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c1/6a/1f/c16a1f92c0967a00eb96e8fb87727980.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

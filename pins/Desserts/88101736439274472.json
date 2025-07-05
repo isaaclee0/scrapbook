@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439274472/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736439274472",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439274472",
+      "url": "https://www.pinterest.com/pin/88101736439274472/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Lemon Meringue Pie Recipe - ZoëBakes",
+      "description": "lime meringue pie.",
+      "link": "http://zoebakes.com/2009/06/18/a-mile-high-lemon-brown-sugar-meringue-pie/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/79/74/bc/7974bce752443dab75bbad495343388f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

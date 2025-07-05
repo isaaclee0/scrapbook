@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439923843/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736439923843",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439923843",
+      "url": "https://www.pinterest.com/pin/88101736439923843/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Sight",
+      "description": "The Sight by David Clement-Davies http://www.amazon.com/dp/0142408743/ref=cm_sw_r_pi_dp_QoPuxb0S7892C",
+      "link": "http://www.amazon.com/dp/0142408743/ref=cm_sw_r_pi_dp_QoPuxb0S7892C",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5b/67/b5/5b67b5a83dda7aac5c640fcb3a3ce000.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

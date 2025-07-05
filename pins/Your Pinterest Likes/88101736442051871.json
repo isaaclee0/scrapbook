@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442051871/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442051871",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442051871",
+      "url": "https://www.pinterest.com/pin/88101736442051871/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Improving Gertie: organizing storage",
+      "description": "Original pinner wrote: After MANY years of RVing, I've found some new tips here!  < These are great ideas. Find even more ideas in the links on the left under \"Improving Gertie\".",
+      "link": "http://www.andybaird.com/travels/gertie/improv_storage.htm",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/09/c4/2b/09c42bcb2bf0b732e9bb49a43d63df83.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444972188/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painting-things",
+    "CustomFileName": "88101736444972188",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444972188",
+      "url": "https://www.pinterest.com/pin/88101736444972188/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Shades of Romance - BHG",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "nlcbennett",
+        "url": "https://www.pinterest.com/nlcbennett/",
+        "name": "Nancy Bennett"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painting-things/",
+        "name": "Painting things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/dc/c6/a8/dcc6a81573cd69a97637873fb4728dc7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

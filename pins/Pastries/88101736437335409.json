@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437335409/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pastries",
+    "CustomFileName": "88101736437335409",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437335409",
+      "url": "https://www.pinterest.com/pin/88101736437335409/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "How to Make a Lattice Pie Crust That Looks Perfect",
+      "description": "How to Make a Lattice Pie from Taste of Home",
+      "link": "http://www.tasteofhome.com/Recipes/Holiday---Celebration-Recipes/Thanksgiving-Recipes/How-to-Make-a-Lattice-Pie?keycode=ZPIN0512",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "taste_of_home",
+        "url": "https://www.pinterest.com/taste_of_home/",
+        "name": "Taste of Home"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pastries/",
+        "name": "pastries",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a6/47/61/a6476174c03cb75cd98e468bda03d95d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435759999/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pastries",
+    "CustomFileName": "88101736435759999",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435759999",
+      "url": "https://www.pinterest.com/pin/88101736435759999/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Classic French croissant recipe",
+      "description": "French Croissant Recipe... Croissants are not as difficult as they seem! Delicious!!",
+      "link": "http://www.weekendbakery.com/posts/classic-french-croissant-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pastries/",
+        "name": "pastries",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/20/59/58/2059588508edcc120f4e021138bf9e85.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

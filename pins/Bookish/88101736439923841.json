@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439923841/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736439923841",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439923841",
+      "url": "https://www.pinterest.com/pin/88101736439923841/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Fire Bringer",
+      "description": "Fire Bringer by David Clement-Davies http://www.amazon.com/dp/0142408735/ref=cm_sw_r_pi_dp_JmPuxb0BFT19Y",
+      "link": "http://www.amazon.com/dp/0142408735/ref=cm_sw_r_pi_dp_JmPuxb0BFT19Y",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/42/65/b7/4265b74f04f0b2a40b74c7b625aa5b70.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

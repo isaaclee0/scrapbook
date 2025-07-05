@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433630398/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736433630398",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433630398",
+      "url": "https://www.pinterest.com/pin/88101736433630398/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chats des célébrités",
+      "description": "Pablo Picasso",
+      "link": "http://album.aufeminin.com/album/see_658069_29/Chats-des-celebrites.html#p64",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a9/01/ac/a901ac76ef2064e59e392fb46b0b64d5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437945155/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736437945155",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437945155",
+      "url": "https://www.pinterest.com/pin/88101736437945155/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "My Top 10 Autoimmune Protocol Recipes - meatified",
+      "description": "Pork Belly Carnitas from http://meatified.com #paleo #glutenfree #whole30",
+      "link": "http://meatified.com/top-10-autoimmune-paleo-recipes/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f0/2b/2b/f02b2b200cf20689f4238880d8f18ed0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

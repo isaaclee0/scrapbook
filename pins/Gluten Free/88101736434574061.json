@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434574061/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/gluten-free",
+    "CustomFileName": "88101736434574061",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434574061",
+      "url": "https://www.pinterest.com/pin/88101736434574061/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Savory Quinoa Recipe",
+      "description": "Savory Quinoa Recipe",
+      "link": "http://glutenfreerecipebox.com/savory-quinoa-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/gluten-free/",
+        "name": "Gluten Free",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c1/3b/f8/c13bf855841f58ea50cb166e1d945ed9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

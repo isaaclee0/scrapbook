@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453246911/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/for-linda",
+    "CustomFileName": "88101736453246911",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453246911",
+      "url": "https://www.pinterest.com/pin/88101736453246911/",
+      "type": "pin",
+      "title": "Video demo of fabric stenciling on Stencil Up Creat-a-Cushion kit",
+      "gridTitle": "Video demo of fabric stenciling on Stencil Up Creat-a-Cushion kit",
+      "description": " ",
+      "link": "https://www.stencilup.co.uk/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Stencilup",
+        "url": "https://www.pinterest.com/Stencilup/",
+        "name": "Stencil Up"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/for-linda/",
+        "name": "For Linda",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/28/ee/72/28ee72e7bc06850c3bc7a85d492f9b06.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/f9/f2/c0/f9f2c0e0a0e190120e79ddcb067b500f.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

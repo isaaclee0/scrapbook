@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445257291/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/coffee-spot",
+    "CustomFileName": "88101736445257291",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445257291",
+      "url": "https://www.pinterest.com/pin/88101736445257291/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "\"Brew me a cup for a winter's night. For the wind howls loud and the furies fight; spice it with love and stir it with care, and I'll toast our bright eyes, my sweetheart fair.\" - Minna Thomas Antrim. illustrated series created by Jennifer R. Cook",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "catsmeo",
+        "url": "https://www.pinterest.com/catsmeo/",
+        "name": "Jennifer R. Cook"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/coffee-spot/",
+        "name": "Coffee Spot",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/29/35/32/293532b88bb17af3afa17d0630a27fb9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

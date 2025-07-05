@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442284974/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442284974",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442284974",
+      "url": "https://www.pinterest.com/pin/88101736442284974/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "So true......",
+      "link": "https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-ash3/q92/944157_607618075938309_170696384_n.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/57/a5/c5/57a5c5535f579df866cc50a07063b020.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

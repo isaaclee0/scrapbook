@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451718635/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736451718635",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451718635",
+      "url": "https://www.pinterest.com/pin/88101736451718635/",
+      "type": "pin",
+      "title": "quotes, motivation, quote, inspirational 🦋🌿",
+      "gridTitle": "quotes, motivation, quote, inspirational 🦋🌿",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 2,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "beginnersguidetomakeup",
+        "url": "https://www.pinterest.com/beginnersguidetomakeup/",
+        "name": "Beginners Guide To Makeup💄"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/10/7a/8e/107a8eb039613635b06a55186c3c0ac5.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/3c/fb/4b/3cfb4b1fd1719c2d98ec8909c500315f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

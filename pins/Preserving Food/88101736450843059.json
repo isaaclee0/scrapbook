@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450843059/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/preserving-food",
+    "CustomFileName": "88101736450843059",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450843059",
+      "url": "https://www.pinterest.com/pin/88101736450843059/",
+      "type": "pin",
+      "title": "Easy Pickled Beets Recipe",
+      "gridTitle": "Easy Pickled Beets Recipe",
+      "description": " ",
+      "link": "https://noshingwiththenolands.com/easy-pickled-beets-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tnoland",
+        "url": "https://www.pinterest.com/tnoland/",
+        "name": "Noshing With The Nolands"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/preserving-food/",
+        "name": "Preserving Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/78/3e/05/783e05150e800bc06cec489f58945712.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/f9/0a/d2/f90ad21c4d75d11ace71647bce698215.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

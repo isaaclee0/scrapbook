@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452368574/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/i-see",
+    "CustomFileName": "88101736452368574",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452368574",
+      "url": "https://www.pinterest.com/pin/88101736452368574/",
+      "type": "pin",
+      "title": "Space Facts",
+      "gridTitle": "Space Facts",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 53,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "cosmoshunt",
+        "url": "https://www.pinterest.com/cosmoshunt/",
+        "name": "cosmoshunt"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/i-see/",
+        "name": "I see....",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/41/0a/db/410adb9d361a187a8b27122a37a4b2c0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451313199/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cards",
+    "CustomFileName": "88101736451313199",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451313199",
+      "url": "https://www.pinterest.com/pin/88101736451313199/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "cluck, cluck, moo...",
+      "description": " ",
+      "link": "http://lilybeanpaperie.typepad.com/lilybeans_paperie/2011/04/cluck-cluck-moo.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cards/",
+        "name": "Cards",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2c/7c/3f/2c7c3fc65928c9505351f320d4a275df.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439638331/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/inside-a-cottage",
+    "CustomFileName": "88101736439638331",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439638331",
+      "url": "https://www.pinterest.com/pin/88101736439638331/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Yum",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "mosaique_events",
+        "url": "https://www.pinterest.com/mosaique_events/",
+        "name": "MOSAÏQUE - EVENT DESIGN"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/inside-a-cottage/",
+        "name": "Inside a cottage",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/45/51/87/455187619901046499d738007fc26e36.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

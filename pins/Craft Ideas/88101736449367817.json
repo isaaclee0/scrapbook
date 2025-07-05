@@ -1,0 +1,47 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449367817/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/craft-ideas",
+    "CustomFileName": "88101736449367817",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449367817",
+      "url": "https://www.pinterest.com/pin/88101736449367817/",
+      "type": "pin",
+      "title": "Easy Paper Craft Ideas~~!",
+      "gridTitle": "Easy Paper Craft Ideas~~!",
+      "description": "#diy",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/craft-ideas/",
+        "name": "Craft Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6f/ce/51/6fce5107362578bc4a90ffa8870fc4a9.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/v2/720p/3c/4e/7a/3c4e7ab44dcd4ef24c370ae4dbeb00a3_mobile.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

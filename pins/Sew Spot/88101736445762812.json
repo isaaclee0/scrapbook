@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445762812/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/sew-spot",
+    "CustomFileName": "88101736445762812",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445762812",
+      "url": "https://www.pinterest.com/pin/88101736445762812/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Para mi cuarto de costura",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "olgadelucas71",
+        "url": "https://www.pinterest.com/olgadelucas71/",
+        "name": "Olga De Lucas"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/sew-spot/",
+        "name": "Sew Spot",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b6/af/69/b6af690748f129c3b602a072cd5cd96c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

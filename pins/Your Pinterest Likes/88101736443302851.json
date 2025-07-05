@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443302851/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443302851",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443302851",
+      "url": "https://www.pinterest.com/pin/88101736443302851/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Summer Wreath, Door Wreath, Grapevine Wreath, Country Wreath, Primitive Wreath, Birdhouse Spring Wreath - Etsy",
+      "description": "Summer Wreath, Door Wreath, Grapevine wreath, Country Wreath, Primitive Wreath, Birdhouse",
+      "link": "http://www.etsy.com/listing/101557982/summer-wreath-door-wreath-grapevine",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/67/5e/43/675e43b5ec5e9e3b49021775e28ecfca.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

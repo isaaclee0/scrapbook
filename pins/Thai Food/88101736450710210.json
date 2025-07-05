@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450710210/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/thai-food",
+    "CustomFileName": "88101736450710210",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450710210",
+      "url": "https://www.pinterest.com/pin/88101736450710210/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Yum Nua - Thai Beef Salad Recipe  - Food.com",
+      "description": "Yum Nua - Thai Spicy Beef Salad. Eat plain or with rice and fish sauce.",
+      "link": "http://www.food.com/recipe/yum-nua-thai-beef-salad-89165",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "coolerkitchen",
+        "url": "https://www.pinterest.com/coolerkitchen/",
+        "name": "Cooler Kitchen - Kitchenware"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/thai-food/",
+        "name": "Thai Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a4/76/f4/a476f4ec2d87419cf1a5250c3e785399.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

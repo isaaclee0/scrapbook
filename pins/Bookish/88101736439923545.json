@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439923545/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736439923545",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439923545",
+      "url": "https://www.pinterest.com/pin/88101736439923545/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Bambi's First Day (Sleeping Bear Classics)",
+      "description": "Bambi's First Day (Sleeping Bear Classics) by Felix Salten http://www.amazon.com/dp/1585364223/ref=cm_sw_r_pi_dp_.AI7wb0NT7MQW",
+      "link": "http://www.amazon.com/dp/1585364223/ref=cm_sw_r_pi_dp_.AI7wb0NT7MQW",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5d/53/86/5d5386b9f2fa8c1416f24e2681bf561e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

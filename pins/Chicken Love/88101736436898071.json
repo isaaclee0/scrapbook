@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436898071/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-love",
+    "CustomFileName": "88101736436898071",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436898071",
+      "url": "https://www.pinterest.com/pin/88101736436898071/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "chickens in the house!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 12,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-love/",
+        "name": "Chicken love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f7/aa/ea/f7aaea391c8f2e40a4c8be84144ea363.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

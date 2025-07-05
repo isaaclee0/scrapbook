@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435707868/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736435707868",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435707868",
+      "url": "https://www.pinterest.com/pin/88101736435707868/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "TastyShare.com is for sale!",
+      "description": "Autoimmune Protocol Friendly Thanksgiving Recipes | Autoimmune Paleo",
+      "link": "http://tastyshare.com/posts/index/newest/64",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/92/db/6a/92db6a31a33c06222ffb4fc2b422becc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

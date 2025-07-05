@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438959752/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736438959752",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438959752",
+      "url": "https://www.pinterest.com/pin/88101736438959752/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Pumpkin pie bars recipe",
+      "description": "Made with a rich and creamy filling, these pumpkin pie bars are a delicious twist of the classic pie and a nice way to feed a crowd without being too messy!",
+      "link": "http://roxanashomebaking.com/pumpkin-pie-bars-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 8,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/47/ae/b3/47aeb31c47935faf4f194c6782542013.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

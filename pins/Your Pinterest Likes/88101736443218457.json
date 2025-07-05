@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443218457/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443218457",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443218457",
+      "url": "https://www.pinterest.com/pin/88101736443218457/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Cut Tulle for a Tutu QUICK and EASY!",
+      "description": "Someone just saved me SO much time on making tutus. Why didn't we think of that??",
+      "link": "http://treasuresfortots.blogspot.com/2009/10/cut-tulle-for-tutu-using-quick-and-easy.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/85/75/4e/85754eefe1f11ebc4476d5a2ff8148b3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

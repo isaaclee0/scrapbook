@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452213681/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/children",
+    "CustomFileName": "88101736452213681",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452213681",
+      "url": "https://www.pinterest.com/pin/88101736452213681/",
+      "type": "pin",
+      "title": "Find some time",
+      "gridTitle": "Find some time",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "best_parenting_tips101",
+        "url": "https://www.pinterest.com/best_parenting_tips101/",
+        "name": "Best Parenting Tips"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/children/",
+        "name": "Children",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/81/74/ca/8174caaa30e41381fdc4aca47cbf752b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

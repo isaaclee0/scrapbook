@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447035021/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736447035021",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447035021",
+      "url": "https://www.pinterest.com/pin/88101736447035021/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Site is undergoing maintenance",
+      "description": "Deliciously warm, gluten free, Oven baked ginger pears. Great for breakfast or dessert!",
+      "link": "https://www.littlebitesofbeauty.com/oven-baked-ginger-pears/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "LBOBbyambratorelli",
+        "url": "https://www.pinterest.com/LBOBbyambratorelli/",
+        "name": "Little Bites of Beauty"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/df/d3/40/dfd3407973c3e9009a995bd97a3c4242.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

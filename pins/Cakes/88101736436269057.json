@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436269057/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736436269057",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436269057",
+      "url": "https://www.pinterest.com/pin/88101736436269057/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Awesome Cherry decorated cake...",
+      "link": "https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-ash3/46795_494792890599696_607393829_n.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/90/26/29/9026298e7425dff0f786d666343c8728.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449367814/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/craft-ideas",
+    "CustomFileName": "88101736449367814",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449367814",
+      "url": "https://www.pinterest.com/pin/88101736449367814/",
+      "type": "pin",
+      "title": "Beautiful DIY Ideas",
+      "gridTitle": "Beautiful DIY Ideas",
+      "description": "Creative and beautiful sparrow diy decor.",
+      "link": "http://www.worldmagazine.today/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/craft-ideas/",
+        "name": "Craft Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/36/d3/69/36d369dd4c2e9b604bb8de018c814293.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/b5/e5/7a/b5e57a0846d3f1521fdd1de12ba3b956.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

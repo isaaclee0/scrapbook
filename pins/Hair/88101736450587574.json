@@ -1,0 +1,47 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450587574/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736450587574",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450587574",
+      "url": "https://www.pinterest.com/pin/88101736450587574/",
+      "type": "pin",
+      "title": "Curly hair messy bun tutorial",
+      "gridTitle": "Curly hair messy bun tutorial",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/79/1b/52/791b52276eb212fa0aa8ac774fd9e3ef.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/d8/b4/e8/d8b4e852a6078fa5488fca5381fa595f.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

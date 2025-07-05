@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445054159/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/scotland-beckons",
+    "CustomFileName": "88101736445054159",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445054159",
+      "url": "https://www.pinterest.com/pin/88101736445054159/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Scotland",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "irmawolfje",
+        "url": "https://www.pinterest.com/irmawolfje/",
+        "name": "irmawolfje"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/scotland-beckons/",
+        "name": "Scotland Beckons",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/35/f2/67/35f26766c7b9bf57ae280056c1ebaf79.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

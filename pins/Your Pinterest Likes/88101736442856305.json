@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442856305/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442856305",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442856305",
+      "url": "https://www.pinterest.com/pin/88101736442856305/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Why Do People Hate Redheads?",
+      "description": "Why do people hate redheads? Interesting facts about gingers.",
+      "link": "http://www.squidoo.com/why-do-people-hate-redheads",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ea/f1/93/eaf193e6ee1b414921a0c30a8a39530a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

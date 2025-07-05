@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449162808/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pastries",
+    "CustomFileName": "88101736449162808",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449162808",
+      "url": "https://www.pinterest.com/pin/88101736449162808/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chestnut, butternut squash and leek pasties",
+      "description": "A hearty pasty that's perfect for a warming autumn lunch.",
+      "link": "http://www.countryliving.co.uk/create/food-and-drink/recipes/a393/chestnut-butternut-squash-and-leek-pasties/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pastries/",
+        "name": "pastries",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c1/26/d3/c126d318c508060bbf500a43be2c0e96.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447058474/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736447058474",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447058474",
+      "url": "https://www.pinterest.com/pin/88101736447058474/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Beautiful cat.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "susanaopazorodr",
+        "url": "https://www.pinterest.com/susanaopazorodr/",
+        "name": "Susana Opazo Rodríguez"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/de/be/eb/debeeb5f468bf9e2c84feabe4fbc05b0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

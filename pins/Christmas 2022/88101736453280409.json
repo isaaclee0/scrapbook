@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453280409/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/christmas-2022",
+    "CustomFileName": "88101736453280409",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453280409",
+      "url": "https://www.pinterest.com/pin/88101736453280409/",
+      "type": "pin",
+      "title": "Pink Christmas tree!",
+      "gridTitle": "Pink Christmas tree!",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "shelby6269",
+        "url": "https://www.pinterest.com/shelby6269/",
+        "name": "Just Darlicious - Darlene Shelby"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/christmas-2022/",
+        "name": "Christmas 2022",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/40/c1/48/40c1481d8373d2f36f764f82b6e05806.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/72/8d/8e/728d8e251bc21fe4f86e4969890e1f00.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

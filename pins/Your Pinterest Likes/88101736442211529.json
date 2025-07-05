@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442211529/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442211529",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442211529",
+      "url": "https://www.pinterest.com/pin/88101736442211529/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Our 5 Favorite Quotes To Encourage Happiness",
+      "description": "Best quote ever.",
+      "link": "http://itsalovelylife.com/inspirational-quotes-to-make-your-life-better/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/12/32/f2/1232f2261a1f4cd26ce5dd79dc0157f4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

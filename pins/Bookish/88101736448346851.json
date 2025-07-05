@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448346851/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736448346851",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448346851",
+      "url": "https://www.pinterest.com/pin/88101736448346851/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "The Jewel Garden by Montagu Don",
+      "link": "http://www.amazon.com/dp/0340826711/ref=cm_sw_r_pi_dp_AiF9tb1QRQZHC",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b2/e2/28/b2e228f005986c371298eaf7e346282f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

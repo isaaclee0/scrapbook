@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435261429/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pastries",
+    "CustomFileName": "88101736435261429",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435261429",
+      "url": "https://www.pinterest.com/pin/88101736435261429/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Lemon tart",
+      "link": "http://gourmetbaking.blogspot.com/2011/07/meyer-lemon-tart.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pastries/",
+        "name": "pastries",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0e/33/9f/0e339f5b7ebfe5652197a9d1a1fc4d3a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

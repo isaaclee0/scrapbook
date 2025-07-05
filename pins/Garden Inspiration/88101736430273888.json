@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430273888/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/garden-inspiration",
+    "CustomFileName": "88101736430273888",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430273888",
+      "url": "https://www.pinterest.com/pin/88101736430273888/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "seed saving",
+      "link": "http://www.marthastewart.com/266525/saving-seeds?czone",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/garden-inspiration/",
+        "name": "Garden Inspiration",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/51/ca/0c/51ca0cfa76b3c5d85f3960f6a0a7f959.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

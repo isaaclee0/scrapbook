@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442358862/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442358862",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442358862",
+      "url": "https://www.pinterest.com/pin/88101736442358862/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Save The Planet",
+      "description": "Post 9/11 America is NOTHING what the founding father's envisioned. This far exceeds Orwell's expectations.",
+      "link": "http://www.infobarrel.com/Media/From_911_To_The_Police_State",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c3/b1/d3/c3b1d33add9f63467f0a2717358e0ca3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

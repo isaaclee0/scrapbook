@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438494833/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736438494833",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438494833",
+      "url": "https://www.pinterest.com/pin/88101736438494833/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chicken Pot Pie - Lovely Little Kitchen",
+      "description": "Chicken Pot Pie with three shortcuts to make it quick and easy! best chicken recipes",
+      "link": "http://lovelylittlekitchen.com/chicken-pot-pie/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "lovelylittlekitchen",
+        "url": "https://www.pinterest.com/lovelylittlekitchen/",
+        "name": "Lovely Little Kitchen"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fe/9a/4d/fe9a4d2229dbd36fb82878c773e8fc82.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430275857/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cute-kitchens",
+    "CustomFileName": "88101736430275857",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430275857",
+      "url": "https://www.pinterest.com/pin/88101736430275857/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "cottage kitchen",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "purecottage",
+        "url": "https://www.pinterest.com/purecottage/",
+        "name": "Robin Wanke"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cute-kitchens/",
+        "name": "Cute Kitchens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e7/5c/6f/e75c6fc602d847fb722e5f49b5592ab9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434086476/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736434086476",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434086476",
+      "url": "https://www.pinterest.com/pin/88101736434086476/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "AIP-Friendly \"Spaghetti\" and Meatballs",
+      "description": "Autoimmune Protocol-Friendly Paleo Spaghetti and Meatballs | The Paleo Mom",
+      "link": "http://www.thepaleomom.com/2013/07/aip-friendly-spaghetti-and-meatballs.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7e/cb/85/7ecb8539c54fd9ecf311d692750d2ae6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

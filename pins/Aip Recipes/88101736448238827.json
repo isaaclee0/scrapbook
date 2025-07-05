@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448238827/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736448238827",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448238827",
+      "url": "https://www.pinterest.com/pin/88101736448238827/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Ten Delicious Snacks On The Autoimmune Paleo Diet",
+      "description": " ",
+      "link": "https://realplans.com/blog/snacks-autoimmune-paleo-diet/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 5,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/60/8b/3a/608b3ad109b7ceed6b656dbf1df7f101.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

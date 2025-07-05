@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434789733/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736434789733",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434789733",
+      "url": "https://www.pinterest.com/pin/88101736434789733/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Glittering Raspberry Kulfi",
+      "description": "Glittering Raspberry Kulfi",
+      "link": "http://deliciousdeliciousdelicious.blogspot.com/2010/03/glittering-raspberry-kulfi.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cb/6a/90/cb6a90ee6e47602074a74f3f76fadd2b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

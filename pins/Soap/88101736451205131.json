@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451205131/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/soap",
+    "CustomFileName": "88101736451205131",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451205131",
+      "url": "https://www.pinterest.com/pin/88101736451205131/",
+      "type": "pin",
+      "title": "Learn to make handmade soap from scratch",
+      "gridTitle": "Learn to make handmade soap from scratch",
+      "description": "Learn to make natural cold-process soap from scratch. Includes an introduction to soap making ingredients, equipment and safety, basic recipes, and the full soap making process #lovelygreens #soapmaking #soaprecipe",
+      "link": "https://lovelygreens.com/make-handmade-soap/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "lovelygreens",
+        "url": "https://www.pinterest.com/lovelygreens/",
+        "name": "Lovely Greens • Creative Self-Sufficient Living"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/soap/",
+        "name": "Soap",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/48/5c/24/485c2495e385f4322df790a9ca726c72.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/3c/d0/d0/3cd0d0e75b70fde5aac9fbe0cde121f9.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

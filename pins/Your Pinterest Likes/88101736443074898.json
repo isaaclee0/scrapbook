@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443074898/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443074898",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443074898",
+      "url": "https://www.pinterest.com/pin/88101736443074898/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Организация дачного пространства",
+      "description": "So cool!",
+      "link": "http://home-and-garden.livejournal.com/148501.html?style=mine",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ef/d7/76/efd7768f3095b22269df1cc5f66fc52c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

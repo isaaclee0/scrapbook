@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451959139/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/secret-part-ideas",
+    "CustomFileName": "88101736451959139",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451959139",
+      "url": "https://www.pinterest.com/pin/88101736451959139/",
+      "type": "pin",
+      "title": "Cake Pops",
+      "gridTitle": "Cake Pops",
+      "description": "Cake pops, diferente e saboroso!",
+      "link": "https://www.tastemade.com.br/videos/cake-pops",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemadebr",
+        "url": "https://www.pinterest.com/tastemadebr/",
+        "name": "Tastemade Brasil"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/secret-part-ideas/",
+        "name": "Secret Part Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/78/99/88/789988890f01bfc338db83f14be9effb.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/d3/56/85/d35685b1c61c0ec6df82d8373467e9ff.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

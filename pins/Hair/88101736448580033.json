@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448580033/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736448580033",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448580033",
+      "url": "https://www.pinterest.com/pin/88101736448580033/",
+      "type": "pin",
+      "title": "HAIR TRANSFORMATION\n",
+      "gridTitle": "HAIR TRANSFORMATION",
+      "description": "Beauty has no age ❤",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "metdaan",
+        "url": "https://www.pinterest.com/metdaan/",
+        "name": "MetDaan"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4b/59/57/4b5957de4f2439b5b0cf6ff7decced29.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/v2/720p/1d/d0/7d/1dd07dc68d512b9c15c79d36c3a82241_mobile.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

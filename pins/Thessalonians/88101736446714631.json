@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446714631/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/thessalonians",
+    "CustomFileName": "88101736446714631",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446714631",
+      "url": "https://www.pinterest.com/pin/88101736446714631/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "1 Thes. 4:3-5",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/thessalonians/",
+        "name": "Thessalonians",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/93/ed/88/93ed88bc21df3408b1840dcf870d3541.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

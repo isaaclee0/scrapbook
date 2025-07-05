@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435013632/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cute-kitchens",
+    "CustomFileName": "88101736435013632",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435013632",
+      "url": "https://www.pinterest.com/pin/88101736435013632/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Untitled",
+      "description": "A great kitchen",
+      "link": "http://gypsypurplehome.tumblr.com/page/49",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 5,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cute-kitchens/",
+        "name": "Cute Kitchens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/54/58/8b/54588bd6bef6418bf909d2ea38d58ff2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

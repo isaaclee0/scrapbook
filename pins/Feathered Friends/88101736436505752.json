@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436505752/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/feathered-friends",
+    "CustomFileName": "88101736436505752",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436505752",
+      "url": "https://www.pinterest.com/pin/88101736436505752/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Snowy Owl Launch by Josh Parsons / 500px",
+      "description": "Snowy Owl",
+      "link": "http://500px.com/photo/59214684/snowy-owl-launch-by-josh-parsons",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/feathered-friends/",
+        "name": "Feathered friends",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b1/5c/9b/b15c9b48ff141892be1f0fb35eb11e55.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

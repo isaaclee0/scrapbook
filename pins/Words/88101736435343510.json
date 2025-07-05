@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435343510/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736435343510",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435343510",
+      "url": "https://www.pinterest.com/pin/88101736435343510/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "We can do this too America, let's get on it.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "lisalynn61",
+        "url": "https://www.pinterest.com/lisalynn61/",
+        "name": "Lisa Lynn"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/07/c7/41/07c74115de4c14ffcfbe1b49b0dd1076.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

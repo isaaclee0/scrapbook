@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453150841/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/mend-itrepair-it",
+    "CustomFileName": "88101736453150841",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453150841",
+      "url": "https://www.pinterest.com/pin/88101736453150841/",
+      "type": "pin",
+      "title": "Palha trançada e marcenaria artesanal",
+      "gridTitle": "Palha trançada e marcenaria artesanal",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "jucamobilia",
+        "url": "https://www.pinterest.com/jucamobilia/",
+        "name": "Jucá Mobilia"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/mend-itrepair-it/",
+        "name": "Mend it/Repair it",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/90/4c/29/904c293219c5e457397e5154a4105f6e.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/4e/26/5a/4e265a1328925535fa3b312ffb952c03.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

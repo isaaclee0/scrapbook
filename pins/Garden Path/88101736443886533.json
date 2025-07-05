@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443886533/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/garden-path",
+    "CustomFileName": "88101736443886533",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443886533",
+      "url": "https://www.pinterest.com/pin/88101736443886533/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Lattice, red brick house and curved garden path",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/garden-path/",
+        "name": "Garden Path",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/57/3e/6e/573e6e86f0a31a288634cc18ddf69faa.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

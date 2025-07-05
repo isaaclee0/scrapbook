@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451790832/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/greek-food",
+    "CustomFileName": "88101736451790832",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451790832",
+      "url": "https://www.pinterest.com/pin/88101736451790832/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Κοκ Συνταγή από τον/την Sitronella",
+      "description": "Εξαιρετική συνταγή για Κοκ. Μια συνταγή του Στέλιου Παρλιάρου.",
+      "link": "https://cookpad.com/gr/sintages/3066961-kok?ref=sintagespareas.gr",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/greek-food/",
+        "name": "Greek Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/04/c7/10/04c710b4cc9c9f5cebf2f12629e05610.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

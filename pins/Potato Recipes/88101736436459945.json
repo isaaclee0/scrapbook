@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436459945/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potato-recipes",
+    "CustomFileName": "88101736436459945",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436459945",
+      "url": "https://www.pinterest.com/pin/88101736436459945/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "22 Things You're Doing Wrong",
+      "description": "The Right Way: | 22 Things You're Doing Wrong",
+      "link": "http://www.buzzfeed.com/peggy/22-things-youre-doing-wrong",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potato-recipes/",
+        "name": "Potato Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b3/74/b1/b374b1832baf212df4a974c976faa25b.gif",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

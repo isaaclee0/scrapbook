@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441789189/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/japanese-food",
+    "CustomFileName": "88101736441789189",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441789189",
+      "url": "https://www.pinterest.com/pin/88101736441789189/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Cheese Korokke",
+      "description": "Cheese Korokke -- a fantastic Japanese recipe -- deep fried and panko coated potato croquettes filled with gooey cheese",
+      "link": "http://www.manusmenu.com/cheese-korokke",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/japanese-food/",
+        "name": "Japanese Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7d/77/21/7d7721d472936864c5d8d2b1656326bc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443215174/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443215174",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443215174",
+      "url": "https://www.pinterest.com/pin/88101736443215174/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "What to do When Your Kids Don't Believe (Right Now)",
+      "description": "What to do When Your Kids Don’t Believe (Right Now) | A Holy Experience",
+      "link": "http://www.aholyexperience.com/2014/10/what-to-do-when-your-kids-dont-believe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6f/78/01/6f780174f489bac376433484f186dea7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

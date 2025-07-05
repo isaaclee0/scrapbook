@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440508600/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/smiles-of-the-world",
+    "CustomFileName": "88101736440508600",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440508600",
+      "url": "https://www.pinterest.com/pin/88101736440508600/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Divinidad,,,,, gozo y milagro,,,,,",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 10,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/smiles-of-the-world/",
+        "name": "Smiles of the World",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a0/13/3f/a0133fc297d774de8d71f4d51238522e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452368538/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/quantum-physics-and-such",
+    "CustomFileName": "88101736452368538",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452368538",
+      "url": "https://www.pinterest.com/pin/88101736452368538/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 7,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "the_norma_show",
+        "url": "https://www.pinterest.com/the_norma_show/",
+        "name": "Norma Arevalo"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/quantum-physics-and-such/",
+        "name": "Quantum Physics and such",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/aa/58/9e/aa589e296b356d429a85620a070ea1f0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

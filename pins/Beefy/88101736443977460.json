@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443977460/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/beefy",
+    "CustomFileName": "88101736443977460",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443977460",
+      "url": "https://www.pinterest.com/pin/88101736443977460/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Perfect Porterhouse Steak",
+      "description": "Perfect Porterhouse Steak",
+      "link": "http://www.bonappetit.com/recipe/perfect-porterhouse-steak",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/beefy/",
+        "name": "Beefy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/dc/f8/1b/dcf81b9bbde62401e2dbc34d0e322736.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

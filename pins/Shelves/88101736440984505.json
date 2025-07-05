@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440984505/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/shelves",
+    "CustomFileName": "88101736440984505",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440984505",
+      "url": "https://www.pinterest.com/pin/88101736440984505/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Cute shelves",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 13,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "8886ap",
+        "url": "https://www.pinterest.com/8886ap/",
+        "name": "Все для шиття та рукоділля/ Everything for sewing & handcraft"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/shelves/",
+        "name": "Shelves",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/90/f1/77/90f177309154b2f0ff6f470889dc3711.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430410193/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430410193",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430410193",
+      "url": "https://www.pinterest.com/pin/88101736430410193/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Roasted Cabbage with Lemon",
+      "description": "Roasted Cabbage with Lemon",
+      "link": "http://www.kalynskitchen.com/2010/03/recipe-for-roasted-cabbage-with-lemon.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fa/fd/8e/fafd8eb4ca4efad425b50c8e735ccff2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

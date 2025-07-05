@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434956772/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cards",
+    "CustomFileName": "88101736434956772",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434956772",
+      "url": "https://www.pinterest.com/pin/88101736434956772/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Artful Affirmations",
+      "description": "Love.....",
+      "link": "http://artfulaffirmations.blogspot.com/2011_02_01_archive.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cards/",
+        "name": "Cards",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c3/3a/9a/c33a9a1ef2ae627dc78f3cc30b992885.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441710925/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/breakfast",
+    "CustomFileName": "88101736441710925",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441710925",
+      "url": "https://www.pinterest.com/pin/88101736441710925/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "25 Easy Breakfast in Bed Ideas",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/breakfast/",
+        "name": "Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f3/cb/c1/f3cbc10931c5e4b550959eb9f14d39e1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433586160/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736433586160",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433586160",
+      "url": "https://www.pinterest.com/pin/88101736433586160/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "We Heart It",
+      "description": "cat nappin'",
+      "link": "http://weheartit.com/entry/22605542",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 4,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6b/ed/84/6bed842f70fb83b970171ccdaf5e9652.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

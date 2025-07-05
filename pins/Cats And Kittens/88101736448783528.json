@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448783528/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736448783528",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448783528",
+      "url": "https://www.pinterest.com/pin/88101736448783528/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Maine Coon vs Norwegian Forest Cat",
+      "description": "This cat looks like it knows something we don't. There is something behind its eyes ...",
+      "link": "http://www.mainecoonguide.com/maine-coon-vs-norwegian-forest-cat/?1234542617=mainecoon",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "mainecoonguide",
+        "url": "https://www.pinterest.com/mainecoonguide/",
+        "name": "Maine Coon Guide"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ff/65/0b/ff650bda97cc0ae2cdd287e57e30e014.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446369071/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hot-tubs",
+    "CustomFileName": "88101736446369071",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446369071",
+      "url": "https://www.pinterest.com/pin/88101736446369071/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "outdoor spa",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "sunspabenelux",
+        "url": "https://www.pinterest.com/sunspabenelux/",
+        "name": "Sunspa Benelux"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hot-tubs/",
+        "name": "Hot Tubs",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8e/ae/a4/8eaea4ebe28b0f96412d3c3106c691fa.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

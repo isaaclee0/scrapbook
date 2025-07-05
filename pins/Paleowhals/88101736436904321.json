@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436904321/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/paleowhals",
+    "CustomFileName": "88101736436904321",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436904321",
+      "url": "https://www.pinterest.com/pin/88101736436904321/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Paleo tortilla chips",
+      "link": "http://www.french-foodrecipes.info/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/paleowhals/",
+        "name": "Paleo/Whals",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/97/79/f5/9779f571f91375046f2405e0f5ad8dff.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

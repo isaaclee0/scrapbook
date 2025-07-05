@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443032773/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443032773",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443032773",
+      "url": "https://www.pinterest.com/pin/88101736443032773/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Pastural Swedish interiors - so pretty!",
+      "description": "Beautiful french doors in pale yellow.",
+      "link": "http://decorology.blogspot.com/2009/06/pastural-swedish-interiors-so-pretty.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/90/b2/07/90b207bf94405c6945e29b6655fe022a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444838528/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736444838528",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444838528",
+      "url": "https://www.pinterest.com/pin/88101736444838528/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Free Birds",
+      "description": "Free Birds  - they want to take turkey off the thanksgiving menu.",
+      "link": "https://www.amazon.com/dp/B00GRZPQCO/ref=cm_sw_r_pi_dp_x_D2U8zb28AVYGA",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/97/0d/69/970d695191322b2989aa81debeb5fd95.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

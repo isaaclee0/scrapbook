@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448203446/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/indonesian-food",
+    "CustomFileName": "88101736448203446",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448203446",
+      "url": "https://www.pinterest.com/pin/88101736448203446/",
+      "type": "pin",
+      "title": "Sate Kerang",
+      "gridTitle": "Sate Kerang",
+      "description": "Ini dia Sate yang berbeda daripada sate lainnya, Sate Kerang. Kalo biasanya kamu makan kerang yang di rebus aja, coba bikin sate kerang ini deh, dijamin nagih!",
+      "link": "https://id.tastemade.com/videos/sate-kerang",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Tastemadeid",
+        "url": "https://www.pinterest.com/Tastemadeid/",
+        "name": "Tastemade Indonesia"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/indonesian-food/",
+        "name": "Indonesian Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/61/c6/18/61c6181dfcb69f28bc6f762e97ea068b.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/21/e7/e7/21e7e7041da8b58f049bf0a94a02e5b2.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

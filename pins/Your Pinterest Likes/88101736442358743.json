@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442358743/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442358743",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442358743",
+      "url": "https://www.pinterest.com/pin/88101736442358743/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Upcycling Old Grain Silos: Houses, Homes, Hotels & Inns",
+      "description": "What a cute guest house idea",
+      "link": "http://dornob.com/upcycling-old-grain-silos-houses-homes-hotels-inns/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d7/52/bc/d752bcafcb7565511b11a4d19d2b7cc7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

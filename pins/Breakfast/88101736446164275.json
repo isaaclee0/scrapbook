@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446164275/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/breakfast",
+    "CustomFileName": "88101736446164275",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446164275",
+      "url": "https://www.pinterest.com/pin/88101736446164275/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Baked Honey Berry Oatmeal",
+      "description": "Healthy Baked Berry Oatmeal. This recipe is super filling and perfectly sweet! Only 300 calories for a huge slice!",
+      "link": "http://apple-of-my-eye.com/2014/05/02/baked-honey-berry-oatmeal/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/breakfast/",
+        "name": "Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/57/3b/b4/573bb49b0e8aada1dd1052f6d9b421bc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

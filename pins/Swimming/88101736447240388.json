@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447240388/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/swimming",
+    "CustomFileName": "88101736447240388",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447240388",
+      "url": "https://www.pinterest.com/pin/88101736447240388/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Four boys at a swimming pool - 1920s  ipernity.com",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/swimming/",
+        "name": "Swimming",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f9/09/80/f9098043e3f7f3504d2785f34642311a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

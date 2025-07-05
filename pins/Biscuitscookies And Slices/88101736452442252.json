@@ -1,0 +1,64 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452442252/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/biscuitscookies-and-slices",
+    "CustomFileName": "88101736452442252",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452442252",
+      "url": "https://www.pinterest.com/pin/88101736452442252/",
+      "type": "pin",
+      "title": "Jelly Slice",
+      "gridTitle": "Jelly Slice",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 5,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "cookingwithnanaling",
+        "url": "https://www.pinterest.com/cookingwithnanaling/",
+        "name": "Cooking with Nana Ling | Classic Australian Recipes"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/biscuitscookies-and-slices/",
+        "name": "Biscuits/Cookies and Slices",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/36/9c/75/369c75aad2b69e2f4098942bb9396232.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/1b/4d/b9/1b4db94d3fbf29853e70f9cdbe44abb5.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/b1/2e/2e/b12e2e79eeea79f989178b9eec968fbd.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/e8/cd/37/e8cd378065a76ef5a8dcc3168c9d79d9.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/8b/b5/e6/8bb5e6a6386798313b6187d7cbc3b710.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

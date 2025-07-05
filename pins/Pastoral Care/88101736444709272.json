@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444709272/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pastoral-care",
+    "CustomFileName": "88101736444709272",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444709272",
+      "url": "https://www.pinterest.com/pin/88101736444709272/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Don't play with fire",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "naomi_bowles",
+        "url": "https://www.pinterest.com/naomi_bowles/",
+        "name": "Naomi Bowles"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pastoral-care/",
+        "name": "Pastoral Care",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ea/82/73/ea8273123004bd48a73d97baabab4c1c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

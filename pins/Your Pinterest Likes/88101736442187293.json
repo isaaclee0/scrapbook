@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442187293/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442187293",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442187293",
+      "url": "https://www.pinterest.com/pin/88101736442187293/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "LifeNews.com on Twitter",
+      "description": "“Stillborn” Baby is Doing Well Three Months After Doctors Said She Was Dead",
+      "link": "https://mobile.twitter.com/LifeNewsHQ/status/479735023021875200",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "jzlalib",
+        "url": "https://www.pinterest.com/jzlalib/",
+        "name": "John La Liberté"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1f/12/69/1f126957f1959f17d4ca8fdb0eaa05ea.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

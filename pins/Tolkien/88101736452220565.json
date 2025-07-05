@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452220565/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tolkien",
+    "CustomFileName": "88101736452220565",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452220565",
+      "url": "https://www.pinterest.com/pin/88101736452220565/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "@thehobbitfacts on IG",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tolkien/",
+        "name": "Tolkien",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c0/5a/5f/c05a5fe9e0e4911741e0e138c8267202.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

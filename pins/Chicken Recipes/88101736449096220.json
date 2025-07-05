@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449096220/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736449096220",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449096220",
+      "url": "https://www.pinterest.com/pin/88101736449096220/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Middle Eastern Chicken Kebabs",
+      "description": "Middle Eastern Chicken Kebabs Recipe | Just A Pinch Recipes",
+      "link": "http://www.justapinch.com/recipes/middle-eastern-chicken-kebabs.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bc/67/67/bc676757a7bb3d98796eaeaa4134c45a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

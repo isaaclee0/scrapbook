@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452754360/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pasta",
+    "CustomFileName": "88101736452754360",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452754360",
+      "url": "https://www.pinterest.com/pin/88101736452754360/",
+      "type": "pin",
+      "title": "All-Natural Homemade Rainbow Pasta",
+      "gridTitle": "All-Natural Homemade Rainbow Pasta",
+      "description": " ",
+      "link": "https://www.alphafoodie.com/all-natural-homemade-rainbow-pasta/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "alphafoodie",
+        "url": "https://www.pinterest.com/alphafoodie/",
+        "name": "Alphafoodie"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pasta/",
+        "name": "Pasta",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/79/f3/b6/79f3b6e74d69cdc48bbd7448d470e471.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/39/79/04/39790482bcbe6ac0eed3c7905b80ddef.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445081187/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736445081187",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445081187",
+      "url": "https://www.pinterest.com/pin/88101736445081187/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Home",
+      "description": "What is the Low Stress Handling™ Certification? – Dr. Sophia Yin",
+      "link": "https://drsophiayin.com/blog/entry/what-is-the-low-stress-handling-certification/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/de/bb/f6/debbf68ae56a3f61a8d86122f4570840.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

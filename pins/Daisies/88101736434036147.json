@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434036147/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/daisies",
+    "CustomFileName": "88101736434036147",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434036147",
+      "url": "https://www.pinterest.com/pin/88101736434036147/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Daisies",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/daisies/",
+        "name": "Daisies",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cd/32/a7/cd32a7777486b10b6ee69bb1466dcf4c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453660859/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/springer-spaniels",
+    "CustomFileName": "88101736453660859",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453660859",
+      "url": "https://www.pinterest.com/pin/88101736453660859/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Brutus",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "JohnnyDogs117",
+        "url": "https://www.pinterest.com/JohnnyDogs117/",
+        "name": "JR"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/springer-spaniels/",
+        "name": "Springer Spaniels",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e6/2b/b8/e62bb8e79558ed906c5741cc223f56fe.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

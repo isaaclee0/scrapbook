@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437888240/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/italian",
+    "CustomFileName": "88101736437888240",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437888240",
+      "url": "https://www.pinterest.com/pin/88101736437888240/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Stuffed Squid Sicilian-Style Recipe",
+      "description": "NYT Cooking: Stuffed Squid Sicilian-Style",
+      "link": "http://cooking.nytimes.com/recipes/1017390-stuffed-squid-sicilian-style",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/italian/",
+        "name": "Italian",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0b/58/d9/0b58d91b912138a73dab2fa734b9a980.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

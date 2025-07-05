@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441979165/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736441979165",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441979165",
+      "url": "https://www.pinterest.com/pin/88101736441979165/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Scripture Zealot blog",
+      "description": "Read a systematic theology & come to an understanding of existing doctrine and theories of the Protestant church",
+      "link": "http://www.scripturezealot.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/97/75/3c/97753c0f5c84463c7d144f98bfecd89d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

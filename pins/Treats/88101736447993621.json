@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447993621/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736447993621",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447993621",
+      "url": "https://www.pinterest.com/pin/88101736447993621/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Homemade Sweet Tarts",
+      "description": "Homemade smarties",
+      "link": "http://www.instructables.com/id/Homemade-Sweet-Tarts/?ALLSTEPS",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ee/58/d7/ee58d7d10deab7d1e39141c2c67ce4d9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

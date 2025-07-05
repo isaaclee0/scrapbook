@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430974202/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430974202",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430974202",
+      "url": "https://www.pinterest.com/pin/88101736430974202/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Easy, Delicious Meat and Vegetarian Lasagna Recipes",
+      "description": "Beach Food, for sure!",
+      "link": "http://www.squidoo.com/delicious-lasagna-recipes",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/87/9c/9e/879c9e5bb36e81e5a191a38f0722bf4d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

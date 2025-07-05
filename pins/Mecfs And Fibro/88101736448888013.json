@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448888013/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/mecfs-and-fibro",
+    "CustomFileName": "88101736448888013",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448888013",
+      "url": "https://www.pinterest.com/pin/88101736448888013/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Uitleg van ME.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ideke",
+        "url": "https://www.pinterest.com/ideke/",
+        "name": "Ideke van Haren"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/mecfs-and-fibro/",
+        "name": "ME/CFS and Fibro",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4f/6f/ec/4f6fece1144099fb166c268e8ed923b0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

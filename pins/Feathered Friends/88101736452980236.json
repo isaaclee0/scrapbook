@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452980236/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/feathered-friends",
+    "CustomFileName": "88101736452980236",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452980236",
+      "url": "https://www.pinterest.com/pin/88101736452980236/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Arie Dirgantara on Twitter",
+      "description": " ",
+      "link": "https://twitter.com/purbasr/status/846681802131451905",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/feathered-friends/",
+        "name": "Feathered friends",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/47/29/4c/47294ca1348e7758ce00b951d1a38c36.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

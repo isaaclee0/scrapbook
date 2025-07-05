@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433054588/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/garden-inspiration",
+    "CustomFileName": "88101736433054588",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433054588",
+      "url": "https://www.pinterest.com/pin/88101736433054588/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "My Yellow Farmhouse",
+      "description": "Peter Rabbit's Garden  (picket fence)",
+      "link": "http://yellowfarmhouse.typepad.com/yellow_farmhouse/2008/08/index.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/garden-inspiration/",
+        "name": "Garden Inspiration",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/01/5a/4b/015a4bba028aed858109a1662905df0f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

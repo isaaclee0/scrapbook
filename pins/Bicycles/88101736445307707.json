@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445307707/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bicycles",
+    "CustomFileName": "88101736445307707",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445307707",
+      "url": "https://www.pinterest.com/pin/88101736445307707/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Colorful bicycle...",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bicycles/",
+        "name": "Bicycles",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/61/95/0b/61950b393016e7d602157877c1b67b6e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

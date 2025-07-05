@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451366548/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/knit-and-crochet",
+    "CustomFileName": "88101736451366548",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451366548",
+      "url": "https://www.pinterest.com/pin/88101736451366548/",
+      "type": "pin",
+      "title": "Easy Crochet Switch ideas",
+      "gridTitle": "Easy Crochet Switch ideas",
+      "description": "Easy Crochet Switch ideas",
+      "link": "https://www.shareapattern.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "shareapattern",
+        "url": "https://www.pinterest.com/shareapattern/",
+        "name": "Share a Pattern - Crochet and Knitting Pattern"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/knit-and-crochet/",
+        "name": "Knit and Crochet",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d7/c3/e3/d7c3e369c5d145e7b44ff13fc535f5ad.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/c5/fe/a0/c5fea0a6d7e273927f05f102323b92fe.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

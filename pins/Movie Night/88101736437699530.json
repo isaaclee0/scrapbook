@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437699530/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736437699530",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437699530",
+      "url": "https://www.pinterest.com/pin/88101736437699530/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "A Little Chaos - Kate Winslet",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 10,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "antonvandijken",
+        "url": "https://www.pinterest.com/antonvandijken/",
+        "name": "Anton Van Dijken"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/88/d4/6e/88d46e3fc6d56208170df5f5f9836d45.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

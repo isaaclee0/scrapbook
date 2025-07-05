@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430702980/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430702980",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430702980",
+      "url": "https://www.pinterest.com/pin/88101736430702980/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Baked Southwestern Egg Rolls - foodgawker",
+      "description": "Baked Southwestern Egg Rolls",
+      "link": "http://foodgawker.com/post/2010/03/05/53113/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d1/a2/bd/d1a2bd5fd55d44a836a6a1db8476358e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

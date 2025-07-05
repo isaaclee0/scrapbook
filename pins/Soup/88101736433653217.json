@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433653217/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/soup",
+    "CustomFileName": "88101736433653217",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433653217",
+      "url": "https://www.pinterest.com/pin/88101736433653217/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Persian bean soup",
+      "link": "http://mypersiankitchen.com/asheh-hooboobaat-persian-legume-soup/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/soup/",
+        "name": "Soup",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bc/0b/f1/bc0bf1e019e14ab50ab4767c15a2cafe.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

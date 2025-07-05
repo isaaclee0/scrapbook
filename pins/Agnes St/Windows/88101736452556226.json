@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452556226/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/agnes-st/windows",
+    "CustomFileName": "88101736452556226",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452556226",
+      "url": "https://www.pinterest.com/pin/88101736452556226/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "vackra",
+      "description": " ",
+      "link": "http://vackra.blogspot.no/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/agnes-st/",
+        "name": "Agnes st",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c6/fd/46/c6fd463323b998f0304216b7e5cca111.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

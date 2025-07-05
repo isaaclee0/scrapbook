@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444527134/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-orchard",
+    "CustomFileName": "88101736444527134",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444527134",
+      "url": "https://www.pinterest.com/pin/88101736444527134/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Daffodils in the orchard at Cotehele",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "gillianuk",
+        "url": "https://www.pinterest.com/gillianuk/",
+        "name": "Gillian Palmer"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-orchard/",
+        "name": "Cottage Orchard",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9d/be/c1/9dbec1ec5752dce7a6616f75dbbd5395.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

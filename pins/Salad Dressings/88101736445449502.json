@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445449502/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/salad-dressings",
+    "CustomFileName": "88101736445449502",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445449502",
+      "url": "https://www.pinterest.com/pin/88101736445449502/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": ":-)",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/salad-dressings/",
+        "name": "Salad Dressings",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/98/00/c5/9800c5be4aae793b48aabd221bbac340.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

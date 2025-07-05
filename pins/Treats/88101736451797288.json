@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451797288/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736451797288",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451797288",
+      "url": "https://www.pinterest.com/pin/88101736451797288/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Tim Tam Hedgehog Slice",
+      "description": "Tim Tam Hedgehog Slice",
+      "link": "http://createbakemake.com/2017/01/30/tim-tam-hedgehog-slice/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a9/eb/4d/a9eb4deb6e0a666aa4c3d008082934b6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

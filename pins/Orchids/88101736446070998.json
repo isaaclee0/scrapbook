@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446070998/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/orchids",
+    "CustomFileName": "88101736446070998",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446070998",
+      "url": "https://www.pinterest.com/pin/88101736446070998/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Amazing orchid blooms",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/orchids/",
+        "name": "Orchids",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e0/8a/1f/e08a1f3a36fa08d49d6d3cef207bb4e0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

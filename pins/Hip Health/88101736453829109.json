@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453829109/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hip-health",
+    "CustomFileName": "88101736453829109",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453829109",
+      "url": "https://www.pinterest.com/pin/88101736453829109/",
+      "type": "pin",
+      "title": "Core workout",
+      "gridTitle": "Core workout",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "baephoria",
+        "url": "https://www.pinterest.com/baephoria/",
+        "name": "Baephoria"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hip-health/",
+        "name": "Hip health",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/d0/17/6d/d0176d88da92205d6a575d66a02c74dd.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

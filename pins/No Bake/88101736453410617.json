@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453410617/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/no-bake",
+    "CustomFileName": "88101736453410617",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453410617",
+      "url": "https://www.pinterest.com/pin/88101736453410617/",
+      "type": "pin",
+      "title": "4-Ingredient Jelly and Custard Tart",
+      "gridTitle": "4-Ingredient Jelly and Custard Tart",
+      "description": " ",
+      "link": "http://www.foodiesofsa.com/4-ingredient-jelly-and-custard-tart",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "foodiesofsa",
+        "url": "https://www.pinterest.com/foodiesofsa/",
+        "name": "Foodies of SA"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/no-bake/",
+        "name": "No Bake",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/40/2f/ac/402fac9f5fb1742670641300138ed4f8.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/fa/b5/25/fab52505fe4dbc75af284709ff108b73.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

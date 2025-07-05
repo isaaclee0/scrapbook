@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437958632/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736437958632",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437958632",
+      "url": "https://www.pinterest.com/pin/88101736437958632/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Homepage - Hey Rachel Marion",
+      "description": "Baked Bacon Cauliflower | GrokGrub.com",
+      "link": "http://grokgrub.com/2015/02/14/baked-bacon-cauliflower/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/33/90/bb/3390bb59cb7c4a3dbee06454c79effa6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

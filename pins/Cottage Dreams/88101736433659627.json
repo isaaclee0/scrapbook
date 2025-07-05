@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433659627/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-dreams",
+    "CustomFileName": "88101736433659627",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433659627",
+      "url": "https://www.pinterest.com/pin/88101736433659627/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Lovely porch",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "lorettab",
+        "url": "https://www.pinterest.com/lorettab/",
+        "name": "Loretta Bankston"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-dreams/",
+        "name": "Cottage Dreams",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f8/1c/60/f81c60ae8ab51ffda45cc8858cde0609.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

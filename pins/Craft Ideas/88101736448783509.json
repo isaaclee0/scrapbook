@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448783509/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/craft-ideas",
+    "CustomFileName": "88101736448783509",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448783509",
+      "url": "https://www.pinterest.com/pin/88101736448783509/",
+      "type": "pin",
+      "title": "Iron Orchid Designs",
+      "gridTitle": "Iron Orchid Designs",
+      "description": "Mould application. Terracotta pot transformation",
+      "link": "http://www.musestudioandmarket.ca/creative-menu.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "9e5380c408cf5e7dbb05f7d744e678",
+        "url": "https://www.pinterest.com/9e5380c408cf5e7dbb05f7d744e678/",
+        "name": "Muse Made It"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/craft-ideas/",
+        "name": "Craft Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c9/43/4d/c9434dbcbdbf0f9cec906a875043462e.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/32/e2/7f/32e27f9bf46739de527bdb61a93ebcb0.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

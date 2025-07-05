@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430566766/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736430566766",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430566766",
+      "url": "https://www.pinterest.com/pin/88101736430566766/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "foodgawker",
+      "description": "raspberry chocolate coffee cake",
+      "link": "http://foodgawker.com/popular/favorites/page/47/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fe/f6/91/fef6911cf19f1e0da556abf23aa1696d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

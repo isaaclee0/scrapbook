@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442158792/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442158792",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442158792",
+      "url": "https://www.pinterest.com/pin/88101736442158792/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "bill nye – Dorkdaddy.com",
+      "description": "Good clean learning!    I loved watching this every Sunday night.",
+      "link": "http://dorkdaddy.com/tag/bill-nye/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/72/a8/ab/72a8abd2454351aea4c2cee41879f79e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

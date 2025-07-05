@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451492558/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736451492558",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451492558",
+      "url": "https://www.pinterest.com/pin/88101736451492558/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Account Suspended",
+      "description": "3 Ingredient Tim Tam Balls - makeitfakeitbakeit",
+      "link": "http://makeitfakeitbakeit.com/2016/10/16/3-ingredient-tim-tam-balls/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/87/7f/72/877f72ad3294aff9ce988e80772fd87a.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

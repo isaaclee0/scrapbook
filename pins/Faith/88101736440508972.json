@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440508972/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736440508972",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440508972",
+      "url": "https://www.pinterest.com/pin/88101736440508972/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "If you love me it is going to show up in the way you treat what I told you is…",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f1/dd/0f/f1dd0f0b38309d41612b8d02e9d81903.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

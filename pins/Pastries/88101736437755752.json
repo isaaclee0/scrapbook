@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437755752/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pastries",
+    "CustomFileName": "88101736437755752",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437755752",
+      "url": "https://www.pinterest.com/pin/88101736437755752/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Apple Turnover (easy!!) - Lauren's Latest",
+      "description": "Apple Puffs with Fresh Cream and Warm Caramel Sauce!!",
+      "link": "http://www.laurenslatest.com/apple-puffs-with-fresh-cream-and-warm-caramel-sauce/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pastries/",
+        "name": "pastries",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8a/50/15/8a501505722e7896d9e0c588d939b1e9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

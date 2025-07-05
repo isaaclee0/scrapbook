@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441695607/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/secret-eats",
+    "CustomFileName": "88101736441695607",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441695607",
+      "url": "https://www.pinterest.com/pin/88101736441695607/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Lulu Vietnamese Restaurant",
+      "description": "Vietnamese (a bit different to the norm)",
+      "link": "http://www.luluvietnamese.com.au/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/secret-eats/",
+        "name": "Secret Eats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a2/b3/9c/a2b39c190cbd2486d7c8bc8cf3e4a3bd.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

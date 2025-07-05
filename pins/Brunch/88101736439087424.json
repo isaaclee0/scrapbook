@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439087424/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/brunch",
+    "CustomFileName": "88101736439087424",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439087424",
+      "url": "https://www.pinterest.com/pin/88101736439087424/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "01",
+      "description": "01 | susie theodorou",
+      "link": "http://www.susietheodorou.com/galleries/01",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/brunch/",
+        "name": "Brunch",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/85/09/6d/85096d4e8fed1b47f6da8c04dadb793f.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

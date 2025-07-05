@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442478376/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442478376",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442478376",
+      "url": "https://www.pinterest.com/pin/88101736442478376/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Will it grow? Update Growing Indian Corn Experiment",
+      "description": "For our plant unit...  What happens when you put Indian corn in a pan of water?",
+      "link": "http://www.thingstoshareandremember.com/will-it-grow-update/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9b/f1/f1/9bf1f1b5bebacc1b5738ab6b70ece5c9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

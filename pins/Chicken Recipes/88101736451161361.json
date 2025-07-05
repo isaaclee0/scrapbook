@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451161361/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736451161361",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451161361",
+      "url": "https://www.pinterest.com/pin/88101736451161361/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Apricot Dijon Roast Chicken - Heather Christo",
+      "description": "Apricot Dijon Roast Chicken",
+      "link": "http://heatherchristo.com/cooks/2015/06/23/apricot-dijon-roast-chicken/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "abeautifulplate",
+        "url": "https://www.pinterest.com/abeautifulplate/",
+        "name": "A Beautiful Plate"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cf/e6/b6/cfe6b61749efe3fede7933101e7a5d1d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

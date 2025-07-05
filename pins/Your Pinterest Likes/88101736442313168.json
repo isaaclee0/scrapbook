@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442313168/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442313168",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442313168",
+      "url": "https://www.pinterest.com/pin/88101736442313168/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Welcome",
+      "description": "From left to right: Pierre Curie (Nobel Prize in Physics 1903); Marie Curie (Nobel Prize in Physics 1903 and Chemistry 1911); Irène Curie (Nobel Prize in Chemistry 1935); Dr Curie (Pierre Curie's father).",
+      "link": "http://www.bipm.org/en/si/history-si/radioactivity/famille_curie.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ee/44/66/ee4466392c362479bcbbc538787dcaae.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

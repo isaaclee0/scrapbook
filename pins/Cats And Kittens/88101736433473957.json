@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433473957/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736433473957",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433473957",
+      "url": "https://www.pinterest.com/pin/88101736433473957/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Bowl full of kitty #pets",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "chinkyaku",
+        "url": "https://www.pinterest.com/chinkyaku/",
+        "name": "Chinkyaku San"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/15/5c/5b/155c5b038c17587396786ba9c359155b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

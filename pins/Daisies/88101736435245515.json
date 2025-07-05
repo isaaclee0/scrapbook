@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435245515/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/daisies",
+    "CustomFileName": "88101736435245515",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435245515",
+      "url": "https://www.pinterest.com/pin/88101736435245515/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Yahoo - login",
+      "description": "Watering the daisies.",
+      "link": "http://www.flickr.com/photos/melchenbrow/3557822816/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/daisies/",
+        "name": "Daisies",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/44/be/38/44be38e3f6ed7d25ae92d51f9d907029.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

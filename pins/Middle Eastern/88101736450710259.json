@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450710259/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/middle-eastern",
+    "CustomFileName": "88101736450710259",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450710259",
+      "url": "https://www.pinterest.com/pin/88101736450710259/",
+      "type": "pin",
+      "title": "Muhammara (Roasted Red Pepper & Walnut Dip)",
+      "gridTitle": "Muhammara (Roasted Red Pepper & Walnut Dip)",
+      "description": "This savory dip recipe has oven-roasted red peppers and a pop of flavor is added with pomegranate juice and walnuts. Muhammara is an easy, authentic appetizer from the Middle East. #diprecipe #partyfood #easyrecipe #appetizers",
+      "link": "https://www.chilipeppermadness.com/recipes/muhammara/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 8,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "chilipeppermadness",
+        "url": "https://www.pinterest.com/chilipeppermadness/",
+        "name": "Chili Pepper Madness"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/middle-eastern/",
+        "name": "Middle Eastern",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/55/52/a1/5552a13cc85c2a72f5e817e64598ced5.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/4e/c5/fc/4ec5fc708ba9b3ff613646b5ebb1c91a.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

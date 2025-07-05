@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444119822/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736444119822",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444119822",
+      "url": "https://www.pinterest.com/pin/88101736444119822/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "My Romantic Home",
+      "description": "My Romantic Home",
+      "link": "http://romantichome.blogspot.com.au/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5a/cc/25/5acc2514c9213e3770f18649641809e0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

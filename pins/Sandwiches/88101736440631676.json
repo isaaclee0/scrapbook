@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440631676/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/sandwiches",
+    "CustomFileName": "88101736440631676",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440631676",
+      "url": "https://www.pinterest.com/pin/88101736440631676/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Dude Pins",
+      "description": "This looks amazing | Dudepins - The Site for Men & Manly Interests",
+      "link": "http://dudepins.com/index.php?option=com_socialpinboard&view=pin&pinid=75017",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 7,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/sandwiches/",
+        "name": "Sandwiches",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/01/ee/e4/01eee4064d818d999a5d5c65e3e24f12.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

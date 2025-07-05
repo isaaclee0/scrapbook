@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437238397/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736437238397",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437238397",
+      "url": "https://www.pinterest.com/pin/88101736437238397/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Planning & Planting Your Dwarf Fruit Orchard:",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e7/20/89/e720893672e610f823403eab5048e1fa.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449163290/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/dinner-with-hubby",
+    "CustomFileName": "88101736449163290",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449163290",
+      "url": "https://www.pinterest.com/pin/88101736449163290/",
+      "type": "pin",
+      "title": "Mini French Onion Bread Bowls",
+      "gridTitle": "Mini French Onion Bread Bowls",
+      "description": "Cooler weather calls for these cheesy French onion soup bread bowls that are perfect for dipping.",
+      "link": "https://www.tastemade.com/videos/french-onion-bread-bowls",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemade",
+        "url": "https://www.pinterest.com/tastemade/",
+        "name": "Tastemade"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/dinner-with-hubby/",
+        "name": "Dinner with hubby",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/df/0e/b6/df0eb6f9619a54b14adfee8d4873f7ac.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/06/5a/38/065a3832e2807cb69e1880984f7592d8.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

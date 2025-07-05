@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440275177/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/brunch",
+    "CustomFileName": "88101736440275177",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440275177",
+      "url": "https://www.pinterest.com/pin/88101736440275177/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "My Food Looks Funny - page 2",
+      "description": "Sandwich Salad Loaf",
+      "link": "http://noms.icanhascheezburger.com/page/2/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/brunch/",
+        "name": "Brunch",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e5/5d/e3/e55de3342f047a09a51d21290bd4f446.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

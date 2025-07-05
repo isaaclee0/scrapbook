@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440481662/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736440481662",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440481662",
+      "url": "https://www.pinterest.com/pin/88101736440481662/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Triangular long layers",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ashleywaidm",
+        "url": "https://www.pinterest.com/ashleywaidm/",
+        "name": "Ashley Woodson"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/38/2b/27/382b27174f275e31995cf9a333348a38.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

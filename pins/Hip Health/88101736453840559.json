@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453840559/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hip-health",
+    "CustomFileName": "88101736453840559",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453840559",
+      "url": "https://www.pinterest.com/pin/88101736453840559/",
+      "type": "pin",
+      "title": "Back",
+      "gridTitle": "Back",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "monxiie",
+        "url": "https://www.pinterest.com/monxiie/",
+        "name": "chiki_babyz"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hip-health/",
+        "name": "Hip health",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/bd/58/a5/bd58a5b20afb126df92c3965cc67502f.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

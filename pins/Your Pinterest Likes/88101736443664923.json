@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443664923/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443664923",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443664923",
+      "url": "https://www.pinterest.com/pin/88101736443664923/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Don't Fence Me In: Creative Uses for Old Salvaged Fencing",
+      "description": "Take your fence up!",
+      "link": "http://dishfunctionaldesigns.blogspot.com/2012/01/dont-fence-me-in-creative-uses-for-old.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f8/5f/0a/f85f0a0e829b35f42c261721bfcaa420.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

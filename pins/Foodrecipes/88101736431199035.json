@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431199035/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736431199035",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431199035",
+      "url": "https://www.pinterest.com/pin/88101736431199035/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Vegetarian Chickpea Sandwich Filling",
+      "description": "Vegetarian Chickpea Sandwich Filling. A change up from chicken or tuna salad!",
+      "link": "http://carzycook.com/showthread.php?tid=6381",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c4/15/5c/c4155cf6a9ac2032aff01e016b692182.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

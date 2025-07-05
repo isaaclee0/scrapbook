@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452641803/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/quick-mealseasy-meals",
+    "CustomFileName": "88101736452641803",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452641803",
+      "url": "https://www.pinterest.com/pin/88101736452641803/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "starfishg1rl",
+        "url": "https://www.pinterest.com/starfishg1rl/",
+        "name": "✨starfish girl✨"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/quick-mealseasy-meals/",
+        "name": "Quick meals/Easy Meals",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/94/eb/ba/94ebbaecf8e0088828daca1481035cfd.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/a2/cd/51/a2cd5108525932b4fbf4312e3a2205d1.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

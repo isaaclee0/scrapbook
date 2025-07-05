@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443018609/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443018609",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443018609",
+      "url": "https://www.pinterest.com/pin/88101736443018609/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Vintage Home & Garden",
+      "description": "So cozy.",
+      "link": "http://vintagehome.tumblr.com/post/11962015110",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/14/39/ee/1439ee5a50244ca2faa4e1a6238947f0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

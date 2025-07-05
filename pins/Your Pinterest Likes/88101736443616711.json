@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443616711/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443616711",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443616711",
+      "url": "https://www.pinterest.com/pin/88101736443616711/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "For the Mom Who Worries — The Better Mom",
+      "description": "So mom, you worry? You feel trapped in the patterns of thoughts and concerns swirling every day? How can you break free? Its time to learn how to take every thought captive before they overtake us. We're in this together!",
+      "link": "http://www.thebettermom.com/2016/1/15/for-the-mom-who-worries",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bf/c3/d3/bfc3d3c2ef75da217ab09931139c2c8b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

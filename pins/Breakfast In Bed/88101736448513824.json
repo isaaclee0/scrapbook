@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448513824/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/breakfast-in-bed",
+    "CustomFileName": "88101736448513824",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448513824",
+      "url": "https://www.pinterest.com/pin/88101736448513824/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Parisian Breakfast in bed",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/breakfast-in-bed/",
+        "name": "Breakfast In Bed",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/be/95/e5/be95e52595ff9626b01f45bd28b7d845.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

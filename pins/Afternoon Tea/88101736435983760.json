@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435983760/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736435983760",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435983760",
+      "url": "https://www.pinterest.com/pin/88101736435983760/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "A Lovely Afternoon Tea - The Hungry Australian",
+      "description": "Afternoon Tea",
+      "link": "http://hungryaustralian.com/2013/05/a-lovely-afternoon-tea",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/33/c8/53/33c8536b51907e422582ffcb81e5d782.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443726358/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443726358",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443726358",
+      "url": "https://www.pinterest.com/pin/88101736443726358/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Autistic Girl Expresses Unimaginable Intelligence",
+      "description": "Autistic Girl Expresses Unimaginable Intelligence - YouTube",
+      "link": "http://www.youtube.com/watch?v=vNZVV4Ciccg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/27/3d/ff/273dff030b6a1dcb4b78fd67cb358965.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

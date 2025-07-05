@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450938111/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736450938111",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450938111",
+      "url": "https://www.pinterest.com/pin/88101736450938111/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Isabelle Huppert",
+      "description": "Isabelle Huppert",
+      "link": "http://isabellehuppert.tumblr.com/post/46385479846",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9c/c2/bd/9cc2bd11cfda404d9545c29047df1029.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

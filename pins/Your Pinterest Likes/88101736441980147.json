@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441980147/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736441980147",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441980147",
+      "url": "https://www.pinterest.com/pin/88101736441980147/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "itty bitty pieces | Flickr - Photo Sharing!",
+      "description": "All the tiny parts you never want to forget :). Love the layout",
+      "link": "http://repinly.com/pin.aspx?pid=42472&p=20&by=repins&t=30&cat=&rnk=320",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a9/e0/bc/a9e0bc70868431f8550305c2e08729bd.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

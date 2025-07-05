@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444527161/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodie-travel",
+    "CustomFileName": "88101736444527161",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444527161",
+      "url": "https://www.pinterest.com/pin/88101736444527161/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Gravetye Manor | 4-Star Luxury Countryside Hotel in Sussex",
+      "description": "Festive Afternoon Tea at Gravetye Manor",
+      "link": "http://www.gravetyemanor.co.uk/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "gravetyemanor",
+        "url": "https://www.pinterest.com/gravetyemanor/",
+        "name": "Gravetye Manor"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodie-travel/",
+        "name": "Foodie Travel",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/57/c7/0b/57c70b87040df2e6cc1d8b9a468c059e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

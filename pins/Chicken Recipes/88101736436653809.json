@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436653809/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736436653809",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436653809",
+      "url": "https://www.pinterest.com/pin/88101736436653809/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "dinner tonight: mediterranean baked chicken - The Clever Carrot",
+      "description": "mediterranean baked chicken | The Clever Carrot",
+      "link": "http://www.theclevercarrot.com/2013/05/dinner-tonight-mediterranean-baked-chicken/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/76/16/89/76168951d6463b4f67bad018ebd73b99.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

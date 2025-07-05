@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453217930/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736453217930",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453217930",
+      "url": "https://www.pinterest.com/pin/88101736453217930/",
+      "type": "pin",
+      "title": "Cranberry Orange Cake",
+      "gridTitle": "Cranberry Orange Cake",
+      "description": " ",
+      "link": "https://www.alsothecrumbsplease.com/cranberry-orange-cake-with-white-chocolate-frosting/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "alsothecrumbsplease",
+        "url": "https://www.pinterest.com/alsothecrumbsplease/",
+        "name": "Also The Crumbs Please | Easy, Quick Air Fryer Recipes & Desserts"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e4/95/2f/e4952fa3ef8c92a5066e1063ca5c096e.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/00/f5/2a/00f52aa7c5f53853af21c4ae9d70fc04.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

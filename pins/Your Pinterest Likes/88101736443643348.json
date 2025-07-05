@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443643348/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443643348",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443643348",
+      "url": "https://www.pinterest.com/pin/88101736443643348/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Patricia Routledge, a.k.a. \"Hyacinth Bouquet\" from one of my favorite Britcoms, \"Keeping up with Appearances\". This photo is of a young Patricia, circa 1966.",
+      "link": "http://www.masterworksbroadway.com/artist/images/27210",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4e/ed/87/4eed8703ce1fcb943249782a8e8a9beb.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

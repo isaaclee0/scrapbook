@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446722099/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fishy",
+    "CustomFileName": "88101736446722099",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446722099",
+      "url": "https://www.pinterest.com/pin/88101736446722099/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Classic Cioppino Seafood Stew - the hungry bluebird",
+      "description": "Classic Cioppino, iconic San Franciscan-style seafood stew made with tomatoes, wine, spices and herbs. #cioppino #seafood #stew",
+      "link": "http://thehungrybluebird.com/recipes/classic-cioppino/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "kellywildenhaus",
+        "url": "https://www.pinterest.com/kellywildenhaus/",
+        "name": "The Hungry Bluebird"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fishy/",
+        "name": "Fishy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/41/a4/e5/41a4e50855ef3dbfce5029ab2ff29809.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

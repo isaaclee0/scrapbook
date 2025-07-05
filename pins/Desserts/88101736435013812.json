@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435013812/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736435013812",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435013812",
+      "url": "https://www.pinterest.com/pin/88101736435013812/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Our Family of Brands",
+      "description": "Raspberry Chocolate Tart",
+      "link": "http://www.rightathome.com/Food/Recipes/Pages/RaspberryChocolateTart.aspx",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f3/0d/4c/f30d4c5d434375fdc55ffd049d053329.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438290017/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736438290017",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438290017",
+      "url": "https://www.pinterest.com/pin/88101736438290017/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "RECIPES YOU MAY LIKE TO TRY: Homemade Bounty Bars. Coconut milk instead of condensed.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c6/f6/18/c6f618be081fe96d7c3a0b846cb578ae.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

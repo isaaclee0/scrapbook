@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450652936/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/playlist",
+    "CustomFileName": "88101736450652936",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450652936",
+      "url": "https://www.pinterest.com/pin/88101736450652936/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "YouTube",
+      "description": "Beautiful Relaxing Hymns, Peaceful Instrumental Music, \"Sunday Morning S...",
+      "link": "https://www.youtube.com/watch?v=EHIbwrWKcas&feature=share",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/playlist/",
+        "name": "Playlist",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/08/c5/ec/08c5ecb3a34dabd1a01e2d126d5bd782.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453434796/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736453434796",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453434796",
+      "url": "https://www.pinterest.com/pin/88101736453434796/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Sea for Breakfast",
+      "description": " ",
+      "link": "http://www.amazon.co.uk/The-Sea-Breakfast-Lillian-Beckwith/dp/0099066505/ref=pd_sim_14_2?ie=UTF8&dpID=51DqfQthrdL&dpSrc=sims&preST=_AC_UL160_SR98,160_&refRID=0QB64TEPE9DZ14J54QQ9",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/83/18/a9/8318a9445c1f3d272d58f68265927f81.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

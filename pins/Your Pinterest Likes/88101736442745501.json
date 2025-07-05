@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442745501/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442745501",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442745501",
+      "url": "https://www.pinterest.com/pin/88101736442745501/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "theoldpaintedcottage.com -&nbsptheoldpaintedcottage Resources and Information.",
+      "description": "The Old Painted Cottage Unique Goods and Curious Finds",
+      "link": "http://theoldpaintedcottage.com/pages/cotm-jan-11.htm",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/89/76/6a/89766ac47f32c5fb8c90c933f484a54b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

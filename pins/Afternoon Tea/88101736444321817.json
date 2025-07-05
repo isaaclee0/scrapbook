@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444321817/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736444321817",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444321817",
+      "url": "https://www.pinterest.com/pin/88101736444321817/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chewy Brownies",
+      "description": "These brownies are so chewy and moist and perfect for any chocolate craving!",
+      "link": "https://www.tastemade.com/videos/chewy-brownies",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemade",
+        "url": "https://www.pinterest.com/tastemade/",
+        "name": "Tastemade"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0f/be/f6/0fbef6f3f3098a10c80db6c2411f7d6a.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/92/ba/57/92ba57a48eb747ffebce541da0bbea03.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

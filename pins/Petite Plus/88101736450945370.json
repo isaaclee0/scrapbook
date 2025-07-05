@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450945370/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/petite-plus",
+    "CustomFileName": "88101736450945370",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450945370",
+      "url": "https://www.pinterest.com/pin/88101736450945370/",
+      "type": "pin",
+      "title": "How to wear more fashionable 003",
+      "gridTitle": "How to wear more fashionable 003",
+      "description": " ",
+      "link": "https://amzn.to/3jcpvuu",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/petite-plus/",
+        "name": "Petite plus",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fa/6d/36/fa6d36319b5faf40acebeafe8c7d0ba4.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/3a/6c/94/3a6c94f6035bf35a58038c886f3506fa.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

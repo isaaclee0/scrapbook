@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439826308/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736439826308",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439826308",
+      "url": "https://www.pinterest.com/pin/88101736439826308/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chocolat (2000)",
+      "description": "Great movie",
+      "link": "http://www.imdb.com/media/rm2069404672/tt0241303",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e4/df/eb/e4dfebe00ec412c03f1b2352b2e0aca9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445093250/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736445093250",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445093250",
+      "url": "https://www.pinterest.com/pin/88101736445093250/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "A great cake idea for a digger-obsessed kid!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "basketcasenz",
+        "url": "https://www.pinterest.com/basketcasenz/",
+        "name": "Amelia W"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/91/00/53/910053207bee6de88d1277f24fa90f66.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

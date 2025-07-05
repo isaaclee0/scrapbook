@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445579121/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/blogs-to-explore",
+    "CustomFileName": "88101736445579121",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445579121",
+      "url": "https://www.pinterest.com/pin/88101736445579121/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "A Gardener's Weather Diary",
+      "description": "A Gardener's Weather Diary",
+      "link": "http://ossettweather.blogspot.co.uk/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/blogs-to-explore/",
+        "name": "Blogs to Explore",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/47/0c/1c/470c1c46dfa7d4ccc1bb11b1534216b2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

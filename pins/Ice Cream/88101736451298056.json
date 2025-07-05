@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451298056/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/ice-cream",
+    "CustomFileName": "88101736451298056",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451298056",
+      "url": "https://www.pinterest.com/pin/88101736451298056/",
+      "type": "pin",
+      "title": "Mint Chocolate Chip Ice Cream",
+      "gridTitle": "Mint Chocolate Chip Ice Cream",
+      "description": "Homemade Mint Chocolate Chip Ice Cream: This recipe is so easy to make! No eggs, no cooking, and no ice cream maker required. #mint #chocolatechip #mintchocolatechip #icecream #homemade #recipe #peppermint #dessert #nochurn #noeggs #videos #easy #best #homemade #stpatricksday #summer #sweettreats #simple #howtomake #oreo #bakingamoment",
+      "link": "https://bakingamoment.com/mint-chocolate-chip-ice-cream/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "bakingamoment",
+        "url": "https://www.pinterest.com/bakingamoment/",
+        "name": "Allie Baking a Moment"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/ice-cream/",
+        "name": "Ice cream",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/86/20/d3/8620d391ce5e8340b0f8dd2b7db93d41.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/4c/34/d9/4c34d9f3045cea6c829d22a6f984ec20.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

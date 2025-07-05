@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452837650/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potato-recipes",
+    "CustomFileName": "88101736452837650",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452837650",
+      "url": "https://www.pinterest.com/pin/88101736452837650/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Recipes | KitchenAid",
+      "description": " ",
+      "link": "https://www.yummly.com/recipe/Polish-Vegetable-Salad-1845696",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potato-recipes/",
+        "name": "Potato Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4b/5d/1a/4b5d1ae8898bab1ceca5a69196c5af6b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

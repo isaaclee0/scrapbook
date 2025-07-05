@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439138898/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/baby-stuff",
+    "CustomFileName": "88101736439138898",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439138898",
+      "url": "https://www.pinterest.com/pin/88101736439138898/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Sell Me Something",
+      "description": "Make sure that the babysitter (or grandma or your partner also know this!!)",
+      "link": "http://sellmesomething.co.uk/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/baby-stuff/",
+        "name": "Baby stuff",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bd/d1/47/bdd14787e5c855f3b32e1e00c68f1ce5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

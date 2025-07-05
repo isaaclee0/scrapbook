@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430781184/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430781184",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430781184",
+      "url": "https://www.pinterest.com/pin/88101736430781184/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Foodie Fridays: Fresh",
+      "description": "Tangled thai salad with peanut-lime dressing",
+      "link": "http://canadiangiftguide.com/2011/10/14/foodie-fridays-fresh/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/88/54/dc/8854dc829f38d1fe1797175005f60a83.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

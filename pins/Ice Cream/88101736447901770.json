@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447901770/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/ice-cream",
+    "CustomFileName": "88101736447901770",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447901770",
+      "url": "https://www.pinterest.com/pin/88101736447901770/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Berry chesecake icecream",
+      "description": "\"Berry chesecake icecream\" by Call me cupcake on flickr.com",
+      "link": "http://www.flickr.com/photos/callmecupcake/6806980558/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/ice-cream/",
+        "name": "Ice cream",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e6/64/ce/e664cea10c04672dcda4254f766197ce.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

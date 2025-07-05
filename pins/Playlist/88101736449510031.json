@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449510031/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/playlist",
+    "CustomFileName": "88101736449510031",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449510031",
+      "url": "https://www.pinterest.com/pin/88101736449510031/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "link": "https://www.bestbuy.com/site/bad-moon-rising-the-collection-lp-vinyl/34724757.p?skuId=34724757&cmp=RMX",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "bestbuy",
+        "url": "https://www.pinterest.com/bestbuy/",
+        "name": "Best Buy"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/playlist/",
+        "name": "Playlist",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/eb/18/14/eb1814ca5737bfdd70da2e978af58d75.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437927106/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736437927106",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437927106",
+      "url": "https://www.pinterest.com/pin/88101736437927106/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Cat Tree. DIY. Homemade for Cats.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 12,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "JULIASDRIFTWOOD",
+        "url": "https://www.pinterest.com/JULIASDRIFTWOOD/",
+        "name": "Julia's Driftwood"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c3/fb/96/c3fb9694fa0a11d8cadc90d77ba2ad4e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443982399/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736443982399",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443982399",
+      "url": "https://www.pinterest.com/pin/88101736443982399/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Banana Cinnamon Teacake {AIP, GAPS, SCD, Paleo}",
+      "description": "Banana Cinnamon Teacake [AIP, GAPS]",
+      "link": "http://healingfamilyeats.com/banana-cinnamon-teacake-aip-gaps/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e3/8c/7d/e38c7d469230ad95482ffb87960f9e71.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

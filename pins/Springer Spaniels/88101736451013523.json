@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451013523/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/springer-spaniels",
+    "CustomFileName": "88101736451013523",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451013523",
+      "url": "https://www.pinterest.com/pin/88101736451013523/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Christmas Springer Spaniel",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "midnyt5",
+        "url": "https://www.pinterest.com/midnyt5/",
+        "name": "Nikey Mattson"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/springer-spaniels/",
+        "name": "Springer Spaniels",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/71/5f/fa/715ffaeb5111913b3e056b28f970799e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447148537/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736447148537",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447148537",
+      "url": "https://www.pinterest.com/pin/88101736447148537/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Speaks volumes!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a7/ac/44/a7ac441c4224a829a4c2f8a128e85bee.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

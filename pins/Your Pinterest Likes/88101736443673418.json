@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443673418/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443673418",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443673418",
+      "url": "https://www.pinterest.com/pin/88101736443673418/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Sewiquiltnow.com",
+      "description": "line quilt",
+      "link": "http://www.sewiquiltnow.com/search?updated-min=2010-12-31T21:00:00-08:00&updated-max=2011-04-26T14:29:00-04:00&max-results=50&start=105&by-date=false",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/31/86/d3/3186d32a3834d5ffc0443265172340e7.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

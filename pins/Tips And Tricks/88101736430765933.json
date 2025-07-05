@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430765933/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tips-and-tricks",
+    "CustomFileName": "88101736430765933",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430765933",
+      "url": "https://www.pinterest.com/pin/88101736430765933/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Anatomy of Walking",
+      "description": "walking..",
+      "link": "http://visual.ly/anatomy-walking",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tips-and-tricks/",
+        "name": "Tips and Tricks",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/06/45/a0/0645a088825e29297a0f1b8f8e383200.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446722010/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736446722010",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446722010",
+      "url": "https://www.pinterest.com/pin/88101736446722010/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Baked Mozzarella Chicken Rolls",
+      "description": "This recipe for Baked Mozzarella Chicken Rolls is easy, delicious, and beautiful! #healthy #dinner #chickenrecipe #recipe | pinchofyum.com",
+      "link": "https://pinchofyum.com/baked-mozzarella-chicken-rolls",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "pinchofyum",
+        "url": "https://www.pinterest.com/pinchofyum/",
+        "name": "Pinch of Yum"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7e/b5/27/7eb52733121626584b6600cde326a27a.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/d6/0f/62/d60f620bcf0f7ea741de9e943996e147.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

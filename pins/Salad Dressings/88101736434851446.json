@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434851446/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/salad-dressings",
+    "CustomFileName": "88101736434851446",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434851446",
+      "url": "https://www.pinterest.com/pin/88101736434851446/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "lemon vinaigrette",
+      "link": "http://www.chicagotribune.com/features/food/sc-food-0316-eskin-lemon-vinaigrette-20120318,0,5072651.column",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/salad-dressings/",
+        "name": "Salad Dressings",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3f/81/e4/3f81e4ec675f149cc9da532e1bbee0b9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

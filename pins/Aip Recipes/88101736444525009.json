@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444525009/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736444525009",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444525009",
+      "url": "https://www.pinterest.com/pin/88101736444525009/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "AIP Taco Seasoning (nightshade & seed spice free) - meatified",
+      "description": "Boring taco meat, begone! This AIP Taco Seasoning from http://meatified.com is nightshade & seed spice free but packed with layers of flavor that you will love.",
+      "link": "http://meatified.com/aip-taco-seasoning/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6c/00/03/6c00033d54d83433c457cc811655ab5e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

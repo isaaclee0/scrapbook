@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432752319/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736432752319",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432752319",
+      "url": "https://www.pinterest.com/pin/88101736432752319/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "White Chocolate Key Lime Pie",
+      "description": "White Chocolate Key Lime Pie",
+      "link": "http://kitchensimplicity.com/white-chocolate-key-lime-pie/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a4/e8/a6/a4e8a6e18f261cf3cbc1e8a597d696e3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

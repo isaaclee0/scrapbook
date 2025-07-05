@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438651211/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pork",
+    "CustomFileName": "88101736438651211",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438651211",
+      "url": "https://www.pinterest.com/pin/88101736438651211/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Country Terrine",
+      "description": "Country Terrine - A simple recipe that yields delicious results at Epicurious.com",
+      "link": "http://www.epicurious.com/recipes/food/views/Country-Terrine-233242",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pork/",
+        "name": "Pork",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3d/a5/ac/3da5ac0ab6469475c6dcd4f3afa513b6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

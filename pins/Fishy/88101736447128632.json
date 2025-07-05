@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447128632/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fishy",
+    "CustomFileName": "88101736447128632",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447128632",
+      "url": "https://www.pinterest.com/pin/88101736447128632/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Spiced prawns",
+      "description": "Turmeric, chilli, coriander and mustard - these spiced prawns are so good, you might want to make a second batch!",
+      "link": "https://www.delicious.com.au/recipes/spiced-prawns/150a50d9-c740-4986-96b7-b6c381d63619",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fishy/",
+        "name": "Fishy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3a/90/2a/3a902a03ae5dd73f89db761918a7e8c4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

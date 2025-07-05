@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442646487/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442646487",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442646487",
+      "url": "https://www.pinterest.com/pin/88101736442646487/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Gallery of mystery",
+      "description": "Some old photographs of pterodactyls, flying creatures that, according to science, disappeared 150 million years ago. Here we see them portrayed as hunting trophies.",
+      "link": "http://mmmgroup2.altervista.org/e-gall3.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/dd/93/59/dd9359df67a6e1d729fa826387f6fcf9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

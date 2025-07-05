@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450652928/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/playlist",
+    "CustomFileName": "88101736450652928",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450652928",
+      "url": "https://www.pinterest.com/pin/88101736450652928/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "YouTube",
+      "description": "Positive Morning Music - Happy Uplifting Mood Booster Music",
+      "link": "https://www.youtube.com/watch?v=qJZ3wqLYJtI&feature=share",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/playlist/",
+        "name": "Playlist",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/18/fc/fc/18fcfcc1f9fd8753b7249f02ea2dbcaf.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

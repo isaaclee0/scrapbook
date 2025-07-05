@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444991981/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potato-recipes",
+    "CustomFileName": "88101736444991981",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444991981",
+      "url": "https://www.pinterest.com/pin/88101736444991981/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Ham and Cheese Hash Brown Casserole - Plain Chicken",
+      "description": "Ham and Cheese Hash Brown Casserole -Hash browns, ham, parmesan cheese, cheddar cheese, cream of potato soup, and sour cream.",
+      "link": "http://www.plainchicken.com/2016/03/ham-and-cheese-hash-brown-casserole.html#more",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potato-recipes/",
+        "name": "Potato Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/85/d9/c7/85d9c762854df7daddb05343308f156b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

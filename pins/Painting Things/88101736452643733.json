@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452643733/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painting-things",
+    "CustomFileName": "88101736452643733",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452643733",
+      "url": "https://www.pinterest.com/pin/88101736452643733/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "living room/hallway",
+      "link": "http://media-cache-ak0.pinimg.com/736x/ae/01/c1/ae01c19c21ebdf0333b031ef3c26b665.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painting-things/",
+        "name": "Painting things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ae/01/c1/ae01c19c21ebdf0333b031ef3c26b665.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

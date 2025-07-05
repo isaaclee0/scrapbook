@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452904253/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/photography",
+    "CustomFileName": "88101736452904253",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452904253",
+      "url": "https://www.pinterest.com/pin/88101736452904253/",
+      "type": "pin",
+      "title": "Sparkler lit wedding exit",
+      "gridTitle": "Sparkler lit wedding exit",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "abigailjarvela",
+        "url": "https://www.pinterest.com/abigailjarvela/",
+        "name": "abigail"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/photography/",
+        "name": "Photography",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1d/83/74/1d83742a768cc372e15e80486e3a9b17.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

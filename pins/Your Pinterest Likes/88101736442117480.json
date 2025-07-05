@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442117480/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442117480",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442117480",
+      "url": "https://www.pinterest.com/pin/88101736442117480/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Why Are Barns Red? - Grit",
+      "description": "18th-century farmers discovered secret to barn preservation.data-pin-do=",
+      "link": "http://www.grit.com/departments/why-are-barns-red.aspx",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/30/b7/8d/30b78de2476d460e2c21ed19fffa3587.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434477927/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painting-things",
+    "CustomFileName": "88101736434477927",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434477927",
+      "url": "https://www.pinterest.com/pin/88101736434477927/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Oops!",
+      "description": "painted floor",
+      "link": "http://www.flickr.com/photos/karlascottage/4601615454/in/photostream",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 4,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painting-things/",
+        "name": "Painting things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/66/e5/b1/66e5b17d57e480e96e9949629fa0346b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

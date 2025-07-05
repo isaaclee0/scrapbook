@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451041475/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/platters",
+    "CustomFileName": "88101736451041475",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451041475",
+      "url": "https://www.pinterest.com/pin/88101736451041475/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Easter Cheese and Crudites Board",
+      "description": "Easter Cheese and Crudites Board - Freutcake",
+      "link": "http://www.freutcake.com/easter/easter-cheese-crudites-board/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "drivenbydecor",
+        "url": "https://www.pinterest.com/drivenbydecor/",
+        "name": "Kris - Driven by Decor"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/platters/",
+        "name": "Platters",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/00/99/e3/0099e36c1d869f86733513ea3f049d47.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

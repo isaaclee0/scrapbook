@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448155697/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736448155697",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448155697",
+      "url": "https://www.pinterest.com/pin/88101736448155697/",
+      "type": "pin",
+      "title": "The Most Amazing Chocolate Cake You’ll Ever Have",
+      "gridTitle": "The Most Amazing Chocolate Cake You’ll Ever Have",
+      "description": " ",
+      "link": "https://yupfoodie.com/recipe/the-most-amazing-chocolate-cake-youll-ever-have/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ef/88/e6/ef88e6a2f7f6148992e1681ef3f27154.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/39/0f/fc/390ffc9bdf5ae9947a6d666ae5ff9677.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

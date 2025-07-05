@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451923812/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736451923812",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451923812",
+      "url": "https://www.pinterest.com/pin/88101736451923812/",
+      "type": "pin",
+      "title": "Pixie Hairstyle Transformation",
+      "gridTitle": "Pixie Hairstyle Transformation",
+      "description": " ",
+      "link": "https://m.youtube.com/watch?v=QsPWwJiE1C0&feature=youtu.be",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 6,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7a/e8/78/7ae8780d7df4ec5bd26480ebc3d6a91e.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/34/58/39/345839e081e780050b41c6d2e81bd238.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

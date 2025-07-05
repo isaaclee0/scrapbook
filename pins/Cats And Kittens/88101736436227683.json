@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436227683/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736436227683",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436227683",
+      "url": "https://www.pinterest.com/pin/88101736436227683/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Cat Ladder - an old Christmas tree with rope nailed to it.",
+      "link": "http://www.takethescrewsout.com/index.php?/archives/8-Cat-Ladder.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/43/fc/94/43fc94dd45dfff4628f60bf9b993c4c6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442669434/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442669434",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442669434",
+      "url": "https://www.pinterest.com/pin/88101736442669434/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Loft Fairy Door. Can \"magically\" appear anywhere in your home or at gramma's. Two tiny nails under door OR two sticks secured to the loft door under the door area close to the wall could hold it in place on its own. Decorate surrounding area.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/33/8f/82/338f82327f346e0866d354bc53383a04.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

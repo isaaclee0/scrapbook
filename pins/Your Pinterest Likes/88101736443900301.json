@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443900301/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443900301",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443900301",
+      "url": "https://www.pinterest.com/pin/88101736443900301/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Pin what inspires you and come back often ♥ Tam ♥",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "abbhgrammy",
+        "url": "https://www.pinterest.com/abbhgrammy/",
+        "name": "💗 Tam 2 💗• 🍧•🍦•🧜•🦋•🌷 No Pin Limits •🌞•🙏• 🌻•🌼•📌♥"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e1/3d/5e/e13d5e2d13dd73e690da2c214e13d14d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

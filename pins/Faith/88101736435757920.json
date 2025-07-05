@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435757920/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736435757920",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435757920",
+      "url": "https://www.pinterest.com/pin/88101736435757920/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "joy",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "smccamey",
+        "url": "https://www.pinterest.com/smccamey/",
+        "name": "S"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fc/04/7f/fc047f3a0562eecedab1b16259a763c1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

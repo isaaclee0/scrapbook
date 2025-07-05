@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435946585/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/no-bake",
+    "CustomFileName": "88101736435946585",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435946585",
+      "url": "https://www.pinterest.com/pin/88101736435946585/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Coconut, Chocolate, and Almond Bar | Bakers Royale",
+      "description": "coconut and chocolate almond bars.",
+      "link": "http://www.bakersroyale.com/bars-and-cookie-bars/coconut-chocolate-and-almond-bar/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/no-bake/",
+        "name": "No Bake",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/11/81/18/118118b27718bf8a81572f1573e59a40.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

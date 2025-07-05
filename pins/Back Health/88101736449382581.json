@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449382581/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/back-health",
+    "CustomFileName": "88101736449382581",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449382581",
+      "url": "https://www.pinterest.com/pin/88101736449382581/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Hip",
+      "description": "image",
+      "link": "http://clinicalgate.com/hip-5/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/back-health/",
+        "name": "Back health",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/82/73/67/8273677e2665bc5992e81e0c190cf3c8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

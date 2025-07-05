@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441710467/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/salads",
+    "CustomFileName": "88101736441710467",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441710467",
+      "url": "https://www.pinterest.com/pin/88101736441710467/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "paper & ink",
+      "description": "paper & ink: recipes",
+      "link": "http://bbpaperandink.blogspot.com.au/search/label/recipes",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/salads/",
+        "name": "Salads",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/17/ee/1b/17ee1b09938228b118c1c77b1a4b8fc2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

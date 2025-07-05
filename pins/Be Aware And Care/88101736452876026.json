@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452876026/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/be-aware-and-care",
+    "CustomFileName": "88101736452876026",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452876026",
+      "url": "https://www.pinterest.com/pin/88101736452876026/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "This is really important.",
+      "description": "This is disgusting",
+      "link": "http://imgur.com/gallery/0anrA",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/be-aware-and-care/",
+        "name": "Be aware and care...",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b2/a5/70/b2a5709ed3c1ac5d20e91d60a4513b19.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

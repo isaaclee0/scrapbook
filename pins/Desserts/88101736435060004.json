@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435060004/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736435060004",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435060004",
+      "url": "https://www.pinterest.com/pin/88101736435060004/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Raspberry and Cardamom Mousse White Chocolate Layers",
+      "description": "White Chocolate and Raspberry Mousse",
+      "link": "http://www.flickr.com/photos/40995944@N00/3324523006/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6a/65/d4/6a65d4c552526eb63975b0b1664b2b12.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

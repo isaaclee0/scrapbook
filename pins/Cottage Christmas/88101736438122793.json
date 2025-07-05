@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438122793/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-christmas",
+    "CustomFileName": "88101736438122793",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438122793",
+      "url": "https://www.pinterest.com/pin/88101736438122793/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "<3",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "floorilse",
+        "url": "https://www.pinterest.com/floorilse/",
+        "name": "Ilse Van de Meerakker"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-christmas/",
+        "name": "Cottage Christmas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/aa/9c/f4/aa9cf424adf5796436d0064d51a34c2a.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

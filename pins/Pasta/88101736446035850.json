@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446035850/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pasta",
+    "CustomFileName": "88101736446035850",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446035850",
+      "url": "https://www.pinterest.com/pin/88101736446035850/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Tahini Caramel Slices - The Tasty K",
+      "description": "Pumpkin Gnocchi with Creamy Mushroom Sauce | vegan, oil-free, gluten-free",
+      "link": "http://thetastyk.com/2016/11/08/pumpkin-gnocchi/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "thetastyk",
+        "url": "https://www.pinterest.com/thetastyk/",
+        "name": "The Tasty K"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pasta/",
+        "name": "Pasta",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d0/82/6a/d0826a27c5e94f099e532ae6db5bf4cd.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

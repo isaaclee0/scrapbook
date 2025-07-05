@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431648068/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736431648068",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431648068",
+      "url": "https://www.pinterest.com/pin/88101736431648068/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "DIY raw garlic powder. Great idea!",
+      "link": "http://theurbanhearth.com/wp-content/uploads/2012/10/garlic-powder-003.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5f/38/1e/5f381e2dbb02cb5341baf2a0d86ec2fa.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

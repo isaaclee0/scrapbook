@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450409576/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736450409576",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450409576",
+      "url": "https://www.pinterest.com/pin/88101736450409576/",
+      "type": "pin",
+      "title": "I know things",
+      "gridTitle": "I know things",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "AllisonDolan77",
+        "url": "https://www.pinterest.com/AllisonDolan77/",
+        "name": "Allison Dolan"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/27/b3/27/27b327e2840765ab0c686436e40e3b79.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

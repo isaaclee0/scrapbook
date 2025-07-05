@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452952259/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736452952259",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452952259",
+      "url": "https://www.pinterest.com/pin/88101736452952259/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Diary of John Evelyn (Everyman's Library CLASSICS)",
+      "description": "The Diary of John Evelyn by John Eve",
+      "link": "https://www.amazon.co.uk/dp/1857152913/ref=cm_sw_r_pi_dp_x_hC9rFbBYX41S7",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5c/a1/28/5ca1280e50d80ee750ca9254f346159b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

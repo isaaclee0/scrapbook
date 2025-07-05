@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447066057/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/agnes-st",
+    "CustomFileName": "88101736447066057",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447066057",
+      "url": "https://www.pinterest.com/pin/88101736447066057/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Appliance cabinet",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/agnes-st/",
+        "name": "Agnes st",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3a/0e/3e/3a0e3e6d15f7d656ffbdb56e8c393de5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

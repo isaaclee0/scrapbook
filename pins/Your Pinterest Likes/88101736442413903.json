@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442413903/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442413903",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442413903",
+      "url": "https://www.pinterest.com/pin/88101736442413903/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "New health freedom association erupts in Iceland",
+      "link": "http://anh-europe.org/news/new-health-freedom-association-erupts-in-iceland?fb_action_ids=10202410101115894&fb_action_types=og.likes&action_object_map=%7B%2210202410101115894%22:724509940910795%7D&action_type_map=%7B%2210202410101115894%22:%22og.likes%22%7D&action_ref_map=[]",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/64/d6/d5/64d6d50e15846b782dc99c4591fa2859.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

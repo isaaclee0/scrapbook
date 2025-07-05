@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436269005/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bedrooms",
+    "CustomFileName": "88101736436269005",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436269005",
+      "url": "https://www.pinterest.com/pin/88101736436269005/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Light green with pink",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "kngwhlr",
+        "url": "https://www.pinterest.com/kngwhlr/",
+        "name": "Karen Wheeler"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bedrooms/",
+        "name": "Bedrooms",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/92/50/49/9250494e65257bedf3088dbd040352ba.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

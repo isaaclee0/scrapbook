@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432815325/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736432815325",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432815325",
+      "url": "https://www.pinterest.com/pin/88101736432815325/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Banana Caramel Tart - Heather Christo",
+      "description": "Banana Caramel Tart | Heather Christo Cooks",
+      "link": "http://www.heatherchristo.com/cooks/2013/02/19/banana-caramel-tart/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/65/7e/4b/657e4ba9df821b4ddd5b6075aa1031d4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

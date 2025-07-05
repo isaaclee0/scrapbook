@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442189427/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442189427",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442189427",
+      "url": "https://www.pinterest.com/pin/88101736442189427/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "He Went on Tracking, and Piglet ... Ran After Him. - a photo on Flickriver",
+      "description": "missing someone so I have to keep them in my dreams.",
+      "link": "http://flickriver.com/photos/bibliodyssey/3065948313/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2b/de/81/2bde811d17b84f637cd6d2099a0f4acb.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453072048/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cleaning-things",
+    "CustomFileName": "88101736453072048",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453072048",
+      "url": "https://www.pinterest.com/pin/88101736453072048/",
+      "type": "pin",
+      "title": "Pet odor",
+      "gridTitle": "Pet odor",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "cynthia955973",
+        "url": "https://www.pinterest.com/cynthia955973/",
+        "name": "Cynthia Sanchez"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cleaning-things/",
+        "name": "Cleaning Things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8f/fe/29/8ffe29a85d4ad24be94ed84ade05764f.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/76/9e/6a/769e6a152f8d1cee649febf88fc396a9.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

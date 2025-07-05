@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439301064/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736439301064",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439301064",
+      "url": "https://www.pinterest.com/pin/88101736439301064/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Lemon Cake",
+      "link": "http://obviouslysweet.com/blog/2011/03/lemon-cake/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "calisue337",
+        "url": "https://www.pinterest.com/calisue337/",
+        "name": "CaliSue337"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/87/54/67/8754673aa4a12418f9591615e4b04cba.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

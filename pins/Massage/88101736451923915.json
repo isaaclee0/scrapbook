@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451923915/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/massage",
+    "CustomFileName": "88101736451923915",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451923915",
+      "url": "https://www.pinterest.com/pin/88101736451923915/",
+      "type": "pin",
+      "title": "How to do a massage correctly?",
+      "gridTitle": "How to do a massage correctly?",
+      "description": " ",
+      "link": "https://www.sahilfitness.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "healthcoachsahil",
+        "url": "https://www.pinterest.com/healthcoachsahil/",
+        "name": "Health & Fitness"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/massage/",
+        "name": "Massage",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/13/ce/66/13ce664c8c295325188acd3042fa39f7.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/06/04/95/060495488674b471152edb51a8262336.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

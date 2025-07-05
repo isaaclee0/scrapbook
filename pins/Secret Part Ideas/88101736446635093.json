@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446635093/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/secret-part-ideas",
+    "CustomFileName": "88101736446635093",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446635093",
+      "url": "https://www.pinterest.com/pin/88101736446635093/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "We Heart It",
+      "description": "...",
+      "link": "http://weheartit.com/entry/169864587",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "pixelmusings",
+        "url": "https://www.pinterest.com/pixelmusings/",
+        "name": "Pixel Musings"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/secret-part-ideas/",
+        "name": "Secret Part Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7d/8c/34/7d8c346f4be4002e7385acf0c54d741e.webp",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453147263/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/goldens",
+    "CustomFileName": "88101736453147263",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453147263",
+      "url": "https://www.pinterest.com/pin/88101736453147263/",
+      "type": "pin",
+      "title": "This is life with a golden be like, how cute",
+      "gridTitle": "This is life with a golden be like, how cute",
+      "description": " ",
+      "link": "https://kingdomofdoggos.com/blogs/all-about-golden-retrievers/hilarious-golden-retriever-videos-will-make-you-smile",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "KingdomOfDoggo",
+        "url": "https://www.pinterest.com/KingdomOfDoggo/",
+        "name": "KingdomOfDoggos"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/goldens/",
+        "name": "Goldens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8d/14/3e/8d143e1941cc7b0492505b787cdfb8d2.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/d3/ea/52/d3ea52f15e27bda7ef6229af89d2fc9a.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

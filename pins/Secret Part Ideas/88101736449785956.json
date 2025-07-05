@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449785956/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/secret-part-ideas",
+    "CustomFileName": "88101736449785956",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449785956",
+      "url": "https://www.pinterest.com/pin/88101736449785956/",
+      "type": "pin",
+      "title": "Skillet Bread with Creamy Spinach Artichoke Dip",
+      "gridTitle": "Skillet Bread with Creamy Spinach Artichoke Dip",
+      "description": "Indulge in every bite of this rich, chewy, ooey-gooey skillet bread with creamy spinach artichoke dip center.",
+      "link": "https://www.tastemade.com/videos/skillet-bread-with-creamy-spinach-artichoke-dip",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemade",
+        "url": "https://www.pinterest.com/tastemade/",
+        "name": "Tastemade"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/secret-part-ideas/",
+        "name": "Secret Part Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/84/7d/9a/847d9ab5cae37e01c4aea02903959535.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/09/ca/82/09ca8293391de248edd2917b6a8b760e.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

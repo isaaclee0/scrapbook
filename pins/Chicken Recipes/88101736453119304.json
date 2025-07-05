@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453119304/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736453119304",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453119304",
+      "url": "https://www.pinterest.com/pin/88101736453119304/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Easy Baked Lemon Chicken",
+      "description": " ",
+      "link": "https://www.flavourandsavour.com/easy-baked-lemon-chicken/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7c/d6/07/7cd6076d4cb5da7beda8e5c29b5d2f08.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

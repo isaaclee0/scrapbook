@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438942041/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/duck-recipes",
+    "CustomFileName": "88101736438942041",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438942041",
+      "url": "https://www.pinterest.com/pin/88101736438942041/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Duck Fat and Duck Cracklins - foodgawker",
+      "description": "How to Make Duck Cracklins and Render Duck Fat.",
+      "link": "http://foodgawker.com/post/2011/01/12/87566/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/duck-recipes/",
+        "name": "Duck Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/11/3c/ca/113cca03544a263b67f07a60db7cfcde.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

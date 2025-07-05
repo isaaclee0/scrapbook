@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442094890/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442094890",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442094890",
+      "url": "https://www.pinterest.com/pin/88101736442094890/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Laura's Story -  Blessings - Worship Video with lyrics",
+      "description": "Laura's Story  Blessings   Worship Video with lyrics    James 1:2-4 Consider it pure joy, my brothers and sisters, whenever you face trials of many kinds, because you know that the testing of your faith produces perseverance. Let perseverance finish its work so that you may be mature and complete, not lacking anything.",
+      "link": "http://www.youtube.com/watch/?v=GMeFzFUbmJo",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7e/b0/10/7eb01053ff5734e67948c069970aa335.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

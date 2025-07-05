@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442052057/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442052057",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442052057",
+      "url": "https://www.pinterest.com/pin/88101736442052057/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Cherry Hill Cottage...",
+      "description": "Country girl car seat covers ;-)",
+      "link": "http://cherryhillcottage.typepad.com/cherryhill_cottage/2011/06/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/19/42/81/19428126142e34740a3dbe73510bb9fa.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

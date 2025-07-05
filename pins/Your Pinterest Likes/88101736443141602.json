@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443141602/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443141602",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443141602",
+      "url": "https://www.pinterest.com/pin/88101736443141602/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Dry Firewood With a DIY Solar Wood Kiln - Grit",
+      "description": "Mountain Man builds a solar wood drying kiln.",
+      "link": "http://www.grit.com/animals/solar-wood-drying-kiln.aspx",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0f/87/62/0f8762a833dd98fd2b22d1a2b4abb608.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447900060/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tile",
+    "CustomFileName": "88101736447900060",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447900060",
+      "url": "https://www.pinterest.com/pin/88101736447900060/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Before & After: Our Cottage Inspired Home - Pine and Prospect Home",
+      "description": "Before & After - Pine and Prospect Home",
+      "link": "https://www.pineandprospecthome.com/before-after/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tile/",
+        "name": "Tile",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cb/c9/14/cbc914470b2fec2074d3c00c3dd13b16.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

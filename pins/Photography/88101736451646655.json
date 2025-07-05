@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451646655/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/photography",
+    "CustomFileName": "88101736451646655",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451646655",
+      "url": "https://www.pinterest.com/pin/88101736451646655/",
+      "type": "pin",
+      "title": "Χωρίς τίτλο (ΚΤ) ",
+      "gridTitle": "Χωρίς τίτλο (ΚΤ)",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ktsilipani",
+        "url": "https://www.pinterest.com/ktsilipani/",
+        "name": "Κατερινα Τσιλιπανη"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/photography/",
+        "name": "Photography",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fb/e1/bc/fbe1bca40e8c71b635a872b708b47ae8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

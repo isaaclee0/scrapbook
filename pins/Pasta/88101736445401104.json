@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445401104/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pasta",
+    "CustomFileName": "88101736445401104",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445401104",
+      "url": "https://www.pinterest.com/pin/88101736445401104/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Pasta met pancetta, rucola, kerstomaatjes en pijnboompitten",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "dagelijksekost",
+        "url": "https://www.pinterest.com/dagelijksekost/",
+        "name": "Dagelijkse kost"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pasta/",
+        "name": "Pasta",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/75/f1/2a/75f12ac2b8802d972f2066b66fb45400.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

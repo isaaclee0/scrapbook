@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443307708/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443307708",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443307708",
+      "url": "https://www.pinterest.com/pin/88101736443307708/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "All of Christ for all of life",
+      "description": "Wise Words: Stories that Bring the Proverbs to Life",
+      "link": "http://www.canonpress.org/store/pc/viewcategories.asp?pageStyle=h&ProdSort=0&page=1&idCategory=4",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bf/d3/ac/bfd3ac874879113988b3431dbc970778.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442129443/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442129443",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442129443",
+      "url": "https://www.pinterest.com/pin/88101736442129443/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Getting Tippled: Eastern European Liqueurs to Make Now for Fall",
+      "description": "Tipples Cover Getting Tippled: Eastern European Liqueurs to Make Now for Fall",
+      "link": "http://www.plumdeluxe.com/eastern-european-liqueurs-to-make-now-for-fall",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7b/ef/7b/7bef7bfc373f7f80e1db50859ad2e4a8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

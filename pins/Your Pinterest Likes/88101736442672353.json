@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442672353/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442672353",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442672353",
+      "url": "https://www.pinterest.com/pin/88101736442672353/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Bali flower by Egor Ryazanov / 500px",
+      "description": "Frangipani - one of the most beautiful and fragrant flowers.  This is my favorite flower.  I LOVE IT!!!",
+      "link": "http://500px.com/photo/53773654",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/78/a3/7d/78a37d826a66ceca5b081d2ac66b0da6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

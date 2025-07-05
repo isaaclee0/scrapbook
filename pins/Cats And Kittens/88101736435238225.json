@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435238225/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736435238225",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435238225",
+      "url": "https://www.pinterest.com/pin/88101736435238225/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Comfy spot for a nap",
+      "description": "Cats in Strange Places!",
+      "link": "http://imgur.com/gallery/0EYF8",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/db/0b/78/db0b78e9dbab53a738b05086e0217349.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

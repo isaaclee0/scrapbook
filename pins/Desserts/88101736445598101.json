@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445598101/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736445598101",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445598101",
+      "url": "https://www.pinterest.com/pin/88101736445598101/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Key Lime Pie with Fluffy Meringue - Kitschen Cat",
+      "description": "Key Lime Pie with Fluffy Meringue. A tart and creamy key lime filling with a fluffy sweet meringue on top!",
+      "link": "http://www.kitschencat.com/key-lime-pie-fluffy-meringue/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "kitschencat",
+        "url": "https://www.pinterest.com/kitschencat/",
+        "name": "Kitschen Cat"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8a/b9/fe/8ab9fe84583216d0cebb6d699aa0973f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446531867/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/writing",
+    "CustomFileName": "88101736446531867",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446531867",
+      "url": "https://www.pinterest.com/pin/88101736446531867/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Interesting.",
+      "description": "Interesting.",
+      "link": "http://imgur.com/gallery/vy8RSRM",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/writing/",
+        "name": "Writing",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/44/5e/bd/445ebd5a75524836f5affdd8f5ca8102.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

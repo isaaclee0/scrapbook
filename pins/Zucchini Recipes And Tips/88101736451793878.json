@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451793878/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/zucchini-recipes-and-tips",
+    "CustomFileName": "88101736451793878",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451793878",
+      "url": "https://www.pinterest.com/pin/88101736451793878/",
+      "type": "pin",
+      "title": "Roasted Greek Vegetables",
+      "gridTitle": "Roasted Greek Vegetables",
+      "description": " ",
+      "link": "https://souvlakiforthesoul.com/2020/07/briam-greek-roasted-vegetables",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "souvlakiman",
+        "url": "https://www.pinterest.com/souvlakiman/",
+        "name": "Souvlaki For The Soul | Greek Recipes | Greek Food"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/zucchini-recipes-and-tips/",
+        "name": "Zucchini - recipes and tips",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/85/03/33/850333e4379244daa036e44f353deb70.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/61/f5/7f/61f57f53d5eaa9cc3d7d3f8b1963e77e.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

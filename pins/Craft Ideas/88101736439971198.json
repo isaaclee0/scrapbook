@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439971198/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/craft-ideas",
+    "CustomFileName": "88101736439971198",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439971198",
+      "url": "https://www.pinterest.com/pin/88101736439971198/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Etsy - Shop for handmade, vintage, custom, and unique gifts for everyone",
+      "description": "vintage handkerchief quilt",
+      "link": "http://www.etsy.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/craft-ideas/",
+        "name": "Craft Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d1/fb/15/d1fb15db1bec408f3a5fedafb3b12dfa.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

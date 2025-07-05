@@ -1,0 +1,47 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450591498/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cake-decorating",
+    "CustomFileName": "88101736450591498",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450591498",
+      "url": "https://www.pinterest.com/pin/88101736450591498/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Adornos",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cake-decorating/",
+        "name": "Cake Decorating",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/07/3a/4e/073a4e67ab8eeb25024ceb974289a722.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/7e/da/90/7eda9009819c7c2d61cbddc84c3daa26.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

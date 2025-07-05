@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438136035/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/daffodils",
+    "CustomFileName": "88101736438136035",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438136035",
+      "url": "https://www.pinterest.com/pin/88101736438136035/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Nantucket daffodil festival parade",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/daffodils/",
+        "name": "Daffodils",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/dd/83/c3/dd83c33f0e8a58d2334a1aa91fdc8ef6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

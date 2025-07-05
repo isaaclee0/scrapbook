@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433630372/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736433630372",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433630372",
+      "url": "https://www.pinterest.com/pin/88101736433630372/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Mark Twain and shoulder kitty. “Some people scorn a cat and think it not an essential; but the Clemens tribe are not of these.”",
+      "link": "http://cdn.theatlantic.com/static/mt/assets/food/twain1.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/37/a1/5f/37a15ff4cd275d4e6ffb85e7204eb79e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

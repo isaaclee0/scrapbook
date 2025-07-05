@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437699671/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736437699671",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437699671",
+      "url": "https://www.pinterest.com/pin/88101736437699671/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "I love books about the Holocaust",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "beckkkiee",
+        "url": "https://www.pinterest.com/beckkkiee/",
+        "name": "Rebecca Elias"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e3/df/0f/e3df0f7b85886964ebec3e5f4baa13f9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

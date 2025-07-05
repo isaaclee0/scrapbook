@@ -1,0 +1,56 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451718636/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736451718636",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451718636",
+      "url": "https://www.pinterest.com/pin/88101736451718636/",
+      "type": "pin",
+      "title": "Faith Daily Reminders",
+      "gridTitle": "Faith Daily Reminders",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 3,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "expressionsbracelets",
+        "url": "https://www.pinterest.com/expressionsbracelets/",
+        "name": "expressions bracelets | Inspirational Jewelry and Accessories"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/39/ee/2b/39ee2b3113ba9f68b507b01096a1488f.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/fa/96/2d/fa962d1736c172fbfa74d2b9483c0429.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/0d/44/11/0d4411716df3bd394f7471ca24d38017.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

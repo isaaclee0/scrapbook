@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436287457/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736436287457",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436287457",
+      "url": "https://www.pinterest.com/pin/88101736436287457/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Princess Bride (1987)",
+      "description": "Awesome movie.",
+      "link": "http://www.imdb.com/media/rm2593162240/tt0093779",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/11/d5/bd/11d5bd0bcb579da812a1c7f879e6076f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

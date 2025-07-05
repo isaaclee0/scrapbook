@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434190759/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-breakfast",
+    "CustomFileName": "88101736434190759",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434190759",
+      "url": "https://www.pinterest.com/pin/88101736434190759/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Healthy Apple Cinnamon Muffins Recipe for a Sweet Breakfast",
+      "description": "Apple Cinnamon Muffins | PaleOMG - Paleo Recipe",
+      "link": "http://paleomg.com/apple-cinnamon-muffins/#.ULQxxSqNj5U.pinterest",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-breakfast/",
+        "name": "AIP Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/89/46/d5/8946d5afaeb0559aec2388c55516b6bc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

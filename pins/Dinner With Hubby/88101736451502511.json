@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451502511/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/dinner-with-hubby",
+    "CustomFileName": "88101736451502511",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451502511",
+      "url": "https://www.pinterest.com/pin/88101736451502511/",
+      "type": "pin",
+      "title": "Tiramisu in a Glass",
+      "gridTitle": "Tiramisu in a Glass",
+      "description": "Create the most famous Italian dessert in small, glass-sized portions of decadent chocolate, velvety mascarpone and rich coffee.",
+      "link": "https://www.tastemade.com/videos/tiramisu-in-a-glass",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemade",
+        "url": "https://www.pinterest.com/tastemade/",
+        "name": "Tastemade"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/dinner-with-hubby/",
+        "name": "Dinner with hubby",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e9/9f/3c/e99f3c5351ceb1801abb0c61e9300319.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/c9/10/3f/c9103f35deb3cbaffdd6cbbb9d00490d.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

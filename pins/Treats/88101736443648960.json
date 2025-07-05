@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443648960/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736443648960",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443648960",
+      "url": "https://www.pinterest.com/pin/88101736443648960/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Recipe for Homemade Lemon Drops",
+      "description": "Recipe for Homemade Lemon Drops - I couldn't stop smiling after I made these! In fact, I am smiling right now while I am eating one!",
+      "link": "http://flavorite.net/2015/05/22/homemade-lemon-drops/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6d/85/52/6d855261cd43b5dc09c8da1db5b754d8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

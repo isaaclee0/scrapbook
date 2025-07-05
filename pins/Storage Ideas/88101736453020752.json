@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453020752/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/storage-ideas",
+    "CustomFileName": "88101736453020752",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453020752",
+      "url": "https://www.pinterest.com/pin/88101736453020752/",
+      "type": "pin",
+      "title": "Tech Cord Organization",
+      "gridTitle": "Tech Cord Organization",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "CounselingCounts",
+        "url": "https://www.pinterest.com/CounselingCounts/",
+        "name": "Dr. Melanie Morgan"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/storage-ideas/",
+        "name": "Storage ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f2/ea/ab/f2eaabc9e7ca204db636b1bd320093a3.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/f7/c3/c1/f7c3c1282e64122ab1d9c65c99ec67f8.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446464075/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-pot",
+    "CustomFileName": "88101736446464075",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446464075",
+      "url": "https://www.pinterest.com/pin/88101736446464075/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "pretty pink and purple.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tezlang",
+        "url": "https://www.pinterest.com/tezlang/",
+        "name": "Terri Langford"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-pot/",
+        "name": "Cottage Pot",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/52/24/3d/52243dc5821bcd14d35fc67606304ad2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

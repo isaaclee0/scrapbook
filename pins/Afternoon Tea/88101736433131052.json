@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433131052/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736433131052",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433131052",
+      "url": "https://www.pinterest.com/pin/88101736433131052/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "La vie à deux",
+      "description": "Tea Cups neatly arranged",
+      "link": "http://www.leblogdelamechante.fr/page/7/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/28/03/78/280378460b68f9af4496cf74ea0e343b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

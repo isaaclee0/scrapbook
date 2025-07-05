@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436045159/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/travel",
+    "CustomFileName": "88101736436045159",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436045159",
+      "url": "https://www.pinterest.com/pin/88101736436045159/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Underwater waterfall, Mauritius Island",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "svpstyle",
+        "url": "https://www.pinterest.com/svpstyle/",
+        "name": "Sergio Perez"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/travel/",
+        "name": "Travel",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/72/6e/92/726e92ae8c52df9fdc7c8e04ea1fb66c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

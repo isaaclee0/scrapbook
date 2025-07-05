@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435976899/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/inside-a-cottage",
+    "CustomFileName": "88101736435976899",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435976899",
+      "url": "https://www.pinterest.com/pin/88101736435976899/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Old suitcase table",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "cailgirl",
+        "url": "https://www.pinterest.com/cailgirl/",
+        "name": "Jackie Comerford"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/inside-a-cottage/",
+        "name": "Inside a cottage",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e1/0c/17/e10c17cc8e667329c9a78c1ae873c7c0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

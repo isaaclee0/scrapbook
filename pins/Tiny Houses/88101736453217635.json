@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453217635/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tiny-houses",
+    "CustomFileName": "88101736453217635",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453217635",
+      "url": "https://www.pinterest.com/pin/88101736453217635/",
+      "type": "pin",
+      "title": "two beds one room",
+      "gridTitle": "two beds one room",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tiny-houses/",
+        "name": "Tiny Houses",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/69/10/dd/6910dd44c44226e622dee9713c8ab640.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452641825/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736452641825",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452641825",
+      "url": "https://www.pinterest.com/pin/88101736452641825/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "I built a catio",
+      "description": " ",
+      "link": "http://m.imgur.com/a/xu5lb",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f4/41/2d/f4412d31048f2aa5d3fafe902b102066.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

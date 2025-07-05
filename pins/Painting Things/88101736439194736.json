@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439194736/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painting-things",
+    "CustomFileName": "88101736439194736",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439194736",
+      "url": "https://www.pinterest.com/pin/88101736439194736/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Our Kitchen Remodel",
+      "description": "kitchen",
+      "link": "http://www.hometalk.com/467148/our-kitchen-remodel/photo/88371",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painting-things/",
+        "name": "Painting things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f0/00/7c/f0007cad75282db5767bbaf0e251313f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

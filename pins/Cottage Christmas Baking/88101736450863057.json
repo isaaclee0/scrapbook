@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450863057/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-christmas-baking",
+    "CustomFileName": "88101736450863057",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450863057",
+      "url": "https://www.pinterest.com/pin/88101736450863057/",
+      "type": "pin",
+      "title": "La bûche au chocolat du père Noël",
+      "gridTitle": "La bûche au chocolat du père Noël",
+      "description": " ",
+      "link": "https://www.chefclub.tv/fr/c/recettes",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "chefclubnw",
+        "url": "https://www.pinterest.com/chefclubnw/",
+        "name": "Chefclub"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-christmas-baking/",
+        "name": "Cottage Christmas Baking",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ca/fd/83/cafd83533e9ee66421e43a4ac105ddc1.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/05/5e/9f/055e9fe3a986d5d4e8cd33afd65a640b.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

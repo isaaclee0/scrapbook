@@ -1,0 +1,68 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451787863/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736451787863",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451787863",
+      "url": "https://www.pinterest.com/pin/88101736451787863/",
+      "type": "pin",
+      "title": "Lemon Pepper Chicken Thighs",
+      "gridTitle": "Lemon Pepper Chicken Thighs",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 6,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "New_South_Charm",
+        "url": "https://www.pinterest.com/New_South_Charm/",
+        "name": "Susanne {New South Charm}"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a2/cc/82/a2cc82b5d7ca1e4d3ed41da20d4a45e9.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/ee/a8/d8/eea8d827afdd950b0ab9a76b742bdb1f.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/f0/54/74/f05474eb3bb5d40f220300053433e98c.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/8d/8f/22/8d8f22d8a6b72c282bc73216d41c6a5c.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/6b/f3/60/6bf360ffccfe5b656d500c2f36a9c9f0.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/78/c6/af/78c6af5dbf7d61aa56d68a86b4612e62.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

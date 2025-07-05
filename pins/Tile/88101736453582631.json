@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453582631/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tile",
+    "CustomFileName": "88101736453582631",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453582631",
+      "url": "https://www.pinterest.com/pin/88101736453582631/",
+      "type": "pin",
+      "title": "Wooden Bar Lighting",
+      "gridTitle": "Wooden Bar Lighting",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "dillysdoll",
+        "url": "https://www.pinterest.com/dillysdoll/",
+        "name": "Christinas Collection"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tile/",
+        "name": "Tile",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/77/13/4e/77134e37daa54d381e590b231518fc25.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

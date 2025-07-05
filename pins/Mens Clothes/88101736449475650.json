@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449475650/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/mens-clothes",
+    "CustomFileName": "88101736449475650",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449475650",
+      "url": "https://www.pinterest.com/pin/88101736449475650/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Men's Classic",
+      "description": "Men's Classic",
+      "link": "http://vk.com/mens_class",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/mens-clothes/",
+        "name": "Men's clothes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2e/8c/f7/2e8cf78dd929ca5b490d57a62945ab75.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437746855/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/indonesian-food",
+    "CustomFileName": "88101736437746855",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437746855",
+      "url": "https://www.pinterest.com/pin/88101736437746855/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "sambal udang chilli garam",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "fionaav",
+        "url": "https://www.pinterest.com/fionaav/",
+        "name": "Fiona Vuilleumier"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/indonesian-food/",
+        "name": "Indonesian Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3b/d9/05/3bd9052ff95e9a4d1330968be6eebb87.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

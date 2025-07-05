@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433596105/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/backyard-farm",
+    "CustomFileName": "88101736433596105",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433596105",
+      "url": "https://www.pinterest.com/pin/88101736433596105/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Potager.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/backyard-farm/",
+        "name": "Backyard Farm",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fc/7a/64/fc7a6472c775c7c2c5e6d359eb6affc9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

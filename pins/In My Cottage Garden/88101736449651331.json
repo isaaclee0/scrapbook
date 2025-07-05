@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449651331/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/in-my-cottage-garden",
+    "CustomFileName": "88101736449651331",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449651331",
+      "url": "https://www.pinterest.com/pin/88101736449651331/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Eiffel Tower rose ~Dianna Lopez~",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "di2007anna",
+        "url": "https://www.pinterest.com/di2007anna/",
+        "name": "Dianna Lopez"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/in-my-cottage-garden/",
+        "name": "In my cottage garden",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/76/b7/c3/76b7c36cf9f5b7c0c2d037fd57509859.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

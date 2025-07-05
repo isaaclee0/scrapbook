@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450675325/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/sweet-caravans",
+    "CustomFileName": "88101736450675325",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450675325",
+      "url": "https://www.pinterest.com/pin/88101736450675325/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "gems come in many forms",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/sweet-caravans/",
+        "name": "Sweet Caravans",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c6/4a/c2/c64ac207e9ca0f19116c16a3791825e2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

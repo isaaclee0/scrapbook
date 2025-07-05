@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444615563/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736444615563",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444615563",
+      "url": "https://www.pinterest.com/pin/88101736444615563/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Wow... I better grab a snickers.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e5/dc/54/e5dc5463320d614d87675ee732e228b1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

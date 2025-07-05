@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447065993/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/rabbit-care",
+    "CustomFileName": "88101736447065993",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447065993",
+      "url": "https://www.pinterest.com/pin/88101736447065993/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Screen porch chicken coop",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/rabbit-care/",
+        "name": "Rabbit care",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3c/b9/ab/3cb9abba5754a7435a7783adf779c63d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

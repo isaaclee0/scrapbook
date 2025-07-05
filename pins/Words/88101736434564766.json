@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434564766/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736434564766",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434564766",
+      "url": "https://www.pinterest.com/pin/88101736434564766/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Betrayal",
+      "link": "http://www.flickr.com/photos/jenny_1984/8742209087/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8d/e5/99/8de599e2752979482266eae519018a25.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

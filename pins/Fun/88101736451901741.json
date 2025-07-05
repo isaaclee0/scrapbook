@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451901741/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fun",
+    "CustomFileName": "88101736451901741",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451901741",
+      "url": "https://www.pinterest.com/pin/88101736451901741/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Heh...",
+      "description": "Heh... - Album on Imgur",
+      "link": "https://imgur.com/gallery/s61Fqgj",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fun/",
+        "name": "Fun",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bf/e3/74/bfe374f2323944bf7d632539e98380fb.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439299259/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736439299259",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439299259",
+      "url": "https://www.pinterest.com/pin/88101736439299259/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Magnetic Cat Toy",
+      "description": "DIY Magnetic pendulum cat toy. For the cat who doesn't want to stop playing.",
+      "link": "http://www.instructables.com/id/Magnetic-Cat-Toy/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fc/fc/fa/fcfcfa497750113464a4d545dd4b714d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

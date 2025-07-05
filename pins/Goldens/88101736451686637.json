@@ -1,0 +1,59 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451686637/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/goldens",
+    "CustomFileName": "88101736451686637",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451686637",
+      "url": "https://www.pinterest.com/pin/88101736451686637/",
+      "type": "pin",
+      "title": "Oh Henlo Hooman, how you doin today?🐶",
+      "gridTitle": "Oh Henlo Hooman, how you doin today?🐶",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 5,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/goldens/",
+        "name": "Goldens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/be/3a/cf/be3acf9df9afafcea26310a2ab78a5e0.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/15/14/93/15149317d2d7d95f3773a0573412a6a2.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/a0/29/ce/a029ceca7680a407e0dc86cb7a4bddfb.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/2e/46/c8/2e46c85742c984b4479ab1dd0e7d3a7d.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/ec/ca/66/ecca669185d77e9051142c04cd01537c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

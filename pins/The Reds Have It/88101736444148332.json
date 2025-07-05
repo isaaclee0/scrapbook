@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444148332/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/the-reds-have-it",
+    "CustomFileName": "88101736444148332",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444148332",
+      "url": "https://www.pinterest.com/pin/88101736444148332/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "#Redhead #beauty",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 7,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "vickymetzger",
+        "url": "https://www.pinterest.com/vickymetzger/",
+        "name": "Vicky Metzger Barcelona"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/the-reds-have-it/",
+        "name": "The Reds Have It",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b9/f4/dd/b9f4ddc9ac5431ad09e30e29fc87de44.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

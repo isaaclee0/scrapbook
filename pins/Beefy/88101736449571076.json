@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449571076/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/beefy",
+    "CustomFileName": "88101736449571076",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449571076",
+      "url": "https://www.pinterest.com/pin/88101736449571076/",
+      "type": "pin",
+      "title": "Batata gratinada com espinafre",
+      "gridTitle": "Batata gratinada com espinafre",
+      "description": "Combinamos nossas batatas com um recheio sedutor para fazer esse rolo, que é tão delicioso quanto interessante! Você vai amar! #batata #espinafre #rolodebatatacomespinafre #recheio #rolorecheado #receitacombatata #batatagratinada",
+      "link": "https://www.areceitaria.com.br/batata-gratinada-espinafre/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 10,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "areceitaria",
+        "url": "https://www.pinterest.com/areceitaria/",
+        "name": "A Receitaria"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/beefy/",
+        "name": "Beefy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b8/26/77/b826777e2a439e16a4e19506bd0ef65b.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/e9/6a/b2/e96ab282ec58d688ed179a364e594a6b.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

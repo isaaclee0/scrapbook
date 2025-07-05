@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443658937/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443658937",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443658937",
+      "url": "https://www.pinterest.com/pin/88101736443658937/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Portraits of Wwoofers in Tuscany, Italy – Part 1 of 3 - Beers and Beans",
+      "description": "Tales of volunteering on an organic vineyard in Tuscany>>>a real life dream!",
+      "link": "http://beersandbeans.com/2011/01/17/portraits-of-wwoofers-in-tuscany-italy-part-1/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8b/b5/54/8bb5548e264a620800507ad6ad6308cc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

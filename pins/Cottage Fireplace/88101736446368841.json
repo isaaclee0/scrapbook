@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446368841/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-fireplace",
+    "CustomFileName": "88101736446368841",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446368841",
+      "url": "https://www.pinterest.com/pin/88101736446368841/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Koza",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "lolka",
+        "url": "https://www.pinterest.com/lolka/",
+        "name": "Lolka Kasia Suproniuk"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-fireplace/",
+        "name": "Cottage Fireplace",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fc/e9/7a/fce97aa35d6dbf50e5d13daf2bebefe3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437936943/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-love",
+    "CustomFileName": "88101736437936943",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437936943",
+      "url": "https://www.pinterest.com/pin/88101736437936943/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "chickens in a cottage garden",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "snapshotie",
+        "url": "https://www.pinterest.com/snapshotie/",
+        "name": "Cora Phillips"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-love/",
+        "name": "Chicken love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/10/ab/cb/10abcb5ec82b985479171e8d48ee2b8d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

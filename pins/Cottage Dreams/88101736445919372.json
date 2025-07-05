@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445919372/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-dreams",
+    "CustomFileName": "88101736445919372",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445919372",
+      "url": "https://www.pinterest.com/pin/88101736445919372/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "The Middle of Nowhere",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "insidejigsaw",
+        "url": "https://www.pinterest.com/insidejigsaw/",
+        "name": "Jigsaw"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-dreams/",
+        "name": "Cottage Dreams",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4b/17/6a/4b176a2cab68aba345f593daa747970c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

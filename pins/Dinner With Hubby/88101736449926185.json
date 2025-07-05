@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449926185/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/dinner-with-hubby",
+    "CustomFileName": "88101736449926185",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449926185",
+      "url": "https://www.pinterest.com/pin/88101736449926185/",
+      "type": "pin",
+      "title": "Oranges and Chocolate",
+      "gridTitle": "Oranges and Chocolate",
+      "description": "Beautiful dessert idea!   Video by @verabreda63 #putonapron #cakes #cupcakes #cupcakesdecor",
+      "link": "https://putonapron.com/collections/baking",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "cakeideasforyou",
+        "url": "https://www.pinterest.com/cakeideasforyou/",
+        "name": "Bake the cake"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/dinner-with-hubby/",
+        "name": "Dinner with hubby",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/78/23/83/782383a980cb602473871337a277026b.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/8e/7e/cb/8e7ecbb8395464089a45995716a81825.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

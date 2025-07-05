@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435877888/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736435877888",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435877888",
+      "url": "https://www.pinterest.com/pin/88101736435877888/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "In theaters July 2014 | www.PersecutedMovie.com",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "bonniemanis",
+        "url": "https://www.pinterest.com/bonniemanis/",
+        "name": "Bonnie Manis"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fa/91/46/fa91468995a0a42c109c8644f4c57df4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

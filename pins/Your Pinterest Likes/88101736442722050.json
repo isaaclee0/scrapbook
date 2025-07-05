@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442722050/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442722050",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442722050",
+      "url": "https://www.pinterest.com/pin/88101736442722050/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Photo tags ~ doing this",
+      "link": "http://sweetpaul.typepad.com/my_weblog/2010/12/holiday-countdown-2010dec-10th.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0d/cf/14/0dcf148d863bf8ad94a1e4512bfbfdc5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

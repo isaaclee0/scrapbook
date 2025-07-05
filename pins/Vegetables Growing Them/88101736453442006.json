@@ -1,0 +1,60 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453442006/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/vegetables-growing-them",
+    "CustomFileName": "88101736453442006",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453442006",
+      "url": "https://www.pinterest.com/pin/88101736453442006/",
+      "type": "pin",
+      "title": "Simple greenhouse for a green garden",
+      "gridTitle": "Simple greenhouse for a green garden",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 4,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "woodmoodofficial",
+        "url": "https://www.pinterest.com/woodmoodofficial/",
+        "name": "Wood Mood"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/vegetables-growing-them/",
+        "name": "Vegetables  - growing them",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/38/c8/14/38c814881575843f1af232c8a17846a9.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/ff/9d/c1/ff9dc13d1295b88361f546feb3e88927.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/99/f4/3f/99f43fdf46b4332c4d34cc550dff7b69.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/4e/1e/4e/4e1e4e79523848872f93f34101ccbb16.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

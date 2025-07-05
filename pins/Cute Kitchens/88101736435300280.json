@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435300280/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cute-kitchens",
+    "CustomFileName": "88101736435300280",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435300280",
+      "url": "https://www.pinterest.com/pin/88101736435300280/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Keltainen talo rannalla",
+      "description": "kitchen",
+      "link": "http://keltainentalorannalla.blogspot.nl/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cute-kitchens/",
+        "name": "Cute Kitchens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/68/00/28/680028d2a66b9ab0cfce1a9cb2d801fa.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

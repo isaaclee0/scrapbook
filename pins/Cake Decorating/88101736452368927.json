@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452368927/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cake-decorating",
+    "CustomFileName": "88101736452368927",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452368927",
+      "url": "https://www.pinterest.com/pin/88101736452368927/",
+      "type": "pin",
+      "title": "HOW TO MAKE WHIPPED COCONUT CREAM",
+      "gridTitle": "HOW TO MAKE WHIPPED COCONUT CREAM",
+      "description": " ",
+      "link": "https://leelalicious.com/how-to-make-whipped-coconut-cream/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "leelalicious",
+        "url": "https://www.pinterest.com/leelalicious/",
+        "name": "Regina | LeelaLicious"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cake-decorating/",
+        "name": "Cake Decorating",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/08/50/01/0850018a47bf186bf67bcbf5a0474f46.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/31/75/2f/31752f83cc4afcad99ac66b6e91c60bf.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

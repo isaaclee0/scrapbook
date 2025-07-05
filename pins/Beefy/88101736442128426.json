@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442128426/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/beefy",
+    "CustomFileName": "88101736442128426",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442128426",
+      "url": "https://www.pinterest.com/pin/88101736442128426/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Top 10 Best Australian Recipes",
+      "description": "Australian Meat Pie and other recipes",
+      "link": "http://www.topinspired.com/top-10-best-australian-recipes/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/beefy/",
+        "name": "Beefy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/79/64/61/79646148a58a352cfb738fb85d73c24a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

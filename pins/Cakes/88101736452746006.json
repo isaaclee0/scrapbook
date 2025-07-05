@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452746006/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736452746006",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452746006",
+      "url": "https://www.pinterest.com/pin/88101736452746006/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Ginger beer boiled fruit cake",
+      "description": " ",
+      "link": "https://www.bestrecipes.com.au/recipes/ginger-beer-boiled-fruit-cake-recipe/4c037yte",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/af/e2/b0/afe2b0631721a7249c0f345e22a81a49.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

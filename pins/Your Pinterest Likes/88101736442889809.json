@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442889809/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442889809",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442889809",
+      "url": "https://www.pinterest.com/pin/88101736442889809/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Life in Médoc",
+      "description": "\"We’ve been living in Médoc, France, for nearly 18 months now.   And it’s taken me some time to adapt.  Getting out of a city is like a detox program.   No one is stressed out here. Stores, banks, post offices – they have long daily lunch breaks.  No one is in a rush.  People you meet talk about the mushrooms they found in the forest, or where the geese are flying to (it’s an indication of how soon summer will come).  It’s nice.\"",
+      "link": "http://mimithorisson.com/life-in-medoc/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/73/aa/cf/73aacf3287c7ae269ffa17d66403416c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

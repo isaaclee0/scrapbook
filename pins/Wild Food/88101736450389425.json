@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450389425/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/wild-food",
+    "CustomFileName": "88101736450389425",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450389425",
+      "url": "https://www.pinterest.com/pin/88101736450389425/",
+      "type": "pin",
+      "title": "Foraging Chickweed in the forest. Wild spring edibles.",
+      "gridTitle": "Foraging Chickweed in the forest. Wild spring edibles.",
+      "description": "Foraging Chickweed in the forest. Wild spring edibles.  #foraging #chickweed #forest #springedibles",
+      "link": "https://www.youtube.com/watch?v=aQ1zR8QyhrQ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "sonofabear",
+        "url": "https://www.pinterest.com/sonofabear/",
+        "name": "Son of a Bear"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/wild-food/",
+        "name": "Wild food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/49/53/cf/4953cf838764cca939cae4ef81e9ff11.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/1c/b8/c2/1cb8c22591dcacf8e8e2953c4d8f8021.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

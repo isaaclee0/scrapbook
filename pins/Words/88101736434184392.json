@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434184392/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736434184392",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434184392",
+      "url": "https://www.pinterest.com/pin/88101736434184392/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Homemaking.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "2french4you",
+        "url": "https://www.pinterest.com/2french4you/",
+        "name": "Melissa"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c9/33/37/c9333773dbd80b17885e5483c6acfae6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

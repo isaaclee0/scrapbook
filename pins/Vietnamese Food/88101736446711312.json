@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446711312/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/vietnamese-food",
+    "CustomFileName": "88101736446711312",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446711312",
+      "url": "https://www.pinterest.com/pin/88101736446711312/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Colorful Summer Rolls with Peanut Dipping Sauce",
+      "description": "Recipe of the Day: Colorful Summer Rolls with Peanut Dipping Sauce",
+      "link": "http://www.foodnetwork.com/recipes/food-network-kitchen/colorful-summer-rolls-with-peanut-dipping-sauce-3663353",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "foodnetwork",
+        "url": "https://www.pinterest.com/foodnetwork/",
+        "name": "Food Network"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/vietnamese-food/",
+        "name": "Vietnamese Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6c/21/33/6c2133ed2d3f8264ebae8c032f27a629.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/e6/63/6d/e6636da83fb59929594a3c0e47dd7df9.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452952340/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fun",
+    "CustomFileName": "88101736452952340",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452952340",
+      "url": "https://www.pinterest.com/pin/88101736452952340/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Do you remember... - Funny",
+      "description": "Do you remember...",
+      "link": "https://9gag.com/gag/aZL9Z7V?ref=pn",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fun/",
+        "name": "Fun",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8b/34/1c/8b341cf4549f1c4a284a140ac3e0481b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

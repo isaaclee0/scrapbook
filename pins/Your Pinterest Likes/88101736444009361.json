@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444009361/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736444009361",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444009361",
+      "url": "https://www.pinterest.com/pin/88101736444009361/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Single and not waiting",
+      "description": "Single and not waiting",
+      "link": "https://convergemagazine.com/single-waiting-9283/#leLHVUM24SCG3Y7H.01",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "saraisama",
+        "url": "https://www.pinterest.com/saraisama/",
+        "name": "Sarah Baker"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b5/6b/7b/b56b7bc479dff62d63e61bd018e77f5d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451944505/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-love",
+    "CustomFileName": "88101736451944505",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451944505",
+      "url": "https://www.pinterest.com/pin/88101736451944505/",
+      "type": "pin",
+      "title": "10 DIY Toys for your Backyard Chickens",
+      "gridTitle": "10 DIY Toys for your Backyard Chickens",
+      "description": " ",
+      "link": "https://www.typesofchicken.com/diy-toys-for-chickens/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "chickenkeepingforbeginners",
+        "url": "https://www.pinterest.com/chickenkeepingforbeginners/",
+        "name": "Raising Chickens for beginners"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-love/",
+        "name": "Chicken love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ec/27/a4/ec27a4c7bb56f360e41a0431b5569d28.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/a6/60/f6/a660f6b706c835a90b0f737c6ce9b285.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443636619/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443636619",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443636619",
+      "url": "https://www.pinterest.com/pin/88101736443636619/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Kitchen Remodeling Tips and Facts",
+      "description": "What a great idea for a safe place to hide in case of intruders. You could even set it up so you could lock yourself in if needed. fully stocked with guns too...just in case",
+      "link": "http://relaxdeco.com/?p=106228",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/43/90/27/439027e4c486d3118711e163aa1ca6e9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

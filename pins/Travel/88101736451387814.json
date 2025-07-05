@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451387814/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/travel",
+    "CustomFileName": "88101736451387814",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451387814",
+      "url": "https://www.pinterest.com/pin/88101736451387814/",
+      "type": "pin",
+      "title": "Travel must need!",
+      "gridTitle": "Travel must need!",
+      "description": " ",
+      "link": "https://amzn.to/3iKopqr",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "wocommunity",
+        "url": "https://www.pinterest.com/wocommunity/",
+        "name": "Around Living Service"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/travel/",
+        "name": "Travel",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f4/8d/32/f48d32cd8f2bc6aaaf571428b1f379e9.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/60/d8/39/60d8396865c080cfd107b37b627139a9.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

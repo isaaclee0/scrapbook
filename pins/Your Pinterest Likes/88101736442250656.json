@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442250656/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442250656",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442250656",
+      "url": "https://www.pinterest.com/pin/88101736442250656/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Oops!",
+      "description": "Redhead twins always amaze and relax me, they are so natural",
+      "link": "http://www.flickr.com/photos/charlotterutherford/5589191426/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/99/fa/bd/99fabdd16fcf9300e9d336db7e0b5b14.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

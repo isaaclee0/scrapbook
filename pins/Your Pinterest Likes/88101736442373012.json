@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442373012/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442373012",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442373012",
+      "url": "https://www.pinterest.com/pin/88101736442373012/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "miss gracie's house",
+      "description": "miss gracie's house",
+      "link": "http://missgracieshouse.blogspot.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/55/a9/ce/55a9ce70a934e1a39f3e08f3ac74adb9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

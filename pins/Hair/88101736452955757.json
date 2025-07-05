@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452955757/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736452955757",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452955757",
+      "url": "https://www.pinterest.com/pin/88101736452955757/",
+      "type": "pin",
+      "title": "Wedding hair style",
+      "gridTitle": "Wedding hair style",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "hairtransformation_tiktok",
+        "url": "https://www.pinterest.com/hairtransformation_tiktok/",
+        "name": "Hair transformation"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/89/8a/be/898abe99a0a5e56b7d1509d6094c942b.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/d3/77/13/d3771377ac8068a0ff97f809683415c2.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

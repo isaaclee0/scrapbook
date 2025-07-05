@@ -1,0 +1,610 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="board-container">
+    <div class="board-header">
+        <div class="board-title-container">
+            <h1>{{ board.name }}</h1>
+            <div class="board-actions">
+                <button class="board-settings-button" onclick="toggleBoardSettings()">
+                    <span class="cog-icon">⚙️</span>
+                </button>
+                <div class="board-settings-menu" id="boardSettingsMenu">
+                    <button onclick="showRenameBoardModal()">Rename Board</button>
+                    <button onclick="showMoveBoardModal()">Move Board</button>
+                    <button onclick="showDeleteBoardModal()" class="delete-button">Delete Board</button>
+                </div>
+            </div>
+        </div>
+        <div class="section-selector-container">
+            <div class="section-selector">
+                <button class="section-button active" data-section-id="all">All Pins</button>
+                {% for section in sections %}
+                <button class="section-button" data-section-id="{{ section.id }}">{{ section.name }}</button>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="pins-grid" id="pinsGrid">
+        {% for pin in pins %}
+        <div class="pin-card grid-item" data-section-id="{{ pin.section_id or 'all' }}">
+            <a href="{{ url_for('view_pin', pin_id=pin.id) }}">
+                <img src="{{ pin.image_url }}" alt="{{ pin.title }}" class="pin-image">
+                <div class="pin-info">
+                    <h3>{{ pin.title }}</h3>
+                    {% if pin.link %}
+                    <a href="{{ pin.link }}" target="_blank" class="source-link-icon" title="Visit source">↗</a>
+                    {% endif %}
+                </div>
+                {% if pin.section_name %}
+                <span class="section-badge">{{ pin.section_name }}</span>
+                {% endif %}
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<!-- Board Settings Modals -->
+<div class="modal" id="renameBoardModal">
+    <div class="modal-content">
+        <h3>Rename Board</h3>
+        <input type="text" id="newBoardName" placeholder="New board name" class="board-input">
+        <div class="modal-actions">
+            <button class="button secondary-button" onclick="hideRenameBoardModal()">Cancel</button>
+            <button class="button primary-button" onclick="renameBoard()">Rename</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="moveBoardModal">
+    <div class="modal-content">
+        <h3>Move Board</h3>
+        <select id="targetBoardSelect">
+            <option value="">Select a board...</option>
+            {% for other_board in all_boards %}
+            {% if other_board.id != board.id %}
+            <option value="{{ other_board.id }}">{{ other_board.name }}</option>
+            {% endif %}
+            {% endfor %}
+        </select>
+        <div class="modal-actions">
+            <button class="button secondary-button" onclick="hideMoveBoardModal()">Cancel</button>
+            <button class="button primary-button" onclick="moveBoard()">Move</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="deleteBoardModal">
+    <div class="modal-content">
+        <h3>Delete Board</h3>
+        <p>Are you sure you want to delete this board? This action cannot be undone.</p>
+        <div class="modal-actions">
+            <button class="button secondary-button" onclick="hideDeleteBoardModal()">Cancel</button>
+            <button class="button delete-button" onclick="deleteBoard()">Delete</button>
+        </div>
+    </div>
+</div>
+
+<!-- Add Masonry.js -->
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+
+<style>
+.board-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.board-header {
+    margin-bottom: 30px;
+}
+
+.board-title-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.board-actions {
+    position: relative;
+}
+
+.board-settings-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+}
+
+.board-settings-button:hover {
+    background-color: #f0f0f0;
+}
+
+.board-settings-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+    min-width: 200px;
+}
+
+.board-settings-menu.right {
+    right: 0;
+    left: auto;
+}
+
+.board-settings-menu.left {
+    right: auto;
+    left: 0;
+}
+
+.board-settings-menu.active {
+    display: block;
+}
+
+.board-settings-menu button {
+    width: 100%;
+    padding: 12px 16px;
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.board-settings-menu button:hover {
+    background-color: #f0f0f0;
+}
+
+.board-settings-menu .delete-button {
+    color: #dc3545;
+}
+
+.board-settings-menu .delete-button:hover {
+    background-color: #fff5f5;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+}
+
+.modal-content h3 {
+    margin: 0 0 16px;
+    font-size: 18px;
+    color: #333;
+}
+
+.board-input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.button {
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.primary-button {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+}
+
+.primary-button:hover {
+    background-color: #3498db;
+}
+
+.secondary-button {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.secondary-button:hover {
+    background-color: #e0e0e0;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+.section-selector-container {
+    overflow-x: auto;
+    margin: 20px 0;
+    padding: 10px 0;
+}
+
+.section-selector {
+    display: flex;
+    gap: 10px;
+    padding: 10px 0;
+    min-width: min-content;
+}
+
+.section-button {
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background: white;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s;
+}
+
+.section-button:hover {
+    background: #f0f0f0;
+}
+
+.section-button.active {
+    background: #000;
+    color: white;
+    border-color: #000;
+}
+
+.pins-grid {
+    margin: 0 auto;
+}
+
+.grid-item {
+    width: 270px;
+    margin-bottom: 16px;
+}
+
+.pin-card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    position: relative;
+    background-color: #f0f0f0;
+}
+
+.pin-card:hover {
+    transform: translateY(-5px);
+}
+
+.pin-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: inherit;
+}
+
+.pin-info {
+    padding: 12px;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.pin-info h3 {
+    margin: 0;
+    font-size: 16px;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.source-link-icon {
+    flex-shrink: 0;
+    color: #2980b9;
+    font-size: 14px;
+    opacity: 0.8;
+    text-decoration: none;
+    padding: 4px;
+    margin: -4px;
+    border-radius: 4px;
+}
+
+.source-link-icon:hover {
+    opacity: 1;
+    background-color: #f0f7fb;
+}
+
+.section-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    background: #f0f0f0;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #666;
+}
+
+@media (max-width: 1200px) {
+    .pins-grid {
+        grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    }
+}
+
+@media (max-width: 900px) {
+    .pins-grid {
+        grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .pins-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    
+    .pin-image {
+        height: 300px;
+    }
+}
+</style>
+
+<script>
+function toggleBoardSettings() {
+    const menu = document.getElementById('boardSettingsMenu');
+    const button = document.querySelector('.board-settings-button');
+    const buttonRect = button.getBoundingClientRect();
+    const menuWidth = 200; // min-width of the menu
+    
+    // Check if there's enough space on the right
+    const spaceOnRight = window.innerWidth - buttonRect.right;
+    
+    // Remove existing position classes
+    menu.classList.remove('left', 'right');
+    
+    // Add appropriate position class
+    if (spaceOnRight < menuWidth + 10) { // 10px buffer
+        menu.classList.add('left');
+    } else {
+        menu.classList.add('right');
+    }
+    
+    menu.classList.toggle('active');
+}
+
+// Close board settings menu when clicking outside
+document.addEventListener('click', (e) => {
+    const menu = document.getElementById('boardSettingsMenu');
+    const button = e.target.closest('.board-settings-button');
+    
+    if (!button && !menu.contains(e.target) && menu.classList.contains('active')) {
+        menu.classList.remove('active');
+    }
+});
+
+function showRenameBoardModal() {
+    document.getElementById('renameBoardModal').classList.add('active');
+    document.getElementById('newBoardName').value = '{{ board.name }}';
+    document.getElementById('newBoardName').focus();
+}
+
+function hideRenameBoardModal() {
+    document.getElementById('renameBoardModal').classList.remove('active');
+}
+
+function showMoveBoardModal() {
+    document.getElementById('moveBoardModal').classList.add('active');
+}
+
+function hideMoveBoardModal() {
+    document.getElementById('moveBoardModal').classList.remove('active');
+}
+
+function showDeleteBoardModal() {
+    document.getElementById('deleteBoardModal').classList.add('active');
+}
+
+function hideDeleteBoardModal() {
+    document.getElementById('deleteBoardModal').classList.remove('active');
+}
+
+function renameBoard() {
+    const newName = document.getElementById('newBoardName').value.trim();
+    if (!newName) {
+        alert('Please enter a board name');
+        return;
+    }
+
+    fetch(`/rename-board/{{ board.id }}`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            name: newName
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            location.reload();
+        } else {
+            alert('Failed to rename board');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Failed to rename board');
+    });
+}
+
+function moveBoard() {
+    const targetBoardId = document.getElementById('targetBoardSelect').value;
+    if (!targetBoardId) {
+        alert('Please select a target board');
+        return;
+    }
+
+    fetch(`/move-board/{{ board.id }}`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            target_board_id: targetBoardId
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            window.location.href = `/board/${targetBoardId}`;
+        } else {
+            alert('Failed to move board');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Failed to move board');
+    });
+}
+
+function deleteBoard() {
+    fetch(`/delete-board/{{ board.id }}`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            window.location.href = '/';
+        } else {
+            alert('Failed to delete board');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Failed to delete board');
+    });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize Masonry
+    const grid = document.querySelector('.pins-grid');
+    const masonry = new Masonry(grid, {
+        itemSelector: '.grid-item',
+        columnWidth: 270,
+        gutter: 16,
+        fitWidth: true,
+        transitionDuration: '0.2s'
+    });
+
+    // Re-layout Masonry after all images are loaded
+    imagesLoaded(grid).on('progress', function() {
+        masonry.layout();
+    });
+
+    // Section button handling
+    const sectionButtons = document.querySelectorAll('.section-button');
+    sectionButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            sectionButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            
+            const selectedSection = this.dataset.sectionId;
+            const items = document.querySelectorAll('.grid-item');
+            
+            items.forEach(item => {
+                if (selectedSection === 'all' || item.dataset.sectionId === selectedSection) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+            
+            masonry.layout();
+        });
+    });
+
+    // Dominant color handling
+    document.querySelectorAll('.pin-card img').forEach(img => {
+        img.onload = function() {
+            const card = this.closest('.pin-card');
+            const dominantColor = getDominantColor(this);
+            card.style.backgroundColor = dominantColor;
+            masonry.layout();
+        };
+    });
+});
+
+// Keep existing getDominantColor function
+function getDominantColor(image) {
+    const canvas = document.createElement('canvas');
+    const context = canvas.getContext('2d');
+    canvas.width = 50;
+    canvas.height = 50;
+    
+    context.drawImage(image, 0, 0, 50, 50);
+    const imageData = context.getImageData(0, 0, 50, 50).data;
+    
+    let r = 0, g = 0, b = 0;
+    let count = 0;
+    
+    for (let i = 0; i < imageData.length; i += 4) {
+        r += imageData[i];
+        g += imageData[i + 1];
+        b += imageData[i + 2];
+        count++;
+    }
+    
+    r = Math.round(r / count);
+    g = Math.round(g / count);
+    b = Math.round(b / count);
+    
+    return `rgb(${r}, ${g}, ${b})`;
+}
+</script>
+{% endblock %} 

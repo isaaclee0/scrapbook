@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430772678/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430772678",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430772678",
+      "url": "https://www.pinterest.com/pin/88101736430772678/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The most delicious way you will ever eat eggplant and a great freezer food to boot",
+      "description": "Roasted Eggplant Rolls with Three Cheeses",
+      "link": "http://www.traditional-foods.com/recipes/roasted-eggplant-rolls/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d3/95/5f/d3955f3030fee8a2b42573b766b99c36.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

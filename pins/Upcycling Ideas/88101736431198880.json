@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431198880/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/upcycling-ideas",
+    "CustomFileName": "88101736431198880",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431198880",
+      "url": "https://www.pinterest.com/pin/88101736431198880/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "A cozy little hide away made with old doors",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "magicacres",
+        "url": "https://www.pinterest.com/magicacres/",
+        "name": "Kimberly Martinez"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/upcycling-ideas/",
+        "name": "Upcycling Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c7/22/42/c722422f49a3c450e4f4603215cb966f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

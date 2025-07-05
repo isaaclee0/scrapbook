@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448730867/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736448730867",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448730867",
+      "url": "https://www.pinterest.com/pin/88101736448730867/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Adjustable Speed Pounce Cat Toy",
+      "description": "Adjustable Speed Pounce Cat Toy",
+      "link": "https://www.tatunis.com/collections/new-arrival/products/adjustable-speed-pounce-cat-toy",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e5/84/fb/e584fb28a7899c3542841dd8f509086f.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/9a/03/f2/9a03f2833f6b062d28804becad391986.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453571937/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/quick-fix-reno",
+    "CustomFileName": "88101736453571937",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453571937",
+      "url": "https://www.pinterest.com/pin/88101736453571937/",
+      "type": "pin",
+      "title": "Puck light, no wiring",
+      "gridTitle": "Puck light, no wiring",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "lisaghogue",
+        "url": "https://www.pinterest.com/lisaghogue/",
+        "name": "Lisamiso"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/quick-fix-reno/",
+        "name": "Quick Fix Reno",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/69/b1/d8/69b1d8e43c0f626ae672e20d78107680.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/1d/2c/a4/1d2ca4c719ad1743e4a4acc7545d6431.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

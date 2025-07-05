@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448797944/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736448797944",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448797944",
+      "url": "https://www.pinterest.com/pin/88101736448797944/",
+      "type": "pin",
+      "title": "Homemade Brownies",
+      "gridTitle": "Homemade Brownies",
+      "description": "#brownies #glutenfreebrownies #chewybrownies #fudgybrownies",
+      "link": "https://thefirstyearblog.com/homemade-brownies/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "thefirstyear",
+        "url": "https://www.pinterest.com/thefirstyear/",
+        "name": "Beth | The First Year | Dessert Recipes"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/18/ba/89/18ba89184e265fee4ab0cd0c1f9d9fe0.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/66/88/f3/6688f34443e5706b0af4dfe72550bc5f.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

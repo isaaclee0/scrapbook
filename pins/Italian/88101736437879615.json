@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437879615/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/italian",
+    "CustomFileName": "88101736437879615",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437879615",
+      "url": "https://www.pinterest.com/pin/88101736437879615/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Grandma Pizza",
+      "description": "Grandma Pizza",
+      "link": "http://www.ezrapoundcake.com/archives/18628",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/italian/",
+        "name": "Italian",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b2/31/aa/b231aa9414075f194add9a2e7ba65204.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

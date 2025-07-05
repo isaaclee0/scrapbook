@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435870316/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fun",
+    "CustomFileName": "88101736435870316",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435870316",
+      "url": "https://www.pinterest.com/pin/88101736435870316/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "The Green Dragon Pub (Real-Life Hobbit Pub Opens), New Zealand",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "gustavodalmasso",
+        "url": "https://www.pinterest.com/gustavodalmasso/",
+        "name": "Gustavo Dalmasso"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fun/",
+        "name": "Fun",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c9/ad/82/c9ad8281533f53bff8ffb38df86ea389.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

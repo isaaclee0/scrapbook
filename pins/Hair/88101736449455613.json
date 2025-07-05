@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449455613/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736449455613",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449455613",
+      "url": "https://www.pinterest.com/pin/88101736449455613/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Radiant Hair Color Kit from Madison Reed",
+      "description": "Think you don’t know how to color your hair yourself? YOU GOT THIS. Gorgeous, salon-quality, multi-dimensional hair color that you can easily do yourself. Meet your amazingly talented new colorist – YOU.",
+      "link": "https://www.madison-reed.com/welcome/radiant-salon-color?utm_source=pinterest&utm_medium=cpc&utm_content=col&utm_campaign=MR_Acquisition_Color_Traffic_Mobile_Video&utm_term=Hair_Keywords_KimC_Sicily_Blonde",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "madisonreedllb",
+        "url": "https://www.pinterest.com/madisonreedllb/",
+        "name": "Madison Reed"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bf/44/c2/bf44c284c346ed1c718b0b4e2e76e0b9.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/v2/720p/46/79/20/467920988fa68519c049bbc1bfd063c0_mobile.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

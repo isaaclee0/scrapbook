@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444404951/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/exercise-it",
+    "CustomFileName": "88101736444404951",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444404951",
+      "url": "https://www.pinterest.com/pin/88101736444404951/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "5 Minute Arm Workout with Denise Austin",
+      "description": "5 Minute Workouts with Denise Austin. Two of these in the morning gets your day going.",
+      "link": "http://www.youtube.com/watch/?v=OzhKXShsp3c",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/exercise-it/",
+        "name": "Exercise it",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0f/38/8a/0f388aa7fe3f564441fa05b52cc5312c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

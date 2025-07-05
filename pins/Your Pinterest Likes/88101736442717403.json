@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442717403/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442717403",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442717403",
+      "url": "https://www.pinterest.com/pin/88101736442717403/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Housewares + Kitchenware Store",
+      "description": "Awesome Idea! use cookie cutters to make pancake shapes.",
+      "link": "http://www.williams-sonoma.com/products/mini-holiday-pancake-molds/?pkey=e%257Cpancake%257C25%257Cbest%257C0%257C1%257C24%257C%257C23&cm_src=PRODUCTSEARCH%7C%7CNoFacet-_-NoFacet-_-Feature_Recipe_Rule-_-",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/60/ae/bd/60aebd0692fea2dad927d247d5a5ce85.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

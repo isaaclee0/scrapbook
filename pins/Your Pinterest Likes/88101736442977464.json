@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442977464/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442977464",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442977464",
+      "url": "https://www.pinterest.com/pin/88101736442977464/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Country Kitchen",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "brendajs",
+        "url": "https://www.pinterest.com/brendajs/",
+        "name": "Brenda Skime"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d9/b6/22/d9b622f82a41c1b882febc839bbb9f2a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440056947/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/ice-cream",
+    "CustomFileName": "88101736440056947",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440056947",
+      "url": "https://www.pinterest.com/pin/88101736440056947/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Instant Peach Ice Cream",
+      "description": "Instant Peach Ice Cream (Dairy-free) « Detoxinista",
+      "link": "http://detoxinista.com/2014/08/instant-peach-ice-cream-dairy-free/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/ice-cream/",
+        "name": "Ice cream",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0d/a0/4b/0da04b11312d5d73e88358afaf8b2273.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

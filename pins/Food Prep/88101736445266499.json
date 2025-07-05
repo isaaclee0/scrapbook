@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445266499/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/food-prep",
+    "CustomFileName": "88101736445266499",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445266499",
+      "url": "https://www.pinterest.com/pin/88101736445266499/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Curried potato pasties",
+      "description": "These are delicious warm with salad and chutney or cold, in packed lunches. They can be baked straight from frozen, too",
+      "link": "http://www.bbcgoodfood.com/recipes/9591/curried-potato-pasties",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "mishimashii",
+        "url": "https://www.pinterest.com/mishimashii/",
+        "name": "Mishi Mashii"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/food-prep/",
+        "name": "Food prep",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b6/05/46/b60546251c7a703ed13bda552ccd500e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

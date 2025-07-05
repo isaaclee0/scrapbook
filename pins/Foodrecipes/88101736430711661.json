@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430711661/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430711661",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430711661",
+      "url": "https://www.pinterest.com/pin/88101736430711661/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Baked Taco Ring!",
+      "description": "Whats for Dinner Tonight? Baked Taco Ring!",
+      "link": "http://www.vippins.com/baked-taco-ring/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/43/58/27/435827af6a5611cadf2a832fa23a6bee.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

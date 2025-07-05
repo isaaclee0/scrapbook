@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433631136/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736433631136",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433631136",
+      "url": "https://www.pinterest.com/pin/88101736433631136/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chocolate Espresso Pecan Pie - Recipe - FineCooking",
+      "description": "Chocolate Espresso pie",
+      "link": "http://www.finecooking.com/recipes/chocolate-espresso-pecan-pie.aspx?nterms=50070",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5d/2b/0d/5d2b0dc030bd2b791967c2a26a85234e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

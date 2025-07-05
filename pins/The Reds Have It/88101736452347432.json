@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452347432/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/the-reds-have-it",
+    "CustomFileName": "88101736452347432",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452347432",
+      "url": "https://www.pinterest.com/pin/88101736452347432/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "myfairylily",
+      "description": " ",
+      "link": "http://myfairylily.tumblr.com/post/154812895569",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/the-reds-have-it/",
+        "name": "The Reds Have It",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/dc/2d/9b/dc2d9b508dc4c855d1412d75aaf4fdae.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

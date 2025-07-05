@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442527323/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442527323",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442527323",
+      "url": "https://www.pinterest.com/pin/88101736442527323/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Autism & Special Needs Archives - Meet Penny",
+      "description": "teaching a child with autism to talk",
+      "link": "http://www.meetpenny.com/category/special-needs/autism/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/07/e2/45/07e24585559e644f221470e74a5b7250.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

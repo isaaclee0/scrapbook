@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443536832/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443536832",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443536832",
+      "url": "https://www.pinterest.com/pin/88101736443536832/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "For over 100 years, Eddie Bauer has made apparel, footwear, and gear to inspire and enable you to Live Your Adventure®",
+      "description": "Tweed",
+      "link": "http://www.eddiebauer.com/catalog/product.jsp?ensembleId=43606",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "honeyandjam",
+        "url": "https://www.pinterest.com/honeyandjam/",
+        "name": "Hannah Queen"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e6/8d/a8/e68da8f83a839f1acacd76101c31c34e.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434957073/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736434957073",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434957073",
+      "url": "https://www.pinterest.com/pin/88101736434957073/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chilled Blueberry Soup Recipe",
+      "description": "Chilled Blueberry Soup Recipe for a summer tea party",
+      "link": "http://www.myrecipes.com/recipe/chilled-blueberry-soup-10000001079873/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2e/5e/9d/2e5e9da91d06b4ec66d9f24d0b621346.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

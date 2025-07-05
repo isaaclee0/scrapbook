@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440082676/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/photography",
+    "CustomFileName": "88101736440082676",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440082676",
+      "url": "https://www.pinterest.com/pin/88101736440082676/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Through the Wilderness",
+      "link": "http://www.flickr.com/photos/hellomrfox/5816111096/sizes/o/in/photostream/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/photography/",
+        "name": "Photography",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/41/a0/7a/41a07a10e4ac76650790b18b05ae7196.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

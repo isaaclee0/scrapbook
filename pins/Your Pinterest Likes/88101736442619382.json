@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442619382/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442619382",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442619382",
+      "url": "https://www.pinterest.com/pin/88101736442619382/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "域名到期-域名续费提醒",
+      "description": "a 1959 chevrolet viking short bus.....",
+      "link": "http://neaststyle.com/2011/08/25/linekin-bay-woodworkers-in-maine-home-design/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9e/9f/4c/9e9f4cb732631d35def61e685a8c9327.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

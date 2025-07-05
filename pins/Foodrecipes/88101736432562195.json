@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432562195/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736432562195",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432562195",
+      "url": "https://www.pinterest.com/pin/88101736432562195/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Black Bean and Corn-Topped Potatoes Recipe",
+      "description": "Black bean and corn baked potatoes, super easy dinner idea",
+      "link": "http://www.myrecipes.com/recipe/black-bean-corn-topped-potatoes-10000001895990/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/93/7f/33/937f333e8c26f99db586f1217c3c0aa1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

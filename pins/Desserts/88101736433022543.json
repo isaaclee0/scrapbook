@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433022543/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736433022543",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433022543",
+      "url": "https://www.pinterest.com/pin/88101736433022543/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chocolate Strawberry Oasis Pie | Love and Olive Oil",
+      "description": "Chocolate Strawberry Oasis Pie - OMG",
+      "link": "http://www.loveandoliveoil.com/2012/04/chocolate-strawberry-oasis-pie.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5f/3b/f2/5f3bf2b74cb0ee2927213eaf7c875b88.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

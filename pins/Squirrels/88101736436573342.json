@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436573342/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/squirrels",
+    "CustomFileName": "88101736436573342",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436573342",
+      "url": "https://www.pinterest.com/pin/88101736436573342/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Squirrel Babies",
+      "description": "Squirrel!",
+      "link": "http://www.flickr.com/photos/bunnyfrogs/galleries/72157624125651857/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/squirrels/",
+        "name": "Squirrels",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fd/83/12/fd83125f8c2b26c6264059ca8a6ad17b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

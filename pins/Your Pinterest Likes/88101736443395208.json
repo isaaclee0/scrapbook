@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443395208/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443395208",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443395208",
+      "url": "https://www.pinterest.com/pin/88101736443395208/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "time goes by....we age but still feel young ♥",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "consueloc",
+        "url": "https://www.pinterest.com/consueloc/",
+        "name": "Consuelo Cavalcanti"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/22/68/7d/22687d5491948ce8763e0916cdad256a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

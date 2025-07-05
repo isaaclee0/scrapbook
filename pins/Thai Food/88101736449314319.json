@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449314319/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/thai-food",
+    "CustomFileName": "88101736449314319",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449314319",
+      "url": "https://www.pinterest.com/pin/88101736449314319/",
+      "type": "pin",
+      "title": "Thai Sticky Rice 3 Ways",
+      "gridTitle": "Thai Sticky Rice 3 Ways",
+      "description": " ",
+      "link": "https://www.tastemade.com/videos/thai-sticky-rice-3-ways",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemade",
+        "url": "https://www.pinterest.com/tastemade/",
+        "name": "Tastemade"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/thai-food/",
+        "name": "Thai Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/43/4c/38/434c38a6ef9951782a8e0ecfa0df43c7.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/v2/720p/2d/bb/e9/2dbbe93adab34f4839f49d9f41256f33_mobile.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

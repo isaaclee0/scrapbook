@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453071823/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair/curly-hair",
+    "CustomFileName": "88101736453071823",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453071823",
+      "url": "https://www.pinterest.com/pin/88101736453071823/",
+      "type": "pin",
+      "title": "Learn my wavy hair diffusing tips",
+      "gridTitle": "Learn my wavy hair diffusing tips",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 2,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "galhaswavyhair",
+        "url": "https://www.pinterest.com/galhaswavyhair/",
+        "name": "Gal | Wavy & Curly Hair Solved"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/2a/b7/71/2ab7712790f66ce603be78ac5e696b05.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/11/e3/34/11e334c8bc817c9977c4c16890c28955.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

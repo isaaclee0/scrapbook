@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437420830/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/rhubarb-recipes",
+    "CustomFileName": "88101736437420830",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437420830",
+      "url": "https://www.pinterest.com/pin/88101736437420830/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Spicy Cinnamon & Rhubarb Popsicles",
+      "description": "Rhubarb lollies",
+      "link": "http://cookingstoned.tv/recipe/spicy-cinnamon-rhubarb-popsicles/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/rhubarb-recipes/",
+        "name": "Rhubarb Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d0/1b/ce/d01bcec89dcd2240f02cb5252a144971.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

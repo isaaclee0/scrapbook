@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446762999/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736446762999",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446762999",
+      "url": "https://www.pinterest.com/pin/88101736446762999/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Yogurt cake with pear and dark chocolate",
+      "description": "yogurt cake",
+      "link": "http://fiveandspice.wordpress.com/2011/01/29/yogurt-cake-with-pear-and-dark-chocolate/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fe/1a/8a/fe1a8a9f865a4ac2e793321791164a31.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

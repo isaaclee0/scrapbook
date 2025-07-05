@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453246912/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/for-linda",
+    "CustomFileName": "88101736453246912",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453246912",
+      "url": "https://www.pinterest.com/pin/88101736453246912/",
+      "type": "pin",
+      "title": "Handprinted fabric with Lino blockprint",
+      "gridTitle": "Handprinted fabric with Lino blockprint",
+      "description": " ",
+      "link": "https://buffandblueprints.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "buffandblueprints",
+        "url": "https://www.pinterest.com/buffandblueprints/",
+        "name": "Buffand BluePrints"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/for-linda/",
+        "name": "For Linda",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d3/cb/df/d3cbdf1ac3058231408f64f9cf003c25.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/15/44/05/1544055be810cbb1ae17755cfd988365.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445399476/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736445399476",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445399476",
+      "url": "https://www.pinterest.com/pin/88101736445399476/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Lord.  Before it's too late!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d0/20/43/d02043cee9fa47be4c1ede39bd330c9e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

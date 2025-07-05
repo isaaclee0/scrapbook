@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453475475/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/zucchini-recipes-and-tips",
+    "CustomFileName": "88101736453475475",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453475475",
+      "url": "https://www.pinterest.com/pin/88101736453475475/",
+      "type": "pin",
+      "title": "Zucchini \"Steaks\" with Chermoula Sauce",
+      "gridTitle": "Zucchini \"Steaks\" with Chermoula Sauce",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "eatsomethingvegan",
+        "url": "https://www.pinterest.com/eatsomethingvegan/",
+        "name": "Tania - Eat Something Vegan"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/zucchini-recipes-and-tips/",
+        "name": "Zucchini - recipes and tips",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/75/9b/7c/759b7cb71eb2dc6a053c8d70560c8672.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

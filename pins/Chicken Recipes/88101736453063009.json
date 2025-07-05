@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453063009/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736453063009",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453063009",
+      "url": "https://www.pinterest.com/pin/88101736453063009/",
+      "type": "pin",
+      "title": "CORDON BLEU DELUXE ",
+      "gridTitle": "CORDON BLEU DELUXE",
+      "description": " ",
+      "link": "https://www.chefclub.tv/fr/recettes/original/46f9baf9-9f29-4a3f-a7bc-d763cd5a2497/cordon-bleu-deluxe-cest-chaud-chaud-chaud/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "chefclubnw",
+        "url": "https://www.pinterest.com/chefclubnw/",
+        "name": "Chefclub"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c9/2a/58/c92a58008d892cdb15d72972e2ff5052.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/43/4a/4f/434a4f6c0d25f4bbf0e91a25cc88f1db.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

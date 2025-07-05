@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436281518/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/narcolepsy",
+    "CustomFileName": "88101736436281518",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436281518",
+      "url": "https://www.pinterest.com/pin/88101736436281518/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Narcolepsy",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/narcolepsy/",
+        "name": "Narcolepsy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fb/4f/ea/fb4feab6e596432c689140aaa1b4d5af.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

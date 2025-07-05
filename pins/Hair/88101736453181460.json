@@ -1,0 +1,60 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453181460/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736453181460",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453181460",
+      "url": "https://www.pinterest.com/pin/88101736453181460/",
+      "type": "pin",
+      "title": "How do I know which  pieces to pull out  around my face?!",
+      "gridTitle": "How do I know which  pieces to pull out  around my face?!",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 4,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "TayBeckerBeauty",
+        "url": "https://www.pinterest.com/TayBeckerBeauty/",
+        "name": "Tay Becker"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/1c/50/69/1c50693e52f271af146faa2c1d48fd1b.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/35/e6/10/35e610c6f38860fbdc55d5ca23622d76.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/f0/31/7d/f0317daadef2b8939cf48371bf080f00.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/67/cc/85/67cc850a8243b8dd105c310e95569376.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

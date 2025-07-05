@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453742666/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/photo-ideas-in-garden",
+    "CustomFileName": "88101736453742666",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453742666",
+      "url": "https://www.pinterest.com/pin/88101736453742666/",
+      "type": "pin",
+      "title": "Flower picking",
+      "gridTitle": "Flower picking",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "DulcieeB",
+        "url": "https://www.pinterest.com/DulcieeB/",
+        "name": "Dulce"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/photo-ideas-in-garden/",
+        "name": "Photo ideas in garden",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e6/7e/0c/e67e0c298bb5f953a7ae341b312814a8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453127542/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/vegan-and-ish",
+    "CustomFileName": "88101736453127542",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453127542",
+      "url": "https://www.pinterest.com/pin/88101736453127542/",
+      "type": "pin",
+      "title": "Vegan Fried Egg Recipe 🍳",
+      "gridTitle": "Vegan Fried Egg Recipe 🍳",
+      "description": " ",
+      "link": "https://www.veginnercooking.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "veginnercooking",
+        "url": "https://www.pinterest.com/veginnercooking/",
+        "name": "Veginner Cooking"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/vegan-and-ish/",
+        "name": "Vegan and ish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3a/79/82/3a79829dede6a05f4f45d75464e0acda.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/3f/28/3a/3f283a64007e08598ee1327125eb18aa.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

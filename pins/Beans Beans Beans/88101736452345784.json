@@ -1,0 +1,68 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452345784/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/beans-beans-beans",
+    "CustomFileName": "88101736452345784",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452345784",
+      "url": "https://www.pinterest.com/pin/88101736452345784/",
+      "type": "pin",
+      "title": "Homemade Falafel",
+      "gridTitle": "Homemade Falafel",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 6,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "cookingwithayeh",
+        "url": "https://www.pinterest.com/cookingwithayeh/",
+        "name": "Cooking With Ayeh"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/beans-beans-beans/",
+        "name": "Beans beans beans!",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c3/3d/7b/c33d7bc97f48c8bb9b378fe4fe0a5e6b.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/c0/8f/96/c08f96c71a9837ee80a8644f666ab557.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/dd/2c/b8/dd2cb8eb30a28c3bbe6b0e6a866c45b9.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/d5/a3/9b/d5a39bfae4d8eddbe56b9ff26a0ac92f.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/16/04/44/160444a097a5e4ca19e9d20d6525d227.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/f0/fc/35/f0fc351405bc189c1329f3f96df51432.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

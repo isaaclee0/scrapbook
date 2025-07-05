@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433962960/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736433962960",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433962960",
+      "url": "https://www.pinterest.com/pin/88101736433962960/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Unlikely friends.",
+      "description": "Friendship",
+      "link": "http://attackofthecute.com/on/?i=15344",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b7/3a/ae/b73aae216d2d35dca4a311132ada26d2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

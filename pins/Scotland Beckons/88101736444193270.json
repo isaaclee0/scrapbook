@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444193270/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/scotland-beckons",
+    "CustomFileName": "88101736444193270",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444193270",
+      "url": "https://www.pinterest.com/pin/88101736444193270/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Isle of Rum - send in the clouds, Scotland.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "cubbies4me",
+        "url": "https://www.pinterest.com/cubbies4me/",
+        "name": "Thomas Cohoon"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/scotland-beckons/",
+        "name": "Scotland Beckons",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bb/3c/32/bb3c3228acb0c1bb8d2d4c47298ad862.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

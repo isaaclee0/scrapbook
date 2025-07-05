@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443173728/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443173728",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443173728",
+      "url": "https://www.pinterest.com/pin/88101736443173728/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Intersection of Design & Motherhood | Top Lifestyle Blog | Design Mom",
+      "description": "Olive Juice Kids Giveaway",
+      "link": "http://www.designmom.com/2014/09/olive-juice-kids-giveaway-8/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/be/32/8b/be328b18fbc76da76bfc85f9a76bc2b9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

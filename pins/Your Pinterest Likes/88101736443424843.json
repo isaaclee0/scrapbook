@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443424843/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443424843",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443424843",
+      "url": "https://www.pinterest.com/pin/88101736443424843/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "VIVRE !",
+      "description": "Mrs. Potter would LOVE this.",
+      "link": "http://goodmemory.tumblr.com/post/5361200165",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/15/eb/4a/15eb4a0495a31c83bc455148b15e68ec.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

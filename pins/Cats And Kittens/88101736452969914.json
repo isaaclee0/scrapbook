@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452969914/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736452969914",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452969914",
+      "url": "https://www.pinterest.com/pin/88101736452969914/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Building a Catio",
+      "description": " ",
+      "link": "https://www.thriftyfun.com/DIY-Window-Catio.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9e/92/cf/9e92cf012c098c049f069f1be1b66161.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

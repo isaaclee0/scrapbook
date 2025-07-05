@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443735439/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443735439",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443735439",
+      "url": "https://www.pinterest.com/pin/88101736443735439/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Mantel of the Month",
+      "description": "Pink corner cabinet",
+      "link": "http://www.enchantedtreasures.com/mantel-of-the-month/?month=10&year=2011",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "FrauleinBeckman",
+        "url": "https://www.pinterest.com/FrauleinBeckman/",
+        "name": "Kaille As In Kyle"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cc/ea/90/ccea906de7768e23df51e4485dfc82ce.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

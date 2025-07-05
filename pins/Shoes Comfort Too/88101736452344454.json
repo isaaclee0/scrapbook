@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452344454/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/shoes-comfort-too",
+    "CustomFileName": "88101736452344454",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452344454",
+      "url": "https://www.pinterest.com/pin/88101736452344454/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Expand your shoes",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/shoes-comfort-too/",
+        "name": "Shoes - comfort too",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cd/ca/76/cdca765bfe7cd3d5218ecde441cbd9d3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453019829/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736453019829",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453019829",
+      "url": "https://www.pinterest.com/pin/88101736453019829/",
+      "type": "pin",
+      "title": "Voddie",
+      "gridTitle": "Voddie",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "juls007",
+        "url": "https://www.pinterest.com/juls007/",
+        "name": "Julie Sheppard"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/60/a1/15/60a1159a25b7dca94ab94fe254ec9738.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

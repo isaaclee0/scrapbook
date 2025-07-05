@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439977550/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/photo-ideas-in-garden",
+    "CustomFileName": "88101736439977550",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439977550",
+      "url": "https://www.pinterest.com/pin/88101736439977550/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "In the garden",
+      "link": "http://www.vanessa-lewis.com/gallery5.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/photo-ideas-in-garden/",
+        "name": "Photo ideas in garden",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/24/59/a1/2459a13a0a1c5e2ca7dfec452bf2ec37.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

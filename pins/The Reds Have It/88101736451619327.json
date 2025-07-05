@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451619327/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/the-reds-have-it",
+    "CustomFileName": "88101736451619327",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451619327",
+      "url": "https://www.pinterest.com/pin/88101736451619327/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Rood haar komt steeds minder voor, maar wat staat het mooi.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "zapeekanka",
+        "url": "https://www.pinterest.com/zapeekanka/",
+        "name": "Galya Fesenko"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/the-reds-have-it/",
+        "name": "The Reds Have It",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/83/b7/82/83b782183bf98c7a34a57699a601c457.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

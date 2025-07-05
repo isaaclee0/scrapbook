@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439131372/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/budgie-love",
+    "CustomFileName": "88101736439131372",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439131372",
+      "url": "https://www.pinterest.com/pin/88101736439131372/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "View topic - My aviaries",
+      "description": "Small bird aviary",
+      "link": "http://www.finchforum.com/viewtopic.php?f=2&t=9939",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/budgie-love/",
+        "name": "Budgie Love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f3/16/f5/f316f5f82b73d20931f478d439619c45.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

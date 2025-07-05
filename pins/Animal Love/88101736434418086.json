@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434418086/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/animal-love",
+    "CustomFileName": "88101736434418086",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434418086",
+      "url": "https://www.pinterest.com/pin/88101736434418086/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Everything gets thirsty",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/animal-love/",
+        "name": "Animal love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4c/75/d7/4c75d7d931d2a7b1a5818ff55168dc7c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

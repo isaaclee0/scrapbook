@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452290811/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/health-related",
+    "CustomFileName": "88101736452290811",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452290811",
+      "url": "https://www.pinterest.com/pin/88101736452290811/",
+      "type": "pin",
+      "title": "Kidney Stone Removing",
+      "gridTitle": "Kidney Stone Removing",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "knowledgecenter",
+        "url": "https://www.pinterest.com/knowledgecenter/",
+        "name": "Z. Khan"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/health-related/",
+        "name": "Health Related",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/28/84/88/288488bd798cf07c7ed82c8f00e8689d.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/v2/720p/b1/f3/a7/b1f3a7b598ba70207f6782118a659dab_mobile.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

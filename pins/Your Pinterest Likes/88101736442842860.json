@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442842860/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442842860",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442842860",
+      "url": "https://www.pinterest.com/pin/88101736442842860/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Photo by sherrieoneoone • PicMonkey: Design That Works",
+      "description": "Welcome Friends! Pinterest was created for sharing but I think that some pinners forget that. Let's make Pinterest an enjoyable experience and do away with petty rules and limits. Happy pinning everyone!",
+      "link": "http://www.picmonkey.com/p/xLUX99ePv1m",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6d/57/83/6d57837de6a45801a3a0c72f1125bd20.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

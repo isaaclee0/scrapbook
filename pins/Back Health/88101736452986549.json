@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452986549/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/back-health",
+    "CustomFileName": "88101736452986549",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452986549",
+      "url": "https://www.pinterest.com/pin/88101736452986549/",
+      "type": "pin",
+      "title": "Neck Hump - How to Fix a Neck Hump",
+      "gridTitle": "Neck Hump - How to Fix a Neck Hump",
+      "description": " ",
+      "link": "http://pinterest.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "bloom_fitness",
+        "url": "https://www.pinterest.com/bloom_fitness/",
+        "name": "Health Bloom - Weight Loss | Fitness | Healthy Lifestyle"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/back-health/",
+        "name": "Back health",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e5/53/f7/e553f77194defd285da298db5801f072.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/99/45/49/99454983cdd63d17fdca52334d26ee4b.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

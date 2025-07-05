@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440750209/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/shady-garden",
+    "CustomFileName": "88101736440750209",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440750209",
+      "url": "https://www.pinterest.com/pin/88101736440750209/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Cineraria",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/shady-garden/",
+        "name": "Shady Garden",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1d/2b/61/1d2b618399522878830d89e5c7563603.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

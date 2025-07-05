@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436904242/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736436904242",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436904242",
+      "url": "https://www.pinterest.com/pin/88101736436904242/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Clean Eating Turkey Burgers",
+      "description": "Clean Eating Turkey Burgers - All of the flavor, none of the bad stuff!",
+      "link": "http://www.beachreadynow.com/recipes/high-protein-recipes/clean-eating-turkey-burgers/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3a/a7/15/3aa7157445f18aad774c934242490102.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

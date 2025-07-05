@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448600190/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aaa-wahls-try-out",
+    "CustomFileName": "88101736448600190",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448600190",
+      "url": "https://www.pinterest.com/pin/88101736448600190/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Wahls protocol",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 8,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aaa-wahls-try-out/",
+        "name": "AAA wahls try out",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/de/08/1e/de081ed60199c8fdfee87b78fa74cb80.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

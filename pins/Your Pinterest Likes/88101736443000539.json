@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443000539/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443000539",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443000539",
+      "url": "https://www.pinterest.com/pin/88101736443000539/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "5orangepotatoes.com",
+      "description": "Dandelion syrup.",
+      "link": "http://www.5orangepotatoes.com/blog/2009/04/30/dandelion-syrup/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d9/a1/45/d9a1457f88d3246d5a9fe0c245076d71.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

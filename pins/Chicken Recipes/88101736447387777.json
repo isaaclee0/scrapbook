@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447387777/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736447387777",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447387777",
+      "url": "https://www.pinterest.com/pin/88101736447387777/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Rustic Garlic Chicken and Gravy - Seasons and Suppers",
+      "description": "Rustic Chicken with Garlic Gravy",
+      "link": "http://www.seasonsandsuppers.ca/rustic-chicken-garlic-gravy/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "copykatrecipes",
+        "url": "https://www.pinterest.com/copykatrecipes/",
+        "name": "CopyKat Creations"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b8/4b/18/b84b18f8fd9e934bfad85271c22ecec1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

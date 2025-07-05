@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434957008/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736434957008",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434957008",
+      "url": "https://www.pinterest.com/pin/88101736434957008/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Sunflower PEEPS cake",
+      "description": "pretty",
+      "link": "http://www.everydaycelebrating.com/2010/03/sunflower-peeps-cake.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9e/70/49/9e70490c322e80829f65782744431a15.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

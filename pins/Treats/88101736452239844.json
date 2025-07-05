@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452239844/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736452239844",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452239844",
+      "url": "https://www.pinterest.com/pin/88101736452239844/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Sweet Potato Fudge Recipe",
+      "description": "Sweet Potato Fudge Recipe",
+      "link": "http://premeditatedleftovers.com/recipes-cooking-tips/sweet-potato-fudge/#_a5y_p=1056029",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3b/79/54/3b795459d357401f2118301746169646.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

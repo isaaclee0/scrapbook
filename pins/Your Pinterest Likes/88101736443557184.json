@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443557184/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443557184",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443557184",
+      "url": "https://www.pinterest.com/pin/88101736443557184/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Way You Make Me Feel",
+      "description": "This site is Ahhhmazing! Everything you ever wanted to know about sewing. Sewing guides for tons of things and a bunch of great tutorials!",
+      "link": "http://the-way-you-make-me-feel1.blogspot.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/89/0f/2b/890f2b196fedee6bfadfff3297f1ac0f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

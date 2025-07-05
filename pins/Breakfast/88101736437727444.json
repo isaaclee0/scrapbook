@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437727444/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/breakfast",
+    "CustomFileName": "88101736437727444",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437727444",
+      "url": "https://www.pinterest.com/pin/88101736437727444/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "French Toast Muffins",
+      "description": "French Toast Muffins from @cookiesandcups",
+      "link": "http://cookiesandcups.com/french-toast-muffins/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "TheLittleKitchn",
+        "url": "https://www.pinterest.com/TheLittleKitchn/",
+        "name": "The Little Kitchen"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/breakfast/",
+        "name": "Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b8/91/d9/b891d974012fb2ddeb576146cb113710.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

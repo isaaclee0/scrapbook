@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443675232/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443675232",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443675232",
+      "url": "https://www.pinterest.com/pin/88101736443675232/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "My Cottage of Content",
+      "link": "http://mycottageofcontent.blogspot.com/2008/07/new-and-wonderul-and-cottagey-ways-with.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e3/ec/2a/e3ec2a257ac26a8271bf16f3a9681bbe.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

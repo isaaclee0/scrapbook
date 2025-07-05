@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440082684/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/photography",
+    "CustomFileName": "88101736440082684",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440082684",
+      "url": "https://www.pinterest.com/pin/88101736440082684/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "the ears..",
+      "description": "the ears.. by Elena Shumilova",
+      "link": "http://500px.com/photo/70783557/the-ears-by-elena-shumilova?from=user",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/photography/",
+        "name": "Photography",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/97/c1/4f/97c14fbf36372b0d6099d0ddc406684b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

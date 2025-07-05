@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433579625/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736433579625",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433579625",
+      "url": "https://www.pinterest.com/pin/88101736433579625/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "family favorites recipe book",
+      "description": "How to put together a recipe book. Page templates---good idea for my favorite Pinterest recipes. (I so need to do this)",
+      "link": "http://kimmccrary.blogspot.com/2010/03/project-accomplished.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8f/59/9b/8f599babdf377d5d22e84056ac1b3195.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

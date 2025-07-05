@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449901165/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736449901165",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449901165",
+      "url": "https://www.pinterest.com/pin/88101736449901165/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Fifteen Rabbits",
+      "description": "Fifteen Rabbits ~ Felix Salten",
+      "link": "https://www.goodreads.com/book/show/467969.Fifteen_Rabbits",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f2/a7/ca/f2a7ca8a66eb711640e25bbd1c6544c5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

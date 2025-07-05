@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442700492/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442700492",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442700492",
+      "url": "https://www.pinterest.com/pin/88101736442700492/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Costume Party:  The Musketeers, Part 6",
+      "description": "How to make duct tape boots for costumes.",
+      "link": "http://sugarnspicecreations.blogspot.com/2010/10/costume-party-musketeers-part-6.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c7/ed/1b/c7ed1b78a573d0315bc77e2b1ebb4dfa.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

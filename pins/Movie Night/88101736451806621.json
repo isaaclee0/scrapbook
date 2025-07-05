@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451806621/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736451806621",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451806621",
+      "url": "https://www.pinterest.com/pin/88101736451806621/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "An Old Fashioned Thanksgiving (2008)",
+      "description": "An Old Fashioned Thanksgiving (TV Movie 2008)",
+      "link": "http://www.imdb.com/media/rm2110895360/tt1217590",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 6,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/78/d1/23/78d123ccaabd5ff5b40e0d895c962407.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

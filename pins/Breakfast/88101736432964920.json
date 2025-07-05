@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432964920/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/breakfast",
+    "CustomFileName": "88101736432964920",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432964920",
+      "url": "https://www.pinterest.com/pin/88101736432964920/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Parsley Delight - great for the kidneys!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "beersandbeans",
+        "url": "https://www.pinterest.com/beersandbeans/",
+        "name": "Beers and Beans | Wander With Us"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/breakfast/",
+        "name": "Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5c/d0/7c/5cd07c05ec5f1b3466a4eb78d1be84cc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

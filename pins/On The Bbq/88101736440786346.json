@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440786346/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/on-the-bbq",
+    "CustomFileName": "88101736440786346",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440786346",
+      "url": "https://www.pinterest.com/pin/88101736440786346/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Recipe for Hawaiian Grilled Huli Huli Chicken",
+      "description": "Recipe for Hawaiian Grilled Huli Huli Chicken",
+      "link": "http://flavorite.net/2015/02/09/hawaiian-grilled-huli-huli-chicken/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/on-the-bbq/",
+        "name": "On the BBQ",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/54/5d/76/545d7689f28949f8eba325b27d456082.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

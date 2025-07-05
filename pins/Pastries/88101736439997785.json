@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439997785/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pastries",
+    "CustomFileName": "88101736439997785",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439997785",
+      "url": "https://www.pinterest.com/pin/88101736439997785/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "My 2014 Cookery Courses",
+      "description": "Food History Jottings",
+      "link": "http://foodhistorjottings.blogspot.com/2013/11/my-2014-cookery-courses.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pastries/",
+        "name": "pastries",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c1/4a/c9/c14ac94c21371c0e1e6fe5cbf0de6b3d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

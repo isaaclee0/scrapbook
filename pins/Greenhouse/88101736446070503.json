@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446070503/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/greenhouse",
+    "CustomFileName": "88101736446070503",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446070503",
+      "url": "https://www.pinterest.com/pin/88101736446070503/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "this looks like a sensible greenhouse design with a walking passage in the middle and the rest as beds.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/greenhouse/",
+        "name": "Greenhouse",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/79/b4/ea/79b4ea31e5c878bc97b9cebc280eb666.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

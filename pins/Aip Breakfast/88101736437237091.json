@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437237091/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-breakfast",
+    "CustomFileName": "88101736437237091",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437237091",
+      "url": "https://www.pinterest.com/pin/88101736437237091/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Guest Post, Against All Grain: Paleo Breakfast Cookies",
+      "description": "Against All Grains bakes you an autoimmune protocol friendly cookie for breakfast",
+      "link": "http://paleoparents.com/featured/guest-post-against-all-grains-paleo-breakfast-cookies/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-breakfast/",
+        "name": "AIP Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7f/2b/2c/7f2b2c5b762ea4e867c202b0fc34bdc1.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

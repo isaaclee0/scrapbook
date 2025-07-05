@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448746243/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/mushrooms",
+    "CustomFileName": "88101736448746243",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448746243",
+      "url": "https://www.pinterest.com/pin/88101736448746243/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Вот так повезло.Нашли самые большие грибы",
+      "description": "Start - YouTube",
+      "link": "https://www.youtube.com/watch?v=8_1Z2RjV7Pw",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/mushrooms/",
+        "name": "Mushrooms",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/23/8e/58/238e58ff0e0df2ba409200077f92ea5e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

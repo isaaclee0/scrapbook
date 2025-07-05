@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452264967/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736452264967",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452264967",
+      "url": "https://www.pinterest.com/pin/88101736452264967/",
+      "type": "pin",
+      "title": "Short Haircut",
+      "gridTitle": "Short Haircut",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 6,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "amanda19091",
+        "url": "https://www.pinterest.com/amanda19091/",
+        "name": "Amanda.Sa"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/94/a1/71/94a17199604ea07775a293aaeee4e51d.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/ea/3e/6c/ea3e6c4b727d5fe454fbc32e2d54c60c.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

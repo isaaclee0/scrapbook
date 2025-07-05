@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452438782/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/sheep",
+    "CustomFileName": "88101736452438782",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452438782",
+      "url": "https://www.pinterest.com/pin/88101736452438782/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "windswept",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "meredithn3",
+        "url": "https://www.pinterest.com/meredithn3/",
+        "name": "Meredith Newman Debens"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/sheep/",
+        "name": "Sheep",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/64/37/b8/6437b84206371a277b1f16f4f188f6ef.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430711458/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430711458",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430711458",
+      "url": "https://www.pinterest.com/pin/88101736430711458/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Caterpillar Grape Kabobs",
+      "description": "Caterpillar Grape Kabobs",
+      "link": "http://sixinthesuburbsblog.blogspot.com/2012/05/caterpillar-grape-kabobs.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cc/77/33/cc773311447e63861170e8b8325285a0.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

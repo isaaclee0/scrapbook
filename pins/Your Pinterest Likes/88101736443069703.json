@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443069703/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443069703",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443069703",
+      "url": "https://www.pinterest.com/pin/88101736443069703/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Words of Wisdom",
+      "description": "Words of Wisdom",
+      "link": "http://sadieanddasie.wordpress.com/2013/03/23/words-of-wisdom-16/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/46/0c/28/460c28f840cf4b1b95f3a880c4100f69.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

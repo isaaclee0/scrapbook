@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435713637/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/soup",
+    "CustomFileName": "88101736435713637",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435713637",
+      "url": "https://www.pinterest.com/pin/88101736435713637/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "31 Favorite Italian Recipes",
+      "description": "herbed meatball soup",
+      "link": "http://www.countryliving.com/cooking/recipes/italian-food-recipes-0209",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/soup/",
+        "name": "Soup",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1c/20/f2/1c20f2f2a2618d56c3dbfe3910746c72.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

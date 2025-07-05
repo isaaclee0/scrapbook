@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444180929/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painting-things",
+    "CustomFileName": "88101736444180929",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444180929",
+      "url": "https://www.pinterest.com/pin/88101736444180929/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Farrow Ball Pale Powder 204",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painting-things/",
+        "name": "Painting things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/70/13/a9/7013a90e66b6a2e944c5148b2b2c2e3c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

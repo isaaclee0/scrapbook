@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442898236/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442898236",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442898236",
+      "url": "https://www.pinterest.com/pin/88101736442898236/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The World's First Cell-based Meatball - Memphis Meats",
+      "description": "Murderless, Cruelty-Free Meat Grown from Animal Cells",
+      "link": "http://www.youtube.com/watch?v=Y027yLT2QY0",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bb/1f/b2/bb1fb2e4ddd84e1c02e350bc67d62ea6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

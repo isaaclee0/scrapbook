@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439682773/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/rice",
+    "CustomFileName": "88101736439682773",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439682773",
+      "url": "https://www.pinterest.com/pin/88101736439682773/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Leek Risotto",
+      "link": "http://www.nomu.co.za/recipes/leek-risotto",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/rice/",
+        "name": "Rice",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3b/3d/c6/3b3dc6ce15c507c1a9418c72cb3efb81.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

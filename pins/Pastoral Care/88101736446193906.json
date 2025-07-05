@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446193906/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pastoral-care",
+    "CustomFileName": "88101736446193906",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446193906",
+      "url": "https://www.pinterest.com/pin/88101736446193906/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "bernadetteverke",
+        "url": "https://www.pinterest.com/bernadetteverke/",
+        "name": "Bernadette Verkerk"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pastoral-care/",
+        "name": "Pastoral Care",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f4/b1/54/f4b154a55eb210dccab47c0326913280.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

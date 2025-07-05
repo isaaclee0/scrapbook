@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444864235/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736444864235",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444864235",
+      "url": "https://www.pinterest.com/pin/88101736444864235/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Homemade Marshmallow Fluff",
+      "description": "Homemade Marshmallow Fluff! This is delicious... tastes SOOO much better than store bought!",
+      "link": "http://www.spendwithpennies.com/homemade-marshmallow-fluff/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "spendpennies",
+        "url": "https://www.pinterest.com/spendpennies/",
+        "name": "Spend With Pennies"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a3/9f/81/a39f81ecaa59b7790e890b64693ef707.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434112902/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736434112902",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434112902",
+      "url": "https://www.pinterest.com/pin/88101736434112902/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "strawberry rhubarb cake",
+      "link": "http://www.thepinmakers.com/search?q=strawberry+rhubarb",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b4/64/9d/b4649d46e1ae86fcfc154e26cec42dd0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

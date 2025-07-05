@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452984093/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/embroidery",
+    "CustomFileName": "88101736452984093",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452984093",
+      "url": "https://www.pinterest.com/pin/88101736452984093/",
+      "type": "pin",
+      "title": "CREATIVE CRAFT IDEAS",
+      "gridTitle": "CREATIVE CRAFT IDEAS",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "malatordesign",
+        "url": "https://www.pinterest.com/malatordesign/",
+        "name": "Malator Design"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/embroidery/",
+        "name": "Embroidery",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/07/2d/db/072ddbef24124ed4db96eaeb8956b70d.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/e3/04/a4/e304a476a0ce6ab5b811467ec4dc0383.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

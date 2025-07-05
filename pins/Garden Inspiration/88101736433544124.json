@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433544124/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/garden-inspiration",
+    "CustomFileName": "88101736433544124",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433544124",
+      "url": "https://www.pinterest.com/pin/88101736433544124/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Garden shed",
+      "link": "http://catarinaregina.tumblr.com/page/59",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/garden-inspiration/",
+        "name": "Garden Inspiration",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/18/b0/27/18b027f77f74b803ab63a28677d14da4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453008146/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tarts",
+    "CustomFileName": "88101736453008146",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453008146",
+      "url": "https://www.pinterest.com/pin/88101736453008146/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Blog — The Wondersmith",
+      "description": " ",
+      "link": "https://www.thewondersmith.com/blog?offset=1585411122750",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tarts/",
+        "name": "Tarts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3b/89/5c/3b895cc411460b30d0dbb7cb9b8e09f0.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

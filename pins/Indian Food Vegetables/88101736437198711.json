@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437198711/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/indian-food-vegetables",
+    "CustomFileName": "88101736437198711",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437198711",
+      "url": "https://www.pinterest.com/pin/88101736437198711/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Moong Sprouts Salad",
+      "description": "Moong Sprouts Salad Read full recipe here: http://secretindianrecipe.com/recipe/moong-sprouts-salad #indianfood #indianrecipes",
+      "link": "http://secretindianrecipe.com/recipe/moong-sprouts-salad",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "indianrecipe",
+        "url": "https://www.pinterest.com/indianrecipe/",
+        "name": "Secret Indian Recipe"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/indian-food-vegetables/",
+        "name": "Indian Food - Vegetables",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cc/44/05/cc44059c3dfecd2738af27f46c051638.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

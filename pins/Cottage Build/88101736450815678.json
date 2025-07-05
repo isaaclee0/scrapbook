@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450815678/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-build",
+    "CustomFileName": "88101736450815678",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450815678",
+      "url": "https://www.pinterest.com/pin/88101736450815678/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "looks like a real gingerbread house if I ever did see one!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-build/",
+        "name": "Cottage Build",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b3/ca/4c/b3ca4c938acabfe31b9718b820004ccf.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

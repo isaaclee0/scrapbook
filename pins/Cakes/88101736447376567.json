@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447376567/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736447376567",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447376567",
+      "url": "https://www.pinterest.com/pin/88101736447376567/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Elderflower and vanilla madeleines - The Field",
+      "description": "Elderflcakower and vanilla madeleines",
+      "link": "https://www.thefield.co.uk/food/elderflower-vanilla-madeleines-39334",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/33/54/e5/3354e5f2d25fdc34dd7048b4e398b3cc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

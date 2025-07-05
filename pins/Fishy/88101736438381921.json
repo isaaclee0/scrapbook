@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438381921/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fishy",
+    "CustomFileName": "88101736438381921",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438381921",
+      "url": "https://www.pinterest.com/pin/88101736438381921/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Spiced red snapper with charmoula",
+      "description": "Spiced red snapper with charmoula",
+      "link": "http://foodandtravel.com/food/recipes/spiced-red-snapper-with-charmoula",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fishy/",
+        "name": "Fishy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b4/6e/c3/b46ec3867d44f486678c93796195f64a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

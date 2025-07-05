@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432546782/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/breakfast",
+    "CustomFileName": "88101736432546782",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432546782",
+      "url": "https://www.pinterest.com/pin/88101736432546782/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Strawberry and Mascarpone Stuffed French Toast",
+      "description": "Strawberry and Mascarpone Stuffed French Toast",
+      "link": "http://www.closetcooking.com/2010/06/strawberry-and-mascarpone-stuffed.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/breakfast/",
+        "name": "Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/19/a9/93/19a993d08e2ccb7ee1d7c8b0e56a8e28.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

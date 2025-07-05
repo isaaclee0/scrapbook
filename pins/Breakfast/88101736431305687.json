@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431305687/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/breakfast",
+    "CustomFileName": "88101736431305687",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431305687",
+      "url": "https://www.pinterest.com/pin/88101736431305687/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Page not found - ABC.com",
+      "description": "Apple Rings Dipped in pancake batter. Cook on a griddle and add cinnamon and sugar",
+      "link": "http://beta.abc.go.com/shows/the-chew/recipes/Carla-Hall-Fried-Apple-Pancake-Rings",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/breakfast/",
+        "name": "Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/86/8e/a9/868ea99c99b00eb44b8f8e82a1599130.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

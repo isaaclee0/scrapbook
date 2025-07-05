@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444874493/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736444874493",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444874493",
+      "url": "https://www.pinterest.com/pin/88101736444874493/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "January 2013 – Maria Dernikos",
+      "description": "Gâteau Breton",
+      "link": "https://mariadernikos.com/2013/01/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a7/a6/9e/a7a69e67a5803f54eb4bb6eddecd477f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

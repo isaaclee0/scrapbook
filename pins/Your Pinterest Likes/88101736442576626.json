@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442576626/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442576626",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442576626",
+      "url": "https://www.pinterest.com/pin/88101736442576626/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Good to know #survival",
+      "link": "http://www.allposters.com/gallery.asp?startat=/getposter.asp&APNum=8080821&CID=5FB77F5729DF4670A35D4DFA5AC53245&PPID=1&search=phonetic%20alphabet&f=t&FindID=0&P=1&PP=1&sortby=PD&cname=&SearchID=",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9e/f4/fa/9ef4faea39ab6982be4c34952da0dce7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448552041/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736448552041",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448552041",
+      "url": "https://www.pinterest.com/pin/88101736448552041/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Conformist Cat",
+      "description": "Conformist Cat | Content in a Cottage",
+      "link": "http://contentinacottage.blogspot.com/2016/03/conformist-cat.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f8/a2/64/f8a264fc0babf7cd39b10a54fb0a8e5d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

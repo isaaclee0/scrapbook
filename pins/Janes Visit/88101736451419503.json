@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451419503/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/janes-visit",
+    "CustomFileName": "88101736451419503",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451419503",
+      "url": "https://www.pinterest.com/pin/88101736451419503/",
+      "type": "pin",
+      "title": "Bailey's Fudge",
+      "gridTitle": "Bailey's Fudge",
+      "description": "A quick and easy fudge made with your favorite, Baileys! #baileys #fudge",
+      "link": "https://www.wineandglue.com/baileys-fudge/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "lisasimplejoy",
+        "url": "https://www.pinterest.com/lisasimplejoy/",
+        "name": "Simple Joy (formerly Wine & Glue)"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/janes-visit/",
+        "name": "Jane's Visit",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d5/58/8c/d5588c0bc51fbba2da4aad59bfdd7b15.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/2a/f0/8e/2af08ecb1e9c9a501841e4d525be8385.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

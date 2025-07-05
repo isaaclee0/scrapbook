@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445343688/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/secret-part-ideas",
+    "CustomFileName": "88101736445343688",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445343688",
+      "url": "https://www.pinterest.com/pin/88101736445343688/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Could easily be themed!!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "hkfuey",
+        "url": "https://www.pinterest.com/hkfuey/",
+        "name": "Hollie Fishtorn"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/secret-part-ideas/",
+        "name": "Secret Part Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d8/f9/48/d8f948b6a2fad8bc56feff66248d0a77.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

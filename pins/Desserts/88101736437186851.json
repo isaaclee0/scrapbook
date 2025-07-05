@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437186851/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736437186851",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437186851",
+      "url": "https://www.pinterest.com/pin/88101736437186851/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Old fashioned chocolate pie",
+      "link": "http://wonderfulwittywisewomanonlivin.blogspot.com/2013/05/moms-old-fashioned-chocolate-pie.html?m=1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fa/2d/8b/fa2d8be97b97d12a21164eed32b24b56.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

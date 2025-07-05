@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443588935/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443588935",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443588935",
+      "url": "https://www.pinterest.com/pin/88101736443588935/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Desserts for Breakfast",
+      "description": "Cooking for family",
+      "link": "http://www.dessertsforbreakfast.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9e/e4/46/9ee4461ea96b32be450fa118a023082a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

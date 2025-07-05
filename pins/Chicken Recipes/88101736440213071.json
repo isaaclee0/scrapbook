@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440213071/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736440213071",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440213071",
+      "url": "https://www.pinterest.com/pin/88101736440213071/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Ethiopian Food Gallery - How To Cook Great Ethiopian Food",
+      "link": "http://www.howtocookgreatethiopian.com/ethiopian-food-gallery-1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/08/28/57/082857bb87315d1a0b2cfb8f5c489b21.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435577518/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/old-ads",
+    "CustomFileName": "88101736435577518",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435577518",
+      "url": "https://www.pinterest.com/pin/88101736435577518/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Even the dog!",
+      "link": "http://1000awesomethings.files.wordpress.com/2010/12/beer-advertisement-from-1954.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/old-ads/",
+        "name": "Old Ads",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c6/7f/aa/c67faa3a4a7f61a4e76abb7ed645418a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

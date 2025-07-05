@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430273928/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/garden-inspiration",
+    "CustomFileName": "88101736430273928",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430273928",
+      "url": "https://www.pinterest.com/pin/88101736430273928/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "France",
+      "link": "http://farm4.static.flickr.com/3088/2918987330_8f1c6401cf.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/garden-inspiration/",
+        "name": "Garden Inspiration",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/31/2c/69/312c695319ad3bb68e97b4c66eb91303.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

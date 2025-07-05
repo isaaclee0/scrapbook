@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445030121/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736445030121",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445030121",
+      "url": "https://www.pinterest.com/pin/88101736445030121/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Copper hair done by Manda Heath @salamanda21",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "mandahalladay",
+        "url": "https://www.pinterest.com/mandahalladay/",
+        "name": "Manda Heath"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/84/bb/f8/84bbf85d3e8999b42669892877afa7e5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

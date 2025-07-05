@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440056950/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736440056950",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440056950",
+      "url": "https://www.pinterest.com/pin/88101736440056950/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Dark Chocolate Cake with Nutella Buttercream",
+      "description": "Dark Chocolate Cake with Nutella Buttercream",
+      "link": "http://www.tasteandtellblog.com/dark-chocolate-cake-nutella-buttercream/#more-17602",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "rjtatum",
+        "url": "https://www.pinterest.com/rjtatum/",
+        "name": "Ronda Tatum"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a4/57/f2/a457f220451b777d41209b18557cd6f3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

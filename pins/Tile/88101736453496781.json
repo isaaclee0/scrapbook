@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453496781/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tile",
+    "CustomFileName": "88101736453496781",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453496781",
+      "url": "https://www.pinterest.com/pin/88101736453496781/",
+      "type": "pin",
+      "title": "Floor",
+      "gridTitle": "",
+      "description": " ",
+      "link": "https://www.jeffreycourt.com/wp-content/uploads/2018/11/14304-1.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tile/",
+        "name": "Tile",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ae/4f/43/ae4f43e2c1eeac33f7745f084fee03c5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451489596/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/travel",
+    "CustomFileName": "88101736451489596",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451489596",
+      "url": "https://www.pinterest.com/pin/88101736451489596/",
+      "type": "pin",
+      "title": "Peaceful village, Switzerland 🏡",
+      "gridTitle": "Peaceful village, Switzerland 🏡",
+      "description": " ",
+      "link": "http://www.tourtoplanet.com/top-10-tourist-attraction-to-visit-in-switzerland/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 12,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tourtoplanet",
+        "url": "https://www.pinterest.com/tourtoplanet/",
+        "name": "Tour to Planet"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/travel/",
+        "name": "Travel",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d6/6b/3a/d66b3a492099a187181eaca766bc7f26.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/cc/17/59/cc1759525aaad4f59252edc8cb423bfb.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

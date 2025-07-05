@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437733066/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736437733066",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437733066",
+      "url": "https://www.pinterest.com/pin/88101736437733066/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Cuteness Overload ^..^",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "coolcat2010",
+        "url": "https://www.pinterest.com/coolcat2010/",
+        "name": "Patti Duenez"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8d/9e/88/8d9e88f4dafb4d79c8a9e503ca82ea55.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

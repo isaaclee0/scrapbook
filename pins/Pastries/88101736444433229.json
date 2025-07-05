@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444433229/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pastries",
+    "CustomFileName": "88101736444433229",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444433229",
+      "url": "https://www.pinterest.com/pin/88101736444433229/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "These Are the Thanksgiving Pie Recipes Everyone Actually Wants",
+      "description": "Feed a crowd with this rustic, sweet-and-savory pie.",
+      "link": "http://www.countryliving.com/food-drinks/g1368/thanksgiving-pies/?slide=2",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pastries/",
+        "name": "pastries",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b5/2d/ca/b52dcaea027ad16fea2ae032dfdcafc4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

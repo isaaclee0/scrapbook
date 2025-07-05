@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438739882/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/rice",
+    "CustomFileName": "88101736438739882",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438739882",
+      "url": "https://www.pinterest.com/pin/88101736438739882/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Java Rice Recipe",
+      "description": "filipino food: Java Rice",
+      "link": "http://panlasangpinoy.com/2012/10/17/java-rice-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 4,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/rice/",
+        "name": "Rice",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b6/d3/b5/b6d3b5d6270fc59aa0ed9bfe7736d767.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

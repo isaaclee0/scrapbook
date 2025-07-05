@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437958427/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736437958427",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437958427",
+      "url": "https://www.pinterest.com/pin/88101736437958427/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Private Site",
+      "description": "Spanakopita Pie - Paleo AIP-friendly #paleo #AIP #autoimmuneprotocol",
+      "link": "http://petra8paleo.wordpress.com/2014/09/08/spanakopita-pie-aip-low-fodmap/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ac/48/27/ac48270d3759ad8f883ad673b04df7ef.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

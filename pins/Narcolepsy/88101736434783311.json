@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434783311/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/narcolepsy",
+    "CustomFileName": "88101736434783311",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434783311",
+      "url": "https://www.pinterest.com/pin/88101736434783311/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Example of a narcoleptic 24-hour sleep/wake cycle clock...dang",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/narcolepsy/",
+        "name": "Narcolepsy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f6/a0/3f/f6a03f67311e04e39af598ca1d491df6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432767330/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736432767330",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432767330",
+      "url": "https://www.pinterest.com/pin/88101736432767330/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Raspberry Custard Tart",
+      "link": "http://sulia.com/inspiredbycharm/f/48d5e175-7509-4e0a-bf8e-e41e12a4f19a/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b2/b1/3e/b2b13e473a73ac3f85b8d2b03e806934.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

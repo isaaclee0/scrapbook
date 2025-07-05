@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443848995/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/collies-and-shelties",
+    "CustomFileName": "88101736443848995",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443848995",
+      "url": "https://www.pinterest.com/pin/88101736443848995/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Oh yes they do .....",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "trudyvancleef",
+        "url": "https://www.pinterest.com/trudyvancleef/",
+        "name": "Trudy van Cleef"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/collies-and-shelties/",
+        "name": "Collies and Shelties",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6b/7e/26/6b7e26669fe4620ec600d30613e31d52.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444080445/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736444080445",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444080445",
+      "url": "https://www.pinterest.com/pin/88101736444080445/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "John Piper quote. Desiring God",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0d/69/5f/0d695f36ac00131517d2565b9a75ca36.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

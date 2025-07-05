@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439818359/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736439818359",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439818359",
+      "url": "https://www.pinterest.com/pin/88101736439818359/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Apple-Pie Cake - SippitySup",
+      "description": "Apple Pie Cake",
+      "link": "http://www.sippitysup.com/apple-pie-cake/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e4/b6/d8/e4b6d89c9eb8fcfdb19ef98e6f1748f8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

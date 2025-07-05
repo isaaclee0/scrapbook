@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440813624/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736440813624",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440813624",
+      "url": "https://www.pinterest.com/pin/88101736440813624/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Toffee Blossom Pears",
+      "description": "Toffee Blossom Pears",
+      "link": "http://www.notquitenigella.com/2015/08/15/toffee-pears/#recipe",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "notquitenigella",
+        "url": "https://www.pinterest.com/notquitenigella/",
+        "name": "Not Quite Nigella"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cd/7e/cc/cd7ecccdceffcec6500d9133ebbf2203.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

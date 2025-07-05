@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447618324/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/apple-recipes",
+    "CustomFileName": "88101736447618324",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447618324",
+      "url": "https://www.pinterest.com/pin/88101736447618324/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Easy Apple Cake",
+      "description": "If you're looking for an easy apple cake recipe... look no further! This one is a classic butter cake, layered with apple slices and topped with flaked almonds. YUM!",
+      "link": "https://bakeplaysmile.com/easy-apple-cake/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/apple-recipes/",
+        "name": "Apple Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1a/37/5a/1a375acdce5796991c2d17f2cf316b23.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

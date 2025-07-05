@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443847174/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-garden-2",
+    "CustomFileName": "88101736443847174",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443847174",
+      "url": "https://www.pinterest.com/pin/88101736443847174/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Purple Pathways",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ricrob238",
+        "url": "https://www.pinterest.com/ricrob238/",
+        "name": "L. Roberts"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-garden-2/",
+        "name": "Cottage Garden 2",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/01/5c/b0/015cb0267c56f01b7f45c96daa743eab.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

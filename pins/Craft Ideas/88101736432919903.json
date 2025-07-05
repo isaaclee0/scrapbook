@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432919903/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/craft-ideas",
+    "CustomFileName": "88101736432919903",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432919903",
+      "url": "https://www.pinterest.com/pin/88101736432919903/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Fabric Bleach Art",
+      "description": "Fabric Bleach Art.",
+      "link": "http://www.craftbyphoto.com/fabric-bleach-art/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/craft-ideas/",
+        "name": "Craft Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7e/87/c1/7e87c1cdffe8c447c7caee45baf7d0cb.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

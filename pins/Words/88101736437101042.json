@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437101042/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736437101042",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437101042",
+      "url": "https://www.pinterest.com/pin/88101736437101042/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "theBERRY – theCHIVE",
+      "description": "This is something I need to remember.",
+      "link": "http://theberry.com/2012/11/27/daily-motivation-22-photos/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/62/9c/5c/629c5c6336a5814f9cab1b2c4de1e953.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

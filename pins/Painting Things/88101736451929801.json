@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451929801/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painting-things",
+    "CustomFileName": "88101736451929801",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451929801",
+      "url": "https://www.pinterest.com/pin/88101736451929801/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Interior Design Blog — Jackie Glass Inc.",
+      "description": " ",
+      "link": "https://jackieglass.ca/blog/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painting-things/",
+        "name": "Painting things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9c/e7/57/9ce757ea4dd7bde07dc555894cb2954f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

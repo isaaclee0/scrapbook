@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438650558/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potluck",
+    "CustomFileName": "88101736438650558",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438650558",
+      "url": "https://www.pinterest.com/pin/88101736438650558/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Thanksgiving Casserole",
+      "description": "Thanksgiving Casserole....perfect for leftovers :)",
+      "link": "http://www.tasteofhome.com/recipes/Tastes-Like-Thanksgiving-Casserole",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potluck/",
+        "name": "Potluck",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2b/7a/1e/2b7a1e444f8507a38d6a763e44fa8ee4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

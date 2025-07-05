@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453848728/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/ice-cream",
+    "CustomFileName": "88101736453848728",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453848728",
+      "url": "https://www.pinterest.com/pin/88101736453848728/",
+      "type": "pin",
+      "title": "3 INGREDIENT FUDGEDICLES",
+      "gridTitle": "3 INGREDIENT FUDGEDICLES",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Jorden__Renee",
+        "url": "https://www.pinterest.com/Jorden__Renee/",
+        "name": "JordenRenee"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/ice-cream/",
+        "name": "Ice cream",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/b6/ac/dc/b6acdc48d39efdfefec4238fb6d52616.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

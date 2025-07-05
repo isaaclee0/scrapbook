@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443645924/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443645924",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443645924",
+      "url": "https://www.pinterest.com/pin/88101736443645924/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Let me get this straight: You're gonna fight for my 'right to choose' someday...but before I was born you wouldn't even fight for my life?  Sure, makes total sense.",
+      "description": "Good luck explaining this to a little girl",
+      "link": "http://www.someecards.com/usercards/viewcard/MjAxMi00MjBmYTA0MDEwZWI2N2M1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ce/6c/75/ce6c755cb40d17f33dd021304e651220.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

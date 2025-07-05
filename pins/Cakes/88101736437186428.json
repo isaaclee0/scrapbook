@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437186428/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736437186428",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437186428",
+      "url": "https://www.pinterest.com/pin/88101736437186428/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Wine table",
+      "description": "Wow!! Amazing cake",
+      "link": "http://www.flickr.com/photos/14559934@N04/5042879699/in/photostream/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2b/0c/18/2b0c184455dc093f03eebf10a4fe560f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

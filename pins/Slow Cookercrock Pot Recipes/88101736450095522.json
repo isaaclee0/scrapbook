@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450095522/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/slow-cookercrock-pot-recipes",
+    "CustomFileName": "88101736450095522",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450095522",
+      "url": "https://www.pinterest.com/pin/88101736450095522/",
+      "type": "pin",
+      "title": "Crock Pot Chicken and Stuffing",
+      "gridTitle": "Crock Pot Chicken and Stuffing",
+      "description": "This easy Crock Pot Chicken and Stuffing recipe will quickly become one of your favorite family dinners! #chicken #stuffing #crockpot #slowcooker #comfortfood #easy #dinner",
+      "link": "https://thecozycook.com/crock-pot-chicken-and-stuffing/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "TheCozyCook",
+        "url": "https://www.pinterest.com/TheCozyCook/",
+        "name": "The Cozy Cook -Easy Dinner Recipes, Chicken, Pasta, Soup, + more!"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/slow-cookercrock-pot-recipes/",
+        "name": "Slow cooker/crock pot recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ef/12/93/ef129312fa5f2f3806998de72e702895.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/56/1b/e7/561be743a3d99ccc1e689eb47ed8bdfd.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

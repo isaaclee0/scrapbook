@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442873195/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442873195",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442873195",
+      "url": "https://www.pinterest.com/pin/88101736442873195/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Your Name In Christ – (in)courage",
+      "description": "your name",
+      "link": "http://www.incourage.me/2013/08/your-name-in-christ.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4f/da/fc/4fdafcc3b16782608920db53d61381f6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

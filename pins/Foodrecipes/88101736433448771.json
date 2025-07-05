@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433448771/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736433448771",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433448771",
+      "url": "https://www.pinterest.com/pin/88101736433448771/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Sour Cream Tart",
+      "description": "Sour Cream Tart - Inspired by Ottolenghi",
+      "link": "http://www.cookrepublic.com/recipe-archive/sour-cream-tart/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/13/4e/3e/134e3e33cb27b3ad5f6278828f1bca48.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

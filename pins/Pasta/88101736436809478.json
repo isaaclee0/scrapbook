@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436809478/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pasta",
+    "CustomFileName": "88101736436809478",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436809478",
+      "url": "https://www.pinterest.com/pin/88101736436809478/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Pasta alla checca recipe - Pamela Salzman",
+      "description": "pasta alla checca (pasta with raw tomato-basil sauce)",
+      "link": "http://pamelasalzman.com/pasta-alla-checca/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pasta/",
+        "name": "Pasta",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8f/85/4f/8f854f2385580edcc8d792f285cd6f9e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

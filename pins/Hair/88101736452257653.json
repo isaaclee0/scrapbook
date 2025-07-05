@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452257653/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736452257653",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452257653",
+      "url": "https://www.pinterest.com/pin/88101736452257653/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Curly Girl Method",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "DelshadXenakis",
+        "url": "https://www.pinterest.com/DelshadXenakis/",
+        "name": "Delshad Xenakis"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/42/47/9c/42479cf4d8841d0acc46d3c7de88b9ff.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

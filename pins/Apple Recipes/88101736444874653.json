@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444874653/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/apple-recipes",
+    "CustomFileName": "88101736444874653",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444874653",
+      "url": "https://www.pinterest.com/pin/88101736444874653/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "ZsaZsa Bellagio",
+      "description": "candied apples",
+      "link": "http://zsazsabellagio.tumblr.com/post/62975200599",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/apple-recipes/",
+        "name": "Apple Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8c/49/fc/8c49fc2d266f51de4454931f6a186315.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

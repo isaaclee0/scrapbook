@@ -1,0 +1,47 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450061927/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/craft-ideas",
+    "CustomFileName": "88101736450061927",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450061927",
+      "url": "https://www.pinterest.com/pin/88101736450061927/",
+      "type": "pin",
+      "title": "Useful Rope Inspiration For Life",
+      "gridTitle": "Useful Rope Inspiration For Life",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/craft-ideas/",
+        "name": "Craft Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b8/1f/f1/b81ff10aee138b8a57656d672c277462.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/2a/27/bb/2a27bba76083dd94f50a9c303f95eeb8.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

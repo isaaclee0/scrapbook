@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438205221/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tips-and-tricks",
+    "CustomFileName": "88101736438205221",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438205221",
+      "url": "https://www.pinterest.com/pin/88101736438205221/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "My cousin is a genius...",
+      "description": "Genius",
+      "link": "http://imgur.com/q2ZHsdn",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tips-and-tricks/",
+        "name": "Tips and Tricks",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5c/c6/d2/5cc6d2ce3a18f8eef5b72b0bd1256b22.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451516744/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/teaching",
+    "CustomFileName": "88101736451516744",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451516744",
+      "url": "https://www.pinterest.com/pin/88101736451516744/",
+      "type": "pin",
+      "title": "👍",
+      "gridTitle": "👍",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 6,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "englishgrammarhere",
+        "url": "https://www.pinterest.com/englishgrammarhere/",
+        "name": "English Grammar Here"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/teaching/",
+        "name": "Teaching",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b8/03/bf/b803bfa95485b3e25aa51ac92a6bebee.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/4c/25/01/4c2501886dcab75d833b69ff28a6c5db.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/96/cd/0f/96cd0f805bd62c97c502650cd1c2b832.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/b4/45/d9/b445d98b2163d482dbb10a2713783bc2.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/28/bd/c9/28bdc9747d0ddd1b06864ff0ddae7f1e.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/63/e3/f3/63e3f387002d006113ceba5231d3e385.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

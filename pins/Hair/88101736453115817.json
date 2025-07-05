@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453115817/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736453115817",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453115817",
+      "url": "https://www.pinterest.com/pin/88101736453115817/",
+      "type": "pin",
+      "title": "Keep curls in all day",
+      "gridTitle": "Keep curls in all day",
+      "description": " ",
+      "link": "https://ltk.app.link/NBD6Sh5dJhb",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "sharonaoverton",
+        "url": "https://www.pinterest.com/sharonaoverton/",
+        "name": "SharonaOverton"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/88/59/05/88590508b18a1f836a9ba1ce32121564.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/e6/1c/87/e61c878953338304de30dd8b4d72c0bd.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

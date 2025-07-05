@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437721797/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736437721797",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437721797",
+      "url": "https://www.pinterest.com/pin/88101736437721797/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Francis Chan",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "stellarshine93",
+        "url": "https://www.pinterest.com/stellarshine93/",
+        "name": "Clarice Warren"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/64/0d/e1/640de117b43347894a6cda2ba41308e3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

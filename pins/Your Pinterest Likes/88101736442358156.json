@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442358156/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442358156",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442358156",
+      "url": "https://www.pinterest.com/pin/88101736442358156/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Fibromyalgia, Chronic Fatigue Syndrome, Autoimmune Disorders",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ntrbutterfly",
+        "url": "https://www.pinterest.com/ntrbutterfly/",
+        "name": "Just Jane"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/02/45/e5/0245e589bb65f3a82054293d622676f0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

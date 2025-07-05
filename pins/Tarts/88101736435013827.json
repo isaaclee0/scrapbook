@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435013827/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tarts",
+    "CustomFileName": "88101736435013827",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435013827",
+      "url": "https://www.pinterest.com/pin/88101736435013827/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Turtle Tart",
+      "description": "Turtle Tart",
+      "link": "http://www.bettycrocker.com/recipes/turtle-tart/4958057d-afc1-47ba-be3a-252566163f33",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tarts/",
+        "name": "Tarts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b0/58/32/b05832a95ad5a2621775e7333eafce52.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

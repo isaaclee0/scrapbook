@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439469576/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/gifts-to-give",
+    "CustomFileName": "88101736439469576",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439469576",
+      "url": "https://www.pinterest.com/pin/88101736439469576/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Bakers Corner",
+      "description": "Apricot Truffles: These chocolate-coated apricot balls have a hint of rum for after-dinner enjoyment.",
+      "link": "http://www.bakers-corner.com.au/recipes/truffles/apricot-truffles/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/gifts-to-give/",
+        "name": "Gifts to give",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/68/54/85/685485952b3d23d72b914a2e3febfaa6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

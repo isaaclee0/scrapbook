@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436342906/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fodmap",
+    "CustomFileName": "88101736436342906",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436342906",
+      "url": "https://www.pinterest.com/pin/88101736436342906/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Low FODMAP shopping guide",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fodmap/",
+        "name": "FODMAP",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3b/8c/a8/3b8ca8d8209fa3d657e86c1eaf450f23.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

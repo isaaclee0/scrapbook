@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436487936/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736436487936",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436487936",
+      "url": "https://www.pinterest.com/pin/88101736436487936/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Rice Krispie Treat S'mores",
+      "description": "Rice Krispie Treat S’mores.",
+      "link": "http://beyondfrosting.com/2013/08/27/rice-krispie-treat-smores/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1f/5b/60/1f5b607c8f4689d0b01644d8f1bdb651.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446071244/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/landscaping-ideas",
+    "CustomFileName": "88101736446071244",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446071244",
+      "url": "https://www.pinterest.com/pin/88101736446071244/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Amazing backyard with brick walkway and beautiful trees",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/landscaping-ideas/",
+        "name": "landscaping ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/68/11/20/681120badb096e204ddb32f0ff3ae718.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

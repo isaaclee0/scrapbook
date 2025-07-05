@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446135636/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/beefy",
+    "CustomFileName": "88101736446135636",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446135636",
+      "url": "https://www.pinterest.com/pin/88101736446135636/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "New World Stuffed Cabbage",
+      "description": "New-World Stuffed Cabbage Recipe",
+      "link": "https://www.tasteofhome.com/recipes/new-world-stuffed-cabbage/?trkid=soc-toh-pinterest",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "taste_of_home",
+        "url": "https://www.pinterest.com/taste_of_home/",
+        "name": "Taste of Home"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/beefy/",
+        "name": "Beefy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9f/45/04/9f45041436984c7429ac0c6159963740.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/7a/e7/dd/7ae7dd804e2997eb6d9bba08304de13b.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

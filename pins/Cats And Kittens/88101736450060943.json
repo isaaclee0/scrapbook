@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450060943/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736450060943",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450060943",
+      "url": "https://www.pinterest.com/pin/88101736450060943/",
+      "type": "pin",
+      "title": "Loving Cat",
+      "gridTitle": "Loving Cat",
+      "description": "Loving Cat",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Olivia_1961",
+        "url": "https://www.pinterest.com/Olivia_1961/",
+        "name": "Olivia"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/05/e4/87/05e487bd4b673440a3fdb9a409b1e565.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/4b/68/e8/4b68e85900b978bd41bc2dcc282f4172.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

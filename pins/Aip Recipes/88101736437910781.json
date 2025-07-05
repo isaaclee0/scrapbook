@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437910781/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736437910781",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437910781",
+      "url": "https://www.pinterest.com/pin/88101736437910781/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Broccoli Basil Soup",
+      "description": "Autoimmune Paleo Broccoli Basil Soup AIP Lifestyle #autoimmune paleo #AIP #autoimmune protocol",
+      "link": "http://aiplifestyle.com/broccoli-basil-soup/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ae/5b/67/ae5b6750556b6a2b32c486179f6efd2f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

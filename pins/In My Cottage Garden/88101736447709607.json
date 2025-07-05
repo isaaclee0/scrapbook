@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447709607/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/in-my-cottage-garden",
+    "CustomFileName": "88101736447709607",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447709607",
+      "url": "https://www.pinterest.com/pin/88101736447709607/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "10finnegan",
+        "url": "https://www.pinterest.com/10finnegan/",
+        "name": "Pride of Place Plants®"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/in-my-cottage-garden/",
+        "name": "In my cottage garden",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ac/43/27/ac432782a3183b882757b2238f497963.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

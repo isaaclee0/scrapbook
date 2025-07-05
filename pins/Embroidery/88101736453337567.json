@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453337567/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/embroidery",
+    "CustomFileName": "88101736453337567",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453337567",
+      "url": "https://www.pinterest.com/pin/88101736453337567/",
+      "type": "pin",
+      "title": "Simple embroidery idea",
+      "gridTitle": "Simple embroidery idea",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tutmk",
+        "url": "https://www.pinterest.com/tutmk/",
+        "name": "Брошкоделошная №1"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/embroidery/",
+        "name": "Embroidery",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/2a/20/48/2a2048036495272c32e1629a1f5c5aa5.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

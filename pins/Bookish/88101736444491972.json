@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444491972/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736444491972",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444491972",
+      "url": "https://www.pinterest.com/pin/88101736444491972/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "A Flower for Every Day",
+      "description": "A Flower for Every Day - Margery Fish",
+      "link": "http://books.google.com/books/about/A_flower_for_every_day.html?id=_GqpDiBJQ_EC",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/39/b1/f1/39b1f1319d687c1a53259eae358fc09a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

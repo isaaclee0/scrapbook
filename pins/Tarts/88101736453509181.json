@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453509181/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tarts",
+    "CustomFileName": "88101736453509181",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453509181",
+      "url": "https://www.pinterest.com/pin/88101736453509181/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Tarte à l'oignon facile de Mathilda",
+      "description": "Tarte à l'oignon facile : Recette de Tarte à l'oignon facile - Marmiton",
+      "link": "https://www.marmiton.org/recettes/recette_tarte-a-l-oignon-facile_28657.aspx",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tarts/",
+        "name": "Tarts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/05/65/39/056539b3662af3a1205eea474a6fd000.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

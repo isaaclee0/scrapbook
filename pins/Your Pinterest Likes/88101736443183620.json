@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443183620/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443183620",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443183620",
+      "url": "https://www.pinterest.com/pin/88101736443183620/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "retronaut.co -  Resources and Information.",
+      "description": "The Models for American Gothic by Grant Wood, 1930.",
+      "link": "http://www.retronaut.co/2012/07/the-models-for-american-gothic/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5a/6a/8f/5a6a8f5777182efc33400002511634a3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

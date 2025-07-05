@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443471005/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443471005",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443471005",
+      "url": "https://www.pinterest.com/pin/88101736443471005/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Questions That Will Save Your Relationships",
+      "description": "The questions that will save your relationships :: If we don't want throwaway answers, we can't ask throwaway questions. A caring question is a key that will unlock a room inside the person you love.",
+      "link": "http://www.huffingtonpost.com/glennon-melton/the-questions-that-will-save-your-relationships_b_4618254.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e4/26/26/e4262606014f82330d7cf90ccf3d3d34.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

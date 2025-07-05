@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452926578/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/japanese-food",
+    "CustomFileName": "88101736452926578",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452926578",
+      "url": "https://www.pinterest.com/pin/88101736452926578/",
+      "type": "pin",
+      "title": "spicy kani salad recipe",
+      "gridTitle": "spicy kani salad recipe",
+      "description": " ",
+      "link": "https://www.wellseasonedstudio.com/spicy-kani-salad-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "wellseasonedstudio",
+        "url": "https://www.pinterest.com/wellseasonedstudio/",
+        "name": "Well Seasoned | Elevated Homemade Recipes"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/japanese-food/",
+        "name": "Japanese Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4b/01/86/4b0186ac1c431b2aa76ea9918d380f2a.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/be/7e/b7/be7eb70b92a9a9d05642d2c909fc3ff5.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

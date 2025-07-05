@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439080032/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cocker-spaniels",
+    "CustomFileName": "88101736439080032",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439080032",
+      "url": "https://www.pinterest.com/pin/88101736439080032/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "English Cocker Spaniel",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "jojicsonia21",
+        "url": "https://www.pinterest.com/jojicsonia21/",
+        "name": "sonia jojic"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cocker-spaniels/",
+        "name": "Cocker Spaniels",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/51/c2/84/51c284cc9c007335985784012e9897ed.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445598354/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/rhubarb-recipes",
+    "CustomFileName": "88101736445598354",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445598354",
+      "url": "https://www.pinterest.com/pin/88101736445598354/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Strawberry Rhubarb Coffee Cake",
+      "description": "Strawberry Rhubarb Coffee Cake is perfect for breakfast or dessert.",
+      "link": "http://www.serenabakessimplyfromscratch.com/2014/05/strawberry-rhubarb-coffee-cake.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "lovefoodies",
+        "url": "https://www.pinterest.com/lovefoodies/",
+        "name": "lovefoodies"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/rhubarb-recipes/",
+        "name": "Rhubarb Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d9/0e/4e/d90e4eb8f7fdf088f1983f1562b7673a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

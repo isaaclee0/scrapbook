@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453078712/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/ducks",
+    "CustomFileName": "88101736453078712",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453078712",
+      "url": "https://www.pinterest.com/pin/88101736453078712/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "key2secretgarden",
+        "url": "https://www.pinterest.com/key2secretgarden/",
+        "name": "Key to a Secret Garden"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/ducks/",
+        "name": "Ducks",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0e/84/c7/0e84c7b9700bc04170aa65b7cd34e58a.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/38/b6/a2/38b6a2a0b5b080f54c41247cdbceec7c.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

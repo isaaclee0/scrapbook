@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451258873/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tried-it-liked-it",
+    "CustomFileName": "88101736451258873",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451258873",
+      "url": "https://www.pinterest.com/pin/88101736451258873/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chickwheat Shreds",
+      "description": "Chickwheat Shreds",
+      "link": "https://avocadosandales.com/2017/12/17/chickwheat-shreds/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tried-it-liked-it/",
+        "name": "Tried It Liked It",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6a/f9/a0/6af9a052a9c3e03fff7905ea59a7d3be.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

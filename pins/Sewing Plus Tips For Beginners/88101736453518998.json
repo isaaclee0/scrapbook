@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453518998/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/sewing-plus-tips-for-beginners",
+    "CustomFileName": "88101736453518998",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453518998",
+      "url": "https://www.pinterest.com/pin/88101736453518998/",
+      "type": "pin",
+      "title": "Sewing Hack",
+      "gridTitle": "Sewing Hack",
+      "description": " ",
+      "link": "http://www.madamsew.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "madamsew",
+        "url": "https://www.pinterest.com/madamsew/",
+        "name": "Madam Sew"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/sewing-plus-tips-for-beginners/",
+        "name": "Sewing (plus tips for beginners)",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1b/80/5f/1b805f651bffe00d6780c71de6a110b3.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/bd/7e/77/bd7e77ff337e94c40f54776e3d9451c1.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

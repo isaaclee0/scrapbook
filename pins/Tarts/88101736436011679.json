@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436011679/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tarts",
+    "CustomFileName": "88101736436011679",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436011679",
+      "url": "https://www.pinterest.com/pin/88101736436011679/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Craftsy.com | Express Your Creativity!",
+      "description": "Simple Fruit Tart",
+      "link": "http://www.craftsy.com/blog/2014/02/simple-fruit-tart-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tarts/",
+        "name": "Tarts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bf/61/95/bf6195410fc7fa547796d7f6bd79c1e1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

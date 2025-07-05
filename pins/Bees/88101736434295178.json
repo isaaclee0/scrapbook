@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434295178/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bees",
+    "CustomFileName": "88101736434295178",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434295178",
+      "url": "https://www.pinterest.com/pin/88101736434295178/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "The hum of the bees is the voice of the garden",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "willow22",
+        "url": "https://www.pinterest.com/willow22/",
+        "name": "Margie Hillenbrand aka Willow"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bees/",
+        "name": "Bees",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f1/f2/4f/f1f24fedf62bf3b48791338f3bd8b35f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

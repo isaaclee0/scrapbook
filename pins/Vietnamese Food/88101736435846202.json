@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435846202/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/vietnamese-food",
+    "CustomFileName": "88101736435846202",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435846202",
+      "url": "https://www.pinterest.com/pin/88101736435846202/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "vietnamese noodle soup",
+      "link": "http://www.eattravellive.com/recipes/noodle-soup-beef-pork/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/vietnamese-food/",
+        "name": "Vietnamese Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5b/19/ec/5b19ec61a7ba303180fde5ff0e9b1128.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

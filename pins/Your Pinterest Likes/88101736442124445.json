@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442124445/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442124445",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442124445",
+      "url": "https://www.pinterest.com/pin/88101736442124445/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Products that Make Life Easier | Solutions",
+      "description": "Because I'm so paranoid...Super Grip Lock Deadbolt strap is a dead end for intruders! Door can't be opened, even with a key. Great for weekends home alone.",
+      "link": "http://www.solutions.com/jump.jsp?itemID=16739&itemType=PRODUCT",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f6/6a/76/f66a769a8195fa04e38526a2fea1df09.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

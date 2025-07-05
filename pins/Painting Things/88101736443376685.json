@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443376685/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painting-things",
+    "CustomFileName": "88101736443376685",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443376685",
+      "url": "https://www.pinterest.com/pin/88101736443376685/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Dulux Silkwort with white wood trim and black lattice work.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painting-things/",
+        "name": "Painting things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/eb/a7/e9/eba7e9f3378b2b620674568c138a05c0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

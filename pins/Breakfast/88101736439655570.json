@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439655570/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/breakfast",
+    "CustomFileName": "88101736439655570",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439655570",
+      "url": "https://www.pinterest.com/pin/88101736439655570/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Crustless Tomato Basil Tarts",
+      "description": "These Crustless Tomato-Basil Breakfast Tarts with Mozzarella and Goat Cheese",
+      "link": "http://www.kalynskitchen.com/2015/08/crustless-tomato-basil-breakfast-tart.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "kalynskitchen",
+        "url": "https://www.pinterest.com/kalynskitchen/",
+        "name": "Kalyn's Kitchen"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/breakfast/",
+        "name": "Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5b/71/71/5b7171cf823dc3baf0c40f76961638f6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450221509/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736450221509",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450221509",
+      "url": "https://www.pinterest.com/pin/88101736450221509/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "TANIAjane Naturally Curly",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "taniajanenaturallycurly",
+        "url": "https://www.pinterest.com/taniajanenaturallycurly/",
+        "name": "TANIAjane Naturally Curly"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a0/95/bc/a095bc6f9b4368e268fa188b527b56a8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

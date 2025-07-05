@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432752301/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/garden-inspiration",
+    "CustomFileName": "88101736432752301",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432752301",
+      "url": "https://www.pinterest.com/pin/88101736432752301/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Sunflower House",
+      "description": "Sunflower House. Kids can play in once the sunflowers grow tall.",
+      "link": "http://www.flickr.com/photos/hartlandlibraryvt/7421604572/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/garden-inspiration/",
+        "name": "Garden Inspiration",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/61/92/c0/6192c02aac913a12f409d9539f03ec71.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449843239/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/dinner-with-hubby",
+    "CustomFileName": "88101736449843239",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449843239",
+      "url": "https://www.pinterest.com/pin/88101736449843239/",
+      "type": "pin",
+      "title": "Blooming Chocolate Flower",
+      "gridTitle": "Blooming Chocolate Flower",
+      "description": "Spring is here with these beautiful and tasty blooming chocolate flowers!",
+      "link": "https://www.tastemade.com/videos/blooming-flower",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemade",
+        "url": "https://www.pinterest.com/tastemade/",
+        "name": "Tastemade"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/dinner-with-hubby/",
+        "name": "Dinner with hubby",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ee/d4/7d/eed47dd639bf36c5fc6281421d6171b1.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/f9/6e/ff/f96effef2e779441804e77343add779a.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452394621/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/courtyardpatio",
+    "CustomFileName": "88101736452394621",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452394621",
+      "url": "https://www.pinterest.com/pin/88101736452394621/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "RemaZarema",
+        "url": "https://www.pinterest.com/RemaZarema/",
+        "name": "Rema&Zarema"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/courtyardpatio/",
+        "name": "Courtyard/Patio",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c1/91/67/c191671bd886f09e3ed5b314f2bed8e8.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/17/80/70/1780705965cfc4a200692d7c6258b218.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

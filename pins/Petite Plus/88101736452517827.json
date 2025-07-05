@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452517827/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/petite-plus",
+    "CustomFileName": "88101736452517827",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452517827",
+      "url": "https://www.pinterest.com/pin/88101736452517827/",
+      "type": "pin",
+      "title": "Fashion Hack",
+      "gridTitle": "Fashion Hack",
+      "description": " ",
+      "link": "https://www.shopltk.com/explore/abovethelawstyle/posts/a7492bab-7acf-11ec-abc5-0242ac110003",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "abovethelawstyle",
+        "url": "https://www.pinterest.com/abovethelawstyle/",
+        "name": "abovethelawstyle"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/petite-plus/",
+        "name": "Petite plus",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2f/a7/37/2fa737dfe94bb58882c09ada6227a5b6.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/ff/f4/87/fff4874940c14abfebd1a55014008efa.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

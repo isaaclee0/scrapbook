@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441523476/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736441523476",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441523476",
+      "url": "https://www.pinterest.com/pin/88101736441523476/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The South's Finest Pralines",
+      "description": "The South's Finest Pralines recipe...we will see if they can rival my mom's recipe...",
+      "link": "http://www.justapinch.com/recipes/dessert/candy/the-souths-finest-pralines.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/df/62/6c/df626c19c13815d0f57af4786576d44d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442969796/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442969796",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442969796",
+      "url": "https://www.pinterest.com/pin/88101736442969796/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Charles Spurgeon quote SO TRUE! THANK YOU, LORD!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "yanksgurl42",
+        "url": "https://www.pinterest.com/yanksgurl42/",
+        "name": "Claire Rossell"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c7/bd/98/c7bd98eb1757001571c98bfbb8b8231f.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443900450/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443900450",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443900450",
+      "url": "https://www.pinterest.com/pin/88101736443900450/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Funny Pictures Of The Day - 35 Pics",
+      "description": "Funny Pictures Of The Day - 35 Pics",
+      "link": "http://www.dumpaday.com/funny-pictures/funny-pictures-of-the-day-35-pics-35/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/da/1d/fe/da1dfe6db456b54ccb1f7d89ba4c8377.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434951103/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pork",
+    "CustomFileName": "88101736434951103",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434951103",
+      "url": "https://www.pinterest.com/pin/88101736434951103/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Pork Zuppa Recipe",
+      "description": "Pork Zuppa",
+      "link": "http://www.diabeticlivingonline.com/recipe/pork-zuppa",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pork/",
+        "name": "Pork",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/77/35/81/7735814810ee89b9df90a5b5a32ebd89.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

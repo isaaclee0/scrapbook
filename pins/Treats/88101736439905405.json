@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439905405/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736439905405",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439905405",
+      "url": "https://www.pinterest.com/pin/88101736439905405/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Caramel Sauce Recipe  - Dessert.Food.com",
+      "description": "Caramel Sauce: My most favorite caramel sauce. Tastes just like Leatherby's from my childhood.",
+      "link": "http://dessert.food.com/recipe/caramel-sauce-176734?scaleto=24&mode=null&st=true",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/eb/4a/3b/eb4a3bb473b2a6c6aff9827530077e57.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

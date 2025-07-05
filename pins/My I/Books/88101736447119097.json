@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447119097/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/my-i/books",
+    "CustomFileName": "88101736447119097",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447119097",
+      "url": "https://www.pinterest.com/pin/88101736447119097/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Road Beyond Ruin",
+      "description": "The Road Beyond Ruin by Gemma Liviero https://www.amazon.com/dp/B07B9FXDWJ/ref=cm_sw_r_pi_dp_U_x_pG5aCb3K45MZ3",
+      "link": "https://www.amazon.com/dp/B07B9FXDWJ/ref=cm_sw_r_pi_dp_U_x_pG5aCb3K45MZ3",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/my-i/",
+        "name": "My I",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0b/a9/31/0ba931f49a20d62c08d6f0a071eb3088.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

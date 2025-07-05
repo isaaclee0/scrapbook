@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447376066/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736447376066",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447376066",
+      "url": "https://www.pinterest.com/pin/88101736447376066/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chocolate fudge cake",
+      "description": "Ottolenghi's Chocolate Cahe is the best chocolate cake I have ever eaten. Here is the recipe.",
+      "link": "http://www.growntocook.com/?p=1433",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fd/4e/1d/fd4e1d01a3f619f47695e8f037c7cc7b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

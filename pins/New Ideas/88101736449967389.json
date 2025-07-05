@@ -1,0 +1,47 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449967389/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/new-ideas",
+    "CustomFileName": "88101736449967389",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449967389",
+      "url": "https://www.pinterest.com/pin/88101736449967389/",
+      "type": "pin",
+      "title": "Genius Book Lights",
+      "gridTitle": "Genius Book Lights",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/new-ideas/",
+        "name": "New Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/aa/42/c4/aa42c4ebbf6258a6786ac73daf7f0dc7.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/ae/71/8e/ae718e352c0d142daceea33bad2d422e.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

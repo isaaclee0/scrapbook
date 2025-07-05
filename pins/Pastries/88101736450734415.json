@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450734415/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pastries",
+    "CustomFileName": "88101736450734415",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450734415",
+      "url": "https://www.pinterest.com/pin/88101736450734415/",
+      "type": "pin",
+      "title": "Nutella Stuffed Croissant",
+      "gridTitle": "Nutella Stuffed Croissant",
+      "description": "You're not going to want to share these sugar-dusted Nutella-stuffed croissants.",
+      "link": "https://www.tastemade.com/videos/thousand-layer-nutella-bomb",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemade",
+        "url": "https://www.pinterest.com/tastemade/",
+        "name": "Tastemade"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pastries/",
+        "name": "pastries",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/56/97/e8/5697e849d35004386a9a11bd190e5ab9.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/80/e2/0b/80e20b65a341c12b1691b18d7ba90de9.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

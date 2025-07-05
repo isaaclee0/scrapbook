@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450734121/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736450734121",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450734121",
+      "url": "https://www.pinterest.com/pin/88101736450734121/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Nigella's Coffee and Walnut Cake | Celia's Saucer",
+      "description": "Coffee and Walnut Cake",
+      "link": "http://www.thecafecat.com/2015/08/nigellas-coffee-and-walnut-cake-celias.html?m=1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 4,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/51/f8/7d/51f87d2ee21a439345306c9bd3e56e79.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

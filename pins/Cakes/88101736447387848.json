@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447387848/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736447387848",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447387848",
+      "url": "https://www.pinterest.com/pin/88101736447387848/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Cherry Ripe Pavlova Cake",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "displacednation",
+        "url": "https://www.pinterest.com/displacednation/",
+        "name": "Displaced Nation"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/39/32/a2/3932a21463e9da5e602e929666db7245.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

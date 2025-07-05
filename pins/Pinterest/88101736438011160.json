@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438011160/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pinterest",
+    "CustomFileName": "88101736438011160",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438011160",
+      "url": "https://www.pinterest.com/pin/88101736438011160/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "How to Pin to an iPad",
+      "link": "http://www.mollyapproved.com/2011/11/30/pinonanipad/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pinterest/",
+        "name": "Pinterest",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/36/a0/02/36a002d561ff7f0a2e56f8a6adb35517.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

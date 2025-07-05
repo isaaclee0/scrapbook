@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442307439/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442307439",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442307439",
+      "url": "https://www.pinterest.com/pin/88101736442307439/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Funny Cry For Help Memes & Ecards | Someecards",
+      "description": "LOL!",
+      "link": "http://www.someecards.com/usercards/nsviewcard/MjAxMi04NWE0NjBiMmE2OWE5ZTZm",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/20/f3/72/20f372c8eac1128098a009ebac2ef6b6.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

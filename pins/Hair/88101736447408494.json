@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447408494/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736447408494",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447408494",
+      "url": "https://www.pinterest.com/pin/88101736447408494/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "with bangs",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "prvanessalw",
+        "url": "https://www.pinterest.com/prvanessalw/",
+        "name": "vanessa"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cb/1e/e1/cb1ee1ed17517a2be32e87046c229f7d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

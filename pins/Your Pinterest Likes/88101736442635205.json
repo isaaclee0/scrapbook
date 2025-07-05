@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442635205/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442635205",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442635205",
+      "url": "https://www.pinterest.com/pin/88101736442635205/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Meadowbrook Farm",
+      "description": "If you love vintage, you'll love this blog!",
+      "link": "http://themeadowbrookblog.blogspot.com/search/label/meadowbrook%20cottage",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cc/58/a9/cc58a945be97aae55942d3eab1037204.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449838262/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/exercise-it",
+    "CustomFileName": "88101736449838262",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449838262",
+      "url": "https://www.pinterest.com/pin/88101736449838262/",
+      "type": "pin",
+      "title": "resistance band stretching",
+      "gridTitle": "resistance band stretching",
+      "description": "Gentle stretching exercise with resistance band great for stretching the hamstrings and relief for lower back pain.",
+      "link": "https://faithfulworkoutsplan.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 4,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "faithfulworkout",
+        "url": "https://www.pinterest.com/faithfulworkout/",
+        "name": "Faithful Workouts"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/exercise-it/",
+        "name": "Exercise it",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0d/d6/61/0dd6611641aeb4e3f6df8190ea623361.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/v2/720p/e9/1d/e5/e91de57e2e60ad63ee2dad030eefe516_mobile.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

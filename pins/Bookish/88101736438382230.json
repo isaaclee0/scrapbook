@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438382230/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736438382230",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438382230",
+      "url": "https://www.pinterest.com/pin/88101736438382230/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Oogy: The Dog Only a Family Could Love",
+      "description": "Oogy",
+      "link": "http://www.amazon.co.uk/Oogy-Only-Family-Could-Love/dp/0593063589/ref=pd_bxgy_b_img_c",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1d/ba/3b/1dba3b2ae3cfc254c940c1ff0ce47a3f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

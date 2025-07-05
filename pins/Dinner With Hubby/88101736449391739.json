@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449391739/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/dinner-with-hubby",
+    "CustomFileName": "88101736449391739",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449391739",
+      "url": "https://www.pinterest.com/pin/88101736449391739/",
+      "type": "pin",
+      "title": "Fajitas de Camarones",
+      "gridTitle": "Fajitas de Camarones",
+      "description": " ",
+      "link": "https://es.tastemade.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemadees",
+        "url": "https://www.pinterest.com/tastemadees/",
+        "name": "Tastemade Español"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/dinner-with-hubby/",
+        "name": "Dinner with hubby",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/36/10/44/36104488262003d9873450f84d60c75f.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/3f/be/67/3fbe678cec5320770bd03e9f208253b2.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

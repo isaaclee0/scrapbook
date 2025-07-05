@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449838252/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/exercise-it",
+    "CustomFileName": "88101736449838252",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449838252",
+      "url": "https://www.pinterest.com/pin/88101736449838252/",
+      "type": "pin",
+      "title": "resistance band workout on the floor",
+      "gridTitle": "resistance band workout on the floor",
+      "description": "This is an upper body focused workout, but you’ll get an great leg workout and core workout as well. All you need is a resistance band and some floor space.",
+      "link": "https://faithfulworkoutsplan.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 21,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "faithfulworkout",
+        "url": "https://www.pinterest.com/faithfulworkout/",
+        "name": "Faithful Workouts"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/exercise-it/",
+        "name": "Exercise it",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/44/b2/d5/44b2d500d75d4edc17d33aad0ff0bfa5.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/v2/720p/50/fe/89/50fe89c7bc88195442938df15f7b5310_mobile.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

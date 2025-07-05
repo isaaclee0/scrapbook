@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440143352/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736440143352",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440143352",
+      "url": "https://www.pinterest.com/pin/88101736440143352/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Salted Dulce de Leche Brownies Recipe",
+      "description": "Salted dulce de leche brownies.",
+      "link": "http://www.seriouseats.com/recipes/2015/02/how-to-make-salted-dulce-de-leche-brownies-recipe.html?utm_source=pin&utm_campaign=may16",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "seriouseats",
+        "url": "https://www.pinterest.com/seriouseats/",
+        "name": "Serious Eats"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9f/ab/19/9fab19e21b65d967e634018171e8a61f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

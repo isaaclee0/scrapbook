@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452789804/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/secret-part-ideas",
+    "CustomFileName": "88101736452789804",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452789804",
+      "url": "https://www.pinterest.com/pin/88101736452789804/",
+      "type": "pin",
+      "title": "Bonbon Cake",
+      "gridTitle": "Bonbon Cake",
+      "description": "This just in: A bonbon cake tastes like velvet chocolate and is worth every single bite.",
+      "link": "https://www.tastemade.com/videos/bonbon-cake",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemade",
+        "url": "https://www.pinterest.com/tastemade/",
+        "name": "Tastemade"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/secret-part-ideas/",
+        "name": "Secret Part Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ec/bc/f9/ecbcf9f88cd980b21604b56895d3f944.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/b6/8e/8e/b68e8e9eb99dfe0ed587c08a160a7384.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

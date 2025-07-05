@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435472769/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736435472769",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435472769",
+      "url": "https://www.pinterest.com/pin/88101736435472769/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "stairs_console.jpg",
+      "description": "For the cats :3",
+      "link": "http://www.flickr.com/photos/71112133@N00/2706019175/in/set-72157606396274980/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/16/35/af/1635afee43ff350c9dd4abc42e55af14.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

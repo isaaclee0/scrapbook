@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437238348/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/animal-love",
+    "CustomFileName": "88101736437238348",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437238348",
+      "url": "https://www.pinterest.com/pin/88101736437238348/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Interesting fact about squirels",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/animal-love/",
+        "name": "Animal love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ec/be/d3/ecbed3923ea023fc1bd74624dbdd3f96.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

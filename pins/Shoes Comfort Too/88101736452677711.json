@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452677711/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/shoes-comfort-too",
+    "CustomFileName": "88101736452677711",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452677711",
+      "url": "https://www.pinterest.com/pin/88101736452677711/",
+      "type": "pin",
+      "title": "#lifehack  Credits:@bossylady_store",
+      "gridTitle": "#lifehack  Credits:@bossylady_store",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "beautyhacksad",
+        "url": "https://www.pinterest.com/beautyhacksad/",
+        "name": "Pin This"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/shoes-comfort-too/",
+        "name": "Shoes - comfort too",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b7/dc/41/b7dc41321d5d2eb1a22694edd110fa04.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/d4/eb/e5/d4ebe5b41edf6823d9c06862d8e26738.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442121565/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442121565",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442121565",
+      "url": "https://www.pinterest.com/pin/88101736442121565/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Appalachia: Dispelling the myth",
+      "description": "At home in Appalachia.... Follow link to interesting article",
+      "link": "http://alekhouse.hubpages.com/hub/Appalachian-Myth#slide3617377",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ea/7c/f4/ea7cf4e4644bba80143b556d0a8ef265.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

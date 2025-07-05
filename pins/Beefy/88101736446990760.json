@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446990760/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/beefy",
+    "CustomFileName": "88101736446990760",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446990760",
+      "url": "https://www.pinterest.com/pin/88101736446990760/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Meat and Cheese Piroshki",
+      "description": "Filled with beef, mozzarella, and cheddar, piroshkis are our new stuffed pastry obsession.",
+      "link": "https://www.tastemade.com/videos/meat-and-cheese-piroshki",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemade",
+        "url": "https://www.pinterest.com/tastemade/",
+        "name": "Tastemade"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/beefy/",
+        "name": "Beefy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c0/62/33/c062330fe729f57006267462296c3a31.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/61/41/3b/61413bc6259e0a646958a4c96939c687.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

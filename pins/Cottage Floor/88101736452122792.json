@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452122792/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-floor",
+    "CustomFileName": "88101736452122792",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452122792",
+      "url": "https://www.pinterest.com/pin/88101736452122792/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "linzaddy",
+        "url": "https://www.pinterest.com/linzaddy/",
+        "name": "Lindsey Howarth"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-floor/",
+        "name": "Cottage Floor",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fd/a0/3e/fda03ea6129b024b0331ccf77ce55618.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

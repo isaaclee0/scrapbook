@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443275310/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443275310",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443275310",
+      "url": "https://www.pinterest.com/pin/88101736443275310/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Eye Brightening Tutorial",
+      "description": "Eye Brightening Tutorial",
+      "link": "http://www.buzzfeed.com/peggy/22-beauty-tutorials-for-dramatic-holiday-looks?sub=1918031_750397",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/55/e9/bd/55e9bdfd8f154472b20b2118211a10d7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

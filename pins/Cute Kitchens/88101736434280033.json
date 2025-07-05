@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434280033/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cute-kitchens",
+    "CustomFileName": "88101736434280033",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434280033",
+      "url": "https://www.pinterest.com/pin/88101736434280033/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "'Fifties kitchen' blinds",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "nataliefa",
+        "url": "https://www.pinterest.com/nataliefa/",
+        "name": "Natalie Rowe"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cute-kitchens/",
+        "name": "Cute Kitchens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1c/27/0c/1c270c23c0600cc4fd2b3d90b157086a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

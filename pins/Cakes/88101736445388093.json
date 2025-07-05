@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445388093/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736445388093",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445388093",
+      "url": "https://www.pinterest.com/pin/88101736445388093/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Gâteau basque aux cerises noires",
+      "description": "C'est le temps des cerises ! Profitez-en pour tester cette délicieuse recette de gâteau basque pour le goûter.",
+      "link": "http://www.regal.fr/recettes/desserts/gateau-basque-aux-cerises-noires-10504",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/16/41/3a/16413a1f67388eeab048b027fddd4a93.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

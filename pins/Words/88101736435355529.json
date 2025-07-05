@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435355529/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736435355529",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435355529",
+      "url": "https://www.pinterest.com/pin/88101736435355529/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Morning Coffee for Grandma...",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "gabriellyn1206",
+        "url": "https://www.pinterest.com/gabriellyn1206/",
+        "name": "~Gabriellyn~"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0a/88/fd/0a88fdc6b50ba64849be84da860cbf33.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

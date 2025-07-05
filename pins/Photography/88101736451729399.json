@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451729399/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/photography",
+    "CustomFileName": "88101736451729399",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451729399",
+      "url": "https://www.pinterest.com/pin/88101736451729399/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "X",
+      "description": "Человеку столько лет,   на сколько он себя чувствует!",
+      "link": "https://twitter.com/dinigo16/status/597822159885639680/photo/1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/photography/",
+        "name": "Photography",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b4/5a/f0/b45af05936ee77383cdbd39261ecc019.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

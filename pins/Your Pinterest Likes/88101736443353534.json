@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443353534/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443353534",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443353534",
+      "url": "https://www.pinterest.com/pin/88101736443353534/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Provence Style",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "rosanathomasi",
+        "url": "https://www.pinterest.com/rosanathomasi/",
+        "name": "RosanaThomasiF.Luis"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2e/9b/f9/2e9bf9a42bc740b2296015f2f1057c35.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

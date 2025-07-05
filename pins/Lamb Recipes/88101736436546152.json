@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436546152/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/lamb-recipes",
+    "CustomFileName": "88101736436546152",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436546152",
+      "url": "https://www.pinterest.com/pin/88101736436546152/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Lamb with egg and lemon",
+      "description": "Lamb with egg and lemon.",
+      "link": "http://www.gourmettraveller.com.au/lamb-with-egg-and-lemon.htm",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/lamb-recipes/",
+        "name": "Lamb Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6e/95/22/6e95225dd2d092a28df37e17c4a76d74.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445570705/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/lilacs",
+    "CustomFileName": "88101736445570705",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445570705",
+      "url": "https://www.pinterest.com/pin/88101736445570705/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Discover",
+      "description": "A privacy fence made of lilacs.",
+      "link": "http://www.leevalley.com/newsletters/Gardening/3/2/article1.htm",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/lilacs/",
+        "name": "Lilacs",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/86/ff/ff/86ffff8f649831824eee008a1134a579.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

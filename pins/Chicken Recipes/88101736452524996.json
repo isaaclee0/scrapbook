@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452524996/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736452524996",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452524996",
+      "url": "https://www.pinterest.com/pin/88101736452524996/",
+      "type": "pin",
+      "title": "Easy Skillet Chicken Pot Pie",
+      "gridTitle": "Easy Skillet Chicken Pot Pie",
+      "description": "Por pie de pollo",
+      "link": "https://www.delish.com/cooking/recipe-ideas/recipes/a56617/easy-skillet-chicken-pot-pie-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Delish",
+        "url": "https://www.pinterest.com/Delish/",
+        "name": "Delish"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cf/88/b3/cf88b3733f0efc5cd267b230c8aea6d7.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/a3/d4/dc/a3d4dcd7893ce1b1b41b1775c2f716e6.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

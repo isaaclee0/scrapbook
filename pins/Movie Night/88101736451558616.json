@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451558616/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736451558616",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451558616",
+      "url": "https://www.pinterest.com/pin/88101736451558616/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Amazon.com: Books",
+      "description": "War and Peace",
+      "link": "http://www.bookdepository.com/War-and-Peace-Leo-Tolstoy/9781849908467?ref=grid-view",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 4,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9c/7f/21/9c7f21409d31c0e262c0c780980d1160.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

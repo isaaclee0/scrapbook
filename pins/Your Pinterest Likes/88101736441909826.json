@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441909826/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736441909826",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441909826",
+      "url": "https://www.pinterest.com/pin/88101736441909826/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Bloomin' Onion Bread - The Girl Who Ate Everything",
+      "description": "Ok I just ate, but my mouth is watering - this sounds AMAZING!!",
+      "link": "http://www.the-girl-who-ate-everything.com/2011/05/bloomin-onion-bread.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5c/77/d2/5c77d2ee5f3520dc72c087758d3fe96f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

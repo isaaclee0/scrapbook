@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433732897/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736433732897",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433732897",
+      "url": "https://www.pinterest.com/pin/88101736433732897/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Daily Meal | Cooking Tips, Restaurants, Food Reviews, Recipes",
+      "description": "DIY: Homemade Cotton Candy Recipe",
+      "link": "http://www.thedailymeal.com/cotton-candy-0",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ed/32/53/ed3253cfeb7a2f2ae8b3c8afd17c9702.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

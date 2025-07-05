@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445309150/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736445309150",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445309150",
+      "url": "https://www.pinterest.com/pin/88101736445309150/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Ferrero Rocher Cake Recipe",
+      "description": "A must try cake that you will die for.",
+      "link": "http://momsdish.com/r251",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "momsdish",
+        "url": "https://www.pinterest.com/momsdish/",
+        "name": "Momsdish"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/80/1d/a0/801da0c26bcc06719043ebbd5e9f0111.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

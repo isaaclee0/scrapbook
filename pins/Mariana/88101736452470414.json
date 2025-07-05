@@ -1,0 +1,68 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452470414/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/mariana",
+    "CustomFileName": "88101736452470414",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452470414",
+      "url": "https://www.pinterest.com/pin/88101736452470414/",
+      "type": "pin",
+      "title": "How to make Fairy\nbread jelly slice",
+      "gridTitle": "How to make Fairy\nbread jelly slice",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 6,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "teamtaste",
+        "url": "https://www.pinterest.com/teamtaste/",
+        "name": "taste.com.au"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/mariana/",
+        "name": "Mariana",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/ff/ff/5d/ffff5dda24b3c797474bfe69d8fd6346.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/f6/f7/e7/f6f7e7dae09fbe25d5bf16a84cf248a5.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/f9/e8/8a/f9e88a337e6ac74c021c8abc5f234074.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/cd/dd/b6/cdddb6987211581b0ecc9f090a95267e.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/32/5a/e2/325ae2bbbc0b2241e82a3d1059fb39b1.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/a5/33/a2/a533a24badaa81cc679011a78ac18a2e.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

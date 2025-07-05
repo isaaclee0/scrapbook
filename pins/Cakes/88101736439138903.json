@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439138903/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736439138903",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439138903",
+      "url": "https://www.pinterest.com/pin/88101736439138903/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Fluffy Brown Sugar Frosting",
+      "description": "This amazing Fluffy Brown Sugar Icing is a vintage recipe! It's light and fluffy and tastes like a caramel marshmallow!",
+      "link": "http://www.iwashyoudry.com/2013/07/22/fluffy-brown-sugar-icing/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "iwashyoudry",
+        "url": "https://www.pinterest.com/iwashyoudry/",
+        "name": "I Wash You Dry"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/54/7f/da/547fda8df3d11a1fadb4f97eb7003357.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

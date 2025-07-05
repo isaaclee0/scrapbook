@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443848513/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/how-it-was",
+    "CustomFileName": "88101736443848513",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443848513",
+      "url": "https://www.pinterest.com/pin/88101736443848513/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Heidi - I dreamed of being her as a kid. It was my favorite book and movie (when it came out)",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/how-it-was/",
+        "name": "How it was..",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/62/ec/14/62ec141f1be884c415412a6f723f8378.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

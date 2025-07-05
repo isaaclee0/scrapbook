@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453317314/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736453317314",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453317314",
+      "url": "https://www.pinterest.com/pin/88101736453317314/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "<3 Luke 6:27",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 24,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0b/e1/0b/0be10b7b64529d03a93b25770df83d07.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

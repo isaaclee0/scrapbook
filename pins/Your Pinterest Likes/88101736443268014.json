@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443268014/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443268014",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443268014",
+      "url": "https://www.pinterest.com/pin/88101736443268014/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "early vintage pink Sunbeam mix master • CWA Australia recipes",
+      "link": "http://www.angelfire.com/home/flexibleshaft/SunbeamFame.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/69/7e/a8/697ea8cdeb192c7239f4138e28fb538e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

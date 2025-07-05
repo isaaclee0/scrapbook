@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453619124/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/laundry",
+    "CustomFileName": "88101736453619124",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453619124",
+      "url": "https://www.pinterest.com/pin/88101736453619124/",
+      "type": "pin",
+      "title": "New Build Must Haves: Raised Washer & Dryer",
+      "gridTitle": "New Build Must Haves: Raised Washer & Dryer",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 2,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "almahomes",
+        "url": "https://www.pinterest.com/almahomes/",
+        "name": "Alma Homes"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/laundry/",
+        "name": "Laundry",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a7/c6/76/a7c676b3d43a13c016c3f819198b085b.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/be/92/37/be9237ddf2c48d694c50411e68b0b423.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

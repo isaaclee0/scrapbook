@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443778591/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/shelves",
+    "CustomFileName": "88101736443778591",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443778591",
+      "url": "https://www.pinterest.com/pin/88101736443778591/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "What an awesome idea....",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "fourrouxfab4",
+        "url": "https://www.pinterest.com/fourrouxfab4/",
+        "name": "stacie fourroux"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/shelves/",
+        "name": "Shelves",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/71/73/38/717338d6d65a2169f95e428b94ef181e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446892675/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/playlist",
+    "CustomFileName": "88101736446892675",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446892675",
+      "url": "https://www.pinterest.com/pin/88101736446892675/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "1984 reunion - Top 25 Billboard Hits",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "reunionsd",
+        "url": "https://www.pinterest.com/reunionsd/",
+        "name": "Reunion Specialists"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/playlist/",
+        "name": "Playlist",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1d/d0/4a/1dd04a40af39f0a3971da0f8f2e081e8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

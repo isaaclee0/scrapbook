@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453848735/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/vegan-and-ish",
+    "CustomFileName": "88101736453848735",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453848735",
+      "url": "https://www.pinterest.com/pin/88101736453848735/",
+      "type": "pin",
+      "title": "Chocolate cake!",
+      "gridTitle": "Chocolate cake!",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "veganrecipes750",
+        "url": "https://www.pinterest.com/veganrecipes750/",
+        "name": "Healthy Vegan Recipes"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/vegan-and-ish/",
+        "name": "Vegan and ish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/5d/80/48/5d8048c116acd106d6ff2529fd4a0f2c.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

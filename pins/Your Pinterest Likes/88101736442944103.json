@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442944103/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442944103",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442944103",
+      "url": "https://www.pinterest.com/pin/88101736442944103/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Ethical Superstore: Fair Trade, Organic, Vegan, Plastic Free & Eco Friendly Products",
+      "description": "Tiffin ethicalsuperstore...",
+      "link": "http://www.ethicalsuperstore.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/52/5d/70/525d706aee8e5d538e378ef6b189e8d7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

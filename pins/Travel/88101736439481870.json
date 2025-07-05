@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439481870/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/travel",
+    "CustomFileName": "88101736439481870",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439481870",
+      "url": "https://www.pinterest.com/pin/88101736439481870/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "St Maxime-France",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "shocolaate",
+        "url": "https://www.pinterest.com/shocolaate/",
+        "name": "Shocolaate"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/travel/",
+        "name": "Travel",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/39/b8/31/39b8313fb4a8d2d6ac8e32a85e0d2845.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

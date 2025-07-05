@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434567449/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/sunrooms",
+    "CustomFileName": "88101736434567449",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434567449",
+      "url": "https://www.pinterest.com/pin/88101736434567449/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Wicker House",
+      "description": ".",
+      "link": "http://thewickerhouse.blogspot.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/sunrooms/",
+        "name": "Sunrooms",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8d/43/63/8d4363e47455e26e67a7a46037e39bf7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

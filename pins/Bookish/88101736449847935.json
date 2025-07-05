@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449847935/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736449847935",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449847935",
+      "url": "https://www.pinterest.com/pin/88101736449847935/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Story of Fuzzypeg the Hedgehog",
+      "description": "allison uttley fuzzypeg hedgehog",
+      "link": "http://www.amazon.com/Story-Fuzzypeg-Hedgehog-Alison-Uttley/dp/images/0706424409",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2d/7c/68/2d7c6835cd732048a7d962fc02328c5b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452768531/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/ice-cream",
+    "CustomFileName": "88101736452768531",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452768531",
+      "url": "https://www.pinterest.com/pin/88101736452768531/",
+      "type": "pin",
+      "title": "Honeydew Sorbet",
+      "gridTitle": "Honeydew Sorbet",
+      "description": "Melon sorbet is just what you need when it's hot outside.",
+      "link": "https://www.tastemade.com/videos/honeydew-sorbet",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemade",
+        "url": "https://www.pinterest.com/tastemade/",
+        "name": "Tastemade"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/ice-cream/",
+        "name": "Ice cream",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f1/a9/96/f1a996f8164881f81523924ae9a94f46.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/10/8a/30/108a30dac474714dbb292edb54f6670a.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

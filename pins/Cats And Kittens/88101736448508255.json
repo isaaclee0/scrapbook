@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448508255/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736448508255",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448508255",
+      "url": "https://www.pinterest.com/pin/88101736448508255/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "nekomemo (@nekomemo22) on X",
+      "description": " ",
+      "link": "https://twitter.com/nekomemo22/status/586151793928744960/photo/1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1f/8a/1a/1f8a1a2143f4fc2d1d17fd5fb2cfd5af.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

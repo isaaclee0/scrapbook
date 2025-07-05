@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450591457/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736450591457",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450591457",
+      "url": "https://www.pinterest.com/pin/88101736450591457/",
+      "type": "pin",
+      "title": "Hand-Pulled Cotton Candy",
+      "gridTitle": "Hand-Pulled Cotton Candy",
+      "description": "Who needs a machine when you can make your own colorful and delicious cotton candy by hand?!",
+      "link": "https://www.tastemade.com/videos/hand-pulled-cotton-candy",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemade",
+        "url": "https://www.pinterest.com/tastemade/",
+        "name": "Tastemade"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fe/cd/c0/fecdc050deaf3b0bd5b5165c3881cd8f.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/45/67/64/456764f650ffb0a210aea13bedcf9983.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

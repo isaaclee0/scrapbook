@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450710366/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/gifts-to-give",
+    "CustomFileName": "88101736450710366",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450710366",
+      "url": "https://www.pinterest.com/pin/88101736450710366/",
+      "type": "pin",
+      "title": "Sticky Paws (Almond caramel chocolate clusters)",
+      "gridTitle": "Sticky Paws (Almond caramel chocolate clusters)",
+      "description": "Sticky Paws - Williams Sonoma Copycat christmas candy recipe! Almond caramel clusters dipped in chocolate. Make these at home for a fraction of the price! #stickypaws #christmas #christmascandy",
+      "link": "http://thefirstyearblog.com/sticky-paws-williams-sonoma-copycat/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "thefirstyear",
+        "url": "https://www.pinterest.com/thefirstyear/",
+        "name": "Beth | The First Year | Dessert Recipes"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/gifts-to-give/",
+        "name": "Gifts to give",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b6/25/e8/b625e84f0f460a1e8fec7872c7a960ce.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/17/1e/d7/171ed7267a0befac6575f47fa3c99843.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435292710/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-orchard/orchard-aesthetic",
+    "CustomFileName": "88101736435292710",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435292710",
+      "url": "https://www.pinterest.com/pin/88101736435292710/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Sweet.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "doxyfiend",
+        "url": "https://www.pinterest.com/doxyfiend/",
+        "name": "KJ Giardino"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-orchard/",
+        "name": "Cottage Orchard",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4e/cd/67/4ecd673d0764389b6f0f56652f6192ff.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440750395/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cute-kitchens",
+    "CustomFileName": "88101736440750395",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440750395",
+      "url": "https://www.pinterest.com/pin/88101736440750395/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Gorgeous kitchen island",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "melissaward9843",
+        "url": "https://www.pinterest.com/melissaward9843/",
+        "name": "Melissa Olson"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cute-kitchens/",
+        "name": "Cute Kitchens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0a/c7/1b/0ac71b1d9db3474b0996fca63b68c127.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

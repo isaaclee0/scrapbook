@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443327316/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443327316",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443327316",
+      "url": "https://www.pinterest.com/pin/88101736443327316/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "COTE DE TEXAS",
+      "description": "What a sweet vignette; I love small kitchens",
+      "link": "http://cotedetexas.blogspot.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/40/bb/ea/40bbea350b32c8d8e7e90fcc4d7d48dc.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

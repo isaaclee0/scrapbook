@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443756076/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443756076",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443756076",
+      "url": "https://www.pinterest.com/pin/88101736443756076/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Site Unavailable",
+      "description": "How to Accessorize Popular Necklines - Charming Charlie",
+      "link": "http://texasfarmersdaughter.com/necklaces-necklines/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c6/50/9a/c6509a689d87a298ef9d373674ea6aff.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

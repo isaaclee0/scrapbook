@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449785478/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/on-the-bbq",
+    "CustomFileName": "88101736449785478",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449785478",
+      "url": "https://www.pinterest.com/pin/88101736449785478/",
+      "type": "pin",
+      "title": "Steak And Potatoes On A Stick",
+      "gridTitle": "Steak And Potatoes On A Stick",
+      "description": "Your favorite dinner, of steak and potatoes, perfectly transformed for hot summer nights! Get the recipe at Delish.com. #delish #easy #recipe #steak #potatoes #skewers #kebab #kebob #steakpotatoes",
+      "link": "https://www.delish.com/cooking/recipe-ideas/recipes/a48256/steak-and-potatoes-on-stick-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Delish",
+        "url": "https://www.pinterest.com/Delish/",
+        "name": "Delish"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/on-the-bbq/",
+        "name": "On the BBQ",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d4/7c/12/d47c12c9588fd716ade72e39ab2b7fcd.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/d7/a3/1e/d7a31eb185a89396f3832d6e75d0da2d.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

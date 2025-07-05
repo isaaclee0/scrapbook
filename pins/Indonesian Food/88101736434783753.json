@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434783753/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/indonesian-food",
+    "CustomFileName": "88101736434783753",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434783753",
+      "url": "https://www.pinterest.com/pin/88101736434783753/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "sambal ijo",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "maya911",
+        "url": "https://www.pinterest.com/maya911/",
+        "name": "MAYA Trgn"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/indonesian-food/",
+        "name": "Indonesian Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9f/71/9e/9f719e03fff815eb8d9adb9fd9890641.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

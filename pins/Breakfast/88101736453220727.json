@@ -1,0 +1,56 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453220727/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/breakfast",
+    "CustomFileName": "88101736453220727",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453220727",
+      "url": "https://www.pinterest.com/pin/88101736453220727/",
+      "type": "pin",
+      "title": "Easy Cinnamon Sugar French Toast Breakfast Bake",
+      "gridTitle": "Easy Cinnamon Sugar French Toast Breakfast Bake",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 3,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "gariannestable",
+        "url": "https://www.pinterest.com/gariannestable/",
+        "name": "Garianne's Table | Healthy Easy Recipes for Family"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/breakfast/",
+        "name": "Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/50/da/5b/50da5b7b707d359c781bcf7cb885acfb.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/c8/e5/0a/c8e50a9c54372bc611aea3a9d597cb23.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/f5/30/cf/f530cf28e4c42edd61c56bc8f58b7e32.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

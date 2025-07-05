@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441851876/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/biscuitscookies-and-slices",
+    "CustomFileName": "88101736441851876",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441851876",
+      "url": "https://www.pinterest.com/pin/88101736441851876/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Quinoa flax bars",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "sallyammerman",
+        "url": "https://www.pinterest.com/sallyammerman/",
+        "name": "Sally"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/biscuitscookies-and-slices/",
+        "name": "Biscuits/Cookies and Slices",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a8/79/32/a879327523fa85e5dde245298f8a77af.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451898442/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736451898442",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451898442",
+      "url": "https://www.pinterest.com/pin/88101736451898442/",
+      "type": "pin",
+      "title": "FRINGE HAIR CUT",
+      "gridTitle": "FRINGE HAIR CUT",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 12,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "metdaanmakeuppin",
+        "url": "https://www.pinterest.com/metdaanmakeuppin/",
+        "name": "MetDaan Makeup"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/dc/d6/ef/dcd6efc736149ff5298ef6b1314c3a15.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/7f/3c/7d/7f3c7dd69f0e8c441d6eaa42fd5c8997.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

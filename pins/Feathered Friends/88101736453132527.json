@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453132527/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/feathered-friends",
+    "CustomFileName": "88101736453132527",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453132527",
+      "url": "https://www.pinterest.com/pin/88101736453132527/",
+      "type": "pin",
+      "title": "Pure art in the nature. How beautiful is this?",
+      "gridTitle": "Pure art in the nature. How beautiful is this?",
+      "description": " ",
+      "link": "https://travelopel.com/blogs/travel-videos-around-the-world/some-places-for-you-to-travel-this-april-2021",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "TravelOpel",
+        "url": "https://www.pinterest.com/TravelOpel/",
+        "name": "TravelOpel"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/feathered-friends/",
+        "name": "Feathered friends",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3a/54/b5/3a54b5a761c1f3e6ba23deb25640b04a.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/45/04/2e/45042e13b6732e4a06a568acdc708a58.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

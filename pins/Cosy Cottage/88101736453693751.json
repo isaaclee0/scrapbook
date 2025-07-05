@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453693751/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cosy-cottage",
+    "CustomFileName": "88101736453693751",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453693751",
+      "url": "https://www.pinterest.com/pin/88101736453693751/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "carolynmaas1",
+        "url": "https://www.pinterest.com/carolynmaas1/",
+        "name": "Carolyn Maas"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cosy-cottage/",
+        "name": "Cosy Cottage",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/92/0a/e7/920ae799ad6c137e8f56509f4062c5e4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436380955/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736436380955",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436380955",
+      "url": "https://www.pinterest.com/pin/88101736436380955/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Facebook",
+      "description": "~ Aldous Huxley. Kind of scary, don't you think?",
+      "link": "https://www.facebook.com/photo.php?fbid=647456998606220&set=a.278568382161752.74506.278550055496918&type=1&theater",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ce/cc/f2/ceccf284e21183215d88f79e5eca8c05.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

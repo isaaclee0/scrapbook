@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438400801/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736438400801",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438400801",
+      "url": "https://www.pinterest.com/pin/88101736438400801/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Our Best Bites - Easy, Family-Friendly Recipes for Busy Moms",
+      "description": "Great tutorial! How to Frost Cupcakes",
+      "link": "http://www.ourbestbites.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fc/b2/02/fcb20287072cc7d5ed521cb6ce208a60.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

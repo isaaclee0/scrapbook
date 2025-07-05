@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443265286/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443265286",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443265286",
+      "url": "https://www.pinterest.com/pin/88101736443265286/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Friday Favorites",
+      "description": "sew lace under too short dresses...why on earth haven't I thought of this before?!!",
+      "link": "http://www.laurenconrad.com/post/friday-favorites-11",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8c/40/e0/8c40e0d65ab828b4a1c5bfccba8cad0a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

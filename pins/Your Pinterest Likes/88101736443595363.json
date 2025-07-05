@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443595363/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443595363",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443595363",
+      "url": "https://www.pinterest.com/pin/88101736443595363/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Shabby, Pink and Pretty",
+      "description": "crochet...I've made almost everyone of these and gave them as gifts..everyone still adores them..even in this day and age!!",
+      "link": "http://shabbypinkandpretty.blogspot.com/search?updated-max=2011-02-01T23:30:00-06:00&max-results=9",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c0/40/0b/c0400bc4e91c7c9619a2f4d74aee6acc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

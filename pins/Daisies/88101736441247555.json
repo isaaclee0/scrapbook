@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441247555/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/daisies",
+    "CustomFileName": "88101736441247555",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441247555",
+      "url": "https://www.pinterest.com/pin/88101736441247555/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Adorable tea set",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "christianeamori",
+        "url": "https://www.pinterest.com/christianeamori/",
+        "name": "Christiane Amorim"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/daisies/",
+        "name": "Daisies",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/84/63/c9/8463c92e26123c696bd3cd4d4869d530.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451982076/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tips-and-tricks",
+    "CustomFileName": "88101736451982076",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451982076",
+      "url": "https://www.pinterest.com/pin/88101736451982076/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "My favorite life hacks...",
+      "description": " ",
+      "link": "https://imgur.com/gallery/pXh8j",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tips-and-tricks/",
+        "name": "Tips and Tricks",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0e/37/79/0e37799922a08ce45b1b103705a1c775.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

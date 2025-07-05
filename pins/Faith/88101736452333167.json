@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452333167/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736452333167",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452333167",
+      "url": "https://www.pinterest.com/pin/88101736452333167/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Proverbs 11:16",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/63/32/75/63327571a3d1408e957a2eeedbc12b4e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

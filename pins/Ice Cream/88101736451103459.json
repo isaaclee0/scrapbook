@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451103459/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/ice-cream",
+    "CustomFileName": "88101736451103459",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451103459",
+      "url": "https://www.pinterest.com/pin/88101736451103459/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Summer Sorbets - Cool, Creamy, Easy!",
+      "description": "summer-sorbets",
+      "link": "http://kblog.lunchboxbunch.com/2011/07/summer-sorbets-cool-creamy-easy.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/ice-cream/",
+        "name": "Ice cream",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/20/e4/dc/20e4dc4d72b9786c43f8d186f5f70fd4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

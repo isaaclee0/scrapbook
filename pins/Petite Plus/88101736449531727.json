@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449531727/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/petite-plus",
+    "CustomFileName": "88101736449531727",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449531727",
+      "url": "https://www.pinterest.com/pin/88101736449531727/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Shop Inspire Uplift for Thoughtful Gifts and Support Small Businesses",
+      "description": " ",
+      "link": "https://www.inspireuplift.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "inspireupliftdotcom",
+        "url": "https://www.pinterest.com/inspireupliftdotcom/",
+        "name": "Inspire Uplift ⭐"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/petite-plus/",
+        "name": "Petite plus",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/90/b3/60/90b360ac8cad0a5b2b0b9efa0afd3c08.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/c0/96/42/c09642856f4dad01bfa4a0d3e7beaea5.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

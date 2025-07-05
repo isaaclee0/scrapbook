@@ -1,0 +1,361 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="add-content-container">
+    <div class="add-content-dialog">
+        <div class="dialog-header">
+            <h2>Add New Content</h2>
+            <button class="close-button">&times;</button>
+        </div>
+        
+        <div class="dialog-body">
+            <div class="input-section">
+                <label for="content-input">Paste image, image URL, or website URL</label>
+                <input type="text" id="content-input" placeholder="Paste here...">
+                <div class="preview-container" id="preview-container" style="display: none;">
+                    <img id="image-preview" src="" alt="Preview">
+                </div>
+            </div>
+
+            <div class="website-scrape-results" id="website-scrape-results" style="display: none;">
+                <h3>Select an image from the website:</h3>
+                <div class="image-grid" id="scraped-images-grid"></div>
+            </div>
+
+            <div class="details-section" id="details-section" style="display: none;">
+                <div class="input-group">
+                    <label for="title-input">Title</label>
+                    <input type="text" id="title-input" placeholder="Enter a title...">
+                </div>
+
+                <div class="input-group">
+                    <label for="board-select">Board</label>
+                    <select id="board-select">
+                        <option value="">Select a board...</option>
+                        {% for board in boards %}
+                        <option value="{{ board.id }}">{{ board.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="section-select">Section (optional)</label>
+                    <select id="section-select">
+                        <option value="">Select a section...</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="notes-input">Notes</label>
+                    <textarea id="notes-input" placeholder="Add notes..."></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="dialog-footer">
+            <button class="cancel-button">Cancel</button>
+            <button class="save-button" disabled>Save</button>
+        </div>
+    </div>
+</div>
+
+<style>
+.add-content-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.add-content-dialog {
+    background: white;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dialog-header {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+}
+
+.dialog-body {
+    padding: 20px;
+}
+
+.input-section {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.preview-container {
+    margin-top: 15px;
+    text-align: center;
+}
+
+#image-preview {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 4px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05);
+}
+
+.dialog-footer {
+    padding: 20px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.cancel-button {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+}
+
+.save-button {
+    background: #2980b9;
+    color: white;
+    border: none;
+}
+
+.save-button:hover:not(:disabled) {
+    background: #2472a4;
+}
+
+.save-button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.loading-message,
+.no-images-message,
+.error-message {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+.error-message {
+    color: #e74c3c;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const contentInput = document.getElementById('content-input');
+    const previewContainer = document.getElementById('preview-container');
+    const imagePreview = document.getElementById('image-preview');
+    const websiteScrapeResults = document.getElementById('website-scrape-results');
+    const detailsSection = document.getElementById('details-section');
+    const saveButton = document.querySelector('.save-button');
+    const boardSelect = document.getElementById('board-select');
+    const sectionSelect = document.getElementById('section-select');
+    const closeButton = document.querySelector('.close-button');
+    const cancelButton = document.querySelector('.cancel-button');
+
+    // Handle content input
+    contentInput.addEventListener('input', async function(e) {
+        const value = e.target.value.trim();
+        
+        if (value.startsWith('http')) {
+            if (isImageUrl(value)) {
+                showImagePreview(value);
+            } else {
+                // Show loading state
+                websiteScrapeResults.style.display = 'block';
+                const grid = document.getElementById('scraped-images-grid');
+                grid.innerHTML = '<div class="loading-message">Scraping website for images...</div>';
+                
+                try {
+                    // Scrape website for images
+                    const response = await fetch('/scrape-website', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ url: value })
+                    });
+                    
+                    if (!response.ok) {
+                        throw new Error('Failed to scrape website');
+                    }
+                    
+                    const data = await response.json();
+                    
+                    if (data.error) {
+                        throw new Error(data.error);
+                    }
+                    
+                    if (data.images && data.images.length > 0) {
+                        showScrapedImages(data.images);
+                    } else {
+                        grid.innerHTML = '<div class="no-images-message">No images found on this website</div>';
+                    }
+                } catch (error) {
+                    grid.innerHTML = `<div class="error-message">Error: ${error.message}</div>`;
+                }
+            }
+        } else if (value.startsWith('data:image')) {
+            showImagePreview(value);
+        }
+    });
+
+    function isImageUrl(url) {
+        return /\.(jpg|jpeg|png|gif|webp)$/i.test(url);
+    }
+
+    function showImagePreview(url) {
+        imagePreview.src = url;
+        previewContainer.style.display = 'block';
+        websiteScrapeResults.style.display = 'none';
+        detailsSection.style.display = 'block';
+        updateSaveButton();
+    }
+
+    function showScrapedImages(images) {
+        const grid = document.getElementById('scraped-images-grid');
+        grid.innerHTML = '';
+        
+        images.forEach(image => {
+            const img = document.createElement('img');
+            img.src = image.url;
+            img.alt = image.alt || 'Scraped image';
+            img.addEventListener('click', () => {
+                showImagePreview(image.url);
+            });
+            grid.appendChild(img);
+        });
+        
+        websiteScrapeResults.style.display = 'block';
+    }
+
+    // Update sections when board is selected
+    boardSelect.addEventListener('change', async function() {
+        const boardId = this.value;
+        if (boardId) {
+            const response = await fetch(`/get-sections/${boardId}`);
+            const sections = await response.json();
+            
+            sectionSelect.innerHTML = '<option value="">Select a section...</option>';
+            sections.forEach(section => {
+                const option = document.createElement('option');
+                option.value = section.id;
+                option.textContent = section.name;
+                sectionSelect.appendChild(option);
+            });
+        }
+        updateSaveButton();
+    });
+
+    function updateSaveButton() {
+        const hasImage = imagePreview.src;
+        const hasTitle = document.getElementById('title-input').value.trim();
+        const hasBoard = boardSelect.value;
+        saveButton.disabled = !(hasImage && hasTitle && hasBoard);
+    }
+
+    // Close dialog
+    function closeDialog() {
+        document.querySelector('.add-content-container').style.display = 'none';
+    }
+
+    closeButton.addEventListener('click', closeDialog);
+    cancelButton.addEventListener('click', closeDialog);
+
+    // Save content
+    saveButton.addEventListener('click', async function() {
+        const content = {
+            image_url: imagePreview.src,
+            title: document.getElementById('title-input').value,
+            board_id: boardSelect.value,
+            section_id: sectionSelect.value || null,
+            notes: document.getElementById('notes-input').value,
+            source_url: contentInput.value.trim()
+        };
+
+        const response = await fetch('/add-pin', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(content)
+        });
+
+        if (response.ok) {
+            const data = await response.json();
+            // Redirect to the board where the pin was added
+            window.location.href = `/board/${content.board_id}`;
+        }
+    });
+});
+</script>
+{% endblock %} 

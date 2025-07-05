@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437068191/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736437068191",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437068191",
+      "url": "https://www.pinterest.com/pin/88101736437068191/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Product Slideshow",
+      "description": "jan karon series...love.",
+      "link": "http://www.christianbook.com/Christian/Books/product_slideshow/1278016835?sku=022120&actual_sku=022120",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 4,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/41/b0/fb/41b0fb431055ad924289b3bcf65cbbfc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

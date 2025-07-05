@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451844550/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736451844550",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451844550",
+      "url": "https://www.pinterest.com/pin/88101736451844550/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Mark Parisi on Twitter",
+      "description": " ",
+      "link": "https://twitter.com/offthemarkcomic/status/1405182919233114115?s=12",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b7/43/3b/b7433bd9b945e48679559cddb5c9a924.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

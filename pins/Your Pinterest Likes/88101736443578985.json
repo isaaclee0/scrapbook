@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443578985/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443578985",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443578985",
+      "url": "https://www.pinterest.com/pin/88101736443578985/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Trace Amounts DVD",
+      "description": "Trace Amounts DVD from Trace Amounts, LLC",
+      "link": "https://squareup.com/market/trace-amounts-llc/trace-amounts-dvd",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2d/b7/d6/2db7d60887e5cabd04718b3ad8be6f86.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

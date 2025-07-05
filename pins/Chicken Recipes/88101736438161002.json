@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438161002/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736438161002",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438161002",
+      "url": "https://www.pinterest.com/pin/88101736438161002/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chicken and Dumpling Casserole",
+      "description": "Chicken & Dumpling Bake Casserole",
+      "link": "http://www.deepsouthdish.com/2009/02/chicken-and-dumpling-bake.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/af/fe/b3/affeb309495f85602ad5e807441b6bd3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

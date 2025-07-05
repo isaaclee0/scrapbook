@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442420827/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442420827",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442420827",
+      "url": "https://www.pinterest.com/pin/88101736442420827/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Alfredo Moser: Bottle light inventor proud to be poor",
+      "description": "Moser's lamps - as seen from above",
+      "link": "http://www.bbc.co.uk/news/magazine-23536914",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/33/5c/79/335c79b37e7a8a569935dac42e04916a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

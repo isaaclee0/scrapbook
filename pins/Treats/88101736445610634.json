@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445610634/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736445610634",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445610634",
+      "url": "https://www.pinterest.com/pin/88101736445610634/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "A delicious recipe for Autumn brittle, complete with almonds, cashews, honey, and dried cranberries.",
+      "link": "http://www.adventures-in-cooking.com/2010/03/autumn-brittle.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/38/ec/9e/38ec9e0924aa3d3793343ae9fa5662db.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

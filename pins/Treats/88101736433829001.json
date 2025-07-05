@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433829001/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736433829001",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433829001",
+      "url": "https://www.pinterest.com/pin/88101736433829001/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Recipe By Photo",
+      "description": "Homemade Tootsie Rolls. This better be real.",
+      "link": "http://www.recipebyphoto.com/heathers-homemade-tootsie-rolls/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4d/0f/10/4d0f10c018a1c7bb8b70205b5a3e36a6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

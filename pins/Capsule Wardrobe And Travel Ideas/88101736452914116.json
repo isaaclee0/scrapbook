@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452914116/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/capsule-wardrobe-and-travel-ideas",
+    "CustomFileName": "88101736452914116",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452914116",
+      "url": "https://www.pinterest.com/pin/88101736452914116/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "omayra_diana",
+        "url": "https://www.pinterest.com/omayra_diana/",
+        "name": "omayra"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/capsule-wardrobe-and-travel-ideas/",
+        "name": "Capsule wardrobe and travel ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0d/9c/88/0d9c88627391b3dd8c29c598ba9fe9b6.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/a3/cf/ce/a3cfcec28b70a0a276d573b57862350e.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

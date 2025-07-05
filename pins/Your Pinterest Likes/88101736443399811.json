@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443399811/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443399811",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443399811",
+      "url": "https://www.pinterest.com/pin/88101736443399811/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "How times have changed",
+      "description": "my childhood",
+      "link": "http://jokideo.com/how-times-have-changed/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b7/5b/9c/b75b9ce3dfe99009784cd67cd09c49fb.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

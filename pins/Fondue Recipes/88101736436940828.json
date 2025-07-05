@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436940828/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fondue-recipes",
+    "CustomFileName": "88101736436940828",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436940828",
+      "url": "https://www.pinterest.com/pin/88101736436940828/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Fondue Savoyarde",
+      "description": "Fondue Savoyarde Recipe | SAVEUR",
+      "link": "http://www.saveur.com/article/Recipes/Fondue-Savoyarde?zY1OUgW7dY7tV9d8.32",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fondue-recipes/",
+        "name": "Fondue Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8e/d4/97/8ed497974c3ad5234d5609324dd0c445.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

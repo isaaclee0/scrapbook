@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435261466/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736435261466",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435261466",
+      "url": "https://www.pinterest.com/pin/88101736435261466/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Domain Suspended",
+      "description": "Peach and Cinnamon Cobbler",
+      "link": "http://thedeenbros.com/index.php/recipes/recipe_detail/peach_and_cinnamon_cobbler/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7c/1c/47/7c1c473bceeadf8ac889655fdb29f7d1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

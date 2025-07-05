@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441365163/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bathroom-inspiration",
+    "CustomFileName": "88101736441365163",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441365163",
+      "url": "https://www.pinterest.com/pin/88101736441365163/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "WC + lavoar",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "jollycluj",
+        "url": "https://www.pinterest.com/jollycluj/",
+        "name": "Jolly Cluj"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bathroom-inspiration/",
+        "name": "Bathroom Inspiration",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/dd/7e/ce/dd7ececad2be78860af76fc137d93007.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

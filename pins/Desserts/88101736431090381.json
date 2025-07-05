@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431090381/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736431090381",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431090381",
+      "url": "https://www.pinterest.com/pin/88101736431090381/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Les Crêpes au Chocolat à l'Orange de Monsieur Linxe",
+      "description": "French crepes",
+      "link": "http://sandrakavital.blogspot.com/2010/03/les-crepes-au-chocolat-lorange-de.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/24/69/b1/2469b1eac30d31c83cec4eae62d273da.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

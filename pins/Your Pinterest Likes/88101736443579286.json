@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443579286/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443579286",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443579286",
+      "url": "https://www.pinterest.com/pin/88101736443579286/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Mais arte comestível",
+      "description": "Food art - Cauliflower/Broccoli poodle!",
+      "link": "http://exorcizesuaalmagorda.blogspot.com/2012/04/mais-arte-comestivel.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1c/d4/39/1cd439f986f2f3a58b113c4c148853bf.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

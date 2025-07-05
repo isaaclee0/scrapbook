@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451564815/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/photography",
+    "CustomFileName": "88101736451564815",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451564815",
+      "url": "https://www.pinterest.com/pin/88101736451564815/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "SevAyda on Twitter",
+      "description": "Home / Twitter",
+      "link": "https://twitter.com/svaydd/status/1247576056158175233/photo/2",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/photography/",
+        "name": "Photography",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/38/3e/38/383e38193b82ce9ce34dc4cad949b346.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435072719/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-love",
+    "CustomFileName": "88101736435072719",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435072719",
+      "url": "https://www.pinterest.com/pin/88101736435072719/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "More of the good stuff ....",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "jwro",
+        "url": "https://www.pinterest.com/jwro/",
+        "name": "J Wro"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-love/",
+        "name": "Chicken love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/63/1b/85/631b851b3a6c120749df226344dce921.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452686301/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736452686301",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452686301",
+      "url": "https://www.pinterest.com/pin/88101736452686301/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Register - Login",
+      "description": " ",
+      "link": "https://www.tumblr.com/dashboard",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f5/ad/ef/f5adef3a16cb4a2f7a14077ddcac9052.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

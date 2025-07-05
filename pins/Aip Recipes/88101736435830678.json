@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435830678/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736435830678",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435830678",
+      "url": "https://www.pinterest.com/pin/88101736435830678/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Paleo Thai Green Curry With Cod - Ancestral Nutrition",
+      "description": "Paleo Thai Green Curry",
+      "link": "http://ancestral-nutrition.com/paleo-thai-green-curry-with-cod/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e4/85/1b/e4851ba129e478f7699b54f8f25ead6c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

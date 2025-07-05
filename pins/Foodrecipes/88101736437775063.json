@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437775063/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736437775063",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437775063",
+      "url": "https://www.pinterest.com/pin/88101736437775063/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Grocery Coupons, & Online Deals | Coupons.com",
+      "description": "Grandma's Yorkshire Pudding | KitchMe; attempted recipe and mine didn't rise as high but they tasted so good!",
+      "link": "http://www.kitchme.com/recipes/grandmas-yorkshire-pudding",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/75/37/b0/7537b02380b115b43f8d94e5e7fc7437.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

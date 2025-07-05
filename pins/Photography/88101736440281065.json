@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440281065/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/photography",
+    "CustomFileName": "88101736440281065",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440281065",
+      "url": "https://www.pinterest.com/pin/88101736440281065/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Google Images",
+      "description": "portrait",
+      "link": "http://images.google.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/photography/",
+        "name": "Photography",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fb/da/46/fbda46e82789a4468c0ee47c18a84bd6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

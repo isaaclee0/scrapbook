@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443227292/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443227292",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443227292",
+      "url": "https://www.pinterest.com/pin/88101736443227292/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Cleaning out the closet: looking at the concept of age appropriate clothing • Offbeat Home & Life",
+      "description": "Cleaning out the closet: looking at the concept of age appropriate clothing",
+      "link": "http://offbeathome.com/2011/11/age-appropriate-clothing",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f2/4c/6f/f24c6fed820e14da04c0536d99a3ceb1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

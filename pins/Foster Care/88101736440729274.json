@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440729274/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foster-care",
+    "CustomFileName": "88101736440729274",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440729274",
+      "url": "https://www.pinterest.com/pin/88101736440729274/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Parenting",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tiffyherrmann",
+        "url": "https://www.pinterest.com/tiffyherrmann/",
+        "name": "the_posh_poet"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foster-care/",
+        "name": "Foster care",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e7/2f/6c/e72f6c1931690218085f230e2c6ef8bc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

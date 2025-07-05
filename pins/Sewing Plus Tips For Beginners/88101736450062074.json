@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450062074/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/sewing-plus-tips-for-beginners",
+    "CustomFileName": "88101736450062074",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450062074",
+      "url": "https://www.pinterest.com/pin/88101736450062074/",
+      "type": "pin",
+      "title": "Crafts",
+      "gridTitle": "Crafts",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Gorgeousbeautydaily",
+        "url": "https://www.pinterest.com/Gorgeousbeautydaily/",
+        "name": "Gorgeous"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/sewing-plus-tips-for-beginners/",
+        "name": "Sewing (plus tips for beginners)",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/32/79/d4/3279d4248e022692d3692502e0dfae40.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/cd/71/44/cd71446465e7276775a1e12db7ec01bc.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

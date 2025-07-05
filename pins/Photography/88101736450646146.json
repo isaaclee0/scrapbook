@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450646146/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/photography",
+    "CustomFileName": "88101736450646146",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450646146",
+      "url": "https://www.pinterest.com/pin/88101736450646146/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Stories high above of alleys.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "pamellaramiryss",
+        "url": "https://www.pinterest.com/pamellaramiryss/",
+        "name": "Pamella Ramirys"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/photography/",
+        "name": "Photography",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/60/8f/56/608f56c678cfaf8a8d45954d60c4d8e7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

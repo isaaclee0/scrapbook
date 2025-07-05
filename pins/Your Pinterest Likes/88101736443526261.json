@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443526261/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443526261",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443526261",
+      "url": "https://www.pinterest.com/pin/88101736443526261/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Barn Style Coop W Storage",
+      "description": "Nice tutorial on building a coop with all the things you need and some smart extras. <3 the red nest boxes",
+      "link": "http://www.backyardchickens.com/a/barn-style-coop-w-storage",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/05/47/8f/05478f8cd91b750682431e1fc3b19a22.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

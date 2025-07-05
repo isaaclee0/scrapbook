@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452914415/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/animal-love",
+    "CustomFileName": "88101736452914415",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452914415",
+      "url": "https://www.pinterest.com/pin/88101736452914415/",
+      "type": "pin",
+      "title": "Funny turtles 🐢",
+      "gridTitle": "Funny turtles 🐢",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "theroaminglad",
+        "url": "https://www.pinterest.com/theroaminglad/",
+        "name": "The Roaming lad"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/animal-love/",
+        "name": "Animal love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/ab/b8/a4/abb8a446e5064dd0e685a74f24bac5b1.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

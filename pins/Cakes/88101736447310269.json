@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447310269/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736447310269",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447310269",
+      "url": "https://www.pinterest.com/pin/88101736447310269/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Gingersnap Spice Cake - Chef in Training",
+      "description": "Gingersnap Spice Cake from chef-in-training.com ...this cake is AMAZING! 4 layers of perfection!",
+      "link": "http://www.chef-in-training.com/2014/11/gingersnap-spice-cake/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "iambaker",
+        "url": "https://www.pinterest.com/iambaker/",
+        "name": "i am baker"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b9/03/38/b90338e2837432ad9b2873e61f436459.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

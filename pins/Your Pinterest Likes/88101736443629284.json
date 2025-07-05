@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443629284/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443629284",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443629284",
+      "url": "https://www.pinterest.com/pin/88101736443629284/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "This item is unavailable - Etsy",
+      "description": "I will never pass up another set of wooden salt & peppers at the thrift stores again...",
+      "link": "http://www.etsy.com/listing/88198605/colorful-shabby-chic-salt-and-pepper?ref=sr_gallery_21&amp;ga_search_query=salt+and+pepper+shakers&amp;ga_view_type=gallery&amp;ga_ship_to=US&amp;ga_page=11&amp;ga_search_type=handmade&amp;ga_facet=handmade",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a0/43/12/a04312938854361d3d0a9e1da56b1056.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

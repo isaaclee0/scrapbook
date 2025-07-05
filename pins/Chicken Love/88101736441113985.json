@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441113985/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-love",
+    "CustomFileName": "88101736441113985",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441113985",
+      "url": "https://www.pinterest.com/pin/88101736441113985/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Chicken Tunnel",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "kufans4ever",
+        "url": "https://www.pinterest.com/kufans4ever/",
+        "name": "Elizabeth Lawrence"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-love/",
+        "name": "Chicken love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/00/d5/fe/00d5fe6d14185180427545acaaf464c2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

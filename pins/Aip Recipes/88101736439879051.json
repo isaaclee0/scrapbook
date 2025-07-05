@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439879051/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736439879051",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439879051",
+      "url": "https://www.pinterest.com/pin/88101736439879051/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Breakfast on the Autoimmune Protocol - Autoimmune Wellness",
+      "description": "Breakfast on the Autoimmune Protocol | Autoimmune Paleo",
+      "link": "http://autoimmune-paleo.com/breakfast-on-the-autoimmune-protocol/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "jangelwings",
+        "url": "https://www.pinterest.com/jangelwings/",
+        "name": "Jennifer Myers"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c3/03/3c/c3033c612448032fe4d1ae854a12a4b1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

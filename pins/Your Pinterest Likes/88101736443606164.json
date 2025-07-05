@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443606164/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443606164",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443606164",
+      "url": "https://www.pinterest.com/pin/88101736443606164/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Standing At The Edge",
+      "description": "Body suits (under your bellbottom hiphuggers)  Hated the wedgies!",
+      "link": "http://standingattheedge.tumblr.com/post/7426044262/70s-skinny",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c9/52/1e/c9521e8b663c330d2829ce8de2d15ca8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

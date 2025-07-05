@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453813015/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/korean",
+    "CustomFileName": "88101736453813015",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453813015",
+      "url": "https://www.pinterest.com/pin/88101736453813015/",
+      "type": "pin",
+      "title": "Korean Cucumber Salad  | Vegan",
+      "gridTitle": "Korean Cucumber Salad  | Vegan",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "foodhubs101",
+        "url": "https://www.pinterest.com/foodhubs101/",
+        "name": "FoodHubs | Healthy Recipes"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/korean/",
+        "name": "Korean",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/12/5e/21/125e218081353deed0a81c95eeaad98b.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

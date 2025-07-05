@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453052489/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736453052489",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453052489",
+      "url": "https://www.pinterest.com/pin/88101736453052489/",
+      "type": "pin",
+      "title": "Circus ِCats",
+      "gridTitle": "Circus ِCats",
+      "description": " ",
+      "link": "https://kit.co/TourmalinWolf",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Tourmalinwolf",
+        "url": "https://www.pinterest.com/Tourmalinwolf/",
+        "name": "Tourmalin Wolf"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ed/28/b5/ed28b52813968eea5e313696804fa023.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/99/51/11/9951119217fa87e46a973f9a5dc50a5c.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443195715/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443195715",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443195715",
+      "url": "https://www.pinterest.com/pin/88101736443195715/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Luxury fashion & independent designers | SSENSE",
+      "description": "mix and match wardrobe pieces",
+      "link": "http://www.polyvore.com/mix_match_wardrobe_pieces/set?id=37728995",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/71/ba/92/71ba923f38ddd58ea1a8fa0c3338032d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

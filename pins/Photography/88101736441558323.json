@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441558323/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/photography",
+    "CustomFileName": "88101736441558323",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441558323",
+      "url": "https://www.pinterest.com/pin/88101736441558323/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Danziger Projects",
+      "description": "Yuji Obata - photograph of real falling snowflakes!",
+      "link": "http://www.danzigerprojects.com/artists/yuji-obata/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/photography/",
+        "name": "Photography",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/47/40/96/474096dc9b56ecfa401a6dc8b3f45edc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

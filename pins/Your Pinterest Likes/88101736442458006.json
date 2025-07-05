@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442458006/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442458006",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442458006",
+      "url": "https://www.pinterest.com/pin/88101736442458006/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Faith Hill - \"The Way You Love Me\" (Official Video)",
+      "description": "Faith Hill - \"The Way You Love Me\" (Official Video)",
+      "link": "http://www.youtube.com/watch/?v=o8EamHKpdrM",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6e/36/eb/6e36eb53a02f6d4717f784e19a3f44df.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444954508/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/apple-recipes",
+    "CustomFileName": "88101736444954508",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444954508",
+      "url": "https://www.pinterest.com/pin/88101736444954508/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Apple Pie from Scratch with Perfect Butter and Lard Crust",
+      "description": "Quintessential Apple Pie ~ perfectly flaky and tender crust.",
+      "link": "http://thehungrybluebird.com/recipes/apple-pie/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "kellywildenhaus",
+        "url": "https://www.pinterest.com/kellywildenhaus/",
+        "name": "The Hungry Bluebird"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/apple-recipes/",
+        "name": "Apple Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/89/28/c1/8928c173f58b84daa33fecd1033a3353.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

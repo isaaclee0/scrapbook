@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452697701/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736452697701",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452697701",
+      "url": "https://www.pinterest.com/pin/88101736452697701/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Not Even My Name: A True Story book by Thea Halo",
+      "description": " ",
+      "link": "https://www.thriftbooks.com/w/not-even-my-name-a-true-story_thea-halo/369834/#isbn=0312277016",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/22/4d/66/224d66532b62b6f41c734c084d4a05c1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

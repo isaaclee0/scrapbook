@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437238493/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/beefy",
+    "CustomFileName": "88101736437238493",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437238493",
+      "url": "https://www.pinterest.com/pin/88101736437238493/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Jean Anderson's Ossobuco Recipe",
+      "description": "Jean Anderson's Ossobuco Recipe.    This is incredible!",
+      "link": "http://www.thedailymeal.com/jean-andersons-ossobuco",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/beefy/",
+        "name": "Beefy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/82/74/e7/8274e70fdcf9e45035140411154aebbd.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

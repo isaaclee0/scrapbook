@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450945343/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/petite-plus",
+    "CustomFileName": "88101736450945343",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450945343",
+      "url": "https://www.pinterest.com/pin/88101736450945343/",
+      "type": "pin",
+      "title": "T-shirt Hacks",
+      "gridTitle": "T-shirt Hacks",
+      "description": " ",
+      "link": "https://vm.tiktok.com/3p7BLG/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "guidebestchoice",
+        "url": "https://www.pinterest.com/guidebestchoice/",
+        "name": "Irish Anne Tello"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/petite-plus/",
+        "name": "Petite plus",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/06/7f/31/067f31648da57ff5858d416373b409a2.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/02/27/b0/0227b0ff0cdec0b62979505b78bafed6.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

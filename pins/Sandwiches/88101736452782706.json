@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452782706/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/sandwiches",
+    "CustomFileName": "88101736452782706",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452782706",
+      "url": "https://www.pinterest.com/pin/88101736452782706/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Reuben Sandwich recipe",
+      "description": "Reuben Sandwich loaded with homemade pastrami, easy quick sauerkraut, Russian Dressing, Swiss cheese on rye bread, ready to be eaten. Katz's deli copycat recipe.",
+      "link": "https://www.recipetineats.com/reuben-sandwich-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "TriedandTasty",
+        "url": "https://www.pinterest.com/TriedandTasty/",
+        "name": "Tried and Tasty"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/sandwiches/",
+        "name": "Sandwiches",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/19/16/b8/1916b8cc080a438300c2438f22e843c8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

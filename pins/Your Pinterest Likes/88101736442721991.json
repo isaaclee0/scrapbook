@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442721991/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442721991",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442721991",
+      "url": "https://www.pinterest.com/pin/88101736442721991/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Postman (il Postino) Movie Poster (#3 of 4)",
+      "description": "il Postino (The Postman) (1995)",
+      "link": "http://www.impawards.com/1995/postman_ver3.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bc/48/55/bc485572e1854b0e39488852f7d5bb1e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443116258/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443116258",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443116258",
+      "url": "https://www.pinterest.com/pin/88101736443116258/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Fact That This Dress Is Under $150 Blows Our Minds",
+      "description": "The fact that this dress is only $148 blows our minds (pre-order it now!)",
+      "link": "http://www.fabsugar.com/Maggy-London-Black-Illusion-Dress-Review-33468304",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/dc/1f/41/dc1f41f7b43d5a6de699dd99e8d3fd1c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442337451/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442337451",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442337451",
+      "url": "https://www.pinterest.com/pin/88101736442337451/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "\"Ich bin meine Beute!\"",
+      "description": "(2) Tumblr",
+      "link": "https://www.tumblr.com/blog/ichbinmeinebeute",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/40/24/fe/4024fecbdac65c0d51031831d884f457.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

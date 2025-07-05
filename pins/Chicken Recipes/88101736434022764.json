@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434022764/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736434022764",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434022764",
+      "url": "https://www.pinterest.com/pin/88101736434022764/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Easy White Chicken Chili",
+      "link": "http://foods-drinks-recipes.com/easy-white-chicken-chili/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/67/ac/a9/67aca9b274172230bd5a8021c3d8bdf7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

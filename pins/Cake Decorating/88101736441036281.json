@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441036281/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cake-decorating",
+    "CustomFileName": "88101736441036281",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441036281",
+      "url": "https://www.pinterest.com/pin/88101736441036281/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Scribble Rose Tutorial",
+      "description": "How to paint roses on a cookie.",
+      "link": "http://www.youtube.com/watch/?v=Hg5gQg8xo3k",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cake-decorating/",
+        "name": "Cake Decorating",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7b/7a/3f/7b7a3f199eb6ca04d58767a2abd9860d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

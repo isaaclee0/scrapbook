@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438495040/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736438495040",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438495040",
+      "url": "https://www.pinterest.com/pin/88101736438495040/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Upside-Down Peach Cake",
+      "description": "Peach upside down cake",
+      "link": "http://www.tasteofhome.com/Recipes/Peach-Upside-Down-Cake-2",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "theorchardhome",
+        "url": "https://www.pinterest.com/theorchardhome/",
+        "name": "The Orchard Home and Gifts | Interior Decor & Accessories"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/63/28/ca/6328cac2efb3d011d5ccda85dadba22e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

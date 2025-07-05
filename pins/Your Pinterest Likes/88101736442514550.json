@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442514550/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442514550",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442514550",
+      "url": "https://www.pinterest.com/pin/88101736442514550/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Image Search Upload — How To Do A Reverse Image Search!",
+      "description": "How To Do a Reverse Image Search",
+      "link": "http://www.kevinandamanda.com/whatsnew/tutorials/how-to-see-if-your-photos-are-being-used-on-another-site.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c3/bc/37/c3bc37418ed44a5e0388910266a6fcf0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

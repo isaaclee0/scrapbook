@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431305681/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/breakfast",
+    "CustomFileName": "88101736431305681",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431305681",
+      "url": "https://www.pinterest.com/pin/88101736431305681/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Homemade Cultured Buttermilk",
+      "description": "Homemade cultured buttermilk - totally worth it, and SO easy.",
+      "link": "http://tastykitchen.com/recipes/homemade-ingredients/homemade-cultured-buttermilk/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/breakfast/",
+        "name": "Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/21/cc/ec/21ccec94493d66e5cb2c4ace2a038633.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

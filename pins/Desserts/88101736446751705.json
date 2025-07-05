@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446751705/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736446751705",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446751705",
+      "url": "https://www.pinterest.com/pin/88101736446751705/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Recipe Review: Berry Cobbler",
+      "description": "Frozen berries, dry cake mix, and 1 can of sprite. 350 for 35 min, yummy cobbler and it's a weight watchers recipe",
+      "link": "http://livingachangedlife.blogspot.com/2011/04/recipe-review-berry-cobbler.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/02/4a/57/024a5748de7211fcd983b5ad571a4de2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

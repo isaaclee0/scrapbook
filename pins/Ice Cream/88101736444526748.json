@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444526748/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/ice-cream",
+    "CustomFileName": "88101736444526748",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444526748",
+      "url": "https://www.pinterest.com/pin/88101736444526748/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Vegan Blueberry Coconut Popsicles",
+      "description": "Coconut Blueberry Smash Pops #vegan #paleo",
+      "link": "http://wallflowerkitchen.com/coconut-blueberry-smash-pops/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "rainierfruit",
+        "url": "https://www.pinterest.com/rainierfruit/",
+        "name": "Rainier Fruit Company"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/ice-cream/",
+        "name": "Ice cream",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a8/6d/99/a86d995cd6aa9d8a8eaef60e86170dff.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

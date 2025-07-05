@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431341582/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/garden-inspiration",
+    "CustomFileName": "88101736431341582",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431341582",
+      "url": "https://www.pinterest.com/pin/88101736431341582/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Untitled",
+      "description": "Secret garden inspiration",
+      "link": "http://whitedreamer.tumblr.com/page/5",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/garden-inspiration/",
+        "name": "Garden Inspiration",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cc/e8/c3/cce8c33703b565677b3d67cb45f55b66.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

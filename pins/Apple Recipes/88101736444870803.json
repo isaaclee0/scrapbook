@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444870803/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/apple-recipes",
+    "CustomFileName": "88101736444870803",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444870803",
+      "url": "https://www.pinterest.com/pin/88101736444870803/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Date and apple squares, a fruit recipe",
+      "description": "Date and apple squares",
+      "link": "https://www.cookipedia.co.uk/recipes_wiki/Date_and_apple_squares",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/apple-recipes/",
+        "name": "Apple Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/97/45/00/974500ee6405d64cbffd16ff45e6cb24.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439655722/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cabins-and-shacks",
+    "CustomFileName": "88101736439655722",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439655722",
+      "url": "https://www.pinterest.com/pin/88101736439655722/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "{Cabin Style}",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "carolminnick",
+        "url": "https://www.pinterest.com/carolminnick/",
+        "name": "Carol Minnick"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cabins-and-shacks/",
+        "name": "Cabins and shacks",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0d/90/7f/0d907f94cf6aaa7a4909b77e0c9f7f68.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

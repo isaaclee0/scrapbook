@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445309649/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cake-decorating",
+    "CustomFileName": "88101736445309649",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445309649",
+      "url": "https://www.pinterest.com/pin/88101736445309649/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Secret Sauce",
+      "description": "Secret Sauce for moist cakes",
+      "link": "http://www.flickr.com/photos/bakerella/3020521279/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cake-decorating/",
+        "name": "Cake Decorating",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6f/95/d8/6f95d88cab8f326ff3dc7cee0db0aa0f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

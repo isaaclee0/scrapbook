@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446530119/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-orchard",
+    "CustomFileName": "88101736446530119",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446530119",
+      "url": "https://www.pinterest.com/pin/88101736446530119/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Espalier, pear tree arch",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 91,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "jazque",
+        "url": "https://www.pinterest.com/jazque/",
+        "name": "Jacque Z"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-orchard/",
+        "name": "Cottage Orchard",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c1/2f/24/c12f240c79f0a7de15c28f04471bd48f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443914368/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736443914368",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443914368",
+      "url": "https://www.pinterest.com/pin/88101736443914368/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Tea rooms",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "melissab919",
+        "url": "https://www.pinterest.com/melissab919/",
+        "name": "Melissa"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c9/50/04/c95004da85547c12fbc043cc1c06bd64.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

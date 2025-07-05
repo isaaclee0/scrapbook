@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453071988/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cleaning-things",
+    "CustomFileName": "88101736453071988",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453071988",
+      "url": "https://www.pinterest.com/pin/88101736453071988/",
+      "type": "pin",
+      "title": "Cleaning hacks",
+      "gridTitle": "Cleaning hacks",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "chvygrl27",
+        "url": "https://www.pinterest.com/chvygrl27/",
+        "name": "Chvygrl27"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cleaning-things/",
+        "name": "Cleaning Things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9e/66/4f/9e664f468ccc26146762f65fbd06e9e4.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/5e/ee/3f/5eee3f49d70b8866685e9c0c43b18009.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

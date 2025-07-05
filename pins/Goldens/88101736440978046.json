@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440978046/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/goldens",
+    "CustomFileName": "88101736440978046",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440978046",
+      "url": "https://www.pinterest.com/pin/88101736440978046/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": ". .",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "mypal",
+        "url": "https://www.pinterest.com/mypal/",
+        "name": "patti and friends"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/goldens/",
+        "name": "Goldens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/14/d1/a5/14d1a529d5e721c32bc0aaf4b1e90e99.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

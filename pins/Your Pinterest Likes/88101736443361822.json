@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443361822/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443361822",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443361822",
+      "url": "https://www.pinterest.com/pin/88101736443361822/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Lucky Me Studios",
+      "description": "remove a drawer and add a hinge to its face for a mini desk or buffet tray #DIY",
+      "link": "http://luckymestudios.blogspot.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/86/6b/ef/866befe99fc744a71e04f111b4f7a08d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

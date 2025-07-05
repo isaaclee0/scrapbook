@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442715740/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442715740",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442715740",
+      "url": "https://www.pinterest.com/pin/88101736442715740/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Immune System and Skin Lesson",
+      "description": "Immune System Lesson! Awesome website for teaching about germs, nutriton, health!",
+      "link": "http://www.squidoo.com/immune-system-lesson-plan",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/34/bf/9a/34bf9af213431baf2d9f7cf7758b7b9b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

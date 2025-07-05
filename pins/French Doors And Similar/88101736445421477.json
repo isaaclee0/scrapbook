@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445421477/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/french-doors-and-similar",
+    "CustomFileName": "88101736445421477",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445421477",
+      "url": "https://www.pinterest.com/pin/88101736445421477/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Home",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/french-doors-and-similar/",
+        "name": "French doors and similar",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7b/34/c1/7b34c19422fcb3f88c396f0719726298.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

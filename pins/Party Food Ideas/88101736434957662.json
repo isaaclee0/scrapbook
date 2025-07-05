@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434957662/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/party-food-ideas",
+    "CustomFileName": "88101736434957662",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434957662",
+      "url": "https://www.pinterest.com/pin/88101736434957662/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Fabulous.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "marksticklin",
+        "url": "https://www.pinterest.com/marksticklin/",
+        "name": "Mark Sticklin"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/party-food-ideas/",
+        "name": "Party Food/Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a2/4c/da/a24cdaac02b61b5b6bc56b1e9bfb24a8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439367682/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736439367682",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439367682",
+      "url": "https://www.pinterest.com/pin/88101736439367682/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Twix caseros",
+      "description": "Twix caseros / de http://blog.candiquik.com/",
+      "link": "http://www.pecadosdereposteria.com/twix-caseros/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c0/da/20/c0da205499de7d35d2d00e2320268260.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

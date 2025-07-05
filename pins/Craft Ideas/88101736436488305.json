@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436488305/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/craft-ideas",
+    "CustomFileName": "88101736436488305",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436488305",
+      "url": "https://www.pinterest.com/pin/88101736436488305/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Sign in",
+      "description": "DIY Lavender Wreath",
+      "link": "https://picasaweb.google.com/109573282889258256489/MauiLavenderMediaKit",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/craft-ideas/",
+        "name": "Craft Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/19/89/c4/1989c40bd89a870b10c2571892934249.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

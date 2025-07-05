@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451646578/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736451646578",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451646578",
+      "url": "https://www.pinterest.com/pin/88101736451646578/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "This item is unavailable - Etsy",
+      "description": " ",
+      "link": "https://www.etsy.com/listing/647931203/cat-tree-driftwood?item_group_id=PG_647931203",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "etsy",
+        "url": "https://www.pinterest.com/etsy/",
+        "name": "Etsy"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b2/37/6e/b2376eee2bd87d4e96e0d871dc59c533.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

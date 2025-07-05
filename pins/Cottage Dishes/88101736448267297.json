@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448267297/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-dishes",
+    "CustomFileName": "88101736448267297",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448267297",
+      "url": "https://www.pinterest.com/pin/88101736448267297/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "❤ greengate",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-dishes/",
+        "name": "Cottage Dishes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/19/13/a4/1913a4e6d133efd89c50b5135eb587ad.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

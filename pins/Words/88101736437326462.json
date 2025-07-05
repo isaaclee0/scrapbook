@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437326462/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736437326462",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437326462",
+      "url": "https://www.pinterest.com/pin/88101736437326462/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "In the garden",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "gypsydaisy",
+        "url": "https://www.pinterest.com/gypsydaisy/",
+        "name": "Connie Ortberg"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0f/52/34/0f5234e9e77a4cb0a1a59d0db8696616.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

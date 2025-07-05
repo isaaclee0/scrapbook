@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436006363/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736436006363",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436006363",
+      "url": "https://www.pinterest.com/pin/88101736436006363/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Autoimmune Protocol (AIP) Pizza! - The Real Food Guide",
+      "description": "Autoimmune Protocol Paleo Pizza:  #glutenfree, #dairyfree without a cauliflower crust",
+      "link": "http://therealfoodguide.com/aip-pizza/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ee/9a/de/ee9ade92bfc2871989966629857dc20d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445828135/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736445828135",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445828135",
+      "url": "https://www.pinterest.com/pin/88101736445828135/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Flourless chocolate cake",
+      "description": "Crunchy on the outside and gooey on the inside, Simmone Logue's chocolate cake is best served with a drowning of double cream.",
+      "link": "http://www.deliciousmagazine.co.uk/recipes/flourless-chocolate-cake/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/61/f7/a5/61f7a569373816a5c64d83512412ea8c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

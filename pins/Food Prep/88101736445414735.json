@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445414735/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/food-prep",
+    "CustomFileName": "88101736445414735",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445414735",
+      "url": "https://www.pinterest.com/pin/88101736445414735/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Freezer-Prep Protein Packed Chili Recipe by Tasty",
+      "description": "Meal Prep Protein-Packed Chili (vegan)",
+      "link": "https://tasty.co/recipe/freezer-prep-protein-packed-chili",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 7,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "buzzfeedtasty",
+        "url": "https://www.pinterest.com/buzzfeedtasty/",
+        "name": "Tasty"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/food-prep/",
+        "name": "Food prep",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/88/4a/fd/884afda510ed40cbe2405fbfece74662.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/v2/720p/6c/78/d0/6c78d0ef68793f53094d591135ea7b7e_mobile.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

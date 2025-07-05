@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451182459/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pots-eds",
+    "CustomFileName": "88101736451182459",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451182459",
+      "url": "https://www.pinterest.com/pin/88101736451182459/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "That's my problem?",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "juliajenkins16",
+        "url": "https://www.pinterest.com/juliajenkins16/",
+        "name": "JJ"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pots-eds/",
+        "name": "POTS EDS",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c6/42/70/c6427038d64212c5a04a6020b10bb97f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

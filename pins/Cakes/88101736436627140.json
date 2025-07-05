@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436627140/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736436627140",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436627140",
+      "url": "https://www.pinterest.com/pin/88101736436627140/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Tiramisu Cake",
+      "description": "Tiramisu Cake",
+      "link": "http://www.bettycrocker.com/recipes/tiramisu-cake/228b26f8-b564-4fdc-8c2c-3f38c9fd3ae7?nicam4=SocialMedia&nichn4=Pinterest&niseg4=BettyCrocker&nicreatID4=Post",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/22/a1/45/22a14595a120aa86f48e966beabf5596.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

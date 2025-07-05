@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439384414/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/at-home",
+    "CustomFileName": "88101736439384414",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439384414",
+      "url": "https://www.pinterest.com/pin/88101736439384414/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Mother’s little secrets",
+      "description": "a mother's 10 best secrets for finding magic in mommy-hood. One of the best lists I've read. Going to implement some of these!!! This list is amazing!",
+      "link": "http://jandaandco.blogspot.com/2012/10/mothers-little-secrets.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/at-home/",
+        "name": "At Home",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/20/7c/42/207c4200dfd63cbf225d48cc249f7477.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

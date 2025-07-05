@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440786510/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736440786510",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440786510",
+      "url": "https://www.pinterest.com/pin/88101736440786510/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "CONTENTdm",
+      "description": "Switzerland in the heart...it all started with Heidi.",
+      "link": "http://virtuallibrary.cincinnatilibrary.org/virtuallibrary/vl_CinciRoom.aspx?ResID=1901",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f9/27/56/f9275602ce59892641f8b15da89e5953.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

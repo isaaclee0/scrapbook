@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439100958/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pastries",
+    "CustomFileName": "88101736439100958",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439100958",
+      "url": "https://www.pinterest.com/pin/88101736439100958/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chocolate Recipes: Mousse, Soufflé, Pudding",
+      "description": "How to Make Chocolate Banoffee Puffs - Great British Chef (puff pastry/chocolate/bananas/fudge sauce)!",
+      "link": "http://www.greatbritishchefs.com/community/chocolate-banoffee-puffs-recipe",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pastries/",
+        "name": "pastries",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a2/c4/f0/a2c4f0ce6b529cb6e645bb364224d1c2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

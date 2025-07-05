@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443155238/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443155238",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443155238",
+      "url": "https://www.pinterest.com/pin/88101736443155238/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Obama care is deadly",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9e/bc/d6/9ebcd6151b55bdabc5d7dd4d4d1b5fd0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

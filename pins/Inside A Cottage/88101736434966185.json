@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434966185/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/inside-a-cottage",
+    "CustomFileName": "88101736434966185",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434966185",
+      "url": "https://www.pinterest.com/pin/88101736434966185/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Colorful cottage shelves",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Her_Stories",
+        "url": "https://www.pinterest.com/Her_Stories/",
+        "name": "Her Story"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/inside-a-cottage/",
+        "name": "Inside a cottage",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e8/95/7a/e8957a89376ba11ccb1cd15e8320d152.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

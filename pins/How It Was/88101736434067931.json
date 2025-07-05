@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434067931/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/how-it-was",
+    "CustomFileName": "88101736434067931",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434067931",
+      "url": "https://www.pinterest.com/pin/88101736434067931/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Funny, but true",
+      "link": "http://quotediary.me/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/how-it-was/",
+        "name": "How it was..",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/92/5d/fa/925dfa13e73963ccd6c546a373e8ce70.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453768726/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tools-using-them",
+    "CustomFileName": "88101736453768726",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453768726",
+      "url": "https://www.pinterest.com/pin/88101736453768726/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "sohaybtm",
+        "url": "https://www.pinterest.com/sohaybtm/",
+        "name": "Sohayb"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tools-using-them/",
+        "name": "Tools - using them",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/8a/a7/62/8aa762db4e9f950283c3ab765b397233.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

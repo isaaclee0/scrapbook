@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442468317/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442468317",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442468317",
+      "url": "https://www.pinterest.com/pin/88101736442468317/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "What is the Best Way to Care for a Deck?",
+      "description": "Get rid of voles in your yard without using poison!",
+      "link": "http://www.yankeemagazine.com/issues/2007-01/home/solutions",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3a/e4/9e/3ae49ec0fc9c587bc17ca8e86ca4c7b4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

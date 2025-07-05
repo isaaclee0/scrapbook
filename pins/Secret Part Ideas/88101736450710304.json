@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450710304/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/secret-part-ideas",
+    "CustomFileName": "88101736450710304",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450710304",
+      "url": "https://www.pinterest.com/pin/88101736450710304/",
+      "type": "pin",
+      "title": "LA BÛCHE CHOCOLAT",
+      "gridTitle": "LA BÛCHE CHOCOLAT",
+      "description": " ",
+      "link": "https://www.chefclub.tv/fr/recettes/original/5ea8186f-a03f-430b-b261-01f833d5e773/la-b%C3%BBche-chocolat-incontournable-et-sans-emb%C3%BBche/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "chefclubnw",
+        "url": "https://www.pinterest.com/chefclubnw/",
+        "name": "Chefclub"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/secret-part-ideas/",
+        "name": "Secret Part Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c1/39/08/c139089dd1c49e6fc5a632c16b1f54c5.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/13/f3/c6/13f3c6e33d7199fa2da8798d57b9a6c3.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

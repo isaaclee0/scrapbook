@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439884986/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fondue-recipes",
+    "CustomFileName": "88101736439884986",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439884986",
+      "url": "https://www.pinterest.com/pin/88101736439884986/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Ice cream Fondue!  Great idea!",
+      "link": "http://shirleen-leen.blogspot.com/2011/03/fondue.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fondue-recipes/",
+        "name": "Fondue Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5a/2f/da/5a2fdae20167b1f11c6c115374862d38.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

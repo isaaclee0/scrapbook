@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435254506/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736435254506",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435254506",
+      "url": "https://www.pinterest.com/pin/88101736435254506/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Classic Southern Fried Chicken",
+      "description": "Southern Fried Chicken",
+      "link": "http://www.deepsouthdish.com/2010/05/southern-fried-chicken.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/75/08/c9/7508c94bacb616f23993fb6197242410.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

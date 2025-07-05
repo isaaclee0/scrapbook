@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434978396/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/inside-a-cottage",
+    "CustomFileName": "88101736434978396",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434978396",
+      "url": "https://www.pinterest.com/pin/88101736434978396/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Shabby Chic",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "fayelovelabel",
+        "url": "https://www.pinterest.com/fayelovelabel/",
+        "name": "https://www.etsy.com/uk/shop/VintageDuckEgg"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/inside-a-cottage/",
+        "name": "Inside a cottage",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ed/a1/73/eda173d30461070210b31754fd9ec944.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

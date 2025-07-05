@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435143059/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736435143059",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435143059",
+      "url": "https://www.pinterest.com/pin/88101736435143059/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Flickriver",
+      "description": "put the kettle on!",
+      "link": "http://www.flickriver.com/photos/sofi01/4142181912/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1b/c7/76/1bc776268b2770004b5f748b4627f9ea.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

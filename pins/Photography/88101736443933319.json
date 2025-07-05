@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443933319/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/photography",
+    "CustomFileName": "88101736443933319",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443933319",
+      "url": "https://www.pinterest.com/pin/88101736443933319/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Insert Food~",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "R4v3nm00n",
+        "url": "https://www.pinterest.com/R4v3nm00n/",
+        "name": "Taylor Michaels~"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/photography/",
+        "name": "Photography",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f5/65/8d/f5658d4ae8af04d69464519e99c027c8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

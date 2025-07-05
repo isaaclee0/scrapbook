@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432546770/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736432546770",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432546770",
+      "url": "https://www.pinterest.com/pin/88101736432546770/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Clean eating, easy and affordable, healthy recipes",
+      "description": "Clean Eating Balsamic Strawberries",
+      "link": "http://www.thegraciouspantry.com/clean-eating-balsamic-strawberries/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a5/fa/18/a5fa188b1d2269bb18dad2fbe3bd9f94.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

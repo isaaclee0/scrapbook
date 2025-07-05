@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438393824/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/animal-love",
+    "CustomFileName": "88101736438393824",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438393824",
+      "url": "https://www.pinterest.com/pin/88101736438393824/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "So sweet!",
+      "link": "http://media-cache-ec0.pinimg.com/1200x/8a/ca/ee/8acaeef0ecabdd08dece900a25a7832b.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/animal-love/",
+        "name": "Animal love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cc/a0/31/cca0312c46c5b9918edeaab3a134da78.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

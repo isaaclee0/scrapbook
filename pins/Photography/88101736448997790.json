@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448997790/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/photography",
+    "CustomFileName": "88101736448997790",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448997790",
+      "url": "https://www.pinterest.com/pin/88101736448997790/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "US",
+      "description": "by elena shumilova",
+      "link": "http://elenashumilova.smugmug.com/Location/US",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/photography/",
+        "name": "Photography",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c8/43/e9/c843e936fd2fbcc7eb40cfc4c28454fe.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

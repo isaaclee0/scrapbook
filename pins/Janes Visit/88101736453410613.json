@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453410613/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/janes-visit",
+    "CustomFileName": "88101736453410613",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453410613",
+      "url": "https://www.pinterest.com/pin/88101736453410613/",
+      "type": "pin",
+      "title": "Baileys Custard Slice",
+      "gridTitle": "Baileys Custard Slice",
+      "description": " ",
+      "link": "https://www.bestrecipes.com.au/recipes/baileys-custard-slice-recipe/gck3yrl4",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "bestrecipesau",
+        "url": "https://www.pinterest.com/bestrecipesau/",
+        "name": "Best Recipes"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/janes-visit/",
+        "name": "Jane's Visit",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ad/2e/a0/ad2ea0d24f4f45eefee3190fa4d1dfed.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/6e/9b/6e/6e9b6e6db9ccbe6fb88d83f580100c34.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

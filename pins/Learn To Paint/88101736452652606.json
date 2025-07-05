@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452652606/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/learn-to-paint",
+    "CustomFileName": "88101736452652606",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452652606",
+      "url": "https://www.pinterest.com/pin/88101736452652606/",
+      "type": "pin",
+      "title": "Рисуем одуванчик",
+      "gridTitle": "Рисуем одуванчик",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "oilyaewa",
+        "url": "https://www.pinterest.com/oilyaewa/",
+        "name": "Oriflame✨Секреты красоты и здоровья 💗"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/learn-to-paint/",
+        "name": "Learn To Paint",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/02/f3/a1/02f3a172ac07ef2c53368e81f53f65b3.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/cc/5f/66/cc5f6640ea5d362fe9c3feeed84ab3ab.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

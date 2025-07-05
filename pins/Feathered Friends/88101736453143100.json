@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453143100/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/feathered-friends",
+    "CustomFileName": "88101736453143100",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453143100",
+      "url": "https://www.pinterest.com/pin/88101736453143100/",
+      "type": "pin",
+      "title": "Relax with a Peacock",
+      "gridTitle": "Relax with a Peacock",
+      "description": " ",
+      "link": "https://linktr.ee/things2relax",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "things2relax",
+        "url": "https://www.pinterest.com/things2relax/",
+        "name": "things2relax"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/feathered-friends/",
+        "name": "Feathered friends",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/47/f2/15/47f21569f3ee2903a7820ed582bbe631.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/05/f3/50/05f3504d97bb523b3a7d2ff375f88ee5.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

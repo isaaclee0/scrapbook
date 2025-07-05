@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442938883/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442938883",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442938883",
+      "url": "https://www.pinterest.com/pin/88101736442938883/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Browse Urban & Rural | Photography | DeviantArt",
+      "description": "sweet little front porch                  ****",
+      "link": "http://browse.deviantart.com/photography/civilization/?q=porch&order=9&offset=216#/d2vyop3",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8b/fe/2d/8bfe2d5ee42ea998d81c943179e8e7a9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

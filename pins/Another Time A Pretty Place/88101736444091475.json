@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444091475/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/another-time-a-pretty-place",
+    "CustomFileName": "88101736444091475",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444091475",
+      "url": "https://www.pinterest.com/pin/88101736444091475/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Celtic-dress...I like the drop embellishment over the skirt.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "joelephantlover",
+        "url": "https://www.pinterest.com/joelephantlover/",
+        "name": "Jo Murray"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/another-time-a-pretty-place/",
+        "name": "Another time -  a pretty place",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/20/29/1e/20291e167bddedfd400b1e7d1b3c7d1d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

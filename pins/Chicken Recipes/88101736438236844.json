@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438236844/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736438236844",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438236844",
+      "url": "https://www.pinterest.com/pin/88101736438236844/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Cilantro-Lime Jalapeno Chicken Salad",
+      "description": "Cilantro-lime jalapeño chicken salad",
+      "link": "https://dailycrave.wordpress.com/2011/08/17/cilantro-lime-jalapeno-chicken-salad/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/26/8e/e8/268ee86d3df628fee9000541d5672b5f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

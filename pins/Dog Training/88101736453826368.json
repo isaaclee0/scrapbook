@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453826368/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/dog-training",
+    "CustomFileName": "88101736453826368",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453826368",
+      "url": "https://www.pinterest.com/pin/88101736453826368/",
+      "type": "pin",
+      "title": "Let Your Dog Think Things Out",
+      "gridTitle": "Let Your Dog Think Things Out",
+      "description": " ",
+      "link": "https://linktr.ee/cutebuddies_",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "yipperz",
+        "url": "https://www.pinterest.com/yipperz/",
+        "name": "Cute Buddies"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/dog-training/",
+        "name": "Dog Training",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0e/46/68/0e46686cd8a70cec89cd4c7771ab49c2.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/29/f9/aa/29f9aa60a60600c9b0d391cd3d5fb04c.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432029134/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/backyard-farm",
+    "CustomFileName": "88101736432029134",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432029134",
+      "url": "https://www.pinterest.com/pin/88101736432029134/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "small home farm",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "laelalon",
+        "url": "https://www.pinterest.com/laelalon/",
+        "name": "Lael Alon"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/backyard-farm/",
+        "name": "Backyard Farm",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ca/32/9d/ca329db8190136c2ab2d5ac146a68fd3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

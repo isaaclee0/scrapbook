@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446094665/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/beefy",
+    "CustomFileName": "88101736446094665",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446094665",
+      "url": "https://www.pinterest.com/pin/88101736446094665/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Account Suspended",
+      "description": "Gordon Ramsay's Beef Wellington with Red Wine Sauce from http://pinkpostitnote.com",
+      "link": "http://pinkpostitnote.com/2016/03/gordon-ramsays-beef-wellington.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "myforkinglife",
+        "url": "https://www.pinterest.com/myforkinglife/",
+        "name": "My Forking Life with Tanya Harris"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/beefy/",
+        "name": "Beefy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2e/db/35/2edb353924b1cc8a7d3ff80d22e45d87.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453008126/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/my-i/desserts",
+    "CustomFileName": "88101736453008126",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453008126",
+      "url": "https://www.pinterest.com/pin/88101736453008126/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Galletas granos de café. Receta - Con las zarpas en la masa",
+      "description": "Galletas granos de café {by Paula, Con las Zarpas en la Masa}",
+      "link": "https://conlaszarpasenlamasa.com/galletas-granos-cafe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/my-i/",
+        "name": "My I",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ac/a3/77/aca377db29cd6546fef372e9ef31d3bb.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

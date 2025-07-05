@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453269236/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hors-doeuvres",
+    "CustomFileName": "88101736453269236",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453269236",
+      "url": "https://www.pinterest.com/pin/88101736453269236/",
+      "type": "pin",
+      "title": "Bacon Wrapped Dates",
+      "gridTitle": "Bacon Wrapped Dates",
+      "description": " ",
+      "link": "https://www.dinneratthezoo.com/bacon-wrapped-dates/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "DinnerattheZoo",
+        "url": "https://www.pinterest.com/DinnerattheZoo/",
+        "name": "Dinner at the Zoo (Sara Welch)"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hors-doeuvres/",
+        "name": "Hors D'oeuvres",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c3/2a/1a/c32a1ab83e412260f0113b7309b4bad6.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/82/d4/8c/82d48c8cbbca909f5d7a4e2a868c57ca.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

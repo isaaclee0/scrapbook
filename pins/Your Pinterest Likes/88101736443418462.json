@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443418462/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443418462",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443418462",
+      "url": "https://www.pinterest.com/pin/88101736443418462/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Account Suspended",
+      "description": "With a needle and thread. What a great way to decorate for a special day! So much easier than tape. (add glow sticks!!)",
+      "link": "http://www.agirlandaboy.com/journal/archives/002791.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ca/48/73/ca4873f7422d128591e3ceb1943682bf.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

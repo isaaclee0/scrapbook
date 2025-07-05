@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451320636/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/exercise-it",
+    "CustomFileName": "88101736451320636",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451320636",
+      "url": "https://www.pinterest.com/pin/88101736451320636/",
+      "type": "pin",
+      "title": "Exercises for Healthier Knees",
+      "gridTitle": "Exercises for Healthier Knees",
+      "description": "Here's an easy exercises you can do at home to prevent knee pain and further injuries! Visit www.justinagustin.com for a complete workout plan for absolute beginners. Try it for free today. #beginnerworkout #kneeworkout #kneepain #beginner #homeworkout #forbeginners #chairworkout #homeroutine #homechallenge #health #fit #fitness",
+      "link": "http://www.justinagustin.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 4,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "justinagustin",
+        "url": "https://www.pinterest.com/justinagustin/",
+        "name": "Justin Agustin"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/exercise-it/",
+        "name": "Exercise it",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/74/8c/b8/748cb852d3e7b6eb6fd53507ad365f7f.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/21/ce/a9/21cea9f4e813443bf2d8a2dc810054f9.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

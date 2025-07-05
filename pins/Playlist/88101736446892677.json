@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446892677/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/playlist",
+    "CustomFileName": "88101736446892677",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446892677",
+      "url": "https://www.pinterest.com/pin/88101736446892677/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "1985 - Top 25 Hits",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "reunionsd",
+        "url": "https://www.pinterest.com/reunionsd/",
+        "name": "Reunion Specialists"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/playlist/",
+        "name": "Playlist",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d3/33/d0/d333d02b659ee78a80be5f77aadf3de5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

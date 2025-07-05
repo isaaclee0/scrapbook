@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451564817/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/feathered-friends",
+    "CustomFileName": "88101736451564817",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451564817",
+      "url": "https://www.pinterest.com/pin/88101736451564817/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Fancitaste",
+      "description": "Grace Upon Grace",
+      "link": "https://fancitaste.tumblr.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 4,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/feathered-friends/",
+        "name": "Feathered friends",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f8/7b/d6/f87bd6e890ae371521cc6e70d2d8b32c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

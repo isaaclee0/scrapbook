@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447310261/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736447310261",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447310261",
+      "url": "https://www.pinterest.com/pin/88101736447310261/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Million Dollar Carrot Cake",
+      "description": "Million Dollar Carrot Cake Recipe | Just A Pinch Recipes",
+      "link": "http://www.justapinch.com/recipes/dessert/cake/million-dollar-carrot-cake.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fb/a0/d0/fba0d01e07349bd740bf013e5082b74b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

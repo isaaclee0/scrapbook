@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435398933/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pastries",
+    "CustomFileName": "88101736435398933",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435398933",
+      "url": "https://www.pinterest.com/pin/88101736435398933/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Fried pastry loops with honey (origliettas)",
+      "description": "Fried pastry loops with honey (origliettas)",
+      "link": "http://www.gourmettraveller.com.au/fried-pastry-loops-with-honey-origliettas.htm",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pastries/",
+        "name": "pastries",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2c/7d/6c/2c7d6c8fe603731ac0016fee4c211c20.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

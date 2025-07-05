@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452972696/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736452972696",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452972696",
+      "url": "https://www.pinterest.com/pin/88101736452972696/",
+      "type": "pin",
+      "title": "Parmesan Crusted Chicken",
+      "gridTitle": "Parmesan Crusted Chicken",
+      "description": " ",
+      "link": "https://www.tastemade.com/videos/parmesan-crusted-chicken-thigh",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemade",
+        "url": "https://www.pinterest.com/tastemade/",
+        "name": "Tastemade"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a6/f5/16/a6f51693a6e1b42d4398c578546de74e.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/v2/720p/91/13/25/911325799b29a5d9b5b1042d449d99c3_mobile.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

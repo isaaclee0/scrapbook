@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449912798/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736449912798",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449912798",
+      "url": "https://www.pinterest.com/pin/88101736449912798/",
+      "type": "pin",
+      "title": "Pollo Mediterraneo",
+      "gridTitle": "Pollo Mediterraneo",
+      "description": "Pechugas sabrosas con Tomate y Albahaca acompañadas de unas Papas a la Crema especiales",
+      "link": "https://es.tastemade.com/videos/pollo-mediterraneo",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemadees",
+        "url": "https://www.pinterest.com/tastemadees/",
+        "name": "Tastemade Español"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d1/02/3a/d1023a0f9960c6046cf7d7203ecfae33.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/da/db/33/dadb33b71c1570ac8f3cd55bf86433ca.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439298718/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736439298718",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439298718",
+      "url": "https://www.pinterest.com/pin/88101736439298718/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Squirrely in Shirley",
+      "description": "Trick and Treat get Squirrely in Shirley",
+      "link": "http://lucindaville.blogspot.com/2012/10/squirrely-in-shirley.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/da/a2/bd/daa2bdf8bef84c5781ff7f9386314838.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

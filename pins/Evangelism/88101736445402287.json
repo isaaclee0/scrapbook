@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445402287/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/evangelism",
+    "CustomFileName": "88101736445402287",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445402287",
+      "url": "https://www.pinterest.com/pin/88101736445402287/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "John Piper Quote",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "yesheis",
+        "url": "https://www.pinterest.com/yesheis/",
+        "name": "yesHEis | Helping them know"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/evangelism/",
+        "name": "Evangelism",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b9/b2/13/b9b213f0a731c7046b9c36ddb0b4082f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

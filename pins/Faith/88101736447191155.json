@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447191155/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736447191155",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447191155",
+      "url": "https://www.pinterest.com/pin/88101736447191155/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Wow. \"God thinks so little of sorrows that he gives them to his enemies.\"",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/29/fe/2d/29fe2daed1d57f767f4d95ef2b04f74c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

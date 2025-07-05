@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451313389/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/little-office",
+    "CustomFileName": "88101736451313389",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451313389",
+      "url": "https://www.pinterest.com/pin/88101736451313389/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Lucian575757",
+        "url": "https://www.pinterest.com/Lucian575757/",
+        "name": "Lucian Chahee"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/little-office/",
+        "name": "Little Office",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a1/29/d6/a129d64bcd5bf85a071b393c5503f7c8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

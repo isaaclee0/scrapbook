@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443482378/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443482378",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443482378",
+      "url": "https://www.pinterest.com/pin/88101736443482378/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Rotorua, New Zealand",
+      "link": "http://sunsurfer.tumblr.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/88/b6/db/88b6db9e3d998147646842f88e1804fb.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

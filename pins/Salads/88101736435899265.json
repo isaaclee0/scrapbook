@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435899265/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/salads",
+    "CustomFileName": "88101736435899265",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435899265",
+      "url": "https://www.pinterest.com/pin/88101736435899265/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Classic Wedge Salad - Tastes Better From Scratch",
+      "description": "Classic Blue Cheese Wedge Salad | Tastes Better From Scratch",
+      "link": "http://tastesbetterfromscratch.com/2014/06/blue-cheese-wedge-salad.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/salads/",
+        "name": "Salads",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cf/2f/ca/cf2fcab412ce05565cbbc797f994cdc9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

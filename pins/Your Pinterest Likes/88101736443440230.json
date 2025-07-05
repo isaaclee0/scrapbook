@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443440230/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443440230",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443440230",
+      "url": "https://www.pinterest.com/pin/88101736443440230/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "X",
+      "description": "Which Middle Eastern Country respects our flag and our nation?.....only ONE!",
+      "link": "https://twitter.com/nf3l/status/254741789704089601/photo/1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/44/ec/ef/44ecef4db58c8c7cfaf198bca1f8a94a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451693624/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736451693624",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451693624",
+      "url": "https://www.pinterest.com/pin/88101736451693624/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chabad.org",
+      "description": "Inspiration from the Talmud",
+      "link": "http://www.chabad.org/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "chabad",
+        "url": "https://www.pinterest.com/chabad/",
+        "name": "Chabad.org"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bf/74/b9/bf74b91556f2756db44e17077b2c01a9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

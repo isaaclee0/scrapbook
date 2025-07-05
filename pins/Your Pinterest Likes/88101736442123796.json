@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442123796/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442123796",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442123796",
+      "url": "https://www.pinterest.com/pin/88101736442123796/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "This item is unavailable - Etsy",
+      "description": "wooden spoons",
+      "link": "http://www.etsy.com/listing/90231338/primitive-antique-style-wooden-spoon?ref=sr_gallery_16&sref=&ga_search_submit=&ga_search_query=colonial%20primitives&ga_view_type=gallery&ga_ship_to=US&ga_page=11&ga_search_type=handmade&ga_facet=handmade",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2b/7a/1b/2b7a1b6c391c45cfc6d0e8456396b3ad.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

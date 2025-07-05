@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449313347/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736449313347",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449313347",
+      "url": "https://www.pinterest.com/pin/88101736449313347/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Soft Cinnamon Rolls - The Girl Who Ate Everything",
+      "description": "Soft Cinnamon Rolls",
+      "link": "http://www.the-girl-who-ate-everything.com/2015/04/soft-cinnamon-rolls.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "copykatrecipes",
+        "url": "https://www.pinterest.com/copykatrecipes/",
+        "name": "CopyKat Creations"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/34/cd/14/34cd14ba2ae96f9251a876487c31488e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

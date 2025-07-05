@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447006042/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736447006042",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447006042",
+      "url": "https://www.pinterest.com/pin/88101736447006042/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "You are right Charlie Brown",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tlt2085",
+        "url": "https://www.pinterest.com/tlt2085/",
+        "name": "Tracey Thomas"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/96/bb/32/96bb32dba4aa003cf7b08115745037e1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437563600/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736437563600",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437563600",
+      "url": "https://www.pinterest.com/pin/88101736437563600/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Mini cakes for a delicious gift :)",
+      "link": "http://theberry.com/2011/11/01/morning-coffee-39-photos-46/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/48/77/f2/4877f22cde779d67b25b829f8207db21.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438211758/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736438211758",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438211758",
+      "url": "https://www.pinterest.com/pin/88101736438211758/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "-Casting Crowns",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "dawnkingCA",
+        "url": "https://www.pinterest.com/dawnkingCA/",
+        "name": "Dawn King"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/50/3a/61/503a6115e66b7999e11bd8f9c6293ffa.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

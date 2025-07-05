@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441201472/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736441201472",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441201472",
+      "url": "https://www.pinterest.com/pin/88101736441201472/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "This is great advice!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "dianezeien",
+        "url": "https://www.pinterest.com/dianezeien/",
+        "name": "Diane Zeien"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e5/15/5a/e5155a55f7190fdbec2516540c884b45.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

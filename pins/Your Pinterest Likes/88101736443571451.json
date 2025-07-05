@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443571451/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443571451",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443571451",
+      "url": "https://www.pinterest.com/pin/88101736443571451/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Private Site",
+      "description": "How to boil farm fresh eggs that peel simply!",
+      "link": "http://pathsofwrighteousness.wordpress.com/2011/11/02/the-perfect-hard-boiled-egg-yes-even-with-fresh-farm-eggs/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b7/1e/f7/b71ef778e28bddcf10b69c9097c9b880.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

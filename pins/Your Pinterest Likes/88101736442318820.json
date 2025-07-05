@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442318820/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442318820",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442318820",
+      "url": "https://www.pinterest.com/pin/88101736442318820/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Freebies from the Homemaker's Mentor",
+      "description": "The HomeMaker's Mentor CD collection -- 110 PDF files with recipes, lessons, encouragement, and help.",
+      "link": "http://www.wholesomechildhood.com/HMM/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "EncouragingMoms",
+        "url": "https://www.pinterest.com/EncouragingMoms/",
+        "name": "Encouraging Moms at Home"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ee/26/ab/ee26abc21bc54903977407c838e33c85.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

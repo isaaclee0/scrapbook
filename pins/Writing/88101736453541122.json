@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453541122/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/writing",
+    "CustomFileName": "88101736453541122",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453541122",
+      "url": "https://www.pinterest.com/pin/88101736453541122/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Register - Login",
+      "description": " ",
+      "link": "https://www.tumblr.com/dashboard",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/writing/",
+        "name": "Writing",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/23/85/95/2385951e16522c35ccf455fe72c088d4.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

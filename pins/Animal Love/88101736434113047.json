@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434113047/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/animal-love",
+    "CustomFileName": "88101736434113047",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434113047",
+      "url": "https://www.pinterest.com/pin/88101736434113047/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Welcome to Rabbitron.com",
+      "description": "A bunny is a 10 year commitment !",
+      "link": "http://rabbitron.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "gvrabbitrescue",
+        "url": "https://www.pinterest.com/gvrabbitrescue/",
+        "name": "Gville Rabbit Rescue"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/animal-love/",
+        "name": "Animal love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ba/09/ce/ba09ce7f24eb2cb1805a1d1b2fb1a16a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

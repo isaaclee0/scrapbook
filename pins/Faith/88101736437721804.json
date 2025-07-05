@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437721804/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/faith",
+    "CustomFileName": "88101736437721804",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437721804",
+      "url": "https://www.pinterest.com/pin/88101736437721804/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Crazy Love by Francis Chan.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "audury",
+        "url": "https://www.pinterest.com/audury/",
+        "name": "Audury"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/faith/",
+        "name": "Faith",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9d/f8/47/9df847cc15b19fcb6ed06b33b35e8475.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

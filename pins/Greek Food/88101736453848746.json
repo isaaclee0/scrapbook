@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453848746/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/greek-food",
+    "CustomFileName": "88101736453848746",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453848746",
+      "url": "https://www.pinterest.com/pin/88101736453848746/",
+      "type": "pin",
+      "title": "Baked Greek Meatballs + Potatoes (SOUTZOUKAKIA)",
+      "gridTitle": "Baked Greek Meatballs + Potatoes (SOUTZOUKAKIA)",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "hungryhappens",
+        "url": "https://www.pinterest.com/hungryhappens/",
+        "name": "hungry happens"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/greek-food/",
+        "name": "Greek Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/24/dc/19/24dc198b5f7c4aa64ada6013d689deba.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

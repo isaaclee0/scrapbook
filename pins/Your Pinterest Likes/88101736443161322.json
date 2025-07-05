@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443161322/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443161322",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443161322",
+      "url": "https://www.pinterest.com/pin/88101736443161322/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Dandelion heaven by Peter Sjölund / 500px",
+      "description": "A wish for everyone...",
+      "link": "http://500px.com/photo/13365973",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/89/2f/40/892f4043edd6327bf82276199769b922.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

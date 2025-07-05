@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437322824/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736437322824",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437322824",
+      "url": "https://www.pinterest.com/pin/88101736437322824/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chocolate Coconut Cupcakes",
+      "description": "chocolate coconut cupcakes",
+      "link": "http://www.yourcupofcake.com/2012/03/chocolate-coconut-cupcakes-2.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/43/6d/30/436d30caca93fb1637dbf268ea257860.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

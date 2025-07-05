@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451516730/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/landscaping-ideas",
+    "CustomFileName": "88101736451516730",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451516730",
+      "url": "https://www.pinterest.com/pin/88101736451516730/",
+      "type": "pin",
+      "title": "How to edge flower beds",
+      "gridTitle": "How to edge flower beds",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 2,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "remodelacasa",
+        "url": "https://www.pinterest.com/remodelacasa/",
+        "name": "Cristina @Remodelando la Casa"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/landscaping-ideas/",
+        "name": "landscaping ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/50/30/d0/5030d0bed0f7601497c0cf5b2cd235b2.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/80/26/93/802693222431b4c51ebf80972eca4cc5.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

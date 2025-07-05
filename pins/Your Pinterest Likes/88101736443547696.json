@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443547696/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443547696",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443547696",
+      "url": "https://www.pinterest.com/pin/88101736443547696/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Top 10 Tips on How To Make Your Tummy Look Slimmer",
+      "description": "HOw to Make your Tummy Look Slimmer",
+      "link": "http://www.insideoutstyleblog.com/2012/11/how-to-make-your-tummy-look-slimme.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/85/7a/e7/857ae7cad957fa776600d60b7bb0aaed.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

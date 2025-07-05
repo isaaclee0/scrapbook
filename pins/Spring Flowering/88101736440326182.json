@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440326182/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/spring-flowering",
+    "CustomFileName": "88101736440326182",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440326182",
+      "url": "https://www.pinterest.com/pin/88101736440326182/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Enchanted Cove",
+      "description": "Pink Tulips in Spring!",
+      "link": "http://theenchantedcove.tumblr.com/post/50535712127",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/spring-flowering/",
+        "name": "Spring Flowering",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ab/52/78/ab5278f63ccab086da4a0316a59edb7d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

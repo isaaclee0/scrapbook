@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440508877/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/photography",
+    "CustomFileName": "88101736440508877",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440508877",
+      "url": "https://www.pinterest.com/pin/88101736440508877/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "And now...I cry",
+      "link": "http://www.dumpaday.com/random-pictures/random-pictures-day-70-pics-4/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/photography/",
+        "name": "Photography",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/84/82/1f/84821f59f7490edf9c6ee66158df1afc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

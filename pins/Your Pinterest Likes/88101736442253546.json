@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442253546/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442253546",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442253546",
+      "url": "https://www.pinterest.com/pin/88101736442253546/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Enjoying Great Life",
+      "description": "Why I Don't Teach My Kids Purity and What I Teach Instead | http://www.royallittlelambs.com/",
+      "link": "http://www.royallittlelambs.com/why-i-dont-teach-purity/#_a5y_p=4014142",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "jenalambert",
+        "url": "https://www.pinterest.com/jenalambert/",
+        "name": "Jennifer Lambert"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bc/08/4e/bc084e20363d5942a942eea7be35a227.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

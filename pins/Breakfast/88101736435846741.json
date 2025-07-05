@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435846741/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/breakfast",
+    "CustomFileName": "88101736435846741",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435846741",
+      "url": "https://www.pinterest.com/pin/88101736435846741/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Homemadefoodrecipes.com",
+      "description": "Scrambled Eggs in Puff Pastry | Homemade Food Recipes",
+      "link": "http://homemadefoodrecipes.com/scrambled-eggs-in-puff-pastry/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/breakfast/",
+        "name": "Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1a/77/2e/1a772e1893a8ead0367e03002706fbf3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

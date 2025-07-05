@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453791479/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/be-my-guest",
+    "CustomFileName": "88101736453791479",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453791479",
+      "url": "https://www.pinterest.com/pin/88101736453791479/",
+      "type": "pin",
+      "title": "How to Perfectly Hang Towels in Bathroom",
+      "gridTitle": "How to Perfectly Hang Towels in Bathroom",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Metdaantips1",
+        "url": "https://www.pinterest.com/Metdaantips1/",
+        "name": "MetDaan Tips"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/be-my-guest/",
+        "name": "Be My Guest",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/aa/56/f3/aa56f3a25460bf389232fde3885f1218.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/13/be/ef/13beeff5603b1dc8f956e1d632e0c587.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

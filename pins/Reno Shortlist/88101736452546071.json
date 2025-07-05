@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452546071/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/reno-shortlist",
+    "CustomFileName": "88101736452546071",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452546071",
+      "url": "https://www.pinterest.com/pin/88101736452546071/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "sbpforward",
+        "url": "https://www.pinterest.com/sbpforward/",
+        "name": "Sarah Forward"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/reno-shortlist/",
+        "name": "Reno shortlist",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/72/b4/6f/72b46fe064d0085d8d60c3d48bf8c497.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

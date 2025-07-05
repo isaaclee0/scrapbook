@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448544506/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/dinner-with-hubby",
+    "CustomFileName": "88101736448544506",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448544506",
+      "url": "https://www.pinterest.com/pin/88101736448544506/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Cuando abras esta sorpresa de pasta, quedarás encantado",
+      "description": "Cuando abras esta sorpresa de pasta, quedarás encantado #pasta #tarta #pastel #espinacas #verduras #hojaldre #macarrones",
+      "link": "https://www.riquisimo.net/tarta-de-espinaca-con-macarrones/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "riquisimonet",
+        "url": "https://www.pinterest.com/riquisimonet/",
+        "name": "Riquísimo"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/dinner-with-hubby/",
+        "name": "Dinner with hubby",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/95/cc/7c/95cc7c8ecc6bb3e172a43edc1cc0bb27.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/f6/a2/38/f6a238520feadbdde493a6957f5de2a4.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

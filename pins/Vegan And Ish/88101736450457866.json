@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450457866/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/vegan-and-ish",
+    "CustomFileName": "88101736450457866",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450457866",
+      "url": "https://www.pinterest.com/pin/88101736450457866/",
+      "type": "pin",
+      "title": "Vegan Queso",
+      "gridTitle": "Vegan Queso",
+      "description": "Meet your new favorite vegan queso. It’s rich, creamy and ultra cheesy with just enough of a spicy kick. The perfect dip for some tortilla chips. #vegan #dairyfree",
+      "link": "https://lovingitvegan.com/vegan-queso/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 52,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "lovingitvegan",
+        "url": "https://www.pinterest.com/lovingitvegan/",
+        "name": "Loving It Vegan | Vegan Recipes"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/vegan-and-ish/",
+        "name": "Vegan and ish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/70/fc/44/70fc44a2647d3d0050c6c865669130ae.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/d5/7a/8c/d57a8c2e50ab6c460c112cf194ad91ad.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

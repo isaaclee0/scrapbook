@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443390087/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/photography",
+    "CustomFileName": "88101736443390087",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443390087",
+      "url": "https://www.pinterest.com/pin/88101736443390087/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Tales from the Coop Keeper",
+      "description": "Tales from the Coop Keeper",
+      "link": "http://talefromthecoopkeeper.blogspot.com.au/search?updated-max=2013-05-13T10:33:00-05:00&max-results=20&start=114&by-date=false",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/photography/",
+        "name": "Photography",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c5/2f/f8/c52ff87812403d321abb96a9ab5a1a37.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

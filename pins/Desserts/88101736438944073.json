@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438944073/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736438944073",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438944073",
+      "url": "https://www.pinterest.com/pin/88101736438944073/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Old-Fashioned Banana Cream Pie",
+      "description": "Old-Fashioned Banana Cream Pie",
+      "link": "http://www.tasteofhome.com/recipes/old-fashioned-banana-cream-pie",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e1/b7/5d/e1b75dd1fda3cd27bd941efb9784cd65.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

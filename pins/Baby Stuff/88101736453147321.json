@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453147321/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/baby-stuff",
+    "CustomFileName": "88101736453147321",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453147321",
+      "url": "https://www.pinterest.com/pin/88101736453147321/",
+      "type": "pin",
+      "title": "funny baby",
+      "gridTitle": "funny baby",
+      "description": " ",
+      "link": "http://www.tadobaby.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "TadoMuslin",
+        "url": "https://www.pinterest.com/TadoMuslin/",
+        "name": "TADO MUSLIN"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/baby-stuff/",
+        "name": "Baby stuff",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/31/69/43/3169434ac86b5b0a112a78319b37d345.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/00/72/4c/00724c31c81a38bdd6eab958a0ce053b.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

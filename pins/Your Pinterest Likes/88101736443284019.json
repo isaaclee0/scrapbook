@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443284019/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443284019",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443284019",
+      "url": "https://www.pinterest.com/pin/88101736443284019/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Informații",
+      "description": "GENIUS! Use a plastic spoon so you don't get mascara on your skin! ...this website has TONS of great MAKEUP TIPS!",
+      "link": "http://www.livegorgeous.tv/2011/12/29/mascara-how-t/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/da/13/5b/da135b36dcf5bb0a0d565f3297dd1c4e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

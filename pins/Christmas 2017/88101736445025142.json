@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445025142/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/christmas-2017",
+    "CustomFileName": "88101736445025142",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445025142",
+      "url": "https://www.pinterest.com/pin/88101736445025142/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Dessert Fruit Skewers",
+      "description": "Yeah, we want to skip dinner and head right to dessert too. Especially with these Dessert Fruit Skewers waiting!",
+      "link": "https://myvega.com/recipes/dessert-fruit-skewers/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "vega",
+        "url": "https://www.pinterest.com/vega/",
+        "name": "Vega"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/christmas-2017/",
+        "name": "Christmas 2017",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/40/2a/8b/402a8b3f06544751200845f0cac230ce.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

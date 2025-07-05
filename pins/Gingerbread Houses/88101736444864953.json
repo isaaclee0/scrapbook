@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444864953/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/gingerbread-houses",
+    "CustomFileName": "88101736444864953",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444864953",
+      "url": "https://www.pinterest.com/pin/88101736444864953/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Gingerbread house",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "flourfloozie",
+        "url": "https://www.pinterest.com/flourfloozie/",
+        "name": "Teresa Wood"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/gingerbread-houses/",
+        "name": "Gingerbread Houses",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0c/91/46/0c9146819a4acdd3e9a3c9f9fab7ff56.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

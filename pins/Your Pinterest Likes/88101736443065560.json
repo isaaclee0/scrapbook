@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443065560/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443065560",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443065560",
+      "url": "https://www.pinterest.com/pin/88101736443065560/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "imgur.com",
+      "description": "THE essentials via @GOTSTYLE",
+      "link": "http://imgur.com/kVGbH",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6c/27/82/6c2782a4901c27e3e500beeba1a39882.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

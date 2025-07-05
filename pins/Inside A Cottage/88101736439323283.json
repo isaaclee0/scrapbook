@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439323283/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/inside-a-cottage",
+    "CustomFileName": "88101736439323283",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439323283",
+      "url": "https://www.pinterest.com/pin/88101736439323283/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Cottage bedroom",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "silvivall",
+        "url": "https://www.pinterest.com/silvivall/",
+        "name": "Silvia Valldeperas"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/inside-a-cottage/",
+        "name": "Inside a cottage",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/12/05/75/1205756ea319a3555f1c325e90a3b5d6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

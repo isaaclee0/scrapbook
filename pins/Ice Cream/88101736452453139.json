@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452453139/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/ice-cream",
+    "CustomFileName": "88101736452453139",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452453139",
+      "url": "https://www.pinterest.com/pin/88101736452453139/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Passionfruit semifreddo",
+      "description": "Passionfruit semifreddo, oh the sweetness of summer.",
+      "link": "http://www.gourmettraveller.com.au/passionfruit_semifreddo.htm?rcid=4725&mode=rcid",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/ice-cream/",
+        "name": "Ice cream",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f6/1c/99/f61c99703f599278d881de233618b888.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

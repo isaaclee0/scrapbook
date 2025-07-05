@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440877132/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736440877132",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440877132",
+      "url": "https://www.pinterest.com/pin/88101736440877132/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Might need to try this",
+      "link": "https://www.instagram.com/p/7qTWRRIWft/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4c/e9/4d/4ce94d74e08fb76b17107e8d15a8f702.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

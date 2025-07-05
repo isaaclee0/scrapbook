@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439315491/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cute-kitchens",
+    "CustomFileName": "88101736439315491",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439315491",
+      "url": "https://www.pinterest.com/pin/88101736439315491/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Inspiration",
+      "description": "An inspirational image from Farrow and Ball",
+      "link": "http://inspiration.farrow-ball.com/itemdetails.aspx?id=1161",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cute-kitchens/",
+        "name": "Cute Kitchens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/11/bc/76/11bc76388c372c1a693f426975d080f5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

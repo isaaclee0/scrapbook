@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451509022/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736451509022",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451509022",
+      "url": "https://www.pinterest.com/pin/88101736451509022/",
+      "type": "pin",
+      "title": "What Causes Split Ends?",
+      "gridTitle": "What Causes Split Ends?",
+      "description": "Hair.com spills the tea on their favorite products to keep your ends healthy between salon visits",
+      "link": "https://www.hair.com/how-often-should-you-trim-your-hair.html?utm_source=pinterest&utm_medium=social",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "hairdotcom",
+        "url": "https://www.pinterest.com/hairdotcom/",
+        "name": "Hair.com by L'Oréal"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ce/d0/60/ced060a2d05648f16dab31e3337d2307.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/d5/62/58/d562589c9a53737a3116865e574e73e3.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

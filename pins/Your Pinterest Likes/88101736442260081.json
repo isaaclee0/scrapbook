@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442260081/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442260081",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442260081",
+      "url": "https://www.pinterest.com/pin/88101736442260081/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "This item is unavailable | Etsy",
+      "description": "Coffee Quote | I have measured out my life with coffee spoons. | Original Linoleum Block Print",
+      "link": "http://www.etsy.com/listing/158358105/coffee-spoons-original-linoleum-block?ref=shop_home_active",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8a/52/5e/8a525e29ecd9ff71814dc2c00861ba56.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

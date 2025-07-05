@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442447301/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442447301",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442447301",
+      "url": "https://www.pinterest.com/pin/88101736442447301/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Small Wood Items",
+      "description": "I think I need this. It's so creative! This would be perfect for makeup. I love it! Woodworking easy tips on http://www.cooldiywoodworkingeasyprojects.com",
+      "link": "http://www.yonderwood.com/smallwood.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/19/1d/4d/191d4d2d8d8aab915e5ca62af420b7e6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

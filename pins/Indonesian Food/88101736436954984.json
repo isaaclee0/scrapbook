@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436954984/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/indonesian-food",
+    "CustomFileName": "88101736436954984",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436954984",
+      "url": "https://www.pinterest.com/pin/88101736436954984/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Cumi Bali ~ grilled squit balinese",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/indonesian-food/",
+        "name": "Indonesian Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/33/d4/a0/33d4a0844d1b3c29c29d49f9d5be8930.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

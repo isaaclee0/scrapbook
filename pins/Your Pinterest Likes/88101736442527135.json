@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442527135/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442527135",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442527135",
+      "url": "https://www.pinterest.com/pin/88101736442527135/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Watch out for the 7 Deadly Lies of Deployment! Read about them here.  Really good advice from God's word!",
+      "link": "http://www.faithdeployed.com/2010/12/the-seven-deadly-lies-of-deployment/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/50/83/d4/5083d4cea09ca89f2f95d9372a5e7e6e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

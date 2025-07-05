@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440192399/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/no-bake",
+    "CustomFileName": "88101736440192399",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440192399",
+      "url": "https://www.pinterest.com/pin/88101736440192399/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Must have a go",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "shelley0506",
+        "url": "https://www.pinterest.com/shelley0506/",
+        "name": "Shelley Walker"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/no-bake/",
+        "name": "No Bake",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b6/95/f2/b695f20b0d9ac296a74294a99ceb524a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

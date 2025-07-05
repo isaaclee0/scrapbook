@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453079182/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/learn-to-paint",
+    "CustomFileName": "88101736453079182",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453079182",
+      "url": "https://www.pinterest.com/pin/88101736453079182/",
+      "type": "pin",
+      "title": "Please follow me",
+      "gridTitle": "Please follow me",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "azizmajeed1711",
+        "url": "https://www.pinterest.com/azizmajeed1711/",
+        "name": "Aziz.majeed"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/learn-to-paint/",
+        "name": "Learn To Paint",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/67/bc/c0/67bcc0a6db18e87ad4b0b623925bcea3.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/a7/8d/be/a78dbe2018e4e724d9d40dcbac0cd5ab.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

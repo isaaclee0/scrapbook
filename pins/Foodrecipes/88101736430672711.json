@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430672711/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430672711",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430672711",
+      "url": "https://www.pinterest.com/pin/88101736430672711/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Eggplant Involtini with Homemade Ricotta | Alexandra's Kitchen",
+      "description": "Eggplant Involtini",
+      "link": "http://www.alexandracooks.com/2011/09/29/eggplant-involtini/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bd/0d/c3/bd0dc328c587babaf72ea90478b0ffe8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449168272/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736449168272",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449168272",
+      "url": "https://www.pinterest.com/pin/88101736449168272/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Easy recipe Caramilk rocky road - Only 4 ingredients - VJ cooks",
+      "description": "Caramilk rocky road - VJ Cooks",
+      "link": "https://vjcooks.com/caramilk-rocky-road/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2c/d4/8e/2cd48e48a9704aad7245a596d84c6d6e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

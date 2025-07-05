@@ -1,0 +1,76 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451516746/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/writing",
+    "CustomFileName": "88101736451516746",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451516746",
+      "url": "https://www.pinterest.com/pin/88101736451516746/",
+      "type": "pin",
+      "title": "👍",
+      "gridTitle": "👍",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 8,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "englishgrammarhere",
+        "url": "https://www.pinterest.com/englishgrammarhere/",
+        "name": "English Grammar Here"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/writing/",
+        "name": "Writing",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5d/de/d3/5dded324e9b721c4e40769febb45c356.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/cc/53/5f/cc535f37d2f1705215aab98b7a5432dc.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/9f/8d/74/9f8d749124d9a8d8f4753efb0b8d997d.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/59/a2/95/59a2952aaed539e47d0c8de18cec0ec3.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/c8/cb/69/c8cb696dbb29d304d83b0628c86004c1.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/bb/09/19/bb0919a0906578cbe88183b1e90cc49a.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/7f/ca/1c/7fca1c8e22188f661ea144c541d5b548.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/de/ad/bb/deadbb930038ae464356918afa0804b5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

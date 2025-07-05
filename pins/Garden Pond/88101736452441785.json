@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452441785/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/garden-pond",
+    "CustomFileName": "88101736452441785",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452441785",
+      "url": "https://www.pinterest.com/pin/88101736452441785/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "thepattiegroup",
+        "url": "https://www.pinterest.com/thepattiegroup/",
+        "name": "The Pattie Group"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/garden-pond/",
+        "name": "Garden Pond",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/98/d6/3a/98d63a6005c77f969b7fd3474bfd76db.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

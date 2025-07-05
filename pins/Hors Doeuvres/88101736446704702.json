@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446704702/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hors-doeuvres",
+    "CustomFileName": "88101736446704702",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446704702",
+      "url": "https://www.pinterest.com/pin/88101736446704702/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "listorecipes.com",
+      "description": "Quick Salami & Cream Cheese Bites",
+      "link": "http://www.listorecipes.com/40-easy-appetizer-recipes-anyone-can-make/25/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hors-doeuvres/",
+        "name": "Hors D'oeuvres",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cf/61/4c/cf614c265950559daf1b03df69fb5698.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

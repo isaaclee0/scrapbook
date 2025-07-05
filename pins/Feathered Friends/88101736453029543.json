@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453029543/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/feathered-friends",
+    "CustomFileName": "88101736453029543",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453029543",
+      "url": "https://www.pinterest.com/pin/88101736453029543/",
+      "type": "pin",
+      "title": "this bird wants a beautiful tail.",
+      "gridTitle": "this bird wants a beautiful tail.",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "wangjianning745",
+        "url": "https://www.pinterest.com/wangjianning745/",
+        "name": "Pet&dog products manufacturer "
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/feathered-friends/",
+        "name": "Feathered friends",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e1/af/d1/e1afd118815e813481586d664a7253a8.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/91/a8/f8/91a8f8b89b3b39e8ea1cef6a5c8ff5ac.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

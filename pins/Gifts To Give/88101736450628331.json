@@ -1,0 +1,47 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450628331/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/gifts-to-give",
+    "CustomFileName": "88101736450628331",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450628331",
+      "url": "https://www.pinterest.com/pin/88101736450628331/",
+      "type": "pin",
+      "title": "Diy Origami Fashion Bag",
+      "gridTitle": "Diy Origami Fashion Bag",
+      "description": "Follow me for more handmade tutorial. Why not show your work in the comment area?",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/gifts-to-give/",
+        "name": "Gifts to give",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e4/d8/15/e4d81571fdcfff8744bff7380e293ada.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/ed/2c/af/ed2caf2cb0d12af6ef8897ca132002ad.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450057010/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736450057010",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450057010",
+      "url": "https://www.pinterest.com/pin/88101736450057010/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Marie Curie | Rotten Tomatoes",
+      "description": "Marie Curie: The Courage of Knowledge",
+      "link": "https://www.rottentomatoes.com/m/marie_curie_the_courage_of_knowledge_2017",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/56/59/9a/56599a893fe67918d86acebec2e56ad4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

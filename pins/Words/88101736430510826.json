@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430510826/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736430510826",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430510826",
+      "url": "https://www.pinterest.com/pin/88101736430510826/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "All Things Simplified",
+      "description": "...",
+      "link": "http://www.fabulousfloridamommy.blogspot.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b8/0d/c4/b80dc4e12df870ae7b1fcf593668df9a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

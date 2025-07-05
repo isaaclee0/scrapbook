@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434774332/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/little-office",
+    "CustomFileName": "88101736434774332",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434774332",
+      "url": "https://www.pinterest.com/pin/88101736434774332/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Shabby Chic in pastels",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/little-office/",
+        "name": "Little Office",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/80/b6/e0/80b6e049a792c08b83e349e68d988dca.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

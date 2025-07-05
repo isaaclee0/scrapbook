@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441940109/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736441940109",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441940109",
+      "url": "https://www.pinterest.com/pin/88101736441940109/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Stars Without Photoshop",
+      "description": "Stars without retouching-article and photos Yahoo News",
+      "link": "http://shine.yahoo.com/the-thread/stars-without-photoshop-183500648.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "kdwildflowers",
+        "url": "https://www.pinterest.com/kdwildflowers/",
+        "name": "K. D. Wildflowers"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/30/fd/98/30fd988b7b210fd8729e966066a0b172.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453509185/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cake-decorating",
+    "CustomFileName": "88101736453509185",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453509185",
+      "url": "https://www.pinterest.com/pin/88101736453509185/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "TikTok - Make Your Day",
+      "description": " ",
+      "link": "https://vm.tiktok.com/ZMLoVgxtS/?k=1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "RemaZarema",
+        "url": "https://www.pinterest.com/RemaZarema/",
+        "name": "Rema&Zarema"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cake-decorating/",
+        "name": "Cake Decorating",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fa/17/8d/fa178d72d775a8282bbddfe3a9affac6.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/37/57/39/37573980bf697170cf82e7e894540c28.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

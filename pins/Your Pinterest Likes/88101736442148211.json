@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442148211/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442148211",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442148211",
+      "url": "https://www.pinterest.com/pin/88101736442148211/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "ice balloons",
+      "description": "*Colored ice balls*    Fill balloons with water and add food coloring, once frozen cut the balloons off and voila! Look like giant marbles :)",
+      "link": "http://www.flickr.com/photos/queenvannacreations/6802953349/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/97/ea/31/97ea3197b0aada52072514f90e1696db.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434625630/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fishy",
+    "CustomFileName": "88101736434625630",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434625630",
+      "url": "https://www.pinterest.com/pin/88101736434625630/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "foodgawker",
+      "description": "Sweet, salty, and spicy-- the rub will keep up to 6 months in your freezer, but the shrimp will be gone in an instant!",
+      "link": "http://foodgawker.com/popular/favorites/page/4/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fishy/",
+        "name": "Fishy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/14/44/4a/14444a42e323b1fbbd82c91474479812.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

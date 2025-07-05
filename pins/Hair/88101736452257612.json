@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452257612/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736452257612",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452257612",
+      "url": "https://www.pinterest.com/pin/88101736452257612/",
+      "type": "pin",
+      "title": "I'm in love with her hair😍",
+      "gridTitle": "I'm in love with her hair😍",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "SnaTips",
+        "url": "https://www.pinterest.com/SnaTips/",
+        "name": "SnaTips  | Delicious Recipes, Fashion, Beauty, Gardening, & More."
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/be/19/d5/be19d548caf699e284e6b427a67ace14.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/fd/ca/e0/fdcae054d25104e95f213de12c71d88e.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

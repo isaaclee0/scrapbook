@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442471336/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442471336",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442471336",
+      "url": "https://www.pinterest.com/pin/88101736442471336/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Laundry Dresser",
+      "description": "DIY-  Laundry Dresser",
+      "link": "http://ana-white.com/2011/07/laundry-dresser",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ca/51/a6/ca51a6c0f7f6a8f5ff72c9a627869adb.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

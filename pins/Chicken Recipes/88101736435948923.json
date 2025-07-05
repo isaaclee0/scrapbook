@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435948923/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736435948923",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435948923",
+      "url": "https://www.pinterest.com/pin/88101736435948923/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Leftover turkey and leek pie recipe | Jamie Oliver recipes",
+      "description": "This is dead simple, completely versatile and absolutely gorgeous. It's not a pretty-boy pie; it's a proper, old-school pie that everyone will be over the moon to see on the table. I'm putting leftover white turkey meat to good use here, but you could also mix brown meat in there too.",
+      "link": "http://www.jamieoliver.com/recipes/turkey-recipes/turkey-and-sweet-leek-pie",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/75/f0/f2/75f0f248fd2f3edcc39356d6b45f2fad.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

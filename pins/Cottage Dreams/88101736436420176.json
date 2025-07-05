@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436420176/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-dreams",
+    "CustomFileName": "88101736436420176",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436420176",
+      "url": "https://www.pinterest.com/pin/88101736436420176/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Old English Country Cottage!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "kathycolleen",
+        "url": "https://www.pinterest.com/kathycolleen/",
+        "name": "KathyColleen"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-dreams/",
+        "name": "Cottage Dreams",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4a/f8/e4/4af8e4c5df7389fa1cf7d2586bac78dd.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

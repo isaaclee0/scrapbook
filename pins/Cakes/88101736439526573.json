@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439526573/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736439526573",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439526573",
+      "url": "https://www.pinterest.com/pin/88101736439526573/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Martha Stewart",
+      "description": "Yule log cake for woodland fairy party",
+      "link": "http://www.marthastewart.com/268996/woodland-sweets-fanciful-forestry",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/94/ec/64/94ec640906dc0980533afeb2d7263e9e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

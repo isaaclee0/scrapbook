@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439022236/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/games",
+    "CustomFileName": "88101736439022236",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439022236",
+      "url": "https://www.pinterest.com/pin/88101736439022236/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Giant foot yard game. Haha this would be so fun!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/games/",
+        "name": "Games",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/de/70/0d/de700d72b7f7ebb6fb8b60238d0067ce.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446226702/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/rabbit-care",
+    "CustomFileName": "88101736446226702",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446226702",
+      "url": "https://www.pinterest.com/pin/88101736446226702/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Great idea for the food area, for guinea pigs too",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/rabbit-care/",
+        "name": "Rabbit care",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/49/ff/9f/49ff9f93f9061e232189d7642d9665ff.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

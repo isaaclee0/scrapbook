@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442828035/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442828035",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442828035",
+      "url": "https://www.pinterest.com/pin/88101736442828035/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Awkward Pastor's Wife",
+      "description": "The Awkward Pastor's Wife: Chinny Chin Chin's Cat-tastrophe",
+      "link": "http://theawkwardpastorswife.blogspot.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/77/9d/de/779dde9aa8d3008fd17a9a1e13658c70.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

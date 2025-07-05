@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444644818/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/inside-a-cottage",
+    "CustomFileName": "88101736444644818",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444644818",
+      "url": "https://www.pinterest.com/pin/88101736444644818/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Pinterest",
+      "description": "Curl up with a good book and a cup of tea by a cozy cabin fire. Description from pinterest.com. I searched for this on bing.com/images",
+      "link": "http://pinterest.com/pin/275423333436492791",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/inside-a-cottage/",
+        "name": "Inside a cottage",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/48/94/05/489405541f462609472e774ff3414dc2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

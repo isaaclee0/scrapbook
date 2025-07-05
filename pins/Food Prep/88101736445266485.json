@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445266485/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/food-prep",
+    "CustomFileName": "88101736445266485",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445266485",
+      "url": "https://www.pinterest.com/pin/88101736445266485/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "how to freeze soup in personal size portions",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/food-prep/",
+        "name": "Food prep",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e8/c9/5e/e8c95e698c2b48b567e577cf1e7051f2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

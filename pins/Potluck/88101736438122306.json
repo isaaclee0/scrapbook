@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438122306/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potluck",
+    "CustomFileName": "88101736438122306",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438122306",
+      "url": "https://www.pinterest.com/pin/88101736438122306/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Creamy mushroom pasta bake",
+      "description": "Baked pasta with mushrooms",
+      "link": "http://simply-delicious-food.com/2014/05/21/baked-pasta-mushrooms-mozzarella-thyme/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potluck/",
+        "name": "Potluck",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d1/49/60/d14960906f4b3ef088b340f149668e8c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

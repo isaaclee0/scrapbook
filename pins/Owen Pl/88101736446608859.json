@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446608859/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/owen-pl",
+    "CustomFileName": "88101736446608859",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446608859",
+      "url": "https://www.pinterest.com/pin/88101736446608859/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Grey painted brick with white accents - love this!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "maileeyoder",
+        "url": "https://www.pinterest.com/maileeyoder/",
+        "name": "Mailee Yoder"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/owen-pl/",
+        "name": "Owen pl",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/44/68/37/446837f8076c41663900f97ced2eb279.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

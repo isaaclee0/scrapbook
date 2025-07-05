@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441378732/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potato-recipes",
+    "CustomFileName": "88101736441378732",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441378732",
+      "url": "https://www.pinterest.com/pin/88101736441378732/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Allrecipes | Recipes, How-Tos, Videos and More",
+      "description": "Potato and Mushroom Pie...seems a bit on the easy side",
+      "link": "http://allrecipes.co.uk/recipe/7104/potato-and-mushroom-pie.aspx",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potato-recipes/",
+        "name": "Potato Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/65/91/c2/6591c235e4efbdfc9d9f1f60865a5c89.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

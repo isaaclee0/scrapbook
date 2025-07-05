@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452632791/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736452632791",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452632791",
+      "url": "https://www.pinterest.com/pin/88101736452632791/",
+      "type": "pin",
+      "title": "Coiffure effilée courte",
+      "gridTitle": "Coiffure effilée courte",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 4,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7d/0a/2d/7d0a2dfec767523118d1966d9107ff49.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

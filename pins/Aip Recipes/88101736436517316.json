@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436517316/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736436517316",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436517316",
+      "url": "https://www.pinterest.com/pin/88101736436517316/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "10 Steps for Starting Autoimmune Paleo",
+      "description": "Autoimmune Paleo: How to get started",
+      "link": "http://empoweredsustenance.com/autoimmune-paleo-getting-started/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d2/52/a2/d252a2c33496f8f9e926f7011bbb7b7a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

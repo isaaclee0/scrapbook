@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441851172/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736441851172",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441851172",
+      "url": "https://www.pinterest.com/pin/88101736441851172/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Gun Control",
+      "description": "Logic win",
+      "link": "http://funnyjunk.com/funny_pictures/4300695/Gun+Control/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/25/79/18/2579181e53a1311686026734c4956361.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

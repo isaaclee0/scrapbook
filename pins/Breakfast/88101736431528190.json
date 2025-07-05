@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431528190/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/breakfast",
+    "CustomFileName": "88101736431528190",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431528190",
+      "url": "https://www.pinterest.com/pin/88101736431528190/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "BlueHost.com",
+      "description": "Sugar crusted vanilla french toast",
+      "link": "http://www.phemomenon.com/vanilla-french-toas/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/breakfast/",
+        "name": "Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fa/a1/ed/faa1ed1920dd5ba89a2a95f6b25a2eee.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

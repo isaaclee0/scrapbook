@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439989900/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/potluck",
+    "CustomFileName": "88101736439989900",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439989900",
+      "url": "https://www.pinterest.com/pin/88101736439989900/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Spicy Cajun Cornbread Casserole + Mardi Gras Boogie",
+      "description": "Spicy Cajun Cornbread Casserole",
+      "link": "http://cajundelights.blogspot.com/2011/02/spicy-cajun-cornbread-casserole-mardi.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/potluck/",
+        "name": "Potluck",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/42/15/3c/42153c5423589ee014d75d8476a77afa.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

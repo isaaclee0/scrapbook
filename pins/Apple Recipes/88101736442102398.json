@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442102398/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/apple-recipes",
+    "CustomFileName": "88101736442102398",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442102398",
+      "url": "https://www.pinterest.com/pin/88101736442102398/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Apple Cake",
+      "description": "Things{we}make Apple Cake",
+      "link": "http://thingswemake.co.uk/2014/03/23/apple-cake/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/apple-recipes/",
+        "name": "Apple Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4d/05/e6/4d05e61c2dc9da4a82a8dcb037ee7da6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

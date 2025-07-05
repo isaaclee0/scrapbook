@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435450496/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/party-food-ideas",
+    "CustomFileName": "88101736435450496",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435450496",
+      "url": "https://www.pinterest.com/pin/88101736435450496/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Twin baby shower watermelon",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/party-food-ideas/",
+        "name": "Party Food/Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9d/54/c9/9d54c90da4e95cbbdc41e1c5c7a62119.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

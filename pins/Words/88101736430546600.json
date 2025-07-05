@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430546600/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736430546600",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430546600",
+      "url": "https://www.pinterest.com/pin/88101736430546600/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Hygea - Träning & Hälsa",
+      "description": "purpose",
+      "link": "http://hygea.blogg.se/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d4/c7/b4/d4c7b4a4977914fb78ca70ad141c828b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

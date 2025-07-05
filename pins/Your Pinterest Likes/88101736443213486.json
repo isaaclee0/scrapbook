@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443213486/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443213486",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443213486",
+      "url": "https://www.pinterest.com/pin/88101736443213486/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Redirecting",
+      "description": "Framed love letters",
+      "link": "http://emilyaclark.blogspot.com/2012/02/love-notes.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/46/22/4e/46224eb7a64e8eba0d439c425c2e5b67.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

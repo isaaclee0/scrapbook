@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450872780/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736450872780",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450872780",
+      "url": "https://www.pinterest.com/pin/88101736450872780/",
+      "type": "pin",
+      "title": "Lemon Lavender Scones",
+      "gridTitle": "Lemon Lavender Scones",
+      "description": " ",
+      "link": "https://www.forkinthekitchen.com/lemon-lavender-scones/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "forkinthekitchen",
+        "url": "https://www.pinterest.com/forkinthekitchen/",
+        "name": "Fork in the Kitchen | Easy Recipes"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/45/43/87/45438720fcc11115695afd91a797850d.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/fa/58/3d/fa583de3a7119992d22961eeedebbcce.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

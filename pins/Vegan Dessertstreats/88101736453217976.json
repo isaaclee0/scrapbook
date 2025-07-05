@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453217976/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/vegan-dessertstreats",
+    "CustomFileName": "88101736453217976",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453217976",
+      "url": "https://www.pinterest.com/pin/88101736453217976/",
+      "type": "pin",
+      "title": "Vegan Toffee Crisp Chocolate Bars",
+      "gridTitle": "Vegan Toffee Crisp Chocolate Bars",
+      "description": " ",
+      "link": "https://www.addictedtodates.com/homemade-toffee-crisp-bars/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "addictedtodates",
+        "url": "https://www.pinterest.com/addictedtodates/",
+        "name": "Addicted to Dates"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/vegan-dessertstreats/",
+        "name": "Vegan Desserts/Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/79/f9/c9/79f9c911104bbb50f3d9edb86ed12681.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/71/e5/e6/71e5e64a7c511e40b0a113a16e2e38aa.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

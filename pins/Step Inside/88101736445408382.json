@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445408382/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/step-inside",
+    "CustomFileName": "88101736445408382",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445408382",
+      "url": "https://www.pinterest.com/pin/88101736445408382/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Grand and doable!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/step-inside/",
+        "name": "Step Inside..",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/79/6c/ba/796cba22b6a9b87259e57993f714f7b5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

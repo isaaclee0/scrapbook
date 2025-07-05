@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452587640/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bring-in-the-light",
+    "CustomFileName": "88101736452587640",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452587640",
+      "url": "https://www.pinterest.com/pin/88101736452587640/",
+      "type": "pin",
+      "title": "Galley",
+      "gridTitle": "Galley",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 2,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "lester1966",
+        "url": "https://www.pinterest.com/lester1966/",
+        "name": "Lesley Whyte Reford"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bring-in-the-light/",
+        "name": "Bring In The Light",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ee/b9/48/eeb948f476a21b251863bb6fcf81fc3f.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/a0/85/c1/a085c1c77f725d54cae6be8452924d00.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

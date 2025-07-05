@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450937037/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pastries",
+    "CustomFileName": "88101736450937037",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450937037",
+      "url": "https://www.pinterest.com/pin/88101736450937037/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Blueberry Mini Pies - SUZIE SWEET TOOTH",
+      "description": "Blueberry Mini Pies",
+      "link": "https://suziesweettooth.com/2012/05/20/blueberry-mini-pies/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pastries/",
+        "name": "pastries",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/19/86/43/1986436fb24866b4b4d3b54dfa3ef938.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

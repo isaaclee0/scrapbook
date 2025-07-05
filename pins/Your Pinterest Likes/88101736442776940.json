@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442776940/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442776940",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442776940",
+      "url": "https://www.pinterest.com/pin/88101736442776940/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Make a folding constellation book. Use with Apologia astronomy. #homeschool science. Constellation activity",
+      "link": "http://quinceandquire.typepad.com/quince_and_quire/2011/03/starry.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6b/6c/eb/6b6cebc1f6528fd31785437d2bb6b35e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440979000/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cute-kitchens",
+    "CustomFileName": "88101736440979000",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440979000",
+      "url": "https://www.pinterest.com/pin/88101736440979000/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chateau Chic",
+      "description": "Chateau Chic",
+      "link": "http://chateau-chic.blogspot.com.au/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cute-kitchens/",
+        "name": "Cute Kitchens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/50/ee/f3/50eef3b634358926ecda3d36b0322cc7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450354046/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/vietnamese-food",
+    "CustomFileName": "88101736450354046",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450354046",
+      "url": "https://www.pinterest.com/pin/88101736450354046/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Amazing lunch.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "VXXvegansVN",
+        "url": "https://www.pinterest.com/VXXvegansVN/",
+        "name": "VXX Vegans in Vietnam"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/vietnamese-food/",
+        "name": "Vietnamese Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/35/93/1d/35931dd43aed4464c76ddbefb2b3142f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

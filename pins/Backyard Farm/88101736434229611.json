@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434229611/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/backyard-farm",
+    "CustomFileName": "88101736434229611",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434229611",
+      "url": "https://www.pinterest.com/pin/88101736434229611/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Journal",
+      "description": "Cold frame.",
+      "link": "http://www.upcottfarm.com/journal/page/3/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/backyard-farm/",
+        "name": "Backyard Farm",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/61/b6/37/61b6378de0b43521faf942cb4398d8f4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448585133/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736448585133",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448585133",
+      "url": "https://www.pinterest.com/pin/88101736448585133/",
+      "type": "pin",
+      "title": "Balkan Lamingtons Scruffies (Chocolate Coconut Sponge Cake)",
+      "gridTitle": "Balkan Lamingtons Scruffies (Chocolate Coconut Sponge Cake)",
+      "description": "Coconut chocolate sponge cake called Scruffies aka Balkan Lamingtons.",
+      "link": "http://www.balkanlunchbox.com/coconut-chocolate-dessert-squares-aka-scruffies-recipe-cupavci/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 16,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "balkanlunchbox",
+        "url": "https://www.pinterest.com/balkanlunchbox/",
+        "name": "Balkan Lunch Box"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/02/51/35/025135086263d17720e34cca36cbae66.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/e3/ce/a3/e3cea30823618703cee1e031e8c8d2f8.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

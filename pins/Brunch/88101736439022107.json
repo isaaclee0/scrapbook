@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439022107/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/brunch",
+    "CustomFileName": "88101736439022107",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439022107",
+      "url": "https://www.pinterest.com/pin/88101736439022107/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Recetas con jamón york o carne picada",
+      "description": "Receta de pastel de jamón y pollo",
+      "link": "http://www.todaslasrecetas.es/receta/s/?q=jam%C3%B3n%20york%20o%20carne%20picada",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/brunch/",
+        "name": "Brunch",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8a/f4/14/8af4143de42504f0ab5bf126e677a9e9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

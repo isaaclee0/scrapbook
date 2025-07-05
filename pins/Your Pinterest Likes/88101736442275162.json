@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442275162/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442275162",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442275162",
+      "url": "https://www.pinterest.com/pin/88101736442275162/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "allthingsfarmer.com",
+      "description": "All Things Farmer:",
+      "link": "http://www.allthingsfarmer.com/2012/09/atl-decorators-showhouse-in-atlanta.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c7/e9/d0/c7e9d0f6b6706b4e211b5617f86d3faa.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

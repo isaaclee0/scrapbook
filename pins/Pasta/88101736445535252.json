@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445535252/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pasta",
+    "CustomFileName": "88101736445535252",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445535252",
+      "url": "https://www.pinterest.com/pin/88101736445535252/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "One-Pot Swedish Meatball Pasta Recipe by Tasty",
+      "description": "One-Pot Swedish Meatball Pasta",
+      "link": "https://www.buzzfeed.com/nickguillory/heres-a-quick-and-easy-swedish-meatball-pasta-dinner-that-yo",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "buzzfeedtasty",
+        "url": "https://www.pinterest.com/buzzfeedtasty/",
+        "name": "Tasty"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pasta/",
+        "name": "Pasta",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ac/9e/67/ac9e679cf93c7255cedcc579461f2568.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/96/3e/f7/963ef73d9419a2a2185bc0ed020db3ec.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

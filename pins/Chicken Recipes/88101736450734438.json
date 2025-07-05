@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450734438/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736450734438",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450734438",
+      "url": "https://www.pinterest.com/pin/88101736450734438/",
+      "type": "pin",
+      "title": "LE KEBAB MAISON",
+      "gridTitle": "LE KEBAB MAISON",
+      "description": "Un kebab au poulet à préparer de A à Z (de la viande aux frites) ! Plus de conseils sur notre site.",
+      "link": "https://www.chefclub.tv/fr/recettes/original/577bcc91-4f9e-55d5-e4e4-f82f9f00e7d4/le-kebab-maison-salade-tomate-oignon-%C3%A9videmment/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "chefclubnw",
+        "url": "https://www.pinterest.com/chefclubnw/",
+        "name": "Chefclub"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/99/fb/a5/99fba5190c63e94dbca95ca4c128e5ad.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/50/72/c1/5072c19afdec334b98b059358e5a2425.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

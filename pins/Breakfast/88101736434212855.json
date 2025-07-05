@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434212855/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/breakfast",
+    "CustomFileName": "88101736434212855",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434212855",
+      "url": "https://www.pinterest.com/pin/88101736434212855/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Tropical Paleo Granola",
+      "description": "Tropical Paleonola by Michelle Tam http://nomnompaleo.com",
+      "link": "http://nomnompaleo.com/post/63395402592/tropical-paleo-granola",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/breakfast/",
+        "name": "Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3b/8a/5a/3b8a5a86a0fc91d4f2facd6797fc2333.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445388103/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tarts",
+    "CustomFileName": "88101736445388103",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445388103",
+      "url": "https://www.pinterest.com/pin/88101736445388103/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Tarte poires et chocolat",
+      "description": "Tarte poires chocolat",
+      "link": "http://www.marciatack.fr/tarte-poires-chocolat/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tarts/",
+        "name": "Tarts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4c/c3/6b/4cc36bc99cc4564d393dd762ee42b1c9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

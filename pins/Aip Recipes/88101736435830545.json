@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435830545/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736435830545",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435830545",
+      "url": "https://www.pinterest.com/pin/88101736435830545/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Sweet Potato, Artichoke, and Bacon Soup - A Clean Plate #Paleo #AutoimmuneProtocol #AIP",
+      "link": "http://www.acleanplate.com/2013/05/17/sweet-potato-artichoke-and-bacon-soup/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1f/00/b4/1f00b44dfe071f52e9998a5a7fd4b155.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

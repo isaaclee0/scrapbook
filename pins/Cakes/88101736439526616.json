@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439526616/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736439526616",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439526616",
+      "url": "https://www.pinterest.com/pin/88101736439526616/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "in-the-corner.com",
+      "description": "Baby shower cake! How cute.",
+      "link": "http://in-the-corner.com/?p=24459",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bc/5d/db/bc5ddbc3031dcf5221f8a9b5e730e771.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

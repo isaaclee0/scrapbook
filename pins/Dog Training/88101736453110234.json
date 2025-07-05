@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453110234/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/dog-training",
+    "CustomFileName": "88101736453110234",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453110234",
+      "url": "https://www.pinterest.com/pin/88101736453110234/",
+      "type": "pin",
+      "title": "training roll over your dog",
+      "gridTitle": "training roll over your dog",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "jascomart",
+        "url": "https://www.pinterest.com/jascomart/",
+        "name": "Jascomart"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/dog-training/",
+        "name": "Dog Training",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/67/b8/d9/67b8d91249789b8f74b1b5aad0a0a54e.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

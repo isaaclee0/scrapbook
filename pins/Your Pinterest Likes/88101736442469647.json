@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442469647/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442469647",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442469647",
+      "url": "https://www.pinterest.com/pin/88101736442469647/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "classic films",
+      "link": "http://www.ourjoyfulhome.com/5-totally-underrated-classic-films-that-you-can-watch-on-netflix/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "johanna_dean",
+        "url": "https://www.pinterest.com/johanna_dean/",
+        "name": "Johanna Dean"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/31/f2/a0/31f2a0eafd90fbc7972e8ae7be761fb6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

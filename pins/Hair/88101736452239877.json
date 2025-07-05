@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452239877/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736452239877",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452239877",
+      "url": "https://www.pinterest.com/pin/88101736452239877/",
+      "type": "pin",
+      "title": "Red dreams hair",
+      "gridTitle": "Red dreams hair",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 9,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ahechtaveda",
+        "url": "https://www.pinterest.com/ahechtaveda/",
+        "name": "Lys"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4a/80/09/4a800918394aa111a578d69af14915b4.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

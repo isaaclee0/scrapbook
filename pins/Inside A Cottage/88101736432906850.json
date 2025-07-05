@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432906850/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/inside-a-cottage",
+    "CustomFileName": "88101736432906850",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432906850",
+      "url": "https://www.pinterest.com/pin/88101736432906850/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "lovely #shabby #pastel",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "jakenjuli",
+        "url": "https://www.pinterest.com/jakenjuli/",
+        "name": "Peggy Simmons"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/inside-a-cottage/",
+        "name": "Inside a cottage",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6b/fd/78/6bfd783071fea6d8f805801944ef84ca.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

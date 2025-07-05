@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431199055/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736431199055",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431199055",
+      "url": "https://www.pinterest.com/pin/88101736431199055/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Creamy Southwest Pasta with Spicy Greek Yogurt Sauce",
+      "description": "Creamy Southwest Pasta with Spicy Greek Yogurt Sauce | Tasty Kitchen: A Happy Recipe Community!",
+      "link": "http://tastykitchen.com/recipes/main-courses/creamy-southwest-pasta-with-spicy-greek-yogurt-sauce/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/11/fb/9f/11fb9f8f81eb17a2278f7819e2567357.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453029501/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/courtyardpatio",
+    "CustomFileName": "88101736453029501",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453029501",
+      "url": "https://www.pinterest.com/pin/88101736453029501/",
+      "type": "pin",
+      "title": "Photos by Leslee Mitchell. Drone shots by Jack Boyles. Architecture by Northworks Architects.",
+      "gridTitle": "Photos by Leslee Mitchell. Drone shots by Jack Boyles. Architecture by Northworks Architects.",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 3,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "lesleemitchell",
+        "url": "https://www.pinterest.com/lesleemitchell/",
+        "name": "Leslee Mitchell Photography"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/courtyardpatio/",
+        "name": "Courtyard/Patio",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/49/32/67/493267862d761a4ba414fae3280e87dc.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/3b/76/52/3b7652a5b62d0fd2302b71e4bb95a4f8.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/a0/5f/ae/a05fae8d5acfbddd2a074a5997acf4dc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

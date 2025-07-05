@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450354231/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736450354231",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450354231",
+      "url": "https://www.pinterest.com/pin/88101736450354231/",
+      "type": "pin",
+      "title": "Chicken Waldorf Salad Bites",
+      "gridTitle": "Chicken Waldorf Salad Bites",
+      "description": "A modern twist on the classic Waldorf Salad, these Chicken Waldorf Salad Bites are served on slices of apple for that perfect party appetizer! #appetizer #apple #salad #chicken #waldorf #chickenwaldorf | www.dontgobaconmyheart.co.uk",
+      "link": "https://www.dontgobaconmyheart.co.uk/chicken-waldorf-salad-bites/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "chrisdgbmh",
+        "url": "https://www.pinterest.com/chrisdgbmh/",
+        "name": "Don't Go Bacon My Heart"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/96/a1/f8/96a1f80ca9a1f19b36a6807caafc5d46.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/9f/14/0c/9f140ceb8160113a6f7cc3acf41f2607.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

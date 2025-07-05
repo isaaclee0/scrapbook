@@ -1,0 +1,60 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453217668/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-christmas",
+    "CustomFileName": "88101736453217668",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453217668",
+      "url": "https://www.pinterest.com/pin/88101736453217668/",
+      "type": "pin",
+      "title": "Cozy cottage Christmas decor 🎄✨",
+      "gridTitle": "Cozy cottage Christmas decor 🎄✨",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 4,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Lavitaio",
+        "url": "https://www.pinterest.com/Lavitaio/",
+        "name": "Lavitaio"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-christmas/",
+        "name": "Cottage Christmas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/94/7d/77/947d7782bbc4d897fb07eaf334802b91.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/5d/24/c7/5d24c721f129199a11508414e6f508bd.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/29/86/ad/2986ad52b6a568b9bb16407b146f5843.mp4",
+          "type": "video"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/c0/9d/e2/c09de21c598d749def234dba121ec58c.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

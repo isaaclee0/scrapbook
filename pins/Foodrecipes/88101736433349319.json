@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433349319/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736433349319",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433349319",
+      "url": "https://www.pinterest.com/pin/88101736433349319/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "sunstonefarmandlearn.com",
+      "description": "Corfu Rooster - it's hard to find a recipe for rooster!",
+      "link": "http://sunstonefarmandlearn.com/2009/05/26/favorite-rooster-recipes/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/71/ab/0b/71ab0bd984bceaa068db2af7678b913c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

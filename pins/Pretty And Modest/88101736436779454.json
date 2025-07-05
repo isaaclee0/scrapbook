@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436779454/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pretty-and-modest",
+    "CustomFileName": "88101736436779454",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436779454",
+      "url": "https://www.pinterest.com/pin/88101736436779454/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Chanel for Spring/Summer 2015",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pretty-and-modest/",
+        "name": "Pretty - and modest..",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/84/e9/47/84e947fea543dbc95a36d08f37fd6a19.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

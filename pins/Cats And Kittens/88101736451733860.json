@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451733860/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736451733860",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451733860",
+      "url": "https://www.pinterest.com/pin/88101736451733860/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "I told you two to stay behind me so they think its just ONE black cat!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "empresjosephine",
+        "url": "https://www.pinterest.com/empresjosephine/",
+        "name": "empress josephine"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d0/28/2b/d0282b2c450815bcb8bd4032ac2ddae8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

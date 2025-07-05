@@ -1,0 +1,56 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451520308/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736451520308",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451520308",
+      "url": "https://www.pinterest.com/pin/88101736451520308/",
+      "type": "pin",
+      "title": "Be yourself 🤗",
+      "gridTitle": "Be yourself 🤗",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 3,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "phonelyza",
+        "url": "https://www.pinterest.com/phonelyza/",
+        "name": "Elyza"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c1/ab/0d/c1ab0d155b8125c012f7045c5f7330d6.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/f9/19/50/f919508253c949c156fb94751eb021b9.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/2d/e7/7c/2de77caccd2bd0cede7292a03f6f5849.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

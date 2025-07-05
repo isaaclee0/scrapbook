@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442247168/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442247168",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442247168",
+      "url": "https://www.pinterest.com/pin/88101736442247168/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Skill of the Week: Gird Up Your Loins",
+      "description": "Gird Up Your Loins 2",
+      "link": "http://www.artofmanliness.com/2014/10/02/how-to-gird-up-your-loins-an-illustrated-guide/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b4/74/26/b47426cc9190bc0de0eb378f842b95ad.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

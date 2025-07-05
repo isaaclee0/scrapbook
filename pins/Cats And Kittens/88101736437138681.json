@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437138681/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736437138681",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437138681",
+      "url": "https://www.pinterest.com/pin/88101736437138681/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "best cat enclosure ever",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "isabelpoppit",
+        "url": "https://www.pinterest.com/isabelpoppit/",
+        "name": "Isabel Poppit"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1c/37/bb/1c37bb5bc7aee09511c9881b212c4eec.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

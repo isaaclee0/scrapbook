@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452777333/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/brit-food",
+    "CustomFileName": "88101736452777333",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452777333",
+      "url": "https://www.pinterest.com/pin/88101736452777333/",
+      "type": "pin",
+      "title": "Traditional Cornish Pasty",
+      "gridTitle": "Traditional Cornish Pasty",
+      "description": " ",
+      "link": "https://www.kitchensanctuary.com/cornish-pasties/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "kitchensanc2ary",
+        "url": "https://www.pinterest.com/kitchensanc2ary/",
+        "name": "Kitchen Sanctuary - Nicola Corbishley"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/brit-food/",
+        "name": "Brit Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0c/35/0d/0c350d90b77da29f41a95d7e991d4150.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/4d/07/fc/4d07fc8b8f833c312bbd0f9c4095f2b9.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

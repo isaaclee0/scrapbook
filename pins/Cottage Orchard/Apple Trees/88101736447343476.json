@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447343476/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-orchard/apple-trees",
+    "CustomFileName": "88101736447343476",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447343476",
+      "url": "https://www.pinterest.com/pin/88101736447343476/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Pete's (almost) year-round apple picks | Organic Gardener Magazine Australia",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "abcorganicmag",
+        "url": "https://www.pinterest.com/abcorganicmag/",
+        "name": "ABC Organic Gardener Magazine"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-orchard/",
+        "name": "Cottage Orchard",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6b/05/a2/6b05a24a767021ae85bb51330af9370c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

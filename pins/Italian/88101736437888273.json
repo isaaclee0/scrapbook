@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437888273/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/italian",
+    "CustomFileName": "88101736437888273",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437888273",
+      "url": "https://www.pinterest.com/pin/88101736437888273/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Chew | Stuffed Cabbage, Ligurian Style - ABC.com",
+      "description": "Mario's Stuffed Cabbage from the Chew.  Click here for the recipe: http://beta.abc.go.com/shows/the-chew/recipes/Mario-Batali-Stuffed-Cabbage-Ligurian-Style",
+      "link": "http://beta.abc.go.com/shows/the-chew/recipes/Mario-Batali-Stuffed-Cabbage-Ligurian-Style",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/italian/",
+        "name": "Italian",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/dc/4c/a1/dc4ca13b649d037546843cf437a46742.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

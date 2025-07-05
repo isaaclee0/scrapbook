@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452646791/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736452646791",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452646791",
+      "url": "https://www.pinterest.com/pin/88101736452646791/",
+      "type": "pin",
+      "title": "Fun and Unique Braided Hairstyles",
+      "gridTitle": "Fun and Unique Braided Hairstyles",
+      "description": " ",
+      "link": "https://amzn.to/3FPQp7G",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/66/00/9b/66009bf35e478ed5b64b8a288f38b5e5.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/c6/b6/eb/c6b6eb323e712446ec0e41170325f733.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

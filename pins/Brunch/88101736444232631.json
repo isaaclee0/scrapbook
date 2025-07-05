@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444232631/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/brunch",
+    "CustomFileName": "88101736444232631",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444232631",
+      "url": "https://www.pinterest.com/pin/88101736444232631/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Eggs benedict with smoked salmon & chives",
+      "description": "I think this will become my favourite version of Eggs Benedict. Love smoked salmon, and this looks delicious.",
+      "link": "http://www.bbcgoodfood.com/recipes/73606/eggs-benedict-with-smoked-salmon-and-chives",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/brunch/",
+        "name": "Brunch",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/64/cb/dd/64cbdd749b0f7022f220a8e9b048e4bd.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

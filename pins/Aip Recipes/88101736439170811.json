@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439170811/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736439170811",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439170811",
+      "url": "https://www.pinterest.com/pin/88101736439170811/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "simpleandmerry.com - simpleandmerry.com",
+      "description": "AIP friendly cupcakes that taste like REAL CAKE!!! Gluten free, grain free, egg free, dairy free...",
+      "link": "http://simpleandmerry.com/blog/aip-pumpkin-cupcakesmuffins/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "recipes2nourish",
+        "url": "https://www.pinterest.com/recipes2nourish/",
+        "name": "Recipes to Nourish | Real Food, Gluten-Free & Healthy Recipes"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/dd/ea/61/ddea61af6b53321c24c4893e12132c3e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

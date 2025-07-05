@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433337516/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736433337516",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433337516",
+      "url": "https://www.pinterest.com/pin/88101736433337516/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Lasagna Roll Ups - Cooking Classy",
+      "description": "Lasagna Roll Ups.. can be made in single servings and frozen! Definitely making these!",
+      "link": "http://www.cookingclassy.com/2012/02/lasagna-roll-ups/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d9/1c/70/d91c70fdafd63fe235d4a0816ada6f33.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

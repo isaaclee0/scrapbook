@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442195784/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442195784",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442195784",
+      "url": "https://www.pinterest.com/pin/88101736442195784/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Rain Barrels - DIY, Cheap, Decorative Options (Plus Care Tips)",
+      "description": "How to Build a Rain Barrel, Plus Care and Maintenance",
+      "link": "http://www.commonsensehome.com/how-to-build-a-rain-barrel-plus-care-and-maintenance/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e1/14/ba/e114baffd7a3341adb0b532e95749573.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

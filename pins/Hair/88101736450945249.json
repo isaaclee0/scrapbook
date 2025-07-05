@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450945249/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736450945249",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450945249",
+      "url": "https://www.pinterest.com/pin/88101736450945249/",
+      "type": "pin",
+      "title": "Refreshing wavy curly hair.",
+      "gridTitle": "Refreshing wavy curly hair.",
+      "description": "Curly wavy hair - Second day hair secrets revealed",
+      "link": "https://www.thecurlgirl.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "thecurlgirl",
+        "url": "https://www.pinterest.com/thecurlgirl/",
+        "name": "Independent Stylist Podcast"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8d/e3/7e/8de37e25ecfb63cc18babfdd28d8646a.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/v2/720p/4c/39/31/4c39316ac692954d0c7c976eff13f1fb_mobile.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

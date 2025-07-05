@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439662834/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/apple-recipes",
+    "CustomFileName": "88101736439662834",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439662834",
+      "url": "https://www.pinterest.com/pin/88101736439662834/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Apple Cinnamon Slab Pie",
+      "description": "Caramelized apples wrapped in flaky puff pastry dough. So EASY and delicious!",
+      "link": "http://natashaskitchen.com/2014/09/30/apple-cinnamon-slab-pie/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "natashaskitchen",
+        "url": "https://www.pinterest.com/natashaskitchen/",
+        "name": "Natashas Kitchen - Recipes for Dinner and Desserts"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/apple-recipes/",
+        "name": "Apple Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c0/1a/70/c01a705ef6fb5c17edacb91f05efadc0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

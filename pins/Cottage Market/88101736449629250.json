@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449629250/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-market",
+    "CustomFileName": "88101736449629250",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449629250",
+      "url": "https://www.pinterest.com/pin/88101736449629250/",
+      "type": "pin",
+      "title": "Market Display",
+      "gridTitle": "Market Display",
+      "description": "My market set up including Easter promotions.",
+      "link": "https://www.heavenlyhandcraftedsoaps.com.au/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "nadiaschoner",
+        "url": "https://www.pinterest.com/nadiaschoner/",
+        "name": "Heavenly Handcrafted Soaps of Australia"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-market/",
+        "name": "Cottage Market",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9c/ae/89/9cae89d3660a5c9883cd89c7bb3db618.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/1a/ec/b0/1aecb0371a4ee891e509f67c62e91d84.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

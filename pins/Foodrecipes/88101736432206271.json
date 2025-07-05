@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432206271/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736432206271",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432206271",
+      "url": "https://www.pinterest.com/pin/88101736432206271/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Philly Cheesesteak Stuffed Peppers Recipe  - Food.com",
+      "description": "Philly+Cheesesteak+Stuffed+Bell+Peppers",
+      "link": "http://www.food.com/recipe/philly-cheesesteak-stuffed-peppers-513064",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/65/5b/aa/655baac1a11154e017d8efd0f77b86f0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

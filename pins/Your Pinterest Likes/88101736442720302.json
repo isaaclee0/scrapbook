@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442720302/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442720302",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442720302",
+      "url": "https://www.pinterest.com/pin/88101736442720302/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "6 Homemade Baby Food Recipes to Save You Money",
+      "description": "1 month of baby food, 1 hour, 20 bucks",
+      "link": "http://fitnessista.com/2012/08/1-month-of-baby-food-1-hour-20/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/12/07/93/120793168808ee1796d6e050e3e34715.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

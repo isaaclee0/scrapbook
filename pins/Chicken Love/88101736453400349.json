@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453400349/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-love",
+    "CustomFileName": "88101736453400349",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453400349",
+      "url": "https://www.pinterest.com/pin/88101736453400349/",
+      "type": "pin",
+      "title": "Self-blue Pekin bantams!😃\n",
+      "gridTitle": "Self-blue Pekin bantams!😃",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "DiscoverAnimal",
+        "url": "https://www.pinterest.com/DiscoverAnimal/",
+        "name": "Discover Animal"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-love/",
+        "name": "Chicken love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e6/a6/c7/e6a6c79b8d32e925e8b21b49df3f3747.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/70/43/cf/7043cf5bc9011741cf4dd85e8e73a8f4.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

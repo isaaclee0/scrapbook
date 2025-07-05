@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443038752/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443038752",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443038752",
+      "url": "https://www.pinterest.com/pin/88101736443038752/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "plumprettysugar",
+      "description": "FleaingFrance Brocante Society a ring in a lovely french box",
+      "link": "http://plumprettysugar.tumblr.com/post/37267400957",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/06/7c/66/067c664c29828cdf00a2c4127d532ebe.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

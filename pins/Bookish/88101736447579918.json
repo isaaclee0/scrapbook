@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447579918/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736447579918",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447579918",
+      "url": "https://www.pinterest.com/pin/88101736447579918/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Auschwitz #34207: The Joe Rubinstein Story",
+      "description": "Auschwitz #34207: The Joe Rubinstein Story by Nancy Sprow... https://www.amazon.com/dp/B00VRZ40B2/ref=cm_sw_r_pi_dp_U_x_mLhDCbH5Y7B0Z",
+      "link": "https://www.amazon.com/dp/B00VRZ40B2/ref=cm_sw_r_pi_dp_U_x_mLhDCbH5Y7B0Z",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/cd/0c/7b/cd0c7b0807d8eca94d0c2bbdee5c65df.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439526708/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736439526708",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439526708",
+      "url": "https://www.pinterest.com/pin/88101736439526708/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "This is adorable.",
+      "link": "http://www.flickr.com/photos/wildorchidbaking/6281636547/in/photostream",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5f/d5/1d/5fd51d3d6d0837f3dcb4b80ebd8b1674.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

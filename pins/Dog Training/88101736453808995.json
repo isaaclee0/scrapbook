@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453808995/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/dog-training",
+    "CustomFileName": "88101736453808995",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453808995",
+      "url": "https://www.pinterest.com/pin/88101736453808995/",
+      "type": "pin",
+      "title": "puppy training - leave it",
+      "gridTitle": "puppy training - leave it",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ashlyndixon9",
+        "url": "https://www.pinterest.com/ashlyndixon9/",
+        "name": "ashlyn"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/dog-training/",
+        "name": "Dog Training",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/bb/fd/51/bbfd515a82944fbb40b31f45d14b5a44.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

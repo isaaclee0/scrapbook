@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442260111/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442260111",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442260111",
+      "url": "https://www.pinterest.com/pin/88101736442260111/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Threads",
+      "description": "Tute for couching techniques for fabric embellishment.",
+      "link": "http://www.craftstylish.com/item/7088/yo-yos-and-couching-two-easy-to-do-embellishment-techniques/page/3",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/31/bb/6f/31bb6fe2d7fc016ad2f1c839ba302a6b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

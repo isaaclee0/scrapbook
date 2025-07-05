@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441979800/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736441979800",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441979800",
+      "url": "https://www.pinterest.com/pin/88101736441979800/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Horse Arc",
+      "description": "Horse Arc a fantastic new idea for a mobile field shelter! No planning permission, don't need a 4 x 4 to move it around, wind proof and great for groups of horses!",
+      "link": "http://www.equinecompare.co.uk/promotions/horse-arc/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e3/7b/77/e37b77c086f1c906f004fcb1fd69a571.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

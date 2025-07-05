@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433513177/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736433513177",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433513177",
+      "url": "https://www.pinterest.com/pin/88101736433513177/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Falballa by Dominique Legros / 500px",
+      "description": " ",
+      "link": "http://500px.com/photo/4499105",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ce/80/88/ce8088e331a7488360145d275424c441.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

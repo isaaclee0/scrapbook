@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441998372/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736441998372",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441998372",
+      "url": "https://www.pinterest.com/pin/88101736441998372/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "follow everyday",
+      "description": "Website that lets you upload any pic and convert to a coloring page",
+      "link": "http://followeveryday.blogspot.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/80/a4/bc/80a4bc88fb427ee6f51f4151386af6c6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

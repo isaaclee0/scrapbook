@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436518620/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/inside-a-cottage",
+    "CustomFileName": "88101736436518620",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436518620",
+      "url": "https://www.pinterest.com/pin/88101736436518620/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "lief keukenkastje",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "riaverdoorn",
+        "url": "https://www.pinterest.com/riaverdoorn/",
+        "name": "Rietje"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/inside-a-cottage/",
+        "name": "Inside a cottage",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/15/e9/72/15e972cc953420ba487213efae08de22.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

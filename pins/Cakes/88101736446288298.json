@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446288298/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736446288298",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446288298",
+      "url": "https://www.pinterest.com/pin/88101736446288298/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chocolate Meringue Layer Cake",
+      "description": "A rich chocolate meringue layer cake. Chocolate meringue, layered with vanilla bean whipped cream, topped with raspberries and chocolate shavings.",
+      "link": "http://www.thelifeharvest.com/chocolate-meringue-layer-cake/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6b/7b/e7/6b7be7f79d70d1120e78cf6281eb46f9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

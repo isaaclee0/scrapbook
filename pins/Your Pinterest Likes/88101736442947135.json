@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442947135/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442947135",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442947135",
+      "url": "https://www.pinterest.com/pin/88101736442947135/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "boots + jeans & a new year | Style Tip",
+      "description": "A trick every girl should know: how to tuck non-skinny jeans into boots without that weird bunchy thing! Pin now read later!",
+      "link": "http://styleberryblog.com/boots-jeans-a-new-year-style-tip",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ec/1d/87/ec1d8710a0382bf580db282afeea6da0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

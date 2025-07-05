@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451566421/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tried-it-liked-it",
+    "CustomFileName": "88101736451566421",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451566421",
+      "url": "https://www.pinterest.com/pin/88101736451566421/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Flavorful & richly spiced sponge cake recipe.",
+      "description": "Spiced Sponge Cake Recipe",
+      "link": "https://shanissweetart.com/recipe/light-fluffy-spiced-sponge-cake-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "TriedandTasty",
+        "url": "https://www.pinterest.com/TriedandTasty/",
+        "name": "Tried and Tasty"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tried-it-liked-it/",
+        "name": "Tried It Liked It",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/81/28/8c/81288c1004e28befa5ad1bc2f1db10e6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

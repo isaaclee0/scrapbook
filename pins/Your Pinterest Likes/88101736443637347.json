@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443637347/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443637347",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443637347",
+      "url": "https://www.pinterest.com/pin/88101736443637347/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "shoes, before and after",
+      "description": "recycle flip flops - heck, you could even buy a cheap pair just to upcycle them.",
+      "link": "http://www.flickr.com/photos/atomicrose/443510031/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a2/6a/8a/a26a8a8b077459bb509178104b75cddf.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

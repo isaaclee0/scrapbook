@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451901809/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fun",
+    "CustomFileName": "88101736451901809",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451901809",
+      "url": "https://www.pinterest.com/pin/88101736451901809/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The future - Funny",
+      "description": "The future",
+      "link": "https://9gag.com/gag/awo2o3y?ref=pn",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fun/",
+        "name": "Fun",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d1/15/8a/d1158a8cf2a61c725b785791ac2144c2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

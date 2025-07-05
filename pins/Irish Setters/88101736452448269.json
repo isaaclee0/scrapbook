@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452448269/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/irish-setters",
+    "CustomFileName": "88101736452448269",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452448269",
+      "url": "https://www.pinterest.com/pin/88101736452448269/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Backyard friends",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "wonderfinder",
+        "url": "https://www.pinterest.com/wonderfinder/",
+        "name": "Eve in Paradise"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/irish-setters/",
+        "name": "Irish Setters",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/00/88/01/0088011e65223b1968d513913ed2eb5b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

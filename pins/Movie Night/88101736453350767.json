@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453350767/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736453350767",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453350767",
+      "url": "https://www.pinterest.com/pin/88101736453350767/",
+      "type": "pin",
+      "title": "Can't we be friends?",
+      "gridTitle": "Can't we be friends?",
+      "description": " ",
+      "link": "http://gazebotv.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "anneofgreengablesofficial",
+        "url": "https://www.pinterest.com/anneofgreengablesofficial/",
+        "name": "Anne of Green Gables Official"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5a/09/16/5a09163170534939f9b341220817afcf.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/69/66/7e/69667eb1069cca30a954e9541d2394d2.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

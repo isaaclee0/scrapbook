@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446887625/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-christmas-baking",
+    "CustomFileName": "88101736446887625",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446887625",
+      "url": "https://www.pinterest.com/pin/88101736446887625/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Candied Orange Slices",
+      "description": "Candied orange slices make great edible gifts!",
+      "link": "https://www.tastemade.com/shows/hungry-af/candied-orange-slices",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemade",
+        "url": "https://www.pinterest.com/tastemade/",
+        "name": "Tastemade"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-christmas-baking/",
+        "name": "Cottage Christmas Baking",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0b/a1/39/0ba139f8b4d1c87bf0d63040c6bf0f3e.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/06/b0/b4/06b0b4d0420d26259d2e35a2ecb66d34.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

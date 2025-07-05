@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447968288/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hair",
+    "CustomFileName": "88101736447968288",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447968288",
+      "url": "https://www.pinterest.com/pin/88101736447968288/",
+      "type": "pin",
+      "title": "Effortlessly style your hair dozens of ways!",
+      "gridTitle": "Effortlessly style your hair dozens of ways!",
+      "description": "The New Elastic Hair Comb is amazing! 😍 Hairstyles |",
+      "link": "https://supdealshop.com/products/magic-elastic-hair",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hair/",
+        "name": "Hair",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5c/fe/8c/5cfe8cb806e72c18da2c538a3663fb2f.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/1d/fd/dd/1dfddd049658a426972c46028d075cba.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

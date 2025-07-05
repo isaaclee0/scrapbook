@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453487494/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/horses",
+    "CustomFileName": "88101736453487494",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453487494",
+      "url": "https://www.pinterest.com/pin/88101736453487494/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "oksananeustroeva573",
+        "url": "https://www.pinterest.com/oksananeustroeva573/",
+        "name": "Оксана Нуестроева"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/horses/",
+        "name": "Horses",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e6/0e/3c/e60e3cb20b280b781b70e6baaf23a5fb.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448081664/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/rabbit-care",
+    "CustomFileName": "88101736448081664",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448081664",
+      "url": "https://www.pinterest.com/pin/88101736448081664/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "by Schinako Moriyama #Food #Eat #Banana",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "rosemclopez",
+        "url": "https://www.pinterest.com/rosemclopez/",
+        "name": "Rose Lopez"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/rabbit-care/",
+        "name": "Rabbit care",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b7/26/e3/b726e30b70adf7c057d2e35dfad5ce96.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

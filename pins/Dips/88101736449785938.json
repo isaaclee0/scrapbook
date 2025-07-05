@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449785938/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/dips",
+    "CustomFileName": "88101736449785938",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449785938",
+      "url": "https://www.pinterest.com/pin/88101736449785938/",
+      "type": "pin",
+      "title": "Mexican White Queso Dip",
+      "gridTitle": "Mexican White Queso Dip",
+      "description": "Mexican White Queso Dip – Similar to the white cheese sauce served at Mexican restaurants. It is creamy, has just a little spice to it and is the perfect addition to any party!",
+      "link": "https://dinnersdishesanddesserts.com/white-queso-dip-recipe/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 11,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "dinnersdishes",
+        "url": "https://www.pinterest.com/dinnersdishes/",
+        "name": "Dinners, Dishes, and Desserts"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/dips/",
+        "name": "Dips",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e6/c0/aa/e6c0aa3155f76f1b79ac1ca2b026fd8f.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/36/f8/89/36f889c2f3ece501782158b8f112b508.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

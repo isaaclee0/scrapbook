@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453792538/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736453792538",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453792538",
+      "url": "https://www.pinterest.com/pin/88101736453792538/",
+      "type": "pin",
+      "title": "Never again",
+      "gridTitle": "Never again",
+      "description": " \n\nNever Again \n\n",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "chanel_rose_dior",
+        "url": "https://www.pinterest.com/chanel_rose_dior/",
+        "name": "*{Victoria}*"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ef/16/e9/ef16e9ab16e10573ef94b7c445706590.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

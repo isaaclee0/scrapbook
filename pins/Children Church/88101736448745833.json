@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448745833/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/children-church",
+    "CustomFileName": "88101736448745833",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448745833",
+      "url": "https://www.pinterest.com/pin/88101736448745833/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "danielle14galicia",
+        "url": "https://www.pinterest.com/danielle14galicia/",
+        "name": "Danielle Galicia"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/children-church/",
+        "name": "Children Church",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f1/59/ed/f159ed8f502e47bdd1c7536234a68d59.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

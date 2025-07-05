@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453127717/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cleaning-things",
+    "CustomFileName": "88101736453127717",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453127717",
+      "url": "https://www.pinterest.com/pin/88101736453127717/",
+      "type": "pin",
+      "title": "3 quick cleaning tips from a janitor!",
+      "gridTitle": "3 quick cleaning tips from a janitor!",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Cleanthatup",
+        "url": "https://www.pinterest.com/Cleanthatup/",
+        "name": "Clean That Up"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cleaning-things/",
+        "name": "Cleaning Things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/e5/a1/09/e5a109e7c6cbe0496e4353a8c9b589a1.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

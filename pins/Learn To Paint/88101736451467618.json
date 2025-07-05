@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451467618/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/learn-to-paint",
+    "CustomFileName": "88101736451467618",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451467618",
+      "url": "https://www.pinterest.com/pin/88101736451467618/",
+      "type": "pin",
+      "title": "Easy Pine Tree Watercolor Illustration ",
+      "gridTitle": "Easy Pine Tree Watercolor Illustration",
+      "description": " ",
+      "link": "https://www.etsy.com/shop/KatieIllustratesShop",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "katieillustrates",
+        "url": "https://www.pinterest.com/katieillustrates/",
+        "name": "KatieIllustrates"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/learn-to-paint/",
+        "name": "Learn To Paint",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2c/6d/e8/2c6de8159f39d750b7c6ded51c8bee15.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/34/1a/a2/341aa273523125f6f4051726e8f3c941.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

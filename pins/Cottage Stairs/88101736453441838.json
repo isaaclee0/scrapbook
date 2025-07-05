@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453441838/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-stairs",
+    "CustomFileName": "88101736453441838",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453441838",
+      "url": "https://www.pinterest.com/pin/88101736453441838/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "20thqueen",
+        "url": "https://www.pinterest.com/20thqueen/",
+        "name": "queenlauren"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-stairs/",
+        "name": "Cottage Stairs",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3e/87/9b/3e879b345767eff479e0957cb3175da9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

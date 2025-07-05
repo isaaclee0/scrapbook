@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436489285/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736436489285",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436489285",
+      "url": "https://www.pinterest.com/pin/88101736436489285/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Doctor John's Original Sour Dough Recipe ... English Muffins!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tommyhickey",
+        "url": "https://www.pinterest.com/tommyhickey/",
+        "name": "Tommy Hickey"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/4a/c7/d4/4ac7d4e4547ef635559f3f5d972af70b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

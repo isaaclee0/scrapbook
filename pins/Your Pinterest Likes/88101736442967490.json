@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442967490/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442967490",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442967490",
+      "url": "https://www.pinterest.com/pin/88101736442967490/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Vintage Beauty and Hygiene Ads of the 1970s (Page 11)",
+      "description": "You're soaking in it.",
+      "link": "http://www.vintageadbrowser.com/beauty-and-hygiene-ads-1970s/11",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a0/28/3c/a0283c7b9db227785583e73a6c33e62a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

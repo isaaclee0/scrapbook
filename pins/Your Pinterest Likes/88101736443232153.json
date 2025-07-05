@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443232153/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443232153",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443232153",
+      "url": "https://www.pinterest.com/pin/88101736443232153/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Buy Cole and Son Hummingbirds - Free Next Day Delivery, 62-100*",
+      "description": "Humming Birds Wallpaper",
+      "link": "http://www.designerwallpapers.co.uk/cole-and-son/a-collection-of-flowers/humming-birds/62-1004",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fd/64/bd/fd64bd2e31f0c3e68fb88bf285ca45b3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

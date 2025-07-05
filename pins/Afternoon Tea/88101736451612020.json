@@ -1,0 +1,64 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451612020/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/afternoon-tea",
+    "CustomFileName": "88101736451612020",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451612020",
+      "url": "https://www.pinterest.com/pin/88101736451612020/",
+      "type": "pin",
+      "title": "Lemon Curd Coffee Cake",
+      "gridTitle": "Lemon Curd Coffee Cake",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 5,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "borrowedbites",
+        "url": "https://www.pinterest.com/borrowedbites/",
+        "name": "Borrowed Bites - Tasty, Real-life Recipes For Families"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/afternoon-tea/",
+        "name": "Afternoon Tea",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a6/dd/38/a6dd381f47257fb6a6a2177a53b26e64.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/17/e8/dc/17e8dcedf9b3a556ce07e9abc5850c80.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/ac/a8/d8/aca8d8e841e2d17917aea5eba26a707a.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/c9/e6/e6/c9e6e65de449fae7829e6d88bd4c9046.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/d0/1a/9d/d01a9d61ca3e9083e00673f902b7c4f9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444132763/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pasta",
+    "CustomFileName": "88101736444132763",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444132763",
+      "url": "https://www.pinterest.com/pin/88101736444132763/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Olive Garden Alfredo Pasta Recipe",
+      "description": "Olive Garden Alfredo Pasta Recipe - Key Ingredient",
+      "link": "http://www.keyingredient.com/recipes/958595039/olive-garden-alfredo-pasta/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pasta/",
+        "name": "Pasta",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/23/bb/44/23bb44d1399c13df560d597624c664e8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

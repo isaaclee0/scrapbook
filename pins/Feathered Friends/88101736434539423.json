@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434539423/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/feathered-friends",
+    "CustomFileName": "88101736434539423",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434539423",
+      "url": "https://www.pinterest.com/pin/88101736434539423/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "a quieter storm",
+      "description": "baby owl",
+      "link": "http://aquieterstorm.tumblr.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/feathered-friends/",
+        "name": "Feathered friends",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6f/49/b8/6f49b815241609f7a75e5c0baf9127fd.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

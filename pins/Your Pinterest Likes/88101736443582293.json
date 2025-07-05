@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443582293/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443582293",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443582293",
+      "url": "https://www.pinterest.com/pin/88101736443582293/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Floral Baby Blanket",
+      "description": "I want to learn to make this!!!  It's a crocheted flower garden.",
+      "link": "http://www.flickr.com/photos/slip_stitch/3956532126/in/photostream/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/20/f8/f5/20f8f5da473903baaff4bc004857857b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

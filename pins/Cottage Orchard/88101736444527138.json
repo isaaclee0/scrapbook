@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444527138/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-orchard",
+    "CustomFileName": "88101736444527138",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444527138",
+      "url": "https://www.pinterest.com/pin/88101736444527138/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "The Orchard, Sissinghurst, in Spring",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "jasoncraft80",
+        "url": "https://www.pinterest.com/jasoncraft80/",
+        "name": "Jason Craft"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-orchard/",
+        "name": "Cottage Orchard",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e9/cd/22/e9cd22303b6f68590411ea9cde442ab7.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

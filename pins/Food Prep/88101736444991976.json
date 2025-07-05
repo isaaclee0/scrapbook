@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444991976/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/food-prep",
+    "CustomFileName": "88101736444991976",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444991976",
+      "url": "https://www.pinterest.com/pin/88101736444991976/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Homemade Tater Tots",
+      "description": "Homemade Tater Tots",
+      "link": "http://damndelicious.net/2015/04/10/homemade-tater-tots/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/food-prep/",
+        "name": "Food prep",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/34/19/7e/34197e916b0f7d5717d817b31edaeb0e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

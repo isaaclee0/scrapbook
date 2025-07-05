@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442157270/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442157270",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442157270",
+      "url": "https://www.pinterest.com/pin/88101736442157270/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Neutral Home Decor & Home Tour | Life On Virginia Street",
+      "description": "Living room with rusty bucket table, neutral linen sofa, hydrangeas, striped rug and French style accents - Life On Virginia Street",
+      "link": "http://lifeonvirginiastreet.com/2015/11/stunning-neutral-home-tour/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/6d/77/cf/6d77cf0d1bca83da317956e0ab5a5b2c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

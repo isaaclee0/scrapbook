@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431183930/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736431183930",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431183930",
+      "url": "https://www.pinterest.com/pin/88101736431183930/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Lazy Stuffed Cabbage",
+      "description": "Lazy cabbage roll soup.",
+      "link": "http://tastykitchen.com/recipes/soups/lazy-stuffed-cabbage/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/90/6d/a3/906da38d197c12fa7e6ee3536e4dcf27.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

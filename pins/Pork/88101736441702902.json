@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441702902/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pork",
+    "CustomFileName": "88101736441702902",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441702902",
+      "url": "https://www.pinterest.com/pin/88101736441702902/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Sticky apple, sausage & bacon",
+      "description": "A one-pan, mid-week meal for all the family",
+      "link": "http://www.bbcgoodfood.com/recipes/3563/sticky-apple-sausage-and-bacon",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pork/",
+        "name": "Pork",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e7/51/d4/e751d41d0d5df8be60ae6bf7efef3cad.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

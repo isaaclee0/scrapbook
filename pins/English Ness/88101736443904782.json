@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443904782/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/english-ness",
+    "CustomFileName": "88101736443904782",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443904782",
+      "url": "https://www.pinterest.com/pin/88101736443904782/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "FeedPuzzle",
+      "description": "Untitled",
+      "link": "http://www.feedpuzzle.com/feed/untitled/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/english-ness/",
+        "name": "English-ness",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/37/4e/69/374e693dda303cd97491f1970d1dcbbe.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

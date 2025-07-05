@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437936734/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tips-and-tricks",
+    "CustomFileName": "88101736437936734",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437936734",
+      "url": "https://www.pinterest.com/pin/88101736437936734/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Ironing Tips",
+      "description": "I'm realizing that some people don't know how to do simple things like iron, so here's some great tips.",
+      "link": "http://tlc.howstuffworks.com/home/ironing-tips.htm",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tips-and-tricks/",
+        "name": "Tips and Tricks",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/04/2a/22/042a22a3100af32d8562cb5283072ea3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

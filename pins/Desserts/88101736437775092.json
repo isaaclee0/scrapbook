@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437775092/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736437775092",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437775092",
+      "url": "https://www.pinterest.com/pin/88101736437775092/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Loading...",
+      "description": "Apple pie",
+      "link": "http://www.joysama.com/2013/08/apple-pie-with-roses.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3f/3f/59/3f3f596d0305da9d5a697289b0175948.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

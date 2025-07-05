@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453218193/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cats-and-kittens",
+    "CustomFileName": "88101736453218193",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453218193",
+      "url": "https://www.pinterest.com/pin/88101736453218193/",
+      "type": "pin",
+      "title": "Cataroo",
+      "gridTitle": "Cataroo",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "theinfoaide",
+        "url": "https://www.pinterest.com/theinfoaide/",
+        "name": "The info aide"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cats-and-kittens/",
+        "name": "Cats and kittens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5d/cf/fe/5dcffed934e6824c59e115ab86d678b2.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/82/88/88/828888c7ca6bc6ff19322cda8ebffff4.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438938467/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736438938467",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438938467",
+      "url": "https://www.pinterest.com/pin/88101736438938467/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chocolate Cream Pie - The Hungry Mouse",
+      "description": "The best chocolate cream pie | The Hungry Mouse | just look at the pictures, how could you not make this?",
+      "link": "http://www.thehungrymouse.com/2010/01/19/chocolate-cream-pie-2/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ab/0d/3e/ab0d3e2ff128ba8630843fc29a9ec48f.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

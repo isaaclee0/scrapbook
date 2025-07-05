@@ -1,0 +1,64 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452632864/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/reno-shortlist",
+    "CustomFileName": "88101736452632864",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452632864",
+      "url": "https://www.pinterest.com/pin/88101736452632864/",
+      "type": "pin",
+      "title": "Bathroom",
+      "gridTitle": "Bathroom",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 5,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "HaileeKatee",
+        "url": "https://www.pinterest.com/HaileeKatee/",
+        "name": "HaileeKate"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/reno-shortlist/",
+        "name": "Reno shortlist",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ed/22/74/ed2274d6be2a82814d857d952b788b35.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/f4/e6/a7/f4e6a7bbca3aa7b548bf82f9fc3e3c1f.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/19/59/aa/1959aa2be6bef33491b008f20c386743.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/8c/75/4d/8c754d506918e5e852c19ef8c9892593.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://i.pinimg.com/originals/e7/d7/36/e7d7365beca13a224b7a7e65d4ce63ec.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

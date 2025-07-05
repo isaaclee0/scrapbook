@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442818161/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442818161",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442818161",
+      "url": "https://www.pinterest.com/pin/88101736442818161/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Nifty Gift Idea",
+      "description": "Neat...Anniversary date",
+      "link": "http://theartfulabode.wordpress.com/2010/01/07/nifty-gift-idea/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d4/1c/1b/d41c1be7e98065089c8ab4fde6a0e7ca.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

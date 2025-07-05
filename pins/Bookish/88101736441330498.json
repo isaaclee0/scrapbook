@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441330498/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736441330498",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441330498",
+      "url": "https://www.pinterest.com/pin/88101736441330498/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Books",
+      "description": "Dragon Bone Chair",
+      "link": "http://www.tadwilliams.com/books/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/16/a2/ac/16a2acac9c51a87af39d893edd69b51a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442991961/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442991961",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442991961",
+      "url": "https://www.pinterest.com/pin/88101736442991961/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Make A Paperclip Nest - Yanko Design",
+      "description": "Paper Clip Egg: A magnetic egg that collects your paper clips so you can build it a nest.",
+      "link": "http://www.yankodesign.com/2010/04/14/nest-magnetic-clip-collector-by-fengcheng-tsung-wangbo-jin/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/78/2c/66/782c66d3327806cb1d673b48b356adf5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

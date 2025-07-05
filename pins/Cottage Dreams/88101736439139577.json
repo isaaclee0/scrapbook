@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439139577/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-dreams",
+    "CustomFileName": "88101736439139577",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439139577",
+      "url": "https://www.pinterest.com/pin/88101736439139577/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "beautiful cottage on Aran Islands",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Suejirl",
+        "url": "https://www.pinterest.com/Suejirl/",
+        "name": "Sue J B"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-dreams/",
+        "name": "Cottage Dreams",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f6/fb/ca/f6fbca9366dbc7cf8761a14261d13c47.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

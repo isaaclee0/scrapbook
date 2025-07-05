@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435949184/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fun",
+    "CustomFileName": "88101736435949184",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435949184",
+      "url": "https://www.pinterest.com/pin/88101736435949184/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Amazing!",
+      "link": "http://theberry.com/2011/12/16/more-random-stuff-i-dont-need-but-kinda-want-37-photos-4/want-need-13-26/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fun/",
+        "name": "Fun",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9b/c3/c4/9bc3c494ffd03c382e71fe1e293dec2d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

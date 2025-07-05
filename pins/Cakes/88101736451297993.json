@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451297993/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cakes",
+    "CustomFileName": "88101736451297993",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451297993",
+      "url": "https://www.pinterest.com/pin/88101736451297993/",
+      "type": "pin",
+      "title": "Viral Recipe Easy Fudgy Brownies ONE BOWL",
+      "gridTitle": "Viral Recipe Easy Fudgy Brownies ONE BOWL",
+      "description": "The easiest brownies with crackly tops and fudgy centre via @bakingenvy on TikTok (Instagram @bakingenvy)",
+      "link": "https://bakingenvy.com/fudgy-brownies-from-scratch/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "bakingenvy",
+        "url": "https://www.pinterest.com/bakingenvy/",
+        "name": "Baking Envy"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cakes/",
+        "name": "cakes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/8a/b0/81/8ab0818e3296022a08d1e91faa7c6266.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/51/64/bc/5164bc527d044de8f8217dd99d8f5b57.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

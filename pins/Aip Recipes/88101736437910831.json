@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437910831/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736437910831",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437910831",
+      "url": "https://www.pinterest.com/pin/88101736437910831/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Urban Poser:",
+      "description": "Tomato-Less Marinara Sauce: A Nightshade-Free, Tomato Style Sauce by the amazing, talented @theurbanposer #paleo #AIP",
+      "link": "http://urbanposer.blogspot.com/2014/09/tomato-less-marinara-sauce-nightshade.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/02/1a/9f/021a9f1732c2a4596a495a04ac2df3ef.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

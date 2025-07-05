@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434973001/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/rhubarb-recipes",
+    "CustomFileName": "88101736434973001",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434973001",
+      "url": "https://www.pinterest.com/pin/88101736434973001/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "rhubarb and gin sorbet with rose cream",
+      "link": "http://blogs.relish.com/week-5-20/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/rhubarb-recipes/",
+        "name": "Rhubarb Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ee/35/42/ee3542592f48d6ee6e91d28e806240dd.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443169715/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443169715",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443169715",
+      "url": "https://www.pinterest.com/pin/88101736443169715/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Famous Aussie Burger.",
+      "description": "The Famous Aussie Burger",
+      "link": "http://www.buzzfeed.com/simoncrerar/the-most-australian-signs-ever?sub=2742307_1953648",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/58/19/dc/5819dc904f621afff8ef97de6d10f90d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452559367/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/rabbit-care",
+    "CustomFileName": "88101736452559367",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452559367",
+      "url": "https://www.pinterest.com/pin/88101736452559367/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Bunny palace",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "verityjanes",
+        "url": "https://www.pinterest.com/verityjanes/",
+        "name": "Verity Simmonds"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/rabbit-care/",
+        "name": "Rabbit care",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f8/fa/3c/f8fa3c0f988259cd2af1ed2614913ca2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

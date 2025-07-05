@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437958537/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736437958537",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437958537",
+      "url": "https://www.pinterest.com/pin/88101736437958537/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Foodsmaster.com",
+      "description": "Food's Master: Crispy Turnip 'Fries'",
+      "link": "http://www.foodsmaster.com/2011/11/crispy-turnip.html?m=1",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "carlaputt",
+        "url": "https://www.pinterest.com/carlaputt/",
+        "name": "Carla Putt"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ba/b5/b6/bab5b63a1ed41cc4c791ccffd7688a76.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

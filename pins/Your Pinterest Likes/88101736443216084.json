@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443216084/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443216084",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443216084",
+      "url": "https://www.pinterest.com/pin/88101736443216084/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "WTF Fun Facts",
+      "description": "Study in Norway for FREE - WTF fun facts",
+      "link": "http://wtffunfact.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/46/bc/10/46bc10d7a9c52bf92e5a35d6547a5292.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

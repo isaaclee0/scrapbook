@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437238586/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/bookish",
+    "CustomFileName": "88101736437238586",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437238586",
+      "url": "https://www.pinterest.com/pin/88101736437238586/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Puffin Books 601 - Richard Adams - Watership Down",
+      "description": "A book about rabbits.",
+      "link": "http://www.flickr.com/photos/56781833@N06/5294820934/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/bookish/",
+        "name": "Bookish",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e3/a0/e4/e3a0e4785c720d5b1889f41df5b93e39.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

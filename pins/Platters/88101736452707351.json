@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452707351/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/platters",
+    "CustomFileName": "88101736452707351",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452707351",
+      "url": "https://www.pinterest.com/pin/88101736452707351/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "This plate of fruit - Awesome",
+      "description": " ",
+      "link": "https://9gag.com/gag/an5w8xn?ref=pn.mw",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/platters/",
+        "name": "Platters",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e9/c1/66/e9c1663b56feb61b060da720d0bd235a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

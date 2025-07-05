@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447387752/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fishy",
+    "CustomFileName": "88101736447387752",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447387752",
+      "url": "https://www.pinterest.com/pin/88101736447387752/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "CEVICHE DE CAMARONES Y MANGO",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "sgomeztobar",
+        "url": "https://www.pinterest.com/sgomeztobar/",
+        "name": "Sofia Gomez"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fishy/",
+        "name": "Fishy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/42/25/f0/4225f098533a3b0145968dc7f10051b1.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

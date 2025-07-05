@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444967138/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736444967138",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444967138",
+      "url": "https://www.pinterest.com/pin/88101736444967138/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Starburst-Style Chewy Candy",
+      "description": "Starburst-Style Chewy Candy",
+      "link": "https://www.chefsteps.com/activities/starburst-style-chewy-candy",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d5/d8/7c/d5d87cafd71876236af97c2dd9692d87.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434086712/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/aip-recipes",
+    "CustomFileName": "88101736434086712",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434086712",
+      "url": "https://www.pinterest.com/pin/88101736434086712/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Homemade Hoisin Sauce (Paleo, Gluten Free, Dairy Free) - Crunchy Mama",
+      "description": "Homemade Hoisin Sauce (Paleo, Gluten Free, Dairy Free)  [AIP-ish: skip pepper, chili]",
+      "link": "http://crunchymama.net/homemade-hoisin-sauce-paleo-gluten-free-dairy-free/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/aip-recipes/",
+        "name": "AIP Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ed/43/54/ed43546a6da8844403b139677464ce53.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452782719/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/platters",
+    "CustomFileName": "88101736452782719",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452782719",
+      "url": "https://www.pinterest.com/pin/88101736452782719/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Instead of olives and peppers, I would put broccoli and cauliflower!!",
+      "link": "https://i.pinimg.com/736x/2b/52/0c/2b520cceba9a86b1d3420ccb2268c7e4.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Foodrevers",
+        "url": "https://www.pinterest.com/Foodrevers/",
+        "name": "Foodrevers | Clean Eating"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/platters/",
+        "name": "Platters",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bf/a8/d4/bfa8d4185a92be9cdcc48c414954b70b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

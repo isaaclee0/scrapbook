@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430542689/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430542689",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430542689",
+      "url": "https://www.pinterest.com/pin/88101736430542689/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chewy Chocolate Chip Cookie Snickers Cookies",
+      "description": "These will be made for my Dad for his birthday, but I may need to make a *practice batch* before then.",
+      "link": "http://www.bakersroyale.com/cookies/chewy-chocolate-chip-snickers-cookies/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/86/22/d4/8622d48bf2bd0cc83417475d0e0ea770.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

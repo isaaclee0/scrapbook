@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434959102/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/at-home",
+    "CustomFileName": "88101736434959102",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434959102",
+      "url": "https://www.pinterest.com/pin/88101736434959102/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "homemaking is more than housekeeping",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 12,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/at-home/",
+        "name": "At Home",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e2/99/a5/e299a5d0c296f230c9fd6976cbb94053.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

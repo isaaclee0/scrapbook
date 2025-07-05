@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437879677/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/italian",
+    "CustomFileName": "88101736437879677",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437879677",
+      "url": "https://www.pinterest.com/pin/88101736437879677/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Lidia's Italy: Recipes: Ricotta Frittata",
+      "link": "http://www.lidiasitaly.com/recipes/detail/920",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/italian/",
+        "name": "Italian",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c5/7b/9b/c57b9ba8e001a036fbb4dc16c25149c0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

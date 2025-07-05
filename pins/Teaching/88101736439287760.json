@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439287760/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/teaching",
+    "CustomFileName": "88101736439287760",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439287760",
+      "url": "https://www.pinterest.com/pin/88101736439287760/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Maturation of the human brain http://media-cache-ak0.pinimg.com/originals/26/db/15/26db157020e9352117675031839bfa19.jpg",
+      "link": "http://media-cache-ak0.pinimg.com/originals/26/db/15/26db157020e9352117675031839bfa19.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/teaching/",
+        "name": "Teaching",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/26/db/15/26db157020e9352117675031839bfa19.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

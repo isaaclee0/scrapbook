@@ -1,0 +1,47 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451615958/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/photography-tips/pets",
+    "CustomFileName": "88101736451615958",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451615958",
+      "url": "https://www.pinterest.com/pin/88101736451615958/",
+      "type": "pin",
+      "title": "Great idea for a dog photo shoot.  ",
+      "gridTitle": "Great idea for a dog photo shoot.",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/photography-tips/",
+        "name": "Photography tips",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/72/0d/11/720d11ba3e1d6ad6f37c4f3ca5dbf573.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/d5/02/25/d50225c4f6205c905d1aeb97fedfd130.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

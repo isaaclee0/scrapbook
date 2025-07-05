@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437133087/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-orchard",
+    "CustomFileName": "88101736437133087",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437133087",
+      "url": "https://www.pinterest.com/pin/88101736437133087/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Photos",
+      "description": "High density orchards",
+      "link": "http://www.davewilson.com:8080/home-gardens/backyard-orchard-culture/photos",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-orchard/",
+        "name": "Cottage Orchard",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/71/79/cf/7179cf2f267fdf16ba21c875d9c9b793.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

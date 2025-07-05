@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432358740/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736432358740",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432358740",
+      "url": "https://www.pinterest.com/pin/88101736432358740/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Recipes",
+      "description": "I will never, ever buy jarred sauce again! By far the best and easiest spaghetti sauce to make.",
+      "link": "http://www.ziplist.com/recipes/501434-Homemade_Marinara_Sauce",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f2/c6/8c/f2c68cf861ba56ff5e622e533ff0f5ef.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

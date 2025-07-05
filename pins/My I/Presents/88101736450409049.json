@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450409049/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/my-i/presents",
+    "CustomFileName": "88101736450409049",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450409049",
+      "url": "https://www.pinterest.com/pin/88101736450409049/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Guitar pick maker.. now you can have any design!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "pokeadot",
+        "url": "https://www.pinterest.com/pokeadot/",
+        "name": "Kyrie Dean"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/my-i/",
+        "name": "My I",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b3/9a/f3/b39af3d6ca4ef847e76a01cbc4c0c75e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

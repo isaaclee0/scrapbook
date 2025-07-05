@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736435877943/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736435877943",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736435877943",
+      "url": "https://www.pinterest.com/pin/88101736435877943/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Unconditional - Incredible movie. Currently on Netflix....one of the BEST movies I have ever seen!",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/37/de/d8/37ded8d42aaa52842d30d1ba2996d9c0.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441844836/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/treats",
+    "CustomFileName": "88101736441844836",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441844836",
+      "url": "https://www.pinterest.com/pin/88101736441844836/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Homemade Fruit Snacks",
+      "description": "Homemade Fruit Snacks using agar agar (plant-derived) to replace gelatin for gummy chews",
+      "link": "http://blog.vitacost.com/hey-mom-whats-cooking/homemade-fruit-snacks.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/treats/",
+        "name": "Treats",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ac/06/71/ac0671adb66d6e942490cce049d05ff3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

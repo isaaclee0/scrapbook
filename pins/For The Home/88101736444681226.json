@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736444681226/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/for-the-home",
+    "CustomFileName": "88101736444681226",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736444681226",
+      "url": "https://www.pinterest.com/pin/88101736444681226/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "An Apple A Day",
+      "description": "purple doorknob",
+      "link": "http://appleday.tumblr.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/for-the-home/",
+        "name": "For the Home",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/53/96/24/539624fa6eaa0afc0133833878597b07.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

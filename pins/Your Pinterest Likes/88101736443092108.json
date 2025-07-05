@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443092108/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443092108",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443092108",
+      "url": "https://www.pinterest.com/pin/88101736443092108/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "HOW TO: Turn a Scarf into a Vest",
+      "link": "http://bootleggerspeakeasy.com/2013/08/07/summer-style-the-newest-way-to-wear-a-scarf/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "bootleggerjeans",
+        "url": "https://www.pinterest.com/bootleggerjeans/",
+        "name": "Bootlegger"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/78/99/af/7899af385590b551d8d17f3fb30ea93b.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

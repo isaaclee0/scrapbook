@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440669576/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/collies-and-shelties",
+    "CustomFileName": "88101736440669576",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440669576",
+      "url": "https://www.pinterest.com/pin/88101736440669576/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Kato - Spanish collie",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "keithewell",
+        "url": "https://www.pinterest.com/keithewell/",
+        "name": "Sampa2NYC"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/collies-and-shelties/",
+        "name": "Collies and Shelties",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c9/03/56/c903561c9efbc98610b5c9c2254b3630.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

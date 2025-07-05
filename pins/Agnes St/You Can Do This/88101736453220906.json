@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453220906/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/agnes-st/you-can-do-this",
+    "CustomFileName": "88101736453220906",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453220906",
+      "url": "https://www.pinterest.com/pin/88101736453220906/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "serjdrobich3587",
+        "url": "https://www.pinterest.com/serjdrobich3587/",
+        "name": "Красивые вещи -это просто"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/agnes-st/",
+        "name": "Agnes st",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/99/85/c4/9985c44efcb6f153cfa11799c4a684d1.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/7d/a2/bc/7da2bc3a3b0421e914c8d3e19fc7f3c2.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

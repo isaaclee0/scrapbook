@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453865952/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/lemon-verbena",
+    "CustomFileName": "88101736453865952",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453865952",
+      "url": "https://www.pinterest.com/pin/88101736453865952/",
+      "type": "pin",
+      "title": "Elderflower Liqueur Recipe: Homemade St. Germain",
+      "gridTitle": "Elderflower Liqueur Recipe: Homemade St. Germain",
+      "description": " ",
+      "link": "https://www.growforagecookferment.com/elderflower-liqueur",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "colleengfcf",
+        "url": "https://www.pinterest.com/colleengfcf/",
+        "name": "Grow Forage Cook Ferment | Wild Food Foraging | Herbal Remedies"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/lemon-verbena/",
+        "name": "Lemon Verbena",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9b/55/56/9b5556799d705b88d40361c0301a99cd.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/64/64/8f/64648fe2b9ee5d3322cd7bc054ed2d20.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

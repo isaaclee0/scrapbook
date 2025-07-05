@@ -1,0 +1,52 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453848058/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/gifts-random-plus-food",
+    "CustomFileName": "88101736453848058",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453848058",
+      "url": "https://www.pinterest.com/pin/88101736453848058/",
+      "type": "pin",
+      "title": "DIY Boyfriend Gift Ideas",
+      "gridTitle": "DIY Boyfriend Gift Ideas",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Studio_Bexley",
+        "url": "https://www.pinterest.com/Studio_Bexley/",
+        "name": "Studio Bexley"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/gifts-random-plus-food/",
+        "name": "Gifts random plus food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/03/1a/f4/031af4c2359f5063b1ea3abec2c8f7e4.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/e9/72/6c/e9726c6315684732de9dd66fe28c86b8.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

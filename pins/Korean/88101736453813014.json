@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453813014/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/korean",
+    "CustomFileName": "88101736453813014",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453813014",
+      "url": "https://www.pinterest.com/pin/88101736453813014/",
+      "type": "pin",
+      "title": "#bokchoy #stir #fry #vegish #follow",
+      "gridTitle": "#bokchoy #stir #fry #vegish #follow",
+      "description": " ",
+      "category": "",
+      "isStoryPin": true,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 1,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "AuthenticFoodei",
+        "url": "https://www.pinterest.com/AuthenticFoodei/",
+        "name": "Authentic foodie"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/korean/",
+        "name": "Korean",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/92/c2/0b/92c20ba032afcf83795d6d7910cf7175.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443426819/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443426819",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443426819",
+      "url": "https://www.pinterest.com/pin/88101736443426819/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Disney.com | The official home for all things Disney",
+      "description": "Laundry Stain Cheat Sheet!",
+      "link": "http://www.babble.com/crafts-activities/15-more-tips-and-tricks-for-easier-laundry/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a1/88/80/a18880d0e6f008ea256ab3199cab28ac.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

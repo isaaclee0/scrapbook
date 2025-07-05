@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442578991/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442578991",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442578991",
+      "url": "https://www.pinterest.com/pin/88101736442578991/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Gorgeous DIY Mason Jar Light Fixtures • OhMeOhMy Blog",
+      "description": "More DIY Mason Jar Lighting Ideas and Tutorials!",
+      "link": "http://www.decoratingyoursmallspace.com/more-diy-mason-jar-lighting-ideas/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "remibmedia",
+        "url": "https://www.pinterest.com/remibmedia/",
+        "name": "Remi | TBD + TGG + OhMeOhMy"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/13/6a/49/136a49ccba26b7c13719cea0d61747ce.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

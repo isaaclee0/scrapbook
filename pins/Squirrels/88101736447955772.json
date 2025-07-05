@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736447955772/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/squirrels",
+    "CustomFileName": "88101736447955772",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736447955772",
+      "url": "https://www.pinterest.com/pin/88101736447955772/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Tweet / Twitter",
+      "description": "Drinking squirrel.",
+      "link": "https://twitter.com/dazirazi/status/759445752229879808",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/squirrels/",
+        "name": "Squirrels",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7b/97/bb/7b97bb5010901b7383c07c7e52315dcb.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

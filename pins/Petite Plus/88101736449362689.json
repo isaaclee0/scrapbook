@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449362689/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/petite-plus",
+    "CustomFileName": "88101736449362689",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449362689",
+      "url": "https://www.pinterest.com/pin/88101736449362689/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Before and After",
+      "description": "Before_After_TheCode",
+      "link": "https://thefashioncode.com/tag/before-and-after/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/petite-plus/",
+        "name": "Petite plus",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e2/2e/d5/e22ed56e4d4706c00174ede64a2819bc.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

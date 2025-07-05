@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451169564/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/mariana",
+    "CustomFileName": "88101736451169564",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451169564",
+      "url": "https://www.pinterest.com/pin/88101736451169564/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "YouTube",
+      "description": " ",
+      "link": "https://youtu.be/t66ZRRP-OWs",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/mariana/",
+        "name": "Mariana",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/0a/8e/fb/0a8efb1af7186135e6b3ad1817a609f6.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/2b/a1/7b/2ba17b08862f0567639655d284aa7cb1.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

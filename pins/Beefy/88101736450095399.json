@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736450095399/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/beefy",
+    "CustomFileName": "88101736450095399",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736450095399",
+      "url": "https://www.pinterest.com/pin/88101736450095399/",
+      "type": "pin",
+      "title": "POUSSE KEBAB ",
+      "gridTitle": "POUSSE KEBAB",
+      "description": "Une recette astucieuse, également réalisable au barbecue, pour réaliser vos kebabs maison ! Et pour encore plus d'idées de recettes, rendez-vous sur notre site !",
+      "link": "https://www.chefclub.tv/fr/recettes/original/10c03cb1-0ba4-483a-bf46-2d9593a094c8/pousse-kebab-petite-brochette-deviendra-grande/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1553,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "chefclubnw",
+        "url": "https://www.pinterest.com/chefclubnw/",
+        "name": "Chefclub"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/beefy/",
+        "name": "Beefy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2d/69/1f/2d691fc417d4ec8799de7be9209a2d7a.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/35/64/9c/35649c894db3fdd63b0818ef03d5abb5.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

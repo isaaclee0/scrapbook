@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441931369/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/courtyardpatio",
+    "CustomFileName": "88101736441931369",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441931369",
+      "url": "https://www.pinterest.com/pin/88101736441931369/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Coin fleuri",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "diablosim",
+        "url": "https://www.pinterest.com/diablosim/",
+        "name": "Simone Starinsky"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/courtyardpatio/",
+        "name": "Courtyard/Patio",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d0/e3/ef/d0e3ef1ef3e378ee245ddd2baacb5e67.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

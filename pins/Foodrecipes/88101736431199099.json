@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736431199099/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736431199099",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736431199099",
+      "url": "https://www.pinterest.com/pin/88101736431199099/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Slice banana into thin chips, dip in lemon juice, and spread on a cookie sheet. Bake for 2 hours @ 200 degrees and flip. Bake for another 1.5-2 hours or until crisp. (They wont be totally crisp in the oven, but will harden as they cool)  IMPORTANT STEP:  Spray the cookie sheet with PAM",
+      "link": "http://nuts.com/images/assets/835b17705300fd9a.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/83/5b/17/835b17705300fd9a38f096a6d6d7a279.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

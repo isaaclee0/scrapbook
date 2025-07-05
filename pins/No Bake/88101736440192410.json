@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440192410/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/no-bake",
+    "CustomFileName": "88101736440192410",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440192410",
+      "url": "https://www.pinterest.com/pin/88101736440192410/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "No-Bake Chocolate Oat Bars",
+      "description": "No Bake Chocolate Oat Bars | \"My kids love these! They are requested quite frequently and are super easy to make!!\"",
+      "link": "http://allrecipes.com/recipe/no-bake-chocolate-oat-bars/Detail.aspx",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "allrecipes",
+        "url": "https://www.pinterest.com/allrecipes/",
+        "name": "Allrecipes"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/no-bake/",
+        "name": "No Bake",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/79/74/de/7974deaae37af4553439519936f24453.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

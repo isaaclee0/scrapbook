@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452680716/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/exercise-it",
+    "CustomFileName": "88101736452680716",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452680716",
+      "url": "https://www.pinterest.com/pin/88101736452680716/",
+      "type": "pin",
+      "title": "How To Use Your Pillow To Practice Abs",
+      "gridTitle": "How To Use Your Pillow To Practice Abs",
+      "description": " ",
+      "link": "https://www.powerguidance.com/blogs/news",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "Emma51396",
+        "url": "https://www.pinterest.com/Emma51396/",
+        "name": "Emma White"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/exercise-it/",
+        "name": "Exercise it",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ee/cf/ba/eecfbad5314657476118ea6ec07958dc.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/38/cc/9f/38cc9f1b14e241e9983de602840d511d.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

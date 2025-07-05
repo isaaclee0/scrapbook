@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442273320/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442273320",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442273320",
+      "url": "https://www.pinterest.com/pin/88101736442273320/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "A New Simple Tumblr!",
+      "description": " ",
+      "link": "http://shokoofeh.tumblr.com/post/20865597397/joules",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9b/c6/e0/9bc6e0ab2cb2cc44cf858b2c9d44a485.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

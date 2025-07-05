@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451313176/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/learn-to-paint",
+    "CustomFileName": "88101736451313176",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451313176",
+      "url": "https://www.pinterest.com/pin/88101736451313176/",
+      "type": "pin",
+      "title": "Butterfly Watercolor Painting",
+      "gridTitle": "Butterfly Watercolor Painting",
+      "description": " ",
+      "link": "http://www.ekritler.com/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "ekritler",
+        "url": "https://www.pinterest.com/ekritler/",
+        "name": "Evelyn Kritler — Designer & Illustrator"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/learn-to-paint/",
+        "name": "Learn To Paint",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/d3/45/f6/d345f679afe54beb44bf74e5ee4bbd76.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/9b/eb/b8/9bebb81d93e2b6e802f37339d54570dc.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

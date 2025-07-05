@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445306817/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-orchard",
+    "CustomFileName": "88101736445306817",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445306817",
+      "url": "https://www.pinterest.com/pin/88101736445306817/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Loganberries trellised via Christine R. | #starkbros customer photo",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "starkbros",
+        "url": "https://www.pinterest.com/starkbros/",
+        "name": "Stark Bro's"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-orchard/",
+        "name": "Cottage Orchard",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/a6/27/8d/a6278d972133b3f21a67f8bc04fe331c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

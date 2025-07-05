@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445309645/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cake-decorating",
+    "CustomFileName": "88101736445309645",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445309645",
+      "url": "https://www.pinterest.com/pin/88101736445309645/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Border basics for Royal Icing",
+      "link": "http://www.ceridz.co.uk/tutorials/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cake-decorating/",
+        "name": "Cake Decorating",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/10/a9/3c/10a93ce767132025b3c6faac482cef52.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

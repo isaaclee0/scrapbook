@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430723132/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/foodrecipes",
+    "CustomFileName": "88101736430723132",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430723132",
+      "url": "https://www.pinterest.com/pin/88101736430723132/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Raw, nutty dip.",
+      "link": "http://plantpoweredkitchen.com/wp-content/uploads/2012/04/rawsome-nut-dip.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/foodrecipes/",
+        "name": "Food/Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/fd/79/05/fd790558014996b7cc411e67bac340ad.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

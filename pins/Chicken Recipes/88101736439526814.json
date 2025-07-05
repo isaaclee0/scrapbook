@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439526814/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736439526814",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439526814",
+      "url": "https://www.pinterest.com/pin/88101736439526814/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "HugeDomains.com",
+      "description": "Lemon Chicken and potatoes",
+      "link": "http://www.sparklingink.com/2010/10/lemon-rosemary-chicken-bake.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c5/ac/dc/c5acdc11ee480dd59d51b957241460bd.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

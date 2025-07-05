@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736440281792/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/painting-things",
+    "CustomFileName": "88101736440281792",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736440281792",
+      "url": "https://www.pinterest.com/pin/88101736440281792/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "The weatherboards are 'Linseed' and the windows are 'Ecru 1/4 strength'",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "sterlinpainters",
+        "url": "https://www.pinterest.com/sterlinpainters/",
+        "name": "Sterling Painters & Decorators"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/painting-things/",
+        "name": "Painting things",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/82/84/8b/82848b613a2b9d4474b148b213195c53.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

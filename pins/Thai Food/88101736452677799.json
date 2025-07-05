@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736452677799/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/thai-food",
+    "CustomFileName": "88101736452677799",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736452677799",
+      "url": "https://www.pinterest.com/pin/88101736452677799/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "How to Make Garlic Chili Oil",
+      "description": " ",
+      "link": "https://thefoodietakesflight.com/garlic-chili-oil",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 3,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "thefoodietakesflight",
+        "url": "https://www.pinterest.com/thefoodietakesflight/",
+        "name": "The Foodie Takes Flight | Vegan Asian Recipes"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/thai-food/",
+        "name": "Thai Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f3/2b/9b/f32b9b63788e768b12af5dd37e6d3430.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/c1/3e/e4/c13ee410e7d66c2eee96cdd177e09b31.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451683119/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/no-bake",
+    "CustomFileName": "88101736451683119",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451683119",
+      "url": "https://www.pinterest.com/pin/88101736451683119/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "No-Bake Caramello Slice",
+      "description": " ",
+      "link": "http://www.bakeplaysmile.com/caramello-slice/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/no-bake/",
+        "name": "No Bake",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/41/fe/0a/41fe0ae4bc56abb7e6a65537376fa963.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

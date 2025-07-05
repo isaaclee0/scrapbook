@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449912783/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fishy",
+    "CustomFileName": "88101736449912783",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449912783",
+      "url": "https://www.pinterest.com/pin/88101736449912783/",
+      "type": "pin",
+      "title": "BAKED TERIYAKI SALMON ",
+      "gridTitle": "BAKED TERIYAKI SALMON",
+      "description": "A perfectly flaky and tender salmon recipe that’s made with an easy homemade teriyaki sauce and baked to perfection. Makes for a perfect lunch or dinner recipe that can be ready in less than 3o minutes.",
+      "link": "https://healthyfitnessmeals.com/baked-teriyaki-salmon/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "HealthyFitnessmeals",
+        "url": "https://www.pinterest.com/HealthyFitnessmeals/",
+        "name": "Healthy Fitness Meals"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fishy/",
+        "name": "Fishy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/55/4a/cd/554acdcb66dfdf23fb8ac61ee9c34f4f.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/53/38/29/5338294c9f632f314c44b2338298d4ec.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

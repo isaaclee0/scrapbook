@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736451910675/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/baby-stuff",
+    "CustomFileName": "88101736451910675",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736451910675",
+      "url": "https://www.pinterest.com/pin/88101736451910675/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Before and After - PeekABoo3D",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "peekaboo3d",
+        "url": "https://www.pinterest.com/peekaboo3d/",
+        "name": "PeekABoo3D"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/baby-stuff/",
+        "name": "Baby stuff",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/dc/07/1a/dc071a07973fc44af09107ef77e49fb2.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

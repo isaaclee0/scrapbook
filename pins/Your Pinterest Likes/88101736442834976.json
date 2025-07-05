@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442834976/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442834976",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442834976",
+      "url": "https://www.pinterest.com/pin/88101736442834976/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Happy Birthday Jesus",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "2tzulover",
+        "url": "https://www.pinterest.com/2tzulover/",
+        "name": "Stephanie Hollis"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ca/9e/61/ca9e611266ca97526da02f1cafe8afc9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

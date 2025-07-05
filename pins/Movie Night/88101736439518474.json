@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439518474/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/movie-night",
+    "CustomFileName": "88101736439518474",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439518474",
+      "url": "https://www.pinterest.com/pin/88101736439518474/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "It's got all the right ingredients: action, food, love, rodents, and the atmosphere of Paris!",
+      "link": "http://www.squidoo.com/ratatuoille",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/movie-night/",
+        "name": "Movie night",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e6/a7/2e/e6a72e17c229c516e71a7738db516864.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432889988/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/asian-food",
+    "CustomFileName": "88101736432889988",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432889988",
+      "url": "https://www.pinterest.com/pin/88101736432889988/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Thai Noodle Salad",
+      "description": "Thai Peanut Noodle Salad",
+      "link": "http://www.foodland.com/recipe/thai-noodle-salad",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/asian-food/",
+        "name": "Asian Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/82/10/f5/8210f50ec343663e1eb43acca018cb81.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

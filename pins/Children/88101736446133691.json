@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446133691/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/children",
+    "CustomFileName": "88101736446133691",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446133691",
+      "url": "https://www.pinterest.com/pin/88101736446133691/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Cherio necklace",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "alexisaitkins",
+        "url": "https://www.pinterest.com/alexisaitkins/",
+        "name": "alexis aitkins"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/children/",
+        "name": "Children",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1e/e2/db/1ee2db4707f26a9127539b2b59f132d9.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

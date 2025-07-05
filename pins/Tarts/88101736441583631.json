@@ -1,0 +1,49 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441583631/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tarts",
+    "CustomFileName": "88101736441583631",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441583631",
+      "url": "https://www.pinterest.com/pin/88101736441583631/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Choklad- och hallonslices",
+      "description": "Chocolate almond pie with dark chocolate truffle and raspberry",
+      "link": "http://www.koket.se/sweet-/roy-fares/choklad--och-hallonslices/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "wilds",
+        "url": "https://www.pinterest.com/wilds/",
+        "name": "Yana"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tarts/",
+        "name": "Tarts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c9/73/3c/c9733cdce2b140344951dfb3b8763fba.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

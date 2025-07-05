@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442800057/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442800057",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442800057",
+      "url": "https://www.pinterest.com/pin/88101736442800057/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "The Hooters - And We Danced",
+      "description": "The Hooters - And We Danced    1985",
+      "link": "http://www.youtube.com/watch/?v=zB1Q-PfUvN0",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/68/df/6e/68df6e9ff3d69d55b3cf108c7900ed7e.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

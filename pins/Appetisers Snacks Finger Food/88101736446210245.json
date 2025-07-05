@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446210245/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/appetisers-snacks-finger-food",
+    "CustomFileName": "88101736446210245",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446210245",
+      "url": "https://www.pinterest.com/pin/88101736446210245/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Pesto Chicken Garlic Knot Sliders Recipe by Tasty",
+      "description": "Pesto Chicken Garlic Knot Sliders",
+      "link": "https://www.buzzfeed.com/jordankenna/pesto-chicken-garlic-knot-sliders?bffbtasty&ref=bffbtasty&utm_term=.gxR0N1Vo6#.hu0Xz7mPB",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 1,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "buzzfeedtasty",
+        "url": "https://www.pinterest.com/buzzfeedtasty/",
+        "name": "Tasty"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/appetisers-snacks-finger-food/",
+        "name": "Appetisers Snacks Finger Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/e4/4e/a2/e44ea25d5bb015b84f98a42228cdf534.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/76/21/32/7621320cc408a56bf8ccf8ba6d947f4e.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

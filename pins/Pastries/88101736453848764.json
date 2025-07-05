@@ -1,0 +1,47 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453848764/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/pastries",
+    "CustomFileName": "88101736453848764",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453848764",
+      "url": "https://www.pinterest.com/pin/88101736453848764/",
+      "type": "pin",
+      "title": "FRENCH ONION TART!",
+      "gridTitle": "FRENCH ONION TART!",
+      "description": " ",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/pastries/",
+        "name": "pastries",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f1/c7/06/f1c70615c983a1da0b5e984b3f4e0d1d.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/92/e9/a4/92e9a4ef8b1bab59b4a62297db09b1f4.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

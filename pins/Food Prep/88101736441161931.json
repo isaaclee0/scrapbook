@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441161931/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/food-prep",
+    "CustomFileName": "88101736441161931",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441161931",
+      "url": "https://www.pinterest.com/pin/88101736441161931/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Mexican Breakfast Cups - The Wholesome Dish",
+      "description": "Mexican Breakfast Cups - Eggs, bacon, cheese, corn, black beans, and avocado baked in a muffin tin.",
+      "link": "http://thewholesomedish.com/mexican-breakfast-cups/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/food-prep/",
+        "name": "Food prep",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c2/0b/42/c20b423e016d4d09b97d5dbfe2eaf080.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

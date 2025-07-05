@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443717812/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736443717812",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443717812",
+      "url": "https://www.pinterest.com/pin/88101736443717812/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Luxury fashion & independent designers | SSENSE",
+      "description": "Perfect Holiday look-love the red lace!",
+      "link": "http://partywithgatsby.polyvore.com/untitled_149/set?.embedder=3482847&.svc=pinterest&id=59488710",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/7a/bd/d1/7abdd14ac93e75d2ffbebb6bce4237d6.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736434783941/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/indonesian-food",
+    "CustomFileName": "88101736434783941",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736434783941",
+      "url": "https://www.pinterest.com/pin/88101736434783941/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Indonesian dish.",
+      "link": "http://anotherdish.files.wordpress.com/2013/10/semur2-1-of-1.jpg",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": false,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/indonesian-food/",
+        "name": "Indonesian Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/3a/0a/cb/3a0acb1da03e048257feb5a738d7d94d.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

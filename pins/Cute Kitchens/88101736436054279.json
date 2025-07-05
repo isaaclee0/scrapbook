@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736436054279/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cute-kitchens",
+    "CustomFileName": "88101736436054279",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736436054279",
+      "url": "https://www.pinterest.com/pin/88101736436054279/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "country kitchen",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "lorr22",
+        "url": "https://www.pinterest.com/lorr22/",
+        "name": "Lilly"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cute-kitchens/",
+        "name": "Cute Kitchens",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/04/ec/48/04ec48c61299e0e4e65d93e62cf12436.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

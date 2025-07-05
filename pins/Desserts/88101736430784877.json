@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430784877/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/desserts",
+    "CustomFileName": "88101736430784877",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430784877",
+      "url": "https://www.pinterest.com/pin/88101736430784877/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "glutenfreecanteen.com",
+      "description": "Gluten Free Tiramisu recipe",
+      "link": "http://glutenfreecanteen.com/2012/03/09/gluten-free-tiramisu/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/desserts/",
+        "name": "Desserts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/39/cb/95/39cb956c253dec7f123c229445d94600.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

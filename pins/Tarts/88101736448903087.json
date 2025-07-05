@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736448903087/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/tarts",
+    "CustomFileName": "88101736448903087",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736448903087",
+      "url": "https://www.pinterest.com/pin/88101736448903087/",
+      "type": "pin",
+      "title": "Tarta de Espinaca y Ricota con Base de Papa",
+      "gridTitle": "Tarta de Espinaca y Ricota con Base de Papa",
+      "description": "Mirá qué Recetas Originales,nal es la masa de esta Tarta",
+      "link": "https://es.tastemade.com/videos/tarta-de-espinaca-y-ricota-con-base-de-papa",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemadees",
+        "url": "https://www.pinterest.com/tastemadees/",
+        "name": "Tastemade Español"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/tarts/",
+        "name": "Tarts",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/bd/d4/ab/bdd4ab38a80d4bd46fd448eb8e6ef8f0.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/aa/9f/b6/aa9fb679286796af8dcfa34a0563bdbf.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

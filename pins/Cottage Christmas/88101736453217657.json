@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736453217657/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/cottage-christmas",
+    "CustomFileName": "88101736453217657",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736453217657",
+      "url": "https://www.pinterest.com/pin/88101736453217657/",
+      "type": "pin",
+      "title": "Fresh Evergreen Wreath Tutorial",
+      "gridTitle": "Fresh Evergreen Wreath Tutorial",
+      "description": " ",
+      "link": "https://www.deliacreates.com/fresh-evergreen-wreath-tutorial/",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "deliacreates",
+        "url": "https://www.pinterest.com/deliacreates/",
+        "name": "Delia Randall"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/cottage-christmas/",
+        "name": "Cottage Christmas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/57/e8/ad/57e8adfb9c3d3004926a7cae8988d12b.jpg",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/mc/720p/26/fe/2e/26fe2e24e64ddf570ee70411b41304ff.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

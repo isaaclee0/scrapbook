@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736432858760/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/breakfast",
+    "CustomFileName": "88101736432858760",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736432858760",
+      "url": "https://www.pinterest.com/pin/88101736432858760/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Chai Spiced Granola",
+      "description": "Chai Spiced Granola - www.countrycleaver.com",
+      "link": "http://www.countrycleaver.com/2013/03/chai-spiced-granola.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/breakfast/",
+        "name": "Breakfast",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/59/e0/3e/59e03e7d382fcfe3393fcb4d75e5f0c8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

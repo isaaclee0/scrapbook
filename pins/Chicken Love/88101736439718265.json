@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439718265/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-love",
+    "CustomFileName": "88101736439718265",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439718265",
+      "url": "https://www.pinterest.com/pin/88101736439718265/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Chicken Coop",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tinajaaron",
+        "url": "https://www.pinterest.com/tinajaaron/",
+        "name": "Tina Johnson"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-love/",
+        "name": "Chicken love",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/1a/d3/31/1ad331d3e36d75fb4ea88908225f91f8.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

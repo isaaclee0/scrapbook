@@ -1,0 +1,43 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736446628901/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/hot-tubs",
+    "CustomFileName": "88101736446628901",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736446628901",
+      "url": "https://www.pinterest.com/pin/88101736446628901/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "mini piscine, petit coin d'eau",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/hot-tubs/",
+        "name": "Hot Tubs",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/c2/35/b9/c235b9df4e862af42b001206f636dd69.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

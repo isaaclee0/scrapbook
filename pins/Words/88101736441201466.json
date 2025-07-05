@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736441201466/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/words",
+    "CustomFileName": "88101736441201466",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736441201466",
+      "url": "https://www.pinterest.com/pin/88101736441201466/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Bonhoeffer - Silence in the face of evil is itself evil...",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "dvplourde",
+        "url": "https://www.pinterest.com/dvplourde/",
+        "name": "Donna Plourde"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/words/",
+        "name": "Words",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/5b/2f/bb/5b2fbbf01be92b543ed5c993deb0367e.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

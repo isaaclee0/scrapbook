@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736433579658/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/summer-food",
+    "CustomFileName": "88101736433579658",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736433579658",
+      "url": "https://www.pinterest.com/pin/88101736433579658/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Helen Corbitt's Chicken Salad",
+      "description": "Neiman Marcus Chicken Salad.",
+      "link": "http://www.saveur.com/article/Recipes/Neiman-Marcus-Chicken-Salad?cmpid=enews072511",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/summer-food/",
+        "name": "Summer food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/b7/3b/cb/b73bcbac2a8fe64a88073b71670cd62c.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

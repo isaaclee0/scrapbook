@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736430663190/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/make-a-gift",
+    "CustomFileName": "88101736430663190",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736430663190",
+      "url": "https://www.pinterest.com/pin/88101736430663190/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Hello Therapeutic",
+      "description": "Feet warmers",
+      "link": "http://www.howdoesshe.com/hello-therapeutic",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/make-a-gift/",
+        "name": "Make a gift",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ba/ad/ee/baadee854c6310a586c1a1fe9106ede5.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

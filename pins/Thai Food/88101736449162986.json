@@ -1,0 +1,53 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736449162986/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/thai-food",
+    "CustomFileName": "88101736449162986",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736449162986",
+      "url": "https://www.pinterest.com/pin/88101736449162986/",
+      "type": "pin",
+      "title": "Pineapple Pad Thai In A Pineapple Bowl",
+      "gridTitle": "Pineapple Pad Thai In A Pineapple Bowl",
+      "description": "Up your plating game with this pineapple pad thai",
+      "link": "https://www.tastemade.co.uk/videos/pineapple-pad-thai-in-a-pineapple-bowl",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "tastemadeuk",
+        "url": "https://www.pinterest.com/tastemadeuk/",
+        "name": "Tastemade UK"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/thai-food/",
+        "name": "Thai Food",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/2a/fc/76/2afc765cc1f01182a0981fee2193bf06.png",
+          "type": "image"
+        },
+        {
+          "url": "https://v1.pinimg.com/videos/v2/720p/27/79/ed/2779eda5f559a4e18f633ca99c8b109b_mobile.mp4",
+          "type": "video"
+        }
+      ]
+    }
+  }
+}

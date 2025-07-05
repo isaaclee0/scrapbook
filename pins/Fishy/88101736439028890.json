@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736439028890/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/fishy",
+    "CustomFileName": "88101736439028890",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736439028890",
+      "url": "https://www.pinterest.com/pin/88101736439028890/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "Carpaccio di polpo",
+      "description": "carpaccio di polpo",
+      "link": "http://blog.giallozafferano.it/gelsolight/carpaccio-di-polpo/?utm_source=rss&utm_medium=rss&utm_campaign=carpaccio-di-polpo",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 2,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/fishy/",
+        "name": "Fishy",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/9c/6a/b9/9c6ab918ed0b4dcd598c97673ae1c3df.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

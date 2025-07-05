@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736442534058/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/your-pinterest-likes",
+    "CustomFileName": "88101736442534058",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736442534058",
+      "url": "https://www.pinterest.com/pin/88101736442534058/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "These Islands Are Sucking Up Pollution From The Water They're Floating In",
+      "description": "These Islands Are Sucking Up Pollution From The Water They're Floating In",
+      "link": "http://www.fastcoexist.com/3032357/these-islands-are-sucking-up-pollution-from-the-water-theyre-floating-in",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/your-pinterest-likes/",
+        "name": "Your Pinterest likes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/17/25/0e/17250e2be51c9997f696be6a659551b3.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

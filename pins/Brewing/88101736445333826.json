@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736445333826/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/brewing",
+    "CustomFileName": "88101736445333826",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736445333826",
+      "url": "https://www.pinterest.com/pin/88101736445333826/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "10 Beer Myths infographic for BrewDog by United Creatives.",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "chrisblack42",
+        "url": "https://www.pinterest.com/chrisblack42/",
+        "name": "Chris Edmunds"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/brewing/",
+        "name": "Brewing",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/f7/0b/33/f70b3338fefe0c027cb1d11dfe651b20.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

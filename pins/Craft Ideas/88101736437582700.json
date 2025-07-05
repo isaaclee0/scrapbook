@@ -1,0 +1,48 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736437582700/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/craft-ideas",
+    "CustomFileName": "88101736437582700",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736437582700",
+      "url": "https://www.pinterest.com/pin/88101736437582700/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "A locker hooking project",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "creator": {
+        "username": "khawkins87",
+        "url": "https://www.pinterest.com/khawkins87/",
+        "name": "Kirsten Tharaldson-Hawkins"
+      },
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/craft-ideas/",
+        "name": "Craft Ideas",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/ce/b6/ca/ceb6cacbfb3f97de40a07d0d89e89d55.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

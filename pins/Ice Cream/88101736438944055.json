@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736438944055/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/ice-cream",
+    "CustomFileName": "88101736438944055",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736438944055",
+      "url": "https://www.pinterest.com/pin/88101736438944055/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Fried Ice Cream",
+      "link": "http://simplysogood.blogspot.com/2011/05/fried-ice-cream.html",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/ice-cream/",
+        "name": "Ice cream",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/46/87/82/4687828d2ecfd66008558d600923451b.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

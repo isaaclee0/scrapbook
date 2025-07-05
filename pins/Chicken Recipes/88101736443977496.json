@@ -1,0 +1,44 @@
+{
+  "address": "https://www.pinterest.com/pin/88101736443977496/",
+  "dataMode": "json",
+  "hotlinkProtected": false,
+  "connectionTimeOut": -1,
+  "otherPropertiesMap": {
+    "CustomFolderName": "basketfuls/chicken-recipes",
+    "CustomFileName": "88101736443977496",
+    "FileExtensionHandleMethod": "workoutExtension",
+    "_json": {
+      "id": "88101736443977496",
+      "url": "https://www.pinterest.com/pin/88101736443977496/",
+      "type": "pin",
+      "title": "",
+      "gridTitle": "",
+      "description": "Better-than-KFC Oven Fried Chicken Recipe - ZipList",
+      "link": "http://clarkscondensed.ziplist.com/recipes/better-than-kfc-oven-fried-chicken/0b757c30-f932-0130-adee-123138128b08",
+      "category": "",
+      "isStoryPin": false,
+      "isCarousel": false,
+      "doneByMe": false,
+      "favouritedByMe": false,
+      "isRepin": true,
+      "storyPinItemCount": 0,
+      "carouselItemCount": 0,
+      "repinCount": 0,
+      "favouriteUserCount": 0,
+      "board": {
+        "url": "https://www.pinterest.com/basketfuls/chicken-recipes/",
+        "name": "Chicken Recipes",
+        "type": "board",
+        "ownerUsername": "basketfuls",
+        "ownerName": "S. L.",
+        "ownerUrl": "https://www.pinterest.com/basketfuls/"
+      },
+      "media": [
+        {
+          "url": "https://i.pinimg.com/originals/27/43/25/27432513ce0cb639c8608ce389f8952a.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}
