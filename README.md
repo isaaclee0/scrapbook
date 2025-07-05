@@ -35,7 +35,13 @@ A Flask-based web application for organizing and managing personal image collect
    cd scrapbook
    ```
 
-2. **Deploy with Docker Compose**:
+2. **Copy and configure the example docker-compose file**:
+   ```bash
+   cp docker-compose.example.yml docker-compose.prod.yml
+   # Edit docker-compose.prod.yml and change the passwords
+   ```
+
+3. **Deploy with Docker Compose**:
    ```bash
    docker compose -f docker-compose.prod.yml up -d
    ```
@@ -44,13 +50,26 @@ A Flask-based web application for organizing and managing personal image collect
    - Open your browser and navigate to `http://localhost:8000`
    - Or configure your reverse proxy (Nginx, Traefik, etc.)
 
+### Configuration
+
+1. **Copy the example configuration**:
+   ```bash
+   cp docker-compose.example.yml docker-compose.prod.yml
+   ```
+
+2. **Edit the production configuration**:
+   - Change `your_secure_password_here` to a strong password
+   - Change `your_secure_root_password_here` to a strong root password
+   - Adjust ports if needed
+   - Modify network configuration if not using Nginx Proxy Manager
+
 ### Environment Variables
 
 The application uses the following environment variables:
 
 - `DB_HOST`: Database host (default: `db`)
 - `DB_USER`: Database username (default: `db`)
-- `DB_PASSWORD`: Database password
+- `DB_PASSWORD`: Database password (change this!)
 - `DB_NAME`: Database name (default: `db`)
 - `REDIS_HOST`: Redis host (default: `redis`)
 - `REDIS_PORT`: Redis port (default: `6379`)

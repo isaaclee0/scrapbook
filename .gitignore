@@ -57,6 +57,10 @@ pins/
 *.zip
 processed_boards.txt
 
+# Production configuration files
+docker-compose.prod.yml
+.env
+
 # Docker
 .dockerignore
 

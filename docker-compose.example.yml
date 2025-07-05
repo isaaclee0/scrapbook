@@ -18,7 +18,7 @@ services:
       - FLASK_ENV=production
       - DB_HOST=db
       - DB_USER=db
-      - DB_PASSWORD=3Uy@7SGMAHVyC^Oo
+      - DB_PASSWORD=your_secure_password_here
       - DB_NAME=db
       - REDIS_HOST=redis
       - REDIS_PORT=6379
@@ -58,11 +58,11 @@ services:
     environment:
       - MYSQL_DATABASE=db
       - MYSQL_USER=db
-      - MYSQL_PASSWORD=3Uy@7SGMAHVyC^Oo
-      - MYSQL_ROOT_PASSWORD=3Uy@7SGMAHVyC^Oo
+      - MYSQL_PASSWORD=your_secure_password_here
+      - MYSQL_ROOT_PASSWORD=your_secure_root_password_here
     command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --innodb-buffer-pool-size=256M
     healthcheck:
-      test: ["CMD", "mariadb-admin", "ping", "-h", "localhost", "-u", "db", "-p3Uy@7SGMAHVyC^Oo"]
+      test: ["CMD", "mariadb-admin", "ping", "-h", "localhost", "-u", "db", "-pyour_secure_password_here"]
       interval: 30s
       timeout: 10s
       retries: 5
