@@ -413,10 +413,10 @@ def add_pin():
 def update_pin(pin_id):
     try:
         data = request.get_json()
-        print(f"Received update request for pin {pin_id}: {data}")  # Debug log
+        # print(f"Received update request for pin {pin_id}: {data}")  # Debug log
         
         if not data:
-            print("No data provided in request")  # Debug log
+            # print("No data provided in request")  # Debug log
             return jsonify({"error": "No data provided"}), 400
             
         # Get only the fields that are provided
@@ -424,9 +424,9 @@ def update_pin(pin_id):
         description = sanitize_string(data.get('description', '')) if 'description' in data else None
         notes = sanitize_string(data.get('notes', '')) if 'notes' in data else None
         
-        print(f"Processed data - title: '{title}', description: '{description}', notes: '{notes}'")  # Debug log
-        print(f"Raw title from request: '{data.get('title', '')}'")  # Debug log
-        print(f"Is title in data? {'title' in data}")  # Debug log
+        # print(f"Processed data - title: '{title}', description: '{description}', notes: '{notes}'")  # Debug log
+        # print(f"Raw title from request: '{data.get('title', '')}'")  # Debug log
+        # print(f"Is title in data? {'title' in data}")  # Debug log
         
         db = get_db_connection()
         cursor = db.cursor()
@@ -435,18 +435,18 @@ def update_pin(pin_id):
         cursor.execute("SELECT title FROM pins WHERE id = %s", (pin_id,))
         result = cursor.fetchone()
         if not result:
-            print(f"Pin {pin_id} not found")  # Debug log
+            # print(f"Pin {pin_id} not found")  # Debug log
             return jsonify({"error": "Pin not found"}), 404
             
         current_title = result[0]
-        print(f"Current title in database: '{current_title}'")  # Debug log
+        # print(f"Current title in database: '{current_title}'")  # Debug log
         
         # Build the update query dynamically based on what fields are provided
         update_fields = []
         update_values = []
         
         if title is not None:
-            print(f"Title is different from current: {title != current_title}")  # Debug log
+            # print(f"Title is different from current: {title != current_title}")  # Debug log
             update_fields.append("title = %s")
             update_values.append(title)
             
@@ -459,7 +459,7 @@ def update_pin(pin_id):
             update_values.append(notes)
             
         if not update_fields:
-            print("No fields to update")  # Debug log
+            # print("No fields to update")  # Debug log
             return jsonify({"error": "No fields to update"}), 400
             
         # Add the pin_id to the values list
@@ -472,12 +472,12 @@ def update_pin(pin_id):
             WHERE id = %s
         """
         
-        print(f"Executing query: {update_query}")  # Debug log
-        print(f"With values: {update_values}")  # Debug log
+        # print(f"Executing query: {update_query}")  # Debug log
+        # print(f"With values: {update_values}")  # Debug log
         
         cursor.execute(update_query, tuple(update_values))
         db.commit()
-        print(f"Successfully updated pin {pin_id}")  # Debug log
+        # print(f"Successfully updated pin {pin_id}")  # Debug log
         
         return jsonify({
             'success': True,
@@ -987,7 +987,7 @@ def create_indexes():
             except:
                 pass  # Ignore errors during cleanup
 
-# Background task for URL health checking
+# Background task for URL health checking (disabled in production for memory efficiency)
 import threading
 import time
 import requests
@@ -995,6 +995,10 @@ from datetime import datetime, timedelta
 from urllib.parse import quote
 
 def check_url_health():
+    # Only run URL health checking in development mode
+    if os.getenv('FLASK_ENV') != 'development':
+        return
+        
     while True:
         try:
             db = get_db_connection()
@@ -1007,7 +1011,7 @@ def check_url_health():
                 LEFT JOIN url_health uh ON p.id = uh.pin_id
                 WHERE p.link IS NOT NULL 
                 AND (uh.last_checked IS NULL OR uh.last_checked < DATE_SUB(NOW(), INTERVAL 24 HOUR))
-                LIMIT 5
+                LIMIT 3
             """)
             
             urls_to_check = cursor.fetchall()
@@ -1015,7 +1019,7 @@ def check_url_health():
             for url_data in urls_to_check:
                 try:
                     # Check if URL is accessible
-                    response = requests.head(url_data['url'], timeout=10, allow_redirects=True)
+                    response = requests.head(url_data['url'], timeout=5, allow_redirects=True)
                     status = 'live' if response.status_code < 400 else 'broken'
                     archive_url = None
                     
@@ -1025,7 +1029,7 @@ def check_url_health():
                             # First check if the URL is already archived
                             archive_check = requests.get(
                                 f"https://archive.is/{quote(url_data['url'])}",
-                                timeout=5,
+                                timeout=3,
                                 allow_redirects=True
                             )
                             if archive_check.status_code == 200 and 'archive.is' in archive_check.url:
@@ -1064,8 +1068,8 @@ def check_url_health():
                     print(f"Error checking URL {url_data['url']}: {str(e)}")
                     continue
                 
-                # Sleep for 1 minute between checks to be nice to servers
-                time.sleep(60)
+                # Sleep for 30 seconds between checks to be nice to servers
+                time.sleep(30)
             
         except Exception as e:
             print(f"Error in URL health check background task: {str(e)}")
@@ -1078,8 +1082,8 @@ def check_url_health():
                 except:
                     pass
         
-        # Sleep for 5 minutes before next batch
-        time.sleep(300)
+        # Sleep for 10 minutes before next batch
+        time.sleep(600)
 
 # Start the background task when the app starts
 def start_background_tasks():
@@ -1090,4 +1094,5 @@ def start_background_tasks():
 start_background_tasks()
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=8000)
+    debug_mode = os.getenv('FLASK_ENV') == 'development'
+    app.run(debug=debug_mode, host='0.0.0.0', port=8000)
