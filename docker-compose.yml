@@ -2,10 +2,7 @@ version: '3.8'
 
 services:
   web:
-    build:
-      context: https://github.com/isaaclee0/scrapbook.git
-      dockerfile: Dockerfile
-    image: scrapbook:latest
+    image: staugustine1/scrapbook:latest
     restart: unless-stopped
     ports:
       - "8002:8000"
