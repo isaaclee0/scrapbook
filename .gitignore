@@ -71,4 +71,4 @@ docker-compose.prod.yml
 
 # Temporary files
 *.tmp
-*.temp 
+*.temp docker-compose.yml
