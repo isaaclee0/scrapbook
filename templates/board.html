@@ -6,6 +6,11 @@
         <div class="board-title-container">
             <h1>{{ board.name }}</h1>
             <div class="board-actions">
+                <div class="pin-width-control">
+                    <label for="pinWidthSlider" class="pin-width-label">Pin Width:</label>
+                    <input type="range" id="pinWidthSlider" min="200" max="400" value="270" class="pin-width-slider">
+                    <span id="pinWidthValue" class="pin-width-value">270px</span>
+                </div>
                 <button class="board-settings-button" onclick="toggleBoardSettings()">
                     <span class="cog-icon">⚙️</span>
                 </button>
@@ -111,6 +116,59 @@
 
 .board-actions {
     position: relative;
+}
+
+.pin-width-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 15px;
+}
+
+.pin-width-label {
+    font-size: 14px;
+    color: #555;
+}
+
+.pin-width-slider {
+    -webkit-appearance: none;
+    width: 100px;
+    height: 5px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+}
+
+.pin-width-slider:hover {
+    opacity: 1;
+}
+
+.pin-width-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #2980b9;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 2px #000000;
+}
+
+.pin-width-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #2980b9;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 2px #000000;
+}
+
+.pin-width-value {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
 }
 
 .board-settings-button {
@@ -297,7 +355,7 @@
 }
 
 .grid-item {
-    width: 270px;
+    width: var(--pin-width, 270px);
     margin-bottom: 16px;
 }
 
@@ -378,6 +436,14 @@
     .pins-grid {
         grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     }
+    
+    .pin-width-control {
+        margin-right: 12px;
+    }
+    
+    .pin-width-slider {
+        width: 90px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -387,6 +453,24 @@
     
     .pin-image {
         height: 300px;
+    }
+    
+    .pin-width-control {
+        flex-direction: column;
+        gap: 5px;
+        margin-right: 10px;
+    }
+    
+    .pin-width-slider {
+        width: 80px;
+    }
+    
+    .pin-width-label {
+        font-size: 12px;
+    }
+    
+    .pin-width-value {
+        font-size: 12px;
     }
 }
 </style>
@@ -534,9 +618,15 @@ function deleteBoard() {
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize Masonry
     const grid = document.querySelector('.pins-grid');
+    const savedPinWidth = localStorage.getItem('boardPinWidth') || 270;
+    const initialWidth = parseInt(savedPinWidth);
+    
+    // Set initial CSS custom property
+    document.documentElement.style.setProperty('--pin-width', `${initialWidth}px`);
+    
     const masonry = new Masonry(grid, {
         itemSelector: '.grid-item',
-        columnWidth: 270,
+        columnWidth: initialWidth,
         gutter: 16,
         fitWidth: true,
         transitionDuration: '0.2s'
@@ -578,6 +668,35 @@ document.addEventListener('DOMContentLoaded', function() {
             masonry.layout();
         };
     });
+
+    // Pin width slider handling
+    const pinWidthSlider = document.getElementById('pinWidthSlider');
+    const pinWidthValue = document.getElementById('pinWidthValue');
+
+    function updatePinWidth() {
+        const newWidth = parseInt(pinWidthSlider.value);
+        pinWidthValue.textContent = `${newWidth}px`;
+        localStorage.setItem('boardPinWidth', newWidth);
+        
+        // Update CSS custom property
+        document.documentElement.style.setProperty('--pin-width', `${newWidth}px`);
+        
+        // Update Masonry column width
+        masonry.options.columnWidth = newWidth;
+        masonry.layout();
+    }
+
+    pinWidthSlider.addEventListener('input', updatePinWidth);
+    pinWidthSlider.addEventListener('change', updatePinWidth);
+
+    // Load saved pin width from localStorage and update slider
+    const savedPinWidthValue = localStorage.getItem('boardPinWidth');
+    if (savedPinWidthValue) {
+        pinWidthSlider.value = savedPinWidthValue;
+        pinWidthValue.textContent = `${savedPinWidthValue}px`;
+        document.documentElement.style.setProperty('--pin-width', `${savedPinWidthValue}px`);
+        masonry.options.columnWidth = parseInt(savedPinWidthValue);
+    }
 });
 
 // Keep existing getDominantColor function
