@@ -220,6 +220,76 @@
         .search-container input[type="submit"]:hover {
             background: #2472a4;
         }
+        .pin-width-control {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-right: 15px;
+        }
+        .pin-width-label {
+            font-size: 14px;
+            color: #555;
+        }
+        .pin-width-slider {
+            -webkit-appearance: none;
+            width: 100px;
+            height: 5px;
+            background: #ddd;
+            border-radius: 5px;
+            outline: none;
+            opacity: 0.7;
+            transition: opacity .2s;
+        }
+        .pin-width-slider:hover {
+            opacity: 1;
+        }
+        .pin-width-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #2980b9;
+            cursor: pointer;
+            border-radius: 50%;
+            box-shadow: 0 0 2px #000000;
+        }
+        .pin-width-slider::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            background: #2980b9;
+            cursor: pointer;
+            border-radius: 50%;
+            box-shadow: 0 0 2px #000000;
+        }
+        .pin-width-value {
+            font-size: 14px;
+            color: #333;
+            font-weight: bold;
+        }
+        @media (max-width: 900px) {
+            .pin-width-control {
+                margin-right: 12px;
+            }
+            .pin-width-slider {
+                width: 90px;
+            }
+        }
+        @media (max-width: 600px) {
+            .pin-width-control {
+                flex-direction: column;
+                gap: 5px;
+                margin-right: 10px;
+            }
+            .pin-width-slider {
+                width: 80px;
+            }
+            .pin-width-label {
+                font-size: 12px;
+            }
+            .pin-width-value {
+                font-size: 12px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -233,6 +303,12 @@
             <a href="/" class="logo">scrapbook.io</a>
         </div>
         <div class="nav-right">
+            <!-- Pin width slider (global) -->
+            <div class="pin-width-control">
+                <label for="pinWidthSlider" class="pin-width-label">Pin Width:</label>
+                <input type="range" id="pinWidthSlider" min="200" max="400" value="270" class="pin-width-slider">
+                <span id="pinWidthValue" class="pin-width-value">270px</span>
+            </div>
             <!-- Add any right-side navigation items here -->
         </div>
     </nav>
@@ -251,6 +327,31 @@
     </div>
 
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Pin width slider handling (global)
+            const pinWidthSlider = document.getElementById('pinWidthSlider');
+            const pinWidthValue = document.getElementById('pinWidthValue');
+            if (pinWidthSlider && pinWidthValue) {
+                function updatePinWidth() {
+                    const newWidth = parseInt(pinWidthSlider.value);
+                    pinWidthValue.textContent = `${newWidth}px`;
+                    localStorage.setItem('boardPinWidth', newWidth);
+                    document.documentElement.style.setProperty('--pin-width', `${newWidth}px`);
+                    // If Masonry is present, update its columnWidth
+                    if (window.masonry) {
+                        window.masonry.options.columnWidth = newWidth;
+                        window.masonry.layout();
+                    }
+                }
+                pinWidthSlider.addEventListener('input', updatePinWidth);
+                pinWidthSlider.addEventListener('change', updatePinWidth);
+                // Load saved pin width from localStorage
+                const savedPinWidth = localStorage.getItem('boardPinWidth') || 270;
+                pinWidthSlider.value = savedPinWidth;
+                pinWidthValue.textContent = `${savedPinWidth}px`;
+                document.documentElement.style.setProperty('--pin-width', `${savedPinWidth}px`);
+            }
+        });
         function showAddContentDialog() {
             window.location.href = '/add-content';
         }

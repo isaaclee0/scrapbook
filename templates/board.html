@@ -6,11 +6,6 @@
         <div class="board-title-container">
             <h1>{{ board.name }}</h1>
             <div class="board-actions">
-                <div class="pin-width-control">
-                    <label for="pinWidthSlider" class="pin-width-label">Pin Width:</label>
-                    <input type="range" id="pinWidthSlider" min="200" max="400" value="270" class="pin-width-slider">
-                    <span id="pinWidthValue" class="pin-width-value">270px</span>
-                </div>
                 <button class="board-settings-button" onclick="toggleBoardSettings()">
                     <span class="cog-icon">⚙️</span>
                 </button>
@@ -116,59 +111,6 @@
 
 .board-actions {
     position: relative;
-}
-
-.pin-width-control {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-right: 15px;
-}
-
-.pin-width-label {
-    font-size: 14px;
-    color: #555;
-}
-
-.pin-width-slider {
-    -webkit-appearance: none;
-    width: 100px;
-    height: 5px;
-    background: #ddd;
-    border-radius: 5px;
-    outline: none;
-    opacity: 0.7;
-    transition: opacity .2s;
-}
-
-.pin-width-slider:hover {
-    opacity: 1;
-}
-
-.pin-width-slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 20px;
-    height: 20px;
-    background: #2980b9;
-    cursor: pointer;
-    border-radius: 50%;
-    box-shadow: 0 0 2px #000000;
-}
-
-.pin-width-slider::-moz-range-thumb {
-    width: 20px;
-    height: 20px;
-    background: #2980b9;
-    cursor: pointer;
-    border-radius: 50%;
-    box-shadow: 0 0 2px #000000;
-}
-
-.pin-width-value {
-    font-size: 14px;
-    color: #333;
-    font-weight: bold;
 }
 
 .board-settings-button {
@@ -670,33 +612,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Pin width slider handling
-    const pinWidthSlider = document.getElementById('pinWidthSlider');
-    const pinWidthValue = document.getElementById('pinWidthValue');
-
-    function updatePinWidth() {
-        const newWidth = parseInt(pinWidthSlider.value);
-        pinWidthValue.textContent = `${newWidth}px`;
-        localStorage.setItem('boardPinWidth', newWidth);
-        
-        // Update CSS custom property
-        document.documentElement.style.setProperty('--pin-width', `${newWidth}px`);
-        
-        // Update Masonry column width
-        masonry.options.columnWidth = newWidth;
-        masonry.layout();
-    }
-
-    pinWidthSlider.addEventListener('input', updatePinWidth);
-    pinWidthSlider.addEventListener('change', updatePinWidth);
-
-    // Load saved pin width from localStorage and update slider
-    const savedPinWidthValue = localStorage.getItem('boardPinWidth');
-    if (savedPinWidthValue) {
-        pinWidthSlider.value = savedPinWidthValue;
-        pinWidthValue.textContent = `${savedPinWidthValue}px`;
-        document.documentElement.style.setProperty('--pin-width', `${savedPinWidthValue}px`);
-        masonry.options.columnWidth = parseInt(savedPinWidthValue);
-    }
+    // The pin width slider is now handled globally in base.html
+    // This script block is no longer needed for the board-specific pin width.
+    // The initial width is set in base.html and updated by the global slider.
+    // The masonry columnWidth is also set in base.html.
 });
 
 // Keep existing getDominantColor function
