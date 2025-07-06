@@ -1,13 +1,11 @@
-version: '3.8'
-
 services:
   web:
-    image: staugustine1/scrapbook:latest
+    build: .
     restart: unless-stopped
     ports:
       - "8002:8000"
     volumes:
-      - app_data:/app
+      - .:/app
     networks:
       - scrapbook_net
     environment:

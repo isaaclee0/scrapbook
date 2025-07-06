@@ -337,13 +337,23 @@
                     pinWidthValue.textContent = `${newWidth}px`;
                     localStorage.setItem('boardPinWidth', newWidth);
                     document.documentElement.style.setProperty('--pin-width', `${newWidth}px`);
-                    // If Masonry is present, update its columnWidth
+                    // If Masonry is present, update its columnWidth and recalculate layout
                     if (window.masonry) {
                         window.masonry.options.columnWidth = newWidth;
+                        window.masonry.reloadItems();
                         window.masonry.layout();
                     }
+                    // Trigger a window resize event to ensure layout updates
+                    window.dispatchEvent(new Event('resize'));
                 }
-                pinWidthSlider.addEventListener('input', updatePinWidth);
+                // Debounced update function for smoother slider experience
+                let updateTimeout;
+                function debouncedUpdatePinWidth() {
+                    clearTimeout(updateTimeout);
+                    updateTimeout = setTimeout(updatePinWidth, 50);
+                }
+                
+                pinWidthSlider.addEventListener('input', debouncedUpdatePinWidth);
                 pinWidthSlider.addEventListener('change', updatePinWidth);
                 // Load saved pin width from localStorage
                 const savedPinWidth = localStorage.getItem('boardPinWidth') || 270;

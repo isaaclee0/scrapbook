@@ -952,8 +952,8 @@ function moveToSection(pinId, sectionId) {
 function savePin() {
     const notes = document.querySelector('.notes-textarea').value;
     
-    fetch(`/api/pins/${pinId}`, {
-        method: 'PUT',
+    fetch(`/update-pin/${pinId}`, {
+        method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
@@ -964,7 +964,8 @@ function savePin() {
     .then(response => response.json())
     .then(data => {
         if (data.success) {
-            window.location.reload();
+            // Redirect back to the board instead of reloading the pin page
+            window.location.href = `/board/${boardId}`;
         } else {
             alert('Failed to save changes: ' + data.error);
         }
@@ -992,8 +993,8 @@ function confirmDelete() {
 }
 
 function deletePin(pinId) {
-    fetch(`/api/pins/${pinId}`, {
-        method: 'DELETE'
+    fetch(`/delete-pin/${pinId}`, {
+        method: 'POST'
     })
     .then(response => response.json())
     .then(data => {

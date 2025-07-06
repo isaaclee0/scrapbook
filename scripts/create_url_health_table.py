@@ -24,10 +24,15 @@ def main():
                 pin_id INT NOT NULL,
                 url VARCHAR(2048) NOT NULL,
                 last_checked DATETIME,
-                status ENUM('unknown', 'healthy', 'broken', 'archived') DEFAULT 'unknown',
+                status ENUM('unknown', 'live', 'broken', 'archived') DEFAULT 'unknown',
                 archive_url VARCHAR(2048),
-                FOREIGN KEY (pin_id) REFERENCES pins(id) ON DELETE CASCADE
-            )
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                FOREIGN KEY (pin_id) REFERENCES pins(id) ON DELETE CASCADE,
+                INDEX idx_url_health_pin_id (pin_id),
+                INDEX idx_url_health_status (status),
+                INDEX idx_url_health_last_checked (last_checked)
+            ) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci
         """)
         
         # Create indexes for frequently queried columns

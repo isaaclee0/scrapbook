@@ -294,6 +294,7 @@
 
 .pins-grid {
     margin: 0 auto;
+    width: 100%;
 }
 
 .grid-item {
@@ -570,7 +571,6 @@ document.addEventListener('DOMContentLoaded', function() {
         itemSelector: '.grid-item',
         columnWidth: initialWidth,
         gutter: 16,
-        fitWidth: true,
         transitionDuration: '0.2s'
     });
 
@@ -609,6 +609,13 @@ document.addEventListener('DOMContentLoaded', function() {
             card.style.backgroundColor = dominantColor;
             masonry.layout();
         };
+    });
+
+    // Handle window resize to recalculate Masonry layout
+    window.addEventListener('resize', function() {
+        if (masonry) {
+            masonry.layout();
+        }
     });
 
     // Pin width slider handling
