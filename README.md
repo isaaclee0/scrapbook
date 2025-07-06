@@ -37,7 +37,7 @@ A Flask-based web application for organizing and managing personal image collect
 
 2. **Set up environment variables**:
    ```bash
-   cp .env.example .env
+   cp env.example .env
    # Edit .env and set secure passwords
    ```
 
@@ -54,7 +54,7 @@ A Flask-based web application for organizing and managing personal image collect
 
 1. **Set up environment variables**:
    ```bash
-   cp .env.example .env
+   cp env.example .env
    ```
 
 2. **Edit the environment file**:
@@ -76,7 +76,10 @@ The application uses the following environment variables:
 - `DB_NAME`: Database name (default: `db`)
 - `REDIS_HOST`: Redis host (default: `redis`)
 - `REDIS_PORT`: Redis port (default: `6379`)
-- `FLASK_ENV`: Flask environment (default: `production`)
+- `DEBUG_MODE`: Debug mode setting (default: `production`)
+  - Set to `development` to enable debugging and URL health checking
+  - Set to `production` (or leave unset) for production mode
+- `FLASK_ENV`: Flask environment (automatically set based on `DEBUG_MODE`)
 
 ## Project Structure
 
@@ -86,7 +89,7 @@ scrapbook/
 ├── Dockerfile            # Docker configuration
 ├── docker-compose.yml    # Development Docker Compose
 ├── docker-compose.prod.yml # Production Docker Compose
-├── .env.example          # Example environment variables
+├── env.example           # Example environment variables
 ├── requirements.txt      # Python dependencies
 ├── init.sql             # Database initialization
 ├── templates/           # HTML templates
@@ -133,6 +136,31 @@ scrapbook/
    python app.py
    ```
 
+### Debug Mode
+
+To enable debugging and URL health checking in Docker:
+
+1. **Set the DEBUG_MODE environment variable**:
+   ```bash
+   export DEBUG_MODE=development
+   docker compose up -d
+   ```
+
+   Or create a `.env` file:
+   ```bash
+   echo "DEBUG_MODE=development" >> .env
+   docker compose up -d
+   ```
+
+2. **What debug mode enables**:
+   - Flask debug mode (auto-reload, detailed error pages)
+   - Background URL health checking
+   - More verbose logging
+
+3. **For production**:
+   - Leave `DEBUG_MODE` unset or set to `production`
+   - This disables debugging and URL health checking for better performance
+
 ### Database Schema
 
 The application uses the following main tables:
@@ -145,7 +173,7 @@ The application uses the following main tables:
 
 ### Environment Variables
 - **Never commit `.env` files** - they contain sensitive information
-- Use `.env.example` as a template for your environment configuration
+- Use `env.example` as a template for your environment configuration
 - All database passwords and sensitive configuration should be stored in environment variables
 
 ### Password Management

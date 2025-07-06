@@ -5,20 +5,21 @@ services:
     build:
       context: https://github.com/isaaclee0/scrapbook.git
       dockerfile: Dockerfile
-    image: scrapbook:prod
+    image: scrapbook:latest
     restart: unless-stopped
     ports:
-      - "8000:8000"
+      - "8002:8000"
     volumes:
       - app_data:/app
     networks:
-      - npm_proxy
       - scrapbook_net
     environment:
       - FLASK_ENV=${DEBUG_MODE:-production}
+      - FLASK_APP=app.py
+      - PYTHONUNBUFFERED=1
       - DB_HOST=db
       - DB_USER=db
-      - DB_PASSWORD=your_secure_password_here
+      - DB_PASSWORD=${DB_PASSWORD:-your_secure_password_here}
       - DB_NAME=db
       - REDIS_HOST=redis
       - REDIS_PORT=6379
@@ -27,12 +28,6 @@ services:
         condition: service_healthy
       redis:
         condition: service_started
-    healthcheck:
-      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8000/')"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-      start_period: 40s
 
   redis:
     image: redis:7-alpine
@@ -58,11 +53,11 @@ services:
     environment:
       - MYSQL_DATABASE=db
       - MYSQL_USER=db
-      - MYSQL_PASSWORD=your_secure_password_here
-      - MYSQL_ROOT_PASSWORD=your_secure_root_password_here
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD:-your_secure_password_here}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-your_secure_root_password_here}
     command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --innodb-buffer-pool-size=256M
     healthcheck:
-      test: ["CMD", "mariadb-admin", "ping", "-h", "localhost", "-u", "db", "-pyour_secure_password_here"]
+      test: ["CMD", "mariadb-admin", "ping", "-h", "localhost", "-u", "db", "-p${MYSQL_PASSWORD:-your_secure_password_here}"]
       interval: 30s
       timeout: 10s
       retries: 5
@@ -75,14 +70,10 @@ services:
           - mysql
 
 networks:
-  npm_proxy:
-    external: true
   scrapbook_net:
     driver: bridge
 
 volumes:
-  app_data:
-    driver: local
   db:
     driver: local
   db_config:
