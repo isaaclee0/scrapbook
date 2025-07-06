@@ -384,8 +384,12 @@ def add_pin():
         image_url = sanitize_url(data.get('image_url', ''))
         source_url = sanitize_url(data.get('source_url', ''))  # Add source URL
         
-        if not board_id or not title or not image_url:
-            return jsonify({"error": "Board ID, title, and image URL are required"}), 400
+        if not board_id or not title:
+            return jsonify({"error": "Board ID and title are required"}), 400
+            
+        # Use default image if no image URL is provided
+        if not image_url:
+            image_url = '/static/images/default_pin.png'
             
         db = get_db_connection()
         cursor = db.cursor()
@@ -987,7 +991,7 @@ def create_indexes():
             except:
                 pass  # Ignore errors during cleanup
 
-# Background task for URL health checking (disabled in production for memory efficiency)
+# Background task for URL health checking (enabled in all environments)
 import threading
 import time
 import requests
@@ -995,31 +999,38 @@ from datetime import datetime, timedelta
 from urllib.parse import quote
 
 def check_url_health():
-    # Only run URL health checking in development mode
-    if os.getenv('FLASK_ENV') != 'development':
-        return
-        
+    # Run URL health checking in all environments
     while True:
         try:
             db = get_db_connection()
             cursor = db.cursor(dictionary=True)
             
-            # Get URLs that haven't been checked in the last 24 hours
+            # Get URLs that haven't been checked in the last week
             cursor.execute("""
                 SELECT p.id as pin_id, p.link as url
                 FROM pins p
                 LEFT JOIN url_health uh ON p.id = uh.pin_id
                 WHERE p.link IS NOT NULL 
-                AND (uh.last_checked IS NULL OR uh.last_checked < DATE_SUB(NOW(), INTERVAL 24 HOUR))
-                LIMIT 3
+                AND (uh.last_checked IS NULL OR uh.last_checked < DATE_SUB(NOW(), INTERVAL 1 WEEK))
+                LIMIT 10
             """)
             
             urls_to_check = cursor.fetchall()
             
             for url_data in urls_to_check:
                 try:
+                    # Set up headers to mimic a browser
+                    headers = {
+                        'User-Agent': 'Mozilla/5.0 (compatible; ScrapbookBot/1.0; +https://github.com/isaaclee0/scrapbook)',
+                        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                        'Accept-Language': 'en-US,en;q=0.5',
+                        'Accept-Encoding': 'gzip, deflate',
+                        'Connection': 'keep-alive',
+                        'Upgrade-Insecure-Requests': '1',
+                    }
+                    
                     # Check if URL is accessible
-                    response = requests.head(url_data['url'], timeout=5, allow_redirects=True)
+                    response = requests.head(url_data['url'], headers=headers, timeout=3, allow_redirects=True)
                     status = 'live' if response.status_code < 400 else 'broken'
                     archive_url = None
                     
@@ -1029,7 +1040,8 @@ def check_url_health():
                             # First check if the URL is already archived
                             archive_check = requests.get(
                                 f"https://archive.is/{quote(url_data['url'])}",
-                                timeout=3,
+                                headers=headers,
+                                timeout=2,
                                 allow_redirects=True
                             )
                             if archive_check.status_code == 200 and 'archive.is' in archive_check.url:
@@ -1068,8 +1080,8 @@ def check_url_health():
                     print(f"Error checking URL {url_data['url']}: {str(e)}")
                     continue
                 
-                # Sleep for 30 seconds between checks to be nice to servers
-                time.sleep(30)
+                # Sleep for 5 seconds between checks (much faster)
+                time.sleep(5)
             
         except Exception as e:
             print(f"Error in URL health check background task: {str(e)}")
@@ -1082,8 +1094,8 @@ def check_url_health():
                 except:
                     pass
         
-        # Sleep for 10 minutes before next batch
-        time.sleep(600)
+        # Sleep for 2 minutes before next batch (much faster)
+        time.sleep(120)
 
 # Start the background task when the app starts
 def start_background_tasks():
