@@ -10,6 +10,9 @@
                     <span class="cog-icon">⚙️</span>
                 </button>
                 <div class="board-settings-menu" id="boardSettingsMenu">
+                    <button id="processingStatusBtn" disabled>
+                        <span id="processingStatusText">🎨 Ready</span>
+                    </button>
                     <button onclick="showRenameBoardModal()">Rename Board</button>
                     <button onclick="showMoveBoardModal()">Move Board</button>
                     <button onclick="showDeleteBoardModal()" class="delete-button">Delete Board</button>
@@ -28,9 +31,32 @@
 
     <div class="pins-grid" id="pinsGrid">
         {% for pin in pins %}
-        <div class="pin-card grid-item" data-section-id="{{ pin.section_id or 'all' }}">
+        <div class="pin-card grid-item" 
+             data-section-id="{{ pin.section_id or 'all' }}" 
+             {% if pin.dominant_color_1 and pin.dominant_color_2 %}
+             style="--dominant-color: {{ pin.dominant_color_1 }}; --secondary-color: {{ pin.dominant_color_2 }};"
+             data-colors-extracted="true"
+             data-has-db-colors="true"
+             {% else %}
+             data-has-db-colors="false"
+             {% endif %}
+             data-pin-id="{{ pin.id }}"
+             data-image-url="{{ pin.image_url }}"
+             {% if pin.cached_filename %}
+             data-cached-url="/cached/{{ pin.cached_filename }}"
+             data-has-cached="true"
+             {% else %}
+             data-has-cached="false"
+             {% endif %}>
             <a href="{{ url_for('view_pin', pin_id=pin.id) }}">
-                <img src="{{ pin.image_url }}" alt="{{ pin.title }}" class="pin-image">
+                <div class="pin-image-container">
+                    {% if pin.cached_filename %}
+                    <img src="/cached/{{ pin.cached_filename }}" alt="{{ pin.title }}" class="pin-image" 
+                         data-original-url="{{ pin.image_url }}">
+                    {% else %}
+                    <img src="{{ pin.image_url }}" alt="{{ pin.title }}" class="pin-image">
+                    {% endif %}
+                </div>
                 <div class="pin-info">
                     <h3>{{ pin.title }}</h3>
                     {% if pin.link %}
@@ -163,257 +189,280 @@
     transition: background-color 0.2s;
 }
 
-.board-settings-menu button:hover {
-    background-color: #f0f0f0;
+.board-settings-menu button:hover:not(:disabled) {
+    background-color: #f5f5f5;
 }
 
-.board-settings-menu .delete-button {
+.board-settings-menu button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.board-settings-menu button.delete-button {
     color: #dc3545;
 }
 
-.board-settings-menu .delete-button:hover {
+.board-settings-menu button.delete-button:hover {
     background-color: #fff5f5;
 }
 
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-    justify-content: center;
-    align-items: center;
-}
-
-.modal.active {
-    display: flex;
-}
-
-.modal-content {
-    background: white;
-    padding: 24px;
-    border-radius: 12px;
-    width: 90%;
-    max-width: 400px;
-}
-
-.modal-content h3 {
-    margin: 0 0 16px;
-    font-size: 18px;
-    color: #333;
-}
-
-.board-input {
-    width: 100%;
-    padding: 8px 12px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    font-size: 14px;
-    margin-bottom: 16px;
-}
-
-.modal-actions {
-    display: flex;
-    justify-content: flex-end;
-    gap: 12px;
-}
-
-.button {
-    padding: 8px 16px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.2s;
-}
-
-.primary-button {
-    background-color: #2980b9;
-    color: white;
-    border: none;
-}
-
-.primary-button:hover {
-    background-color: #3498db;
-}
-
-.secondary-button {
-    background-color: #f0f0f0;
-    color: #333;
-    border: 1px solid #ddd;
-}
-
-.secondary-button:hover {
-    background-color: #e0e0e0;
-}
-
-.delete-button {
-    background-color: #dc3545;
-    color: white;
-    border: none;
-}
-
-.delete-button:hover {
-    background-color: #c82333;
-}
-
 .section-selector-container {
-    overflow-x: auto;
-    margin: 20px 0;
-    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 20px;
 }
 
 .section-selector {
     display: flex;
-    gap: 10px;
-    padding: 10px 0;
-    min-width: min-content;
+    gap: 0;
+    overflow-x: auto;
 }
 
 .section-button {
-    padding: 8px 16px;
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    background: white;
+    background: none;
+    border: none;
+    padding: 12px 16px;
     cursor: pointer;
+    border-bottom: 2px solid transparent;
     white-space: nowrap;
-    transition: all 0.2s;
+    transition: border-color 0.2s;
 }
 
 .section-button:hover {
-    background: #f0f0f0;
+    background-color: #f5f5f5;
 }
 
 .section-button.active {
-    background: #000;
-    color: white;
-    border-color: #000;
+    border-bottom-color: #007bff;
+    color: #007bff;
+    font-weight: 500;
 }
 
 .pins-grid {
-    margin: 0 auto;
-    width: 100%;
-}
-
-.grid-item {
-    width: var(--pin-width, 270px);
-    margin-bottom: 16px;
+    padding: 20px 0;
 }
 
 .pin-card {
-    border-radius: 8px;
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: transform 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
     position: relative;
-    background-color: #f0f0f0;
+    width: var(--pin-width, 250px);
+    margin-bottom: 20px;
+    background: white;
+}
+
+/* Default neutral appearance for pins without colors */
+.pin-card:not([data-colors-extracted="true"]) {
+    background: white;
+    border: 1px solid #e9ecef;
 }
 
 .pin-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+
+
+.pin-image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--dominant-color, #f8f9fa) 0%, var(--secondary-color, #e9ecef) 100%);
+    transition: background 0.5s ease;
+}
+
+/* Default neutral appearance for image containers without colors */
+.pin-card:not([data-colors-extracted="true"]) .pin-image-container {
+    background: #f8f9fa;
 }
 
 .pin-image {
     width: 100%;
     height: auto;
     display: block;
-    background-color: inherit;
+    transition: transform 0.2s;
+}
+
+.pin-card:hover .pin-image {
+    transform: scale(1.05);
 }
 
 .pin-info {
-    padding: 12px;
-    background-color: white;
+    padding: 16px;
     position: relative;
-    z-index: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 8px;
+    background: white;
 }
 
 .pin-info h3 {
     margin: 0;
     font-size: 16px;
-    flex: 1;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #333;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.pin-card a {
+    text-decoration: none;
+    color: #333 !important;
+    display: block;
+}
+
+.pin-card a:hover {
+    color: #333 !important;
 }
 
 .source-link-icon {
-    flex-shrink: 0;
-    color: #2980b9;
-    font-size: 14px;
-    opacity: 0.8;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
     text-decoration: none;
-    padding: 4px;
-    margin: -4px;
-    border-radius: 4px;
+    color: #666;
+    transition: all 0.2s;
 }
 
 .source-link-icon:hover {
-    opacity: 1;
-    background-color: #f0f7fb;
+    background: white;
+    color: #007bff;
+    transform: scale(1.1);
 }
 
 .section-badge {
-    display: inline-block;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: rgba(0,0,0,0.7);
+    color: white;
     padding: 4px 8px;
-    background: #f0f0f0;
-    border-radius: 4px;
+    border-radius: 12px;
     font-size: 12px;
-    color: #666;
+    font-weight: 500;
 }
 
-@media (max-width: 1200px) {
-    .pins-grid {
-        grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-    }
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
 }
 
-@media (max-width: 900px) {
-    .pins-grid {
-        grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-    }
-    
-    .pin-width-control {
-        margin-right: 12px;
-    }
-    
-    .pin-width-slider {
-        width: 90px;
-    }
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
 }
 
-@media (max-width: 600px) {
-    .pins-grid {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+.modal-content h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.modal-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.primary-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.primary-button:hover {
+    background-color: #0056b3;
+}
+
+.secondary-button {
+    background-color: #6c757d;
+    color: white;
+}
+
+.secondary-button:hover {
+    background-color: #545b62;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+.board-input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.board-input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .board-container {
+        padding: 10px;
     }
     
-    .pin-image {
-        height: 300px;
-    }
-    
-    .pin-width-control {
+    .board-title-container {
         flex-direction: column;
-        gap: 5px;
-        margin-right: 10px;
+        align-items: flex-start;
+        gap: 10px;
     }
     
-    .pin-width-slider {
-        width: 80px;
+    .section-selector {
+        gap: 0;
     }
     
-    .pin-width-label {
-        font-size: 12px;
+    .section-button {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pin-info {
+        padding: 12px;
     }
     
-    .pin-width-value {
-        font-size: 12px;
+    .pin-info h3 {
+        font-size: 14px;
     }
 }
 </style>
@@ -558,28 +607,466 @@ function deleteBoard() {
     });
 }
 
+// Global variables for the automatic processing system
+let processingState = {
+    phase: 'idle', // 'idle', 'caching', 'extracting', 'health-checking', 'complete'
+    totalPins: 0,
+    cachedPins: 0,
+    extractedPins: 0,
+    pinsWithLinks: 0,
+    healthCheckedPins: 0,
+    uncachedPins: []
+};
+
+// Initialize the board
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize Masonry
+    initializeMasonry();
+    initializeSectionFiltering();
+    initializeBoardManagement();
+    
+    // Start automatic processing after board loads
+    setTimeout(() => {
+        startAutomaticProcessing();
+    }, 1000);
+});
+
+function startAutomaticProcessing() {
+    console.log('🚀 Starting automatic image processing...');
+    
+    // Count pins and their current state
+    const allPins = document.querySelectorAll('.pin-card');
+    const uncachedPins = Array.from(allPins).filter(pin => {
+        const imageUrl = pin.getAttribute('data-image-url');
+        const hasCached = pin.getAttribute('data-has-cached') === 'true';
+        return imageUrl && imageUrl.startsWith('http') && !hasCached;
+    });
+    
+    const pinsWithoutColors = Array.from(allPins).filter(pin => {
+        return pin.getAttribute('data-has-db-colors') === 'false';
+    });
+    
+    processingState.totalPins = allPins.length;
+    processingState.uncachedPins = uncachedPins;
+    processingState.cachedPins = allPins.length - uncachedPins.length;
+    processingState.extractedPins = allPins.length - pinsWithoutColors.length;
+    
+    updateProcessingStatus();
+    
+    if (uncachedPins.length > 0) {
+        // Start caching phase
+        processingState.phase = 'caching';
+        updateProcessingStatus();
+        startImageCaching(uncachedPins.length);
+    } else if (pinsWithoutColors.length > 0) {
+        // Skip to extraction phase
+        processingState.phase = 'extracting';
+        updateProcessingStatus();
+        startColorExtraction();
+    } else {
+        // Check if we need URL health checking
+        checkAndStartUrlHealthChecking();
+    }
+}
+
+function startImageCaching(imageCount) {
+    console.log(`📁 Starting to cache ${imageCount} images...`);
+    
+    fetch('/cache-images', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            limit: imageCount
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            console.log('✅ Image caching started:', data.message);
+            // Poll for caching completion
+            pollCachingProgress();
+        } else {
+            console.error('❌ Failed to start image caching:', data.error);
+            processingState.phase = 'idle';
+            updateProcessingStatus();
+        }
+    })
+    .catch(error => {
+        console.error('❌ Error starting image caching:', error);
+        processingState.phase = 'idle';
+        updateProcessingStatus();
+    });
+}
+
+function pollCachingProgress() {
+    // Check caching progress every 3 seconds
+    const checkProgress = () => {
+        // Count how many pins are now cached
+        const allPins = document.querySelectorAll('.pin-card');
+        const nowCachedPins = Array.from(allPins).filter(pin => {
+            const imageUrl = pin.getAttribute('data-image-url');
+            const hasCached = pin.getAttribute('data-has-cached') === 'true';
+            return imageUrl && imageUrl.startsWith('http') && hasCached;
+        });
+        
+        // Check if we have new cached images by making a quick API call
+        fetch(`/api/board-status/${getBoardId()}`)
+            .then(response => response.json())
+            .then(data => {
+                if (data.cached_count > processingState.cachedPins) {
+                    processingState.cachedPins = data.cached_count;
+                    updateProcessingStatus();
+                }
+                
+                // If all images are cached, move to extraction phase
+                if (data.cached_count >= processingState.totalPins || 
+                    processingState.uncachedPins.length === 0) {
+                    processingState.phase = 'extracting';
+                    updateProcessingStatus();
+                    // Wait a moment then start color extraction
+                    setTimeout(startColorExtraction, 2000);
+                } else {
+                    // Continue polling
+                    setTimeout(checkProgress, 3000);
+                }
+            })
+            .catch(error => {
+                console.warn('Error checking caching progress:', error);
+                // Continue polling anyway
+                setTimeout(checkProgress, 5000);
+            });
+    };
+    
+    // Start polling
+    setTimeout(checkProgress, 3000);
+}
+
+function startColorExtraction() {
+    console.log('🎨 Starting color extraction...');
+    
+    // Get all pins that need color extraction
+    const pinsNeedingColors = document.querySelectorAll('.pin-card[data-has-db-colors="false"]');
+    
+    if (pinsNeedingColors.length === 0) {
+        processingState.phase = 'complete';
+        updateProcessingStatus();
+        return;
+    }
+    
+    let processed = 0;
+    
+    const processNextPin = () => {
+        if (processed >= pinsNeedingColors.length) {
+            console.log('✅ Color extraction complete!');
+            // Move to URL health checking phase
+            checkAndStartUrlHealthChecking();
+            return;
+        }
+        
+        const pin = pinsNeedingColors[processed];
+        const img = pin.querySelector('.pin-image');
+        
+        if (img) {
+            extractColorsFromPin(pin, img, () => {
+                processed++;
+                processingState.extractedPins++;
+                updateProcessingStatus();
+                
+                // Continue with next pin after a short delay
+                setTimeout(processNextPin, 1000);
+            });
+        } else {
+            processed++;
+            setTimeout(processNextPin, 100);
+        }
+    };
+    
+    processNextPin();
+}
+
+function extractColorsFromPin(pinCard, img, callback) {
+    try {
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+        
+        canvas.width = 50;
+        canvas.height = 50;
+        
+        // Use cached image if available
+        const hasCachedImage = pinCard.getAttribute('data-has-cached') === 'true';
+        const imageUrl = hasCachedImage ? pinCard.getAttribute('data-cached-url') : img.src;
+        
+        const tempImg = new Image();
+        if (!hasCachedImage) {
+            tempImg.crossOrigin = 'anonymous';
+        }
+        
+        tempImg.onload = function() {
+            try {
+                ctx.drawImage(tempImg, 0, 0, 50, 50);
+                const colors = extractDominantColorsFromCanvas(canvas);
+                
+                // Apply colors to the image container
+                pinCard.style.setProperty('--dominant-color', colors.primary);
+                pinCard.style.setProperty('--secondary-color', colors.secondary);
+                pinCard.setAttribute('data-colors-extracted', 'true');
+                pinCard.setAttribute('data-has-db-colors', 'true');
+                
+                // Save to database
+                const pinId = pinCard.getAttribute('data-pin-id');
+                if (pinId) {
+                    saveColorsToDatabase(pinId, colors.primary, colors.secondary);
+                }
+                
+                callback();
+            } catch (e) {
+                console.warn('Could not extract colors from image:', imageUrl, e);
+                callback();
+            }
+        };
+        
+        tempImg.onerror = function() {
+            console.warn('Image failed to load:', imageUrl);
+            callback();
+        };
+        
+        tempImg.src = imageUrl;
+        
+    } catch (e) {
+        console.warn('Error processing image:', e);
+        callback();
+    }
+}
+
+function extractDominantColorsFromCanvas(canvas) {
+    const ctx = canvas.getContext('2d');
+    const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+    const data = imageData.data;
+    
+    const colorMap = new Map();
+    
+    for (let i = 0; i < data.length; i += 4) {
+        const r = Math.round(data[i] / 32) * 32;
+        const g = Math.round(data[i + 1] / 32) * 32;
+        const b = Math.round(data[i + 2] / 32) * 32;
+        const alpha = data[i + 3];
+        
+        if (alpha < 128) continue;
+        
+        const colorKey = `${r},${g},${b}`;
+        colorMap.set(colorKey, (colorMap.get(colorKey) || 0) + 1);
+    }
+    
+    const sortedColors = Array.from(colorMap.entries())
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 2);
+    
+    if (sortedColors.length === 0) {
+        return { primary: '#f0f0f0', secondary: '#e0e0e0' };
+    }
+    
+    const primaryRgb = sortedColors[0][0].split(',').map(Number);
+    const primary = `rgb(${primaryRgb[0]}, ${primaryRgb[1]}, ${primaryRgb[2]})`;
+    
+    let secondary;
+    if (sortedColors.length > 1) {
+        const secondaryRgb = sortedColors[1][0].split(',').map(Number);
+        secondary = `rgb(${secondaryRgb[0]}, ${secondaryRgb[1]}, ${secondaryRgb[2]})`;
+    } else {
+        const lighter = primaryRgb.map(c => Math.min(255, c + 30));
+        secondary = `rgb(${lighter[0]}, ${lighter[1]}, ${lighter[2]})`;
+    }
+    
+    return { primary, secondary };
+}
+
+function saveColorsToDatabase(pinId, color1, color2) {
+    fetch(`/save-pin-colors/${pinId}`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            dominant_color_1: color1,
+            dominant_color_2: color2
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            console.log(`✅ Saved colors for pin ${pinId}`);
+        } else {
+            console.warn(`⚠️ Failed to save colors for pin ${pinId}:`, data.error);
+        }
+    })
+    .catch(error => {
+        console.warn(`⚠️ Error saving colors for pin ${pinId}:`, error);
+    });
+}
+
+function checkAndStartUrlHealthChecking() {
+    // Get current board status to see if URL health checking is needed
+    fetch(`/api/board-status/${getBoardId()}`)
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                processingState.pinsWithLinks = data.pins_with_links;
+                processingState.healthCheckedPins = data.health_checked_count;
+                
+                if (data.pins_with_links > data.health_checked_count) {
+                    // Start URL health checking phase
+                    processingState.phase = 'health-checking';
+                    updateProcessingStatus();
+                    startUrlHealthChecking();
+                } else {
+                    // Everything is complete
+                    processingState.phase = 'complete';
+                    updateProcessingStatus();
+                }
+            } else {
+                // If API fails, just mark as complete
+                processingState.phase = 'complete';
+                updateProcessingStatus();
+            }
+        })
+        .catch(error => {
+            console.warn('Error checking URL health status:', error);
+            processingState.phase = 'complete';
+            updateProcessingStatus();
+        });
+}
+
+function startUrlHealthChecking() {
+    console.log('🔗 Starting URL health checking...');
+    
+    const uncheckedUrls = processingState.pinsWithLinks - processingState.healthCheckedPins;
+    
+    fetch(`/api/check-url-health/${getBoardId()}`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            limit: Math.min(uncheckedUrls, 20) // Check up to 20 URLs at a time
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            console.log(`✅ URL health check complete: ${data.message}`);
+            processingState.healthCheckedPins += data.checked;
+            
+            if (processingState.healthCheckedPins >= processingState.pinsWithLinks) {
+                // All URLs checked
+                processingState.phase = 'complete';
+                updateProcessingStatus();
+            } else {
+                // Continue checking more URLs
+                setTimeout(startUrlHealthChecking, 3000);
+            }
+        } else {
+            console.error('❌ Failed URL health checking:', data.error);
+            processingState.phase = 'complete';
+            updateProcessingStatus();
+        }
+    })
+    .catch(error => {
+        console.error('❌ Error during URL health checking:', error);
+        processingState.phase = 'complete';
+        updateProcessingStatus();
+    });
+}
+
+function updateProcessingStatus() {
+    const statusBtn = document.getElementById('processingStatusBtn');
+    const statusText = document.getElementById('processingStatusText');
+    
+    switch (processingState.phase) {
+        case 'idle':
+            statusText.textContent = '🎨 Ready';
+            break;
+        case 'caching':
+            const uncachedCount = processingState.uncachedPins.length;
+            statusText.textContent = `📁 Caching ${uncachedCount} images...`;
+            break;
+        case 'extracting':
+            const remaining = processingState.totalPins - processingState.extractedPins;
+            statusText.textContent = `🎨 Extracting colors (${remaining} left)`;
+            break;
+        case 'health-checking':
+            const uncheckedUrls = processingState.pinsWithLinks - processingState.healthCheckedPins;
+            statusText.textContent = `🔗 Checking ${uncheckedUrls} URLs...`;
+            break;
+        case 'complete':
+            statusText.textContent = `✅ All processing complete`;
+            break;
+    }
+}
+
+function getBoardId() {
+    // Extract board ID from URL or data attribute
+    const path = window.location.pathname;
+    const match = path.match(/\/board\/(\d+)/);
+    return match ? match[1] : null;
+}
+
+// Initialize Masonry with dynamic sizing
+function initializeMasonry() {
     const grid = document.querySelector('.pins-grid');
-    const savedPinWidth = localStorage.getItem('boardPinWidth') || 270;
-    const initialWidth = parseInt(savedPinWidth);
+    const savedPinSize = localStorage.getItem('boardPinSize') || 3;
+    
+    // Calculate optimal layout based on saved size
+    function calculateOptimalLayout(sizeLevel) {
+        const containerWidth = grid.offsetWidth;
+        const gutter = 16;
+        
+        const targetColumns = {
+            1: 6,  // Tiny - many small pins
+            2: 5,  // Small 
+            3: 4,  // Medium
+            4: 3,  // Large
+            5: 2   // Huge - fewer large pins
+        };
+        
+        let desiredColumns = targetColumns[sizeLevel] || 4;
+        let columnWidth = Math.floor((containerWidth - (desiredColumns - 1) * gutter) / desiredColumns);
+        
+        const minWidth = 150;
+        const maxWidth = 500;
+        
+        if (columnWidth < minWidth) {
+            desiredColumns = Math.max(1, Math.floor((containerWidth + gutter) / (minWidth + gutter)));
+            columnWidth = Math.floor((containerWidth - (desiredColumns - 1) * gutter) / desiredColumns);
+        } else if (columnWidth > maxWidth) {
+            desiredColumns = Math.ceil((containerWidth + gutter) / (maxWidth + gutter));
+            columnWidth = Math.floor((containerWidth - (desiredColumns - 1) * gutter) / desiredColumns);
+        }
+        
+        return { columnWidth, columns: desiredColumns };
+    }
+    
+    const initialLayout = calculateOptimalLayout(parseInt(savedPinSize));
     
     // Set initial CSS custom property
-    document.documentElement.style.setProperty('--pin-width', `${initialWidth}px`);
+    document.documentElement.style.setProperty('--pin-width', `${initialLayout.columnWidth}px`);
     
-    const masonry = new Masonry(grid, {
+    // Make masonry instance global so the slider can access it
+    window.masonry = new Masonry(grid, {
         itemSelector: '.grid-item',
-        columnWidth: initialWidth,
+        columnWidth: initialLayout.columnWidth,
         gutter: 16,
         transitionDuration: '0.2s'
     });
 
     // Re-layout Masonry after all images are loaded
     imagesLoaded(grid).on('progress', function() {
-        masonry.layout();
+        window.masonry.layout();
     });
+}
 
-    // Section button handling
+// Section button handling
+function initializeSectionFiltering() {
     const sectionButtons = document.querySelectorAll('.section-button');
     sectionButtons.forEach(button => {
         button.addEventListener('click', function() {
@@ -597,59 +1084,151 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
             
-            masonry.layout();
+            window.masonry.layout();
         });
     });
+}
 
-    // Dominant color handling
-    document.querySelectorAll('.pin-card img').forEach(img => {
-        img.onload = function() {
-            const card = this.closest('.pin-card');
-            const dominantColor = getDominantColor(this);
-            card.style.backgroundColor = dominantColor;
-            masonry.layout();
-        };
-    });
+// Board management buttons
+function initializeBoardManagement() {
+    // No special initialization needed for the new automatic system
+}
 
-    // Handle window resize to recalculate Masonry layout
-    window.addEventListener('resize', function() {
-        if (masonry) {
-            masonry.layout();
-        }
-    });
+// Toggle board settings menu
+function toggleBoardSettings() {
+    const menu = document.getElementById('boardSettingsMenu');
+    menu.classList.toggle('active');
+    
+    // Position the menu to avoid going off-screen
+    const rect = menu.getBoundingClientRect();
+    const windowWidth = window.innerWidth;
+    
+    if (rect.right > windowWidth) {
+        menu.classList.add('right');
+        menu.classList.remove('left');
+    } else {
+        menu.classList.add('left');
+        menu.classList.remove('right');
+    }
+}
 
-    // Pin width slider handling
-    // The pin width slider is now handled globally in base.html
-    // This script block is no longer needed for the board-specific pin width.
-    // The initial width is set in base.html and updated by the global slider.
-    // The masonry columnWidth is also set in base.html.
+// Close settings menu when clicking outside
+document.addEventListener('click', function(event) {
+    const menu = document.getElementById('boardSettingsMenu');
+    const button = document.querySelector('.board-settings-button');
+    
+    if (!menu.contains(event.target) && !button.contains(event.target)) {
+        menu.classList.remove('active');
+    }
 });
 
-// Keep existing getDominantColor function
-function getDominantColor(image) {
-    const canvas = document.createElement('canvas');
-    const context = canvas.getContext('2d');
-    canvas.width = 50;
-    canvas.height = 50;
-    
-    context.drawImage(image, 0, 0, 50, 50);
-    const imageData = context.getImageData(0, 0, 50, 50).data;
-    
-    let r = 0, g = 0, b = 0;
-    let count = 0;
-    
-    for (let i = 0; i < imageData.length; i += 4) {
-        r += imageData[i];
-        g += imageData[i + 1];
-        b += imageData[i + 2];
-        count++;
-    }
-    
-    r = Math.round(r / count);
-    g = Math.round(g / count);
-    b = Math.round(b / count);
-    
-    return `rgb(${r}, ${g}, ${b})`;
+// Modal functions
+function showRenameBoardModal() {
+    document.getElementById('renameBoardModal').style.display = 'block';
+    document.getElementById('newBoardName').value = '{{ board.name }}';
+    document.getElementById('newBoardName').focus();
 }
+
+function hideRenameBoardModal() {
+    document.getElementById('renameBoardModal').style.display = 'none';
+}
+
+function showMoveBoardModal() {
+    document.getElementById('moveBoardModal').style.display = 'block';
+}
+
+function hideMoveBoardModal() {
+    document.getElementById('moveBoardModal').style.display = 'none';
+}
+
+function showDeleteBoardModal() {
+    document.getElementById('deleteBoardModal').style.display = 'block';
+}
+
+function hideDeleteBoardModal() {
+    document.getElementById('deleteBoardModal').style.display = 'none';
+}
+
+function renameBoard() {
+    const newName = document.getElementById('newBoardName').value.trim();
+    if (!newName) {
+        alert('Please enter a board name');
+        return;
+    }
+
+    fetch(`/rename-board/{{ board.id }}`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            name: newName
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            location.reload();
+        } else {
+            alert('Failed to rename board');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Failed to rename board');
+    });
+}
+
+function moveBoard() {
+    const targetBoardId = document.getElementById('targetBoardSelect').value;
+    if (!targetBoardId) {
+        alert('Please select a target board');
+        return;
+    }
+
+    fetch(`/move-board/{{ board.id }}`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            target_board_id: targetBoardId
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            window.location.href = `/board/${targetBoardId}`;
+        } else {
+            alert('Failed to move board');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Failed to move board');
+    });
+}
+
+function deleteBoard() {
+    fetch(`/delete-board/{{ board.id }}`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            window.location.href = '/';
+        } else {
+            alert('Failed to delete board');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Failed to delete board');
+    });
+}
+
 </script>
 {% endblock %} 

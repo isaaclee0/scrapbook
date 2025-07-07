@@ -290,6 +290,176 @@
                 font-size: 12px;
             }
         }
+
+        /* Database Upgrade Banner Styles */
+        .upgrade-banner {
+            position: fixed;
+            top: 60px;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            z-index: 999;
+            animation: slideDown 0.3s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .upgrade-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .upgrade-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .upgrade-icon {
+            font-size: 24px;
+            animation: rotate 2s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .upgrade-text {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .upgrade-text strong {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .upgrade-text span {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .upgrade-actions {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .upgrade-button {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .upgrade-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-1px);
+        }
+
+        .upgrade-button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .dismiss-button {
+            background: transparent;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            opacity: 0.8;
+            transition: all 0.2s ease;
+        }
+
+        .dismiss-button:hover {
+            opacity: 1;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .upgrade-progress {
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .progress-bar {
+            flex: 1;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: white;
+            border-radius: 2px;
+            width: 0%;
+            transition: width 0.3s ease;
+            animation: progressPulse 1.5s ease-in-out infinite;
+        }
+
+        @keyframes progressPulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .upgrade-banner.show-progress .upgrade-content {
+            display: none;
+        }
+
+        .upgrade-banner.show-progress .upgrade-progress {
+            display: flex;
+        }
+
+        /* Adjust container margin when banner is visible */
+        body.upgrade-banner-visible .container {
+            margin-top: 140px; /* 80px original + 60px banner height */
+        }
+
+        @media (max-width: 768px) {
+            .upgrade-content {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            .upgrade-actions {
+                justify-content: center;
+            }
+
+            body.upgrade-banner-visible .container {
+                margin-top: 160px; /* Account for taller banner on mobile */
+            }
+        }
     </style>
 </head>
 <body>
@@ -303,15 +473,38 @@
             <a href="/" class="logo">scrapbook.io</a>
         </div>
         <div class="nav-right">
-            <!-- Pin width slider (global) -->
-            <div class="pin-width-control">
-                <label for="pinWidthSlider" class="pin-width-label">Pin Width:</label>
-                <input type="range" id="pinWidthSlider" min="200" max="400" value="270" class="pin-width-slider">
-                <span id="pinWidthValue" class="pin-width-value">270px</span>
+            <!-- Pin size slider (global) - hidden on homepage -->
+            <div class="pin-width-control" {% if request.endpoint == 'gallery' %}style="display: none;"{% endif %}>
+                <label for="pinSizeSlider" class="pin-width-label">Pin Size:</label>
+                <input type="range" id="pinSizeSlider" min="1" max="5" value="3" class="pin-width-slider">
+                <span id="pinSizeValue" class="pin-width-value">Medium</span>
             </div>
             <!-- Add any right-side navigation items here -->
         </div>
     </nav>
+
+    <!-- Database Upgrade Banner -->
+    <div id="upgradeBanner" class="upgrade-banner" style="display: none;">
+        <div class="upgrade-content">
+            <div class="upgrade-info">
+                <span class="upgrade-icon">🔄</span>
+                <div class="upgrade-text">
+                    <strong>Database Update Available</strong>
+                    <span id="upgradeDescription">New features are available and require a database update.</span>
+                </div>
+            </div>
+            <div class="upgrade-actions">
+                <button id="upgradeBtn" class="upgrade-button">Update Database</button>
+                <button id="dismissUpgradeBtn" class="dismiss-button">Dismiss</button>
+            </div>
+        </div>
+        <div id="upgradeProgress" class="upgrade-progress" style="display: none;">
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+            <span id="upgradeProgressText">Applying database updates...</span>
+        </div>
+    </div>
 
     <div class="container">
         {% block content %}{% endblock %}
@@ -328,38 +521,116 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Pin width slider handling (global)
-            const pinWidthSlider = document.getElementById('pinWidthSlider');
-            const pinWidthValue = document.getElementById('pinWidthValue');
-            if (pinWidthSlider && pinWidthValue) {
-                function updatePinWidth() {
-                    const newWidth = parseInt(pinWidthSlider.value);
-                    pinWidthValue.textContent = `${newWidth}px`;
-                    localStorage.setItem('boardPinWidth', newWidth);
-                    document.documentElement.style.setProperty('--pin-width', `${newWidth}px`);
-                    // If Masonry is present, update its columnWidth and recalculate layout
-                    if (window.masonry) {
-                        window.masonry.options.columnWidth = newWidth;
-                        window.masonry.reloadItems();
-                        window.masonry.layout();
+            // Check for database upgrades on page load
+            checkDatabaseUpgrades();
+            
+            // Pin size slider handling (global)
+            const pinSizeSlider = document.getElementById('pinSizeSlider');
+            const pinSizeValue = document.getElementById('pinSizeValue');
+            if (pinSizeSlider && pinSizeValue) {
+                const sizeLabels = ['Tiny', 'Small', 'Medium', 'Large', 'Huge'];
+                
+                function calculateOptimalLayout(sizeLevel) {
+                    const grid = document.querySelector('.pins-grid');
+                    if (!grid) return { columnWidth: 270, columns: 3 };
+                    
+                    const containerWidth = grid.offsetWidth;
+                    const gutter = 16;
+                    
+                    // Define target columns for each size level
+                    const targetColumns = {
+                        1: 6,  // Tiny - many small pins
+                        2: 5,  // Small 
+                        3: 4,  // Medium
+                        4: 3,  // Large
+                        5: 2   // Huge - fewer large pins
+                    };
+                    
+                    let desiredColumns = targetColumns[sizeLevel] || 4;
+                    
+                    // Calculate column width based on container and desired columns
+                    // Formula: (containerWidth - (columns-1) * gutter) / columns
+                    let columnWidth = Math.floor((containerWidth - (desiredColumns - 1) * gutter) / desiredColumns);
+                    
+                    // Ensure minimum and maximum widths
+                    const minWidth = 150;
+                    const maxWidth = 500;
+                    
+                    if (columnWidth < minWidth) {
+                        // If calculated width is too small, reduce columns
+                        desiredColumns = Math.max(1, Math.floor((containerWidth + gutter) / (minWidth + gutter)));
+                        columnWidth = Math.floor((containerWidth - (desiredColumns - 1) * gutter) / desiredColumns);
+                    } else if (columnWidth > maxWidth) {
+                        // If calculated width is too large, increase columns
+                        desiredColumns = Math.ceil((containerWidth + gutter) / (maxWidth + gutter));
+                        columnWidth = Math.floor((containerWidth - (desiredColumns - 1) * gutter) / desiredColumns);
                     }
-                    // Trigger a window resize event to ensure layout updates
-                    window.dispatchEvent(new Event('resize'));
-                }
-                // Debounced update function for smoother slider experience
-                let updateTimeout;
-                function debouncedUpdatePinWidth() {
-                    clearTimeout(updateTimeout);
-                    updateTimeout = setTimeout(updatePinWidth, 50);
+                    
+                    return { columnWidth, columns: desiredColumns };
                 }
                 
-                pinWidthSlider.addEventListener('input', debouncedUpdatePinWidth);
-                pinWidthSlider.addEventListener('change', updatePinWidth);
-                // Load saved pin width from localStorage
-                const savedPinWidth = localStorage.getItem('boardPinWidth') || 270;
-                pinWidthSlider.value = savedPinWidth;
-                pinWidthValue.textContent = `${savedPinWidth}px`;
-                document.documentElement.style.setProperty('--pin-width', `${savedPinWidth}px`);
+                function updatePinSize() {
+                    const sizeLevel = parseInt(pinSizeSlider.value);
+                    const sizeLabel = sizeLabels[sizeLevel - 1];
+                    pinSizeValue.textContent = sizeLabel;
+                    localStorage.setItem('boardPinSize', sizeLevel);
+                    
+                    const layout = calculateOptimalLayout(sizeLevel);
+                    document.documentElement.style.setProperty('--pin-width', `${layout.columnWidth}px`);
+                    
+                    // If Masonry is present, recreate it with new optimal layout
+                    if (window.masonry) {
+                        const grid = document.querySelector('.pins-grid');
+                        if (grid) {
+                            const currentOptions = {
+                                itemSelector: '.grid-item',
+                                columnWidth: layout.columnWidth,
+                                gutter: 16,
+                                transitionDuration: '0.2s'
+                            };
+                            
+                            // Destroy current instance and create new one
+                            window.masonry.destroy();
+                            window.masonry = new Masonry(grid, currentOptions);
+                            
+                            // Re-layout after a brief delay to ensure DOM updates
+                            setTimeout(() => {
+                                window.masonry.layout();
+                            }, 10);
+                        }
+                    }
+                }
+                
+                // Debounced update function for smoother slider experience
+                let updateTimeout;
+                function debouncedUpdatePinSize() {
+                    clearTimeout(updateTimeout);
+                    updateTimeout = setTimeout(updatePinSize, 50);
+                }
+                
+                pinSizeSlider.addEventListener('input', debouncedUpdatePinSize);
+                pinSizeSlider.addEventListener('change', updatePinSize);
+                
+                // Load saved pin size from localStorage
+                const savedPinSize = localStorage.getItem('boardPinSize') || 3;
+                pinSizeSlider.value = savedPinSize;
+                pinSizeValue.textContent = sizeLabels[savedPinSize - 1];
+                
+                // Set initial layout
+                const initialLayout = calculateOptimalLayout(parseInt(savedPinSize));
+                document.documentElement.style.setProperty('--pin-width', `${initialLayout.columnWidth}px`);
+                
+                // Recalculate layout on window resize
+                window.addEventListener('resize', function() {
+                    const currentSize = parseInt(pinSizeSlider.value);
+                    const newLayout = calculateOptimalLayout(currentSize);
+                    document.documentElement.style.setProperty('--pin-width', `${newLayout.columnWidth}px`);
+                    
+                    if (window.masonry) {
+                        window.masonry.options.columnWidth = newLayout.columnWidth;
+                        window.masonry.layout();
+                    }
+                });
             }
         });
         function showAddContentDialog() {
@@ -416,6 +687,162 @@
                 }
             });
         }
+
+        // Database upgrade functions
+        function checkDatabaseUpgrades() {
+            // Skip upgrade check if user has dismissed it recently
+            const dismissedTime = localStorage.getItem('upgradeDismissed');
+            if (dismissedTime) {
+                const dismissedDate = new Date(dismissedTime);
+                const now = new Date();
+                const hoursSinceDismissed = (now - dismissedDate) / (1000 * 60 * 60);
+                
+                // Only check again after 24 hours
+                if (hoursSinceDismissed < 24) {
+                    return;
+                }
+            }
+            
+            fetch('/db-upgrade-status')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.needs_upgrade && data.pending_upgrades && data.pending_upgrades.length > 0) {
+                        showUpgradeBanner(data.pending_upgrades);
+                    }
+                })
+                .catch(error => {
+                    console.warn('Could not check database upgrade status:', error);
+                });
+        }
+
+        function showUpgradeBanner(pendingUpgrades) {
+            const banner = document.getElementById('upgradeBanner');
+            const description = document.getElementById('upgradeDescription');
+            
+            // Update description with upgrade details
+            if (pendingUpgrades.length === 1) {
+                description.textContent = `${pendingUpgrades[0].name}: ${pendingUpgrades[0].description}`;
+            } else {
+                description.textContent = `${pendingUpgrades.length} database updates available including ${pendingUpgrades[0].name}.`;
+            }
+            
+            // Show banner and adjust body class
+            banner.style.display = 'block';
+            document.body.classList.add('upgrade-banner-visible');
+            
+            // Store pending upgrades for the upgrade process
+            window.pendingUpgrades = pendingUpgrades;
+        }
+
+        function hideUpgradeBanner() {
+            const banner = document.getElementById('upgradeBanner');
+            banner.style.display = 'none';
+            document.body.classList.remove('upgrade-banner-visible');
+        }
+
+        function dismissUpgrade() {
+            // Store dismissal time in localStorage
+            localStorage.setItem('upgradeDismissed', new Date().toISOString());
+            hideUpgradeBanner();
+        }
+
+        function applyDatabaseUpgrades() {
+            if (!window.pendingUpgrades || window.pendingUpgrades.length === 0) {
+                return;
+            }
+            
+            const banner = document.getElementById('upgradeBanner');
+            const progressText = document.getElementById('upgradeProgressText');
+            const progressFill = document.querySelector('.progress-fill');
+            const upgradeBtn = document.getElementById('upgradeBtn');
+            const dismissBtn = document.getElementById('dismissUpgradeBtn');
+            
+            // Show progress view
+            banner.classList.add('show-progress');
+            upgradeBtn.disabled = true;
+            dismissBtn.disabled = true;
+            
+            let completedUpgrades = 0;
+            const totalUpgrades = window.pendingUpgrades.length;
+            
+            function updateProgress() {
+                const percentage = (completedUpgrades / totalUpgrades) * 100;
+                progressFill.style.width = `${percentage}%`;
+                progressText.textContent = `Applying database updates... (${completedUpgrades}/${totalUpgrades})`;
+            }
+            
+            function applyNextUpgrade(index) {
+                if (index >= window.pendingUpgrades.length) {
+                    // All upgrades completed
+                    progressText.textContent = 'Database updates completed successfully!';
+                    progressFill.style.width = '100%';
+                    
+                    setTimeout(() => {
+                        hideUpgradeBanner();
+                        // Clear dismissal time so banner can show again if needed
+                        localStorage.removeItem('upgradeDismissed');
+                        // Refresh page to reflect new features
+                        window.location.reload();
+                    }, 2000);
+                    return;
+                }
+                
+                const upgrade = window.pendingUpgrades[index];
+                progressText.textContent = `Applying ${upgrade.name}...`;
+                
+                fetch('/db-upgrade', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        version: upgrade.version
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        completedUpgrades++;
+                        updateProgress();
+                        console.log(`✅ ${data.message}`);
+                        
+                        // Wait a moment then apply next upgrade
+                        setTimeout(() => applyNextUpgrade(index + 1), 500);
+                    } else {
+                        throw new Error(data.error || 'Unknown error');
+                    }
+                })
+                .catch(error => {
+                    console.error('❌ Upgrade failed:', error);
+                    progressText.textContent = `Upgrade failed: ${error.message}`;
+                    progressFill.style.background = '#ff6b6b';
+                    
+                    // Re-enable buttons after error
+                    setTimeout(() => {
+                        banner.classList.remove('show-progress');
+                        upgradeBtn.disabled = false;
+                        dismissBtn.disabled = false;
+                    }, 3000);
+                });
+            }
+            
+            updateProgress();
+            applyNextUpgrade(0);
+        }
+
+        // Event listeners for upgrade banner
+        document.addEventListener('DOMContentLoaded', function() {
+            const upgradeBtn = document.getElementById('upgradeBtn');
+            const dismissBtn = document.getElementById('dismissUpgradeBtn');
+            
+            if (upgradeBtn) {
+                upgradeBtn.addEventListener('click', applyDatabaseUpgrades);
+            }
+            
+            if (dismissBtn) {
+                dismissBtn.addEventListener('click', dismissUpgrade);
+            }
+        });
     </script>
 </body>
 </html>

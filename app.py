@@ -220,14 +220,44 @@ def board(board_id):
         cursor.execute("SELECT * FROM sections WHERE board_id = %s ORDER BY name", (board_id,))
         sections = cursor.fetchall()
         
-        # Get pins for this board
-        cursor.execute("""
-            SELECT p.*, s.name as section_name 
-            FROM pins p 
-            LEFT JOIN sections s ON p.section_id = s.id 
-            WHERE p.board_id = %s 
-            ORDER BY p.created_at DESC
-        """, (board_id,))
+        # Get pins for this board (including color data and cached images if table exists)
+        try:
+            # Check if cached_images table exists
+            cursor.execute("SHOW TABLES LIKE 'cached_images'")
+            cached_images_exists = cursor.fetchone() is not None
+            
+            if cached_images_exists:
+                # Include cached images data
+                cursor.execute("""
+                    SELECT p.*, s.name as section_name, 
+                           ci.cached_filename, ci.cache_status, ci.width as cached_width, ci.height as cached_height
+                    FROM pins p 
+                    LEFT JOIN sections s ON p.section_id = s.id 
+                    LEFT JOIN cached_images ci ON p.cached_image_id = ci.id AND ci.cache_status = 'cached'
+                    WHERE p.board_id = %s 
+                    ORDER BY p.created_at DESC
+                """, (board_id,))
+            else:
+                # Fallback query without cached images
+                cursor.execute("""
+                    SELECT p.*, s.name as section_name, 
+                           NULL as cached_filename, NULL as cache_status, NULL as cached_width, NULL as cached_height
+                    FROM pins p 
+                    LEFT JOIN sections s ON p.section_id = s.id 
+                    WHERE p.board_id = %s 
+                    ORDER BY p.created_at DESC
+                """, (board_id,))
+        except Exception as e:
+            # Fallback to basic query if there are any issues
+            print(f"Warning: Could not check cached_images table, using fallback query: {e}")
+            cursor.execute("""
+                SELECT p.*, s.name as section_name, 
+                       NULL as cached_filename, NULL as cache_status, NULL as cached_width, NULL as cached_height
+                FROM pins p 
+                LEFT JOIN sections s ON p.section_id = s.id 
+                WHERE p.board_id = %s 
+                ORDER BY p.created_at DESC
+            """, (board_id,))
         pins = cursor.fetchall()
         
         # Get all boards for the move board functionality
@@ -401,6 +431,20 @@ def add_pin():
         
         pin_id = cursor.lastrowid
         db.commit()
+        
+        # Queue external images for caching (only if cached_images table exists)
+        if image_url.startswith('http'):
+            try:
+                # Check if cached_images table exists before trying to cache
+                cursor.execute("SHOW TABLES LIKE 'cached_images'")
+                if cursor.fetchone():
+                    from scripts.image_cache_service import ImageCacheService
+                    cache_service = ImageCacheService()
+                    cache_service.queue_image_for_caching(pin_id, image_url, 'low')
+                else:
+                    print(f"Cached images table not found, skipping caching for pin {pin_id}")
+            except Exception as e:
+                print(f"Failed to queue image for caching: {e}")
         
         return jsonify({
             'success': True,
@@ -924,6 +968,244 @@ def random_pin():
 def serve_static(path):
     return send_from_directory('static', path)
 
+@app.route('/cached/<path:filename>')
+def serve_cached_image(filename):
+    """Serve cached images from the cache directory"""
+    try:
+        cache_dir = os.path.join('static', 'cached_images')
+        return send_from_directory(cache_dir, filename)
+    except FileNotFoundError:
+        # If cached file doesn't exist, return 404
+        return "Cached image not found", 404
+
+@app.route('/cache-images', methods=['POST'])
+def cache_images():
+    """Trigger image caching for external images"""
+    try:
+        data = request.get_json()
+        limit = data.get('limit', 10) if data else 10
+        
+        # Import and use the image cache service
+        from scripts.image_cache_service import ImageCacheService
+        
+        cache_service = ImageCacheService()
+        
+        # Queue images for caching in background
+        import threading
+        def cache_in_background():
+            cache_service.cache_all_external_images(limit=limit)
+            cache_service.stop_workers()
+        
+        thread = threading.Thread(target=cache_in_background)
+        thread.daemon = True
+        thread.start()
+        
+        return jsonify({
+            'success': True,
+            'message': f'Started caching up to {limit} external images in background'
+        })
+    except Exception as e:
+        print(f"Error starting image caching: {str(e)}")
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/db-upgrade-status')
+def db_upgrade_status():
+    """Get database upgrade status"""
+    try:
+        from scripts.db_version_manager import DatabaseVersionManager
+        manager = DatabaseVersionManager()
+        status = manager.get_upgrade_status()
+        return jsonify(status)
+    except Exception as e:
+        print(f"Error getting upgrade status: {str(e)}")
+        return jsonify({'error': str(e), 'needs_upgrade': False}), 500
+
+@app.route('/db-upgrade', methods=['POST'])
+def db_upgrade():
+    """Apply database upgrade"""
+    try:
+        data = request.get_json()
+        version = data.get('version')
+        
+        if not version:
+            return jsonify({'error': 'Version is required'}), 400
+        
+        from scripts.db_version_manager import DatabaseVersionManager
+        manager = DatabaseVersionManager()
+        result = manager.apply_upgrade(version)
+        
+        if result['success']:
+            return jsonify(result)
+        else:
+            return jsonify(result), 500
+            
+    except Exception as e:
+        print(f"Error applying upgrade: {str(e)}")
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/board-status/<int:board_id>')
+def board_status(board_id):
+    try:
+        db = get_db_connection()
+        cursor = db.cursor(dictionary=True)
+        
+        # Get board stats including URL health
+        cursor.execute("""
+            SELECT 
+                COUNT(*) as total_pins,
+                COUNT(CASE WHEN p.uses_cached_image = 1 THEN 1 END) as cached_count,
+                COUNT(CASE WHEN p.colors_extracted = 1 THEN 1 END) as extracted_count,
+                COUNT(CASE WHEN p.link IS NOT NULL THEN 1 END) as pins_with_links,
+                COUNT(CASE WHEN uh.status IS NOT NULL THEN 1 END) as health_checked_count,
+                COUNT(CASE WHEN uh.status = 'live' THEN 1 END) as live_links,
+                COUNT(CASE WHEN uh.status = 'broken' THEN 1 END) as broken_links,
+                COUNT(CASE WHEN uh.status = 'archived' THEN 1 END) as archived_links
+            FROM pins p
+            LEFT JOIN url_health uh ON p.id = uh.pin_id
+            WHERE p.board_id = %s
+        """, (board_id,))
+        
+        stats = cursor.fetchone()
+        cursor.close()
+        db.close()
+        
+        return jsonify({
+            "success": True,
+            "total_pins": stats['total_pins'],
+            "cached_count": stats['cached_count'],
+            "extracted_count": stats['extracted_count'],
+            "pins_with_links": stats['pins_with_links'],
+            "health_checked_count": stats['health_checked_count'],
+            "live_links": stats['live_links'],
+            "broken_links": stats['broken_links'],
+            "archived_links": stats['archived_links']
+        })
+        
+    except mysql.connector.Error as e:
+        return jsonify({"success": False, "error": str(e)}), 500
+    except Exception as e:
+        return jsonify({"success": False, "error": str(e)}), 500
+
+@app.route('/api/check-url-health/<int:board_id>', methods=['POST'])
+def check_url_health_for_board(board_id):
+    try:
+        data = request.get_json() or {}
+        limit = data.get('limit', 10)  # Default to checking 10 URLs at a time
+        
+        db = get_db_connection()
+        cursor = db.cursor(dictionary=True)
+        
+        # Get pins with URLs that haven't been checked recently (or at all)
+        cursor.execute("""
+            SELECT p.id as pin_id, p.link as url
+            FROM pins p
+            LEFT JOIN url_health uh ON p.id = uh.pin_id
+            WHERE p.board_id = %s 
+            AND p.link IS NOT NULL 
+            AND (uh.last_checked IS NULL OR uh.last_checked < DATE_SUB(NOW(), INTERVAL 1 MONTH))
+            LIMIT %s
+        """, (board_id, limit))
+        
+        urls_to_check = cursor.fetchall()
+        
+        if not urls_to_check:
+            return jsonify({
+                "success": True,
+                "message": "No URLs need checking",
+                "checked": 0
+            })
+        
+        # Queue URLs for background checking (we'll implement this simply)
+        checked_count = 0
+        for url_data in urls_to_check:
+            try:
+                # Set up headers to mimic a browser
+                headers = {
+                    'User-Agent': 'Mozilla/5.0 (compatible; ScrapbookBot/1.0; +https://github.com/isaaclee0/scrapbook)',
+                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                    'Accept-Language': 'en-US,en;q=0.5',
+                    'Connection': 'keep-alive',
+                    'Upgrade-Insecure-Requests': '1',
+                }
+                
+                # Quick HEAD request to check if URL is accessible
+                import requests
+                response = requests.head(url_data['url'], headers=headers, timeout=5, allow_redirects=True)
+                status = 'live' if response.status_code < 400 else 'broken'
+                
+                # Update or insert URL health record
+                cursor.execute("""
+                    INSERT INTO url_health (pin_id, url, last_checked, status)
+                    VALUES (%s, %s, NOW(), %s)
+                    ON DUPLICATE KEY UPDATE
+                    last_checked = NOW(),
+                    status = VALUES(status)
+                """, (url_data['pin_id'], url_data['url'], status))
+                
+                checked_count += 1
+                
+            except Exception as e:
+                # Mark as unknown if check fails
+                cursor.execute("""
+                    INSERT INTO url_health (pin_id, url, last_checked, status)
+                    VALUES (%s, %s, NOW(), 'unknown')
+                    ON DUPLICATE KEY UPDATE
+                    last_checked = NOW(),
+                    status = 'unknown'
+                """, (url_data['pin_id'], url_data['url']))
+                
+                checked_count += 1
+        
+        db.commit()
+        cursor.close()
+        db.close()
+        
+        return jsonify({
+            "success": True,
+            "message": f"Checked {checked_count} URLs",
+            "checked": checked_count
+        })
+        
+    except mysql.connector.Error as e:
+        return jsonify({"success": False, "error": str(e)}), 500
+    except Exception as e:
+        return jsonify({"success": False, "error": str(e)}), 500
+
+@app.route('/save-pin-colors/<int:pin_id>', methods=['POST'])
+def save_pin_colors(pin_id):
+    try:
+        data = request.get_json()
+        dominant_color_1 = data.get('dominant_color_1')
+        dominant_color_2 = data.get('dominant_color_2')
+        
+        if not dominant_color_1 or not dominant_color_2:
+            return jsonify({"error": "Both colors are required"}), 400
+        
+        db = get_db_connection()
+        cursor = db.cursor()
+        
+        # Update the pin with extracted colors
+        cursor.execute("""
+            UPDATE pins 
+            SET dominant_color_1 = %s, 
+                dominant_color_2 = %s, 
+                colors_extracted = TRUE
+            WHERE id = %s
+        """, (dominant_color_1, dominant_color_2, pin_id))
+        
+        db.commit()
+        
+        return jsonify({
+            'success': True,
+            'pin_id': pin_id
+        })
+    except Exception as e:
+        print(f"Error saving pin colors: {str(e)}")
+        return jsonify({"error": "Failed to save colors"}), 500
+    finally:
+        cursor.close()
+        db.close()
+
 @app.route('/delete-pin/<int:pin_id>', methods=['POST'])
 def delete_pin(pin_id):
     try:
@@ -991,116 +1273,16 @@ def create_indexes():
             except:
                 pass  # Ignore errors during cleanup
 
-# Background task for URL health checking (enabled in all environments)
-import threading
-import time
-import requests
-from datetime import datetime, timedelta
-from urllib.parse import quote
-
-def check_url_health():
-    # Run URL health checking in all environments
-    while True:
-        try:
-            db = get_db_connection()
-            cursor = db.cursor(dictionary=True)
-            
-            # Get URLs that haven't been checked in the last week
-            cursor.execute("""
-                SELECT p.id as pin_id, p.link as url
-                FROM pins p
-                LEFT JOIN url_health uh ON p.id = uh.pin_id
-                WHERE p.link IS NOT NULL 
-                AND (uh.last_checked IS NULL OR uh.last_checked < DATE_SUB(NOW(), INTERVAL 1 WEEK))
-                LIMIT 10
-            """)
-            
-            urls_to_check = cursor.fetchall()
-            
-            for url_data in urls_to_check:
-                try:
-                    # Set up headers to mimic a browser
-                    headers = {
-                        'User-Agent': 'Mozilla/5.0 (compatible; ScrapbookBot/1.0; +https://github.com/isaaclee0/scrapbook)',
-                        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-                        'Accept-Language': 'en-US,en;q=0.5',
-                        'Accept-Encoding': 'gzip, deflate',
-                        'Connection': 'keep-alive',
-                        'Upgrade-Insecure-Requests': '1',
-                    }
-                    
-                    # Check if URL is accessible
-                    response = requests.head(url_data['url'], headers=headers, timeout=3, allow_redirects=True)
-                    status = 'live' if response.status_code < 400 else 'broken'
-                    archive_url = None
-                    
-                    # If broken, try to find an archive.is version
-                    if status == 'broken':
-                        try:
-                            # First check if the URL is already archived
-                            archive_check = requests.get(
-                                f"https://archive.is/{quote(url_data['url'])}",
-                                headers=headers,
-                                timeout=2,
-                                allow_redirects=True
-                            )
-                            if archive_check.status_code == 200 and 'archive.is' in archive_check.url:
-                                archive_url = archive_check.url
-                                status = 'archived'
-                            else:
-                                # If not archived, create an archive.is link
-                                archive_url = f"https://archive.is/{quote(url_data['url'])}"
-                        except:
-                            # If archive check fails, keep status as 'broken'
-                            pass
-                    
-                    # Ensure status is one of the allowed ENUM values
-                    if status not in ['unknown', 'live', 'broken', 'archived']:
-                        status = 'unknown'
-                    
-                    # Update or insert URL health record
-                    cursor.execute("""
-                        INSERT INTO url_health (pin_id, url, last_checked, status, archive_url)
-                        VALUES (%s, %s, %s, %s, %s)
-                        ON DUPLICATE KEY UPDATE
-                        last_checked = VALUES(last_checked),
-                        status = VALUES(status),
-                        archive_url = VALUES(archive_url)
-                    """, (
-                        url_data['pin_id'],
-                        url_data['url'],
-                        datetime.now(),
-                        status,
-                        archive_url
-                    ))
-                    
-                    db.commit()
-                    
-                except Exception as e:
-                    print(f"Error checking URL {url_data['url']}: {str(e)}")
-                    continue
-                
-                # Sleep for 5 seconds between checks (much faster)
-                time.sleep(5)
-            
-        except Exception as e:
-            print(f"Error in URL health check background task: {str(e)}")
-        finally:
-            if 'cursor' in locals():
-                cursor.close()
-            if 'db' in locals():
-                try:
-                    db.close()
-                except:
-                    pass
-        
-        # Sleep for 2 minutes before next batch (much faster)
-        time.sleep(120)
+# Note: Background URL health checking has been disabled in favor of JavaScript-based processing
+# The check_url_health_for_board API endpoint is used instead for on-demand checking
 
 # Start the background task when the app starts
 def start_background_tasks():
-    url_check_thread = threading.Thread(target=check_url_health, daemon=True)
-    url_check_thread.start()
+    # Create database indexes and tables first
+    create_indexes()
+    
+    # Note: URL health checking is now handled by the JavaScript automatic processing system
+    # No background thread needed
 
 # Call this at the end of the file, before app.run()
 start_background_tasks()

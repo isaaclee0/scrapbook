@@ -56,6 +56,7 @@ logs/
 pins/
 *.zip
 processed_boards.txt
+static/cached_images/
 
 # Production configuration files
 docker-compose.prod.yml
