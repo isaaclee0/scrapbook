@@ -284,7 +284,7 @@ class ImageCacheService:
             if 'db' in locals():
                 db.close()
     
-    def cache_all_external_images(self, limit=None):
+    def cache_all_external_images(self, limit=None, board_id=None):
         """Cache all external images for pins that don't have cached versions"""
         try:
             db = get_db_connection()
@@ -292,21 +292,28 @@ class ImageCacheService:
             
             # Get all pins with external images that aren't cached
             query = """
-                SELECT p.id, p.image_url 
+                SELECT p.id, p.image_url, p.board_id
                 FROM pins p 
                 LEFT JOIN cached_images ci ON p.cached_image_id = ci.id 
                 WHERE p.image_url LIKE 'http%' 
                 AND (p.cached_image_id IS NULL OR ci.cache_status != 'cached')
-                ORDER BY p.created_at DESC
             """
+            
+            params = []
+            if board_id:
+                query += " AND p.board_id = %s"
+                params.append(board_id)
+            
+            query += " ORDER BY p.created_at DESC"
             
             if limit:
                 query += f" LIMIT {limit}"
             
-            cursor.execute(query)
+            cursor.execute(query, params)
             pins = cursor.fetchall()
             
-            logger.info(f"Found {len(pins)} pins with external images to cache")
+            board_message = f" for board {board_id}" if board_id else ""
+            logger.info(f"Found {len(pins)} pins with external images to cache{board_message}")
             
             for pin in pins:
                 self.queue_image_for_caching(pin['id'], pin['image_url'], 'low')

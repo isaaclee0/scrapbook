@@ -468,6 +468,40 @@
 </style>
 
 <script>
+// Development mode check
+const IS_DEVELOPMENT = {{ 'true' if is_development else 'false' }};
+
+// Development-only console logging
+function devLog(...args) {
+    if (IS_DEVELOPMENT) {
+        console.log(...args);
+    }
+}
+
+function devWarn(...args) {
+    if (IS_DEVELOPMENT) {
+        console.warn(...args);
+    }
+}
+
+function devError(...args) {
+    if (IS_DEVELOPMENT) {
+        console.error(...args);
+    }
+}
+
+// Processing state for board
+let processingState = {
+    phase: 'idle', // 'idle', 'caching', 'extracting', 'health-checking', 'complete'
+    totalPins: 0,
+    cachedPins: 0,
+    extractedPins: 0,
+    pinsWithLinks: 0,
+    healthCheckedPins: 0,
+    uncachedPins: []
+};
+
+// Board management functions
 function toggleBoardSettings() {
     const menu = document.getElementById('boardSettingsMenu');
     const button = document.querySelector('.board-settings-button');
@@ -551,7 +585,7 @@ function renameBoard() {
         }
     })
     .catch(error => {
-        console.error('Error:', error);
+        devError('Error:', error);
         alert('Failed to rename board');
     });
 }
@@ -581,7 +615,7 @@ function moveBoard() {
         }
     })
     .catch(error => {
-        console.error('Error:', error);
+        devError('Error:', error);
         alert('Failed to move board');
     });
 }
@@ -602,21 +636,10 @@ function deleteBoard() {
         }
     })
     .catch(error => {
-        console.error('Error:', error);
+        devError('Error:', error);
         alert('Failed to delete board');
     });
 }
-
-// Global variables for the automatic processing system
-let processingState = {
-    phase: 'idle', // 'idle', 'caching', 'extracting', 'health-checking', 'complete'
-    totalPins: 0,
-    cachedPins: 0,
-    extractedPins: 0,
-    pinsWithLinks: 0,
-    healthCheckedPins: 0,
-    uncachedPins: []
-};
 
 // Initialize the board
 document.addEventListener('DOMContentLoaded', function() {
@@ -630,8 +653,38 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 1000);
 });
 
+// Debug function accessible from browser console
+window.debugUrlHealth = function() {
+    const boardId = getBoardId();
+    devLog('🔍 Debugging URL health for board', boardId);
+    
+    fetch(`/api/debug-url-health/${boardId}`)
+        .then(response => response.json())
+        .then(data => {
+            devLog('📊 URL Health Debug Results:', data);
+            
+            if (data.success) {
+                devLog(`\n📋 Summary:`);
+                devLog(`- Board ID: ${data.board_id}`);
+                devLog(`- Pins with links: ${data.stats.pins_with_links}`);
+                devLog(`- Health checked: ${data.stats.health_checked_count}`);
+                devLog(`- Live links: ${data.stats.live_links}`);
+                devLog(`- Broken links: ${data.stats.broken_links}`);
+                devLog(`- Unknown links: ${data.stats.unknown_links}`);
+                devLog(`- Needs checking: ${data.needs_health_checking}`);
+                
+                devLog(`\n🔗 URLs that would be checked:`, data.urls_that_would_be_checked);
+                devLog(`\n📌 All pins with links:`, data.pins_with_links);
+            }
+        })
+        .catch(error => {
+            devError('❌ Debug URL health failed:', error);
+        });
+};
+
 function startAutomaticProcessing() {
-    console.log('🚀 Starting automatic image processing...');
+    devLog('🚀 Starting automatic image processing...');
+    devLog('📊 System will process in 3 phases: 1) Cache Images → 2) Extract Colors → 3) Check URL Health');
     
     // Count pins and their current state
     const allPins = document.querySelectorAll('.pin-card');
@@ -650,26 +703,39 @@ function startAutomaticProcessing() {
     processingState.cachedPins = allPins.length - uncachedPins.length;
     processingState.extractedPins = allPins.length - pinsWithoutColors.length;
     
+    devLog(`📊 Board Analysis:`);
+    devLog(`  - Total pins: ${allPins.length}`);
+    devLog(`  - Uncached external images: ${uncachedPins.length}`);
+    devLog(`  - Pins without colors: ${pinsWithoutColors.length}`);
+    
     updateProcessingStatus();
     
     if (uncachedPins.length > 0) {
+        devLog('📁 Phase 1: Starting image caching...');
         // Start caching phase
         processingState.phase = 'caching';
         updateProcessingStatus();
         startImageCaching(uncachedPins.length);
     } else if (pinsWithoutColors.length > 0) {
+        devLog('✅ Phase 1: All images already cached, skipping to phase 2...');
+        devLog('🎨 Phase 2: Starting color extraction...');
         // Skip to extraction phase
         processingState.phase = 'extracting';
         updateProcessingStatus();
         startColorExtraction();
     } else {
+        devLog('✅ Phase 1 & 2: All images cached and colors extracted, skipping to phase 3...');
+        devLog('🔗 Phase 3: Checking URL health...');
         // Check if we need URL health checking
         checkAndStartUrlHealthChecking();
     }
 }
 
 function startImageCaching(imageCount) {
-    console.log(`📁 Starting to cache ${imageCount} images...`);
+    devLog(`📁 Starting to cache ${imageCount} images...`);
+    
+    const boardId = getBoardId();
+    devLog(`📁 Caching images for board ${boardId}...`);
     
     fetch('/cache-images', {
         method: 'POST',
@@ -677,111 +743,224 @@ function startImageCaching(imageCount) {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-            limit: imageCount
+            limit: imageCount,
+            board_id: parseInt(boardId)
         })
     })
     .then(response => response.json())
     .then(data => {
         if (data.success) {
-            console.log('✅ Image caching started:', data.message);
+            devLog('✅ Image caching started:', data.message);
             // Poll for caching completion
             pollCachingProgress();
         } else {
-            console.error('❌ Failed to start image caching:', data.error);
+            devError('❌ Failed to start image caching:', data.error);
             processingState.phase = 'idle';
             updateProcessingStatus();
         }
     })
     .catch(error => {
-        console.error('❌ Error starting image caching:', error);
+        devError('❌ Error starting image caching:', error);
         processingState.phase = 'idle';
         updateProcessingStatus();
     });
 }
 
 function pollCachingProgress() {
+    let previousCachedCount = processingState.cachedPins;
+    
     // Check caching progress every 3 seconds
     const checkProgress = () => {
-        // Count how many pins are now cached
-        const allPins = document.querySelectorAll('.pin-card');
-        const nowCachedPins = Array.from(allPins).filter(pin => {
-            const imageUrl = pin.getAttribute('data-image-url');
-            const hasCached = pin.getAttribute('data-has-cached') === 'true';
-            return imageUrl && imageUrl.startsWith('http') && hasCached;
-        });
+        devLog('🔄 Polling caching progress...');
         
         // Check if we have new cached images by making a quick API call
         fetch(`/api/board-status/${getBoardId()}`)
             .then(response => response.json())
             .then(data => {
-                if (data.cached_count > processingState.cachedPins) {
+                if (data.success) {
+                    devLog(`📊 Caching status: ${data.cached_count}/${processingState.totalPins} images cached`);
+                    
+                    // Update cached pins in the DOM
+                    if (data.cached_pins && data.cached_pins.length > 0) {
+                        devLog(`📥 Updating ${data.cached_pins.length} newly cached pins in DOM`);
+                        updateCachedPinsInDOM(data.cached_pins);
+                    }
+                    
+                    // Update extracted pins in the DOM
+                    if (data.extracted_pins && data.extracted_pins.length > 0) {
+                        devLog(`🎨 Updating ${data.extracted_pins.length} newly color-extracted pins in DOM`);
+                        updateExtractedPinsInDOM(data.extracted_pins);
+                    }
+                    
+                    // Show progress if we cached new images
+                    if (data.cached_count > previousCachedCount) {
+                        const newlyCached = data.cached_count - previousCachedCount;
+                        devLog(`📁 +${newlyCached} images cached (${data.cached_count}/${processingState.totalPins} total)`);
+                        previousCachedCount = data.cached_count;
+                    }
+                    
+                    // Update processing state counts
                     processingState.cachedPins = data.cached_count;
+                    processingState.extractedPins = data.extracted_count;
                     updateProcessingStatus();
-                }
-                
-                // If all images are cached, move to extraction phase
-                if (data.cached_count >= processingState.totalPins || 
-                    processingState.uncachedPins.length === 0) {
-                    processingState.phase = 'extracting';
-                    updateProcessingStatus();
-                    // Wait a moment then start color extraction
-                    setTimeout(startColorExtraction, 2000);
+                    
+                    // Check if all external images are cached by counting current DOM state
+                    const allPins = document.querySelectorAll('.pin-card');
+                    const uncachedExternalPins = Array.from(allPins).filter(pin => {
+                        const imageUrl = pin.getAttribute('data-image-url');
+                        const hasCached = pin.getAttribute('data-has-cached') === 'true';
+                        return imageUrl && imageUrl.startsWith('http') && !hasCached;
+                    });
+                    
+                    devLog(`📋 Remaining uncached external images: ${uncachedExternalPins.length}`);
+                    
+                    if (uncachedExternalPins.length <= 0) {
+                        devLog('🎉 All external images have been cached!');
+                        devLog('✅ Phase 1 complete: Image caching finished');
+                        devLog('🎨 Phase 2: Starting color extraction...');
+                        processingState.phase = 'extracting';
+                        updateProcessingStatus();
+                        // Wait a moment then start color extraction
+                        setTimeout(startColorExtraction, 2000);
+                    } else {
+                        devLog(`⏳ Still waiting for ${uncachedExternalPins.length} images, will check again in 3 seconds...`);
+                        // Continue polling
+                        setTimeout(checkProgress, 3000);
+                    }
                 } else {
-                    // Continue polling
-                    setTimeout(checkProgress, 3000);
+                    devWarn('⚠️ API returned error:', data);
                 }
             })
             .catch(error => {
-                console.warn('Error checking caching progress:', error);
+                devWarn('❌ Error checking caching progress:', error);
                 // Continue polling anyway
                 setTimeout(checkProgress, 5000);
             });
     };
     
     // Start polling
+    devLog('⏳ Starting to poll for caching progress every 3 seconds...');
     setTimeout(checkProgress, 3000);
 }
 
+function updateCachedPinsInDOM(cachedPins) {
+    cachedPins.forEach(cachedPin => {
+        const pinElement = document.querySelector(`[data-pin-id="${cachedPin.id}"]`);
+        if (pinElement) {
+            const currentHasCached = pinElement.getAttribute('data-has-cached') === 'true';
+            
+            if (!currentHasCached) {
+                // Update the pin element to show it's now cached
+                pinElement.setAttribute('data-has-cached', 'true');
+                pinElement.setAttribute('data-cached-url', `/cached/${cachedPin.cached_filename}`);
+                
+                // Update the image source to use the cached version
+                const imgElement = pinElement.querySelector('.pin-image');
+                if (imgElement) {
+                    const originalSrc = imgElement.src;
+                    imgElement.src = `/cached/${cachedPin.cached_filename}`;
+                    imgElement.setAttribute('data-original-url', originalSrc);
+                    
+                    // Add a subtle flash effect to show the image was updated
+                    imgElement.style.transition = 'opacity 0.3s ease';
+                    imgElement.style.opacity = '0.7';
+                    setTimeout(() => {
+                        imgElement.style.opacity = '1';
+                    }, 150);
+                }
+                
+                devLog(`✅ Updated pin ${cachedPin.id} to use cached image: ${cachedPin.cached_filename}`);
+            }
+        }
+    });
+}
+
+function updateExtractedPinsInDOM(extractedPins) {
+    extractedPins.forEach(extractedPin => {
+        const pinElement = document.querySelector(`[data-pin-id="${extractedPin.id}"]`);
+        if (pinElement) {
+            const currentHasColors = pinElement.getAttribute('data-has-db-colors') === 'true';
+            
+            if (!currentHasColors && extractedPin.color1 && extractedPin.color2) {
+                // Update the pin element to show colors are extracted
+                pinElement.setAttribute('data-has-db-colors', 'true');
+                pinElement.setAttribute('data-colors-extracted', 'true');
+                
+                // Apply the colors to the pin
+                pinElement.style.setProperty('--dominant-color', extractedPin.color1);
+                pinElement.style.setProperty('--secondary-color', extractedPin.color2);
+                
+                devLog(`✅ Updated pin ${extractedPin.id} with extracted colors: ${extractedPin.color1}, ${extractedPin.color2}`);
+            }
+        }
+    });
+}
+
 function startColorExtraction() {
-    console.log('🎨 Starting color extraction...');
+    devLog('🎨 Starting color extraction phase...');
     
-    // Get all pins that need color extraction
+    // Get all pins that need color extraction (refresh from current DOM state)
     const pinsNeedingColors = document.querySelectorAll('.pin-card[data-has-db-colors="false"]');
     
+    devLog(`📊 Found ${pinsNeedingColors.length} pins that need color extraction`);
+    
     if (pinsNeedingColors.length === 0) {
-        processingState.phase = 'complete';
-        updateProcessingStatus();
+        devLog('✅ No pins need color extraction, phase 2 complete');
+        devLog('🔗 Phase 3: Starting URL health checking...');
+        checkAndStartUrlHealthChecking();
         return;
     }
     
     let processed = 0;
+    const total = pinsNeedingColors.length;
     
     const processNextPin = () => {
-        if (processed >= pinsNeedingColors.length) {
-            console.log('✅ Color extraction complete!');
+        if (processed >= total) {
+            devLog('🎉 Color extraction phase complete!');
+            devLog('✅ Phase 2 complete: Color extraction finished');
+            devLog('🔗 Phase 3: Starting URL health checking...');
             // Move to URL health checking phase
             checkAndStartUrlHealthChecking();
             return;
         }
         
         const pin = pinsNeedingColors[processed];
+        const pinId = pin.getAttribute('data-pin-id');
+        const pinTitle = pin.querySelector('h3')?.textContent || `Pin ${pinId}`;
+        
+        devLog(`🎨 Processing pin ${processed + 1}/${total}: "${pinTitle}" (ID: ${pinId})`);
+        
         const img = pin.querySelector('.pin-image');
         
         if (img) {
-            extractColorsFromPin(pin, img, () => {
+            extractColorsFromPin(pin, img, (success) => {
                 processed++;
                 processingState.extractedPins++;
+                
+                if (success) {
+                    devLog(`✅ Colors extracted for pin ${pinId} (${processed}/${total})`);
+                } else {
+                    devLog(`⚠️ Color extraction failed for pin ${pinId} (${processed}/${total})`);
+                }
+                
                 updateProcessingStatus();
                 
+                // Show progress every 10 pins or at completion
+                if (processed % 10 === 0 || processed === total) {
+                    devLog(`📊 Color extraction progress: ${processed}/${total} pins completed`);
+                }
+                
                 // Continue with next pin after a short delay
-                setTimeout(processNextPin, 1000);
+                setTimeout(processNextPin, 500);
             });
         } else {
+            devLog(`⚠️ No image found for pin ${pinId}, skipping...`);
             processed++;
             setTimeout(processNextPin, 100);
         }
     };
     
+    devLog('🎨 Starting to process pins for color extraction...');
     processNextPin();
 }
 
@@ -819,23 +998,23 @@ function extractColorsFromPin(pinCard, img, callback) {
                     saveColorsToDatabase(pinId, colors.primary, colors.secondary);
                 }
                 
-                callback();
+                callback(true); // Success
             } catch (e) {
-                console.warn('Could not extract colors from image:', imageUrl, e);
-                callback();
+                devWarn('Could not extract colors from image:', imageUrl, e);
+                callback(false); // Failed
             }
         };
         
         tempImg.onerror = function() {
-            console.warn('Image failed to load:', imageUrl);
-            callback();
+            devWarn('Image failed to load:', imageUrl);
+            callback(false); // Failed
         };
         
         tempImg.src = imageUrl;
         
     } catch (e) {
-        console.warn('Error processing image:', e);
-        callback();
+        devWarn('Error processing image:', e);
+        callback(false); // Failed
     }
 }
 
@@ -895,52 +1074,78 @@ function saveColorsToDatabase(pinId, color1, color2) {
     .then(response => response.json())
     .then(data => {
         if (data.success) {
-            console.log(`✅ Saved colors for pin ${pinId}`);
+            devLog(`✅ Saved colors for pin ${pinId}`);
         } else {
-            console.warn(`⚠️ Failed to save colors for pin ${pinId}:`, data.error);
+            devWarn(`⚠️ Failed to save colors for pin ${pinId}:`, data.error);
         }
     })
     .catch(error => {
-        console.warn(`⚠️ Error saving colors for pin ${pinId}:`, error);
+        devWarn(`⚠️ Error saving colors for pin ${pinId}:`, error);
     });
 }
 
 function checkAndStartUrlHealthChecking() {
     // Get current board status to see if URL health checking is needed
+    devLog('🔍 Checking if URL health checking is needed...');
+    
     fetch(`/api/board-status/${getBoardId()}`)
         .then(response => response.json())
         .then(data => {
+            devLog('📊 Board status for URL health:', data);
+            
             if (data.success) {
                 processingState.pinsWithLinks = data.pins_with_links;
                 processingState.healthCheckedPins = data.health_checked_count;
                 
-                if (data.pins_with_links > data.health_checked_count) {
+                devLog(`📋 URL Health Summary:`);
+                devLog(`  - Pins with links: ${data.pins_with_links}`);
+                devLog(`  - Health checked: ${data.health_checked_count}`);
+                devLog(`  - Live links: ${data.live_links}`);
+                devLog(`  - Broken links: ${data.broken_links}`);
+                devLog(`  - Archived links: ${data.archived_links}`);
+                
+                const needsChecking = data.pins_with_links - data.health_checked_count;
+                
+                if (needsChecking > 0) {
+                    devLog(`🔗 ${needsChecking} URLs need health checking, starting URL health phase...`);
                     // Start URL health checking phase
                     processingState.phase = 'health-checking';
                     updateProcessingStatus();
                     startUrlHealthChecking();
                 } else {
+                    devLog('✅ All URLs already health checked!');
+                    devLog('🎉 All processing phases complete! System is ready.');
                     // Everything is complete
                     processingState.phase = 'complete';
                     updateProcessingStatus();
                 }
             } else {
+                devWarn('⚠️ Board status API failed:', data);
+                devWarn('⚠️ Marking processing as complete due to API failure');
                 // If API fails, just mark as complete
                 processingState.phase = 'complete';
                 updateProcessingStatus();
             }
         })
         .catch(error => {
-            console.warn('Error checking URL health status:', error);
+            devWarn('❌ Error checking URL health status:', error);
+            devWarn('❌ Marking processing as complete due to network error');
             processingState.phase = 'complete';
             updateProcessingStatus();
         });
 }
 
 function startUrlHealthChecking() {
-    console.log('🔗 Starting URL health checking...');
+    devLog('🔗 Starting URL health checking phase...');
     
     const uncheckedUrls = processingState.pinsWithLinks - processingState.healthCheckedPins;
+    const batchSize = Math.min(uncheckedUrls, 20);
+    
+    devLog(`📊 URL Health Status:`);
+    devLog(`  - Total pins with links: ${processingState.pinsWithLinks}`);
+    devLog(`  - Already checked: ${processingState.healthCheckedPins}`);
+    devLog(`  - Remaining to check: ${uncheckedUrls}`);
+    devLog(`  - Checking batch size: ${batchSize}`);
     
     fetch(`/api/check-url-health/${getBoardId()}`, {
         method: 'POST',
@@ -948,31 +1153,60 @@ function startUrlHealthChecking() {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-            limit: Math.min(uncheckedUrls, 20) // Check up to 20 URLs at a time
+            limit: batchSize
         })
     })
-    .then(response => response.json())
+    .then(response => {
+        devLog('🌐 URL health check API response received');
+        return response.json();
+    })
     .then(data => {
+        devLog('🔗 URL health check response:', data);
+        
         if (data.success) {
-            console.log(`✅ URL health check complete: ${data.message}`);
+            devLog(`✅ URL health check batch complete: ${data.message}`);
+            devLog(`📊 Checked ${data.checked} URLs in this batch`);
+            
+            // Show detailed results if available
+            if (data.results && data.results.length > 0) {
+                devLog('📋 Detailed results:');
+                data.results.forEach((result, index) => {
+                    const statusEmoji = result.status === 'live' ? '🟢' : result.status === 'broken' ? '🔴' : '🟣';
+                    devLog(`  ${index + 1}. ${statusEmoji} Pin ${result.pin_id}: ${result.status} (${result.url})`);
+                });
+            }
+            
             processingState.healthCheckedPins += data.checked;
             
-            if (processingState.healthCheckedPins >= processingState.pinsWithLinks) {
+            const totalChecked = processingState.healthCheckedPins;
+            const totalWithLinks = processingState.pinsWithLinks;
+            const remainingUrls = totalWithLinks - totalChecked;
+            
+            devLog(`📊 Overall Progress: ${totalChecked}/${totalWithLinks} URLs checked`);
+            
+            if (remainingUrls <= 0) {
                 // All URLs checked
+                devLog('🎉 All URLs have been health checked!');
+                devLog('✅ Phase 3 complete: URL health checking finished');
+                devLog('🎉 All processing phases complete! System is ready.');
                 processingState.phase = 'complete';
                 updateProcessingStatus();
             } else {
                 // Continue checking more URLs
+                devLog(`⏳ ${remainingUrls} URLs still need checking...`);
+                devLog(`⏳ Continuing URL health checking in 3 seconds...`);
                 setTimeout(startUrlHealthChecking, 3000);
             }
         } else {
-            console.error('❌ Failed URL health checking:', data.error);
+            devError('❌ URL health check batch failed:', data.error);
+            devError('❌ Stopping URL health checking due to error');
             processingState.phase = 'complete';
             updateProcessingStatus();
         }
     })
     .catch(error => {
-        console.error('❌ Error during URL health checking:', error);
+        devError('❌ Network error during URL health checking:', error);
+        devError('❌ Stopping URL health checking due to network error');
         processingState.phase = 'complete';
         updateProcessingStatus();
     });
@@ -987,11 +1221,20 @@ function updateProcessingStatus() {
             statusText.textContent = '🎨 Ready';
             break;
         case 'caching':
-            const uncachedCount = processingState.uncachedPins.length;
+            // Count uncached pins dynamically from DOM
+            const allPins = document.querySelectorAll('.pin-card');
+            const uncachedPins = Array.from(allPins).filter(pin => {
+                const imageUrl = pin.getAttribute('data-image-url');
+                const hasCached = pin.getAttribute('data-has-cached') === 'true';
+                return imageUrl && imageUrl.startsWith('http') && !hasCached;
+            });
+            const uncachedCount = uncachedPins.length;
             statusText.textContent = `📁 Caching ${uncachedCount} images...`;
             break;
         case 'extracting':
-            const remaining = processingState.totalPins - processingState.extractedPins;
+            // Count pins without colors dynamically from DOM
+            const pinsWithoutColors = document.querySelectorAll('.pin-card[data-has-db-colors="false"]');
+            const remaining = pinsWithoutColors.length;
             statusText.textContent = `🎨 Extracting colors (${remaining} left)`;
             break;
         case 'health-checking':
@@ -1092,142 +1335,6 @@ function initializeSectionFiltering() {
 // Board management buttons
 function initializeBoardManagement() {
     // No special initialization needed for the new automatic system
-}
-
-// Toggle board settings menu
-function toggleBoardSettings() {
-    const menu = document.getElementById('boardSettingsMenu');
-    menu.classList.toggle('active');
-    
-    // Position the menu to avoid going off-screen
-    const rect = menu.getBoundingClientRect();
-    const windowWidth = window.innerWidth;
-    
-    if (rect.right > windowWidth) {
-        menu.classList.add('right');
-        menu.classList.remove('left');
-    } else {
-        menu.classList.add('left');
-        menu.classList.remove('right');
-    }
-}
-
-// Close settings menu when clicking outside
-document.addEventListener('click', function(event) {
-    const menu = document.getElementById('boardSettingsMenu');
-    const button = document.querySelector('.board-settings-button');
-    
-    if (!menu.contains(event.target) && !button.contains(event.target)) {
-        menu.classList.remove('active');
-    }
-});
-
-// Modal functions
-function showRenameBoardModal() {
-    document.getElementById('renameBoardModal').style.display = 'block';
-    document.getElementById('newBoardName').value = '{{ board.name }}';
-    document.getElementById('newBoardName').focus();
-}
-
-function hideRenameBoardModal() {
-    document.getElementById('renameBoardModal').style.display = 'none';
-}
-
-function showMoveBoardModal() {
-    document.getElementById('moveBoardModal').style.display = 'block';
-}
-
-function hideMoveBoardModal() {
-    document.getElementById('moveBoardModal').style.display = 'none';
-}
-
-function showDeleteBoardModal() {
-    document.getElementById('deleteBoardModal').style.display = 'block';
-}
-
-function hideDeleteBoardModal() {
-    document.getElementById('deleteBoardModal').style.display = 'none';
-}
-
-function renameBoard() {
-    const newName = document.getElementById('newBoardName').value.trim();
-    if (!newName) {
-        alert('Please enter a board name');
-        return;
-    }
-
-    fetch(`/rename-board/{{ board.id }}`, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            name: newName
-        })
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.success) {
-            location.reload();
-        } else {
-            alert('Failed to rename board');
-        }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        alert('Failed to rename board');
-    });
-}
-
-function moveBoard() {
-    const targetBoardId = document.getElementById('targetBoardSelect').value;
-    if (!targetBoardId) {
-        alert('Please select a target board');
-        return;
-    }
-
-    fetch(`/move-board/{{ board.id }}`, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            target_board_id: targetBoardId
-        })
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.success) {
-            window.location.href = `/board/${targetBoardId}`;
-        } else {
-            alert('Failed to move board');
-        }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        alert('Failed to move board');
-    });
-}
-
-function deleteBoard() {
-    fetch(`/delete-board/{{ board.id }}`, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        }
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.success) {
-            window.location.href = '/';
-        } else {
-            alert('Failed to delete board');
-        }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        alert('Failed to delete board');
-    });
 }
 
 </script>

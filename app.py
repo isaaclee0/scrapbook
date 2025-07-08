@@ -267,7 +267,11 @@ def board(board_id):
         cursor.close()
         db.close()
         
-        return render_template('board.html', board=board, sections=sections, pins=pins, all_boards=all_boards)
+        # Pass environment info to template
+        flask_env = os.getenv('FLASK_ENV', 'production')
+        is_development = flask_env in ['development', 'debug']
+        
+        return render_template('board.html', board=board, sections=sections, pins=pins, all_boards=all_boards, is_development=is_development)
     except Exception as e:
         print(f"Error in board route: {str(e)}")
         return "An error occurred", 500
@@ -984,6 +988,7 @@ def cache_images():
     try:
         data = request.get_json()
         limit = data.get('limit', 10) if data else 10
+        board_id = data.get('board_id') if data else None
         
         # Import and use the image cache service
         from scripts.image_cache_service import ImageCacheService
@@ -993,16 +998,18 @@ def cache_images():
         # Queue images for caching in background
         import threading
         def cache_in_background():
-            cache_service.cache_all_external_images(limit=limit)
+            cache_service.cache_all_external_images(limit=limit, board_id=board_id)
             cache_service.stop_workers()
         
         thread = threading.Thread(target=cache_in_background)
         thread.daemon = True
         thread.start()
         
+        board_message = f" for board {board_id}" if board_id else ""
+        
         return jsonify({
             'success': True,
-            'message': f'Started caching up to {limit} external images in background'
+            'message': f'Started caching up to {limit} external images{board_message} in background'
         })
     except Exception as e:
         print(f"Error starting image caching: {str(e)}")
@@ -1066,6 +1073,26 @@ def board_status(board_id):
         """, (board_id,))
         
         stats = cursor.fetchone()
+        
+        # Get detailed cached pin information for dynamic updates
+        cursor.execute("""
+            SELECT p.id, ci.cached_filename
+            FROM pins p
+            LEFT JOIN cached_images ci ON p.cached_image_id = ci.id AND ci.cache_status = 'cached'
+            WHERE p.board_id = %s AND p.uses_cached_image = 1 AND ci.cached_filename IS NOT NULL
+        """, (board_id,))
+        
+        cached_pins = cursor.fetchall()
+        
+        # Get detailed color extraction information
+        cursor.execute("""
+            SELECT id, dominant_color_1, dominant_color_2
+            FROM pins
+            WHERE board_id = %s AND colors_extracted = 1
+        """, (board_id,))
+        
+        extracted_pins = cursor.fetchall()
+        
         cursor.close()
         db.close()
         
@@ -1078,7 +1105,9 @@ def board_status(board_id):
             "health_checked_count": stats['health_checked_count'],
             "live_links": stats['live_links'],
             "broken_links": stats['broken_links'],
-            "archived_links": stats['archived_links']
+            "archived_links": stats['archived_links'],
+            "cached_pins": [{"id": pin["id"], "cached_filename": pin["cached_filename"]} for pin in cached_pins],
+            "extracted_pins": [{"id": pin["id"], "color1": pin["dominant_color_1"], "color2": pin["dominant_color_2"]} for pin in extracted_pins]
         })
         
     except mysql.connector.Error as e:
@@ -1170,6 +1199,70 @@ def check_url_health_for_board(board_id):
         return jsonify({"success": False, "error": str(e)}), 500
     except Exception as e:
         return jsonify({"success": False, "error": str(e)}), 500
+
+@app.route('/api/debug-url-health/<int:board_id>')
+def debug_url_health(board_id):
+    """Debug endpoint to check URL health status for a specific board"""
+    try:
+        db = get_db_connection()
+        cursor = db.cursor(dictionary=True)
+        
+        # Get all pins with links on this board
+        cursor.execute("""
+            SELECT p.id, p.title, p.link, uh.status, uh.last_checked
+            FROM pins p
+            LEFT JOIN url_health uh ON p.id = uh.pin_id
+            WHERE p.board_id = %s AND p.link IS NOT NULL
+            ORDER BY p.id
+        """, (board_id,))
+        
+        pins_with_links = cursor.fetchall()
+        
+        # Get pins that would be checked by the health checker
+        cursor.execute("""
+            SELECT p.id as pin_id, p.link as url, uh.last_checked, uh.status
+            FROM pins p
+            LEFT JOIN url_health uh ON p.id = uh.pin_id
+            WHERE p.board_id = %s 
+            AND p.link IS NOT NULL 
+            AND (uh.last_checked IS NULL OR uh.last_checked < DATE_SUB(NOW(), INTERVAL 1 MONTH))
+            LIMIT 20
+        """, (board_id,))
+        
+        urls_to_check = cursor.fetchall()
+        
+        # Get counts
+        cursor.execute("""
+            SELECT 
+                COUNT(CASE WHEN p.link IS NOT NULL THEN 1 END) as pins_with_links,
+                COUNT(CASE WHEN uh.status IS NOT NULL THEN 1 END) as health_checked_count,
+                COUNT(CASE WHEN uh.status = 'live' THEN 1 END) as live_links,
+                COUNT(CASE WHEN uh.status = 'broken' THEN 1 END) as broken_links,
+                COUNT(CASE WHEN uh.status = 'archived' THEN 1 END) as archived_links,
+                COUNT(CASE WHEN uh.status = 'unknown' THEN 1 END) as unknown_links
+            FROM pins p
+            LEFT JOIN url_health uh ON p.id = uh.pin_id
+            WHERE p.board_id = %s
+        """, (board_id,))
+        
+        stats = cursor.fetchone()
+        
+        cursor.close()
+        db.close()
+        
+        return jsonify({
+            "success": True,
+            "board_id": board_id,
+            "stats": stats,
+            "pins_with_links": pins_with_links,
+            "urls_that_would_be_checked": urls_to_check,
+            "needs_health_checking": len(urls_to_check) > 0
+        })
+        
+    except mysql.connector.Error as e:
+        return jsonify({"success": False, "error": f"Database error: {str(e)}"}), 500
+    except Exception as e:
+        return jsonify({"success": False, "error": f"Error: {str(e)}"}), 500
 
 @app.route('/save-pin-colors/<int:pin_id>', methods=['POST'])
 def save_pin_colors(pin_id):
