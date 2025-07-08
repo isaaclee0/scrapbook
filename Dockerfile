@@ -14,6 +14,15 @@ RUN apt-get update && apt-get install -y \
     gcc \
     default-libmysqlclient-dev \
     pkg-config \
+    libjpeg-dev \
+    libpng-dev \
+    libtiff-dev \
+    libwebp-dev \
+    libfreetype6-dev \
+    liblcms2-dev \
+    libopenjp2-7-dev \
+    zlib1g-dev \
+    ffmpeg \
     && rm -rf /var/lib/apt/lists/*
 
 # Set work directory

@@ -45,10 +45,13 @@ def add_cached_images_table():
                 updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
                 last_accessed TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                 cache_status ENUM('pending', 'cached', 'failed', 'expired') DEFAULT 'pending',
+                retry_count INT DEFAULT 0,
+                last_retry_at TIMESTAMP NULL,
                 UNIQUE KEY unique_url_quality (original_url(500), quality_level),
                 INDEX idx_cached_images_original_url (original_url(500)),
                 INDEX idx_cached_images_status (cache_status),
-                INDEX idx_cached_images_created_at (created_at)
+                INDEX idx_cached_images_created_at (created_at),
+                INDEX idx_cached_images_retry (retry_count, last_retry_at)
             ) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci
         """)
         
@@ -59,15 +62,49 @@ def add_cached_images_table():
             ADD COLUMN IF NOT EXISTS uses_cached_image BOOLEAN DEFAULT FALSE
         """)
         
+        # Update existing cached_images table to add retry tracking columns if they don't exist
+        try:
+            cursor.execute("""
+                ALTER TABLE cached_images 
+                ADD COLUMN IF NOT EXISTS retry_count INT DEFAULT 0,
+                ADD COLUMN IF NOT EXISTS last_retry_at TIMESTAMP NULL
+            """)
+            print("✅ Added retry tracking columns to existing cached_images table")
+        except mysql.connector.Error as e:
+            if "Duplicate column name" not in str(e):
+                print(f"⚠️ Warning: Could not add retry columns: {e}")
+        
+        # Add index for retry columns if it doesn't exist
+        try:
+            cursor.execute("SHOW INDEX FROM cached_images WHERE Key_name = 'idx_cached_images_retry'")
+            existing_index = cursor.fetchall()  # Consume all results
+            if not existing_index:
+                cursor.execute("CREATE INDEX idx_cached_images_retry ON cached_images (retry_count, last_retry_at)")
+                print("✅ Added retry tracking index")
+            else:
+                print("✅ Retry tracking index already exists")
+        except mysql.connector.Error as e:
+            print(f"⚠️ Warning: Could not add retry index: {e}")
+        
         # Add foreign key constraint
-        cursor.execute("""
-            ALTER TABLE pins 
-            ADD CONSTRAINT fk_pins_cached_image 
-            FOREIGN KEY (cached_image_id) REFERENCES cached_images(id) 
-            ON DELETE SET NULL
-        """)
+        try:
+            cursor.execute("""
+                ALTER TABLE pins 
+                ADD CONSTRAINT fk_pins_cached_image 
+                FOREIGN KEY (cached_image_id) REFERENCES cached_images(id) 
+                ON DELETE SET NULL
+            """)
+            print("✅ Added foreign key constraint for cached_image_id")
+        except mysql.connector.Error as e:
+            if "Duplicate key" in str(e) or "already exists" in str(e) or "errno: 121" in str(e):
+                print("✅ Foreign key constraint already exists")
+            else:
+                print(f"⚠️ Warning: Could not add foreign key constraint: {e}")
         
         db.commit()
+        cursor.close()
+        db.close()
+        
         print("✅ Successfully added cached images table and pin references")
         
         # Check current pins that could benefit from caching

@@ -768,10 +768,26 @@ function startImageCaching(imageCount) {
 
 function pollCachingProgress() {
     let previousCachedCount = processingState.cachedPins;
+    let pollAttempts = 0;
+    const maxPollAttempts = 40; // Maximum 2 minutes of polling (40 * 3 seconds)
+    let noProgressCount = 0;
+    const maxNoProgressCount = 10; // Stop if no progress for 30 seconds
     
     // Check caching progress every 3 seconds
     const checkProgress = () => {
-        devLog('🔄 Polling caching progress...');
+        pollAttempts++;
+        devLog(`🔄 Polling caching progress... (attempt ${pollAttempts}/${maxPollAttempts})`);
+        
+        // Check if we've exceeded maximum polling attempts
+        if (pollAttempts >= maxPollAttempts) {
+            devWarn('⏰ Maximum polling time reached, stopping caching phase');
+            devWarn('📋 Some images may have failed to cache (videos, rate limits, etc.)');
+            devLog('✅ Phase 1 complete: Moving to color extraction (with remaining images)');
+            processingState.phase = 'extracting';
+            updateProcessingStatus();
+            setTimeout(startColorExtraction, 2000);
+            return;
+        }
         
         // Check if we have new cached images by making a quick API call
         fetch(`/api/board-status/${getBoardId()}`)
@@ -792,11 +808,15 @@ function pollCachingProgress() {
                         updateExtractedPinsInDOM(data.extracted_pins);
                     }
                     
-                    // Show progress if we cached new images
+                    // Check for progress
                     if (data.cached_count > previousCachedCount) {
                         const newlyCached = data.cached_count - previousCachedCount;
                         devLog(`📁 +${newlyCached} images cached (${data.cached_count}/${processingState.totalPins} total)`);
                         previousCachedCount = data.cached_count;
+                        noProgressCount = 0; // Reset no progress counter
+                    } else {
+                        noProgressCount++;
+                        devLog(`📋 No new images cached (${noProgressCount}/${maxNoProgressCount} attempts without progress)`);
                     }
                     
                     // Update processing state counts
@@ -822,6 +842,13 @@ function pollCachingProgress() {
                         updateProcessingStatus();
                         // Wait a moment then start color extraction
                         setTimeout(startColorExtraction, 2000);
+                    } else if (noProgressCount >= maxNoProgressCount) {
+                        devWarn(`⏰ No progress for ${maxNoProgressCount * 3} seconds, moving to next phase`);
+                        devWarn(`📋 ${uncachedExternalPins.length} images couldn't be cached (likely videos or rate-limited)`);
+                        devLog('✅ Phase 1 complete: Moving to color extraction (with remaining images)');
+                        processingState.phase = 'extracting';
+                        updateProcessingStatus();
+                        setTimeout(startColorExtraction, 2000);
                     } else {
                         devLog(`⏳ Still waiting for ${uncachedExternalPins.length} images, will check again in 3 seconds...`);
                         // Continue polling
@@ -829,17 +856,36 @@ function pollCachingProgress() {
                     }
                 } else {
                     devWarn('⚠️ API returned error:', data);
+                    // Continue polling but count as no progress
+                    noProgressCount++;
+                    if (noProgressCount >= maxNoProgressCount) {
+                        devWarn('⚠️ Too many API errors, moving to next phase');
+                        processingState.phase = 'extracting';
+                        updateProcessingStatus();
+                        setTimeout(startColorExtraction, 2000);
+                    } else {
+                        setTimeout(checkProgress, 5000);
+                    }
                 }
             })
             .catch(error => {
                 devWarn('❌ Error checking caching progress:', error);
-                // Continue polling anyway
-                setTimeout(checkProgress, 5000);
+                noProgressCount++;
+                if (noProgressCount >= maxNoProgressCount) {
+                    devWarn('❌ Too many network errors, moving to next phase');
+                    processingState.phase = 'extracting';
+                    updateProcessingStatus();
+                    setTimeout(startColorExtraction, 2000);
+                } else {
+                    // Continue polling anyway
+                    setTimeout(checkProgress, 5000);
+                }
             });
     };
     
     // Start polling
     devLog('⏳ Starting to poll for caching progress every 3 seconds...');
+    devLog('📋 Will automatically move to next phase if no progress or after 2 minutes');
     setTimeout(checkProgress, 3000);
 }
 
