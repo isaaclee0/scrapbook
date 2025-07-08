@@ -73,5 +73,4 @@ docker-compose.prod.yml
 # Temporary files
 *.tmp
 *.temp docker-compose.yml
-# Beta development folder
-beta/
+
