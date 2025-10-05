@@ -11,6 +11,8 @@ import re
 import html
 import unicodedata
 import time
+import base64
+import hashlib
 
 # Try to import redis, but make it optional
 try:
@@ -99,7 +101,18 @@ def sanitize_url(url, max_length=2048):
     if not isinstance(url, str):
         return ''
     
-    # Basic URL validation regex
+    url = url.strip()
+    
+    # Check for data URLs (for pasted images) - these should be handled by save_pasted_image() function
+    if url.startswith('data:image/'):
+        # Data URLs should not reach this function anymore, but handle gracefully
+        return ''
+    
+    # Check for relative URLs (for default images)
+    if url.startswith('/static/'):
+        return url
+    
+    # Basic URL validation regex for HTTP/HTTPS URLs
     url_pattern = re.compile(
         r'^https?://'  # http:// or https://
         r'(?:(?:[A-Z0-9](?:[A-Z0-9-]{0,61}[A-Z0-9])?\.)+[A-Z]{2,6}\.?|'  # domain...
@@ -108,7 +121,6 @@ def sanitize_url(url, max_length=2048):
         r'(?::\d+)?'  # optional port
         r'(?:/?|[/?]\S+)$', re.IGNORECASE)
     
-    url = url.strip()
     if not url_pattern.match(url):
         return ''
     
@@ -133,7 +145,7 @@ def sanitize_integer(value, min_value=None, max_value=None):
 dbconfig = {
     "host": os.getenv('DB_HOST', 'db'),
     "user": os.getenv('DB_USER', 'db'),
-            "password": os.getenv('DB_PASSWORD'),
+    "password": os.getenv('DB_PASSWORD'),
     "database": os.getenv('DB_NAME', 'db'),
     "pool_name": "mypool",
     "pool_size": 10,
@@ -163,6 +175,8 @@ def get_db_connection():
 @app.route('/')
 @cache_view(timeout=300)  # Cache for 5 minutes
 def gallery():
+    db = None
+    cursor = None
     try:
         db = get_db_connection()
         cursor = db.cursor(dictionary=True)
@@ -199,8 +213,10 @@ def gallery():
     except mysql.connector.Error as e:
         return jsonify({"error": str(e)}), 500
     finally:
-        cursor.close()
-        db.close()
+        if cursor:
+            cursor.close()
+        if db:
+            db.close()
 
     return render_template('boards.html', boards=boards)
 
@@ -271,7 +287,14 @@ def board(board_id):
         flask_env = os.getenv('FLASK_ENV', 'production')
         is_development = flask_env in ['development', 'debug']
         
-        return render_template('board.html', board=board, sections=sections, pins=pins, all_boards=all_boards, is_development=is_development)
+        # Add cache-busting headers to prevent browser caching during development
+        from flask import make_response
+        response = make_response(render_template('board.html', board=board, sections=sections, pins=pins, all_boards=all_boards, is_development=is_development))
+        if is_development:
+            response.headers['Cache-Control'] = 'no-cache, no-store, must-revalidate'
+            response.headers['Pragma'] = 'no-cache'
+            response.headers['Expires'] = '0'
+        return response
     except Exception as e:
         print(f"Error in board route: {str(e)}")
         return "An error occurred", 500
@@ -282,6 +305,8 @@ def search():
     if not query:
         return render_template('search.html', matching_boards=[], matching_pins=[], query=query)
 
+    db = None
+    cursor = None
     try:
         db = get_db_connection()
         cursor = db.cursor(dictionary=True)
@@ -307,8 +332,10 @@ def search():
     except mysql.connector.Error as e:
         return jsonify({"error": str(e)}), 500
     finally:
-        cursor.close()
-        db.close()
+        if cursor:
+            cursor.close()
+        if db:
+            db.close()
 
     return render_template('search.html', matching_boards=matching_boards, matching_pins=matching_pins, query=query)
 
@@ -393,6 +420,8 @@ def scrape_website():
 
 @app.route('/get-sections/<int:board_id>')
 def get_sections(board_id):
+    db = None
+    cursor = None
     try:
         db = get_db_connection()
         cursor = db.cursor(dictionary=True)
@@ -401,22 +430,103 @@ def get_sections(board_id):
     except mysql.connector.Error as e:
         return jsonify({"error": str(e)}), 500
     finally:
-        cursor.close()
-        db.close()
+        if cursor:
+            cursor.close()
+        if db:
+            db.close()
     
     return jsonify(sections)
 
+def save_pasted_image(data_url):
+    """Save a pasted image (data URL) to the cached_images directory"""
+    try:
+        # Parse the data URL to extract format and data
+        if not data_url.startswith('data:image/'):
+            return None
+            
+        # Extract the image format and base64 data
+        header, encoded = data_url.split(',', 1)
+        format_info = header.split(';')[0].split('/')[1]  # e.g., 'png', 'jpeg'
+        
+        # Decode the base64 data
+        image_data = base64.b64decode(encoded)
+        
+        # Generate a hash-based filename similar to the existing system
+        hash_obj = hashlib.md5(image_data)
+        filename_hash = hash_obj.hexdigest()[:16]  # Use first 16 chars like existing files
+        
+        # Use the original format for the extension
+        if format_info == 'jpeg':
+            format_info = 'jpg'
+        filename = f"{filename_hash}_pasted.{format_info}"
+        
+        # Save to the cached_images directory
+        cache_dir = 'static/cached_images'
+        os.makedirs(cache_dir, exist_ok=True)
+        filepath = os.path.join(cache_dir, filename)
+        
+        # Write the image data to file
+        with open(filepath, 'wb') as f:
+            f.write(image_data)
+        
+        # Create a cached image record in the database
+        db = get_db_connection()
+        cursor = db.cursor()
+        
+        # Check if cached_images table exists
+        cursor.execute("SHOW TABLES LIKE 'cached_images'")
+        if cursor.fetchone():
+            # Insert into cached_images table
+            cursor.execute("""
+                INSERT INTO cached_images (
+                    original_url, cached_filename, file_size, 
+                    quality_level, cache_status, created_at, last_accessed
+                ) VALUES (%s, %s, %s, %s, %s, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)
+            """, (
+                f"pasted_image_{filename_hash}",  # Use hash as original_url for pasted images
+                filename,
+                len(image_data),
+                'low',
+                'cached'
+            ))
+            
+            cached_image_id = cursor.lastrowid
+            db.commit()
+        else:
+            cached_image_id = None
+        
+        cursor.close()
+        db.close()
+        
+        # Return the relative path to the cached image
+        return f"/cached/{filename}", cached_image_id
+        
+    except Exception as e:
+        return None, None
+
 @app.route('/add-pin', methods=['POST'])
 def add_pin():
+    db = None
+    cursor = None
     try:
         data = request.get_json()
+        
         board_id = sanitize_integer(data.get('board_id'))
         section_id = sanitize_integer(data.get('section_id'))
         title = sanitize_string(data.get('title', ''), max_length=255)
         description = sanitize_string(data.get('description', ''))
         notes = sanitize_string(data.get('notes', ''))
-        image_url = sanitize_url(data.get('image_url', ''))
+        raw_image_url = data.get('image_url', '')
         source_url = sanitize_url(data.get('source_url', ''))  # Add source URL
+        cached_image_id = None
+        
+        # Handle pasted images (data URLs) by saving them to disk
+        if raw_image_url.startswith('data:image/'):
+            image_url, cached_image_id = save_pasted_image(raw_image_url)
+            if image_url is None:
+                image_url = '/static/images/default_pin.png'  # Fallback to default
+        else:
+            image_url = sanitize_url(raw_image_url)
         
         if not board_id or not title:
             return jsonify({"error": "Board ID and title are required"}), 400
@@ -428,10 +538,22 @@ def add_pin():
         db = get_db_connection()
         cursor = db.cursor()
         
-        cursor.execute("""
-            INSERT INTO pins (board_id, section_id, title, description, notes, image_url, link)
-            VALUES (%s, %s, %s, %s, %s, %s, %s)
-        """, (board_id, section_id, title, description, notes, image_url, source_url))
+        # Check if pins table has cached image columns
+        cursor.execute("SHOW COLUMNS FROM pins LIKE 'cached_image_id'")
+        has_cached_columns = cursor.fetchone() is not None
+        
+        if has_cached_columns and cached_image_id:
+            # Insert with cached image information
+            cursor.execute("""
+                INSERT INTO pins (board_id, section_id, title, description, notes, image_url, link, cached_image_id, uses_cached_image)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+            """, (board_id, section_id, title, description, notes, image_url, source_url, cached_image_id, True))
+        else:
+            # Insert without cached image information (fallback)
+            cursor.execute("""
+                INSERT INTO pins (board_id, section_id, title, description, notes, image_url, link)
+                VALUES (%s, %s, %s, %s, %s, %s, %s)
+            """, (board_id, section_id, title, description, notes, image_url, source_url))
         
         pin_id = cursor.lastrowid
         db.commit()
@@ -458,8 +580,10 @@ def add_pin():
         print(f"Error adding pin: {str(e)}")
         return jsonify({"error": "Failed to add pin"}), 500
     finally:
-        cursor.close()
-        db.close()
+        if cursor:
+            cursor.close()
+        if db:
+            db.close()
 
 @app.route('/update-pin/<int:pin_id>', methods=['POST'])
 def update_pin(pin_id):
@@ -665,6 +789,8 @@ def move_pin(pin_id):
     if not pin_id:
         return jsonify({"error": "Valid pin ID is required"}), 400
     
+    db = None
+    cursor = None
     try:
         db = get_db_connection()
         cursor = db.cursor()
@@ -696,8 +822,10 @@ def move_pin(pin_id):
     except mysql.connector.Error as e:
         return jsonify({"error": str(e)}), 500
     finally:
-        cursor.close()
-        db.close()
+        if cursor:
+            cursor.close()
+        if db:
+            db.close()
 
 @app.route('/create-section', methods=['POST'])
 def create_section():
@@ -883,11 +1011,41 @@ def move_board(board_id):
         db = get_db_connection()
         cursor = db.cursor()
         
-        # First, move all pins to the target board
-        cursor.execute("UPDATE pins SET board_id = %s WHERE board_id = %s", (target_board_id, board_id))
+        # Get the source board name to use as section name
+        cursor.execute("SELECT name FROM boards WHERE id = %s", (board_id,))
+        source_board = cursor.fetchone()
+        if not source_board:
+            return jsonify({"error": "Source board not found"}), 404
+            
+        source_board_name = source_board[0]
         
-        # Then, move all sections to the target board
-        cursor.execute("UPDATE sections SET board_id = %s WHERE board_id = %s", (target_board_id, board_id))
+        # Check if target board exists
+        cursor.execute("SELECT id FROM boards WHERE id = %s", (target_board_id,))
+        if not cursor.fetchone():
+            return jsonify({"error": "Target board not found"}), 404
+        
+        # Create a new section in the target board with the source board's name
+        cursor.execute("""
+            INSERT INTO sections (board_id, name)
+            VALUES (%s, %s)
+        """, (target_board_id, source_board_name))
+        
+        new_section_id = cursor.lastrowid
+        
+        # Move all pins from source board to target board and assign them to the new section
+        cursor.execute("""
+            UPDATE pins 
+            SET board_id = %s, section_id = %s 
+            WHERE board_id = %s
+        """, (target_board_id, new_section_id, board_id))
+        
+        # Move any existing sections from source board to target board
+        # (These will become subsections within the new section)
+        cursor.execute("""
+            UPDATE sections 
+            SET board_id = %s 
+            WHERE board_id = %s
+        """, (target_board_id, board_id))
         
         # Finally, delete the original board
         cursor.execute("DELETE FROM boards WHERE id = %s", (board_id,))
@@ -1015,40 +1173,21 @@ def cache_images():
         print(f"Error starting image caching: {str(e)}")
         return jsonify({'error': str(e)}), 500
 
-@app.route('/db-upgrade-status')
-def db_upgrade_status():
-    """Get database upgrade status"""
-    try:
-        from scripts.db_version_manager import DatabaseVersionManager
-        manager = DatabaseVersionManager()
-        status = manager.get_upgrade_status()
-        return jsonify(status)
-    except Exception as e:
-        print(f"Error getting upgrade status: {str(e)}")
-        return jsonify({'error': str(e), 'needs_upgrade': False}), 500
 
-@app.route('/db-upgrade', methods=['POST'])
-def db_upgrade():
-    """Apply database upgrade"""
+@app.route('/api/boards')
+def api_boards():
+    """Get all boards for API"""
     try:
-        data = request.get_json()
-        version = data.get('version')
-        
-        if not version:
-            return jsonify({'error': 'Version is required'}), 400
-        
-        from scripts.db_version_manager import DatabaseVersionManager
-        manager = DatabaseVersionManager()
-        result = manager.apply_upgrade(version)
-        
-        if result['success']:
-            return jsonify(result)
-        else:
-            return jsonify(result), 500
-            
+        db = get_db_connection()
+        cursor = db.cursor(dictionary=True)
+        cursor.execute("SELECT * FROM boards ORDER BY name")
+        boards = cursor.fetchall()
+        cursor.close()
+        db.close()
+        return jsonify(boards)
     except Exception as e:
-        print(f"Error applying upgrade: {str(e)}")
-        return jsonify({'error': str(e)}), 500
+        print(f"Error getting boards: {str(e)}")
+        return jsonify({"error": str(e)}), 500
 
 @app.route('/api/board-status/<int:board_id>')
 def board_status(board_id):

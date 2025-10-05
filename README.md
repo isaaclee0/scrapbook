@@ -50,6 +50,63 @@ A Flask-based web application for organizing and managing personal image collect
    - Open your browser and navigate to `http://localhost:8000`
    - Or configure your reverse proxy (Nginx, Traefik, etc.)
 
+## Building and Deployment
+
+### Docker Registry Information
+
+**Docker Hub Repository**: `staugustine1/scrapbook`
+**Supported Architectures**: `linux/amd64`, `linux/arm64`
+
+### Building Multi-Architecture Images
+
+To build and push new versions to Docker Hub:
+
+1. **Set up Docker buildx** (if not already done):
+   ```bash
+   docker buildx create --name multiarch-builder --driver docker-container --use
+   ```
+
+2. **Build and push for multiple architectures**:
+   ```bash
+   # Build and push a specific version (replace vX.X.X with actual version)
+   docker buildx build \
+     --platform linux/amd64,linux/arm64 \
+     --tag staugustine1/scrapbook:vX.X.X \
+     --tag staugustine1/scrapbook:latest \
+     --push .
+   ```
+
+3. **For local testing only** (build without pushing):
+   ```bash
+   docker buildx build \
+     --platform linux/amd64,linux/arm64 \
+     --tag staugustine1/scrapbook:test \
+     --load .
+   ```
+
+### Version Management
+
+- **Git tags**: Create semantic version tags (e.g., `v1.1.2`)
+- **Docker tags**: Mirror git tags for consistency
+- **Latest tag**: Always points to the most recent stable version
+
+Example release workflow:
+```bash
+# Commit changes
+git add -A
+git commit -m "v1.1.2: Description of changes"
+
+# Tag the release
+git tag -a v1.1.2 -m "Release v1.1.2: Description"
+
+# Push to GitHub
+git push origin main
+git push origin --tags
+
+# Build and push Docker image
+docker buildx build --platform linux/amd64,linux/arm64 --tag staugustine1/scrapbook:v1.1.2 --tag staugustine1/scrapbook:latest --push .
+```
+
 ### Configuration
 
 1. **Set up environment variables**:

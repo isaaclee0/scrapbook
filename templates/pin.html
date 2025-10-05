@@ -25,6 +25,13 @@
         <div class="pin-body">
             <div class="pin-image-container">
                 <img src="{{ pin.image_url }}" alt="{{ pin.title }}" class="pin-image">
+                <div class="image-edit-overlay" onclick="enableImageEdit()">
+                </div>
+                <div id="imageEditControls" class="image-edit-controls" style="display: none;">
+                    <button class="image-edit-btn" onclick="changeImage()">Change Image</button>
+                    <button class="image-edit-btn" onclick="removeImage()">Remove Image</button>
+                    <button class="image-edit-btn cancel" onclick="hideImageEdit()">Cancel</button>
+                </div>
             </div>
             
             <div class="pin-details">
@@ -272,6 +279,65 @@
     max-height: 100%;
     object-fit: contain;
     border-radius: 8px;
+}
+
+.image-edit-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.pin-image-container:hover .image-edit-overlay {
+    opacity: 1;
+}
+
+.image-edit-controls {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    z-index: 10;
+    width: max-content;
+}
+
+.image-edit-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    background: #3b82f6;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.image-edit-btn:hover {
+    background: #2563eb;
+}
+
+.image-edit-btn.cancel {
+    background: #6b7280;
+}
+
+.image-edit-btn.cancel:hover {
+    background: #4b5563;
 }
 
 .pin-details {
@@ -1067,6 +1133,10 @@ function createNewSection() {
         alert('Please enter a section name');
         return;
     }
+    
+    // Get the current board ID from the pin data
+    const boardId = {{ pin.board_id }};
+    
     const createBtn = document.querySelector('#newSectionModal .primary-button');
     createBtn.disabled = true;
     createBtn.textContent = 'Creating...';
@@ -1079,7 +1149,7 @@ function createNewSection() {
     .then(data => {
         if (data.success && data.section && data.section.id) {
             hideNewSectionForm();
-            moveToSection(pinId, data.section.id);
+            moveToSection({{ pin.id }}, data.section.id);
         } else {
             alert(data.error || 'Failed to create section');
         }
@@ -1088,6 +1158,151 @@ function createNewSection() {
     .finally(() => {
         createBtn.disabled = false;
         createBtn.textContent = 'Create';
+    });
+}
+
+// Title editing functions
+function enableTitleEdit() {
+    const titleElement = document.querySelector('.editable-title');
+    const editButton = document.querySelector('.edit-button');
+    const saveButton = document.querySelector('.save-button');
+    
+    if (titleElement && editButton && saveButton) {
+        titleElement.contentEditable = 'true';
+        titleElement.focus();
+        editButton.style.display = 'none';
+        saveButton.style.display = 'inline-block';
+        
+        // Select all text for easy editing
+        const range = document.createRange();
+        range.selectNodeContents(titleElement);
+        const selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+    }
+}
+
+function saveTitle() {
+    const titleElement = document.querySelector('.editable-title');
+    const editButton = document.querySelector('.edit-button');
+    const saveButton = document.querySelector('.save-button');
+    
+    if (titleElement && editButton && saveButton) {
+        const newTitle = titleElement.textContent.trim();
+        if (!newTitle) {
+            alert('Title cannot be empty');
+            return;
+        }
+        
+        // Disable editing while saving
+        titleElement.contentEditable = 'false';
+        editButton.style.display = 'inline-block';
+        saveButton.style.display = 'none';
+        
+        // Save to server
+        fetch(`/update-pin/{{ pin.id }}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                title: newTitle
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                // Update the title in the page
+                titleElement.textContent = newTitle;
+            } else {
+                alert('Failed to update title');
+                // Revert to original title
+                titleElement.textContent = '{{ pin.title }}';
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Failed to update title');
+            // Revert to original title
+            titleElement.textContent = '{{ pin.title }}';
+        });
+    }
+}
+
+// Image editing functions
+function enableImageEdit() {
+    const imageContainer = document.querySelector('.pin-image-container');
+    const imageEditControls = document.getElementById('imageEditControls');
+    
+    if (imageEditControls) {
+        imageEditControls.style.display = 'block';
+    }
+}
+
+function hideImageEdit() {
+    const imageEditControls = document.getElementById('imageEditControls');
+    if (imageEditControls) {
+        imageEditControls.style.display = 'none';
+    }
+}
+
+function changeImage() {
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = 'image/*';
+    
+    input.onchange = function(event) {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const imageElement = document.querySelector('.pin-image');
+                if (imageElement) {
+                    imageElement.src = e.target.result;
+                    // Save the new image
+                    saveImage(e.target.result);
+                }
+            };
+            reader.readAsDataURL(file);
+        }
+    };
+    
+    input.click();
+}
+
+function removeImage() {
+    if (confirm('Are you sure you want to remove this image?')) {
+        const imageElement = document.querySelector('.pin-image');
+        if (imageElement) {
+            // Set to default image
+            imageElement.src = '/static/images/default_pin.png';
+            // Save the change
+            saveImage('/static/images/default_pin.png');
+        }
+    }
+}
+
+function saveImage(imageUrl) {
+    fetch(`/update-pin/{{ pin.id }}`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            image_url: imageUrl
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            hideImageEdit();
+        } else {
+            alert('Failed to update image');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Failed to update image');
     });
 }
 </script>

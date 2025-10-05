@@ -22,6 +22,54 @@
                 <div class="image-grid" id="scraped-images-grid"></div>
             </div>
 
+            <div class="no-images-options" id="no-images-options" style="display: none;">
+                <h3>No images found. Choose an alternative:</h3>
+                <div class="alternative-options">
+                    <div class="option-card" onclick="showColorPicker()">
+                        <div class="option-icon">🎨</div>
+                        <div class="option-title">Solid Color</div>
+                        <div class="option-description">Choose a background color</div>
+                    </div>
+                    <div class="option-card" onclick="showImageUpload()">
+                        <div class="option-icon">📁</div>
+                        <div class="option-title">Upload Image</div>
+                        <div class="option-description">Upload your own image</div>
+                    </div>
+                    <div class="option-card" onclick="useDefaultImage()">
+                        <div class="option-icon">🖼️</div>
+                        <div class="option-title">Default Image</div>
+                        <div class="option-description">Use default pin image</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="color-picker-section" id="color-picker-section" style="display: none;">
+                <h3>Choose a color:</h3>
+                <div class="color-picker-container">
+                    <input type="color" id="color-picker" value="#3b82f6">
+                    <div class="color-preview" id="color-preview"></div>
+                </div>
+                <div class="color-actions">
+                    <button class="cancel-color-btn" onclick="hideColorPicker()">Cancel</button>
+                    <button class="use-color-btn" onclick="useSelectedColor()">Use Color</button>
+                </div>
+            </div>
+
+            <div class="image-upload-section" id="image-upload-section" style="display: none;">
+                <h3>Upload an image:</h3>
+                <div class="upload-area" id="upload-area">
+                    <div class="upload-content">
+                        <div class="upload-icon">📁</div>
+                        <div class="upload-text">Click to upload or drag & drop</div>
+                        <div class="upload-subtext">Supports JPG, PNG, GIF, WebP</div>
+                    </div>
+                    <input type="file" id="image-upload-input" accept="image/*" style="display: none;">
+                </div>
+                <div class="upload-actions">
+                    <button class="cancel-upload-btn" onclick="hideImageUpload()">Cancel</button>
+                </div>
+            </div>
+
             <div class="details-section" id="details-section" style="display: none;">
                 <div class="input-group">
                     <label for="title-input">Title</label>
@@ -119,10 +167,18 @@ label {
 
 input, select, textarea {
     width: 100%;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    padding: 12px;
+    border: 2px solid #e1e5e9;
+    border-radius: 8px;
     font-size: 14px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
 
 textarea {
@@ -207,6 +263,145 @@ button {
 .error-message {
     color: #e74c3c;
 }
+
+/* Alternative options styling */
+.alternative-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.option-card {
+    border: 2px solid #e1e5e9;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: white;
+}
+
+.option-card:hover {
+    border-color: #3b82f6;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+}
+
+.option-icon {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.option-title {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.option-description {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Color picker styling */
+.color-picker-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+#color-picker {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.color-preview {
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    border: 2px solid #e1e5e9;
+    background: #3b82f6;
+}
+
+.color-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+.cancel-color-btn, .use-color-btn, .cancel-upload-btn {
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    border: none;
+}
+
+.cancel-color-btn, .cancel-upload-btn {
+    background: #f5f5f5;
+    color: #666;
+    border: 1px solid #ddd;
+}
+
+.use-color-btn {
+    background: #3b82f6;
+    color: white;
+}
+
+.use-color-btn:hover {
+    background: #2563eb;
+}
+
+/* Image upload styling */
+.upload-area {
+    border: 2px dashed #e1e5e9;
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin: 15px 0;
+}
+
+.upload-area:hover {
+    border-color: #3b82f6;
+    background: rgba(59, 130, 246, 0.05);
+}
+
+.upload-area.dragover {
+    border-color: #3b82f6;
+    background: rgba(59, 130, 246, 0.1);
+}
+
+.upload-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.upload-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.upload-subtext {
+    font-size: 12px;
+    color: #666;
+}
+
+.upload-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
 </style>
 
 <script>
@@ -221,6 +416,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const sectionSelect = document.getElementById('section-select');
     const closeButton = document.querySelector('.close-button');
     const cancelButton = document.querySelector('.cancel-button');
+    const noImagesOptions = document.getElementById('no-images-options');
+    const colorPickerSection = document.getElementById('color-picker-section');
+    const imageUploadSection = document.getElementById('image-upload-section');
+    const colorPicker = document.getElementById('color-picker');
+    const colorPreview = document.getElementById('color-preview');
+    const uploadArea = document.getElementById('upload-area');
+    const imageUploadInput = document.getElementById('image-upload-input');
 
     // Handle content input
     contentInput.addEventListener('input', async function(e) {
@@ -258,7 +460,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     if (data.images && data.images.length > 0) {
                         showScrapedImages(data.images);
                     } else {
-                        grid.innerHTML = '<div class="no-images-message">No images found on this website</div>';
+                        showNoImagesOptions();
                     }
                 } catch (error) {
                     grid.innerHTML = `<div class="error-message">Error: ${error.message}</div>`;
@@ -356,6 +558,115 @@ document.addEventListener('DOMContentLoaded', function() {
             window.location.href = `/board/${content.board_id}`;
         }
     });
+
+    // Handle paste events for images
+    contentInput.addEventListener('paste', function(e) {
+        const items = e.clipboardData.items;
+        for (let item of items) {
+            if (item.type.indexOf('image') !== -1) {
+                const file = item.getAsFile();
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    showImagePreview(event.target.result);
+                };
+                reader.readAsDataURL(file);
+                break;
+            }
+        }
+    });
+
+    // Color picker functionality
+    colorPicker.addEventListener('input', function() {
+        colorPreview.style.background = this.value;
+    });
+
+    // Image upload functionality
+    uploadArea.addEventListener('click', () => {
+        imageUploadInput.click();
+    });
+
+    uploadArea.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        uploadArea.classList.add('dragover');
+    });
+
+    uploadArea.addEventListener('dragleave', () => {
+        uploadArea.classList.remove('dragover');
+    });
+
+    uploadArea.addEventListener('drop', (e) => {
+        e.preventDefault();
+        uploadArea.classList.remove('dragover');
+        const files = e.dataTransfer.files;
+        if (files.length > 0) {
+            handleImageFile(files[0]);
+        }
+    });
+
+    imageUploadInput.addEventListener('change', (e) => {
+        if (e.target.files.length > 0) {
+            handleImageFile(e.target.files[0]);
+        }
+    });
+
+    function handleImageFile(file) {
+        if (file.type.startsWith('image/')) {
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                showImagePreview(event.target.result);
+                hideImageUpload();
+            };
+            reader.readAsDataURL(file);
+        } else {
+            alert('Please select an image file.');
+        }
+    }
 });
+
+// Global functions for the new options
+function showNoImagesOptions() {
+    document.getElementById('website-scrape-results').style.display = 'none';
+    document.getElementById('no-images-options').style.display = 'block';
+}
+
+function showColorPicker() {
+    document.getElementById('no-images-options').style.display = 'none';
+    document.getElementById('color-picker-section').style.display = 'block';
+}
+
+function hideColorPicker() {
+    document.getElementById('color-picker-section').style.display = 'none';
+    document.getElementById('no-images-options').style.display = 'block';
+}
+
+function useSelectedColor() {
+    const color = document.getElementById('color-picker').value;
+    // Create a data URL for the solid color
+    const canvas = document.createElement('canvas');
+    canvas.width = 400;
+    canvas.height = 400;
+    const ctx = canvas.getContext('2d');
+    ctx.fillStyle = color;
+    ctx.fillRect(0, 0, 400, 400);
+    
+    const dataUrl = canvas.toDataURL('image/png');
+    showImagePreview(dataUrl);
+    hideColorPicker();
+}
+
+function showImageUpload() {
+    document.getElementById('no-images-options').style.display = 'none';
+    document.getElementById('image-upload-section').style.display = 'block';
+}
+
+function hideImageUpload() {
+    document.getElementById('image-upload-section').style.display = 'none';
+    document.getElementById('no-images-options').style.display = 'block';
+}
+
+function useDefaultImage() {
+    showImagePreview('/static/images/default_pin.png');
+    document.getElementById('no-images-options').style.display = 'none';
+}
 </script>
 {% endblock %} 

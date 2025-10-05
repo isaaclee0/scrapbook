@@ -4,6 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scrapbook</title>
+    
+    <!-- Cache-busting meta tags for development -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    
+    <!-- Tailwind CSS -->
+    <link href="{{ url_for('static', filename='css/output.css') }}" rel="stylesheet">
+    
+    <style>
+        :root {
+            --pin-width: 250px; /* Default medium size */
+        }
+        
+        .line-clamp-2 {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        .pin-card {
+            width: var(--pin-width);
+            margin-bottom: 16px;
+        }
+        
+        /* Custom slider styles for Tailwind */
+        .slider::-webkit-slider-thumb {
+            appearance: none;
+            height: 16px;
+            width: 16px;
+            border-radius: 50%;
+            background: #3b82f6;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .slider::-moz-range-thumb {
+            height: 16px;
+            width: 16px;
+            border-radius: 50%;
+            background: #3b82f6;
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+    </style>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
@@ -80,29 +128,327 @@
             margin-bottom: 100px; /* Add space for the search bar */
         }
 
-        .add-button {
+        /* Floating Action Button System */
+        .fab-container {
             position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            background-color: #2980b9;
+            bottom: 24px;
+            right: 24px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: flex-end;
+            gap: 16px;
+        }
+
+        .fab-option {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            opacity: 0;
+            transform: translateX(20px) scale(0.8);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            pointer-events: none;
+        }
+
+        .fab-option.show {
+            opacity: 1;
+            transform: translateX(0) scale(1);
+            pointer-events: auto;
+        }
+
+        /* Main pin button is always visible */
+        .fab-pin {
+            opacity: 1;
+            transform: translateX(0) scale(1);
+            pointer-events: auto;
+        }
+
+        /* Board button is hidden by default */
+        .fab-board {
+            opacity: 0;
+            transform: translateX(20px) scale(0.8);
+            pointer-events: none;
+        }
+
+        .fab-label {
+            background: rgba(0, 0, 0, 0.8);
             color: white;
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            white-space: nowrap;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            transform: translateX(10px);
+            opacity: 0;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .fab-option.show .fab-label {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        .fab-button {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
             border: none;
-            font-size: 30px;
             cursor: pointer;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: transform 0.2s;
-            z-index: 1000;
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 1;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: all 0.2s ease;
+            position: relative;
+            text-align: center;
         }
 
-        .add-button:hover {
+        .fab-pin-button {
+            background-color: #3b82f6;
+            color: white;
+        }
+
+        .fab-button:hover {
             transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .fab-button:active {
+            transform: scale(0.95);
+        }
+
+        .fab-pin-button:hover {
+            background-color: #2563eb;
+        }
+
+        .fab-board-button {
+            background-color: #10b981;
+            color: white;
+        }
+
+        .fab-board-button:hover {
+            background-color: #059669;
+        }
+
+        /* Mobile-specific styles */
+        @media (max-width: 768px) {
+            .fab-container {
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .fab-button {
+                width: 48px;
+                height: 48px;
+                font-size: 20px;
+            }
+
+            .fab-label {
+                font-size: 12px;
+                padding: 6px 10px;
+            }
+
+            /* Hide labels on mobile by default */
+            .fab-label {
+                display: none;
+            }
+
+            /* Show labels when expanded on mobile */
+            .fab-container.expanded .fab-label {
+                display: block;
+            }
+        }
+
+        /* Desktop hover behavior */
+        @media (hover: hover) and (pointer: fine) {
+            .fab-container:hover .fab-option {
+                opacity: 1;
+                transform: translateX(0) scale(1);
+                pointer-events: auto;
+            }
+
+            .fab-container:hover .fab-label {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Modal Styles */
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        .modal-content.large {
+            max-width: 600px;
+        }
+
+        .modal-header {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-header h3 {
+            margin: 0;
+            color: #333;
+        }
+
+        .close {
+            font-size: 24px;
+            cursor: pointer;
+            color: #999;
+        }
+
+        .close:hover {
+            color: #333;
+        }
+
+        .modal-body {
+            padding: 20px;
+        }
+
+        .modal-footer {
+            padding: 20px;
+            border-top: 1px solid #eee;
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+
+        .color-picker {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .color-option {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            cursor: pointer;
+            border: 3px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        .color-option:hover {
+            transform: scale(1.1);
+            border-color: #333;
+        }
+
+        .color-option.selected {
+            border-color: #333;
+            box-shadow: 0 0 0 2px #fff, 0 0 0 4px #333;
+        }
+
+        .input-container {
+            position: relative;
+        }
+
+        .paste-area {
+            transition: all 0.2s ease;
+        }
+
+        .paste-area.active {
+            background: rgba(0,0,0,0.1) !important;
+            border-color: #007bff !important;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+            color: #333;
+        }
+
+        #addContentModal .input-group input, 
+        #addContentModal .input-group select, 
+        #addContentModal .input-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 14px;
+            box-sizing: border-box;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+            background-color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        #addContentModal .input-group input:focus, 
+        #addContentModal .input-group select:focus, 
+        #addContentModal .input-group textarea:focus {
+            outline: none;
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        #addContentModal .input-group input:hover, 
+        #addContentModal .input-group select:hover, 
+        #addContentModal .input-group textarea:hover {
+            border-color: #9ca3af;
+        }
+
+        .primary-button {
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .primary-button:hover {
             background-color: #2472a4;
+        }
+
+        .primary-button:disabled {
+            background-color: #bdc3c7;
+            cursor: not-allowed;
+        }
+
+        .cancel-button {
+            background-color: #95a5a6;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .cancel-button:hover {
+            background-color: #7f8c8d;
         }
 
         .pin-details {
@@ -291,226 +637,167 @@
             }
         }
 
-        /* Database Upgrade Banner Styles */
-        .upgrade-banner {
-            position: fixed;
-            top: 60px;
-            left: 0;
-            right: 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 15px 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-            z-index: 999;
-            animation: slideDown 0.3s ease-out;
-        }
-
-        @keyframes slideDown {
-            from {
-                transform: translateY(-100%);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        .upgrade-content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .upgrade-info {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .upgrade-icon {
-            font-size: 24px;
-            animation: rotate 2s linear infinite;
-        }
-
-        @keyframes rotate {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-
-        .upgrade-text {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-        }
-
-        .upgrade-text strong {
-            font-size: 16px;
-            font-weight: 600;
-        }
-
-        .upgrade-text span {
-            font-size: 14px;
-            opacity: 0.9;
-        }
-
-        .upgrade-actions {
-            display: flex;
-            gap: 10px;
-            align-items: center;
-        }
-
-        .upgrade-button {
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            padding: 8px 16px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 14px;
-            font-weight: 500;
-            transition: all 0.2s ease;
-        }
-
-        .upgrade-button:hover {
-            background: rgba(255, 255, 255, 0.3);
-            border-color: rgba(255, 255, 255, 0.5);
-            transform: translateY(-1px);
-        }
-
-        .upgrade-button:disabled {
-            opacity: 0.6;
-            cursor: not-allowed;
-            transform: none;
-        }
-
-        .dismiss-button {
-            background: transparent;
-            color: white;
-            border: none;
-            padding: 8px 12px;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 14px;
-            opacity: 0.8;
-            transition: all 0.2s ease;
-        }
-
-        .dismiss-button:hover {
-            opacity: 1;
-            background: rgba(255, 255, 255, 0.1);
-        }
-
-        .upgrade-progress {
-            margin-top: 15px;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .progress-bar {
-            flex: 1;
-            height: 4px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 2px;
-            overflow: hidden;
-        }
-
-        .progress-fill {
-            height: 100%;
-            background: white;
-            border-radius: 2px;
-            width: 0%;
-            transition: width 0.3s ease;
-            animation: progressPulse 1.5s ease-in-out infinite;
-        }
-
-        @keyframes progressPulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.7; }
-        }
-
-        .upgrade-banner.show-progress .upgrade-content {
-            display: none;
-        }
-
-        .upgrade-banner.show-progress .upgrade-progress {
-            display: flex;
-        }
-
-        /* Adjust container margin when banner is visible */
-        body.upgrade-banner-visible .container {
-            margin-top: 140px; /* 80px original + 60px banner height */
-        }
-
-        @media (max-width: 768px) {
-            .upgrade-content {
-                flex-direction: column;
-                gap: 15px;
-                text-align: center;
-            }
-
-            .upgrade-actions {
-                justify-content: center;
-            }
-
-            body.upgrade-banner-visible .container {
-                margin-top: 160px; /* Account for taller banner on mobile */
-            }
-        }
     </style>
 </head>
 <body>
-    <nav class="nav-bar">
-        <div class="nav-left">
-            <a href="/" class="nav-icon" title="Home">🏠</a>
-            <a href="javascript:history.back()" class="nav-icon" title="Back">↩️</a>
-            <a href="/random" class="nav-icon" title="Random Pin">🎲</a>
+    <nav class="fixed top-0 left-0 right-0 h-16 bg-white shadow-lg flex items-center justify-between px-6 z-50">
+        <div class="flex items-center space-x-4">
+            <a href="/" class="text-2xl hover:bg-gray-100 p-2 rounded-lg transition-colors" title="Home">🏠</a>
+            <a href="javascript:history.back()" class="text-2xl hover:bg-gray-100 p-2 rounded-lg transition-colors" title="Back">↩️</a>
+            <a href="/random" class="text-2xl hover:bg-gray-100 p-2 rounded-lg transition-colors" title="Random Pin">🎲</a>
         </div>
-        <div class="nav-center">
-            <a href="/" class="logo">scrapbook.io</a>
+        <div class="flex items-center">
+            <a href="/" class="text-2xl font-display font-bold text-gray-800 hover:text-primary-600 transition-colors">scrapbook.io</a>
         </div>
-        <div class="nav-right">
+        <div class="flex items-center space-x-4">
             <!-- Pin size slider (global) - hidden on homepage -->
-            <div class="pin-width-control" {% if request.endpoint == 'gallery' %}style="display: none;"{% endif %}>
-                <label for="pinSizeSlider" class="pin-width-label">Pin Size:</label>
-                <input type="range" id="pinSizeSlider" min="1" max="5" value="3" class="pin-width-slider">
-                <span id="pinSizeValue" class="pin-width-value">Medium</span>
+            <div class="{% if request.endpoint == 'gallery' %}hidden{% endif %} flex items-center space-x-3 bg-gray-50 px-3 py-2 rounded-lg">
+                <label for="pinSizeSlider" class="text-sm font-medium text-gray-700">Size:</label>
+                <input type="range" id="pinSizeSlider" min="1" max="5" value="3" class="w-20 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider">
+                <span id="pinSizeValue" class="text-sm font-medium text-gray-700 min-w-[4rem]">Medium</span>
             </div>
-            <!-- Add any right-side navigation items here -->
         </div>
     </nav>
 
-    <!-- Database Upgrade Banner -->
-    <div id="upgradeBanner" class="upgrade-banner" style="display: none;">
-        <div class="upgrade-content">
-            <div class="upgrade-info">
-                <span class="upgrade-icon">🔄</span>
-                <div class="upgrade-text">
-                    <strong>Database Update Available</strong>
-                    <span id="upgradeDescription">New features are available and require a database update.</span>
+
+    <div class="min-h-screen pt-16 bg-gray-50">
+        {% block content %}{% endblock %}
+                </div>
+
+    <!-- Floating Action Button System -->
+    <div class="fab-container" id="fabContainer">
+        <!-- Add Board/Section Button (appears on hover/expand) -->
+        <div class="fab-option fab-board" id="fabBoard">
+            <span class="fab-label" id="fabBoardLabel">Create New Board</span>
+            <button class="fab-button fab-board-button" id="fabBoardButton" onclick="handleFabBoardClick()" title="Create New Board">
+                +
+            </button>
+        </div>
+        
+        <!-- Add Pin Button (main button) -->
+        <div class="fab-option fab-pin" id="fabPin">
+            <span class="fab-label">Add New Pin</span>
+            <button class="fab-button fab-pin-button" onclick="showAddContentDialog()" title="Add New Pin">
+                +
+            </button>
+        </div>
+    </div>
+
+    <!-- Create Board Modal -->
+    <div id="createBoardModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" style="display: none;">
+        <div class="bg-white rounded-xl shadow-2xl max-w-md w-full mx-4">
+            <div class="flex items-center justify-between p-6 border-b border-gray-200">
+                <h3 class="text-xl font-semibold text-gray-900">Create New Board</h3>
+                <button class="text-gray-400 hover:text-gray-600 text-2xl leading-none" onclick="hideCreateBoardDialog()">&times;</button>
+            </div>
+            <div class="p-6">
+                <div class="space-y-2">
+                    <label for="newBoardName" class="block text-sm font-medium text-gray-700">Board Name</label>
+                    <input type="text" id="newBoardName" placeholder="Enter board name..." maxlength="100" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all">
+            </div>
+        </div>
+            <div class="flex items-center justify-end space-x-3 p-6 border-t border-gray-200">
+                <button class="px-4 py-2 text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors" onclick="hideCreateBoardDialog()">Cancel</button>
+                <button class="px-6 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg transition-colors" onclick="createNewBoard()">Create Board</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Create Section Modal -->
+    <div id="createSectionModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" style="display: none;">
+        <div class="bg-white rounded-xl shadow-2xl max-w-md w-full mx-4">
+            <div class="flex items-center justify-between p-6 border-b border-gray-200">
+                <h3 class="text-xl font-semibold text-gray-900">Create New Section</h3>
+                <button class="text-gray-400 hover:text-gray-600 text-2xl leading-none" onclick="hideCreateSectionDialog()">&times;</button>
+            </div>
+            <div class="p-6">
+                <div class="space-y-2">
+                    <label for="newSectionName" class="block text-sm font-medium text-gray-700">Section Name</label>
+                    <input type="text" id="newSectionName" placeholder="Enter section name..." maxlength="100" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all">
+            </div>
+        </div>
+            <div class="flex items-center justify-end space-x-3 p-6 border-t border-gray-200">
+                <button class="px-4 py-2 text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors" onclick="hideCreateSectionDialog()">Cancel</button>
+                <button class="px-6 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg transition-colors" onclick="createNewSection()">Create Section</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Content Modal -->
+    <div id="addContentModal" class="modal" style="display: none;">
+        <div class="modal-content large">
+            <div class="modal-header">
+                <h3>Add New Content</h3>
+                <span class="close" onclick="hideAddContentDialog()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="input-group">
+                    <label for="content-input">Paste image, image URL, website URL, or type text</label>
+                    <div class="input-container" style="position: relative;">
+                        <input type="text" id="content-input" placeholder="Paste image, URL, or type text here...">
+                        <div class="paste-area" id="paste-area" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; pointer-events: none; border: 2px dashed #ccc; border-radius: 4px; display: none; align-items: center; justify-content: center; background: rgba(0,0,0,0.05);">
+                            <span style="color: #666;">Drop image here or paste (Ctrl+V)</span>
+                        </div>
+                    </div>
+                    <div class="preview-container" id="preview-container" style="display: none;">
+                        <img id="image-preview" src="" alt="Preview" style="max-width: 100%; height: auto;">
+                    </div>
+                    <div class="text-content" id="text-content" style="display: none;">
+                        <div class="color-picker" id="color-picker">
+                            <div class="color-option" data-color="#ff6b6b" style="background: #ff6b6b;" title="Red"></div>
+                            <div class="color-option" data-color="#4ecdc4" style="background: #4ecdc4;" title="Teal"></div>
+                            <div class="color-option" data-color="#45b7d1" style="background: #45b7d1;" title="Blue"></div>
+                            <div class="color-option" data-color="#96ceb4" style="background: #96ceb4;" title="Green"></div>
+                            <div class="color-option" data-color="#feca57" style="background: #feca57;" title="Yellow"></div>
+                            <div class="color-option" data-color="#ff9ff3" style="background: #ff9ff3;" title="Pink"></div>
+                            <div class="color-option" data-color="#54a0ff" style="background: #54a0ff;" title="Light Blue"></div>
+                            <div class="color-option" data-color="#5f27cd" style="background: #5f27cd;" title="Purple"></div>
+                            <div class="color-option" data-color="#00d2d3" style="background: #00d2d3;" title="Cyan"></div>
+                            <div class="color-option" data-color="#ff9f43" style="background: #ff9f43;" title="Orange"></div>
+                        </div>
+                        <div class="text-preview" id="text-preview" style="padding: 20px; border-radius: 8px; color: white; text-align: center; min-height: 100px; display: flex; align-items: center; justify-content: center; font-size: 16px; word-wrap: break-word;">
+                            <span id="text-preview-content">Your text will appear here</span>
+                        </div>
+                    </div>
+    </div>
+
+                <div class="website-scrape-results" id="website-scrape-results" style="display: none;">
+                    <h4>Select an image from the website:</h4>
+                    <div class="image-grid" id="scraped-images-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 10px; max-height: 200px; overflow-y: auto;"></div>
+                </div>
+
+                <div class="details-section" id="details-section" style="display: none;">
+                    <div class="input-group">
+                        <label for="title-input">Title</label>
+                        <input type="text" id="title-input" placeholder="Enter a title...">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="board-select">Board</label>
+                        <select id="board-select">
+                            <option value="">Select a board...</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="section-select">Section (optional)</label>
+                        <select id="section-select">
+                            <option value="">Select a section...</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="notes-input">Notes</label>
+                        <textarea id="notes-input" placeholder="Add notes..." style="width: 100%; min-height: 80px; resize: vertical;"></textarea>
+                    </div>
                 </div>
             </div>
-            <div class="upgrade-actions">
-                <button id="upgradeBtn" class="upgrade-button">Update Database</button>
-                <button id="dismissUpgradeBtn" class="dismiss-button">Dismiss</button>
+            <div class="modal-footer">
+                <button class="cancel-button" onclick="hideAddContentDialog()">Cancel</button>
+                <button class="primary-button" id="save-button" disabled onclick="saveContent()">Save</button>
             </div>
         </div>
-        <div id="upgradeProgress" class="upgrade-progress" style="display: none;">
-            <div class="progress-bar">
-                <div class="progress-fill"></div>
-            </div>
-            <span id="upgradeProgressText">Applying database updates...</span>
-        </div>
     </div>
-
-    <div class="container">
-        {% block content %}{% endblock %}
-    </div>
-
-    <button class="add-button" onclick="showAddContentDialog()">+</button>
 
     <div class="search-container">
         <form action="{{ url_for('search') }}" method="get">
@@ -521,8 +808,6 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Check for database upgrades on page load
-            checkDatabaseUpgrades();
             
             // Pin size slider handling (global)
             const pinSizeSlider = document.getElementById('pinSizeSlider');
@@ -530,75 +815,23 @@
             if (pinSizeSlider && pinSizeValue) {
                 const sizeLabels = ['Tiny', 'Small', 'Medium', 'Large', 'Huge'];
                 
-                function calculateOptimalLayout(sizeLevel) {
-                    const grid = document.querySelector('.pins-grid');
-                    if (!grid) return { columnWidth: 270, columns: 3 };
-                    
-                    const containerWidth = grid.offsetWidth;
-                    const gutter = 16;
-                    
-                    // Define target columns for each size level
-                    const targetColumns = {
-                        1: 6,  // Tiny - many small pins
-                        2: 5,  // Small 
-                        3: 4,  // Medium
-                        4: 3,  // Large
-                        5: 2   // Huge - fewer large pins
-                    };
-                    
-                    let desiredColumns = targetColumns[sizeLevel] || 4;
-                    
-                    // Calculate column width based on container and desired columns
-                    // Formula: (containerWidth - (columns-1) * gutter) / columns
-                    let columnWidth = Math.floor((containerWidth - (desiredColumns - 1) * gutter) / desiredColumns);
-                    
-                    // Ensure minimum and maximum widths
-                    const minWidth = 150;
-                    const maxWidth = 500;
-                    
-                    if (columnWidth < minWidth) {
-                        // If calculated width is too small, reduce columns
-                        desiredColumns = Math.max(1, Math.floor((containerWidth + gutter) / (minWidth + gutter)));
-                        columnWidth = Math.floor((containerWidth - (desiredColumns - 1) * gutter) / desiredColumns);
-                    } else if (columnWidth > maxWidth) {
-                        // If calculated width is too large, increase columns
-                        desiredColumns = Math.ceil((containerWidth + gutter) / (maxWidth + gutter));
-                        columnWidth = Math.floor((containerWidth - (desiredColumns - 1) * gutter) / desiredColumns);
-                    }
-                    
-                    return { columnWidth, columns: desiredColumns };
-                }
-                
                 function updatePinSize() {
                     const sizeLevel = parseInt(pinSizeSlider.value);
                     const sizeLabel = sizeLabels[sizeLevel - 1];
                     pinSizeValue.textContent = sizeLabel;
                     localStorage.setItem('boardPinSize', sizeLevel);
                     
-                    const layout = calculateOptimalLayout(sizeLevel);
-                    document.documentElement.style.setProperty('--pin-width', `${layout.columnWidth}px`);
+                    // Update pin widths using CSS custom property
+                    const pinWidths = {
+                        1: '150px',  // Tiny
+                        2: '200px',  // Small  
+                        3: '250px',  // Medium
+                        4: '300px',  // Large
+                        5: '400px'   // Huge
+                    };
                     
-                    // If Masonry is present, recreate it with new optimal layout
-                    if (window.masonry) {
-                        const grid = document.querySelector('.pins-grid');
-                        if (grid) {
-                            const currentOptions = {
-                                itemSelector: '.grid-item',
-                                columnWidth: layout.columnWidth,
-                                gutter: 16,
-                                transitionDuration: '0.2s'
-                            };
-                            
-                            // Destroy current instance and create new one
-                            window.masonry.destroy();
-                            window.masonry = new Masonry(grid, currentOptions);
-                            
-                            // Re-layout after a brief delay to ensure DOM updates
-                            setTimeout(() => {
-                                window.masonry.layout();
-                            }, 10);
-                        }
-                    }
+                    const pinWidth = pinWidths[sizeLevel] || pinWidths[3];
+                    document.documentElement.style.setProperty('--pin-width', pinWidth);
                 }
                 
                 // Debounced update function for smoother slider experience
@@ -616,25 +849,577 @@
                 pinSizeSlider.value = savedPinSize;
                 pinSizeValue.textContent = sizeLabels[savedPinSize - 1];
                 
-                // Set initial layout
-                const initialLayout = calculateOptimalLayout(parseInt(savedPinSize));
-                document.documentElement.style.setProperty('--pin-width', `${initialLayout.columnWidth}px`);
+                // Set initial pin size
+                updatePinSize();
+            }
+
+            // Floating Action Button System
+            initializeFAB();
+        });
+
+        // Context-aware FAB button handler
+        function handleFabBoardClick() {
+            const currentPath = window.location.pathname;
+            const isBoardPage = currentPath.match(/^\/board\/\d+$/);
+            
+            if (isBoardPage) {
+                // On board page: create section
+                showCreateSectionDialog();
+            } else {
+                // On home page: create board
+                showCreateBoardDialog();
+            }
+        }
+
+        function initializeFAB() {
+            const fabContainer = document.getElementById('fabContainer');
+            const fabBoard = document.getElementById('fabBoard');
+            const fabPin = document.getElementById('fabPin');
+            const fabPinButton = document.querySelector('.fab-pin-button');
+            const fabBoardLabel = document.getElementById('fabBoardLabel');
+            const fabBoardButton = document.getElementById('fabBoardButton');
+            
+            // Prevent duplicate initialization
+            if (fabBoardButton.hasAttribute('data-initialized')) {
+                return;
+            }
+            fabBoardButton.setAttribute('data-initialized', 'true');
+            
+            let isExpanded = false;
+            let isMobile = window.innerWidth <= 768;
+            let tapTimeout = null;
+
+            // Check if device supports hover
+            const supportsHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+            // Update FAB button based on current page
+            function updateFabContext() {
+                const currentPath = window.location.pathname;
+                const isBoardPage = currentPath.match(/^\/board\/\d+$/);
                 
-                // Recalculate layout on window resize
-                window.addEventListener('resize', function() {
-                    const currentSize = parseInt(pinSizeSlider.value);
-                    const newLayout = calculateOptimalLayout(currentSize);
-                    document.documentElement.style.setProperty('--pin-width', `${newLayout.columnWidth}px`);
-                    
-                    if (window.masonry) {
-                        window.masonry.options.columnWidth = newLayout.columnWidth;
-                        window.masonry.layout();
+                if (isBoardPage) {
+                    // On board page: show "Create Section"
+                    fabBoardLabel.textContent = 'Create New Section';
+                    fabBoardButton.title = 'Create New Section';
+                } else {
+                    // On home page: show "Create Board"
+                    fabBoardLabel.textContent = 'Create New Board';
+                    fabBoardButton.title = 'Create New Board';
+                }
+            }
+
+            // Initialize context
+            updateFabContext();
+
+            // Mobile tap handling
+            function handleMobileTap(event) {
+                if (!isMobile) return;
+                
+                event.preventDefault();
+                event.stopPropagation();
+                
+                if (!isExpanded) {
+                    // First tap: expand options
+                    expandFAB();
+                } else {
+                    // Second tap: trigger the main button action
+                    if (event.target === fabPinButton) {
+                        showAddContentDialog();
+                        collapseFAB();
+                    }
+                }
+            }
+
+            // Desktop hover handling
+            function handleDesktopHover() {
+                if (isMobile || !supportsHover) return;
+                expandFAB();
+            }
+
+            function handleDesktopLeave() {
+                if (isMobile || !supportsHover) return;
+                collapseFAB();
+            }
+
+            function expandFAB() {
+                if (isExpanded) return;
+                
+                isExpanded = true;
+                fabContainer.classList.add('expanded');
+                fabBoard.classList.add('show');
+                
+                // Add slight delay for smooth animation
+                setTimeout(() => {
+                    fabPin.classList.add('show');
+                }, 100);
+            }
+
+            function collapseFAB() {
+                if (!isExpanded) return;
+                
+                isExpanded = false;
+                fabContainer.classList.remove('expanded');
+                fabBoard.classList.remove('show');
+                fabPin.classList.remove('show');
+            }
+
+            // Event listeners
+            if (isMobile) {
+                // Mobile: tap to expand, tap again to select
+                fabPinButton.addEventListener('click', handleMobileTap);
+                
+                // Collapse when tapping outside
+                document.addEventListener('click', (event) => {
+                    if (isExpanded && !fabContainer.contains(event.target)) {
+                        collapseFAB();
                     }
                 });
+            } else {
+                // Desktop: hover to expand
+                fabContainer.addEventListener('mouseenter', handleDesktopHover);
+                fabContainer.addEventListener('mouseleave', handleDesktopLeave);
             }
-        });
+
+            // Handle window resize
+            window.addEventListener('resize', () => {
+                const wasMobile = isMobile;
+                isMobile = window.innerWidth <= 768;
+                
+                if (wasMobile !== isMobile) {
+                    // Reinitialize event listeners
+                    fabPinButton.removeEventListener('click', handleMobileTap);
+                    fabContainer.removeEventListener('mouseenter', handleDesktopHover);
+                    fabContainer.removeEventListener('mouseleave', handleDesktopLeave);
+                    
+                    if (isMobile) {
+                        fabPinButton.addEventListener('click', handleMobileTap);
+                    } else {
+                        fabContainer.addEventListener('mouseenter', handleDesktopHover);
+                        fabContainer.addEventListener('mouseleave', handleDesktopLeave);
+                    }
+                    
+                    // Collapse if expanded during resize
+                    collapseFAB();
+                }
+            });
+
+            // Prevent board button from collapsing on mobile
+            fabBoardButton.addEventListener('click', (event) => {
+                if (isMobile) {
+                    event.stopPropagation();
+                    collapseFAB();
+                }
+            });
+        }
+
         function showAddContentDialog() {
-            window.location.href = '/add-content';
+            const modal = document.getElementById('addContentModal');
+            modal.style.display = 'flex';
+            
+            // Load boards into select
+            loadBoards();
+            
+            // Focus on content input
+            document.getElementById('content-input').focus();
+            
+            // Add event listeners for the modal
+            setupAddContentModal();
+        }
+
+        function setupAddContentModal() {
+            const contentInput = document.getElementById('content-input');
+            const previewContainer = document.getElementById('preview-container');
+            const imagePreview = document.getElementById('image-preview');
+            const textContent = document.getElementById('text-content');
+            const textPreview = document.getElementById('text-preview');
+            const textPreviewContent = document.getElementById('text-preview-content');
+            const websiteScrapeResults = document.getElementById('website-scrape-results');
+            const detailsSection = document.getElementById('details-section');
+            const saveButton = document.getElementById('save-button');
+            const boardSelect = document.getElementById('board-select');
+            const sectionSelect = document.getElementById('section-select');
+            const pasteArea = document.getElementById('paste-area');
+            const colorPicker = document.getElementById('color-picker');
+
+            // Remove existing event listeners to avoid duplicates
+            const newContentInput = contentInput.cloneNode(true);
+            contentInput.parentNode.replaceChild(newContentInput, contentInput);
+            
+            const newBoardSelect = boardSelect.cloneNode(true);
+            boardSelect.parentNode.replaceChild(newBoardSelect, boardSelect);
+            
+            const newTitleInput = document.getElementById('title-input').cloneNode(true);
+            document.getElementById('title-input').parentNode.replaceChild(newTitleInput, document.getElementById('title-input'));
+
+            // Global variables for content state
+            let currentImageUrl = '';
+            let currentTextContent = '';
+            let currentTextColor = '#ff6b6b';
+            let contentType = 'none'; // 'image', 'text', 'none'
+
+            // Handle paste events on the input
+            newContentInput.addEventListener('paste', function(e) {
+                handleImagePaste(e);
+            });
+
+            // Handle paste events on the document when modal is open
+            document.addEventListener('paste', function(e) {
+                const modal = document.getElementById('addContentModal');
+                if (modal && modal.style.display === 'flex') {
+                    handleImagePaste(e);
+                }
+            });
+
+            function handleImagePaste(e) {
+                const items = e.clipboardData.items;
+                
+                for (let i = 0; i < items.length; i++) {
+                    const item = items[i];
+                    
+                    if (item.type.indexOf('image') !== -1) {
+                        e.preventDefault();
+                        const file = item.getAsFile();
+                        const reader = new FileReader();
+                        reader.onload = function(event) {
+                            currentImageUrl = event.target.result;
+                            contentType = 'image';
+                            showImagePreview(currentImageUrl);
+                            // Clear the input field since we're using the pasted image
+                            newContentInput.value = '';
+                        };
+                        reader.readAsDataURL(file);
+                        return;
+                    }
+                }
+            }
+
+            // Handle drag and drop
+            newContentInput.addEventListener('dragover', function(e) {
+                e.preventDefault();
+                pasteArea.style.display = 'flex';
+                pasteArea.classList.add('active');
+            });
+
+            newContentInput.addEventListener('dragleave', function(e) {
+                e.preventDefault();
+                pasteArea.style.display = 'none';
+                pasteArea.classList.remove('active');
+            });
+
+            newContentInput.addEventListener('drop', function(e) {
+                e.preventDefault();
+                pasteArea.style.display = 'none';
+                pasteArea.classList.remove('active');
+                
+                const files = e.dataTransfer.files;
+                if (files.length > 0 && files[0].type.startsWith('image/')) {
+                    const file = files[0];
+                    const reader = new FileReader();
+                    reader.onload = function(event) {
+                        currentImageUrl = event.target.result;
+                        contentType = 'image';
+                        showImagePreview(currentImageUrl);
+                    };
+                    reader.readAsDataURL(file);
+                }
+            });
+
+            // Handle content input
+            newContentInput.addEventListener('input', async function(e) {
+                const value = e.target.value.trim();
+                
+                if (value.startsWith('http')) {
+                    try {
+                        const response = await fetch('/scrape-website', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify({ url: value })
+                        });
+                        
+                        const data = await response.json();
+                        
+                        if (data.images && data.images.length > 0) {
+                            showScrapedImages(data.images);
+                        } else {
+                            // If no images found, treat as direct image URL
+                            currentImageUrl = value;
+                            contentType = 'image';
+                            showImagePreview(value);
+                        }
+                    } catch (error) {
+                        console.error('Error scraping website:', error);
+                        // Fallback to treating as direct image URL
+                        currentImageUrl = value;
+                        contentType = 'image';
+                        showImagePreview(value);
+                    }
+                } else if (value) {
+                    // Treat as text content
+                    currentTextContent = value;
+                    contentType = 'text';
+                    showTextContent(value);
+                } else {
+                    // Clear everything
+                    contentType = 'none';
+                    previewContainer.style.display = 'none';
+                    textContent.style.display = 'none';
+                    websiteScrapeResults.style.display = 'none';
+                    detailsSection.style.display = 'none';
+                    updateSaveButton();
+                }
+            });
+
+            function showImagePreview(url) {
+                imagePreview.src = url;
+                previewContainer.style.display = 'block';
+                textContent.style.display = 'none';
+                websiteScrapeResults.style.display = 'none';
+                detailsSection.style.display = 'block';
+                updateSaveButton();
+            }
+
+            function showTextContent(text) {
+                textPreviewContent.textContent = text;
+                textPreview.style.backgroundColor = currentTextColor;
+                textContent.style.display = 'block';
+                previewContainer.style.display = 'none';
+                websiteScrapeResults.style.display = 'none';
+                detailsSection.style.display = 'block';
+                updateSaveButton();
+            }
+
+            function showScrapedImages(images) {
+                const grid = document.getElementById('scraped-images-grid');
+                grid.innerHTML = '';
+                
+                images.forEach(image => {
+                    const img = document.createElement('img');
+                    img.src = image.url;
+                    img.alt = image.alt || 'Scraped image';
+                    img.style.cssText = 'width: 100%; height: 100px; object-fit: cover; cursor: pointer; border-radius: 4px;';
+                    img.addEventListener('click', () => {
+                        currentImageUrl = image.url;
+                        contentType = 'image';
+                        showImagePreview(image.url);
+                    });
+                    grid.appendChild(img);
+                });
+                
+                websiteScrapeResults.style.display = 'block';
+            }
+
+            // Color picker functionality
+            colorPicker.addEventListener('click', function(e) {
+                if (e.target.classList.contains('color-option')) {
+                    // Remove previous selection
+                    colorPicker.querySelectorAll('.color-option').forEach(option => {
+                        option.classList.remove('selected');
+                    });
+                    
+                    // Add selection to clicked option
+                    e.target.classList.add('selected');
+                    currentTextColor = e.target.dataset.color;
+                    
+                    // Update text preview if showing text content
+                    if (contentType === 'text') {
+                        textPreview.style.backgroundColor = currentTextColor;
+                    }
+                }
+            });
+
+            // Update sections when board is selected
+            newBoardSelect.addEventListener('change', async function() {
+                const boardId = this.value;
+                if (boardId) {
+                    try {
+                        const response = await fetch(`/get-sections/${boardId}`);
+                        const sections = await response.json();
+                        
+                        sectionSelect.innerHTML = '<option value="">Select a section...</option>';
+                        sections.forEach(section => {
+                            const option = document.createElement('option');
+                            option.value = section.id;
+                            option.textContent = section.name;
+                            sectionSelect.appendChild(option);
+                        });
+                    } catch (error) {
+                        console.error('Error loading sections:', error);
+                    }
+                }
+                updateSaveButton();
+            });
+
+            // Update save button state
+            function updateSaveButton() {
+                const hasContent = contentType !== 'none';
+                const hasTitle = newTitleInput.value.trim();
+                const hasBoard = newBoardSelect.value;
+                saveButton.disabled = !(hasContent && hasTitle && hasBoard);
+            }
+
+            // Add input listeners for title
+            newTitleInput.addEventListener('input', updateSaveButton);
+        }
+
+        function hideAddContentDialog() {
+            const modal = document.getElementById('addContentModal');
+            modal.style.display = 'none';
+            
+            // Reset form
+            document.getElementById('content-input').value = '';
+            document.getElementById('title-input').value = '';
+            document.getElementById('board-select').value = '';
+            document.getElementById('section-select').innerHTML = '<option value="">Select a section...</option>';
+            document.getElementById('notes-input').value = '';
+            document.getElementById('preview-container').style.display = 'none';
+            document.getElementById('text-content').style.display = 'none';
+            document.getElementById('website-scrape-results').style.display = 'none';
+            document.getElementById('details-section').style.display = 'none';
+            document.getElementById('save-button').disabled = true;
+            
+            // Reset color picker selection
+            document.querySelectorAll('.color-option').forEach(option => {
+                option.classList.remove('selected');
+            });
+        }
+
+        function loadBoards() {
+            fetch('/api/boards')
+                .then(response => response.json())
+                .then(boards => {
+                    const boardSelect = document.getElementById('board-select');
+                    boardSelect.innerHTML = '<option value="">Select a board...</option>';
+                    
+                    // Get current board ID from URL if we're on a board page
+                    const currentPath = window.location.pathname;
+                    const boardMatch = currentPath.match(/\/board\/(\d+)/);
+                    const currentBoardId = boardMatch ? boardMatch[1] : null;
+                    
+                    boards.forEach(board => {
+                        const option = document.createElement('option');
+                        option.value = board.id;
+                        option.textContent = board.name;
+                        
+                        // Set as selected if this is the current board
+                        if (currentBoardId && board.id == currentBoardId) {
+                            option.selected = true;
+                        }
+                        
+                        boardSelect.appendChild(option);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error loading boards:', error);
+                });
+        }
+
+        function saveContent() {
+            const contentInput = document.getElementById('content-input');
+            const imagePreview = document.getElementById('image-preview');
+            const textPreview = document.getElementById('text-preview');
+            const previewContainer = document.getElementById('preview-container');
+            const titleInput = document.getElementById('title-input');
+            const boardSelect = document.getElementById('board-select');
+            const sectionSelect = document.getElementById('section-select');
+            const notesInput = document.getElementById('notes-input');
+            const saveButton = document.getElementById('save-button');
+
+            // Check if we have content (either image or text)
+            const hasImage = previewContainer.style.display !== 'none' && imagePreview.src && imagePreview.src !== '';
+            const hasText = textPreview.style.display !== 'none' && textPreview.textContent.trim() !== '';
+            
+            if ((!hasImage && !hasText) || !titleInput.value.trim() || !boardSelect.value) {
+                return;
+            }
+
+            saveButton.disabled = true;
+            saveButton.textContent = 'Saving...';
+
+            let imageUrl = '';
+            if (hasImage) {
+                imageUrl = imagePreview.src;
+            } else if (hasText) {
+                // Create a data URL for the colored text tile
+                const canvas = document.createElement('canvas');
+                const ctx = canvas.getContext('2d');
+                canvas.width = 300;
+                canvas.height = 200;
+                
+                // Set background color
+                ctx.fillStyle = textPreview.style.backgroundColor;
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                
+                // Set text properties
+                ctx.fillStyle = 'white';
+                ctx.font = '16px Arial';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                
+                // Wrap text
+                const words = textPreview.textContent.split(' ');
+                const lines = [];
+                let currentLine = words[0];
+                
+                for (let i = 1; i < words.length; i++) {
+                    const word = words[i];
+                    const width = ctx.measureText(currentLine + ' ' + word).width;
+                    if (width < canvas.width - 40) {
+                        currentLine += ' ' + word;
+                    } else {
+                        lines.push(currentLine);
+                        currentLine = word;
+                    }
+                }
+                lines.push(currentLine);
+                
+                // Draw text lines
+                const lineHeight = 20;
+                const startY = canvas.height / 2 - (lines.length - 1) * lineHeight / 2;
+                
+                lines.forEach((line, index) => {
+                    ctx.fillText(line, canvas.width / 2, startY + index * lineHeight);
+                });
+                
+                imageUrl = canvas.toDataURL('image/png');
+            }
+
+            const content = {
+                image_url: imageUrl,
+                title: titleInput.value.trim(),
+                board_id: boardSelect.value,
+                section_id: sectionSelect.value || null,
+                notes: notesInput.value.trim(),
+                source_url: contentInput.value.trim()
+            };
+            
+
+            fetch('/add-pin', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(content)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    // Close modal and redirect to the board where the pin was added
+                    hideAddContentDialog();
+                    window.location.href = `/board/${content.board_id}`;
+                } else {
+                    alert('Error saving content: ' + (data.error || 'Unknown error'));
+                    saveButton.disabled = false;
+                    saveButton.textContent = 'Save';
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Error saving content');
+                saveButton.disabled = false;
+                saveButton.textContent = 'Save';
+            });
         }
 
         function showPinDetails(pinId) {
@@ -688,159 +1473,162 @@
             });
         }
 
-        // Database upgrade functions
-        function checkDatabaseUpgrades() {
-            // Skip upgrade check if user has dismissed it recently
-            const dismissedTime = localStorage.getItem('upgradeDismissed');
-            if (dismissedTime) {
-                const dismissedDate = new Date(dismissedTime);
-                const now = new Date();
-                const hoursSinceDismissed = (now - dismissedDate) / (1000 * 60 * 60);
-                
-                // Only check again after 24 hours
-                if (hoursSinceDismissed < 24) {
-                    return;
-                }
-            }
-            
-            fetch('/db-upgrade-status')
-                .then(response => response.json())
-                .then(data => {
-                    if (data.needs_upgrade && data.pending_upgrades && data.pending_upgrades.length > 0) {
-                        showUpgradeBanner(data.pending_upgrades);
-                    }
-                })
-                .catch(error => {
-                    console.warn('Could not check database upgrade status:', error);
-                });
+
+        // Board creation functions
+        function showCreateBoardDialog() {
+            document.getElementById('createBoardModal').style.display = 'flex';
+            document.getElementById('newBoardName').value = '';
+            document.getElementById('newBoardName').focus();
         }
 
-        function showUpgradeBanner(pendingUpgrades) {
-            const banner = document.getElementById('upgradeBanner');
-            const description = document.getElementById('upgradeDescription');
-            
-            // Update description with upgrade details
-            if (pendingUpgrades.length === 1) {
-                description.textContent = `${pendingUpgrades[0].name}: ${pendingUpgrades[0].description}`;
-            } else {
-                description.textContent = `${pendingUpgrades.length} database updates available including ${pendingUpgrades[0].name}.`;
-            }
-            
-            // Show banner and adjust body class
-            banner.style.display = 'block';
-            document.body.classList.add('upgrade-banner-visible');
-            
-            // Store pending upgrades for the upgrade process
-            window.pendingUpgrades = pendingUpgrades;
+        function hideCreateBoardDialog() {
+            document.getElementById('createBoardModal').style.display = 'none';
         }
 
-        function hideUpgradeBanner() {
-            const banner = document.getElementById('upgradeBanner');
-            banner.style.display = 'none';
-            document.body.classList.remove('upgrade-banner-visible');
+        // Section creation functions
+        function showCreateSectionDialog() {
+            document.getElementById('createSectionModal').style.display = 'flex';
+            document.getElementById('newSectionName').value = '';
+            document.getElementById('newSectionName').focus();
         }
 
-        function dismissUpgrade() {
-            // Store dismissal time in localStorage
-            localStorage.setItem('upgradeDismissed', new Date().toISOString());
-            hideUpgradeBanner();
+        function hideCreateSectionDialog() {
+            document.getElementById('createSectionModal').style.display = 'none';
         }
 
-        function applyDatabaseUpgrades() {
-            if (!window.pendingUpgrades || window.pendingUpgrades.length === 0) {
+        function createNewBoard() {
+            const boardName = document.getElementById('newBoardName').value.trim();
+            if (!boardName) {
+                alert('Please enter a board name');
                 return;
             }
             
-            const banner = document.getElementById('upgradeBanner');
-            const progressText = document.getElementById('upgradeProgressText');
-            const progressFill = document.querySelector('.progress-fill');
-            const upgradeBtn = document.getElementById('upgradeBtn');
-            const dismissBtn = document.getElementById('dismissUpgradeBtn');
-            
-            // Show progress view
-            banner.classList.add('show-progress');
-            upgradeBtn.disabled = true;
-            dismissBtn.disabled = true;
-            
-            let completedUpgrades = 0;
-            const totalUpgrades = window.pendingUpgrades.length;
-            
-            function updateProgress() {
-                const percentage = (completedUpgrades / totalUpgrades) * 100;
-                progressFill.style.width = `${percentage}%`;
-                progressText.textContent = `Applying database updates... (${completedUpgrades}/${totalUpgrades})`;
+            const createBtn = document.querySelector('#createBoardModal button[onclick="createNewBoard()"]');
+            if (!createBtn) {
+                alert('Could not find create button');
+                return;
             }
-            
-            function applyNextUpgrade(index) {
-                if (index >= window.pendingUpgrades.length) {
-                    // All upgrades completed
-                    progressText.textContent = 'Database updates completed successfully!';
-                    progressFill.style.width = '100%';
-                    
-                    setTimeout(() => {
-                        hideUpgradeBanner();
-                        // Clear dismissal time so banner can show again if needed
-                        localStorage.removeItem('upgradeDismissed');
-                        // Refresh page to reflect new features
-                        window.location.reload();
-                    }, 2000);
-                    return;
-                }
-                
-                const upgrade = window.pendingUpgrades[index];
-                progressText.textContent = `Applying ${upgrade.name}...`;
-                
-                fetch('/db-upgrade', {
+            createBtn.disabled = true;
+            createBtn.textContent = 'Creating...';
+
+            fetch('/create-board', {
                     method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        version: upgrade.version
-                    })
-                })
-                .then(response => response.json())
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name: boardName })
+            })
+            .then(res => res.json())
                 .then(data => {
                     if (data.success) {
-                        completedUpgrades++;
-                        updateProgress();
-                        console.log(`✅ ${data.message}`);
-                        
-                        // Wait a moment then apply next upgrade
-                        setTimeout(() => applyNextUpgrade(index + 1), 500);
+                    hideCreateBoardDialog();
+                    // Refresh the page to show the new board
+                    window.location.reload();
                     } else {
-                        throw new Error(data.error || 'Unknown error');
-                    }
-                })
-                .catch(error => {
-                    console.error('❌ Upgrade failed:', error);
-                    progressText.textContent = `Upgrade failed: ${error.message}`;
-                    progressFill.style.background = '#ff6b6b';
-                    
-                    // Re-enable buttons after error
-                    setTimeout(() => {
-                        banner.classList.remove('show-progress');
-                        upgradeBtn.disabled = false;
-                        dismissBtn.disabled = false;
-                    }, 3000);
-                });
-            }
-            
-            updateProgress();
-            applyNextUpgrade(0);
+                    alert(data.error || 'Failed to create board');
+                }
+            })
+            .catch(() => alert('Failed to create board'))
+            .finally(() => {
+                createBtn.disabled = false;
+                createBtn.textContent = 'Create Board';
+            });
         }
 
-        // Event listeners for upgrade banner
-        document.addEventListener('DOMContentLoaded', function() {
-            const upgradeBtn = document.getElementById('upgradeBtn');
-            const dismissBtn = document.getElementById('dismissUpgradeBtn');
-            
-            if (upgradeBtn) {
-                upgradeBtn.addEventListener('click', applyDatabaseUpgrades);
+        function createNewSection() {
+            const sectionName = document.getElementById('newSectionName').value.trim();
+            if (!sectionName) {
+                alert('Please enter a section name');
+                return;
             }
+
+            // Get current board ID from URL
+            const currentPath = window.location.pathname;
+            const boardMatch = currentPath.match(/\/board\/(\d+)/);
+            if (!boardMatch) {
+                alert('Could not determine current board');
+                return;
+            }
+            const boardId = boardMatch[1];
             
-            if (dismissBtn) {
-                dismissBtn.addEventListener('click', dismissUpgrade);
+            const createBtn = document.querySelector('#createSectionModal button[onclick="createNewSection()"]');
+            if (!createBtn) {
+                alert('Could not find create button');
+                return;
+            }
+            createBtn.disabled = true;
+            createBtn.textContent = 'Creating...';
+
+            fetch('/create-section', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ 
+                    board_id: parseInt(boardId),
+                    name: sectionName 
+                })
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    hideCreateSectionDialog();
+                    // Refresh the page to show the new section
+                    window.location.reload();
+                } else {
+                    alert(data.error || 'Failed to create section');
+                }
+            })
+            .catch(() => alert('Failed to create section'))
+            .finally(() => {
+                createBtn.disabled = false;
+                createBtn.textContent = 'Create Section';
+            });
+        }
+
+        // Close modal when clicking outside
+        document.addEventListener('click', function(event) {
+            const createBoardModal = document.getElementById('createBoardModal');
+            const createSectionModal = document.getElementById('createSectionModal');
+            const addContentModal = document.getElementById('addContentModal');
+            
+            if (event.target === createBoardModal) {
+                hideCreateBoardDialog();
+            }
+            if (event.target === createSectionModal) {
+                hideCreateSectionDialog();
+            }
+            if (event.target === addContentModal) {
+                hideAddContentDialog();
+            }
+        });
+
+        // Handle Enter key in board/section name inputs
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                const activeElement = document.activeElement;
+                
+                if (document.getElementById('createBoardModal').style.display === 'flex' && activeElement && activeElement.id === 'newBoardName') {
+                    createNewBoard();
+                }
+                if (document.getElementById('createSectionModal').style.display === 'flex' && activeElement && activeElement.id === 'newSectionName') {
+                    createNewSection();
+                }
+            }
+        });
+
+        // Handle Escape key to close modals
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const createBoardModal = document.getElementById('createBoardModal');
+                const createSectionModal = document.getElementById('createSectionModal');
+                const addContentModal = document.getElementById('addContentModal');
+                
+                if (createBoardModal && createBoardModal.style.display === 'flex') {
+                    hideCreateBoardDialog();
+                }
+                if (createSectionModal && createSectionModal.style.display === 'flex') {
+                    hideCreateSectionDialog();
+                }
+                if (addContentModal && addContentModal.style.display === 'flex') {
+                    hideAddContentDialog();
+                }
             }
         });
     </script>

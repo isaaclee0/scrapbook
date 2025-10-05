@@ -1,37 +1,39 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="board-container">
-    <div class="board-header">
-        <div class="board-title-container">
-            <h1>{{ board.name }}</h1>
-            <div class="board-actions">
-                <button class="board-settings-button" onclick="toggleBoardSettings()">
-                    <span class="cog-icon">⚙️</span>
-                </button>
-                <div class="board-settings-menu" id="boardSettingsMenu">
-                    <button id="processingStatusBtn" disabled>
-                        <span id="processingStatusText">🎨 Ready</span>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="mb-8">
+        <div class="mb-6">
+            <div class="flex items-center space-x-3">
+                <h1 class="text-3xl font-bold text-gray-900">{{ board.name }}</h1>
+                <div class="relative">
+                    <button class="p-2 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-lg transition-all duration-200" onclick="toggleBoardSettings()">
+                        <span class="text-lg">✏️</span>
                     </button>
-                    <button onclick="showRenameBoardModal()">Rename Board</button>
-                    <button onclick="showMoveBoardModal()">Move Board</button>
-                    <button onclick="showDeleteBoardModal()" class="delete-button">Delete Board</button>
+                    <div id="boardSettingsMenu" class="hidden absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl border border-gray-200 py-2 z-50 flex flex-col">
+                        <button id="processingStatusBtn" disabled class="px-4 py-2 text-left text-sm text-gray-400 cursor-not-allowed whitespace-nowrap">
+                            <span id="processingStatusText">🎨 Ready</span>
+                        </button>
+                        <button onclick="showRenameBoardModal()" class="px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-50 transition-colors whitespace-nowrap">Rename Board</button>
+                        <button onclick="showMoveBoardModal()" class="px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-50 transition-colors whitespace-nowrap">Convert to Section</button>
+                        <button onclick="showDeleteBoardModal()" class="px-4 py-2 text-left text-sm text-red-600 hover:bg-red-50 transition-colors whitespace-nowrap">Delete Board</button>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="section-selector-container">
-            <div class="section-selector">
-                <button class="section-button active" data-section-id="all">All Pins</button>
+        <div class="border-b border-gray-200">
+            <nav class="flex space-x-0 overflow-x-auto">
+                <button class="section-button px-4 py-3 text-sm font-medium border-b-2 border-primary-500 text-primary-600 whitespace-nowrap" data-section-id="all">All Pins</button>
                 {% for section in sections %}
-                <button class="section-button" data-section-id="{{ section.id }}">{{ section.name }}</button>
+                <button class="section-button px-4 py-3 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap transition-colors" data-section-id="{{ section.id }}">{{ section.name }}</button>
                 {% endfor %}
-            </div>
+            </nav>
         </div>
     </div>
 
-    <div class="pins-grid" id="pinsGrid">
+    <div class="flex flex-wrap justify-center gap-4" id="pinsGrid">
         {% for pin in pins %}
-        <div class="pin-card grid-item" 
+        <div class="pin-card bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group" 
              data-section-id="{{ pin.section_id or 'all' }}" 
              {% if pin.dominant_color_1 and pin.dominant_color_2 %}
              style="--dominant-color: {{ pin.dominant_color_1 }}; --secondary-color: {{ pin.dominant_color_2 }};"
@@ -48,24 +50,29 @@
              {% else %}
              data-has-cached="false"
              {% endif %}>
-            <a href="{{ url_for('view_pin', pin_id=pin.id) }}">
-                <div class="pin-image-container">
+            <a href="{{ url_for('view_pin', pin_id=pin.id) }}" class="block">
+                <div class="relative overflow-hidden">
                     {% if pin.cached_filename %}
-                    <img src="/cached/{{ pin.cached_filename }}" alt="{{ pin.title }}" class="pin-image" 
+                    <img src="/cached/{{ pin.cached_filename }}" alt="{{ pin.title }}" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300" 
                          data-original-url="{{ pin.image_url }}">
                     {% else %}
-                    <img src="{{ pin.image_url }}" alt="{{ pin.title }}" class="pin-image">
+                    <img src="{{ pin.image_url }}" alt="{{ pin.title }}" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300">
+                    {% endif %}
+                    {% if pin.section_name %}
+                    <span class="absolute top-2 left-2 px-2 py-1 bg-black bg-opacity-70 text-white text-xs rounded-full">{{ pin.section_name }}</span>
                     {% endif %}
                 </div>
-                <div class="pin-info">
-                    <h3>{{ pin.title }}</h3>
+                <div class="p-4">
+                    <h3 class="font-medium text-gray-900 text-sm leading-tight mb-2 line-clamp-2">{{ pin.title }}</h3>
                     {% if pin.link %}
-                    <a href="{{ pin.link }}" target="_blank" class="source-link-icon" title="Visit source">↗</a>
+                    <div class="flex items-center justify-between">
+                        <a href="{{ pin.link }}" target="_blank" class="text-primary-500 hover:text-primary-600 text-xs flex items-center space-x-1 transition-colors" title="Visit source" onclick="event.stopPropagation()">
+                            <span>View source</span>
+                            <span>↗</span>
+                        </a>
+                    </div>
                     {% endif %}
                 </div>
-                {% if pin.section_name %}
-                <span class="section-badge">{{ pin.section_name }}</span>
-                {% endif %}
             </a>
         </div>
         {% endfor %}
@@ -86,9 +93,13 @@
 
 <div class="modal" id="moveBoardModal">
     <div class="modal-content">
-        <h3>Move Board</h3>
+        <h3>Convert Board to Section</h3>
+        <p style="margin-bottom: 15px; color: #666; font-size: 14px;">
+            This will convert "{{ board.name }}" into a section within another board. 
+            All pins and subsections will be moved to the selected board.
+        </p>
         <select id="targetBoardSelect">
-            <option value="">Select a board...</option>
+            <option value="">Select a target board...</option>
             {% for other_board in all_boards %}
             {% if other_board.id != board.id %}
             <option value="{{ other_board.id }}">{{ other_board.name }}</option>
@@ -97,7 +108,7 @@
         </select>
         <div class="modal-actions">
             <button class="button secondary-button" onclick="hideMoveBoardModal()">Cancel</button>
-            <button class="button primary-button" onclick="moveBoard()">Move</button>
+            <button class="button primary-button" onclick="moveBoard()">Convert to Section</button>
         </div>
     </div>
 </div>
@@ -113,131 +124,12 @@
     </div>
 </div>
 
-<!-- Add Masonry.js -->
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 
 <style>
-.board-container {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
-.board-header {
-    margin-bottom: 30px;
-}
 
-.board-title-container {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 20px;
-}
 
-.board-actions {
-    position: relative;
-}
-
-.board-settings-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 8px;
-    border-radius: 50%;
-    transition: background-color 0.2s;
-}
-
-.board-settings-button:hover {
-    background-color: #f0f0f0;
-}
-
-.board-settings-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    z-index: 1000;
-    min-width: 200px;
-}
-
-.board-settings-menu.right {
-    right: 0;
-    left: auto;
-}
-
-.board-settings-menu.left {
-    right: auto;
-    left: 0;
-}
-
-.board-settings-menu.active {
-    display: block;
-}
-
-.board-settings-menu button {
-    width: 100%;
-    padding: 12px 16px;
-    text-align: left;
-    background: none;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.2s;
-}
-
-.board-settings-menu button:hover:not(:disabled) {
-    background-color: #f5f5f5;
-}
-
-.board-settings-menu button:disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
-}
-
-.board-settings-menu button.delete-button {
-    color: #dc3545;
-}
-
-.board-settings-menu button.delete-button:hover {
-    background-color: #fff5f5;
-}
-
-.section-selector-container {
-    border-bottom: 1px solid #e0e0e0;
-    margin-bottom: 20px;
-}
-
-.section-selector {
-    display: flex;
-    gap: 0;
-    overflow-x: auto;
-}
-
-.section-button {
-    background: none;
-    border: none;
-    padding: 12px 16px;
-    cursor: pointer;
-    border-bottom: 2px solid transparent;
-    white-space: nowrap;
-    transition: border-color 0.2s;
-}
-
-.section-button:hover {
-    background-color: #f5f5f5;
-}
-
-.section-button.active {
-    border-bottom-color: #007bff;
-    color: #007bff;
-    font-weight: 500;
-}
-
-.pins-grid {
+#pinsGrid {
     padding: 20px 0;
 }
 
@@ -364,6 +256,10 @@
     background-color: rgba(0,0,0,0.5);
 }
 
+.modal.active {
+    display: block;
+}
+
 .modal-content {
     background-color: white;
     margin: 15% auto;
@@ -434,42 +330,11 @@
     border-color: #007bff;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-    .board-container {
-        padding: 10px;
-    }
-    
-    .board-title-container {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-    
-    .section-selector {
-        gap: 0;
-    }
-    
-    .section-button {
-        padding: 10px 12px;
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 480px) {
-    .pin-info {
-        padding: 12px;
-    }
-    
-    .pin-info h3 {
-        font-size: 14px;
-    }
-}
 </style>
 
 <script>
 // Development mode check
-const IS_DEVELOPMENT = {{ 'true' if is_development else 'false' }};
+const IS_DEVELOPMENT = {% if is_development %}true{% else %}false{% endif %};
 
 // Development-only console logging
 function devLog(...args) {
@@ -504,33 +369,16 @@ let processingState = {
 // Board management functions
 function toggleBoardSettings() {
     const menu = document.getElementById('boardSettingsMenu');
-    const button = document.querySelector('.board-settings-button');
-    const buttonRect = button.getBoundingClientRect();
-    const menuWidth = 200; // min-width of the menu
-    
-    // Check if there's enough space on the right
-    const spaceOnRight = window.innerWidth - buttonRect.right;
-    
-    // Remove existing position classes
-    menu.classList.remove('left', 'right');
-    
-    // Add appropriate position class
-    if (spaceOnRight < menuWidth + 10) { // 10px buffer
-        menu.classList.add('left');
-    } else {
-        menu.classList.add('right');
-    }
-    
-    menu.classList.toggle('active');
+    menu.classList.toggle('hidden');
 }
 
 // Close board settings menu when clicking outside
 document.addEventListener('click', (e) => {
     const menu = document.getElementById('boardSettingsMenu');
-    const button = e.target.closest('.board-settings-button');
+    const button = e.target.closest('button[onclick="toggleBoardSettings()"]');
     
-    if (!button && !menu.contains(e.target) && menu.classList.contains('active')) {
-        menu.classList.remove('active');
+    if (!button && !menu.contains(e.target) && !menu.classList.contains('hidden')) {
+        menu.classList.add('hidden');
     }
 });
 
@@ -643,7 +491,6 @@ function deleteBoard() {
 
 // Initialize the board
 document.addEventListener('DOMContentLoaded', function() {
-    initializeMasonry();
     initializeSectionFiltering();
     initializeBoardManagement();
     
@@ -1300,59 +1147,6 @@ function getBoardId() {
     return match ? match[1] : null;
 }
 
-// Initialize Masonry with dynamic sizing
-function initializeMasonry() {
-    const grid = document.querySelector('.pins-grid');
-    const savedPinSize = localStorage.getItem('boardPinSize') || 3;
-    
-    // Calculate optimal layout based on saved size
-    function calculateOptimalLayout(sizeLevel) {
-        const containerWidth = grid.offsetWidth;
-        const gutter = 16;
-        
-        const targetColumns = {
-            1: 6,  // Tiny - many small pins
-            2: 5,  // Small 
-            3: 4,  // Medium
-            4: 3,  // Large
-            5: 2   // Huge - fewer large pins
-        };
-        
-        let desiredColumns = targetColumns[sizeLevel] || 4;
-        let columnWidth = Math.floor((containerWidth - (desiredColumns - 1) * gutter) / desiredColumns);
-        
-        const minWidth = 150;
-        const maxWidth = 500;
-        
-        if (columnWidth < minWidth) {
-            desiredColumns = Math.max(1, Math.floor((containerWidth + gutter) / (minWidth + gutter)));
-            columnWidth = Math.floor((containerWidth - (desiredColumns - 1) * gutter) / desiredColumns);
-        } else if (columnWidth > maxWidth) {
-            desiredColumns = Math.ceil((containerWidth + gutter) / (maxWidth + gutter));
-            columnWidth = Math.floor((containerWidth - (desiredColumns - 1) * gutter) / desiredColumns);
-        }
-        
-        return { columnWidth, columns: desiredColumns };
-    }
-    
-    const initialLayout = calculateOptimalLayout(parseInt(savedPinSize));
-    
-    // Set initial CSS custom property
-    document.documentElement.style.setProperty('--pin-width', `${initialLayout.columnWidth}px`);
-    
-    // Make masonry instance global so the slider can access it
-    window.masonry = new Masonry(grid, {
-        itemSelector: '.grid-item',
-        columnWidth: initialLayout.columnWidth,
-        gutter: 16,
-        transitionDuration: '0.2s'
-    });
-
-    // Re-layout Masonry after all images are loaded
-    imagesLoaded(grid).on('progress', function() {
-        window.masonry.layout();
-    });
-}
 
 // Section button handling
 function initializeSectionFiltering() {
@@ -1363,7 +1157,7 @@ function initializeSectionFiltering() {
             this.classList.add('active');
             
             const selectedSection = this.dataset.sectionId;
-            const items = document.querySelectorAll('.grid-item');
+            const items = document.querySelectorAll('.pin-card');
             
             items.forEach(item => {
                 if (selectedSection === 'all' || item.dataset.sectionId === selectedSection) {
@@ -1372,8 +1166,6 @@ function initializeSectionFiltering() {
                     item.style.display = 'none';
                 }
             });
-            
-            window.masonry.layout();
         });
     });
 }

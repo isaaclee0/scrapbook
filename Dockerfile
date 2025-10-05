@@ -23,7 +23,12 @@ RUN apt-get update && apt-get install -y \
     libopenjp2-7-dev \
     zlib1g-dev \
     ffmpeg \
+    curl \
     && rm -rf /var/lib/apt/lists/*
+
+# Install Node.js
+RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - \
+    && apt-get install -y nodejs
 
 # Set work directory
 WORKDIR /app
@@ -35,8 +40,19 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
 
+# Copy package.json and install Node.js dependencies
+COPY package*.json ./
+RUN npm install --omit=dev
+
+# Copy Tailwind config and source files
+COPY tailwind.config.js ./
+COPY src/ ./src/
+
 # Copy application code
 COPY . .
+
+# Build Tailwind CSS
+RUN npm run build:css
 
 # Create necessary directories and set permissions
 RUN mkdir -p /app/static/images && \

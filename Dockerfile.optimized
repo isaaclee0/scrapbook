@@ -1,0 +1,92 @@
+# Multi-stage build for optimized image size
+FROM python:3.11-slim as builder
+
+# Install build dependencies
+RUN apt-get update && apt-get install -y \
+    gcc \
+    default-libmysqlclient-dev \
+    pkg-config \
+    libjpeg-dev \
+    libpng-dev \
+    libtiff-dev \
+    libwebp-dev \
+    libfreetype6-dev \
+    liblcms2-dev \
+    libopenjp2-7-dev \
+    zlib1g-dev \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Node.js
+RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - \
+    && apt-get install -y nodejs
+
+# Install Python dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir --user -r requirements.txt
+
+# Install Node.js dependencies and build Tailwind CSS
+COPY package*.json ./
+RUN npm install --omit=dev
+
+COPY tailwind.config.js ./
+COPY src/ ./src/
+COPY . .
+RUN npm run build:css
+
+# Production stage
+FROM python:3.11-slim
+
+# Set environment variables
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    FLASK_APP=app.py \
+    FLASK_ENV=production \
+    PATH="/root/.local/bin:$PATH"
+
+# Create a non-root user
+RUN groupadd -r appuser && useradd -r -g appuser appuser
+
+# Install only runtime dependencies
+RUN apt-get update && apt-get install -y \
+    default-libmysqlclient21 \
+    libjpeg62-turbo \
+    libpng16-16 \
+    libtiff5 \
+    libwebp7 \
+    libfreetype6 \
+    liblcms2-2 \
+    libopenjp2-7 \
+    zlib1g \
+    ffmpeg \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy Python packages from builder stage
+COPY --from=builder /root/.local /root/.local
+
+# Copy built CSS from builder stage
+COPY --from=builder /app/static/css /app/static/css
+
+# Set work directory
+WORKDIR /app
+
+# Copy application code
+COPY . .
+
+# Create necessary directories and set permissions
+RUN mkdir -p /app/static/images && \
+    chown -R appuser:appuser /app
+
+# Switch to non-root user
+USER appuser
+
+# Expose the port the app runs on
+EXPOSE 8000
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \
+    CMD python -c "import requests; requests.get('http://localhost:8000/')" || exit 1
+
+# Command to run the application
+CMD ["python", "app.py"] 
