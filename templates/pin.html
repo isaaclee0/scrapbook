@@ -909,6 +909,106 @@
         max-height: 50vh;
     }
 }
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10001;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    animation: modalSlideIn 0.2s ease-out;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-content h3 {
+    margin: 0 0 20px 0;
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+.modal-content .section-input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.modal-content .section-input:focus {
+    outline: none;
+    border-color: #2980b9;
+}
+
+.modal-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+.modal-actions .button {
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s;
+}
+
+.modal-actions .primary-button {
+    background: #2980b9;
+    color: white;
+}
+
+.modal-actions .primary-button:hover {
+    background: #2472a4;
+}
+
+.modal-actions .primary-button:disabled {
+    background: #bdc3c7;
+    cursor: not-allowed;
+}
+
+.modal-actions .secondary-button {
+    background: #ecf0f1;
+    color: #2c3e50;
+}
+
+.modal-actions .secondary-button:hover {
+    background: #d5dbdb;
+}
 </style>
 
 <script>
@@ -1134,8 +1234,13 @@ function createNewSection() {
         return;
     }
     
-    // Get the current board ID from the pin data
+    // Get the current board ID from the pin data (available on pin page)
     const boardId = {{ pin.board_id }};
+    
+    if (!boardId) {
+        alert('Could not determine board ID');
+        return;
+    }
     
     const createBtn = document.querySelector('#newSectionModal .primary-button');
     createBtn.disabled = true;
@@ -1154,7 +1259,10 @@ function createNewSection() {
             alert(data.error || 'Failed to create section');
         }
     })
-    .catch(() => alert('Failed to create section'))
+    .catch(err => {
+        console.error('Error creating section:', err);
+        alert('Failed to create section');
+    })
     .finally(() => {
         createBtn.disabled = false;
         createBtn.textContent = 'Create';
@@ -1305,5 +1413,57 @@ function saveImage(imageUrl) {
         alert('Failed to update image');
     });
 }
+</script>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+// Override the base.html createNewSection function for pin pages
+window.createNewSection = function() {
+    const sectionName = document.getElementById('newSectionName').value.trim();
+    if (!sectionName) {
+        alert('Please enter a section name');
+        return;
+    }
+    
+    // Get the current board ID from the pin data (available on pin page)
+    const boardId = {{ pin.board_id }};
+    
+    if (!boardId) {
+        alert('Could not determine board ID');
+        return;
+    }
+    
+    const createBtn = document.querySelector('#newSectionModal .primary-button');
+    if (createBtn) {
+        createBtn.disabled = true;
+        createBtn.textContent = 'Creating...';
+    }
+    
+    fetch('/create-section', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ board_id: boardId, name: sectionName })
+    })
+    .then(res => res.json())
+    .then(data => {
+        if (data.success && data.section && data.section.id) {
+            hideNewSectionForm();
+            moveToSection({{ pin.id }}, data.section.id);
+        } else {
+            alert(data.error || 'Failed to create section');
+        }
+    })
+    .catch(err => {
+        console.error('Error creating section:', err);
+        alert('Failed to create section');
+    })
+    .finally(() => {
+        if (createBtn) {
+            createBtn.disabled = false;
+            createBtn.textContent = 'Create';
+        }
+    });
+};
 </script>
 {% endblock %} 
