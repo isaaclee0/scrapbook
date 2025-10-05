@@ -1002,7 +1002,22 @@
                     pinSizeValue.textContent = sizeLabel;
                     localStorage.setItem('boardPinSize', sizeLevel);
                     
-                    // Update pin widths using CSS custom property
+                    // For masonry layout: adjust column count based on size
+                    // Smaller size = more columns, larger size = fewer columns
+                    const pinsGrid = document.getElementById('pinsGrid');
+                    if (pinsGrid) {
+                        const columnCounts = {
+                            1: 7,  // Tiny - most columns
+                            2: 6,  // Small
+                            3: 5,  // Medium (default)
+                            4: 4,  // Large
+                            5: 3   // Huge - fewest columns
+                        };
+                        const columnCount = columnCounts[sizeLevel];
+                        pinsGrid.style.columnCount = columnCount;
+                    }
+                    
+                    // Keep the old method for backward compatibility with non-masonry layouts
                     const pinWidths = {
                         1: '150px',  // Tiny
                         2: '200px',  // Small  
