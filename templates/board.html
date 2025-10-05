@@ -31,7 +31,7 @@
         </div>
     </div>
 
-    <div class="flex flex-wrap justify-center gap-4" id="pinsGrid">
+    <div class="masonry-grid" id="pinsGrid">
         {% for pin in pins %}
         <div class="pin-card bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group" 
              data-section-id="{{ pin.section_id or 'all' }}" 
@@ -129,18 +129,39 @@
 
 
 
+/* Masonry layout using CSS columns */
 #pinsGrid {
-    padding: 20px 0;
+    padding: 20px;
+    column-count: 5;
+    column-gap: 16px;
+}
+
+@media (max-width: 1600px) {
+    #pinsGrid { column-count: 4; }
+}
+
+@media (max-width: 1200px) {
+    #pinsGrid { column-count: 3; }
+}
+
+@media (max-width: 800px) {
+    #pinsGrid { column-count: 2; }
+}
+
+@media (max-width: 500px) {
+    #pinsGrid { column-count: 1; }
 }
 
 .pin-card {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 16px;
+    break-inside: avoid-column;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     transition: transform 0.2s, box-shadow 0.2s;
     position: relative;
-    width: var(--pin-width, 250px);
-    margin-bottom: 20px;
     background: white;
 }
 
