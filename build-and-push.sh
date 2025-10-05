@@ -18,7 +18,7 @@ VERSION=$(cat VERSION | tr -d '\n')
 echo -e "${BLUE}📦 Building Scrapbook v${VERSION}${NC}"
 
 # Docker Hub configuration (update these with your values)
-DOCKER_HUB_USERNAME="${DOCKER_HUB_USERNAME:-yourusername}"
+DOCKER_HUB_USERNAME="${DOCKER_HUB_USERNAME:-staugustine1}"
 IMAGE_NAME="scrapbook"
 FULL_IMAGE_NAME="${DOCKER_HUB_USERNAME}/${IMAGE_NAME}"
 
