@@ -107,6 +107,12 @@ if [ "$SKIP_TESTS" = false ]; then
     echo -e "${GREEN}✓ Tests passed (skipped - add tests here)${NC}"
 fi
 
+# Reminder about database migrations
+echo ""
+echo -e "${YELLOW}📊 Reminder: Don't forget to run database migrations after deploying!${NC}"
+echo -e "   ${BLUE}docker-compose exec web python migrate.py${NC}"
+echo ""
+
 # Build the Docker image
 echo -e "${BLUE}🔨 Building Docker image...${NC}"
 docker build -f "$DOCKERFILE" -t "${FULL_IMAGE_NAME}:${VERSION}" -t "${FULL_IMAGE_NAME}:latest" .
