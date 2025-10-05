@@ -24,6 +24,7 @@ services:
       - JWT_ALGORITHM=${JWT_ALGORITHM:-HS256}
       - MAGIC_LINK_EXPIRY=${MAGIC_LINK_EXPIRY:-1800}
       - SESSION_EXPIRY=${SESSION_EXPIRY:-2592000}
+      - DEFAULT_USER_EMAIL=${DEFAULT_USER_EMAIL:-admin@localhost}
     depends_on:
       db:
         condition: service_healthy

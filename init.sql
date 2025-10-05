@@ -16,7 +16,8 @@ CREATE TABLE IF NOT EXISTS users (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Insert default user for initial setup
-INSERT IGNORE INTO users (email, created_at) VALUES ('admin@localhost', NOW());
+-- Change this email to your production user email if needed
+INSERT IGNORE INTO users (email, created_at) VALUES ('shelley@leemail.com.au', NOW());
 
 -- Boards table
 CREATE TABLE IF NOT EXISTS boards (
@@ -121,8 +122,8 @@ CREATE TABLE IF NOT EXISTS url_health (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Insert some default data if tables are empty (for demo/development)
--- Note: These will be owned by the default admin@localhost user
-SET @default_user_id = (SELECT id FROM users WHERE email = 'admin@localhost' LIMIT 1);
+-- Note: These will be owned by the default user
+SET @default_user_id = (SELECT id FROM users WHERE email = 'shelley@leemail.com.au' LIMIT 1);
 
 INSERT IGNORE INTO boards (user_id, name, slug) VALUES 
 (@default_user_id, 'My First Board', 'my-first-board'),
