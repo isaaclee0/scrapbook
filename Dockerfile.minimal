@@ -1,0 +1,113 @@
+# Minimal multi-stage build for smallest possible image
+# Expected size: ~500-700MB (vs 1.53GB)
+
+# Stage 1: Build dependencies and compile Python packages
+FROM python:3.11-slim AS builder
+
+WORKDIR /build
+
+# Install build dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    gcc \
+    g++ \
+    default-libmysqlclient-dev \
+    pkg-config \
+    libjpeg-dev \
+    libpng-dev \
+    libtiff-dev \
+    libwebp-dev \
+    libfreetype6-dev \
+    liblcms2-dev \
+    libopenjp2-7-dev \
+    zlib1g-dev \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Node.js for Tailwind CSS
+RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - \
+    && apt-get install -y nodejs \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Python dependencies to user directory
+COPY requirements.txt .
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir --user -r requirements.txt
+
+# Build Tailwind CSS
+COPY package*.json ./
+RUN npm install --omit=dev
+COPY tailwind.config.js ./
+COPY src/ ./src/
+COPY templates/ ./templates/
+RUN npm run build:css
+
+# Stage 2: Production runtime
+FROM python:3.11-slim
+
+# Set environment variables
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    FLASK_APP=app.py \
+    FLASK_ENV=production \
+    PYTHONPATH=/root/.local/lib/python3.11/site-packages \
+    PATH="/root/.local/bin:$PATH"
+
+# Create non-root user
+RUN groupadd -r appuser && useradd -r -g appuser appuser
+
+# Install ONLY runtime dependencies (no dev packages, no gcc)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    # MySQL runtime library (not dev)
+    default-libmysqlclient21 \
+    # Image processing runtime libraries (not dev)
+    libjpeg62-turbo \
+    libpng16-16 \
+    libtiff5 \
+    libwebp7 \
+    libfreetype6 \
+    liblcms2-2 \
+    libopenjp2-7 \
+    zlib1g \
+    # FFmpeg for video frame extraction (largest dependency ~100MB)
+    # Comment out if you don't need video support
+    ffmpeg \
+    && rm -rf /var/lib/apt/lists/* \
+    && apt-get clean \
+    && rm -rf /var/cache/apt/archives
+
+# Copy Python packages from builder
+COPY --from=builder /root/.local /root/.local
+
+# Copy built Tailwind CSS
+COPY --from=builder /build/static/css/output.css /app/static/css/output.css
+
+# Set working directory
+WORKDIR /app
+
+# Copy only necessary application files
+COPY app.py .
+COPY auth_utils.py .
+COPY email_service.py .
+COPY migrate.py .
+COPY VERSION .
+COPY requirements.txt .
+COPY templates/ ./templates/
+COPY static/ ./static/
+
+# Create directories and set permissions
+RUN mkdir -p /app/static/images /app/static/cached_images && \
+    chown -R appuser:appuser /app
+
+# Switch to non-root user
+USER appuser
+
+# Expose port
+EXPOSE 8000
+
+# Healthcheck
+HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \
+    CMD python -c "import sys; sys.exit(0)"
+
+# Run application
+CMD ["python", "app.py"]
+

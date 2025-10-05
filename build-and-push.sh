@@ -16,6 +16,9 @@ fi
 
 VERSION=$(cat VERSION | tr -d '\n')
 echo -e "${BLUE}📦 Building Scrapbook v${VERSION}${NC}"
+if [ "$USE_OPTIMIZED" != true ]; then
+    echo -e "${YELLOW}💡 Tip: Use --optimized flag to reduce image size from 1.5GB to 500-700MB${NC}"
+fi
 
 # Docker Hub configuration (update these with your values)
 DOCKER_HUB_USERNAME="${DOCKER_HUB_USERNAME:-staugustine1}"
@@ -64,8 +67,8 @@ done
 
 # Select Dockerfile
 if [ "$USE_OPTIMIZED" = true ]; then
-    DOCKERFILE="Dockerfile.optimized"
-    echo -e "${YELLOW}Using ${DOCKERFILE}${NC}"
+    DOCKERFILE="Dockerfile.minimal"
+    echo -e "${YELLOW}✨ Using optimized ${DOCKERFILE} (500-700MB vs 1.5GB)${NC}"
 else
     DOCKERFILE="Dockerfile"
 fi
