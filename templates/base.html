@@ -451,6 +451,147 @@
             background-color: #7f8c8d;
         }
 
+        /* Custom dropdown styles for add content modal */
+        .meta-label {
+            color: #666;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        .board-selector-add, .section-selector-add {
+            position: relative;
+        }
+
+        .current-board-add, .current-section-add {
+            padding: 10px 14px;
+            background: #f8f8f8;
+            border: 2px solid #d1d5db;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            color: #333;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .current-board-add:hover, .current-section-add:hover {
+            background: #f0f0f0;
+            border-color: #9ca3af;
+        }
+
+        .chevron {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .board-menu-add, .section-menu-add {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background: white;
+            border: 2px solid #d1d5db;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            z-index: 1000;
+            margin-top: 4px;
+            max-height: 300px;
+            overflow: hidden;
+        }
+
+        .board-menu-add.active, .section-menu-add.active {
+            display: block;
+        }
+
+        .board-menu-header, .section-menu-header {
+            padding: 12px 16px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .board-menu-header h3, .section-menu-header h3 {
+            margin: 0;
+            font-size: 14px;
+            color: #666;
+            font-weight: 600;
+        }
+
+        .new-section-btn {
+            background: #2980b9;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .new-section-btn:hover {
+            background: #2472a4;
+        }
+
+        .board-search {
+            padding: 8px 12px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 13px;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: #2980b9;
+        }
+
+        .board-list-add, .section-list-add {
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        .board-option-add, .section-option-add {
+            width: 100%;
+            padding: 10px 16px;
+            border: none;
+            background: none;
+            text-align: left;
+            cursor: pointer;
+            font-size: 14px;
+            color: #333;
+            transition: background 0.15s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .board-option-add:hover, .section-option-add:hover {
+            background: #f8f9fa;
+        }
+
+        .board-option-add.selected, .section-option-add.selected {
+            background: #e7f3ff;
+            color: #2980b9;
+            font-weight: 500;
+        }
+
+        .current-indicator {
+            color: #2980b9;
+            font-weight: bold;
+        }
+
         .pin-details {
             position: fixed;
             top: 0;
@@ -640,22 +781,26 @@
     </style>
 </head>
 <body>
-    <nav class="fixed top-0 left-0 right-0 h-16 bg-white shadow-lg flex items-center justify-between px-6 z-50">
+    <nav class="fixed top-0 left-0 right-0 h-16 bg-white shadow-lg px-6 z-50" style="display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 1rem;">
         <div class="flex items-center space-x-4">
             <a href="/" class="text-2xl hover:bg-gray-100 p-2 rounded-lg transition-colors" title="Home">🏠</a>
             <a href="javascript:history.back()" class="text-2xl hover:bg-gray-100 p-2 rounded-lg transition-colors" title="Back">↩️</a>
             <a href="/random" class="text-2xl hover:bg-gray-100 p-2 rounded-lg transition-colors" title="Random Pin">🎲</a>
         </div>
-        <div class="flex items-center">
-            <a href="/" class="text-2xl font-display font-bold text-gray-800 hover:text-primary-600 transition-colors">scrapbook.io</a>
+        <div class="flex items-center justify-center">
+            <a href="/" class="text-2xl font-display font-bold text-gray-800 hover:text-primary-600 transition-colors whitespace-nowrap">scrapbook.io</a>
         </div>
-        <div class="flex items-center space-x-4">
+        <div class="flex items-center justify-end space-x-4">
             <!-- Pin size slider (global) - hidden on homepage -->
             <div class="{% if request.endpoint == 'gallery' %}hidden{% endif %} flex items-center space-x-3 bg-gray-50 px-3 py-2 rounded-lg">
                 <label for="pinSizeSlider" class="text-sm font-medium text-gray-700">Size:</label>
                 <input type="range" id="pinSizeSlider" min="1" max="5" value="3" class="w-20 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider">
                 <span id="pinSizeValue" class="text-sm font-medium text-gray-700 min-w-[4rem]">Medium</span>
             </div>
+            <!-- Logout button -->
+            <a href="{{ url_for('logout') }}" class="text-lg text-gray-600 hover:text-gray-900 hover:bg-gray-100 p-2 rounded-lg transition-colors" title="Logout">
+                <i class="fas fa-sign-out-alt"></i>
+            </a>
         </div>
     </nav>
 
@@ -773,17 +918,53 @@
                     </div>
 
                     <div class="input-group">
-                        <label for="board-select">Board</label>
-                        <select id="board-select">
-                            <option value="">Select a board...</option>
-                        </select>
+                        <label class="meta-label">Board</label>
+                        <div class="board-selector-add">
+                            <div class="current-board-add" id="current-board-add">
+                                Select a board...
+                                <span class="chevron">▼</span>
+                            </div>
+                            <div class="board-menu-add" id="board-menu-add">
+                                <div class="board-menu-header">
+                                    <h3>Select Board</h3>
+                                </div>
+                                <div class="board-search">
+                                    <input type="text" class="search-input" id="board-search-add" placeholder="Search boards...">
+                                </div>
+                                <div class="board-list-add" id="board-list-add">
+                                    <!-- Boards will be loaded here -->
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="input-group">
-                        <label for="section-select">Section (optional)</label>
-                        <select id="section-select">
-                            <option value="">Select a section...</option>
-                        </select>
+                        <label class="meta-label">Section (optional)</label>
+                        <div class="section-selector-add">
+                            <div class="current-section-add" id="current-section-add">
+                                No Section
+                                <span class="chevron">▼</span>
+                            </div>
+                            <div class="section-menu-add" id="section-menu-add">
+                                <div class="section-menu-header">
+                                    <h3>Select Section</h3>
+                                    <button class="new-section-btn" id="new-section-btn-add" onclick="toggleInlineSectionForm()">+ New Section</button>
+                                </div>
+                                <!-- Inline section creation form -->
+                                <div class="inline-section-form" id="inline-section-form" style="display: none;">
+                                    <div style="padding: 12px; border-bottom: 1px solid #eee; background: #f8f9fa;">
+                                        <input type="text" id="inline-section-name" placeholder="Section name..." style="width: 100%; padding: 8px 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 13px; margin-bottom: 8px;">
+                                        <div style="display: flex; gap: 8px;">
+                                            <button onclick="createInlineSection()" style="flex: 1; padding: 6px 12px; background: #2980b9; color: white; border: none; border-radius: 6px; font-size: 13px; cursor: pointer;">Create</button>
+                                            <button onclick="cancelInlineSection()" style="flex: 1; padding: 6px 12px; background: #95a5a6; color: white; border: none; border-radius: 6px; font-size: 13px; cursor: pointer;">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="section-list-add" id="section-list-add">
+                                    <button class="section-option-add" data-section-id="">No Section</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="input-group">
@@ -1016,14 +1197,57 @@
             const modal = document.getElementById('addContentModal');
             modal.style.display = 'flex';
             
-            // Load boards into select
+            // Load boards into custom dropdown
             loadBoards();
+            
+            // Setup custom dropdown handlers
+            setupCustomDropdowns();
             
             // Focus on content input
             document.getElementById('content-input').focus();
             
             // Add event listeners for the modal
             setupAddContentModal();
+        }
+
+        function setupCustomDropdowns() {
+            const currentBoardAdd = document.getElementById('current-board-add');
+            const boardMenuAdd = document.getElementById('board-menu-add');
+            const currentSectionAdd = document.getElementById('current-section-add');
+            const sectionMenuAdd = document.getElementById('section-menu-add');
+            const boardSearchAdd = document.getElementById('board-search-add');
+
+            // Toggle board menu
+            currentBoardAdd.onclick = function() {
+                boardMenuAdd.classList.toggle('active');
+                sectionMenuAdd.classList.remove('active');
+            };
+
+            // Toggle section menu
+            currentSectionAdd.onclick = function() {
+                sectionMenuAdd.classList.toggle('active');
+                boardMenuAdd.classList.remove('active');
+            };
+
+            // Close menus when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.board-selector-add')) {
+                    boardMenuAdd.classList.remove('active');
+                }
+                if (!e.target.closest('.section-selector-add')) {
+                    sectionMenuAdd.classList.remove('active');
+                }
+            });
+
+            // Board search functionality
+            boardSearchAdd.oninput = function() {
+                const searchTerm = this.value.toLowerCase();
+                const boardOptions = document.querySelectorAll('.board-option-add');
+                boardOptions.forEach(option => {
+                    const text = option.textContent.toLowerCase();
+                    option.style.display = text.includes(searchTerm) ? 'flex' : 'none';
+                });
+            };
         }
 
         function setupAddContentModal() {
@@ -1036,17 +1260,12 @@
             const websiteScrapeResults = document.getElementById('website-scrape-results');
             const detailsSection = document.getElementById('details-section');
             const saveButton = document.getElementById('save-button');
-            const boardSelect = document.getElementById('board-select');
-            const sectionSelect = document.getElementById('section-select');
             const pasteArea = document.getElementById('paste-area');
             const colorPicker = document.getElementById('color-picker');
 
             // Remove existing event listeners to avoid duplicates
             const newContentInput = contentInput.cloneNode(true);
             contentInput.parentNode.replaceChild(newContentInput, contentInput);
-            
-            const newBoardSelect = boardSelect.cloneNode(true);
-            boardSelect.parentNode.replaceChild(newBoardSelect, boardSelect);
             
             const newTitleInput = document.getElementById('title-input').cloneNode(true);
             document.getElementById('title-input').parentNode.replaceChild(newTitleInput, document.getElementById('title-input'));
@@ -1229,35 +1448,18 @@
                 }
             });
 
-            // Update sections when board is selected
-            newBoardSelect.addEventListener('change', async function() {
-                const boardId = this.value;
-                if (boardId) {
-                    try {
-                        const response = await fetch(`/get-sections/${boardId}`);
-                        const sections = await response.json();
-                        
-                        sectionSelect.innerHTML = '<option value="">Select a section...</option>';
-                        sections.forEach(section => {
-                            const option = document.createElement('option');
-                            option.value = section.id;
-                            option.textContent = section.name;
-                            sectionSelect.appendChild(option);
-                        });
-                    } catch (error) {
-                        console.error('Error loading sections:', error);
-                    }
-                }
-                updateSaveButton();
-            });
+            // Board and section selection is now handled by custom dropdowns
 
             // Update save button state
             function updateSaveButton() {
                 const hasContent = contentType !== 'none';
                 const hasTitle = newTitleInput.value.trim();
-                const hasBoard = newBoardSelect.value;
+                const hasBoard = selectedBoardId;
                 saveButton.disabled = !(hasContent && hasTitle && hasBoard);
             }
+            
+            // Make updateSaveButton available globally
+            window.updateSaveButton = updateSaveButton;
 
             // Add input listeners for title
             newTitleInput.addEventListener('input', updateSaveButton);
@@ -1270,8 +1472,6 @@
             // Reset form
             document.getElementById('content-input').value = '';
             document.getElementById('title-input').value = '';
-            document.getElementById('board-select').value = '';
-            document.getElementById('section-select').innerHTML = '<option value="">Select a section...</option>';
             document.getElementById('notes-input').value = '';
             document.getElementById('preview-container').style.display = 'none';
             document.getElementById('text-content').style.display = 'none';
@@ -1279,40 +1479,213 @@
             document.getElementById('details-section').style.display = 'none';
             document.getElementById('save-button').disabled = true;
             
+            // Reset custom dropdowns
+            document.getElementById('current-board-add').innerHTML = 'Select a board... <span class="chevron">▼</span>';
+            document.getElementById('current-section-add').innerHTML = 'No Section <span class="chevron">▼</span>';
+            document.getElementById('board-menu-add').classList.remove('active');
+            document.getElementById('section-menu-add').classList.remove('active');
+            selectedBoardId = null;
+            selectedSectionId = null;
+            
+            // Reset inline section form
+            cancelInlineSection();
+            
             // Reset color picker selection
             document.querySelectorAll('.color-option').forEach(option => {
                 option.classList.remove('selected');
             });
         }
 
+        // Inline section creation functions
+        function toggleInlineSectionForm() {
+            if (!selectedBoardId) {
+                alert('Please select a board first');
+                return;
+            }
+            
+            const form = document.getElementById('inline-section-form');
+            const sectionList = document.getElementById('section-list-add');
+            const input = document.getElementById('inline-section-name');
+            
+            if (form.style.display === 'none') {
+                // Show form
+                form.style.display = 'block';
+                sectionList.style.display = 'none';
+                input.value = '';
+                input.focus();
+                
+                // Add Enter key support
+                input.onkeypress = function(e) {
+                    if (e.key === 'Enter') {
+                        e.preventDefault();
+                        createInlineSection();
+                    }
+                };
+            } else {
+                // Hide form
+                cancelInlineSection();
+            }
+        }
+
+        function cancelInlineSection() {
+            document.getElementById('inline-section-form').style.display = 'none';
+            document.getElementById('section-list-add').style.display = 'block';
+            document.getElementById('inline-section-name').value = '';
+        }
+
+        async function createInlineSection() {
+            const sectionName = document.getElementById('inline-section-name').value.trim();
+            if (!sectionName) {
+                alert('Please enter a section name');
+                return;
+            }
+
+            if (!selectedBoardId) {
+                alert('Please select a board first');
+                return;
+            }
+
+            try {
+                const response = await fetch('/create-section', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ board_id: parseInt(selectedBoardId), name: sectionName })
+                });
+
+                const data = await response.json();
+                if (data.success && data.section) {
+                    // Add the new section to the custom dropdown
+                    const sectionListAdd = document.getElementById('section-list-add');
+                    const button = document.createElement('button');
+                    button.className = 'section-option-add';
+                    button.setAttribute('data-section-id', data.section.id);
+                    button.textContent = data.section.name;
+                    button.onclick = function() {
+                        selectSection(data.section.id, data.section.name);
+                    };
+                    sectionListAdd.appendChild(button);
+                    
+                    // Hide form and show list
+                    cancelInlineSection();
+                    
+                    // Select the newly created section
+                    selectSection(data.section.id, data.section.name);
+                } else {
+                    alert(data.error || 'Failed to create section');
+                }
+            } catch (error) {
+                console.error('Error creating section:', error);
+                alert('Failed to create section');
+            }
+        }
+
+        let selectedBoardId = null;
+        let selectedSectionId = null;
+
         function loadBoards() {
             fetch('/api/boards')
                 .then(response => response.json())
                 .then(boards => {
-                    const boardSelect = document.getElementById('board-select');
-                    boardSelect.innerHTML = '<option value="">Select a board...</option>';
+                    const boardListAdd = document.getElementById('board-list-add');
+                    boardListAdd.innerHTML = '';
                     
-                    // Get current board ID from URL if we're on a board page
+                    // Get current board from URL if on a board page
                     const currentPath = window.location.pathname;
                     const boardMatch = currentPath.match(/\/board\/(\d+)/);
                     const currentBoardId = boardMatch ? boardMatch[1] : null;
-                    
+
                     boards.forEach(board => {
-                        const option = document.createElement('option');
-                        option.value = board.id;
-                        option.textContent = board.name;
+                        const button = document.createElement('button');
+                        button.className = 'board-option-add';
+                        button.setAttribute('data-board-id', board.id);
+                        button.textContent = board.name;
                         
-                        // Set as selected if this is the current board
-                        if (currentBoardId && board.id == currentBoardId) {
-                            option.selected = true;
-                        }
+                        button.onclick = function() {
+                            selectBoard(board.id, board.name);
+                        };
                         
-                        boardSelect.appendChild(option);
+                        boardListAdd.appendChild(button);
                     });
+
+                    // If a board was pre-selected, select it
+                    if (currentBoardId) {
+                        const selectedBoard = boards.find(b => b.id == currentBoardId);
+                        if (selectedBoard) {
+                            selectBoard(selectedBoard.id, selectedBoard.name);
+                        }
+                    }
                 })
                 .catch(error => {
                     console.error('Error loading boards:', error);
                 });
+        }
+
+        function selectBoard(boardId, boardName) {
+            selectedBoardId = boardId;
+            document.getElementById('current-board-add').innerHTML = `${boardName} <span class="chevron">▼</span>`;
+            document.getElementById('board-menu-add').classList.remove('active');
+            
+            // Update selected state
+            document.querySelectorAll('.board-option-add').forEach(opt => {
+                opt.classList.remove('selected');
+            });
+            document.querySelector(`[data-board-id="${boardId}"]`).classList.add('selected');
+            
+            // Load sections for this board
+            loadSections(boardId);
+            
+            // Update save button
+            if (window.updateSaveButton) updateSaveButton();
+        }
+
+        function loadSections(boardId) {
+            fetch(`/get-sections/${boardId}`)
+                .then(response => response.json())
+                .then(sections => {
+                    const sectionListAdd = document.getElementById('section-list-add');
+                    sectionListAdd.innerHTML = '<button class="section-option-add" data-section-id="">No Section</button>';
+                    
+                    // Add click handler for "No Section"
+                    sectionListAdd.querySelector('[data-section-id=""]').onclick = function() {
+                        selectSection('', 'No Section');
+                    };
+                    
+                    sections.forEach(section => {
+                        const button = document.createElement('button');
+                        button.className = 'section-option-add';
+                        button.setAttribute('data-section-id', section.id);
+                        button.textContent = section.name;
+                        
+                        button.onclick = function() {
+                            selectSection(section.id, section.name);
+                        };
+                        
+                        sectionListAdd.appendChild(button);
+                    });
+                    
+                    // Hide inline form and show section list
+                    cancelInlineSection();
+                    
+                    // Reset selected section
+                    selectSection('', 'No Section');
+                })
+                .catch(error => {
+                    console.error('Error loading sections:', error);
+                });
+        }
+
+        function selectSection(sectionId, sectionName) {
+            selectedSectionId = sectionId || null;
+            document.getElementById('current-section-add').innerHTML = `${sectionName} <span class="chevron">▼</span>`;
+            document.getElementById('section-menu-add').classList.remove('active');
+            
+            // Update selected state
+            document.querySelectorAll('.section-option-add').forEach(opt => {
+                opt.classList.remove('selected');
+            });
+            const selector = sectionId ? `[data-section-id="${sectionId}"]` : '[data-section-id=""]';
+            const element = document.querySelector(selector);
+            if (element) element.classList.add('selected');
         }
 
         function saveContent() {
@@ -1321,8 +1694,6 @@
             const textPreview = document.getElementById('text-preview');
             const previewContainer = document.getElementById('preview-container');
             const titleInput = document.getElementById('title-input');
-            const boardSelect = document.getElementById('board-select');
-            const sectionSelect = document.getElementById('section-select');
             const notesInput = document.getElementById('notes-input');
             const saveButton = document.getElementById('save-button');
 
@@ -1330,7 +1701,7 @@
             const hasImage = previewContainer.style.display !== 'none' && imagePreview.src && imagePreview.src !== '';
             const hasText = textPreview.style.display !== 'none' && textPreview.textContent.trim() !== '';
             
-            if ((!hasImage && !hasText) || !titleInput.value.trim() || !boardSelect.value) {
+            if ((!hasImage && !hasText) || !titleInput.value.trim() || !selectedBoardId) {
                 return;
             }
 
@@ -1388,8 +1759,8 @@
             const content = {
                 image_url: imageUrl,
                 title: titleInput.value.trim(),
-                board_id: boardSelect.value,
-                section_id: sectionSelect.value || null,
+                board_id: selectedBoardId,
+                section_id: selectedSectionId,
                 notes: notesInput.value.trim(),
                 source_url: contentInput.value.trim()
             };
@@ -1632,5 +2003,11 @@
             }
         });
     </script>
+    {% block extra_js %}{% endblock %}
+    
+    <!-- Version footer -->
+    <div style="position: fixed; bottom: 8px; left: 50%; transform: translateX(-50%); font-size: 10px; color: #bbb; font-family: monospace; user-select: none; pointer-events: none; z-index: 1;">
+        v{{ VERSION }}
+    </div>
 </body>
 </html>

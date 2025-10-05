@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify, request, send_from_directory, redirect, url_for
+from flask import Flask, render_template, jsonify, request, send_from_directory, redirect, url_for, make_response
 import mysql.connector
 import os
 from mysql.connector import pooling
@@ -13,6 +13,12 @@ import unicodedata
 import time
 import base64
 import hashlib
+from functools import wraps
+from datetime import datetime
+
+# Import authentication modules
+from auth_utils import generate_magic_link_token, generate_session_token, verify_token
+from email_service import send_magic_link_email, send_welcome_email
 
 # Try to import redis, but make it optional
 try:
@@ -21,6 +27,13 @@ try:
 except ImportError:
     REDIS_AVAILABLE = False
     print("Redis module not available, running without cache")
+
+# Load version from VERSION file
+try:
+    with open('VERSION', 'r') as f:
+        VERSION = f.read().strip()
+except FileNotFoundError:
+    VERSION = 'unknown'
 
 app = Flask(__name__, static_folder='static')
 
@@ -45,6 +58,9 @@ else:
 def cache_view(timeout=300):
     def decorator(f):
         def wrapper(*args, **kwargs):
+            # Skip caching in development mode
+            if os.getenv('FLASK_ENV') == 'development':
+                return f(*args, **kwargs)
             if not redis_client:
                 return f(*args, **kwargs)
             cache_key = f"view/{request.path}"
@@ -172,16 +188,192 @@ def get_db_connection():
         print(f"Error getting database connection: {err}")
         raise
 
+# ============================================================================
+# AUTHENTICATION FUNCTIONS
+# ============================================================================
+
+def get_current_user():
+    """
+    Get the currently authenticated user from session cookie
+    Returns user dict or None
+    """
+    token = request.cookies.get('session_token')
+    if not token:
+        return None
+    
+    payload = verify_token(token, token_type='session')
+    if not payload:
+        return None
+    
+    return {
+        'id': payload.get('user_id'),
+        'email': payload.get('email')
+    }
+
+@app.context_processor
+def inject_version():
+    """Make VERSION available to all templates"""
+    return {'VERSION': VERSION}
+
+def login_required(f):
+    """
+    Decorator to require authentication for a route
+    """
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        user = get_current_user()
+        if not user:
+            return redirect(url_for('login_page'))
+        return f(*args, **kwargs)
+    return decorated_function
+
+def set_session_cookie(response, token):
+    """
+    Set secure session cookie with JWT token
+    """
+    is_production = os.getenv('FLASK_ENV') != 'development'
+    
+    response.set_cookie(
+        'session_token',
+        token,
+        max_age=int(os.getenv('SESSION_EXPIRY', 2592000)),  # 30 days default
+        secure=is_production,  # Only send over HTTPS in production
+        httponly=True,  # Prevent JavaScript access
+        samesite='Lax'  # CSRF protection
+    )
+    return response
+
+# ============================================================================
+# AUTHENTICATION ROUTES
+# ============================================================================
+
+@app.route('/auth/login', methods=['GET', 'POST'])
+def login_page():
+    """
+    Login page - show form or process magic link request
+    """
+    if request.method == 'GET':
+        # Show login page
+        return render_template('login.html')
+    
+    # POST - process magic link request
+    try:
+        data = request.get_json()
+        email = sanitize_string(data.get('email', ''), max_length=255).lower().strip()
+        
+        if not email or '@' not in email:
+            return jsonify({"error": "Valid email address is required"}), 400
+        
+        # Check if user exists, create if not
+        db = get_db_connection()
+        cursor = db.cursor(dictionary=True)
+        
+        cursor.execute("SELECT id FROM users WHERE email = %s", (email,))
+        user = cursor.fetchone()
+        
+        if not user:
+            # Create new user
+            cursor.execute(
+                "INSERT INTO users (email, created_at) VALUES (%s, NOW())",
+                (email,)
+            )
+            db.commit()
+            
+            # Send welcome email
+            send_welcome_email(email)
+        
+        cursor.close()
+        db.close()
+        
+        # Generate magic link token
+        token = generate_magic_link_token(email)
+        
+        # Create magic link URL
+        magic_link = f"{request.url_root}auth/verify?token={token}"
+        
+        # Send magic link email
+        if send_magic_link_email(email, magic_link):
+            return jsonify({
+                "success": True,
+                "message": "Magic link sent! Check your email."
+            })
+        else:
+            return jsonify({"error": "Failed to send email"}), 500
+            
+    except Exception as e:
+        print(f"Error in login: {str(e)}")
+        return jsonify({"error": "An error occurred"}), 500
+
+@app.route('/auth/verify')
+def verify_magic_link():
+    """
+    Verify magic link token and create session
+    """
+    token = request.args.get('token')
+    
+    if not token:
+        return render_template('auth_error.html', message="Invalid or missing token"), 400
+    
+    # Verify the magic link token
+    payload = verify_token(token, token_type='magic_link')
+    
+    if not payload:
+        return render_template('auth_error.html', message="This link has expired or is invalid. Please request a new one."), 400
+    
+    email = payload.get('email')
+    
+    # Get user from database
+    try:
+        db = get_db_connection()
+        cursor = db.cursor(dictionary=True)
+        
+        cursor.execute("SELECT id, email FROM users WHERE email = %s", (email,))
+        user = cursor.fetchone()
+        
+        if not user:
+            return render_template('auth_error.html', message="User not found"), 404
+        
+        # Update last login
+        cursor.execute("UPDATE users SET last_login = NOW() WHERE id = %s", (user['id'],))
+        db.commit()
+        
+        cursor.close()
+        db.close()
+        
+        # Generate session token
+        session_token = generate_session_token(user['id'], user['email'])
+        
+        # Create response and set cookie
+        response = make_response(redirect(url_for('gallery')))
+        set_session_cookie(response, session_token)
+        
+        return response
+        
+    except Exception as e:
+        print(f"Error in verify: {str(e)}")
+        return render_template('auth_error.html', message="An error occurred during authentication"), 500
+
+@app.route('/auth/logout')
+def logout():
+    """
+    Logout user by clearing session cookie
+    """
+    response = make_response(redirect(url_for('login_page')))
+    response.set_cookie('session_token', '', expires=0)
+    return response
+
 @app.route('/')
+@login_required
 @cache_view(timeout=300)  # Cache for 5 minutes
 def gallery():
+    user = get_current_user()
     db = None
     cursor = None
     try:
         db = get_db_connection()
         cursor = db.cursor(dictionary=True)
         
-        # Get boards with pin count and random pin image in a single query
+        # Get boards with pin count and random pin image in a single query (user-scoped)
         cursor.execute("""
             SELECT 
                 b.*,
@@ -190,15 +382,16 @@ def gallery():
                 (
                     SELECT p2.image_url 
                     FROM pins p2 
-                    WHERE p2.board_id = b.id 
+                    WHERE p2.board_id = b.id AND p2.user_id = %s
                     ORDER BY RAND() 
                     LIMIT 1
                 ) as random_pin_image_url
             FROM boards b
-            LEFT JOIN pins p ON b.id = p.board_id
+            LEFT JOIN pins p ON b.id = p.board_id AND p.user_id = %s
+            WHERE b.user_id = %s
             GROUP BY b.id
             ORDER BY b.name
-        """)
+        """, (user['id'], user['id'], user['id']))
         boards = cursor.fetchall()
         
         # Set default image for boards without pins
@@ -221,13 +414,15 @@ def gallery():
     return render_template('boards.html', boards=boards)
 
 @app.route('/board/<int:board_id>')
+@login_required
 def board(board_id):
+    user = get_current_user()
     try:
         db = get_db_connection()
         cursor = db.cursor(dictionary=True)
         
-        # Get board details
-        cursor.execute("SELECT * FROM boards WHERE id = %s", (board_id,))
+        # Get board details (user-scoped)
+        cursor.execute("SELECT * FROM boards WHERE id = %s AND user_id = %s", (board_id, user['id']))
         board = cursor.fetchone()
         if not board:
             return "Board not found", 404
@@ -236,7 +431,7 @@ def board(board_id):
         cursor.execute("SELECT * FROM sections WHERE board_id = %s ORDER BY name", (board_id,))
         sections = cursor.fetchall()
         
-        # Get pins for this board (including color data and cached images if table exists)
+        # Get pins for this board (including color data and cached images if table exists) (user-scoped)
         try:
             # Check if cached_images table exists
             cursor.execute("SHOW TABLES LIKE 'cached_images'")
@@ -250,9 +445,9 @@ def board(board_id):
                     FROM pins p 
                     LEFT JOIN sections s ON p.section_id = s.id 
                     LEFT JOIN cached_images ci ON p.cached_image_id = ci.id AND ci.cache_status = 'cached'
-                    WHERE p.board_id = %s 
+                    WHERE p.board_id = %s AND p.user_id = %s
                     ORDER BY p.created_at DESC
-                """, (board_id,))
+                """, (board_id, user['id']))
             else:
                 # Fallback query without cached images
                 cursor.execute("""
@@ -260,9 +455,9 @@ def board(board_id):
                            NULL as cached_filename, NULL as cache_status, NULL as cached_width, NULL as cached_height
                     FROM pins p 
                     LEFT JOIN sections s ON p.section_id = s.id 
-                    WHERE p.board_id = %s 
+                    WHERE p.board_id = %s AND p.user_id = %s
                     ORDER BY p.created_at DESC
-                """, (board_id,))
+                """, (board_id, user['id']))
         except Exception as e:
             # Fallback to basic query if there are any issues
             print(f"Warning: Could not check cached_images table, using fallback query: {e}")
@@ -276,8 +471,8 @@ def board(board_id):
             """, (board_id,))
         pins = cursor.fetchall()
         
-        # Get all boards for the move board functionality
-        cursor.execute("SELECT * FROM boards ORDER BY name")
+        # Get all boards for the move board functionality (user-scoped)
+        cursor.execute("SELECT * FROM boards WHERE user_id = %s ORDER BY name", (user['id'],))
         all_boards = cursor.fetchall()
         
         cursor.close()
@@ -300,7 +495,9 @@ def board(board_id):
         return "An error occurred", 500
 
 @app.route('/search', methods=['GET'])
+@login_required
 def search():
+    user = get_current_user()
     query = request.args.get('q', '').strip()
     if not query:
         return render_template('search.html', matching_boards=[], matching_pins=[], query=query)
@@ -311,13 +508,13 @@ def search():
         db = get_db_connection()
         cursor = db.cursor(dictionary=True)
         
-        board_sql = "SELECT * FROM boards WHERE name LIKE %s"
+        board_sql = "SELECT * FROM boards WHERE name LIKE %s AND user_id = %s"
         search_term = f"%{query}%"
-        cursor.execute(board_sql, (search_term,))
+        cursor.execute(board_sql, (search_term, user['id']))
         matching_boards = cursor.fetchall()
         
         for board in matching_boards:
-            cursor.execute("SELECT image_url FROM pins WHERE board_id = %s ORDER BY RAND() LIMIT 1", (board['id'],))
+            cursor.execute("SELECT image_url FROM pins WHERE board_id = %s AND user_id = %s ORDER BY RAND() LIMIT 1", (board['id'], user['id']))
             pin = cursor.fetchone()
             board['random_pin_image_url'] = pin['image_url'] if pin else 'path/to/default_image.jpg'
 
@@ -325,9 +522,9 @@ def search():
             SELECT p.*, b.name as board_name 
             FROM pins p 
             LEFT JOIN boards b ON p.board_id = b.id 
-            WHERE p.title LIKE %s OR p.description LIKE %s
+            WHERE (p.title LIKE %s OR p.description LIKE %s) AND p.user_id = %s
         """
-        cursor.execute(pin_sql, (search_term, search_term))
+        cursor.execute(pin_sql, (search_term, search_term, user['id']))
         matching_pins = cursor.fetchall()
     except mysql.connector.Error as e:
         return jsonify({"error": str(e)}), 500
@@ -340,11 +537,13 @@ def search():
     return render_template('search.html', matching_boards=matching_boards, matching_pins=matching_pins, query=query)
 
 @app.route('/add-content')
+@login_required
 def add_content():
+    user = get_current_user()
     try:
         db = get_db_connection()
         cursor = db.cursor(dictionary=True)
-        cursor.execute("SELECT * FROM boards")
+        cursor.execute("SELECT * FROM boards WHERE user_id = %s", (user['id'],))
         boards = cursor.fetchall()
         cursor.close()
         db.close()
@@ -365,6 +564,7 @@ def add_content():
                 pass  # Ignore errors during cleanup
 
 @app.route('/scrape-website', methods=['POST'])
+@login_required
 def scrape_website():
     data = request.get_json()
     url = sanitize_url(data.get('url', ''))
@@ -419,12 +619,18 @@ def scrape_website():
         return jsonify({'error': str(e)}), 500
 
 @app.route('/get-sections/<int:board_id>')
+@login_required
 def get_sections(board_id):
+    user = get_current_user()
     db = None
     cursor = None
     try:
         db = get_db_connection()
         cursor = db.cursor(dictionary=True)
+        # Verify board belongs to user, then get sections
+        cursor.execute("SELECT id FROM boards WHERE id = %s AND user_id = %s", (board_id, user['id']))
+        if not cursor.fetchone():
+            return jsonify({"error": "Board not found"}), 404
         cursor.execute("SELECT * FROM sections WHERE board_id = %s", (board_id,))
         sections = cursor.fetchall()
     except mysql.connector.Error as e:
@@ -505,7 +711,9 @@ def save_pasted_image(data_url):
         return None, None
 
 @app.route('/add-pin', methods=['POST'])
+@login_required
 def add_pin():
+    user = get_current_user()
     db = None
     cursor = None
     try:
@@ -545,15 +753,15 @@ def add_pin():
         if has_cached_columns and cached_image_id:
             # Insert with cached image information
             cursor.execute("""
-                INSERT INTO pins (board_id, section_id, title, description, notes, image_url, link, cached_image_id, uses_cached_image)
-                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
-            """, (board_id, section_id, title, description, notes, image_url, source_url, cached_image_id, True))
+                INSERT INTO pins (board_id, section_id, title, description, notes, image_url, link, cached_image_id, uses_cached_image, user_id)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+            """, (board_id, section_id, title, description, notes, image_url, source_url, cached_image_id, True, user['id']))
         else:
             # Insert without cached image information (fallback)
             cursor.execute("""
-                INSERT INTO pins (board_id, section_id, title, description, notes, image_url, link)
-                VALUES (%s, %s, %s, %s, %s, %s, %s)
-            """, (board_id, section_id, title, description, notes, image_url, source_url))
+                INSERT INTO pins (board_id, section_id, title, description, notes, image_url, link, user_id)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
+            """, (board_id, section_id, title, description, notes, image_url, source_url, user['id']))
         
         pin_id = cursor.lastrowid
         db.commit()
@@ -586,7 +794,9 @@ def add_pin():
             db.close()
 
 @app.route('/update-pin/<int:pin_id>', methods=['POST'])
+@login_required
 def update_pin(pin_id):
+    user = get_current_user()
     try:
         data = request.get_json()
         # print(f"Received update request for pin {pin_id}: {data}")  # Debug log
@@ -607,8 +817,8 @@ def update_pin(pin_id):
         db = get_db_connection()
         cursor = db.cursor()
         
-        # First verify the pin exists
-        cursor.execute("SELECT title FROM pins WHERE id = %s", (pin_id,))
+        # First verify the pin exists and belongs to user (user-scoped)
+        cursor.execute("SELECT title FROM pins WHERE id = %s AND user_id = %s", (pin_id, user['id']))
         result = cursor.fetchone()
         if not result:
             # print(f"Pin {pin_id} not found")  # Debug log
@@ -638,14 +848,15 @@ def update_pin(pin_id):
             # print("No fields to update")  # Debug log
             return jsonify({"error": "No fields to update"}), 400
             
-        # Add the pin_id to the values list
+        # Add the pin_id and user_id to the values list
         update_values.append(pin_id)
+        update_values.append(user['id'])
         
-        # Build and execute the update query
+        # Build and execute the update query (user-scoped)
         update_query = f"""
             UPDATE pins
             SET {', '.join(update_fields)}
-            WHERE id = %s
+            WHERE id = %s AND user_id = %s
         """
         
         # print(f"Executing query: {update_query}")  # Debug log
@@ -672,12 +883,14 @@ def update_pin(pin_id):
             db.close()
 
 @app.route('/pin/<int:pin_id>')
+@login_required
 def view_pin(pin_id):
+    user = get_current_user()
     try:
         db = get_db_connection()
         cursor = db.cursor(dictionary=True)
         
-        # Get pin details with board and section names
+        # Get pin details with board and section names (user-scoped)
         cursor.execute("""
             SELECT p.*, b.name as board_name, s.name as section_name,
                    uh.status as link_status, uh.archive_url
@@ -685,16 +898,16 @@ def view_pin(pin_id):
             LEFT JOIN boards b ON p.board_id = b.id
             LEFT JOIN sections s ON p.section_id = s.id
             LEFT JOIN url_health uh ON p.id = uh.pin_id
-            WHERE p.id = %s
-        """, (pin_id,))
+            WHERE p.id = %s AND p.user_id = %s
+        """, (pin_id, user['id']))
         
         pin = cursor.fetchone()
         
         if not pin:
             return "Pin not found", 404
             
-        # Get all boards for the board selector
-        cursor.execute("SELECT * FROM boards ORDER BY name")
+        # Get all boards for the board selector (user-scoped)
+        cursor.execute("SELECT * FROM boards WHERE user_id = %s ORDER BY name", (user['id'],))
         boards = cursor.fetchall()
         
         # Get all sections for the current board
@@ -710,7 +923,9 @@ def view_pin(pin_id):
         return "An error occurred", 500
 
 @app.route('/create-board', methods=['POST'])
+@login_required
 def create_board():
+    user = get_current_user()
     try:
         data = request.get_json()
         if data is None:
@@ -728,17 +943,17 @@ def create_board():
             # Create URL-friendly slug
             slug = re.sub(r'[^a-z0-9]+', '-', board_name.lower()).strip('-')
             
-            # Check if board with same name exists
-            cursor.execute("SELECT id FROM boards WHERE name = %s", (board_name,))
+            # Check if board with same name exists (user-scoped)
+            cursor.execute("SELECT id FROM boards WHERE name = %s AND user_id = %s", (board_name, user['id']))
             existing_board = cursor.fetchone()
             if existing_board:
-                return jsonify({"error": "A board with this name already exists"}), 409
+                return jsonify({"error": "You already have a board with this name"}), 409
             
-            # Create the new board
+            # Create the new board (with user_id)
             cursor.execute("""
-                INSERT INTO boards (name, slug)
-                VALUES (%s, %s)
-            """, (board_name, slug))
+                INSERT INTO boards (name, slug, user_id)
+                VALUES (%s, %s, %s)
+            """, (board_name, slug, user['id']))
             
             board_id = cursor.lastrowid
             db.commit()
@@ -778,7 +993,9 @@ def create_board():
             db.close()
 
 @app.route('/move-pin/<int:pin_id>', methods=['POST'])
+@login_required
 def move_pin(pin_id):
+    user = get_current_user()
     data = request.get_json()
     board_id = sanitize_integer(data.get('board_id'), min_value=1)
     pin_id = sanitize_integer(pin_id, min_value=1)
@@ -795,13 +1012,13 @@ def move_pin(pin_id):
         db = get_db_connection()
         cursor = db.cursor()
         
-        # First verify the pin exists
-        cursor.execute("SELECT id FROM pins WHERE id = %s", (pin_id,))
+        # First verify the pin exists and belongs to user (user-scoped)
+        cursor.execute("SELECT id FROM pins WHERE id = %s AND user_id = %s", (pin_id, user['id']))
         if not cursor.fetchone():
             return jsonify({"error": "Pin not found"}), 404
         
-        # Then verify the target board exists
-        cursor.execute("SELECT id FROM boards WHERE id = %s", (board_id,))
+        # Then verify the target board exists and belongs to user (user-scoped)
+        cursor.execute("SELECT id FROM boards WHERE id = %s AND user_id = %s", (board_id, user['id']))
         if not cursor.fetchone():
             return jsonify({"error": "Target board not found"}), 404
         
@@ -828,7 +1045,9 @@ def move_pin(pin_id):
             db.close()
 
 @app.route('/create-section', methods=['POST'])
+@login_required
 def create_section():
+    user = get_current_user()
     try:
         data = request.get_json()
         board_id = sanitize_integer(data.get('board_id'))
@@ -839,6 +1058,11 @@ def create_section():
             
         db = get_db_connection()
         cursor = db.cursor()
+        
+        # Verify board belongs to user
+        cursor.execute("SELECT id FROM boards WHERE id = %s AND user_id = %s", (board_id, user['id']))
+        if not cursor.fetchone():
+            return jsonify({"error": "Board not found"}), 404
         
         cursor.execute("""
             INSERT INTO sections (board_id, name)
@@ -864,7 +1088,9 @@ def create_section():
         db.close()
 
 @app.route('/update-section/<int:section_id>', methods=['POST'])
+@login_required
 def update_section(section_id):
+    user = get_current_user()
     try:
         data = request.get_json()
         name = sanitize_string(data.get('name', ''), max_length=255)
@@ -873,7 +1099,16 @@ def update_section(section_id):
             return jsonify({"error": "Section name is required"}), 400
             
         db = get_db_connection()
-        cursor = db.cursor()
+        cursor = db.cursor(dictionary=True)
+        
+        # Verify section's board belongs to user
+        cursor.execute("""
+            SELECT s.id FROM sections s
+            JOIN boards b ON s.board_id = b.id
+            WHERE s.id = %s AND b.user_id = %s
+        """, (section_id, user['id']))
+        if not cursor.fetchone():
+            return jsonify({"error": "Section not found"}), 404
         
         cursor.execute("""
             UPDATE sections
@@ -898,18 +1133,24 @@ def update_section(section_id):
         db.close()
 
 @app.route('/delete-section/<int:section_id>', methods=['POST'])
+@login_required
 def delete_section(section_id):
+    user = get_current_user()
     try:
         db = get_db_connection()
-        cursor = db.cursor()
+        cursor = db.cursor(dictionary=True)
         
-        # First get the board_id for this section
-        cursor.execute("SELECT board_id FROM sections WHERE id = %s", (section_id,))
+        # First get the board_id for this section and verify ownership
+        cursor.execute("""
+            SELECT s.board_id FROM sections s
+            JOIN boards b ON s.board_id = b.id
+            WHERE s.id = %s AND b.user_id = %s
+        """, (section_id, user['id']))
         result = cursor.fetchone()
         if not result:
             return jsonify({"error": "Section not found"}), 404
             
-        board_id = result[0]
+        board_id = result['board_id']
         
         # Delete the section (this will set section_id to NULL for any pins in this section due to ON DELETE SET NULL)
         cursor.execute("DELETE FROM sections WHERE id = %s", (section_id,))
@@ -927,7 +1168,9 @@ def delete_section(section_id):
         db.close()
 
 @app.route('/move-pin-to-section/<int:pin_id>', methods=['POST'])
+@login_required
 def move_pin_to_section(pin_id):
+    user = get_current_user()
     try:
         data = request.get_json()
         section_id = sanitize_integer(data.get('section_id'))
@@ -938,8 +1181,8 @@ def move_pin_to_section(pin_id):
         db = get_db_connection()
         cursor = db.cursor()
         
-        # Verify the pin exists
-        cursor.execute("SELECT board_id FROM pins WHERE id = %s", (pin_id,))
+        # Verify the pin exists and belongs to user (user-scoped)
+        cursor.execute("SELECT board_id FROM pins WHERE id = %s AND user_id = %s", (pin_id, user['id']))
         result = cursor.fetchone()
         if not result:
             return jsonify({"error": "Pin not found"}), 404
@@ -974,7 +1217,9 @@ def move_pin_to_section(pin_id):
         db.close()
 
 @app.route('/rename-board/<int:board_id>', methods=['POST'])
+@login_required
 def rename_board(board_id):
+    user = get_current_user()
     try:
         data = request.get_json()
         new_name = data.get('name', '').strip()
@@ -985,7 +1230,7 @@ def rename_board(board_id):
         db = get_db_connection()
         cursor = db.cursor()
         
-        cursor.execute("UPDATE boards SET name = %s WHERE id = %s", (new_name, board_id))
+        cursor.execute("UPDATE boards SET name = %s WHERE id = %s AND user_id = %s", (new_name, board_id, user['id']))
         db.commit()
         
         cursor.close()
@@ -1000,7 +1245,9 @@ def rename_board(board_id):
         return jsonify({"error": "Failed to rename board"}), 500
 
 @app.route('/move-board/<int:board_id>', methods=['POST'])
+@login_required
 def move_board(board_id):
+    user = get_current_user()
     try:
         data = request.get_json()
         target_board_id = data.get('target_board_id')
@@ -1011,16 +1258,16 @@ def move_board(board_id):
         db = get_db_connection()
         cursor = db.cursor()
         
-        # Get the source board name to use as section name
-        cursor.execute("SELECT name FROM boards WHERE id = %s", (board_id,))
+        # Get the source board name to use as section name (user-scoped)
+        cursor.execute("SELECT name FROM boards WHERE id = %s AND user_id = %s", (board_id, user['id']))
         source_board = cursor.fetchone()
         if not source_board:
             return jsonify({"error": "Source board not found"}), 404
             
         source_board_name = source_board[0]
         
-        # Check if target board exists
-        cursor.execute("SELECT id FROM boards WHERE id = %s", (target_board_id,))
+        # Check if target board exists and belongs to user (user-scoped)
+        cursor.execute("SELECT id FROM boards WHERE id = %s AND user_id = %s", (target_board_id, user['id']))
         if not cursor.fetchone():
             return jsonify({"error": "Target board not found"}), 404
         
@@ -1032,12 +1279,12 @@ def move_board(board_id):
         
         new_section_id = cursor.lastrowid
         
-        # Move all pins from source board to target board and assign them to the new section
+        # Move all pins from source board to target board and assign them to the new section (user-scoped)
         cursor.execute("""
             UPDATE pins 
             SET board_id = %s, section_id = %s 
-            WHERE board_id = %s
-        """, (target_board_id, new_section_id, board_id))
+            WHERE board_id = %s AND user_id = %s
+        """, (target_board_id, new_section_id, board_id, user['id']))
         
         # Move any existing sections from source board to target board
         # (These will become subsections within the new section)
@@ -1047,8 +1294,8 @@ def move_board(board_id):
             WHERE board_id = %s
         """, (target_board_id, board_id))
         
-        # Finally, delete the original board
-        cursor.execute("DELETE FROM boards WHERE id = %s", (board_id,))
+        # Finally, delete the original board (user-scoped)
+        cursor.execute("DELETE FROM boards WHERE id = %s AND user_id = %s", (board_id, user['id']))
         
         db.commit()
         
@@ -1064,19 +1311,21 @@ def move_board(board_id):
         return jsonify({"error": "Failed to move board"}), 500
 
 @app.route('/delete-board/<int:board_id>', methods=['POST'])
+@login_required
 def delete_board(board_id):
+    user = get_current_user()
     try:
         db = get_db_connection()
         cursor = db.cursor()
         
-        # First, delete all pins in the board
-        cursor.execute("DELETE FROM pins WHERE board_id = %s", (board_id,))
+        # First, delete all pins in the board (user-scoped)
+        cursor.execute("DELETE FROM pins WHERE board_id = %s AND user_id = %s", (board_id, user['id']))
         
         # Then, delete all sections in the board
         cursor.execute("DELETE FROM sections WHERE board_id = %s", (board_id,))
         
-        # Finally, delete the board itself
-        cursor.execute("DELETE FROM boards WHERE id = %s", (board_id,))
+        # Finally, delete the board itself (user-scoped)
+        cursor.execute("DELETE FROM boards WHERE id = %s AND user_id = %s", (board_id, user['id']))
         
         db.commit()
         
@@ -1092,13 +1341,15 @@ def delete_board(board_id):
         return jsonify({"error": "Failed to delete board"}), 500
 
 @app.route('/random')
+@login_required
 def random_pin():
+    user = get_current_user()
     try:
         db = get_db_connection()
         cursor = db.cursor(dictionary=True)
         
-        # First get the total count of pins
-        cursor.execute("SELECT COUNT(*) as count FROM pins")
+        # First get the total count of pins (user-scoped)
+        cursor.execute("SELECT COUNT(*) as count FROM pins WHERE user_id = %s", (user['id'],))
         total_pins = cursor.fetchone()['count']
         
         if total_pins == 0:
@@ -1107,14 +1358,15 @@ def random_pin():
         # Get a random offset
         random_offset = random.randint(0, total_pins - 1)
         
-        # Get the random pin with a single efficient query
+        # Get the random pin with a single efficient query (user-scoped)
         cursor.execute("""
             SELECT p.*, b.name as board_name, s.name as section_name
             FROM pins p
             LEFT JOIN boards b ON p.board_id = b.id
             LEFT JOIN sections s ON p.section_id = s.id
+            WHERE p.user_id = %s
             LIMIT 1 OFFSET %s
-        """, (random_offset,))
+        """, (user['id'], random_offset))
         
         pin = cursor.fetchone()
         
@@ -1141,8 +1393,10 @@ def serve_cached_image(filename):
         return "Cached image not found", 404
 
 @app.route('/cache-images', methods=['POST'])
+@login_required
 def cache_images():
     """Trigger image caching for external images"""
+    user = get_current_user()
     try:
         data = request.get_json()
         limit = data.get('limit', 10) if data else 10
@@ -1175,12 +1429,14 @@ def cache_images():
 
 
 @app.route('/api/boards')
+@login_required
 def api_boards():
-    """Get all boards for API"""
+    """Get all boards for API (user-scoped)"""
+    user = get_current_user()
     try:
         db = get_db_connection()
         cursor = db.cursor(dictionary=True)
-        cursor.execute("SELECT * FROM boards ORDER BY name")
+        cursor.execute("SELECT * FROM boards WHERE user_id = %s ORDER BY name", (user['id'],))
         boards = cursor.fetchall()
         cursor.close()
         db.close()
@@ -1190,12 +1446,19 @@ def api_boards():
         return jsonify({"error": str(e)}), 500
 
 @app.route('/api/board-status/<int:board_id>')
+@login_required
 def board_status(board_id):
+    user = get_current_user()
     try:
         db = get_db_connection()
         cursor = db.cursor(dictionary=True)
         
-        # Get board stats including URL health
+        # Verify board belongs to user
+        cursor.execute("SELECT id FROM boards WHERE id = %s AND user_id = %s", (board_id, user['id']))
+        if not cursor.fetchone():
+            return jsonify({"error": "Board not found"}), 404
+        
+        # Get board stats including URL health (user-scoped)
         cursor.execute("""
             SELECT 
                 COUNT(*) as total_pins,
@@ -1208,27 +1471,27 @@ def board_status(board_id):
                 COUNT(CASE WHEN uh.status = 'archived' THEN 1 END) as archived_links
             FROM pins p
             LEFT JOIN url_health uh ON p.id = uh.pin_id
-            WHERE p.board_id = %s
-        """, (board_id,))
+            WHERE p.board_id = %s AND p.user_id = %s
+        """, (board_id, user['id']))
         
         stats = cursor.fetchone()
         
-        # Get detailed cached pin information for dynamic updates
+        # Get detailed cached pin information for dynamic updates (user-scoped)
         cursor.execute("""
             SELECT p.id, ci.cached_filename
             FROM pins p
             LEFT JOIN cached_images ci ON p.cached_image_id = ci.id AND ci.cache_status = 'cached'
-            WHERE p.board_id = %s AND p.uses_cached_image = 1 AND ci.cached_filename IS NOT NULL
-        """, (board_id,))
+            WHERE p.board_id = %s AND p.user_id = %s AND p.uses_cached_image = 1 AND ci.cached_filename IS NOT NULL
+        """, (board_id, user['id']))
         
         cached_pins = cursor.fetchall()
         
-        # Get detailed color extraction information
+        # Get detailed color extraction information (user-scoped)
         cursor.execute("""
             SELECT id, dominant_color_1, dominant_color_2
             FROM pins
-            WHERE board_id = %s AND colors_extracted = 1
-        """, (board_id,))
+            WHERE board_id = %s AND user_id = %s AND colors_extracted = 1
+        """, (board_id, user['id']))
         
         extracted_pins = cursor.fetchall()
         
@@ -1255,7 +1518,9 @@ def board_status(board_id):
         return jsonify({"success": False, "error": str(e)}), 500
 
 @app.route('/api/check-url-health/<int:board_id>', methods=['POST'])
+@login_required
 def check_url_health_for_board(board_id):
+    user = get_current_user()
     try:
         data = request.get_json() or {}
         limit = data.get('limit', 10)  # Default to checking 10 URLs at a time
@@ -1263,16 +1528,21 @@ def check_url_health_for_board(board_id):
         db = get_db_connection()
         cursor = db.cursor(dictionary=True)
         
-        # Get pins with URLs that haven't been checked recently (or at all)
+        # Verify board belongs to user
+        cursor.execute("SELECT id FROM boards WHERE id = %s AND user_id = %s", (board_id, user['id']))
+        if not cursor.fetchone():
+            return jsonify({"error": "Board not found"}), 404
+        
+        # Get pins with URLs that haven't been checked recently (or at all) (user-scoped)
         cursor.execute("""
             SELECT p.id as pin_id, p.link as url
             FROM pins p
             LEFT JOIN url_health uh ON p.id = uh.pin_id
-            WHERE p.board_id = %s 
+            WHERE p.board_id = %s AND p.user_id = %s
             AND p.link IS NOT NULL 
             AND (uh.last_checked IS NULL OR uh.last_checked < DATE_SUB(NOW(), INTERVAL 1 MONTH))
             LIMIT %s
-        """, (board_id, limit))
+        """, (board_id, user['id'], limit))
         
         urls_to_check = cursor.fetchall()
         
@@ -1340,37 +1610,44 @@ def check_url_health_for_board(board_id):
         return jsonify({"success": False, "error": str(e)}), 500
 
 @app.route('/api/debug-url-health/<int:board_id>')
+@login_required
 def debug_url_health(board_id):
     """Debug endpoint to check URL health status for a specific board"""
+    user = get_current_user()
     try:
         db = get_db_connection()
         cursor = db.cursor(dictionary=True)
         
-        # Get all pins with links on this board
+        # Verify board belongs to user
+        cursor.execute("SELECT id FROM boards WHERE id = %s AND user_id = %s", (board_id, user['id']))
+        if not cursor.fetchone():
+            return jsonify({"error": "Board not found"}), 404
+        
+        # Get all pins with links on this board (user-scoped)
         cursor.execute("""
             SELECT p.id, p.title, p.link, uh.status, uh.last_checked
             FROM pins p
             LEFT JOIN url_health uh ON p.id = uh.pin_id
-            WHERE p.board_id = %s AND p.link IS NOT NULL
+            WHERE p.board_id = %s AND p.user_id = %s AND p.link IS NOT NULL
             ORDER BY p.id
-        """, (board_id,))
+        """, (board_id, user['id']))
         
         pins_with_links = cursor.fetchall()
         
-        # Get pins that would be checked by the health checker
+        # Get pins that would be checked by the health checker (user-scoped)
         cursor.execute("""
             SELECT p.id as pin_id, p.link as url, uh.last_checked, uh.status
             FROM pins p
             LEFT JOIN url_health uh ON p.id = uh.pin_id
-            WHERE p.board_id = %s 
+            WHERE p.board_id = %s AND p.user_id = %s
             AND p.link IS NOT NULL 
             AND (uh.last_checked IS NULL OR uh.last_checked < DATE_SUB(NOW(), INTERVAL 1 MONTH))
             LIMIT 20
-        """, (board_id,))
+        """, (board_id, user['id']))
         
         urls_to_check = cursor.fetchall()
         
-        # Get counts
+        # Get counts (user-scoped)
         cursor.execute("""
             SELECT 
                 COUNT(CASE WHEN p.link IS NOT NULL THEN 1 END) as pins_with_links,
@@ -1381,8 +1658,8 @@ def debug_url_health(board_id):
                 COUNT(CASE WHEN uh.status = 'unknown' THEN 1 END) as unknown_links
             FROM pins p
             LEFT JOIN url_health uh ON p.id = uh.pin_id
-            WHERE p.board_id = %s
-        """, (board_id,))
+            WHERE p.board_id = %s AND p.user_id = %s
+        """, (board_id, user['id']))
         
         stats = cursor.fetchone()
         
@@ -1404,7 +1681,9 @@ def debug_url_health(board_id):
         return jsonify({"success": False, "error": f"Error: {str(e)}"}), 500
 
 @app.route('/save-pin-colors/<int:pin_id>', methods=['POST'])
+@login_required
 def save_pin_colors(pin_id):
+    user = get_current_user()
     try:
         data = request.get_json()
         dominant_color_1 = data.get('dominant_color_1')
@@ -1415,6 +1694,11 @@ def save_pin_colors(pin_id):
         
         db = get_db_connection()
         cursor = db.cursor()
+        
+        # Verify pin belongs to user
+        cursor.execute("SELECT id FROM pins WHERE id = %s AND user_id = %s", (pin_id, user['id']))
+        if not cursor.fetchone():
+            return jsonify({"error": "Pin not found"}), 404
         
         # Update the pin with extracted colors
         cursor.execute("""
@@ -1439,21 +1723,23 @@ def save_pin_colors(pin_id):
         db.close()
 
 @app.route('/delete-pin/<int:pin_id>', methods=['POST'])
+@login_required
 def delete_pin(pin_id):
+    user = get_current_user()
     try:
         db = get_db_connection()
         cursor = db.cursor()
         
-        # First get the board_id for this pin
-        cursor.execute("SELECT board_id FROM pins WHERE id = %s", (pin_id,))
+        # First get the board_id for this pin (user-scoped)
+        cursor.execute("SELECT board_id FROM pins WHERE id = %s AND user_id = %s", (pin_id, user['id']))
         result = cursor.fetchone()
         if not result:
             return jsonify({"error": "Pin not found"}), 404
             
         board_id = result[0]
         
-        # Delete the pin
-        cursor.execute("DELETE FROM pins WHERE id = %s", (pin_id,))
+        # Delete the pin (user-scoped)
+        cursor.execute("DELETE FROM pins WHERE id = %s AND user_id = %s", (pin_id, user['id']))
         db.commit()
         
         return jsonify({
