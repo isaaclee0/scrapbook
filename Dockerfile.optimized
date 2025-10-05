@@ -4,7 +4,7 @@ FROM python:3.11-slim as builder
 # Install build dependencies
 RUN apt-get update && apt-get install -y \
     gcc \
-    default-libmysqlclient-dev \
+    libmariadb-dev \
     pkg-config \
     libjpeg-dev \
     libpng-dev \
@@ -50,10 +50,10 @@ RUN groupadd -r appuser && useradd -r -g appuser appuser
 
 # Install only runtime dependencies
 RUN apt-get update && apt-get install -y \
-    default-libmysqlclient21 \
+    libmariadb3 \
     libjpeg62-turbo \
     libpng16-16 \
-    libtiff5 \
+    libtiff6 \
     libwebp7 \
     libfreetype6 \
     liblcms2-2 \

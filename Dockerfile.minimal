@@ -10,7 +10,7 @@ WORKDIR /build
 RUN apt-get update && apt-get install -y --no-install-recommends \
     gcc \
     g++ \
-    default-libmysqlclient-dev \
+    libmariadb-dev \
     pkg-config \
     libjpeg-dev \
     libpng-dev \
@@ -58,11 +58,11 @@ RUN groupadd -r appuser && useradd -r -g appuser appuser
 # Install ONLY runtime dependencies (no dev packages, no gcc)
 RUN apt-get update && apt-get install -y --no-install-recommends \
     # MySQL runtime library (not dev)
-    default-libmysqlclient21 \
+    libmariadb3 \
     # Image processing runtime libraries (not dev)
     libjpeg62-turbo \
     libpng16-16 \
-    libtiff5 \
+    libtiff6 \
     libwebp7 \
     libfreetype6 \
     liblcms2-2 \
