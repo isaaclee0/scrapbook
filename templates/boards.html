@@ -2,6 +2,11 @@
 
 {% block content %}
     <div class="sort-container">
+        <div class="flex items-center space-x-3 bg-gray-50 px-3 py-2 rounded-lg">
+            <label for="boardSizeSlider" class="text-sm font-medium text-gray-700">Size:</label>
+            <input type="range" id="boardSizeSlider" min="1" max="5" value="3" class="w-20 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider">
+            <span id="boardSizeValue" class="text-sm font-medium text-gray-700 min-w-[4rem]">Medium</span>
+        </div>
         <select id="sortBoards" onchange="sortBoards()">
             <option value="name_asc">Alphabetically (A to Z)</option>
             <option value="name_desc">Alphabetically (Z to A)</option>
@@ -32,6 +37,8 @@
             padding: 20px;
             display: flex;
             justify-content: flex-end;
+            align-items: center;
+            gap: 16px;
         }
 
         #sortBoards {
@@ -51,7 +58,7 @@
 
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(var(--board-tile-size, 200px), 1fr));
             gap: 16px;
             padding: 20px;
         }
@@ -68,13 +75,14 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
         .board-image {
-            width: 150px;
-            height: 150px;
+            width: var(--board-image-size, 150px);
+            height: var(--board-image-size, 150px);
             object-fit: cover;
             border-radius: 50%;
             margin: 0 auto 10px;
             display: block;
             background-color: #f0f0f0;
+            transition: width 0.2s, height 0.2s;
         }
         .board h3 {
             margin: 0;
@@ -88,11 +96,73 @@
         }
         @media (max-width: 600px) {
             .gallery { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
-            .board-image { width: 100px; height: 100px; }
+            /* Board image size on mobile scales down slightly but still respects the slider */
+            .board-image { 
+                width: calc(var(--board-image-size, 150px) * 0.75);
+                height: calc(var(--board-image-size, 150px) * 0.75);
+            }
         }
     </style>
 
     <script>
+        // Board size slider handling
+        document.addEventListener('DOMContentLoaded', function() {
+            const boardSizeSlider = document.getElementById('boardSizeSlider');
+            const boardSizeValue = document.getElementById('boardSizeValue');
+            
+            if (boardSizeSlider && boardSizeValue) {
+                const sizeLabels = ['Tiny', 'Small', 'Medium', 'Large', 'Huge'];
+                
+                function updateBoardSize() {
+                    const sizeLevel = parseInt(boardSizeSlider.value);
+                    const sizeLabel = sizeLabels[sizeLevel - 1];
+                    boardSizeValue.textContent = sizeLabel;
+                    localStorage.setItem('boardTileSize', sizeLevel);
+                    
+                    // Adjust tile size and image size based on slider
+                    const tileSizes = {
+                        1: '150px',  // Tiny - smaller tiles, more columns
+                        2: '180px',  // Small
+                        3: '200px',  // Medium (default)
+                        4: '250px',  // Large
+                        5: '320px'   // Huge - larger tiles, fewer columns
+                    };
+                    
+                    const imageSizes = {
+                        1: '100px',  // Tiny
+                        2: '120px',  // Small
+                        3: '150px',  // Medium (default)
+                        4: '180px',  // Large
+                        5: '220px'   // Huge
+                    };
+                    
+                    const tileSize = tileSizes[sizeLevel] || tileSizes[3];
+                    const imageSize = imageSizes[sizeLevel] || imageSizes[3];
+                    
+                    document.documentElement.style.setProperty('--board-tile-size', tileSize);
+                    document.documentElement.style.setProperty('--board-image-size', imageSize);
+                }
+                
+                // Debounced update function for smoother slider experience
+                let updateTimeout;
+                function debouncedUpdateBoardSize() {
+                    clearTimeout(updateTimeout);
+                    updateTimeout = setTimeout(updateBoardSize, 50);
+                }
+                
+                boardSizeSlider.addEventListener('input', debouncedUpdateBoardSize);
+                boardSizeSlider.addEventListener('change', updateBoardSize);
+                
+                // Load saved board size from localStorage
+                const savedBoardSize = localStorage.getItem('boardTileSize') || 3;
+                boardSizeSlider.value = savedBoardSize;
+                boardSizeValue.textContent = sizeLabels[savedBoardSize - 1];
+                
+                // Set initial board size
+                updateBoardSize();
+            }
+        });
+
         // Debounce the sort function to prevent rapid re-sorting
         let sortTimeout;
         function sortBoards() {

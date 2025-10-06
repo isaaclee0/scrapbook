@@ -47,6 +47,13 @@ class DatabaseVersionManager:
                 'description': 'Add cached images table for storing low-quality image copies',
                 'script': 'add_cached_images_schema.py',
                 'applied': False
+            },
+            {
+                'version': '1.5.4',
+                'name': 'Board Default Images',
+                'description': 'Add default_image_url column to boards for custom board images',
+                'script': 'add_board_default_image.py',
+                'applied': False
             }
         ]
     
@@ -182,6 +189,10 @@ class DatabaseVersionManager:
             self.check_column_exists('pins', 'uses_cached_image')):
             applied.append('1.2.0')
         
+        # Check for board default images upgrade
+        if self.check_column_exists('boards', 'default_image_url'):
+            applied.append('1.5.4')
+        
         return applied
     
     def sync_versions(self):
@@ -238,6 +249,9 @@ class DatabaseVersionManager:
             elif upgrade['script'] == 'add_cached_images_schema.py':
                 from scripts.add_cached_images_schema import add_cached_images_table
                 success = add_cached_images_table()
+            elif upgrade['script'] == 'add_board_default_image.py':
+                from scripts.add_board_default_image import add_board_default_image_column
+                success = add_board_default_image_column()
             else:
                 return {'success': False, 'error': f'Unknown upgrade script: {upgrade["script"]}'}
             

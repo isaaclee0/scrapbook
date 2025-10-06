@@ -25,12 +25,18 @@
         <div class="pin-body">
             <div class="pin-image-container">
                 <img src="{{ pin.image_url }}" alt="{{ pin.title }}" class="pin-image">
-                <div class="image-edit-overlay" onclick="enableImageEdit()">
+                <div class="image-edit-overlay">
                 </div>
-                <div id="imageEditControls" class="image-edit-controls" style="display: none;">
-                    <button class="image-edit-btn" onclick="changeImage()">Change Image</button>
-                    <button class="image-edit-btn" onclick="removeImage()">Remove Image</button>
-                    <button class="image-edit-btn cancel" onclick="hideImageEdit()">Cancel</button>
+                <div id="imageEditControls" class="image-edit-controls">
+                    <button class="image-edit-btn" onclick="changeImage()">
+                        <i class="fas fa-sync-alt"></i> Change Image
+                    </button>
+                    <button class="image-edit-btn board-img-btn" onclick="setAsBoardImage()">
+                        <i class="fas fa-image"></i> Set as Board Image
+                    </button>
+                    <button class="image-edit-btn remove-btn" onclick="removeImage()">
+                        <i class="fas fa-trash"></i> Remove Image
+                    </button>
                 </div>
             </div>
             
@@ -325,36 +331,65 @@
     transform: translate(-50%, -50%);
     background: white;
     border-radius: 8px;
-    padding: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    padding: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 8px;
     z-index: 10;
     width: max-content;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.pin-image-container:hover .image-edit-controls {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .image-edit-btn {
-    padding: 6px 12px;
+    padding: 10px 16px;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     background: #3b82f6;
     color: white;
-    font-size: 12px;
+    font-size: 14px;
     cursor: pointer;
-    transition: background-color 0.2s;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    font-weight: 500;
 }
 
 .image-edit-btn:hover {
     background: #2563eb;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
 }
 
-.image-edit-btn.cancel {
-    background: #6b7280;
+.image-edit-btn i {
+    font-size: 14px;
 }
 
-.image-edit-btn.cancel:hover {
-    background: #4b5563;
+.image-edit-btn.board-img-btn {
+    background: #10b981;
+}
+
+.image-edit-btn.board-img-btn:hover {
+    background: #059669;
+    box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+}
+
+.image-edit-btn.remove-btn {
+    background: #ef4444;
+}
+
+.image-edit-btn.remove-btn:hover {
+    background: #dc2626;
+    box-shadow: 0 2px 8px rgba(239, 68, 68, 0.3);
 }
 
 .pin-details {
@@ -758,6 +793,34 @@
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
     z-index: 10000;
+    animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.success-dialog {
+    border-top: 4px solid #10b981;
+}
+
+.success-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #10b981;
+    color: white;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    font-weight: bold;
+}
+
+.error-dialog {
+    border-top: 4px solid #ef4444;
 }
 
 .no-source {
@@ -1287,6 +1350,90 @@ function deletePin(pinId) {
     });
 }
 
+function setAsBoardImage() {
+    const pinId = {{ pin.id }};
+    const boardId = {{ pin.board_id }};
+    const imageUrl = "{{ pin.image_url }}";
+    
+    // Create custom confirmation dialog
+    const dialog = document.createElement('div');
+    dialog.className = 'confirmation-dialog-overlay';
+    dialog.innerHTML = `
+        <div class="confirmation-dialog">
+            <h3>Set Board Image</h3>
+            <p>Use this image as the board thumbnail on the home page?</p>
+            <div class="confirmation-dialog-actions">
+                <button class="button secondary-button" onclick="this.closest('.confirmation-dialog-overlay').remove()">Cancel</button>
+                <button class="button primary-button" onclick="confirmSetBoardImage(${boardId}, '${imageUrl.replace(/'/g, "\\'")}')">Set Image</button>
+            </div>
+        </div>
+    `;
+    document.body.appendChild(dialog);
+}
+
+function confirmSetBoardImage(boardId, imageUrl) {
+    // Remove the dialog
+    document.querySelector('.confirmation-dialog-overlay').remove();
+    
+    fetch(`/set-board-image/${boardId}`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            image_url: imageUrl
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            // Show success message with custom dialog
+            const successDialog = document.createElement('div');
+            successDialog.className = 'confirmation-dialog-overlay';
+            successDialog.innerHTML = `
+                <div class="confirmation-dialog success-dialog">
+                    <div class="success-icon">✓</div>
+                    <h3>Board Image Updated!</h3>
+                    <p>The board thumbnail has been updated.</p>
+                    <div class="confirmation-dialog-actions">
+                        <button class="button secondary-button" onclick="this.closest('.confirmation-dialog-overlay').remove()">Stay Here</button>
+                        <button class="button primary-button" onclick="window.location.href='/?v=' + Date.now()">View Home Page</button>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(successDialog);
+        } else {
+            const errorDialog = document.createElement('div');
+            errorDialog.className = 'confirmation-dialog-overlay';
+            errorDialog.innerHTML = `
+                <div class="confirmation-dialog error-dialog">
+                    <h3>Error</h3>
+                    <p>Failed to set board image: ${data.error || 'Unknown error'}</p>
+                    <div class="confirmation-dialog-actions">
+                        <button class="button primary-button" onclick="this.closest('.confirmation-dialog-overlay').remove()">OK</button>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(errorDialog);
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        const errorDialog = document.createElement('div');
+        errorDialog.className = 'confirmation-dialog-overlay';
+        errorDialog.innerHTML = `
+            <div class="confirmation-dialog error-dialog">
+                <h3>Error</h3>
+                <p>An error occurred while setting the board image</p>
+                <div class="confirmation-dialog-actions">
+                    <button class="button primary-button" onclick="this.closest('.confirmation-dialog-overlay').remove()">OK</button>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(errorDialog);
+    });
+}
+
 // Modal show/hide functions
 function showNewBoardForm() {
     document.getElementById('newBoardModal').classList.add('active');
@@ -1554,22 +1701,6 @@ function saveUrl() {
 }
 
 // Image editing functions
-function enableImageEdit() {
-    const imageContainer = document.querySelector('.pin-image-container');
-    const imageEditControls = document.getElementById('imageEditControls');
-    
-    if (imageEditControls) {
-        imageEditControls.style.display = 'block';
-    }
-}
-
-function hideImageEdit() {
-    const imageEditControls = document.getElementById('imageEditControls');
-    if (imageEditControls) {
-        imageEditControls.style.display = 'none';
-    }
-}
-
 function changeImage() {
     const input = document.createElement('input');
     input.type = 'file';
@@ -1595,14 +1726,30 @@ function changeImage() {
 }
 
 function removeImage() {
-    if (confirm('Are you sure you want to remove this image?')) {
-        const imageElement = document.querySelector('.pin-image');
-        if (imageElement) {
-            // Set to default image
-            imageElement.src = '/static/images/default_pin.png';
-            // Save the change
-            saveImage('/static/images/default_pin.png');
-        }
+    const dialog = document.createElement('div');
+    dialog.className = 'confirmation-dialog-overlay';
+    dialog.innerHTML = `
+        <div class="confirmation-dialog error-dialog">
+            <h3>Remove Image</h3>
+            <p>Are you sure you want to remove this image? It will be replaced with the default image.</p>
+            <div class="confirmation-dialog-actions">
+                <button class="button secondary-button" onclick="this.closest('.confirmation-dialog-overlay').remove()">Cancel</button>
+                <button class="button primary-button" onclick="confirmRemoveImage()">Remove</button>
+            </div>
+        </div>
+    `;
+    document.body.appendChild(dialog);
+}
+
+function confirmRemoveImage() {
+    document.querySelector('.confirmation-dialog-overlay').remove();
+    
+    const imageElement = document.querySelector('.pin-image');
+    if (imageElement) {
+        // Set to default image
+        imageElement.src = '/static/images/default_pin.png';
+        // Save the change
+        saveImage('/static/images/default_pin.png');
     }
 }
 
@@ -1618,9 +1765,7 @@ function saveImage(imageUrl) {
     })
     .then(response => response.json())
     .then(data => {
-        if (data.success) {
-            hideImageEdit();
-        } else {
+        if (!data.success) {
             alert('Failed to update image');
         }
     })

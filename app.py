@@ -373,30 +373,49 @@ def gallery():
         db = get_db_connection()
         cursor = db.cursor(dictionary=True)
         
-        # Get boards with pin count and random pin image in a single query (user-scoped)
+        # Get boards with pin count and image (user-scoped)
         cursor.execute("""
             SELECT 
                 b.*,
                 COUNT(p.id) as pin_count,
-                b.created_at,
-                (
-                    SELECT p2.image_url 
-                    FROM pins p2 
-                    WHERE p2.board_id = b.id AND p2.user_id = %s
-                    ORDER BY RAND() 
-                    LIMIT 1
-                ) as random_pin_image_url
+                b.created_at
             FROM boards b
             LEFT JOIN pins p ON b.id = p.board_id AND p.user_id = %s
             WHERE b.user_id = %s
             GROUP BY b.id
             ORDER BY b.name
-        """, (user['id'], user['id'], user['id']))
+        """, (user['id'], user['id']))
         boards = cursor.fetchall()
         
-        # Set default image for boards without pins
+        # For each board, determine and save the display image
         for board in boards:
-            if not board['random_pin_image_url']:
+            if board['default_image_url']:
+                # Use the custom default image
+                board['random_pin_image_url'] = board['default_image_url']
+            elif board['pin_count'] > 0:
+                # No default set, but has pins - select a random one and save it
+                cursor.execute("""
+                    SELECT image_url 
+                    FROM pins 
+                    WHERE board_id = %s AND user_id = %s
+                    ORDER BY RAND() 
+                    LIMIT 1
+                """, (board['id'], user['id']))
+                pin = cursor.fetchone()
+                
+                if pin and pin['image_url']:
+                    # Save this random selection as the default so it doesn't change
+                    cursor.execute("""
+                        UPDATE boards 
+                        SET default_image_url = %s 
+                        WHERE id = %s AND user_id = %s AND default_image_url IS NULL
+                    """, (pin['image_url'], board['id'], user['id']))
+                    db.commit()
+                    board['random_pin_image_url'] = pin['image_url']
+                else:
+                    board['random_pin_image_url'] = '/static/images/default_board.png'
+            else:
+                # No pins, use default image
                 board['random_pin_image_url'] = '/static/images/default_board.png'
                 
         # Invalidate gallery cache if Redis is available
@@ -1355,6 +1374,54 @@ def delete_board(board_id):
     except Exception as e:
         print(f"Error deleting board: {str(e)}")
         return jsonify({"error": "Failed to delete board"}), 500
+
+@app.route('/set-board-image/<int:board_id>', methods=['POST'])
+@login_required
+def set_board_image(board_id):
+    user = get_current_user()
+    try:
+        data = request.get_json()
+        image_url = data.get('image_url', '').strip()
+        
+        # Allow empty string to clear the default image
+        db = get_db_connection()
+        cursor = db.cursor()
+        
+        # Check if board exists and belongs to user
+        cursor.execute("SELECT id FROM boards WHERE id = %s AND user_id = %s", (board_id, user['id']))
+        if not cursor.fetchone():
+            cursor.close()
+            db.close()
+            return jsonify({"error": "Board not found"}), 404
+        
+        # Update the default_image_url
+        if image_url:
+            cursor.execute("UPDATE boards SET default_image_url = %s WHERE id = %s AND user_id = %s", 
+                         (image_url, board_id, user['id']))
+        else:
+            cursor.execute("UPDATE boards SET default_image_url = NULL WHERE id = %s AND user_id = %s", 
+                         (board_id, user['id']))
+        
+        db.commit()
+        
+        cursor.close()
+        db.close()
+        
+        # Invalidate gallery cache if Redis is available
+        if redis_client:
+            # Clear all possible cache keys for the gallery view
+            redis_client.delete('view//')
+            redis_client.delete('view:/')
+            # Also clear any user-specific cache
+            redis_client.delete(f'user:{user["id"]}:gallery')
+            # Clear all keys matching view pattern
+            for key in redis_client.scan_iter(match='view*'):
+                redis_client.delete(key)
+        
+        return jsonify({"success": True, "message": "Board image updated successfully"})
+    except Exception as e:
+        print(f"Error setting board image: {str(e)}")
+        return jsonify({"error": "Failed to set board image"}), 500
 
 @app.route('/link-health')
 @login_required
