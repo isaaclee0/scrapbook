@@ -94,21 +94,37 @@
                     <div class="source-link-container">
                         {% if pin.link %}
                         <div class="link-status-wrapper">
-                            <a href="{{ pin.link }}" class="source-link {% if pin.link_status == 'broken' %}broken-link{% elif pin.link_status == 'archived' %}archived-link{% endif %}" target="_blank" rel="noopener noreferrer">
-                                <i class="fas fa-external-link-alt"></i>
-                                {{ pin.link }}
-                            </a>
-                            <span class="url-status {% if pin.link_status == 'broken' %}broken{% elif pin.link_status == 'archived' %}archived{% elif pin.link_status == 'live' %}live{% else %}pending{% endif %}">
-                                {% if pin.link_status == 'broken' %}
-                                <i class="fas fa-times-circle"></i>
-                                {% elif pin.link_status == 'archived' %}
-                                <i class="fas fa-archive"></i>
-                                {% elif pin.link_status == 'live' %}
-                                <i class="fas fa-check-circle"></i>
-                                {% else %}
-                                <i class="fas fa-circle"></i>
-                                {% endif %}
-                            </span>
+                            <div class="url-display-wrapper">
+                                <a href="{{ pin.link }}" class="source-link {% if pin.link_status == 'broken' %}broken-link{% elif pin.link_status == 'archived' %}archived-link{% endif %}" target="_blank" rel="noopener noreferrer" id="urlDisplay">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span id="urlText">{{ pin.link }}</span>
+                                </a>
+                                <input type="url" class="url-edit-input" id="urlEdit" value="{{ pin.link }}" style="display: none;">
+                            </div>
+                            <div class="url-action-buttons">
+                                <button class="url-status-icon editable-icon {% if pin.link_status == 'broken' %}broken{% elif pin.link_status == 'archived' %}archived{% elif pin.link_status == 'live' %}live{% else %}pending{% endif %}" onclick="enableUrlEdit()" title="Click to edit URL">
+                                    <span class="status-icon">
+                                        {% if pin.link_status == 'broken' %}
+                                        <i class="fas fa-times-circle"></i>
+                                        {% elif pin.link_status == 'archived' %}
+                                        <i class="fas fa-archive"></i>
+                                        {% elif pin.link_status == 'live' %}
+                                        <i class="fas fa-check-circle"></i>
+                                        {% else %}
+                                        <i class="fas fa-circle"></i>
+                                        {% endif %}
+                                    </span>
+                                    <span class="edit-icon">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </span>
+                                </button>
+                                <button class="save-url-button" onclick="saveUrl()" style="display: none;">
+                                    <i class="fas fa-check"></i> Save
+                                </button>
+                                <button class="cancel-url-button" onclick="cancelUrlEdit()" style="display: none;">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
                         </div>
                         {% if pin.link_status == 'broken' %}
                         <div class="archive-alternative">
@@ -802,28 +818,122 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    justify-content: space-between;
 }
 
-.url-status {
+.url-display-wrapper {
+    flex: 1;
+    min-width: 0;
+}
+
+.url-edit-input {
+    width: 100%;
+    padding: 8px 12px;
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+}
+
+.url-edit-input:focus {
+    outline: none;
+    border-color: #2980b9;
+    background: white;
+}
+
+.url-action-buttons {
     display: flex;
     align-items: center;
-    font-size: 14px;
+    gap: 8px;
 }
 
-.url-status.live {
+.url-status-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 4px;
+    transition: all 0.2s;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.url-status-icon .edit-icon {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.url-status-icon .status-icon {
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+.url-status-icon:hover .status-icon {
+    opacity: 0;
+}
+
+.url-status-icon:hover .edit-icon {
+    opacity: 1;
+}
+
+.url-status-icon:hover {
+    background: #f0f0f0;
+}
+
+.url-status-icon.live {
     color: #27ae60;
 }
 
-.url-status.broken {
+.url-status-icon.broken {
     color: #e74c3c;
 }
 
-.url-status.archived {
+.url-status-icon.archived {
     color: #8e44ad;
 }
 
-.url-status.pending {
+.url-status-icon.pending {
     color: #f1c40f;
+}
+
+.url-status-icon:hover {
+    color: #2980b9;
+}
+
+.save-url-button, .cancel-url-button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.save-url-button {
+    background: #2980b9;
+    color: white;
+}
+
+.save-url-button:hover {
+    background: #21618c;
+}
+
+.cancel-url-button {
+    background: #95a5a6;
+    color: white;
+}
+
+.cancel-url-button:hover {
+    background: #7f8c8d;
 }
 
 .archive-alternative {
@@ -1335,6 +1445,111 @@ function saveTitle() {
             titleElement.textContent = '{{ pin.title }}';
         });
     }
+}
+
+// URL editing functions
+function enableUrlEdit() {
+    const urlDisplay = document.getElementById('urlDisplay');
+    const urlEdit = document.getElementById('urlEdit');
+    const statusIcon = document.querySelector('.url-status-icon');
+    const saveButton = document.querySelector('.save-url-button');
+    const cancelButton = document.querySelector('.cancel-url-button');
+    
+    if (urlDisplay && urlEdit && statusIcon && saveButton && cancelButton) {
+        urlDisplay.style.display = 'none';
+        urlEdit.style.display = 'block';
+        statusIcon.style.display = 'none';
+        saveButton.style.display = 'flex';
+        cancelButton.style.display = 'flex';
+        urlEdit.focus();
+        urlEdit.select();
+    }
+}
+
+function cancelUrlEdit() {
+    const urlDisplay = document.getElementById('urlDisplay');
+    const urlEdit = document.getElementById('urlEdit');
+    const statusIcon = document.querySelector('.url-status-icon');
+    const saveButton = document.querySelector('.save-url-button');
+    const cancelButton = document.querySelector('.cancel-url-button');
+    
+    if (urlDisplay && urlEdit && statusIcon && saveButton && cancelButton) {
+        urlEdit.value = '{{ pin.link }}'; // Reset to original value
+        urlDisplay.style.display = 'flex';
+        urlEdit.style.display = 'none';
+        statusIcon.style.display = 'flex';
+        saveButton.style.display = 'none';
+        cancelButton.style.display = 'none';
+    }
+}
+
+function saveUrl() {
+    const urlEdit = document.getElementById('urlEdit');
+    const urlText = document.getElementById('urlText');
+    const urlDisplay = document.getElementById('urlDisplay');
+    const statusIcon = document.querySelector('.url-status-icon');
+    const saveButton = document.querySelector('.save-url-button');
+    const cancelButton = document.querySelector('.cancel-url-button');
+    
+    if (!urlEdit || !urlText || !urlDisplay || !statusIcon || !saveButton || !cancelButton) {
+        return;
+    }
+    
+    const newUrl = urlEdit.value.trim();
+    if (!newUrl) {
+        alert('URL cannot be empty');
+        return;
+    }
+    
+    // Basic URL validation
+    try {
+        new URL(newUrl);
+    } catch {
+        alert('Please enter a valid URL');
+        return;
+    }
+    
+    // Disable buttons while saving
+    saveButton.disabled = true;
+    saveButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Saving...';
+    
+    // Save to server
+    fetch(`/update-pin/{{ pin.id }}`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            link: newUrl
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            // Update the URL in the page
+            urlText.textContent = newUrl;
+            urlDisplay.href = newUrl;
+            
+            // Reset UI
+            urlDisplay.style.display = 'flex';
+            urlEdit.style.display = 'none';
+            statusIcon.style.display = 'flex';
+            saveButton.style.display = 'none';
+            cancelButton.style.display = 'none';
+            saveButton.disabled = false;
+            saveButton.innerHTML = '<i class="fas fa-check"></i> Save';
+        } else {
+            alert(data.error || 'Failed to update URL');
+            saveButton.disabled = false;
+            saveButton.innerHTML = '<i class="fas fa-check"></i> Save';
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Failed to update URL');
+        saveButton.disabled = false;
+        saveButton.innerHTML = '<i class="fas fa-check"></i> Save';
+    });
 }
 
 // Image editing functions

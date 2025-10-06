@@ -809,6 +809,7 @@ def update_pin(pin_id):
         title = sanitize_string(data.get('title', ''), max_length=255) if 'title' in data else None
         description = sanitize_string(data.get('description', '')) if 'description' in data else None
         notes = sanitize_string(data.get('notes', '')) if 'notes' in data else None
+        link = sanitize_string(data.get('link', ''), max_length=2048) if 'link' in data else None
         
         # print(f"Processed data - title: '{title}', description: '{description}', notes: '{notes}'")  # Debug log
         # print(f"Raw title from request: '{data.get('title', '')}'")  # Debug log
@@ -843,6 +844,10 @@ def update_pin(pin_id):
         if notes is not None:
             update_fields.append("notes = %s")
             update_values.append(notes)
+            
+        if link is not None:
+            update_fields.append("link = %s")
+            update_values.append(link)
             
         if not update_fields:
             # print("No fields to update")  # Debug log
