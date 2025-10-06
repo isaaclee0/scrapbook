@@ -1380,60 +1380,12 @@ def link_health():
         """, (user['id'],))
         stats = cursor.fetchone()
         
-        # Get recent checks (last 50)
-        cursor.execute("""
-            SELECT 
-                p.id as pin_id,
-                p.title,
-                p.link,
-                b.name as board_name,
-                uh.status,
-                uh.last_checked,
-                uh.archive_url
-            FROM url_health uh
-            JOIN pins p ON uh.pin_id = p.id
-            JOIN boards b ON p.board_id = b.id
-            WHERE p.user_id = %s
-            ORDER BY uh.last_checked DESC
-            LIMIT 50
-        """, (user['id'],))
-        recent_checks = cursor.fetchall()
-        
-        # Get all links grouped by status
-        cursor.execute("""
-            SELECT 
-                p.id as pin_id,
-                p.title,
-                p.link,
-                b.name as board_name,
-                b.id as board_id,
-                uh.status,
-                uh.last_checked,
-                uh.archive_url
-            FROM pins p
-            LEFT JOIN url_health uh ON p.id = uh.pin_id
-            JOIN boards b ON p.board_id = b.id
-            WHERE p.user_id = %s AND p.link IS NOT NULL AND p.link != ''
-            ORDER BY 
-                CASE uh.status
-                    WHEN 'broken' THEN 1
-                    WHEN 'unknown' THEN 2
-                    WHEN 'archived' THEN 3
-                    WHEN 'live' THEN 4
-                    ELSE 5
-                END,
-                CASE WHEN uh.last_checked IS NULL THEN 0 ELSE 1 END,
-                uh.last_checked DESC
-        """, (user['id'],))
-        all_links = cursor.fetchall()
-        
         cursor.close()
         db.close()
         
-        return render_template('link_health.html',
-                             stats=stats,
-                             recent_checks=recent_checks,
-                             all_links=all_links)
+        # Don't load all_links on initial page load for performance
+        # It will be loaded via AJAX when the "All Links" tab is clicked
+        return render_template('link_health.html', stats=stats)
         
     except Exception as e:
         print(f"Error in link_health: {str(e)}")
@@ -1483,6 +1435,57 @@ def link_health_recent():
         
     except Exception as e:
         print(f"Error in link_health_recent: {str(e)}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+@app.route('/api/link-health/all-links')
+@login_required
+def link_health_all_links():
+    """API endpoint for all links (lazy loaded)"""
+    user = get_current_user()
+    try:
+        db = get_db_connection()
+        cursor = db.cursor(dictionary=True)
+        
+        # Get all links grouped by status
+        cursor.execute("""
+            SELECT 
+                p.id as pin_id,
+                p.title,
+                p.link,
+                b.name as board_name,
+                b.id as board_id,
+                uh.status,
+                uh.last_checked,
+                uh.archive_url
+            FROM pins p
+            LEFT JOIN url_health uh ON p.id = uh.pin_id
+            JOIN boards b ON p.board_id = b.id
+            WHERE p.user_id = %s AND p.link IS NOT NULL AND p.link != ''
+            ORDER BY 
+                CASE uh.status
+                    WHEN 'broken' THEN 1
+                    WHEN 'unknown' THEN 2
+                    WHEN 'archived' THEN 3
+                    WHEN 'live' THEN 4
+                    ELSE 5
+                END,
+                CASE WHEN uh.last_checked IS NULL THEN 0 ELSE 1 END,
+                uh.last_checked DESC
+        """, (user['id'],))
+        all_links = cursor.fetchall()
+        
+        cursor.close()
+        db.close()
+        
+        # Convert datetime objects to strings
+        for link in all_links:
+            if link['last_checked']:
+                link['last_checked'] = link['last_checked'].strftime('%Y-%m-%d %H:%M:%S')
+        
+        return jsonify({'success': True, 'all_links': all_links, 'total': len(all_links)})
+        
+    except Exception as e:
+        print(f"Error in link_health_all_links: {str(e)}")
         return jsonify({'success': False, 'error': str(e)}), 500
 
 @app.route('/random')

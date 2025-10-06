@@ -137,7 +137,7 @@
         <!-- All Links Tab -->
         <div id="all-tab" class="tab-content p-6 hidden">
             <div class="flex items-center justify-between mb-4 flex-wrap gap-4">
-                <h3 class="text-lg font-semibold text-gray-900">All Links <span class="text-gray-500">({{ all_links|length }})</span></h3>
+                <h3 class="text-lg font-semibold text-gray-900">All Links <span id="all-links-count" class="text-gray-500"></span></h3>
                 <div class="flex gap-2 items-center">
                     <select id="statusFilter" class="px-3 py-2 border border-gray-300 rounded-md text-sm" onchange="filterLinks()">
                         <option value="all">All Status</option>
@@ -146,83 +146,26 @@
                         <option value="archived">Archived</option>
                         <option value="live">Live</option>
                     </select>
-                    <button onclick="window.location.reload()" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 text-sm flex items-center gap-2" title="Reload page">
-                        <i class="fas fa-sync-alt"></i>
+                    <button onclick="loadAllLinks()" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 text-sm flex items-center gap-2" title="Reload">
+                        <i class="fas fa-sync-alt" id="all-links-loading"></i>
                         Reload
                     </button>
                 </div>
             </div>
             
-            {% if all_links %}
-            <div class="overflow-x-auto">
-                <table class="min-w-full divide-y divide-gray-200">
-                    <thead class="bg-gray-50">
-                        <tr>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Pin Title</th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Board</th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">URL</th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Last Checked</th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody class="bg-white divide-y divide-gray-200" id="linksTableBody">
-                        {% for link in all_links %}
-                        <tr class="hover:bg-gray-50 link-row" data-status="{{ link.status or 'unknown' }}">
-                            <td class="px-6 py-4 whitespace-nowrap">
-                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium
-                                    {% if link.status == 'live' %}bg-green-100 text-green-800
-                                    {% elif link.status == 'broken' %}bg-red-100 text-red-800
-                                    {% elif link.status == 'archived' %}bg-purple-100 text-purple-800
-                                    {% else %}bg-yellow-100 text-yellow-800{% endif %}">
-                                    {% if link.status == 'live' %}<i class="fas fa-check-circle mr-1"></i> Live
-                                    {% elif link.status == 'broken' %}<i class="fas fa-times-circle mr-1"></i> Broken
-                                    {% elif link.status == 'archived' %}<i class="fas fa-archive mr-1"></i> Archived
-                                    {% else %}<i class="fas fa-circle mr-1"></i> Unknown{% endif %}
-                                </span>
-                            </td>
-                            <td class="px-6 py-4">
-                                <a href="{{ url_for('view_pin', pin_id=link.pin_id) }}" 
-                                   class="text-blue-600 hover:text-blue-800 font-medium truncate block max-w-xs"
-                                   title="{{ link.title }}">
-                                    {{ link.title }}
-                                </a>
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                <a href="{{ url_for('board', board_id=link.board_id) }}" class="hover:underline">
-                                    {{ link.board_name }}
-                                </a>
-                            </td>
-                            <td class="px-6 py-4 text-sm text-gray-500">
-                                <a href="{{ link.link }}" target="_blank" class="text-blue-600 hover:underline truncate block max-w-xs" title="{{ link.link }}">
-                                    {{ link.link[:50] }}{% if link.link|length > 50 %}...{% endif %}
-                                </a>
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                {{ link.last_checked.strftime('%Y-%m-%d %H:%M') if link.last_checked else 'Never' }}
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                                <a href="{{ url_for('view_pin', pin_id=link.pin_id) }}" 
-                                   class="text-blue-600 hover:text-blue-900">
-                                    View Pin
-                                </a>
-                            </td>
-                        </tr>
-                        {% endfor %}
-                    </tbody>
-                </table>
+            <div id="all-links-content">
+                <div class="text-center py-12">
+                    <i class="fas fa-info-circle text-gray-400 text-4xl mb-4"></i>
+                    <p class="text-gray-500">Switch to this tab to load all links</p>
+                </div>
             </div>
-            {% else %}
-            <div class="text-center py-12">
-                <i class="fas fa-link text-gray-300 text-5xl mb-4"></i>
-                <p class="text-gray-500">No links found</p>
-            </div>
-            {% endif %}
         </div>
     </div>
 </div>
 
 <script>
+let allLinksLoaded = false;
+
 function switchTab(tabName) {
     // Hide all tabs
     document.querySelectorAll('.tab-content').forEach(tab => {
@@ -241,6 +184,11 @@ function switchTab(tabName) {
     // Add active class to clicked button
     event.target.classList.add('active', 'border-blue-500', 'text-blue-600');
     event.target.classList.remove('border-transparent', 'text-gray-500');
+    
+    // Load all links when switching to that tab (only once)
+    if (tabName === 'all' && !allLinksLoaded) {
+        loadAllLinks();
+    }
 }
 
 function filterLinks() {
@@ -366,6 +314,138 @@ function loadRecentChecks() {
                 <div class="text-center py-12">
                     <i class="fas fa-exclamation-triangle text-red-400 text-4xl mb-4"></i>
                     <p class="text-red-600">Error loading recent activity</p>
+                </div>
+            `;
+        })
+        .finally(() => {
+            // Hide loading spinner
+            loadingIcon.classList.remove('fa-spin');
+        });
+}
+
+function loadAllLinks() {
+    const loadingIcon = document.getElementById('all-links-loading');
+    const contentDiv = document.getElementById('all-links-content');
+    const countSpan = document.getElementById('all-links-count');
+    
+    // Show loading spinner
+    loadingIcon.classList.add('fa-spin');
+    contentDiv.innerHTML = `
+        <div class="text-center py-12">
+            <i class="fas fa-spinner fa-spin text-gray-400 text-4xl mb-4"></i>
+            <p class="text-gray-500">Loading all links...</p>
+        </div>
+    `;
+    
+    fetch('/api/link-health/all-links')
+        .then(response => response.json())
+        .then(data => {
+            if (data.success && data.all_links.length > 0) {
+                allLinksLoaded = true;
+                countSpan.textContent = `(${data.total})`;
+                
+                // Build the table HTML
+                let html = `
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full divide-y divide-gray-200">
+                            <thead class="bg-gray-50">
+                                <tr>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Pin Title</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Board</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">URL</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Last Checked</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200">
+                `;
+                
+                data.all_links.forEach(link => {
+                    let statusClass, statusIcon, statusText;
+                    const status = link.status || 'unknown';
+                    
+                    if (status === 'live') {
+                        statusClass = 'bg-green-100 text-green-800';
+                        statusIcon = 'fa-check-circle';
+                        statusText = 'Live';
+                    } else if (status === 'broken') {
+                        statusClass = 'bg-red-100 text-red-800';
+                        statusIcon = 'fa-times-circle';
+                        statusText = 'Broken';
+                    } else if (status === 'archived') {
+                        statusClass = 'bg-purple-100 text-purple-800';
+                        statusIcon = 'fa-archive';
+                        statusText = 'Archived';
+                    } else {
+                        statusClass = 'bg-yellow-100 text-yellow-800';
+                        statusIcon = 'fa-circle';
+                        statusText = 'Unknown';
+                    }
+                    
+                    const truncatedLink = link.link.length > 50 ? link.link.substring(0, 50) + '...' : link.link;
+                    const lastChecked = link.last_checked ? new Date(link.last_checked).toLocaleString() : 'Never';
+                    
+                    html += `
+                        <tr class="hover:bg-gray-50 link-row" data-status="${status}">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${statusClass}">
+                                    <i class="fas ${statusIcon} mr-1"></i> ${statusText}
+                                </span>
+                            </td>
+                            <td class="px-6 py-4">
+                                <a href="/pin/${link.pin_id}" 
+                                   class="text-blue-600 hover:text-blue-800 font-medium truncate block max-w-xs"
+                                   title="${link.title}">
+                                    ${link.title}
+                                </a>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                <a href="/board/${link.board_id}" class="hover:underline">
+                                    ${link.board_name}
+                                </a>
+                            </td>
+                            <td class="px-6 py-4 text-sm text-gray-500">
+                                <a href="${link.link}" target="_blank" class="text-blue-600 hover:underline truncate block max-w-xs" title="${link.link}">
+                                    ${truncatedLink}
+                                </a>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                ${lastChecked}
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                <a href="/pin/${link.pin_id}" 
+                                   class="text-blue-600 hover:text-blue-900">
+                                    View Pin
+                                </a>
+                            </td>
+                        </tr>
+                    `;
+                });
+                
+                html += `
+                            </tbody>
+                        </table>
+                    </div>
+                `;
+                
+                contentDiv.innerHTML = html;
+            } else {
+                countSpan.textContent = '(0)';
+                contentDiv.innerHTML = `
+                    <div class="text-center py-12">
+                        <i class="fas fa-link text-gray-300 text-5xl mb-4"></i>
+                        <p class="text-gray-500">No links found</p>
+                    </div>
+                `;
+            }
+        })
+        .catch(error => {
+            console.error('Error loading all links:', error);
+            contentDiv.innerHTML = `
+                <div class="text-center py-12">
+                    <i class="fas fa-exclamation-triangle text-red-400 text-4xl mb-4"></i>
+                    <p class="text-red-600">Error loading all links</p>
                 </div>
             `;
         })
