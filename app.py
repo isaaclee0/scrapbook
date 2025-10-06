@@ -868,6 +868,17 @@ def update_pin(pin_id):
         # print(f"With values: {update_values}")  # Debug log
         
         cursor.execute(update_query, tuple(update_values))
+        
+        # If link was updated, reset the URL health status to unknown
+        if link is not None:
+            # Delete old url_health entry and create a new one with status 'unknown'
+            cursor.execute("DELETE FROM url_health WHERE pin_id = %s", (pin_id,))
+            if link:  # Only insert if link is not empty
+                cursor.execute("""
+                    INSERT INTO url_health (pin_id, url, status, last_checked)
+                    VALUES (%s, %s, 'unknown', NULL)
+                """, (pin_id, link))
+        
         db.commit()
         # print(f"Successfully updated pin {pin_id}")  # Debug log
         
