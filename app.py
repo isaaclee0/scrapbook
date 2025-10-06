@@ -1687,7 +1687,7 @@ def check_url_health_for_board(board_id):
     user = get_current_user()
     try:
         data = request.get_json() or {}
-        limit = data.get('limit', 10)  # Default to checking 10 URLs at a time
+        limit = data.get('limit', 50)  # Default to checking 50 URLs at a time (increased from 10)
         
         db = get_db_connection()
         cursor = db.cursor(dictionary=True)
@@ -1717,46 +1717,56 @@ def check_url_health_for_board(board_id):
                 "checked": 0
             })
         
-        # Queue URLs for background checking (we'll implement this simply)
+        # Check URLs concurrently for better performance
+        import requests
+        import concurrent.futures
+        from threading import Lock
+        
         checked_count = 0
-        for url_data in urls_to_check:
+        db_lock = Lock()  # Lock for thread-safe database access
+        
+        # Set up headers to mimic a browser
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (compatible; ScrapbookBot/1.0; +https://github.com/isaaclee0/scrapbook)',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+            'Accept-Language': 'en-US,en;q=0.5',
+            'Connection': 'keep-alive',
+            'Upgrade-Insecure-Requests': '1',
+        }
+        
+        def check_single_url(url_data):
+            nonlocal checked_count
             try:
-                # Set up headers to mimic a browser
-                headers = {
-                    'User-Agent': 'Mozilla/5.0 (compatible; ScrapbookBot/1.0; +https://github.com/isaaclee0/scrapbook)',
-                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-                    'Accept-Language': 'en-US,en;q=0.5',
-                    'Connection': 'keep-alive',
-                    'Upgrade-Insecure-Requests': '1',
-                }
-                
                 # Quick HEAD request to check if URL is accessible
-                import requests
-                response = requests.head(url_data['url'], headers=headers, timeout=5, allow_redirects=True)
+                response = requests.head(url_data['url'], headers=headers, timeout=3, allow_redirects=True)
                 status = 'live' if response.status_code < 400 else 'broken'
                 
-                # Update or insert URL health record
-                cursor.execute("""
-                    INSERT INTO url_health (pin_id, url, last_checked, status)
-                    VALUES (%s, %s, NOW(), %s)
-                    ON DUPLICATE KEY UPDATE
-                    last_checked = NOW(),
-                    status = VALUES(status)
-                """, (url_data['pin_id'], url_data['url'], status))
-                
-                checked_count += 1
-                
+                # Thread-safe database update
+                with db_lock:
+                    cursor.execute("""
+                        INSERT INTO url_health (pin_id, url, last_checked, status)
+                        VALUES (%s, %s, NOW(), %s)
+                        ON DUPLICATE KEY UPDATE
+                        last_checked = NOW(),
+                        status = VALUES(status)
+                    """, (url_data['pin_id'], url_data['url'], status))
+                    checked_count += 1
+                    
             except Exception as e:
                 # Mark as unknown if check fails
-                cursor.execute("""
-                    INSERT INTO url_health (pin_id, url, last_checked, status)
-                    VALUES (%s, %s, NOW(), 'unknown')
-                    ON DUPLICATE KEY UPDATE
-                    last_checked = NOW(),
-                    status = 'unknown'
-                """, (url_data['pin_id'], url_data['url']))
-                
-                checked_count += 1
+                with db_lock:
+                    cursor.execute("""
+                        INSERT INTO url_health (pin_id, url, last_checked, status)
+                        VALUES (%s, %s, NOW(), 'unknown')
+                        ON DUPLICATE KEY UPDATE
+                        last_checked = NOW(),
+                        status = 'unknown'
+                    """, (url_data['pin_id'], url_data['url']))
+                    checked_count += 1
+        
+        # Use ThreadPoolExecutor for concurrent checks (max 10 concurrent requests)
+        with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
+            executor.map(check_single_url, urls_to_check)
         
         db.commit()
         cursor.close()

@@ -1088,7 +1088,7 @@ function startUrlHealthChecking() {
     devLog('🔗 Starting URL health checking phase...');
     
     const uncheckedUrls = processingState.pinsWithLinks - processingState.healthCheckedPins;
-    const batchSize = Math.min(uncheckedUrls, 20);
+    const batchSize = Math.min(uncheckedUrls, 100);  // Increased from 20 to 100 for faster processing
     
     devLog(`📊 URL Health Status:`);
     devLog(`  - Total pins with links: ${processingState.pinsWithLinks}`);
@@ -1143,8 +1143,8 @@ function startUrlHealthChecking() {
             } else {
                 // Continue checking more URLs
                 devLog(`⏳ ${remainingUrls} URLs still need checking...`);
-                devLog(`⏳ Continuing URL health checking in 3 seconds...`);
-                setTimeout(startUrlHealthChecking, 3000);
+                devLog(`⏳ Continuing URL health checking in 1 second...`);
+                setTimeout(startUrlHealthChecking, 1000);  // Reduced from 3 seconds to 1 second
             }
         } else {
             devError('❌ URL health check batch failed:', data.error);
