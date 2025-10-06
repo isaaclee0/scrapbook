@@ -109,84 +109,51 @@
 
         <!-- Recent Activity Tab -->
         <div id="recent-tab" class="tab-content p-6">
-            <h3 class="text-lg font-semibold text-gray-900 mb-4">Recent Health Checks (Last 50)</h3>
+            <div class="flex items-center justify-between mb-4 flex-wrap gap-4">
+                <h3 class="text-lg font-semibold text-gray-900">Recent Health Checks</h3>
+                <div class="flex gap-2 items-center">
+                    <label for="recentLimit" class="text-sm text-gray-700">Show:</label>
+                    <select id="recentLimit" class="px-3 py-2 border border-gray-300 rounded-md text-sm" onchange="loadRecentChecks()">
+                        <option value="10" selected>10</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select>
+                    <button onclick="loadRecentChecks()" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 text-sm flex items-center gap-2" title="Refresh">
+                        <i class="fas fa-sync-alt" id="recent-loading"></i>
+                        Refresh
+                    </button>
+                </div>
+            </div>
             
-            {% if recent_checks %}
-            <div class="overflow-x-auto">
-                <table class="min-w-full divide-y divide-gray-200">
-                    <thead class="bg-gray-50">
-                        <tr>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Pin Title</th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Board</th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">URL</th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Last Checked</th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody class="bg-white divide-y divide-gray-200">
-                        {% for check in recent_checks %}
-                        <tr class="hover:bg-gray-50">
-                            <td class="px-6 py-4 whitespace-nowrap">
-                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium
-                                    {% if check.status == 'live' %}bg-green-100 text-green-800
-                                    {% elif check.status == 'broken' %}bg-red-100 text-red-800
-                                    {% elif check.status == 'archived' %}bg-purple-100 text-purple-800
-                                    {% else %}bg-yellow-100 text-yellow-800{% endif %}">
-                                    {% if check.status == 'live' %}<i class="fas fa-check-circle mr-1"></i> Live
-                                    {% elif check.status == 'broken' %}<i class="fas fa-times-circle mr-1"></i> Broken
-                                    {% elif check.status == 'archived' %}<i class="fas fa-archive mr-1"></i> Archived
-                                    {% else %}<i class="fas fa-circle mr-1"></i> Unknown{% endif %}
-                                </span>
-                            </td>
-                            <td class="px-6 py-4">
-                                <a href="{{ url_for('view_pin', pin_id=check.pin_id) }}" 
-                                   class="text-blue-600 hover:text-blue-800 font-medium truncate block max-w-xs"
-                                   title="{{ check.title }}">
-                                    {{ check.title }}
-                                </a>
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                {{ check.board_name }}
-                            </td>
-                            <td class="px-6 py-4 text-sm text-gray-500">
-                                <a href="{{ check.link }}" target="_blank" class="text-blue-600 hover:underline truncate block max-w-xs" title="{{ check.link }}">
-                                    {{ check.link[:50] }}{% if check.link|length > 50 %}...{% endif %}
-                                </a>
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                {{ check.last_checked.strftime('%Y-%m-%d %H:%M') if check.last_checked else 'Never' }}
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                                <a href="{{ url_for('view_pin', pin_id=check.pin_id) }}" 
-                                   class="text-blue-600 hover:text-blue-900">
-                                    View Pin
-                                </a>
-                            </td>
-                        </tr>
-                        {% endfor %}
-                    </tbody>
-                </table>
+            <div id="recent-content">
+                <div class="text-center py-12">
+                    <i class="fas fa-spinner fa-spin text-gray-400 text-4xl mb-4"></i>
+                    <p class="text-gray-500">Loading recent activity...</p>
+                </div>
             </div>
-            {% else %}
-            <div class="text-center py-12">
-                <i class="fas fa-link text-gray-300 text-5xl mb-4"></i>
-                <p class="text-gray-500">No health check data available yet</p>
-            </div>
-            {% endif %}
         </div>
 
         <!-- All Links Tab -->
         <div id="all-tab" class="tab-content p-6 hidden">
-            <div class="flex items-center justify-between mb-4">
-                <h3 class="text-lg font-semibold text-gray-900">All Links ({{ all_links|length }})</h3>
-                <div class="flex gap-2">
-                    <select id="statusFilter" class="px-3 py-2 border border-gray-300 rounded-md text-sm" onchange="filterLinks()">
+            <div class="flex items-center justify-between mb-4 flex-wrap gap-4">
+                <h3 class="text-lg font-semibold text-gray-900">All Links <span id="total-count" class="text-gray-500"></span></h3>
+                <div class="flex gap-2 flex-wrap">
+                    <input type="text" id="searchInput" placeholder="Search pins, URLs, boards..." 
+                           class="px-3 py-2 border border-gray-300 rounded-md text-sm w-64" 
+                           onkeyup="debounceSearch()">
+                    <select id="statusFilter" class="px-3 py-2 border border-gray-300 rounded-md text-sm" onchange="loadAllLinks(1)">
                         <option value="all">All Status</option>
                         <option value="broken">Broken</option>
                         <option value="unknown">Unchecked</option>
                         <option value="archived">Archived</option>
                         <option value="live">Live</option>
+                    </select>
+                    <select id="perPageSelect" class="px-3 py-2 border border-gray-300 rounded-md text-sm" onchange="loadAllLinks(1)">
+                        <option value="50">50 per page</option>
+                        <option value="100" selected>100 per page</option>
+                        <option value="250">250 per page</option>
+                        <option value="500">500 per page</option>
                     </select>
                 </div>
             </div>
@@ -294,6 +261,129 @@ function filterLinks() {
         }
     });
 }
+
+function loadRecentChecks() {
+    const limit = document.getElementById('recentLimit').value;
+    const loadingIcon = document.getElementById('recent-loading');
+    const contentDiv = document.getElementById('recent-content');
+    
+    // Show loading spinner
+    loadingIcon.classList.add('fa-spin');
+    
+    fetch(`/api/link-health/recent?limit=${limit}`)
+        .then(response => response.json())
+        .then(data => {
+            if (data.success && data.recent_checks.length > 0) {
+                // Build the table HTML
+                let html = `
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full divide-y divide-gray-200">
+                            <thead class="bg-gray-50">
+                                <tr>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Pin Title</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Board</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">URL</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Last Checked</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200">
+                `;
+                
+                data.recent_checks.forEach(check => {
+                    let statusClass, statusIcon, statusText;
+                    if (check.status === 'live') {
+                        statusClass = 'bg-green-100 text-green-800';
+                        statusIcon = 'fa-check-circle';
+                        statusText = 'Live';
+                    } else if (check.status === 'broken') {
+                        statusClass = 'bg-red-100 text-red-800';
+                        statusIcon = 'fa-times-circle';
+                        statusText = 'Broken';
+                    } else if (check.status === 'archived') {
+                        statusClass = 'bg-purple-100 text-purple-800';
+                        statusIcon = 'fa-archive';
+                        statusText = 'Archived';
+                    } else {
+                        statusClass = 'bg-yellow-100 text-yellow-800';
+                        statusIcon = 'fa-circle';
+                        statusText = 'Unknown';
+                    }
+                    
+                    const truncatedLink = check.link.length > 50 ? check.link.substring(0, 50) + '...' : check.link;
+                    const lastChecked = check.last_checked ? new Date(check.last_checked).toLocaleString() : 'Never';
+                    
+                    html += `
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${statusClass}">
+                                    <i class="fas ${statusIcon} mr-1"></i> ${statusText}
+                                </span>
+                            </td>
+                            <td class="px-6 py-4">
+                                <a href="/pin/${check.pin_id}" 
+                                   class="text-blue-600 hover:text-blue-800 font-medium truncate block max-w-xs"
+                                   title="${check.title}">
+                                    ${check.title}
+                                </a>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                ${check.board_name}
+                            </td>
+                            <td class="px-6 py-4 text-sm text-gray-500">
+                                <a href="${check.link}" target="_blank" class="text-blue-600 hover:underline truncate block max-w-xs" title="${check.link}">
+                                    ${truncatedLink}
+                                </a>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                ${lastChecked}
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                <a href="/pin/${check.pin_id}" 
+                                   class="text-blue-600 hover:text-blue-900">
+                                    View Pin
+                                </a>
+                            </td>
+                        </tr>
+                    `;
+                });
+                
+                html += `
+                            </tbody>
+                        </table>
+                    </div>
+                `;
+                
+                contentDiv.innerHTML = html;
+            } else {
+                contentDiv.innerHTML = `
+                    <div class="text-center py-12">
+                        <i class="fas fa-link text-gray-300 text-5xl mb-4"></i>
+                        <p class="text-gray-500">No health check data available yet</p>
+                    </div>
+                `;
+            }
+        })
+        .catch(error => {
+            console.error('Error loading recent checks:', error);
+            contentDiv.innerHTML = `
+                <div class="text-center py-12">
+                    <i class="fas fa-exclamation-triangle text-red-400 text-4xl mb-4"></i>
+                    <p class="text-red-600">Error loading recent activity</p>
+                </div>
+            `;
+        })
+        .finally(() => {
+            // Hide loading spinner
+            loadingIcon.classList.remove('fa-spin');
+        });
+}
+
+// Load initial data on page load
+document.addEventListener('DOMContentLoaded', function() {
+    loadRecentChecks();
+});
 </script>
 {% endblock %}
 

@@ -1439,6 +1439,52 @@ def link_health():
         print(f"Error in link_health: {str(e)}")
         return "Error loading link health dashboard", 500
 
+@app.route('/api/link-health/recent')
+@login_required
+def link_health_recent():
+    """API endpoint for recent link health checks"""
+    user = get_current_user()
+    try:
+        limit = request.args.get('limit', 10, type=int)
+        # Cap the limit to reasonable values
+        limit = min(max(limit, 1), 500)
+        
+        db = get_db_connection()
+        cursor = db.cursor(dictionary=True)
+        
+        # Get recent checks
+        cursor.execute("""
+            SELECT 
+                p.id as pin_id,
+                p.title,
+                p.link,
+                b.name as board_name,
+                uh.status,
+                uh.last_checked,
+                uh.archive_url
+            FROM url_health uh
+            JOIN pins p ON uh.pin_id = p.id
+            JOIN boards b ON p.board_id = b.id
+            WHERE p.user_id = %s
+            ORDER BY uh.last_checked DESC
+            LIMIT %s
+        """, (user['id'], limit))
+        recent_checks = cursor.fetchall()
+        
+        cursor.close()
+        db.close()
+        
+        # Convert datetime objects to strings
+        for check in recent_checks:
+            if check['last_checked']:
+                check['last_checked'] = check['last_checked'].strftime('%Y-%m-%d %H:%M:%S')
+        
+        return jsonify({'success': True, 'recent_checks': recent_checks})
+        
+    except Exception as e:
+        print(f"Error in link_health_recent: {str(e)}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
 @app.route('/random')
 @login_required
 def random_pin():
