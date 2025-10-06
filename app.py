@@ -1356,6 +1356,88 @@ def delete_board(board_id):
         print(f"Error deleting board: {str(e)}")
         return jsonify({"error": "Failed to delete board"}), 500
 
+@app.route('/link-health')
+@login_required
+def link_health():
+    """Dashboard to monitor URL health checking activity"""
+    user = get_current_user()
+    try:
+        db = get_db_connection()
+        cursor = db.cursor(dictionary=True)
+        
+        # Get overall statistics
+        cursor.execute("""
+            SELECT 
+                COUNT(DISTINCT p.id) as total_pins_with_links,
+                COUNT(DISTINCT CASE WHEN uh.status = 'live' THEN p.id END) as live_count,
+                COUNT(DISTINCT CASE WHEN uh.status = 'broken' THEN p.id END) as broken_count,
+                COUNT(DISTINCT CASE WHEN uh.status = 'archived' THEN p.id END) as archived_count,
+                COUNT(DISTINCT CASE WHEN uh.status = 'unknown' OR uh.status IS NULL THEN p.id END) as unknown_count,
+                COUNT(DISTINCT CASE WHEN uh.last_checked IS NOT NULL THEN p.id END) as checked_count
+            FROM pins p
+            LEFT JOIN url_health uh ON p.id = uh.pin_id
+            WHERE p.user_id = %s AND p.link IS NOT NULL AND p.link != ''
+        """, (user['id'],))
+        stats = cursor.fetchone()
+        
+        # Get recent checks (last 50)
+        cursor.execute("""
+            SELECT 
+                p.id as pin_id,
+                p.title,
+                p.link,
+                b.name as board_name,
+                uh.status,
+                uh.last_checked,
+                uh.archive_url
+            FROM url_health uh
+            JOIN pins p ON uh.pin_id = p.id
+            JOIN boards b ON p.board_id = b.id
+            WHERE p.user_id = %s
+            ORDER BY uh.last_checked DESC
+            LIMIT 50
+        """, (user['id'],))
+        recent_checks = cursor.fetchall()
+        
+        # Get all links grouped by status
+        cursor.execute("""
+            SELECT 
+                p.id as pin_id,
+                p.title,
+                p.link,
+                b.name as board_name,
+                b.id as board_id,
+                uh.status,
+                uh.last_checked,
+                uh.archive_url
+            FROM pins p
+            LEFT JOIN url_health uh ON p.id = uh.pin_id
+            JOIN boards b ON p.board_id = b.id
+            WHERE p.user_id = %s AND p.link IS NOT NULL AND p.link != ''
+            ORDER BY 
+                CASE uh.status
+                    WHEN 'broken' THEN 1
+                    WHEN 'unknown' THEN 2
+                    WHEN 'archived' THEN 3
+                    WHEN 'live' THEN 4
+                    ELSE 5
+                END,
+                uh.last_checked DESC NULLS FIRST
+        """, (user['id'],))
+        all_links = cursor.fetchall()
+        
+        cursor.close()
+        db.close()
+        
+        return render_template('link_health.html',
+                             stats=stats,
+                             recent_checks=recent_checks,
+                             all_links=all_links)
+        
+    except Exception as e:
+        print(f"Error in link_health: {str(e)}")
+        return "Error loading link health dashboard", 500
+
 @app.route('/random')
 @login_required
 def random_pin():

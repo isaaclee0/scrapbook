@@ -1,0 +1,299 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mx-auto px-4 py-8 max-w-7xl">
+    <!-- Header -->
+    <div class="mb-8">
+        <h1 class="text-3xl font-bold text-gray-900 mb-2">🔗 Link Health Dashboard</h1>
+        <p class="text-gray-600">Monitor URL health checking activity and link status across your pins</p>
+    </div>
+
+    <!-- Statistics Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
+        <!-- Total Links -->
+        <div class="bg-white rounded-lg shadow p-6 border-l-4 border-blue-500">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm font-medium text-gray-600">Total Links</p>
+                    <p class="text-3xl font-bold text-gray-900">{{ stats.total_pins_with_links }}</p>
+                </div>
+                <div class="text-blue-500 text-2xl">
+                    <i class="fas fa-link"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Live Links -->
+        <div class="bg-white rounded-lg shadow p-6 border-l-4 border-green-500">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm font-medium text-gray-600">Live</p>
+                    <p class="text-3xl font-bold text-green-600">{{ stats.live_count }}</p>
+                </div>
+                <div class="text-green-500 text-2xl">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Broken Links -->
+        <div class="bg-white rounded-lg shadow p-6 border-l-4 border-red-500">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm font-medium text-gray-600">Broken</p>
+                    <p class="text-3xl font-bold text-red-600">{{ stats.broken_count }}</p>
+                </div>
+                <div class="text-red-500 text-2xl">
+                    <i class="fas fa-times-circle"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Archived Links -->
+        <div class="bg-white rounded-lg shadow p-6 border-l-4 border-purple-500">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm font-medium text-gray-600">Archived</p>
+                    <p class="text-3xl font-bold text-purple-600">{{ stats.archived_count }}</p>
+                </div>
+                <div class="text-purple-500 text-2xl">
+                    <i class="fas fa-archive"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Unknown Status -->
+        <div class="bg-white rounded-lg shadow p-6 border-l-4 border-yellow-500">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm font-medium text-gray-600">Unchecked</p>
+                    <p class="text-3xl font-bold text-yellow-600">{{ stats.unknown_count }}</p>
+                </div>
+                <div class="text-yellow-500 text-2xl">
+                    <i class="fas fa-circle"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="bg-white rounded-lg shadow p-6 mb-8">
+        <div class="flex items-center justify-between mb-2">
+            <h3 class="text-lg font-semibold text-gray-900">Health Check Progress</h3>
+            <span class="text-sm text-gray-600">
+                {{ stats.checked_count }} / {{ stats.total_pins_with_links }} checked
+                ({{ ((stats.checked_count / stats.total_pins_with_links * 100) if stats.total_pins_with_links > 0 else 0) | round(1) }}%)
+            </span>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-4">
+            <div class="bg-blue-500 h-4 rounded-full transition-all duration-500" 
+                 style="width: {{ ((stats.checked_count / stats.total_pins_with_links * 100) if stats.total_pins_with_links > 0 else 0) }}%">
+            </div>
+        </div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="bg-white rounded-lg shadow mb-8">
+        <div class="border-b border-gray-200">
+            <nav class="flex space-x-0">
+                <button class="tab-button active px-6 py-4 text-sm font-medium border-b-2 border-blue-500 text-blue-600" 
+                        onclick="switchTab('recent')">
+                    Recent Activity
+                </button>
+                <button class="tab-button px-6 py-4 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" 
+                        onclick="switchTab('all')">
+                    All Links
+                </button>
+            </nav>
+        </div>
+
+        <!-- Recent Activity Tab -->
+        <div id="recent-tab" class="tab-content p-6">
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">Recent Health Checks (Last 50)</h3>
+            
+            {% if recent_checks %}
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Pin Title</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Board</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">URL</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Last Checked</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        {% for check in recent_checks %}
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium
+                                    {% if check.status == 'live' %}bg-green-100 text-green-800
+                                    {% elif check.status == 'broken' %}bg-red-100 text-red-800
+                                    {% elif check.status == 'archived' %}bg-purple-100 text-purple-800
+                                    {% else %}bg-yellow-100 text-yellow-800{% endif %}">
+                                    {% if check.status == 'live' %}<i class="fas fa-check-circle mr-1"></i> Live
+                                    {% elif check.status == 'broken' %}<i class="fas fa-times-circle mr-1"></i> Broken
+                                    {% elif check.status == 'archived' %}<i class="fas fa-archive mr-1"></i> Archived
+                                    {% else %}<i class="fas fa-circle mr-1"></i> Unknown{% endif %}
+                                </span>
+                            </td>
+                            <td class="px-6 py-4">
+                                <a href="{{ url_for('view_pin', pin_id=check.pin_id) }}" 
+                                   class="text-blue-600 hover:text-blue-800 font-medium truncate block max-w-xs"
+                                   title="{{ check.title }}">
+                                    {{ check.title }}
+                                </a>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                {{ check.board_name }}
+                            </td>
+                            <td class="px-6 py-4 text-sm text-gray-500">
+                                <a href="{{ check.link }}" target="_blank" class="text-blue-600 hover:underline truncate block max-w-xs" title="{{ check.link }}">
+                                    {{ check.link[:50] }}{% if check.link|length > 50 %}...{% endif %}
+                                </a>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                {{ check.last_checked.strftime('%Y-%m-%d %H:%M') if check.last_checked else 'Never' }}
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                <a href="{{ url_for('view_pin', pin_id=check.pin_id) }}" 
+                                   class="text-blue-600 hover:text-blue-900">
+                                    View Pin
+                                </a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            {% else %}
+            <div class="text-center py-12">
+                <i class="fas fa-link text-gray-300 text-5xl mb-4"></i>
+                <p class="text-gray-500">No health check data available yet</p>
+            </div>
+            {% endif %}
+        </div>
+
+        <!-- All Links Tab -->
+        <div id="all-tab" class="tab-content p-6 hidden">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-lg font-semibold text-gray-900">All Links ({{ all_links|length }})</h3>
+                <div class="flex gap-2">
+                    <select id="statusFilter" class="px-3 py-2 border border-gray-300 rounded-md text-sm" onchange="filterLinks()">
+                        <option value="all">All Status</option>
+                        <option value="broken">Broken</option>
+                        <option value="unknown">Unchecked</option>
+                        <option value="archived">Archived</option>
+                        <option value="live">Live</option>
+                    </select>
+                </div>
+            </div>
+            
+            {% if all_links %}
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Pin Title</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Board</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">URL</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Last Checked</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200" id="linksTableBody">
+                        {% for link in all_links %}
+                        <tr class="hover:bg-gray-50 link-row" data-status="{{ link.status or 'unknown' }}">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium
+                                    {% if link.status == 'live' %}bg-green-100 text-green-800
+                                    {% elif link.status == 'broken' %}bg-red-100 text-red-800
+                                    {% elif link.status == 'archived' %}bg-purple-100 text-purple-800
+                                    {% else %}bg-yellow-100 text-yellow-800{% endif %}">
+                                    {% if link.status == 'live' %}<i class="fas fa-check-circle mr-1"></i> Live
+                                    {% elif link.status == 'broken' %}<i class="fas fa-times-circle mr-1"></i> Broken
+                                    {% elif link.status == 'archived' %}<i class="fas fa-archive mr-1"></i> Archived
+                                    {% else %}<i class="fas fa-circle mr-1"></i> Unknown{% endif %}
+                                </span>
+                            </td>
+                            <td class="px-6 py-4">
+                                <a href="{{ url_for('view_pin', pin_id=link.pin_id) }}" 
+                                   class="text-blue-600 hover:text-blue-800 font-medium truncate block max-w-xs"
+                                   title="{{ link.title }}">
+                                    {{ link.title }}
+                                </a>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                <a href="{{ url_for('view_board', board_id=link.board_id) }}" class="hover:underline">
+                                    {{ link.board_name }}
+                                </a>
+                            </td>
+                            <td class="px-6 py-4 text-sm text-gray-500">
+                                <a href="{{ link.link }}" target="_blank" class="text-blue-600 hover:underline truncate block max-w-xs" title="{{ link.link }}">
+                                    {{ link.link[:50] }}{% if link.link|length > 50 %}...{% endif %}
+                                </a>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                {{ link.last_checked.strftime('%Y-%m-%d %H:%M') if link.last_checked else 'Never' }}
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                <a href="{{ url_for('view_pin', pin_id=link.pin_id) }}" 
+                                   class="text-blue-600 hover:text-blue-900">
+                                    View Pin
+                                </a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            {% else %}
+            <div class="text-center py-12">
+                <i class="fas fa-link text-gray-300 text-5xl mb-4"></i>
+                <p class="text-gray-500">No links found</p>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<script>
+function switchTab(tabName) {
+    // Hide all tabs
+    document.querySelectorAll('.tab-content').forEach(tab => {
+        tab.classList.add('hidden');
+    });
+    
+    // Remove active class from all buttons
+    document.querySelectorAll('.tab-button').forEach(btn => {
+        btn.classList.remove('active', 'border-blue-500', 'text-blue-600');
+        btn.classList.add('border-transparent', 'text-gray-500');
+    });
+    
+    // Show selected tab
+    document.getElementById(`${tabName}-tab`).classList.remove('hidden');
+    
+    // Add active class to clicked button
+    event.target.classList.add('active', 'border-blue-500', 'text-blue-600');
+    event.target.classList.remove('border-transparent', 'text-gray-500');
+}
+
+function filterLinks() {
+    const filterValue = document.getElementById('statusFilter').value;
+    const rows = document.querySelectorAll('.link-row');
+    
+    rows.forEach(row => {
+        const status = row.dataset.status;
+        if (filterValue === 'all' || status === filterValue) {
+            row.style.display = '';
+        } else {
+            row.style.display = 'none';
+        }
+    });
+}
+</script>
+{% endblock %}
+
