@@ -137,24 +137,19 @@
         <!-- All Links Tab -->
         <div id="all-tab" class="tab-content p-6 hidden">
             <div class="flex items-center justify-between mb-4 flex-wrap gap-4">
-                <h3 class="text-lg font-semibold text-gray-900">All Links <span id="total-count" class="text-gray-500"></span></h3>
-                <div class="flex gap-2 flex-wrap">
-                    <input type="text" id="searchInput" placeholder="Search pins, URLs, boards..." 
-                           class="px-3 py-2 border border-gray-300 rounded-md text-sm w-64" 
-                           onkeyup="debounceSearch()">
-                    <select id="statusFilter" class="px-3 py-2 border border-gray-300 rounded-md text-sm" onchange="loadAllLinks(1)">
+                <h3 class="text-lg font-semibold text-gray-900">All Links <span class="text-gray-500">({{ all_links|length }})</span></h3>
+                <div class="flex gap-2 items-center">
+                    <select id="statusFilter" class="px-3 py-2 border border-gray-300 rounded-md text-sm" onchange="filterLinks()">
                         <option value="all">All Status</option>
                         <option value="broken">Broken</option>
                         <option value="unknown">Unchecked</option>
                         <option value="archived">Archived</option>
                         <option value="live">Live</option>
                     </select>
-                    <select id="perPageSelect" class="px-3 py-2 border border-gray-300 rounded-md text-sm" onchange="loadAllLinks(1)">
-                        <option value="50">50 per page</option>
-                        <option value="100" selected>100 per page</option>
-                        <option value="250">250 per page</option>
-                        <option value="500">500 per page</option>
-                    </select>
+                    <button onclick="window.location.reload()" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 text-sm flex items-center gap-2" title="Reload page">
+                        <i class="fas fa-sync-alt"></i>
+                        Reload
+                    </button>
                 </div>
             </div>
             
