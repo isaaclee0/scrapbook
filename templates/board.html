@@ -515,11 +515,46 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeSectionFiltering();
     initializeBoardManagement();
     
+    // Restore scroll position if returning from a pin
+    restoreScrollPosition();
+    
+    // Save scroll position when clicking on a pin
+    saveScrollOnPinClick();
+    
     // Start automatic processing after board loads
     setTimeout(() => {
         startAutomaticProcessing();
     }, 1000);
 });
+
+// Save scroll position when clicking on pins
+function saveScrollOnPinClick() {
+    const pinLinks = document.querySelectorAll('.pin-card a');
+    pinLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            const boardId = getBoardId();
+            if (boardId) {
+                sessionStorage.setItem(`board_${boardId}_scroll`, window.scrollY);
+            }
+        });
+    });
+}
+
+// Restore scroll position when returning to board
+function restoreScrollPosition() {
+    const boardId = getBoardId();
+    if (boardId) {
+        const savedScroll = sessionStorage.getItem(`board_${boardId}_scroll`);
+        if (savedScroll !== null) {
+            // Small delay to ensure content is loaded
+            setTimeout(() => {
+                window.scrollTo(0, parseInt(savedScroll));
+                // Clear the saved position after restoring
+                sessionStorage.removeItem(`board_${boardId}_scroll`);
+            }, 100);
+        }
+    }
+}
 
 // Debug function accessible from browser console
 window.debugUrlHealth = function() {

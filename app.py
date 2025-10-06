@@ -1422,7 +1422,8 @@ def link_health():
                     WHEN 'live' THEN 4
                     ELSE 5
                 END,
-                uh.last_checked DESC NULLS FIRST
+                CASE WHEN uh.last_checked IS NULL THEN 0 ELSE 1 END,
+                uh.last_checked DESC
         """, (user['id'],))
         all_links = cursor.fetchall()
         
