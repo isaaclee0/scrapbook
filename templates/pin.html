@@ -25,18 +25,29 @@
         <div class="pin-body">
             <div class="pin-image-container">
                 <img src="{{ pin.image_url }}" alt="{{ pin.title }}" class="pin-image">
-                <div class="image-edit-overlay">
-                </div>
-                <div id="imageEditControls" class="image-edit-controls">
-                    <button class="image-edit-btn" onclick="changeImage()">
-                        <i class="fas fa-sync-alt"></i> Change Image
+                <div class="image-hover-controls">
+                    <button class="image-control-btn fullscreen-btn" onclick="openFullscreen()" title="Fullscreen">
+                        <i class="fas fa-expand"></i>
                     </button>
-                    <button class="image-edit-btn board-img-btn" onclick="setAsBoardImage()">
-                        <i class="fas fa-image"></i> Set as Board Image
-                    </button>
-                    <button class="image-edit-btn remove-btn" onclick="removeImage()">
-                        <i class="fas fa-trash"></i> Remove Image
-                    </button>
+                    <div class="tools-dropdown">
+                        <button class="image-control-btn tools-btn" onclick="toggleToolsMenu()" title="Tools">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                        <div class="tools-menu" id="toolsMenu">
+                            <button class="tool-menu-item" onclick="changeImage()">
+                                <i class="fas fa-sync-alt"></i> Change Image
+                            </button>
+                            <button class="tool-menu-item" onclick="setAsBoardImage()">
+                                <i class="fas fa-image"></i> Set as Board Image
+                            </button>
+                            <button class="tool-menu-item" onclick="searchGoogleImage()">
+                                <i class="fab fa-google"></i> Search Google with Image
+                            </button>
+                            <button class="tool-menu-item remove-item" onclick="removeImage()">
+                                <i class="fas fa-trash"></i> Remove Image
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
             
@@ -304,92 +315,98 @@
     border-radius: 8px;
 }
 
-.image-edit-overlay {
+.image-hover-controls {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    top: 16px;
+    right: 16px;
+    display: flex;
+    gap: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+}
+
+.pin-image-container:hover .image-hover-controls {
+    opacity: 1;
+}
+
+.image-control-btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.95);
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    cursor: pointer;
-    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
 }
 
-.pin-image-container:hover .image-edit-overlay {
-    opacity: 1;
+.image-control-btn:hover {
+    background: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.image-edit-controls {
+.tools-dropdown {
+    position: relative;
+}
+
+.tools-menu {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: calc(100% + 8px);
+    right: 0;
     background: white;
     border-radius: 8px;
-    padding: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
-    display: flex;
+    padding: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    display: none;
     flex-direction: column;
-    gap: 8px;
-    z-index: 10;
-    width: max-content;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
+    gap: 4px;
+    min-width: 220px;
+    z-index: 20;
 }
 
-.pin-image-container:hover .image-edit-controls {
-    opacity: 1;
-    pointer-events: auto;
+.tools-menu.active {
+    display: flex;
 }
 
-.image-edit-btn {
-    padding: 10px 16px;
+.tool-menu-item {
+    padding: 10px 14px;
     border: none;
     border-radius: 6px;
-    background: #3b82f6;
-    color: white;
+    background: transparent;
+    color: #333;
     font-size: 14px;
     cursor: pointer;
     transition: all 0.2s;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     white-space: nowrap;
     font-weight: 500;
+    text-align: left;
 }
 
-.image-edit-btn:hover {
-    background: #2563eb;
-    transform: translateY(-1px);
-    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+.tool-menu-item:hover {
+    background: #f0f7ff;
+    color: #2563eb;
 }
 
-.image-edit-btn i {
+.tool-menu-item i {
     font-size: 14px;
+    width: 16px;
+    text-align: center;
 }
 
-.image-edit-btn.board-img-btn {
-    background: #10b981;
-}
-
-.image-edit-btn.board-img-btn:hover {
-    background: #059669;
-    box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
-}
-
-.image-edit-btn.remove-btn {
-    background: #ef4444;
-}
-
-.image-edit-btn.remove-btn:hover {
-    background: #dc2626;
-    box-shadow: 0 2px 8px rgba(239, 68, 68, 0.3);
+.tool-menu-item.remove-item:hover {
+    background: #fee;
+    color: #ef4444;
 }
 
 .pin-details {
@@ -1355,6 +1372,12 @@ function setAsBoardImage() {
     const boardId = {{ pin.board_id }};
     const imageUrl = "{{ pin.image_url }}";
     
+    // Close the tools menu
+    const toolsMenu = document.getElementById('toolsMenu');
+    if (toolsMenu) {
+        toolsMenu.classList.remove('active');
+    }
+    
     // Create custom confirmation dialog
     const dialog = document.createElement('div');
     dialog.className = 'confirmation-dialog-overlay';
@@ -1700,8 +1723,135 @@ function saveUrl() {
     });
 }
 
+// Toggle tools menu
+function toggleToolsMenu() {
+    const toolsMenu = document.getElementById('toolsMenu');
+    if (toolsMenu) {
+        toolsMenu.classList.toggle('active');
+    }
+}
+
+// Close tools menu when clicking outside
+document.addEventListener('click', function(e) {
+    const toolsDropdown = document.querySelector('.tools-dropdown');
+    const toolsMenu = document.getElementById('toolsMenu');
+    if (toolsMenu && toolsDropdown && !toolsDropdown.contains(e.target)) {
+        toolsMenu.classList.remove('active');
+    }
+});
+
+// Open image in fullscreen
+function openFullscreen() {
+    const imageUrl = "{{ pin.image_url }}";
+    
+    // Create fullscreen overlay
+    const overlay = document.createElement('div');
+    overlay.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.95);
+        z-index: 99999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: zoom-out;
+    `;
+    
+    const img = document.createElement('img');
+    img.src = imageUrl;
+    img.style.cssText = `
+        max-width: 95%;
+        max-height: 95%;
+        object-fit: contain;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    `;
+    
+    const closeBtn = document.createElement('button');
+    closeBtn.innerHTML = '&times;';
+    closeBtn.style.cssText = `
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: rgba(255, 255, 255, 0.9);
+        border: none;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        font-size: 32px;
+        line-height: 1;
+        color: #333;
+        cursor: pointer;
+        transition: all 0.2s;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        padding-bottom: 3px;
+    `;
+    
+    closeBtn.onmouseover = function() {
+        this.style.background = 'white';
+        this.style.transform = 'scale(1.1)';
+    };
+    
+    closeBtn.onmouseout = function() {
+        this.style.background = 'rgba(255, 255, 255, 0.9)';
+        this.style.transform = 'scale(1)';
+    };
+    
+    const removeOverlay = function() {
+        overlay.remove();
+    };
+    
+    overlay.addEventListener('click', removeOverlay);
+    closeBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        removeOverlay();
+    });
+    
+    img.addEventListener('click', function(e) {
+        e.stopPropagation();
+    });
+    
+    overlay.appendChild(img);
+    overlay.appendChild(closeBtn);
+    document.body.appendChild(overlay);
+}
+
+// Search Google with image
+function searchGoogleImage() {
+    let imageUrl = "{{ pin.image_url }}";
+    
+    // Close the tools menu
+    const toolsMenu = document.getElementById('toolsMenu');
+    if (toolsMenu) {
+        toolsMenu.classList.remove('active');
+    }
+    
+    // Convert relative URL to absolute URL if needed
+    if (imageUrl.startsWith('/')) {
+        imageUrl = window.location.origin + imageUrl;
+    }
+    
+    // Use Google Lens which works better for reverse image search
+    const googleSearchUrl = `https://lens.google.com/uploadbyurl?url=${encodeURIComponent(imageUrl)}`;
+    
+    // Open in new tab
+    window.open(googleSearchUrl, '_blank');
+}
+
 // Image editing functions
 function changeImage() {
+    // Close the tools menu
+    const toolsMenu = document.getElementById('toolsMenu');
+    if (toolsMenu) {
+        toolsMenu.classList.remove('active');
+    }
+    
     const input = document.createElement('input');
     input.type = 'file';
     input.accept = 'image/*';
@@ -1726,6 +1876,12 @@ function changeImage() {
 }
 
 function removeImage() {
+    // Close the tools menu
+    const toolsMenu = document.getElementById('toolsMenu');
+    if (toolsMenu) {
+        toolsMenu.classList.remove('active');
+    }
+    
     const dialog = document.createElement('div');
     dialog.className = 'confirmation-dialog-overlay';
     dialog.innerHTML = `

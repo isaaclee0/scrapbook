@@ -465,7 +465,7 @@ def board(board_id):
                     LEFT JOIN sections s ON p.section_id = s.id 
                     LEFT JOIN cached_images ci ON p.cached_image_id = ci.id AND ci.cache_status = 'cached'
                     WHERE p.board_id = %s AND p.user_id = %s
-                    ORDER BY p.created_at DESC
+                    ORDER BY p.created_at DESC, p.id ASC
                 """, (board_id, user['id']))
             else:
                 # Fallback query without cached images
@@ -475,7 +475,7 @@ def board(board_id):
                     FROM pins p 
                     LEFT JOIN sections s ON p.section_id = s.id 
                     WHERE p.board_id = %s AND p.user_id = %s
-                    ORDER BY p.created_at DESC
+                    ORDER BY p.created_at DESC, p.id ASC
                 """, (board_id, user['id']))
         except Exception as e:
             # Fallback to basic query if there are any issues
@@ -486,7 +486,7 @@ def board(board_id):
                 FROM pins p 
                 LEFT JOIN sections s ON p.section_id = s.id 
                 WHERE p.board_id = %s 
-                ORDER BY p.created_at DESC
+                ORDER BY p.created_at DESC, p.id ASC
             """, (board_id,))
         pins = cursor.fetchall()
         
