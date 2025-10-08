@@ -110,25 +110,6 @@ if [ "$SKIP_TESTS" = false ]; then
     echo -e "${GREEN}✓ Tests passed (skipped - add tests here)${NC}"
 fi
 
-# Reminder about database migrations
-echo ""
-echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "${YELLOW}⚠️  IMPORTANT: Database Migration Required for v${VERSION}${NC}"
-echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo ""
-echo -e "${BLUE}This version includes a new database schema for board default images.${NC}"
-echo -e "${BLUE}After deploying, you MUST run the migration:${NC}"
-echo ""
-echo -e "   ${GREEN}docker-compose exec web python scripts/add_board_default_image.py${NC}"
-echo ""
-echo -e "${BLUE}Or use the database version manager:${NC}"
-echo ""
-echo -e "   ${GREEN}docker-compose exec web python scripts/db_version_manager.py --status${NC}"
-echo -e "   ${GREEN}docker-compose exec web python scripts/db_version_manager.py --apply 1.5.4${NC}"
-echo ""
-echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo ""
-
 # Build the Docker image
 echo -e "${BLUE}🔨 Building Docker image...${NC}"
 docker build -f "$DOCKERFILE" -t "${FULL_IMAGE_NAME}:${VERSION}" -t "${FULL_IMAGE_NAME}:latest" .
