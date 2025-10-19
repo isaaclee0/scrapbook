@@ -21,11 +21,15 @@
         {% for board in boards %}
         <div class="board" data-name="{{ board.name }}" data-created="{{ board.created_at }}" data-pin-count="{{ board.pin_count }}">
             <a href="{{ url_for('board', board_id=board.id) }}">
-                <img src="{{ board.random_pin_image_url }}" 
-                     alt="{{ board.name }} Pin" 
-                     loading="lazy"
-                     class="board-image"
-                     onerror="this.src='/static/images/default_board.png'">
+                <div class="board-image-container">
+                    <div class="board-skeleton-loader"></div>
+                    <img src="{{ board.random_pin_image_url }}" 
+                         alt="{{ board.name }} Pin" 
+                         loading="lazy"
+                         class="board-image"
+                         onerror="this.src='/static/images/default_board.png'"
+                         onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
+                </div>
                 <h3>{{ board.name }}</h3>
             </a>
         </div>
@@ -74,15 +78,49 @@
             transform: translateY(-5px);
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
-        .board-image {
+        .board-image-container {
+            position: relative;
             width: var(--board-image-size, 150px);
             height: var(--board-image-size, 150px);
+            margin: 0 auto 10px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .board-skeleton-loader {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                rgba(240, 240, 240, 0.8) 0%,
+                rgba(220, 220, 220, 1) 50%,
+                rgba(240, 240, 240, 0.8) 100%
+            );
+            background-size: 200% 100%;
+            animation: shimmer 1.5s infinite;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+        .board-image {
+            width: 100%;
+            height: 100%;
             object-fit: cover;
             border-radius: 50%;
-            margin: 0 auto 10px;
             display: block;
             background-color: #f0f0f0;
-            transition: width 0.2s, height 0.2s;
+            transition: width 0.2s, height 0.2s, opacity 0.3s;
+            position: relative;
+            z-index: 2;
+            opacity: 0;
+        }
+        .board-image.loaded {
+            opacity: 1;
         }
         .board h3 {
             margin: 0;
@@ -97,7 +135,7 @@
         @media (max-width: 600px) {
             .gallery { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
             /* Board image size on mobile scales down slightly but still respects the slider */
-            .board-image { 
+            .board-image-container {
                 width: calc(var(--board-image-size, 150px) * 0.75);
                 height: calc(var(--board-image-size, 150px) * 0.75);
             }
@@ -201,17 +239,17 @@
             });
         }
 
-        // Preload images for better performance
+        // Handle image loading states
         document.addEventListener('DOMContentLoaded', function() {
             const images = document.querySelectorAll('.board-image');
             images.forEach(img => {
-                if (img.complete) {
-                    img.style.opacity = '1';
-                } else {
-                    img.style.opacity = '0';
-                    img.addEventListener('load', function() {
-                        this.style.opacity = '1';
-                    });
+                if (img.complete && img.naturalHeight !== 0) {
+                    // Image already loaded
+                    img.classList.add('loaded');
+                    const skeleton = img.previousElementSibling;
+                    if (skeleton && skeleton.classList.contains('board-skeleton-loader')) {
+                        skeleton.style.display = 'none';
+                    }
                 }
             });
         });
