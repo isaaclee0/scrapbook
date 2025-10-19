@@ -17,11 +17,43 @@ echo ""
 echo "Note: The schema (default_image_url column) is already in v1.5.8 Docker image"
 echo ""
 
-# Step 1: Apply section assignments from Pinterest data
+# Step 1: Apply section assignments from Pinterest data using Python
 echo "Step 1: Restoring Pinterest section assignments..."
-mysql -udb -p$DB_PASSWORD db < scripts/section_assignments.sql
+python3 -c "
+import mysql.connector
+import os
 
-echo "✅ Section assignments restored"
+db = mysql.connector.connect(
+    host=os.getenv('DB_HOST', 'db'),
+    user=os.getenv('DB_USER', 'db'),
+    password=os.getenv('DB_PASSWORD', ''),
+    database=os.getenv('DB_NAME', 'db'),
+    charset='utf8mb4',
+    collation='utf8mb4_unicode_ci'
+)
+cursor = db.cursor()
+
+# Read and execute SQL file
+with open('scripts/section_assignments.sql', 'r') as f:
+    sql_statements = f.read().split(';')
+    
+count = 0
+for statement in sql_statements:
+    statement = statement.strip()
+    if statement and not statement.startswith('--'):
+        cursor.execute(statement)
+        count += 1
+        if count % 500 == 0:
+            print(f'  Processed {count} statements...')
+            db.commit()
+
+db.commit()
+print(f'✅ Applied {count} section assignments')
+
+cursor.close()
+db.close()
+"
+
 echo ""
 
 # Step 2: Populate section cover images
