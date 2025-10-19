@@ -1734,34 +1734,61 @@ def check_url_health_for_board(board_id):
             'Upgrade-Insecure-Requests': '1',
         }
         
+        def check_wayback_archive(url):
+            """Check if Wayback Machine has an archive of the URL"""
+            try:
+                # Wayback Machine availability API
+                wayback_api = f"https://archive.org/wayback/available?url={url}"
+                response = requests.get(wayback_api, timeout=5)
+                if response.status_code == 200:
+                    data = response.json()
+                    if data.get('archived_snapshots', {}).get('closest', {}).get('available'):
+                        return data['archived_snapshots']['closest']['url']
+            except Exception as e:
+                print(f"Error checking Wayback Machine for {url}: {e}")
+            return None
+        
         def check_single_url(url_data):
             nonlocal checked_count
+            archive_url = None
+            
             try:
                 # Quick HEAD request to check if URL is accessible
                 response = requests.head(url_data['url'], headers=headers, timeout=3, allow_redirects=True)
                 status = 'live' if response.status_code < 400 else 'broken'
                 
+                # If broken, check Wayback Machine for archives
+                if status == 'broken':
+                    archive_url = check_wayback_archive(url_data['url'])
+                    if archive_url:
+                        status = 'archived'
+                
                 # Thread-safe database update
                 with db_lock:
                     cursor.execute("""
-                        INSERT INTO url_health (pin_id, url, last_checked, status)
-                        VALUES (%s, %s, NOW(), %s)
+                        INSERT INTO url_health (pin_id, url, last_checked, status, archive_url)
+                        VALUES (%s, %s, NOW(), %s, %s)
                         ON DUPLICATE KEY UPDATE
                         last_checked = NOW(),
-                        status = VALUES(status)
-                    """, (url_data['pin_id'], url_data['url'], status))
+                        status = VALUES(status),
+                        archive_url = VALUES(archive_url)
+                    """, (url_data['pin_id'], url_data['url'], status, archive_url))
                     checked_count += 1
                     
             except Exception as e:
-                # Mark as unknown if check fails
+                # Mark as unknown if check fails, but still check for archive
+                archive_url = check_wayback_archive(url_data['url'])
+                status = 'archived' if archive_url else 'unknown'
+                
                 with db_lock:
                     cursor.execute("""
-                        INSERT INTO url_health (pin_id, url, last_checked, status)
-                        VALUES (%s, %s, NOW(), 'unknown')
+                        INSERT INTO url_health (pin_id, url, last_checked, status, archive_url)
+                        VALUES (%s, %s, NOW(), %s, %s)
                         ON DUPLICATE KEY UPDATE
                         last_checked = NOW(),
-                        status = 'unknown'
-                    """, (url_data['pin_id'], url_data['url']))
+                        status = VALUES(status),
+                        archive_url = VALUES(archive_url)
+                    """, (url_data['pin_id'], url_data['url'], status, archive_url))
                     checked_count += 1
         
         # Use ThreadPoolExecutor for concurrent checks (max 10 concurrent requests)
@@ -1926,6 +1953,94 @@ def delete_pin(pin_id):
     finally:
         cursor.close()
         db.close()
+
+@app.route('/check-archive/<int:pin_id>', methods=['POST'])
+@login_required
+def check_archive(pin_id):
+    """Manually check Wayback Machine for an archived version of a pin's URL"""
+    user = get_current_user()
+    try:
+        db = get_db_connection()
+        cursor = db.cursor(dictionary=True)
+        
+        # Get the pin and verify ownership
+        cursor.execute("""
+            SELECT p.link, uh.status, uh.archive_url
+            FROM pins p
+            LEFT JOIN url_health uh ON p.id = uh.pin_id
+            WHERE p.id = %s AND p.user_id = %s
+        """, (pin_id, user['id']))
+        
+        pin = cursor.fetchone()
+        if not pin or not pin['link']:
+            return jsonify({"error": "Pin not found or has no link"}), 404
+        
+        url = pin['link']
+        
+        # Check Wayback Machine for archives
+        try:
+            wayback_api = f"https://archive.org/wayback/available?url={url}"
+            response = requests.get(wayback_api, timeout=10)
+            
+            if response.status_code == 200:
+                data = response.json()
+                archived_snapshots = data.get('archived_snapshots', {})
+                closest = archived_snapshots.get('closest', {})
+                
+                if closest.get('available'):
+                    archive_url = closest['url']
+                    timestamp = closest.get('timestamp', '')
+                    
+                    # Update the database
+                    cursor.execute("""
+                        INSERT INTO url_health (pin_id, url, last_checked, status, archive_url)
+                        VALUES (%s, %s, NOW(), 'archived', %s)
+                        ON DUPLICATE KEY UPDATE
+                        last_checked = NOW(),
+                        status = 'archived',
+                        archive_url = VALUES(archive_url)
+                    """, (pin_id, url, archive_url))
+                    db.commit()
+                    
+                    return jsonify({
+                        'success': True,
+                        'archived': True,
+                        'archive_url': archive_url,
+                        'timestamp': timestamp,
+                        'message': 'Archive found on Wayback Machine!'
+                    })
+                else:
+                    # No archive found
+                    cursor.execute("""
+                        INSERT INTO url_health (pin_id, url, last_checked, status, archive_url)
+                        VALUES (%s, %s, NOW(), 'broken', NULL)
+                        ON DUPLICATE KEY UPDATE
+                        last_checked = NOW(),
+                        status = 'broken',
+                        archive_url = NULL
+                    """, (pin_id, url))
+                    db.commit()
+                    
+                    return jsonify({
+                        'success': True,
+                        'archived': False,
+                        'message': 'No archive found on Wayback Machine'
+                    })
+            else:
+                return jsonify({"error": "Failed to contact Wayback Machine"}), 500
+                
+        except requests.RequestException as e:
+            print(f"Error checking Wayback Machine: {str(e)}")
+            return jsonify({"error": "Failed to check Wayback Machine"}), 500
+            
+    except Exception as e:
+        print(f"Error in check_archive: {str(e)}")
+        return jsonify({"error": "An error occurred"}), 500
+    finally:
+        if 'cursor' in locals():
+            cursor.close()
+        if 'db' in locals():
+            db.close()
 
 def create_indexes():
     try:

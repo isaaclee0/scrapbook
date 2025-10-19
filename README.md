@@ -174,7 +174,7 @@ scrapbook/
 
 ### URL Health Monitoring
 - Background monitoring of pin URLs
-- Automatic archive.is integration
+- Automatic Wayback Machine integration for broken links
 - Status tracking (live, broken, archived)
 
 ## Development
