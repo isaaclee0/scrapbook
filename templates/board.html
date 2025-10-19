@@ -21,13 +21,34 @@
                 </div>
             </div>
         </div>
-        <div class="border-b border-gray-200">
-            <nav class="flex space-x-0 overflow-x-auto">
-                <button class="section-button px-4 py-3 text-sm font-medium border-b-2 border-primary-500 text-primary-600 whitespace-nowrap" data-section-id="all">All Pins</button>
+        
+        <!-- Section Circles -->
+        <div class="section-circles-container">
+            <div class="section-circles-scroll">
+                <button class="section-circle active" data-section-id="all" title="All Pins">
+                    <div class="section-circle-image all-pins-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                        </svg>
+                    </div>
+                    <span class="section-circle-name">All</span>
+                </button>
                 {% for section in sections %}
-                <button class="section-button px-4 py-3 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap transition-colors" data-section-id="{{ section.id }}">{{ section.name }}</button>
+                <button class="section-circle" data-section-id="{{ section.id }}" title="{{ section.name }} ({{ section.pin_count }} pins)">
+                    <div class="section-circle-image">
+                        {% if section.default_image_url %}
+                        <img src="{{ section.default_image_url }}" 
+                             alt="{{ section.name }}" 
+                             loading="lazy"
+                             onerror="this.src='/static/images/default_pin.png'">
+                        {% else %}
+                        <img src="/static/images/default_pin.png" alt="{{ section.name }}">
+                        {% endif %}
+                    </div>
+                    <span class="section-circle-name">{{ section.name }}</span>
+                </button>
                 {% endfor %}
-            </nav>
+            </div>
         </div>
     </div>
 
@@ -60,13 +81,15 @@
                          class="pin-image w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300" 
                          loading="lazy"
                          data-original-url="{{ pin.image_url }}"
-                         onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
+                         onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none';"
+                         onerror="this.src='/static/images/default_pin.png'; this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
                     {% else %}
                     <img src="{{ pin.image_url }}" 
                          alt="{{ pin.title }}" 
                          class="pin-image w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
                          loading="lazy"
-                         onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
+                         onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none';"
+                         onerror="this.src='/static/images/default_pin.png'; this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
                     {% endif %}
                     {% if pin.section_name %}
                     <span class="absolute top-2 left-2 px-2 py-1 bg-black bg-opacity-70 text-white text-xs rounded-full">{{ pin.section_name }}</span>
@@ -137,7 +160,141 @@
 
 <style>
 
+/* Section Circles */
+.section-circles-container {
+    margin: 20px 0;
+    padding: 0 20px;
+    overflow: hidden;
+}
 
+.section-circles-scroll {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding: 10px 0;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e0 #f7fafc;
+}
+
+.section-circles-scroll::-webkit-scrollbar {
+    height: 6px;
+}
+
+.section-circles-scroll::-webkit-scrollbar-track {
+    background: #f7fafc;
+    border-radius: 3px;
+}
+
+.section-circles-scroll::-webkit-scrollbar-thumb {
+    background: #cbd5e0;
+    border-radius: 3px;
+}
+
+.section-circles-scroll::-webkit-scrollbar-thumb:hover {
+    background: #a0aec0;
+}
+
+.section-circle {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+    min-width: 80px;
+    max-width: 100px;
+}
+
+.section-circle:hover {
+    background: #f7fafc;
+    transform: translateY(-2px);
+}
+
+.section-circle.active {
+    background: #ebf4ff;
+}
+
+.section-circle-image {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #e2e8f0;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f7fafc;
+    flex-shrink: 0;
+}
+
+.section-circle.active .section-circle-image {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.section-circle:hover .section-circle-image {
+    border-color: #3b82f6;
+    transform: scale(1.05);
+}
+
+.section-circle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-circle-image.all-pins-circle {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.section-circle-image.all-pins-circle svg {
+    width: 32px;
+    height: 32px;
+    color: white;
+}
+
+.section-circle-name {
+    font-size: 12px;
+    font-weight: 500;
+    color: #4a5568;
+    text-align: center;
+    line-height: 1.2;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+}
+
+.section-circle.active .section-circle-name {
+    color: #2563eb;
+    font-weight: 600;
+}
+
+@media (max-width: 640px) {
+    .section-circle {
+        min-width: 70px;
+        max-width: 80px;
+    }
+    
+    .section-circle-image {
+        width: 56px;
+        height: 56px;
+    }
+    
+    .section-circle-name {
+        font-size: 11px;
+    }
+}
 
 /* Masonry layout using CSS columns */
 #pinsGrid {
@@ -1273,12 +1430,14 @@ function getBoardId() {
 }
 
 
-// Section button handling
+// Section circle handling
 function initializeSectionFiltering() {
-    const sectionButtons = document.querySelectorAll('.section-button');
-    sectionButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            sectionButtons.forEach(btn => btn.classList.remove('active'));
+    const sectionCircles = document.querySelectorAll('.section-circle');
+    sectionCircles.forEach(circle => {
+        circle.addEventListener('click', function() {
+            // Remove active from all
+            sectionCircles.forEach(btn => btn.classList.remove('active'));
+            // Add active to clicked
             this.classList.add('active');
             
             const selectedSection = this.dataset.sectionId;
@@ -1291,6 +1450,9 @@ function initializeSectionFiltering() {
                     item.style.display = 'none';
                 }
             });
+            
+            // Scroll selected circle into view
+            this.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
         });
     });
 }

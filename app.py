@@ -446,8 +446,16 @@ def board(board_id):
         if not board:
             return "Board not found", 404
             
-        # Get sections for this board
-        cursor.execute("SELECT * FROM sections WHERE board_id = %s ORDER BY name", (board_id,))
+        # Get sections for this board with pin count
+        cursor.execute("""
+            SELECT s.*, 
+                   COUNT(p.id) as pin_count
+            FROM sections s
+            LEFT JOIN pins p ON p.section_id = s.id
+            WHERE s.board_id = %s
+            GROUP BY s.id
+            ORDER BY s.name
+        """, (board_id,))
         sections = cursor.fetchall()
         
         # Get pins for this board (including color data and cached images if table exists) (user-scoped)
@@ -1422,6 +1430,65 @@ def set_board_image(board_id):
     except Exception as e:
         print(f"Error setting board image: {str(e)}")
         return jsonify({"error": "Failed to set board image"}), 500
+
+@app.route('/set-section-image/<int:section_id>', methods=['POST'])
+@login_required
+def set_section_image(section_id):
+    user = get_current_user()
+    try:
+        data = request.get_json()
+        image_url = data.get('image_url', '').strip()
+        
+        db = get_db_connection()
+        cursor = db.cursor(dictionary=True)
+        
+        # Check if section exists and belongs to user
+        cursor.execute("""
+            SELECT s.id, s.board_id 
+            FROM sections s 
+            WHERE s.id = %s AND s.user_id = %s
+        """, (section_id, user['id']))
+        section = cursor.fetchone()
+        
+        if not section:
+            cursor.close()
+            db.close()
+            return jsonify({"error": "Section not found"}), 404
+        
+        # Update the default_image_url for the section
+        if image_url:
+            cursor.execute("""
+                UPDATE sections 
+                SET default_image_url = %s 
+                WHERE id = %s AND user_id = %s
+            """, (image_url, section_id, user['id']))
+        else:
+            cursor.execute("""
+                UPDATE sections 
+                SET default_image_url = NULL 
+                WHERE id = %s AND user_id = %s
+            """, (section_id, user['id']))
+        
+        db.commit()
+        
+        cursor.close()
+        db.close()
+        
+        # Invalidate board cache if Redis is available
+        if redis_client:
+            redis_client.delete('view//')
+            redis_client.delete(f'view:/board/{section["board_id"]}')
+            for key in redis_client.scan_iter(match='view*'):
+                redis_client.delete(key)
+        
+        return jsonify({
+            "success": True, 
+            "message": "Section cover updated successfully",
+            "board_id": section["board_id"]
+        })
+    except Exception as e:
+        print(f"Error setting section image: {str(e)}")
+        return jsonify({"error": "Failed to set section cover"}), 500
 
 @app.route('/link-health')
 @login_required

@@ -24,7 +24,7 @@
         
         <div class="pin-body">
             <div class="pin-image-container">
-                <img src="{{ pin.image_url }}" alt="{{ pin.title }}" class="pin-image">
+                <img src="{{ pin.image_url }}" alt="{{ pin.title }}" class="pin-image" onerror="this.src='/static/images/default_pin.png'">
                 <div class="image-hover-controls">
                     <button class="image-control-btn fullscreen-btn" onclick="openFullscreen()" title="Fullscreen">
                         <i class="fas fa-expand"></i>
@@ -40,6 +40,11 @@
                             <button class="tool-menu-item" onclick="setAsBoardImage()">
                                 <i class="fas fa-image"></i> Set as Board Image
                             </button>
+                            {% if pin.section_id %}
+                            <button class="tool-menu-item" onclick="setAsSectionImage()">
+                                <i class="fas fa-folder-open"></i> Set as Section Cover
+                            </button>
+                            {% endif %}
                             <button class="tool-menu-item" onclick="searchGoogleImage()">
                                 <i class="fab fa-google"></i> Search Google with Image
                             </button>
@@ -895,6 +900,76 @@
     font-size: 14px;
 }
 
+/* Toast Notification */
+.toast {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: white;
+    padding: 16px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    z-index: 10002;
+    animation: slideInUp 0.3s ease;
+    max-width: 400px;
+}
+
+.toast.success {
+    border-left: 4px solid #10b981;
+}
+
+.toast.error {
+    border-left: 4px solid #ef4444;
+}
+
+.toast-icon {
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.toast.success .toast-icon {
+    color: #10b981;
+}
+
+.toast.error .toast-icon {
+    color: #ef4444;
+}
+
+.toast-message {
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOutDown {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+.toast.hiding {
+    animation: slideOutDown 0.3s ease;
+}
+
 .title-container {
     display: flex;
     align-items: center;
@@ -1440,6 +1515,92 @@ function setAsBoardImage() {
     document.body.appendChild(dialog);
 }
 
+function setAsSectionImage() {
+    const pinId = {{ pin.id }};
+    const sectionId = {{ pin.section_id if pin.section_id else 'null' }};
+    const sectionName = "{{ pin.section_name if pin.section_name else '' }}";
+    const imageUrl = "{{ pin.image_url }}";
+    
+    if (!sectionId) {
+        alert('This pin is not in a section.');
+        return;
+    }
+    
+    // Close the tools menu
+    const toolsMenu = document.getElementById('toolsMenu');
+    if (toolsMenu) {
+        toolsMenu.classList.remove('active');
+    }
+    
+    // Create custom confirmation dialog
+    const dialog = document.createElement('div');
+    dialog.className = 'confirmation-dialog-overlay';
+    dialog.innerHTML = `
+        <div class="confirmation-dialog">
+            <h3>Set Section Cover</h3>
+            <p>Use this image as the cover for the "${sectionName}" section?</p>
+            <div class="confirmation-dialog-actions">
+                <button class="button secondary-button" onclick="this.closest('.confirmation-dialog-overlay').remove()">Cancel</button>
+                <button class="button primary-button" onclick="confirmSetSectionImage(${sectionId}, '${imageUrl.replace(/'/g, "\\'")}')">Set as Cover</button>
+            </div>
+        </div>
+    `;
+    document.body.appendChild(dialog);
+}
+
+function confirmSetSectionImage(sectionId, imageUrl) {
+    // Remove the dialog
+    document.querySelector('.confirmation-dialog-overlay').remove();
+    
+    fetch(`/set-section-image/${sectionId}`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            image_url: imageUrl
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            showToast('Section cover updated successfully!', 'success');
+        } else {
+            showToast(data.error || 'Failed to set section cover', 'error');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        showToast('An error occurred while setting the section cover', 'error');
+    });
+}
+
+function showToast(message, type = 'success') {
+    // Remove any existing toasts
+    const existingToast = document.querySelector('.toast');
+    if (existingToast) {
+        existingToast.remove();
+    }
+    
+    // Create toast
+    const toast = document.createElement('div');
+    toast.className = `toast ${type}`;
+    
+    const icon = type === 'success' ? '✓' : '✕';
+    toast.innerHTML = `
+        <div class="toast-icon">${icon}</div>
+        <div class="toast-message">${message}</div>
+    `;
+    
+    document.body.appendChild(toast);
+    
+    // Auto-remove after 3 seconds
+    setTimeout(() => {
+        toast.classList.add('hiding');
+        setTimeout(() => toast.remove(), 300);
+    }, 3000);
+}
+
 function confirmSetBoardImage(boardId, imageUrl) {
     // Remove the dialog
     document.querySelector('.confirmation-dialog-overlay').remove();
@@ -1456,50 +1617,14 @@ function confirmSetBoardImage(boardId, imageUrl) {
     .then(response => response.json())
     .then(data => {
         if (data.success) {
-            // Show success message with custom dialog
-            const successDialog = document.createElement('div');
-            successDialog.className = 'confirmation-dialog-overlay';
-            successDialog.innerHTML = `
-                <div class="confirmation-dialog success-dialog">
-                    <div class="success-icon">✓</div>
-                    <h3>Board Image Updated!</h3>
-                    <p>The board thumbnail has been updated.</p>
-                    <div class="confirmation-dialog-actions">
-                        <button class="button secondary-button" onclick="this.closest('.confirmation-dialog-overlay').remove()">Stay Here</button>
-                        <button class="button primary-button" onclick="window.location.href='/?v=' + Date.now()">View Home Page</button>
-                    </div>
-                </div>
-            `;
-            document.body.appendChild(successDialog);
+            showToast('Board image updated successfully!', 'success');
         } else {
-            const errorDialog = document.createElement('div');
-            errorDialog.className = 'confirmation-dialog-overlay';
-            errorDialog.innerHTML = `
-                <div class="confirmation-dialog error-dialog">
-                    <h3>Error</h3>
-                    <p>Failed to set board image: ${data.error || 'Unknown error'}</p>
-                    <div class="confirmation-dialog-actions">
-                        <button class="button primary-button" onclick="this.closest('.confirmation-dialog-overlay').remove()">OK</button>
-                    </div>
-                </div>
-            `;
-            document.body.appendChild(errorDialog);
+            showToast(data.error || 'Failed to set board image', 'error');
         }
     })
     .catch(error => {
         console.error('Error:', error);
-        const errorDialog = document.createElement('div');
-        errorDialog.className = 'confirmation-dialog-overlay';
-        errorDialog.innerHTML = `
-            <div class="confirmation-dialog error-dialog">
-                <h3>Error</h3>
-                <p>An error occurred while setting the board image</p>
-                <div class="confirmation-dialog-actions">
-                    <button class="button primary-button" onclick="this.closest('.confirmation-dialog-overlay').remove()">OK</button>
-                </div>
-            </div>
-        `;
-        document.body.appendChild(errorDialog);
+        showToast('An error occurred while setting the board image', 'error');
     });
 }
 

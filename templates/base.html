@@ -1821,7 +1821,7 @@
                     const detailsHtml = `
                         <div class="pin-details">
                             <div class="pin-details-content">
-                                <img src="${pin.image_url}" alt="${pin.title}" class="pin-image">
+                                <img src="${pin.image_url}" alt="${pin.title}" class="pin-image" onerror="this.src='/static/images/default_pin.png'">
                                 <h2 class="pin-title">${pin.title}</h2>
                                 <div class="pin-notes">
                                     <textarea id="pin-notes" style="width: 100%; min-height: 100px;">${pin.notes || ''}</textarea>

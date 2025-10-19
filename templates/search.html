@@ -115,7 +115,7 @@
         {% for board in matching_boards %}
         <div class="board">
             <a href="{{ url_for('board', board_id=board.id) }}">
-                <img src="{{ board.random_pin_image_url }}" alt="{{ board.name }} Pin">
+                <img src="{{ board.random_pin_image_url }}" alt="{{ board.name }} Pin" onerror="this.src='/static/images/default_board.png'">
                 <h3>{{ board.name }}</h3>
             </a>
         </div>
@@ -133,11 +133,11 @@
             <div class="pin-image-wrapper">
                 {% if pin.link %}
                 <a href="{{ pin.link }}" target="_blank">
-                    <img src="{{ pin.image_url }}" alt="{{ pin.title }}">
+                    <img src="{{ pin.image_url }}" alt="{{ pin.title }}" onerror="this.src='/static/images/default_pin.png'">
                 </a>
                 {% else %}
                 <a href="{{ pin.image_url }}" data-sub-html="<h4>{{ pin.title }}</h4><p>{{ pin.description }}</p><p>Board: {{ pin.board_name }}</p><p>Created: {{ pin.created_at or 'N/A' }}</p>">
-                    <img src="{{ pin.image_url }}" alt="{{ pin.title }}">
+                    <img src="{{ pin.image_url }}" alt="{{ pin.title }}" onerror="this.src='/static/images/default_pin.png'">
                 </a>
                 {% endif %}
             </div>
