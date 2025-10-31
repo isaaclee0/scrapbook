@@ -1,169 +1,792 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Search Results - Scrapbook.io</title>
-    <style>
-        .boards-gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 16px;
-            margin-bottom: 40px;
-        }
-        .board {
-            border: 1px solid #ccc;
-            padding: 10px;
-            text-align: center;
-        }
-        .board img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin: 0 auto 10px;
-            display: block;
-        }
-        .board h3 {
-            margin: 0;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-        }
-        .pins-gallery {
-            column-count: 4;
-            column-gap: 16px;
-        }
-        .pin {
-            display: inline-block;
-            margin: 0 0 16px;
-            width: 100%;
-            box-sizing: border-box;
-            border: 1px solid #ccc;
-            padding: 10px;
-            break-inside: avoid-column;
-        }
-        .pin-image-wrapper {
-            position: relative;
-            width: 100%;
-            padding-bottom: 150%; /* 2:3 aspect ratio; tweak as needed */
-            overflow: hidden;
-        }
-        .pin-image-wrapper img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-        .pin p {
-            margin: 5px 0 0;
-        }
-        @media screen and (max-width: 1200px) { .pins-gallery { column-count: 3; } }
-        @media screen and (max-width: 800px) { .pins-gallery { column-count: 2; } }
-        @media screen and (max-width: 600px) { 
-            .pins-gallery { column-count: 1; }
-            .boards-gallery { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
-            .board img { width: 100px; height: 100px; }
-        }
-        .search-container {
-            position: fixed;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 200px;
-            background: #fff;
-            padding: 10px;
-            border-radius: 25px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-            transition: width 0.3s ease;
-            z-index: 1000;
-        }
-        .search-container:hover {
-            width: 400px;
-        }
-        .search-container form {
-            margin: 0;
-            display: flex;
-            align-items: center;
-        }
-        .search-container input[type="text"] {
-            width: 100%;
-            border: none;
-            outline: none;
-            padding: 5px;
-            font-size: 16px;
-        }
-        .search-container input[type="submit"] {
-            background: #333;
-            color: #fff;
-            border: none;
-            padding: 5px 10px;
-            border-radius: 15px;
-            cursor: pointer;
-        }
-    </style>
-    <link href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.css" rel="stylesheet">
-</head>
-<body>
-    <h1>Search Results for "{{ query }}"</h1>
-    <a href="{{ url_for('gallery') }}">Back to Boards</a>
+{% extends "base.html" %}
 
-    <h2>Matching Boards</h2>
-    {% if matching_boards %}
-    <div class="boards-gallery">
-        {% for board in matching_boards %}
-        <div class="board">
-            <a href="{{ url_for('board', board_id=board.id) }}">
-                <img src="{{ board.random_pin_image_url }}" alt="{{ board.name }} Pin" onerror="this.src='/static/images/default_board.png'">
-                <h3>{{ board.name }}</h3>
+{% block content %}
+<script>
+// Define this function immediately so inline onload handlers can use it
+function correctImageContainerHeight(imgElement) {
+    if (!imgElement || !imgElement.naturalWidth || !imgElement.naturalHeight) {
+        return;
+    }
+    
+    const imageContainer = imgElement.closest('.image-container');
+    if (!imageContainer) {
+        return;
+    }
+    
+    const containerWidth = imageContainer.offsetWidth;
+    const naturalWidth = imgElement.naturalWidth;
+    const naturalHeight = imgElement.naturalHeight;
+    
+    // Calculate aspect ratio and cap at 2:1 (height:width) to prevent overly tall images
+    const rawAspectRatio = naturalHeight / naturalWidth;
+    const maxAspectRatio = 2; // Maximum height:width ratio of 2:1 (1:2 width:height)
+    const aspectRatio = Math.min(rawAspectRatio, maxAspectRatio);
+    
+    // Calculate the correct height based on actual image dimensions
+    const calculatedHeight = containerWidth * aspectRatio;
+    const finalHeight = Math.max(150, calculatedHeight);
+    
+    // Set the container height to match the capped ratio
+    imageContainer.style.height = finalHeight + 'px';
+    
+    // Set the image height explicitly to ensure it fills the container
+    imgElement.style.height = finalHeight + 'px';
+    imgElement.style.minHeight = finalHeight + 'px';
+    imgElement.style.maxHeight = finalHeight + 'px';
+}
+</script>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="mb-8">
+        <h1 class="text-3xl font-bold text-gray-900 mb-4">Search Results for "{{ query }}"</h1>
+        <a href="{{ url_for('gallery') }}" class="text-primary-500 hover:text-primary-600 transition-colors">← Back to Boards</a>
+    </div>
+
+    {% if total_board_count > 0 %}
+    <div class="mb-12">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+            Matching Boards
+            <span class="text-gray-500 text-lg font-normal">({{ total_board_count }} result{% if total_board_count != 1 %}s{% endif %})</span>
+        </h2>
+        <div class="flex flex-wrap gap-4" id="boardsContainer">
+            {% if matching_boards %}
+            {% for board in matching_boards %}
+            <a href="{{ url_for('board', board_id=board.id) }}" class="board-circle">
+                <div class="board-circle-image">
+                    <img src="{{ board.random_pin_image_url }}" 
+                         alt="{{ board.name }}" 
+                         loading="lazy"
+                         onerror="this.src='/static/images/default_board.png'">
+                </div>
+                <span class="board-circle-name">{{ board.name }}</span>
             </a>
+            {% endfor %}
+            {% endif %}
         </div>
-        {% endfor %}
     </div>
-    {% else %}
-    <p>No boards found matching "{{ query }}".</p>
     {% endif %}
 
-    <h2>Matching Pins</h2>
-    {% if matching_pins %}
-    <div class="pins-gallery" id="lightgallery">
-        {% for pin in matching_pins %}
-        <div class="pin">
-            <div class="pin-image-wrapper">
-                {% if pin.link %}
-                <a href="{{ pin.link }}" target="_blank">
-                    <img src="{{ pin.image_url }}" alt="{{ pin.title }}" onerror="this.src='/static/images/default_pin.png'">
+    <div>
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+            Matching Pins
+            {% if total_pin_count > 0 %}
+                <span class="text-gray-500 text-lg font-normal">({{ total_pin_count }} result{% if total_pin_count != 1 %}s{% endif %})</span>
+            {% endif %}
+        </h2>
+        
+        {% if matching_pins %}
+        <div class="masonry-grid" id="pinsGrid">
+            {% for pin in matching_pins %}
+            <div class="pin-card bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group" 
+                 {% if pin.dominant_color_1 and pin.dominant_color_2 %}
+                 style="--dominant-color: {{ pin.dominant_color_1 }}; --secondary-color: {{ pin.dominant_color_2 }};"
+                 data-colors-extracted="true"
+                 data-has-db-colors="true"
+                 {% else %}
+                 data-has-db-colors="false"
+                 {% endif %}
+                 data-pin-id="{{ pin.id }}"
+                 data-image-url="{{ pin.image_url }}"
+                 data-image-width="{{ pin.final_width or '' }}"
+                 data-image-height="{{ pin.final_height or '' }}"
+                 id="pin-{{ pin.id }}"
+                 {% if pin.cached_filename %}
+                 data-cached-url="/cached/{{ pin.cached_filename }}"
+                 data-has-cached="true"
+                 {% else %}
+                 data-has-cached="false"
+                 {% endif %}>
+                <a href="{{ url_for('view_pin', pin_id=pin.id) }}" class="block">
+                    <div class="relative overflow-hidden image-container">
+                        <!-- Skeleton loader that shows before image loads -->
+                        <div class="skeleton-loader"></div>
+                        {% if pin.cached_filename %}
+                    <img src="/cached/{{ pin.cached_filename }}" 
+                         alt="{{ pin.title }}" 
+                         class="pin-image group-hover:scale-105 transition-transform duration-300" 
+                         loading="lazy"
+                         data-original-url="{{ pin.image_url }}"
+                         onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none'; correctImageContainerHeight(this);"
+                         onerror="this.src='/static/images/default_pin.png'; this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
+                        {% else %}
+                    <img src="{{ pin.image_url }}" 
+                         alt="{{ pin.title }}" 
+                         class="pin-image group-hover:scale-105 transition-transform duration-300"
+                         loading="lazy"
+                         onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none'; correctImageContainerHeight(this);"
+                         onerror="this.src='/static/images/default_pin.png'; this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
+                        {% endif %}
+                    </div>
+                    <div class="px-3 py-2">
+                        <div class="flex items-start justify-between gap-2 mb-1">
+                            <h3 class="font-medium text-gray-900 text-sm leading-tight line-clamp-2 flex-1">{{ pin.title }}</h3>
+                        </div>
+                        {% if pin.description %}
+                        <p class="text-gray-600 text-xs mb-1 line-clamp-2">{{ pin.description }}</p>
+                        {% endif %}
+                        <a href="{{ url_for('board', board_id=pin.board_id) }}?highlight={{ pin.id }}" class="board-link text-primary-500 hover:text-primary-600 text-xs flex items-center space-x-1 transition-all duration-200 hover:bg-primary-50 hover:px-2 hover:py-1 hover:rounded-md" title="Go to {{ pin.board_name }}" onclick="event.stopPropagation()">
+                            <span>{{ pin.board_name }}</span>
+                        </a>
+                        <!-- "Take me to board" link below pin tile -->
+                        <div class="flex justify-center mt-2">
+                            <a href="{{ url_for('board', board_id=pin.board_id) }}?highlight={{ pin.id }}" 
+                               class="board-link-go-hover text-primary-600 hover:text-primary-700 transition-all duration-200 rounded-full px-4 py-3 flex items-center justify-center space-x-2 text-sm hover:bg-primary-50 border border-primary-200 hover:border-primary-300 hover:shadow-sm" 
+                               title="Take me to board: {{ pin.board_name }}" 
+                               onclick="event.stopPropagation()">
+                                <span class="board-link-arrow text-base font-semibold">→</span>
+                                <span class="board-link-text font-medium text-center">Take me to board</span>
+                            </a>
+                        </div>
+                    </div>
                 </a>
-                {% else %}
-                <a href="{{ pin.image_url }}" data-sub-html="<h4>{{ pin.title }}</h4><p>{{ pin.description }}</p><p>Board: {{ pin.board_name }}</p><p>Created: {{ pin.created_at or 'N/A' }}</p>">
-                    <img src="{{ pin.image_url }}" alt="{{ pin.title }}" onerror="this.src='/static/images/default_pin.png'">
-                </a>
-                {% endif %}
             </div>
-            <p>{{ pin.description }} (Board: <a href="{{ url_for('board', board_id=pin.board_id) }}">{{ pin.board_name }}</a>)</p>
+            {% endfor %}
         </div>
-        {% endfor %}
+        
+        <!-- Loading indicator for infinite scroll -->
+        <div id="searchLoadingIndicator" class="text-center py-8" style="display: none;">
+            <div class="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-primary-500"></div>
+            <p class="text-gray-600 mt-2">Loading more pins...</p>
+        </div>
+        {% else %}
+        <div class="text-center py-12">
+            <div class="text-gray-400 text-6xl mb-4">🔍</div>
+            <p class="text-gray-600 text-lg">No pins found matching "{{ query }}"</p>
+            <p class="text-gray-500 text-sm mt-2">Try a different search term</p>
+        </div>
+        {% endif %}
     </div>
-    {% else %}
-    <p>No pins found matching "{{ query }}".</p>
-    {% endif %}
+</div>
 
-    <div class="search-container">
-        <form action="{{ url_for('search') }}" method="get">
-            <input type="text" name="q" value="{{ query }}" placeholder="Search pins..." autocomplete="off">
-            <input type="submit" value="Go">
-        </form>
-    </div>
+<style>
+/* Board circles - matching section circle style from board page */
+.board-circle {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 16px;
+    border-radius: 16px;
+    transition: all 0.2s ease;
+    min-width: 160px;
+    max-width: 200px;
+    text-decoration: none;
+    color: inherit;
+}
 
-    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js"></script>
-    <script>
-        lightGallery(document.getElementById('lightgallery'), {
-            selector: 'a:not([href^="http"])',
-            download: false,
-            counter: true,
-            subHtmlSelectorRelative: true
+.board-circle:hover {
+    background: #f7fafc;
+    transform: translateY(-2px);
+}
+
+.board-circle-image {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #e2e8f0;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f7fafc;
+    flex-shrink: 0;
+}
+
+.board-circle:hover .board-circle-image {
+    border-color: #3b82f6;
+    transform: scale(1.05);
+}
+
+.board-circle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.board-circle-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: #4a5568;
+    text-align: center;
+    line-height: 1.2;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+}
+
+.board-circle:hover .board-circle-name {
+    color: #2563eb;
+    font-weight: 600;
+}
+
+@media (max-width: 640px) {
+    .board-circle {
+        min-width: 140px;
+        max-width: 160px;
+    }
+    
+    .board-circle-image {
+        width: 112px;
+        height: 112px;
+    }
+    
+    .board-circle-name {
+        font-size: 14px;
+    }
+}
+
+/* Masonry layout using CSS columns */
+#pinsGrid {
+    padding: 20px;
+    column-count: 5;
+    column-gap: 16px;
+}
+
+@media (max-width: 1600px) {
+    #pinsGrid { column-count: 4; }
+}
+
+@media (max-width: 1200px) {
+    #pinsGrid { column-count: 3; }
+}
+
+@media (max-width: 800px) {
+    #pinsGrid { column-count: 2; }
+}
+
+@media (max-width: 500px) {
+    #pinsGrid { column-count: 1; }
+}
+
+.pin-card {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 16px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    background: white;
+}
+
+/* Default neutral appearance for pins without colors */
+.pin-card:not([data-colors-extracted="true"]) {
+    background: white;
+    border: 1px solid #e9ecef;
+}
+
+.pin-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+/* Highlight effect for specific pins */
+.pin-card.highlighted {
+    animation: highlightPulse 2s ease-in-out;
+    border: 2px solid #3b82f6;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+}
+
+@keyframes highlightPulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+        transform: scale(1.02);
+    }
+    50% {
+        box-shadow: 0 0 0 10px rgba(59, 130, 246, 0.3);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+        transform: scale(1);
+    }
+}
+
+/* Image container with dynamic aspect ratio preservation */
+.image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--dominant-color, #f8f9fa) 0%, var(--secondary-color, #e9ecef) 100%);
+    transition: background 0.5s ease;
+    /* Height will be set by JavaScript based on image dimensions */
+    min-height: 150px;
+}
+
+/* Default neutral appearance for image containers without colors */
+.pin-card:not([data-colors-extracted="true"]) .image-container {
+    background: #f8f9fa;
+}
+
+/* Skeleton loader animation */
+.skeleton-loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        rgba(240, 240, 240, 0.6) 0%,
+        rgba(220, 220, 220, 0.8) 50%,
+        rgba(240, 240, 240, 0.6) 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    z-index: 1;
+    border-radius: 8px;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+/* Pin images */
+.pin-image {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 400px; /* Prevent images from loading too large initially */
+    display: block;
+    transition: transform 0.2s, opacity 0.3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    object-fit: cover;
+    object-position: top center; /* Ensure image aligns from the top */
+}
+
+.pin-image.loaded {
+    opacity: 1;
+}
+
+.pin-card:hover .pin-image {
+    transform: scale(1.05);
+}
+
+.pin-card a {
+    text-decoration: none;
+    color: #333 !important;
+    display: block;
+}
+
+.pin-card a:hover {
+    color: #333 !important;
+}
+
+/* "Take me to board" link below pin tile - always visible, button-like */
+.board-link-go-hover {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: white;
+}
+
+.board-link-go-hover:hover {
+    background-color: #eff6ff;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.board-link-arrow {
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+.board-link-go-hover:hover .board-link-arrow {
+    transform: translateX(2px);
+}
+</style>
+
+<script>
+// Handle pin highlighting from URL parameter
+function handlePinHighlighting() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const highlightPinId = urlParams.get('highlight');
+    
+    if (highlightPinId) {
+        // Wait for images to load and layout to stabilize
+        waitForLayoutStabilization(() => {
+            const pinElement = document.getElementById(`pin-${highlightPinId}`);
+            if (pinElement) {
+                // Scroll to the pin
+                pinElement.scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: 'center' 
+                });
+                
+                // Add highlight class
+                pinElement.classList.add('highlighted');
+                
+                // Remove highlight class after animation completes
+                setTimeout(() => {
+                    pinElement.classList.remove('highlighted');
+                }, 2000);
+                
+                // Clean up URL parameter
+                const newUrl = window.location.pathname + window.location.search.replace(/[?&]highlight=\d+/, '').replace(/^\?$/, '');
+                window.history.replaceState({}, document.title, newUrl);
+            }
         });
-    </script>
-</body>
-</html>
+    }
+}
+
+// Wait for layout to stabilize before scrolling
+function waitForLayoutStabilization(callback) {
+    // Since images now reserve space with stored dimensions, layout should be stable much faster
+    let lastHeight = 0;
+    let stableCount = 0;
+    const maxWaitTime = 1000; // Reduced to 1 second since we reserve space
+    const startTime = Date.now();
+    
+    const checkStability = () => {
+        const currentHeight = document.body.scrollHeight;
+        const elapsed = Date.now() - startTime;
+        
+        // If height hasn't changed, increment stable count
+        if (currentHeight === lastHeight) {
+            stableCount++;
+        } else {
+            stableCount = 0;
+            lastHeight = currentHeight;
+        }
+        
+        // If height has been stable for 1 check (100ms) or max time reached, proceed
+        if (stableCount >= 1 || elapsed > maxWaitTime) {
+            // Minimal delay since layout should already be stable
+            setTimeout(callback, 50);
+        } else {
+            // Check again in 100ms
+            setTimeout(checkStability, 100);
+        }
+    };
+    
+    // Start checking immediately since space is already reserved
+    setTimeout(checkStability, 100);
+}
+
+// Reserve space for images to prevent layout shifts using stored dimensions
+function reserveImageSpace() {
+    console.log('🖼️ Reserving space for images using stored dimensions...');
+    
+    const pinCards = document.querySelectorAll('.pin-card');
+    pinCards.forEach(pinCard => {
+        const imageContainer = pinCard.querySelector('.image-container');
+        const img = pinCard.querySelector('.pin-image');
+        
+        if (imageContainer && img) {
+            // Get stored dimensions from data attributes
+            const storedWidth = pinCard.getAttribute('data-image-width');
+            const storedHeight = pinCard.getAttribute('data-image-height');
+            
+            if (storedWidth && storedHeight && storedWidth > 0 && storedHeight > 0) {
+                const containerWidth = imageContainer.offsetWidth;
+                const naturalWidth = parseInt(storedWidth);
+                const naturalHeight = parseInt(storedHeight);
+                
+                // Calculate aspect ratio and cap at 2:1 (height:width) to prevent overly tall images
+                const rawAspectRatio = naturalHeight / naturalWidth;
+                const maxAspectRatio = 2; // Maximum height:width ratio of 2:1 (1:2 width:height)
+                const aspectRatio = Math.min(rawAspectRatio, maxAspectRatio);
+                
+                // Calculate the height based on container width and capped aspect ratio
+                const calculatedHeight = containerWidth * aspectRatio;
+                
+                // Set minimum height of 150px for very wide images
+                const finalHeight = Math.max(150, calculatedHeight);
+                
+                // Set exact height to match capped aspect ratio
+                imageContainer.style.height = finalHeight + 'px';
+                
+                console.log(`📐 Reserved space for pin ${pinCard.getAttribute('data-pin-id')}: ${containerWidth}x${finalHeight} (aspect ratio: ${aspectRatio.toFixed(2)}, raw: ${rawAspectRatio.toFixed(2)}) using stored dimensions ${naturalWidth}x${naturalHeight}`);
+                
+                // After image loads, verify and correct the container height if needed
+                if (img.complete) {
+                    correctContainerHeight(pinCard, imageContainer, img);
+                } else {
+                    img.addEventListener('load', () => {
+                        correctContainerHeight(pinCard, imageContainer, img);
+                    });
+                }
+            } else {
+                // Fallback to default min-height if no stored dimensions
+                imageContainer.style.minHeight = '200px';
+                console.log(`⚠️ No stored dimensions for pin ${pinCard.getAttribute('data-pin-id')}, using default min-height`);
+            }
+        }
+    });
+}
+
+// Correct container height based on actual loaded image dimensions
+function correctContainerHeight(pinCard, imageContainer, img) {
+    if (!img.naturalWidth || !img.naturalHeight) {
+        return; // Image not loaded or invalid
+    }
+    
+    const containerWidth = imageContainer.offsetWidth;
+    const naturalWidth = img.naturalWidth;
+    const naturalHeight = img.naturalHeight;
+    
+    // Calculate aspect ratio and cap at 2:1 (height:width)
+    const rawAspectRatio = naturalHeight / naturalWidth;
+    const maxAspectRatio = 2;
+    const aspectRatio = Math.min(rawAspectRatio, maxAspectRatio);
+    
+    // Calculate the correct height based on actual image dimensions
+    const calculatedHeight = containerWidth * aspectRatio;
+    const finalHeight = Math.max(150, calculatedHeight);
+    
+    // Only adjust if there's a significant difference (more than 2px)
+    const currentHeight = imageContainer.offsetHeight;
+    if (Math.abs(currentHeight - finalHeight) > 2) {
+        imageContainer.style.height = finalHeight + 'px';
+        console.log(`🔧 Corrected container height for pin ${pinCard.getAttribute('data-pin-id')}: ${currentHeight}px → ${finalHeight}px (using actual dimensions ${naturalWidth}x${naturalHeight})`);
+    }
+}
+
+// Lazy load more search results
+let currentPinOffset = {{ matching_pins|length if matching_pins else 0 }};
+let currentBoardOffset = {{ matching_boards|length if matching_boards else 0 }};
+let isLoadingPins = false;
+let isLoadingBoards = false;
+let hasMorePins = {% if total_pin_count and total_pin_count > (matching_pins|length if matching_pins else 0) %}true{% else %}false{% endif %};
+let hasMoreBoards = {% if total_board_count and total_board_count > (matching_boards|length if matching_boards else 0) %}true{% else %}false{% endif %};
+let totalPinCount = {{ total_pin_count or 0 }};
+let totalBoardCount = {{ total_board_count or 0 }};
+
+function loadMorePins() {
+    if (isLoadingPins || !hasMorePins) return;
+    
+    const query = new URLSearchParams(window.location.search).get('q') || '{{ query }}';
+    const loadingIndicator = document.getElementById('searchLoadingIndicator');
+    const pinsGrid = document.getElementById('pinsGrid');
+    
+    isLoadingPins = true;
+    if (loadingIndicator && hasMorePins) loadingIndicator.style.display = 'block';
+    
+    fetch(`/api/search/pins?q=${encodeURIComponent(query)}&offset=${currentPinOffset}&limit=10`)
+        .then(response => response.json())
+        .then(data => {
+            if (data.success && data.pins && data.pins.length > 0) {
+                // Append new pins to the grid
+                data.pins.forEach(pin => {
+                    const pinCard = createPinCard(pin);
+                    pinsGrid.appendChild(pinCard);
+                });
+                
+                currentPinOffset += data.pins.length;
+                hasMorePins = data.has_more;
+                
+                // Reserve space for new images
+                setTimeout(() => reserveImageSpace(), 100);
+            } else {
+                hasMorePins = false;
+            }
+        })
+        .catch(error => {
+            console.error('Error loading more pins:', error);
+        })
+        .finally(() => {
+            isLoadingPins = false;
+            if (loadingIndicator) {
+                // Only hide if we're not loading boards either
+                if (!isLoadingBoards) loadingIndicator.style.display = 'none';
+            }
+        });
+}
+
+function loadMoreBoards() {
+    if (isLoadingBoards || !hasMoreBoards) return;
+    
+    const query = new URLSearchParams(window.location.search).get('q') || '{{ query }}';
+    const boardsContainer = document.getElementById('boardsContainer');
+    
+    if (!boardsContainer) return;
+    
+    isLoadingBoards = true;
+    
+    fetch(`/api/search/boards?q=${encodeURIComponent(query)}&offset=${currentBoardOffset}&limit=10`)
+        .then(response => response.json())
+        .then(data => {
+            if (data.success && data.boards && data.boards.length > 0) {
+                // Append new boards to the container
+                data.boards.forEach(board => {
+                    const boardCard = createBoardCard(board);
+                    boardsContainer.appendChild(boardCard);
+                });
+                
+                currentBoardOffset += data.boards.length;
+                hasMoreBoards = data.has_more;
+            } else {
+                hasMoreBoards = false;
+            }
+        })
+        .catch(error => {
+            console.error('Error loading more boards:', error);
+        })
+        .finally(() => {
+            isLoadingBoards = false;
+            const loadingIndicator = document.getElementById('searchLoadingIndicator');
+            if (loadingIndicator && !isLoadingPins) {
+                loadingIndicator.style.display = 'none';
+            }
+        });
+}
+
+function createBoardCard(board) {
+    const a = document.createElement('a');
+    a.href = `/board/${board.id}`;
+    a.className = 'board-circle';
+    
+    const imageSrc = board.random_pin_image_url || '/static/images/default_board.png';
+    
+    a.innerHTML = `
+        <div class="board-circle-image">
+            <img src="${escapeHtml(imageSrc)}" 
+                 alt="${escapeHtml(board.name || '')}" 
+                 loading="lazy"
+                 onerror="this.src='/static/images/default_board.png'">
+        </div>
+        <span class="board-circle-name">${escapeHtml(board.name || '')}</span>
+    `;
+    
+    return a;
+}
+
+function createPinCard(pin) {
+    const div = document.createElement('div');
+    div.className = 'pin-card bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group';
+    
+    if (pin.dominant_color_1 && pin.dominant_color_2) {
+        div.style.setProperty('--dominant-color', pin.dominant_color_1);
+        div.style.setProperty('--secondary-color', pin.dominant_color_2);
+        div.setAttribute('data-colors-extracted', 'true');
+        div.setAttribute('data-has-db-colors', 'true');
+    } else {
+        div.setAttribute('data-has-db-colors', 'false');
+    }
+    
+    div.setAttribute('data-pin-id', pin.id);
+    div.setAttribute('data-image-url', pin.image_url || '');
+    div.setAttribute('data-image-width', pin.final_width || '');
+    div.setAttribute('data-image-height', pin.final_height || '');
+    div.id = `pin-${pin.id}`;
+    
+    if (pin.cached_filename) {
+        div.setAttribute('data-cached-url', `/cached/${pin.cached_filename}`);
+        div.setAttribute('data-has-cached', 'true');
+    } else {
+        div.setAttribute('data-has-cached', 'false');
+    }
+    
+    const imageSrc = pin.cached_filename ? `/cached/${pin.cached_filename}` : (pin.image_url || '/static/images/default_pin.png');
+    const boardUrl = `/board/${pin.board_id}`;
+    const pinUrl = `/pin/${pin.id}`;
+    
+    div.innerHTML = `
+        <a href="${pinUrl}" class="block">
+            <div class="relative overflow-hidden image-container">
+                <div class="skeleton-loader"></div>
+                <img src="${imageSrc}" 
+                     alt="${escapeHtml(pin.title || '')}" 
+                     class="pin-image group-hover:scale-105 transition-transform duration-300" 
+                     loading="lazy"
+                     data-original-url="${pin.image_url || ''}"
+                     onload="this.classList.add('loaded'); if(this.previousElementSibling) this.previousElementSibling.style.display='none'; correctImageContainerHeight(this);"
+                     onerror="this.src='/static/images/default_pin.png'; this.classList.add('loaded'); if(this.previousElementSibling) this.previousElementSibling.style.display='none';">
+            </div>
+            <div class="px-3 py-2">
+                <div class="flex items-start justify-between gap-2 mb-1">
+                    <h3 class="font-medium text-gray-900 text-sm leading-tight line-clamp-2 flex-1">${escapeHtml(pin.title || '')}</h3>
+                </div>
+                ${pin.description ? `<p class="text-gray-600 text-xs mb-1 line-clamp-2">${escapeHtml(pin.description)}</p>` : ''}
+                <a href="${boardUrl}?highlight=${pin.id}" class="board-link text-primary-500 hover:text-primary-600 text-xs flex items-center space-x-1 transition-all duration-200 hover:bg-primary-50 hover:px-2 hover:py-1 hover:rounded-md" title="Go to ${escapeHtml(pin.board_name || '')}" onclick="event.stopPropagation()">
+                    <span>${escapeHtml(pin.board_name || '')}</span>
+                </a>
+                <!-- "Take me to board" link below pin tile -->
+                <div class="flex justify-center mt-2">
+                    <a href="${boardUrl}?highlight=${pin.id}" 
+                       class="board-link-go-hover text-primary-600 hover:text-primary-700 transition-all duration-200 rounded-full px-4 py-3 flex items-center justify-center space-x-2 text-sm hover:bg-primary-50 border border-primary-200 hover:border-primary-300 hover:shadow-sm" 
+                       title="Take me to board: ${escapeHtml(pin.board_name || '')}" 
+                       onclick="event.stopPropagation()">
+                        <span class="board-link-arrow text-base font-semibold">→</span>
+                        <span class="board-link-text font-medium text-center">Take me to board</span>
+                    </a>
+                </div>
+            </div>
+        </a>
+    `;
+    
+    return div;
+}
+
+function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+// Infinite scroll detection
+let scrollThrottle = null;
+function handleScroll() {
+    if (scrollThrottle) return;
+    
+    scrollThrottle = setTimeout(() => {
+        scrollThrottle = null;
+        
+        // Check if user is near bottom of page (within 500px)
+        const scrollPosition = window.innerHeight + window.scrollY;
+        const pageHeight = document.documentElement.scrollHeight;
+        const distanceFromBottom = pageHeight - scrollPosition;
+        
+        // Load more when within 500px of bottom
+        if (distanceFromBottom < 500) {
+            // Load more pins and boards if available
+            if (hasMorePins && !isLoadingPins) {
+                loadMorePins();
+            }
+            if (hasMoreBoards && !isLoadingBoards) {
+                loadMoreBoards();
+            }
+        }
+    }, 200); // Throttle scroll events to every 200ms
+}
+
+// Initialize highlighting when page loads
+document.addEventListener('DOMContentLoaded', function() {
+    // Reserve space for images to prevent layout shifts
+    reserveImageSpace();
+    
+    handlePinHighlighting();
+    
+    // Set up infinite scroll
+    window.addEventListener('scroll', handleScroll);
+    
+    // Auto-load more content after initial delay if available
+    if ((hasMorePins || hasMoreBoards)) {
+        setTimeout(() => {
+            if (hasMorePins) loadMorePins();
+            if (hasMoreBoards) loadMoreBoards();
+        }, 500); // Delay 500ms after initial load
+    }
+});
+</script>
+{% endblock %}

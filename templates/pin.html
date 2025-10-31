@@ -140,6 +140,11 @@
                                         <i class="fas fa-pencil-alt"></i>
                                     </span>
                                 </button>
+                                {% if not pin.link_status %}
+                                <button class="check-url-button" onclick="checkUrlNow()" title="Check URL health now">
+                                    <i class="fas fa-sync-alt"></i> Check Now
+                                </button>
+                                {% endif %}
                                 <button class="save-url-button" onclick="saveUrl()" style="display: none;">
                                     <i class="fas fa-check"></i> Save
                                 </button>
@@ -1106,6 +1111,30 @@
 
 .url-status-icon:hover {
     color: #2980b9;
+}
+
+.check-url-button {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: background 0.2s;
+    margin-left: 8px;
+}
+
+.check-url-button:hover {
+    background: #2563eb;
+}
+
+.check-url-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
 }
 
 .save-url-button, .cancel-url-button {
@@ -2099,6 +2128,55 @@ function saveImage(imageUrl) {
     .catch(error => {
         console.error('Error:', error);
         alert('Failed to update image');
+    });
+}
+
+function checkUrlNow() {
+    const checkBtn = document.querySelector('.check-url-button');
+    const statusIcon = document.querySelector('.url-status-icon .status-icon');
+    const originalBtnHTML = checkBtn ? checkBtn.innerHTML : '';
+    
+    if (checkBtn) {
+        checkBtn.disabled = true;
+        checkBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Checking...';
+    }
+    
+    if (statusIcon) {
+        statusIcon.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+    }
+    
+    fetch(`/api/check-pin-url/{{ pin.id }}`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            // Reload the page to show updated status
+            window.location.reload();
+        } else {
+            alert('Error checking URL: ' + (data.error || 'Unknown error'));
+            if (checkBtn) {
+                checkBtn.disabled = false;
+                checkBtn.innerHTML = originalBtnHTML;
+            }
+            if (statusIcon) {
+                statusIcon.innerHTML = '<i class="fas fa-circle"></i>';
+            }
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Error checking URL');
+        if (checkBtn) {
+            checkBtn.disabled = false;
+            checkBtn.innerHTML = originalBtnHTML;
+        }
+        if (statusIcon) {
+            statusIcon.innerHTML = '<i class="fas fa-circle"></i>';
+        }
     });
 }
 

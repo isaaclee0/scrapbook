@@ -1,0 +1,26 @@
+Image Dimensions Update Summary
+==================================================
+Generated: 2025-10-28 04:14:13
+Total pins with dimensions: 143419
+
+Dimension Statistics:
+  Average width: 638
+  Average height: 799
+  Min width: 14
+  Max width: 8000
+  Min height: 19
+  Max height: 15993
+
+Pins with cached images: 33708
+Pins using cached images: 33708
+
+Files created:
+  - update_image_dimensions_20251028_041412.sql (SQL update script)
+  - image_dimensions_export_20251028_041413.csv (CSV export)
+  - dimension_update_summary_20251028_041413.txt (this summary)
+
+Instructions:
+1. Backup your live database before running the SQL script
+2. Review the SQL script to ensure it's correct
+3. Run the SQL script on your live database
+4. Verify the results using the verification query in the script

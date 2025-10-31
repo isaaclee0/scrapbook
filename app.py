@@ -15,6 +15,7 @@ import base64
 import hashlib
 from functools import wraps
 from datetime import datetime
+import traceback
 
 # Import authentication modules
 from auth_utils import generate_magic_link_token, generate_session_token, verify_token
@@ -156,6 +157,70 @@ def sanitize_integer(value, min_value=None, max_value=None):
         return value
     except (TypeError, ValueError):
         return None
+
+def calculate_image_dimensions(image_url, timeout=2):
+    """Calculate image dimensions for a given URL - optimized for speed"""
+    try:
+        # For local/cached images - these are fast and reliable
+        if image_url.startswith('/'):
+            if image_url.startswith('/cached/'):
+                cached_path = os.path.join('static', 'cached_images', image_url[8:])
+                if os.path.exists(cached_path):
+                    from PIL import Image
+                    with Image.open(cached_path) as img:
+                        return img.size  # Returns (width, height)
+            elif image_url.startswith('/static/'):
+                static_path = image_url[1:]  # Remove leading slash
+                if os.path.exists(static_path):
+                    from PIL import Image
+                    with Image.open(static_path) as img:
+                        return img.size
+            return None
+        
+        # For external URLs - use intelligent defaults based on common Pinterest patterns
+        # This avoids slow network requests that can block the UI
+        if image_url.startswith('http'):
+            # Return intelligent defaults based on URL patterns or random selection
+            import random
+            # Common Pinterest aspect ratios
+            aspect_ratios = [
+                (400, 600),   # Portrait: 2:3 ratio (most common)
+                (400, 500),   # Portrait: 4:5 ratio
+                (400, 400),   # Square: 1:1 ratio
+                (400, 300),   # Landscape: 4:3 ratio
+                (400, 533),   # Portrait: 3:4 ratio
+                (400, 800),   # Tall portrait: 1:2 ratio
+            ]
+            # Use a deterministic but varied selection based on URL hash
+            url_hash = hash(image_url) % len(aspect_ratios)
+            return aspect_ratios[url_hash]
+            
+        return None
+        
+    except Exception as e:
+        print(f"Error calculating dimensions for {image_url}: {e}")
+        return None
+
+def update_pin_dimensions(pin_id, image_url):
+    """Update pin dimensions in database"""
+    try:
+        dimensions = calculate_image_dimensions(image_url)
+        if dimensions:
+            width, height = dimensions
+            db = get_db_connection()
+            cursor = db.cursor()
+            cursor.execute("""
+                UPDATE pins 
+                SET image_width = %s, image_height = %s 
+                WHERE id = %s
+            """, (width, height, pin_id))
+            cursor.close()
+            db.close()
+            return True
+        return False
+    except Exception as e:
+        print(f"Error updating pin dimensions: {e}")
+        return False
 
 # Database connection pool configuration
 dbconfig = {
@@ -458,44 +523,64 @@ def board(board_id):
         """, (board_id,))
         sections = cursor.fetchall()
         
-        # Get pins for this board (including color data and cached images if table exists) (user-scoped)
+        # Check if this is a featured view (from search) - load all pins if so
+        is_featured = request.args.get('featured') or request.args.get('highlight')
+        
+        # Get total pin count for pagination
+        cursor.execute("""
+            SELECT COUNT(*) as total
+            FROM pins p
+            WHERE p.board_id = %s AND p.user_id = %s
+        """, (board_id, user['id']))
+        total_pins = cursor.fetchone()['total']
+        
+        # Determine initial limit: 1.5 screens (~30-45 pins) unless featured
+        if is_featured:
+            initial_limit = total_pins  # Load all if featured
+        else:
+            initial_limit = 40  # ~1.5 screens worth of pins
+        
+        # Get initial pins for this board (simplified - no dimension queries)
         try:
             # Check if cached_images table exists
             cursor.execute("SHOW TABLES LIKE 'cached_images'")
             cached_images_exists = cursor.fetchone() is not None
             
             if cached_images_exists:
-                # Include cached images data
+                # Include cached images data (no dimensions)
                 cursor.execute("""
                     SELECT p.*, s.name as section_name, 
-                           ci.cached_filename, ci.cache_status, ci.width as cached_width, ci.height as cached_height
+                           ci.cached_filename, ci.cache_status
                     FROM pins p 
                     LEFT JOIN sections s ON p.section_id = s.id 
                     LEFT JOIN cached_images ci ON p.cached_image_id = ci.id AND ci.cache_status = 'cached'
                     WHERE p.board_id = %s AND p.user_id = %s
                     ORDER BY p.created_at DESC, p.id ASC
-                """, (board_id, user['id']))
+                    LIMIT %s
+                """, (board_id, user['id'], initial_limit))
             else:
                 # Fallback query without cached images
                 cursor.execute("""
                     SELECT p.*, s.name as section_name, 
-                           NULL as cached_filename, NULL as cache_status, NULL as cached_width, NULL as cached_height
+                           NULL as cached_filename, NULL as cache_status
                     FROM pins p 
                     LEFT JOIN sections s ON p.section_id = s.id 
                     WHERE p.board_id = %s AND p.user_id = %s
                     ORDER BY p.created_at DESC, p.id ASC
-                """, (board_id, user['id']))
+                    LIMIT %s
+                """, (board_id, user['id'], initial_limit))
         except Exception as e:
             # Fallback to basic query if there are any issues
             print(f"Warning: Could not check cached_images table, using fallback query: {e}")
             cursor.execute("""
                 SELECT p.*, s.name as section_name, 
-                       NULL as cached_filename, NULL as cache_status, NULL as cached_width, NULL as cached_height
+                       NULL as cached_filename, NULL as cache_status
                 FROM pins p 
                 LEFT JOIN sections s ON p.section_id = s.id 
-                WHERE p.board_id = %s 
+                WHERE p.board_id = %s AND p.user_id = %s
                 ORDER BY p.created_at DESC, p.id ASC
-            """, (board_id,))
+                LIMIT %s
+            """, (board_id, user['id'], initial_limit))
         pins = cursor.fetchall()
         
         # Get all boards for the move board functionality (user-scoped)
@@ -509,13 +594,30 @@ def board(board_id):
         flask_env = os.getenv('FLASK_ENV', 'production')
         is_development = flask_env in ['development', 'debug']
         
-        # Add cache-busting headers to prevent browser caching during development
-        from flask import make_response
-        response = make_response(render_template('board.html', board=board, sections=sections, pins=pins, all_boards=all_boards, is_development=is_development))
+        # Create response with appropriate caching headers
+        from flask import make_response, Response
+        response = make_response(render_template('board.html', board=board, sections=sections, pins=pins, all_boards=all_boards, is_development=is_development, total_pin_count=total_pins, is_featured=is_featured))
+        
         if is_development:
+            # Cache-busting headers in development
             response.headers['Cache-Control'] = 'no-cache, no-store, must-revalidate'
             response.headers['Pragma'] = 'no-cache'
             response.headers['Expires'] = '0'
+        else:
+            # Enable browser caching in production for faster subsequent loads
+            # Use ETag based on board_id + user_id + board updated_at timestamp + total pins
+            board_updated = board.get('updated_at') or board.get('created_at') or ''
+            etag_data = f"{board_id}_{user['id']}_{board_updated}_{total_pins}"
+            etag = hashlib.md5(etag_data.encode()).hexdigest()
+            
+            # Check if client has a matching ETag (304 Not Modified)
+            if request.headers.get('If-None-Match') == etag:
+                return Response(status=304)
+            
+            response.headers['ETag'] = etag
+            response.headers['Cache-Control'] = 'private, max-age=300'  # Cache for 5 minutes
+            response.headers['Vary'] = 'Cookie'  # Vary by user session
+            
         return response
     except Exception as e:
         print(f"Error in board route: {str(e)}")
@@ -527,41 +629,276 @@ def search():
     user = get_current_user()
     query = request.args.get('q', '').strip()
     if not query:
-        return render_template('search.html', matching_boards=[], matching_pins=[], query=query)
+        return render_template('search.html', matching_boards=[], matching_pins=[], query=query, total_pin_count=0, total_board_count=0)
 
+    # Initialize variables to prevent NameError if exception occurs
+    matching_boards = []
+    matching_pins = []
+    total_count = 0
+    total_board_count = 0
+    
     db = None
     cursor = None
     try:
         db = get_db_connection()
         cursor = db.cursor(dictionary=True)
         
-        board_sql = "SELECT * FROM boards WHERE name LIKE %s AND user_id = %s"
         search_term = f"%{query}%"
-        cursor.execute(board_sql, (search_term, user['id']))
+        
+        # Optimized: Get total board count first (for pagination)
+        board_count_sql = """
+            SELECT COUNT(*) as total
+            FROM boards b
+            WHERE b.name LIKE %s AND b.user_id = %s
+        """
+        cursor.execute(board_count_sql, (search_term, user['id']))
+        total_board_count = cursor.fetchone()['total']
+        
+        # Optimized: Get boards with their first pin image, limit to first 10 for initial load
+        board_sql = """
+            SELECT b.*, 
+                   (SELECT p.image_url FROM pins p 
+                    WHERE p.board_id = b.id AND p.user_id = %s 
+                    LIMIT 1) as random_pin_image_url
+            FROM boards b
+            WHERE b.name LIKE %s AND b.user_id = %s
+            ORDER BY b.created_at DESC
+            LIMIT 10
+        """
+        cursor.execute(board_sql, (user['id'], search_term, user['id']))
         matching_boards = cursor.fetchall()
         
+        # Set default image for boards without pins
         for board in matching_boards:
-            cursor.execute("SELECT image_url FROM pins WHERE board_id = %s AND user_id = %s ORDER BY RAND() LIMIT 1", (board['id'], user['id']))
-            pin = cursor.fetchone()
-            board['random_pin_image_url'] = pin['image_url'] if pin else 'path/to/default_image.jpg'
+            if not board['random_pin_image_url']:
+                board['random_pin_image_url'] = 'path/to/default_image.jpg'
 
-        pin_sql = """
-            SELECT p.*, b.name as board_name 
+        # Optimized: Get total pin count first (for pagination)
+        count_sql = """
+            SELECT COUNT(*) as total
             FROM pins p 
-            LEFT JOIN boards b ON p.board_id = b.id 
             WHERE (p.title LIKE %s OR p.description LIKE %s) AND p.user_id = %s
         """
+        cursor.execute(count_sql, (search_term, search_term, user['id']))
+        total_count = cursor.fetchone()['total']
+        
+        # Optimized: Single query with all joins, limit to first 10 pins for initial load
+        pin_sql = """
+            SELECT p.*, b.name as board_name, s.name as section_name,
+                   ci.cached_filename, ci.cache_status
+            FROM pins p 
+            LEFT JOIN boards b ON p.board_id = b.id 
+            LEFT JOIN sections s ON p.section_id = s.id
+            LEFT JOIN cached_images ci ON p.cached_image_id = ci.id AND ci.cache_status = 'cached'
+            WHERE (p.title LIKE %s OR p.description LIKE %s) AND p.user_id = %s
+            ORDER BY p.created_at DESC
+            LIMIT 10
+        """
+        
         cursor.execute(pin_sql, (search_term, search_term, user['id']))
         matching_pins = cursor.fetchall()
+        
+        # REMOVED: Blocking dimension calculation - let the background processor handle it
+        
     except mysql.connector.Error as e:
-        return jsonify({"error": str(e)}), 500
+        print(f"Database error in search: {str(e)}")
+        # Return empty results instead of JSON error for better UX
+        return render_template('search.html', matching_boards=[], matching_pins=[], query=query, total_pin_count=0, total_board_count=0)
+    except Exception as e:
+        print(f"Error in search route: {str(e)}")
+        # Log the full traceback for debugging
+        print(traceback.format_exc())
+        # Return empty results instead of crashing
+        return render_template('search.html', matching_boards=[], matching_pins=[], query=query, total_pin_count=0, total_board_count=0)
     finally:
         if cursor:
             cursor.close()
         if db:
             db.close()
 
-    return render_template('search.html', matching_boards=matching_boards, matching_pins=matching_pins, query=query)
+    return render_template('search.html', matching_boards=matching_boards, matching_pins=matching_pins, query=query, total_pin_count=total_count, total_board_count=total_board_count)
+
+@app.route('/api/search/pins', methods=['GET'])
+@login_required
+def search_pins_api():
+    """API endpoint to load more search results with pagination"""
+    user = get_current_user()
+    query = request.args.get('q', '').strip()
+    offset = int(request.args.get('offset', 10))
+    limit = int(request.args.get('limit', 10))
+    
+    if not query:
+        return jsonify({"success": False, "error": "Query parameter required"}), 400
+    
+    db = None
+    cursor = None
+    try:
+        db = get_db_connection()
+        cursor = db.cursor(dictionary=True)
+        
+        search_term = f"%{query}%"
+        
+        # Optimized: Single query with all joins, with pagination
+        pin_sql = """
+            SELECT p.*, b.name as board_name, s.name as section_name,
+                   ci.cached_filename, ci.cache_status
+            FROM pins p 
+            LEFT JOIN boards b ON p.board_id = b.id 
+            LEFT JOIN sections s ON p.section_id = s.id
+            LEFT JOIN cached_images ci ON p.cached_image_id = ci.id AND ci.cache_status = 'cached'
+            WHERE (p.title LIKE %s OR p.description LIKE %s) AND p.user_id = %s
+            ORDER BY p.created_at DESC
+            LIMIT %s OFFSET %s
+        """
+        
+        cursor.execute(pin_sql, (search_term, search_term, user['id'], limit, offset))
+        matching_pins = cursor.fetchall()
+        
+        return jsonify({
+            "success": True,
+            "pins": matching_pins,
+            "has_more": len(matching_pins) == limit  # If we got a full page, there might be more
+        })
+        
+    except mysql.connector.Error as e:
+        print(f"Database error in search_pins_api: {str(e)}")
+        return jsonify({"success": False, "error": str(e)}), 500
+    except Exception as e:
+        print(f"Error in search_pins_api: {str(e)}")
+        print(traceback.format_exc())
+        return jsonify({"success": False, "error": str(e)}), 500
+    finally:
+        if cursor:
+            cursor.close()
+        if db:
+            db.close()
+
+@app.route('/api/search/boards', methods=['GET'])
+@login_required
+def search_boards_api():
+    """API endpoint to load more search results for boards with pagination"""
+    user = get_current_user()
+    query = request.args.get('q', '').strip()
+    offset = int(request.args.get('offset', 10))
+    limit = int(request.args.get('limit', 10))
+    
+    if not query:
+        return jsonify({"success": False, "error": "Query parameter required"}), 400
+    
+    db = None
+    cursor = None
+    try:
+        db = get_db_connection()
+        cursor = db.cursor(dictionary=True)
+        
+        search_term = f"%{query}%"
+        
+        # Optimized: Get boards with their first pin image, with pagination
+        board_sql = """
+            SELECT b.*, 
+                   (SELECT p.image_url FROM pins p 
+                    WHERE p.board_id = b.id AND p.user_id = %s 
+                    LIMIT 1) as random_pin_image_url
+            FROM boards b
+            WHERE b.name LIKE %s AND b.user_id = %s
+            ORDER BY b.created_at DESC
+            LIMIT %s OFFSET %s
+        """
+        
+        cursor.execute(board_sql, (user['id'], search_term, user['id'], limit, offset))
+        matching_boards = cursor.fetchall()
+        
+        # Set default image for boards without pins
+        for board in matching_boards:
+            if not board['random_pin_image_url']:
+                board['random_pin_image_url'] = 'path/to/default_image.jpg'
+        
+        return jsonify({
+            "success": True,
+            "boards": matching_boards,
+            "has_more": len(matching_boards) == limit  # If we got a full page, there might be more
+        })
+        
+    except mysql.connector.Error as e:
+        print(f"Database error in search_boards_api: {str(e)}")
+        return jsonify({"success": False, "error": str(e)}), 500
+    except Exception as e:
+        print(f"Error in search_boards_api: {str(e)}")
+        print(traceback.format_exc())
+        return jsonify({"success": False, "error": str(e)}), 500
+    finally:
+        if cursor:
+            cursor.close()
+        if db:
+            db.close()
+
+@app.route('/api/board/<int:board_id>/pins', methods=['GET'])
+@login_required
+def board_pins_api(board_id):
+    """API endpoint to load more board pins with pagination"""
+    user = get_current_user()
+    offset = int(request.args.get('offset', 0))
+    limit = int(request.args.get('limit', 40))
+    
+    db = None
+    cursor = None
+    try:
+        db = get_db_connection()
+        cursor = db.cursor(dictionary=True)
+        
+        # Verify board belongs to user
+        cursor.execute("SELECT id FROM boards WHERE id = %s AND user_id = %s", (board_id, user['id']))
+        if not cursor.fetchone():
+            return jsonify({"success": False, "error": "Board not found"}), 404
+        
+        # Check if cached_images table exists
+        cursor.execute("SHOW TABLES LIKE 'cached_images'")
+        cached_images_exists = cursor.fetchone() is not None
+        
+        if cached_images_exists:
+            # Include cached images data (no dimensions)
+            cursor.execute("""
+                SELECT p.*, s.name as section_name, 
+                       ci.cached_filename, ci.cache_status
+                FROM pins p 
+                LEFT JOIN sections s ON p.section_id = s.id 
+                LEFT JOIN cached_images ci ON p.cached_image_id = ci.id AND ci.cache_status = 'cached'
+                WHERE p.board_id = %s AND p.user_id = %s
+                ORDER BY p.created_at DESC, p.id ASC
+                LIMIT %s OFFSET %s
+            """, (board_id, user['id'], limit, offset))
+        else:
+            # Fallback query without cached images
+            cursor.execute("""
+                SELECT p.*, s.name as section_name, 
+                       NULL as cached_filename, NULL as cache_status
+                FROM pins p 
+                LEFT JOIN sections s ON p.section_id = s.id 
+                WHERE p.board_id = %s AND p.user_id = %s
+                ORDER BY p.created_at DESC, p.id ASC
+                LIMIT %s OFFSET %s
+            """, (board_id, user['id'], limit, offset))
+        
+        pins = cursor.fetchall()
+        
+        return jsonify({
+            "success": True,
+            "pins": pins,
+            "has_more": len(pins) == limit  # If we got a full page, there might be more
+        })
+        
+    except mysql.connector.Error as e:
+        print(f"Database error in board_pins_api: {str(e)}")
+        return jsonify({"success": False, "error": str(e)}), 500
+    except Exception as e:
+        print(f"Error in board_pins_api: {str(e)}")
+        print(traceback.format_exc())
+        return jsonify({"success": False, "error": str(e)}), 500
+    finally:
+        if cursor:
+            cursor.close()
+        if db:
+            db.close()
 
 @app.route('/add-content')
 @login_required
@@ -792,6 +1129,12 @@ def add_pin():
         
         pin_id = cursor.lastrowid
         db.commit()
+        
+        # Calculate and store image dimensions for the new pin
+        try:
+            update_pin_dimensions(pin_id, image_url)
+        except Exception as e:
+            print(f"Error calculating dimensions for new pin {pin_id}: {e}")
         
         # Queue external images for caching (only if cached_images table exists)
         if image_url.startswith('http'):
@@ -1875,6 +2218,94 @@ def check_url_health_for_board(board_id):
     except mysql.connector.Error as e:
         return jsonify({"success": False, "error": str(e)}), 500
     except Exception as e:
+        return jsonify({"success": False, "error": str(e)}), 500
+
+@app.route('/api/check-pin-url/<int:pin_id>', methods=['POST'])
+@login_required
+def check_pin_url(pin_id):
+    """Manually check URL health for a single pin"""
+    user = get_current_user()
+    try:
+        db = get_db_connection()
+        cursor = db.cursor(dictionary=True)
+        
+        # Verify pin belongs to user
+        cursor.execute("SELECT id, link, board_id FROM pins WHERE id = %s AND user_id = %s", (pin_id, user['id']))
+        pin = cursor.fetchone()
+        
+        if not pin:
+            return jsonify({"success": False, "error": "Pin not found"}), 404
+        
+        if not pin['link']:
+            return jsonify({"success": False, "error": "Pin has no URL to check"}), 400
+        
+        # Check the URL
+        import requests
+        
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (compatible; ScrapbookBot/1.0; +https://github.com/isaaclee0/scrapbook)',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+            'Accept-Language': 'en-US,en;q=0.5',
+            'Connection': 'keep-alive',
+            'Upgrade-Insecure-Requests': '1',
+        }
+        
+        def check_wayback_archive(url):
+            """Check if Wayback Machine has an archive of the URL"""
+            try:
+                wayback_api = f"https://archive.org/wayback/available?url={url}"
+                response = requests.get(wayback_api, timeout=5)
+                if response.status_code == 200:
+                    data = response.json()
+                    if data.get('archived_snapshots', {}).get('closest', {}).get('available'):
+                        return data['archived_snapshots']['closest']['url']
+            except Exception as e:
+                print(f"Error checking Wayback Machine for {url}: {e}")
+            return None
+        
+        status = 'unknown'
+        archive_url = None
+        
+        try:
+            # Quick HEAD request to check if URL is accessible
+            response = requests.head(pin['link'], headers=headers, timeout=5, allow_redirects=True)
+            status = 'live' if response.status_code < 400 else 'broken'
+            
+            # If broken, check Wayback Machine for archives
+            if status == 'broken':
+                archive_url = check_wayback_archive(pin['link'])
+                if archive_url:
+                    status = 'archived'
+        except Exception as e:
+            # Mark as unknown if check fails, but still check for archive
+            archive_url = check_wayback_archive(pin['link'])
+            status = 'archived' if archive_url else 'unknown'
+        
+        # Update database
+        cursor.execute("""
+            INSERT INTO url_health (pin_id, url, last_checked, status, archive_url)
+            VALUES (%s, %s, NOW(), %s, %s)
+            ON DUPLICATE KEY UPDATE
+            last_checked = NOW(),
+            status = VALUES(status),
+            archive_url = VALUES(archive_url)
+        """, (pin_id, pin['link'], status, archive_url))
+        
+        db.commit()
+        cursor.close()
+        db.close()
+        
+        return jsonify({
+            "success": True,
+            "status": status,
+            "archive_url": archive_url
+        })
+        
+    except mysql.connector.Error as e:
+        return jsonify({"success": False, "error": str(e)}), 500
+    except Exception as e:
+        print(f"Error checking pin URL: {str(e)}")
+        print(traceback.format_exc())
         return jsonify({"success": False, "error": str(e)}), 500
 
 @app.route('/api/debug-url-health/<int:board_id>')
