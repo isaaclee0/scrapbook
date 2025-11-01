@@ -1353,9 +1353,9 @@
 </style>
 
 <script>
-// Assign template variables to JS variables
-const pinId = {{ pin.id }};
-const boardId = {{ pin.board_id }};
+// Assign template variables to JS variables (JSON-safe)
+const pinId = {{ pin.id|tojson }};
+const boardId = {{ pin.board_id|tojson }};
 
 document.addEventListener('DOMContentLoaded', function() {
     // Board menu functionality
@@ -1506,7 +1506,9 @@ function deletePin(pinId) {
     .then(response => response.json())
     .then(data => {
         if (data.success) {
-            window.location.href = '/';
+            // Redirect back to the board the user was viewing
+            const targetBoardId = data.board_id || boardId;
+            window.location.href = `/board/${targetBoardId}`;
         } else {
             alert('Failed to delete pin: ' + data.error);
         }

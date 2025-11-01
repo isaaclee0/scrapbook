@@ -2441,6 +2441,10 @@ def delete_pin(pin_id):
         cursor.execute("DELETE FROM pins WHERE id = %s AND user_id = %s", (pin_id, user['id']))
         db.commit()
         
+        # Invalidate gallery cache if Redis is available
+        if redis_client:
+            redis_client.delete('view//')
+        
         return jsonify({
             'success': True,
             'board_id': board_id
