@@ -539,6 +539,21 @@
             background: #2472a4;
         }
 
+        .new-board-btn {
+            background: #2980b9;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .new-board-btn:hover {
+            background: #2472a4;
+        }
+
         .board-search {
             padding: 8px 12px;
             border-bottom: 1px solid #eee;
@@ -933,6 +948,17 @@
                             <div class="board-menu-add" id="board-menu-add">
                                 <div class="board-menu-header">
                                     <h3>Select Board</h3>
+                                    <button class="new-board-btn" id="new-board-btn-add" onclick="toggleInlineBoardForm()">+ New Board</button>
+                                </div>
+                                <!-- Inline board creation form -->
+                                <div class="inline-board-form" id="inline-board-form" style="display: none;">
+                                    <div style="padding: 12px; border-bottom: 1px solid #eee; background: #f8f9fa;">
+                                        <input type="text" id="inline-board-name" placeholder="Board name..." style="width: 100%; padding: 8px 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 13px; margin-bottom: 8px;">
+                                        <div style="display: flex; gap: 8px;">
+                                            <button onclick="createInlineBoard()" style="flex: 1; padding: 6px 12px; background: #2980b9; color: white; border: none; border-radius: 6px; font-size: 13px; cursor: pointer;">Create</button>
+                                            <button onclick="cancelInlineBoard()" style="flex: 1; padding: 6px 12px; background: #95a5a6; color: white; border: none; border-radius: 6px; font-size: 13px; cursor: pointer;">Cancel</button>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="board-search">
                                     <input type="text" class="search-input" id="board-search-add" placeholder="Search boards...">
@@ -1240,8 +1266,14 @@
 
             // Toggle board menu
             currentBoardAdd.onclick = function() {
+                const wasActive = boardMenuAdd.classList.contains('active');
                 boardMenuAdd.classList.toggle('active');
                 sectionMenuAdd.classList.remove('active');
+                // When opening the board menu, focus the search box for immediate typing
+                if (!wasActive && boardMenuAdd.classList.contains('active') && boardSearchAdd) {
+                    boardSearchAdd.focus();
+                    boardSearchAdd.select();
+                }
             };
 
             // Toggle section menu
@@ -1508,6 +1540,9 @@
             selectedBoardId = null;
             selectedSectionId = null;
             
+            // Reset inline board form
+            cancelInlineBoard();
+
             // Reset inline section form
             cancelInlineSection();
             
@@ -1515,6 +1550,91 @@
             document.querySelectorAll('.color-option').forEach(option => {
                 option.classList.remove('selected');
             });
+        }
+
+        // Inline board creation functions
+        function toggleInlineBoardForm() {
+            const form = document.getElementById('inline-board-form');
+            const boardList = document.getElementById('board-list-add');
+            const boardSearchInput = document.getElementById('board-search-add');
+            const boardSearchRow = boardSearchInput ? boardSearchInput.parentElement : null;
+            const input = document.getElementById('inline-board-name');
+
+            if (form.style.display === 'none') {
+                // Show form
+                form.style.display = 'block';
+                if (boardList) boardList.style.display = 'none';
+                if (boardSearchRow) boardSearchRow.style.display = 'none';
+                input.value = '';
+                input.focus();
+                
+                // Add Enter key support
+                input.onkeypress = function(e) {
+                    if (e.key === 'Enter') {
+                        e.preventDefault();
+                        createInlineBoard();
+                    }
+                };
+            } else {
+                // Hide form
+                cancelInlineBoard();
+            }
+        }
+
+        function cancelInlineBoard() {
+            const form = document.getElementById('inline-board-form');
+            const boardList = document.getElementById('board-list-add');
+            const boardSearchInput = document.getElementById('board-search-add');
+            const boardSearchRow = boardSearchInput ? boardSearchInput.parentElement : null;
+            const input = document.getElementById('inline-board-name');
+            if (form) form.style.display = 'none';
+            if (boardList) boardList.style.display = 'block';
+            if (boardSearchRow) boardSearchRow.style.display = 'block';
+            if (input) input.value = '';
+        }
+
+        async function createInlineBoard() {
+            const input = document.getElementById('inline-board-name');
+            const boardName = input ? input.value.trim() : '';
+            if (!boardName) {
+                alert('Please enter a board name');
+                return;
+            }
+
+            try {
+                const response = await fetch('/create-board', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ name: boardName })
+                });
+
+                const data = await response.json();
+                if (data.success && data.board_id) {
+                    // Add the new board to the custom dropdown
+                    const boardListAdd = document.getElementById('board-list-add');
+                    if (boardListAdd) {
+                        const button = document.createElement('button');
+                        button.className = 'board-option-add';
+                        button.setAttribute('data-board-id', data.board_id);
+                        button.textContent = data.name || boardName;
+                        button.onclick = function() {
+                            selectBoard(data.board_id, data.name || boardName);
+                        };
+                        boardListAdd.prepend(button);
+                    }
+
+                    // Hide form and show list
+                    cancelInlineBoard();
+
+                    // Select the newly created board
+                    selectBoard(data.board_id, data.name || boardName);
+                } else {
+                    alert(data.error || 'Failed to create board');
+                }
+            } catch (error) {
+                console.error('Error creating board:', error);
+                alert('Failed to create board');
+            }
         }
 
         // Inline section creation functions
