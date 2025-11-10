@@ -1272,10 +1272,13 @@ def update_pin(pin_id):
 @login_required
 def view_pin(pin_id):
     user = get_current_user()
+    db = None
+    cursor = None
     try:
+        print(f"view_pin: start pin_id={pin_id}, user_id={user['id']}")
         db = get_db_connection()
-        cursor = db.cursor(dictionary=True)
-        
+        cursor = db.cursor(dictionary=True, buffered=True)
+
         # Get pin details with board and section names (user-scoped)
         cursor.execute("""
             SELECT p.*, b.name as board_name, s.name as section_name,
@@ -1286,27 +1289,40 @@ def view_pin(pin_id):
             LEFT JOIN url_health uh ON p.id = uh.pin_id
             WHERE p.id = %s AND p.user_id = %s
         """, (pin_id, user['id']))
-        
+
         pin = cursor.fetchone()
-        
+        print(f"view_pin: fetched pin record? {'yes' if pin else 'no'}")
+
         if not pin:
+            print(f"view_pin: pin {pin_id} not found for user {user['id']}")
             return "Pin not found", 404
-            
+
         # Get all boards for the board selector (user-scoped)
         cursor.execute("SELECT * FROM boards WHERE user_id = %s ORDER BY name", (user['id'],))
         boards = cursor.fetchall()
-        
+        print(f"view_pin: boards fetched count={len(boards)}")
+
         # Get all sections for the current board
         cursor.execute("SELECT * FROM sections WHERE board_id = %s ORDER BY name", (pin['board_id'],))
         sections = cursor.fetchall()
-        
-        cursor.close()
-        db.close()
-        
+        print(f"view_pin: sections fetched count={len(sections)}")
+
         return render_template('pin.html', pin=pin, boards=boards, sections=sections)
     except Exception as e:
         print(f"Error in view_pin route: {str(e)}")
+        traceback.print_exc()
         return "An error occurred", 500
+    finally:
+        if cursor:
+            try:
+                cursor.close()
+            except Exception as cursor_close_error:
+                print(f"view_pin: error closing cursor: {cursor_close_error}")
+        if db:
+            try:
+                db.close()
+            except Exception as db_close_error:
+                print(f"view_pin: error closing db connection: {db_close_error}")
 
 @app.route('/create-board', methods=['POST'])
 @login_required
