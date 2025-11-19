@@ -229,10 +229,13 @@ dbconfig = {
     "password": os.getenv('DB_PASSWORD'),
     "database": os.getenv('DB_NAME', 'db'),
     "pool_name": "mypool",
-    "pool_size": 10,
+    "pool_size": 20,  # Increased from 10 to handle more concurrent requests
+    "pool_reset_session": True,  # Reset session state when returning connection to pool
     "autocommit": True,
     "charset": 'utf8mb4',
-    "collation": 'utf8mb4_unicode_ci'
+    "collation": 'utf8mb4_unicode_ci',
+    "connection_timeout": 5,  # Timeout for getting connection from pool
+    "use_unicode": True
 }
 
 # Create connection pool
@@ -244,9 +247,19 @@ except mysql.connector.Error as err:
     cnxpool = None
 
 def get_db_connection():
+    """
+    Get a database connection from the pool.
+    Raises an exception if connection cannot be obtained.
+    """
     try:
         if cnxpool:
-            return cnxpool.get_connection()
+            try:
+                return cnxpool.get_connection()
+            except mysql.connector.pooling.PoolError as pool_err:
+                # Pool exhausted - log and re-raise with more context
+                print(f"Database connection pool exhausted: {pool_err}")
+                print(f"Pool size: {cnxpool.pool_size}, active connections may be leaked")
+                raise mysql.connector.Error(f"Database connection pool exhausted. Please try again in a moment.")
         else:
             return mysql.connector.connect(**dbconfig)
     except mysql.connector.Error as err:
@@ -322,6 +335,8 @@ def login_page():
         return render_template('login.html')
     
     # POST - process magic link request
+    db = None
+    cursor = None
     try:
         data = request.get_json()
         email = sanitize_string(data.get('email', ''), max_length=255).lower().strip()
@@ -330,25 +345,40 @@ def login_page():
             return jsonify({"error": "Valid email address is required"}), 400
         
         # Check if user exists, create if not
-        db = get_db_connection()
-        cursor = db.cursor(dictionary=True)
-        
-        cursor.execute("SELECT id FROM users WHERE email = %s", (email,))
-        user = cursor.fetchone()
-        
-        if not user:
-            # Create new user
-            cursor.execute(
-                "INSERT INTO users (email, created_at) VALUES (%s, NOW())",
-                (email,)
-            )
-            db.commit()
+        try:
+            db = get_db_connection()
+            cursor = db.cursor(dictionary=True)
             
-            # Send welcome email
-            send_welcome_email(email)
-        
-        cursor.close()
-        db.close()
+            cursor.execute("SELECT id FROM users WHERE email = %s", (email,))
+            user = cursor.fetchone()
+            
+            if not user:
+                # Create new user
+                cursor.execute(
+                    "INSERT INTO users (email, created_at) VALUES (%s, NOW())",
+                    (email,)
+                )
+                db.commit()
+                
+                # Send welcome email
+                send_welcome_email(email)
+            
+            cursor.close()
+            db.close()
+        except mysql.connector.Error as db_err:
+            # Database error - return user-friendly message
+            print(f"Database error in login: {str(db_err)}")
+            if cursor:
+                try:
+                    cursor.close()
+                except:
+                    pass
+            if db:
+                try:
+                    db.close()
+                except:
+                    pass
+            return jsonify({"error": "Database temporarily unavailable. Please try again in a moment."}), 503
         
         # Generate magic link token
         token = generate_magic_link_token(email)
@@ -367,6 +397,17 @@ def login_page():
             
     except Exception as e:
         print(f"Error in login: {str(e)}")
+        # Ensure cleanup on any error
+        if cursor:
+            try:
+                cursor.close()
+            except:
+                pass
+        if db:
+            try:
+                db.close()
+            except:
+                pass
         return jsonify({"error": "An error occurred"}), 500
 
 @app.route('/auth/verify')
@@ -435,8 +476,13 @@ def gallery():
     db = None
     cursor = None
     try:
-        db = get_db_connection()
-        cursor = db.cursor(dictionary=True)
+        try:
+            db = get_db_connection()
+            cursor = db.cursor(dictionary=True)
+        except mysql.connector.Error as db_err:
+            # Database unavailable - return user-friendly error
+            print(f"Database error in gallery: {str(db_err)}")
+            return render_template('auth_error.html', message="Database temporarily unavailable. Please try again in a moment."), 503
         
         # Get boards with pin count and image (user-scoped)
         cursor.execute("""
@@ -544,7 +590,10 @@ def board(board_id):
         try:
             # Check if cached_images table exists
             cursor.execute("SHOW TABLES LIKE 'cached_images'")
-            cached_images_exists = cursor.fetchone() is not None
+            result = cursor.fetchone()
+            cached_images_exists = result is not None
+            # Consume any remaining results
+            cursor.fetchall()
             
             if cached_images_exists:
                 # Include cached images data (no dimensions)
@@ -853,7 +902,10 @@ def board_pins_api(board_id):
         
         # Check if cached_images table exists
         cursor.execute("SHOW TABLES LIKE 'cached_images'")
-        cached_images_exists = cursor.fetchone() is not None
+        result = cursor.fetchone()
+        cached_images_exists = result is not None
+        # Consume any remaining results
+        cursor.fetchall()
         
         if cached_images_exists:
             # Include cached images data (no dimensions)
@@ -1045,7 +1097,10 @@ def save_pasted_image(data_url):
         
         # Check if cached_images table exists
         cursor.execute("SHOW TABLES LIKE 'cached_images'")
-        if cursor.fetchone():
+        result = cursor.fetchone()
+        # Consume any remaining results
+        cursor.fetchall()
+        if result:
             # Insert into cached_images table
             cursor.execute("""
                 INSERT INTO cached_images (
@@ -1112,7 +1167,10 @@ def add_pin():
         
         # Check if pins table has cached image columns
         cursor.execute("SHOW COLUMNS FROM pins LIKE 'cached_image_id'")
-        has_cached_columns = cursor.fetchone() is not None
+        result = cursor.fetchone()
+        has_cached_columns = result is not None
+        # Consume any remaining results
+        cursor.fetchall()
         
         if has_cached_columns and cached_image_id:
             # Insert with cached image information
@@ -1141,7 +1199,10 @@ def add_pin():
             try:
                 # Check if cached_images table exists before trying to cache
                 cursor.execute("SHOW TABLES LIKE 'cached_images'")
-                if cursor.fetchone():
+                result = cursor.fetchone()
+                # Consume any remaining results
+                cursor.fetchall()
+                if result:
                     from scripts.image_cache_service import ImageCacheService
                     cache_service = ImageCacheService()
                     cache_service.queue_image_for_caching(pin_id, image_url, 'low')
@@ -1295,6 +1356,11 @@ def view_pin(pin_id):
 
         if not pin:
             print(f"view_pin: pin {pin_id} not found for user {user['id']}")
+            # Ensure cursor is fully consumed before closing
+            try:
+                cursor.fetchall()  # Consume any remaining results
+            except:
+                pass
             return "Pin not found", 404
 
         # Get all boards for the board selector (user-scoped)
@@ -1308,6 +1374,22 @@ def view_pin(pin_id):
         print(f"view_pin: sections fetched count={len(sections)}")
 
         return render_template('pin.html', pin=pin, boards=boards, sections=sections)
+    except mysql.connector.errors.InterfaceError as e:
+        # Handle "Unread result found" errors specifically
+        if "Unread result found" in str(e):
+            print(f"Unread result found error in view_pin, attempting to recover: {str(e)}")
+            # Try to consume any remaining results
+            if cursor:
+                try:
+                    cursor.fetchall()
+                except:
+                    pass
+            # Return error but don't crash
+            return "An error occurred while loading the pin. Please try again.", 500
+        else:
+            print(f"Database interface error in view_pin route: {str(e)}")
+            traceback.print_exc()
+            return "An error occurred", 500
     except Exception as e:
         print(f"Error in view_pin route: {str(e)}")
         traceback.print_exc()
@@ -1315,6 +1397,11 @@ def view_pin(pin_id):
     finally:
         if cursor:
             try:
+                # Ensure all results are consumed before closing
+                try:
+                    cursor.fetchall()
+                except:
+                    pass
                 cursor.close()
             except Exception as cursor_close_error:
                 print(f"view_pin: error closing cursor: {cursor_close_error}")
