@@ -203,6 +203,8 @@ def calculate_image_dimensions(image_url, timeout=2):
 
 def update_pin_dimensions(pin_id, image_url):
     """Update pin dimensions in database"""
+    db = None
+    cursor = None
     try:
         dimensions = calculate_image_dimensions(image_url)
         if dimensions:
@@ -214,13 +216,22 @@ def update_pin_dimensions(pin_id, image_url):
                 SET image_width = %s, image_height = %s 
                 WHERE id = %s
             """, (width, height, pin_id))
-            cursor.close()
-            db.close()
             return True
         return False
     except Exception as e:
         print(f"Error updating pin dimensions: {e}")
         return False
+    finally:
+        if cursor:
+            try:
+                cursor.close()
+            except Exception:
+                pass
+        if db:
+            try:
+                db.close()
+            except Exception:
+                pass
 
 # Database connection pool configuration
 dbconfig = {
@@ -347,7 +358,7 @@ def login_page():
         # Check if user exists, create if not
         try:
             db = get_db_connection()
-            cursor = db.cursor(dictionary=True)
+            cursor = db.cursor(dictionary=True, buffered=True)
             
             cursor.execute("SELECT id FROM users WHERE email = %s", (email,))
             user = cursor.fetchone()
@@ -362,23 +373,26 @@ def login_page():
                 
                 # Send welcome email
                 send_welcome_email(email)
-            
-            cursor.close()
-            db.close()
         except mysql.connector.Error as db_err:
             # Database error - return user-friendly message
             print(f"Database error in login: {str(db_err)}")
+            return jsonify({"error": "Database temporarily unavailable. Please try again in a moment."}), 503
+        finally:
             if cursor:
                 try:
+                    # Ensure all results are consumed before closing
+                    try:
+                        cursor.fetchall()
+                    except:
+                        pass
                     cursor.close()
-                except:
+                except Exception:
                     pass
             if db:
                 try:
                     db.close()
-                except:
+                except Exception:
                     pass
-            return jsonify({"error": "Database temporarily unavailable. Please try again in a moment."}), 503
         
         # Generate magic link token
         token = generate_magic_link_token(email)
@@ -429,9 +443,11 @@ def verify_magic_link():
     email = payload.get('email')
     
     # Get user from database
+    db = None
+    cursor = None
     try:
         db = get_db_connection()
-        cursor = db.cursor(dictionary=True)
+        cursor = db.cursor(dictionary=True, buffered=True)
         
         cursor.execute("SELECT id, email FROM users WHERE email = %s", (email,))
         user = cursor.fetchone()
@@ -442,9 +458,6 @@ def verify_magic_link():
         # Update last login
         cursor.execute("UPDATE users SET last_login = NOW() WHERE id = %s", (user['id'],))
         db.commit()
-        
-        cursor.close()
-        db.close()
         
         # Generate session token
         session_token = generate_session_token(user['id'], user['email'])
@@ -457,7 +470,24 @@ def verify_magic_link():
         
     except Exception as e:
         print(f"Error in verify: {str(e)}")
+        traceback.print_exc()
         return render_template('auth_error.html', message="An error occurred during authentication"), 500
+    finally:
+        if cursor:
+            try:
+                # Ensure all results are consumed before closing
+                try:
+                    cursor.fetchall()
+                except:
+                    pass
+                cursor.close()
+            except Exception as cursor_close_error:
+                print(f"verify_magic_link: error closing cursor: {cursor_close_error}")
+        if db:
+            try:
+                db.close()
+            except Exception as db_close_error:
+                print(f"verify_magic_link: error closing db connection: {db_close_error}")
 
 @app.route('/auth/logout')
 def logout():
@@ -478,7 +508,7 @@ def gallery():
     try:
         try:
             db = get_db_connection()
-            cursor = db.cursor(dictionary=True)
+            cursor = db.cursor(dictionary=True, buffered=True)
         except mysql.connector.Error as db_err:
             # Database unavailable - return user-friendly error
             print(f"Database error in gallery: {str(db_err)}")
@@ -499,31 +529,37 @@ def gallery():
         boards = cursor.fetchall()
         
         # For each board, determine and save the display image
+        # Use buffered cursor to prevent "Unread result found" errors when executing multiple queries
         for board in boards:
             if board['default_image_url']:
                 # Use the custom default image
                 board['random_pin_image_url'] = board['default_image_url']
             elif board['pin_count'] > 0:
                 # No default set, but has pins - select a random one and save it
-                cursor.execute("""
-                    SELECT image_url 
-                    FROM pins 
-                    WHERE board_id = %s AND user_id = %s
-                    ORDER BY RAND() 
-                    LIMIT 1
-                """, (board['id'], user['id']))
-                pin = cursor.fetchone()
-                
-                if pin and pin['image_url']:
-                    # Save this random selection as the default so it doesn't change
+                try:
                     cursor.execute("""
-                        UPDATE boards 
-                        SET default_image_url = %s 
-                        WHERE id = %s AND user_id = %s AND default_image_url IS NULL
-                    """, (pin['image_url'], board['id'], user['id']))
-                    db.commit()
-                    board['random_pin_image_url'] = pin['image_url']
-                else:
+                        SELECT image_url 
+                        FROM pins 
+                        WHERE board_id = %s AND user_id = %s
+                        ORDER BY RAND() 
+                        LIMIT 1
+                    """, (board['id'], user['id']))
+                    pin = cursor.fetchone()
+                    
+                    if pin and pin['image_url']:
+                        # Save this random selection as the default so it doesn't change
+                        cursor.execute("""
+                            UPDATE boards 
+                            SET default_image_url = %s 
+                            WHERE id = %s AND user_id = %s AND default_image_url IS NULL
+                        """, (pin['image_url'], board['id'], user['id']))
+                        db.commit()
+                        board['random_pin_image_url'] = pin['image_url']
+                    else:
+                        board['random_pin_image_url'] = '/static/images/default_board.png'
+                except mysql.connector.Error as e:
+                    # If there's an error in the loop, log it but continue
+                    print(f"Error processing board {board['id']} in gallery: {str(e)}")
                     board['random_pin_image_url'] = '/static/images/default_board.png'
             else:
                 # No pins, use default image
@@ -534,12 +570,25 @@ def gallery():
             redis_client.delete('view//')
                 
     except mysql.connector.Error as e:
+        print(f"Database error in gallery: {str(e)}")
+        traceback.print_exc()
         return jsonify({"error": str(e)}), 500
     finally:
         if cursor:
-            cursor.close()
+            try:
+                # Ensure all results are consumed before closing
+                try:
+                    cursor.fetchall()
+                except:
+                    pass
+                cursor.close()
+            except Exception as cursor_close_error:
+                print(f"gallery: error closing cursor: {cursor_close_error}")
         if db:
-            db.close()
+            try:
+                db.close()
+            except Exception as db_close_error:
+                print(f"gallery: error closing db connection: {db_close_error}")
 
     return render_template('boards.html', boards=boards)
 
@@ -547,9 +596,11 @@ def gallery():
 @login_required
 def board(board_id):
     user = get_current_user()
+    db = None
+    cursor = None
     try:
         db = get_db_connection()
-        cursor = db.cursor(dictionary=True)
+        cursor = db.cursor(dictionary=True, buffered=True)
         
         # Get board details (user-scoped)
         cursor.execute("SELECT * FROM boards WHERE id = %s AND user_id = %s", (board_id, user['id']))
@@ -636,9 +687,6 @@ def board(board_id):
         cursor.execute("SELECT * FROM boards WHERE user_id = %s ORDER BY name", (user['id'],))
         all_boards = cursor.fetchall()
         
-        cursor.close()
-        db.close()
-        
         # Pass environment info to template
         flask_env = os.getenv('FLASK_ENV', 'production')
         is_development = flask_env in ['development', 'debug']
@@ -666,11 +714,28 @@ def board(board_id):
             response.headers['ETag'] = etag
             response.headers['Cache-Control'] = 'private, max-age=300'  # Cache for 5 minutes
             response.headers['Vary'] = 'Cookie'  # Vary by user session
-            
+        
         return response
     except Exception as e:
         print(f"Error in board route: {str(e)}")
+        traceback.print_exc()
         return "An error occurred", 500
+    finally:
+        if cursor:
+            try:
+                # Ensure all results are consumed before closing
+                try:
+                    cursor.fetchall()
+                except:
+                    pass
+                cursor.close()
+            except Exception as cursor_close_error:
+                print(f"board: error closing cursor: {cursor_close_error}")
+        if db:
+            try:
+                db.close()
+            except Exception as db_close_error:
+                print(f"board: error closing db connection: {db_close_error}")
 
 @app.route('/search', methods=['GET'])
 @login_required
@@ -690,7 +755,7 @@ def search():
     cursor = None
     try:
         db = get_db_connection()
-        cursor = db.cursor(dictionary=True)
+        cursor = db.cursor(dictionary=True, buffered=True)
         
         search_term = f"%{query}%"
         
@@ -761,9 +826,20 @@ def search():
         return render_template('search.html', matching_boards=[], matching_pins=[], query=query, total_pin_count=0, total_board_count=0)
     finally:
         if cursor:
-            cursor.close()
+            try:
+                # Ensure all results are consumed before closing
+                try:
+                    cursor.fetchall()
+                except:
+                    pass
+                cursor.close()
+            except Exception as cursor_close_error:
+                print(f"search: error closing cursor: {cursor_close_error}")
         if db:
-            db.close()
+            try:
+                db.close()
+            except Exception as db_close_error:
+                print(f"search: error closing db connection: {db_close_error}")
 
     return render_template('search.html', matching_boards=matching_boards, matching_pins=matching_pins, query=query, total_pin_count=total_count, total_board_count=total_board_count)
 
@@ -783,7 +859,7 @@ def search_pins_api():
     cursor = None
     try:
         db = get_db_connection()
-        cursor = db.cursor(dictionary=True)
+        cursor = db.cursor(dictionary=True, buffered=True)
         
         search_term = f"%{query}%"
         
@@ -818,9 +894,20 @@ def search_pins_api():
         return jsonify({"success": False, "error": str(e)}), 500
     finally:
         if cursor:
-            cursor.close()
+            try:
+                # Ensure all results are consumed before closing
+                try:
+                    cursor.fetchall()
+                except:
+                    pass
+                cursor.close()
+            except Exception as cursor_close_error:
+                print(f"search_pins_api: error closing cursor: {cursor_close_error}")
         if db:
-            db.close()
+            try:
+                db.close()
+            except Exception as db_close_error:
+                print(f"search_pins_api: error closing db connection: {db_close_error}")
 
 @app.route('/api/search/boards', methods=['GET'])
 @login_required
@@ -838,7 +925,7 @@ def search_boards_api():
     cursor = None
     try:
         db = get_db_connection()
-        cursor = db.cursor(dictionary=True)
+        cursor = db.cursor(dictionary=True, buffered=True)
         
         search_term = f"%{query}%"
         
@@ -877,9 +964,20 @@ def search_boards_api():
         return jsonify({"success": False, "error": str(e)}), 500
     finally:
         if cursor:
-            cursor.close()
+            try:
+                # Ensure all results are consumed before closing
+                try:
+                    cursor.fetchall()
+                except:
+                    pass
+                cursor.close()
+            except Exception as cursor_close_error:
+                print(f"search_boards_api: error closing cursor: {cursor_close_error}")
         if db:
-            db.close()
+            try:
+                db.close()
+            except Exception as db_close_error:
+                print(f"search_boards_api: error closing db connection: {db_close_error}")
 
 @app.route('/api/board/<int:board_id>/pins', methods=['GET'])
 @login_required
@@ -893,7 +991,7 @@ def board_pins_api(board_id):
     cursor = None
     try:
         db = get_db_connection()
-        cursor = db.cursor(dictionary=True)
+        cursor = db.cursor(dictionary=True, buffered=True)
         
         # Verify board belongs to user
         cursor.execute("SELECT id FROM boards WHERE id = %s AND user_id = %s", (board_id, user['id']))
@@ -948,9 +1046,20 @@ def board_pins_api(board_id):
         return jsonify({"success": False, "error": str(e)}), 500
     finally:
         if cursor:
-            cursor.close()
+            try:
+                # Ensure all results are consumed before closing
+                try:
+                    cursor.fetchall()
+                except:
+                    pass
+                cursor.close()
+            except Exception as cursor_close_error:
+                print(f"board_pins_api: error closing cursor: {cursor_close_error}")
         if db:
-            db.close()
+            try:
+                db.close()
+            except Exception as db_close_error:
+                print(f"board_pins_api: error closing db connection: {db_close_error}")
 
 @app.route('/add-content')
 @login_required
@@ -1042,7 +1151,7 @@ def get_sections(board_id):
     cursor = None
     try:
         db = get_db_connection()
-        cursor = db.cursor(dictionary=True)
+        cursor = db.cursor(dictionary=True, buffered=True)
         # Verify board belongs to user, then get sections
         cursor.execute("SELECT id FROM boards WHERE id = %s AND user_id = %s", (board_id, user['id']))
         if not cursor.fetchone():
@@ -1050,12 +1159,24 @@ def get_sections(board_id):
         cursor.execute("SELECT * FROM sections WHERE board_id = %s", (board_id,))
         sections = cursor.fetchall()
     except mysql.connector.Error as e:
+        print(f"Database error in get_board_sections: {str(e)}")
         return jsonify({"error": str(e)}), 500
     finally:
         if cursor:
-            cursor.close()
+            try:
+                # Ensure all results are consumed before closing
+                try:
+                    cursor.fetchall()
+                except:
+                    pass
+                cursor.close()
+            except Exception as cursor_close_error:
+                print(f"get_board_sections: error closing cursor: {cursor_close_error}")
         if db:
-            db.close()
+            try:
+                db.close()
+            except Exception as db_close_error:
+                print(f"get_board_sections: error closing db connection: {db_close_error}")
     
     return jsonify(sections)
 
@@ -1499,7 +1620,7 @@ def move_pin(pin_id):
     cursor = None
     try:
         db = get_db_connection()
-        cursor = db.cursor()
+        cursor = db.cursor(buffered=True)
         
         # First verify the pin exists and belongs to user (user-scoped)
         cursor.execute("SELECT id FROM pins WHERE id = %s AND user_id = %s", (pin_id, user['id']))
