@@ -338,11 +338,16 @@ def inject_version():
 def login_required(f):
     """
     Decorator to require authentication for a route
+    For API endpoints or JSON requests, returns JSON error instead of redirecting
     """
     @wraps(f)
     def decorated_function(*args, **kwargs):
         user = get_current_user()
         if not user:
+            # Check if this is an API endpoint or if request expects JSON
+            if request.path.startswith('/api/') or request.is_json or 'application/json' in request.accept_mimetypes:
+                return jsonify({"error": "Authentication required", "success": False}), 401
+            # For non-API routes, redirect to login
             return redirect(url_for('login_page'))
         return f(*args, **kwargs)
     return decorated_function
