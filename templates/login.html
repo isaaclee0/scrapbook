@@ -64,6 +64,13 @@
             border-color: #667eea;
             box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
         }
+        .otp-input {
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 8px;
+            text-align: center;
+            font-family: 'Courier New', monospace;
+        }
         .btn-primary {
             width: 100%;
             padding: 14px;
@@ -87,6 +94,22 @@
             opacity: 0.6;
             cursor: not-allowed;
             transform: none;
+        }
+        .btn-secondary {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #667eea;
+            background: transparent;
+            border: 1px solid #667eea;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 12px;
+            transition: all 0.2s;
+        }
+        .btn-secondary:hover {
+            background: #f0f4ff;
         }
         .message {
             padding: 12px;
@@ -119,17 +142,34 @@
         .info-box strong {
             color: #333;
         }
+        .email-display {
+            background: #f0f4ff;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #667eea;
+            font-weight: 600;
+        }
+        #emailForm, #otpForm {
+            display: block;
+        }
+        #emailForm.hidden, #otpForm.hidden {
+            display: none;
+        }
     </style>
 </head>
 <body>
     <div class="login-container">
         <div class="logo">📌</div>
         <h1 class="title">scrapbook.io</h1>
-        <p class="subtitle">Sign in with your email</p>
+        <p class="subtitle" id="subtitle">Sign in with your email</p>
         
         <div id="message" class="message"></div>
         
-        <form id="loginForm">
+        <!-- Email Form -->
+        <form id="emailForm">
             <div class="input-group">
                 <label for="email">Email Address</label>
                 <input 
@@ -142,30 +182,82 @@
                 >
             </div>
             
-            <button type="submit" class="btn-primary" id="submitBtn">
-                Send Magic Link
+            <button type="submit" class="btn-primary" id="sendOtpBtn">
+                Send Code
+            </button>
+        </form>
+        
+        <!-- OTP Form -->
+        <form id="otpForm" class="hidden">
+            <div class="email-display" id="emailDisplay"></div>
+            
+            <div class="input-group">
+                <label for="otp">Enter 6-digit code</label>
+                <input 
+                    type="text" 
+                    id="otp" 
+                    name="otp" 
+                    placeholder="000000" 
+                    required
+                    maxlength="6"
+                    pattern="[0-9]{6}"
+                    class="otp-input"
+                    autocomplete="one-time-code"
+                >
+            </div>
+            
+            <button type="submit" class="btn-primary" id="verifyOtpBtn">
+                Verify Code
+            </button>
+            
+            <button type="button" class="btn-secondary" id="backBtn">
+                ← Use a different email
             </button>
         </form>
         
         <div class="info-box">
             <strong>🔐 Passwordless Login</strong><br>
-            We'll send you a secure magic link to log in.<br>
+            We'll send you a secure 6-digit code to log in.<br>
             No passwords to remember!
         </div>
     </div>
 
     <script>
-        const form = document.getElementById('loginForm');
+        const emailForm = document.getElementById('emailForm');
+        const otpForm = document.getElementById('otpForm');
         const emailInput = document.getElementById('email');
-        const submitBtn = document.getElementById('submitBtn');
+        const otpInput = document.getElementById('otp');
+        const sendOtpBtn = document.getElementById('sendOtpBtn');
+        const verifyOtpBtn = document.getElementById('verifyOtpBtn');
+        const backBtn = document.getElementById('backBtn');
         const messageDiv = document.getElementById('message');
+        const emailDisplay = document.getElementById('emailDisplay');
+        const subtitle = document.getElementById('subtitle');
+        
+        let currentEmail = '';
 
         function showMessage(text, type) {
             messageDiv.textContent = text;
             messageDiv.className = `message ${type}`;
         }
 
-        form.addEventListener('submit', async (e) => {
+        function showEmailForm() {
+            emailForm.classList.remove('hidden');
+            otpForm.classList.add('hidden');
+            subtitle.textContent = 'Sign in with your email';
+            emailInput.focus();
+        }
+
+        function showOtpForm(email) {
+            currentEmail = email;
+            emailForm.classList.add('hidden');
+            otpForm.classList.remove('hidden');
+            emailDisplay.textContent = `📧 ${email}`;
+            subtitle.textContent = 'Enter your verification code';
+            otpInput.focus();
+        }
+
+        emailForm.addEventListener('submit', async (e) => {
             e.preventDefault();
             
             const email = emailInput.value.trim();
@@ -176,8 +268,8 @@
             }
             
             // Disable form
-            submitBtn.disabled = true;
-            submitBtn.textContent = 'Sending...';
+            sendOtpBtn.disabled = true;
+            sendOtpBtn.textContent = 'Sending...';
             
             try {
                 const response = await fetch('/auth/login', {
@@ -185,32 +277,91 @@
                     headers: {
                         'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify({ email })
+                    body: JSON.stringify({ 
+                        email,
+                        action: 'request'
+                    })
                 });
                 
                 const data = await response.json();
                 
                 if (data.success) {
-                    showMessage('✅ Check your email! We sent you a magic link.', 'success');
-                    emailInput.value = '';
-                    submitBtn.textContent = 'Link Sent!';
-                    
-                    // Reset after 5 seconds
-                    setTimeout(() => {
-                        submitBtn.disabled = false;
-                        submitBtn.textContent = 'Send Magic Link';
-                    }, 5000);
+                    showMessage('✅ Code sent! Check your email.', 'success');
+                    showOtpForm(email);
                 } else {
-                    showMessage(data.error || 'Failed to send magic link', 'error');
-                    submitBtn.disabled = false;
-                    submitBtn.textContent = 'Send Magic Link';
+                    showMessage(data.error || 'Failed to send code', 'error');
+                    sendOtpBtn.disabled = false;
+                    sendOtpBtn.textContent = 'Send Code';
                 }
             } catch (error) {
                 console.error('Error:', error);
                 showMessage('An error occurred. Please try again.', 'error');
-                submitBtn.disabled = false;
-                submitBtn.textContent = 'Send Magic Link';
+                sendOtpBtn.disabled = false;
+                sendOtpBtn.textContent = 'Send Code';
             }
+        });
+
+        otpForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const otp = otpInput.value.trim();
+            
+            if (!otp || otp.length !== 6 || !/^\d+$/.test(otp)) {
+                showMessage('Please enter a valid 6-digit code', 'error');
+                return;
+            }
+            
+            // Disable form
+            verifyOtpBtn.disabled = true;
+            verifyOtpBtn.textContent = 'Verifying...';
+            
+            try {
+                const response = await fetch('/auth/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ 
+                        email: currentEmail,
+                        otp: otp,
+                        action: 'verify'
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    showMessage('✅ Login successful! Redirecting...', 'success');
+                    // Redirect to gallery
+                    if (data.redirect) {
+                        window.location.href = data.redirect;
+                    } else {
+                        window.location.href = '/';
+                    }
+                } else {
+                    showMessage(data.error || 'Invalid code. Please try again.', 'error');
+                    otpInput.value = '';
+                    verifyOtpBtn.disabled = false;
+                    verifyOtpBtn.textContent = 'Verify Code';
+                    otpInput.focus();
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                showMessage('An error occurred. Please try again.', 'error');
+                verifyOtpBtn.disabled = false;
+                verifyOtpBtn.textContent = 'Verify Code';
+            }
+        });
+
+        backBtn.addEventListener('click', () => {
+            showEmailForm();
+            otpInput.value = '';
+            currentEmail = '';
+        });
+
+        // Auto-format OTP input (numbers only)
+        otpInput.addEventListener('input', (e) => {
+            e.target.value = e.target.value.replace(/\D/g, '').slice(0, 6);
         });
     </script>
 </body>

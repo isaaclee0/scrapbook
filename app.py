@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify, request, send_from_directory, redirect, url_for, make_response
+from flask import Flask, render_template, jsonify, request, send_from_directory, redirect, url_for, make_response, g
 import mysql.connector
 import os
 from mysql.connector import pooling
@@ -18,8 +18,8 @@ from datetime import datetime
 import traceback
 
 # Import authentication modules
-from auth_utils import generate_magic_link_token, generate_session_token, verify_token
-from email_service import send_magic_link_email, send_welcome_email
+from auth_utils import generate_magic_link_token, generate_session_token, verify_token, refresh_session_token, generate_otp, store_otp, verify_otp
+from email_service import send_otp_email, send_welcome_email
 
 # Try to import redis, but make it optional
 try:
@@ -299,6 +299,37 @@ def get_current_user():
         'email': payload.get('email')
     }
 
+@app.before_request
+def refresh_token_if_needed():
+    """
+    Automatically refresh session tokens that are close to expiring.
+    This extends user sessions so they don't have to log in every 30 days.
+    """
+    # Skip token refresh for auth routes and health check
+    if request.path.startswith('/auth/') or request.path == '/health':
+        return
+    
+    token = request.cookies.get('session_token')
+    if token:
+        # Try to refresh the token if it's close to expiring
+        new_token = refresh_session_token(token)
+        if new_token and new_token != token:
+            # Store the refreshed token to set in after_request
+            g.refreshed_token = new_token
+        else:
+            g.refreshed_token = None
+    else:
+        g.refreshed_token = None
+
+@app.after_request
+def set_refreshed_token_cookie(response):
+    """
+    Set refreshed token cookie if token was refreshed in before_request
+    """
+    if hasattr(g, 'refreshed_token') and g.refreshed_token:
+        set_session_cookie(response, g.refreshed_token)
+    return response
+
 @app.context_processor
 def inject_version():
     """Make VERSION available to all templates"""
@@ -339,22 +370,24 @@ def set_session_cookie(response, token):
 @app.route('/auth/login', methods=['GET', 'POST'])
 def login_page():
     """
-    Login page - show form or process magic link request
+    Login page - show form, send OTP, or verify OTP
     """
     if request.method == 'GET':
         # Show login page
         return render_template('login.html')
     
-    # POST - process magic link request
+    # POST - handle OTP generation or verification
+    data = request.get_json()
+    action = data.get('action', 'request')  # 'request' or 'verify'
+    email = sanitize_string(data.get('email', ''), max_length=255).lower().strip()
+    
+    if not email or '@' not in email:
+        return jsonify({"error": "Valid email address is required"}), 400
+    
     db = None
     cursor = None
+    
     try:
-        data = request.get_json()
-        email = sanitize_string(data.get('email', ''), max_length=255).lower().strip()
-        
-        if not email or '@' not in email:
-            return jsonify({"error": "Valid email address is required"}), 400
-        
         # Check if user exists, create if not
         try:
             db = get_db_connection()
@@ -374,13 +407,11 @@ def login_page():
                 # Send welcome email
                 send_welcome_email(email)
         except mysql.connector.Error as db_err:
-            # Database error - return user-friendly message
             print(f"Database error in login: {str(db_err)}")
             return jsonify({"error": "Database temporarily unavailable. Please try again in a moment."}), 503
         finally:
             if cursor:
                 try:
-                    # Ensure all results are consumed before closing
                     try:
                         cursor.fetchall()
                     except:
@@ -394,23 +425,148 @@ def login_page():
                 except Exception:
                     pass
         
-        # Generate magic link token
-        token = generate_magic_link_token(email)
+        if action == 'request':
+            # Generate and send OTP
+            otp = generate_otp()
+            
+            # Store OTP (prefer Redis, fallback to database)
+            if redis_client:
+                store_otp(email, otp, redis_client)
+            else:
+                # Store in database with expiration
+                db = get_db_connection()
+                cursor = db.cursor()
+                try:
+                    from auth_utils import OTP_EXPIRY
+                    from datetime import datetime, timedelta
+                    expires_at = datetime.utcnow() + timedelta(seconds=OTP_EXPIRY)
+                    cursor.execute(
+                        "INSERT INTO otp_codes (email, otp, expires_at) VALUES (%s, %s, %s) ON DUPLICATE KEY UPDATE otp = %s, expires_at = %s",
+                        (email, otp, expires_at, otp, expires_at)
+                    )
+                    db.commit()
+                except mysql.connector.Error as e:
+                    # Table might not exist, create it
+                    if e.errno == 1146:  # Table doesn't exist
+                        cursor.execute("""
+                            CREATE TABLE IF NOT EXISTS otp_codes (
+                                email VARCHAR(255) NOT NULL,
+                                otp VARCHAR(6) NOT NULL,
+                                expires_at TIMESTAMP NOT NULL,
+                                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                                PRIMARY KEY (email),
+                                INDEX idx_otp_expires_at (expires_at)
+                            ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
+                        """)
+                        db.commit()
+                        # Retry the insert
+                        from auth_utils import OTP_EXPIRY
+                        from datetime import datetime, timedelta
+                        expires_at = datetime.utcnow() + timedelta(seconds=OTP_EXPIRY)
+                        cursor.execute(
+                            "INSERT INTO otp_codes (email, otp, expires_at) VALUES (%s, %s, %s) ON DUPLICATE KEY UPDATE otp = %s, expires_at = %s",
+                            (email, otp, expires_at, otp, expires_at)
+                        )
+                        db.commit()
+                    else:
+                        raise
+                finally:
+                    cursor.close()
+                    db.close()
+            
+            # Send OTP email
+            if send_otp_email(email, otp):
+                return jsonify({
+                    "success": True,
+                    "message": "OTP sent! Check your email.",
+                    "action": "verify"  # Signal to show OTP input
+                })
+            else:
+                return jsonify({"error": "Failed to send email"}), 500
         
-        # Create magic link URL
-        magic_link = f"{request.url_root}auth/verify?token={token}"
-        
-        # Send magic link email
-        if send_magic_link_email(email, magic_link):
-            return jsonify({
+        elif action == 'verify':
+            # Verify OTP
+            otp = data.get('otp', '').strip()
+            
+            if not otp or len(otp) != 6 or not otp.isdigit():
+                return jsonify({"error": "Please enter a valid 6-digit code"}), 400
+            
+            # Verify OTP (prefer Redis, fallback to database)
+            is_valid = False
+            if redis_client:
+                is_valid = verify_otp(email, otp, redis_client)
+            else:
+                # Verify from database
+                db = get_db_connection()
+                cursor = db.cursor(dictionary=True)
+                try:
+                    cursor.execute(
+                        "SELECT otp FROM otp_codes WHERE email = %s AND expires_at > NOW()",
+                        (email,)
+                    )
+                    result = cursor.fetchone()
+                    if result and result['otp'] == otp:
+                        is_valid = True
+                        # Delete OTP after use
+                        cursor.execute("DELETE FROM otp_codes WHERE email = %s", (email,))
+                        db.commit()
+                except mysql.connector.Error as e:
+                    # Table might not exist
+                    if e.errno == 1146:  # Table doesn't exist
+                        cursor.execute("""
+                            CREATE TABLE IF NOT EXISTS otp_codes (
+                                email VARCHAR(255) NOT NULL,
+                                otp VARCHAR(6) NOT NULL,
+                                expires_at TIMESTAMP NOT NULL,
+                                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                                PRIMARY KEY (email),
+                                INDEX idx_otp_expires_at (expires_at)
+                            ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
+                        """)
+                        db.commit()
+                    else:
+                        raise
+                finally:
+                    cursor.close()
+                    db.close()
+            
+            if not is_valid:
+                return jsonify({"error": "Invalid or expired code. Please try again."}), 400
+            
+            # OTP verified - create session
+            db = get_db_connection()
+            cursor = db.cursor(dictionary=True, buffered=True)
+            cursor.execute("SELECT id, email FROM users WHERE email = %s", (email,))
+            user = cursor.fetchone()
+            
+            if not user:
+                return jsonify({"error": "User not found"}), 404
+            
+            # Update last login
+            cursor.execute("UPDATE users SET last_login = NOW() WHERE id = %s", (user['id'],))
+            db.commit()
+            cursor.close()
+            db.close()
+            
+            # Generate session token
+            session_token = generate_session_token(user['id'], user['email'])
+            
+            # Create response and set cookie
+            response = make_response(jsonify({
                 "success": True,
-                "message": "Magic link sent! Check your email."
-            })
+                "message": "Login successful",
+                "redirect": url_for('gallery')
+            }))
+            set_session_cookie(response, session_token)
+            
+            return response
+        
         else:
-            return jsonify({"error": "Failed to send email"}), 500
+            return jsonify({"error": "Invalid action"}), 400
             
     except Exception as e:
         print(f"Error in login: {str(e)}")
+        traceback.print_exc()
         # Ensure cleanup on any error
         if cursor:
             try:

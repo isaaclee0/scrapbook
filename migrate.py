@@ -309,8 +309,25 @@ def migrate_database():
         else:
             warning("Boards already have slug column")
         
-        # Migration Step 10: Ensure all indexes exist
-        info("\nStep 10: Performance indexes")
+        # Migration Step 10: Create OTP codes table
+        info("\nStep 10: OTP authentication system")
+        if not table_exists(cursor, 'otp_codes'):
+            cursor.execute("""
+                CREATE TABLE otp_codes (
+                    email VARCHAR(255) NOT NULL,
+                    otp VARCHAR(6) NOT NULL,
+                    expires_at TIMESTAMP NOT NULL,
+                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    PRIMARY KEY (email),
+                    INDEX idx_otp_expires_at (expires_at)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
+            """)
+            success("Created otp_codes table")
+        else:
+            warning("otp_codes table already exists")
+        
+        # Migration Step 11: Ensure all indexes exist
+        info("\nStep 11: Performance indexes")
         indexes = [
             ('boards', 'idx_boards_created_at', 'created_at'),
             ('boards', 'idx_boards_slug', 'slug'),
@@ -331,8 +348,8 @@ def migrate_database():
         # Commit all changes
         conn.commit()
         
-        # Migration Step 11: Summary
-        info("\nStep 11: Migration summary")
+        # Migration Step 12: Summary
+        info("\nStep 12: Migration summary")
         cursor.execute("SELECT COUNT(*) FROM users")
         user_count = cursor.fetchone()[0]
         cursor.execute("SELECT COUNT(*) FROM boards")

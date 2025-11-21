@@ -19,6 +19,16 @@ CREATE TABLE IF NOT EXISTS users (
 -- Change this email to your production user email if needed
 INSERT IGNORE INTO users (email, created_at) VALUES ('shelley@leemail.com.au', NOW());
 
+-- OTP codes table (for passwordless authentication)
+CREATE TABLE IF NOT EXISTS otp_codes (
+    email VARCHAR(255) NOT NULL,
+    otp VARCHAR(6) NOT NULL,
+    expires_at TIMESTAMP NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (email),
+    INDEX idx_otp_expires_at (expires_at)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
 -- Boards table
 CREATE TABLE IF NOT EXISTS boards (
     id INT AUTO_INCREMENT PRIMARY KEY,

@@ -13,20 +13,20 @@ configuration.api_key['api-key'] = os.getenv('BREVO_API_KEY')
 api_instance = sib_api_v3_sdk.TransactionalEmailsApi(sib_api_v3_sdk.ApiClient(configuration))
 
 
-def send_magic_link_email(email: str, magic_link: str) -> bool:
+def send_otp_email(email: str, otp: str) -> bool:
     """
-    Send a magic link authentication email via Brevo
+    Send an OTP authentication email via Brevo
     
     Args:
         email: Recipient email address
-        magic_link: Full URL for authentication
+        otp: 6-digit OTP code
         
     Returns:
         True if email sent successfully, False otherwise
     """
     try:
         # Create email content
-        subject = "Your Scrapbook Login Link"
+        subject = "Your Scrapbook Login Code"
         
         html_content = f"""
         <!DOCTYPE html>
@@ -61,18 +61,17 @@ def send_magic_link_email(email: str, magic_link: str) -> bool:
                     border-radius: 8px;
                     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
                 }}
-                .button {{
-                    display: inline-block;
-                    padding: 14px 32px;
-                    background: #2980b9;
-                    color: white !important;
-                    text-decoration: none;
-                    border-radius: 6px;
-                    margin: 20px 0;
-                    font-weight: 600;
-                }}
-                .button:hover {{
-                    background: #2472a4;
+                .otp-code {{
+                    text-align: center;
+                    font-size: 48px;
+                    font-weight: 700;
+                    letter-spacing: 8px;
+                    color: #2980b9;
+                    background: #f0f8ff;
+                    padding: 20px;
+                    border-radius: 8px;
+                    margin: 30px 0;
+                    font-family: 'Courier New', monospace;
                 }}
                 .footer {{
                     text-align: center;
@@ -96,25 +95,18 @@ def send_magic_link_email(email: str, magic_link: str) -> bool:
                     <h1>🔐 scrapbook.io</h1>
                 </div>
                 <div class="content">
-                    <h2>Login to Your Account</h2>
+                    <h2>Your Login Code</h2>
                     <p>Hi there! 👋</p>
-                    <p>Click the button below to securely log in to your Scrapbook account. This link will expire in 30 minutes.</p>
+                    <p>Use this code to log in to your Scrapbook account:</p>
                     
-                    <div style="text-align: center;">
-                        <a href="{magic_link}" class="button">Login to Scrapbook</a>
-                    </div>
+                    <div class="otp-code">{otp}</div>
                     
                     <div class="expiry">
-                        ⏰ This link expires in <strong>30 minutes</strong> for your security.
+                        ⏰ This code expires in <strong>10 minutes</strong> for your security.
                     </div>
                     
                     <p style="font-size: 14px; color: #666; margin-top: 20px;">
-                        If you didn't request this login link, you can safely ignore this email.
-                    </p>
-                    
-                    <p style="font-size: 12px; color: #999; margin-top: 30px;">
-                        If the button doesn't work, copy and paste this link into your browser:<br>
-                        <a href="{magic_link}" style="color: #2980b9; word-break: break-all;">{magic_link}</a>
+                        If you didn't request this login code, you can safely ignore this email.
                     </p>
                 </div>
                 <div class="footer">
@@ -128,12 +120,11 @@ def send_magic_link_email(email: str, magic_link: str) -> bool:
         text_content = f"""
         Login to Scrapbook
         
-        Click this link to securely log in to your account:
-        {magic_link}
+        Your login code is: {otp}
         
-        This link expires in 30 minutes for your security.
+        This code expires in 10 minutes for your security.
         
-        If you didn't request this login link, you can safely ignore this email.
+        If you didn't request this login code, you can safely ignore this email.
         """
         
         # Create email object
@@ -147,7 +138,7 @@ def send_magic_link_email(email: str, magic_link: str) -> bool:
         
         # Send email
         api_response = api_instance.send_transac_email(send_smtp_email)
-        print(f"✅ Magic link email sent to {email}")
+        print(f"✅ OTP email sent to {email}")
         print(f"Message ID: {api_response.message_id}")
         return True
         
@@ -157,6 +148,15 @@ def send_magic_link_email(email: str, magic_link: str) -> bool:
     except Exception as e:
         print(f"❌ Unexpected error sending email: {e}")
         return False
+
+
+# Keep the old function name for backward compatibility (deprecated)
+def send_magic_link_email(email: str, magic_link: str) -> bool:
+    """
+    Deprecated: This function is kept for backward compatibility.
+    Use send_otp_email instead.
+    """
+    return send_otp_email(email, "000000")  # Placeholder, should not be used
 
 
 def send_welcome_email(email: str) -> bool:

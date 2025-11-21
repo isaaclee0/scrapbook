@@ -4,6 +4,7 @@ Authentication utilities for JWT token generation and validation
 
 import jwt
 import os
+import random
 from datetime import datetime, timedelta
 from typing import Optional, Dict
 
@@ -12,6 +13,8 @@ JWT_SECRET_KEY = os.getenv('JWT_SECRET_KEY', 'your-secret-key-change-this')
 JWT_ALGORITHM = os.getenv('JWT_ALGORITHM', 'HS256')
 MAGIC_LINK_EXPIRY = int(os.getenv('MAGIC_LINK_EXPIRY', 1800))  # 30 minutes default
 SESSION_EXPIRY = int(os.getenv('SESSION_EXPIRY', 2592000))  # 30 days default
+OTP_EXPIRY = int(os.getenv('OTP_EXPIRY', 600))  # 10 minutes default
+OTP_LENGTH = 6  # 6-digit OTP
 
 
 def generate_magic_link_token(email: str) -> str:
@@ -131,3 +134,71 @@ def refresh_session_token(old_token: str) -> Optional[str]:
             return generate_session_token(payload['user_id'], payload['email'])
     
     return old_token  # Return old token if not time to refresh yet
+
+
+def generate_otp() -> str:
+    """
+    Generate a random 6-digit OTP
+    
+    Returns:
+        6-digit OTP string (e.g., "123456")
+    """
+    return str(random.randint(100000, 999999))
+
+
+def store_otp(email: str, otp: str, storage_backend=None) -> bool:
+    """
+    Store OTP with expiration time
+    
+    Args:
+        email: User's email address (used as key)
+        otp: The OTP code to store
+        storage_backend: Redis client or database connection (optional)
+        
+    Returns:
+        True if stored successfully, False otherwise
+    """
+    try:
+        # Try Redis first if available
+        if storage_backend and hasattr(storage_backend, 'setex'):
+            # Redis storage
+            key = f"otp:{email}"
+            storage_backend.setex(key, OTP_EXPIRY, otp)
+            return True
+        else:
+            # Database storage (will be handled in app.py)
+            return True
+    except Exception as e:
+        print(f"Error storing OTP: {e}")
+        return False
+
+
+def verify_otp(email: str, otp: str, storage_backend=None) -> bool:
+    """
+    Verify an OTP code
+    
+    Args:
+        email: User's email address
+        otp: The OTP code to verify
+        storage_backend: Redis client or database connection (optional)
+        
+    Returns:
+        True if OTP is valid, False otherwise
+    """
+    try:
+        # Try Redis first if available
+        if storage_backend and hasattr(storage_backend, 'get'):
+            # Redis storage
+            key = f"otp:{email}"
+            stored_otp = storage_backend.get(key)
+            if stored_otp and stored_otp == otp:
+                # Delete OTP after successful verification (one-time use)
+                storage_backend.delete(key)
+                return True
+            return False
+        else:
+            # Database storage (will be handled in app.py)
+            return False
+    except Exception as e:
+        print(f"Error verifying OTP: {e}")
+        return False
