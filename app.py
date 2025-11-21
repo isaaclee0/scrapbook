@@ -498,6 +498,14 @@ def logout():
     response.set_cookie('session_token', '', expires=0)
     return response
 
+@app.route('/health')
+def health_check():
+    """
+    Health check endpoint for Docker and monitoring systems.
+    Returns 200 OK without requiring authentication.
+    """
+    return jsonify({"status": "ok"}), 200
+
 @app.route('/')
 @login_required
 @cache_view(timeout=300)  # Cache for 5 minutes
