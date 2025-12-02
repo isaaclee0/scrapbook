@@ -542,19 +542,31 @@ def login_page():
                 return jsonify({"error": "Invalid or expired code. Please try again."}), 400
             
             # OTP verified - create session
-            db = get_db_connection()
-            cursor = db.cursor(dictionary=True, buffered=True)
-            cursor.execute("SELECT id, email FROM users WHERE email = %s", (email,))
-            user = cursor.fetchone()
-            
-            if not user:
-                return jsonify({"error": "User not found"}), 404
-            
-            # Update last login
-            cursor.execute("UPDATE users SET last_login = NOW() WHERE id = %s", (user['id'],))
-            db.commit()
-            cursor.close()
-            db.close()
+            db = None
+            cursor = None
+            try:
+                db = get_db_connection()
+                cursor = db.cursor(dictionary=True, buffered=True)
+                cursor.execute("SELECT id, email FROM users WHERE email = %s", (email,))
+                user = cursor.fetchone()
+                
+                if not user:
+                    return jsonify({"error": "User not found"}), 404
+                
+                # Update last login
+                cursor.execute("UPDATE users SET last_login = NOW() WHERE id = %s", (user['id'],))
+                db.commit()
+            finally:
+                if cursor:
+                    try:
+                        cursor.close()
+                    except Exception:
+                        pass
+                if db:
+                    try:
+                        db.close()
+                    except Exception:
+                        pass
             
             # Generate session token
             session_token = generate_session_token(user['id'], user['email'])
@@ -1237,13 +1249,13 @@ def board_pins_api(board_id):
 @login_required
 def add_content():
     user = get_current_user()
+    db = None
+    cursor = None
     try:
         db = get_db_connection()
         cursor = db.cursor(dictionary=True)
         cursor.execute("SELECT * FROM boards WHERE user_id = %s", (user['id'],))
         boards = cursor.fetchall()
-        cursor.close()
-        db.close()
         return render_template('add_content.html', boards=boards)
     except mysql.connector.Error as e:
         print(f"Database error in add_content: {e}")
@@ -1252,13 +1264,16 @@ def add_content():
         print(f"Unexpected error in add_content: {e}")
         return jsonify({"error": "An unexpected error occurred"}), 500
     finally:
-        if 'cursor' in locals():
-            cursor.close()
-        if 'db' in locals():
+        if cursor:
+            try:
+                cursor.close()
+            except Exception:
+                pass
+        if db:
             try:
                 db.close()
-            except:
-                pass  # Ignore errors during cleanup
+            except Exception:
+                pass
 
 @app.route('/scrape-website', methods=['POST'])
 @login_required
@@ -1385,36 +1400,47 @@ def save_pasted_image(data_url):
             f.write(image_data)
         
         # Create a cached image record in the database
-        db = get_db_connection()
-        cursor = db.cursor()
-        
-        # Check if cached_images table exists
-        cursor.execute("SHOW TABLES LIKE 'cached_images'")
-        result = cursor.fetchone()
-        # Consume any remaining results
-        cursor.fetchall()
-        if result:
-            # Insert into cached_images table
-            cursor.execute("""
-                INSERT INTO cached_images (
-                    original_url, cached_filename, file_size, 
-                    quality_level, cache_status, created_at, last_accessed
-                ) VALUES (%s, %s, %s, %s, %s, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)
-            """, (
-                f"pasted_image_{filename_hash}",  # Use hash as original_url for pasted images
-                filename,
-                len(image_data),
-                'low',
-                'cached'
-            ))
+        db = None
+        cursor = None
+        try:
+            db = get_db_connection()
+            cursor = db.cursor()
             
-            cached_image_id = cursor.lastrowid
-            db.commit()
-        else:
-            cached_image_id = None
-        
-        cursor.close()
-        db.close()
+            # Check if cached_images table exists
+            cursor.execute("SHOW TABLES LIKE 'cached_images'")
+            result = cursor.fetchone()
+            # Consume any remaining results
+            cursor.fetchall()
+            if result:
+                # Insert into cached_images table
+                cursor.execute("""
+                    INSERT INTO cached_images (
+                        original_url, cached_filename, file_size, 
+                        quality_level, cache_status, created_at, last_accessed
+                    ) VALUES (%s, %s, %s, %s, %s, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)
+                """, (
+                    f"pasted_image_{filename_hash}",  # Use hash as original_url for pasted images
+                    filename,
+                    len(image_data),
+                    'low',
+                    'cached'
+                ))
+                
+                cached_image_id = cursor.lastrowid
+                db.commit()
+            else:
+                cached_image_id = None
+        finally:
+            if cursor:
+                try:
+                    cursor.close()
+                except Exception:
+                    pass
+            if db:
+                try:
+                    db.close()
+                except Exception:
+                    pass
         
         # Return the relative path to the cached image
         return f"/cached/{filename}", cached_image_id
@@ -1539,88 +1565,97 @@ def update_pin(pin_id):
         # print(f"Raw title from request: '{data.get('title', '')}'")  # Debug log
         # print(f"Is title in data? {'title' in data}")  # Debug log
         
-        db = get_db_connection()
-        cursor = db.cursor()
-        
-        # First verify the pin exists and belongs to user (user-scoped)
-        cursor.execute("SELECT title FROM pins WHERE id = %s AND user_id = %s", (pin_id, user['id']))
-        result = cursor.fetchone()
-        if not result:
-            # print(f"Pin {pin_id} not found")  # Debug log
-            return jsonify({"error": "Pin not found"}), 404
+        db = None
+        cursor = None
+        try:
+            db = get_db_connection()
+            cursor = db.cursor()
             
-        current_title = result[0]
-        # print(f"Current title in database: '{current_title}'")  # Debug log
-        
-        # Build the update query dynamically based on what fields are provided
-        update_fields = []
-        update_values = []
-        
-        if title is not None:
-            # print(f"Title is different from current: {title != current_title}")  # Debug log
-            update_fields.append("title = %s")
-            update_values.append(title)
+            # First verify the pin exists and belongs to user (user-scoped)
+            cursor.execute("SELECT title FROM pins WHERE id = %s AND user_id = %s", (pin_id, user['id']))
+            result = cursor.fetchone()
+            if not result:
+                # print(f"Pin {pin_id} not found")  # Debug log
+                return jsonify({"error": "Pin not found"}), 404
             
-        if description is not None:
-            update_fields.append("description = %s")
-            update_values.append(description)
+            current_title = result[0]
+            # print(f"Current title in database: '{current_title}'")  # Debug log
             
-        if notes is not None:
-            update_fields.append("notes = %s")
-            update_values.append(notes)
+            # Build the update query dynamically based on what fields are provided
+            update_fields = []
+            update_values = []
             
-        if link is not None:
-            update_fields.append("link = %s")
-            update_values.append(link)
+            if title is not None:
+                # print(f"Title is different from current: {title != current_title}")  # Debug log
+                update_fields.append("title = %s")
+                update_values.append(title)
+                
+            if description is not None:
+                update_fields.append("description = %s")
+                update_values.append(description)
+                
+            if notes is not None:
+                update_fields.append("notes = %s")
+                update_values.append(notes)
+                
+            if link is not None:
+                update_fields.append("link = %s")
+                update_values.append(link)
+                
+            if not update_fields:
+                # print("No fields to update")  # Debug log
+                return jsonify({"error": "No fields to update"}), 400
+                
+            # Add the pin_id and user_id to the values list
+            update_values.append(pin_id)
+            update_values.append(user['id'])
             
-        if not update_fields:
-            # print("No fields to update")  # Debug log
-            return jsonify({"error": "No fields to update"}), 400
+            # Build and execute the update query (user-scoped)
+            update_query = f"""
+                UPDATE pins
+                SET {', '.join(update_fields)}
+                WHERE id = %s AND user_id = %s
+            """
             
-        # Add the pin_id and user_id to the values list
-        update_values.append(pin_id)
-        update_values.append(user['id'])
-        
-        # Build and execute the update query (user-scoped)
-        update_query = f"""
-            UPDATE pins
-            SET {', '.join(update_fields)}
-            WHERE id = %s AND user_id = %s
-        """
-        
-        # print(f"Executing query: {update_query}")  # Debug log
-        # print(f"With values: {update_values}")  # Debug log
-        
-        cursor.execute(update_query, tuple(update_values))
-        
-        # If link was updated, reset the URL health status to unknown
-        if link is not None:
-            # Delete old url_health entry and create a new one with status 'unknown'
-            cursor.execute("DELETE FROM url_health WHERE pin_id = %s", (pin_id,))
-            if link:  # Only insert if link is not empty
-                cursor.execute("""
-                    INSERT INTO url_health (pin_id, url, status, last_checked)
-                    VALUES (%s, %s, 'unknown', NULL)
-                """, (pin_id, link))
-        
-        db.commit()
-        # print(f"Successfully updated pin {pin_id}")  # Debug log
-        
-        return jsonify({
-            'success': True,
-            'pin_id': pin_id
-        })
-    except mysql.connector.Error as e:
-        print(f"Database error updating pin: {str(e)}")
-        return jsonify({"error": "Database error occurred"}), 500
-    except Exception as e:
-        print(f"Error updating pin: {str(e)}")
-        return jsonify({"error": "Failed to update pin"}), 500
-    finally:
-        if 'cursor' in locals():
-            cursor.close()
-        if 'db' in locals():
-            db.close()
+            # print(f"Executing query: {update_query}")  # Debug log
+            # print(f"With values: {update_values}")  # Debug log
+            
+            cursor.execute(update_query, tuple(update_values))
+            
+            # If link was updated, reset the URL health status to unknown
+            if link is not None:
+                # Delete old url_health entry and create a new one with status 'unknown'
+                cursor.execute("DELETE FROM url_health WHERE pin_id = %s", (pin_id,))
+                if link:  # Only insert if link is not empty
+                    cursor.execute("""
+                        INSERT INTO url_health (pin_id, url, status, last_checked)
+                        VALUES (%s, %s, 'unknown', NULL)
+                    """, (pin_id, link))
+            
+            db.commit()
+            # print(f"Successfully updated pin {pin_id}")  # Debug log
+            
+            return jsonify({
+                'success': True,
+                'pin_id': pin_id
+            })
+        except mysql.connector.Error as e:
+            print(f"Database error updating pin: {str(e)}")
+            return jsonify({"error": "Database error occurred"}), 500
+        except Exception as e:
+            print(f"Error updating pin: {str(e)}")
+            return jsonify({"error": "Failed to update pin"}), 500
+        finally:
+            if cursor:
+                try:
+                    cursor.close()
+                except Exception:
+                    pass
+            if db:
+                try:
+                    db.close()
+                except Exception:
+                    pass
 
 @app.route('/pin/<int:pin_id>')
 @login_required
@@ -1718,10 +1753,11 @@ def create_board():
         if not board_name:
             return jsonify({"error": "Board name is required"}), 400
         
-        db = get_db_connection()
-        cursor = db.cursor()
-        
+        db = None
+        cursor = None
         try:
+            db = get_db_connection()
+            cursor = db.cursor()
             # Create URL-friendly slug
             slug = re.sub(r'[^a-z0-9]+', '-', board_name.lower()).strip('-')
             
@@ -1769,10 +1805,16 @@ def create_board():
         return jsonify({"error": "Server error occurred"}), 500
         
     finally:
-        if 'cursor' in locals():
-            cursor.close()
-        if 'db' in locals():
-            db.close()
+        if cursor:
+            try:
+                cursor.close()
+            except Exception:
+                pass
+        if db:
+            try:
+                db.close()
+            except Exception:
+                pass
 
 @app.route('/move-pin/<int:pin_id>', methods=['POST'])
 @login_required
@@ -2857,6 +2899,8 @@ def delete_pin(pin_id):
 def check_archive(pin_id):
     """Manually check Wayback Machine for an archived version of a pin's URL"""
     user = get_current_user()
+    db = None
+    cursor = None
     try:
         db = get_db_connection()
         cursor = db.cursor(dictionary=True)
@@ -2935,12 +2979,20 @@ def check_archive(pin_id):
         print(f"Error in check_archive: {str(e)}")
         return jsonify({"error": "An error occurred"}), 500
     finally:
-        if 'cursor' in locals():
-            cursor.close()
-        if 'db' in locals():
-            db.close()
+        if cursor:
+            try:
+                cursor.close()
+            except Exception:
+                pass
+        if db:
+            try:
+                db.close()
+            except Exception:
+                pass
 
 def create_indexes():
+    db = None
+    cursor = None
     try:
         db = get_db_connection()
         cursor = db.cursor()
@@ -2970,13 +3022,16 @@ def create_indexes():
     except mysql.connector.Error as err:
         print(f"❌ Error creating indexes: {err}")
     finally:
-        if 'cursor' in locals():
-            cursor.close()
-        if 'db' in locals():
+        if cursor:
+            try:
+                cursor.close()
+            except Exception:
+                pass
+        if db:
             try:
                 db.close()
-            except:
-                pass  # Ignore errors during cleanup
+            except Exception:
+                pass
 
 # Note: Background URL health checking has been disabled in favor of JavaScript-based processing
 # The check_url_health_for_board API endpoint is used instead for on-demand checking

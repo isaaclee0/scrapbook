@@ -271,6 +271,8 @@ class ImageCacheService:
     
     def _cache_image(self, pin_id, image_url, quality_level='low'):
         """Download and cache an image or extract frame from video"""
+        db = None
+        cursor = None
         try:
             # Check retry logic first
             if not self._should_retry(image_url, quality_level):
@@ -411,10 +413,16 @@ class ImageCacheService:
             logger.error(f"Failed to cache {'video' if self._is_video_url(image_url) else 'image'} {image_url}: {e}")
             self._mark_cache_failed(image_url, quality_level, str(e))
         finally:
-            if 'cursor' in locals():
-                cursor.close()
-            if 'db' in locals():
-                db.close()
+            if cursor:
+                try:
+                    cursor.close()
+                except Exception:
+                    pass
+            if db:
+                try:
+                    db.close()
+                except Exception:
+                    pass
         
         return None
     
