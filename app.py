@@ -1547,115 +1547,114 @@ def add_pin():
 @login_required
 def update_pin(pin_id):
     user = get_current_user()
+    data = request.get_json()
+    # print(f"Received update request for pin {pin_id}: {data}")  # Debug log
+    
+    if not data:
+        # print("No data provided in request")  # Debug log
+        return jsonify({"error": "No data provided"}), 400
+        
+    # Get only the fields that are provided
+    title = sanitize_string(data.get('title', ''), max_length=255) if 'title' in data else None
+    description = sanitize_string(data.get('description', '')) if 'description' in data else None
+    notes = sanitize_string(data.get('notes', '')) if 'notes' in data else None
+    link = sanitize_string(data.get('link', ''), max_length=2048) if 'link' in data else None
+    
+    # print(f"Processed data - title: '{title}', description: '{description}', notes: '{notes}'")  # Debug log
+    # print(f"Raw title from request: '{data.get('title', '')}'")  # Debug log
+    # print(f"Is title in data? {'title' in data}")  # Debug log
+    
+    db = None
+    cursor = None
     try:
-        data = request.get_json()
-        # print(f"Received update request for pin {pin_id}: {data}")  # Debug log
+        db = get_db_connection()
+        cursor = db.cursor()
         
-        if not data:
-            # print("No data provided in request")  # Debug log
-            return jsonify({"error": "No data provided"}), 400
-            
-        # Get only the fields that are provided
-        title = sanitize_string(data.get('title', ''), max_length=255) if 'title' in data else None
-        description = sanitize_string(data.get('description', '')) if 'description' in data else None
-        notes = sanitize_string(data.get('notes', '')) if 'notes' in data else None
-        link = sanitize_string(data.get('link', ''), max_length=2048) if 'link' in data else None
+        # First verify the pin exists and belongs to user (user-scoped)
+        cursor.execute("SELECT title FROM pins WHERE id = %s AND user_id = %s", (pin_id, user['id']))
+        result = cursor.fetchone()
+        if not result:
+            # print(f"Pin {pin_id} not found")  # Debug log
+            return jsonify({"error": "Pin not found"}), 404
         
-        # print(f"Processed data - title: '{title}', description: '{description}', notes: '{notes}'")  # Debug log
-        # print(f"Raw title from request: '{data.get('title', '')}'")  # Debug log
-        # print(f"Is title in data? {'title' in data}")  # Debug log
+        current_title = result[0]
+        # print(f"Current title in database: '{current_title}'")  # Debug log
         
-        db = None
-        cursor = None
-        try:
-            db = get_db_connection()
-            cursor = db.cursor()
+        # Build the update query dynamically based on what fields are provided
+        update_fields = []
+        update_values = []
+        
+        if title is not None:
+            # print(f"Title is different from current: {title != current_title}")  # Debug log
+            update_fields.append("title = %s")
+            update_values.append(title)
             
-            # First verify the pin exists and belongs to user (user-scoped)
-            cursor.execute("SELECT title FROM pins WHERE id = %s AND user_id = %s", (pin_id, user['id']))
-            result = cursor.fetchone()
-            if not result:
-                # print(f"Pin {pin_id} not found")  # Debug log
-                return jsonify({"error": "Pin not found"}), 404
+        if description is not None:
+            update_fields.append("description = %s")
+            update_values.append(description)
             
-            current_title = result[0]
-            # print(f"Current title in database: '{current_title}'")  # Debug log
+        if notes is not None:
+            update_fields.append("notes = %s")
+            update_values.append(notes)
             
-            # Build the update query dynamically based on what fields are provided
-            update_fields = []
-            update_values = []
+        if link is not None:
+            update_fields.append("link = %s")
+            update_values.append(link)
             
-            if title is not None:
-                # print(f"Title is different from current: {title != current_title}")  # Debug log
-                update_fields.append("title = %s")
-                update_values.append(title)
-                
-            if description is not None:
-                update_fields.append("description = %s")
-                update_values.append(description)
-                
-            if notes is not None:
-                update_fields.append("notes = %s")
-                update_values.append(notes)
-                
-            if link is not None:
-                update_fields.append("link = %s")
-                update_values.append(link)
-                
-            if not update_fields:
-                # print("No fields to update")  # Debug log
-                return jsonify({"error": "No fields to update"}), 400
-                
-            # Add the pin_id and user_id to the values list
-            update_values.append(pin_id)
-            update_values.append(user['id'])
+        if not update_fields:
+            # print("No fields to update")  # Debug log
+            return jsonify({"error": "No fields to update"}), 400
             
-            # Build and execute the update query (user-scoped)
-            update_query = f"""
-                UPDATE pins
-                SET {', '.join(update_fields)}
-                WHERE id = %s AND user_id = %s
-            """
-            
-            # print(f"Executing query: {update_query}")  # Debug log
-            # print(f"With values: {update_values}")  # Debug log
-            
-            cursor.execute(update_query, tuple(update_values))
-            
-            # If link was updated, reset the URL health status to unknown
-            if link is not None:
-                # Delete old url_health entry and create a new one with status 'unknown'
-                cursor.execute("DELETE FROM url_health WHERE pin_id = %s", (pin_id,))
-                if link:  # Only insert if link is not empty
-                    cursor.execute("""
-                        INSERT INTO url_health (pin_id, url, status, last_checked)
-                        VALUES (%s, %s, 'unknown', NULL)
-                    """, (pin_id, link))
-            
-            db.commit()
-            # print(f"Successfully updated pin {pin_id}")  # Debug log
-            
-            return jsonify({
-                'success': True,
-                'pin_id': pin_id
-            })
-        except mysql.connector.Error as e:
-            print(f"Database error updating pin: {str(e)}")
-            return jsonify({"error": "Database error occurred"}), 500
-        except Exception as e:
-            print(f"Error updating pin: {str(e)}")
-            return jsonify({"error": "Failed to update pin"}), 500
-        finally:
-            if cursor:
-                try:
-                    cursor.close()
-                except Exception:
-                    pass
-            if db:
-                try:
-                    db.close()
-                except Exception:
-                    pass
+        # Add the pin_id and user_id to the values list
+        update_values.append(pin_id)
+        update_values.append(user['id'])
+        
+        # Build and execute the update query (user-scoped)
+        update_query = f"""
+            UPDATE pins
+            SET {', '.join(update_fields)}
+            WHERE id = %s AND user_id = %s
+        """
+        
+        # print(f"Executing query: {update_query}")  # Debug log
+        # print(f"With values: {update_values}")  # Debug log
+        
+        cursor.execute(update_query, tuple(update_values))
+        
+        # If link was updated, reset the URL health status to unknown
+        if link is not None:
+            # Delete old url_health entry and create a new one with status 'unknown'
+            cursor.execute("DELETE FROM url_health WHERE pin_id = %s", (pin_id,))
+            if link:  # Only insert if link is not empty
+                cursor.execute("""
+                    INSERT INTO url_health (pin_id, url, status, last_checked)
+                    VALUES (%s, %s, 'unknown', NULL)
+                """, (pin_id, link))
+        
+        db.commit()
+        # print(f"Successfully updated pin {pin_id}")  # Debug log
+        
+        return jsonify({
+            'success': True,
+            'pin_id': pin_id
+        })
+    except mysql.connector.Error as e:
+        print(f"Database error updating pin: {str(e)}")
+        return jsonify({"error": "Database error occurred"}), 500
+    except Exception as e:
+        print(f"Error updating pin: {str(e)}")
+        return jsonify({"error": "Failed to update pin"}), 500
+    finally:
+        if cursor:
+            try:
+                cursor.close()
+            except Exception:
+                pass
+        if db:
+            try:
+                db.close()
+            except Exception:
+                pass
 
 @app.route('/pin/<int:pin_id>')
 @login_required
