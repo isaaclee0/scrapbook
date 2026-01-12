@@ -1,0 +1,502 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="max-w-6xl mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold text-gray-800 mb-8">Admin Dashboard</h1>
+    
+    <!-- Image Dimensions Section -->
+    <div class="bg-white rounded-xl shadow-md p-6 mb-8">
+        <div class="flex items-center justify-between mb-6">
+            <h2 class="text-xl font-semibold text-gray-700">
+                <i class="fas fa-image mr-2 text-blue-500"></i>
+                Image Dimensions
+            </h2>
+            <button onclick="refreshStats()" class="text-blue-500 hover:text-blue-700">
+                <i class="fas fa-sync-alt"></i> Refresh
+            </button>
+        </div>
+        
+        <!-- Stats Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+            <div class="bg-gray-50 rounded-lg p-4">
+                <div class="text-sm text-gray-500 mb-1">Total Pins</div>
+                <div class="text-2xl font-bold text-gray-800" id="stat-total">-</div>
+            </div>
+            <div class="bg-green-50 rounded-lg p-4">
+                <div class="text-sm text-gray-500 mb-1">With Dimensions</div>
+                <div class="text-2xl font-bold text-green-600" id="stat-with-dims">-</div>
+            </div>
+            <div class="bg-yellow-50 rounded-lg p-4">
+                <div class="text-sm text-gray-500 mb-1">Missing Dimensions</div>
+                <div class="text-2xl font-bold text-yellow-600" id="stat-missing">-</div>
+            </div>
+            <div class="bg-blue-50 rounded-lg p-4">
+                <div class="text-sm text-gray-500 mb-1">Completion</div>
+                <div class="text-2xl font-bold text-blue-600" id="stat-percent">-</div>
+            </div>
+        </div>
+        
+        <!-- Progress Bar -->
+        <div class="mb-6">
+            <div class="flex justify-between text-sm text-gray-600 mb-2">
+                <span>Dimension Coverage</span>
+                <span id="progress-text">0%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-4">
+                <div id="progress-bar" class="bg-gradient-to-r from-blue-500 to-green-500 h-4 rounded-full transition-all duration-500" style="width: 0%"></div>
+            </div>
+        </div>
+        
+        <!-- Cached Images Stats -->
+        <div class="bg-gray-50 rounded-lg p-4 mb-6">
+            <h3 class="font-medium text-gray-700 mb-3">Cached Images</h3>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-3 text-sm">
+                <div>
+                    <span class="text-gray-500">Total:</span>
+                    <span class="font-medium" id="cache-total">-</span>
+                </div>
+                <div>
+                    <span class="text-gray-500">Cached:</span>
+                    <span class="font-medium text-green-600" id="cache-cached">-</span>
+                </div>
+                <div>
+                    <span class="text-gray-500">Pending:</span>
+                    <span class="font-medium text-yellow-600" id="cache-pending">-</span>
+                </div>
+                <div>
+                    <span class="text-gray-500">Failed:</span>
+                    <span class="font-medium text-red-600" id="cache-failed">-</span>
+                </div>
+                <div>
+                    <span class="text-gray-500">With Dims:</span>
+                    <span class="font-medium text-blue-600" id="cache-with-dims">-</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Processing Status -->
+        <div id="processing-status" class="hidden bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
+            <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center">
+                    <div class="animate-spin rounded-full h-5 w-5 border-b-2 border-blue-600 mr-3"></div>
+                    <span class="font-medium text-blue-800">Processing...</span>
+                </div>
+                <button onclick="stopProcessing()" class="text-red-500 hover:text-red-700 text-sm">
+                    <i class="fas fa-stop mr-1"></i> Stop
+                </button>
+            </div>
+            <div class="grid grid-cols-3 md:grid-cols-6 gap-3 text-sm">
+                <div>
+                    <span class="text-gray-600">Processed:</span>
+                    <span class="font-medium" id="proc-processed">0</span> / <span id="proc-total">0</span>
+                </div>
+                <div>
+                    <span class="text-gray-600">Success:</span>
+                    <span class="font-medium text-green-600" id="proc-success">0</span>
+                </div>
+                <div>
+                    <span class="text-gray-600">Failed:</span>
+                    <span class="font-medium text-red-600" id="proc-failed">0</span>
+                </div>
+                <div>
+                    <span class="text-gray-600">Skipped:</span>
+                    <span class="font-medium text-yellow-600" id="proc-skipped">0</span>
+                </div>
+                <div>
+                    <span class="text-gray-600">Rate:</span>
+                    <span class="font-medium text-blue-600" id="proc-rate">0</span>/sec
+                </div>
+                <div>
+                    <span class="text-gray-600">ETA:</span>
+                    <span class="font-medium text-purple-600" id="proc-eta">-</span>
+                </div>
+            </div>
+            <div class="mt-3">
+                <div class="w-full bg-blue-200 rounded-full h-2">
+                    <div id="proc-progress-bar" class="bg-blue-600 h-2 rounded-full transition-all duration-300" style="width: 0%"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Error Display -->
+        <div id="error-display" class="hidden bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
+            <div class="flex items-center text-red-700">
+                <i class="fas fa-exclamation-circle mr-2"></i>
+                <span id="error-message"></span>
+            </div>
+        </div>
+        
+        <!-- Controls -->
+        <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 12px;">
+            <button id="start-continuous-btn" onclick="startProcessing(null, true)" 
+                    style="padding: 10px 24px; background-color: #22c55e; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 500;">
+                <i class="fas fa-infinity" style="margin-right: 8px;"></i> Run Continuously
+            </button>
+            <button id="start-btn" onclick="startProcessing()" 
+                    style="padding: 10px 24px; background-color: #3b82f6; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 500;">
+                <i class="fas fa-play" style="margin-right: 8px;"></i> Process All (Once)
+            </button>
+            <button id="start-limited-btn" onclick="startProcessing(1000)" 
+                    style="padding: 10px 24px; background-color: #6b7280; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 500;">
+                <i class="fas fa-forward" style="margin-right: 8px;"></i> Process 1000
+            </button>
+            <button id="start-batch-btn" onclick="startProcessing(100)" 
+                    style="padding: 10px 24px; background-color: #9ca3af; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 500;">
+                <i class="fas fa-step-forward" style="margin-right: 8px;"></i> Process 100
+            </button>
+        </div>
+        <p class="text-xs text-gray-500 mt-2">
+            <i class="fas fa-info-circle mr-1"></i>
+            <strong>Run Continuously</strong> keeps processing in batches of 500 until all images are done or you click Stop.
+        </p>
+    </div>
+    
+    <!-- Recent Activity Summary -->
+    <div class="bg-white rounded-xl shadow-md p-6 mb-8">
+        <h2 class="text-xl font-semibold text-gray-700 mb-4">
+            <i class="fas fa-clock mr-2 text-purple-500"></i>
+            Recent Activity
+        </h2>
+        <div class="text-gray-600">
+            <p>
+                <span class="font-medium" id="recent-updates">-</span> 
+                images updated in the last 24 hours
+            </p>
+        </div>
+    </div>
+    
+    <!-- Live Activity Log -->
+    <div class="bg-white rounded-xl shadow-md p-6">
+        <div class="flex items-center justify-between mb-4">
+            <h2 class="text-xl font-semibold text-gray-700">
+                <i class="fas fa-stream mr-2 text-green-500"></i>
+                Live Activity Log
+                <span id="live-indicator" class="hidden ml-2 inline-flex items-center">
+                    <span class="animate-pulse w-2 h-2 bg-green-500 rounded-full mr-1"></span>
+                    <span class="text-sm text-green-600 font-normal">Live</span>
+                </span>
+            </h2>
+            <div class="flex items-center space-x-3">
+                <label class="flex items-center text-sm text-gray-600">
+                    <input type="checkbox" id="auto-scroll" checked class="mr-2">
+                    Auto-scroll
+                </label>
+                <button onclick="clearActivityLog()" class="text-gray-500 hover:text-gray-700 text-sm">
+                    <i class="fas fa-trash mr-1"></i> Clear
+                </button>
+            </div>
+        </div>
+        
+        <!-- Activity Log Container -->
+        <div id="activity-log" class="bg-gray-900 rounded-lg p-4 h-96 overflow-y-auto font-mono text-sm">
+            <div class="text-gray-500 text-center py-8">
+                <i class="fas fa-terminal text-2xl mb-2"></i>
+                <p>Activity log will appear here when processing starts...</p>
+            </div>
+        </div>
+        
+        <!-- Legend -->
+        <div class="flex items-center space-x-4 mt-3 text-xs text-gray-500">
+            <span><i class="fas fa-check-circle text-green-500 mr-1"></i> Success</span>
+            <span><i class="fas fa-times-circle text-red-500 mr-1"></i> Failed</span>
+            <span><i class="fas fa-forward text-yellow-500 mr-1"></i> Skipped</span>
+        </div>
+    </div>
+</div>
+
+<script>
+let pollInterval = null;
+let activityPollInterval = null;
+let lastActivityCount = 0;
+
+async function refreshStats() {
+    try {
+        const response = await fetch('/admin/api/dimension-stats');
+        const data = await response.json();
+        
+        if (data.success) {
+            const stats = data.stats;
+            
+            // Update stats
+            document.getElementById('stat-total').textContent = stats.total_pins.toLocaleString();
+            document.getElementById('stat-with-dims').textContent = stats.pins_with_dimensions.toLocaleString();
+            document.getElementById('stat-missing').textContent = stats.pins_missing_dimensions.toLocaleString();
+            document.getElementById('stat-percent').textContent = stats.percentage_complete + '%';
+            
+            // Update progress bar
+            document.getElementById('progress-bar').style.width = stats.percentage_complete + '%';
+            document.getElementById('progress-text').textContent = stats.percentage_complete + '%';
+            
+            // Update cache stats
+            if (stats.cached_images) {
+                document.getElementById('cache-total').textContent = (stats.cached_images.total || 0).toLocaleString();
+                document.getElementById('cache-cached').textContent = (stats.cached_images.cached || 0).toLocaleString();
+                document.getElementById('cache-pending').textContent = (stats.cached_images.pending || 0).toLocaleString();
+                document.getElementById('cache-failed').textContent = (stats.cached_images.failed || 0).toLocaleString();
+                document.getElementById('cache-with-dims').textContent = (stats.cached_images.with_dimensions || 0).toLocaleString();
+            }
+            
+            // Update recent
+            document.getElementById('recent-updates').textContent = stats.recent_updates_24h.toLocaleString();
+            
+            // Update processing status
+            updateProcessingStatus(data.processing);
+        }
+    } catch (error) {
+        console.error('Error refreshing stats:', error);
+    }
+}
+
+async function refreshActivityLog() {
+    try {
+        const response = await fetch('/admin/api/activity-log');
+        const data = await response.json();
+        
+        if (data.success) {
+            const logContainer = document.getElementById('activity-log');
+            const liveIndicator = document.getElementById('live-indicator');
+            
+            // Show/hide live indicator
+            if (data.is_running) {
+                liveIndicator.classList.remove('hidden');
+            } else {
+                liveIndicator.classList.add('hidden');
+            }
+            
+            // Only update if there are new entries
+            if (data.entries.length !== lastActivityCount) {
+                lastActivityCount = data.entries.length;
+                
+                if (data.entries.length === 0) {
+                    logContainer.innerHTML = `
+                        <div class="text-gray-500 text-center py-8">
+                            <i class="fas fa-terminal text-2xl mb-2"></i>
+                            <p>Activity log will appear here when processing starts...</p>
+                        </div>
+                    `;
+                } else {
+                    logContainer.innerHTML = data.entries.map(entry => {
+                        const time = new Date(entry.timestamp).toLocaleTimeString();
+                        let statusIcon, statusColor;
+                        
+                        switch(entry.status) {
+                            case 'success':
+                                statusIcon = '✓';
+                                statusColor = 'text-green-400';
+                                break;
+                            case 'failed':
+                                statusIcon = '✗';
+                                statusColor = 'text-red-400';
+                                break;
+                            case 'skipped':
+                                statusIcon = '→';
+                                statusColor = 'text-yellow-400';
+                                break;
+                            default:
+                                statusIcon = '●';
+                                statusColor = 'text-blue-400';
+                        }
+                        
+                        let details = '';
+                        if (entry.dimensions) {
+                            details = `<span class="text-cyan-400">${entry.dimensions}</span>`;
+                        } else if (entry.error) {
+                            details = `<span class="text-red-300">${entry.error}</span>`;
+                        }
+                        
+                        return `
+                            <div class="py-1 border-b border-gray-800 hover:bg-gray-800 flex items-start">
+                                <span class="text-gray-500 w-20 flex-shrink-0">${time}</span>
+                                <span class="${statusColor} w-6 flex-shrink-0">${statusIcon}</span>
+                                <span class="text-purple-400 w-20 flex-shrink-0">Pin ${entry.pin_id}</span>
+                                <span class="text-gray-300 flex-1 truncate" title="${entry.image_url}">${entry.image_url}</span>
+                                <span class="ml-2 flex-shrink-0">${details}</span>
+                            </div>
+                        `;
+                    }).join('');
+                    
+                    // Auto-scroll to bottom
+                    if (document.getElementById('auto-scroll').checked) {
+                        logContainer.scrollTop = logContainer.scrollHeight;
+                    }
+                }
+            }
+        }
+    } catch (error) {
+        console.error('Error refreshing activity log:', error);
+    }
+}
+
+function clearActivityLog() {
+    lastActivityCount = 0;
+    document.getElementById('activity-log').innerHTML = `
+        <div class="text-gray-500 text-center py-8">
+            <i class="fas fa-terminal text-2xl mb-2"></i>
+            <p>Activity log cleared. New entries will appear when processing...</p>
+        </div>
+    `;
+}
+
+function updateProcessingStatus(processing) {
+    const statusDiv = document.getElementById('processing-status');
+    const startBtn = document.getElementById('start-btn');
+    const startLimitedBtn = document.getElementById('start-limited-btn');
+    const startBatchBtn = document.getElementById('start-batch-btn');
+    const startContinuousBtn = document.getElementById('start-continuous-btn');
+    
+    if (processing.is_running) {
+        statusDiv.classList.remove('hidden');
+        startBtn.disabled = true;
+        startLimitedBtn.disabled = true;
+        startBatchBtn.disabled = true;
+        startContinuousBtn.disabled = true;
+        startBtn.style.opacity = '0.5';
+        startBtn.style.cursor = 'not-allowed';
+        startLimitedBtn.style.opacity = '0.5';
+        startLimitedBtn.style.cursor = 'not-allowed';
+        startBatchBtn.style.opacity = '0.5';
+        startBatchBtn.style.cursor = 'not-allowed';
+        startContinuousBtn.style.opacity = '0.5';
+        startContinuousBtn.style.cursor = 'not-allowed';
+        
+        document.getElementById('proc-processed').textContent = processing.processed.toLocaleString();
+        document.getElementById('proc-total').textContent = processing.total.toLocaleString();
+        document.getElementById('proc-success').textContent = processing.success.toLocaleString();
+        document.getElementById('proc-failed').textContent = processing.failed.toLocaleString();
+        document.getElementById('proc-skipped').textContent = (processing.skipped || 0).toLocaleString();
+        document.getElementById('proc-rate').textContent = processing.rate || 0;
+        
+        // Calculate ETA
+        const remaining = processing.total - processing.processed;
+        const rate = processing.rate || 0;
+        if (rate > 0 && remaining > 0) {
+            const seconds = remaining / rate;
+            if (seconds < 60) {
+                document.getElementById('proc-eta').textContent = Math.round(seconds) + 's';
+            } else if (seconds < 3600) {
+                document.getElementById('proc-eta').textContent = Math.round(seconds / 60) + 'm';
+            } else {
+                const hours = Math.floor(seconds / 3600);
+                const mins = Math.round((seconds % 3600) / 60);
+                document.getElementById('proc-eta').textContent = hours + 'h ' + mins + 'm';
+            }
+        } else {
+            document.getElementById('proc-eta').textContent = '-';
+        }
+        
+        const percent = processing.total > 0 ? (processing.processed / processing.total * 100) : 0;
+        document.getElementById('proc-progress-bar').style.width = percent + '%';
+        
+        // Start polling if not already
+        if (!pollInterval) {
+            pollInterval = setInterval(refreshStats, 2000);
+        }
+        if (!activityPollInterval) {
+            activityPollInterval = setInterval(refreshActivityLog, 1000);
+        }
+    } else {
+        statusDiv.classList.add('hidden');
+        startBtn.disabled = false;
+        startLimitedBtn.disabled = false;
+        startBatchBtn.disabled = false;
+        startContinuousBtn.disabled = false;
+        startBtn.style.opacity = '1';
+        startBtn.style.cursor = 'pointer';
+        startLimitedBtn.style.opacity = '1';
+        startLimitedBtn.style.cursor = 'pointer';
+        startBatchBtn.style.opacity = '1';
+        startBatchBtn.style.cursor = 'pointer';
+        startContinuousBtn.style.opacity = '1';
+        startContinuousBtn.style.cursor = 'pointer';
+        
+        // Stop polling
+        if (pollInterval) {
+            clearInterval(pollInterval);
+            pollInterval = null;
+        }
+        if (activityPollInterval) {
+            clearInterval(activityPollInterval);
+            activityPollInterval = null;
+        }
+    }
+    
+    // Show error if any
+    if (processing.error) {
+        document.getElementById('error-display').classList.remove('hidden');
+        document.getElementById('error-message').textContent = processing.error;
+    } else {
+        document.getElementById('error-display').classList.add('hidden');
+    }
+}
+
+async function startProcessing(limit = null, continuous = false) {
+    try {
+        const response = await fetch('/admin/api/start-dimension-update', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ limit: limit, continuous: continuous, batch_size: 500 })
+        });
+        const data = await response.json();
+        
+        if (data.success) {
+            // Start polling for updates
+            if (!pollInterval) {
+                pollInterval = setInterval(refreshStats, 2000);
+            }
+            // Start activity log polling (faster for live view)
+            if (!activityPollInterval) {
+                activityPollInterval = setInterval(refreshActivityLog, 1000);
+            }
+            refreshStats();
+            refreshActivityLog();
+        } else {
+            alert('Error: ' + data.error);
+        }
+    } catch (error) {
+        console.error('Error starting processing:', error);
+        alert('Failed to start processing');
+    }
+}
+
+async function stopProcessing() {
+    try {
+        const response = await fetch('/admin/api/stop-dimension-update', {
+            method: 'POST'
+        });
+        const data = await response.json();
+        
+        if (!data.success) {
+            alert('Error: ' + data.error);
+        }
+        
+        refreshStats();
+    } catch (error) {
+        console.error('Error stopping processing:', error);
+    }
+}
+
+// Initial load
+document.addEventListener('DOMContentLoaded', function() {
+    refreshStats();
+    refreshActivityLog();
+    
+    // Check if processing is already running (e.g., page was refreshed)
+    setTimeout(() => {
+        if (dimension_processing_state_running) {
+            if (!pollInterval) pollInterval = setInterval(refreshStats, 2000);
+            if (!activityPollInterval) activityPollInterval = setInterval(refreshActivityLog, 1000);
+        }
+    }, 500);
+});
+
+// Track if processing is running (set by updateProcessingStatus)
+let dimension_processing_state_running = false;
+
+// Override updateProcessingStatus to track state
+const originalUpdateProcessingStatus = updateProcessingStatus;
+updateProcessingStatus = function(processing) {
+    dimension_processing_state_running = processing.is_running;
+    originalUpdateProcessingStatus(processing);
+};
+</script>
+{% endblock %}

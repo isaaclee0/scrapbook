@@ -14,6 +14,30 @@ function correctImageContainerHeight(imgElement) {
         return;
     }
     
+    // Check if height was pre-reserved
+    const heightSource = imageContainer.getAttribute('data-height-source');
+    const isHeightLocked = imageContainer.hasAttribute('data-height-locked');
+    
+    if (isHeightLocked) {
+        const currentHeight = parseInt(imageContainer.style.height);
+        
+        // If height came from cached dimensions, keep it locked (most accurate)
+        // If height was estimated, we can update it with the real dimensions
+        if (heightSource === 'cached' && currentHeight && currentHeight > 0) {
+            // Just ensure image fits the container, don't recalculate height
+            imgElement.style.setProperty('height', currentHeight + 'px', 'important');
+            imgElement.style.setProperty('max-height', currentHeight + 'px', 'important');
+            imgElement.style.setProperty('width', '100%', 'important');
+            imgElement.style.setProperty('object-fit', 'cover', 'important');
+            imgElement.style.setProperty('display', 'block', 'important');
+            imgElement.style.setProperty('position', 'absolute', 'important');
+            imgElement.style.setProperty('top', '0', 'important');
+            imgElement.style.setProperty('left', '0', 'important');
+            return;
+        }
+        // For estimated heights, we'll recalculate below but keep the locked state
+    }
+    
     // Wait for container to have width - use getBoundingClientRect for masonry grid
     const tryCorrect = (attempt = 0) => {
         // In masonry grids, use getBoundingClientRect for accurate width
@@ -80,6 +104,8 @@ function correctImageContainerHeight(imgElement) {
         // Also set inline style without !important as backup
         imageContainer.style.height = finalHeight + 'px';
         imageContainer.style.maxHeight = finalHeight + 'px';
+        // Lock height to prevent recalculation during image swap
+        imageContainer.setAttribute('data-height-locked', 'true');
         
         // Ensure image fills the container completely - match container exactly
         imgElement.style.setProperty('height', finalHeight + 'px', 'important');
@@ -97,6 +123,149 @@ function correctImageContainerHeight(imgElement) {
     
     // Small delay to ensure layout has settled
     setTimeout(() => tryCorrect(), 10);
+}
+
+// Estimate container width based on viewport
+function estimateContainerWidth() {
+    const viewportWidth = window.innerWidth;
+    let columnCount = 5; // default
+    if (viewportWidth <= 500) columnCount = 1;
+    else if (viewportWidth <= 800) columnCount = 2;
+    else if (viewportWidth <= 1200) columnCount = 3;
+    else if (viewportWidth <= 1600) columnCount = 4;
+    
+    // Check for custom column count from pin size setting
+    const pinsGrid = document.getElementById('pinsGrid');
+    if (pinsGrid && pinsGrid.style.columnCount) {
+        columnCount = parseInt(pinsGrid.style.columnCount) || columnCount;
+    }
+    
+    const gridPadding = 40; // 20px on each side
+    const columnGap = 16;
+    const availableWidth = Math.min(viewportWidth, 1280) - gridPadding;
+    return (availableWidth - (columnGap * (columnCount - 1))) / columnCount;
+}
+
+// Pre-reserve space for images based on stored dimensions (runs BEFORE images load)
+// This prevents layout shifts when navigating to a specific pin
+function preReserveImageSpace(pinCard, useDefaultAspectRatio = false) {
+    const cachedWidth = parseInt(pinCard.getAttribute('data-cached-width'));
+    const cachedHeight = parseInt(pinCard.getAttribute('data-cached-height'));
+    
+    const hasDimensions = cachedWidth && cachedHeight && !isNaN(cachedWidth) && !isNaN(cachedHeight);
+    
+    // If no dimensions and not using default, skip
+    if (!hasDimensions && !useDefaultAspectRatio) {
+        return false;
+    }
+    
+    const imageContainer = pinCard.querySelector('.image-container');
+    if (!imageContainer) {
+        return false;
+    }
+    
+    // Skip if already locked
+    if (imageContainer.hasAttribute('data-height-locked')) {
+        return true;
+    }
+    
+    // Get container width - for masonry, use pin card width
+    let containerWidth = pinCard.offsetWidth || pinCard.clientWidth;
+    
+    // If container has no width yet (not rendered), estimate based on column layout
+    if (!containerWidth || containerWidth === 0) {
+        containerWidth = estimateContainerWidth();
+    }
+    
+    let aspectRatio;
+    if (hasDimensions) {
+        // Calculate aspect ratio and cap at 2:1 (height:width)
+        const rawAspectRatio = cachedHeight / cachedWidth;
+        const maxAspectRatio = 2;
+        aspectRatio = Math.min(rawAspectRatio, maxAspectRatio);
+    } else {
+        // Use default 4:3 aspect ratio for pins without dimensions
+        aspectRatio = 0.75; // 3/4 = 0.75 (landscape orientation, common for web images)
+    }
+    
+    // Calculate height based on container width and aspect ratio
+    let calculatedHeight = containerWidth * aspectRatio;
+    
+    // Cap the absolute height at 500px
+    const maxAbsoluteHeight = 500;
+    calculatedHeight = Math.min(calculatedHeight, maxAbsoluteHeight);
+    
+    // Ensure minimum height
+    const finalHeight = Math.max(150, Math.round(calculatedHeight));
+    
+    // Set container height immediately and lock it
+    imageContainer.style.setProperty('height', finalHeight + 'px', 'important');
+    imageContainer.style.setProperty('min-height', finalHeight + 'px', 'important');
+    imageContainer.style.setProperty('max-height', finalHeight + 'px', 'important');
+    imageContainer.setAttribute('data-height-locked', 'true');
+    
+    // Mark whether this was a real dimension or estimate
+    imageContainer.setAttribute('data-height-source', hasDimensions ? 'cached' : 'estimated');
+    
+    return true;
+}
+
+// Pre-reserve space for ALL pin cards on page load
+function preReserveAllImageSpaces() {
+    const pinsGrid = document.getElementById('pinsGrid');
+    
+    // Add loading class to disable transitions during layout
+    if (pinsGrid) {
+        pinsGrid.classList.add('loading-layout');
+    }
+    
+    // First, reserve space for pins WITH cached dimensions
+    const pinsWithDimensions = document.querySelectorAll('.pin-card[data-cached-width][data-cached-height]');
+    let reservedWithDimensions = 0;
+    
+    pinsWithDimensions.forEach(pinCard => {
+        const w = pinCard.getAttribute('data-cached-width');
+        const h = pinCard.getAttribute('data-cached-height');
+        // Only count if dimensions are actually present (not empty strings)
+        if (w && h && w !== '' && h !== '') {
+            if (preReserveImageSpace(pinCard, false)) {
+                reservedWithDimensions++;
+            }
+        }
+    });
+    
+    // Then, reserve space for pins WITHOUT dimensions using default aspect ratio
+    const allPinCards = document.querySelectorAll('.pin-card');
+    let reservedWithDefault = 0;
+    
+    allPinCards.forEach(pinCard => {
+        const container = pinCard.querySelector('.image-container');
+        // Skip if already locked
+        if (container && !container.hasAttribute('data-height-locked')) {
+            if (preReserveImageSpace(pinCard, true)) {
+                reservedWithDefault++;
+            }
+        }
+    });
+    
+    console.log(`Pre-reserved space: ${reservedWithDimensions} with cached dimensions, ${reservedWithDefault} with default aspect ratio`);
+    
+    // Remove loading class after a short delay to allow layout to stabilize
+    // Then re-enable transitions for normal interactions
+    setTimeout(() => {
+        if (pinsGrid) {
+            pinsGrid.classList.remove('loading-layout');
+            console.log('Layout stabilized, transitions re-enabled');
+        }
+    }, 500);
+}
+
+// Run pre-reservation as soon as possible (before images start loading)
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', preReserveAllImageSpaces);
+} else {
+    // DOM already loaded, run immediately
+    preReserveAllImageSpaces();
 }
 </script>
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -124,33 +293,40 @@ function correctImageContainerHeight(imgElement) {
         <div class="section-circles-container">
             <div class="section-circles-scroll">
                 <button class="section-circle active" data-section-id="all" title="All Pins">
-                    <div class="section-circle-image all-pins-circle">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
-                        </svg>
+                    <div class="section-circle-image-wrapper">
+                        <div class="section-circle-image all-pins-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                            </svg>
+                        </div>
                     </div>
                     <span class="section-circle-name">All</span>
                 </button>
                 {% for section in sections %}
-                <button class="section-circle" data-section-id="{{ section.id }}" title="{{ section.name }} ({{ section.pin_count }} pins)">
-                    <div class="section-circle-image">
-                        {% if section.default_image_url %}
-                        <img src="{{ section.default_image_url }}" 
-                             alt="{{ section.name }}" 
-                             loading="lazy"
-                             onerror="this.src='/static/images/default_pin.png'">
-                        {% else %}
-                        <img src="/static/images/default_pin.png" alt="{{ section.name }}">
+                <button class="section-circle{% if section.pin_count == 0 %} empty-section{% endif %}" data-section-id="{{ section.id }}" title="{{ section.name }} ({{ section.pin_count }} pins)">
+                    <div class="section-circle-image-wrapper">
+                        <div class="section-circle-image">
+                            {% if section.default_image_url %}
+                            <img src="{{ section.default_image_url }}" 
+                                 alt="{{ section.name }}" 
+                                 loading="lazy"
+                                 onerror="this.src='/static/images/default_pin.png'">
+                            {% else %}
+                            <img src="/static/images/default_pin.png" alt="{{ section.name }}">
+                            {% endif %}
+                        </div>
+                        {% if section.pin_count > 0 %}
+                        <span class="section-pin-count">{{ section.pin_count }}</span>
                         {% endif %}
                     </div>
-                    <span class="section-circle-name">{{ section.name }}</span>
+                    <span class="section-circle-name">{{ section.name }}{% if section.pin_count == 0 %} <span class="text-gray-400 text-xs">(empty)</span>{% endif %}</span>
                 </button>
                 {% endfor %}
             </div>
         </div>
     </div>
 
-    <div class="masonry-grid" id="pinsGrid">
+    <div class="masonry-grid loading-layout" id="pinsGrid">
         {% for pin in pins %}
         <div class="pin-card bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group" 
              data-section-id="{{ pin.section_id or 'all' }}" 
@@ -163,6 +339,8 @@ function correctImageContainerHeight(imgElement) {
              {% endif %}
              data-pin-id="{{ pin.id }}"
              id="pin-{{ pin.id }}"
+             data-cached-width="{{ pin.cached_width or '' }}"
+             data-cached-height="{{ pin.cached_height or '' }}"
              {% if pin.cached_filename %}
              data-cached-url="/cached/{{ pin.cached_filename }}"
              data-has-cached="true"
@@ -316,6 +494,12 @@ function correctImageContainerHeight(imgElement) {
     background: #ebf4ff;
 }
 
+.section-circle-image-wrapper {
+    position: relative;
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+}
+
 .section-circle-image {
     width: 64px;
     height: 64px;
@@ -327,7 +511,6 @@ function correctImageContainerHeight(imgElement) {
     align-items: center;
     justify-content: center;
     background: #f7fafc;
-    flex-shrink: 0;
 }
 
 .section-circle.active .section-circle-image {
@@ -337,6 +520,9 @@ function correctImageContainerHeight(imgElement) {
 
 .section-circle:hover .section-circle-image {
     border-color: #3b82f6;
+}
+
+.section-circle:hover .section-circle-image-wrapper {
     transform: scale(1.05);
 }
 
@@ -366,6 +552,34 @@ function correctImageContainerHeight(imgElement) {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
+}
+
+/* Pin count badge on section circles */
+.section-pin-count {
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    background: #3b82f6;
+    color: white;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 5px;
+    border-radius: 10px;
+    min-width: 18px;
+    text-align: center;
+    border: 2px solid white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+/* Empty section styling */
+.section-circle.empty-section .section-circle-image {
+    opacity: 0.5;
+    border-color: #cbd5e0;
+}
+
+.section-circle.empty-section:hover .section-circle-image {
+    opacity: 0.7;
+    border-color: #a0aec0;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     word-break: break-word;
@@ -390,6 +604,12 @@ function correctImageContainerHeight(imgElement) {
     .section-circle-name {
         font-size: 11px;
     }
+    
+    .section-pin-count {
+        font-size: 9px;
+        padding: 1px 4px;
+        min-width: 16px;
+    }
 }
 
 /* Masonry layout using CSS columns */
@@ -397,6 +617,20 @@ function correctImageContainerHeight(imgElement) {
     padding: 20px;
     column-count: 5;
     column-gap: 16px;
+}
+
+/* Disable ALL transitions during initial load to prevent sliding effect */
+#pinsGrid.loading-layout * {
+    transition: none !important;
+    animation: none !important;
+}
+
+#pinsGrid.loading-layout .pin-card {
+    transition: none !important;
+}
+
+#pinsGrid.loading-layout .image-container {
+    transition: none !important;
 }
 
 @media (max-width: 1600px) {
@@ -425,6 +659,10 @@ function correctImageContainerHeight(imgElement) {
     transition: transform 0.2s, box-shadow 0.2s;
     position: relative;
     background: white;
+    /* Contain layout to prevent shifts from propagating to other cards */
+    contain: layout style;
+    /* Prevent breaks inside pin cards in CSS columns */
+    break-inside: avoid;
 }
 
 /* Default neutral appearance for pins without colors */
@@ -467,7 +705,6 @@ function correctImageContainerHeight(imgElement) {
     width: 100%;
     overflow: hidden;
     background: linear-gradient(135deg, var(--dominant-color, #f8f9fa) 0%, var(--secondary-color, #e9ecef) 100%);
-    transition: background 0.5s ease;
     /* Height will be set by JavaScript based on image dimensions */
     min-height: 150px;
     /* Ensure container displays as block to get proper width */
@@ -476,6 +713,13 @@ function correctImageContainerHeight(imgElement) {
     margin: 0;
     padding: 0;
     line-height: 0; /* Prevent inline spacing */
+    /* Contain size to prevent layout recalculation */
+    contain: strict;
+}
+
+/* When height is locked, absolutely fix the container size */
+.image-container[data-height-locked="true"] {
+    contain: size layout style;
 }
 
 /* Default neutral appearance for image containers without colors */
@@ -773,8 +1017,52 @@ let processingState = {
     extractedPins: 0,
     pinsWithLinks: 0,
     healthCheckedPins: 0,
-    uncachedPins: []
+    uncachedPins: [],
+    abortController: null,  // For cancelling fetch requests
+    pendingTimeouts: []     // Track all pending timeouts for cleanup
 };
+
+// Wrapper function to track timeouts for cleanup
+function scheduleTimeout(callback, delay) {
+    const timeoutId = setTimeout(() => {
+        // Remove from pending list when executed
+        const index = processingState.pendingTimeouts.indexOf(timeoutId);
+        if (index > -1) {
+            processingState.pendingTimeouts.splice(index, 1);
+        }
+        callback();
+    }, delay);
+    processingState.pendingTimeouts.push(timeoutId);
+    return timeoutId;
+}
+
+// Cleanup function to stop all processing when navigating away
+function stopAllProcessing() {
+    console.log('🛑 Stopping all background processing...');
+    
+    // Abort any pending fetch requests
+    if (processingState.abortController) {
+        processingState.abortController.abort();
+        processingState.abortController = null;
+    }
+    
+    // Clear all pending timeouts
+    processingState.pendingTimeouts.forEach(timeoutId => clearTimeout(timeoutId));
+    processingState.pendingTimeouts = [];
+    
+    // Reset state
+    processingState.phase = 'idle';
+}
+
+// Stop processing when page is hidden or unloading
+document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+        stopAllProcessing();
+    }
+});
+
+window.addEventListener('beforeunload', stopAllProcessing);
+window.addEventListener('pagehide', stopAllProcessing);
 
 // Board management functions
 function toggleBoardSettings() {
@@ -978,8 +1266,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Simplified: No need to reserve space - images will set their container height when they load
-// The correctImageContainerHeight function is called directly on image load events
+// Note: Space is pre-reserved using preReserveAllImageSpaces() to prevent layout shifts
+// correctImageContainerHeight is called on image load but respects locked heights to avoid recalculation
 
 // Infinite scroll for loading more pins on board page
 function setupBoardPinsLazyLoad(initialCount, totalCount) {
@@ -1010,9 +1298,20 @@ function setupBoardPinsLazyLoad(initialCount, totalCount) {
                             const pinsGrid = document.getElementById('pinsGrid');
                             if (pinsGrid) {
                                 // Append new pins to the grid
+                                const newCards = [];
                                 data.pins.forEach(pin => {
                                     const pinCard = createBoardPinCard(pin);
                                     pinsGrid.appendChild(pinCard);
+                                    newCards.push(pinCard);
+                                });
+                                
+                                // Pre-reserve space for newly loaded pins (after they're in DOM)
+                                requestAnimationFrame(() => {
+                                    newCards.forEach(card => preReserveImageSpace(card));
+                                    // Apply current section filter to newly loaded pins
+                                    if (typeof applyCurrentSectionFilter === 'function') {
+                                        applyCurrentSectionFilter();
+                                    }
                                 });
                                 
                                 currentOffset += data.pins.length;
@@ -1052,6 +1351,8 @@ function createBoardPinCard(pin) {
     div.setAttribute('data-pin-id', pin.id);
     div.setAttribute('data-image-url', pin.image_url || '');
     div.setAttribute('data-section-id', pin.section_id || 'all');
+    div.setAttribute('data-cached-width', pin.cached_width || '');
+    div.setAttribute('data-cached-height', pin.cached_height || '');
     div.id = `pin-${pin.id}`;
     
     if (pin.cached_filename) {
@@ -1062,6 +1363,13 @@ function createBoardPinCard(pin) {
     }
     
     const imageSrc = pin.cached_filename ? `/cached/${pin.cached_filename}` : (pin.image_url || '/static/images/default_pin.png');
+    
+    // Calculate pre-determined height if dimensions are available
+    let containerStyle = '';
+    if (pin.cached_width && pin.cached_height) {
+        // Will be calculated after appending to DOM when container width is known
+        div.setAttribute('data-needs-height-calc', 'true');
+    }
     
     div.innerHTML = `
         <a href="/pin/${pin.id}" class="block">
@@ -1159,6 +1467,9 @@ function startAutomaticProcessing() {
     devLog('🚀 Starting automatic image processing...');
     devLog('📊 System will process in 3 phases: 1) Cache Images → 2) Extract Colors → 3) Check URL Health');
     
+    // Create new AbortController for this processing session
+    processingState.abortController = new AbortController();
+    
     // Count pins and their current state
     const allPins = document.querySelectorAll('.pin-card');
     const uncachedPins = Array.from(allPins).filter(pin => {
@@ -1218,7 +1529,8 @@ function startImageCaching(imageCount) {
         body: JSON.stringify({
             limit: imageCount,
             board_id: parseInt(boardId)
-        })
+        }),
+        signal: processingState.abortController?.signal
     })
     .then(response => response.json())
     .then(data => {
@@ -1263,7 +1575,9 @@ function pollCachingProgress() {
         }
         
         // Check if we have new cached images by making a quick API call
-        fetch(`/api/board-status/${getBoardId()}`)
+        fetch(`/api/board-status/${getBoardId()}`, {
+            signal: processingState.abortController?.signal
+        })
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
@@ -1423,13 +1737,25 @@ function updateExtractedPinsInDOM(extractedPins) {
 function startColorExtraction() {
     devLog('🎨 Starting color extraction phase...');
     
-    // Get all pins that need color extraction (refresh from current DOM state)
-    const pinsNeedingColors = document.querySelectorAll('.pin-card[data-has-db-colors="false"]');
+    // Get all pins that need color extraction AND have cached images
+    // (Color extraction only works on cached images due to CORS restrictions on external URLs)
+    const allPinsNeedingColors = document.querySelectorAll('.pin-card[data-has-db-colors="false"]');
+    const pinsNeedingColors = Array.from(allPinsNeedingColors).filter(pin => 
+        pin.getAttribute('data-has-cached') === 'true'
+    );
+    const uncachedPinsCount = allPinsNeedingColors.length - pinsNeedingColors.length;
     
-    devLog(`📊 Found ${pinsNeedingColors.length} pins that need color extraction`);
+    devLog(`📊 Found ${pinsNeedingColors.length} pins that need color extraction (with cached images)`);
+    if (uncachedPinsCount > 0) {
+        devLog(`⏳ ${uncachedPinsCount} pins skipped - waiting for image caching (colors will be extracted server-side)`);
+    }
     
     if (pinsNeedingColors.length === 0) {
-        devLog('✅ No pins need color extraction, phase 2 complete');
+        if (uncachedPinsCount > 0) {
+            devLog('⏳ No cached images available for color extraction - colors will be extracted when images are cached');
+        } else {
+            devLog('✅ No pins need color extraction, phase 2 complete');
+        }
         devLog('🔗 Phase 3: Starting URL health checking...');
         checkAndStartUrlHealthChecking();
         return;
@@ -1490,20 +1816,26 @@ function startColorExtraction() {
 
 function extractColorsFromPin(pinCard, img, callback) {
     try {
+        // Only extract colors from cached images (external URLs blocked by CORS)
+        const hasCachedImage = pinCard.getAttribute('data-has-cached') === 'true';
+        const cachedUrl = pinCard.getAttribute('data-cached-url');
+        
+        if (!hasCachedImage || !cachedUrl) {
+            // Skip - colors will be extracted server-side when image is cached
+            callback(false);
+            return;
+        }
+        
         const canvas = document.createElement('canvas');
         const ctx = canvas.getContext('2d');
         
         canvas.width = 50;
         canvas.height = 50;
         
-        // Use cached image if available
-        const hasCachedImage = pinCard.getAttribute('data-has-cached') === 'true';
-        const imageUrl = hasCachedImage ? pinCard.getAttribute('data-cached-url') : img.src;
+        const imageUrl = cachedUrl;
         
         const tempImg = new Image();
-        if (!hasCachedImage) {
-            tempImg.crossOrigin = 'anonymous';
-        }
+        // No need for crossOrigin on local cached images
         
         tempImg.onload = function() {
             try {
@@ -1612,7 +1944,9 @@ function checkAndStartUrlHealthChecking() {
     // Get current board status to see if URL health checking is needed
     devLog('🔍 Checking if URL health checking is needed...');
     
-    fetch(`/api/board-status/${getBoardId()}`)
+    fetch(`/api/board-status/${getBoardId()}`, {
+        signal: processingState.abortController?.signal
+    })
         .then(response => response.json())
         .then(data => {
             devLog('📊 Board status for URL health:', data);
@@ -1678,7 +2012,8 @@ function startUrlHealthChecking() {
         },
         body: JSON.stringify({
             limit: batchSize
-        })
+        }),
+        signal: processingState.abortController?.signal
     })
     .then(response => {
         devLog('🌐 URL health check API response received');
@@ -1779,31 +2114,170 @@ function getBoardId() {
 }
 
 
+// Track currently active section filter
+let activeSectionFilter = 'all';
+
 // Section circle handling
 function initializeSectionFiltering() {
     const sectionCircles = document.querySelectorAll('.section-circle');
+    
+    // Debug: Log all available section IDs
+    const availableSections = Array.from(sectionCircles).map(c => ({
+        id: c.dataset.sectionId,
+        name: c.querySelector('.section-circle-name')?.textContent
+    }));
+    console.log('Available sections:', availableSections);
+    
+    // Debug: Log all pin section IDs currently in DOM - show actual values
+    const allPins = document.querySelectorAll('.pin-card');
+    const sectionIdCounts = {};
+    allPins.forEach(pin => {
+        const sid = pin.dataset.sectionId || 'undefined';
+        sectionIdCounts[sid] = (sectionIdCounts[sid] || 0) + 1;
+    });
+    
+    // Log in a more readable format
+    console.log('📊 Pin section ID distribution:');
+    Object.entries(sectionIdCounts).forEach(([sectionId, count]) => {
+        const sectionName = availableSections.find(s => s.id === sectionId)?.name || (sectionId === 'all' ? 'Unassigned/All' : 'Unknown');
+        console.log(`   - Section "${sectionId}" (${sectionName}): ${count} pins`);
+    });
+    
     sectionCircles.forEach(circle => {
-        circle.addEventListener('click', function() {
+        circle.addEventListener('click', async function() {
             // Remove active from all
             sectionCircles.forEach(btn => btn.classList.remove('active'));
             // Add active to clicked
             this.classList.add('active');
             
             const selectedSection = this.dataset.sectionId;
-            const items = document.querySelectorAll('.pin-card');
+            activeSectionFilter = selectedSection;
             
-            items.forEach(item => {
-                if (selectedSection === 'all' || item.dataset.sectionId === selectedSection) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
+            // Check if we have pins for this section already loaded
+            const existingPins = document.querySelectorAll(`.pin-card[data-section-id="${selectedSection}"]`);
+            
+            if (selectedSection !== 'all' && existingPins.length === 0) {
+                // No pins loaded for this section - fetch from API
+                console.log(`📥 Fetching pins for section ${selectedSection}...`);
+                await fetchSectionPins(selectedSection);
+            }
+            
+            applyCurrentSectionFilter();
             
             // Scroll selected circle into view
             this.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
         });
     });
+}
+
+// Track loaded sections to avoid duplicate fetches
+const loadedSections = new Set(['all']);
+
+// Fetch pins for a specific section
+async function fetchSectionPins(sectionId) {
+    if (loadedSections.has(sectionId)) {
+        console.log(`Section ${sectionId} already loaded`);
+        return;
+    }
+    
+    const boardId = getBoardId();
+    if (!boardId) return;
+    
+    try {
+        const response = await fetch(`/api/board/${boardId}/pins?section_id=${sectionId}&limit=200&offset=0`);
+        const data = await response.json();
+        
+        if (data.success && data.pins && data.pins.length > 0) {
+            console.log(`📥 Loaded ${data.pins.length} pins for section ${sectionId}`);
+            
+            const pinsGrid = document.getElementById('pinsGrid');
+            
+            data.pins.forEach(pin => {
+                // Check if pin already exists in DOM
+                if (document.getElementById(`pin-${pin.id}`)) {
+                    return; // Skip - already loaded
+                }
+                
+                const pinCard = createBoardPinCard(pin);
+                pinsGrid.appendChild(pinCard);
+                
+                // Pre-reserve space for the new pin
+                preReserveImageSpace(pinCard);
+            });
+            
+            loadedSections.add(sectionId);
+        } else {
+            console.log(`No pins found for section ${sectionId}`);
+            loadedSections.add(sectionId); // Mark as loaded even if empty
+        }
+    } catch (error) {
+        console.error(`Error fetching section ${sectionId} pins:`, error);
+    }
+}
+
+// Apply the current section filter to all pins
+function applyCurrentSectionFilter() {
+    const items = document.querySelectorAll('.pin-card');
+    
+    let shownCount = 0;
+    let hiddenCount = 0;
+    
+    items.forEach(item => {
+        const pinSectionId = item.dataset.sectionId;
+        // Compare as strings - both 'all' check and section ID match
+        // Handle null/undefined section_id as 'all' or unassigned
+        const shouldShow = activeSectionFilter === 'all' || 
+                           pinSectionId === activeSectionFilter ||
+                           String(pinSectionId) === String(activeSectionFilter);
+        
+        if (shouldShow) {
+            item.style.display = '';  // Use empty string instead of 'block' to respect CSS
+            shownCount++;
+        } else {
+            item.style.display = 'none';
+            hiddenCount++;
+        }
+    });
+    
+    console.log(`Section filter "${activeSectionFilter}": shown=${shownCount}, hidden=${hiddenCount}`);
+    
+    // Show helpful message if no pins match the section
+    if (shownCount === 0 && activeSectionFilter !== 'all') {
+        // Check if we've already loaded this section
+        const alreadyLoaded = loadedSections.has(activeSectionFilter);
+        
+        // Show a message in the grid
+        const pinsGrid = document.getElementById('pinsGrid');
+        let emptyMsg = document.getElementById('sectionEmptyMessage');
+        if (!emptyMsg) {
+            emptyMsg = document.createElement('div');
+            emptyMsg.id = 'sectionEmptyMessage';
+            emptyMsg.className = 'text-center py-12 text-gray-500';
+            pinsGrid.insertBefore(emptyMsg, pinsGrid.firstChild);
+        }
+        
+        if (alreadyLoaded) {
+            console.warn(`⚠️ No pins are assigned to section "${activeSectionFilter}". Pins need to be moved to this section.`);
+            emptyMsg.innerHTML = `
+                <div class="text-4xl mb-4">📂</div>
+                <p class="text-lg font-medium">No pins in this section</p>
+                <p class="text-sm mt-2">Move pins to this section from the pin detail page</p>
+            `;
+        } else {
+            // Still loading
+            emptyMsg.innerHTML = `
+                <div class="text-4xl mb-4 animate-pulse">⏳</div>
+                <p class="text-lg font-medium">Loading pins...</p>
+            `;
+        }
+        emptyMsg.style.display = 'block';
+    } else {
+        // Hide the empty message
+        const emptyMsg = document.getElementById('sectionEmptyMessage');
+        if (emptyMsg) {
+            emptyMsg.style.display = 'none';
+        }
+    }
 }
 
 // Board management buttons
@@ -1861,63 +2335,61 @@ function handlePinHighlighting() {
 
 // Wait for layout to stabilize before scrolling
 function waitForLayoutStabilization(callback) {
-    // First, wait for critical images to load (images in the viewport)
-    const waitForImages = () => {
-        const images = document.querySelectorAll('#pinsGrid .pin-image');
-        const imagesInViewport = Array.from(images).filter(img => {
-            const rect = img.getBoundingClientRect();
-            return rect.top < window.innerHeight + 500; // Within 500px of viewport
-        });
+    // With pre-reserved space for images, we can proceed almost immediately
+    // All heights are locked so the layout is stable
+    
+    const checkLayoutReady = () => {
+        const pinsGrid = document.getElementById('pinsGrid');
+        if (!pinsGrid) {
+            setTimeout(checkLayoutReady, 20);
+            return;
+        }
         
-        // Check if all visible images have loaded or have their dimensions set
-        const loadedImages = imagesInViewport.filter(img => {
-            return img.complete || (img.naturalWidth && img.naturalHeight);
-        });
+        // Check if all containers have locked heights
+        const lockedContainers = pinsGrid.querySelectorAll('.image-container[data-height-locked="true"]');
+        const allContainers = pinsGrid.querySelectorAll('.image-container');
         
-        // If all images in viewport are loaded, proceed
-        if (loadedImages.length === imagesInViewport.length || imagesInViewport.length === 0) {
-            // Then wait for layout stability
+        // If most heights are locked (>80%), proceed immediately
+        const lockRatio = allContainers.length > 0 ? lockedContainers.length / allContainers.length : 0;
+        
+        if (lockRatio >= 0.8 || lockedContainers.length > 0) {
+            // Layout is stable because heights are locked - proceed immediately
+            // Just one RAF to ensure paint is complete
+            requestAnimationFrame(() => {
+                callback();
+            });
+        } else {
+            // No pre-reserved heights - fall back to waiting for images
             let lastHeight = 0;
-            let lastWidth = 0;
             let stableCount = 0;
-            const maxWaitTime = 2000; // Increased to 2 seconds for masonry layout
+            const maxWaitTime = 1000; // Reduced from 1500ms
             const startTime = Date.now();
             
             const checkStability = () => {
-                const pinsGrid = document.getElementById('pinsGrid');
-                const currentHeight = pinsGrid ? pinsGrid.scrollHeight : document.body.scrollHeight;
-                const currentWidth = window.innerWidth;
+                const currentHeight = pinsGrid.scrollHeight;
                 const elapsed = Date.now() - startTime;
                 
-                // Check if both height and width haven't changed (width change indicates resize)
-                if (currentHeight === lastHeight && currentWidth === lastWidth) {
+                if (currentHeight === lastHeight && currentHeight > 0) {
                     stableCount++;
                 } else {
                     stableCount = 0;
                     lastHeight = currentHeight;
-                    lastWidth = currentWidth;
                 }
                 
-                // If layout has been stable for 3 checks (300ms) or max time reached, proceed
-                if (stableCount >= 3 || elapsed > maxWaitTime) {
-                    // Additional delay to ensure masonry has fully settled
-                    setTimeout(callback, 150);
+                // If layout has been stable for 2 checks (200ms) or max time reached
+                if (stableCount >= 2 || elapsed > maxWaitTime) {
+                    callback();
                 } else {
-                    // Check again in 100ms
                     setTimeout(checkStability, 100);
                 }
             };
             
-            // Start checking after a brief delay to let initial layout settle
-            setTimeout(checkStability, 200);
-        } else {
-            // Check again in 100ms
-            setTimeout(waitForImages, 100);
+            setTimeout(checkStability, 100);
         }
     };
     
-    // Start waiting for images
-    setTimeout(waitForImages, 300);
+    // Start checking immediately (space should already be pre-reserved)
+    checkLayoutReady();
 }
 
 </script>

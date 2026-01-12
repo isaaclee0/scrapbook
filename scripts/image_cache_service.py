@@ -44,8 +44,19 @@ class ImageCacheService:
         self.cache_dir = cache_dir
         self.max_workers = max_workers
         self.session = requests.Session()
+        # Use realistic browser headers to avoid 403 blocks
         self.session.headers.update({
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+            'Accept-Language': 'en-US,en;q=0.9',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'Connection': 'keep-alive',
+            'Sec-Fetch-Dest': 'image',
+            'Sec-Fetch-Mode': 'no-cors',
+            'Sec-Fetch-Site': 'cross-site',
+            'Sec-Ch-Ua': '"Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"',
+            'Sec-Ch-Ua-Mobile': '?0',
+            'Sec-Ch-Ua-Platform': '"macOS"',
         })
         
         # Create cache directory if it doesn't exist
@@ -71,6 +82,58 @@ class ImageCacheService:
             return True
         except (subprocess.CalledProcessError, FileNotFoundError, subprocess.TimeoutExpired):
             return False
+    
+    def _extract_dominant_colors(self, img):
+        """Extract dominant colors from a PIL image"""
+        try:
+            # Resize to small size for faster processing
+            small_img = img.copy()
+            small_img.thumbnail((50, 50))
+            
+            # Convert to RGB if necessary
+            if small_img.mode != 'RGB':
+                small_img = small_img.convert('RGB')
+            
+            # Get all pixels
+            pixels = list(small_img.getdata())
+            
+            if not pixels:
+                return None, None
+            
+            # Simple k-means-like color extraction
+            # Group similar colors and find the most common
+            color_counts = {}
+            for pixel in pixels:
+                # Quantize to reduce color space (group similar colors)
+                quantized = (pixel[0] // 32 * 32, pixel[1] // 32 * 32, pixel[2] // 32 * 32)
+                color_counts[quantized] = color_counts.get(quantized, 0) + 1
+            
+            # Sort by frequency
+            sorted_colors = sorted(color_counts.items(), key=lambda x: x[1], reverse=True)
+            
+            if len(sorted_colors) >= 2:
+                primary = sorted_colors[0][0]
+                # Find a secondary color that's different enough from primary
+                secondary = sorted_colors[1][0]
+                for color, count in sorted_colors[1:]:
+                    # Check if color is different enough (color distance > 50)
+                    diff = sum(abs(a - b) for a, b in zip(primary, color))
+                    if diff > 50:
+                        secondary = color
+                        break
+                
+                primary_hex = '#{:02x}{:02x}{:02x}'.format(*primary)
+                secondary_hex = '#{:02x}{:02x}{:02x}'.format(*secondary)
+                return primary_hex, secondary_hex
+            elif len(sorted_colors) == 1:
+                primary = sorted_colors[0][0]
+                primary_hex = '#{:02x}{:02x}{:02x}'.format(*primary)
+                return primary_hex, primary_hex
+            
+            return None, None
+        except Exception as e:
+            logger.warning(f"Failed to extract colors: {e}")
+            return None, None
     
     def _is_video_url(self, url):
         """Check if URL points to a video file"""
@@ -315,6 +378,10 @@ class ImageCacheService:
             # Determine if this is a video URL
             is_video = self._is_video_url(image_url)
             
+            # Initialize color extraction variables
+            primary_color = None
+            secondary_color = None
+            
             if is_video and not self.ffmpeg_available:
                 logger.warning(f"Skipping video URL (ffmpeg not available): {image_url}")
                 self._mark_cache_failed(image_url, quality_level, "ffmpeg not available for video processing")
@@ -341,6 +408,9 @@ class ImageCacheService:
                         # Get file size
                         file_size = os.path.getsize(cached_path)
                         width, height = img.size
+                        
+                        # Extract colors while image is loaded
+                        primary_color, secondary_color = self._extract_dominant_colors(img)
                         
                         logger.info(f"Cached video frame: {cached_filename} ({file_size} bytes, {width}x{height})")
                         
@@ -373,6 +443,9 @@ class ImageCacheService:
                     file_size = os.path.getsize(cached_path)
                     width, height = img.size
                     
+                    # Extract colors while image is loaded
+                    primary_color, secondary_color = self._extract_dominant_colors(img)
+                    
                     logger.info(f"Cached image: {cached_filename} ({file_size} bytes, {width}x{height})")
             
             # Save to database
@@ -395,12 +468,21 @@ class ImageCacheService:
                 """, (image_url, cached_filename, file_size, width, height, quality_level))
                 cache_id = cursor.lastrowid
             
-            # Update pin to use cached image
-            cursor.execute("""
-                UPDATE pins 
-                SET cached_image_id = %s, uses_cached_image = TRUE 
-                WHERE id = %s
-            """, (cache_id, pin_id))
+            # Update pin to use cached image and save extracted colors
+            if primary_color and secondary_color:
+                cursor.execute("""
+                    UPDATE pins 
+                    SET cached_image_id = %s, uses_cached_image = TRUE,
+                        dominant_color_1 = %s, dominant_color_2 = %s, colors_extracted = TRUE
+                    WHERE id = %s
+                """, (cache_id, primary_color, secondary_color, pin_id))
+                logger.info(f"Extracted colors for pin {pin_id}: {primary_color}, {secondary_color}")
+            else:
+                cursor.execute("""
+                    UPDATE pins 
+                    SET cached_image_id = %s, uses_cached_image = TRUE 
+                    WHERE id = %s
+                """, (cache_id, pin_id))
             
             db.commit()
             logger.info(f"Successfully cached {'video frame' if is_video else 'image'} for pin {pin_id}")

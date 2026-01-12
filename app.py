@@ -3,6 +3,7 @@ import mysql.connector
 import os
 from mysql.connector import pooling
 import random
+import threading
 from werkzeug.routing import BaseConverter
 import requests
 from bs4 import BeautifulSoup
@@ -202,24 +203,70 @@ def calculate_image_dimensions(image_url, timeout=2):
         return None
 
 def update_pin_dimensions(pin_id, image_url):
-    """Update pin dimensions in database"""
+    """
+    Update pin dimensions by storing them in cached_images table.
+    Creates a cached_images record if one doesn't exist, with dimensions only.
+    This is used for immediate dimension availability before full caching completes.
+    """
     db = None
     cursor = None
     try:
         dimensions = calculate_image_dimensions(image_url)
-        if dimensions:
-            width, height = dimensions
-            db = get_db_connection()
-            cursor = db.cursor()
+        if not dimensions:
+            return False
+        
+        width, height = dimensions
+        db = get_db_connection()
+        cursor = db.cursor(dictionary=True)
+        
+        # First, check if a cached_images record already exists for this URL
+        cursor.execute("""
+            SELECT id, width, height FROM cached_images 
+            WHERE original_url = %s AND quality_level = 'low'
+            LIMIT 1
+        """, (image_url,))
+        cached_record = cursor.fetchone()
+        
+        if cached_record:
+            cache_id = cached_record['id']
+            # Only update dimensions if they're not already set
+            if not cached_record['width'] or not cached_record['height']:
+                cursor.execute("""
+                    UPDATE cached_images 
+                    SET width = %s, height = %s, updated_at = CURRENT_TIMESTAMP
+                    WHERE id = %s
+                """, (width, height, cache_id))
+        else:
+            # Create a new cached_images record with dimensions only
+            # The actual image caching will happen in the background
+            import hashlib
+            url_hash = hashlib.md5(image_url.encode()).hexdigest()[:16]
+            placeholder_filename = f"{url_hash}_pending.placeholder"
+            
             cursor.execute("""
-                UPDATE pins 
-                SET image_width = %s, image_height = %s 
-                WHERE id = %s
-            """, (width, height, pin_id))
-            return True
-        return False
+                INSERT INTO cached_images 
+                (original_url, cached_filename, file_size, width, height, quality_level, cache_status)
+                VALUES (%s, %s, 0, %s, %s, 'low', 'pending')
+            """, (image_url, placeholder_filename, width, height))
+            cache_id = cursor.lastrowid
+        
+        # Link the pin to the cached_images record
+        cursor.execute("""
+            UPDATE pins 
+            SET cached_image_id = %s 
+            WHERE id = %s AND cached_image_id IS NULL
+        """, (cache_id, pin_id))
+        
+        db.commit()
+        return True
+        
     except Exception as e:
         print(f"Error updating pin dimensions: {e}")
+        if db:
+            try:
+                db.rollback()
+            except Exception:
+                pass
         return False
     finally:
         if cursor:
@@ -831,10 +878,11 @@ def board(board_id):
             cursor.fetchall()
             
             if cached_images_exists:
-                # Include cached images data (no dimensions)
+                # Include cached images data with dimensions for layout stability
                 cursor.execute("""
                     SELECT p.*, s.name as section_name, 
-                           ci.cached_filename, ci.cache_status
+                           ci.cached_filename, ci.cache_status,
+                           ci.width as cached_width, ci.height as cached_height
                     FROM pins p 
                     LEFT JOIN sections s ON p.section_id = s.id 
                     LEFT JOIN cached_images ci ON p.cached_image_id = ci.id AND ci.cache_status = 'cached'
@@ -1166,10 +1214,11 @@ def search_boards_api():
 @app.route('/api/board/<int:board_id>/pins', methods=['GET'])
 @login_required
 def board_pins_api(board_id):
-    """API endpoint to load more board pins with pagination"""
+    """API endpoint to load more board pins with pagination and optional section filtering"""
     user = get_current_user()
     offset = int(request.args.get('offset', 0))
     limit = int(request.args.get('limit', 40))
+    section_id = request.args.get('section_id')  # Optional section filter
     
     db = None
     cursor = None
@@ -1189,29 +1238,42 @@ def board_pins_api(board_id):
         # Consume any remaining results
         cursor.fetchall()
         
+        # Build section filter clause
+        section_filter = ""
+        params = [board_id, user['id']]
+        if section_id and section_id != 'all':
+            section_filter = " AND p.section_id = %s"
+            params.append(int(section_id))
+        
         if cached_images_exists:
-            # Include cached images data (no dimensions)
-            cursor.execute("""
+            # Include cached images data with dimensions for layout stability
+            query = f"""
                 SELECT p.*, s.name as section_name, 
-                       ci.cached_filename, ci.cache_status
+                       ci.cached_filename, ci.cache_status,
+                       ci.width as cached_width, ci.height as cached_height
                 FROM pins p 
                 LEFT JOIN sections s ON p.section_id = s.id 
                 LEFT JOIN cached_images ci ON p.cached_image_id = ci.id AND ci.cache_status = 'cached'
-                WHERE p.board_id = %s AND p.user_id = %s
+                WHERE p.board_id = %s AND p.user_id = %s{section_filter}
                 ORDER BY p.created_at DESC, p.id ASC
                 LIMIT %s OFFSET %s
-            """, (board_id, user['id'], limit, offset))
+            """
+            params.extend([limit, offset])
+            cursor.execute(query, tuple(params))
         else:
             # Fallback query without cached images
-            cursor.execute("""
+            query = f"""
                 SELECT p.*, s.name as section_name, 
-                       NULL as cached_filename, NULL as cache_status
+                       NULL as cached_filename, NULL as cache_status,
+                       NULL as cached_width, NULL as cached_height
                 FROM pins p 
                 LEFT JOIN sections s ON p.section_id = s.id 
-                WHERE p.board_id = %s AND p.user_id = %s
+                WHERE p.board_id = %s AND p.user_id = %s{section_filter}
                 ORDER BY p.created_at DESC, p.id ASC
                 LIMIT %s OFFSET %s
-            """, (board_id, user['id'], limit, offset))
+            """
+            params.extend([limit, offset])
+            cursor.execute(query, tuple(params))
         
         pins = cursor.fetchall()
         
@@ -2403,28 +2465,51 @@ def serve_cached_image(filename):
         # If cached file doesn't exist, return 404
         return "Cached image not found", 404
 
+# Global singleton for image cache service to prevent thread accumulation
+_image_cache_service = None
+_image_cache_lock = threading.Lock()
+_image_caching_in_progress = False
+
 @app.route('/cache-images', methods=['POST'])
 @login_required
 def cache_images():
     """Trigger image caching for external images"""
+    global _image_cache_service, _image_caching_in_progress
+    
     user = get_current_user()
     try:
+        # Check if caching is already in progress
+        with _image_cache_lock:
+            if _image_caching_in_progress:
+                return jsonify({
+                    'success': True,
+                    'message': 'Image caching already in progress'
+                })
+            _image_caching_in_progress = True
+        
         data = request.get_json()
         limit = data.get('limit', 10) if data else 10
         board_id = data.get('board_id') if data else None
         
-        # Import and use the image cache service
+        # Import and use the image cache service (singleton)
         from scripts.image_cache_service import ImageCacheService
         
-        cache_service = ImageCacheService()
+        with _image_cache_lock:
+            if _image_cache_service is None:
+                _image_cache_service = ImageCacheService()
+            cache_service = _image_cache_service
         
         # Queue images for caching in background
-        import threading
         def cache_in_background():
-            cache_service.cache_all_external_images(limit=limit, board_id=board_id)
-            cache_service.stop_workers()
+            global _image_caching_in_progress
+            try:
+                cache_service.cache_all_external_images(limit=limit, board_id=board_id)
+                cache_service.stop_workers()
+            finally:
+                with _image_cache_lock:
+                    _image_caching_in_progress = False
         
-        thread = threading.Thread(target=cache_in_background)
+        thread = threading.Thread(target=cache_in_background, name='ImageCacheBackground')
         thread.daemon = True
         thread.start()
         
@@ -2435,6 +2520,8 @@ def cache_images():
             'message': f'Started caching up to {limit} external images{board_message} in background'
         })
     except Exception as e:
+        with _image_cache_lock:
+            _image_caching_in_progress = False
         print(f"Error starting image caching: {str(e)}")
         return jsonify({'error': str(e)}), 500
 
@@ -2444,22 +2531,35 @@ def cache_images():
 def api_boards():
     """Get all boards for API (user-scoped)"""
     user = get_current_user()
+    db = None
+    cursor = None
     try:
         db = get_db_connection()
         cursor = db.cursor(dictionary=True)
         cursor.execute("SELECT * FROM boards WHERE user_id = %s ORDER BY name", (user['id'],))
         boards = cursor.fetchall()
-        cursor.close()
-        db.close()
         return jsonify(boards)
     except Exception as e:
         print(f"Error getting boards: {str(e)}")
         return jsonify({"error": str(e)}), 500
+    finally:
+        if cursor:
+            try:
+                cursor.close()
+            except Exception:
+                pass
+        if db:
+            try:
+                db.close()
+            except Exception:
+                pass
 
 @app.route('/api/board-status/<int:board_id>')
 @login_required
 def board_status(board_id):
     user = get_current_user()
+    db = None
+    cursor = None
     try:
         db = get_db_connection()
         cursor = db.cursor(dictionary=True)
@@ -2506,9 +2606,6 @@ def board_status(board_id):
         
         extracted_pins = cursor.fetchall()
         
-        cursor.close()
-        db.close()
-        
         return jsonify({
             "success": True,
             "total_pins": stats['total_pins'],
@@ -2527,6 +2624,17 @@ def board_status(board_id):
         return jsonify({"success": False, "error": str(e)}), 500
     except Exception as e:
         return jsonify({"success": False, "error": str(e)}), 500
+    finally:
+        if cursor:
+            try:
+                cursor.close()
+            except Exception:
+                pass
+        if db:
+            try:
+                db.close()
+            except Exception:
+                pass
 
 @app.route('/api/check-url-health/<int:board_id>', methods=['POST'])
 @login_required
@@ -2988,6 +3096,470 @@ def check_archive(pin_id):
                 db.close()
             except Exception:
                 pass
+
+# ============================================================================
+# ADMIN - IMAGE DIMENSION PROCESSING
+# ============================================================================
+
+# Global state for dimension processing
+dimension_processing_state = {
+    'is_running': False,
+    'total': 0,
+    'processed': 0,
+    'success': 0,
+    'failed': 0,
+    'skipped': 0,
+    'start_time': None,
+    'last_update': None,
+    'current_pin': None,
+    'error': None,
+    'rate': 0,  # pins per second
+}
+
+# Activity log for live view (circular buffer of last 100 events)
+from collections import deque
+dimension_activity_log = deque(maxlen=100)
+
+def log_dimension_activity(pin_id, image_url, status, width=None, height=None, error=None):
+    """Add an entry to the activity log"""
+    dimension_activity_log.append({
+        'timestamp': datetime.now().isoformat(),
+        'pin_id': pin_id,
+        'image_url': image_url[:80] + '...' if len(image_url) > 80 else image_url,
+        'status': status,  # 'success', 'failed', 'skipped', 'processing'
+        'dimensions': f"{width}x{height}" if width and height else None,
+        'error': error
+    })
+
+@app.route('/admin')
+@login_required
+def admin_page():
+    """Admin dashboard for system maintenance tasks"""
+    return render_template('admin.html')
+
+@app.route('/admin/api/dimension-stats')
+@login_required
+def admin_dimension_stats():
+    """Get statistics about image dimensions in the database"""
+    db = None
+    cursor = None
+    try:
+        db = get_db_connection()
+        cursor = db.cursor(dictionary=True)
+        
+        # Total pins with images
+        cursor.execute("""
+            SELECT COUNT(*) as count FROM pins 
+            WHERE image_url IS NOT NULL AND image_url != ''
+        """)
+        total_pins = cursor.fetchone()['count']
+        
+        # Pins with dimensions (linked to cached_images with width/height > 0)
+        cursor.execute("""
+            SELECT COUNT(*) as count 
+            FROM pins p
+            JOIN cached_images ci ON p.cached_image_id = ci.id
+            WHERE ci.width > 0 AND ci.height > 0
+        """)
+        pins_with_dimensions = cursor.fetchone()['count']
+        
+        # Pins missing dimensions
+        pins_missing = total_pins - pins_with_dimensions
+        
+        # Cached images stats
+        cursor.execute("""
+            SELECT 
+                COUNT(*) as total,
+                SUM(CASE WHEN cache_status = 'cached' THEN 1 ELSE 0 END) as cached,
+                SUM(CASE WHEN cache_status = 'pending' THEN 1 ELSE 0 END) as pending,
+                SUM(CASE WHEN cache_status = 'failed' THEN 1 ELSE 0 END) as failed,
+                SUM(CASE WHEN width > 0 AND height > 0 THEN 1 ELSE 0 END) as with_dimensions
+            FROM cached_images
+        """)
+        cache_stats = cursor.fetchone()
+        
+        # Recent dimension updates (last 24 hours)
+        cursor.execute("""
+            SELECT COUNT(*) as count 
+            FROM cached_images 
+            WHERE updated_at > DATE_SUB(NOW(), INTERVAL 24 HOUR)
+            AND width > 0 AND height > 0
+        """)
+        recent_updates = cursor.fetchone()['count']
+        
+        return jsonify({
+            'success': True,
+            'stats': {
+                'total_pins': total_pins,
+                'pins_with_dimensions': pins_with_dimensions,
+                'pins_missing_dimensions': pins_missing,
+                'percentage_complete': round((pins_with_dimensions / total_pins * 100) if total_pins > 0 else 0, 1),
+                'cached_images': cache_stats,
+                'recent_updates_24h': recent_updates
+            },
+            'processing': dimension_processing_state
+        })
+        
+    except Exception as e:
+        print(f"Error getting dimension stats: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+    finally:
+        if cursor:
+            cursor.close()
+        if db:
+            db.close()
+
+def process_dimensions_background(limit=None, continuous=False, batch_size=500):
+    """Background worker to process image dimensions
+    
+    Args:
+        limit: Maximum number of pins to process (None = all)
+        continuous: If True, keep processing until stopped or all done
+        batch_size: Number of pins to fetch per batch in continuous mode
+    """
+    global dimension_processing_state
+    
+    from PIL import Image
+    from io import BytesIO
+    import hashlib as hash_lib
+    
+    session = requests.Session()
+    # Use realistic browser headers to avoid 403 blocks
+    session.headers.update({
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+        'Accept-Language': 'en-US,en;q=0.9',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'Connection': 'keep-alive',
+        'Sec-Fetch-Dest': 'image',
+        'Sec-Fetch-Mode': 'no-cors',
+        'Sec-Fetch-Site': 'cross-site',
+        'Sec-Ch-Ua': '"Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"',
+        'Sec-Ch-Ua-Mobile': '?0',
+        'Sec-Ch-Ua-Platform': '"macOS"',
+    })
+    
+    try:
+        dimension_processing_state['is_running'] = True
+        dimension_processing_state['start_time'] = datetime.now().isoformat()
+        dimension_processing_state['error'] = None
+        dimension_processing_state['continuous'] = continuous
+        
+        total_processed_all_batches = 0
+        total_success_all_batches = 0
+        total_failed_all_batches = 0
+        total_skipped_all_batches = 0
+        
+        # Continuous mode loop - keeps fetching new batches
+        while dimension_processing_state['is_running']:
+            db = get_db_connection()
+            cursor = db.cursor(dictionary=True)
+            
+            # Get pins without dimensions - prioritize Pinterest images first
+            effective_limit = batch_size if continuous else limit
+            query = """
+                SELECT p.id as pin_id, p.image_url, p.cached_image_id,
+                       ci.id as cache_id, ci.width as cached_width, ci.height as cached_height,
+                       CASE 
+                           WHEN p.image_url LIKE '%pinimg.com%' THEN 1
+                           WHEN p.image_url LIKE '%pinterest%' THEN 2
+                           WHEN p.image_url LIKE '%i.ytimg.com%' THEN 3
+                           WHEN p.image_url LIKE '%.jpg%' OR p.image_url LIKE '%.png%' OR p.image_url LIKE '%.webp%' THEN 4
+                           ELSE 5
+                       END as priority
+                FROM pins p
+                LEFT JOIN cached_images ci ON p.cached_image_id = ci.id
+                WHERE p.image_url IS NOT NULL
+                  AND p.image_url != ''
+                  AND (
+                      p.cached_image_id IS NULL
+                      OR ci.width IS NULL
+                      OR ci.width = 0
+                      OR ci.height IS NULL
+                      OR ci.height = 0
+                  )
+                ORDER BY priority ASC, p.id DESC
+            """
+            if effective_limit:
+                query += f" LIMIT {int(effective_limit)}"
+            
+            cursor.execute(query)
+            pins = cursor.fetchall()
+            
+            cursor.close()
+            db.close()
+            
+            # If no more pins to process, we're done
+            if not pins:
+                log_dimension_activity(0, 'All pins processed', 'success')
+                break
+            
+            dimension_processing_state['total'] = len(pins) + total_processed_all_batches
+            dimension_processing_state['processed'] = total_processed_all_batches
+            dimension_processing_state['success'] = total_success_all_batches
+            dimension_processing_state['failed'] = total_failed_all_batches
+            dimension_processing_state['skipped'] = total_skipped_all_batches
+            dimension_processing_state['rate'] = 0
+            
+            rate_start_time = time.time()
+            rate_start_count = total_processed_all_batches
+            
+            for pin in pins:
+                if not dimension_processing_state['is_running']:
+                    break  # Allow stopping
+                
+                pin_id = pin['pin_id']
+                image_url = pin['image_url']
+                cache_id = pin['cached_image_id'] or pin['cache_id']
+                
+                dimension_processing_state['current_pin'] = pin_id
+                dimension_processing_state['last_update'] = datetime.now().isoformat()
+                
+                # Skip local default images
+                if image_url.startswith('/static/images/'):
+                    dimension_processing_state['processed'] += 1
+                    continue
+                
+                try:
+                    db = get_db_connection()
+                    cursor = db.cursor(dictionary=True)
+                    
+                    # Get or create cached_images record
+                    if not cache_id:
+                        cursor.execute("""
+                            SELECT id FROM cached_images 
+                            WHERE original_url = %s AND quality_level = 'low'
+                            LIMIT 1
+                        """, (image_url,))
+                        result = cursor.fetchone()
+                        
+                        if result:
+                            cache_id = result['id']
+                        else:
+                            url_hash = hash_lib.md5(image_url.encode()).hexdigest()[:16]
+                            placeholder = f"{url_hash}_dims.placeholder"
+                            cursor.execute("""
+                                INSERT INTO cached_images 
+                                (original_url, cached_filename, file_size, width, height, quality_level, cache_status)
+                                VALUES (%s, %s, 0, 0, 0, 'low', 'pending')
+                            """, (image_url, placeholder))
+                            db.commit()
+                            cache_id = cursor.lastrowid
+                    
+                    # Fetch dimensions
+                    width, height = None, None
+                    
+                    if image_url.startswith('/'):
+                        # Local image
+                        if image_url.startswith('/cached/'):
+                            local_path = os.path.join('static', 'cached_images', image_url[8:])
+                        elif image_url.startswith('/static/'):
+                            local_path = image_url[1:]
+                        else:
+                            local_path = None
+                        
+                        if local_path and os.path.exists(local_path):
+                            with Image.open(local_path) as img:
+                                width, height = img.size
+                    else:
+                        # External URL - fetch with timeout
+                        # Skip known problematic domains (block bots, require auth, or aren't images)
+                        skip_domains = [
+                            'tiktok.com', 'facebook.com', 'fbcdn.net', 'instagram.com',
+                            'quora.com', 'tripadvisor.com', 'linkedin.com',
+                            'twitter.com', 'x.com', 'threads.net',
+                        ]
+                        # Skip URLs that are clearly not images
+                        skip_patterns = [
+                            '/video/', '/videos/', '/watch?', '/status/', '/reel/',
+                            '#:', '?fbid=',  # Facebook photo page URLs
+                        ]
+                        url_lower = image_url.lower()
+                        should_skip = (
+                            any(domain in url_lower for domain in skip_domains) or
+                            any(pattern in image_url for pattern in skip_patterns)
+                        )
+                        
+                        if should_skip:
+                            log_dimension_activity(pin_id, image_url, 'skipped', error='Blocked domain')
+                            dimension_processing_state['skipped'] += 1
+                            dimension_processing_state['processed'] += 1
+                            cursor.close()
+                            db.close()
+                            continue
+                        
+                        try:
+                            # Add dynamic Referer based on image domain
+                            from urllib.parse import urlparse
+                            parsed = urlparse(image_url)
+                            referer = f"{parsed.scheme}://{parsed.netloc}/"
+                            headers = {'Referer': referer}
+                            
+                            # Use shorter timeout for faster processing
+                            response = session.get(image_url, timeout=5, stream=True, headers=headers)
+                            response.raise_for_status()
+                            
+                            content = b''
+                            for chunk in response.iter_content(chunk_size=8192):
+                                content += chunk
+                                if len(content) > 65535:
+                                    break
+                            
+                            try:
+                                with Image.open(BytesIO(content)) as img:
+                                    width, height = img.size
+                            except Exception:
+                                # Try full download with shorter timeout
+                                response = session.get(image_url, timeout=8, headers=headers)
+                                response.raise_for_status()
+                                with Image.open(BytesIO(response.content)) as img:
+                                    width, height = img.size
+                        except requests.exceptions.Timeout:
+                            log_dimension_activity(pin_id, image_url, 'failed', error='Timeout')
+                        except requests.exceptions.HTTPError as e:
+                            log_dimension_activity(pin_id, image_url, 'failed', error=f'HTTP {e.response.status_code}')
+                        except Exception as e:
+                            pass  # Will be counted as failed
+                    
+                    if width and height:
+                        # Update dimensions
+                        cursor.execute("""
+                            UPDATE cached_images 
+                            SET width = %s, height = %s, updated_at = CURRENT_TIMESTAMP
+                            WHERE id = %s
+                        """, (width, height, cache_id))
+                        
+                        # Link pin to cache
+                        cursor.execute("""
+                            UPDATE pins 
+                            SET cached_image_id = %s
+                            WHERE id = %s AND (cached_image_id IS NULL OR cached_image_id != %s)
+                        """, (cache_id, pin_id, cache_id))
+                        
+                        db.commit()
+                        dimension_processing_state['success'] += 1
+                        log_dimension_activity(pin_id, image_url, 'success', width, height)
+                    else:
+                        dimension_processing_state['failed'] += 1
+                        log_dimension_activity(pin_id, image_url, 'failed', error='Could not fetch dimensions')
+                    
+                    cursor.close()
+                    db.close()
+                    
+                except Exception as e:
+                    dimension_processing_state['failed'] += 1
+                    log_dimension_activity(pin_id, image_url, 'failed', error=str(e)[:50])
+                    print(f"Error processing pin {pin_id}: {e}")
+                
+                dimension_processing_state['processed'] += 1
+                
+                # Calculate rate every 10 pins
+                if dimension_processing_state['processed'] % 10 == 0:
+                    elapsed = time.time() - rate_start_time
+                    if elapsed > 0:
+                        pins_processed = dimension_processing_state['processed'] - rate_start_count
+                        dimension_processing_state['rate'] = round(pins_processed / elapsed, 1)
+                    # Reset rate window every 100 pins for more accurate recent rate
+                    if dimension_processing_state['processed'] % 100 == 0:
+                        rate_start_time = time.time()
+                        rate_start_count = dimension_processing_state['processed']
+                
+                # Small delay to avoid overwhelming servers
+                time.sleep(0.05)  # Reduced from 0.1 for faster processing
+                
+                # Check if we should stop
+                if not dimension_processing_state['is_running']:
+                    break
+            
+            # End of pin loop - update totals for continuous mode
+            total_processed_all_batches = dimension_processing_state['processed']
+            total_success_all_batches = dimension_processing_state['success']
+            total_failed_all_batches = dimension_processing_state['failed']
+            total_skipped_all_batches = dimension_processing_state['skipped']
+            
+            # If not continuous mode, break after first batch
+            if not continuous:
+                break
+            
+            # Check if we should stop
+            if not dimension_processing_state['is_running']:
+                break
+            
+            # Small pause between batches
+            time.sleep(1)
+        
+    except Exception as e:
+        dimension_processing_state['error'] = str(e)
+        print(f"Dimension processing error: {e}")
+    finally:
+        dimension_processing_state['is_running'] = False
+        dimension_processing_state['current_pin'] = None
+        dimension_processing_state['continuous'] = False
+
+@app.route('/admin/api/start-dimension-update', methods=['POST'])
+@login_required
+def admin_start_dimension_update():
+    """Start the background dimension update process"""
+    global dimension_processing_state
+    
+    if dimension_processing_state['is_running']:
+        return jsonify({
+            'success': False,
+            'error': 'Processing is already running'
+        }), 400
+    
+    data = request.json or {}
+    limit = data.get('limit')
+    continuous = data.get('continuous', False)
+    batch_size = data.get('batch_size', 500)  # Process in batches for continuous mode
+    
+    # Start background thread
+    thread = threading.Thread(
+        target=process_dimensions_background,
+        args=(limit,),
+        kwargs={'continuous': continuous, 'batch_size': batch_size},
+        daemon=True
+    )
+    thread.start()
+    
+    return jsonify({
+        'success': True,
+        'message': 'Dimension processing started' + (' (continuous mode)' if continuous else '')
+    })
+
+@app.route('/admin/api/stop-dimension-update', methods=['POST'])
+@login_required
+def admin_stop_dimension_update():
+    """Stop the background dimension update process"""
+    global dimension_processing_state
+    
+    if not dimension_processing_state['is_running']:
+        return jsonify({
+            'success': False,
+            'error': 'Processing is not running'
+        }), 400
+    
+    dimension_processing_state['is_running'] = False
+    
+    return jsonify({
+        'success': True,
+        'message': 'Stop signal sent'
+    })
+
+@app.route('/admin/api/activity-log')
+@login_required
+def admin_activity_log():
+    """Get recent activity log entries"""
+    # Return as list (most recent first)
+    return jsonify({
+        'success': True,
+        'entries': list(reversed(dimension_activity_log)),
+        'is_running': dimension_processing_state['is_running']
+    })
+
+# ============================================================================
+# DATABASE INITIALIZATION
+# ============================================================================
 
 def create_indexes():
     db = None
