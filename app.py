@@ -2526,6 +2526,87 @@ def cache_images():
         return jsonify({'error': str(e)}), 500
 
 
+@app.route('/api/board/<int:board_id>/pins')
+@login_required
+def get_board_pins(board_id):
+    """
+    Get pins for a specific board with pagination and optional section filtering
+    Returns JSON
+    """
+    user = get_current_user()
+    offset = request.args.get('offset', 0, type=int)
+    limit = request.args.get('limit', 40, type=int)
+    section_id = request.args.get('section_id')
+    
+    # Cap limit to prevent massive queries
+    limit = min(limit, 200)
+    
+    db = None
+    cursor = None
+    try:
+        db = get_db_connection()
+        cursor = db.cursor(dictionary=True, buffered=True)
+        
+        # Verify board belongs to user
+        cursor.execute("SELECT id FROM boards WHERE id = %s AND user_id = %s", (board_id, user['id']))
+        if not cursor.fetchone():
+            return jsonify({"error": "Board not found"}), 404
+        
+        # Build query
+        query = """
+            SELECT p.*, s.name as section_name, b.name as board_name,
+                   ci.cached_filename, ci.cache_status,
+                   ci.width as cached_width, ci.height as cached_height
+            FROM pins p
+            LEFT JOIN sections s ON p.section_id = s.id
+            LEFT JOIN boards b ON p.board_id = b.id
+            LEFT JOIN cached_images ci ON p.cached_image_id = ci.id AND ci.cache_status = 'cached'
+            WHERE p.board_id = %s AND p.user_id = %s
+        """
+        params = [board_id, user['id']]
+        
+        # Add section filtering
+        if section_id:
+            if section_id == 'all':
+                pass # No filter
+            elif section_id == 'undefined':
+                query += " AND p.section_id IS NULL"
+            else:
+                try:
+                    s_id = int(section_id)
+                    query += " AND p.section_id = %s"
+                    params.append(s_id)
+                except ValueError:
+                    pass # Invalid section ID, ignore
+                    
+        # Add ordering and pagination
+        query += " ORDER BY p.created_at DESC, p.id ASC LIMIT %s OFFSET %s"
+        params.extend([limit, offset])
+        
+        cursor.execute(query, tuple(params))
+        pins = cursor.fetchall()
+        
+        return jsonify({
+            'success': True,
+            'pins': pins
+        })
+        
+    except Exception as e:
+        print(f"Error fetching board pins: {str(e)}")
+        traceback.print_exc()
+        return jsonify({"error": str(e)}), 500
+    finally:
+        if cursor:
+            try:
+                cursor.close()
+            except:
+                pass
+        if db:
+            try:
+                db.close()
+            except:
+                pass
+
 @app.route('/api/boards')
 @login_required
 def api_boards():
