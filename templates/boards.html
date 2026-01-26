@@ -6,6 +6,25 @@
             <label for="boardSizeSlider" class="text-sm font-medium text-gray-700">Size:</label>
             <input type="range" id="boardSizeSlider" min="1" max="5" value="3" class="w-20 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider">
             <span id="boardSizeValue" class="text-sm font-medium text-gray-700 min-w-[4rem]">Medium</span>
+            <!-- Settings cog -->
+            <div class="settings-dropdown">
+                <button class="settings-cog" onclick="toggleSettingsMenu()" title="Layout Settings">
+                    <i class="fas fa-cog"></i>
+                </button>
+                <div class="settings-menu" id="settingsMenu">
+                    <div class="settings-header">Layout Style</div>
+                    <button class="settings-option" data-layout="modern" onclick="setLayout('modern')">
+                        <span class="option-icon"><i class="fas fa-th-large"></i></span>
+                        <span class="option-text">Modern (Full Image)</span>
+                        <span class="option-check" id="check-modern"><i class="fas fa-check"></i></span>
+                    </button>
+                    <button class="settings-option" data-layout="classic" onclick="setLayout('classic')">
+                        <span class="option-icon"><i class="fas fa-circle"></i></span>
+                        <span class="option-text">Classic (Circle)</span>
+                        <span class="option-check" id="check-classic"><i class="fas fa-check"></i></span>
+                    </button>
+                </div>
+            </div>
         </div>
         <select id="sortBoards" onchange="sortBoards()">
             <option value="name_asc">Alphabetically (A to Z)</option>
@@ -17,7 +36,7 @@
         </select>
     </div>
 
-    <div class="gallery" id="boardsGallery">
+    <div class="gallery layout-classic" id="boardsGallery">
         {% for board in boards %}
         <div class="board" data-name="{{ board.name }}" data-created="{{ board.created_at }}" data-pin-count="{{ board.pin_count }}">
             <a href="{{ url_for('board', board_id=board.id) }}">
@@ -30,7 +49,7 @@
                          onerror="this.src='/static/images/default_board.png'"
                          onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
                 </div>
-                <h3>{{ board.name }}</h3>
+                <h3 class="board-name">{{ board.name }}</h3>
             </a>
         </div>
         {% endfor %}
@@ -60,13 +79,164 @@
             box-shadow: 0 0 0 2px rgba(41, 128, 185, 0.1);
         }
 
+        /* Settings dropdown */
+        .settings-dropdown {
+            position: relative;
+        }
+        .settings-cog {
+            background: none;
+            border: none;
+            padding: 6px 8px;
+            cursor: pointer;
+            color: #666;
+            font-size: 16px;
+            border-radius: 6px;
+            transition: all 0.2s;
+        }
+        .settings-cog:hover {
+            background: #e5e7eb;
+            color: #333;
+        }
+        .settings-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            margin-top: 8px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            border: 1px solid #e5e7eb;
+            min-width: 200px;
+            z-index: 100;
+            overflow: hidden;
+        }
+        .settings-menu.active {
+            display: block;
+        }
+        .settings-header {
+            padding: 12px 16px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid #e5e7eb;
+            background: #f9fafb;
+        }
+        .settings-option {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 12px 16px;
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-size: 14px;
+            color: #333;
+            transition: background 0.15s;
+            gap: 12px;
+        }
+        .settings-option:hover {
+            background: #f3f4f6;
+        }
+        .settings-option .option-icon {
+            width: 20px;
+            color: #666;
+        }
+        .settings-option .option-text {
+            flex: 1;
+            text-align: left;
+        }
+        .settings-option .option-check {
+            color: #3b82f6;
+            opacity: 0;
+        }
+        .settings-option.active .option-check {
+            opacity: 1;
+        }
+
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(var(--board-tile-size, 200px), 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(var(--board-tile-size, 220px), 1fr));
             gap: 16px;
             padding: 20px;
         }
-        .board {
+
+        /* ============ MODERN LAYOUT (default) ============ */
+        .gallery.layout-modern .board {
+            position: relative;
+            text-align: center;
+            border-radius: 12px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            background: white;
+            overflow: hidden;
+        }
+        .gallery.layout-modern .board:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        .gallery.layout-modern .board a {
+            display: block;
+            position: relative;
+        }
+        .gallery.layout-modern .board-image-container {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+        .gallery.layout-modern .board-skeleton-loader {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(240,240,240,0.8) 0%, rgba(220,220,220,1) 50%, rgba(240,240,240,0.8) 100%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s infinite;
+            border-radius: 12px;
+            z-index: 1;
+        }
+        .gallery.layout-modern .board-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            background-color: #f0f0f0;
+            transition: transform 0.3s, opacity 0.3s;
+            position: relative;
+            z-index: 2;
+            opacity: 0;
+        }
+        .gallery.layout-modern .board-image.loaded {
+            opacity: 1;
+        }
+        .gallery.layout-modern .board:hover .board-image {
+            transform: scale(1.05);
+        }
+        .gallery.layout-modern .board-name {
+            position: absolute;
+            bottom: 12px;
+            left: 12px;
+            right: 12px;
+            margin: 0;
+            padding: 8px 12px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 8px;
+            color: #333;
+            font-size: 14px;
+            font-weight: 600;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            z-index: 3;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        /* ============ CLASSIC LAYOUT (circle) ============ */
+        .gallery.layout-classic .board {
             border: 1px solid #ccc;
             padding: 10px;
             text-align: center;
@@ -74,11 +244,11 @@
             transition: transform 0.2s;
             background: white;
         }
-        .board:hover {
+        .gallery.layout-classic .board:hover {
             transform: translateY(-5px);
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
-        .board-image-container {
+        .gallery.layout-classic .board-image-container {
             position: relative;
             width: var(--board-image-size, 150px);
             height: var(--board-image-size, 150px);
@@ -86,28 +256,19 @@
             border-radius: 50%;
             overflow: hidden;
         }
-        .board-skeleton-loader {
+        .gallery.layout-classic .board-skeleton-loader {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(
-                90deg,
-                rgba(240, 240, 240, 0.8) 0%,
-                rgba(220, 220, 220, 1) 50%,
-                rgba(240, 240, 240, 0.8) 100%
-            );
+            background: linear-gradient(90deg, rgba(240,240,240,0.8) 0%, rgba(220,220,220,1) 50%, rgba(240,240,240,0.8) 100%);
             background-size: 200% 100%;
             animation: shimmer 1.5s infinite;
             border-radius: 50%;
             z-index: 1;
         }
-        @keyframes shimmer {
-            0% { background-position: -200% 0; }
-            100% { background-position: 200% 0; }
-        }
-        .board-image {
+        .gallery.layout-classic .board-image {
             width: 100%;
             height: 100%;
             max-width: var(--board-image-size, 150px);
@@ -121,23 +282,43 @@
             z-index: 2;
             opacity: 0;
         }
-        .board-image.loaded {
+        .gallery.layout-classic .board-image.loaded {
             opacity: 1;
         }
-        .board h3 {
+        .gallery.layout-classic .board-name {
+            position: static;
             margin: 0;
+            padding: 0;
+            background: none;
+            border-radius: 0;
+            color: #333;
+            font-size: inherit;
+            font-weight: normal;
+            box-shadow: none;
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
-            color: #333;
         }
+
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+
         .board a {
             text-decoration: none;
         }
+
         @media (max-width: 600px) {
             .gallery { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
-            /* Board image size on mobile scales down slightly but still respects the slider */
-            .board-image-container {
+            .gallery.layout-modern .board-name {
+                bottom: 8px;
+                left: 8px;
+                right: 8px;
+                padding: 6px 10px;
+                font-size: 12px;
+            }
+            .gallery.layout-classic .board-image-container {
                 width: calc(var(--board-image-size, 150px) * 0.75);
                 height: calc(var(--board-image-size, 150px) * 0.75);
             }
@@ -145,43 +326,97 @@
     </style>
 
     <script>
+        // Settings menu toggle
+        function toggleSettingsMenu() {
+            const menu = document.getElementById('settingsMenu');
+            menu.classList.toggle('active');
+        }
+
+        // Close settings menu when clicking outside
+        document.addEventListener('click', function(e) {
+            const dropdown = document.querySelector('.settings-dropdown');
+            const menu = document.getElementById('settingsMenu');
+            if (dropdown && !dropdown.contains(e.target) && menu) {
+                menu.classList.remove('active');
+            }
+        });
+
+        // Set layout style
+        function setLayout(layout) {
+            const gallery = document.getElementById('boardsGallery');
+            gallery.classList.remove('layout-modern', 'layout-classic');
+            gallery.classList.add('layout-' + layout);
+            
+            // Update checkmarks
+            document.querySelectorAll('.settings-option').forEach(opt => {
+                opt.classList.remove('active');
+            });
+            document.querySelector(`.settings-option[data-layout="${layout}"]`).classList.add('active');
+            
+            // Save preference
+            localStorage.setItem('boardLayout', layout);
+            
+            // Close menu
+            document.getElementById('settingsMenu').classList.remove('active');
+            
+            // Update sizes for the layout
+            updateBoardSize();
+        }
+
         // Board size slider handling
+        let currentLayout = 'modern';
+        
+        function updateBoardSize() {
+            const boardSizeSlider = document.getElementById('boardSizeSlider');
+            const boardSizeValue = document.getElementById('boardSizeValue');
+            const sizeLabels = ['Tiny', 'Small', 'Medium', 'Large', 'Huge'];
+            
+            if (!boardSizeSlider || !boardSizeValue) return;
+            
+            const sizeLevel = parseInt(boardSizeSlider.value);
+            const sizeLabel = sizeLabels[sizeLevel - 1];
+            boardSizeValue.textContent = sizeLabel;
+            localStorage.setItem('boardTileSize', sizeLevel);
+            
+            // Tile sizes for grid
+            const tileSizes = {
+                1: '150px',
+                2: '180px',
+                3: '220px',
+                4: '280px',
+                5: '350px'
+            };
+            
+            // Image sizes for classic layout
+            const imageSizes = {
+                1: '100px',
+                2: '120px',
+                3: '150px',
+                4: '180px',
+                5: '220px'
+            };
+            
+            const tileSize = tileSizes[sizeLevel] || tileSizes[3];
+            const imageSize = imageSizes[sizeLevel] || imageSizes[3];
+            
+            document.documentElement.style.setProperty('--board-tile-size', tileSize);
+            document.documentElement.style.setProperty('--board-image-size', imageSize);
+        }
+
         document.addEventListener('DOMContentLoaded', function() {
             const boardSizeSlider = document.getElementById('boardSizeSlider');
             const boardSizeValue = document.getElementById('boardSizeValue');
+            const gallery = document.getElementById('boardsGallery');
+            
+            // Load saved layout
+            const savedLayout = localStorage.getItem('boardLayout') || 'classic';
+            currentLayout = savedLayout;
+            gallery.classList.remove('layout-modern', 'layout-classic');
+            gallery.classList.add('layout-' + savedLayout);
+            document.querySelector(`.settings-option[data-layout="${savedLayout}"]`).classList.add('active');
             
             if (boardSizeSlider && boardSizeValue) {
                 const sizeLabels = ['Tiny', 'Small', 'Medium', 'Large', 'Huge'];
-                
-                function updateBoardSize() {
-                    const sizeLevel = parseInt(boardSizeSlider.value);
-                    const sizeLabel = sizeLabels[sizeLevel - 1];
-                    boardSizeValue.textContent = sizeLabel;
-                    localStorage.setItem('boardTileSize', sizeLevel);
-                    
-                    // Adjust tile size and image size based on slider
-                    const tileSizes = {
-                        1: '150px',  // Tiny - smaller tiles, more columns
-                        2: '180px',  // Small
-                        3: '200px',  // Medium (default)
-                        4: '250px',  // Large
-                        5: '320px'   // Huge - larger tiles, fewer columns
-                    };
-                    
-                    const imageSizes = {
-                        1: '100px',  // Tiny
-                        2: '120px',  // Small
-                        3: '150px',  // Medium (default)
-                        4: '180px',  // Large
-                        5: '220px'   // Huge
-                    };
-                    
-                    const tileSize = tileSizes[sizeLevel] || tileSizes[3];
-                    const imageSize = imageSizes[sizeLevel] || imageSizes[3];
-                    
-                    document.documentElement.style.setProperty('--board-tile-size', tileSize);
-                    document.documentElement.style.setProperty('--board-image-size', imageSize);
-                }
                 
                 // Debounced update function for smoother slider experience
                 let updateTimeout;

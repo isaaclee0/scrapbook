@@ -611,13 +611,152 @@ class ImageCacheService:
             # Wait for all tasks to complete
             self.task_queue.join()
             
+            cursor.close()
+            db.close()
+            
+            # After caching, also process any pins with missing dimensions
+            self.process_missing_dimensions(board_id=board_id)
+            
         except Exception as e:
             logger.error(f"Error caching all external images: {e}")
         finally:
-            if 'cursor' in locals():
-                cursor.close()
-            if 'db' in locals():
-                db.close()
+            if 'cursor' in locals() and cursor:
+                try:
+                    cursor.close()
+                except:
+                    pass
+            if 'db' in locals() and db:
+                try:
+                    db.close()
+                except:
+                    pass
+    
+    def process_missing_dimensions(self, board_id=None, limit=100):
+        """Process dimensions for pins that have cached images but missing dimensions"""
+        db = None
+        cursor = None
+        try:
+            db = get_db_connection()
+            cursor = db.cursor(dictionary=True)
+            
+            # Find pins with cached images but no dimensions
+            query = """
+                SELECT p.id as pin_id, p.image_url, p.cached_image_id,
+                       ci.id as cache_id, ci.cached_filename, ci.width, ci.height
+                FROM pins p
+                LEFT JOIN cached_images ci ON p.cached_image_id = ci.id
+                WHERE (ci.width IS NULL OR ci.width = 0 OR ci.height IS NULL OR ci.height = 0)
+            """
+            
+            params = []
+            if board_id:
+                query += " AND p.board_id = %s"
+                params.append(board_id)
+            
+            query += f" LIMIT {limit}"
+            
+            cursor.execute(query, params)
+            pins = cursor.fetchall()
+            
+            if not pins:
+                logger.info("No pins with missing dimensions found")
+                return
+            
+            board_message = f" for board {board_id}" if board_id else ""
+            logger.info(f"Found {len(pins)} pins with missing dimensions{board_message}")
+            
+            processed = 0
+            for pin in pins:
+                pin_id = pin['pin_id']
+                image_url = pin['image_url']
+                cache_id = pin['cached_image_id'] or pin['cache_id']
+                cached_filename = pin['cached_filename']
+                
+                width, height = None, None
+                
+                try:
+                    # Try to get dimensions from cached file first (fastest)
+                    if cached_filename and not cached_filename.startswith('failed_'):
+                        cached_path = os.path.join(self.cache_dir, cached_filename)
+                        if os.path.exists(cached_path):
+                            with Image.open(cached_path) as img:
+                                width, height = img.size
+                                logger.info(f"Got dimensions from cached file for pin {pin_id}: {width}x{height}")
+                    
+                    # If no cached file, try the original URL
+                    if not width or not height:
+                        if image_url.startswith('/cached/'):
+                            # Local cached path
+                            local_path = os.path.join('static', 'cached_images', image_url[8:])
+                            if os.path.exists(local_path):
+                                with Image.open(local_path) as img:
+                                    width, height = img.size
+                        elif image_url.startswith('/static/'):
+                            # Static file
+                            local_path = image_url[1:]  # Remove leading slash
+                            if os.path.exists(local_path):
+                                with Image.open(local_path) as img:
+                                    width, height = img.size
+                        elif image_url.startswith('http'):
+                            # External URL - fetch headers or small portion
+                            try:
+                                response = self.session.get(image_url, timeout=10, stream=True)
+                                response.raise_for_status()
+                                # Read just enough to get dimensions
+                                content = response.raw.read(65536)  # 64KB should be enough for headers
+                                with Image.open(io.BytesIO(content)) as img:
+                                    width, height = img.size
+                            except Exception as e:
+                                logger.warning(f"Could not fetch dimensions for pin {pin_id}: {e}")
+                    
+                    # Update dimensions in database
+                    if width and height:
+                        if cache_id:
+                            cursor.execute("""
+                                UPDATE cached_images 
+                                SET width = %s, height = %s, updated_at = CURRENT_TIMESTAMP
+                                WHERE id = %s
+                            """, (width, height, cache_id))
+                        else:
+                            # Create a cached_images record with dimensions only
+                            url_hash = hashlib.md5(image_url.encode()).hexdigest()[:16]
+                            placeholder_filename = f"{url_hash}_pending.placeholder"
+                            
+                            cursor.execute("""
+                                INSERT INTO cached_images 
+                                (original_url, cached_filename, file_size, width, height, quality_level, cache_status)
+                                VALUES (%s, %s, 0, %s, %s, 'low', 'pending')
+                            """, (image_url, placeholder_filename, width, height))
+                            cache_id = cursor.lastrowid
+                            
+                            # Link pin to the cache record
+                            cursor.execute("""
+                                UPDATE pins SET cached_image_id = %s WHERE id = %s
+                            """, (cache_id, pin_id))
+                        
+                        db.commit()
+                        processed += 1
+                        logger.info(f"Updated dimensions for pin {pin_id}: {width}x{height}")
+                        
+                except Exception as e:
+                    logger.error(f"Error processing dimensions for pin {pin_id}: {e}")
+                    continue
+            
+            logger.info(f"Processed dimensions for {processed}/{len(pins)} pins")
+            
+        except Exception as e:
+            logger.error(f"Error processing missing dimensions: {e}")
+        finally:
+            if cursor:
+                try:
+                    cursor.close()
+                except:
+                    pass
+            if db:
+                try:
+                    db.close()
+                except:
+                    pass
     
     def cleanup_old_cache(self, days_old=30):
         """Clean up old cached images that haven't been accessed recently"""

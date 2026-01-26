@@ -273,7 +273,7 @@
                     <button
                         class="p-2 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-lg transition-all duration-200"
                         onclick="toggleBoardSettings()">
-                        <span class="text-lg">✏️</span>
+                        <i class="fas fa-pencil-alt text-lg"></i>
                     </button>
                     <div id="boardSettingsMenu"
                         class="hidden absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl border border-gray-200 py-2 z-50 flex flex-col">
@@ -296,6 +296,7 @@
 
         </div>
 
+        {% if sections %}
         <!-- Section Circles -->
         <div class="section-circles-container">
             <div class="section-circles-scroll">
@@ -333,17 +334,18 @@
                             0
                             %} <span class="text-gray-400 text-xs">(empty)</span>{% endif %}</span>
                     </button>
-                    <!-- Edit Link (Hidden by default, shown when active via JS) -->
-                    <button id="edit-btn-{{ section.id }}"
-                        onclick="showEditSectionModal('{{ section.id }}', '{{ section.name|replace('-', ' ') }}', event)"
-                        class="section-edit-btn text-xs text-gray-400 hover:text-gray-800 underline mt-1 hidden transition-colors"
-                        style="min-height: 20px;">
-                        Edit
+                    <!-- Edit Button (Hidden by default, shown when active via JS) -->
+                    <button id="edit-btn-{{ section.id }}" data-section-id="{{ section.id }}"
+                        data-section-name="{{ section.name|replace('-', ' ') }}" onclick="openSectionEdit(this, event)"
+                        class="section-edit-btn transform scale-[0.2] origin-top p-0 bg-transparent hover:bg-gray-100 text-gray-400 hover:text-gray-600 text-[10px] rounded-full hidden transition-all duration-200"
+                        title="Edit this section">
+                        Edit <i class="fas fa-pencil-alt ml-1"></i>
                     </button>
                 </div>
                 {% endfor %}
             </div>
         </div>
+        {% endif %}
     </div>
 
     <div class="masonry-grid loading-layout" id="pinsGrid">
@@ -380,14 +382,6 @@
                 </div>
                 <div class="pin-info">
                     <h3 class="font-medium text-gray-900 text-sm leading-tight mb-2 line-clamp-2">{{ pin.title }}</h3>
-                    <div class="flex items-center justify-between">
-                        <a href="{{ url_for('board', board_id=pin.board_id) }}?highlight={{ pin.id }}"
-                            class="board-link text-primary-500 hover:text-primary-600 text-xs flex items-center space-x-1 transition-all duration-200 hover:bg-primary-50 hover:px-2 hover:py-1 hover:rounded-md"
-                            title="Go to {{ pin.board_name }}" onclick="if(event) { event.stopPropagation(); }">
-                            <span>{{ pin.board_name }}</span>
-                            <span>→</span>
-                        </a>
-                    </div>
                 </div>
             </a>
         </div>
@@ -398,70 +392,125 @@
 <!-- Board Settings Modals -->
 <div class="modal" id="renameBoardModal">
     <div class="modal-content">
-        <h3>Rename Board</h3>
-        <input type="text" id="newBoardName" placeholder="New board name" class="board-input">
+        <div class="modal-header">
+            <h3 class="text-xl font-bold">Rename Board</h3>
+            <button class="close-button" onclick="hideRenameBoardModal()"
+                style="background: none; border: none; font-size: 28px; cursor: pointer; color: #666; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: background-color 0.2s;">&times;</button>
+        </div>
+        <div class="modal-body">
+            <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">New Name</label>
+            <textarea id="newBoardName" placeholder="New board name" rows="1"
+                class="board-input w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-100 outline-none transition-shadow resize-none"
+                style="min-height: 48px; overflow-y: hidden;"></textarea>
+        </div>
         <div class="modal-actions">
             <button class="button secondary-button" onclick="hideRenameBoardModal()">Cancel</button>
-            <button class="button primary-button" onclick="renameBoard()">Rename</button>
+            <button class="button primary-button" onclick="renameBoard()">Save Changes</button>
+            <button class="trash-button" onclick="showDeleteBoardModal(); hideRenameBoardModal();" title="Delete Board">
+                <i class="fas fa-trash-alt"></i>
+            </button>
         </div>
     </div>
 </div>
 
 <div class="modal" id="moveBoardModal">
     <div class="modal-content">
-        <h3>Convert Board to Section</h3>
-        <p style="margin-bottom: 15px; color: #666; font-size: 14px;">
-            This will convert "{{ board.name }}" into a section within another board.
-            All pins and subsections will be moved to the selected board.
-        </p>
-        <select id="targetBoardSelect">
-            <option value="">Select a target board...</option>
-            {% for other_board in all_boards %}
-            {% if other_board.id != board.id %}
-            <option value="{{ other_board.id }}">{{ other_board.name }}</option>
-            {% endif %}
-            {% endfor %}
-        </select>
+        <div class="modal-header">
+            <h3 class="text-xl font-bold">Convert Board to Section</h3>
+            <button class="close-button" onclick="hideMoveBoardModal()"
+                style="background: none; border: none; font-size: 28px; cursor: pointer; color: #666; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: background-color 0.2s;">&times;</button>
+        </div>
+        <div class="modal-body">
+            <p style="margin-bottom: 20px; color: #666; font-size: 14px; line-height: 1.5;">
+                This will convert <strong>"{{ board.name }}"</strong> into a section within another board.
+                All pins and subsections will be moved to the selected board.
+            </p>
+            <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Target Board</label>
+            <select id="targetBoardSelect"
+                class="w-full p-3 border rounded-lg bg-white outline-none focus:ring-2 focus:ring-blue-100 transition-shadow">
+                <option value="">Select a target board...</option>
+                {% for other_board in all_boards %}
+                {% if other_board.id != board.id %}
+                <option value="{{ other_board.id }}">{{ other_board.name }}</option>
+                {% endif %}
+                {% endfor %}
+            </select>
+        </div>
         <div class="modal-actions">
             <button class="button secondary-button" onclick="hideMoveBoardModal()">Cancel</button>
             <button class="button primary-button" onclick="moveBoard()">Convert to Section</button>
         </div>
+    </div>
+</div>
 
-        <!-- Edit Section Modal (Unified) -->
-        <div class="modal" id="editSectionModal">
-            <div class="modal-content">
-                <h3 class="text-lg font-bold mb-4">Edit Section</h3>
-                <input type="hidden" id="editSectionId">
+<!-- Edit Section Modal (Unified) -->
+<div class="modal" id="editSectionModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="text-xl font-bold">Edit Section</h3>
+            <button class="close-button" onclick="hideEditSectionModal()"
+                style="background: none; border: none; font-size: 28px; cursor: pointer; color: #666; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: background-color 0.2s;">&times;</button>
+        </div>
 
-                <div class="mb-4">
-                    <label class="block text-sm font-medium text-gray-700 mb-1">Section Name</label>
-                    <input type="text" id="editSectionName" placeholder="Section name"
-                        class="board-input w-full p-2 border rounded">
-                </div>
-
-                <div class="flex justify-between items-center mt-6">
-                    <button
-                        class="text-red-500 hover:text-red-700 text-sm font-medium px-3 py-2 rounded hover:bg-red-50 transition-colors"
-                        onclick="deleteSectionFromModal()">
-                        Delete Section
-                    </button>
-                    <div class="flex space-x-2">
-                        <button class="button secondary-button" onclick="hideEditSectionModal()">Cancel</button>
-                        <button class="button primary-button" onclick="saveSectionRename()">Save</button>
-                    </div>
-                </div>
+        <div class="modal-body">
+            <input type="hidden" id="editSectionId">
+            <div class="mb-4">
+                <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Section Name</label>
+                <input type="text" id="editSectionName" placeholder="Section name"
+                    class="board-input w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-100 outline-none transition-shadow">
             </div>
+        </div>
+
+        <div class="modal-actions">
+            <button class="button secondary-button" onclick="hideEditSectionModal()">Cancel</button>
+            <button class="button primary-button" onclick="saveSectionRename()">Save Changes</button>
+            <button class="trash-button" onclick="deleteSectionFromModal()" title="Delete Section">
+                <i class="fas fa-trash-alt"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="deleteSectionConfirmationModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="text-xl font-bold">Delete Section</h3>
+            <button class="close-button" onclick="hideDeleteSectionConfirmationModal()"
+                style="background: none; border: none; font-size: 28px; cursor: pointer; color: #666; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: background-color 0.2s;">&times;</button>
+        </div>
+        <div class="modal-body">
+            <p style="color: #444; font-size: 15px; line-height: 1.5;">Are you sure you want to delete the section
+                <strong>"<span id="deleteSectionNameDisplay"></span>"</strong>?
+            </p>
+            <p style="color: #666; font-size: 14px; margin-top: 10px;">All pins currently in this section will be moved
+                to unsectioned.</p>
+        </div>
+        <div class="modal-actions">
+            <button class="button secondary-button" onclick="hideDeleteSectionConfirmationModal()">Cancel</button>
+            <button class="button delete-button" onclick="deleteSectionConfirmed()"
+                style="background-color: #ef4444; color: white; padding: 10px 20px; border-radius: 8px; font-weight: 600;">Delete
+                Section</button>
         </div>
     </div>
 </div>
 
 <div class="modal" id="deleteBoardModal">
     <div class="modal-content">
-        <h3>Delete Board</h3>
-        <p>Are you sure you want to delete this board? This action cannot be undone.</p>
+        <div class="modal-header">
+            <h3 class="text-xl font-bold">Delete Board</h3>
+            <button class="close-button" onclick="hideDeleteBoardModal()"
+                style="background: none; border: none; font-size: 28px; cursor: pointer; color: #666; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: background-color 0.2s;">&times;</button>
+        </div>
+        <div class="modal-body">
+            <p style="color: #444; font-size: 15px; line-height: 1.5;">Are you sure you want to delete this board?
+                <strong>This action cannot be undone.</strong>
+            </p>
+        </div>
         <div class="modal-actions">
             <button class="button secondary-button" onclick="hideDeleteBoardModal()">Cancel</button>
-            <button class="button delete-button" onclick="deleteBoard()">Delete</button>
+            <button class="button delete-button" onclick="deleteBoard()"
+                style="background-color: #ef4444; color: white; padding: 10px 20px; border-radius: 8px; font-weight: 600;">Delete
+                Board</button>
         </div>
     </div>
 </div>
@@ -951,75 +1000,120 @@
 
     /* Modal styles */
     .modal {
-        display: none;
         position: fixed;
-        z-index: 1000;
-        left: 0;
         top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.75);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 2000;
+        backdrop-filter: blur(2px);
     }
 
     .modal.active {
-        display: block;
+        display: flex;
     }
 
     .modal-content {
-        background-color: white;
-        margin: 15% auto;
-        padding: 20px;
-        border-radius: 8px;
+        background: white;
+        border-radius: 16px;
         width: 90%;
-        max-width: 400px;
+        max-width: 500px;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+        max-height: 90vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
     }
 
-    .modal-content h3 {
-        margin-top: 0;
-        margin-bottom: 20px;
+    .modal-header {
+        padding: 16px 24px;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .modal-header h3 {
+        margin: 0;
+        color: #333;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .modal-body {
+        padding: 24px;
+        flex: 1;
+        overflow-y: auto;
     }
 
     .modal-actions {
+        padding: 16px 24px;
         display: flex;
-        gap: 10px;
+        gap: 12px;
         justify-content: flex-end;
-        margin-top: 20px;
+        align-items: center;
+        border-top: 1px solid #eee;
+        background: #fafafa;
+    }
+
+    .modal-actions.justify-between {
+        justify-content: space-between;
     }
 
     .button {
-        padding: 8px 16px;
+        padding: 10px 24px;
         border: none;
-        border-radius: 4px;
+        border-radius: 10px;
         cursor: pointer;
-        font-size: 14px;
-        transition: background-color 0.2s;
+        font-size: 15px;
+        font-weight: 600;
+        transition: all 0.2s;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .primary-button {
-        background-color: #007bff;
+        background-color: #2980b9;
         color: white;
     }
 
     .primary-button:hover {
-        background-color: #0056b3;
+        background-color: #247291;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(41, 128, 185, 0.2);
     }
 
     .secondary-button {
-        background-color: #6c757d;
-        color: white;
+        background-color: #f0f0f0;
+        color: #333;
     }
 
     .secondary-button:hover {
-        background-color: #545b62;
+        background-color: #e5e5e5;
     }
 
-    .delete-button {
-        background-color: #dc3545;
-        color: white;
+    .trash-button {
+        width: 42px;
+        height: 42px;
+        border-radius: 8px;
+        background-color: #f8f8f8;
+        color: #ef4444;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.2s;
+        border: none;
     }
 
-    .delete-button:hover {
-        background-color: #c82333;
+    .trash-button:hover {
+        background-color: #fee2e2;
+        transform: scale(1.05);
     }
 
     .board-input {
@@ -1132,9 +1226,27 @@
 
     function showRenameBoardModal() {
         document.getElementById('renameBoardModal').classList.add('active');
-        document.getElementById('newBoardName').value = '{{ board.name }}';
-        document.getElementById('newBoardName').focus();
+        const textarea = document.getElementById('newBoardName');
+        textarea.value = '{{ board.name }}';
+        textarea.focus();
+        // Auto-resize textarea to fit content
+        autoResizeTextarea(textarea);
     }
+    
+    function autoResizeTextarea(textarea) {
+        textarea.style.height = 'auto';
+        textarea.style.height = Math.max(48, textarea.scrollHeight) + 'px';
+    }
+    
+    // Set up auto-resize on input
+    document.addEventListener('DOMContentLoaded', function() {
+        const boardNameTextarea = document.getElementById('newBoardName');
+        if (boardNameTextarea) {
+            boardNameTextarea.addEventListener('input', function() {
+                autoResizeTextarea(this);
+            });
+        }
+    });
 
     function hideRenameBoardModal() {
         document.getElementById('renameBoardModal').classList.remove('active');
@@ -1436,12 +1548,6 @@
             </div>
             <div class="pin-info">
                 <h3 class="font-medium text-gray-900 text-sm leading-tight mb-2 line-clamp-2">${escapeHtml(pin.title || '')}</h3>
-                <div class="flex items-center justify-between">
-                    <a href="/board/${pin.board_id}" class="board-link text-primary-500 hover:text-primary-600 text-xs flex items-center space-x-1 transition-all duration-200 hover:bg-primary-50 hover:px-2 hover:py-1 hover:rounded-md" title="Go to board" onclick="if(event) { event.stopPropagation(); event.preventDefault ? event.preventDefault() : null; }">
-                        <span>Board</span>
-                        <span>→</span>
-                    </a>
-                </div>
             </div>
         </a>
     `;
@@ -2138,7 +2244,7 @@
                     return imageUrl && imageUrl.startsWith('http') && !hasCached;
                 });
                 const uncachedCount = uncachedPins.length;
-                statusText.textContent = `📁 Caching ${uncachedCount} images...`;
+                statusText.textContent = `📁 Processing ${uncachedCount} images...`;
                 break;
             case 'extracting':
                 // Count pins without colors dynamically from DOM
@@ -2202,6 +2308,7 @@
 
                 const selectedSection = this.dataset.sectionId;
                 activeSectionFilter = selectedSection;
+                window.activeSectionFilter = selectedSection; // Expose to window for base.html
 
                 // Check if we have pins for this section already loaded
                 const existingPins = document.querySelectorAll(`.pin-card[data-section-id="${selectedSection}"]`);
@@ -2395,7 +2502,22 @@
     }
 
     // Section Management Functions (Unified)
+
+    // Wrapper to handle click from the button using data attributes
+    function openSectionEdit(btn, event) {
+        if (event) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+
+        const sectionId = btn.getAttribute('data-section-id');
+        const sectionName = btn.getAttribute('data-section-name');
+
+        showEditSectionModal(sectionId, sectionName);
+    }
+
     function showEditSectionModal(sectionId, currentName, event) {
+        // Handle direct call (with event) or call from wrapper (without event)
         if (event) {
             event.stopPropagation();
             event.preventDefault();
@@ -2439,21 +2561,29 @@
             });
     }
 
-    function deleteSectionFromModal() {
-        const sectionId = document.getElementById('editSectionId').value;
+    let sectionToDelete = null;
 
-        if (!confirm('Are you sure you want to delete this section? Pins will be moved to "All".')) {
-            return;
-        }
+    function confirmDeleteSection(id, name) {
+        sectionToDelete = id;
+        document.getElementById('deleteSectionNameDisplay').textContent = name;
+        document.getElementById('deleteSectionConfirmationModal').classList.add('active');
+    }
 
-        fetch(`/delete-section/${sectionId}`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' }
+    function hideDeleteSectionConfirmationModal() {
+        document.getElementById('deleteSectionConfirmationModal').classList.remove('active');
+        sectionToDelete = null;
+    }
+
+    function deleteSectionConfirmed() {
+        if (!sectionToDelete) return;
+
+        fetch(`/delete-section/${sectionToDelete}`, {
+            method: 'POST'
         })
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
-                    window.location.reload();
+                    location.reload();
                 } else {
                     alert('Failed to delete section: ' + (data.error || 'Unknown error'));
                 }
@@ -2462,6 +2592,13 @@
                 console.error(err);
                 alert('Error deleting section');
             });
+    }
+
+    function deleteSectionFromModal() {
+        const id = document.getElementById('editSectionId').value;
+        const name = document.getElementById('editSectionName').value;
+        hideEditSectionModal();
+        confirmDeleteSection(id, name);
     }
 
 
