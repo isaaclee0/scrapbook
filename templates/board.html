@@ -2,267 +2,50 @@
 
 {% block content %}
 <script>
-    // Define this function immediately so inline onload handlers can use it
-    // Simplified: Calculate container height when image loads, based on actual image dimensions
+    // Called on image load.
+    // 1. If no stored dims: corrects the aspect-ratio from the real image.
+    // 2. If loading from an external URL (not /cached/): reports dims and
+    //    triggers a server-side background download so the image is cached
+    //    locally and future loads never touch the external CDN again.
     function correctImageContainerHeight(imgElement) {
-        if (!imgElement || !imgElement.naturalWidth || !imgElement.naturalHeight) {
-            return;
+        if (!imgElement || !imgElement.naturalWidth || !imgElement.naturalHeight) return;
+
+        const pinCard = imgElement.closest('.pin-card');
+        const storedW = parseInt(pinCard?.getAttribute('data-cached-width'));
+        const storedH = parseInt(pinCard?.getAttribute('data-cached-height'));
+        const hasStoredDims = storedW && storedH && !isNaN(storedW) && !isNaN(storedH);
+
+        // Correct aspect-ratio when stored dims were missing
+        if (!hasStoredDims) {
+            const container = imgElement.closest('.image-container');
+            if (container) {
+                const w = imgElement.naturalWidth;
+                const hCapped = Math.min(imgElement.naturalHeight, w * 2);
+                const h = Math.max(hCapped, Math.round(w / 2));
+                container.style.aspectRatio = `${w}/${h}`;
+            }
         }
 
-        const imageContainer = imgElement.closest('.image-container');
-        if (!imageContainer) {
-            return;
+        // If the image loaded from an external URL, report dims and trigger
+        // background caching — regardless of whether dims were already stored.
+        // Once the server caches the file, future loads use /cached/ instead.
+        const isExternal = !imgElement.src.startsWith(window.location.origin + '/cached/');
+        if (isExternal) {
+            const pinId = pinCard?.getAttribute('data-pin-id');
+            if (pinId) {
+                fetch(`/save-pin-dimensions/${pinId}`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        width:  imgElement.naturalWidth,
+                        height: imgElement.naturalHeight
+                    }),
+                    keepalive: true
+                }).catch(() => {});
+            }
         }
-
-        // Check if height was pre-reserved
-        const heightSource = imageContainer.getAttribute('data-height-source');
-        const isHeightLocked = imageContainer.hasAttribute('data-height-locked');
-
-        if (isHeightLocked) {
-            const currentHeight = parseInt(imageContainer.style.height);
-
-            // If height came from cached dimensions, keep it locked (most accurate)
-            // If height was estimated, we can update it with the real dimensions
-            if (heightSource === 'cached' && currentHeight && currentHeight > 0) {
-                // Just ensure image fits the container, don't recalculate height
-                imgElement.style.setProperty('height', currentHeight + 'px', 'important');
-                imgElement.style.setProperty('max-height', currentHeight + 'px', 'important');
-                imgElement.style.setProperty('width', '100%', 'important');
-                imgElement.style.setProperty('object-fit', 'cover', 'important');
-                imgElement.style.setProperty('display', 'block', 'important');
-                imgElement.style.setProperty('position', 'absolute', 'important');
-                imgElement.style.setProperty('top', '0', 'important');
-                imgElement.style.setProperty('left', '0', 'important');
-                return;
-            }
-            // For estimated heights, we'll recalculate below but keep the locked state
-        }
-
-        // Wait for container to have width - use getBoundingClientRect for masonry grid
-        const tryCorrect = (attempt = 0) => {
-            // In masonry grids, use getBoundingClientRect for accurate width
-            const containerRect = imageContainer.getBoundingClientRect();
-            let containerWidth = containerRect.width;
-
-            // Fallback methods if getBoundingClientRect doesn't work
-            if (!containerWidth || containerWidth === 0) {
-                containerWidth = imageContainer.offsetWidth ||
-                    imageContainer.clientWidth ||
-                    parseFloat(window.getComputedStyle(imageContainer).width);
-            }
-
-            // Try parent element (pin-card) width as fallback
-            if ((!containerWidth || containerWidth === 0) && imageContainer.parentElement) {
-                const parentRect = imageContainer.parentElement.getBoundingClientRect();
-                containerWidth = parentRect.width ||
-                    imageContainer.parentElement.offsetWidth ||
-                    parseFloat(window.getComputedStyle(imageContainer.parentElement).width);
-            }
-
-            // If still no width, wait for layout to settle
-            if (!containerWidth || containerWidth === 0 || isNaN(containerWidth)) {
-                if (attempt < 30) { // More retries for masonry layout
-                    setTimeout(() => tryCorrect(attempt + 1), 50);
-                    return;
-                }
-                // Last resort: calculate from CSS variable or use default
-                const pinWidth = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--pin-width')) || 300;
-                containerWidth = pinWidth - 32; // Account for padding/margins
-            }
-
-            // Validate dimensions exist
-            if (!imgElement.naturalWidth || !imgElement.naturalHeight) {
-                return;
-            }
-
-            const naturalWidth = imgElement.naturalWidth;
-            const naturalHeight = imgElement.naturalHeight;
-
-            // Calculate aspect ratio and cap at 2:1 (height:width), but also cap absolute height at 500px
-            const rawAspectRatio = naturalHeight / naturalWidth;
-            const maxAspectRatio = 2;
-            const aspectRatio = Math.min(rawAspectRatio, maxAspectRatio);
-
-            // Calculate height based on container width and capped aspect ratio
-            let calculatedHeight = containerWidth * aspectRatio;
-
-            // Cap the absolute height at 500px to prevent overly tall images
-            const maxAbsoluteHeight = 500;
-            calculatedHeight = Math.min(calculatedHeight, maxAbsoluteHeight);
-
-            // Ensure minimum height
-            const finalHeight = Math.max(150, Math.round(calculatedHeight));
-
-            // Set container height - use !important to override any CSS max-height
-            // First, explicitly remove any existing max-height
-            imageContainer.style.removeProperty('max-height');
-            // Then set all height properties with !important
-            imageContainer.style.setProperty('height', finalHeight + 'px', 'important');
-            imageContainer.style.setProperty('min-height', finalHeight + 'px', 'important');
-            imageContainer.style.setProperty('max-height', finalHeight + 'px', 'important');
-            imageContainer.style.setProperty('padding-bottom', '0', 'important');
-            // Also set inline style without !important as backup
-            imageContainer.style.height = finalHeight + 'px';
-            imageContainer.style.maxHeight = finalHeight + 'px';
-            // Lock height to prevent recalculation during image swap
-            imageContainer.setAttribute('data-height-locked', 'true');
-
-            // Ensure image fills the container completely - match container exactly
-            imgElement.style.setProperty('height', finalHeight + 'px', 'important');
-            imgElement.style.setProperty('max-height', finalHeight + 'px', 'important');
-            imgElement.style.setProperty('width', '100%', 'important');
-            imgElement.style.setProperty('max-width', '100%', 'important');
-            imgElement.style.setProperty('object-fit', 'cover', 'important');
-            imgElement.style.setProperty('display', 'block', 'important');
-            imgElement.style.setProperty('position', 'absolute', 'important');
-            imgElement.style.setProperty('top', '0', 'important');
-            imgElement.style.setProperty('left', '0', 'important');
-            imgElement.style.setProperty('margin', '0', 'important');
-            imgElement.style.setProperty('padding', '0', 'important');
-        };
-
-        // Small delay to ensure layout has settled
-        setTimeout(() => tryCorrect(), 10);
     }
 
-    // Estimate container width based on viewport
-    function estimateContainerWidth() {
-        const viewportWidth = window.innerWidth;
-        let columnCount = 5; // default
-        if (viewportWidth <= 500) columnCount = 1;
-        else if (viewportWidth <= 800) columnCount = 2;
-        else if (viewportWidth <= 1200) columnCount = 3;
-        else if (viewportWidth <= 1600) columnCount = 4;
-
-        // Check for custom column count from pin size setting
-        const pinsGrid = document.getElementById('pinsGrid');
-        if (pinsGrid && pinsGrid.style.columnCount) {
-            columnCount = parseInt(pinsGrid.style.columnCount) || columnCount;
-        }
-
-        const gridPadding = 40; // 20px on each side
-        const columnGap = 16;
-        const availableWidth = Math.min(viewportWidth, 1280) - gridPadding;
-        return (availableWidth - (columnGap * (columnCount - 1))) / columnCount;
-    }
-
-    // Pre-reserve space for images based on stored dimensions (runs BEFORE images load)
-    // Optimized to avoid reflows by passing containerWidth
-    function preReserveImageSpace(pinCard, containerWidth, useDefaultAspectRatio = false) {
-        const cachedWidth = parseInt(pinCard.getAttribute('data-cached-width'));
-        const cachedHeight = parseInt(pinCard.getAttribute('data-cached-height'));
-
-        const hasDimensions = cachedWidth && cachedHeight && !isNaN(cachedWidth) && !isNaN(cachedHeight);
-
-        // If no dimensions and not using default, skip
-        if (!hasDimensions && !useDefaultAspectRatio) {
-            return false;
-        }
-
-        const imageContainer = pinCard.querySelector('.image-container');
-        if (!imageContainer) {
-            return false;
-        }
-
-        // Skip if already locked
-        if (imageContainer.hasAttribute('data-height-locked')) {
-            return true;
-        }
-
-        let aspectRatio;
-        if (hasDimensions) {
-            // Calculate aspect ratio and cap at 2:1 (height:width)
-            const rawAspectRatio = cachedHeight / cachedWidth;
-            const maxAspectRatio = 2;
-            aspectRatio = Math.min(rawAspectRatio, maxAspectRatio);
-        } else {
-            // Use default 4:3 aspect ratio for pins without dimensions
-            aspectRatio = 0.75; // 3/4 = 0.75 (landscape orientation, common for web images)
-        }
-
-        // Calculate height based on container width and aspect ratio
-        let calculatedHeight = containerWidth * aspectRatio;
-
-        // Cap the absolute height at 500px
-        const maxAbsoluteHeight = 500;
-        calculatedHeight = Math.min(calculatedHeight, maxAbsoluteHeight);
-
-        // Ensure minimum height
-        const finalHeight = Math.max(150, Math.round(calculatedHeight));
-
-        // Set container height immediately and lock it
-        imageContainer.style.setProperty('height', finalHeight + 'px', 'important');
-        imageContainer.style.setProperty('min-height', finalHeight + 'px', 'important');
-        imageContainer.style.setProperty('max-height', finalHeight + 'px', 'important');
-        imageContainer.setAttribute('data-height-locked', 'true');
-
-        // Mark whether this was a real dimension or estimate
-        imageContainer.setAttribute('data-height-source', hasDimensions ? 'cached' : 'estimated');
-
-        return true;
-    }
-
-    // Pre-reserve space for ALL pin cards on page load
-    // Optimized: Measures once, writes many
-    function preReserveAllImageSpaces() {
-        const pinsGrid = document.getElementById('pinsGrid');
-
-        // Add loading class to disable transitions during layout
-        if (pinsGrid) {
-            pinsGrid.classList.add('loading-layout');
-        }
-
-        // Measure once!
-        const containerWidth = estimateContainerWidth();
-
-        // First, reserve space for pins WITH cached dimensions
-        const pinsWithDimensions = document.querySelectorAll('.pin-card[data-cached-width][data-cached-height]');
-        let reservedWithDimensions = 0;
-
-        pinsWithDimensions.forEach(pinCard => {
-            const w = pinCard.getAttribute('data-cached-width');
-            const h = pinCard.getAttribute('data-cached-height');
-            // Only count if dimensions are actually present (not empty strings)
-            if (w && h && w !== '' && h !== '') {
-                if (preReserveImageSpace(pinCard, containerWidth, false)) {
-                    reservedWithDimensions++;
-                }
-            }
-        });
-
-        // Then, reserve space for pins WITHOUT dimensions using default aspect ratio
-        const allPinCards = document.querySelectorAll('.pin-card');
-        let reservedWithDefault = 0;
-
-        allPinCards.forEach(pinCard => {
-            const container = pinCard.querySelector('.image-container');
-            // Skip if already locked
-            if (container && !container.hasAttribute('data-height-locked')) {
-                if (preReserveImageSpace(pinCard, containerWidth, true)) {
-                    reservedWithDefault++;
-                }
-            }
-        });
-
-        console.log(`Pre-reserved space: ${reservedWithDimensions} with cached dimensions, ${reservedWithDefault} with default aspect ratio`);
-
-        // Remove loading class after a very short delay (just enough to let styles apply)
-        // Reduced from 500ms to 50ms to make it feel instant
-        setTimeout(() => {
-            if (pinsGrid) {
-                pinsGrid.classList.remove('loading-layout');
-                console.log('Layout stabilized, transitions re-enabled');
-            }
-        }, 50);
-    }
-
-    // Run pre-reservation as soon as possible (before images start loading)
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', preReserveAllImageSpaces);
-    } else {
-        // DOM already loaded, run immediately
-        preReserveAllImageSpaces();
-    }
 </script>
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <div class="mb-8">
@@ -337,9 +120,10 @@
                     <!-- Edit Button (Hidden by default, shown when active via JS) -->
                     <button id="edit-btn-{{ section.id }}" data-section-id="{{ section.id }}"
                         data-section-name="{{ section.name|replace('-', ' ') }}" onclick="openSectionEdit(this, event)"
-                        class="section-edit-btn transform scale-[0.2] origin-top p-0 bg-transparent hover:bg-gray-100 text-gray-400 hover:text-gray-600 text-[10px] rounded-full hidden transition-all duration-200"
-                        title="Edit this section">
-                        Edit <i class="fas fa-pencil-alt ml-1"></i>
+                        type="button"
+                        class="section-edit-btn text-xs mt-0.5 px-2 py-0.5 bg-transparent hover:bg-gray-100 text-gray-500 hover:text-gray-700 rounded-md hidden transition-all duration-200"
+                        title="Rename or delete this section">
+                        Rename <i class="fas fa-pencil-alt ml-1"></i>
                     </button>
                 </div>
                 {% endfor %}
@@ -359,18 +143,25 @@
             data-cached-url="/cached/{{ pin.cached_filename }}" data-has-cached="true" {% else %}
             data-has-cached="false" {% endif %}>
             <a href="{{ url_for('view_pin', pin_id=pin.id) }}" class="block">
-                <div class="relative overflow-hidden image-container">
+                {% if pin.cached_width and pin.cached_height %}
+                {% set pw = pin.cached_width | int %}
+                {% set ph_capped = [pin.cached_height | int, pw * 2] | min %}
+                {% set ph = [ph_capped, pw // 2] | max %}
+                <div class="relative overflow-hidden image-container" style="aspect-ratio: {{ pw }}/{{ ph }};">
+                {% else %}
+                <div class="relative overflow-hidden image-container" style="aspect-ratio: 4/3;">
+                {% endif %}
                     <!-- Skeleton loader that shows before image loads -->
                     <div class="skeleton-loader"></div>
                     {% if pin.cached_filename %}
                     <img src="/cached/{{ pin.cached_filename }}" alt="{{ pin.title }}"
-                        class="pin-image group-hover:scale-105 transition-transform duration-300" loading="eager"
+                        class="pin-image group-hover:scale-105 transition-transform duration-300" loading="lazy"
                         data-original-url="{{ pin.image_url }}"
                         onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none'; correctImageContainerHeight(this);"
                         onerror="this.src='/static/images/default_pin.png'; this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
                     {% else %}
                     <img src="{{ pin.image_url }}" alt="{{ pin.title }}"
-                        class="pin-image group-hover:scale-105 transition-transform duration-300" loading="eager"
+                        class="pin-image group-hover:scale-105 transition-transform duration-300" loading="lazy"
                         onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none'; correctImageContainerHeight(this);"
                         onerror="this.src='/static/images/default_pin.png'; this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
                     {% endif %}
@@ -792,28 +583,18 @@
 
 
 
-    /* Image container with dynamic aspect ratio preservation */
+    /* Image container — height driven by CSS aspect-ratio set inline per-pin */
     .image-container {
         position: relative;
         width: 100%;
         overflow: hidden;
         background: linear-gradient(135deg, var(--dominant-color, #f8f9fa) 0%, var(--secondary-color, #e9ecef) 100%);
-        /* Height will be set by JavaScript based on image dimensions */
         min-height: 150px;
-        /* Ensure container displays as block to get proper width */
+        max-height: 500px;
         display: block;
-        /* Remove any spacing that creates gaps */
         margin: 0;
         padding: 0;
         line-height: 0;
-        /* Prevent inline spacing */
-        /* Contain size to prevent layout recalculation */
-        contain: strict;
-    }
-
-    /* When height is locked, absolutely fix the container size */
-    .image-container[data-height-locked="true"] {
-        contain: size layout style;
     }
 
     /* Default neutral appearance for image containers without colors */
@@ -2457,50 +2238,6 @@
     }
 
     // Section Management Functions
-    function showRenameSectionModal() {
-        if (!activeSectionFilter || activeSectionFilter === 'all') return;
-
-        const circle = document.querySelector(`.section-circle[data-section-id="${activeSectionFilter}"]`);
-        const title = circle ? circle.getAttribute('title') : '';
-        const currentName = title.split(' (')[0];
-
-        document.getElementById('newSectionName').value = currentName;
-        document.getElementById('renameSectionModal').classList.add('active');
-        document.getElementById('newSectionName').focus();
-    }
-
-    function hideRenameSectionModal() {
-        document.getElementById('renameSectionModal').classList.remove('active');
-    }
-
-    function renameSection() {
-        if (!activeSectionFilter || activeSectionFilter === 'all') return;
-
-        const newName = document.getElementById('newSectionName').value.trim();
-        if (!newName) {
-            alert('Please enter a section name');
-            return;
-        }
-
-        fetch(`/update-section/${activeSectionFilter}`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ name: newName })
-        })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    location.reload();
-                } else {
-                    alert('Failed to rename section: ' + (data.error || 'Unknown error'));
-                }
-            })
-            .catch(err => {
-                console.error(err);
-                alert('Error renaming section');
-            });
-    }
-
     // Section Management Functions (Unified)
 
     // Wrapper to handle click from the button using data attributes
@@ -2602,31 +2339,6 @@
     }
 
 
-
-    function hideDeleteSectionModal() {
-        document.getElementById('deleteSectionModal').classList.remove('active');
-    }
-
-    function deleteSection() {
-        if (!activeSectionFilter || activeSectionFilter === 'all') return;
-
-        fetch(`/delete-section/${activeSectionFilter}`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' }
-        })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    window.location.reload();
-                } else {
-                    alert('Failed to delete section: ' + (data.error || 'Unknown error'));
-                }
-            })
-            .catch(err => {
-                console.error(err);
-                alert('Error deleting section');
-            });
-    }
 
     // Board management buttons
     function initializeBoardManagement() {

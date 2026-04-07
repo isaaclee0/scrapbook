@@ -59,26 +59,28 @@ else:
 # Cache decorator
 def cache_view(timeout=300):
     def decorator(f):
+        @wraps(f)
         def wrapper(*args, **kwargs):
             # Skip caching in development mode
             if os.getenv('FLASK_ENV') == 'development':
                 return f(*args, **kwargs)
             if not redis_client:
                 return f(*args, **kwargs)
-            cache_key = f"view/{request.path}"
+            qs = request.query_string.decode('utf-8')
+            cache_key = f"view/{request.path}{'?' + qs if qs else ''}"
             cached_data = redis_client.get(cache_key)
             if cached_data:
                 return cached_data
             response = f(*args, **kwargs)
-            # Handle tuple responses (like from render_template)
+            # Don't cache error tuples — pass them through unchanged
             if isinstance(response, tuple):
-                response = response[0]  # Get the actual content
-            # Convert response to string if it's a Response object
+                return response
+            # Store and return HTML responses
             if hasattr(response, 'data'):
-                response = response.data.decode('utf-8')
-            redis_client.setex(cache_key, timeout, response)
+                redis_client.setex(cache_key, timeout, response.data.decode('utf-8'))
+            elif isinstance(response, str):
+                redis_client.setex(cache_key, timeout, response)
             return response
-        wrapper.__name__ = f.__name__
         return wrapper
     return decorator
 
@@ -284,7 +286,7 @@ def update_pin_dimensions(pin_id, image_url):
 dbconfig = {
     "host": os.getenv('DB_HOST', 'db'),
     "user": os.getenv('DB_USER', 'db'),
-    "password": os.getenv('DB_PASSWORD'),
+    "password": os.getenv('DB_PASSWORD') or os.getenv('MYSQL_PASSWORD'),
     "database": os.getenv('DB_NAME', 'db'),
     "pool_name": "mypool",
     "pool_size": 20,  # Increased from 10 to handle more concurrent requests
@@ -303,6 +305,123 @@ try:
 except mysql.connector.Error as err:
     print(f"Error creating connection pool: {err}")
     cnxpool = None
+
+# ---------------------------------------------------------------------------
+# Background image caching
+# Triggered when the browser successfully loads an image from an external URL.
+# Downloads the file to static/cached_images/ in a daemon thread so the pin
+# serves locally on all future page loads.
+# ---------------------------------------------------------------------------
+
+# Cap concurrent background downloads so a busy board doesn't flood outbound.
+_bg_cache_semaphore = threading.Semaphore(4)
+
+# Matches what image_cache_service.py uses so cached files are interchangeable.
+_CACHE_HEADERS = {
+    'User-Agent': (
+        'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) '
+        'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    ),
+    'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+    'Accept-Language': 'en-US,en;q=0.9',
+    'Referer': 'https://www.pinterest.com/',  # helps bypass Pinterest CDN checks
+    'Sec-Fetch-Dest': 'image',
+    'Sec-Fetch-Mode': 'no-cors',
+    'Sec-Fetch-Site': 'cross-site',
+}
+
+def _bg_download_and_cache(pin_id, image_url, width, height, cache_id):
+    """
+    Download an external image to local cache. Runs in a daemon thread.
+    Updates cached_images and pins so future loads hit /cached/ instead of
+    the external CDN.
+    """
+    if not _bg_cache_semaphore.acquire(blocking=False):
+        # All slots busy — skip for now, browser will retry on next page load.
+        return
+    try:
+        url_hash = hashlib.md5(image_url.encode()).hexdigest()[:16]
+        cache_dir = os.path.join(
+            os.path.dirname(os.path.abspath(__file__)), 'static', 'cached_images'
+        )
+        os.makedirs(cache_dir, exist_ok=True)
+
+        # Download with a browser-like session
+        resp = requests.get(image_url, headers=_CACHE_HEADERS, timeout=30, stream=True)
+        resp.raise_for_status()
+
+        content_type = resp.headers.get('content-type', '').lower()
+        if not content_type.startswith('image/'):
+            return  # Not an image — don't cache
+
+        # Derive extension from content-type, fall back to URL
+        if 'png' in content_type:
+            ext = 'png'
+        elif 'webp' in content_type:
+            ext = 'webp'
+        elif 'gif' in content_type:
+            ext = 'gif'
+        else:
+            ext = 'jpg'
+
+        filename = f"{url_hash}_low.{ext}"
+        filepath = os.path.join(cache_dir, filename)
+
+        # Write to disk (skip if already present from a previous attempt)
+        if not os.path.exists(filepath):
+            with open(filepath, 'wb') as f:
+                for chunk in resp.iter_content(chunk_size=8192):
+                    f.write(chunk)
+
+        file_size = os.path.getsize(filepath)
+
+        # Update DB: mark as fully cached and link pin to local file
+        db = get_db_connection()
+        cursor = db.cursor()
+        try:
+            if cache_id:
+                cursor.execute("""
+                    UPDATE cached_images
+                       SET cached_filename = %s,
+                           file_size       = %s,
+                           width           = %s,
+                           height          = %s,
+                           cache_status    = 'cached',
+                           updated_at      = NOW()
+                     WHERE id = %s
+                """, (filename, file_size, width, height, cache_id))
+            else:
+                cursor.execute("""
+                    INSERT INTO cached_images
+                        (original_url, cached_filename, file_size, width, height,
+                         quality_level, cache_status)
+                    VALUES (%s, %s, %s, %s, %s, 'low', 'cached')
+                    ON DUPLICATE KEY UPDATE
+                        cached_filename = VALUES(cached_filename),
+                        file_size       = VALUES(file_size),
+                        width           = VALUES(width),
+                        height          = VALUES(height),
+                        cache_status    = 'cached',
+                        updated_at      = NOW()
+                """, (image_url, filename, file_size, width, height))
+                cache_id = cursor.lastrowid
+
+            cursor.execute("""
+                UPDATE pins
+                   SET cached_image_id    = %s,
+                       uses_cached_image  = TRUE
+                 WHERE id = %s
+            """, (cache_id, pin_id))
+            db.commit()
+            print(f"[cache] pin {pin_id} → {filename} ({file_size:,} bytes)")
+        finally:
+            cursor.close()
+            db.close()
+
+    except Exception as e:
+        print(f"[cache] pin {pin_id} failed: {e}")
+    finally:
+        _bg_cache_semaphore.release()
 
 def get_db_connection():
     """
@@ -469,7 +588,7 @@ def login_page():
                 try:
                     try:
                         cursor.fetchall()
-                    except:
+                    except Exception:
                         pass
                     cursor.close()
                 except Exception:
@@ -638,79 +757,22 @@ def login_page():
         if cursor:
             try:
                 cursor.close()
-            except:
+            except Exception:
                 pass
         if db:
             try:
                 db.close()
-            except:
+            except Exception:
                 pass
         return jsonify({"error": "An error occurred"}), 500
 
 @app.route('/auth/verify')
 def verify_magic_link():
     """
-    Verify magic link token and create session
+    Magic link login is no longer used — login is OTP-based.
+    Route kept so old bookmarked magic-link URLs redirect gracefully instead of 404ing.
     """
-    token = request.args.get('token')
-    
-    if not token:
-        return render_template('auth_error.html', message="Invalid or missing token"), 400
-    
-    # Verify the magic link token
-    payload = verify_token(token, token_type='magic_link')
-    
-    if not payload:
-        return render_template('auth_error.html', message="This link has expired or is invalid. Please request a new one."), 400
-    
-    email = payload.get('email')
-    
-    # Get user from database
-    db = None
-    cursor = None
-    try:
-        db = get_db_connection()
-        cursor = db.cursor(dictionary=True, buffered=True)
-        
-        cursor.execute("SELECT id, email FROM users WHERE email = %s", (email,))
-        user = cursor.fetchone()
-        
-        if not user:
-            return render_template('auth_error.html', message="User not found"), 404
-        
-        # Update last login
-        cursor.execute("UPDATE users SET last_login = NOW() WHERE id = %s", (user['id'],))
-        db.commit()
-        
-        # Generate session token
-        session_token = generate_session_token(user['id'], user['email'])
-        
-        # Create response and set cookie
-        response = make_response(redirect(url_for('gallery')))
-        set_session_cookie(response, session_token)
-        
-        return response
-        
-    except Exception as e:
-        print(f"Error in verify: {str(e)}")
-        traceback.print_exc()
-        return render_template('auth_error.html', message="An error occurred during authentication"), 500
-    finally:
-        if cursor:
-            try:
-                # Ensure all results are consumed before closing
-                try:
-                    cursor.fetchall()
-                except:
-                    pass
-                cursor.close()
-            except Exception as cursor_close_error:
-                print(f"verify_magic_link: error closing cursor: {cursor_close_error}")
-        if db:
-            try:
-                db.close()
-            except Exception as db_close_error:
-                print(f"verify_magic_link: error closing db connection: {db_close_error}")
+    return redirect(url_for('login_page'))
 
 @app.route('/auth/logout')
 def logout():
@@ -810,7 +872,7 @@ def gallery():
                 # Ensure all results are consumed before closing
                 try:
                     cursor.fetchall()
-                except:
+                except Exception:
                     pass
                 cursor.close()
             except Exception as cursor_close_error:
@@ -958,7 +1020,7 @@ def board(board_id):
                 # Ensure all results are consumed before closing
                 try:
                     cursor.fetchall()
-                except:
+                except Exception:
                     pass
                 cursor.close()
             except Exception as cursor_close_error:
@@ -1062,7 +1124,7 @@ def search():
                 # Ensure all results are consumed before closing
                 try:
                     cursor.fetchall()
-                except:
+                except Exception:
                     pass
                 cursor.close()
             except Exception as cursor_close_error:
@@ -1130,7 +1192,7 @@ def search_pins_api():
                 # Ensure all results are consumed before closing
                 try:
                     cursor.fetchall()
-                except:
+                except Exception:
                     pass
                 cursor.close()
             except Exception as cursor_close_error:
@@ -1200,7 +1262,7 @@ def search_boards_api():
                 # Ensure all results are consumed before closing
                 try:
                     cursor.fetchall()
-                except:
+                except Exception:
                     pass
                 cursor.close()
             except Exception as cursor_close_error:
@@ -1296,7 +1358,7 @@ def board_pins_api(board_id):
                 # Ensure all results are consumed before closing
                 try:
                     cursor.fetchall()
-                except:
+                except Exception:
                     pass
                 cursor.close()
             except Exception as cursor_close_error:
@@ -1416,7 +1478,7 @@ def get_sections(board_id):
                 # Ensure all results are consumed before closing
                 try:
                     cursor.fetchall()
-                except:
+                except Exception:
                     pass
                 cursor.close()
             except Exception as cursor_close_error:
@@ -1610,10 +1672,8 @@ def add_pin():
 def update_pin(pin_id):
     user = get_current_user()
     data = request.get_json()
-    # print(f"Received update request for pin {pin_id}: {data}")  # Debug log
     
     if not data:
-        # print("No data provided in request")  # Debug log
         return jsonify({"error": "No data provided"}), 400
         
     # Get only the fields that are provided
@@ -1622,9 +1682,6 @@ def update_pin(pin_id):
     notes = sanitize_string(data.get('notes', '')) if 'notes' in data else None
     link = sanitize_string(data.get('link', ''), max_length=2048) if 'link' in data else None
     
-    # print(f"Processed data - title: '{title}', description: '{description}', notes: '{notes}'")  # Debug log
-    # print(f"Raw title from request: '{data.get('title', '')}'")  # Debug log
-    # print(f"Is title in data? {'title' in data}")  # Debug log
     
     db = None
     cursor = None
@@ -1636,18 +1693,15 @@ def update_pin(pin_id):
         cursor.execute("SELECT title FROM pins WHERE id = %s AND user_id = %s", (pin_id, user['id']))
         result = cursor.fetchone()
         if not result:
-            # print(f"Pin {pin_id} not found")  # Debug log
             return jsonify({"error": "Pin not found"}), 404
         
         current_title = result[0]
-        # print(f"Current title in database: '{current_title}'")  # Debug log
         
         # Build the update query dynamically based on what fields are provided
         update_fields = []
         update_values = []
         
         if title is not None:
-            # print(f"Title is different from current: {title != current_title}")  # Debug log
             update_fields.append("title = %s")
             update_values.append(title)
             
@@ -1664,7 +1718,6 @@ def update_pin(pin_id):
             update_values.append(link)
             
         if not update_fields:
-            # print("No fields to update")  # Debug log
             return jsonify({"error": "No fields to update"}), 400
             
         # Add the pin_id and user_id to the values list
@@ -1678,8 +1731,6 @@ def update_pin(pin_id):
             WHERE id = %s AND user_id = %s
         """
         
-        # print(f"Executing query: {update_query}")  # Debug log
-        # print(f"With values: {update_values}")  # Debug log
         
         cursor.execute(update_query, tuple(update_values))
         
@@ -1694,7 +1745,6 @@ def update_pin(pin_id):
                 """, (pin_id, link))
         
         db.commit()
-        # print(f"Successfully updated pin {pin_id}")  # Debug log
         
         return jsonify({
             'success': True,
@@ -1748,7 +1798,7 @@ def view_pin(pin_id):
             # Ensure cursor is fully consumed before closing
             try:
                 cursor.fetchall()  # Consume any remaining results
-            except:
+            except Exception:
                 pass
             return "Pin not found", 404
 
@@ -1771,7 +1821,7 @@ def view_pin(pin_id):
             if cursor:
                 try:
                     cursor.fetchall()
-                except:
+                except Exception:
                     pass
             # Return error but don't crash
             return "An error occurred while loading the pin. Please try again.", 500
@@ -1789,7 +1839,7 @@ def view_pin(pin_id):
                 # Ensure all results are consumed before closing
                 try:
                     cursor.fetchall()
-                except:
+                except Exception:
                     pass
                 cursor.close()
             except Exception as cursor_close_error:
@@ -2600,12 +2650,12 @@ def get_board_pins(board_id):
         if cursor:
             try:
                 cursor.close()
-            except:
+            except Exception:
                 pass
         if db:
             try:
                 db.close()
-            except:
+            except Exception:
                 pass
 
 @app.route('/api/boards')
@@ -3047,6 +3097,99 @@ def save_pin_colors(pin_id):
     finally:
         cursor.close()
         db.close()
+
+@app.route('/save-pin-dimensions/<int:pin_id>', methods=['POST'])
+@login_required
+def save_pin_dimensions(pin_id):
+    """
+    Store image dimensions reported by the browser after a successful load.
+    Used for pins whose images can't be fetched server-side (e.g. Pinterest CDN).
+    On the next page load the stored dims are rendered into the aspect-ratio CSS
+    property, so no layout shift occurs.
+    """
+    user = get_current_user()
+    db = None
+    cursor = None
+    try:
+        data = request.get_json()
+        width = sanitize_integer(data.get('width'), min_value=1, max_value=20000)
+        height = sanitize_integer(data.get('height'), min_value=1, max_value=20000)
+
+        if not width or not height:
+            return jsonify({"error": "Invalid dimensions"}), 400
+
+        db = get_db_connection()
+        cursor = db.cursor(dictionary=True)
+
+        # Fetch pin + its cached_images record (if any) in one query
+        cursor.execute("""
+            SELECT p.id, p.image_url, p.cached_image_id,
+                   ci.cached_filename, ci.cache_status
+              FROM pins p
+              LEFT JOIN cached_images ci ON ci.id = p.cached_image_id
+             WHERE p.id = %s AND p.user_id = %s
+        """, (pin_id, user['id']))
+        pin = cursor.fetchone()
+        if not pin:
+            return jsonify({"error": "Pin not found"}), 404
+
+        image_url = pin['image_url'] or ''
+        cache_id = pin['cached_image_id']
+
+        # Determine whether a real local file already exists
+        already_cached = (
+            pin['cached_filename']
+            and not pin['cached_filename'].endswith('.placeholder')
+            and pin['cache_status'] == 'cached'
+        )
+
+        if cache_id:
+            # Update dims on the existing record (even if already_cached, dims may need fixing)
+            cursor.execute(
+                "UPDATE cached_images SET width=%s, height=%s, updated_at=NOW() WHERE id=%s",
+                (width, height, cache_id)
+            )
+        else:
+            # No record yet — create a dims-only placeholder so the template
+            # renders the correct aspect-ratio on the very next page load.
+            url_hash = hashlib.md5(image_url.encode()).hexdigest()[:16]
+            placeholder = f"{url_hash}_dims_only.placeholder"
+            cursor.execute("""
+                INSERT INTO cached_images
+                    (original_url, cached_filename, file_size, width, height, quality_level, cache_status)
+                VALUES (%s, %s, 0, %s, %s, 'low', 'pending')
+                ON DUPLICATE KEY UPDATE width=%s, height=%s, updated_at=NOW()
+            """, (image_url, placeholder, width, height, width, height))
+            cache_id = cursor.lastrowid
+            cursor.execute(
+                "UPDATE pins SET cached_image_id=%s WHERE id=%s AND cached_image_id IS NULL",
+                (cache_id, pin_id)
+            )
+
+        db.commit()
+
+        # Kick off a background download if the file isn't already on disk.
+        # The thread updates cached_images + pins once complete, so future
+        # page loads serve from /cached/ and never touch the external URL.
+        if not already_cached and image_url.startswith('http'):
+            t = threading.Thread(
+                target=_bg_download_and_cache,
+                args=(pin_id, image_url, width, height, cache_id),
+                daemon=True
+            )
+            t.start()
+
+        return jsonify({'success': True})
+
+    except Exception as e:
+        print(f"Error saving pin dimensions: {e}")
+        return jsonify({"error": "Failed to save dimensions"}), 500
+    finally:
+        if cursor:
+            cursor.close()
+        if db:
+            db.close()
+
 
 @app.route('/delete-pin/<int:pin_id>', methods=['POST'])
 @login_required
