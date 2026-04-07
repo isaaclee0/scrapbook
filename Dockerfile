@@ -1,18 +1,16 @@
-FROM python:3.11-slim
+# ── Stage 1: build ────────────────────────────────────────────────────────────
+# Compiles Python packages that need C extensions and builds the Tailwind CSS.
+# Nothing from this stage leaks into the final image.
+FROM python:3.11-slim AS builder
 
-# Set environment variables
-ENV PYTHONDONTWRITEBYTECODE=1 \
-    PYTHONUNBUFFERED=1 \
-    FLASK_APP=app.py \
-    FLASK_ENV=production
+WORKDIR /build
 
-# Create a non-root user
-RUN groupadd -r appuser && useradd -r -g appuser appuser
-
-# Install system dependencies
-RUN apt-get update && apt-get install -y \
+# Build-time dependencies only (gcc, dev headers, Node.js).
+# These are NOT copied to the final stage.
+RUN apt-get update && apt-get install -y --no-install-recommends \
     gcc \
-    default-libmysqlclient-dev \
+    g++ \
+    libmariadb-dev \
     pkg-config \
     libjpeg-dev \
     libpng-dev \
@@ -22,51 +20,76 @@ RUN apt-get update && apt-get install -y \
     liblcms2-dev \
     libopenjp2-7-dev \
     zlib1g-dev \
-    ffmpeg \
     curl \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Node.js
+# Node.js (only needed to compile Tailwind CSS)
 RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - \
-    && apt-get install -y nodejs
+    && apt-get install -y --no-install-recommends nodejs \
+    && rm -rf /var/lib/apt/lists/*
 
-# Set work directory
+# Install Python packages into the user directory so they're easy to copy
+COPY requirements.txt .
+RUN pip install --no-cache-dir --upgrade pip \
+    && pip install --no-cache-dir --user -r requirements.txt
+
+# Build Tailwind CSS (output: /build/static/css/output.css)
+COPY package*.json tailwind.config.js ./
+COPY src/ ./src/
+COPY templates/ ./templates/
+RUN npm ci --omit=dev && npm run build:css
+
+# ── Stage 2: runtime ──────────────────────────────────────────────────────────
+# Lean image containing only what's needed to run the app.
+FROM python:3.11-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    FLASK_APP=app.py \
+    FLASK_ENV=production \
+    PATH="/home/appuser/.local/bin:$PATH"
+
+RUN groupadd -r appuser && useradd -r -g appuser -m appuser
+
+# Runtime libraries only — no compilers, no dev headers
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libmariadb3 \
+    libjpeg62-turbo \
+    libpng16-16 \
+    libtiff6 \
+    libwebp7 \
+    libfreetype6 \
+    liblcms2-2 \
+    libopenjp2-7 \
+    zlib1g \
+    # ffmpeg is needed for video-URL pinning (~150MB).
+    # Remove this line if you don't pin video URLs.
+    ffmpeg \
+    && rm -rf /var/lib/apt/lists/*
+
+# Pull compiled Python packages from the builder stage
+COPY --from=builder /root/.local /home/appuser/.local
+
 WORKDIR /app
 
-# Copy requirements first to leverage Docker cache
-COPY requirements.txt .
+# Copy only the files the app actually needs at runtime
+COPY app.py auth_utils.py email_service.py migrate.py VERSION requirements.txt ./
+COPY templates/ ./templates/
+COPY static/ ./static/
+COPY scripts/ ./scripts/
+COPY init.sql ./
 
-# Install Python dependencies
-RUN pip install --no-cache-dir --upgrade pip && \
-    pip install --no-cache-dir -r requirements.txt
+# Drop in the compiled CSS (overwrites the placeholder if any)
+COPY --from=builder /build/static/css/output.css ./static/css/output.css
 
-# Copy package.json and install Node.js dependencies
-COPY package*.json ./
-RUN npm install --omit=dev
+RUN mkdir -p /app/static/cached_images /app/static/images \
+    && chown -R appuser:appuser /app /home/appuser/.local
 
-# Copy Tailwind config and source files
-COPY tailwind.config.js ./
-COPY src/ ./src/
-
-# Copy application code
-COPY . .
-
-# Build Tailwind CSS
-RUN npm run build:css
-
-# Create necessary directories and set permissions
-RUN mkdir -p /app/static/images && \
-    chown -R appuser:appuser /app
-
-# Switch to non-root user
 USER appuser
 
-# Expose the port the app runs on
 EXPOSE 8000
 
-# Health check
-HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \
-    CMD python -c "import requests; requests.get('http://localhost:8000/health')" || exit 1
+HEALTHCHECK --interval=30s --timeout=10s --start-period=15s --retries=3 \
+    CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')" || exit 1
 
-# Command to run the application
 CMD ["python", "app.py"]
