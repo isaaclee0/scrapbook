@@ -326,6 +326,18 @@ def migrate_database():
         else:
             warning("otp_codes table already exists")
         
+        # Migration Step 10b: Add retry tracking columns to cached_images
+        info("\nStep 10b: Add retry tracking columns to cached_images")
+        if not column_exists(cursor, 'cached_images', 'retry_count'):
+            cursor.execute("""
+                ALTER TABLE cached_images
+                ADD COLUMN retry_count INT DEFAULT 0,
+                ADD COLUMN last_retry_at TIMESTAMP NULL
+            """)
+            success("Added retry_count and last_retry_at to cached_images")
+        else:
+            warning("cached_images already has retry columns")
+
         # Migration Step 11: Ensure all indexes exist
         info("\nStep 11: Performance indexes")
         indexes = [
