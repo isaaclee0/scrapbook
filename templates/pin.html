@@ -100,12 +100,18 @@
                             </div>
                             <div class="section-list">
                                 {% for section in sections %}
-                                <button class="section-option {% if section.id == pin.section_id %}current{% endif %}" data-section-id="{{ section.id }}">
-                                    {{ section.name }}
-                                    {% if section.id == pin.section_id %}
-                                    <span class="current-indicator">✓</span>
-                                    {% endif %}
-                                </button>
+                                <div class="section-list-row">
+                                    <button type="button" class="section-option {% if section.id == pin.section_id %}current{% endif %}" data-section-id="{{ section.id }}">
+                                        <span class="section-option-label">{{ section.name }}</span>
+                                        {% if section.id == pin.section_id %}
+                                        <span class="current-indicator">✓</span>
+                                        {% endif %}
+                                    </button>
+                                    <button type="button" class="section-rename-btn" data-section-id="{{ section.id }}"
+                                        data-section-name="{{ section.name|e }}" title="Rename section" aria-label="Rename section">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </button>
+                                </div>
                                 {% endfor %}
                             </div>
                         </div>
@@ -224,6 +230,19 @@
         <div class="modal-actions">
             <button class="button secondary-button" onclick="hideNewSectionForm()">Cancel</button>
             <button class="button primary-button" onclick="createNewSection()">Create</button>
+        </div>
+    </div>
+</div>
+
+<!-- Rename Section Modal (pin page) -->
+<div class="modal" id="pinRenameSectionModal">
+    <div class="modal-content">
+        <h3>Rename Section</h3>
+        <input type="hidden" id="pinRenameSectionId">
+        <input type="text" id="pinRenameSectionName" placeholder="Section name" class="section-input" maxlength="255">
+        <div class="modal-actions">
+            <button type="button" class="button secondary-button" onclick="hidePinRenameSectionModal()">Cancel</button>
+            <button type="button" class="button primary-button" onclick="savePinRenamedSection()">Save</button>
         </div>
     </div>
 </div>
@@ -580,8 +599,20 @@
     padding: 8px 0;
 }
 
+.section-list-row {
+    display: flex;
+    align-items: stretch;
+    gap: 2px;
+    padding: 0 4px;
+}
+
+.section-list-row:hover {
+    background: #f8f8f8;
+}
+
 .board-option, .section-option {
-    width: 100%;
+    flex: 1;
+    min-width: 0;
     padding: 8px 12px;
     background: none;
     border: none;
@@ -594,7 +625,33 @@
     font-size: 14px;
 }
 
-.board-option:hover, .section-option:hover {
+.section-rename-btn {
+    flex-shrink: 0;
+    width: 36px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: #95a5a6;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.section-rename-btn:hover {
+    color: #2980b9;
+    background: rgba(41, 128, 185, 0.08);
+}
+
+.section-option-label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.board-option:hover {
     background: #f8f8f8;
 }
 
@@ -1401,6 +1458,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    document.querySelectorAll('.section-rename-btn').forEach((btn) => {
+        btn.addEventListener('click', function (e) {
+            e.stopPropagation();
+            const id = this.dataset.sectionId;
+            const name = this.getAttribute('data-section-name') || '';
+            openPinRenameSectionModal(id, name);
+        });
+    });
+
     // Close menus when clicking outside
     document.addEventListener('click', function(e) {
         if (!boardSelector.contains(e.target)) {
@@ -1678,6 +1744,52 @@ function showNewSectionForm() {
 
 function hideNewSectionForm() {
     document.getElementById('newSectionModal').classList.remove('active');
+}
+
+function hidePinRenameSectionModal() {
+    document.getElementById('pinRenameSectionModal').classList.remove('active');
+}
+
+function openPinRenameSectionModal(sectionId, sectionName) {
+    document.getElementById('pinRenameSectionId').value = sectionId;
+    document.getElementById('pinRenameSectionName').value = sectionName;
+    document.getElementById('pinRenameSectionModal').classList.add('active');
+    const input = document.getElementById('pinRenameSectionName');
+    input.focus();
+    input.select();
+    const sectionMenu = document.querySelector('.section-menu');
+    if (sectionMenu) {
+        sectionMenu.classList.remove('active');
+    }
+}
+
+function savePinRenamedSection() {
+    const sectionId = document.getElementById('pinRenameSectionId').value;
+    const newName = document.getElementById('pinRenameSectionName').value.trim();
+    if (!newName) {
+        alert('Please enter a section name');
+        return;
+    }
+    const saveBtn = document.querySelector('#pinRenameSectionModal .primary-button');
+    saveBtn.disabled = true;
+    fetch(`/update-section/${sectionId}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: newName })
+    })
+        .then((res) => res.json())
+        .then((data) => {
+            if (data.success) {
+                hidePinRenameSectionModal();
+                window.location.reload();
+            } else {
+                alert(data.error || 'Failed to rename section');
+            }
+        })
+        .catch(() => alert('Failed to rename section'))
+        .finally(() => {
+            saveBtn.disabled = false;
+        });
 }
 
 function createNewBoard() {

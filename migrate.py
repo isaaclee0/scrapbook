@@ -59,30 +59,30 @@ def get_db_connection():
 
 def table_exists(cursor, table_name):
     """Check if a table exists"""
-    cursor.execute(f"""
-        SELECT COUNT(*) FROM information_schema.tables 
-        WHERE table_schema = DATABASE() AND table_name = '{table_name}'
-    """)
+    cursor.execute("""
+        SELECT COUNT(*) FROM information_schema.tables
+        WHERE table_schema = DATABASE() AND table_name = %s
+    """, (table_name,))
     return cursor.fetchone()[0] > 0
 
 def column_exists(cursor, table_name, column_name):
     """Check if a column exists in a table"""
-    cursor.execute(f"""
-        SELECT COUNT(*) FROM information_schema.columns 
-        WHERE table_schema = DATABASE() 
-        AND table_name = '{table_name}' 
-        AND column_name = '{column_name}'
-    """)
+    cursor.execute("""
+        SELECT COUNT(*) FROM information_schema.columns
+        WHERE table_schema = DATABASE()
+        AND table_name = %s
+        AND column_name = %s
+    """, (table_name, column_name))
     return cursor.fetchone()[0] > 0
 
 def index_exists(cursor, table_name, index_name):
     """Check if an index exists"""
-    cursor.execute(f"""
-        SELECT COUNT(*) FROM information_schema.statistics 
-        WHERE table_schema = DATABASE() 
-        AND table_name = '{table_name}' 
-        AND index_name = '{index_name}'
-    """)
+    cursor.execute("""
+        SELECT COUNT(*) FROM information_schema.statistics
+        WHERE table_schema = DATABASE()
+        AND table_name = %s
+        AND index_name = %s
+    """, (table_name, index_name))
     return cursor.fetchone()[0] > 0
 
 def execute_sql(cursor, sql, success_msg, skip_msg=None):
@@ -144,10 +144,10 @@ def migrate_database():
             cursor.execute("SELECT id FROM users ORDER BY id LIMIT 1")
             default_user_id = cursor.fetchone()[0]
             
-            cursor.execute(f"""
-                ALTER TABLE boards 
-                ADD COLUMN user_id INT NOT NULL DEFAULT {default_user_id}
-            """)
+            cursor.execute("""
+                ALTER TABLE boards
+                ADD COLUMN user_id INT NOT NULL DEFAULT %s
+            """, (default_user_id,))
             cursor.execute("""
                 ALTER TABLE boards 
                 ADD INDEX idx_boards_user_id (user_id),
@@ -163,10 +163,10 @@ def migrate_database():
             cursor.execute("SELECT id FROM users ORDER BY id LIMIT 1")
             default_user_id = cursor.fetchone()[0]
             
-            cursor.execute(f"""
-                ALTER TABLE pins 
-                ADD COLUMN user_id INT NOT NULL DEFAULT {default_user_id}
-            """)
+            cursor.execute("""
+                ALTER TABLE pins
+                ADD COLUMN user_id INT NOT NULL DEFAULT %s
+            """, (default_user_id,))
             cursor.execute("""
                 ALTER TABLE pins 
                 ADD INDEX idx_pins_user_id (user_id),
@@ -182,10 +182,10 @@ def migrate_database():
             cursor.execute("SELECT id FROM users ORDER BY id LIMIT 1")
             default_user_id = cursor.fetchone()[0]
             
-            cursor.execute(f"""
-                ALTER TABLE sections 
-                ADD COLUMN user_id INT NOT NULL DEFAULT {default_user_id}
-            """)
+            cursor.execute("""
+                ALTER TABLE sections
+                ADD COLUMN user_id INT NOT NULL DEFAULT %s
+            """, (default_user_id,))
             cursor.execute("""
                 ALTER TABLE sections 
                 ADD INDEX idx_sections_user_id (user_id),

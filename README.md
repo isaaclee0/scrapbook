@@ -38,17 +38,34 @@ A Flask-based web application for organizing and managing personal image collect
 2. **Set up environment variables**:
    ```bash
    cp env.example .env
-   # Edit .env and set secure passwords
+   # Edit .env: set MYSQL_PASSWORD, MYSQL_ROOT_PASSWORD (and optional JWT_SECRET_KEY for production)
    ```
 
 3. **Deploy with Docker Compose**:
    ```bash
+   docker compose build --no-cache
    docker compose up -d
    ```
+   If the database was initialized with an older password, reset volumes once:  
+   `docker compose down -v` then `docker compose up -d` again.
 
-3. **Access the application**:
-   - Open your browser and navigate to `http://localhost:8000`
+4. **Access the application**:
+   - App: `http://localhost:8000`
+   - phpMyAdmin (optional): `http://localhost:8888`
    - Or configure your reverse proxy (Nginx, Traefik, etc.)
+
+### Restore a SQL dump (Docker)
+
+1. Copy your export to **`sqldumps/20260406.sql`** (or pass another path: `./scripts/import_sqldump_docker.sh /path/to/file.sql`).
+2. If the database volume already has tables from a failed import, reset it: `docker compose down -v`.
+3. Start MariaDB: `docker compose up -d db` and wait until it is healthy.
+4. Run `./scripts/import_sqldump_docker.sh` from the project root (add **`--fresh`** if tables already exist from `init.sql` or a failed import — it drops and recreates the `db` schema first).  
+   It imports that dump, then runs `sqldumps/reassign_isaac.sql` so all boards, sections, and pins belong to **isaac@leemail.com.au**.
+5. Bring up the rest: `docker compose up -d`.
+
+Root password defaults to `scrapbook_local_root_dev` unless you set `MYSQL_ROOT_PASSWORD` in `.env`.
+
+The app and `reassign_isaac.sql` expect the logical database name **`db`**. If your dump targets another name, import into `db` (edit the dump’s `CREATE DATABASE` / `USE` lines, or create `db` and import only the tables).
 
 ## Building and Deployment
 

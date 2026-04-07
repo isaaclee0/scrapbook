@@ -75,5 +75,8 @@ docker-compose.prod.yml
 *.tmp
 *.temp docker-compose.yml
 
-# SQL dump folder
+# SQL dumps (large files; keep sqldumps/reassign_isaac.sql tracked)
 sqldump/
+sqldumps/*
+!sqldumps/reassign_isaac.sql
+!sqldumps/.gitkeep

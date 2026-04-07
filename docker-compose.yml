@@ -1,26 +1,31 @@
+# Local testing: copy env.example to .env and set MYSQL_PASSWORD / MYSQL_ROOT_PASSWORD.
+# App URL: http://localhost:8000  |  phpMyAdmin: http://localhost:8888
 services:
   web:
     build: .
     restart: unless-stopped
+    # Bind-mounted source is often root-owned; run as root so cached images / writes work.
+    user: "0:0"
     ports:
-      - "8002:8000"
+      - "8000:8000"
     volumes:
       - .:/app
-      - /app/node_modules  # Prevent overwriting node_modules
+      - /app/node_modules # Preserve image node_modules over the bind mount
     networks:
       - scrapbook_net
     environment:
-      - FLASK_ENV=development  # Changed to development for instant changes
+      - FLASK_ENV=development
       - FLASK_APP=app.py
       - PYTHONUNBUFFERED=1
       - DB_HOST=db
       - DB_USER=db
-      - DB_PASSWORD=${DB_PASSWORD:-your_secure_password_here}
+      # Must match MariaDB MYSQL_PASSWORD (single source: MYSQL_PASSWORD in .env)
+      - DB_PASSWORD=${MYSQL_PASSWORD:-scrapbook_local_dev}
       - DB_NAME=db
       - REDIS_HOST=redis
       - REDIS_PORT=6379
-      - BREVO_API_KEY=${BREVO_API_KEY}
-      - JWT_SECRET_KEY=${JWT_SECRET_KEY}
+      - BREVO_API_KEY=${BREVO_API_KEY:-}
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY:-dev-insecure-change-for-production}
       - JWT_ALGORITHM=${JWT_ALGORITHM:-HS256}
       - MAGIC_LINK_EXPIRY=${MAGIC_LINK_EXPIRY:-1800}
       - SESSION_EXPIRY=${SESSION_EXPIRY:-2592000}
@@ -29,7 +34,7 @@ services:
       db:
         condition: service_healthy
       redis:
-        condition: service_started
+        condition: service_healthy
 
   redis:
     image: redis:7-alpine
@@ -41,9 +46,10 @@ services:
     command: redis-server --appendonly yes
     healthcheck:
       test: ["CMD", "redis-cli", "ping"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
+      interval: 5s
+      timeout: 5s
+      retries: 5
+      start_period: 5s
 
   db:
     image: mariadb:11.6.2
@@ -55,15 +61,15 @@ services:
     environment:
       - MYSQL_DATABASE=db
       - MYSQL_USER=db
-      - MYSQL_PASSWORD=${MYSQL_PASSWORD:-your_secure_password_here}
-      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-your_secure_root_password_here}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD:-scrapbook_local_dev}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-scrapbook_local_root_dev}
     command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --innodb-buffer-pool-size=256M
     healthcheck:
-      test: ["CMD", "mariadb-admin", "ping", "-h", "localhost", "-u", "db", "-p${MYSQL_PASSWORD:-your_secure_password_here}"]
-      interval: 30s
-      timeout: 10s
-      retries: 5
-      start_period: 60s
+      test: ["CMD", "mariadb-admin", "ping", "-h", "localhost", "-u", "db", "-p${MYSQL_PASSWORD:-scrapbook_local_dev}"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 40s
     networks:
       scrapbook_net:
         aliases:
@@ -80,8 +86,8 @@ services:
       - PMA_HOST=db
       - PMA_PORT=3306
       - PMA_USER=db
-      - PMA_PASSWORD=${MYSQL_PASSWORD:-your_secure_password_here}
-      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-your_secure_root_password_here}
+      - PMA_PASSWORD=${MYSQL_PASSWORD:-scrapbook_local_dev}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-scrapbook_local_root_dev}
     depends_on:
       db:
         condition: service_healthy
