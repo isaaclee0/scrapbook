@@ -66,8 +66,18 @@ def cache_view(timeout=300):
                 return f(*args, **kwargs)
             if not redis_client:
                 return f(*args, **kwargs)
+            # Include user_id in key so each user has their own cached view
+            token = request.cookies.get('session_token')
+            user_id = 'anon'
+            if token:
+                try:
+                    payload = verify_token(token, token_type='session')
+                    if payload:
+                        user_id = str(payload.get('user_id', 'anon'))
+                except Exception:
+                    pass
             qs = request.query_string.decode('utf-8')
-            cache_key = f"view/{request.path}{'?' + qs if qs else ''}"
+            cache_key = f"view:{user_id}:{request.path}{'?' + qs if qs else ''}"
             cached_data = redis_client.get(cache_key)
             if cached_data:
                 return cached_data
@@ -860,8 +870,8 @@ def gallery():
                 
         # Invalidate gallery cache if Redis is available
         if redis_client:
-            redis_client.delete('view//')
-                
+            redis_client.delete(f"view:{user['id']}:/")
+
     except mysql.connector.Error as e:
         print(f"Database error in gallery: {str(e)}")
         traceback.print_exc()
@@ -903,14 +913,16 @@ def board(board_id):
             
         # Get sections for this board with pin count
         cursor.execute("""
-            SELECT s.*, 
+            SELECT s.*,
                    COUNT(p.id) as pin_count
             FROM sections s
             LEFT JOIN pins p ON p.section_id = s.id
+                             AND p.board_id = s.board_id
+                             AND p.user_id = %s
             WHERE s.board_id = %s
             GROUP BY s.id
             ORDER BY s.name
-        """, (board_id,))
+        """, (user['id'], board_id))
         sections = cursor.fetchall()
         
         # Check if this is a featured view (from search) - load all pins if so
@@ -1273,102 +1285,6 @@ def search_boards_api():
             except Exception as db_close_error:
                 print(f"search_boards_api: error closing db connection: {db_close_error}")
 
-@app.route('/api/board/<int:board_id>/pins', methods=['GET'])
-@login_required
-def board_pins_api(board_id):
-    """API endpoint to load more board pins with pagination and optional section filtering"""
-    user = get_current_user()
-    offset = int(request.args.get('offset', 0))
-    limit = int(request.args.get('limit', 40))
-    section_id = request.args.get('section_id')  # Optional section filter
-    
-    db = None
-    cursor = None
-    try:
-        db = get_db_connection()
-        cursor = db.cursor(dictionary=True, buffered=True)
-        
-        # Verify board belongs to user
-        cursor.execute("SELECT id FROM boards WHERE id = %s AND user_id = %s", (board_id, user['id']))
-        if not cursor.fetchone():
-            return jsonify({"success": False, "error": "Board not found"}), 404
-        
-        # Check if cached_images table exists
-        cursor.execute("SHOW TABLES LIKE 'cached_images'")
-        result = cursor.fetchone()
-        cached_images_exists = result is not None
-        # Consume any remaining results
-        cursor.fetchall()
-        
-        # Build section filter clause
-        section_filter = ""
-        params = [board_id, user['id']]
-        if section_id and section_id != 'all':
-            section_filter = " AND p.section_id = %s"
-            params.append(int(section_id))
-        
-        if cached_images_exists:
-            # Include cached images data with dimensions for layout stability
-            query = f"""
-                SELECT p.*, s.name as section_name, 
-                       ci.cached_filename, ci.cache_status,
-                       ci.width as cached_width, ci.height as cached_height
-                FROM pins p 
-                LEFT JOIN sections s ON p.section_id = s.id 
-                LEFT JOIN cached_images ci ON p.cached_image_id = ci.id AND ci.cache_status = 'cached'
-                WHERE p.board_id = %s AND p.user_id = %s{section_filter}
-                ORDER BY p.created_at DESC, p.id ASC
-                LIMIT %s OFFSET %s
-            """
-            params.extend([limit, offset])
-            cursor.execute(query, tuple(params))
-        else:
-            # Fallback query without cached images
-            query = f"""
-                SELECT p.*, s.name as section_name, 
-                       NULL as cached_filename, NULL as cache_status,
-                       NULL as cached_width, NULL as cached_height
-                FROM pins p 
-                LEFT JOIN sections s ON p.section_id = s.id 
-                WHERE p.board_id = %s AND p.user_id = %s{section_filter}
-                ORDER BY p.created_at DESC, p.id ASC
-                LIMIT %s OFFSET %s
-            """
-            params.extend([limit, offset])
-            cursor.execute(query, tuple(params))
-        
-        pins = cursor.fetchall()
-        
-        return jsonify({
-            "success": True,
-            "pins": pins,
-            "has_more": len(pins) == limit  # If we got a full page, there might be more
-        })
-        
-    except mysql.connector.Error as e:
-        print(f"Database error in board_pins_api: {str(e)}")
-        return jsonify({"success": False, "error": str(e)}), 500
-    except Exception as e:
-        print(f"Error in board_pins_api: {str(e)}")
-        print(traceback.format_exc())
-        return jsonify({"success": False, "error": str(e)}), 500
-    finally:
-        if cursor:
-            try:
-                # Ensure all results are consumed before closing
-                try:
-                    cursor.fetchall()
-                except Exception:
-                    pass
-                cursor.close()
-            except Exception as cursor_close_error:
-                print(f"board_pins_api: error closing cursor: {cursor_close_error}")
-        if db:
-            try:
-                db.close()
-            except Exception as db_close_error:
-                print(f"board_pins_api: error closing db connection: {db_close_error}")
-
 @app.route('/add-content')
 @login_required
 def add_content():
@@ -1607,7 +1523,21 @@ def add_pin():
             
         db = get_db_connection()
         cursor = db.cursor()
-        
+
+        # Verify board belongs to the current user
+        cursor.execute("SELECT id FROM boards WHERE id = %s AND user_id = %s", (board_id, user['id']))
+        if not cursor.fetchone():
+            return jsonify({"error": "Board not found"}), 404
+
+        # Verify section belongs to this board (if provided)
+        if section_id:
+            cursor.execute(
+                "SELECT id FROM sections WHERE id = %s AND board_id = %s",
+                (section_id, board_id)
+            )
+            if not cursor.fetchone():
+                return jsonify({"error": "Section not found or belongs to a different board"}), 400
+
         # Check if pins table has cached image columns
         cursor.execute("SHOW COLUMNS FROM pins LIKE 'cached_image_id'")
         result = cursor.fetchone()
@@ -1896,7 +1826,7 @@ def create_board():
                 
             # Invalidate gallery cache if Redis is available
             if redis_client:
-                redis_client.delete('view//')
+                redis_client.delete(f"view:{user['id']}:/")
             return jsonify({
                 'success': True,
                 'board_id': board_id,
@@ -1969,7 +1899,7 @@ def move_pin(pin_id):
         
         # Invalidate gallery cache if Redis is available
         if redis_client:
-            redis_client.delete('view//')
+            redis_client.delete(f"view:{user['id']}:/")
         return jsonify({'success': True})
     except mysql.connector.Error as e:
         return jsonify({"error": str(e)}), 500
@@ -2170,10 +2100,10 @@ def rename_board(board_id):
         
         cursor.close()
         db.close()
-        
+
         # Invalidate gallery cache if Redis is available
         if redis_client:
-            redis_client.delete('view//')
+            redis_client.delete(f"view:{user['id']}:/")
         return jsonify({"success": True})
     except Exception as e:
         print(f"Error renaming board: {str(e)}")
@@ -2208,9 +2138,9 @@ def move_board(board_id):
         
         # Create a new section in the target board with the source board's name
         cursor.execute("""
-            INSERT INTO sections (board_id, name)
-            VALUES (%s, %s)
-        """, (target_board_id, source_board_name))
+            INSERT INTO sections (board_id, name, user_id)
+            VALUES (%s, %s, %s)
+        """, (target_board_id, source_board_name, user['id']))
         
         new_section_id = cursor.lastrowid
         
@@ -2236,10 +2166,10 @@ def move_board(board_id):
         
         cursor.close()
         db.close()
-        
+
         # Invalidate gallery cache if Redis is available
         if redis_client:
-            redis_client.delete('view//')
+            redis_client.delete(f"view:{user['id']}:/")
         return jsonify({"success": True})
     except Exception as e:
         print(f"Error moving board: {str(e)}")
@@ -2253,23 +2183,28 @@ def delete_board(board_id):
         db = get_db_connection()
         cursor = db.cursor()
         
-        # First, delete all pins in the board (user-scoped)
+        # Verify board belongs to user before any deletions
+        cursor.execute("SELECT id FROM boards WHERE id = %s AND user_id = %s", (board_id, user['id']))
+        if not cursor.fetchone():
+            return jsonify({"error": "Board not found"}), 404
+
+        # Delete all pins in the board (user-scoped)
         cursor.execute("DELETE FROM pins WHERE board_id = %s AND user_id = %s", (board_id, user['id']))
-        
-        # Then, delete all sections in the board
+
+        # Delete all sections in the board (safe: board ownership verified above)
         cursor.execute("DELETE FROM sections WHERE board_id = %s", (board_id,))
-        
-        # Finally, delete the board itself (user-scoped)
+
+        # Delete the board itself (user-scoped)
         cursor.execute("DELETE FROM boards WHERE id = %s AND user_id = %s", (board_id, user['id']))
         
         db.commit()
         
         cursor.close()
         db.close()
-        
+
         # Invalidate gallery cache if Redis is available
         if redis_client:
-            redis_client.delete('view//')
+            redis_client.delete(f"view:{user['id']}:/")
         return jsonify({"success": True})
     except Exception as e:
         print(f"Error deleting board: {str(e)}")
@@ -2309,14 +2244,7 @@ def set_board_image(board_id):
         
         # Invalidate gallery cache if Redis is available
         if redis_client:
-            # Clear all possible cache keys for the gallery view
-            redis_client.delete('view//')
-            redis_client.delete('view:/')
-            # Also clear any user-specific cache
-            redis_client.delete(f'user:{user["id"]}:gallery')
-            # Clear all keys matching view pattern
-            for key in redis_client.scan_iter(match='view*'):
-                redis_client.delete(key)
+            redis_client.delete(f"view:{user['id']}:/")
         
         return jsonify({"success": True, "message": "Board image updated successfully"})
     except Exception as e:
@@ -2367,12 +2295,9 @@ def set_section_image(section_id):
         cursor.close()
         db.close()
         
-        # Invalidate board cache if Redis is available
+        # Invalidate gallery cache if Redis is available
         if redis_client:
-            redis_client.delete('view//')
-            redis_client.delete(f'view:/board/{section["board_id"]}')
-            for key in redis_client.scan_iter(match='view*'):
-                redis_client.delete(key)
+            redis_client.delete(f"view:{user['id']}:/")
         
         return jsonify({
             "success": True, 
@@ -2633,15 +2558,46 @@ def get_board_pins(board_id):
         # Add ordering and pagination
         query += " ORDER BY p.created_at DESC, p.id ASC LIMIT %s OFFSET %s"
         params.extend([limit, offset])
-        
-        cursor.execute(query, tuple(params))
+
+        try:
+            cursor.execute(query, tuple(params))
+        except Exception as query_err:
+            # cached_images table may not exist on older installs — retry without that join
+            print(f"Board pins query error, retrying without cached_images join: {query_err}")
+            fallback_query = """
+                SELECT p.*, s.name as section_name, b.name as board_name,
+                       NULL as cached_filename, NULL as cache_status,
+                       NULL as cached_width, NULL as cached_height
+                FROM pins p
+                LEFT JOIN sections s ON p.section_id = s.id
+                LEFT JOIN boards b ON p.board_id = b.id
+                WHERE p.board_id = %s AND p.user_id = %s
+            """
+            fallback_params = [board_id, user['id']]
+            if section_id:
+                if section_id == 'all':
+                    pass
+                elif section_id == 'undefined':
+                    fallback_query += " AND p.section_id IS NULL"
+                else:
+                    try:
+                        s_id = int(section_id)
+                        fallback_query += " AND p.section_id = %s"
+                        fallback_params.append(s_id)
+                    except ValueError:
+                        pass
+            fallback_query += " ORDER BY p.created_at DESC, p.id ASC LIMIT %s OFFSET %s"
+            fallback_params.extend([limit, offset])
+            cursor.execute(fallback_query, tuple(fallback_params))
+
         pins = cursor.fetchall()
-        
+
         return jsonify({
             'success': True,
-            'pins': pins
+            'pins': pins,
+            'has_more': len(pins) == limit
         })
-        
+
     except Exception as e:
         print(f"Error fetching board pins: {str(e)}")
         traceback.print_exc()
@@ -3213,8 +3169,8 @@ def delete_pin(pin_id):
         
         # Invalidate gallery cache if Redis is available
         if redis_client:
-            redis_client.delete('view//')
-        
+            redis_client.delete(f"view:{user['id']}:/")
+
         return jsonify({
             'success': True,
             'board_id': board_id

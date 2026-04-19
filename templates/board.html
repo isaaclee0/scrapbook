@@ -135,7 +135,7 @@
     <div class="masonry-grid loading-layout" id="pinsGrid">
         {% for pin in pins %}
         <div class="pin-card bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group"
-            data-section-id="{{ pin.section_id or 'all' }}" {% if pin.dominant_color_1 and pin.dominant_color_2 %}
+            data-section-id="{{ pin.section_id or '' }}" {% if pin.dominant_color_1 and pin.dominant_color_2 %}
             style="--dominant-color: {{ pin.dominant_color_1 }}; --secondary-color: {{ pin.dominant_color_2 }};"
             data-colors-extracted="true" data-has-db-colors="true" {% else %} data-has-db-colors="false" {% endif %}
             data-pin-id="{{ pin.id }}" id="pin-{{ pin.id }}" data-cached-width="{{ pin.cached_width or '' }}"
@@ -1234,7 +1234,10 @@
                 if (distanceFromBottom < 500 && currentOffset < totalCount && !isLoading) {
                     isLoading = true;
 
-                    fetch(`/api/board/${boardId}/pins?offset=${currentOffset}&limit=40`)
+                    const sectionParam = (typeof activeSectionFilter !== 'undefined' && activeSectionFilter !== 'all')
+                        ? `&section_id=${activeSectionFilter}`
+                        : '';
+                    fetch(`/api/board/${boardId}/pins?offset=${currentOffset}&limit=40${sectionParam}`)
                         .then(response => response.json())
                         .then(data => {
                             if (data.success && data.pins && data.pins.length > 0) {
@@ -1293,7 +1296,7 @@
 
         div.setAttribute('data-pin-id', pin.id);
         div.setAttribute('data-image-url', pin.image_url || '');
-        div.setAttribute('data-section-id', pin.section_id || 'all');
+        div.setAttribute('data-section-id', pin.section_id != null ? String(pin.section_id) : '');
         div.setAttribute('data-cached-width', pin.cached_width || '');
         div.setAttribute('data-cached-height', pin.cached_height || '');
         div.id = `pin-${pin.id}`;
@@ -2090,6 +2093,7 @@
                 const selectedSection = this.dataset.sectionId;
                 activeSectionFilter = selectedSection;
                 window.activeSectionFilter = selectedSection; // Expose to window for base.html
+                currentOffset = 0; // Reset pagination when switching sections
 
                 // Check if we have pins for this section already loaded
                 const existingPins = document.querySelectorAll(`.pin-card[data-section-id="${selectedSection}"]`);
@@ -2170,8 +2174,7 @@
             // Compare as strings - both 'all' check and section ID match
             // Handle null/undefined section_id as 'all' or unassigned
             const shouldShow = activeSectionFilter === 'all' ||
-                pinSectionId === activeSectionFilter ||
-                String(pinSectionId) === String(activeSectionFilter);
+                (pinSectionId !== '' && String(pinSectionId) === String(activeSectionFilter));
 
             if (shouldShow) {
                 item.style.display = '';  // Use empty string instead of 'block' to respect CSS
