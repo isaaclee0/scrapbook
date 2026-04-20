@@ -16,6 +16,7 @@ import base64
 import hashlib
 from functools import wraps
 from datetime import datetime
+from contextlib import contextmanager
 import traceback
 
 # Import authentication modules
@@ -452,6 +453,49 @@ def get_db_connection():
     except mysql.connector.Error as err:
         print(f"Error getting database connection: {err}")
         raise
+
+
+@contextmanager
+def tx(dictionary=False):
+    """
+    Transactional context manager. The pool default is autocommit=True; this
+    helper explicitly disables autocommit for the duration of the block so all
+    statements run inside a single transaction that either commits as a whole
+    or rolls back on exception.
+
+    Usage:
+        with tx() as (db, cursor):
+            cursor.execute(...)
+            cursor.execute(...)
+
+    Pass dictionary=True for a dict cursor.
+    """
+    db = get_db_connection()
+    db.autocommit = False
+    cursor = db.cursor(dictionary=dictionary, buffered=True)
+    try:
+        yield db, cursor
+        db.commit()
+    except Exception:
+        try:
+            db.rollback()
+        except Exception:
+            pass
+        raise
+    finally:
+        try:
+            cursor.close()
+        except Exception:
+            pass
+        try:
+            # Restore the pool default before returning the connection.
+            db.autocommit = True
+        except Exception:
+            pass
+        try:
+            db.close()
+        except Exception:
+            pass
 
 # ============================================================================
 # AUTHENTICATION FUNCTIONS
