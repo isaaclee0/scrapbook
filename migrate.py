@@ -360,6 +360,35 @@ def migrate_database():
         # Commit all changes
         conn.commit()
         
+        # Migration Step 13: Audit log
+        info("\nStep 13: Audit log")
+        if not table_exists(cursor, 'audit_log'):
+            cursor.execute("""
+                CREATE TABLE audit_log (
+                    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+                    created_at TIMESTAMP(3) DEFAULT CURRENT_TIMESTAMP(3),
+                    user_id INT NULL,
+                    actor_email VARCHAR(255),
+                    action VARCHAR(64) NOT NULL,
+                    entity_type VARCHAR(32) NOT NULL,
+                    entity_id INT NULL,
+                    before_data JSON NULL,
+                    after_data JSON NULL,
+                    metadata JSON NULL,
+                    request_id VARCHAR(40),
+                    ip_address VARCHAR(45),
+                    outcome ENUM('success','failure') DEFAULT 'success',
+                    INDEX idx_audit_created (created_at),
+                    INDEX idx_audit_user (user_id, created_at),
+                    INDEX idx_audit_entity (entity_type, entity_id, created_at),
+                    INDEX idx_audit_action (action, created_at),
+                    INDEX idx_audit_outcome (outcome, created_at)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
+            """)
+            success("Created audit_log table")
+        else:
+            warning("audit_log table already exists")
+
         # Migration Step 12: Summary
         info("\nStep 12: Migration summary")
         cursor.execute("SELECT COUNT(*) FROM users")

@@ -132,6 +132,28 @@ CREATE TABLE IF NOT EXISTS url_health (
     INDEX idx_url_health_last_checked (last_checked)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+-- Audit log table (tracks all entity mutations for ~30 days)
+CREATE TABLE IF NOT EXISTS audit_log (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    created_at TIMESTAMP(3) DEFAULT CURRENT_TIMESTAMP(3),
+    user_id INT NULL,
+    actor_email VARCHAR(255),
+    action VARCHAR(64) NOT NULL,
+    entity_type VARCHAR(32) NOT NULL,
+    entity_id INT NULL,
+    before_data JSON NULL,
+    after_data JSON NULL,
+    metadata JSON NULL,
+    request_id VARCHAR(40),
+    ip_address VARCHAR(45),
+    outcome ENUM('success','failure') DEFAULT 'success',
+    INDEX idx_audit_created (created_at),
+    INDEX idx_audit_user (user_id, created_at),
+    INDEX idx_audit_entity (entity_type, entity_id, created_at),
+    INDEX idx_audit_action (action, created_at),
+    INDEX idx_audit_outcome (outcome, created_at)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
 -- Insert some default data if tables are empty (for demo/development)
 -- Note: These will be owned by the default user
 SET @default_user_id = (SELECT id FROM users WHERE email = 'shelley@leemail.com.au' LIMIT 1);
