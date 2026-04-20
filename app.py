@@ -2158,60 +2158,50 @@ def rename_board(board_id):
 def move_board(board_id):
     user = get_current_user()
     try:
-        data = request.get_json()
+        data = request.get_json() or {}
         target_board_id = data.get('target_board_id')
-        
+
         if not target_board_id:
             return jsonify({"error": "Target board ID is required"}), 400
-            
-        db = get_db_connection()
-        cursor = db.cursor()
-        
-        # Get the source board name to use as section name (user-scoped)
-        cursor.execute("SELECT name FROM boards WHERE id = %s AND user_id = %s", (board_id, user['id']))
-        source_board = cursor.fetchone()
-        if not source_board:
-            return jsonify({"error": "Source board not found"}), 404
-            
-        source_board_name = source_board[0]
-        
-        # Check if target board exists and belongs to user (user-scoped)
-        cursor.execute("SELECT id FROM boards WHERE id = %s AND user_id = %s", (target_board_id, user['id']))
-        if not cursor.fetchone():
-            return jsonify({"error": "Target board not found"}), 404
-        
-        # Create a new section in the target board with the source board's name
-        cursor.execute("""
-            INSERT INTO sections (board_id, name, user_id)
-            VALUES (%s, %s, %s)
-        """, (target_board_id, source_board_name, user['id']))
-        
-        new_section_id = cursor.lastrowid
-        
-        # Move all pins from source board to target board and assign them to the new section (user-scoped)
-        cursor.execute("""
-            UPDATE pins 
-            SET board_id = %s, section_id = %s 
-            WHERE board_id = %s AND user_id = %s
-        """, (target_board_id, new_section_id, board_id, user['id']))
-        
-        # Move any existing sections from source board to target board
-        # (These will become subsections within the new section)
-        cursor.execute("""
-            UPDATE sections 
-            SET board_id = %s 
-            WHERE board_id = %s
-        """, (target_board_id, board_id))
-        
-        # Finally, delete the original board (user-scoped)
-        cursor.execute("DELETE FROM boards WHERE id = %s AND user_id = %s", (board_id, user['id']))
-        
-        db.commit()
-        
-        cursor.close()
-        db.close()
 
-        # Invalidate gallery cache if Redis is available
+        with tx(dictionary=True) as (db, cursor):
+            cursor.execute("SELECT id, name FROM boards WHERE id = %s AND user_id = %s",
+                           (board_id, user['id']))
+            source_board = cursor.fetchone()
+            if not source_board:
+                return jsonify({"error": "Source board not found"}), 404
+            source_board_name = source_board['name']
+
+            cursor.execute("SELECT id FROM boards WHERE id = %s AND user_id = %s",
+                           (target_board_id, user['id']))
+            if not cursor.fetchone():
+                return jsonify({"error": "Target board not found"}), 404
+
+            # Create a new section in the target board with the source board's name
+            cursor.execute("""
+                INSERT INTO sections (board_id, name, user_id)
+                VALUES (%s, %s, %s)
+            """, (target_board_id, source_board_name, user['id']))
+            new_section_id = cursor.lastrowid
+
+            # Move all pins from source to target, assigning them to the new section
+            cursor.execute("""
+                UPDATE pins
+                SET board_id = %s, section_id = %s
+                WHERE board_id = %s AND user_id = %s
+            """, (target_board_id, new_section_id, board_id, user['id']))
+
+            # Move any pre-existing sections from source to target (excluding the
+            # one we just inserted), user-scoped to avoid cross-tenant moves.
+            cursor.execute("""
+                UPDATE sections
+                SET board_id = %s
+                WHERE board_id = %s AND user_id = %s AND id != %s
+            """, (target_board_id, board_id, user['id'], new_section_id))
+
+            cursor.execute("DELETE FROM boards WHERE id = %s AND user_id = %s",
+                           (board_id, user['id']))
+
         if redis_client:
             redis_client.delete(f"view:{user['id']}:/")
         return jsonify({"success": True})
@@ -2224,29 +2214,19 @@ def move_board(board_id):
 def delete_board(board_id):
     user = get_current_user()
     try:
-        db = get_db_connection()
-        cursor = db.cursor()
-        
-        # Verify board belongs to user before any deletions
-        cursor.execute("SELECT id FROM boards WHERE id = %s AND user_id = %s", (board_id, user['id']))
-        if not cursor.fetchone():
-            return jsonify({"error": "Board not found"}), 404
+        with tx() as (db, cursor):
+            cursor.execute("SELECT id FROM boards WHERE id = %s AND user_id = %s",
+                           (board_id, user['id']))
+            if not cursor.fetchone():
+                return jsonify({"error": "Board not found"}), 404
 
-        # Delete all pins in the board (user-scoped)
-        cursor.execute("DELETE FROM pins WHERE board_id = %s AND user_id = %s", (board_id, user['id']))
+            cursor.execute("DELETE FROM pins WHERE board_id = %s AND user_id = %s",
+                           (board_id, user['id']))
+            cursor.execute("DELETE FROM sections WHERE board_id = %s AND user_id = %s",
+                           (board_id, user['id']))
+            cursor.execute("DELETE FROM boards WHERE id = %s AND user_id = %s",
+                           (board_id, user['id']))
 
-        # Delete all sections in the board (safe: board ownership verified above)
-        cursor.execute("DELETE FROM sections WHERE board_id = %s", (board_id,))
-
-        # Delete the board itself (user-scoped)
-        cursor.execute("DELETE FROM boards WHERE id = %s AND user_id = %s", (board_id, user['id']))
-        
-        db.commit()
-        
-        cursor.close()
-        db.close()
-
-        # Invalidate gallery cache if Redis is available
         if redis_client:
             redis_client.delete(f"view:{user['id']}:/")
         return jsonify({"success": True})
