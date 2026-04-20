@@ -22,6 +22,7 @@ import traceback
 # Import authentication modules
 from auth_utils import generate_magic_link_token, generate_session_token, verify_token, refresh_session_token, generate_otp, store_otp, verify_otp
 from email_service import send_otp_email, send_welcome_email
+from audit_helpers import record_audit, snapshot_board, snapshot_pin, snapshot_section
 
 # Try to import redis, but make it optional
 try:
@@ -1536,110 +1537,90 @@ def save_pasted_image(data_url):
 @login_required
 def add_pin():
     user = get_current_user()
-    db = None
-    cursor = None
     try:
         data = request.get_json()
-        
+
         board_id = sanitize_integer(data.get('board_id'))
         section_id = sanitize_integer(data.get('section_id'))
         title = sanitize_string(data.get('title', ''), max_length=255)
         description = sanitize_string(data.get('description', ''))
         notes = sanitize_string(data.get('notes', ''))
         raw_image_url = data.get('image_url', '')
-        source_url = sanitize_url(data.get('source_url', ''))  # Add source URL
+        source_url = sanitize_url(data.get('source_url', ''))
         cached_image_id = None
-        
-        # Handle pasted images (data URLs) by saving them to disk
+
         if raw_image_url.startswith('data:image/'):
             image_url, cached_image_id = save_pasted_image(raw_image_url)
             if image_url is None:
-                image_url = '/static/images/default_pin.png'  # Fallback to default
+                image_url = '/static/images/default_pin.png'
         else:
             image_url = sanitize_url(raw_image_url)
-        
+
         if not board_id or not title:
             return jsonify({"error": "Board ID and title are required"}), 400
-            
-        # Use default image if no image URL is provided
+
         if not image_url:
             image_url = '/static/images/default_pin.png'
-            
-        db = get_db_connection()
-        cursor = db.cursor()
 
-        # Verify board belongs to the current user
-        cursor.execute("SELECT id FROM boards WHERE id = %s AND user_id = %s", (board_id, user['id']))
-        if not cursor.fetchone():
-            return jsonify({"error": "Board not found"}), 404
-
-        # Verify section belongs to this board (if provided)
-        if section_id:
-            cursor.execute(
-                "SELECT id FROM sections WHERE id = %s AND board_id = %s",
-                (section_id, board_id)
-            )
+        with tx() as (db, cursor):
+            cursor.execute("SELECT id FROM boards WHERE id = %s AND user_id = %s",
+                           (board_id, user['id']))
             if not cursor.fetchone():
-                return jsonify({"error": "Section not found or belongs to a different board"}), 400
+                return jsonify({"error": "Board not found"}), 404
 
-        # Check if pins table has cached image columns
-        cursor.execute("SHOW COLUMNS FROM pins LIKE 'cached_image_id'")
-        result = cursor.fetchone()
-        has_cached_columns = result is not None
-        # Consume any remaining results
-        cursor.fetchall()
-        
-        if has_cached_columns and cached_image_id:
-            # Insert with cached image information
-            cursor.execute("""
-                INSERT INTO pins (board_id, section_id, title, description, notes, image_url, link, cached_image_id, uses_cached_image, user_id)
-                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-            """, (board_id, section_id, title, description, notes, image_url, source_url, cached_image_id, True, user['id']))
-        else:
-            # Insert without cached image information (fallback)
-            cursor.execute("""
-                INSERT INTO pins (board_id, section_id, title, description, notes, image_url, link, user_id)
-                VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
-            """, (board_id, section_id, title, description, notes, image_url, source_url, user['id']))
-        
-        pin_id = cursor.lastrowid
-        db.commit()
-        
-        # Calculate and store image dimensions for the new pin
+            if section_id:
+                cursor.execute(
+                    "SELECT id FROM sections WHERE id = %s AND board_id = %s",
+                    (section_id, board_id),
+                )
+                if not cursor.fetchone():
+                    return jsonify({"error": "Section not found or belongs to a different board"}), 400
+
+            cursor.execute("SHOW COLUMNS FROM pins LIKE 'cached_image_id'")
+            result = cursor.fetchone()
+            has_cached_columns = result is not None
+            cursor.fetchall()
+
+            if has_cached_columns and cached_image_id:
+                cursor.execute("""
+                    INSERT INTO pins (board_id, section_id, title, description, notes, image_url, link, cached_image_id, uses_cached_image, user_id)
+                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                """, (board_id, section_id, title, description, notes, image_url, source_url, cached_image_id, True, user['id']))
+            else:
+                cursor.execute("""
+                    INSERT INTO pins (board_id, section_id, title, description, notes, image_url, link, user_id)
+                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
+                """, (board_id, section_id, title, description, notes, image_url, source_url, user['id']))
+
+            pin_id = cursor.lastrowid
+
+            record_audit(cursor, action='pin.create', entity_type='pin',
+                         entity_id=pin_id, user_id=user['id'],
+                         actor_email=user.get('email'), before=None,
+                         after={'id': pin_id, 'board_id': board_id,
+                                'section_id': section_id, 'image_url': image_url,
+                                'title': title},
+                         metadata={'route': request.path},
+                         ip_address=request.remote_addr)
+
+        # Post-commit side effects (best-effort, do not roll back the pin if these fail)
         try:
             update_pin_dimensions(pin_id, image_url)
         except Exception as e:
             print(f"Error calculating dimensions for new pin {pin_id}: {e}")
-        
-        # Queue external images for caching (only if cached_images table exists)
+
         if image_url.startswith('http'):
             try:
-                # Check if cached_images table exists before trying to cache
-                cursor.execute("SHOW TABLES LIKE 'cached_images'")
-                result = cursor.fetchone()
-                # Consume any remaining results
-                cursor.fetchall()
-                if result:
-                    from scripts.image_cache_service import ImageCacheService
-                    cache_service = ImageCacheService()
-                    cache_service.queue_image_for_caching(pin_id, image_url, 'low')
-                else:
-                    print(f"Cached images table not found, skipping caching for pin {pin_id}")
+                from scripts.image_cache_service import ImageCacheService
+                cache_service = ImageCacheService()
+                cache_service.queue_image_for_caching(pin_id, image_url, 'low')
             except Exception as e:
                 print(f"Failed to queue image for caching: {e}")
-        
-        return jsonify({
-            'success': True,
-            'pin_id': pin_id
-        })
+
+        return jsonify({'success': True, 'pin_id': pin_id})
     except Exception as e:
         print(f"Error adding pin: {str(e)}")
         return jsonify({"error": "Failed to add pin"}), 500
-    finally:
-        if cursor:
-            cursor.close()
-        if db:
-            db.close()
 
 @app.route('/update-pin/<int:pin_id>', methods=['POST'])
 @login_required
@@ -1657,90 +1638,67 @@ def update_pin(pin_id):
     link = sanitize_string(data.get('link', ''), max_length=2048) if 'link' in data else None
     
     
-    db = None
-    cursor = None
     try:
-        db = get_db_connection()
-        cursor = db.cursor()
-        
-        # First verify the pin exists and belongs to user (user-scoped)
-        cursor.execute("SELECT title FROM pins WHERE id = %s AND user_id = %s", (pin_id, user['id']))
-        result = cursor.fetchone()
-        if not result:
-            return jsonify({"error": "Pin not found"}), 404
-        
-        current_title = result[0]
-        
-        # Build the update query dynamically based on what fields are provided
-        update_fields = []
-        update_values = []
-        
-        if title is not None:
-            update_fields.append("title = %s")
-            update_values.append(title)
-            
-        if description is not None:
-            update_fields.append("description = %s")
-            update_values.append(description)
-            
-        if notes is not None:
-            update_fields.append("notes = %s")
-            update_values.append(notes)
-            
-        if link is not None:
-            update_fields.append("link = %s")
-            update_values.append(link)
-            
-        if not update_fields:
-            return jsonify({"error": "No fields to update"}), 400
-            
-        # Add the pin_id and user_id to the values list
-        update_values.append(pin_id)
-        update_values.append(user['id'])
-        
-        # Build and execute the update query (user-scoped)
-        update_query = f"""
-            UPDATE pins
-            SET {', '.join(update_fields)}
-            WHERE id = %s AND user_id = %s
-        """
-        
-        
-        cursor.execute(update_query, tuple(update_values))
-        
-        # If link was updated, reset the URL health status to unknown
-        if link is not None:
-            # Delete old url_health entry and create a new one with status 'unknown'
-            cursor.execute("DELETE FROM url_health WHERE pin_id = %s", (pin_id,))
-            if link:  # Only insert if link is not empty
-                cursor.execute("""
-                    INSERT INTO url_health (pin_id, url, status, last_checked)
-                    VALUES (%s, %s, 'unknown', NULL)
-                """, (pin_id, link))
-        
-        db.commit()
-        
-        return jsonify({
-            'success': True,
-            'pin_id': pin_id
-        })
+        with tx(dictionary=True) as (db, cursor):
+            cursor.execute(
+                "SELECT title, description, notes, link FROM pins WHERE id = %s AND user_id = %s",
+                (pin_id, user['id']),
+            )
+            current = cursor.fetchone()
+            if not current:
+                return jsonify({"error": "Pin not found"}), 404
+
+            update_fields = []
+            update_values = []
+            before_changes = {}
+            after_changes = {}
+
+            if title is not None:
+                update_fields.append("title = %s"); update_values.append(title)
+                before_changes['title'] = current['title']; after_changes['title'] = title
+            if description is not None:
+                update_fields.append("description = %s"); update_values.append(description)
+                before_changes['description'] = current['description']; after_changes['description'] = description
+            if notes is not None:
+                update_fields.append("notes = %s"); update_values.append(notes)
+                before_changes['notes'] = current['notes']; after_changes['notes'] = notes
+            if link is not None:
+                update_fields.append("link = %s"); update_values.append(link)
+                before_changes['link'] = current['link']; after_changes['link'] = link
+
+            if not update_fields:
+                return jsonify({"error": "No fields to update"}), 400
+
+            update_values.append(pin_id)
+            update_values.append(user['id'])
+
+            cursor.execute(
+                f"UPDATE pins SET {', '.join(update_fields)} WHERE id = %s AND user_id = %s",
+                tuple(update_values),
+            )
+
+            if link is not None:
+                cursor.execute("DELETE FROM url_health WHERE pin_id = %s", (pin_id,))
+                if link:
+                    cursor.execute("""
+                        INSERT INTO url_health (pin_id, url, status, last_checked)
+                        VALUES (%s, %s, 'unknown', NULL)
+                    """, (pin_id, link))
+
+            record_audit(cursor, action='pin.update', entity_type='pin',
+                         entity_id=pin_id, user_id=user['id'],
+                         actor_email=user.get('email'),
+                         before=before_changes, after=after_changes,
+                         metadata={'route': request.path},
+                         ip_address=request.remote_addr)
+
+        return jsonify({'success': True, 'pin_id': pin_id})
     except mysql.connector.Error as e:
         print(f"Database error updating pin: {str(e)}")
         return jsonify({"error": "Database error occurred"}), 500
     except Exception as e:
         print(f"Error updating pin: {str(e)}")
         return jsonify({"error": "Failed to update pin"}), 500
-    finally:
-        if cursor:
-            try:
-                cursor.close()
-            except Exception:
-                pass
-        if db:
-            try:
-                db.close()
-            except Exception:
-                pass
 
 @app.route('/pin/<int:pin_id>')
 @login_required
@@ -1838,68 +1796,44 @@ def create_board():
         if not board_name:
             return jsonify({"error": "Board name is required"}), 400
         
-        db = None
-        cursor = None
         try:
-            db = get_db_connection()
-            cursor = db.cursor()
-            # Create URL-friendly slug
             slug = re.sub(r'[^a-z0-9]+', '-', board_name.lower()).strip('-')
-            
-            # Check if board with same name exists (user-scoped)
-            cursor.execute("SELECT id FROM boards WHERE name = %s AND user_id = %s", (board_name, user['id']))
-            existing_board = cursor.fetchone()
-            if existing_board:
-                return jsonify({"error": "You already have a board with this name"}), 409
-            
-            # Create the new board (with user_id)
-            cursor.execute("""
-                INSERT INTO boards (name, slug, user_id)
-                VALUES (%s, %s, %s)
-            """, (board_name, slug, user['id']))
-            
-            board_id = cursor.lastrowid
-            db.commit()
-            
-            # Fetch the created board to confirm
-            cursor.execute("SELECT id, name, slug FROM boards WHERE id = %s", (board_id,))
-            new_board = cursor.fetchone()
-            
-            if not new_board:
-                return jsonify({"error": "Failed to create board"}), 500
-                
-            # Invalidate gallery cache if Redis is available
+
+            with tx() as (db, cursor):
+                cursor.execute("SELECT id FROM boards WHERE name = %s AND user_id = %s",
+                               (board_name, user['id']))
+                if cursor.fetchone():
+                    return jsonify({"error": "You already have a board with this name"}), 409
+
+                cursor.execute("""
+                    INSERT INTO boards (name, slug, user_id)
+                    VALUES (%s, %s, %s)
+                """, (board_name, slug, user['id']))
+                board_id = cursor.lastrowid
+
+                record_audit(cursor, action='board.create', entity_type='board',
+                             entity_id=board_id, user_id=user['id'],
+                             actor_email=user.get('email'), before=None,
+                             after={'id': board_id, 'name': board_name, 'slug': slug},
+                             metadata={'route': request.path},
+                             ip_address=request.remote_addr)
+
             if redis_client:
                 redis_client.delete(f"view:{user['id']}:/")
             return jsonify({
                 'success': True,
                 'board_id': board_id,
                 'name': board_name,
-                'slug': slug
+                'slug': slug,
             })
-            
+
         except mysql.connector.Error as db_error:
-            # Log the specific database error
             print(f"Database error in create_board: {str(db_error)}")
-            db.rollback()
             return jsonify({"error": "Database error occurred"}), 500
-            
+
     except Exception as e:
-        # Log the general error
         print(f"Error in create_board: {str(e)}")
         return jsonify({"error": "Server error occurred"}), 500
-        
-    finally:
-        if cursor:
-            try:
-                cursor.close()
-            except Exception:
-                pass
-        if db:
-            try:
-                db.close()
-            except Exception:
-                pass
 
 @app.route('/move-pin/<int:pin_id>', methods=['POST'])
 @login_required
@@ -1915,43 +1849,39 @@ def move_pin(pin_id):
     if not pin_id:
         return jsonify({"error": "Valid pin ID is required"}), 400
     
-    db = None
-    cursor = None
     try:
-        db = get_db_connection()
-        cursor = db.cursor(buffered=True)
-        
-        # First verify the pin exists and belongs to user (user-scoped)
-        cursor.execute("SELECT id FROM pins WHERE id = %s AND user_id = %s", (pin_id, user['id']))
-        if not cursor.fetchone():
-            return jsonify({"error": "Pin not found"}), 404
-        
-        # Then verify the target board exists and belongs to user (user-scoped)
-        cursor.execute("SELECT id FROM boards WHERE id = %s AND user_id = %s", (board_id, user['id']))
-        if not cursor.fetchone():
-            return jsonify({"error": "Target board not found"}), 404
-        
-        # Move the pin to the new board
-        cursor.execute("""
-            UPDATE pins 
-            SET board_id = %s,
-                section_id = NULL
-            WHERE id = %s
-        """, (board_id, pin_id))
-        
-        db.commit()
-        
-        # Invalidate gallery cache if Redis is available
+        with tx(dictionary=True) as (db, cursor):
+            cursor.execute("SELECT id, board_id, section_id FROM pins WHERE id = %s AND user_id = %s",
+                           (pin_id, user['id']))
+            pin_before = cursor.fetchone()
+            if not pin_before:
+                return jsonify({"error": "Pin not found"}), 404
+
+            cursor.execute("SELECT id FROM boards WHERE id = %s AND user_id = %s",
+                           (board_id, user['id']))
+            if not cursor.fetchone():
+                return jsonify({"error": "Target board not found"}), 404
+
+            cursor.execute("""
+                UPDATE pins
+                SET board_id = %s, section_id = NULL
+                WHERE id = %s AND user_id = %s
+            """, (board_id, pin_id, user['id']))
+
+            record_audit(cursor, action='pin.move', entity_type='pin',
+                         entity_id=pin_id, user_id=user['id'],
+                         actor_email=user.get('email'),
+                         before={'board_id': pin_before['board_id'],
+                                 'section_id': pin_before['section_id']},
+                         after={'board_id': board_id, 'section_id': None},
+                         metadata={'route': request.path},
+                         ip_address=request.remote_addr)
+
         if redis_client:
             redis_client.delete(f"view:{user['id']}:/")
         return jsonify({'success': True})
     except mysql.connector.Error as e:
         return jsonify({"error": str(e)}), 500
-    finally:
-        if cursor:
-            cursor.close()
-        if db:
-            db.close()
 
 @app.route('/create-section', methods=['POST'])
 @login_required
@@ -1961,40 +1891,40 @@ def create_section():
         data = request.get_json()
         board_id = sanitize_integer(data.get('board_id'))
         name = sanitize_string(data.get('name', ''), max_length=255)
-        
+
         if not board_id or not name:
             return jsonify({"error": "Board ID and section name are required"}), 400
-            
-        db = get_db_connection()
-        cursor = db.cursor()
-        
-        # Verify board belongs to user
-        cursor.execute("SELECT id FROM boards WHERE id = %s AND user_id = %s", (board_id, user['id']))
-        if not cursor.fetchone():
-            return jsonify({"error": "Board not found"}), 404
-        
-        cursor.execute("""
-            INSERT INTO sections (board_id, name, user_id)
-            VALUES (%s, %s, %s)
-        """, (board_id, name, user['id']))
-        
-        section_id = cursor.lastrowid
-        db.commit()
-        
+
+        with tx() as (db, cursor):
+            cursor.execute("SELECT id FROM boards WHERE id = %s AND user_id = %s",
+                           (board_id, user['id']))
+            if not cursor.fetchone():
+                return jsonify({"error": "Board not found"}), 404
+
+            cursor.execute("""
+                INSERT INTO sections (board_id, name, user_id)
+                VALUES (%s, %s, %s)
+            """, (board_id, name, user['id']))
+            section_id = cursor.lastrowid
+
+            record_audit(cursor, action='section.create', entity_type='section',
+                         entity_id=section_id, user_id=user['id'],
+                         actor_email=user.get('email'), before=None,
+                         after={'id': section_id, 'name': name, 'board_id': board_id},
+                         metadata={'route': request.path},
+                         ip_address=request.remote_addr)
+
         return jsonify({
             'success': True,
             'section': {
                 'id': section_id,
                 'name': name,
-                'board_id': board_id
-            }
+                'board_id': board_id,
+            },
         })
     except Exception as e:
         print(f"Error creating section: {str(e)}")
         return jsonify({"error": "Failed to create section"}), 500
-    finally:
-        cursor.close()
-        db.close()
 
 @app.route('/update-section/<int:section_id>', methods=['POST'])
 @login_required
@@ -2003,78 +1933,71 @@ def update_section(section_id):
     try:
         data = request.get_json()
         name = sanitize_string(data.get('name', ''), max_length=255)
-        
+
         if not name:
             return jsonify({"error": "Section name is required"}), 400
-            
-        db = get_db_connection()
-        cursor = db.cursor(dictionary=True)
-        
-        # Verify section's board belongs to user
-        cursor.execute("""
-            SELECT s.id FROM sections s
-            JOIN boards b ON s.board_id = b.id
-            WHERE s.id = %s AND b.user_id = %s
-        """, (section_id, user['id']))
-        if not cursor.fetchone():
-            return jsonify({"error": "Section not found"}), 404
-        
-        cursor.execute("""
-            UPDATE sections
-            SET name = %s
-            WHERE id = %s
-        """, (name, section_id))
-        
-        db.commit()
-        
+
+        with tx(dictionary=True) as (db, cursor):
+            cursor.execute("""
+                SELECT s.id, s.name FROM sections s
+                JOIN boards b ON s.board_id = b.id
+                WHERE s.id = %s AND b.user_id = %s
+            """, (section_id, user['id']))
+            row = cursor.fetchone()
+            if not row:
+                return jsonify({"error": "Section not found"}), 404
+            old_name = row['name']
+
+            cursor.execute("UPDATE sections SET name = %s WHERE id = %s", (name, section_id))
+
+            record_audit(cursor, action='section.rename', entity_type='section',
+                         entity_id=section_id, user_id=user['id'],
+                         actor_email=user.get('email'),
+                         before={'name': old_name}, after={'name': name},
+                         metadata={'route': request.path},
+                         ip_address=request.remote_addr)
+
         return jsonify({
             'success': True,
-            'section': {
-                'id': section_id,
-                'name': name
-            }
+            'section': {'id': section_id, 'name': name},
         })
     except Exception as e:
         print(f"Error updating section: {str(e)}")
         return jsonify({"error": "Failed to update section"}), 500
-    finally:
-        cursor.close()
-        db.close()
 
 @app.route('/delete-section/<int:section_id>', methods=['POST'])
 @login_required
 def delete_section(section_id):
     user = get_current_user()
     try:
-        db = get_db_connection()
-        cursor = db.cursor(dictionary=True)
-        
-        # First get the board_id for this section and verify ownership
-        cursor.execute("""
-            SELECT s.board_id FROM sections s
-            JOIN boards b ON s.board_id = b.id
-            WHERE s.id = %s AND b.user_id = %s
-        """, (section_id, user['id']))
-        result = cursor.fetchone()
-        if not result:
-            return jsonify({"error": "Section not found"}), 404
-            
-        board_id = result['board_id']
-        
-        # Delete the section (this will set section_id to NULL for any pins in this section due to ON DELETE SET NULL)
-        cursor.execute("DELETE FROM sections WHERE id = %s", (section_id,))
-        db.commit()
-        
-        return jsonify({
-            'success': True,
-            'board_id': board_id
-        })
+        with tx(dictionary=True) as (db, cursor):
+            cursor.execute("""
+                SELECT s.id, s.board_id FROM sections s
+                JOIN boards b ON s.board_id = b.id
+                WHERE s.id = %s AND b.user_id = %s
+            """, (section_id, user['id']))
+            result = cursor.fetchone()
+            if not result:
+                return jsonify({"error": "Section not found"}), 404
+            board_id = result['board_id']
+
+            # Snapshot section + its pins before delete (pins survive with section_id=NULL
+            # via ON DELETE SET NULL, but the snapshot lets us re-link them on undo).
+            before = snapshot_section(cursor, section_id)
+
+            cursor.execute("DELETE FROM sections WHERE id = %s", (section_id,))
+
+            record_audit(cursor, action='section.delete', entity_type='section',
+                         entity_id=section_id, user_id=user['id'],
+                         actor_email=user.get('email'),
+                         before=before, after=None,
+                         metadata={'route': request.path, 'board_id': board_id},
+                         ip_address=request.remote_addr)
+
+        return jsonify({'success': True, 'board_id': board_id})
     except Exception as e:
         print(f"Error deleting section: {str(e)}")
         return jsonify({"error": "Failed to delete section"}), 500
-    finally:
-        cursor.close()
-        db.close()
 
 @app.route('/move-pin-to-section/<int:pin_id>', methods=['POST'])
 @login_required
@@ -2083,47 +2006,44 @@ def move_pin_to_section(pin_id):
     try:
         data = request.get_json()
         section_id = sanitize_integer(data.get('section_id'))
-        
-        if section_id is None:  # Allow NULL section_id to remove from section
+        if section_id is None:
             section_id = None
-            
-        db = get_db_connection()
-        cursor = db.cursor()
-        
-        # Verify the pin exists and belongs to user (user-scoped)
-        cursor.execute("SELECT board_id FROM pins WHERE id = %s AND user_id = %s", (pin_id, user['id']))
-        result = cursor.fetchone()
-        if not result:
-            return jsonify({"error": "Pin not found"}), 404
-            
-        board_id = result[0]
-        
-        # If section_id is provided, verify it belongs to the same board
-        if section_id:
-            cursor.execute("SELECT id FROM sections WHERE id = %s AND board_id = %s", (section_id, board_id))
-            if not cursor.fetchone():
-                return jsonify({"error": "Section not found or belongs to different board"}), 400
-        
-        # Update the pin's section
-        cursor.execute("""
-            UPDATE pins
-            SET section_id = %s
-            WHERE id = %s
-        """, (section_id, pin_id))
-        
-        db.commit()
-        
+
+        with tx(dictionary=True) as (db, cursor):
+            cursor.execute("SELECT board_id, section_id FROM pins WHERE id = %s AND user_id = %s",
+                           (pin_id, user['id']))
+            result = cursor.fetchone()
+            if not result:
+                return jsonify({"error": "Pin not found"}), 404
+            board_id = result['board_id']
+            old_section_id = result['section_id']
+
+            if section_id:
+                cursor.execute("SELECT id FROM sections WHERE id = %s AND board_id = %s",
+                               (section_id, board_id))
+                if not cursor.fetchone():
+                    return jsonify({"error": "Section not found or belongs to different board"}), 400
+
+            cursor.execute("""
+                UPDATE pins SET section_id = %s WHERE id = %s AND user_id = %s
+            """, (section_id, pin_id, user['id']))
+
+            record_audit(cursor, action='pin.move_to_section', entity_type='pin',
+                         entity_id=pin_id, user_id=user['id'],
+                         actor_email=user.get('email'),
+                         before={'section_id': old_section_id},
+                         after={'section_id': section_id},
+                         metadata={'route': request.path, 'board_id': board_id},
+                         ip_address=request.remote_addr)
+
         return jsonify({
             'success': True,
             'pin_id': pin_id,
-            'section_id': section_id
+            'section_id': section_id,
         })
     except Exception as e:
         print(f"Error moving pin to section: {str(e)}")
         return jsonify({"error": "Failed to move pin"}), 500
-    finally:
-        cursor.close()
-        db.close()
 
 @app.route('/rename-board/<int:board_id>', methods=['POST'])
 @login_required
@@ -2132,20 +2052,28 @@ def rename_board(board_id):
     try:
         data = request.get_json()
         new_name = data.get('name', '').strip()
-        
+
         if not new_name:
             return jsonify({"error": "Board name is required"}), 400
-            
-        db = get_db_connection()
-        cursor = db.cursor()
-        
-        cursor.execute("UPDATE boards SET name = %s WHERE id = %s AND user_id = %s", (new_name, board_id, user['id']))
-        db.commit()
-        
-        cursor.close()
-        db.close()
 
-        # Invalidate gallery cache if Redis is available
+        with tx(dictionary=True) as (db, cursor):
+            cursor.execute("SELECT name FROM boards WHERE id = %s AND user_id = %s",
+                           (board_id, user['id']))
+            row = cursor.fetchone()
+            if not row:
+                return jsonify({"error": "Board not found"}), 404
+            old_name = row['name']
+
+            cursor.execute("UPDATE boards SET name = %s WHERE id = %s AND user_id = %s",
+                           (new_name, board_id, user['id']))
+
+            record_audit(cursor, action='board.rename', entity_type='board',
+                         entity_id=board_id, user_id=user['id'],
+                         actor_email=user.get('email'),
+                         before={'name': old_name}, after={'name': new_name},
+                         metadata={'route': request.path},
+                         ip_address=request.remote_addr)
+
         if redis_client:
             redis_client.delete(f"view:{user['id']}:/")
         return jsonify({"success": True})
@@ -2177,6 +2105,8 @@ def move_board(board_id):
             if not cursor.fetchone():
                 return jsonify({"error": "Target board not found"}), 404
 
+            before = snapshot_board(cursor, board_id)
+
             # Create a new section in the target board with the source board's name
             cursor.execute("""
                 INSERT INTO sections (board_id, name, user_id)
@@ -2202,6 +2132,15 @@ def move_board(board_id):
             cursor.execute("DELETE FROM boards WHERE id = %s AND user_id = %s",
                            (board_id, user['id']))
 
+            record_audit(cursor, action='board.move', entity_type='board',
+                         entity_id=board_id, user_id=user['id'],
+                         actor_email=user.get('email'),
+                         before=before,
+                         after={'target_board_id': target_board_id,
+                                'new_section_id': new_section_id},
+                         metadata={'route': request.path},
+                         ip_address=request.remote_addr)
+
         if redis_client:
             redis_client.delete(f"view:{user['id']}:/")
         return jsonify({"success": True})
@@ -2220,12 +2159,22 @@ def delete_board(board_id):
             if not cursor.fetchone():
                 return jsonify({"error": "Board not found"}), 404
 
+            # Snapshot before mutation so the audit row contains everything needed
+            # to undo the delete.
+            before = snapshot_board(cursor, board_id)
+
             cursor.execute("DELETE FROM pins WHERE board_id = %s AND user_id = %s",
                            (board_id, user['id']))
             cursor.execute("DELETE FROM sections WHERE board_id = %s AND user_id = %s",
                            (board_id, user['id']))
             cursor.execute("DELETE FROM boards WHERE id = %s AND user_id = %s",
                            (board_id, user['id']))
+
+            record_audit(cursor, action='board.delete', entity_type='board',
+                         entity_id=board_id, user_id=user['id'],
+                         actor_email=user.get('email'), before=before, after=None,
+                         metadata={'route': request.path},
+                         ip_address=request.remote_addr)
 
         if redis_client:
             redis_client.delete(f"view:{user['id']}:/")
@@ -2241,35 +2190,37 @@ def set_board_image(board_id):
     try:
         data = request.get_json()
         image_url = data.get('image_url', '').strip()
-        
-        # Allow empty string to clear the default image
-        db = get_db_connection()
-        cursor = db.cursor()
-        
-        # Check if board exists and belongs to user
-        cursor.execute("SELECT id FROM boards WHERE id = %s AND user_id = %s", (board_id, user['id']))
-        if not cursor.fetchone():
-            cursor.close()
-            db.close()
-            return jsonify({"error": "Board not found"}), 404
-        
-        # Update the default_image_url
-        if image_url:
-            cursor.execute("UPDATE boards SET default_image_url = %s WHERE id = %s AND user_id = %s", 
-                         (image_url, board_id, user['id']))
-        else:
-            cursor.execute("UPDATE boards SET default_image_url = NULL WHERE id = %s AND user_id = %s", 
-                         (board_id, user['id']))
-        
-        db.commit()
-        
-        cursor.close()
-        db.close()
-        
-        # Invalidate gallery cache if Redis is available
+
+        with tx(dictionary=True) as (db, cursor):
+            cursor.execute("SELECT default_image_url FROM boards WHERE id = %s AND user_id = %s",
+                           (board_id, user['id']))
+            row = cursor.fetchone()
+            if not row:
+                return jsonify({"error": "Board not found"}), 404
+            old_image_url = row['default_image_url']
+
+            if image_url:
+                cursor.execute(
+                    "UPDATE boards SET default_image_url = %s WHERE id = %s AND user_id = %s",
+                    (image_url, board_id, user['id']),
+                )
+            else:
+                cursor.execute(
+                    "UPDATE boards SET default_image_url = NULL WHERE id = %s AND user_id = %s",
+                    (board_id, user['id']),
+                )
+
+            record_audit(cursor, action='board.update_image', entity_type='board',
+                         entity_id=board_id, user_id=user['id'],
+                         actor_email=user.get('email'),
+                         before={'default_image_url': old_image_url},
+                         after={'default_image_url': image_url or None},
+                         metadata={'route': request.path},
+                         ip_address=request.remote_addr)
+
         if redis_client:
             redis_client.delete(f"view:{user['id']}:/")
-        
+
         return jsonify({"success": True, "message": "Board image updated successfully"})
     except Exception as e:
         print(f"Error setting board image: {str(e)}")
@@ -2282,51 +2233,45 @@ def set_section_image(section_id):
     try:
         data = request.get_json()
         image_url = data.get('image_url', '').strip()
-        
-        db = get_db_connection()
-        cursor = db.cursor(dictionary=True)
-        
-        # Check if section exists and belongs to user (using board JOIN for robustness)
-        cursor.execute("""
-            SELECT s.id, s.board_id 
-            FROM sections s 
-            JOIN boards b ON s.board_id = b.id
-            WHERE s.id = %s AND b.user_id = %s
-        """, (section_id, user['id']))
-        section = cursor.fetchone()
-        
-        if not section:
-            cursor.close()
-            db.close()
-            return jsonify({"error": "Section not found"}), 404
-        
-        # Update the default_image_url for the section
-        if image_url:
+
+        with tx(dictionary=True) as (db, cursor):
             cursor.execute("""
-                UPDATE sections 
-                SET default_image_url = %s 
-                WHERE id = %s AND user_id = %s
-            """, (image_url, section_id, user['id']))
-        else:
-            cursor.execute("""
-                UPDATE sections 
-                SET default_image_url = NULL 
-                WHERE id = %s AND user_id = %s
+                SELECT s.id, s.board_id, s.default_image_url
+                FROM sections s
+                JOIN boards b ON s.board_id = b.id
+                WHERE s.id = %s AND b.user_id = %s
             """, (section_id, user['id']))
-        
-        db.commit()
-        
-        cursor.close()
-        db.close()
-        
-        # Invalidate gallery cache if Redis is available
+            section = cursor.fetchone()
+            if not section:
+                return jsonify({"error": "Section not found"}), 404
+            old_image_url = section['default_image_url']
+
+            if image_url:
+                cursor.execute("""
+                    UPDATE sections SET default_image_url = %s
+                    WHERE id = %s AND user_id = %s
+                """, (image_url, section_id, user['id']))
+            else:
+                cursor.execute("""
+                    UPDATE sections SET default_image_url = NULL
+                    WHERE id = %s AND user_id = %s
+                """, (section_id, user['id']))
+
+            record_audit(cursor, action='section.update_image', entity_type='section',
+                         entity_id=section_id, user_id=user['id'],
+                         actor_email=user.get('email'),
+                         before={'default_image_url': old_image_url},
+                         after={'default_image_url': image_url or None},
+                         metadata={'route': request.path, 'board_id': section['board_id']},
+                         ip_address=request.remote_addr)
+
         if redis_client:
             redis_client.delete(f"view:{user['id']}:/")
-        
+
         return jsonify({
-            "success": True, 
+            "success": True,
             "message": "Section cover updated successfully",
-            "board_id": section["board_id"]
+            "board_id": section["board_id"],
         })
     except Exception as e:
         print(f"Error setting section image: {str(e)}")
@@ -3176,35 +3121,32 @@ def save_pin_dimensions(pin_id):
 def delete_pin(pin_id):
     user = get_current_user()
     try:
-        db = get_db_connection()
-        cursor = db.cursor()
-        
-        # First get the board_id for this pin (user-scoped)
-        cursor.execute("SELECT board_id FROM pins WHERE id = %s AND user_id = %s", (pin_id, user['id']))
-        result = cursor.fetchone()
-        if not result:
-            return jsonify({"error": "Pin not found"}), 404
-            
-        board_id = result[0]
-        
-        # Delete the pin (user-scoped)
-        cursor.execute("DELETE FROM pins WHERE id = %s AND user_id = %s", (pin_id, user['id']))
-        db.commit()
-        
-        # Invalidate gallery cache if Redis is available
+        with tx() as (db, cursor):
+            cursor.execute("SELECT id FROM pins WHERE id = %s AND user_id = %s",
+                           (pin_id, user['id']))
+            if not cursor.fetchone():
+                return jsonify({"error": "Pin not found"}), 404
+
+            before = snapshot_pin(cursor, pin_id)
+            board_id = before['board_id'] if before else None
+
+            cursor.execute("DELETE FROM pins WHERE id = %s AND user_id = %s",
+                           (pin_id, user['id']))
+
+            record_audit(cursor, action='pin.delete', entity_type='pin',
+                         entity_id=pin_id, user_id=user['id'],
+                         actor_email=user.get('email'),
+                         before=before, after=None,
+                         metadata={'route': request.path, 'board_id': board_id},
+                         ip_address=request.remote_addr)
+
         if redis_client:
             redis_client.delete(f"view:{user['id']}:/")
 
-        return jsonify({
-            'success': True,
-            'board_id': board_id
-        })
+        return jsonify({'success': True, 'board_id': board_id})
     except Exception as e:
         print(f"Error deleting pin: {str(e)}")
         return jsonify({"error": "Failed to delete pin"}), 500
-    finally:
-        cursor.close()
-        db.close()
 
 @app.route('/check-archive/<int:pin_id>', methods=['POST'])
 @login_required
