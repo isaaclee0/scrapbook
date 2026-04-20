@@ -242,6 +242,17 @@ The application uses the following main tables:
 - `sections`: Organizes content within boards
 - `pins`: Stores individual pin data
 - `url_health`: Tracks URL status and archives
+- `audit_log`: Tracks every mutation (create/update/delete) for ~30 days; viewable at `/audit-log`
+
+## Maintenance
+
+Run daily (e.g. via cron) to enforce the 30-day audit log retention:
+
+```bash
+docker compose exec web python scripts/audit_cleanup.py
+```
+
+Override the window with `AUDIT_RETENTION_DAYS=N` if you want a different period.
 
 ## Security
 
