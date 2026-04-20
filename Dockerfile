@@ -72,24 +72,33 @@ COPY --from=builder /root/.local /home/appuser/.local
 
 WORKDIR /app
 
-# Copy only the files the app actually needs at runtime
-COPY app.py auth_utils.py email_service.py migrate.py VERSION requirements.txt ./
+# Copy only the files the app actually needs at runtime.
+# audit_helpers.py and csrf.py are required imports — without them app.py
+# fails immediately at startup with ImportError.
+COPY app.py auth_utils.py email_service.py audit_helpers.py csrf.py \
+     migrate.py VERSION requirements.txt ./
 COPY templates/ ./templates/
 COPY static/ ./static/
 COPY scripts/ ./scripts/
 COPY init.sql ./
+COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 
 # Drop in the compiled CSS (overwrites the placeholder if any)
 COPY --from=builder /build/static/css/output.css ./static/css/output.css
 
-RUN mkdir -p /app/static/cached_images /app/static/images \
+RUN chmod +x /usr/local/bin/docker-entrypoint.sh \
+    && mkdir -p /app/static/cached_images /app/static/images \
     && chown -R appuser:appuser /app /home/appuser/.local
 
 USER appuser
 
 EXPOSE 8000
 
-HEALTHCHECK --interval=30s --timeout=10s --start-period=15s --retries=3 \
+HEALTHCHECK --interval=30s --timeout=10s --start-period=30s --retries=3 \
     CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')" || exit 1
 
+# Entrypoint waits for the DB, runs migrate.py (idempotent), then execs the CMD.
+# This means a fresh container coming up against an existing volume will apply
+# any new schema migrations automatically before serving traffic.
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
 CMD ["python", "app.py"]

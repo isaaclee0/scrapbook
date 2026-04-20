@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token }}">
     <title>Scrapbook</title>
 
     <!-- Cache-busting meta tags for development -->
@@ -849,6 +850,11 @@
                 <span id="pinSizeValue" class="text-sm font-medium text-gray-700 min-w-[4rem]">Medium</span>
             </div>
             {% endif %}
+            <a href="{{ url_for('audit_log_page') }}"
+                class="text-lg text-gray-600 hover:text-gray-900 hover:bg-gray-100 p-2 rounded-lg transition-colors"
+                title="Audit log">
+                <i class="fas fa-clock-rotate-left"></i>
+            </a>
             <!-- Logout button -->
             <a href="{{ url_for('logout') }}"
                 class="text-lg text-gray-600 hover:text-gray-900 hover:bg-gray-100 p-2 rounded-lg transition-colors"
@@ -1090,6 +1096,33 @@
     </div>
 
     <script>
+        // Auto-attach CSRF token to all same-origin, state-changing fetch() calls.
+        // The server requires X-CSRF-Token on every POST/PUT/PATCH/DELETE to
+        // routes guarded by @require_csrf. Wrapping window.fetch here means
+        // existing call sites in templates need no changes.
+        (function () {
+            var meta = document.querySelector('meta[name="csrf-token"]');
+            var csrfToken = meta ? meta.getAttribute('content') : '';
+            if (!csrfToken || !window.fetch) return;
+            var origFetch = window.fetch.bind(window);
+            window.fetch = function (input, init) {
+                init = init || {};
+                var method = (init.method || (typeof input === 'object' && input && input.method) || 'GET').toUpperCase();
+                if (method === 'GET' || method === 'HEAD' || method === 'OPTIONS') {
+                    return origFetch(input, init);
+                }
+                // Only attach for same-origin URLs
+                var url = typeof input === 'string' ? input : (input && input.url) || '';
+                var sameOrigin = !/^https?:\/\//i.test(url) || url.indexOf(window.location.origin) === 0;
+                if (!sameOrigin) return origFetch(input, init);
+                var headers = new Headers(init.headers || (typeof input === 'object' && input ? input.headers : undefined) || {});
+                if (!headers.has('X-CSRF-Token')) headers.set('X-CSRF-Token', csrfToken);
+                init.headers = headers;
+                return origFetch(input, init);
+            };
+            window.__csrfToken = csrfToken;
+        })();
+
         document.addEventListener('DOMContentLoaded', function () {
 
             // Pin size slider handling (global)

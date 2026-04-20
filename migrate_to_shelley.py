@@ -2,11 +2,22 @@
 """
 Migrate all existing content to shelley@leemail.com.au
 This is a one-time script for the production database.
+
+Bulk-mutation scripts like this one are dangerous — they can re-own or delete
+many rows in a single statement. To make accidents recoverable we:
+
+    1. Require an explicit `--yes` flag (or interactive 'yes' confirmation)
+       before any UPDATE/DELETE runs.
+    2. Capture before/after counts and write a single audit_log row in the same
+       transaction so the change is traceable from the /audit-log UI.
 """
 
+import json
 import mysql.connector
 import os
+import socket
 import sys
+import uuid
 
 SHELLEY_EMAIL = "shelley@leemail.com.au"
 
@@ -21,14 +32,48 @@ END = '\033[0m'
 def log(message, color=''):
     print(f"{color}{message}{END}")
 
-def migrate_to_shelley():
+def _confirm(skip: bool) -> bool:
+    if skip:
+        return True
+    log(f"{YELLOW}This will reassign EVERY board, section and pin to {SHELLEY_EMAIL}.{END}")
+    answer = input("Type 'yes' to continue: ").strip().lower()
+    return answer == 'yes'
+
+
+def _record_bulk_audit(cursor, *, user_id, before, after):
+    metadata = {
+        'script': os.path.basename(__file__),
+        'host': socket.gethostname(),
+        'invoked_by_user': os.getenv('USER') or os.getenv('USERNAME') or 'unknown',
+    }
+    cursor.execute(
+        """
+        INSERT INTO audit_log
+          (user_id, actor_email, action, entity_type, entity_id,
+           before_data, after_data, metadata, request_id, ip_address, outcome)
+        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+        """,
+        (
+            user_id, f"cli:{os.path.basename(__file__)}",
+            'bulk.reassign_ownership', 'user', user_id,
+            json.dumps(before), json.dumps(after), json.dumps(metadata),
+            uuid.uuid4().hex[:32], None, 'success',
+        ),
+    )
+
+
+def migrate_to_shelley(skip_confirm: bool = False):
     """Migrate all content to Shelley's account"""
     try:
         # Connect to database
         log(f"\n{BOLD}{'='*60}{END}")
         log(f"{BOLD}🔄 Migrating all content to {SHELLEY_EMAIL}{END}")
         log(f"{BOLD}{'='*60}{END}\n")
-        
+
+        if not _confirm(skip_confirm):
+            log(f"{YELLOW}Aborted by user.{END}")
+            return False
+
         connection = mysql.connector.connect(
             host=os.getenv('DB_HOST', 'db'),
             user=os.getenv('DB_USER', 'db'),
@@ -68,6 +113,16 @@ def migrate_to_shelley():
         log(f"   Boards:   {total_boards}")
         log(f"   Sections: {total_sections}")
         log(f"   Pins:     {total_pins}\n")
+
+        before_snapshot = {
+            'totals': {
+                'boards': total_boards,
+                'sections': total_sections,
+                'pins': total_pins,
+            },
+            'target_user_id': shelley_user_id,
+            'target_email': SHELLEY_EMAIL,
+        }
         
         # Update all boards
         log(f"{BLUE}📊 Updating boards...{END}")
@@ -95,7 +150,16 @@ def migrate_to_shelley():
         )
         pins_updated = cursor.rowcount
         log(f"{GREEN}✓ Updated {pins_updated} pins{END}")
-        
+
+        after_snapshot = {
+            'updated': {
+                'boards': boards_updated,
+                'sections': sections_updated,
+                'pins': pins_updated,
+            },
+        }
+        _record_bulk_audit(cursor, user_id=shelley_user_id, before=before_snapshot, after=after_snapshot)
+
         connection.commit()
         
         # Verify migration
@@ -129,6 +193,7 @@ def migrate_to_shelley():
         return False
 
 if __name__ == "__main__":
-    success = migrate_to_shelley()
+    skip_confirm = '--yes' in sys.argv or '-y' in sys.argv
+    success = migrate_to_shelley(skip_confirm=skip_confirm)
     sys.exit(0 if success else 1)
 

@@ -9,6 +9,8 @@ A Flask-based web application for organizing and managing personal image collect
 - **Image Scraping**: Automatically extract images from websites
 - **Search Functionality**: Search through boards and pins
 - **URL Health Monitoring**: Track broken links and find archived versions
+- **Audit Log + One-click Undo**: Every board/section/pin mutation is recorded for ~30 days; you can undo deletes and merges from `/audit-log`
+- **CSRF Protection**: Per-session HMAC tokens guard every destructive POST
 - **Redis Caching**: Fast performance with Redis caching
 - **Docker Ready**: Complete Docker setup for easy deployment
 
@@ -245,6 +247,20 @@ The application uses the following main tables:
 - `audit_log`: Tracks every mutation (create/update/delete) for ~30 days; viewable at `/audit-log`
 
 ## Maintenance
+
+### Schema migrations
+
+The `web` container's entrypoint (`docker-entrypoint.sh`) automatically runs
+`migrate.py` on every start before launching the app. Migrations are idempotent
+(every step uses `IF NOT EXISTS` / column probing), so this is safe to re-run
+and means new schema (e.g. the `audit_log` table) is applied automatically when
+you roll out a new image. If migration fails the container exits non-zero so
+your orchestrator can restart or alert on it.
+
+Override the wait with `DB_WAIT_SECONDS=N` (default 60) if your database takes
+longer than a minute to become reachable.
+
+### Audit log retention
 
 Run daily (e.g. via cron) to enforce the 30-day audit log retention:
 

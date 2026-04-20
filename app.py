@@ -10,6 +10,7 @@ from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 import re
 import html
+import json
 import unicodedata
 import time
 import base64
@@ -23,6 +24,7 @@ import traceback
 from auth_utils import generate_magic_link_token, generate_session_token, verify_token, refresh_session_token, generate_otp, store_otp, verify_otp
 from email_service import send_otp_email, send_welcome_email
 from audit_helpers import record_audit, snapshot_board, snapshot_pin, snapshot_section
+from csrf import issue_csrf_token, require_csrf
 
 # Try to import redis, but make it optional
 try:
@@ -555,6 +557,13 @@ def set_refreshed_token_cookie(response):
 def inject_version():
     """Make VERSION available to all templates"""
     return {'VERSION': VERSION}
+
+
+@app.context_processor
+def inject_csrf_token():
+    """Expose a per-session CSRF token to all templates as `csrf_token`."""
+    token = request.cookies.get('session_token', '') if request else ''
+    return {'csrf_token': issue_csrf_token(token) if token else ''}
 
 def login_required(f):
     """
@@ -1535,6 +1544,7 @@ def save_pasted_image(data_url):
 
 @app.route('/add-pin', methods=['POST'])
 @login_required
+@require_csrf
 def add_pin():
     user = get_current_user()
     try:
@@ -1624,6 +1634,7 @@ def add_pin():
 
 @app.route('/update-pin/<int:pin_id>', methods=['POST'])
 @login_required
+@require_csrf
 def update_pin(pin_id):
     user = get_current_user()
     data = request.get_json()
@@ -1784,6 +1795,7 @@ def view_pin(pin_id):
 
 @app.route('/create-board', methods=['POST'])
 @login_required
+@require_csrf
 def create_board():
     user = get_current_user()
     try:
@@ -1837,6 +1849,7 @@ def create_board():
 
 @app.route('/move-pin/<int:pin_id>', methods=['POST'])
 @login_required
+@require_csrf
 def move_pin(pin_id):
     user = get_current_user()
     data = request.get_json()
@@ -1885,6 +1898,7 @@ def move_pin(pin_id):
 
 @app.route('/create-section', methods=['POST'])
 @login_required
+@require_csrf
 def create_section():
     user = get_current_user()
     try:
@@ -1928,6 +1942,7 @@ def create_section():
 
 @app.route('/update-section/<int:section_id>', methods=['POST'])
 @login_required
+@require_csrf
 def update_section(section_id):
     user = get_current_user()
     try:
@@ -1967,6 +1982,7 @@ def update_section(section_id):
 
 @app.route('/delete-section/<int:section_id>', methods=['POST'])
 @login_required
+@require_csrf
 def delete_section(section_id):
     user = get_current_user()
     try:
@@ -2001,6 +2017,7 @@ def delete_section(section_id):
 
 @app.route('/move-pin-to-section/<int:pin_id>', methods=['POST'])
 @login_required
+@require_csrf
 def move_pin_to_section(pin_id):
     user = get_current_user()
     try:
@@ -2047,6 +2064,7 @@ def move_pin_to_section(pin_id):
 
 @app.route('/rename-board/<int:board_id>', methods=['POST'])
 @login_required
+@require_csrf
 def rename_board(board_id):
     user = get_current_user()
     try:
@@ -2083,6 +2101,7 @@ def rename_board(board_id):
 
 @app.route('/move-board/<int:board_id>', methods=['POST'])
 @login_required
+@require_csrf
 def move_board(board_id):
     user = get_current_user()
     try:
@@ -2150,6 +2169,7 @@ def move_board(board_id):
 
 @app.route('/delete-board/<int:board_id>', methods=['POST'])
 @login_required
+@require_csrf
 def delete_board(board_id):
     user = get_current_user()
     try:
@@ -2185,6 +2205,7 @@ def delete_board(board_id):
 
 @app.route('/set-board-image/<int:board_id>', methods=['POST'])
 @login_required
+@require_csrf
 def set_board_image(board_id):
     user = get_current_user()
     try:
@@ -2228,6 +2249,7 @@ def set_board_image(board_id):
 
 @app.route('/set-section-image/<int:section_id>', methods=['POST'])
 @login_required
+@require_csrf
 def set_section_image(section_id):
     user = get_current_user()
     try:
@@ -3118,6 +3140,7 @@ def save_pin_dimensions(pin_id):
 
 @app.route('/delete-pin/<int:pin_id>', methods=['POST'])
 @login_required
+@require_csrf
 def delete_pin(pin_id):
     user = get_current_user()
     try:
@@ -3243,6 +3266,363 @@ def check_archive(pin_id):
                 db.close()
             except Exception:
                 pass
+
+# ============================================================================
+# AUDIT LOG VIEWER + UNDO
+# ============================================================================
+
+# Actions that can be undone via the audit log. Each maps to an entity_type and
+# verifies the snapshot in `before_data` is sufficient to restore the entity.
+UNDOABLE_ACTIONS = {
+    'board.delete',
+    'board.move',
+    'pin.delete',
+    'section.delete',
+}
+
+
+@app.route('/audit-log')
+@login_required
+def audit_log_page():
+    """Render the audit log viewer for the current user."""
+    user = get_current_user()
+    return render_template('audit_log.html', user=user)
+
+
+@app.route('/api/audit-log')
+@login_required
+def api_audit_log():
+    """Return paginated audit_log rows for the current user.
+
+    Query params:
+        limit       max rows (default 50, capped at 200)
+        offset      pagination offset (default 0)
+        action      optional action filter (exact match, e.g. board.delete)
+        entity_type optional entity_type filter (board|section|pin)
+        outcome     optional outcome filter (success|failure)
+    """
+    user = get_current_user()
+    try:
+        limit = sanitize_integer(request.args.get('limit'), default=50)
+        offset = sanitize_integer(request.args.get('offset'), default=0)
+    except Exception:
+        limit, offset = 50, 0
+    limit = max(1, min(limit or 50, 200))
+    offset = max(0, offset or 0)
+
+    action = sanitize_string(request.args.get('action') or '', max_length=64)
+    entity_type = sanitize_string(request.args.get('entity_type') or '', max_length=32)
+    outcome = sanitize_string(request.args.get('outcome') or '', max_length=16)
+
+    where = ['user_id = %s']
+    params = [user['id']]
+    if action:
+        where.append('action = %s')
+        params.append(action)
+    if entity_type:
+        where.append('entity_type = %s')
+        params.append(entity_type)
+    if outcome in ('success', 'failure'):
+        where.append('outcome = %s')
+        params.append(outcome)
+    where_sql = ' AND '.join(where)
+
+    db = get_db_connection()
+    cursor = db.cursor(dictionary=True)
+    try:
+        cursor.execute(f"SELECT COUNT(*) AS total FROM audit_log WHERE {where_sql}", tuple(params))
+        total = (cursor.fetchone() or {}).get('total', 0)
+
+        cursor.execute(
+            f"""
+            SELECT id, created_at, user_id, actor_email, action, entity_type,
+                   entity_id, before_data, after_data, metadata, request_id,
+                   ip_address, outcome
+              FROM audit_log
+             WHERE {where_sql}
+             ORDER BY id DESC
+             LIMIT %s OFFSET %s
+            """,
+            tuple(params) + (limit, offset),
+        )
+        rows = cursor.fetchall() or []
+
+        for r in rows:
+            if r.get('created_at'):
+                r['created_at'] = r['created_at'].isoformat()
+            for col in ('before_data', 'after_data', 'metadata'):
+                val = r.get(col)
+                if isinstance(val, (bytes, bytearray)):
+                    try:
+                        val = val.decode('utf-8')
+                    except Exception:
+                        val = None
+                if isinstance(val, str) and val:
+                    try:
+                        r[col] = json.loads(val)
+                    except Exception:
+                        r[col] = None
+            r['undoable'] = (
+                r.get('action') in UNDOABLE_ACTIONS
+                and r.get('outcome') == 'success'
+                and bool(r.get('before_data'))
+            )
+
+        return jsonify({
+            'items': rows,
+            'total': total,
+            'limit': limit,
+            'offset': offset,
+        })
+    finally:
+        try:
+            cursor.close()
+        except Exception:
+            pass
+        try:
+            db.close()
+        except Exception:
+            pass
+
+
+def _undo_board_delete(cursor, user_id, before):
+    """Restore a board, its sections, and its pins from a board.delete snapshot.
+
+    `before` is a dict shaped by audit_helpers.snapshot_board:
+        { board: {...}, sections: [...], pins: [...] }
+    Re-uses the original ids so undo links remain stable. Re-insert can fail if
+    a row with that id already exists (rare race) — we fall through and surface
+    the error.
+    """
+    board = (before or {}).get('board') or {}
+    sections = (before or {}).get('sections') or []
+    pins = (before or {}).get('pins') or []
+    if not board:
+        raise ValueError('snapshot is missing the board record')
+    if int(board.get('user_id') or 0) != int(user_id):
+        raise PermissionError('snapshot belongs to another user')
+
+    cursor.execute(
+        """
+        INSERT INTO boards (id, name, image_url, user_id, created_at)
+        VALUES (%s, %s, %s, %s, %s)
+        """,
+        (
+            board['id'], board.get('name'), board.get('image_url'),
+            board['user_id'], board.get('created_at'),
+        ),
+    )
+    for s in sections:
+        cursor.execute(
+            """
+            INSERT INTO sections (id, board_id, name, image_url, user_id, created_at)
+            VALUES (%s, %s, %s, %s, %s, %s)
+            """,
+            (
+                s['id'], s['board_id'], s.get('name'), s.get('image_url'),
+                s['user_id'], s.get('created_at'),
+            ),
+        )
+    for p in pins:
+        cursor.execute(
+            """
+            INSERT INTO pins (id, image_url, title, board_id, section_id, notes,
+                              source_url, link, user_id, created_at)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+            """,
+            (
+                p['id'], p.get('image_url'), p.get('title'), p.get('board_id'),
+                p.get('section_id'), p.get('notes'), p.get('source_url'),
+                p.get('link'), p['user_id'], p.get('created_at'),
+            ),
+        )
+    return {'board_id': board['id'], 'sections_restored': len(sections), 'pins_restored': len(pins)}
+
+
+def _undo_pin_delete(cursor, user_id, before):
+    p = (before or {}).get('pin') if isinstance(before, dict) and 'pin' in before else before
+    if not p:
+        raise ValueError('snapshot is missing the pin record')
+    if int(p.get('user_id') or 0) != int(user_id):
+        raise PermissionError('snapshot belongs to another user')
+    cursor.execute(
+        """
+        INSERT INTO pins (id, image_url, title, board_id, section_id, notes,
+                          source_url, link, user_id, created_at)
+        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+        """,
+        (
+            p['id'], p.get('image_url'), p.get('title'), p.get('board_id'),
+            p.get('section_id'), p.get('notes'), p.get('source_url'),
+            p.get('link'), p['user_id'], p.get('created_at'),
+        ),
+    )
+    return {'pin_id': p['id']}
+
+
+def _undo_section_delete(cursor, user_id, before):
+    section = (before or {}).get('section') or {}
+    pins = (before or {}).get('pins') or []
+    if not section:
+        raise ValueError('snapshot is missing the section record')
+    if int(section.get('user_id') or 0) != int(user_id):
+        raise PermissionError('snapshot belongs to another user')
+    cursor.execute(
+        """
+        INSERT INTO sections (id, board_id, name, image_url, user_id, created_at)
+        VALUES (%s, %s, %s, %s, %s, %s)
+        """,
+        (
+            section['id'], section['board_id'], section.get('name'),
+            section.get('image_url'), section['user_id'], section.get('created_at'),
+        ),
+    )
+    for p in pins:
+        # Re-point each pin back at this section.
+        cursor.execute(
+            "UPDATE pins SET section_id = %s WHERE id = %s AND user_id = %s",
+            (section['id'], p['id'], user_id),
+        )
+    return {'section_id': section['id'], 'pins_restored': len(pins)}
+
+
+def _undo_board_move(cursor, user_id, before, after):
+    """Reverse a board.move by:
+
+      1. Re-creating the original (deleted) board from `before.board`.
+      2. Moving the original sections + pins back from the target section/board.
+      3. Removing the section that move_board created in the target board.
+
+    This relies on the metadata recorded by move_board which captures the
+    target_board_id and the new_section_id used for migrated pins.
+    """
+    board = (before or {}).get('board') or {}
+    sections = (before or {}).get('sections') or []
+    pins = (before or {}).get('pins') or []
+    meta = after or {}
+    target_board_id = meta.get('target_board_id')
+    new_section_id = meta.get('new_section_id')
+    if not board or not target_board_id or not new_section_id:
+        raise ValueError('snapshot is missing board.move metadata')
+    if int(board.get('user_id') or 0) != int(user_id):
+        raise PermissionError('snapshot belongs to another user')
+
+    cursor.execute(
+        """
+        INSERT INTO boards (id, name, image_url, user_id, created_at)
+        VALUES (%s, %s, %s, %s, %s)
+        """,
+        (
+            board['id'], board.get('name'), board.get('image_url'),
+            board['user_id'], board.get('created_at'),
+        ),
+    )
+    for s in sections:
+        cursor.execute(
+            """
+            INSERT INTO sections (id, board_id, name, image_url, user_id, created_at)
+            VALUES (%s, %s, %s, %s, %s, %s)
+            """,
+            (
+                s['id'], board['id'], s.get('name'), s.get('image_url'),
+                s['user_id'], s.get('created_at'),
+            ),
+        )
+    for p in pins:
+        cursor.execute(
+            """
+            UPDATE pins
+               SET board_id = %s, section_id = %s
+             WHERE id = %s AND user_id = %s
+            """,
+            (board['id'], p.get('section_id'), p['id'], user_id),
+        )
+    cursor.execute(
+        "DELETE FROM sections WHERE id = %s AND board_id = %s AND user_id = %s",
+        (new_section_id, target_board_id, user_id),
+    )
+    return {
+        'restored_board_id': board['id'],
+        'pins_moved_back': len(pins),
+        'sections_moved_back': len(sections),
+        'removed_section_id': new_section_id,
+    }
+
+
+@app.route('/audit/undo/<int:audit_id>', methods=['POST'])
+@login_required
+@require_csrf
+def audit_undo(audit_id):
+    """Undo a specific audit_log event for the current user.
+
+    Only specific actions are undoable (see UNDOABLE_ACTIONS). Each undo writes
+    its own audit row with action `<orig>.undo` so the trail itself is auditable.
+    """
+    user = get_current_user()
+    try:
+        with tx(dictionary=True) as (db, cursor):
+            cursor.execute(
+                "SELECT * FROM audit_log WHERE id = %s AND user_id = %s",
+                (audit_id, user['id']),
+            )
+            evt = cursor.fetchone()
+            if not evt:
+                return jsonify({'error': 'Audit event not found'}), 404
+            action = evt.get('action') or ''
+            if action not in UNDOABLE_ACTIONS:
+                return jsonify({'error': f'Action {action!r} is not undoable'}), 400
+            if evt.get('outcome') != 'success':
+                return jsonify({'error': 'Cannot undo a failed event'}), 400
+
+            before_raw = evt.get('before_data')
+            after_raw = evt.get('after_data')
+            if isinstance(before_raw, (bytes, bytearray)):
+                before_raw = before_raw.decode('utf-8', errors='replace')
+            if isinstance(after_raw, (bytes, bytearray)):
+                after_raw = after_raw.decode('utf-8', errors='replace')
+            before = json.loads(before_raw) if isinstance(before_raw, str) and before_raw else (before_raw or {})
+            after = json.loads(after_raw) if isinstance(after_raw, str) and after_raw else (after_raw or {})
+
+            if action == 'board.delete':
+                result = _undo_board_delete(cursor, user['id'], before)
+            elif action == 'pin.delete':
+                result = _undo_pin_delete(cursor, user['id'], before)
+            elif action == 'section.delete':
+                result = _undo_section_delete(cursor, user['id'], before)
+            elif action == 'board.move':
+                result = _undo_board_move(cursor, user['id'], before, after)
+            else:
+                return jsonify({'error': 'Unsupported undo'}), 400
+
+            record_audit(
+                cursor,
+                action=f"{action}.undo",
+                entity_type=evt.get('entity_type') or 'unknown',
+                entity_id=evt.get('entity_id'),
+                user_id=user['id'],
+                actor_email=user.get('email'),
+                before=after,
+                after=result,
+                metadata={'undid_audit_id': audit_id, 'original_action': action},
+                ip_address=request.remote_addr,
+            )
+
+        try:
+            redis_client.delete(f"view:{user['id']}:/")
+        except Exception:
+            pass
+        return jsonify({'success': True, 'result': result})
+    except PermissionError as e:
+        return jsonify({'error': str(e)}), 403
+    except ValueError as e:
+        return jsonify({'error': str(e)}), 400
+    except mysql.connector.IntegrityError as e:
+        # Most common: an entity with the snapshotted id already exists.
+        return jsonify({'error': f'Cannot restore: {e.msg or str(e)}'}), 409
+    except Exception as e:
+        print(f"Error in audit_undo: {e}")
+        return jsonify({'error': 'Failed to undo'}), 500
+
 
 # ============================================================================
 # DATABASE INITIALIZATION

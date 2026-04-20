@@ -99,10 +99,12 @@ def snapshot_pin(cursor, pin_id: int) -> Optional[dict]:
 
 
 def snapshot_section(cursor, section_id: int) -> Optional[dict]:
+    """Capture a section snapshot in the same {section, pins} shape used by
+    snapshot_board so the audit-undo code can treat them uniformly."""
     cursor.execute("SELECT * FROM sections WHERE id = %s", (section_id,))
     section = _row_to_dict(cursor, cursor.fetchone())
     if not section:
         return None
     cursor.execute("SELECT * FROM pins WHERE section_id = %s", (section_id,))
-    section['pins'] = _rows_to_dicts(cursor, cursor.fetchall())
-    return section
+    pins = _rows_to_dicts(cursor, cursor.fetchall())
+    return {"section": section, "pins": pins}

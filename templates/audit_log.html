@@ -1,0 +1,253 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="max-w-6xl mx-auto px-4 py-8">
+    <div class="mb-6">
+        <h1 class="text-3xl font-semibold text-gray-900">Audit log</h1>
+        <p class="text-gray-600 mt-1">
+            Every change you make to boards, sections and pins is recorded here for ~30 days.
+            You can undo destructive changes (deletes and board moves) using the buttons on the right.
+        </p>
+    </div>
+
+    <div class="bg-white border border-gray-200 rounded-lg p-4 mb-4 flex flex-wrap gap-3 items-end">
+        <div>
+            <label class="block text-xs font-medium text-gray-600 mb-1">Action</label>
+            <select id="filterAction" class="border border-gray-300 rounded px-2 py-1 text-sm">
+                <option value="">All</option>
+                <option value="board.create">board.create</option>
+                <option value="board.rename">board.rename</option>
+                <option value="board.set_image">board.set_image</option>
+                <option value="board.delete">board.delete</option>
+                <option value="board.move">board.move</option>
+                <option value="board.delete.undo">board.delete.undo</option>
+                <option value="board.move.undo">board.move.undo</option>
+                <option value="section.create">section.create</option>
+                <option value="section.update">section.update</option>
+                <option value="section.set_image">section.set_image</option>
+                <option value="section.delete">section.delete</option>
+                <option value="section.delete.undo">section.delete.undo</option>
+                <option value="pin.create">pin.create</option>
+                <option value="pin.update">pin.update</option>
+                <option value="pin.move">pin.move</option>
+                <option value="pin.move_to_section">pin.move_to_section</option>
+                <option value="pin.delete">pin.delete</option>
+                <option value="pin.delete.undo">pin.delete.undo</option>
+            </select>
+        </div>
+        <div>
+            <label class="block text-xs font-medium text-gray-600 mb-1">Entity type</label>
+            <select id="filterEntityType" class="border border-gray-300 rounded px-2 py-1 text-sm">
+                <option value="">All</option>
+                <option value="board">board</option>
+                <option value="section">section</option>
+                <option value="pin">pin</option>
+            </select>
+        </div>
+        <div>
+            <label class="block text-xs font-medium text-gray-600 mb-1">Outcome</label>
+            <select id="filterOutcome" class="border border-gray-300 rounded px-2 py-1 text-sm">
+                <option value="">All</option>
+                <option value="success">success</option>
+                <option value="failure">failure</option>
+            </select>
+        </div>
+        <button id="applyFilters" class="px-4 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded text-sm">
+            Apply
+        </button>
+        <button id="resetFilters" class="px-4 py-2 bg-gray-200 hover:bg-gray-300 text-gray-700 rounded text-sm">
+            Reset
+        </button>
+        <span class="ml-auto text-sm text-gray-500" id="totalCount"></span>
+    </div>
+
+    <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+        <table class="w-full text-sm">
+            <thead class="bg-gray-50 text-gray-700">
+                <tr>
+                    <th class="text-left px-3 py-2 font-medium">When</th>
+                    <th class="text-left px-3 py-2 font-medium">Action</th>
+                    <th class="text-left px-3 py-2 font-medium">Entity</th>
+                    <th class="text-left px-3 py-2 font-medium">Details</th>
+                    <th class="text-left px-3 py-2 font-medium">Outcome</th>
+                    <th class="text-right px-3 py-2 font-medium">Undo</th>
+                </tr>
+            </thead>
+            <tbody id="auditRows" class="divide-y divide-gray-100">
+                <tr><td colspan="6" class="px-3 py-6 text-center text-gray-400">Loading…</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="flex items-center justify-between mt-4">
+        <button id="prevPage" class="px-3 py-2 bg-gray-200 hover:bg-gray-300 rounded text-sm">‹ Previous</button>
+        <span class="text-sm text-gray-600" id="pageLabel"></span>
+        <button id="nextPage" class="px-3 py-2 bg-gray-200 hover:bg-gray-300 rounded text-sm">Next ›</button>
+    </div>
+</div>
+
+<script>
+(function () {
+    const PAGE_SIZE = 50;
+    let offset = 0;
+    let total = 0;
+    const rowsEl = document.getElementById('auditRows');
+    const totalEl = document.getElementById('totalCount');
+    const pageLabel = document.getElementById('pageLabel');
+    const filterAction = document.getElementById('filterAction');
+    const filterEntityType = document.getElementById('filterEntityType');
+    const filterOutcome = document.getElementById('filterOutcome');
+
+    function fmtTime(iso) {
+        if (!iso) return '';
+        try {
+            const d = new Date(iso);
+            return d.toLocaleString();
+        } catch (_) { return iso; }
+    }
+
+    function summary(row) {
+        const a = row.action || '';
+        const meta = row.metadata || {};
+        const before = row.before_data || {};
+        const after = row.after_data || {};
+        if (a === 'board.delete') {
+            const b = (before.board) || {};
+            return `Deleted board "${b.name || ''}" (id ${b.id || row.entity_id}). ${meta.pin_count || 0} pins, ${meta.section_count || 0} sections.`;
+        }
+        if (a === 'board.create') {
+            return `Created board "${(after.name) || meta.name || ''}".`;
+        }
+        if (a === 'board.rename') {
+            return `Renamed board ${row.entity_id}: "${meta.from || ''}" → "${meta.to || ''}".`;
+        }
+        if (a === 'board.move') {
+            return `Merged board "${(before.board||{}).name || ''}" into board ${meta.target_board_id} (new section "${meta.new_section_name || ''}").`;
+        }
+        if (a === 'board.set_image') {
+            return `Set cover image for board ${row.entity_id}.`;
+        }
+        if (a === 'pin.delete') {
+            const p = before;
+            return `Deleted pin "${p.title || ''}" (id ${p.id || row.entity_id}).`;
+        }
+        if (a === 'pin.create') {
+            return `Created pin "${(after.title) || ''}" on board ${after.board_id || ''}.`;
+        }
+        if (a === 'pin.update') {
+            const fields = (meta.changed_fields || []).join(', ');
+            return `Updated pin ${row.entity_id} (${fields || 'no field changes'}).`;
+        }
+        if (a === 'pin.move') {
+            return `Moved pin ${row.entity_id} from board ${meta.from_board_id} to board ${meta.to_board_id}.`;
+        }
+        if (a === 'pin.move_to_section') {
+            return `Moved pin ${row.entity_id} to section ${meta.to_section_id || 'none'}.`;
+        }
+        if (a === 'section.create') {
+            return `Created section "${(after.name) || ''}" on board ${after.board_id || ''}.`;
+        }
+        if (a === 'section.update') {
+            return `Renamed section ${row.entity_id}: "${meta.from || ''}" → "${meta.to || ''}".`;
+        }
+        if (a === 'section.delete') {
+            const s = (before.section) || {};
+            return `Deleted section "${s.name || ''}" (id ${s.id || row.entity_id}). ${(before.pins || []).length} pins detached.`;
+        }
+        if (a === 'section.set_image') {
+            return `Set cover image for section ${row.entity_id}.`;
+        }
+        if (a.endsWith('.undo')) {
+            return `Undid event ${meta.undid_audit_id || ''} (${meta.original_action || ''}).`;
+        }
+        return JSON.stringify(meta || {});
+    }
+
+    function renderRows(items) {
+        if (!items.length) {
+            rowsEl.innerHTML = '<tr><td colspan="6" class="px-3 py-6 text-center text-gray-400">No events.</td></tr>';
+            return;
+        }
+        const html = items.map(r => {
+            const undoBtn = r.undoable
+                ? `<button data-undo="${r.id}" class="px-2 py-1 bg-red-50 hover:bg-red-100 text-red-700 border border-red-200 rounded text-xs">Undo</button>`
+                : '<span class="text-gray-300 text-xs">—</span>';
+            const outcomeClass = r.outcome === 'success' ? 'text-green-700' : 'text-red-700';
+            return `
+                <tr>
+                    <td class="px-3 py-2 text-gray-500 whitespace-nowrap">${fmtTime(r.created_at)}</td>
+                    <td class="px-3 py-2 font-mono text-xs text-gray-700">${r.action}</td>
+                    <td class="px-3 py-2 text-gray-700">${r.entity_type}${r.entity_id ? ' ' + r.entity_id : ''}</td>
+                    <td class="px-3 py-2 text-gray-700">${escapeHtml(summary(r))}</td>
+                    <td class="px-3 py-2 ${outcomeClass}">${r.outcome}</td>
+                    <td class="px-3 py-2 text-right">${undoBtn}</td>
+                </tr>`;
+        }).join('');
+        rowsEl.innerHTML = html;
+        rowsEl.querySelectorAll('button[data-undo]').forEach(btn => {
+            btn.addEventListener('click', () => undoEvent(btn.getAttribute('data-undo'), btn));
+        });
+    }
+
+    function escapeHtml(s) {
+        return String(s == null ? '' : s)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;');
+    }
+
+    async function load() {
+        rowsEl.innerHTML = '<tr><td colspan="6" class="px-3 py-6 text-center text-gray-400">Loading…</td></tr>';
+        const params = new URLSearchParams({ limit: PAGE_SIZE, offset });
+        if (filterAction.value) params.set('action', filterAction.value);
+        if (filterEntityType.value) params.set('entity_type', filterEntityType.value);
+        if (filterOutcome.value) params.set('outcome', filterOutcome.value);
+        try {
+            const res = await fetch('/api/audit-log?' + params.toString());
+            if (!res.ok) throw new Error('http ' + res.status);
+            const data = await res.json();
+            total = data.total || 0;
+            totalEl.textContent = `${total} event${total === 1 ? '' : 's'}`;
+            renderRows(data.items || []);
+            const start = total === 0 ? 0 : offset + 1;
+            const end = Math.min(offset + PAGE_SIZE, total);
+            pageLabel.textContent = `${start}–${end} of ${total}`;
+        } catch (e) {
+            rowsEl.innerHTML = `<tr><td colspan="6" class="px-3 py-6 text-center text-red-600">Failed to load: ${escapeHtml(e.message)}</td></tr>`;
+        }
+    }
+
+    async function undoEvent(id, btn) {
+        if (!confirm('Undo this event? This will recreate the affected entities with their original IDs.')) return;
+        btn.disabled = true; btn.textContent = 'Undoing…';
+        try {
+            const res = await fetch('/audit/undo/' + id, { method: 'POST' });
+            const data = await res.json().catch(() => ({}));
+            if (!res.ok || !data.success) {
+                alert('Undo failed: ' + (data.error || ('http ' + res.status)));
+                btn.disabled = false; btn.textContent = 'Undo';
+                return;
+            }
+            await load();
+        } catch (e) {
+            alert('Undo failed: ' + e.message);
+            btn.disabled = false; btn.textContent = 'Undo';
+        }
+    }
+
+    document.getElementById('applyFilters').addEventListener('click', () => { offset = 0; load(); });
+    document.getElementById('resetFilters').addEventListener('click', () => {
+        filterAction.value = ''; filterEntityType.value = ''; filterOutcome.value = '';
+        offset = 0; load();
+    });
+    document.getElementById('prevPage').addEventListener('click', () => {
+        if (offset >= PAGE_SIZE) { offset -= PAGE_SIZE; load(); }
+    });
+    document.getElementById('nextPage').addEventListener('click', () => {
+        if (offset + PAGE_SIZE < total) { offset += PAGE_SIZE; load(); }
+    });
+    load();
+})();
+</script>
+{% endblock %}
