@@ -1492,128 +1492,108 @@
     }
 
     function pollCachingProgress() {
-        let previousCachedCount = processingState.cachedPins;
-        let pollAttempts = 0;
-        const maxPollAttempts = 40; // Maximum 2 minutes of polling (40 * 3 seconds)
-        let noProgressCount = 0;
-        const maxNoProgressCount = 10; // Stop if no progress for 30 seconds
+        // Despite the name kept for backwards compatibility, this opens a
+        // Server-Sent Events stream to /api/board-events/<id> and reacts to
+        // pin_cached / pin_colored events as they happen — no polling.
+        const boardId = getBoardId();
+        const startTime = Date.now();
+        const maxStreamMs = 120000;   // hard cap: 2 minutes total
+        const maxNoProgressMs = 30000; // advance if no event for 30s
+        let noProgressTimer = null;
+        let advanced = false;
 
-        // Check caching progress every 3 seconds
-        const checkProgress = () => {
-            pollAttempts++;
-            devLog(`🔄 Polling caching progress... (attempt ${pollAttempts}/${maxPollAttempts})`);
+        const es = new EventSource(`/api/board-events/${boardId}`);
+        processingState.eventSource = es;
 
-            // Check if we've exceeded maximum polling attempts
-            if (pollAttempts >= maxPollAttempts) {
-                devWarn('⏰ Maximum polling time reached, stopping caching phase');
-                devWarn('📋 Some images may have failed to cache (videos, rate limits, etc.)');
-                devLog('✅ Phase 1 complete: Moving to color extraction (with remaining images)');
-                processingState.phase = 'extracting';
-                updateProcessingStatus();
-                setTimeout(startColorExtraction, 2000);
-                return;
-            }
-
-            // Check if we have new cached images by making a quick API call
-            fetch(`/api/board-status/${getBoardId()}`, {
-                signal: processingState.abortController?.signal
-            })
-                .then(response => response.json())
-                .then(data => {
-                    if (data.success) {
-                        devLog(`📊 Caching status: ${data.cached_count}/${processingState.totalPins} images cached`);
-
-                        // Update cached pins in the DOM
-                        if (data.cached_pins && data.cached_pins.length > 0) {
-                            devLog(`📥 Updating ${data.cached_pins.length} newly cached pins in DOM`);
-                            updateCachedPinsInDOM(data.cached_pins);
-                        }
-
-                        // Update extracted pins in the DOM
-                        if (data.extracted_pins && data.extracted_pins.length > 0) {
-                            devLog(`🎨 Updating ${data.extracted_pins.length} newly color-extracted pins in DOM`);
-                            updateExtractedPinsInDOM(data.extracted_pins);
-                        }
-
-                        // Check for progress
-                        if (data.cached_count > previousCachedCount) {
-                            const newlyCached = data.cached_count - previousCachedCount;
-                            devLog(`📁 +${newlyCached} images cached (${data.cached_count}/${processingState.totalPins} total)`);
-                            previousCachedCount = data.cached_count;
-                            noProgressCount = 0; // Reset no progress counter
-                        } else {
-                            noProgressCount++;
-                            devLog(`📋 No new images cached (${noProgressCount}/${maxNoProgressCount} attempts without progress)`);
-                        }
-
-                        // Update processing state counts
-                        processingState.cachedPins = data.cached_count;
-                        processingState.extractedPins = data.extracted_count;
-                        updateProcessingStatus();
-
-                        // Check if all external images are cached by counting current DOM state
-                        const allPins = document.querySelectorAll('.pin-card');
-                        const uncachedExternalPins = Array.from(allPins).filter(pin => {
-                            const imageUrl = pin.getAttribute('data-image-url');
-                            const hasCached = pin.getAttribute('data-has-cached') === 'true';
-                            return imageUrl && imageUrl.startsWith('http') && !hasCached;
-                        });
-
-                        devLog(`📋 Remaining uncached external images: ${uncachedExternalPins.length}`);
-
-                        if (uncachedExternalPins.length <= 0) {
-                            devLog('🎉 All external images have been cached!');
-                            devLog('✅ Phase 1 complete: Image caching finished');
-                            devLog('🎨 Phase 2: Starting color extraction...');
-                            processingState.phase = 'extracting';
-                            updateProcessingStatus();
-                            // Wait a moment then start color extraction
-                            setTimeout(startColorExtraction, 2000);
-                        } else if (noProgressCount >= maxNoProgressCount) {
-                            devWarn(`⏰ No progress for ${maxNoProgressCount * 3} seconds, moving to next phase`);
-                            devWarn(`📋 ${uncachedExternalPins.length} images couldn't be cached (likely videos or rate-limited)`);
-                            devLog('✅ Phase 1 complete: Moving to color extraction (with remaining images)');
-                            processingState.phase = 'extracting';
-                            updateProcessingStatus();
-                            setTimeout(startColorExtraction, 2000);
-                        } else {
-                            devLog(`⏳ Still waiting for ${uncachedExternalPins.length} images, will check again in 3 seconds...`);
-                            // Continue polling
-                            setTimeout(checkProgress, 3000);
-                        }
-                    } else {
-                        devWarn('⚠️ API returned error:', data);
-                        // Continue polling but count as no progress
-                        noProgressCount++;
-                        if (noProgressCount >= maxNoProgressCount) {
-                            devWarn('⚠️ Too many API errors, moving to next phase');
-                            processingState.phase = 'extracting';
-                            updateProcessingStatus();
-                            setTimeout(startColorExtraction, 2000);
-                        } else {
-                            setTimeout(checkProgress, 5000);
-                        }
-                    }
-                })
-                .catch(error => {
-                    devWarn('❌ Error checking caching progress:', error);
-                    noProgressCount++;
-                    if (noProgressCount >= maxNoProgressCount) {
-                        devWarn('❌ Too many network errors, moving to next phase');
-                        processingState.phase = 'extracting';
-                        updateProcessingStatus();
-                        setTimeout(startColorExtraction, 2000);
-                    } else {
-                        // Continue polling anyway
-                        setTimeout(checkProgress, 5000);
-                    }
-                });
+        const cleanup = () => {
+            if (noProgressTimer) { clearTimeout(noProgressTimer); noProgressTimer = null; }
+            if (es.readyState !== 2) es.close();
+            processingState.eventSource = null;
         };
 
-        // Start polling
-        devLog('⏳ Starting to poll for caching progress every 3 seconds...');
-        devLog('📋 Will automatically move to next phase if no progress or after 2 minutes');
-        setTimeout(checkProgress, 3000);
+        const advance = (reason) => {
+            if (advanced) return;
+            advanced = true;
+            devLog(`✅ Phase 1 complete (${reason}): moving to color extraction`);
+            cleanup();
+            processingState.phase = 'extracting';
+            updateProcessingStatus();
+            setTimeout(startColorExtraction, 2000);
+        };
+
+        const resetNoProgressTimer = () => {
+            if (noProgressTimer) clearTimeout(noProgressTimer);
+            noProgressTimer = setTimeout(() => {
+                advance(`no event for ${maxNoProgressMs / 1000}s — likely videos or rate-limited`);
+            }, maxNoProgressMs);
+        };
+
+        const checkComplete = () => {
+            const allPins = document.querySelectorAll('.pin-card');
+            const uncachedExternalPins = Array.from(allPins).filter(pin => {
+                const imageUrl = pin.getAttribute('data-image-url');
+                const hasCached = pin.getAttribute('data-has-cached') === 'true';
+                return imageUrl && imageUrl.startsWith('http') && !hasCached;
+            });
+            if (uncachedExternalPins.length <= 0) {
+                advance('all external images cached');
+            }
+            return uncachedExternalPins.length;
+        };
+
+        // Initial snapshot — same payload as /api/board-status, sent once at open.
+        es.addEventListener('snapshot', (e) => {
+            try {
+                const s = JSON.parse(e.data);
+                if (s.cached_pins?.length) updateCachedPinsInDOM(s.cached_pins);
+                if (s.extracted_pins?.length) updateExtractedPinsInDOM(s.extracted_pins);
+                processingState.cachedPins = s.cached_count;
+                processingState.extractedPins = s.extracted_count;
+                updateProcessingStatus();
+                devLog(`📊 SSE snapshot: ${s.cached_count}/${s.total_pins} cached, ${s.extracted_count} colored`);
+                checkComplete();
+            } catch (err) { devWarn('snapshot parse failed', err); }
+        });
+
+        // Live deltas.
+        es.onmessage = (e) => {
+            let evt;
+            try { evt = JSON.parse(e.data); } catch { return; }
+
+            if (evt.type === 'pin_cached') {
+                updateCachedPinsInDOM([{ id: evt.pin_id, cached_filename: evt.cached_filename }]);
+                processingState.cachedPins++;
+                updateProcessingStatus();
+                resetNoProgressTimer();
+                const remaining = checkComplete();
+                devLog(`📁 pin ${evt.pin_id} cached (${remaining} remaining)`);
+            } else if (evt.type === 'pin_colored') {
+                updateExtractedPinsInDOM([{ id: evt.pin_id, color1: evt.c1, color2: evt.c2 }]);
+                processingState.extractedPins++;
+                updateProcessingStatus();
+            }
+            // url_checked events also arrive on this channel but the URL-health
+            // phase has its own UI — ignore here.
+        };
+
+        es.onerror = () => {
+            // EventSource auto-reconnects; only give up after the hard cap.
+            if (Date.now() - startTime > maxStreamMs && !advanced) {
+                advance('stream errored past max time');
+            }
+        };
+
+        // Hook the existing AbortController so a navigation away kills the stream.
+        if (processingState.abortController) {
+            processingState.abortController.signal.addEventListener('abort', cleanup);
+        }
+
+        // Hard cap on the whole phase.
+        setTimeout(() => advance(`max ${maxStreamMs / 1000}s reached`), maxStreamMs);
+
+        // Start the no-progress watchdog from the moment we open the stream.
+        resetNoProgressTimer();
+        devLog('⏳ Streaming caching progress via SSE…');
     }
 
     function updateCachedPinsInDOM(cachedPins) {

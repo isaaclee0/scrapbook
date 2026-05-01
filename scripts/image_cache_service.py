@@ -23,7 +23,7 @@ try:
     from app import get_db_connection
 except ImportError:
     print("Could not import from app.py, using direct connection")
-    
+
     # Fallback database connection
     def get_db_connection():
         return mysql.connector.connect(
@@ -34,6 +34,11 @@ except ImportError:
             charset='utf8mb4',
             collation='utf8mb4_unicode_ci'
         )
+
+try:
+    import event_bus
+except ImportError:
+    event_bus = None
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -242,25 +247,24 @@ class ImageCacheService:
         while self.running:
             try:
                 task = self.task_queue.get(timeout=1)
-                if task is None:  # Stop signal
-                    break
-                
-                pin_id, image_url, quality_level = task
-                self._cache_image(pin_id, image_url, quality_level)
-                
             except queue.Empty:
                 continue
+            try:
+                if task is None:  # Stop signal
+                    break
+                pin_id, image_url, quality_level, board_id = task
+                self._cache_image(pin_id, image_url, quality_level, board_id)
             except Exception as e:
                 logger.error(f"Error in worker thread: {e}")
             finally:
                 self.task_queue.task_done()
-    
-    def queue_image_for_caching(self, pin_id, image_url, quality_level='low'):
+
+    def queue_image_for_caching(self, pin_id, image_url, quality_level='low', board_id=None):
         """Queue an image for background caching"""
         if not self.running:
             self.start_workers()
-        
-        self.task_queue.put((pin_id, image_url, quality_level))
+
+        self.task_queue.put((pin_id, image_url, quality_level, board_id))
         logger.info(f"Queued image for caching: pin_id={pin_id}, url={image_url[:50]}...")
     
     def _generate_cache_filename(self, original_url, quality_level):
@@ -332,7 +336,18 @@ class ImageCacheService:
         
         return True
     
-    def _cache_image(self, pin_id, image_url, quality_level='low'):
+    def _publish(self, board_id, event_type, payload):
+        """Best-effort publish to the per-board SSE stream. Silent on failure
+        because cache writes have already succeeded — losing a notification
+        only matters for live UI, not data."""
+        if event_bus is None or board_id is None:
+            return
+        try:
+            event_bus.publish(board_id, event_type, payload)
+        except Exception as e:
+            logger.warning(f"event_bus publish failed for {event_type} pin={payload.get('pin_id')}: {e}")
+
+    def _cache_image(self, pin_id, image_url, quality_level='low', board_id=None):
         """Download and cache an image or extract frame from video"""
         db = None
         cursor = None
@@ -359,20 +374,22 @@ class ImageCacheService:
             if cached_record and cached_record['cache_status'] == 'cached' and os.path.exists(cached_path):
                 # Update last accessed time
                 cursor.execute("""
-                    UPDATE cached_images 
-                    SET last_accessed = CURRENT_TIMESTAMP 
+                    UPDATE cached_images
+                    SET last_accessed = CURRENT_TIMESTAMP
                     WHERE id = %s
                 """, (cached_record['id'],))
-                
+
                 # Update pin to use cached image
                 cursor.execute("""
-                    UPDATE pins 
-                    SET cached_image_id = %s, uses_cached_image = TRUE 
+                    UPDATE pins
+                    SET cached_image_id = %s, uses_cached_image = TRUE
                     WHERE id = %s
                 """, (cached_record['id'], pin_id))
-                
+
                 db.commit()
                 logger.info(f"Image already cached: {cached_filename}")
+                self._publish(board_id, "pin_cached",
+                              {"pin_id": pin_id, "cached_filename": cached_filename})
                 return cached_record['id']
             
             # Determine if this is a video URL
@@ -486,6 +503,11 @@ class ImageCacheService:
             
             db.commit()
             logger.info(f"Successfully cached {'video frame' if is_video else 'image'} for pin {pin_id}")
+            self._publish(board_id, "pin_cached",
+                          {"pin_id": pin_id, "cached_filename": cached_filename})
+            if primary_color and secondary_color:
+                self._publish(board_id, "pin_colored",
+                              {"pin_id": pin_id, "c1": primary_color, "c2": secondary_color})
             return cache_id
             
         except requests.RequestException as e:
@@ -604,8 +626,8 @@ class ImageCacheService:
                 is_video = self._is_video_url(pin['image_url'])
                 media_type = "video" if is_video else "image"
                 logger.info(f"Queuing {media_type} for caching: pin {pin['id']} - {pin['image_url'][:60]}...")
-                
-                self.queue_image_for_caching(pin['id'], pin['image_url'], 'low')
+
+                self.queue_image_for_caching(pin['id'], pin['image_url'], 'low', pin.get('board_id'))
                 time.sleep(0.1)  # Small delay to avoid overwhelming the queue
             
             # Wait for all tasks to complete

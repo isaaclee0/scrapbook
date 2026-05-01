@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify, request, send_from_directory, redirect, url_for, make_response, g
+from flask import Flask, render_template, jsonify, request, send_from_directory, redirect, url_for, make_response, g, Response, stream_with_context
 import mysql.connector
 import os
 from mysql.connector import pooling
@@ -25,6 +25,7 @@ from auth_utils import generate_magic_link_token, generate_session_token, verify
 from email_service import send_otp_email, send_welcome_email
 from audit_helpers import record_audit, snapshot_board, snapshot_pin, snapshot_section
 from csrf import issue_csrf_token, require_csrf
+import event_bus
 
 # Try to import redis, but make it optional
 try:
@@ -59,6 +60,9 @@ if REDIS_AVAILABLE:
         redis_client = None
 else:
     redis_client = None
+
+# Wire pub/sub into the event bus (falls back to in-memory if redis_client is None)
+event_bus.init(redis_client)
 
 # Cache decorator
 def cache_view(timeout=300):
@@ -344,11 +348,12 @@ _CACHE_HEADERS = {
     'Sec-Fetch-Site': 'cross-site',
 }
 
-def _bg_download_and_cache(pin_id, image_url, width, height, cache_id):
+def _bg_download_and_cache(pin_id, image_url, width, height, cache_id, board_id=None):
     """
     Download an external image to local cache. Runs in a daemon thread.
     Updates cached_images and pins so future loads hit /cached/ instead of
-    the external CDN.
+    the external CDN. If board_id is provided, publishes a pin_cached event
+    to the board's SSE stream once the file is on disk.
     """
     if not _bg_cache_semaphore.acquire(blocking=False):
         # All slots busy — skip for now, browser will retry on next page load.
@@ -431,6 +436,13 @@ def _bg_download_and_cache(pin_id, image_url, width, height, cache_id):
         finally:
             cursor.close()
             db.close()
+
+        if board_id is not None:
+            try:
+                event_bus.publish(board_id, "pin_cached",
+                                  {"pin_id": pin_id, "cached_filename": filename})
+            except Exception as e:
+                print(f"[cache] pin {pin_id} publish failed: {e}")
 
     except Exception as e:
         print(f"[cache] pin {pin_id} failed: {e}")
@@ -1621,9 +1633,13 @@ def add_pin():
 
         if image_url.startswith('http'):
             try:
-                from scripts.image_cache_service import ImageCacheService
-                cache_service = ImageCacheService()
-                cache_service.queue_image_for_caching(pin_id, image_url, 'low')
+                global _image_cache_service
+                with _image_cache_lock:
+                    if _image_cache_service is None:
+                        from scripts.image_cache_service import ImageCacheService
+                        _image_cache_service = ImageCacheService()
+                    cache_service = _image_cache_service
+                cache_service.queue_image_for_caching(pin_id, image_url, 'low', board_id)
             except Exception as e:
                 print(f"Failed to queue image for caching: {e}")
 
@@ -2633,24 +2649,24 @@ def api_boards():
             except Exception:
                 pass
 
-@app.route('/api/board-status/<int:board_id>')
-@login_required
-def board_status(board_id):
-    user = get_current_user()
+def _board_status_data(user_id, board_id):
+    """
+    Build the snapshot dict for one board: counts + per-pin lists used by the
+    client to update the DOM. Returns None if the board doesn't belong to user_id.
+    Shared between the JSON endpoint and the SSE snapshot frame.
+    """
     db = None
     cursor = None
     try:
         db = get_db_connection()
         cursor = db.cursor(dictionary=True)
-        
-        # Verify board belongs to user
-        cursor.execute("SELECT id FROM boards WHERE id = %s AND user_id = %s", (board_id, user['id']))
+
+        cursor.execute("SELECT id FROM boards WHERE id = %s AND user_id = %s", (board_id, user_id))
         if not cursor.fetchone():
-            return jsonify({"error": "Board not found"}), 404
-        
-        # Get board stats including URL health (user-scoped)
+            return None
+
         cursor.execute("""
-            SELECT 
+            SELECT
                 COUNT(*) as total_pins,
                 COUNT(CASE WHEN p.uses_cached_image = 1 THEN 1 END) as cached_count,
                 COUNT(CASE WHEN p.colors_extracted = 1 THEN 1 END) as extracted_count,
@@ -2662,30 +2678,25 @@ def board_status(board_id):
             FROM pins p
             LEFT JOIN url_health uh ON p.id = uh.pin_id
             WHERE p.board_id = %s AND p.user_id = %s
-        """, (board_id, user['id']))
-        
+        """, (board_id, user_id))
         stats = cursor.fetchone()
-        
-        # Get detailed cached pin information for dynamic updates (user-scoped)
+
         cursor.execute("""
             SELECT p.id, ci.cached_filename
             FROM pins p
             LEFT JOIN cached_images ci ON p.cached_image_id = ci.id AND ci.cache_status = 'cached'
             WHERE p.board_id = %s AND p.user_id = %s AND p.uses_cached_image = 1 AND ci.cached_filename IS NOT NULL
-        """, (board_id, user['id']))
-        
+        """, (board_id, user_id))
         cached_pins = cursor.fetchall()
-        
-        # Get detailed color extraction information (user-scoped)
+
         cursor.execute("""
             SELECT id, dominant_color_1, dominant_color_2
             FROM pins
             WHERE board_id = %s AND user_id = %s AND colors_extracted = 1
-        """, (board_id, user['id']))
-        
+        """, (board_id, user_id))
         extracted_pins = cursor.fetchall()
-        
-        return jsonify({
+
+        return {
             "success": True,
             "total_pins": stats['total_pins'],
             "cached_count": stats['cached_count'],
@@ -2695,14 +2706,9 @@ def board_status(board_id):
             "live_links": stats['live_links'],
             "broken_links": stats['broken_links'],
             "archived_links": stats['archived_links'],
-            "cached_pins": [{"id": pin["id"], "cached_filename": pin["cached_filename"]} for pin in cached_pins],
-            "extracted_pins": [{"id": pin["id"], "color1": pin["dominant_color_1"], "color2": pin["dominant_color_2"]} for pin in extracted_pins]
-        })
-        
-    except mysql.connector.Error as e:
-        return jsonify({"success": False, "error": str(e)}), 500
-    except Exception as e:
-        return jsonify({"success": False, "error": str(e)}), 500
+            "cached_pins": [{"id": p["id"], "cached_filename": p["cached_filename"]} for p in cached_pins],
+            "extracted_pins": [{"id": p["id"], "color1": p["dominant_color_1"], "color2": p["dominant_color_2"]} for p in extracted_pins],
+        }
     finally:
         if cursor:
             try:
@@ -2714,6 +2720,62 @@ def board_status(board_id):
                 db.close()
             except Exception:
                 pass
+
+
+@app.route('/api/board-status/<int:board_id>')
+@login_required
+def board_status(board_id):
+    user = get_current_user()
+    try:
+        data = _board_status_data(user['id'], board_id)
+        if data is None:
+            return jsonify({"error": "Board not found"}), 404
+        return jsonify(data)
+    except mysql.connector.Error as e:
+        return jsonify({"success": False, "error": str(e)}), 500
+    except Exception as e:
+        return jsonify({"success": False, "error": str(e)}), 500
+
+
+@app.route('/api/board-events/<int:board_id>')
+@login_required
+def board_events(board_id):
+    """
+    Server-Sent Events stream of per-board processing updates.
+
+    Frame 1 is `event: snapshot` with the same payload as /api/board-status —
+    so a fresh client doesn't need a separate fetch. After that, events flow as
+    they happen: pin_cached, pin_colored, url_checked. Heartbeat comments keep
+    intermediaries from culling idle connections.
+    """
+    user = get_current_user()
+    user_id = user['id']
+
+    snapshot = _board_status_data(user_id, board_id)
+    if snapshot is None:
+        return jsonify({"error": "Board not found"}), 404
+
+    def stream():
+        # Initial connect frame helps the client confirm the stream opened.
+        yield ": connected\n\n"
+        yield f"event: snapshot\ndata: {json.dumps(snapshot)}\n\n"
+
+        last_heartbeat = time.time()
+        for msg in event_bus.subscribe(board_id):
+            if msg is not None:
+                yield f"data: {msg}\n\n"
+            now = time.time()
+            if now - last_heartbeat > 25:
+                yield ": ping\n\n"
+                last_heartbeat = now
+
+    headers = {
+        'Cache-Control': 'no-cache, no-transform',
+        'Content-Type': 'text/event-stream',
+        'X-Accel-Buffering': 'no',  # disable nginx response buffering
+        'Connection': 'keep-alive',
+    }
+    return Response(stream_with_context(stream()), headers=headers)
 
 @app.route('/api/check-url-health/<int:board_id>', methods=['POST'])
 @login_required
@@ -2785,18 +2847,19 @@ def check_url_health_for_board(board_id):
         def check_single_url(url_data):
             nonlocal checked_count
             archive_url = None
-            
+            status = 'unknown'
+
             try:
                 # Quick HEAD request to check if URL is accessible
                 response = requests.head(url_data['url'], headers=headers, timeout=3, allow_redirects=True)
                 status = 'live' if response.status_code < 400 else 'broken'
-                
+
                 # If broken, check Wayback Machine for archives
                 if status == 'broken':
                     archive_url = check_wayback_archive(url_data['url'])
                     if archive_url:
                         status = 'archived'
-                
+
                 # Thread-safe database update
                 with db_lock:
                     cursor.execute("""
@@ -2808,12 +2871,12 @@ def check_url_health_for_board(board_id):
                         archive_url = VALUES(archive_url)
                     """, (url_data['pin_id'], url_data['url'], status, archive_url))
                     checked_count += 1
-                    
+
             except Exception as e:
                 # Mark as unknown if check fails, but still check for archive
                 archive_url = check_wayback_archive(url_data['url'])
                 status = 'archived' if archive_url else 'unknown'
-                
+
                 with db_lock:
                     cursor.execute("""
                         INSERT INTO url_health (pin_id, url, last_checked, status, archive_url)
@@ -2824,6 +2887,12 @@ def check_url_health_for_board(board_id):
                         archive_url = VALUES(archive_url)
                     """, (url_data['pin_id'], url_data['url'], status, archive_url))
                     checked_count += 1
+
+            try:
+                event_bus.publish(board_id, "url_checked",
+                                  {"pin_id": url_data['pin_id'], "status": status, "archive_url": archive_url})
+            except Exception as e:
+                print(f"[health] pin {url_data['pin_id']} publish failed: {e}")
         
         # Use ThreadPoolExecutor for concurrent checks (max 10 concurrent requests)
         with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
@@ -2918,13 +2987,19 @@ def check_pin_url(pin_id):
         db.commit()
         cursor.close()
         db.close()
-        
+
+        try:
+            event_bus.publish(pin['board_id'], "url_checked",
+                              {"pin_id": pin_id, "status": status, "archive_url": archive_url})
+        except Exception as e:
+            print(f"[health] pin {pin_id} publish failed: {e}")
+
         return jsonify({
             "success": True,
             "status": status,
             "archive_url": archive_url
         })
-        
+
     except mysql.connector.Error as e:
         return jsonify({"success": False, "error": str(e)}), 500
     except Exception as e:
@@ -3016,24 +3091,32 @@ def save_pin_colors(pin_id):
             return jsonify({"error": "Both colors are required"}), 400
         
         db = get_db_connection()
-        cursor = db.cursor()
-        
-        # Verify pin belongs to user
-        cursor.execute("SELECT id FROM pins WHERE id = %s AND user_id = %s", (pin_id, user['id']))
-        if not cursor.fetchone():
+        cursor = db.cursor(dictionary=True)
+
+        # Verify pin belongs to user and capture board_id for the SSE event
+        cursor.execute("SELECT id, board_id FROM pins WHERE id = %s AND user_id = %s", (pin_id, user['id']))
+        row = cursor.fetchone()
+        if not row:
             return jsonify({"error": "Pin not found"}), 404
-        
+        board_id = row['board_id']
+
         # Update the pin with extracted colors
         cursor.execute("""
-            UPDATE pins 
-            SET dominant_color_1 = %s, 
-                dominant_color_2 = %s, 
+            UPDATE pins
+            SET dominant_color_1 = %s,
+                dominant_color_2 = %s,
                 colors_extracted = TRUE
             WHERE id = %s
         """, (dominant_color_1, dominant_color_2, pin_id))
-        
+
         db.commit()
-        
+
+        try:
+            event_bus.publish(board_id, "pin_colored",
+                              {"pin_id": pin_id, "c1": dominant_color_1, "c2": dominant_color_2})
+        except Exception as e:
+            print(f"[colors] pin {pin_id} publish failed: {e}")
+
         return jsonify({
             'success': True,
             'pin_id': pin_id
@@ -3070,7 +3153,7 @@ def save_pin_dimensions(pin_id):
 
         # Fetch pin + its cached_images record (if any) in one query
         cursor.execute("""
-            SELECT p.id, p.image_url, p.cached_image_id,
+            SELECT p.id, p.image_url, p.cached_image_id, p.board_id,
                    ci.cached_filename, ci.cache_status
               FROM pins p
               LEFT JOIN cached_images ci ON ci.id = p.cached_image_id
@@ -3082,6 +3165,7 @@ def save_pin_dimensions(pin_id):
 
         image_url = pin['image_url'] or ''
         cache_id = pin['cached_image_id']
+        board_id = pin['board_id']
 
         # Determine whether a real local file already exists
         already_cached = (
@@ -3121,7 +3205,7 @@ def save_pin_dimensions(pin_id):
         if not already_cached and image_url.startswith('http'):
             t = threading.Thread(
                 target=_bg_download_and_cache,
-                args=(pin_id, image_url, width, height, cache_id),
+                args=(pin_id, image_url, width, height, cache_id, board_id),
                 daemon=True
             )
             t.start()
