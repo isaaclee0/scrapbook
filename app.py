@@ -7,7 +7,7 @@ import threading
 from werkzeug.routing import BaseConverter
 import requests
 from bs4 import BeautifulSoup
-from urllib.parse import urljoin
+from urllib.parse import urljoin, quote
 import re
 import html
 import json
@@ -19,6 +19,7 @@ from functools import wraps
 from datetime import datetime
 from contextlib import contextmanager
 import traceback
+from itsdangerous import URLSafeTimedSerializer, BadSignature, SignatureExpired
 
 # Import authentication modules
 from auth_utils import generate_magic_link_token, generate_session_token, verify_token, refresh_session_token, generate_otp, store_otp, verify_otp
@@ -534,14 +535,38 @@ def get_current_user():
         'email': payload.get('email')
     }
 
+
+def _is_auth_exempt_path(path):
+    """Return True for routes that must remain accessible without session auth."""
+    always_public_paths = {
+        '/health',
+        '/favicon.ico',
+        '/robots.txt',
+        '/manifest.json',
+        '/site.webmanifest',
+        '/apple-touch-icon.png',
+    }
+    if path in always_public_paths:
+        return True
+
+    if path.startswith('/auth/login'):
+        return True
+    # Allow only the exact static asset required by the login page pre-auth.
+    if path == '/static/css/output.css':
+        return True
+    if path.startswith('/public/pin-image/'):
+        return True
+    return False
+
+
 @app.before_request
 def refresh_token_if_needed():
     """
     Automatically refresh session tokens that are close to expiring.
     This extends user sessions so they don't have to log in every 30 days.
     """
-    # Skip token refresh for auth routes and health check
-    if request.path.startswith('/auth/') or request.path == '/health':
+    # Skip token refresh for routes that don't require session auth.
+    if _is_auth_exempt_path(request.path):
         return
     
     token = request.cookies.get('session_token')
@@ -555,6 +580,15 @@ def refresh_token_if_needed():
             g.refreshed_token = None
     else:
         g.refreshed_token = None
+
+    # Enforce auth globally for all protected routes/requests.
+    user = get_current_user()
+    if not user:
+        is_api_endpoint = request.path.startswith('/api/')
+        is_json_request = request.method in ['POST', 'PUT', 'PATCH', 'DELETE'] and request.is_json
+        if is_api_endpoint or is_json_request:
+            return jsonify({"error": "Authentication required", "success": False}), 401
+        return redirect(url_for('login_page'))
 
 @app.after_request
 def set_refreshed_token_cookie(response):
@@ -596,6 +630,94 @@ def login_required(f):
             return redirect(url_for('login_page'))
         return f(*args, **kwargs)
     return decorated_function
+
+
+def _is_image_asset_path(path):
+    """Return True when a static asset path is an image file."""
+    image_extensions = ('.png', '.jpg', '.jpeg', '.gif', '.webp', '.bmp', '.svg', '.ico', '.avif')
+    return path.lower().endswith(image_extensions)
+
+
+def _require_authenticated_user():
+    """
+    Inline auth guard for routes that are conditionally protected.
+    Returns (user, response). If response is not None, caller should return it.
+    """
+    user = get_current_user()
+    if user:
+        return user, None
+
+    if request.path.startswith('/api/'):
+        return None, (jsonify({"error": "Authentication required", "success": False}), 401)
+
+    return None, redirect(url_for('login_page'))
+
+
+def _get_temp_image_link_ttl_seconds():
+    """Configurable TTL for temporary public image URLs."""
+    default_ttl = 120
+    try:
+        ttl = int(os.getenv('TEMP_IMAGE_LINK_TTL_SECONDS', str(default_ttl)))
+    except (TypeError, ValueError):
+        ttl = default_ttl
+    return max(30, min(ttl, 900))
+
+
+def _temp_image_link_serializer():
+    """Build serializer for temporary public image links."""
+    signing_secret = (
+        os.getenv('TEMP_IMAGE_LINK_SECRET')
+        or os.getenv('JWT_SECRET_KEY')
+        or os.getenv('SECRET_KEY')
+        or 'development-temp-image-link-secret'
+    )
+    return URLSafeTimedSerializer(signing_secret, salt='scrapbook-temp-image-link-v1')
+
+
+def _serve_image_url(image_url):
+    """Serve an image URL by streaming local files or proxying remote images."""
+    if not image_url:
+        return "Image not found", 404
+
+    try:
+        if image_url.startswith('/cached/'):
+            filename = image_url[len('/cached/'):]
+            cache_dir = os.path.join('static', 'cached_images')
+            response = send_from_directory(cache_dir, filename)
+            response.headers['Cache-Control'] = 'no-store, max-age=0'
+            return response
+
+        if image_url.startswith('/static/'):
+            static_path = image_url[len('/static/'):]
+            response = send_from_directory('static', static_path)
+            response.headers['Cache-Control'] = 'no-store, max-age=0'
+            return response
+
+        if image_url.startswith('http://') or image_url.startswith('https://'):
+            response = requests.get(image_url, timeout=10, stream=True)
+            if response.status_code != 200:
+                return "Image unavailable", 502
+
+            content_type = (response.headers.get('Content-Type') or '').lower()
+            if not content_type.startswith('image/'):
+                return "Image URL did not return an image", 400
+
+            proxied = Response(
+                response.content,
+                status=200,
+                content_type=response.headers.get('Content-Type', 'image/jpeg')
+            )
+            proxied.headers['Cache-Control'] = 'no-store, max-age=0'
+            return proxied
+    except FileNotFoundError:
+        return "Image not found", 404
+    except requests.RequestException:
+        return "Image unavailable", 502
+    except Exception as e:
+        print(f"Error serving image URL '{image_url}': {e}")
+        return "Image unavailable", 502
+
+    return "Unsupported image URL", 400
 
 def set_session_cookie(response, token):
     """
@@ -1809,6 +1931,93 @@ def view_pin(pin_id):
             except Exception as db_close_error:
                 print(f"view_pin: error closing db connection: {db_close_error}")
 
+
+@app.route('/api/pin/<int:pin_id>/google-lens-url')
+@login_required
+def get_google_lens_url(pin_id):
+    """Generate a Google Lens URL using a short-lived signed public image link."""
+    user = get_current_user()
+    db = None
+    cursor = None
+    try:
+        db = get_db_connection()
+        cursor = db.cursor(dictionary=True, buffered=True)
+        cursor.execute(
+            "SELECT image_url FROM pins WHERE id = %s AND user_id = %s",
+            (pin_id, user['id'])
+        )
+        pin = cursor.fetchone()
+        if not pin or not pin.get('image_url'):
+            return jsonify({"error": "Pin image not found"}), 404
+
+        serializer = _temp_image_link_serializer()
+        token = serializer.dumps({"pin_id": pin_id})
+        public_image_url = url_for('serve_temp_public_pin_image', token=token, _external=True)
+        google_search_url = f"https://lens.google.com/uploadbyurl?url={quote(public_image_url, safe='')}"
+
+        return jsonify({
+            "success": True,
+            "google_search_url": google_search_url,
+            "expires_in_seconds": _get_temp_image_link_ttl_seconds()
+        })
+    except Exception as e:
+        print(f"Error generating Google Lens URL for pin {pin_id}: {e}")
+        return jsonify({"error": "Failed to generate Google search link"}), 500
+    finally:
+        if cursor:
+            try:
+                cursor.close()
+            except Exception:
+                pass
+        if db:
+            try:
+                db.close()
+            except Exception:
+                pass
+
+
+@app.route('/public/pin-image/<token>')
+def serve_temp_public_pin_image(token):
+    """Serve pin image via short-lived signed public links."""
+    try:
+        payload = _temp_image_link_serializer().loads(
+            token,
+            max_age=_get_temp_image_link_ttl_seconds()
+        )
+    except SignatureExpired:
+        return "Temporary image link expired", 410
+    except BadSignature:
+        return "Invalid image link", 404
+
+    pin_id = sanitize_integer(payload.get('pin_id'))
+    if not pin_id:
+        return "Invalid image link", 404
+
+    db = None
+    cursor = None
+    try:
+        db = get_db_connection()
+        cursor = db.cursor(dictionary=True, buffered=True)
+        cursor.execute("SELECT image_url FROM pins WHERE id = %s", (pin_id,))
+        pin = cursor.fetchone()
+        if not pin:
+            return "Image not found", 404
+        return _serve_image_url(pin.get('image_url'))
+    except Exception as e:
+        print(f"Error serving temporary image link for pin {pin_id}: {e}")
+        return "Image unavailable", 502
+    finally:
+        if cursor:
+            try:
+                cursor.close()
+            except Exception:
+                pass
+        if db:
+            try:
+                db.close()
+            except Exception:
+                pass
+
 @app.route('/create-board', methods=['POST'])
 @login_required
 @require_csrf
@@ -2436,11 +2645,19 @@ def random_pin():
 
 @app.route('/static/<path:path>')
 def serve_static(path):
+    if _is_image_asset_path(path):
+        _, auth_response = _require_authenticated_user()
+        if auth_response:
+            return auth_response
     return send_from_directory('static', path)
 
 @app.route('/cached/<path:filename>')
 def serve_cached_image(filename):
     """Serve cached images from the cache directory"""
+    _, auth_response = _require_authenticated_user()
+    if auth_response:
+        return auth_response
+
     try:
         cache_dir = os.path.join('static', 'cached_images')
         return send_from_directory(cache_dir, filename)

@@ -2137,25 +2137,26 @@ function openFullscreen() {
 }
 
 // Search Google with image
-function searchGoogleImage() {
-    let imageUrl = "{{ pin.image_url }}";
-    
+async function searchGoogleImage() {
     // Close the tools menu
     const toolsMenu = document.getElementById('toolsMenu');
     if (toolsMenu) {
         toolsMenu.classList.remove('active');
     }
-    
-    // Convert relative URL to absolute URL if needed
-    if (imageUrl.startsWith('/')) {
-        imageUrl = window.location.origin + imageUrl;
+
+    try {
+        const response = await fetch(`/api/pin/${pinId}/google-lens-url`);
+        const data = await response.json();
+
+        if (!response.ok || !data.google_search_url) {
+            throw new Error(data.error || 'Could not generate Google image search link');
+        }
+
+        window.open(data.google_search_url, '_blank', 'noopener');
+    } catch (error) {
+        console.error('Error launching Google image search:', error);
+        alert('Could not open Google image search for this pin.');
     }
-    
-    // Use Google Lens which works better for reverse image search
-    const googleSearchUrl = `https://lens.google.com/uploadbyurl?url=${encodeURIComponent(imageUrl)}`;
-    
-    // Open in new tab
-    window.open(googleSearchUrl, '_blank');
 }
 
 // Image editing functions
