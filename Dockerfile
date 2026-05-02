@@ -76,7 +76,7 @@ WORKDIR /app
 # audit_helpers.py and csrf.py are required imports — without them app.py
 # fails immediately at startup with ImportError.
 COPY app.py auth_utils.py email_service.py audit_helpers.py csrf.py \
-     migrate.py VERSION requirements.txt ./
+     event_bus.py migrate.py VERSION requirements.txt ./
 COPY templates/ ./templates/
 COPY static/ ./static/
 COPY scripts/ ./scripts/
