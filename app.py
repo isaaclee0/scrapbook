@@ -1140,14 +1140,26 @@ def board(board_id):
             cursor.fetchall()
             
             if cached_images_exists:
-                # Include cached images data with dimensions for layout stability
+                # Include cached images data with dimensions for layout stability.
+                # IMPORTANT: join WITHOUT filtering on cache_status so we still get
+                # dimensions from "pending" dims-only placeholder rows that were
+                # written by /save-pin-dimensions before the file finished caching.
+                # Then null out cached_filename for non-cached/placeholder rows so
+                # the template doesn't try to <img src> a missing file.
                 cursor.execute("""
-                    SELECT p.*, s.name as section_name, 
-                           ci.cached_filename, ci.cache_status,
+                    SELECT p.*, s.name as section_name,
+                           CASE
+                               WHEN ci.cache_status = 'cached'
+                                AND ci.cached_filename IS NOT NULL
+                                AND ci.cached_filename NOT LIKE '%%.placeholder'
+                               THEN ci.cached_filename
+                               ELSE NULL
+                           END AS cached_filename,
+                           ci.cache_status,
                            ci.width as cached_width, ci.height as cached_height
-                    FROM pins p 
-                    LEFT JOIN sections s ON p.section_id = s.id 
-                    LEFT JOIN cached_images ci ON p.cached_image_id = ci.id AND ci.cache_status = 'cached'
+                    FROM pins p
+                    LEFT JOIN sections s ON p.section_id = s.id
+                    LEFT JOIN cached_images ci ON p.cached_image_id = ci.id
                     WHERE p.board_id = %s AND p.user_id = %s
                     ORDER BY p.created_at DESC, p.id ASC
                     LIMIT %s
@@ -2331,10 +2343,13 @@ def move_board(board_id):
     user = get_current_user()
     try:
         data = request.get_json() or {}
-        target_board_id = data.get('target_board_id')
+        target_board_id = sanitize_integer(data.get('target_board_id'))
 
         if not target_board_id:
             return jsonify({"error": "Target board ID is required"}), 400
+
+        if target_board_id == board_id:
+            return jsonify({"error": "Cannot convert a board into a section of itself"}), 400
 
         with tx(dictionary=True) as (db, cursor):
             cursor.execute("SELECT id, name FROM boards WHERE id = %s AND user_id = %s",
@@ -2752,15 +2767,26 @@ def get_board_pins(board_id):
         if not cursor.fetchone():
             return jsonify({"error": "Board not found"}), 404
         
-        # Build query
+        # Build query.
+        # See note in board() route: join cached_images without filtering on
+        # cache_status so dimensions from "pending" dims-only rows are visible
+        # for layout stability. Mask the cached_filename when the file isn't
+        # actually on disk yet.
         query = """
             SELECT p.*, s.name as section_name, b.name as board_name,
-                   ci.cached_filename, ci.cache_status,
+                   CASE
+                       WHEN ci.cache_status = 'cached'
+                        AND ci.cached_filename IS NOT NULL
+                        AND ci.cached_filename NOT LIKE '%%.placeholder'
+                       THEN ci.cached_filename
+                       ELSE NULL
+                   END AS cached_filename,
+                   ci.cache_status,
                    ci.width as cached_width, ci.height as cached_height
             FROM pins p
             LEFT JOIN sections s ON p.section_id = s.id
             LEFT JOIN boards b ON p.board_id = b.id
-            LEFT JOIN cached_images ci ON p.cached_image_id = ci.id AND ci.cache_status = 'cached'
+            LEFT JOIN cached_images ci ON p.cached_image_id = ci.id
             WHERE p.board_id = %s AND p.user_id = %s
         """
         params = [board_id, user['id']]
@@ -3705,35 +3731,35 @@ def _undo_board_delete(cursor, user_id, before):
 
     cursor.execute(
         """
-        INSERT INTO boards (id, name, image_url, user_id, created_at)
+        INSERT INTO boards (id, name, default_image_url, user_id, created_at)
         VALUES (%s, %s, %s, %s, %s)
         """,
         (
-            board['id'], board.get('name'), board.get('image_url'),
+            board['id'], board.get('name'), board.get('default_image_url'),
             board['user_id'], board.get('created_at'),
         ),
     )
     for s in sections:
         cursor.execute(
             """
-            INSERT INTO sections (id, board_id, name, image_url, user_id, created_at)
+            INSERT INTO sections (id, board_id, name, default_image_url, user_id, created_at)
             VALUES (%s, %s, %s, %s, %s, %s)
             """,
             (
-                s['id'], s['board_id'], s.get('name'), s.get('image_url'),
+                s['id'], s['board_id'], s.get('name'), s.get('default_image_url'),
                 s['user_id'], s.get('created_at'),
             ),
         )
     for p in pins:
         cursor.execute(
             """
-            INSERT INTO pins (id, image_url, title, board_id, section_id, notes,
-                              source_url, link, user_id, created_at)
+            INSERT INTO pins (id, image_url, title, board_id, section_id,
+                              description, notes, link, user_id, created_at)
             VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
             """,
             (
                 p['id'], p.get('image_url'), p.get('title'), p.get('board_id'),
-                p.get('section_id'), p.get('notes'), p.get('source_url'),
+                p.get('section_id'), p.get('description'), p.get('notes'),
                 p.get('link'), p['user_id'], p.get('created_at'),
             ),
         )
@@ -3748,13 +3774,13 @@ def _undo_pin_delete(cursor, user_id, before):
         raise PermissionError('snapshot belongs to another user')
     cursor.execute(
         """
-        INSERT INTO pins (id, image_url, title, board_id, section_id, notes,
-                          source_url, link, user_id, created_at)
+        INSERT INTO pins (id, image_url, title, board_id, section_id,
+                          description, notes, link, user_id, created_at)
         VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
         """,
         (
             p['id'], p.get('image_url'), p.get('title'), p.get('board_id'),
-            p.get('section_id'), p.get('notes'), p.get('source_url'),
+            p.get('section_id'), p.get('description'), p.get('notes'),
             p.get('link'), p['user_id'], p.get('created_at'),
         ),
     )
@@ -3770,12 +3796,12 @@ def _undo_section_delete(cursor, user_id, before):
         raise PermissionError('snapshot belongs to another user')
     cursor.execute(
         """
-        INSERT INTO sections (id, board_id, name, image_url, user_id, created_at)
+        INSERT INTO sections (id, board_id, name, default_image_url, user_id, created_at)
         VALUES (%s, %s, %s, %s, %s, %s)
         """,
         (
             section['id'], section['board_id'], section.get('name'),
-            section.get('image_url'), section['user_id'], section.get('created_at'),
+            section.get('default_image_url'), section['user_id'], section.get('created_at'),
         ),
     )
     for p in pins:
@@ -3810,11 +3836,11 @@ def _undo_board_move(cursor, user_id, before, after):
 
     cursor.execute(
         """
-        INSERT INTO boards (id, name, image_url, user_id, created_at)
+        INSERT INTO boards (id, name, default_image_url, user_id, created_at)
         VALUES (%s, %s, %s, %s, %s)
         """,
         (
-            board['id'], board.get('name'), board.get('image_url'),
+            board['id'], board.get('name'), board.get('default_image_url'),
             board['user_id'], board.get('created_at'),
         ),
     )

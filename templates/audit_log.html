@@ -10,55 +10,55 @@
         </p>
     </div>
 
-    <div class="bg-white border border-gray-200 rounded-lg p-4 mb-4 flex flex-wrap gap-3 items-end">
-        <div>
-            <label class="block text-xs font-medium text-gray-600 mb-1">Action</label>
-            <select id="filterAction" class="border border-gray-300 rounded px-2 py-1 text-sm">
-                <option value="">All</option>
-                <option value="board.create">board.create</option>
-                <option value="board.rename">board.rename</option>
-                <option value="board.set_image">board.set_image</option>
-                <option value="board.delete">board.delete</option>
-                <option value="board.move">board.move</option>
-                <option value="board.delete.undo">board.delete.undo</option>
-                <option value="board.move.undo">board.move.undo</option>
-                <option value="section.create">section.create</option>
-                <option value="section.update">section.update</option>
-                <option value="section.set_image">section.set_image</option>
-                <option value="section.delete">section.delete</option>
-                <option value="section.delete.undo">section.delete.undo</option>
-                <option value="pin.create">pin.create</option>
-                <option value="pin.update">pin.update</option>
-                <option value="pin.move">pin.move</option>
-                <option value="pin.move_to_section">pin.move_to_section</option>
-                <option value="pin.delete">pin.delete</option>
-                <option value="pin.delete.undo">pin.delete.undo</option>
-            </select>
+    <div class="bg-white border border-gray-200 rounded-lg p-4 mb-4">
+        <div style="display:flex; align-items:flex-end; gap:16px; flex-wrap:wrap;">
+            <div>
+                <label style="display:block; font-size:11px; font-weight:600; color:#6b7280; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:6px;">Action</label>
+                <select id="filterAction" style="padding:8px 12px; border:1px solid #ddd; border-radius:4px; font-size:14px; background:white; outline:none; cursor:pointer; width:200px;">
+                    <option value="">All</option>
+                    <option value="board.create">board.create</option>
+                    <option value="board.rename">board.rename</option>
+                    <option value="board.set_image">board.set_image</option>
+                    <option value="board.delete">board.delete</option>
+                    <option value="board.move">board.move</option>
+                    <option value="board.delete.undo">board.delete.undo</option>
+                    <option value="board.move.undo">board.move.undo</option>
+                    <option value="section.create">section.create</option>
+                    <option value="section.update">section.update</option>
+                    <option value="section.set_image">section.set_image</option>
+                    <option value="section.delete">section.delete</option>
+                    <option value="section.delete.undo">section.delete.undo</option>
+                    <option value="pin.create">pin.create</option>
+                    <option value="pin.update">pin.update</option>
+                    <option value="pin.move">pin.move</option>
+                    <option value="pin.move_to_section">pin.move_to_section</option>
+                    <option value="pin.delete">pin.delete</option>
+                    <option value="pin.delete.undo">pin.delete.undo</option>
+                </select>
+            </div>
+            <div>
+                <label style="display:block; font-size:11px; font-weight:600; color:#6b7280; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:6px;">Entity type</label>
+                <select id="filterEntityType" style="padding:8px 12px; border:1px solid #ddd; border-radius:4px; font-size:14px; background:white; outline:none; cursor:pointer; width:140px;">
+                    <option value="">All</option>
+                    <option value="board">board</option>
+                    <option value="section">section</option>
+                    <option value="pin">pin</option>
+                </select>
+            </div>
+            <div>
+                <label style="display:block; font-size:11px; font-weight:600; color:#6b7280; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:6px;">Outcome</label>
+                <select id="filterOutcome" style="padding:8px 12px; border:1px solid #ddd; border-radius:4px; font-size:14px; background:white; outline:none; cursor:pointer; width:130px;">
+                    <option value="">All</option>
+                    <option value="success">success</option>
+                    <option value="failure">failure</option>
+                </select>
+            </div>
+            <div style="margin-left:auto; display:flex; align-items:center; gap:8px;">
+                <span id="totalCount" style="font-size:14px; color:#9ca3af; margin-right:8px;"></span>
+                <button id="resetFilters" class="button secondary-button">Reset</button>
+                <button id="applyFilters" class="button primary-button">Apply filters</button>
+            </div>
         </div>
-        <div>
-            <label class="block text-xs font-medium text-gray-600 mb-1">Entity type</label>
-            <select id="filterEntityType" class="border border-gray-300 rounded px-2 py-1 text-sm">
-                <option value="">All</option>
-                <option value="board">board</option>
-                <option value="section">section</option>
-                <option value="pin">pin</option>
-            </select>
-        </div>
-        <div>
-            <label class="block text-xs font-medium text-gray-600 mb-1">Outcome</label>
-            <select id="filterOutcome" class="border border-gray-300 rounded px-2 py-1 text-sm">
-                <option value="">All</option>
-                <option value="success">success</option>
-                <option value="failure">failure</option>
-            </select>
-        </div>
-        <button id="applyFilters" class="px-4 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded text-sm">
-            Apply
-        </button>
-        <button id="resetFilters" class="px-4 py-2 bg-gray-200 hover:bg-gray-300 text-gray-700 rounded text-sm">
-            Reset
-        </button>
-        <span class="ml-auto text-sm text-gray-500" id="totalCount"></span>
     </div>
 
     <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
@@ -83,6 +83,24 @@
         <button id="prevPage" class="px-3 py-2 bg-gray-200 hover:bg-gray-300 rounded text-sm">‹ Previous</button>
         <span class="text-sm text-gray-600" id="pageLabel"></span>
         <button id="nextPage" class="px-3 py-2 bg-gray-200 hover:bg-gray-300 rounded text-sm">Next ›</button>
+    </div>
+</div>
+
+<!-- Undo confirmation modal -->
+<div id="undoModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="text-xl font-bold">Undo this action?</h3>
+        </div>
+        <div class="modal-body">
+            <p class="text-gray-600 text-sm mb-1" id="undoModalDesc"></p>
+            <p class="text-gray-400 text-xs mt-2">The affected items will be recreated with their original IDs.</p>
+            <div id="undoModalError" style="display:none;" class="mt-4 p-3 bg-red-50 border border-red-200 rounded text-red-700 text-sm"></div>
+        </div>
+        <div class="modal-actions">
+            <button id="undoModalCancel" class="button secondary-button">Cancel</button>
+            <button id="undoModalConfirm" class="button delete-button">Undo</button>
+        </div>
     </div>
 </div>
 
@@ -218,22 +236,62 @@
         }
     }
 
-    async function undoEvent(id, btn) {
-        if (!confirm('Undo this event? This will recreate the affected entities with their original IDs.')) return;
-        btn.disabled = true; btn.textContent = 'Undoing…';
-        try {
-            const res = await fetch('/audit/undo/' + id, { method: 'POST' });
-            const data = await res.json().catch(() => ({}));
-            if (!res.ok || !data.success) {
-                alert('Undo failed: ' + (data.error || ('http ' + res.status)));
+    const undoModal = document.getElementById('undoModal');
+    const undoModalDesc = document.getElementById('undoModalDesc');
+    const undoModalError = document.getElementById('undoModalError');
+    const undoModalConfirm = document.getElementById('undoModalConfirm');
+    const undoModalCancel = document.getElementById('undoModalCancel');
+
+    function showUndoModal(desc) {
+        undoModalDesc.textContent = desc;
+        undoModalError.textContent = '';
+        undoModalError.classList.add('hidden');
+        undoModalConfirm.disabled = false;
+        undoModalConfirm.textContent = 'Undo';
+        undoModal.style.display = 'flex';
+    }
+
+    function hideUndoModal() {
+        undoModal.style.display = 'none';
+    }
+
+    undoModalCancel.addEventListener('click', hideUndoModal);
+    undoModal.addEventListener('click', e => { if (e.target === undoModal) hideUndoModal(); });
+
+    function undoEvent(id, btn) {
+        const row = btn.closest('tr');
+        const desc = row ? row.querySelector('td:nth-child(4)')?.textContent : '';
+        showUndoModal(desc);
+
+        const handler = async () => {
+            undoModalConfirm.removeEventListener('click', handler);
+            undoModalConfirm.disabled = true;
+            undoModalConfirm.textContent = 'Undoing…';
+            btn.disabled = true; btn.textContent = 'Undoing…';
+            try {
+                const res = await fetch('/audit/undo/' + id, { method: 'POST' });
+                const data = await res.json().catch(() => ({}));
+                if (!res.ok || !data.success) {
+                    undoModalError.textContent = 'Undo failed: ' + (data.error || ('HTTP ' + res.status));
+                    undoModalError.classList.remove('hidden');
+                    undoModalConfirm.disabled = false;
+                    undoModalConfirm.textContent = 'Retry';
+                    btn.disabled = false; btn.textContent = 'Undo';
+                    undoModalConfirm.addEventListener('click', handler);
+                    return;
+                }
+                hideUndoModal();
+                await load();
+            } catch (e) {
+                undoModalError.textContent = 'Undo failed: ' + e.message;
+                undoModalError.classList.remove('hidden');
+                undoModalConfirm.disabled = false;
+                undoModalConfirm.textContent = 'Retry';
                 btn.disabled = false; btn.textContent = 'Undo';
-                return;
+                undoModalConfirm.addEventListener('click', handler);
             }
-            await load();
-        } catch (e) {
-            alert('Undo failed: ' + e.message);
-            btn.disabled = false; btn.textContent = 'Undo';
-        }
+        };
+        undoModalConfirm.addEventListener('click', handler);
     }
 
     document.getElementById('applyFilters').addEventListener('click', () => { offset = 0; load(); });

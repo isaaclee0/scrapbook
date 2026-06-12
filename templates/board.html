@@ -1298,6 +1298,23 @@
         return div;
     }
 
+    // Single source of truth for the container aspect-ratio. Matches the
+    // Jinja capping rules in board.html (height clamped between width/2 and
+    // width*2) so server-side and JS-rendered pins lay out identically.
+    // Falls back to a portrait 3:4 ratio when dims are unknown — closer to
+    // typical pin content than the old 4:3 landscape default, minimising the
+    // visual jump when the real image finally loads with object-fit: cover.
+    function computePinAspectRatio(rawWidth, rawHeight) {
+        const w = parseInt(rawWidth);
+        const h = parseInt(rawHeight);
+        if (!w || !h || isNaN(w) || isNaN(h) || w <= 0 || h <= 0) {
+            return '3 / 4';
+        }
+        const capped = Math.min(h, w * 2);
+        const finalH = Math.max(capped, Math.floor(w / 2));
+        return `${w} / ${finalH}`;
+    }
+
     function escapeHtml(text) {
         const div = document.createElement('div');
         div.textContent = text;
