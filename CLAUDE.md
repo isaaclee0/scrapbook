@@ -28,6 +28,12 @@ python app.py
 docker compose exec web python migrate.py
 ```
 
+**Image cache worker** (production backfill — runs as `cache-worker` service):
+```bash
+docker compose up -d cache-worker
+docker compose logs -f cache-worker
+```
+
 **CSS** (Tailwind):
 ```bash
 npm run build:css    # one-shot build

@@ -127,7 +127,7 @@ CREATE TABLE IF NOT EXISTS url_health (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     FOREIGN KEY (pin_id) REFERENCES pins(id) ON DELETE CASCADE,
-    INDEX idx_url_health_pin_id (pin_id),
+    UNIQUE KEY unique_url_health_pin_id (pin_id),
     INDEX idx_url_health_status (status),
     INDEX idx_url_health_last_checked (last_checked)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;

@@ -169,6 +169,119 @@ def sanitize_url(url, max_length=2048):
     
     return url
 
+URL_HEALTH_GRACE_HOURS = 48
+
+_URL_CHECK_HEADERS = {
+    'User-Agent': (
+        'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) '
+        'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    ),
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'Accept-Language': 'en-US,en;q=0.9',
+    'Connection': 'keep-alive',
+}
+
+# HTTP codes that often indicate bot-blocking rather than a dead link
+_URL_CHECK_UNCLEAR = {403, 405, 429}
+
+def referer_for_cdn_url(url):
+    """Return an appropriate Referer header for known CDN hosts."""
+    url_lower = (url or '').lower()
+    if 'pinimg.com' in url_lower or 'pinterest.com' in url_lower:
+        return 'https://www.pinterest.com/'
+    if 'fbcdn.net' in url_lower or 'facebook.com' in url_lower:
+        return 'https://www.facebook.com/'
+    if 'cdninstagram.com' in url_lower or 'instagram.com' in url_lower:
+        return 'https://www.instagram.com/'
+    if 'tiktok.com' in url_lower or 'tiktokcdn.com' in url_lower:
+        return 'https://www.tiktok.com/'
+    return None
+
+def cache_headers_for_url(url):
+    """Browser-like headers for downloading images from external CDNs."""
+    headers = {
+        'User-Agent': _URL_CHECK_HEADERS['User-Agent'],
+        'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+        'Accept-Language': 'en-US,en;q=0.9',
+        'Sec-Fetch-Dest': 'image',
+        'Sec-Fetch-Mode': 'no-cors',
+        'Sec-Fetch-Site': 'cross-site',
+    }
+    referer = referer_for_cdn_url(url)
+    if referer:
+        headers['Referer'] = referer
+    return headers
+
+def _probe_url(url, method, timeout, headers):
+    fn = requests.head if method == 'HEAD' else requests.get
+    req_headers = dict(headers)
+    kwargs = {'headers': req_headers, 'timeout': timeout, 'allow_redirects': True}
+    if method == 'GET':
+        req_headers['Range'] = 'bytes=0-0'
+        kwargs['stream'] = True
+    resp = fn(url, **kwargs)
+    if method == 'GET':
+        resp.close()
+    return resp.status_code
+
+def _check_wayback_archive(url):
+    """Check if Wayback Machine has an archive of the URL."""
+    try:
+        wayback_api = f"https://archive.org/wayback/available?url={url}"
+        response = requests.get(wayback_api, timeout=5)
+        if response.status_code == 200:
+            data = response.json()
+            if data.get('archived_snapshots', {}).get('closest', {}).get('available'):
+                return data['archived_snapshots']['closest']['url']
+    except Exception as e:
+        print(f"Error checking Wayback Machine for {url}: {e}")
+    return None
+
+def check_url_live_status(url, timeout=5):
+    """
+    Probe a URL for liveness. Returns (status, archive_url).
+    status is one of: live, broken, archived, unknown.
+    """
+    head_code = None
+    get_code = None
+
+    try:
+        head_code = _probe_url(url, 'HEAD', timeout, _URL_CHECK_HEADERS)
+    except requests.RequestException:
+        pass
+
+    try:
+        get_code = _probe_url(url, 'GET', timeout, _URL_CHECK_HEADERS)
+    except requests.RequestException:
+        pass
+
+    if get_code is not None and get_code < 400:
+        return 'live', None
+    if head_code is not None and head_code < 400:
+        return 'live', None
+
+    codes = [c for c in (get_code, head_code) if c is not None]
+    if not codes:
+        return 'unknown', None
+    if any(c in _URL_CHECK_UNCLEAR for c in codes):
+        return 'unknown', None
+
+    archive_url = _check_wayback_archive(url)
+    if archive_url:
+        return 'archived', archive_url
+    return 'broken', None
+
+def _upsert_url_health(cursor, pin_id, url, status, archive_url):
+    cursor.execute("""
+        INSERT INTO url_health (pin_id, url, last_checked, status, archive_url)
+        VALUES (%s, %s, NOW(), %s, %s)
+        ON DUPLICATE KEY UPDATE
+        url = VALUES(url),
+        last_checked = NOW(),
+        status = VALUES(status),
+        archive_url = VALUES(archive_url)
+    """, (pin_id, url, status, archive_url))
+
 def sanitize_integer(value, min_value=None, max_value=None):
     try:
         value = int(value)
@@ -335,20 +448,6 @@ except mysql.connector.Error as err:
 # Cap concurrent background downloads so a busy board doesn't flood outbound.
 _bg_cache_semaphore = threading.Semaphore(4)
 
-# Matches what image_cache_service.py uses so cached files are interchangeable.
-_CACHE_HEADERS = {
-    'User-Agent': (
-        'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) '
-        'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-    ),
-    'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
-    'Accept-Language': 'en-US,en;q=0.9',
-    'Referer': 'https://www.pinterest.com/',  # helps bypass Pinterest CDN checks
-    'Sec-Fetch-Dest': 'image',
-    'Sec-Fetch-Mode': 'no-cors',
-    'Sec-Fetch-Site': 'cross-site',
-}
-
 def _bg_download_and_cache(pin_id, image_url, width, height, cache_id, board_id=None):
     """
     Download an external image to local cache. Runs in a daemon thread.
@@ -367,7 +466,7 @@ def _bg_download_and_cache(pin_id, image_url, width, height, cache_id, board_id=
         os.makedirs(cache_dir, exist_ok=True)
 
         # Download with a browser-like session
-        resp = requests.get(image_url, headers=_CACHE_HEADERS, timeout=30, stream=True)
+        resp = requests.get(image_url, headers=cache_headers_for_url(image_url), timeout=30, stream=True)
         resp.raise_for_status()
 
         content_type = resp.headers.get('content-type', '').lower()
@@ -447,6 +546,23 @@ def _bg_download_and_cache(pin_id, image_url, width, height, cache_id, board_id=
 
     except Exception as e:
         print(f"[cache] pin {pin_id} failed: {e}")
+        if cache_id:
+            try:
+                db = get_db_connection()
+                cursor = db.cursor()
+                cursor.execute("""
+                    UPDATE cached_images
+                       SET cache_status = 'failed',
+                           retry_count = COALESCE(retry_count, 0) + 1,
+                           last_retry_at = NOW(),
+                           updated_at = NOW()
+                     WHERE id = %s AND cache_status = 'pending'
+                """, (cache_id,))
+                db.commit()
+                cursor.close()
+                db.close()
+            except Exception as db_err:
+                print(f"[cache] pin {pin_id} failed to mark pending as failed: {db_err}")
     finally:
         _bg_cache_semaphore.release()
 
@@ -1796,7 +1912,7 @@ def update_pin(pin_id):
     title = sanitize_string(data.get('title', ''), max_length=255) if 'title' in data else None
     description = sanitize_string(data.get('description', '')) if 'description' in data else None
     notes = sanitize_string(data.get('notes', '')) if 'notes' in data else None
-    link = sanitize_string(data.get('link', ''), max_length=2048) if 'link' in data else None
+    link = sanitize_url(data.get('link', '')) if 'link' in data else None
     
     
     try:
@@ -1875,11 +1991,19 @@ def view_pin(pin_id):
         # Get pin details with board and section names (user-scoped)
         cursor.execute("""
             SELECT p.*, b.name as board_name, s.name as section_name,
-                   uh.status as link_status, uh.archive_url
+                   uh.status as link_status, uh.archive_url,
+                   CASE
+                       WHEN ci.cache_status = 'cached'
+                        AND ci.cached_filename IS NOT NULL
+                        AND ci.cached_filename NOT LIKE '%%.placeholder'
+                       THEN ci.cached_filename
+                       ELSE NULL
+                   END AS cached_filename
             FROM pins p
             LEFT JOIN boards b ON p.board_id = b.id
             LEFT JOIN sections s ON p.section_id = s.id
             LEFT JOIN url_health uh ON p.id = uh.pin_id
+            LEFT JOIN cached_images ci ON p.cached_image_id = ci.id
             WHERE p.id = %s AND p.user_id = %s
         """, (pin_id, user['id']))
 
@@ -2719,7 +2843,6 @@ def cache_images():
             global _image_caching_in_progress
             try:
                 cache_service.cache_all_external_images(limit=limit, board_id=board_id)
-                cache_service.stop_workers()
             finally:
                 with _image_cache_lock:
                     _image_caching_in_progress = False
@@ -2911,14 +3034,19 @@ def _board_status_data(user_id, board_id):
         cursor.execute("""
             SELECT
                 COUNT(*) as total_pins,
-                COUNT(CASE WHEN p.uses_cached_image = 1 THEN 1 END) as cached_count,
+                COUNT(CASE WHEN p.image_url LIKE 'http%%'
+                    AND (p.cached_image_id IS NULL OR ci.cache_status IS NULL
+                         OR ci.cache_status IN ('pending', 'failed'))
+                    THEN 1 END) as uncached_count,
+                COUNT(CASE WHEN ci.cache_status = 'cached' THEN 1 END) as cached_count,
                 COUNT(CASE WHEN p.colors_extracted = 1 THEN 1 END) as extracted_count,
-                COUNT(CASE WHEN p.link IS NOT NULL THEN 1 END) as pins_with_links,
+                COUNT(CASE WHEN p.link IS NOT NULL AND p.link != '' THEN 1 END) as pins_with_links,
                 COUNT(CASE WHEN uh.status IS NOT NULL THEN 1 END) as health_checked_count,
                 COUNT(CASE WHEN uh.status = 'live' THEN 1 END) as live_links,
                 COUNT(CASE WHEN uh.status = 'broken' THEN 1 END) as broken_links,
                 COUNT(CASE WHEN uh.status = 'archived' THEN 1 END) as archived_links
             FROM pins p
+            LEFT JOIN cached_images ci ON p.cached_image_id = ci.id
             LEFT JOIN url_health uh ON p.id = uh.pin_id
             WHERE p.board_id = %s AND p.user_id = %s
         """, (board_id, user_id))
@@ -2942,6 +3070,7 @@ def _board_status_data(user_id, board_id):
         return {
             "success": True,
             "total_pins": stats['total_pins'],
+            "uncached_count": stats['uncached_count'],
             "cached_count": stats['cached_count'],
             "extracted_count": stats['extracted_count'],
             "pins_with_links": stats['pins_with_links'],
@@ -3042,10 +3171,11 @@ def check_url_health_for_board(board_id):
             FROM pins p
             LEFT JOIN url_health uh ON p.id = uh.pin_id
             WHERE p.board_id = %s AND p.user_id = %s
-            AND p.link IS NOT NULL 
+            AND p.link IS NOT NULL AND p.link != ''
+            AND p.created_at < DATE_SUB(NOW(), INTERVAL %s HOUR)
             AND (uh.last_checked IS NULL OR uh.last_checked < DATE_SUB(NOW(), INTERVAL 1 MONTH))
             LIMIT %s
-        """, (board_id, user['id'], limit))
+        """, (board_id, user['id'], URL_HEALTH_GRACE_HOURS, limit))
         
         urls_to_check = cursor.fetchall()
         
@@ -3056,80 +3186,19 @@ def check_url_health_for_board(board_id):
                 "checked": 0
             })
         
-        # Check URLs concurrently for better performance
-        import requests
         import concurrent.futures
         from threading import Lock
         
         checked_count = 0
-        db_lock = Lock()  # Lock for thread-safe database access
-        
-        # Set up headers to mimic a browser
-        headers = {
-            'User-Agent': 'Mozilla/5.0 (compatible; ScrapbookBot/1.0; +https://github.com/isaaclee0/scrapbook)',
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-            'Accept-Language': 'en-US,en;q=0.5',
-            'Connection': 'keep-alive',
-            'Upgrade-Insecure-Requests': '1',
-        }
-        
-        def check_wayback_archive(url):
-            """Check if Wayback Machine has an archive of the URL"""
-            try:
-                # Wayback Machine availability API
-                wayback_api = f"https://archive.org/wayback/available?url={url}"
-                response = requests.get(wayback_api, timeout=5)
-                if response.status_code == 200:
-                    data = response.json()
-                    if data.get('archived_snapshots', {}).get('closest', {}).get('available'):
-                        return data['archived_snapshots']['closest']['url']
-            except Exception as e:
-                print(f"Error checking Wayback Machine for {url}: {e}")
-            return None
+        db_lock = Lock()
         
         def check_single_url(url_data):
             nonlocal checked_count
-            archive_url = None
-            status = 'unknown'
+            status, archive_url = check_url_live_status(url_data['url'])
 
-            try:
-                # Quick HEAD request to check if URL is accessible
-                response = requests.head(url_data['url'], headers=headers, timeout=3, allow_redirects=True)
-                status = 'live' if response.status_code < 400 else 'broken'
-
-                # If broken, check Wayback Machine for archives
-                if status == 'broken':
-                    archive_url = check_wayback_archive(url_data['url'])
-                    if archive_url:
-                        status = 'archived'
-
-                # Thread-safe database update
-                with db_lock:
-                    cursor.execute("""
-                        INSERT INTO url_health (pin_id, url, last_checked, status, archive_url)
-                        VALUES (%s, %s, NOW(), %s, %s)
-                        ON DUPLICATE KEY UPDATE
-                        last_checked = NOW(),
-                        status = VALUES(status),
-                        archive_url = VALUES(archive_url)
-                    """, (url_data['pin_id'], url_data['url'], status, archive_url))
-                    checked_count += 1
-
-            except Exception as e:
-                # Mark as unknown if check fails, but still check for archive
-                archive_url = check_wayback_archive(url_data['url'])
-                status = 'archived' if archive_url else 'unknown'
-
-                with db_lock:
-                    cursor.execute("""
-                        INSERT INTO url_health (pin_id, url, last_checked, status, archive_url)
-                        VALUES (%s, %s, NOW(), %s, %s)
-                        ON DUPLICATE KEY UPDATE
-                        last_checked = NOW(),
-                        status = VALUES(status),
-                        archive_url = VALUES(archive_url)
-                    """, (url_data['pin_id'], url_data['url'], status, archive_url))
-                    checked_count += 1
+            with db_lock:
+                _upsert_url_health(cursor, url_data['pin_id'], url_data['url'], status, archive_url)
+                checked_count += 1
 
             try:
                 event_bus.publish(board_id, "url_checked",
@@ -3137,7 +3206,6 @@ def check_url_health_for_board(board_id):
             except Exception as e:
                 print(f"[health] pin {url_data['pin_id']} publish failed: {e}")
         
-        # Use ThreadPoolExecutor for concurrent checks (max 10 concurrent requests)
         with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
             executor.map(check_single_url, urls_to_check)
         
@@ -3175,57 +3243,9 @@ def check_pin_url(pin_id):
         if not pin['link']:
             return jsonify({"success": False, "error": "Pin has no URL to check"}), 400
         
-        # Check the URL
-        import requests
+        status, archive_url = check_url_live_status(pin['link'], timeout=5)
         
-        headers = {
-            'User-Agent': 'Mozilla/5.0 (compatible; ScrapbookBot/1.0; +https://github.com/isaaclee0/scrapbook)',
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-            'Accept-Language': 'en-US,en;q=0.5',
-            'Connection': 'keep-alive',
-            'Upgrade-Insecure-Requests': '1',
-        }
-        
-        def check_wayback_archive(url):
-            """Check if Wayback Machine has an archive of the URL"""
-            try:
-                wayback_api = f"https://archive.org/wayback/available?url={url}"
-                response = requests.get(wayback_api, timeout=5)
-                if response.status_code == 200:
-                    data = response.json()
-                    if data.get('archived_snapshots', {}).get('closest', {}).get('available'):
-                        return data['archived_snapshots']['closest']['url']
-            except Exception as e:
-                print(f"Error checking Wayback Machine for {url}: {e}")
-            return None
-        
-        status = 'unknown'
-        archive_url = None
-        
-        try:
-            # Quick HEAD request to check if URL is accessible
-            response = requests.head(pin['link'], headers=headers, timeout=5, allow_redirects=True)
-            status = 'live' if response.status_code < 400 else 'broken'
-            
-            # If broken, check Wayback Machine for archives
-            if status == 'broken':
-                archive_url = check_wayback_archive(pin['link'])
-                if archive_url:
-                    status = 'archived'
-        except Exception as e:
-            # Mark as unknown if check fails, but still check for archive
-            archive_url = check_wayback_archive(pin['link'])
-            status = 'archived' if archive_url else 'unknown'
-        
-        # Update database
-        cursor.execute("""
-            INSERT INTO url_health (pin_id, url, last_checked, status, archive_url)
-            VALUES (%s, %s, NOW(), %s, %s)
-            ON DUPLICATE KEY UPDATE
-            last_checked = NOW(),
-            status = VALUES(status),
-            archive_url = VALUES(archive_url)
-        """, (pin_id, pin['link'], status, archive_url))
+        _upsert_url_health(cursor, pin_id, pin['link'], status, archive_url)
         
         db.commit()
         cursor.close()
@@ -3281,10 +3301,11 @@ def debug_url_health(board_id):
             FROM pins p
             LEFT JOIN url_health uh ON p.id = uh.pin_id
             WHERE p.board_id = %s AND p.user_id = %s
-            AND p.link IS NOT NULL 
+            AND p.link IS NOT NULL AND p.link != ''
+            AND p.created_at < DATE_SUB(NOW(), INTERVAL %s HOUR)
             AND (uh.last_checked IS NULL OR uh.last_checked < DATE_SUB(NOW(), INTERVAL 1 MONTH))
             LIMIT 20
-        """, (board_id, user['id']))
+        """, (board_id, user['id'], URL_HEALTH_GRACE_HOURS))
         
         urls_to_check = cursor.fetchall()
         
@@ -3537,15 +3558,7 @@ def check_archive(pin_id):
                     archive_url = closest['url']
                     timestamp = closest.get('timestamp', '')
                     
-                    # Update the database
-                    cursor.execute("""
-                        INSERT INTO url_health (pin_id, url, last_checked, status, archive_url)
-                        VALUES (%s, %s, NOW(), 'archived', %s)
-                        ON DUPLICATE KEY UPDATE
-                        last_checked = NOW(),
-                        status = 'archived',
-                        archive_url = VALUES(archive_url)
-                    """, (pin_id, url, archive_url))
+                    _upsert_url_health(cursor, pin_id, url, 'archived', archive_url)
                     db.commit()
                     
                     return jsonify({
@@ -3556,17 +3569,6 @@ def check_archive(pin_id):
                         'message': 'Archive found on Wayback Machine!'
                     })
                 else:
-                    # No archive found
-                    cursor.execute("""
-                        INSERT INTO url_health (pin_id, url, last_checked, status, archive_url)
-                        VALUES (%s, %s, NOW(), 'broken', NULL)
-                        ON DUPLICATE KEY UPDATE
-                        last_checked = NOW(),
-                        status = 'broken',
-                        archive_url = NULL
-                    """, (pin_id, url))
-                    db.commit()
-                    
                     return jsonify({
                         'success': True,
                         'archived': False,

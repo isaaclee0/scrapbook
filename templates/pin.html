@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 
+{% set display_image_url = '/cached/' ~ pin.cached_filename if pin.cached_filename else pin.image_url %}
+
 {% block content %}
 <!-- Debug information -->
 <div style="display: none;">
@@ -24,7 +26,7 @@
         
         <div class="pin-body">
             <div class="pin-image-container">
-                <img src="{{ pin.image_url }}" alt="{{ pin.title }}" class="pin-image" onerror="this.src='/static/images/default_pin.png'">
+                <img src="{{ display_image_url }}" alt="{{ pin.title }}" class="pin-image" data-original-url="{{ pin.image_url }}" onerror="this.src='/static/images/default_pin.png'">
                 <div class="image-hover-controls">
                     <button class="image-control-btn fullscreen-btn" onclick="openFullscreen()" title="Fullscreen">
                         <i class="fas fa-expand"></i>
@@ -1588,7 +1590,7 @@ function deletePin(pinId) {
 function setAsBoardImage() {
     const pinId = {{ pin.id }};
     const boardId = {{ pin.board_id }};
-    const imageUrl = "{{ pin.image_url }}";
+    const imageUrl = "{{ display_image_url }}";
     
     // Close the tools menu
     const toolsMenu = document.getElementById('toolsMenu');
@@ -1616,7 +1618,7 @@ function setAsSectionImage() {
     const pinId = {{ pin.id }};
     const sectionId = {{ pin.section_id if pin.section_id else 'null' }};
     const sectionName = "{{ pin.section_name if pin.section_name else '' }}";
-    const imageUrl = "{{ pin.image_url }}";
+    const imageUrl = "{{ display_image_url }}";
     
     if (!sectionId) {
         alert('This pin is not in a section.');
@@ -2056,7 +2058,7 @@ document.addEventListener('click', function(e) {
 
 // Open image in fullscreen
 function openFullscreen() {
-    const imageUrl = "{{ pin.image_url }}";
+    const imageUrl = "{{ display_image_url }}";
     
     // Create fullscreen overlay
     const overlay = document.createElement('div');

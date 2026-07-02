@@ -270,7 +270,7 @@ def migrate_database():
                         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                         updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
                         FOREIGN KEY (pin_id) REFERENCES pins(id) ON DELETE CASCADE,
-                        INDEX idx_url_health_pin_id (pin_id),
+                        UNIQUE KEY unique_url_health_pin_id (pin_id),
                         INDEX idx_url_health_status (status),
                         INDEX idx_url_health_last_checked (last_checked)
                     ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
@@ -290,12 +290,48 @@ def migrate_database():
                     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
                     FOREIGN KEY (pin_id) REFERENCES pins(id) ON DELETE CASCADE,
-                    INDEX idx_url_health_pin_id (pin_id),
+                    UNIQUE KEY unique_url_health_pin_id (pin_id),
                     INDEX idx_url_health_status (status),
                     INDEX idx_url_health_last_checked (last_checked)
                 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
             """)
             success("Created url_health table")
+        
+        # Migration Step 8b: Deduplicate url_health rows and enforce one row per pin
+        info("\nStep 8b: url_health deduplication and unique constraint")
+        if table_exists(cursor, 'url_health'):
+            cursor.execute("""
+                DELETE t1 FROM url_health t1
+                INNER JOIN url_health t2
+                ON t1.pin_id = t2.pin_id
+                AND (
+                    t1.last_checked < t2.last_checked
+                    OR (t1.last_checked IS NULL AND t2.last_checked IS NOT NULL)
+                    OR (t1.last_checked <=> t2.last_checked AND t1.id < t2.id)
+                )
+            """)
+            deleted = cursor.rowcount
+            if deleted:
+                success(f"Removed {deleted} duplicate url_health rows")
+
+            if not index_exists(cursor, 'url_health', 'unique_url_health_pin_id'):
+                try:
+                    cursor.execute(
+                        "ALTER TABLE url_health ADD UNIQUE KEY unique_url_health_pin_id (pin_id)"
+                    )
+                    success("Added unique constraint on url_health.pin_id")
+                except mysql.connector.Error as e:
+                    if "Duplicate" not in str(e):
+                        warning(f"Could not add unique constraint on url_health.pin_id: {e}")
+            else:
+                warning("url_health.pin_id unique constraint already exists")
+
+            cursor.execute(
+                "UPDATE pins SET link = REPLACE(link, '&amp;', '&') WHERE link LIKE '%&amp;%'"
+            )
+            fixed_links = cursor.rowcount
+            if fixed_links:
+                success(f"Fixed {fixed_links} links with HTML-escaped ampersands")
         
         # Migration Step 9: Add slug and updated_at to boards if missing
         info("\nStep 9: Board enhancements")

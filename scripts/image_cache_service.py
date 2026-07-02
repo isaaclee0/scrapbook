@@ -45,7 +45,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 class ImageCacheService:
-    def __init__(self, cache_dir='static/cached_images', max_workers=3):
+    def __init__(self, cache_dir='static/cached_images', max_workers=6):
         self.cache_dir = cache_dir
         self.max_workers = max_workers
         self.session = requests.Session()
@@ -178,7 +178,7 @@ class ImageCacheService:
             try:
                 # Download video to temp file
                 logger.info(f"Downloading video: {video_url}")
-                response = self.session.get(video_url, timeout=60, stream=True)
+                response = self.session.get(video_url, headers=self._headers_for_url(video_url), timeout=60, stream=True)
                 response.raise_for_status()
                 
                 # Write video data to temp file
@@ -219,6 +219,23 @@ class ImageCacheService:
             logger.error(f"Failed to extract video frame: {e}")
             raise
     
+    def _headers_for_url(self, url):
+        """Return request headers with an appropriate Referer for known CDNs."""
+        headers = dict(self.session.headers)
+        url_lower = (url or '').lower()
+        referer = None
+        if 'pinimg.com' in url_lower or 'pinterest.com' in url_lower:
+            referer = 'https://www.pinterest.com/'
+        elif 'fbcdn.net' in url_lower or 'facebook.com' in url_lower:
+            referer = 'https://www.facebook.com/'
+        elif 'cdninstagram.com' in url_lower or 'instagram.com' in url_lower:
+            referer = 'https://www.instagram.com/'
+        elif 'tiktok.com' in url_lower or 'tiktokcdn.com' in url_lower:
+            referer = 'https://www.tiktok.com/'
+        if referer:
+            headers['Referer'] = referer
+        return headers
+
     def start_workers(self):
         """Start background worker threads"""
         self.running = True
@@ -318,8 +335,24 @@ class ImageCacheService:
     def _should_retry(self, image_url, quality_level, max_retries=3):
         """Check if we should retry caching this image"""
         retry_count, last_retry = self._get_retry_count(image_url, quality_level)
-        
-        # Don't retry if we've exceeded max attempts
+
+        try:
+            db = get_db_connection()
+            cursor = db.cursor(dictionary=True)
+            cursor.execute("""
+                SELECT cache_status, updated_at FROM cached_images
+                WHERE original_url = %s AND quality_level = %s
+            """, (image_url, quality_level))
+            record = cursor.fetchone()
+            cursor.close()
+            db.close()
+            if record and record['cache_status'] == 'pending' and record['updated_at']:
+                stale_cutoff = datetime.now() - timedelta(hours=1)
+                if record['updated_at'] < stale_cutoff:
+                    return True
+        except Exception as e:
+            logger.warning(f"Could not check pending staleness: {e}")
+
         if retry_count >= max_retries:
             logger.info(f"Max retries ({max_retries}) exceeded for {image_url}")
             return False
@@ -438,7 +471,7 @@ class ImageCacheService:
             else:
                 # Download regular image
                 logger.info(f"Downloading image: {image_url}")
-                response = self.session.get(image_url, timeout=30, stream=True)
+                response = self.session.get(image_url, headers=self._headers_for_url(image_url), timeout=30, stream=True)
                 response.raise_for_status()
                 
                 # Check content type
@@ -589,7 +622,7 @@ class ImageCacheService:
             if 'db' in locals():
                 db.close()
     
-    def cache_all_external_images(self, limit=None, board_id=None):
+    def cache_all_external_images(self, limit=None, board_id=None, process_dimensions=False):
         """Cache all external images for pins that don't have cached versions"""
         try:
             db = get_db_connection()
@@ -600,7 +633,7 @@ class ImageCacheService:
                 SELECT p.id, p.image_url, p.board_id
                 FROM pins p 
                 LEFT JOIN cached_images ci ON p.cached_image_id = ci.id 
-                WHERE p.image_url LIKE 'http%' 
+                WHERE p.image_url LIKE 'http%%' 
                 AND (p.cached_image_id IS NULL OR ci.cache_status != 'cached')
                 AND (ci.retry_count IS NULL OR ci.retry_count < 3 OR 
                      ci.last_retry_at < DATE_SUB(NOW(), INTERVAL POWER(2, ci.retry_count) HOUR))
@@ -611,7 +644,15 @@ class ImageCacheService:
                 query += " AND p.board_id = %s"
                 params.append(board_id)
             
-            query += " ORDER BY p.created_at DESC"
+            query += """
+                ORDER BY
+                    CASE
+                        WHEN ci.cache_status = 'pending' THEN 0
+                        WHEN p.cached_image_id IS NULL THEN 1
+                        ELSE 2
+                    END,
+                    p.created_at DESC
+            """
             
             if limit:
                 query += f" LIMIT {limit}"
@@ -636,8 +677,8 @@ class ImageCacheService:
             cursor.close()
             db.close()
             
-            # After caching, also process any pins with missing dimensions
-            self.process_missing_dimensions(board_id=board_id)
+            if process_dimensions:
+                self.process_missing_dimensions(board_id=board_id)
             
         except Exception as e:
             logger.error(f"Error caching all external images: {e}")
@@ -722,7 +763,9 @@ class ImageCacheService:
                         elif image_url.startswith('http'):
                             # External URL - fetch headers or small portion
                             try:
-                                response = self.session.get(image_url, timeout=10, stream=True)
+                                response = self.session.get(
+                                    image_url, headers=self._headers_for_url(image_url),
+                                    timeout=10, stream=True)
                                 response.raise_for_status()
                                 # Read just enough to get dimensions
                                 content = response.raw.read(65536)  # 64KB should be enough for headers

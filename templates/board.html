@@ -115,7 +115,8 @@
             data-section-id="{{ pin.section_id or '' }}" {% if pin.dominant_color_1 and pin.dominant_color_2 %}
             style="--dominant-color: {{ pin.dominant_color_1 }}; --secondary-color: {{ pin.dominant_color_2 }};"
             data-colors-extracted="true" data-has-db-colors="true" {% else %} data-has-db-colors="false" {% endif %}
-            data-pin-id="{{ pin.id }}" id="pin-{{ pin.id }}" data-cached-width="{{ pin.cached_width or '' }}"
+            data-pin-id="{{ pin.id }}" id="pin-{{ pin.id }}" data-image-url="{{ pin.image_url }}"
+            data-cached-width="{{ pin.cached_width or '' }}"
             data-cached-height="{{ pin.cached_height or '' }}" {% if pin.cached_filename %}
             data-cached-url="/cached/{{ pin.cached_filename }}" data-has-cached="true" {% else %}
             data-has-cached="false" {% endif %}>
@@ -1383,59 +1384,64 @@
         devLog('🚀 Starting automatic image processing...');
         devLog('📊 System will process in 3 phases: 1) Cache Images → 2) Extract Colors → 3) Check URL Health');
 
-        // Create new AbortController for this processing session
         processingState.abortController = new AbortController();
 
-        // Count pins and their current state
         const allPins = document.querySelectorAll('.pin-card');
-        const uncachedPins = Array.from(allPins).filter(pin => {
-            const imageUrl = pin.getAttribute('data-image-url');
-            const hasCached = pin.getAttribute('data-has-cached') === 'true';
-            return imageUrl && imageUrl.startsWith('http') && !hasCached;
-        });
-
         const pinsWithoutColors = Array.from(allPins).filter(pin => {
             return pin.getAttribute('data-has-db-colors') === 'false';
         });
 
         processingState.totalPins = allPins.length;
-        processingState.uncachedPins = uncachedPins;
-        processingState.cachedPins = allPins.length - uncachedPins.length;
         processingState.extractedPins = allPins.length - pinsWithoutColors.length;
 
-        devLog(`📊 Board Analysis:`);
-        devLog(`  - Total pins: ${allPins.length}`);
-        devLog(`  - Uncached external images: ${uncachedPins.length}`);
-        devLog(`  - Pins without colors: ${pinsWithoutColors.length}`);
+        // Use DB counts (authoritative) rather than DOM-only detection.
+        // Server-rendered pin cards previously lacked data-image-url, so Phase 1
+        // never ran even when thousands of board images needed caching.
+        fetch(`/api/board-status/${getBoardId()}`, {
+            signal: processingState.abortController?.signal
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (!data.success) {
+                    devWarn('⚠️ Board status unavailable, skipping auto-processing');
+                    return;
+                }
 
-        updateProcessingStatus();
+                processingState.cachedPins = data.cached_count;
+                processingState.boardUncachedCount = data.uncached_count;
 
-        if (uncachedPins.length > 0) {
-            devLog('📁 Phase 1: Starting image caching...');
-            // Start caching phase
-            processingState.phase = 'caching';
-            updateProcessingStatus();
-            startImageCaching(uncachedPins.length);
-        } else if (pinsWithoutColors.length > 0) {
-            devLog('✅ Phase 1: All images already cached, skipping to phase 2...');
-            devLog('🎨 Phase 2: Starting color extraction...');
-            // Skip to extraction phase
-            processingState.phase = 'extracting';
-            updateProcessingStatus();
-            startColorExtraction();
-        } else {
-            devLog('✅ Phase 1 & 2: All images cached and colors extracted, skipping to phase 3...');
-            devLog('🔗 Phase 3: Checking URL health...');
-            // Check if we need URL health checking
-            checkAndStartUrlHealthChecking();
-        }
+                devLog(`📊 Board Analysis (from DB):`);
+                devLog(`  - Total pins: ${data.total_pins}`);
+                devLog(`  - Uncached external images: ${data.uncached_count}`);
+                devLog(`  - Pins without colors: ${data.total_pins - data.extracted_count}`);
+
+                updateProcessingStatus();
+
+                if (data.uncached_count > 0) {
+                    devLog('📁 Phase 1: Starting image caching...');
+                    processingState.phase = 'caching';
+                    updateProcessingStatus();
+                    startImageCaching(data.uncached_count);
+                } else if (data.total_pins - data.extracted_count > 0) {
+                    devLog('✅ Phase 1: All images already cached, skipping to phase 2...');
+                    processingState.phase = 'extracting';
+                    updateProcessingStatus();
+                    startColorExtraction();
+                } else {
+                    devLog('✅ Phase 1 & 2 complete, skipping to phase 3...');
+                    checkAndStartUrlHealthChecking();
+                }
+            })
+            .catch(error => {
+                devError('❌ Error fetching board status:', error);
+            });
     }
 
-    function startImageCaching(imageCount) {
-        devLog(`📁 Starting to cache ${imageCount} images...`);
+    function startImageCaching(remainingCount) {
+        const batchSize = Math.min(remainingCount, 200);
+        devLog(`📁 Caching batch of ${batchSize} images (${remainingCount} remaining on board)...`);
 
         const boardId = getBoardId();
-        devLog(`📁 Caching images for board ${boardId}...`);
 
         fetch('/cache-images', {
             method: 'POST',
@@ -1443,7 +1449,7 @@
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                limit: imageCount,
+                limit: batchSize,
                 board_id: parseInt(boardId)
             }),
             signal: processingState.abortController?.signal
@@ -1452,8 +1458,7 @@
             .then(data => {
                 if (data.success) {
                     devLog('✅ Image caching started:', data.message);
-                    // Poll for caching completion
-                    pollCachingProgress();
+                    pollCachingProgress(remainingCount);
                 } else {
                     devError('❌ Failed to start image caching:', data.error);
                     processingState.phase = 'idle';
@@ -1467,14 +1472,38 @@
             });
     }
 
-    function pollCachingProgress() {
+    function finishCachingPhase() {
+        fetch(`/api/board-status/${getBoardId()}`, {
+            signal: processingState.abortController?.signal
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success && data.uncached_count > 0) {
+                    devLog(`📁 ${data.uncached_count} images still uncached — starting next batch`);
+                    startImageCaching(data.uncached_count);
+                    return;
+                }
+                devLog('✅ Phase 1 complete: all board images cached');
+                processingState.phase = 'extracting';
+                updateProcessingStatus();
+                setTimeout(startColorExtraction, 1000);
+            })
+            .catch(() => {
+                processingState.phase = 'extracting';
+                updateProcessingStatus();
+                setTimeout(startColorExtraction, 1000);
+            });
+    }
+
+    function pollCachingProgress(remainingCount) {
         // Despite the name kept for backwards compatibility, this opens a
         // Server-Sent Events stream to /api/board-events/<id> and reacts to
         // pin_cached / pin_colored events as they happen — no polling.
         const boardId = getBoardId();
         const startTime = Date.now();
-        const maxStreamMs = 120000;   // hard cap: 2 minutes total
-        const maxNoProgressMs = 30000; // advance if no event for 30s
+        const batchEstimateMs = Math.max(120000, Math.min(remainingCount || 200, 200) * 3000);
+        const maxStreamMs = batchEstimateMs;
+        const maxNoProgressMs = 60000;
         let noProgressTimer = null;
         let advanced = false;
 
@@ -1490,31 +1519,16 @@
         const advance = (reason) => {
             if (advanced) return;
             advanced = true;
-            devLog(`✅ Phase 1 complete (${reason}): moving to color extraction`);
+            devLog(`✅ Batch complete (${reason})`);
             cleanup();
-            processingState.phase = 'extracting';
-            updateProcessingStatus();
-            setTimeout(startColorExtraction, 2000);
+            finishCachingPhase();
         };
 
         const resetNoProgressTimer = () => {
             if (noProgressTimer) clearTimeout(noProgressTimer);
             noProgressTimer = setTimeout(() => {
-                advance(`no event for ${maxNoProgressMs / 1000}s — likely videos or rate-limited`);
+                advance(`no event for ${maxNoProgressMs / 1000}s — batch may be done or rate-limited`);
             }, maxNoProgressMs);
-        };
-
-        const checkComplete = () => {
-            const allPins = document.querySelectorAll('.pin-card');
-            const uncachedExternalPins = Array.from(allPins).filter(pin => {
-                const imageUrl = pin.getAttribute('data-image-url');
-                const hasCached = pin.getAttribute('data-has-cached') === 'true';
-                return imageUrl && imageUrl.startsWith('http') && !hasCached;
-            });
-            if (uncachedExternalPins.length <= 0) {
-                advance('all external images cached');
-            }
-            return uncachedExternalPins.length;
         };
 
         // Initial snapshot — same payload as /api/board-status, sent once at open.
@@ -1525,9 +1539,12 @@
                 if (s.extracted_pins?.length) updateExtractedPinsInDOM(s.extracted_pins);
                 processingState.cachedPins = s.cached_count;
                 processingState.extractedPins = s.extracted_count;
+                processingState.boardUncachedCount = s.uncached_count;
                 updateProcessingStatus();
-                devLog(`📊 SSE snapshot: ${s.cached_count}/${s.total_pins} cached, ${s.extracted_count} colored`);
-                checkComplete();
+                devLog(`📊 SSE snapshot: ${s.cached_count}/${s.total_pins} cached, ${s.uncached_count} uncached`);
+                if (s.uncached_count === 0) {
+                    advance('all board images cached (snapshot)');
+                }
             } catch (err) { devWarn('snapshot parse failed', err); }
         });
 
@@ -1539,35 +1556,31 @@
             if (evt.type === 'pin_cached') {
                 updateCachedPinsInDOM([{ id: evt.pin_id, cached_filename: evt.cached_filename }]);
                 processingState.cachedPins++;
+                if (processingState.boardUncachedCount > 0) {
+                    processingState.boardUncachedCount--;
+                }
                 updateProcessingStatus();
                 resetNoProgressTimer();
-                const remaining = checkComplete();
-                devLog(`📁 pin ${evt.pin_id} cached (${remaining} remaining)`);
+                devLog(`📁 pin ${evt.pin_id} cached (${processingState.boardUncachedCount} uncached est.)`);
             } else if (evt.type === 'pin_colored') {
                 updateExtractedPinsInDOM([{ id: evt.pin_id, color1: evt.c1, color2: evt.c2 }]);
                 processingState.extractedPins++;
                 updateProcessingStatus();
             }
-            // url_checked events also arrive on this channel but the URL-health
-            // phase has its own UI — ignore here.
         };
 
         es.onerror = () => {
-            // EventSource auto-reconnects; only give up after the hard cap.
             if (Date.now() - startTime > maxStreamMs && !advanced) {
                 advance('stream errored past max time');
             }
         };
 
-        // Hook the existing AbortController so a navigation away kills the stream.
         if (processingState.abortController) {
             processingState.abortController.signal.addEventListener('abort', cleanup);
         }
 
-        // Hard cap on the whole phase.
-        setTimeout(() => advance(`max ${maxStreamMs / 1000}s reached`), maxStreamMs);
+        setTimeout(() => advance(`max ${maxStreamMs / 1000}s reached for batch`), maxStreamMs);
 
-        // Start the no-progress watchdog from the moment we open the stream.
         resetNoProgressTimer();
         devLog('⏳ Streaming caching progress via SSE…');
     }
@@ -1976,15 +1989,8 @@
                 statusText.textContent = '🎨 Ready';
                 break;
             case 'caching':
-                // Count uncached pins dynamically from DOM
-                const allPins = document.querySelectorAll('.pin-card');
-                const uncachedPins = Array.from(allPins).filter(pin => {
-                    const imageUrl = pin.getAttribute('data-image-url');
-                    const hasCached = pin.getAttribute('data-has-cached') === 'true';
-                    return imageUrl && imageUrl.startsWith('http') && !hasCached;
-                });
-                const uncachedCount = uncachedPins.length;
-                statusText.textContent = `📁 Processing ${uncachedCount} images...`;
+                const uncachedCount = processingState.boardUncachedCount ?? 0;
+                statusText.textContent = `📁 Caching images (${uncachedCount} remaining)...`;
                 break;
             case 'extracting':
                 // Count pins without colors dynamically from DOM

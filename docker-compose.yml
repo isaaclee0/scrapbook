@@ -3,6 +3,7 @@
 services:
   web:
     build: .
+    image: scrapbook-web
     restart: unless-stopped
     # Bind-mounted source is often root-owned; run as root so cached images / writes work.
     user: "0:0"
@@ -34,6 +35,31 @@ services:
       db:
         condition: service_healthy
       redis:
+        condition: service_healthy
+
+  cache-worker:
+    image: scrapbook-web
+    restart: unless-stopped
+    user: "0:0"
+    command: ["python", "scripts/cache_worker.py"]
+    volumes:
+      - .:/app
+      - /app/node_modules
+    networks:
+      - scrapbook_net
+    environment:
+      - PYTHONUNBUFFERED=1
+      - DB_HOST=db
+      - DB_USER=db
+      - DB_PASSWORD=${MYSQL_PASSWORD:-scrapbook_local_dev}
+      - DB_NAME=db
+      - CACHE_WORKER_BATCH_SIZE=${CACHE_WORKER_BATCH_SIZE:-200}
+      - CACHE_WORKER_SLEEP=${CACHE_WORKER_SLEEP:-10}
+      - CACHE_WORKER_THREADS=${CACHE_WORKER_THREADS:-6}
+      - CACHE_WORKER_MAX_IDLE_ROUNDS=${CACHE_WORKER_MAX_IDLE_ROUNDS:-0}
+      - CACHE_WORKER_IDLE_BACKOFF=${CACHE_WORKER_IDLE_BACKOFF:-300}
+    depends_on:
+      db:
         condition: service_healthy
 
   redis:

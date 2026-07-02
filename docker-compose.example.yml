@@ -32,6 +32,29 @@ services:
       retries: 3
       start_period: 40s
 
+  cache-worker:
+    image: staugustine1/scrapbook:latest
+    restart: unless-stopped
+    command: ["python", "scripts/cache_worker.py"]
+    volumes:
+      - cached_images:/app/static/cached_images
+    networks:
+      - scrapbook_net
+    environment:
+      - PYTHONUNBUFFERED=1
+      - DB_HOST=db
+      - DB_USER=db
+      - DB_PASSWORD=your_secure_password_here
+      - DB_NAME=db
+      - CACHE_WORKER_BATCH_SIZE=${CACHE_WORKER_BATCH_SIZE:-200}
+      - CACHE_WORKER_SLEEP=${CACHE_WORKER_SLEEP:-10}
+      - CACHE_WORKER_THREADS=${CACHE_WORKER_THREADS:-6}
+      - CACHE_WORKER_MAX_IDLE_ROUNDS=${CACHE_WORKER_MAX_IDLE_ROUNDS:-0}
+      - CACHE_WORKER_IDLE_BACKOFF=${CACHE_WORKER_IDLE_BACKOFF:-300}
+    depends_on:
+      db:
+        condition: service_healthy
+
   redis:
     image: redis:7-alpine
     restart: unless-stopped
