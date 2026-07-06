@@ -1866,6 +1866,15 @@ def add_pin():
 
             pin_id = cursor.lastrowid
 
+            # Seed a url_health row so the new pin is tracked immediately, mirroring
+            # update_pin. Without this the pin counts as "has link" but "unchecked",
+            # which strands the board health-check UI in an infinite polling loop.
+            if source_url:
+                cursor.execute("""
+                    INSERT INTO url_health (pin_id, url, status, last_checked)
+                    VALUES (%s, %s, 'unknown', NULL)
+                """, (pin_id, source_url))
+
             record_audit(cursor, action='pin.create', entity_type='pin',
                          entity_id=pin_id, user_id=user['id'],
                          actor_email=user.get('email'), before=None,

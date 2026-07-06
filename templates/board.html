@@ -1952,9 +1952,11 @@
 
                     devLog(`📊 Overall Progress: ${totalChecked}/${totalWithLinks} URLs checked`);
 
-                    if (remainingUrls <= 0) {
-                        // All URLs checked
-                        devLog('🎉 All URLs have been health checked!');
+                    if (remainingUrls <= 0 || data.checked === 0) {
+                        // All URLs checked, or this batch made no forward progress
+                        // (e.g. remaining pins are within the health-check grace window).
+                        // Stop rather than polling forever.
+                        devLog('🎉 URL health checking finished (no further progress possible)!');
                         devLog('✅ Phase 3 complete: URL health checking finished');
                         devLog('🎉 All processing phases complete! System is ready.');
                         processingState.phase = 'complete';
