@@ -444,134 +444,6 @@ except mysql.connector.Error as err:
     print(f"Error creating connection pool: {err}")
     cnxpool = None
 
-# ---------------------------------------------------------------------------
-# Background image caching
-# Triggered when the browser successfully loads an image from an external URL.
-# Downloads the file to static/cached_images/ in a daemon thread so the pin
-# serves locally on all future page loads.
-# ---------------------------------------------------------------------------
-
-# Cap concurrent background downloads so a busy board doesn't flood outbound.
-_bg_cache_semaphore = threading.Semaphore(4)
-
-def _bg_download_and_cache(pin_id, image_url, width, height, cache_id, board_id=None):
-    """
-    Download an external image to local cache. Runs in a daemon thread.
-    Updates cached_images and pins so future loads hit /cached/ instead of
-    the external CDN. If board_id is provided, publishes a pin_cached event
-    to the board's SSE stream once the file is on disk.
-    """
-    if not _bg_cache_semaphore.acquire(blocking=False):
-        # All slots busy — skip for now, browser will retry on next page load.
-        return
-    try:
-        url_hash = hashlib.md5(image_url.encode()).hexdigest()[:16]
-        cache_dir = os.path.join(
-            os.path.dirname(os.path.abspath(__file__)), 'static', 'cached_images'
-        )
-        os.makedirs(cache_dir, exist_ok=True)
-
-        # Download with a browser-like session
-        resp = requests.get(image_url, headers=cache_headers_for_url(image_url), timeout=30, stream=True)
-        resp.raise_for_status()
-
-        content_type = resp.headers.get('content-type', '').lower()
-        if not content_type.startswith('image/'):
-            return  # Not an image — don't cache
-
-        # Derive extension from content-type, fall back to URL
-        if 'png' in content_type:
-            ext = 'png'
-        elif 'webp' in content_type:
-            ext = 'webp'
-        elif 'gif' in content_type:
-            ext = 'gif'
-        else:
-            ext = 'jpg'
-
-        filename = f"{url_hash}_low.{ext}"
-        filepath = os.path.join(cache_dir, filename)
-
-        # Write to disk (skip if already present from a previous attempt)
-        if not os.path.exists(filepath):
-            with open(filepath, 'wb') as f:
-                for chunk in resp.iter_content(chunk_size=8192):
-                    f.write(chunk)
-
-        file_size = os.path.getsize(filepath)
-
-        # Update DB: mark as fully cached and link pin to local file
-        db = get_db_connection()
-        cursor = db.cursor()
-        try:
-            if cache_id:
-                cursor.execute("""
-                    UPDATE cached_images
-                       SET cached_filename = %s,
-                           file_size       = %s,
-                           width           = %s,
-                           height          = %s,
-                           cache_status    = 'cached',
-                           updated_at      = NOW()
-                     WHERE id = %s
-                """, (filename, file_size, width, height, cache_id))
-            else:
-                cursor.execute("""
-                    INSERT INTO cached_images
-                        (original_url, cached_filename, file_size, width, height,
-                         quality_level, cache_status)
-                    VALUES (%s, %s, %s, %s, %s, 'low', 'cached')
-                    ON DUPLICATE KEY UPDATE
-                        cached_filename = VALUES(cached_filename),
-                        file_size       = VALUES(file_size),
-                        width           = VALUES(width),
-                        height          = VALUES(height),
-                        cache_status    = 'cached',
-                        updated_at      = NOW()
-                """, (image_url, filename, file_size, width, height))
-                cache_id = cursor.lastrowid
-
-            cursor.execute("""
-                UPDATE pins
-                   SET cached_image_id    = %s,
-                       uses_cached_image  = TRUE
-                 WHERE id = %s
-            """, (cache_id, pin_id))
-            db.commit()
-            print(f"[cache] pin {pin_id} → {filename} ({file_size:,} bytes)")
-        finally:
-            cursor.close()
-            db.close()
-
-        if board_id is not None:
-            try:
-                event_bus.publish(board_id, "pin_cached",
-                                  {"pin_id": pin_id, "cached_filename": filename})
-            except Exception as e:
-                print(f"[cache] pin {pin_id} publish failed: {e}")
-
-    except Exception as e:
-        print(f"[cache] pin {pin_id} failed: {e}")
-        if cache_id:
-            try:
-                db = get_db_connection()
-                cursor = db.cursor()
-                cursor.execute("""
-                    UPDATE cached_images
-                       SET cache_status = 'failed',
-                           retry_count = COALESCE(retry_count, 0) + 1,
-                           last_retry_at = NOW(),
-                           updated_at = NOW()
-                     WHERE id = %s AND cache_status = 'pending'
-                """, (cache_id,))
-                db.commit()
-                cursor.close()
-                db.close()
-            except Exception as db_err:
-                print(f"[cache] pin {pin_id} failed to mark pending as failed: {db_err}")
-    finally:
-        _bg_cache_semaphore.release()
-
 def get_db_connection():
     """
     Get a database connection from the pool.
@@ -1900,12 +1772,7 @@ def add_pin():
 
         if image_url.startswith('http'):
             try:
-                global _image_cache_service
-                with _image_cache_lock:
-                    if _image_cache_service is None:
-                        from scripts.image_cache_service import ImageCacheService
-                        _image_cache_service = ImageCacheService()
-                    cache_service = _image_cache_service
+                cache_service = _get_cache_service()
                 cache_service.queue_image_for_caching(pin_id, image_url, 'low', board_id)
             except Exception as e:
                 print(f"Failed to queue image for caching: {e}")
@@ -2826,6 +2693,15 @@ _image_cache_service = None
 _image_cache_lock = threading.Lock()
 _image_caching_in_progress = False
 
+def _get_cache_service():
+    """Lazily construct the shared ImageCacheService singleton."""
+    global _image_cache_service
+    with _image_cache_lock:
+        if _image_cache_service is None:
+            from scripts.image_cache_service import ImageCacheService
+            _image_cache_service = ImageCacheService()
+        return _image_cache_service
+
 @app.route('/cache-images', methods=['POST'])
 @login_required
 def cache_images():
@@ -2847,14 +2723,8 @@ def cache_images():
         limit = data.get('limit', 10) if data else 10
         board_id = data.get('board_id') if data else None
         
-        # Import and use the image cache service (singleton)
-        from scripts.image_cache_service import ImageCacheService
-        
-        with _image_cache_lock:
-            if _image_cache_service is None:
-                _image_cache_service = ImageCacheService()
-            cache_service = _image_cache_service
-        
+        cache_service = _get_cache_service()
+
         # Queue images for caching in background
         def cache_in_background():
             global _image_caching_in_progress
@@ -3480,16 +3350,18 @@ def save_pin_dimensions(pin_id):
 
         db.commit()
 
-        # Kick off a background download if the file isn't already on disk.
-        # The thread updates cached_images + pins once complete, so future
-        # page loads serve from /cached/ and never touch the external URL.
+        # Queue a background caching job if the file isn't already on disk.
+        # ImageCacheService resizes/encodes and updates cached_images + pins
+        # once complete, so future page loads serve from /cached/ and never
+        # touch the external URL. The service looks up the pending row we
+        # just wrote above by (image_url, quality_level='low'), so cache_id
+        # doesn't need to be passed explicitly.
         if not already_cached and image_url.startswith('http'):
-            t = threading.Thread(
-                target=_bg_download_and_cache,
-                args=(pin_id, image_url, width, height, cache_id, board_id),
-                daemon=True
-            )
-            t.start()
+            try:
+                cache_service = _get_cache_service()
+                cache_service.queue_image_for_caching(pin_id, image_url, 'low', board_id)
+            except Exception as e:
+                print(f"Failed to queue image for caching: {e}")
 
         return jsonify({'success': True})
 
