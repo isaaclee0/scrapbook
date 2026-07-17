@@ -1421,8 +1421,9 @@ def search():
         # Optimized: Single query with all joins, limit to first 10 pins for initial load
         pin_sql = """
             SELECT p.*, b.name as board_name, s.name as section_name,
-                   ci.cached_filename, ci.cache_status
-            FROM pins p 
+                   ci.cached_filename, ci.cache_status,
+                   ci.width as cached_width, ci.height as cached_height
+            FROM pins p
             LEFT JOIN boards b ON p.board_id = b.id 
             LEFT JOIN sections s ON p.section_id = s.id
             LEFT JOIN cached_images ci ON p.cached_image_id = ci.id AND ci.cache_status = 'cached'
@@ -1488,8 +1489,9 @@ def search_pins_api():
         # Optimized: Single query with all joins, with pagination
         pin_sql = """
             SELECT p.*, b.name as board_name, s.name as section_name,
-                   ci.cached_filename, ci.cache_status
-            FROM pins p 
+                   ci.cached_filename, ci.cache_status,
+                   ci.width as cached_width, ci.height as cached_height
+            FROM pins p
             LEFT JOIN boards b ON p.board_id = b.id 
             LEFT JOIN sections s ON p.section_id = s.id
             LEFT JOIN cached_images ci ON p.cached_image_id = ci.id AND ci.cache_status = 'cached'
