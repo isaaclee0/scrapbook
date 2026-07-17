@@ -1168,19 +1168,11 @@
                     pinSizeValue.textContent = sizeLabel;
                     localStorage.setItem('boardPinSize', sizeLevel);
 
-                    // For masonry layout: adjust column count based on size
-                    // Smaller size = more columns, larger size = fewer columns
-                    const pinsGrid = document.getElementById('pinsGrid');
-                    if (pinsGrid) {
-                        const columnCounts = {
-                            1: 7,  // Tiny - most columns
-                            2: 6,  // Small
-                            3: 5,  // Medium (default)
-                            4: 4,  // Large
-                            5: 3   // Huge - fewest columns
-                        };
-                        const columnCount = columnCounts[sizeLevel];
-                        pinsGrid.style.columnCount = columnCount;
+                    // Masonry pages: relayout with the new pin size (the
+                    // engine reads boardPinSize from localStorage, which was
+                    // just saved above).
+                    if (window.scrapbookMasonry) {
+                        window.scrapbookMasonry.layout();
                     }
 
                     // Keep the old method for backward compatibility with non-masonry layouts
