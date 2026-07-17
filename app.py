@@ -15,6 +15,7 @@ import unicodedata
 import time
 import base64
 import hashlib
+import mimetypes
 from functools import wraps
 from datetime import datetime
 from contextlib import contextmanager
@@ -27,6 +28,11 @@ from email_service import send_otp_email, send_welcome_email
 from audit_helpers import record_audit, snapshot_board, snapshot_pin, snapshot_section
 from csrf import issue_csrf_token, require_csrf
 import event_bus
+
+# This base image's /etc/mime.types doesn't know .webp, which makes
+# send_from_directory fall back to application/octet-stream (forcing a
+# download instead of inline display) for cached images served as WebP.
+mimetypes.add_type('image/webp', '.webp')
 
 # Try to import redis, but make it optional
 try:

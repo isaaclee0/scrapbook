@@ -377,13 +377,17 @@ class ImageCacheService:
             
             # Check if already in database
             cursor.execute("""
-                SELECT id, cache_status FROM cached_images 
+                SELECT id, cache_status, cached_filename FROM cached_images
                 WHERE original_url = %s AND quality_level = %s
             """, (image_url, quality_level))
-            
+
             cached_record = cursor.fetchone()
-            
-            if cached_record and cached_record['cache_status'] == 'cached' and os.path.exists(cached_path):
+
+            existing_path = None
+            if cached_record and cached_record.get('cached_filename'):
+                existing_path = os.path.join(self.cache_dir, cached_record['cached_filename'])
+
+            if cached_record and cached_record['cache_status'] == 'cached' and existing_path and os.path.exists(existing_path):
                 # Update last accessed time
                 cursor.execute("""
                     UPDATE cached_images
@@ -399,9 +403,9 @@ class ImageCacheService:
                 """, (cached_record['id'], pin_id))
 
                 db.commit()
-                logger.info(f"Image already cached: {cached_filename}")
+                logger.info(f"Image already cached: {cached_record['cached_filename']}")
                 self._publish(board_id, "pin_cached",
-                              {"pin_id": pin_id, "cached_filename": cached_filename})
+                              {"pin_id": pin_id, "cached_filename": cached_record['cached_filename']})
                 return cached_record['id']
             
             # Determine if this is a video URL
