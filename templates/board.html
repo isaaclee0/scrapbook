@@ -156,6 +156,27 @@
         </div>
         {% endfor %}
     </div>
+    <script src="{{ url_for('static', filename='js/masonry.js') }}"></script>
+    <script>
+        // Runs synchronously during parsing so the first paint already shows
+        // final positions — this also replaces the old post-paint
+        // applyPinSizeFromStorage() column switch (saved pin size is read
+        // *before* the first layout).
+        (function () {
+            var grid = document.getElementById('pinsGrid');
+            if (grid && window.createScrapbookMasonry) {
+                window.scrapbookMasonry = window.createScrapbookMasonry(grid, {
+                    // Saved pin size drives column count (Tiny=7 … Huge=3),
+                    // capped by viewport breakpoints inside the engine.
+                    columnCount: function () {
+                        var size = parseInt(localStorage.getItem('boardPinSize'), 10) || 3;
+                        return { 1: 7, 2: 6, 3: 5, 4: 4, 5: 3 }[size] || 5;
+                    }
+                });
+                window.scrapbookMasonry.layout();
+            }
+        })();
+    </script>
 </div>
 
 <!-- Board Settings Modals -->
@@ -464,51 +485,31 @@
         }
     }
 
-    /* Masonry layout using CSS columns */
+    /* Stable masonry: absolutely positioned cards laid out by /static/js/masonry.js.
+       See docs/superpowers/specs/2026-07-17-stable-masonry-design.md */
     #pinsGrid {
         padding: 20px;
-        column-count: 5;
-        column-gap: 16px;
-    }
-
-    @media (max-width: 1600px) {
-        #pinsGrid {
-            column-count: 4;
-        }
-    }
-
-    @media (max-width: 1200px) {
-        #pinsGrid {
-            column-count: 3;
-        }
-    }
-
-    @media (max-width: 800px) {
-        #pinsGrid {
-            column-count: 2;
-        }
-    }
-
-    @media (max-width: 500px) {
-        #pinsGrid {
-            column-count: 1;
-        }
+        position: relative;
     }
 
     .pin-card {
-        display: inline-block;
-        width: 100%;
-        margin-bottom: 16px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* Hidden until the first layout() positions the cards */
+        visibility: hidden;
         border-radius: 12px;
         overflow: hidden;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         transition: transform 0.2s, box-shadow 0.2s;
-        position: relative;
         background: white;
         /* Contain layout to prevent shifts from propagating to other cards */
         contain: layout style;
-        /* Prevent breaks inside pin cards in CSS columns */
-        break-inside: avoid;
+    }
+
+    #pinsGrid.masonry-ready .pin-card {
+        visibility: visible;
     }
 
     /* Default neutral appearance for pins without colors */
@@ -1094,40 +1095,8 @@
             });
     }
 
-    // Apply pin size from localStorage immediately
-    function applyPinSizeFromStorage() {
-        const savedPinSize = parseInt(localStorage.getItem('boardPinSize')) || 3;
-        const pinsGrid = document.getElementById('pinsGrid');
-
-        if (pinsGrid) {
-            const columnCounts = {
-                1: 7,  // Tiny - most columns
-                2: 6,  // Small
-                3: 5,  // Medium (default)
-                4: 4,  // Large
-                5: 3   // Huge - fewest columns
-            };
-            const columnCount = columnCounts[savedPinSize] || columnCounts[3];
-            pinsGrid.style.columnCount = columnCount;
-        }
-
-        // Also set the CSS variable for pin width (for backward compatibility)
-        const pinWidths = {
-            1: '150px',  // Tiny
-            2: '200px',  // Small  
-            3: '250px',  // Medium
-            4: '300px',  // Large
-            5: '400px'   // Huge
-        };
-        const pinWidth = pinWidths[savedPinSize] || pinWidths[3];
-        document.documentElement.style.setProperty('--pin-width', pinWidth);
-    }
-
     // Initialize the board
     document.addEventListener('DOMContentLoaded', function () {
-        // Apply pin size immediately from localStorage before any layout operations
-        applyPinSizeFromStorage();
-
         initializeSectionFiltering();
         initializeBoardManagement();
 
@@ -2182,6 +2151,12 @@
                 emptyMsg.style.display = 'none';
             }
         }
+
+        // Re-place visible cards after visibility changed. Deterministic:
+        // when nothing changed (e.g. filter 'all' after an infinite-scroll
+        // append), existing cards resolve to identical positions and only
+        // new cards gain positions.
+        if (window.scrapbookMasonry) window.scrapbookMasonry.layout();
     }
 
     function updateSectionActionsUI(sectionId) {
