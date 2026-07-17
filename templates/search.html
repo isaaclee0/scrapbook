@@ -198,6 +198,10 @@
     width: 100%;
     height: 100%;
     max-width: 100%;
+    /* base.html's modal .pin-image rule sets max-height: 400px, which would
+       leave a gradient strip below images in containers taller than 400px —
+       same override board.html uses. */
+    max-height: none !important;
     display: block;
     transition: transform 0.2s, opacity 0.3s;
     position: absolute;
