@@ -10,7 +10,6 @@ from PIL import Image
 import io
 import subprocess
 import tempfile
-from urllib.parse import urlparse, urljoin
 import threading
 import queue
 import logging
@@ -286,28 +285,8 @@ class ImageCacheService:
     
     def _generate_cache_filename(self, original_url, quality_level):
         """Generate a unique filename for cached image"""
-        # Create hash from URL
         url_hash = hashlib.md5(original_url.encode()).hexdigest()[:16]
-        
-        # Get file extension from URL (fallback to jpg)
-        parsed_url = urlparse(original_url)
-        path = parsed_url.path.lower()
-        
-        # For video URLs, always use jpg extension for the extracted frame
-        if self._is_video_url(original_url):
-            ext = 'jpg'
-        elif path.endswith(('.jpg', '.jpeg')):
-            ext = 'jpg'
-        elif path.endswith('.png'):
-            ext = 'png'
-        elif path.endswith('.webp'):
-            ext = 'webp'
-        elif path.endswith('.gif'):
-            ext = 'gif'
-        else:
-            ext = 'jpg'  # Default fallback
-        
-        return f"{url_hash}_{quality_level}.{ext}"
+        return f"{url_hash}_{quality_level}.webp"
     
     def _get_retry_count(self, image_url, quality_level):
         """Get current retry count for an image"""
@@ -453,7 +432,7 @@ class ImageCacheService:
                     with Image.open(temp_frame_path) as img:
                         # Process the frame like a regular image
                         img = self._process_image(img, quality_level)
-                        img.save(cached_path, 'JPEG', quality=70, optimize=True)
+                        img.save(cached_path, 'WEBP', quality=70, method=6)
                         
                         # Get file size
                         file_size = os.path.getsize(cached_path)
@@ -487,7 +466,7 @@ class ImageCacheService:
                 # Process image with PIL
                 with Image.open(io.BytesIO(image_data)) as img:
                     img = self._process_image(img, quality_level)
-                    img.save(cached_path, 'JPEG', quality=70, optimize=True)
+                    img.save(cached_path, 'WEBP', quality=70, method=6)
                     
                     # Get file size
                     file_size = os.path.getsize(cached_path)
