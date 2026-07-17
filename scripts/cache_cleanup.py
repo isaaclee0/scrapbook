@@ -14,6 +14,10 @@ Three things, in order:
      cached_images row at all are deleted as orphaned.
 
 Idempotent — safe to re-run; a second run should find nothing left to do.
+Safe to run with the app/cache-worker containers still live: DB writes are
+row-level-serialized by the unique (original_url, quality_level) key, so a
+race just means whichever file loses becomes an orphan for a future run's
+Phase 3 to clean up — not a crash or data loss.
 Dry-run by default; pass --execute to actually change anything.
 
 Usage:
@@ -60,12 +64,22 @@ QUALITY_MAX_SIDE = {
 def _process_and_save(service, image_bytes, quality_level, dest_path):
     """Resize + encode as WebP via the same pipeline ImageCacheService
     uses. Takes bytes (not a path) so it's always safe to write to
-    dest_path even when dest_path is the same file we just read —
-    the source is fully buffered in memory before any write happens."""
+    dest_path even when dest_path is the same file we just read — the
+    source is fully buffered in memory before any write happens, and
+    the write itself goes to a temp file that's only renamed into place
+    (atomically) after a fully successful encode, so a failed encode
+    can never leave dest_path truncated or corrupted."""
+    tmp_path = dest_path + '.tmp'
     with Image.open(io.BytesIO(image_bytes)) as img:
         img = service._process_image(img, quality_level)
-        img.save(dest_path, 'WEBP', quality=70, method=6)
+        try:
+            img.save(tmp_path, 'WEBP', quality=70, method=6)
+        except Exception:
+            if os.path.exists(tmp_path):
+                os.remove(tmp_path)
+            raise
         width, height = img.size
+    os.replace(tmp_path, dest_path)
     file_size = os.path.getsize(dest_path)
     return file_size, width, height
 
@@ -97,6 +111,8 @@ def recover_legacy(cursor, service, execute, stats):
     claimed_stems = set()
     for pin in pins:
         stem = hashlib.md5(pin['image_url'].encode()).hexdigest()
+        if stem in claimed_stems:
+            continue
         legacy_name = legacy_files.get(stem)
         if not legacy_name:
             continue
@@ -112,7 +128,11 @@ def recover_legacy(cursor, service, execute, stats):
 
         claimed_stems.add(stem)
         legacy_path = os.path.join(CACHE_DIR, legacy_name)
-        legacy_size = os.path.getsize(legacy_path)
+        try:
+            legacy_size = os.path.getsize(legacy_path)
+        except OSError as e:
+            logger.error(f"Cannot stat legacy file {legacy_path} for pin {pin['pin_id']}: {e}")
+            continue
         new_filename = f"{stem[:16]}_low.webp"
         new_path = os.path.join(CACHE_DIR, new_filename)
 
@@ -149,8 +169,8 @@ def recover_legacy(cursor, service, execute, stats):
         cache_id = cursor.lastrowid
 
         cursor.execute(
-            "UPDATE pins SET cached_image_id=%s, uses_cached_image=TRUE WHERE id=%s",
-            (cache_id, pin['pin_id']),
+            "UPDATE pins SET cached_image_id=%s, uses_cached_image=TRUE WHERE image_url=%s",
+            (cache_id, pin['image_url']),
         )
 
         try:
@@ -320,6 +340,10 @@ def main():
         'errors': 0,
     }
 
+    # Relies on the pool's autocommit=True default (see app.py's get_db_connection) —
+    # each cursor.execute() above is durable immediately, which is what makes the
+    # write-DB-then-delete-file ordering in each phase crash-safe. Do not set
+    # db.autocommit = False without re-auditing that ordering.
     db = get_db_connection()
     cursor = db.cursor(dictionary=True)
     try:
