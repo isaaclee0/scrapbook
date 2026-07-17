@@ -2,38 +2,27 @@
 
 {% block content %}
 <script>
-// Define this function immediately so inline onload handlers can use it
-function correctImageContainerHeight(imgElement) {
-    if (!imgElement || !imgElement.naturalWidth || !imgElement.naturalHeight) {
-        return;
+    // Reports dimensions of externally-loaded images to the server so they
+    // can be cached and stored. NEVER modifies the rendered aspect-ratio —
+    // the server-rendered value is the single source of truth, which is what
+    // keeps the masonry layout from shifting after image load.
+    function reportImageDimensions(imgElement) {
+        if (!imgElement || !imgElement.naturalWidth || !imgElement.naturalHeight) return;
+        const isExternal = !imgElement.src.startsWith(window.location.origin + '/cached/');
+        if (!isExternal) return;
+        const pinCard = imgElement.closest('.pin-card');
+        const pinId = pinCard?.getAttribute('data-pin-id');
+        if (!pinId) return;
+        fetch(`/save-pin-dimensions/${pinId}`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                width: imgElement.naturalWidth,
+                height: imgElement.naturalHeight
+            }),
+            keepalive: true
+        }).catch(() => {});
     }
-    
-    const imageContainer = imgElement.closest('.image-container');
-    if (!imageContainer) {
-        return;
-    }
-    
-    const containerWidth = imageContainer.offsetWidth;
-    const naturalWidth = imgElement.naturalWidth;
-    const naturalHeight = imgElement.naturalHeight;
-    
-    // Calculate aspect ratio and cap at 2:1 (height:width) to prevent overly tall images
-    const rawAspectRatio = naturalHeight / naturalWidth;
-    const maxAspectRatio = 2; // Maximum height:width ratio of 2:1 (1:2 width:height)
-    const aspectRatio = Math.min(rawAspectRatio, maxAspectRatio);
-    
-    // Calculate the correct height based on actual image dimensions
-    const calculatedHeight = containerWidth * aspectRatio;
-    const finalHeight = Math.max(150, calculatedHeight);
-    
-    // Set the container height to match the capped ratio
-    imageContainer.style.height = finalHeight + 'px';
-    
-    // Set the image height explicitly to ensure it fills the container
-    imgElement.style.height = finalHeight + 'px';
-    imgElement.style.minHeight = finalHeight + 'px';
-    imgElement.style.maxHeight = finalHeight + 'px';
-}
 </script>
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <div class="mb-8">
@@ -86,8 +75,8 @@ function correctImageContainerHeight(imgElement) {
                  {% endif %}
                  data-pin-id="{{ pin.id }}"
                  data-image-url="{{ pin.image_url }}"
-                 data-image-width="{{ pin.final_width or '' }}"
-                 data-image-height="{{ pin.final_height or '' }}"
+                 data-cached-width="{{ pin.cached_width or '' }}"
+                 data-cached-height="{{ pin.cached_height or '' }}"
                  id="pin-{{ pin.id }}"
                  {% if pin.cached_filename %}
                  data-cached-url="/cached/{{ pin.cached_filename }}"
@@ -96,7 +85,14 @@ function correctImageContainerHeight(imgElement) {
                  data-has-cached="false"
                  {% endif %}>
                 <a href="{{ url_for('view_pin', pin_id=pin.id) }}" class="block">
-                    <div class="relative overflow-hidden image-container">
+                    {% if pin.cached_width and pin.cached_height %}
+                    {% set pw = pin.cached_width | int %}
+                    {% set ph_capped = [pin.cached_height | int, pw * 2] | min %}
+                    {% set ph = [ph_capped, pw // 2] | max %}
+                    <div class="relative overflow-hidden image-container" style="aspect-ratio: {{ pw }}/{{ ph }};">
+                    {% else %}
+                    <div class="relative overflow-hidden image-container" style="aspect-ratio: 3/4;">
+                    {% endif %}
                         <!-- Skeleton loader that shows before image loads -->
                         <div class="skeleton-loader"></div>
                         {% if pin.cached_filename %}
@@ -105,14 +101,14 @@ function correctImageContainerHeight(imgElement) {
                          class="pin-image group-hover:scale-105 transition-transform duration-300" 
                          loading="lazy"
                          data-original-url="{{ pin.image_url }}"
-                         onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none'; correctImageContainerHeight(this);"
+                         onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none'; reportImageDimensions(this);"
                          onerror="this.src='/static/images/default_pin.png'; this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
                         {% else %}
                     <img src="{{ pin.image_url }}" 
                          alt="{{ pin.title }}" 
                          class="pin-image group-hover:scale-105 transition-transform duration-300"
                          loading="lazy"
-                         onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none'; correctImageContainerHeight(this);"
+                         onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none'; reportImageDimensions(this);"
                          onerror="this.src='/static/images/default_pin.png'; this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
                         {% endif %}
                     </div>
@@ -141,7 +137,19 @@ function correctImageContainerHeight(imgElement) {
             </div>
             {% endfor %}
         </div>
-        
+        <script src="{{ url_for('static', filename='js/masonry.js') }}"></script>
+        <script>
+            // Runs synchronously during parsing so the first paint already
+            // shows final positions (cards are visibility:hidden until then).
+            (function () {
+                var grid = document.getElementById('pinsGrid');
+                if (grid && window.createScrapbookMasonry) {
+                    window.scrapbookMasonry = window.createScrapbookMasonry(grid, {});
+                    window.scrapbookMasonry.layout();
+                }
+            })();
+        </script>
+
         <!-- Loading indicator for infinite scroll -->
         <div id="searchLoadingIndicator" class="text-center py-8" style="display: none;">
             <div class="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-primary-500"></div>
@@ -244,39 +252,30 @@ function correctImageContainerHeight(imgElement) {
     }
 }
 
-/* Masonry layout using CSS columns */
+/* Stable masonry: absolutely positioned cards laid out by /static/js/masonry.js.
+   See docs/superpowers/specs/2026-07-17-stable-masonry-design.md */
 #pinsGrid {
     padding: 20px;
-    column-count: 5;
-    column-gap: 16px;
-}
-
-@media (max-width: 1600px) {
-    #pinsGrid { column-count: 4; }
-}
-
-@media (max-width: 1200px) {
-    #pinsGrid { column-count: 3; }
-}
-
-@media (max-width: 800px) {
-    #pinsGrid { column-count: 2; }
-}
-
-@media (max-width: 500px) {
-    #pinsGrid { column-count: 1; }
+    position: relative;
 }
 
 .pin-card {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 16px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Hidden until the first layout() positions the cards */
+    visibility: hidden;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     transition: transform 0.2s, box-shadow 0.2s;
-    position: relative;
     background: white;
+    contain: layout style;
+}
+
+#pinsGrid.masonry-ready .pin-card {
+    visibility: visible;
 }
 
 /* Default neutral appearance for pins without colors */
@@ -311,15 +310,15 @@ function correctImageContainerHeight(imgElement) {
     }
 }
 
-/* Image container with dynamic aspect ratio preservation */
+/* Image container — height driven by CSS aspect-ratio set inline per-pin, never JS */
 .image-container {
     position: relative;
     width: 100%;
     overflow: hidden;
     background: linear-gradient(135deg, var(--dominant-color, #f8f9fa) 0%, var(--secondary-color, #e9ecef) 100%);
     transition: background 0.5s ease;
-    /* Height will be set by JavaScript based on image dimensions */
     min-height: 150px;
+    max-height: 500px;
 }
 
 /* Default neutral appearance for image containers without colors */
@@ -360,7 +359,6 @@ function correctImageContainerHeight(imgElement) {
     width: 100%;
     height: 100%;
     max-width: 100%;
-    max-height: 400px; /* Prevent images from loading too large initially */
     display: block;
     transition: transform 0.2s, opacity 0.3s;
     position: absolute;
@@ -483,85 +481,6 @@ function waitForLayoutStabilization(callback) {
     setTimeout(checkStability, 100);
 }
 
-// Reserve space for images to prevent layout shifts using stored dimensions
-function reserveImageSpace() {
-    console.log('🖼️ Reserving space for images using stored dimensions...');
-    
-    const pinCards = document.querySelectorAll('.pin-card');
-    pinCards.forEach(pinCard => {
-        const imageContainer = pinCard.querySelector('.image-container');
-        const img = pinCard.querySelector('.pin-image');
-        
-        if (imageContainer && img) {
-            // Get stored dimensions from data attributes
-            const storedWidth = pinCard.getAttribute('data-image-width');
-            const storedHeight = pinCard.getAttribute('data-image-height');
-            
-            if (storedWidth && storedHeight && storedWidth > 0 && storedHeight > 0) {
-                const containerWidth = imageContainer.offsetWidth;
-                const naturalWidth = parseInt(storedWidth);
-                const naturalHeight = parseInt(storedHeight);
-                
-                // Calculate aspect ratio and cap at 2:1 (height:width) to prevent overly tall images
-                const rawAspectRatio = naturalHeight / naturalWidth;
-                const maxAspectRatio = 2; // Maximum height:width ratio of 2:1 (1:2 width:height)
-                const aspectRatio = Math.min(rawAspectRatio, maxAspectRatio);
-                
-                // Calculate the height based on container width and capped aspect ratio
-                const calculatedHeight = containerWidth * aspectRatio;
-                
-                // Set minimum height of 150px for very wide images
-                const finalHeight = Math.max(150, calculatedHeight);
-                
-                // Set exact height to match capped aspect ratio
-                imageContainer.style.height = finalHeight + 'px';
-                
-                console.log(`📐 Reserved space for pin ${pinCard.getAttribute('data-pin-id')}: ${containerWidth}x${finalHeight} (aspect ratio: ${aspectRatio.toFixed(2)}, raw: ${rawAspectRatio.toFixed(2)}) using stored dimensions ${naturalWidth}x${naturalHeight}`);
-                
-                // After image loads, verify and correct the container height if needed
-                if (img.complete) {
-                    correctContainerHeight(pinCard, imageContainer, img);
-                } else {
-                    img.addEventListener('load', () => {
-                        correctContainerHeight(pinCard, imageContainer, img);
-                    });
-                }
-            } else {
-                // Fallback to default min-height if no stored dimensions
-                imageContainer.style.minHeight = '200px';
-                console.log(`⚠️ No stored dimensions for pin ${pinCard.getAttribute('data-pin-id')}, using default min-height`);
-            }
-        }
-    });
-}
-
-// Correct container height based on actual loaded image dimensions
-function correctContainerHeight(pinCard, imageContainer, img) {
-    if (!img.naturalWidth || !img.naturalHeight) {
-        return; // Image not loaded or invalid
-    }
-    
-    const containerWidth = imageContainer.offsetWidth;
-    const naturalWidth = img.naturalWidth;
-    const naturalHeight = img.naturalHeight;
-    
-    // Calculate aspect ratio and cap at 2:1 (height:width)
-    const rawAspectRatio = naturalHeight / naturalWidth;
-    const maxAspectRatio = 2;
-    const aspectRatio = Math.min(rawAspectRatio, maxAspectRatio);
-    
-    // Calculate the correct height based on actual image dimensions
-    const calculatedHeight = containerWidth * aspectRatio;
-    const finalHeight = Math.max(150, calculatedHeight);
-    
-    // Only adjust if there's a significant difference (more than 2px)
-    const currentHeight = imageContainer.offsetHeight;
-    if (Math.abs(currentHeight - finalHeight) > 2) {
-        imageContainer.style.height = finalHeight + 'px';
-        console.log(`🔧 Corrected container height for pin ${pinCard.getAttribute('data-pin-id')}: ${currentHeight}px → ${finalHeight}px (using actual dimensions ${naturalWidth}x${naturalHeight})`);
-    }
-}
-
 // Lazy load more search results
 let currentPinOffset = {{ matching_pins|length if matching_pins else 0 }};
 let currentBoardOffset = {{ matching_boards|length if matching_boards else 0 }};
@@ -586,17 +505,19 @@ function loadMorePins() {
         .then(response => response.json())
         .then(data => {
             if (data.success && data.pins && data.pins.length > 0) {
-                // Append new pins to the grid
+                // Append new pins to the grid; the masonry engine places them
+                // below existing pins without moving anything already on screen.
+                const newCards = [];
                 data.pins.forEach(pin => {
                     const pinCard = createPinCard(pin);
                     pinsGrid.appendChild(pinCard);
+                    newCards.push(pinCard);
                 });
-                
+
                 currentPinOffset += data.pins.length;
                 hasMorePins = data.has_more;
-                
-                // Reserve space for new images
-                setTimeout(() => reserveImageSpace(), 100);
+
+                if (window.scrapbookMasonry) window.scrapbookMasonry.append(newCards);
             } else {
                 hasMorePins = false;
             }
@@ -686,8 +607,8 @@ function createPinCard(pin) {
     
     div.setAttribute('data-pin-id', pin.id);
     div.setAttribute('data-image-url', pin.image_url || '');
-    div.setAttribute('data-image-width', pin.final_width || '');
-    div.setAttribute('data-image-height', pin.final_height || '');
+    div.setAttribute('data-cached-width', pin.cached_width || '');
+    div.setAttribute('data-cached-height', pin.cached_height || '');
     div.id = `pin-${pin.id}`;
     
     if (pin.cached_filename) {
@@ -700,17 +621,29 @@ function createPinCard(pin) {
     const imageSrc = pin.cached_filename ? `/cached/${pin.cached_filename}` : (pin.image_url || '/static/images/default_pin.png');
     const boardUrl = `/board/${pin.board_id}`;
     const pinUrl = `/pin/${pin.id}`;
-    
+
+    // Server-provided dimensions drive a fixed aspect-ratio box — the single
+    // source of truth for layout. Same caps as the Jinja template (height
+    // clamped to [w/2, 2w]); 3/4 portrait fallback when dims are unknown.
+    let aspectRatio = '3/4';
+    const pw = parseInt(pin.cached_width);
+    const ph = parseInt(pin.cached_height);
+    if (pw > 0 && ph > 0) {
+        const phCapped = Math.min(ph, pw * 2);
+        const phFinal = Math.max(phCapped, Math.floor(pw / 2));
+        aspectRatio = `${pw}/${phFinal}`;
+    }
+
     div.innerHTML = `
         <a href="${pinUrl}" class="block">
-            <div class="relative overflow-hidden image-container">
+            <div class="relative overflow-hidden image-container" style="aspect-ratio: ${aspectRatio};">
                 <div class="skeleton-loader"></div>
-                <img src="${imageSrc}" 
-                     alt="${escapeHtml(pin.title || '')}" 
-                     class="pin-image group-hover:scale-105 transition-transform duration-300" 
+                <img src="${imageSrc}"
+                     alt="${escapeHtml(pin.title || '')}"
+                     class="pin-image group-hover:scale-105 transition-transform duration-300"
                      loading="lazy"
                      data-original-url="${pin.image_url || ''}"
-                     onload="this.classList.add('loaded'); if(this.previousElementSibling) this.previousElementSibling.style.display='none'; correctImageContainerHeight(this);"
+                     onload="this.classList.add('loaded'); if(this.previousElementSibling) this.previousElementSibling.style.display='none'; reportImageDimensions(this);"
                      onerror="this.src='/static/images/default_pin.png'; this.classList.add('loaded'); if(this.previousElementSibling) this.previousElementSibling.style.display='none';">
             </div>
             <div class="px-3 py-2">
@@ -772,9 +705,6 @@ function handleScroll() {
 
 // Initialize highlighting when page loads
 document.addEventListener('DOMContentLoaded', function() {
-    // Reserve space for images to prevent layout shifts
-    reserveImageSpace();
-    
     handlePinHighlighting();
     
     // Set up infinite scroll
