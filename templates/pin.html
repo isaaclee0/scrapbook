@@ -352,6 +352,9 @@
 }
 
 .pin-image {
+    /* width: 100% previously leaked in from base.html's unscoped .pin-image
+       rule; declared here since the image must scale with the window. */
+    width: 100%;
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
