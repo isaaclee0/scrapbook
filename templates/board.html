@@ -1,312 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
-<script>
-    // Reports dimensions of externally-loaded images to the server so they
-    // can be cached and stored. NEVER modifies the rendered aspect-ratio —
-    // the server-rendered value is the single source of truth, which is what
-    // keeps the masonry layout from shifting after image load.
-    function reportImageDimensions(imgElement) {
-        if (!imgElement || !imgElement.naturalWidth || !imgElement.naturalHeight) return;
-        const isExternal = !imgElement.src.startsWith(window.location.origin + '/cached/');
-        if (!isExternal) return;
-        const pinCard = imgElement.closest('.pin-card');
-        const pinId = pinCard?.getAttribute('data-pin-id');
-        if (!pinId) return;
-        fetch(`/save-pin-dimensions/${pinId}`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                width: imgElement.naturalWidth,
-                height: imgElement.naturalHeight
-            }),
-            keepalive: true
-        }).catch(() => {});
-    }
-</script>
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <div class="mb-8">
-        <div class="mb-6 flex items-center justify-between">
-            <div class="flex items-center space-x-3">
-                <h1 class="text-3xl font-bold text-gray-900">{{ board.name }}</h1>
-                <div class="relative">
-                    <button
-                        class="p-2 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-lg transition-all duration-200"
-                        onclick="toggleBoardSettings()">
-                        <i class="fas fa-pencil-alt text-lg"></i>
-                    </button>
-                    <div id="boardSettingsMenu"
-                        class="hidden absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl border border-gray-200 py-2 z-50 flex flex-col">
-                        <button id="processingStatusBtn" disabled
-                            class="px-4 py-2 text-left text-sm text-gray-400 cursor-not-allowed whitespace-nowrap">
-                            <span id="processingStatusText">🎨 Ready</span>
-                        </button>
-                        <button onclick="showRenameBoardModal()"
-                            class="px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-50 transition-colors whitespace-nowrap">Rename
-                            Board</button>
-                        <button onclick="showMoveBoardModal()"
-                            class="px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-50 transition-colors whitespace-nowrap">Convert
-                            to Section</button>
-                        <button onclick="showDeleteBoardModal()"
-                            class="px-4 py-2 text-left text-sm text-red-600 hover:bg-red-50 transition-colors whitespace-nowrap">Delete
-                            Board</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        {% if sections %}
-        <!-- Section Circles -->
-        <div class="section-circles-container">
-            <div class="section-circles-scroll">
-                <button class="section-circle active" data-section-id="all" title="All Pins">
-                    <div class="section-circle-image-wrapper">
-                        <div class="section-circle-image all-pins-circle">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
-                            </svg>
-                        </div>
-                    </div>
-                    <span class="section-circle-name">All</span>
-                </button>
-                {% for section in sections %}
-                <div class="flex flex-col items-center group/section">
-                    <button class="section-circle{% if section.pin_count == 0 %} empty-section{% endif %}"
-                        data-section-id="{{ section.id }}"
-                        title="{{ section.name|replace('-', ' ') }} ({{ section.pin_count }} pins)">
-                        <div class="section-circle-image-wrapper">
-                            <div class="section-circle-image">
-                                {% if section.default_image_url %}
-                                <img src="{{ section.default_image_url }}" alt="{{ section.name|replace('-', ' ') }}"
-                                    loading="lazy" onerror="this.src='/static/images/default_pin.png'">
-                                {% else %}
-                                <img src="/static/images/default_pin.png" alt="{{ section.name|replace('-', ' ') }}">
-                                {% endif %}
-                            </div>
-                            {% if section.pin_count > 0 %}
-                            <span class="section-pin-count">{{ section.pin_count }}</span>
-                            {% endif %}
-                        </div>
-                        <span class="section-circle-name">{{ section.name|replace('-', ' ') }}{% if section.pin_count ==
-                            0
-                            %} <span class="text-gray-400 text-xs">(empty)</span>{% endif %}</span>
-                    </button>
-                    <!-- Edit Button (Hidden by default, shown when active via JS) -->
-                    <button id="edit-btn-{{ section.id }}" data-section-id="{{ section.id }}"
-                        data-section-name="{{ section.name|replace('-', ' ') }}" onclick="openSectionEdit(this, event)"
-                        type="button"
-                        class="section-edit-btn text-xs mt-0.5 px-2 py-0.5 bg-transparent hover:bg-gray-100 text-gray-500 hover:text-gray-700 rounded-md hidden transition-all duration-200"
-                        title="Rename or delete this section">
-                        Rename <i class="fas fa-pencil-alt ml-1"></i>
-                    </button>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-        {% endif %}
-    </div>
-
-    <div class="masonry-grid" id="pinsGrid">
-        {% for pin in pins %}
-        <div class="pin-card bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group"
-            data-section-id="{{ pin.section_id or '' }}" {% if pin.dominant_color_1 and pin.dominant_color_2 %}
-            style="--dominant-color: {{ pin.dominant_color_1 }}; --secondary-color: {{ pin.dominant_color_2 }};"
-            data-colors-extracted="true" data-has-db-colors="true" {% else %} data-has-db-colors="false" {% endif %}
-            data-pin-id="{{ pin.id }}" id="pin-{{ pin.id }}" data-image-url="{{ pin.image_url }}"
-            data-cached-width="{{ pin.cached_width or '' }}"
-            data-cached-height="{{ pin.cached_height or '' }}" {% if pin.cached_filename %}
-            data-cached-url="/cached/{{ pin.cached_filename }}" data-has-cached="true" {% else %}
-            data-has-cached="false" {% endif %}>
-            <a href="{{ url_for('view_pin', pin_id=pin.id) }}" class="block">
-                {% if pin.cached_width and pin.cached_height %}
-                {% set pw = pin.cached_width | int %}
-                {% set ph_capped = [pin.cached_height | int, pw * 2] | min %}
-                {% set ph = [ph_capped, pw // 2] | max %}
-                <div class="relative overflow-hidden image-container" style="aspect-ratio: {{ pw }}/{{ ph }};">
-                {% else %}
-                <div class="relative overflow-hidden image-container" style="aspect-ratio: 3/4;">
-                {% endif %}
-                    <!-- Skeleton loader that shows before image loads -->
-                    <div class="skeleton-loader"></div>
-                    {% if pin.cached_filename %}
-                    <img src="/cached/{{ pin.cached_filename }}" alt="{{ pin.title }}"
-                        class="pin-image group-hover:scale-105 transition-transform duration-300" loading="lazy"
-                        data-original-url="{{ pin.image_url }}"
-                        onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none'; reportImageDimensions(this);"
-                        onerror="this.src='/static/images/default_pin.png'; this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
-                    {% else %}
-                    <img src="{{ pin.image_url }}" alt="{{ pin.title }}"
-                        class="pin-image group-hover:scale-105 transition-transform duration-300" loading="lazy"
-                        onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none'; reportImageDimensions(this);"
-                        onerror="this.src='/static/images/default_pin.png'; this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
-                    {% endif %}
-                    {% if pin.section_name %}
-                    <span
-                        class="absolute top-2 left-2 px-2 py-1 bg-black bg-opacity-70 text-white text-xs rounded-full">{{
-                        pin.section_name|replace('-', ' ') }}</span>
-                    {% endif %}
-                </div>
-                <div class="pin-info">
-                    <h3 class="font-medium text-gray-900 text-sm leading-tight mb-2 line-clamp-2">{{ pin.title }}</h3>
-                </div>
-            </a>
-        </div>
-        {% endfor %}
-    </div>
-    <script src="{{ url_for('static', filename='js/masonry.js') }}"></script>
-    <script>
-        // Runs synchronously during parsing so the first paint already shows
-        // final positions — this also replaces the old post-paint
-        // applyPinSizeFromStorage() column switch (saved pin size is read
-        // *before* the first layout).
-        (function () {
-            var grid = document.getElementById('pinsGrid');
-            if (grid && window.createScrapbookMasonry) {
-                window.scrapbookMasonry = window.createScrapbookMasonry(grid, {
-                    // Saved pin size drives column count (Tiny=7 … Huge=3),
-                    // capped by viewport breakpoints inside the engine.
-                    columnCount: function () {
-                        var size = parseInt(localStorage.getItem('boardPinSize'), 10) || 3;
-                        return { 1: 7, 2: 6, 3: 5, 4: 4, 5: 3 }[size] || 5;
-                    }
-                });
-                window.scrapbookMasonry.layout();
-            }
-        })();
-    </script>
-</div>
-
-<!-- Board Settings Modals -->
-<div class="modal" id="renameBoardModal">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h3 class="text-xl font-bold">Rename Board</h3>
-            <button class="close-button" onclick="hideRenameBoardModal()"
-                style="background: none; border: none; font-size: 28px; cursor: pointer; color: #666; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: background-color 0.2s;">&times;</button>
-        </div>
-        <div class="modal-body">
-            <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">New Name</label>
-            <textarea id="newBoardName" placeholder="New board name" rows="1"
-                class="board-input w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-100 outline-none transition-shadow resize-none"
-                style="min-height: 48px; overflow-y: hidden;"></textarea>
-        </div>
-        <div class="modal-actions">
-            <button class="button secondary-button" onclick="hideRenameBoardModal()">Cancel</button>
-            <button class="button primary-button" onclick="renameBoard()">Save Changes</button>
-            <button class="trash-button" onclick="showDeleteBoardModal(); hideRenameBoardModal();" title="Delete Board">
-                <i class="fas fa-trash-alt"></i>
-            </button>
-        </div>
-    </div>
-</div>
-
-<div class="modal" id="moveBoardModal">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h3 class="text-xl font-bold">Convert Board to Section</h3>
-            <button class="close-button" onclick="hideMoveBoardModal()"
-                style="background: none; border: none; font-size: 28px; cursor: pointer; color: #666; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: background-color 0.2s;">&times;</button>
-        </div>
-        <div class="modal-body">
-            <p style="margin-bottom: 20px; color: #666; font-size: 14px; line-height: 1.5;">
-                This will convert <strong>"{{ board.name }}"</strong> into a section within another board.
-                All pins and subsections will be moved to the selected board.
-            </p>
-            <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Target Board</label>
-            <select id="targetBoardSelect"
-                class="w-full p-3 border rounded-lg bg-white outline-none focus:ring-2 focus:ring-blue-100 transition-shadow">
-                <option value="">Select a target board...</option>
-                {% for other_board in all_boards %}
-                {% if other_board.id != board.id %}
-                <option value="{{ other_board.id }}">{{ other_board.name }}</option>
-                {% endif %}
-                {% endfor %}
-            </select>
-        </div>
-        <div class="modal-actions">
-            <button class="button secondary-button" onclick="hideMoveBoardModal()">Cancel</button>
-            <button class="button primary-button" onclick="moveBoard()">Convert to Section</button>
-        </div>
-    </div>
-</div>
-
-<!-- Edit Section Modal (Unified) -->
-<div class="modal" id="editSectionModal">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h3 class="text-xl font-bold">Edit Section</h3>
-            <button class="close-button" onclick="hideEditSectionModal()"
-                style="background: none; border: none; font-size: 28px; cursor: pointer; color: #666; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: background-color 0.2s;">&times;</button>
-        </div>
-
-        <div class="modal-body">
-            <input type="hidden" id="editSectionId">
-            <div class="mb-4">
-                <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Section Name</label>
-                <input type="text" id="editSectionName" placeholder="Section name"
-                    class="board-input w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-100 outline-none transition-shadow">
-            </div>
-        </div>
-
-        <div class="modal-actions">
-            <button class="button secondary-button" onclick="hideEditSectionModal()">Cancel</button>
-            <button class="button primary-button" onclick="saveSectionRename()">Save Changes</button>
-            <button class="trash-button" onclick="deleteSectionFromModal()" title="Delete Section">
-                <i class="fas fa-trash-alt"></i>
-            </button>
-        </div>
-    </div>
-</div>
-
-<div class="modal" id="deleteSectionConfirmationModal">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h3 class="text-xl font-bold">Delete Section</h3>
-            <button class="close-button" onclick="hideDeleteSectionConfirmationModal()"
-                style="background: none; border: none; font-size: 28px; cursor: pointer; color: #666; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: background-color 0.2s;">&times;</button>
-        </div>
-        <div class="modal-body">
-            <p style="color: #444; font-size: 15px; line-height: 1.5;">Are you sure you want to delete the section
-                <strong>"<span id="deleteSectionNameDisplay"></span>"</strong>?
-            </p>
-            <p style="color: #666; font-size: 14px; margin-top: 10px;">All pins currently in this section will be moved
-                to unsectioned.</p>
-        </div>
-        <div class="modal-actions">
-            <button class="button secondary-button" onclick="hideDeleteSectionConfirmationModal()">Cancel</button>
-            <button class="button delete-button" onclick="deleteSectionConfirmed()"
-                style="background-color: #ef4444; color: white; padding: 10px 20px; border-radius: 8px; font-weight: 600;">Delete
-                Section</button>
-        </div>
-    </div>
-</div>
-
-<div class="modal" id="deleteBoardModal">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h3 class="text-xl font-bold">Delete Board</h3>
-            <button class="close-button" onclick="hideDeleteBoardModal()"
-                style="background: none; border: none; font-size: 28px; cursor: pointer; color: #666; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: background-color 0.2s;">&times;</button>
-        </div>
-        <div class="modal-body">
-            <p style="color: #444; font-size: 15px; line-height: 1.5;">Are you sure you want to delete this board?
-                <strong>This action cannot be undone.</strong>
-            </p>
-        </div>
-        <div class="modal-actions">
-            <button class="button secondary-button" onclick="hideDeleteBoardModal()">Cancel</button>
-            <button class="button delete-button" onclick="deleteBoard()"
-                style="background-color: #ef4444; color: white; padding: 10px 20px; border-radius: 8px; font-weight: 600;">Delete
-                Board</button>
-        </div>
-    </div>
-</div>
-
-
-<style>
+<!-- Styles must precede the pin grid: cards are absolutely positioned
+     and hidden until the masonry engine places them, and card heights are
+     measured at layout time — the rules below must be active before the
+     grid markup parses or the first paint shows unstyled, shifting cards. --><style>
     /* Section Circles */
     .section-circles-container {
         margin: 20px 0;
@@ -875,6 +573,311 @@
         border-color: #007bff;
     }
 </style>
+<script>
+    // Reports dimensions of externally-loaded images to the server so they
+    // can be cached and stored. NEVER modifies the rendered aspect-ratio —
+    // the server-rendered value is the single source of truth, which is what
+    // keeps the masonry layout from shifting after image load.
+    function reportImageDimensions(imgElement) {
+        if (!imgElement || !imgElement.naturalWidth || !imgElement.naturalHeight) return;
+        const isExternal = !imgElement.src.startsWith(window.location.origin + '/cached/');
+        if (!isExternal) return;
+        const pinCard = imgElement.closest('.pin-card');
+        const pinId = pinCard?.getAttribute('data-pin-id');
+        if (!pinId) return;
+        fetch(`/save-pin-dimensions/${pinId}`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                width: imgElement.naturalWidth,
+                height: imgElement.naturalHeight
+            }),
+            keepalive: true
+        }).catch(() => {});
+    }
+</script>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="mb-8">
+        <div class="mb-6 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <h1 class="text-3xl font-bold text-gray-900">{{ board.name }}</h1>
+                <div class="relative">
+                    <button
+                        class="p-2 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-lg transition-all duration-200"
+                        onclick="toggleBoardSettings()">
+                        <i class="fas fa-pencil-alt text-lg"></i>
+                    </button>
+                    <div id="boardSettingsMenu"
+                        class="hidden absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl border border-gray-200 py-2 z-50 flex flex-col">
+                        <button id="processingStatusBtn" disabled
+                            class="px-4 py-2 text-left text-sm text-gray-400 cursor-not-allowed whitespace-nowrap">
+                            <span id="processingStatusText">🎨 Ready</span>
+                        </button>
+                        <button onclick="showRenameBoardModal()"
+                            class="px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-50 transition-colors whitespace-nowrap">Rename
+                            Board</button>
+                        <button onclick="showMoveBoardModal()"
+                            class="px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-50 transition-colors whitespace-nowrap">Convert
+                            to Section</button>
+                        <button onclick="showDeleteBoardModal()"
+                            class="px-4 py-2 text-left text-sm text-red-600 hover:bg-red-50 transition-colors whitespace-nowrap">Delete
+                            Board</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        {% if sections %}
+        <!-- Section Circles -->
+        <div class="section-circles-container">
+            <div class="section-circles-scroll">
+                <button class="section-circle active" data-section-id="all" title="All Pins">
+                    <div class="section-circle-image-wrapper">
+                        <div class="section-circle-image all-pins-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <span class="section-circle-name">All</span>
+                </button>
+                {% for section in sections %}
+                <div class="flex flex-col items-center group/section">
+                    <button class="section-circle{% if section.pin_count == 0 %} empty-section{% endif %}"
+                        data-section-id="{{ section.id }}"
+                        title="{{ section.name|replace('-', ' ') }} ({{ section.pin_count }} pins)">
+                        <div class="section-circle-image-wrapper">
+                            <div class="section-circle-image">
+                                {% if section.default_image_url %}
+                                <img src="{{ section.default_image_url }}" alt="{{ section.name|replace('-', ' ') }}"
+                                    loading="lazy" onerror="this.src='/static/images/default_pin.png'">
+                                {% else %}
+                                <img src="/static/images/default_pin.png" alt="{{ section.name|replace('-', ' ') }}">
+                                {% endif %}
+                            </div>
+                            {% if section.pin_count > 0 %}
+                            <span class="section-pin-count">{{ section.pin_count }}</span>
+                            {% endif %}
+                        </div>
+                        <span class="section-circle-name">{{ section.name|replace('-', ' ') }}{% if section.pin_count ==
+                            0
+                            %} <span class="text-gray-400 text-xs">(empty)</span>{% endif %}</span>
+                    </button>
+                    <!-- Edit Button (Hidden by default, shown when active via JS) -->
+                    <button id="edit-btn-{{ section.id }}" data-section-id="{{ section.id }}"
+                        data-section-name="{{ section.name|replace('-', ' ') }}" onclick="openSectionEdit(this, event)"
+                        type="button"
+                        class="section-edit-btn text-xs mt-0.5 px-2 py-0.5 bg-transparent hover:bg-gray-100 text-gray-500 hover:text-gray-700 rounded-md hidden transition-all duration-200"
+                        title="Rename or delete this section">
+                        Rename <i class="fas fa-pencil-alt ml-1"></i>
+                    </button>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+
+    <div class="masonry-grid" id="pinsGrid">
+        {% for pin in pins %}
+        <div class="pin-card bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group"
+            data-section-id="{{ pin.section_id or '' }}" {% if pin.dominant_color_1 and pin.dominant_color_2 %}
+            style="--dominant-color: {{ pin.dominant_color_1 }}; --secondary-color: {{ pin.dominant_color_2 }};"
+            data-colors-extracted="true" data-has-db-colors="true" {% else %} data-has-db-colors="false" {% endif %}
+            data-pin-id="{{ pin.id }}" id="pin-{{ pin.id }}" data-image-url="{{ pin.image_url }}"
+            data-cached-width="{{ pin.cached_width or '' }}"
+            data-cached-height="{{ pin.cached_height or '' }}" {% if pin.cached_filename %}
+            data-cached-url="/cached/{{ pin.cached_filename }}" data-has-cached="true" {% else %}
+            data-has-cached="false" {% endif %}>
+            <a href="{{ url_for('view_pin', pin_id=pin.id) }}" class="block">
+                {% if pin.cached_width and pin.cached_height %}
+                {% set pw = pin.cached_width | int %}
+                {% set ph_capped = [pin.cached_height | int, pw * 2] | min %}
+                {% set ph = [ph_capped, pw // 2] | max %}
+                <div class="relative overflow-hidden image-container" style="aspect-ratio: {{ pw }}/{{ ph }};">
+                {% else %}
+                <div class="relative overflow-hidden image-container" style="aspect-ratio: 3/4;">
+                {% endif %}
+                    <!-- Skeleton loader that shows before image loads -->
+                    <div class="skeleton-loader"></div>
+                    {% if pin.cached_filename %}
+                    <img src="/cached/{{ pin.cached_filename }}" alt="{{ pin.title }}"
+                        class="pin-image group-hover:scale-105 transition-transform duration-300" loading="lazy"
+                        data-original-url="{{ pin.image_url }}"
+                        onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none'; reportImageDimensions(this);"
+                        onerror="this.src='/static/images/default_pin.png'; this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
+                    {% else %}
+                    <img src="{{ pin.image_url }}" alt="{{ pin.title }}"
+                        class="pin-image group-hover:scale-105 transition-transform duration-300" loading="lazy"
+                        onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none'; reportImageDimensions(this);"
+                        onerror="this.src='/static/images/default_pin.png'; this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
+                    {% endif %}
+                    {% if pin.section_name %}
+                    <span
+                        class="absolute top-2 left-2 px-2 py-1 bg-black bg-opacity-70 text-white text-xs rounded-full">{{
+                        pin.section_name|replace('-', ' ') }}</span>
+                    {% endif %}
+                </div>
+                <div class="pin-info">
+                    <h3 class="font-medium text-gray-900 text-sm leading-tight mb-2 line-clamp-2">{{ pin.title }}</h3>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+    <script src="{{ url_for('static', filename='js/masonry.js') }}"></script>
+    <script>
+        // Runs synchronously during parsing so the first paint already shows
+        // final positions — this also replaces the old post-paint
+        // applyPinSizeFromStorage() column switch (saved pin size is read
+        // *before* the first layout).
+        (function () {
+            var grid = document.getElementById('pinsGrid');
+            if (grid && window.createScrapbookMasonry) {
+                window.scrapbookMasonry = window.createScrapbookMasonry(grid, {
+                    // Saved pin size drives column count (Tiny=7 … Huge=3),
+                    // capped by viewport breakpoints inside the engine.
+                    columnCount: function () {
+                        var size = parseInt(localStorage.getItem('boardPinSize'), 10) || 3;
+                        return { 1: 7, 2: 6, 3: 5, 4: 4, 5: 3 }[size] || 5;
+                    }
+                });
+                window.scrapbookMasonry.layout();
+            }
+        })();
+    </script>
+</div>
+
+<!-- Board Settings Modals -->
+<div class="modal" id="renameBoardModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="text-xl font-bold">Rename Board</h3>
+            <button class="close-button" onclick="hideRenameBoardModal()"
+                style="background: none; border: none; font-size: 28px; cursor: pointer; color: #666; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: background-color 0.2s;">&times;</button>
+        </div>
+        <div class="modal-body">
+            <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">New Name</label>
+            <textarea id="newBoardName" placeholder="New board name" rows="1"
+                class="board-input w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-100 outline-none transition-shadow resize-none"
+                style="min-height: 48px; overflow-y: hidden;"></textarea>
+        </div>
+        <div class="modal-actions">
+            <button class="button secondary-button" onclick="hideRenameBoardModal()">Cancel</button>
+            <button class="button primary-button" onclick="renameBoard()">Save Changes</button>
+            <button class="trash-button" onclick="showDeleteBoardModal(); hideRenameBoardModal();" title="Delete Board">
+                <i class="fas fa-trash-alt"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="moveBoardModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="text-xl font-bold">Convert Board to Section</h3>
+            <button class="close-button" onclick="hideMoveBoardModal()"
+                style="background: none; border: none; font-size: 28px; cursor: pointer; color: #666; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: background-color 0.2s;">&times;</button>
+        </div>
+        <div class="modal-body">
+            <p style="margin-bottom: 20px; color: #666; font-size: 14px; line-height: 1.5;">
+                This will convert <strong>"{{ board.name }}"</strong> into a section within another board.
+                All pins and subsections will be moved to the selected board.
+            </p>
+            <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Target Board</label>
+            <select id="targetBoardSelect"
+                class="w-full p-3 border rounded-lg bg-white outline-none focus:ring-2 focus:ring-blue-100 transition-shadow">
+                <option value="">Select a target board...</option>
+                {% for other_board in all_boards %}
+                {% if other_board.id != board.id %}
+                <option value="{{ other_board.id }}">{{ other_board.name }}</option>
+                {% endif %}
+                {% endfor %}
+            </select>
+        </div>
+        <div class="modal-actions">
+            <button class="button secondary-button" onclick="hideMoveBoardModal()">Cancel</button>
+            <button class="button primary-button" onclick="moveBoard()">Convert to Section</button>
+        </div>
+    </div>
+</div>
+
+<!-- Edit Section Modal (Unified) -->
+<div class="modal" id="editSectionModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="text-xl font-bold">Edit Section</h3>
+            <button class="close-button" onclick="hideEditSectionModal()"
+                style="background: none; border: none; font-size: 28px; cursor: pointer; color: #666; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: background-color 0.2s;">&times;</button>
+        </div>
+
+        <div class="modal-body">
+            <input type="hidden" id="editSectionId">
+            <div class="mb-4">
+                <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Section Name</label>
+                <input type="text" id="editSectionName" placeholder="Section name"
+                    class="board-input w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-100 outline-none transition-shadow">
+            </div>
+        </div>
+
+        <div class="modal-actions">
+            <button class="button secondary-button" onclick="hideEditSectionModal()">Cancel</button>
+            <button class="button primary-button" onclick="saveSectionRename()">Save Changes</button>
+            <button class="trash-button" onclick="deleteSectionFromModal()" title="Delete Section">
+                <i class="fas fa-trash-alt"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="deleteSectionConfirmationModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="text-xl font-bold">Delete Section</h3>
+            <button class="close-button" onclick="hideDeleteSectionConfirmationModal()"
+                style="background: none; border: none; font-size: 28px; cursor: pointer; color: #666; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: background-color 0.2s;">&times;</button>
+        </div>
+        <div class="modal-body">
+            <p style="color: #444; font-size: 15px; line-height: 1.5;">Are you sure you want to delete the section
+                <strong>"<span id="deleteSectionNameDisplay"></span>"</strong>?
+            </p>
+            <p style="color: #666; font-size: 14px; margin-top: 10px;">All pins currently in this section will be moved
+                to unsectioned.</p>
+        </div>
+        <div class="modal-actions">
+            <button class="button secondary-button" onclick="hideDeleteSectionConfirmationModal()">Cancel</button>
+            <button class="button delete-button" onclick="deleteSectionConfirmed()"
+                style="background-color: #ef4444; color: white; padding: 10px 20px; border-radius: 8px; font-weight: 600;">Delete
+                Section</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="deleteBoardModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="text-xl font-bold">Delete Board</h3>
+            <button class="close-button" onclick="hideDeleteBoardModal()"
+                style="background: none; border: none; font-size: 28px; cursor: pointer; color: #666; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: background-color 0.2s;">&times;</button>
+        </div>
+        <div class="modal-body">
+            <p style="color: #444; font-size: 15px; line-height: 1.5;">Are you sure you want to delete this board?
+                <strong>This action cannot be undone.</strong>
+            </p>
+        </div>
+        <div class="modal-actions">
+            <button class="button secondary-button" onclick="hideDeleteBoardModal()">Cancel</button>
+            <button class="button delete-button" onclick="deleteBoard()"
+                style="background-color: #ef4444; color: white; padding: 10px 20px; border-radius: 8px; font-weight: 600;">Delete
+                Board</button>
+        </div>
+    </div>
+</div>
+
+
 
 <script>
     // Development mode check

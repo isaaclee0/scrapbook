@@ -1,171 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
-<script>
-    // Reports dimensions of externally-loaded images to the server so they
-    // can be cached and stored. NEVER modifies the rendered aspect-ratio —
-    // the server-rendered value is the single source of truth, which is what
-    // keeps the masonry layout from shifting after image load.
-    function reportImageDimensions(imgElement) {
-        if (!imgElement || !imgElement.naturalWidth || !imgElement.naturalHeight) return;
-        const isExternal = !imgElement.src.startsWith(window.location.origin + '/cached/');
-        if (!isExternal) return;
-        const pinCard = imgElement.closest('.pin-card');
-        const pinId = pinCard?.getAttribute('data-pin-id');
-        if (!pinId) return;
-        fetch(`/save-pin-dimensions/${pinId}`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                width: imgElement.naturalWidth,
-                height: imgElement.naturalHeight
-            }),
-            keepalive: true
-        }).catch(() => {});
-    }
-</script>
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <div class="mb-8">
-        <h1 class="text-3xl font-bold text-gray-900 mb-4">Search Results for "{{ query }}"</h1>
-        <a href="{{ url_for('gallery') }}" class="text-primary-500 hover:text-primary-600 transition-colors">← Back to Boards</a>
-    </div>
-
-    {% if total_board_count > 0 %}
-    <div class="mb-12">
-        <h2 class="text-2xl font-semibold text-gray-800 mb-4">
-            Matching Boards
-            <span class="text-gray-500 text-lg font-normal">({{ total_board_count }} result{% if total_board_count != 1 %}s{% endif %})</span>
-        </h2>
-        <div class="flex flex-wrap gap-4" id="boardsContainer">
-            {% if matching_boards %}
-            {% for board in matching_boards %}
-            <a href="{{ url_for('board', board_id=board.id) }}" class="board-circle">
-                <div class="board-circle-image">
-                    <img src="{{ board.random_pin_image_url }}" 
-                         alt="{{ board.name }}" 
-                         loading="lazy"
-                         onerror="this.src='/static/images/default_board.png'">
-                </div>
-                <span class="board-circle-name">{{ board.name }}</span>
-            </a>
-            {% endfor %}
-            {% endif %}
-        </div>
-    </div>
-    {% endif %}
-
-    <div>
-        <h2 class="text-2xl font-semibold text-gray-800 mb-4">
-            Matching Pins
-            {% if total_pin_count > 0 %}
-                <span class="text-gray-500 text-lg font-normal">({{ total_pin_count }} result{% if total_pin_count != 1 %}s{% endif %})</span>
-            {% endif %}
-        </h2>
-        
-        {% if matching_pins %}
-        <div class="masonry-grid" id="pinsGrid">
-            {% for pin in matching_pins %}
-            <div class="pin-card bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group" 
-                 {% if pin.dominant_color_1 and pin.dominant_color_2 %}
-                 style="--dominant-color: {{ pin.dominant_color_1 }}; --secondary-color: {{ pin.dominant_color_2 }};"
-                 data-colors-extracted="true"
-                 data-has-db-colors="true"
-                 {% else %}
-                 data-has-db-colors="false"
-                 {% endif %}
-                 data-pin-id="{{ pin.id }}"
-                 data-image-url="{{ pin.image_url }}"
-                 data-cached-width="{{ pin.cached_width or '' }}"
-                 data-cached-height="{{ pin.cached_height or '' }}"
-                 id="pin-{{ pin.id }}"
-                 {% if pin.cached_filename %}
-                 data-cached-url="/cached/{{ pin.cached_filename }}"
-                 data-has-cached="true"
-                 {% else %}
-                 data-has-cached="false"
-                 {% endif %}>
-                <a href="{{ url_for('view_pin', pin_id=pin.id) }}" class="block">
-                    {% if pin.cached_width and pin.cached_height %}
-                    {% set pw = pin.cached_width | int %}
-                    {% set ph_capped = [pin.cached_height | int, pw * 2] | min %}
-                    {% set ph = [ph_capped, pw // 2] | max %}
-                    <div class="relative overflow-hidden image-container" style="aspect-ratio: {{ pw }}/{{ ph }};">
-                    {% else %}
-                    <div class="relative overflow-hidden image-container" style="aspect-ratio: 3/4;">
-                    {% endif %}
-                        <!-- Skeleton loader that shows before image loads -->
-                        <div class="skeleton-loader"></div>
-                        {% if pin.cached_filename %}
-                    <img src="/cached/{{ pin.cached_filename }}" 
-                         alt="{{ pin.title }}" 
-                         class="pin-image group-hover:scale-105 transition-transform duration-300" 
-                         loading="lazy"
-                         data-original-url="{{ pin.image_url }}"
-                         onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none'; reportImageDimensions(this);"
-                         onerror="this.src='/static/images/default_pin.png'; this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
-                        {% else %}
-                    <img src="{{ pin.image_url }}" 
-                         alt="{{ pin.title }}" 
-                         class="pin-image group-hover:scale-105 transition-transform duration-300"
-                         loading="lazy"
-                         onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none'; reportImageDimensions(this);"
-                         onerror="this.src='/static/images/default_pin.png'; this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
-                        {% endif %}
-                    </div>
-                    <div class="px-3 py-2">
-                        <div class="flex items-start justify-between gap-2 mb-1">
-                            <h3 class="font-medium text-gray-900 text-sm leading-tight line-clamp-2 flex-1">{{ pin.title }}</h3>
-                        </div>
-                        {% if pin.description %}
-                        <p class="text-gray-600 text-xs mb-1 line-clamp-2">{{ pin.description }}</p>
-                        {% endif %}
-                        <a href="{{ url_for('board', board_id=pin.board_id) }}?highlight={{ pin.id }}" class="board-link text-primary-500 hover:text-primary-600 text-xs flex items-center space-x-1 transition-all duration-200 hover:bg-primary-50 hover:px-2 hover:py-1 hover:rounded-md" title="Go to {{ pin.board_name }}" onclick="event.stopPropagation()">
-                            <span>{{ pin.board_name }}</span>
-                        </a>
-                        <!-- "Take me to board" link below pin tile -->
-                        <div class="flex justify-center mt-2">
-                            <a href="{{ url_for('board', board_id=pin.board_id) }}?highlight={{ pin.id }}" 
-                               class="board-link-go-hover text-primary-600 hover:text-primary-700 transition-all duration-200 rounded-full px-3 py-2 flex items-center justify-center space-x-1 text-xs hover:bg-primary-50 border border-primary-200 hover:border-primary-300 hover:shadow-sm" 
-                               title="Take me to board: {{ pin.board_name }}" 
-                               onclick="event.stopPropagation()">
-                                <span class="board-link-arrow text-sm font-semibold">→</span>
-                                <span class="board-link-text font-medium whitespace-nowrap">Take me to board</span>
-                            </a>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            {% endfor %}
-        </div>
-        <script src="{{ url_for('static', filename='js/masonry.js') }}"></script>
-        <script>
-            // Runs synchronously during parsing so the first paint already
-            // shows final positions (cards are visibility:hidden until then).
-            (function () {
-                var grid = document.getElementById('pinsGrid');
-                if (grid && window.createScrapbookMasonry) {
-                    window.scrapbookMasonry = window.createScrapbookMasonry(grid, {});
-                    window.scrapbookMasonry.layout();
-                }
-            })();
-        </script>
-
-        <!-- Loading indicator for infinite scroll -->
-        <div id="searchLoadingIndicator" class="text-center py-8" style="display: none;">
-            <div class="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-primary-500"></div>
-            <p class="text-gray-600 mt-2">Loading more pins...</p>
-        </div>
-        {% else %}
-        <div class="text-center py-12">
-            <div class="text-gray-400 text-6xl mb-4">🔍</div>
-            <p class="text-gray-600 text-lg">No pins found matching "{{ query }}"</p>
-            <p class="text-gray-500 text-sm mt-2">Try a different search term</p>
-        </div>
-        {% endif %}
-    </div>
-</div>
-
-<style>
+<!-- Styles must precede the pin grid: cards are absolutely positioned
+     and hidden until the masonry engine places them, and card heights are
+     measured at layout time — the rules below must be active before the
+     grid markup parses or the first paint shows unstyled, shifting cards. --><style>
 /* Board circles - matching section circle style from board page */
 .board-circle {
     flex-shrink: 0;
@@ -413,6 +252,170 @@
     transform: translateX(2px);
 }
 </style>
+<script>
+    // Reports dimensions of externally-loaded images to the server so they
+    // can be cached and stored. NEVER modifies the rendered aspect-ratio —
+    // the server-rendered value is the single source of truth, which is what
+    // keeps the masonry layout from shifting after image load.
+    function reportImageDimensions(imgElement) {
+        if (!imgElement || !imgElement.naturalWidth || !imgElement.naturalHeight) return;
+        const isExternal = !imgElement.src.startsWith(window.location.origin + '/cached/');
+        if (!isExternal) return;
+        const pinCard = imgElement.closest('.pin-card');
+        const pinId = pinCard?.getAttribute('data-pin-id');
+        if (!pinId) return;
+        fetch(`/save-pin-dimensions/${pinId}`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                width: imgElement.naturalWidth,
+                height: imgElement.naturalHeight
+            }),
+            keepalive: true
+        }).catch(() => {});
+    }
+</script>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="mb-8">
+        <h1 class="text-3xl font-bold text-gray-900 mb-4">Search Results for "{{ query }}"</h1>
+        <a href="{{ url_for('gallery') }}" class="text-primary-500 hover:text-primary-600 transition-colors">← Back to Boards</a>
+    </div>
+
+    {% if total_board_count > 0 %}
+    <div class="mb-12">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+            Matching Boards
+            <span class="text-gray-500 text-lg font-normal">({{ total_board_count }} result{% if total_board_count != 1 %}s{% endif %})</span>
+        </h2>
+        <div class="flex flex-wrap gap-4" id="boardsContainer">
+            {% if matching_boards %}
+            {% for board in matching_boards %}
+            <a href="{{ url_for('board', board_id=board.id) }}" class="board-circle">
+                <div class="board-circle-image">
+                    <img src="{{ board.random_pin_image_url }}" 
+                         alt="{{ board.name }}" 
+                         loading="lazy"
+                         onerror="this.src='/static/images/default_board.png'">
+                </div>
+                <span class="board-circle-name">{{ board.name }}</span>
+            </a>
+            {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+
+    <div>
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+            Matching Pins
+            {% if total_pin_count > 0 %}
+                <span class="text-gray-500 text-lg font-normal">({{ total_pin_count }} result{% if total_pin_count != 1 %}s{% endif %})</span>
+            {% endif %}
+        </h2>
+        
+        {% if matching_pins %}
+        <div class="masonry-grid" id="pinsGrid">
+            {% for pin in matching_pins %}
+            <div class="pin-card bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group" 
+                 {% if pin.dominant_color_1 and pin.dominant_color_2 %}
+                 style="--dominant-color: {{ pin.dominant_color_1 }}; --secondary-color: {{ pin.dominant_color_2 }};"
+                 data-colors-extracted="true"
+                 data-has-db-colors="true"
+                 {% else %}
+                 data-has-db-colors="false"
+                 {% endif %}
+                 data-pin-id="{{ pin.id }}"
+                 data-image-url="{{ pin.image_url }}"
+                 data-cached-width="{{ pin.cached_width or '' }}"
+                 data-cached-height="{{ pin.cached_height or '' }}"
+                 id="pin-{{ pin.id }}"
+                 {% if pin.cached_filename %}
+                 data-cached-url="/cached/{{ pin.cached_filename }}"
+                 data-has-cached="true"
+                 {% else %}
+                 data-has-cached="false"
+                 {% endif %}>
+                <a href="{{ url_for('view_pin', pin_id=pin.id) }}" class="block">
+                    {% if pin.cached_width and pin.cached_height %}
+                    {% set pw = pin.cached_width | int %}
+                    {% set ph_capped = [pin.cached_height | int, pw * 2] | min %}
+                    {% set ph = [ph_capped, pw // 2] | max %}
+                    <div class="relative overflow-hidden image-container" style="aspect-ratio: {{ pw }}/{{ ph }};">
+                    {% else %}
+                    <div class="relative overflow-hidden image-container" style="aspect-ratio: 3/4;">
+                    {% endif %}
+                        <!-- Skeleton loader that shows before image loads -->
+                        <div class="skeleton-loader"></div>
+                        {% if pin.cached_filename %}
+                    <img src="/cached/{{ pin.cached_filename }}" 
+                         alt="{{ pin.title }}" 
+                         class="pin-image group-hover:scale-105 transition-transform duration-300" 
+                         loading="lazy"
+                         data-original-url="{{ pin.image_url }}"
+                         onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none'; reportImageDimensions(this);"
+                         onerror="this.src='/static/images/default_pin.png'; this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
+                        {% else %}
+                    <img src="{{ pin.image_url }}" 
+                         alt="{{ pin.title }}" 
+                         class="pin-image group-hover:scale-105 transition-transform duration-300"
+                         loading="lazy"
+                         onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none'; reportImageDimensions(this);"
+                         onerror="this.src='/static/images/default_pin.png'; this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
+                        {% endif %}
+                    </div>
+                    <div class="px-3 py-2">
+                        <div class="flex items-start justify-between gap-2 mb-1">
+                            <h3 class="font-medium text-gray-900 text-sm leading-tight line-clamp-2 flex-1">{{ pin.title }}</h3>
+                        </div>
+                        {% if pin.description %}
+                        <p class="text-gray-600 text-xs mb-1 line-clamp-2">{{ pin.description }}</p>
+                        {% endif %}
+                        <a href="{{ url_for('board', board_id=pin.board_id) }}?highlight={{ pin.id }}" class="board-link text-primary-500 hover:text-primary-600 text-xs flex items-center space-x-1 transition-all duration-200 hover:bg-primary-50 hover:px-2 hover:py-1 hover:rounded-md" title="Go to {{ pin.board_name }}" onclick="event.stopPropagation()">
+                            <span>{{ pin.board_name }}</span>
+                        </a>
+                        <!-- "Take me to board" link below pin tile -->
+                        <div class="flex justify-center mt-2">
+                            <a href="{{ url_for('board', board_id=pin.board_id) }}?highlight={{ pin.id }}" 
+                               class="board-link-go-hover text-primary-600 hover:text-primary-700 transition-all duration-200 rounded-full px-3 py-2 flex items-center justify-center space-x-1 text-xs hover:bg-primary-50 border border-primary-200 hover:border-primary-300 hover:shadow-sm" 
+                               title="Take me to board: {{ pin.board_name }}" 
+                               onclick="event.stopPropagation()">
+                                <span class="board-link-arrow text-sm font-semibold">→</span>
+                                <span class="board-link-text font-medium whitespace-nowrap">Take me to board</span>
+                            </a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+        <script src="{{ url_for('static', filename='js/masonry.js') }}"></script>
+        <script>
+            // Runs synchronously during parsing so the first paint already
+            // shows final positions (cards are visibility:hidden until then).
+            (function () {
+                var grid = document.getElementById('pinsGrid');
+                if (grid && window.createScrapbookMasonry) {
+                    window.scrapbookMasonry = window.createScrapbookMasonry(grid, {});
+                    window.scrapbookMasonry.layout();
+                }
+            })();
+        </script>
+
+        <!-- Loading indicator for infinite scroll -->
+        <div id="searchLoadingIndicator" class="text-center py-8" style="display: none;">
+            <div class="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-primary-500"></div>
+            <p class="text-gray-600 mt-2">Loading more pins...</p>
+        </div>
+        {% else %}
+        <div class="text-center py-12">
+            <div class="text-gray-400 text-6xl mb-4">🔍</div>
+            <p class="text-gray-600 text-lg">No pins found matching "{{ query }}"</p>
+            <p class="text-gray-500 text-sm mt-2">Try a different search term</p>
+        </div>
+        {% endif %}
+    </div>
+</div>
+
 
 <script>
 // Handle pin highlighting from URL parameter
