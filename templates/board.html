@@ -1017,7 +1017,7 @@
     function renameBoard() {
         const newName = document.getElementById('newBoardName').value.trim();
         if (!newName) {
-            alert('Please enter a board name');
+            showToast('Please enter a board name');
             return;
         }
 
@@ -1035,19 +1035,19 @@
                 if (data.success) {
                     location.reload();
                 } else {
-                    alert('Failed to rename board');
+                    showToast('Failed to rename board');
                 }
             })
             .catch(error => {
                 devError('Error:', error);
-                alert('Failed to rename board');
+                showToast('Failed to rename board');
             });
     }
 
     function moveBoard() {
         const targetBoardId = document.getElementById('targetBoardSelect').value;
         if (!targetBoardId) {
-            alert('Please select a target board');
+            showToast('Please select a target board');
             return;
         }
 
@@ -1065,12 +1065,12 @@
                 if (data.success) {
                     window.location.href = `/board/${targetBoardId}`;
                 } else {
-                    alert('Failed to move board');
+                    showToast('Failed to move board');
                 }
             })
             .catch(error => {
                 devError('Error:', error);
-                alert('Failed to move board');
+                showToast('Failed to move board');
             });
     }
 
@@ -1086,12 +1086,12 @@
                 if (data.success) {
                     window.location.href = '/';
                 } else {
-                    alert('Failed to delete board');
+                    showToast('Failed to delete board');
                 }
             })
             .catch(error => {
                 devError('Error:', error);
-                alert('Failed to delete board');
+                showToast('Failed to delete board');
             });
     }
 
@@ -2211,7 +2211,7 @@
         const newName = document.getElementById('editSectionName').value.trim();
 
         if (!newName) {
-            alert('Please enter a section name');
+            showToast('Please enter a section name');
             return;
         }
 
@@ -2225,12 +2225,12 @@
                 if (data.success) {
                     location.reload();
                 } else {
-                    alert('Failed to rename section: ' + (data.error || 'Unknown error'));
+                    showToast('Failed to rename section: ' + (data.error || 'Unknown error'));
                 }
             })
             .catch(err => {
                 console.error(err);
-                alert('Error renaming section');
+                showToast('Error renaming section');
             });
     }
 
@@ -2258,12 +2258,12 @@
                 if (data.success) {
                     location.reload();
                 } else {
-                    alert('Failed to delete section: ' + (data.error || 'Unknown error'));
+                    showToast('Failed to delete section: ' + (data.error || 'Unknown error'));
                 }
             })
             .catch(err => {
                 console.error(err);
-                alert('Error deleting section');
+                showToast('Error deleting section');
             });
     }
 

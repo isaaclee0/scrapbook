@@ -851,6 +851,79 @@
                 font-size: 12px;
             }
         }
+
+        /* Toast notifications (replaces native alert()) */
+        .toast {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            background: white;
+            padding: 16px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            z-index: 10002;
+            animation: toastSlideInUp 0.3s ease;
+            max-width: 400px;
+            cursor: pointer;
+        }
+
+        .toast.success {
+            border-left: 4px solid #10b981;
+        }
+
+        .toast.error {
+            border-left: 4px solid #ef4444;
+        }
+
+        .toast-icon {
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        .toast.success .toast-icon {
+            color: #10b981;
+        }
+
+        .toast.error .toast-icon {
+            color: #ef4444;
+        }
+
+        .toast-message {
+            color: #333;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        @keyframes toastSlideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes toastSlideOutDown {
+            from {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            to {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+        }
+
+        .toast.hiding {
+            animation: toastSlideOutDown 0.3s ease;
+        }
     </style>
 </head>
 
@@ -1153,6 +1226,40 @@
             };
             window.__csrfToken = csrfToken;
         })();
+
+        // Toast notifications - replaces native alert() so validation/error
+        // messages don't interrupt the page with an OS dialog. type is
+        // 'error' (default) or 'success'.
+        function showToast(message, type) {
+            type = type || 'error';
+
+            var existing = document.querySelector('.toast');
+            if (existing) existing.remove();
+
+            var toast = document.createElement('div');
+            toast.className = 'toast ' + type;
+            toast.setAttribute('role', 'alert');
+
+            var icon = document.createElement('div');
+            icon.className = 'toast-icon';
+            icon.textContent = type === 'success' ? '✓' : '✕';
+            var text = document.createElement('div');
+            text.className = 'toast-message';
+            text.textContent = message;
+            toast.appendChild(icon);
+            toast.appendChild(text);
+
+            function dismiss() {
+                if (!toast.isConnected) return;
+                toast.classList.add('hiding');
+                setTimeout(function () { toast.remove(); }, 300);
+            }
+
+            toast.addEventListener('click', dismiss);
+            document.body.appendChild(toast);
+            setTimeout(dismiss, 3000);
+        }
+        window.showToast = showToast;
 
         document.addEventListener('DOMContentLoaded', function () {
 
@@ -1723,7 +1830,7 @@
             const input = document.getElementById('inline-board-name');
             const boardName = input ? input.value.trim() : '';
             if (!boardName) {
-                alert('Please enter a board name');
+                showToast('Please enter a board name');
                 return;
             }
 
@@ -1755,18 +1862,18 @@
                     // Select the newly created board
                     selectBoard(data.board_id, data.name || boardName);
                 } else {
-                    alert(data.error || 'Failed to create board');
+                    showToast(data.error || 'Failed to create board');
                 }
             } catch (error) {
                 console.error('Error creating board:', error);
-                alert('Failed to create board');
+                showToast('Failed to create board');
             }
         }
 
         // Inline section creation functions
         function toggleInlineSectionForm() {
             if (!selectedBoardId) {
-                alert('Please select a board first');
+                showToast('Please select a board first');
                 return;
             }
 
@@ -1803,12 +1910,12 @@
         async function createInlineSection() {
             const sectionName = document.getElementById('inline-section-name').value.trim();
             if (!sectionName) {
-                alert('Please enter a section name');
+                showToast('Please enter a section name');
                 return;
             }
 
             if (!selectedBoardId) {
-                alert('Please select a board first');
+                showToast('Please select a board first');
                 return;
             }
 
@@ -1838,11 +1945,11 @@
                     // Select the newly created section
                     selectSection(data.section.id, data.section.name);
                 } else {
-                    alert(data.error || 'Failed to create section');
+                    showToast(data.error || 'Failed to create section');
                 }
             } catch (error) {
                 console.error('Error creating section:', error);
-                alert('Failed to create section');
+                showToast('Failed to create section');
             }
         }
 
@@ -2056,14 +2163,14 @@
                         hideAddContentDialog();
                         window.location.href = `/board/${content.board_id}`;
                     } else {
-                        alert('Error saving content: ' + (data.error || 'Unknown error'));
+                        showToast('Error saving content: ' + (data.error || 'Unknown error'));
                         saveButton.disabled = false;
                         saveButton.textContent = 'Save';
                     }
                 })
                 .catch(error => {
                     console.error('Error:', error);
-                    alert('Error saving content');
+                    showToast('Error saving content');
                     saveButton.disabled = false;
                     saveButton.textContent = 'Save';
                 });
@@ -2146,13 +2253,13 @@
         function createNewBoard() {
             const boardName = document.getElementById('newBoardName').value.trim();
             if (!boardName) {
-                alert('Please enter a board name');
+                showToast('Please enter a board name');
                 return;
             }
 
             const createBtn = document.querySelector('#createBoardModal button[onclick="createNewBoard()"]');
             if (!createBtn) {
-                alert('Could not find create button');
+                showToast('Could not find create button');
                 return;
             }
             createBtn.disabled = true;
@@ -2170,10 +2277,10 @@
                         // Refresh the page to show the new board
                         window.location.reload();
                     } else {
-                        alert(data.error || 'Failed to create board');
+                        showToast(data.error || 'Failed to create board');
                     }
                 })
-                .catch(() => alert('Failed to create board'))
+                .catch(() => showToast('Failed to create board'))
                 .finally(() => {
                     createBtn.disabled = false;
                     createBtn.textContent = 'Create Board';
@@ -2183,7 +2290,7 @@
         function createNewSection() {
             const sectionName = document.getElementById('newSectionName').value.trim();
             if (!sectionName) {
-                alert('Please enter a section name');
+                showToast('Please enter a section name');
                 return;
             }
 
@@ -2191,14 +2298,14 @@
             const currentPath = window.location.pathname;
             const boardMatch = currentPath.match(/\/board\/(\d+)/);
             if (!boardMatch) {
-                alert('Could not determine current board');
+                showToast('Could not determine current board');
                 return;
             }
             const boardId = boardMatch[1];
 
             const createBtn = document.querySelector('#createSectionModal button[onclick="createNewSection()"]');
             if (!createBtn) {
-                alert('Could not find create button');
+                showToast('Could not find create button');
                 return;
             }
             createBtn.disabled = true;
@@ -2219,10 +2326,10 @@
                         // Refresh the page to show the new section
                         window.location.reload();
                     } else {
-                        alert(data.error || 'Failed to create section');
+                        showToast(data.error || 'Failed to create section');
                     }
                 })
-                .catch(() => alert('Failed to create section'))
+                .catch(() => showToast('Failed to create section'))
                 .finally(() => {
                     createBtn.disabled = false;
                     createBtn.textContent = 'Create Section';
