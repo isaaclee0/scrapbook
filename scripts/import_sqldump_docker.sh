@@ -2,10 +2,10 @@
 # Import the project SQL dump into the Docker MariaDB service, then assign all app
 # data to isaac@leemail.com.au (see sqldumps/reassign_isaac.sql).
 #
-# Default dump file: sqldumps/20260406.sql
+# Default dump file: newest *.sql under sqldumps/ or sqldump/ (local dump folder).
 #
 # Usage (from repo root):
-#   1. Place the dump at sqldumps/20260406.sql (or pass another path as the last argument).
+#   1. Place dumps in sqldump/ or sqldumps/ (or pass another path as the last argument).
 #   2. docker compose up -d db
 #   3. ./scripts/import_sqldump_docker.sh
 #      ./scripts/import_sqldump_docker.sh --fresh
@@ -23,10 +23,27 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
 
-if [[ ! -d sqldumps ]]; then
-  echo "Missing sqldumps/ directory. Create it and add your .sql file(s)." >&2
+if [[ ! -d sqldumps && ! -d sqldump ]]; then
+  echo "Missing sqldumps/ or sqldump/ directory. Create one and add your .sql file(s)." >&2
   exit 1
 fi
+
+pick_default_dump() {
+  # Prefer newest dump in sqldumps/, then sqldump/ (gitignored local copies).
+  local newest=""
+  local candidate
+  for candidate in sqldumps/*.sql sqldump/*.sql; do
+    [[ -f "$candidate" ]] || continue
+    if [[ -z "$newest" || "$candidate" -nt "$newest" ]]; then
+      newest="$candidate"
+    fi
+  done
+  if [[ -n "$newest" ]]; then
+    echo "$newest"
+    return 0
+  fi
+  return 1
+}
 
 # Load passwords from .env when present
 if [[ -f .env ]]; then
@@ -51,7 +68,7 @@ Usage: ./scripts/import_sqldump_docker.sh [--fresh|-f] [dump.sql]
   --fresh, -f   Drop and recreate the DB_NAME database (default: db) before import.
                 Use when ERROR 1050 (table already exists) or after docker init.sql.
 
-  dump.sql      Optional path; default is sqldumps/20260406.sql
+  dump.sql      Optional path; default is the newest *.sql in sqldumps/ or sqldump/
 EOF
       exit 0
       ;;
@@ -69,10 +86,9 @@ if [[ "${1:-}" ]]; then
     exit 1
   fi
 else
-  DUMP_FILE="sqldumps/20260406.sql"
-  if [[ ! -f "$DUMP_FILE" ]]; then
-    echo "Expected dump not found: $DUMP_FILE" >&2
-    echo "Copy your export to that path, or run: $0 path/to/your.sql" >&2
+  if ! DUMP_FILE="$(pick_default_dump)"; then
+    echo "No .sql dump found in sqldumps/ or sqldump/." >&2
+    echo "Add a dump, or run: $0 path/to/your.sql" >&2
     exit 1
   fi
 fi

@@ -2,7 +2,7 @@
 
 {% block content %}
     <div class="sort-container">
-        <div class="flex items-center space-x-3 bg-gray-50 px-3 py-2 rounded-lg">
+        <div id="boardsToolbar" class="flex items-center space-x-3 bg-gray-50 px-3 py-2 rounded-lg">
             <label for="boardSizeSlider" class="text-sm font-medium text-gray-700">Size:</label>
             <input type="range" id="boardSizeSlider" min="1" max="5" value="3" class="w-20 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider">
             <span id="boardSizeValue" class="text-sm font-medium text-gray-700 min-w-[4rem]">Medium</span>
@@ -34,6 +34,15 @@
             <option value="largest">Largest to Smallest</option>
             <option value="smallest">Smallest to Largest</option>
         </select>
+        <div id="pinsToolbar" class="hidden flex items-center space-x-3 bg-gray-50 px-3 py-2 rounded-lg">
+            <label for="homePinSizeSlider" class="text-sm font-medium text-gray-700">Size:</label>
+            <input type="range" id="homePinSizeSlider" min="1" max="5" value="3" class="w-20 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider">
+            <span id="homePinSizeValue" class="text-sm font-medium text-gray-700 min-w-[4rem]">Medium</span>
+        </div>
+        <div class="home-view-switcher" role="group" aria-label="Home view">
+            <button type="button" data-view="boards" class="home-view-btn active">Boards</button>
+            <button type="button" data-view="pins" class="home-view-btn">Pins</button>
+        </div>
     </div>
 
     <div class="gallery layout-classic" id="boardsGallery">
@@ -55,6 +64,13 @@
         {% endfor %}
     </div>
 
+    <div id="homePinsView" class="hidden">
+        <div id="homePinsEmpty" class="home-pins-empty hidden">No pins yet</div>
+        <div class="masonry-grid" id="homePinsGrid"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/masonry.js') }}"></script>
+
     <style>
         .sort-container {
             padding: 20px;
@@ -62,6 +78,7 @@
             justify-content: flex-end;
             align-items: center;
             gap: 16px;
+            flex-wrap: wrap;
         }
 
         #sortBoards {
@@ -77,6 +94,33 @@
             outline: none;
             border-color: #2980b9;
             box-shadow: 0 0 0 2px rgba(41, 128, 185, 0.1);
+        }
+
+        .home-view-switcher {
+            display: inline-flex;
+            background: #e5e7eb;
+            border-radius: 8px;
+            padding: 3px;
+            gap: 2px;
+        }
+        .home-view-btn {
+            border: none;
+            background: transparent;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #6b7280;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .home-view-btn:hover {
+            color: #374151;
+        }
+        .home-view-btn.active {
+            background: white;
+            color: #111827;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
         }
 
         /* Settings dropdown */
@@ -323,6 +367,115 @@
                 height: calc(var(--board-image-size, 150px) * 0.75);
             }
         }
+
+        /* Home pins masonry */
+        #homePinsGrid {
+            padding: 20px;
+            position: relative;
+            min-height: 200px;
+        }
+        #homePinsGrid .pin-card {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            visibility: hidden;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            background: white;
+            contain: layout style;
+            margin-bottom: 0;
+        }
+        #homePinsGrid.masonry-ready .pin-card {
+            visibility: visible;
+        }
+        #homePinsGrid .pin-card:not([data-colors-extracted="true"]) {
+            background: white;
+            border: 1px solid #e9ecef;
+        }
+        #homePinsGrid .pin-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        }
+        #homePinsGrid .image-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--dominant-color, #f8f9fa) 0%, var(--secondary-color, #e9ecef) 100%);
+            min-height: 150px;
+            max-height: 500px;
+            display: block;
+            margin: 0;
+            padding: 0;
+            line-height: 0;
+        }
+        #homePinsGrid .pin-card:not([data-colors-extracted="true"]) .image-container {
+            background: #f8f9fa;
+        }
+        #homePinsGrid .skeleton-loader {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(240,240,240,0.6) 0%, rgba(220,220,220,0.8) 50%, rgba(240,240,240,0.6) 100%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s infinite;
+            z-index: 1;
+            border-radius: 8px;
+        }
+        #homePinsGrid .pin-image {
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            display: block;
+            transition: transform 0.2s, opacity 0.3s;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            opacity: 0;
+            object-fit: cover;
+            object-position: center center;
+        }
+        #homePinsGrid .pin-image.loaded {
+            opacity: 1;
+        }
+        #homePinsGrid .pin-card:hover .pin-image {
+            transform: scale(1.05);
+        }
+        #homePinsGrid .pin-info {
+            padding: 16px;
+            position: relative;
+            background: white;
+        }
+        #homePinsGrid .pin-info h3 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.4;
+            color: #333;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        #homePinsGrid .pin-card a {
+            text-decoration: none;
+            color: #333 !important;
+            display: block;
+        }
+        .home-pins-empty {
+            text-align: center;
+            padding: 80px 20px;
+            color: #6b7280;
+            font-size: 16px;
+        }
+        .hidden {
+            display: none !important;
+        }
     </style>
 
     <script>
@@ -436,6 +589,42 @@
                 // Set initial board size
                 updateBoardSize();
             }
+
+            // Home pin size slider (Pins mode)
+            const homePinSizeSlider = document.getElementById('homePinSizeSlider');
+            const homePinSizeValue = document.getElementById('homePinSizeValue');
+            if (homePinSizeSlider && homePinSizeValue) {
+                const sizeLabels = ['Tiny', 'Small', 'Medium', 'Large', 'Huge'];
+                function updateHomePinSize() {
+                    const sizeLevel = parseInt(homePinSizeSlider.value, 10);
+                    homePinSizeValue.textContent = sizeLabels[sizeLevel - 1];
+                    localStorage.setItem('boardPinSize', sizeLevel);
+                    const pinWidths = {
+                        1: '150px', 2: '200px', 3: '250px', 4: '300px', 5: '400px'
+                    };
+                    document.documentElement.style.setProperty('--pin-width', pinWidths[sizeLevel] || pinWidths[3]);
+                    if (window.homePinsMasonry) {
+                        window.homePinsMasonry.layout();
+                    }
+                }
+                let pinUpdateTimeout;
+                homePinSizeSlider.addEventListener('input', function () {
+                    clearTimeout(pinUpdateTimeout);
+                    pinUpdateTimeout = setTimeout(updateHomePinSize, 50);
+                });
+                homePinSizeSlider.addEventListener('change', updateHomePinSize);
+                const savedPinSize = localStorage.getItem('boardPinSize') || 3;
+                homePinSizeSlider.value = savedPinSize;
+                homePinSizeValue.textContent = sizeLabels[savedPinSize - 1];
+            }
+
+            // Home view switcher
+            document.querySelectorAll('.home-view-btn').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    showHomeView(btn.getAttribute('data-view'));
+                });
+            });
+            showHomeView(getHomeView(), { persist: false });
         });
 
         // Debounce the sort function to prevent rapid re-sorting
@@ -490,5 +679,320 @@
                 }
             });
         });
+
+        // ---- Home view: Boards / Pins ----
+        const HOME_VIEW_KEY = 'homeView';
+        let homePinsState = {
+            seed: null,
+            offset: 0,
+            total: 0,
+            hasMore: false,
+            isLoading: false,
+            scrollHandler: null,
+            scrollThrottle: null,
+            reshuffling: false,
+            cardSeq: 0,
+        };
+
+        function getHomeView() {
+            const v = localStorage.getItem(HOME_VIEW_KEY);
+            return v === 'pins' ? 'pins' : 'boards';
+        }
+
+        function setHomeView(view) {
+            localStorage.setItem(HOME_VIEW_KEY, view === 'pins' ? 'pins' : 'boards');
+        }
+
+        function showHomeView(view, options) {
+            options = options || {};
+            const persist = options.persist !== false;
+            const mode = view === 'pins' ? 'pins' : 'boards';
+
+            document.querySelectorAll('.home-view-btn').forEach(function (btn) {
+                btn.classList.toggle('active', btn.getAttribute('data-view') === mode);
+            });
+
+            const boardsGallery = document.getElementById('boardsGallery');
+            const boardsToolbar = document.getElementById('boardsToolbar');
+            const sortBoards = document.getElementById('sortBoards');
+            const pinsToolbar = document.getElementById('pinsToolbar');
+            const homePinsView = document.getElementById('homePinsView');
+
+            if (mode === 'boards') {
+                if (boardsGallery) boardsGallery.classList.remove('hidden');
+                if (boardsToolbar) boardsToolbar.classList.remove('hidden');
+                if (sortBoards) sortBoards.classList.remove('hidden');
+                if (pinsToolbar) pinsToolbar.classList.add('hidden');
+                if (homePinsView) homePinsView.classList.add('hidden');
+                teardownPinsScroll();
+            } else {
+                if (boardsGallery) boardsGallery.classList.add('hidden');
+                if (boardsToolbar) boardsToolbar.classList.add('hidden');
+                if (sortBoards) sortBoards.classList.add('hidden');
+                if (pinsToolbar) pinsToolbar.classList.remove('hidden');
+                if (homePinsView) homePinsView.classList.remove('hidden');
+                startPinsFeed();
+            }
+
+            if (persist) setHomeView(mode);
+        }
+
+        function teardownPinsScroll() {
+            if (homePinsState.scrollHandler) {
+                window.removeEventListener('scroll', homePinsState.scrollHandler);
+                homePinsState.scrollHandler = null;
+            }
+            if (homePinsState.scrollThrottle) {
+                clearTimeout(homePinsState.scrollThrottle);
+                homePinsState.scrollThrottle = null;
+            }
+        }
+
+        function pinColumnCount() {
+            var size = parseInt(localStorage.getItem('boardPinSize'), 10) || 3;
+            return { 1: 7, 2: 6, 3: 5, 4: 4, 5: 3 }[size] || 5;
+        }
+
+        function estimatePinsForScreens(screens) {
+            var vw = document.documentElement.clientWidth || window.innerWidth;
+            var vh = window.innerHeight || 800;
+            var cols = pinColumnCount();
+            if (vw <= 500) cols = Math.min(cols, 1);
+            else if (vw <= 800) cols = Math.min(cols, 2);
+            else if (vw <= 1200) cols = Math.min(cols, 3);
+            else if (vw <= 1600) cols = Math.min(cols, 4);
+
+            var gap = 16;
+            var pad = 40;
+            var colWidth = Math.max(120, Math.floor((vw - pad - (cols - 1) * gap) / cols));
+            // Portrait-biased row height + title area
+            var rowHeight = Math.floor(colWidth * 1.3) + 56;
+            var rows = Math.ceil(vh / rowHeight);
+            var count = Math.ceil(cols * rows * screens);
+            return Math.max(12, Math.min(80, count));
+        }
+
+        function escapeHtml(text) {
+            if (text == null) return '';
+            const div = document.createElement('div');
+            div.textContent = String(text);
+            return div.innerHTML;
+        }
+
+        function reportImageDimensions(imgElement) {
+            // no-op stub for onload handlers copied from board cards
+            void imgElement;
+        }
+
+        function createHomePinCard(pin) {
+            const div = document.createElement('div');
+            div.className = 'pin-card bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group';
+
+            if (pin.dominant_color_1 && pin.dominant_color_2) {
+                div.style.setProperty('--dominant-color', pin.dominant_color_1);
+                div.style.setProperty('--secondary-color', pin.dominant_color_2);
+                div.setAttribute('data-colors-extracted', 'true');
+                div.setAttribute('data-has-db-colors', 'true');
+            } else {
+                div.setAttribute('data-has-db-colors', 'false');
+            }
+
+            div.setAttribute('data-pin-id', pin.id);
+            div.setAttribute('data-image-url', pin.image_url || '');
+            div.setAttribute('data-section-id', pin.section_id != null ? String(pin.section_id) : '');
+            div.setAttribute('data-cached-width', pin.cached_width || '');
+            div.setAttribute('data-cached-height', pin.cached_height || '');
+            homePinsState.cardSeq += 1;
+            div.id = 'home-pin-' + pin.id + '-' + homePinsState.cardSeq;
+
+            if (pin.cached_filename) {
+                div.setAttribute('data-cached-url', '/cached/' + pin.cached_filename);
+                div.setAttribute('data-has-cached', 'true');
+            } else {
+                div.setAttribute('data-has-cached', 'false');
+            }
+
+            const imageSrc = pin.cached_filename
+                ? '/cached/' + pin.cached_filename
+                : (pin.image_url || '/static/images/default_pin.png');
+
+            let aspectRatio = '3/4';
+            const pw = parseInt(pin.cached_width, 10);
+            const ph = parseInt(pin.cached_height, 10);
+            if (pw > 0 && ph > 0) {
+                const phCapped = Math.min(ph, pw * 2);
+                const phFinal = Math.max(phCapped, Math.floor(pw / 2));
+                aspectRatio = pw + '/' + phFinal;
+            }
+
+            const badge = pin.board_name
+                ? '<span class="absolute top-2 left-2 px-2 py-1 bg-black bg-opacity-70 text-white text-xs rounded-full">' +
+                  escapeHtml(String(pin.board_name).replace(/-/g, ' ')) + '</span>'
+                : (pin.section_name
+                    ? '<span class="absolute top-2 left-2 px-2 py-1 bg-black bg-opacity-70 text-white text-xs rounded-full">' +
+                      escapeHtml(String(pin.section_name).replace(/-/g, ' ')) + '</span>'
+                    : '');
+
+            div.innerHTML =
+                '<a href="/pin/' + pin.id + '" class="block">' +
+                    '<div class="relative overflow-hidden image-container" style="aspect-ratio: ' + aspectRatio + ';">' +
+                        '<div class="skeleton-loader"></div>' +
+                        '<img src="' + escapeHtml(imageSrc) + '"' +
+                             ' alt="' + escapeHtml(pin.title || '') + '"' +
+                             ' class="pin-image group-hover:scale-105 transition-transform duration-300"' +
+                             ' loading="lazy"' +
+                             ' data-original-url="' + escapeHtml(pin.image_url || '') + '"' +
+                             ' onload="this.classList.add(\'loaded\'); if(this.previousElementSibling) this.previousElementSibling.style.display=\'none\'; reportImageDimensions(this);"' +
+                             ' onerror="this.src=\'/static/images/default_pin.png\'; this.classList.add(\'loaded\'); if(this.previousElementSibling) this.previousElementSibling.style.display=\'none\';">' +
+                        badge +
+                    '</div>' +
+                    '<div class="pin-info">' +
+                        '<h3 class="font-medium text-gray-900 text-sm leading-tight mb-2 line-clamp-2">' +
+                            escapeHtml(pin.title || '') +
+                        '</h3>' +
+                    '</div>' +
+                '</a>';
+
+            return div;
+        }
+
+        function ensureHomeMasonry() {
+            const grid = document.getElementById('homePinsGrid');
+            if (!grid || !window.createScrapbookMasonry) return null;
+            if (!window.homePinsMasonry) {
+                window.homePinsMasonry = window.createScrapbookMasonry(grid, {
+                    columnCount: pinColumnCount
+                });
+            }
+            // Keep global name so base.html pin-size slider (if present) can relayout
+            window.scrapbookMasonry = window.homePinsMasonry;
+            return window.homePinsMasonry;
+        }
+
+        function startPinsFeed() {
+            teardownPinsScroll();
+            const grid = document.getElementById('homePinsGrid');
+            const empty = document.getElementById('homePinsEmpty');
+            if (!grid) return;
+
+            grid.innerHTML = '';
+            grid.classList.remove('masonry-ready');
+            if (empty) empty.classList.add('hidden');
+
+            homePinsState.seed = Math.floor(Math.random() * 0x7fffffff);
+            homePinsState.offset = 0;
+            homePinsState.total = 0;
+            homePinsState.hasMore = true;
+            homePinsState.isLoading = false;
+            homePinsState.reshuffling = false;
+            homePinsState.cardSeq = 0;
+
+            window.homePinsMasonry = null;
+            ensureHomeMasonry();
+
+            const initialLimit = estimatePinsForScreens(1.5);
+            fetchRandomPins(initialLimit, true).then(function () {
+                setupPinsInfiniteScroll();
+            });
+        }
+
+        function fetchRandomPins(limit, isInitial) {
+            if (homePinsState.isLoading) return Promise.resolve();
+            homePinsState.isLoading = true;
+
+            const url = '/api/random-pins?seed=' + encodeURIComponent(homePinsState.seed) +
+                '&offset=' + homePinsState.offset +
+                '&limit=' + limit;
+
+            return fetch(url)
+                .then(function (response) { return response.json(); })
+                .then(function (data) {
+                    const grid = document.getElementById('homePinsGrid');
+                    const empty = document.getElementById('homePinsEmpty');
+                    if (!data.success) {
+                        console.error('Random pins error:', data.error || data);
+                        return;
+                    }
+
+                    if (typeof data.seed === 'number') {
+                        homePinsState.seed = data.seed;
+                    }
+                    homePinsState.total = data.total || 0;
+                    homePinsState.hasMore = !!data.has_more;
+
+                    if (homePinsState.total === 0) {
+                        if (empty) empty.classList.remove('hidden');
+                        if (grid) grid.innerHTML = '';
+                        return;
+                    }
+                    if (empty) empty.classList.add('hidden');
+
+                    const pins = data.pins || [];
+                    if (pins.length === 0) {
+                        // Exhausted this seed — reshuffle once for continued scroll
+                        if (!isInitial && homePinsState.total > 0 && !homePinsState.reshuffling) {
+                            homePinsState.reshuffling = true;
+                            homePinsState.seed = Math.floor(Math.random() * 0x7fffffff);
+                            homePinsState.offset = 0;
+                            homePinsState.hasMore = true;
+                            homePinsState.isLoading = false;
+                            return fetchRandomPins(limit, false).then(function () {
+                                homePinsState.reshuffling = false;
+                            });
+                        }
+                        homePinsState.hasMore = false;
+                        return;
+                    }
+
+                    const masonry = ensureHomeMasonry();
+                    const newCards = [];
+                    pins.forEach(function (pin) {
+                        const card = createHomePinCard(pin);
+                        grid.appendChild(card);
+                        newCards.push(card);
+                    });
+                    homePinsState.offset += pins.length;
+
+                    if (masonry) {
+                        if (isInitial) {
+                            masonry.layout();
+                        } else {
+                            masonry.append(newCards);
+                        }
+                    }
+                })
+                .catch(function (err) {
+                    console.error('Error loading random pins:', err);
+                })
+                .finally(function () {
+                    homePinsState.isLoading = false;
+                });
+        }
+
+        function setupPinsInfiniteScroll() {
+            teardownPinsScroll();
+
+            function handleScroll() {
+                if (homePinsState.scrollThrottle || homePinsState.isLoading) return;
+                if (!homePinsState.hasMore && homePinsState.total === 0) return;
+
+                homePinsState.scrollThrottle = setTimeout(function () {
+                    homePinsState.scrollThrottle = null;
+
+                    const scrollPosition = window.innerHeight + window.scrollY;
+                    const pageHeight = document.documentElement.scrollHeight;
+                    const distanceFromBottom = pageHeight - scrollPosition;
+
+                    if (distanceFromBottom < 500 && !homePinsState.isLoading) {
+                        if (homePinsState.hasMore || homePinsState.total > 0) {
+                            fetchRandomPins(40, false);
+                        }
+                    }
+                }, 200);
+            }
+
+            homePinsState.scrollHandler = handleScroll;
+            window.addEventListener('scroll', handleScroll);
+        }
     </script>
 {% endblock %}

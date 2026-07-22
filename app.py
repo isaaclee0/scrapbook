@@ -2751,6 +2751,110 @@ def cache_images():
         return jsonify({'error': str(e)}), 500
 
 
+@app.route('/api/random-pins')
+@login_required
+def get_random_pins():
+    """
+    Seeded random pin feed for the home Pins view.
+    Same seed + offset pagination yields a stable order with no repeats
+    until the set is exhausted; client starts a new seed to reshuffle.
+    """
+    user = get_current_user()
+    seed = request.args.get('seed', type=int)
+    if seed is None:
+        seed = random.randint(0, 2**31 - 1)
+    offset = request.args.get('offset', 0, type=int)
+    limit = request.args.get('limit', 40, type=int)
+    limit = min(max(limit, 1), 200)
+    offset = max(offset, 0)
+
+    db = None
+    cursor = None
+    try:
+        db = get_db_connection()
+        cursor = db.cursor(dictionary=True, buffered=True)
+
+        # Home Pins view only shows pins with a real image URL (skip empties
+        # and the app's default placeholder asset).
+        has_image_sql = (
+            "p.image_url IS NOT NULL AND TRIM(p.image_url) != '' "
+            "AND p.image_url NOT LIKE '%%default_pin%%'"
+        )
+
+        cursor.execute(
+            f"SELECT COUNT(*) as count FROM pins p WHERE p.user_id = %s AND {has_image_sql}",
+            (user['id'],),
+        )
+        total = cursor.fetchone()['count']
+
+        query = f"""
+            SELECT p.*, s.name as section_name, b.name as board_name,
+                   CASE
+                       WHEN ci.cache_status = 'cached'
+                        AND ci.cached_filename IS NOT NULL
+                        AND ci.cached_filename NOT LIKE '%%.placeholder'
+                       THEN ci.cached_filename
+                       ELSE NULL
+                   END AS cached_filename,
+                   ci.cache_status,
+                   ci.width as cached_width, ci.height as cached_height
+            FROM pins p
+            LEFT JOIN sections s ON p.section_id = s.id
+            LEFT JOIN boards b ON p.board_id = b.id
+            LEFT JOIN cached_images ci ON p.cached_image_id = ci.id
+            WHERE p.user_id = %s AND {has_image_sql}
+            ORDER BY CRC32(CONCAT(p.id, '-', %s)), p.id
+            LIMIT %s OFFSET %s
+        """
+        params = (user['id'], str(seed), limit, offset)
+
+        try:
+            cursor.execute(query, params)
+        except Exception as query_err:
+            print(f"Random pins query error, retrying without cached_images join: {query_err}")
+            fallback_query = f"""
+                SELECT p.*, s.name as section_name, b.name as board_name,
+                       NULL as cached_filename, NULL as cache_status,
+                       NULL as cached_width, NULL as cached_height
+                FROM pins p
+                LEFT JOIN sections s ON p.section_id = s.id
+                LEFT JOIN boards b ON p.board_id = b.id
+                WHERE p.user_id = %s AND {has_image_sql}
+                ORDER BY CRC32(CONCAT(p.id, '-', %s)), p.id
+                LIMIT %s OFFSET %s
+            """
+            cursor.execute(fallback_query, params)
+
+        pins = cursor.fetchall()
+        has_more = (offset + len(pins)) < total
+
+        return jsonify({
+            'success': True,
+            'pins': pins,
+            'total': total,
+            'offset': offset,
+            'limit': limit,
+            'seed': seed,
+            'has_more': has_more,
+        })
+
+    except Exception as e:
+        print(f"Error fetching random pins: {str(e)}")
+        traceback.print_exc()
+        return jsonify({"error": str(e)}), 500
+    finally:
+        if cursor:
+            try:
+                cursor.close()
+            except Exception:
+                pass
+        if db:
+            try:
+                db.close()
+            except Exception:
+                pass
+
+
 @app.route('/api/board/<int:board_id>/pins')
 @login_required
 def get_board_pins(board_id):

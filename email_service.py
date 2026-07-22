@@ -12,6 +12,30 @@ configuration.api_key['api-key'] = os.getenv('BREVO_API_KEY')
 
 api_instance = sib_api_v3_sdk.TransactionalEmailsApi(sib_api_v3_sdk.ApiClient(configuration))
 
+DEV_EMAIL_REDIRECT_DEFAULT = 'isaac@leemail.com.au'
+
+
+def _is_development() -> bool:
+    return (
+        os.getenv('FLASK_ENV') == 'development'
+        or os.getenv('DEBUG_MODE') == 'development'
+    )
+
+
+def _delivery_email(intended: str) -> str:
+    """
+    In development, deliver all auth emails to a single inbox so OTP codes
+    are reachable regardless of which address was typed into the login form.
+    OTP storage/verification still uses the intended (typed) address.
+    """
+    if not _is_development():
+        return intended
+    redirect = (os.getenv('DEV_EMAIL_REDIRECT') or DEV_EMAIL_REDIRECT_DEFAULT).strip()
+    if redirect and intended.lower() != redirect.lower():
+        print(f"📧 DEV: redirecting email intended for {intended} → {redirect}")
+        return redirect
+    return intended
+
 
 def send_otp_email(email: str, otp: str) -> bool:
     """
@@ -25,8 +49,11 @@ def send_otp_email(email: str, otp: str) -> bool:
         True if email sent successfully, False otherwise
     """
     try:
+        delivery_to = _delivery_email(email)
         # Create email content
         subject = "Your Scrapbook Login Code"
+        if _is_development() and delivery_to.lower() != email.lower():
+            subject = f"[DEV → {email}] Your Scrapbook Login Code"
         
         html_content = f"""
         <!DOCTYPE html>
@@ -129,7 +156,7 @@ def send_otp_email(email: str, otp: str) -> bool:
         
         # Create email object
         send_smtp_email = sib_api_v3_sdk.SendSmtpEmail(
-            to=[{"email": email}],
+            to=[{"email": delivery_to}],
             sender={"name": "Scrapbook.io", "email": "noreply@scrapbook.io"},
             subject=subject,
             html_content=html_content,
@@ -138,7 +165,10 @@ def send_otp_email(email: str, otp: str) -> bool:
         
         # Send email
         api_response = api_instance.send_transac_email(send_smtp_email)
-        print(f"✅ OTP email sent to {email}")
+        if delivery_to.lower() != email.lower():
+            print(f"✅ OTP email for {email} sent to {delivery_to}")
+        else:
+            print(f"✅ OTP email sent to {email}")
         print(f"Message ID: {api_response.message_id}")
         return True
         
@@ -170,7 +200,10 @@ def send_welcome_email(email: str) -> bool:
         True if email sent successfully, False otherwise
     """
     try:
+        delivery_to = _delivery_email(email)
         subject = "Welcome to Scrapbook! 🎉"
+        if _is_development() and delivery_to.lower() != email.lower():
+            subject = f"[DEV → {email}] Welcome to Scrapbook! 🎉"
         
         html_content = f"""
         <!DOCTYPE html>
@@ -262,7 +295,7 @@ def send_welcome_email(email: str) -> bool:
         """
         
         send_smtp_email = sib_api_v3_sdk.SendSmtpEmail(
-            to=[{"email": email}],
+            to=[{"email": delivery_to}],
             sender={"name": "Scrapbook.io", "email": "noreply@scrapbook.io"},
             subject=subject,
             html_content=html_content,
@@ -270,7 +303,10 @@ def send_welcome_email(email: str) -> bool:
         )
         
         api_response = api_instance.send_transac_email(send_smtp_email)
-        print(f"✅ Welcome email sent to {email}")
+        if delivery_to.lower() != email.lower():
+            print(f"✅ Welcome email for {email} sent to {delivery_to}")
+        else:
+            print(f"✅ Welcome email sent to {email}")
         return True
         
     except ApiException as e:
