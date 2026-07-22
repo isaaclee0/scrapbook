@@ -13,7 +13,7 @@
                 {% if pin.section_id == section.id %}
                 <div class="pin">
                     <a href="{{ url_for('view_pin', pin_id=pin.id) }}">
-                        <img src="{{ pin.image_url }}" alt="{{ pin.title }}" onload="this.classList.add('loaded')" onerror="this.src='/static/images/default_pin.png'; this.classList.add('loaded')">
+                        <img src="{{ pin.image_url }}" alt="{{ pin.title }}" data-original-url="{{ pin.image_url }}" onload="this.classList.add('loaded')" onerror="handlePinImageError(this)">
                         <div class="pin-info">
                             <h3>{{ pin.title }}</h3>
                         </div>
@@ -34,7 +34,7 @@
             {% for pin in unsectioned_pins %}
             <div class="pin">
                 <a href="{{ url_for('view_pin', pin_id=pin.id) }}">
-                    <img src="{{ pin.image_url }}" alt="{{ pin.title }}" onload="this.classList.add('loaded')" onerror="this.src='/static/images/default_pin.png'; this.classList.add('loaded')">
+                    <img src="{{ pin.image_url }}" alt="{{ pin.title }}" data-original-url="{{ pin.image_url }}" onload="this.classList.add('loaded')" onerror="handlePinImageError(this)">
                     <div class="pin-info">
                         <h3>{{ pin.title }}</h3>
                     </div>

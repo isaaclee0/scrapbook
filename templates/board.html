@@ -705,12 +705,13 @@
                         class="pin-image group-hover:scale-105 transition-transform duration-300" loading="lazy"
                         data-original-url="{{ pin.image_url }}"
                         onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none'; reportImageDimensions(this);"
-                        onerror="this.src='/static/images/default_pin.png'; this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
+                        onerror="handlePinImageError(this)">
                     {% else %}
                     <img src="{{ pin.image_url }}" alt="{{ pin.title }}"
                         class="pin-image group-hover:scale-105 transition-transform duration-300" loading="lazy"
+                        data-original-url="{{ pin.image_url }}"
                         onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none'; reportImageDimensions(this);"
-                        onerror="this.src='/static/images/default_pin.png'; this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
+                        onerror="handlePinImageError(this)">
                     {% endif %}
                     {% if pin.section_name %}
                     <span
@@ -1256,7 +1257,7 @@
                      loading="lazy"
                      data-original-url="${pin.image_url || ''}"
                      onload="this.classList.add('loaded'); if(this.previousElementSibling) this.previousElementSibling.style.display='none'; reportImageDimensions(this);"
-                     onerror="this.src='/static/images/default_pin.png'; this.classList.add('loaded'); if(this.previousElementSibling) this.previousElementSibling.style.display='none';">
+                     onerror="handlePinImageError(this)">
                 ${pin.section_name ? `<span class="absolute top-2 left-2 px-2 py-1 bg-black bg-opacity-70 text-white text-xs rounded-full">${escapeHtml(pin.section_name.replace(/-/g, ' '))}</span>` : ''}
             </div>
             <div class="pin-info">

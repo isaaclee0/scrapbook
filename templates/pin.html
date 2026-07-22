@@ -26,7 +26,7 @@
         
         <div class="pin-body">
             <div class="pin-image-container">
-                <img src="{{ display_image_url }}" alt="{{ pin.title }}" class="pin-image" data-original-url="{{ pin.image_url }}" onerror="this.src='/static/images/default_pin.png'">
+                <img src="{{ display_image_url }}" alt="{{ pin.title }}" class="pin-image" data-original-url="{{ pin.image_url }}" onerror="handlePinImageError(this)">
                 <div class="image-hover-controls">
                     <button class="image-control-btn fullscreen-btn" onclick="openFullscreen()" title="Fullscreen">
                         <i class="fas fa-expand"></i>

@@ -60,6 +60,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <script>
+        // Must live in <head> so img onerror can call it before body scripts run.
+        // Cached image failed → try original URL → then placeholder.
+        function handlePinImageError(img) {
+            var defaultSrc = '/static/images/default_pin.png';
+            var original = img.getAttribute('data-original-url') || '';
+            if (original && img.dataset.triedOriginal !== '1') {
+                img.dataset.triedOriginal = '1';
+                var absOriginal;
+                try {
+                    absOriginal = new URL(original, window.location.href).href;
+                } catch (e) {
+                    absOriginal = original;
+                }
+                if (img.src !== absOriginal) {
+                    img.src = original;
+                    return;
+                }
+            }
+            if (img.dataset.triedDefault !== '1') {
+                img.dataset.triedDefault = '1';
+                img.src = defaultSrc;
+                img.classList.add('loaded');
+                if (img.previousElementSibling) {
+                    img.previousElementSibling.style.display = 'none';
+                }
+                return;
+            }
+            img.onerror = null;
+        }
+    </script>
     <style>
         body {
             margin: 0;
@@ -2183,7 +2214,7 @@
                     const detailsHtml = `
                         <div class="pin-details">
                             <div class="pin-details-content">
-                                <img src="${pin.image_url}" alt="${pin.title}" class="pin-image" onerror="this.src='/static/images/default_pin.png'">
+                                <img src="${pin.image_url}" alt="${pin.title}" class="pin-image" data-original-url="${pin.image_url || ''}" onerror="handlePinImageError(this)">
                                 <h2 class="pin-title">${pin.title}</h2>
                                 <div class="pin-notes">
                                     <textarea id="pin-notes" style="width: 100%; min-height: 100px;">${pin.notes || ''}</textarea>

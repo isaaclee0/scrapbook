@@ -877,7 +877,7 @@
                              ' loading="lazy"' +
                              ' data-original-url="' + escapeHtml(pin.image_url || '') + '"' +
                              ' onload="this.classList.add(\'loaded\'); if(this.previousElementSibling) this.previousElementSibling.style.display=\'none\'; reportImageDimensions(this);"' +
-                             ' onerror="this.src=\'/static/images/default_pin.png\'; this.classList.add(\'loaded\'); if(this.previousElementSibling) this.previousElementSibling.style.display=\'none\';">' +
+                             ' onerror="handlePinImageError(this)">' +
                     '</div>' +
                     '<div class="pin-info px-3 py-2">' +
                         '<div class="flex items-start justify-between gap-2 mb-1">' +

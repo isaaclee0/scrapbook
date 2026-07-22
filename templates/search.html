@@ -353,14 +353,15 @@
                          loading="lazy"
                          data-original-url="{{ pin.image_url }}"
                          onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none'; reportImageDimensions(this);"
-                         onerror="this.src='/static/images/default_pin.png'; this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
+                         onerror="handlePinImageError(this)">
                         {% else %}
                     <img src="{{ pin.image_url }}" 
                          alt="{{ pin.title }}" 
                          class="pin-image group-hover:scale-105 transition-transform duration-300"
                          loading="lazy"
+                         data-original-url="{{ pin.image_url }}"
                          onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none'; reportImageDimensions(this);"
-                         onerror="this.src='/static/images/default_pin.png'; this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
+                         onerror="handlePinImageError(this)">
                         {% endif %}
                     </div>
                     <div class="px-3 py-2">
@@ -647,7 +648,7 @@ function createPinCard(pin) {
                      loading="lazy"
                      data-original-url="${pin.image_url || ''}"
                      onload="this.classList.add('loaded'); if(this.previousElementSibling) this.previousElementSibling.style.display='none'; reportImageDimensions(this);"
-                     onerror="this.src='/static/images/default_pin.png'; this.classList.add('loaded'); if(this.previousElementSibling) this.previousElementSibling.style.display='none';">
+                     onerror="handlePinImageError(this)">
             </div>
             <div class="px-3 py-2">
                 <div class="flex items-start justify-between gap-2 mb-1">
