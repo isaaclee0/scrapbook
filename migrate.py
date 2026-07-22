@@ -425,6 +425,27 @@ def migrate_database():
         else:
             warning("audit_log table already exists")
 
+        # Migration Step 14: API tokens table
+        info("\nStep 14: API tokens (personal access tokens)")
+        if not table_exists(cursor, 'api_tokens'):
+            cursor.execute("""
+                CREATE TABLE api_tokens (
+                    id INT AUTO_INCREMENT PRIMARY KEY,
+                    user_id INT NOT NULL,
+                    name VARCHAR(100) NOT NULL,
+                    token_hash CHAR(64) NOT NULL,
+                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    last_used_at TIMESTAMP NULL,
+                    revoked_at TIMESTAMP NULL,
+                    FOREIGN KEY (user_id) REFERENCES users(id),
+                    INDEX idx_api_tokens_hash (token_hash),
+                    INDEX idx_api_tokens_user (user_id, revoked_at)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
+            """)
+            success("Created api_tokens table")
+        else:
+            warning("api_tokens table already exists")
+
         # Migration Step 12: Summary
         info("\nStep 12: Migration summary")
         cursor.execute("SELECT COUNT(*) FROM users")
