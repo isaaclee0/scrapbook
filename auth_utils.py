@@ -5,6 +5,8 @@ Authentication utilities for JWT token generation and validation
 import jwt
 import os
 import random
+import secrets
+import hashlib
 from datetime import datetime, timedelta
 from typing import Optional, Dict
 
@@ -176,12 +178,12 @@ def store_otp(email: str, otp: str, storage_backend=None) -> bool:
 def verify_otp(email: str, otp: str, storage_backend=None) -> bool:
     """
     Verify an OTP code
-    
+
     Args:
         email: User's email address
         otp: The OTP code to verify
         storage_backend: Redis client or database connection (optional)
-        
+
     Returns:
         True if OTP is valid, False otherwise
     """
@@ -202,3 +204,16 @@ def verify_otp(email: str, otp: str, storage_backend=None) -> bool:
     except Exception as e:
         print(f"Error verifying OTP: {e}")
         return False
+
+
+API_TOKEN_PREFIX = 'sb_pat_'
+
+
+def generate_api_token() -> str:
+    """Generate a new personal access token (plaintext, shown to the user once)."""
+    return API_TOKEN_PREFIX + secrets.token_urlsafe(32)
+
+
+def hash_api_token(token: str) -> str:
+    """SHA-256 hex digest of a token, for storage/lookup. Never store the plaintext."""
+    return hashlib.sha256(token.encode()).hexdigest()
