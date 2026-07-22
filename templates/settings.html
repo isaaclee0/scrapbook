@@ -87,22 +87,27 @@
     }
 
     async function loadTokens() {
-        const res = await fetch('/api/tokens');
-        const tokens = await res.json();
-        if (!tokens.length) {
-            rowsEl.innerHTML = '<tr><td colspan="4" class="px-3 py-6 text-center text-gray-400">No tokens yet.</td></tr>';
-            return;
+        try {
+            const res = await fetch('/api/tokens');
+            if (!res.ok) throw new Error('http ' + res.status);
+            const tokens = await res.json();
+            if (!tokens.length) {
+                rowsEl.innerHTML = '<tr><td colspan="4" class="px-3 py-6 text-center text-gray-400">No tokens yet.</td></tr>';
+                return;
+            }
+            rowsEl.innerHTML = tokens.map((t) => `
+                <tr>
+                    <td class="px-3 py-2">${escapeHtml(t.name)}</td>
+                    <td class="px-3 py-2 text-gray-500 whitespace-nowrap">${fmtTime(t.created_at)}</td>
+                    <td class="px-3 py-2 text-gray-500 whitespace-nowrap">${fmtTime(t.last_used_at)}</td>
+                    <td class="px-3 py-2 text-right">
+                        <button class="button delete-button revoke-btn" data-id="${t.id}" data-name="${escapeHtml(t.name)}">Revoke</button>
+                    </td>
+                </tr>
+            `).join('');
+        } catch (e) {
+            rowsEl.innerHTML = `<tr><td colspan="4" class="px-3 py-6 text-center text-red-600">Failed to load: ${escapeHtml(e.message)}</td></tr>`;
         }
-        rowsEl.innerHTML = tokens.map((t) => `
-            <tr>
-                <td class="px-3 py-2">${escapeHtml(t.name)}</td>
-                <td class="px-3 py-2 text-gray-500 whitespace-nowrap">${fmtTime(t.created_at)}</td>
-                <td class="px-3 py-2 text-gray-500 whitespace-nowrap">${fmtTime(t.last_used_at)}</td>
-                <td class="px-3 py-2 text-right">
-                    <button class="button delete-button revoke-btn" data-id="${t.id}" data-name="${escapeHtml(t.name)}">Revoke</button>
-                </td>
-            </tr>
-        `).join('');
     }
 
     createBtn.addEventListener('click', async () => {
@@ -145,17 +150,24 @@
     revokeModalConfirm.addEventListener('click', async () => {
         if (!pendingRevokeId) return;
         revokeModalConfirm.disabled = true;
-        const res = await fetch(`/api/tokens/${pendingRevokeId}/revoke`, { method: 'POST' });
-        revokeModalConfirm.disabled = false;
-        revokeModal.style.display = 'none';
-        if (!res.ok) {
-            const data = await res.json().catch(() => ({}));
-            showToast(data.error || 'Failed to revoke token');
+        try {
+            const res = await fetch(`/api/tokens/${pendingRevokeId}/revoke`, { method: 'POST' });
+            revokeModal.style.display = 'none';
+            if (!res.ok) {
+                const data = await res.json().catch(() => ({}));
+                showToast(data.error || 'Failed to revoke token');
+                pendingRevokeId = null;
+                return;
+            }
             pendingRevokeId = null;
-            return;
+            loadTokens();
+        } catch (err) {
+            revokeModal.style.display = 'none';
+            pendingRevokeId = null;
+            showToast('Failed to revoke token');
+        } finally {
+            revokeModalConfirm.disabled = false;
         }
-        pendingRevokeId = null;
-        loadTokens();
     });
 
     loadTokens();
