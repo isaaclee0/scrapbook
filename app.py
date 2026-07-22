@@ -617,7 +617,8 @@ def refresh_token_if_needed():
     if not user:
         is_api_endpoint = request.path.startswith('/api/')
         is_json_request = request.method in ['POST', 'PUT', 'PATCH', 'DELETE'] and request.is_json
-        if is_api_endpoint or is_json_request:
+        is_bearer_request = request.headers.get('Authorization', '').startswith('Bearer ')
+        if is_api_endpoint or is_json_request or is_bearer_request:
             return jsonify({"error": "Authentication required", "success": False}), 401
         return redirect(url_for('login_page'))
 
@@ -651,11 +652,14 @@ def login_required(f):
     def decorated_function(*args, **kwargs):
         user = get_current_user()
         if not user:
-            # Check if this is an API endpoint (starts with /api/)
-            # or a POST/PUT/DELETE request with JSON content
+            # Check if this is an API endpoint (starts with /api/),
+            # a POST/PUT/DELETE request with JSON content, or a request
+            # that attempted Bearer token auth (never redirect a non-browser
+            # client to an HTML login page).
             is_api_endpoint = request.path.startswith('/api/')
             is_json_request = request.method in ['POST', 'PUT', 'DELETE'] and request.is_json
-            if is_api_endpoint or is_json_request:
+            is_bearer_request = request.headers.get('Authorization', '').startswith('Bearer ')
+            if is_api_endpoint or is_json_request or is_bearer_request:
                 return jsonify({"error": "Authentication required", "success": False}), 401
             # For non-API routes, redirect to login
             return redirect(url_for('login_page'))
