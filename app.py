@@ -3776,6 +3776,9 @@ def list_api_tokens():
         """, (user['id'],))
         tokens = cursor.fetchall()
         return jsonify(tokens)
+    except Exception as e:
+        print(f"Error listing API tokens: {str(e)}")
+        return jsonify({"error": str(e)}), 500
     finally:
         if cursor:
             cursor.close()
@@ -3788,29 +3791,33 @@ def list_api_tokens():
 @require_csrf
 def create_api_token():
     user = get_current_user()
-    data = request.get_json() or {}
-    name = sanitize_string(data.get('name', ''), max_length=100)
-    if not name:
-        return jsonify({"error": "Token name is required"}), 400
+    try:
+        data = request.get_json() or {}
+        name = sanitize_string(data.get('name', ''), max_length=100)
+        if not name:
+            return jsonify({"error": "Token name is required"}), 400
 
-    plaintext = generate_api_token()
-    token_hash = hash_api_token(plaintext)
+        plaintext = generate_api_token()
+        token_hash = hash_api_token(plaintext)
 
-    with tx() as (db, cursor):
-        cursor.execute("""
-            INSERT INTO api_tokens (user_id, name, token_hash)
-            VALUES (%s, %s, %s)
-        """, (user['id'], name, token_hash))
-        token_id = cursor.lastrowid
+        with tx() as (db, cursor):
+            cursor.execute("""
+                INSERT INTO api_tokens (user_id, name, token_hash)
+                VALUES (%s, %s, %s)
+            """, (user['id'], name, token_hash))
+            token_id = cursor.lastrowid
 
-        record_audit(cursor, action='api_token.create', entity_type='api_token',
-                     entity_id=token_id, user_id=user['id'],
-                     actor_email=user.get('email'), before=None,
-                     after={'id': token_id, 'name': name},
-                     metadata={'route': request.path},
-                     ip_address=request.remote_addr)
+            record_audit(cursor, action='api_token.create', entity_type='api_token',
+                         entity_id=token_id, user_id=user['id'],
+                         actor_email=user.get('email'), before=None,
+                         after={'id': token_id, 'name': name},
+                         metadata={'route': request.path},
+                         ip_address=request.remote_addr)
 
-    return jsonify({'success': True, 'id': token_id, 'name': name, 'token': plaintext})
+        return jsonify({'success': True, 'id': token_id, 'name': name, 'token': plaintext})
+    except Exception as e:
+        print(f"Error creating API token: {str(e)}")
+        return jsonify({"error": "Failed to create token"}), 500
 
 
 @app.route('/api/tokens/<int:token_id>/revoke', methods=['POST'])
@@ -3818,22 +3825,26 @@ def create_api_token():
 @require_csrf
 def revoke_api_token(token_id):
     user = get_current_user()
-    with tx() as (db, cursor):
-        cursor.execute("""
-            SELECT id FROM api_tokens WHERE id = %s AND user_id = %s AND revoked_at IS NULL
-        """, (token_id, user['id']))
-        if not cursor.fetchone():
-            return jsonify({"error": "Token not found"}), 404
+    try:
+        with tx() as (db, cursor):
+            cursor.execute("""
+                SELECT id FROM api_tokens WHERE id = %s AND user_id = %s AND revoked_at IS NULL
+            """, (token_id, user['id']))
+            if not cursor.fetchone():
+                return jsonify({"error": "Token not found"}), 404
 
-        cursor.execute("UPDATE api_tokens SET revoked_at = NOW() WHERE id = %s", (token_id,))
+            cursor.execute("UPDATE api_tokens SET revoked_at = NOW() WHERE id = %s", (token_id,))
 
-        record_audit(cursor, action='api_token.revoke', entity_type='api_token',
-                     entity_id=token_id, user_id=user['id'],
-                     actor_email=user.get('email'), before=None, after=None,
-                     metadata={'route': request.path},
-                     ip_address=request.remote_addr)
+            record_audit(cursor, action='api_token.revoke', entity_type='api_token',
+                         entity_id=token_id, user_id=user['id'],
+                         actor_email=user.get('email'), before=None, after=None,
+                         metadata={'route': request.path},
+                         ip_address=request.remote_addr)
 
-    return jsonify({'success': True})
+        return jsonify({'success': True})
+    except Exception as e:
+        print(f"Error revoking API token: {str(e)}")
+        return jsonify({"error": "Failed to revoke token"}), 500
 
 
 def _undo_board_delete(cursor, user_id, before):
