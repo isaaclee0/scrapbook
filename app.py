@@ -615,10 +615,7 @@ def refresh_token_if_needed():
     # Enforce auth globally for all protected routes/requests.
     user = get_current_user()
     if not user:
-        is_api_endpoint = request.path.startswith('/api/')
-        is_json_request = request.method in ['POST', 'PUT', 'PATCH', 'DELETE'] and request.is_json
-        is_bearer_request = request.headers.get('Authorization', '').startswith('Bearer ')
-        if is_api_endpoint or is_json_request or is_bearer_request:
+        if _should_return_json_for_auth_failure():
             return jsonify({"error": "Authentication required", "success": False}), 401
         return redirect(url_for('login_page'))
 
@@ -643,6 +640,20 @@ def inject_csrf_token():
     token = request.cookies.get('session_token', '') if request else ''
     return {'csrf_token': issue_csrf_token(token) if token else ''}
 
+
+def _should_return_json_for_auth_failure():
+    """
+    Decide whether an auth failure should return JSON (401) or redirect to
+    the login page. True for /api/* paths, JSON POST/PUT/PATCH/DELETE
+    requests, or any request that attempted Bearer token auth — never
+    redirect a non-browser client to an HTML login page.
+    """
+    is_api_endpoint = request.path.startswith('/api/')
+    is_json_request = request.method in ['POST', 'PUT', 'PATCH', 'DELETE'] and request.is_json
+    is_bearer_request = request.headers.get('Authorization', '').startswith('Bearer ')
+    return is_api_endpoint or is_json_request or is_bearer_request
+
+
 def login_required(f):
     """
     Decorator to require authentication for a route
@@ -652,14 +663,7 @@ def login_required(f):
     def decorated_function(*args, **kwargs):
         user = get_current_user()
         if not user:
-            # Check if this is an API endpoint (starts with /api/),
-            # a POST/PUT/DELETE request with JSON content, or a request
-            # that attempted Bearer token auth (never redirect a non-browser
-            # client to an HTML login page).
-            is_api_endpoint = request.path.startswith('/api/')
-            is_json_request = request.method in ['POST', 'PUT', 'DELETE'] and request.is_json
-            is_bearer_request = request.headers.get('Authorization', '').startswith('Bearer ')
-            if is_api_endpoint or is_json_request or is_bearer_request:
+            if _should_return_json_for_auth_failure():
                 return jsonify({"error": "Authentication required", "success": False}), 401
             # For non-API routes, redirect to login
             return redirect(url_for('login_page'))
