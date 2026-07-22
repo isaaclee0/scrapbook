@@ -23,7 +23,7 @@ import traceback
 from itsdangerous import URLSafeTimedSerializer, BadSignature, SignatureExpired
 
 # Import authentication modules
-from auth_utils import generate_magic_link_token, generate_session_token, verify_token, refresh_session_token, generate_otp, store_otp, verify_otp
+from auth_utils import generate_magic_link_token, generate_session_token, verify_token, refresh_session_token, generate_otp, store_otp, verify_otp, hash_api_token
 from email_service import send_otp_email, send_welcome_email
 from audit_helpers import record_audit, snapshot_board, snapshot_pin, snapshot_section
 from csrf import issue_csrf_token, require_csrf
@@ -513,21 +513,44 @@ def tx(dictionary=False):
 
 def get_current_user():
     """
-    Get the currently authenticated user from session cookie
-    Returns user dict or None
+    Get the currently authenticated user from a Bearer API token or session
+    cookie. Returns user dict or None.
     """
+    auth_header = request.headers.get('Authorization', '')
+    if auth_header.startswith('Bearer '):
+        return _get_user_from_api_token(auth_header[len('Bearer '):].strip())
+
     token = request.cookies.get('session_token')
     if not token:
         return None
-    
+
     payload = verify_token(token, token_type='session')
     if not payload:
         return None
-    
+
     return {
         'id': payload.get('user_id'),
         'email': payload.get('email')
     }
+
+
+def _get_user_from_api_token(token):
+    """Look up the user for a Bearer personal access token. Returns user dict or None."""
+    if not token:
+        return None
+    token_hash = hash_api_token(token)
+    with tx(dictionary=True) as (db, cursor):
+        cursor.execute("""
+            SELECT u.id, u.email, t.id AS token_id
+            FROM api_tokens t
+            JOIN users u ON u.id = t.user_id
+            WHERE t.token_hash = %s AND t.revoked_at IS NULL
+        """, (token_hash,))
+        row = cursor.fetchone()
+        if not row:
+            return None
+        cursor.execute("UPDATE api_tokens SET last_used_at = NOW() WHERE id = %s", (row['token_id'],))
+        return {'id': row['id'], 'email': row['email']}
 
 
 def _is_auth_exempt_path(path):
