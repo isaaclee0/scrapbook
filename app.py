@@ -23,7 +23,7 @@ import traceback
 from itsdangerous import URLSafeTimedSerializer, BadSignature, SignatureExpired
 
 # Import authentication modules
-from auth_utils import generate_magic_link_token, generate_session_token, verify_token, refresh_session_token, generate_otp, store_otp, verify_otp, hash_api_token
+from auth_utils import generate_magic_link_token, generate_session_token, verify_token, refresh_session_token, generate_otp, store_otp, verify_otp, hash_api_token, generate_api_token
 from email_service import send_otp_email, send_welcome_email
 from audit_helpers import record_audit, snapshot_board, snapshot_pin, snapshot_section
 from csrf import issue_csrf_token, require_csrf
@@ -3750,6 +3750,90 @@ def api_audit_log():
             db.close()
         except Exception:
             pass
+
+
+@app.route('/settings')
+@login_required
+def settings_page():
+    """Render the settings page (API personal access token management)."""
+    return render_template('settings.html')
+
+
+@app.route('/api/tokens', methods=['GET'])
+@login_required
+def list_api_tokens():
+    user = get_current_user()
+    db = None
+    cursor = None
+    try:
+        db = get_db_connection()
+        cursor = db.cursor(dictionary=True)
+        cursor.execute("""
+            SELECT id, name, created_at, last_used_at
+            FROM api_tokens
+            WHERE user_id = %s AND revoked_at IS NULL
+            ORDER BY created_at DESC
+        """, (user['id'],))
+        tokens = cursor.fetchall()
+        return jsonify(tokens)
+    finally:
+        if cursor:
+            cursor.close()
+        if db:
+            db.close()
+
+
+@app.route('/api/tokens', methods=['POST'])
+@login_required
+@require_csrf
+def create_api_token():
+    user = get_current_user()
+    data = request.get_json() or {}
+    name = sanitize_string(data.get('name', ''), max_length=100)
+    if not name:
+        return jsonify({"error": "Token name is required"}), 400
+
+    plaintext = generate_api_token()
+    token_hash = hash_api_token(plaintext)
+
+    with tx() as (db, cursor):
+        cursor.execute("""
+            INSERT INTO api_tokens (user_id, name, token_hash)
+            VALUES (%s, %s, %s)
+        """, (user['id'], name, token_hash))
+        token_id = cursor.lastrowid
+
+        record_audit(cursor, action='api_token.create', entity_type='api_token',
+                     entity_id=token_id, user_id=user['id'],
+                     actor_email=user.get('email'), before=None,
+                     after={'id': token_id, 'name': name},
+                     metadata={'route': request.path},
+                     ip_address=request.remote_addr)
+
+    return jsonify({'success': True, 'id': token_id, 'name': name, 'token': plaintext})
+
+
+@app.route('/api/tokens/<int:token_id>/revoke', methods=['POST'])
+@login_required
+@require_csrf
+def revoke_api_token(token_id):
+    user = get_current_user()
+    with tx() as (db, cursor):
+        cursor.execute("""
+            SELECT id FROM api_tokens WHERE id = %s AND user_id = %s AND revoked_at IS NULL
+        """, (token_id, user['id']))
+        if not cursor.fetchone():
+            return jsonify({"error": "Token not found"}), 404
+
+        cursor.execute("UPDATE api_tokens SET revoked_at = NOW() WHERE id = %s", (token_id,))
+
+        record_audit(cursor, action='api_token.revoke', entity_type='api_token',
+                     entity_id=token_id, user_id=user['id'],
+                     actor_email=user.get('email'), before=None, after=None,
+                     metadata={'route': request.path},
+                     ip_address=request.remote_addr)
+
+    return jsonify({'success': True})
 
 
 def _undo_board_delete(cursor, user_id, before):
