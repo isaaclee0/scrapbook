@@ -990,6 +990,13 @@
                 <i class="fas fa-clock-rotate-left text-lg"></i>
                 <span class="text-sm font-medium hidden sm:inline">Activity</span>
             </a>
+            <!-- Settings link -->
+            <a href="{{ url_for('settings_page') }}"
+                class="flex items-center space-x-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 p-2 rounded-lg transition-colors"
+                title="Settings">
+                <i class="fas fa-gear text-lg"></i>
+                <span class="text-sm font-medium hidden sm:inline">Settings</span>
+            </a>
             <!-- Logout button -->
             <a href="{{ url_for('logout') }}"
                 class="text-lg text-gray-600 hover:text-gray-900 hover:bg-gray-100 p-2 rounded-lg transition-colors"

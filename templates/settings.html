@@ -1,4 +1,164 @@
 {% extends "base.html" %}
+
 {% block content %}
-<p>Settings page placeholder — replaced in Task 7.</p>
+<div class="max-w-3xl mx-auto px-4 py-8">
+    <div class="mb-6">
+        <h1 class="text-3xl font-semibold text-gray-900">API Tokens</h1>
+        <p class="text-gray-600 mt-1">
+            Personal access tokens let other tools (like the Send to Scrapbook browser
+            extension) act on your behalf without a login cookie. Treat a token like a
+            password — anyone with it can create pins and boards as you.
+        </p>
+    </div>
+
+    <div class="bg-white border border-gray-200 rounded-lg p-4 mb-4">
+        <div style="display:flex; gap:12px; align-items:flex-end;">
+            <div style="flex:1;">
+                <label style="display:block; font-size:11px; font-weight:600; color:#6b7280; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:6px;">Token name</label>
+                <input id="newTokenName" type="text" placeholder="e.g. Chrome extension"
+                    style="width:100%; padding:8px 12px; border:1px solid #ddd; border-radius:4px; font-size:14px;">
+            </div>
+            <button id="createTokenBtn" class="button primary-button">Generate token</button>
+        </div>
+        <div id="newTokenReveal" style="display:none; margin-top:12px; padding:12px; background:#f0fdf4; border:1px solid #bbf7d0; border-radius:6px;">
+            <p style="font-size:13px; color:#166534; margin-bottom:6px;">
+                Copy this token now — you won't be able to see it again.
+            </p>
+            <code id="newTokenValue" style="display:block; padding:8px; background:white; border-radius:4px; font-size:13px; word-break:break-all;"></code>
+        </div>
+    </div>
+
+    <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+        <table class="w-full text-sm">
+            <thead class="bg-gray-50 text-gray-700">
+                <tr>
+                    <th class="text-left px-3 py-2 font-medium">Name</th>
+                    <th class="text-left px-3 py-2 font-medium">Created</th>
+                    <th class="text-left px-3 py-2 font-medium">Last used</th>
+                    <th class="text-right px-3 py-2 font-medium">Revoke</th>
+                </tr>
+            </thead>
+            <tbody id="tokenRows" class="divide-y divide-gray-100">
+                <tr><td colspan="4" class="px-3 py-6 text-center text-gray-400">Loading…</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Revoke confirmation modal -->
+<div id="revokeModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="text-xl font-bold">Revoke this token?</h3>
+        </div>
+        <div class="modal-body">
+            <p class="text-gray-600 text-sm" id="revokeModalDesc"></p>
+            <p class="text-gray-400 text-xs mt-2">Anything using it (e.g. the browser extension) will stop working immediately.</p>
+        </div>
+        <div class="modal-actions">
+            <button id="revokeModalCancel" class="button secondary-button">Cancel</button>
+            <button id="revokeModalConfirm" class="button delete-button">Revoke</button>
+        </div>
+    </div>
+</div>
+
+<script>
+(function () {
+    const rowsEl = document.getElementById('tokenRows');
+    const newTokenName = document.getElementById('newTokenName');
+    const createBtn = document.getElementById('createTokenBtn');
+    const reveal = document.getElementById('newTokenReveal');
+    const revealValue = document.getElementById('newTokenValue');
+    const revokeModal = document.getElementById('revokeModal');
+    const revokeModalDesc = document.getElementById('revokeModalDesc');
+    const revokeModalCancel = document.getElementById('revokeModalCancel');
+    const revokeModalConfirm = document.getElementById('revokeModalConfirm');
+    let pendingRevokeId = null;
+
+    function fmtTime(iso) {
+        if (!iso) return '—';
+        try { return new Date(iso).toLocaleString(); } catch (_) { return iso; }
+    }
+
+    function escapeHtml(s) {
+        const div = document.createElement('div');
+        div.textContent = s;
+        return div.innerHTML;
+    }
+
+    async function loadTokens() {
+        const res = await fetch('/api/tokens');
+        const tokens = await res.json();
+        if (!tokens.length) {
+            rowsEl.innerHTML = '<tr><td colspan="4" class="px-3 py-6 text-center text-gray-400">No tokens yet.</td></tr>';
+            return;
+        }
+        rowsEl.innerHTML = tokens.map((t) => `
+            <tr>
+                <td class="px-3 py-2">${escapeHtml(t.name)}</td>
+                <td class="px-3 py-2 text-gray-500 whitespace-nowrap">${fmtTime(t.created_at)}</td>
+                <td class="px-3 py-2 text-gray-500 whitespace-nowrap">${fmtTime(t.last_used_at)}</td>
+                <td class="px-3 py-2 text-right">
+                    <button class="button delete-button revoke-btn" data-id="${t.id}" data-name="${escapeHtml(t.name)}">Revoke</button>
+                </td>
+            </tr>
+        `).join('');
+    }
+
+    createBtn.addEventListener('click', async () => {
+        const name = newTokenName.value.trim();
+        if (!name) return;
+        createBtn.disabled = true;
+        try {
+            const res = await fetch('/api/tokens', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name }),
+            });
+            const data = await res.json();
+            if (!res.ok) {
+                showToast(data.error || 'Failed to create token');
+                return;
+            }
+            revealValue.textContent = data.token;
+            reveal.style.display = 'block';
+            newTokenName.value = '';
+            loadTokens();
+        } finally {
+            createBtn.disabled = false;
+        }
+    });
+
+    rowsEl.addEventListener('click', (e) => {
+        const btn = e.target.closest('.revoke-btn');
+        if (!btn) return;
+        pendingRevokeId = btn.dataset.id;
+        revokeModalDesc.textContent = `Revoke "${btn.dataset.name}"?`;
+        revokeModal.style.display = 'flex';
+    });
+
+    revokeModalCancel.addEventListener('click', () => {
+        revokeModal.style.display = 'none';
+        pendingRevokeId = null;
+    });
+
+    revokeModalConfirm.addEventListener('click', async () => {
+        if (!pendingRevokeId) return;
+        revokeModalConfirm.disabled = true;
+        const res = await fetch(`/api/tokens/${pendingRevokeId}/revoke`, { method: 'POST' });
+        revokeModalConfirm.disabled = false;
+        revokeModal.style.display = 'none';
+        if (!res.ok) {
+            const data = await res.json().catch(() => ({}));
+            showToast(data.error || 'Failed to revoke token');
+            pendingRevokeId = null;
+            return;
+        }
+        pendingRevokeId = null;
+        loadTokens();
+    });
+
+    loadTokens();
+})();
+</script>
 {% endblock %}
