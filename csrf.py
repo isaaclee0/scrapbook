@@ -30,6 +30,16 @@ def verify_csrf(session_token: str, presented: str) -> bool:
 def require_csrf(view):
     @wraps(view)
     def wrapper(*args, **kwargs):
+        # CSRF defends cookie-based sessions specifically (a malicious page
+        # can't read another origin's response, but browsers still attach
+        # cookies to requests it triggers). That attack doesn't apply to
+        # Bearer-token requests, which carry no cookie for a browser to
+        # attach automatically. Every @require_csrf route is preceded by
+        # @login_required, which already rejected an invalid/missing token
+        # before this decorator runs — so a present Authorization: Bearer
+        # header here means the request already authenticated successfully.
+        if request.headers.get('Authorization', '').startswith('Bearer '):
+            return view(*args, **kwargs)
         session_token = request.cookies.get('session_token', '')
         presented = request.headers.get('X-CSRF-Token')
         if not presented:
