@@ -514,7 +514,21 @@ def tx(dictionary=False):
 def get_current_user():
     """
     Get the currently authenticated user from a Bearer API token or session
-    cookie. Returns user dict or None.
+    cookie. Memoized on flask.g for the duration of the request, since this
+    function is called multiple times per request (before_request hook,
+    login_required, route bodies) and Bearer-token lookups hit the DB.
+    Returns user dict or None.
+    """
+    if not hasattr(g, '_current_user'):
+        g._current_user = _resolve_current_user()
+    return g._current_user
+
+
+def _resolve_current_user():
+    """
+    Resolve the currently authenticated user from a Bearer API token or
+    session cookie, without caching. Called once per request by
+    get_current_user().
     """
     auth_header = request.headers.get('Authorization', '')
     if auth_header.startswith('Bearer '):
