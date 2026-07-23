@@ -23,7 +23,7 @@ extension project that consumes it.
 | Scope | Right-click on `<img>` elements only; no page/selection capture |
 | Auth | Personal Access Token (Bearer), generated in Scrapbook settings |
 | Instance addressing | Single fixed base URL (public/VPN domain), entered once in extension options |
-| Image capture | Content script fetches image bytes in-page (page's own cookies/session) → base64 data URL → reuses existing `data:image/` upload path |
+| Image capture | Background service worker fetches image bytes (`credentials: 'include'`, browser's cookie jar for that origin) → base64 data URL → reuses existing `data:image/` upload path. **Corrected during implementation** — see note below. |
 | CORS strategy | `host_permissions: ["<all_urls>"]` declared upfront (unpacked personal extension, not Web Store) |
 | Dialog placement | Centered modal, restyled copy of `add_content.html`'s dialog, injected via Shadow DOM |
 | Board/section creation | Can create a new board inline from the dialog; sections are pick-only (new board = no sections yet) |
@@ -103,17 +103,43 @@ Manifest V3. `permissions: ["contextMenus", "storage", "scripting"]`,
     /add-pin` — relayed to/from the content script via
     `chrome.runtime.sendMessage`. The token never reaches the page or the
     content script.
+  - **Also fetches the right-clicked image itself** (`FETCH_IMAGE` message,
+    `fetch(srcUrl, {credentials: 'include'})` → `arrayBuffer` → manual
+    base64 encoding via `btoa` → data URL). See correction note below for
+    why this lives here and not in the content script.
 
 - **Content script** (injected on demand, not persistent)
   - Renders the modal in a Shadow DOM root so host-page CSS can't leak in or
     out.
-  - Fetches `srcUrl` itself (`fetch` → `blob` → base64 data URL) using the
-    page's own cookies/session — this is why hotlink-protected or
-    session-gated images work.
+  - Requests the image as a data URL from the background script (rather
+    than fetching it itself — see correction note below).
   - Requests the board list from background on open; on board select,
     requests sections for that board.
   - Title defaults to the image's `alt` text, falling back to page title;
     both editable.
+
+**Correction made during implementation (Task 12 code review):** the
+original design above had the *content script* fetch the image directly, on
+the theory that this would use "the page's own cookies/session" for
+hotlink-protected or session-gated images. This turned out to be based on an
+outdated assumption. As of Chrome 85–87, Manifest V3 removed content
+scripts' ability to bypass CORS — a content-script `fetch()` is subject to
+the exact same CORS restrictions as the host page itself, and only extension
+pages (background service worker, popup, options page) retain the
+CORS-bypass privilege for origins covered by `host_permissions`
+([chromium.org](https://www.chromium.org/Home/chromium-security/extension-content-script-fetches/)).
+Since most ordinary websites' images have no `Access-Control-Allow-Origin`
+header, a content-script fetch would have failed for a large fraction of
+real-world images — breaking the extension's primary use case. The fix:
+the background service worker fetches the image instead (exempt from CORS
+via `host_permissions: ["<all_urls>"]`), using `credentials: 'include'` to
+still pick up the browser's stored cookies for that image's origin —
+preserving the original intent (hotlink-protected/session-gated images
+still work) via the browser's shared cookie jar rather than literally "the
+page's own fetch." A second, related correction: MV3 service workers don't
+reliably support `FileReader`, so the background-side blob→data-URL
+conversion uses `response.arrayBuffer()` + manual `btoa()` base64 encoding
+instead of `FileReader.readAsDataURL()`.
 
 - **Options page**: Scrapbook base URL + Personal Access Token fields, saved
   to `chrome.storage.local`.
