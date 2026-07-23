@@ -569,6 +569,57 @@
         outline: none;
         border-color: #007bff;
     }
+
+    .pin-display-switcher {
+        display: inline-flex;
+        background: #e5e7eb;
+        border-radius: 8px;
+        padding: 3px;
+        gap: 2px;
+    }
+    .pin-display-btn {
+        border: none;
+        background: transparent;
+        padding: 6px 14px;
+        border-radius: 6px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #6b7280;
+        cursor: pointer;
+        transition: all 0.15s;
+    }
+    .pin-display-btn:hover {
+        color: #374151;
+    }
+    .pin-display-btn.active {
+        background: white;
+        color: #111827;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+    }
+
+    #pinsGrid.display-mode {
+        background-color: #1a1a2e;
+        border-radius: 12px;
+        padding: 8px;
+    }
+    #pinsGrid.display-mode .pin-card {
+        background: transparent;
+        box-shadow: none;
+    }
+    #pinsGrid.display-mode .pin-card:not([data-colors-extracted="true"]) {
+        background: transparent;
+        border: none;
+    }
+    #pinsGrid.display-mode .pin-card:hover {
+        transform: none;
+        box-shadow: none;
+    }
+    #pinsGrid.display-mode .pin-info {
+        display: none;
+    }
+    #pinsGrid.display-mode .image-container > span {
+        display: none;
+    }
 </style>
 <script>
     // Reports dimensions of externally-loaded images to the server so they
@@ -623,6 +674,10 @@
                 </div>
             </div>
 
+            <div class="pin-display-switcher" role="group" aria-label="Pin display mode">
+                <button type="button" data-mode="normal" class="pin-display-btn active">Normal</button>
+                <button type="button" data-mode="display" class="pin-display-btn">Display</button>
+            </div>
         </div>
 
         {% if sections %}
@@ -734,6 +789,9 @@
         // *before* the first layout).
         (function () {
             var grid = document.getElementById('pinsGrid');
+            if (grid && localStorage.getItem('pinDisplayMode') === 'display') {
+                grid.classList.add('display-mode');
+            }
             if (grid && window.createScrapbookMasonry) {
                 window.scrapbookMasonry = window.createScrapbookMasonry(grid, {
                     // Saved pin size drives column count (Tiny=7 … Huge=3),
@@ -1101,6 +1159,22 @@
         initializeSectionFiltering();
         initializeBoardManagement();
 
+        (function () {
+            var displayMode = getPinDisplayMode();
+            document.querySelectorAll('.pin-display-btn').forEach(function (btn) {
+                btn.classList.toggle('active', btn.getAttribute('data-mode') === displayMode);
+                btn.addEventListener('click', function () {
+                    var mode = btn.getAttribute('data-mode');
+                    localStorage.setItem('pinDisplayMode', mode);
+                    document.querySelectorAll('.pin-display-btn').forEach(function (b) {
+                        b.classList.toggle('active', b === btn);
+                    });
+                    var pinsGrid = document.getElementById('pinsGrid');
+                    if (pinsGrid) pinsGrid.classList.toggle('display-mode', mode === 'display');
+                });
+            });
+        })();
+
         // Check if we have a highlight parameter - if so, prioritize layout stability
         const urlParams = new URLSearchParams(window.location.search);
         const hasHighlight = urlParams.get('highlight');
@@ -1142,6 +1216,10 @@
         }, 1000);
     }
 });
+
+    function getPinDisplayMode() {
+        return localStorage.getItem('pinDisplayMode') === 'display' ? 'display' : 'normal';
+    }
 
     // Infinite scroll for loading more pins on board page
     function setupBoardPinsLazyLoad(initialCount, totalCount) {
