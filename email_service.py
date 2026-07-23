@@ -51,9 +51,9 @@ def send_otp_email(email: str, otp: str) -> bool:
     try:
         delivery_to = _delivery_email(email)
         # Create email content
-        subject = "Your Scrapbook Login Code"
+        subject = "Your Scrappl Login Code"
         if _is_development() and delivery_to.lower() != email.lower():
-            subject = f"[DEV → {email}] Your Scrapbook Login Code"
+            subject = f"[DEV → {email}] Your Scrappl Login Code"
         
         html_content = f"""
         <!DOCTYPE html>
@@ -119,12 +119,12 @@ def send_otp_email(email: str, otp: str) -> bool:
         <body>
             <div class="container">
                 <div class="header">
-                    <h1>🔐 scrapbook.io</h1>
+                    <h1>🔐 scrappl.com</h1>
                 </div>
                 <div class="content">
                     <h2>Your Login Code</h2>
                     <p>Hi there! 👋</p>
-                    <p>Use this code to log in to your Scrapbook account:</p>
+                    <p>Use this code to log in to your Scrappl account:</p>
                     
                     <div class="otp-code">{otp}</div>
                     
@@ -137,7 +137,7 @@ def send_otp_email(email: str, otp: str) -> bool:
                     </p>
                 </div>
                 <div class="footer">
-                    <p>Sent by Scrapbook.io - Your Personal Scrapbook</p>
+                    <p>Sent by Scrappl.com - Your Personal Scrappl</p>
                 </div>
             </div>
         </body>
@@ -145,8 +145,8 @@ def send_otp_email(email: str, otp: str) -> bool:
         """
         
         text_content = f"""
-        Login to Scrapbook
-        
+        Login to Scrappl
+
         Your login code is: {otp}
         
         This code expires in 10 minutes for your security.
@@ -157,12 +157,12 @@ def send_otp_email(email: str, otp: str) -> bool:
         # Create email object
         send_smtp_email = sib_api_v3_sdk.SendSmtpEmail(
             to=[{"email": delivery_to}],
-            sender={"name": "Scrapbook.io", "email": "noreply@scrapbook.io"},
+            sender={"name": "Scrappl", "email": "noreply@scrappl.com"},
             subject=subject,
             html_content=html_content,
             text_content=text_content
         )
-        
+
         # Send email
         api_response = api_instance.send_transac_email(send_smtp_email)
         if delivery_to.lower() != email.lower():
@@ -201,9 +201,9 @@ def send_welcome_email(email: str) -> bool:
     """
     try:
         delivery_to = _delivery_email(email)
-        subject = "Welcome to Scrapbook! 🎉"
+        subject = "Welcome to Scrappl! 🎉"
         if _is_development() and delivery_to.lower() != email.lower():
-            subject = f"[DEV → {email}] Welcome to Scrapbook! 🎉"
+            subject = f"[DEV → {email}] Welcome to Scrappl! 🎉"
         
         html_content = f"""
         <!DOCTYPE html>
@@ -253,13 +253,13 @@ def send_welcome_email(email: str) -> bool:
         <body>
             <div class="container">
                 <div class="header">
-                    <h1>🎉 Welcome to Scrapbook!</h1>
+                    <h1>🎉 Welcome to Scrappl!</h1>
                 </div>
                 <div class="content">
                     <p>Hi there! 👋</p>
-                    <p>We're excited to have you join Scrapbook! Your account has been created and you're all set to start organizing your ideas, images, and inspiration.</p>
-                    
-                    <h3>What you can do with Scrapbook:</h3>
+                    <p>We're excited to have you join Scrappl! Your account has been created and you're all set to start organizing your ideas, images, and inspiration.</p>
+
+                    <h3>What you can do with Scrappl:</h3>
                     <div class="feature">📌 Create boards to organize your content</div>
                     <div class="feature">🖼️ Save images, websites, and ideas</div>
                     <div class="feature">🎨 Organize with sections</div>
@@ -270,7 +270,7 @@ def send_welcome_email(email: str) -> bool:
                     </p>
                 </div>
                 <div class="footer">
-                    <p>Happy scrapbooking! 🎨<br>The Scrapbook Team</p>
+                    <p>Happy scrapping! 🎨<br>The Scrappl Team</p>
                 </div>
             </div>
         </body>
@@ -278,30 +278,30 @@ def send_welcome_email(email: str) -> bool:
         """
         
         text_content = f"""
-        Welcome to Scrapbook!
-        
-        We're excited to have you join Scrapbook! Your account has been created and you're all set to start organizing your ideas, images, and inspiration.
-        
-        What you can do with Scrapbook:
+        Welcome to Scrappl!
+
+        We're excited to have you join Scrappl! Your account has been created and you're all set to start organizing your ideas, images, and inspiration.
+
+        What you can do with Scrappl:
         - Create boards to organize your content
         - Save images, websites, and ideas
         - Organize with sections
         - Search and discover your saved content
-        
+
         Ready to get started? Log in anytime using your email address - no password needed!
-        
-        Happy scrapbooking!
-        The Scrapbook Team
+
+        Happy scrapping!
+        The Scrappl Team
         """
         
         send_smtp_email = sib_api_v3_sdk.SendSmtpEmail(
             to=[{"email": delivery_to}],
-            sender={"name": "Scrapbook.io", "email": "noreply@scrapbook.io"},
+            sender={"name": "Scrappl", "email": "noreply@scrappl.com"},
             subject=subject,
             html_content=html_content,
             text_content=text_content
         )
-        
+
         api_response = api_instance.send_transac_email(send_smtp_email)
         if delivery_to.lower() != email.lower():
             print(f"✅ Welcome email for {email} sent to {delivery_to}")

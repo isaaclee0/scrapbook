@@ -1,6 +1,6 @@
 # Database Migrations
 
-This document explains how to manage database schema changes for Scrapbook.
+This document explains how to manage database schema changes for Scrappl.
 
 ## Quick Start
 
@@ -43,7 +43,7 @@ Performance indexes on frequently queried columns
 
 ### For Existing Databases
 
-If you have an existing Scrapbook installation from before v1.5.0:
+If you have an existing Scrappl installation from before v1.5.0:
 
 1. **Backup your database** (always!)
    ```bash

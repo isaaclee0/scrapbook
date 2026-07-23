@@ -11,7 +11,7 @@ db_config = {
     'host': os.getenv('DB_HOST', 'db'),
     'user': os.getenv('DB_USER', 'db'),
     'password': os.getenv('DB_PASSWORD'),
-    'database': os.getenv('DB_NAME', 'scrapbook'),
+    'database': os.getenv('DB_NAME', 'scrappl'),
     'pool_name': 'mypool',
     'pool_size': 5
 }

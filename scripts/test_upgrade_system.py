@@ -28,7 +28,7 @@ def test_upgrade_system():
             print(f"    {upgrade['description']}")
         
         print(f"\n🎯 To apply these upgrades:")
-        print("1. Visit your scrapbook web app")
+        print("1. Visit your scrappl web app")
         print("2. You should see a blue upgrade banner at the top")
         print("3. Click 'Update Database' to apply all pending upgrades")
         print("4. The system will apply them one by one with progress indication")

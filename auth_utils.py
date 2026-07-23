@@ -206,7 +206,7 @@ def verify_otp(email: str, otp: str, storage_backend=None) -> bool:
         return False
 
 
-API_TOKEN_PREFIX = 'sb_pat_'
+API_TOKEN_PREFIX = 'sp_pat_'
 
 
 def generate_api_token() -> str:

@@ -14,7 +14,7 @@ draw.ellipse([
     (center[0] + circle_radius, center[1] + circle_radius)
 ], fill=(41, 128, 185, 255))  # blue color
 
-# Optionally, add a white letter in the center (e.g., 'S' for Scrapbook)
+# Optionally, add a white letter in the center (e.g., 'S' for Scrappl)
 # from PIL import ImageFont
 # font = ImageFont.truetype('arial.ttf', 18)
 # draw.text((10, 6), 'S', font=font, fill=(255,255,255,255))

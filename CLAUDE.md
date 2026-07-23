@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What This Is
 
-Scrapbook is a self-hosted, Pinterest-like personal image collection manager built with Flask. Core features: board/section organization, image scraping from URLs, URL health monitoring (Wayback Machine integration), OTP-based passwordless auth (via Brevo email), and Redis view caching.
+Scrappl is a self-hosted, Pinterest-like personal image collection manager built with Flask. Core features: board/section organization, image scraping from URLs, URL health monitoring (Wayback Machine integration), OTP-based passwordless auth (via Brevo email), and Redis view caching.
 
 ## Running the App
 

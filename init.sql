@@ -1,6 +1,6 @@
--- Scrapbook Database Initialization Script v1.5.0
--- This script creates all necessary tables and indexes for the scrapbook application
--- Compatible with Scrapbook v1.5.0+
+-- Scrappl Database Initialization Script v1.5.0
+-- This script creates all necessary tables and indexes for the scrappl application
+-- Compatible with Scrappl v1.5.0+
 
 CREATE DATABASE IF NOT EXISTS db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE db;

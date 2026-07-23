@@ -27,7 +27,7 @@ The regular `Dockerfile` is 1.5GB because it includes:
 
 Or specify explicitly:
 ```bash
-docker build -f Dockerfile.minimal -t staugustine1/scrapbook:1.5.0 .
+docker build -f Dockerfile.minimal -t staugustine1/scrappl:1.5.0 .
 ```
 
 ## 🔍 What's in Each Version?
@@ -103,13 +103,13 @@ Use Google's distroless Python image:
 ### Step 1: Test the minimal build locally
 ```bash
 # Build minimal version
-docker build -f Dockerfile.minimal -t scrapbook:minimal-test .
+docker build -f Dockerfile.minimal -t scrappl:minimal-test .
 
 # Check the size
-docker images scrapbook:minimal-test
+docker images scrappl:minimal-test
 
 # Test it works
-docker run -p 8000:8000 scrapbook:minimal-test
+docker run -p 8000:8000 scrappl:minimal-test
 ```
 
 ### Step 2: Update your build script
@@ -121,7 +121,7 @@ The build script already supports this:
 ### Step 3: Deploy
 ```bash
 # Pull the new smaller image
-docker pull staugustine1/scrapbook:1.5.0
+docker pull staugustine1/scrappl:1.5.0
 
 # Restart services
 docker-compose up -d
@@ -137,8 +137,8 @@ docker-compose up -d
 ./build-and-push.sh --optimized
 
 # To use minimal, update the script or:
-docker build -f Dockerfile.minimal -t staugustine1/scrapbook:1.5.0 .
-docker push staugustine1/scrapbook:1.5.0
+docker build -f Dockerfile.minimal -t staugustine1/scrappl:1.5.0 .
+docker push staugustine1/scrappl:1.5.0
 ```
 
 ## 🔍 Analyzing Your Current Image
@@ -151,7 +151,7 @@ To see what's taking up space in your current image:
 # Ubuntu: wget https://github.com/wagoodman/dive/releases/download/v0.10.0/dive_0.10.0_linux_amd64.deb && sudo dpkg -i dive_0.10.0_linux_amd64.deb
 
 # Analyze the image
-dive staugustine1/scrapbook:1.5.0
+dive staugustine1/scrappl:1.5.0
 ```
 
 ## ✅ Recommended Setup

@@ -3,7 +3,7 @@
 services:
   web:
     build: .
-    image: scrapbook-web
+    image: scrappl-web
     restart: unless-stopped
     # Bind-mounted source is often root-owned; run as root so cached images / writes work.
     user: "0:0"
@@ -13,7 +13,7 @@ services:
       - .:/app
       - /app/node_modules # Preserve image node_modules over the bind mount
     networks:
-      - scrapbook_net
+      - scrappl_net
     environment:
       - FLASK_ENV=development
       - FLASK_APP=app.py
@@ -21,7 +21,7 @@ services:
       - DB_HOST=db
       - DB_USER=db
       # Must match MariaDB MYSQL_PASSWORD (single source: MYSQL_PASSWORD in .env)
-      - DB_PASSWORD=${MYSQL_PASSWORD:-scrapbook_local_dev}
+      - DB_PASSWORD=${MYSQL_PASSWORD:-scrappl_local_dev}
       - DB_NAME=db
       - REDIS_HOST=redis
       - REDIS_PORT=6379
@@ -38,7 +38,7 @@ services:
         condition: service_healthy
 
   cache-worker:
-    image: scrapbook-web
+    image: scrappl-web
     restart: unless-stopped
     user: "0:0"
     command: ["python", "scripts/cache_worker.py"]
@@ -46,12 +46,12 @@ services:
       - .:/app
       - /app/node_modules
     networks:
-      - scrapbook_net
+      - scrappl_net
     environment:
       - PYTHONUNBUFFERED=1
       - DB_HOST=db
       - DB_USER=db
-      - DB_PASSWORD=${MYSQL_PASSWORD:-scrapbook_local_dev}
+      - DB_PASSWORD=${MYSQL_PASSWORD:-scrappl_local_dev}
       - DB_NAME=db
       - CACHE_WORKER_BATCH_SIZE=${CACHE_WORKER_BATCH_SIZE:-200}
       - CACHE_WORKER_SLEEP=${CACHE_WORKER_SLEEP:-10}
@@ -66,7 +66,7 @@ services:
     image: redis:7-alpine
     restart: unless-stopped
     networks:
-      - scrapbook_net
+      - scrappl_net
     volumes:
       - redis_data:/data
     command: redis-server --appendonly yes
@@ -87,17 +87,17 @@ services:
     environment:
       - MYSQL_DATABASE=db
       - MYSQL_USER=db
-      - MYSQL_PASSWORD=${MYSQL_PASSWORD:-scrapbook_local_dev}
-      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-scrapbook_local_root_dev}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD:-scrappl_local_dev}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-scrappl_local_root_dev}
     command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --innodb-buffer-pool-size=256M
     healthcheck:
-      test: ["CMD", "mariadb-admin", "ping", "-h", "localhost", "-u", "db", "-p${MYSQL_PASSWORD:-scrapbook_local_dev}"]
+      test: ["CMD", "mariadb-admin", "ping", "-h", "localhost", "-u", "db", "-p${MYSQL_PASSWORD:-scrappl_local_dev}"]
       interval: 10s
       timeout: 5s
       retries: 10
       start_period: 40s
     networks:
-      scrapbook_net:
+      scrappl_net:
         aliases:
           - db
           - mariadb
@@ -112,16 +112,16 @@ services:
       - PMA_HOST=db
       - PMA_PORT=3306
       - PMA_USER=db
-      - PMA_PASSWORD=${MYSQL_PASSWORD:-scrapbook_local_dev}
-      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-scrapbook_local_root_dev}
+      - PMA_PASSWORD=${MYSQL_PASSWORD:-scrappl_local_dev}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-scrappl_local_root_dev}
     depends_on:
       db:
         condition: service_healthy
     networks:
-      - scrapbook_net
+      - scrappl_net
 
 networks:
-  scrapbook_net:
+  scrappl_net:
     driver: bridge
 
 volumes:

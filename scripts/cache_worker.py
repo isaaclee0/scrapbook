@@ -144,7 +144,7 @@ def main():
         format='%(asctime)s %(levelname)s [cache_worker] %(message)s',
     )
 
-    parser = argparse.ArgumentParser(description='Scrapbook image cache worker')
+    parser = argparse.ArgumentParser(description='Scrappl image cache worker')
     parser.add_argument('--batch-size', type=int, default=int(os.getenv('CACHE_WORKER_BATCH_SIZE', '200')))
     parser.add_argument('--sleep', type=float, default=float(os.getenv('CACHE_WORKER_SLEEP', '10')))
     parser.add_argument(

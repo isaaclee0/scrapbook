@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   web:
-    image: staugustine1/scrapbook:latest
+    image: staugustine1/scrappl:latest
     restart: unless-stopped
     ports:
       - "8000:8000"
@@ -11,7 +11,7 @@ services:
       - cached_images:/app/static/cached_images
     networks:
       - npm_proxy
-      - scrapbook_net
+      - scrappl_net
     environment:
       - FLASK_ENV=${DEBUG_MODE:-production}
       - DB_HOST=db
@@ -33,13 +33,13 @@ services:
       start_period: 40s
 
   cache-worker:
-    image: staugustine1/scrapbook:latest
+    image: staugustine1/scrappl:latest
     restart: unless-stopped
     command: ["python", "scripts/cache_worker.py"]
     volumes:
       - cached_images:/app/static/cached_images
     networks:
-      - scrapbook_net
+      - scrappl_net
     environment:
       - PYTHONUNBUFFERED=1
       - DB_HOST=db
@@ -59,7 +59,7 @@ services:
     image: redis:7-alpine
     restart: unless-stopped
     networks:
-      - scrapbook_net
+      - scrappl_net
     volumes:
       - redis_data:/data
     command: redis-server --appendonly yes
@@ -89,7 +89,7 @@ services:
       retries: 5
       start_period: 60s
     networks:
-      scrapbook_net:
+      scrappl_net:
         aliases:
           - db
           - mariadb
@@ -98,7 +98,7 @@ services:
 networks:
   npm_proxy:
     external: true
-  scrapbook_net:
+  scrappl_net:
     driver: bridge
 
 volumes:

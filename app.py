@@ -713,7 +713,7 @@ def _temp_image_link_serializer():
         or os.getenv('SECRET_KEY')
         or 'development-temp-image-link-secret'
     )
-    return URLSafeTimedSerializer(signing_secret, salt='scrapbook-temp-image-link-v1')
+    return URLSafeTimedSerializer(signing_secret, salt='scrappl-temp-image-link-v1')
 
 
 def _serve_image_url(image_url):
@@ -3769,7 +3769,7 @@ def download_extension():
     zipped manifest.json's externally_connectable.matches is rewritten to
     this request's actual origin (scheme + hostname, no port — match
     patterns don't support ports) so the downloaded extension is correctly
-    scoped to talk back to whichever Scrapbook instance served it.
+    scoped to talk back to whichever Scrappl instance served it.
     """
     if not os.path.isdir(EXTENSION_SOURCE_DIR):
         return jsonify({"error": "Extension source not available on this server"}), 404
@@ -3786,7 +3786,7 @@ def download_extension():
                     continue
                 filepath = os.path.join(root, filename)
                 arcname = os.path.join(
-                    'scrapbook-chrome-extension',
+                    'scrappl-chrome-extension',
                     os.path.relpath(filepath, EXTENSION_SOURCE_DIR),
                 )
                 if filename == 'manifest.json':
@@ -3802,7 +3802,7 @@ def download_extension():
         buffer,
         mimetype='application/zip',
         as_attachment=True,
-        download_name='scrapbook-chrome-extension.zip',
+        download_name='scrappl-chrome-extension.zip',
     )
 
 

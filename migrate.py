@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Database Migration Script for Scrapbook v1.5.0
+Database Migration Script for Scrappl v1.5.0
 
 This script automatically migrates the database to the latest schema.
 It's safe to run multiple times - it checks for existing tables/columns before creating them.
@@ -103,7 +103,7 @@ def execute_sql(cursor, sql, success_msg, skip_msg=None):
 def migrate_database():
     """Main migration function"""
     log("\n" + "="*60, Colors.BOLD)
-    log("🚀 Scrapbook Database Migration to v1.5.0", Colors.BOLD)
+    log("🚀 Scrappl Database Migration to v1.5.0", Colors.BOLD)
     log("="*60 + "\n", Colors.BOLD)
     
     conn = get_db_connection()

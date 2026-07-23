@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Scrapbook</title>
+    <title>Login - Scrappl</title>
     <link href="{{ url_for('static', filename='css/output.css') }}" rel="stylesheet">
     <style>
         body {
@@ -26,13 +26,6 @@
             text-align: center;
             font-size: 48px;
             margin-bottom: 16px;
-        }
-        .title {
-            text-align: center;
-            font-size: 32px;
-            font-weight: 700;
-            color: #2c3e50;
-            margin-bottom: 8px;
         }
         .subtitle {
             text-align: center;
@@ -162,8 +155,7 @@
 </head>
 <body>
     <div class="login-container">
-        <div class="logo">📌</div>
-        <h1 class="title">scrapbook.io</h1>
+        <div class="logo"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="Scrappl" style="max-width: 220px; width: 100%; height: auto;"></div>
         <p class="subtitle" id="subtitle">Sign in with your email</p>
         
         <div id="message" class="message"></div>

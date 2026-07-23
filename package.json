@@ -1,7 +1,7 @@
 {
-  "name": "scrapbook",
+  "name": "scrappl",
   "version": "1.0.0",
-  "description": "Scrapbook application with Tailwind CSS",
+  "description": "Scrappl application with Tailwind CSS",
   "scripts": {
     "build:css": "tailwindcss -i ./src/input.css -o ./static/css/output.css --minify",
     "watch:css": "tailwindcss -i ./src/input.css -o ./static/css/output.css --watch"

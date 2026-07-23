@@ -12,7 +12,7 @@ This guide covers the new section features added in v1.5.8+
 ## For Production Deployment
 
 ### Prerequisites
-- Scrapbook v1.5.8 or higher deployed (contains schema changes and new UI)
+- Scrappl v1.5.8 or higher deployed (contains schema changes and new UI)
 - Access to production Docker container
 
 ### Migration Command
