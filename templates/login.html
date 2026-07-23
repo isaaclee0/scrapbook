@@ -7,12 +7,41 @@
     <link href="{{ url_for('static', filename='css/output.css') }}" rel="stylesheet">
     <style>
         body {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-color: #1a1a2e;
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            overflow: hidden;
+        }
+        .bg-scroll {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            display: flex;
+            gap: 8px;
+            padding: 8px;
+            overflow: hidden;
+        }
+        .bg-col {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .bg-col img {
+            width: 100%;
+            border-radius: 8px;
+            display: block;
+            object-fit: cover;
+        }
+        .bg-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 1;
+            background: rgba(10, 10, 20, 0.15);
+            pointer-events: none;
         }
         .login-container {
             background: white;
@@ -154,6 +183,51 @@
     </style>
 </head>
 <body>
+    <div class="bg-scroll" aria-hidden="true">
+        <div class="bg-col">
+            <img src="{{ url_for('static', filename='images/login-bg/login-bg-01.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='images/login-bg/login-bg-02.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='images/login-bg/login-bg-03.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='images/login-bg/login-bg-04.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='images/login-bg/login-bg-01.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='images/login-bg/login-bg-02.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='images/login-bg/login-bg-03.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='images/login-bg/login-bg-04.jpg') }}" alt="">
+        </div>
+        <div class="bg-col">
+            <img src="{{ url_for('static', filename='images/login-bg/login-bg-05.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='images/login-bg/login-bg-06.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='images/login-bg/login-bg-07.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='images/login-bg/login-bg-05.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='images/login-bg/login-bg-06.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='images/login-bg/login-bg-07.jpg') }}" alt="">
+        </div>
+        <div class="bg-col">
+            <img src="{{ url_for('static', filename='images/login-bg/login-bg-08.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='images/login-bg/login-bg-09.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='images/login-bg/login-bg-10.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='images/login-bg/login-bg-08.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='images/login-bg/login-bg-09.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='images/login-bg/login-bg-10.jpg') }}" alt="">
+        </div>
+        <div class="bg-col">
+            <img src="{{ url_for('static', filename='images/login-bg/login-bg-11.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='images/login-bg/login-bg-12.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='images/login-bg/login-bg-13.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='images/login-bg/login-bg-11.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='images/login-bg/login-bg-12.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='images/login-bg/login-bg-13.jpg') }}" alt="">
+        </div>
+        <div class="bg-col">
+            <img src="{{ url_for('static', filename='images/login-bg/login-bg-14.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='images/login-bg/login-bg-15.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='images/login-bg/login-bg-16.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='images/login-bg/login-bg-14.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='images/login-bg/login-bg-15.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='images/login-bg/login-bg-16.jpg') }}" alt="">
+        </div>
+    </div>
+    <div class="bg-overlay"></div>
     <div class="login-container">
         <div class="logo"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="Scrappl" style="max-width: 220px; width: 100%; height: auto;"></div>
         <p class="subtitle" id="subtitle">Sign in with your email</p>
