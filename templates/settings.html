@@ -230,19 +230,22 @@
                 return;
             }
 
-            chrome.runtime.sendMessage(
-                EXTENSION_ID,
-                { type: 'CONNECT', baseUrl: window.location.origin, token },
-                (response) => {
-                    if (chrome.runtime.lastError || !response || !response.ok) {
-                        connectStatus.textContent = "Token created, but couldn't reach the extension — make sure it's installed and loaded, then try again. (You can also paste the token above into the extension's options page manually.)";
-                        connectStatus.className = 'text-sm mt-2 text-red-600';
-                        return;
+            await new Promise((resolve) => {
+                chrome.runtime.sendMessage(
+                    EXTENSION_ID,
+                    { type: 'CONNECT', baseUrl: window.location.origin, token },
+                    (response) => {
+                        if (chrome.runtime.lastError || !response || !response.ok) {
+                            connectStatus.textContent = "Token created, but couldn't reach the extension — make sure it's installed and loaded, then try again. (You can also paste the token above into the extension's options page manually.)";
+                            connectStatus.className = 'text-sm mt-2 text-red-600';
+                        } else {
+                            connectStatus.textContent = 'Extension connected!';
+                            connectStatus.className = 'text-sm mt-2 text-green-600';
+                        }
+                        resolve();
                     }
-                    connectStatus.textContent = 'Extension connected!';
-                    connectStatus.className = 'text-sm mt-2 text-green-600';
-                }
-            );
+                );
+            });
         } catch (err) {
             connectStatus.textContent = err.message || 'Something went wrong.';
             connectStatus.className = 'text-sm mt-2 text-red-600';
