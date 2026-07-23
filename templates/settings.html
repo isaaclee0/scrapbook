@@ -3,6 +3,34 @@
 {% block content %}
 <div class="max-w-3xl mx-auto px-4 py-8">
     <div class="mb-6">
+        <h1 class="text-3xl font-semibold text-gray-900">Chrome Extension</h1>
+        <p class="text-gray-600 mt-1">
+            Send images to Scrapbook from any webpage without leaving the page.
+        </p>
+    </div>
+
+    <div class="bg-white border border-gray-200 rounded-lg p-4 mb-4">
+        <h2 class="text-lg font-semibold text-gray-900 mb-2">1. Get the extension</h2>
+        <ol class="list-decimal list-inside text-sm text-gray-700 space-y-1 mb-3">
+            <li>Download and unzip the extension below.</li>
+            <li>Open <code class="bg-gray-100 px-1 rounded">chrome://extensions</code> and enable <strong>Developer mode</strong> (top right).</li>
+            <li>Click <strong>Load unpacked</strong> and select the unzipped <code class="bg-gray-100 px-1 rounded">scrapbook-chrome-extension</code> folder.</li>
+        </ol>
+        <a href="{{ url_for('download_extension') }}" class="button primary-button" style="display:inline-block; text-decoration:none;">Download extension</a>
+    </div>
+
+    <div class="bg-white border border-gray-200 rounded-lg p-4 mb-4">
+        <h2 class="text-lg font-semibold text-gray-900 mb-2">2. Connect it</h2>
+        <p class="text-sm text-gray-600 mb-3">
+            With the extension loaded, click below to configure it automatically —
+            this creates a token and sends it straight to the extension, no copying
+            or pasting required.
+        </p>
+        <button id="connectExtensionBtn" class="button primary-button">Connect Extension</button>
+        <p id="connectStatus" class="text-sm mt-2"></p>
+    </div>
+
+    <div class="mb-6">
         <h1 class="text-3xl font-semibold text-gray-900">API Tokens</h1>
         <p class="text-gray-600 mt-1">
             Personal access tokens let other tools (like the Send to Scrapbook browser
@@ -64,11 +92,14 @@
 
 <script>
 (function () {
+    const EXTENSION_ID = 'lbombjkndojncljbogbkhkbdaenhhjfl';
     const rowsEl = document.getElementById('tokenRows');
     const newTokenName = document.getElementById('newTokenName');
     const createBtn = document.getElementById('createTokenBtn');
     const reveal = document.getElementById('newTokenReveal');
     const revealValue = document.getElementById('newTokenValue');
+    const connectBtn = document.getElementById('connectExtensionBtn');
+    const connectStatus = document.getElementById('connectStatus');
     const revokeModal = document.getElementById('revokeModal');
     const revokeModalDesc = document.getElementById('revokeModalDesc');
     const revokeModalCancel = document.getElementById('revokeModalCancel');
@@ -167,6 +198,56 @@
             showToast('Failed to revoke token');
         } finally {
             revokeModalConfirm.disabled = false;
+        }
+    });
+
+    async function createToken(name) {
+        const res = await fetch('/api/tokens', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name }),
+        });
+        const data = await res.json();
+        if (!res.ok) {
+            throw new Error(data.error || 'Failed to create token');
+        }
+        return data.token;
+    }
+
+    connectBtn.addEventListener('click', async () => {
+        connectBtn.disabled = true;
+        connectStatus.textContent = 'Connecting…';
+        connectStatus.className = 'text-sm mt-2 text-gray-600';
+        try {
+            const token = await createToken('Chrome extension');
+            revealValue.textContent = token;
+            reveal.style.display = 'block';
+            loadTokens();
+
+            if (!window.chrome || !chrome.runtime || !chrome.runtime.sendMessage) {
+                connectStatus.textContent = 'Token created — but this browser has no chrome.runtime API to reach the extension. Paste the token above into the extension\'s options page manually.';
+                connectStatus.className = 'text-sm mt-2 text-red-600';
+                return;
+            }
+
+            chrome.runtime.sendMessage(
+                EXTENSION_ID,
+                { type: 'CONNECT', baseUrl: window.location.origin, token },
+                (response) => {
+                    if (chrome.runtime.lastError || !response || !response.ok) {
+                        connectStatus.textContent = "Token created, but couldn't reach the extension — make sure it's installed and loaded, then try again. (You can also paste the token above into the extension's options page manually.)";
+                        connectStatus.className = 'text-sm mt-2 text-red-600';
+                        return;
+                    }
+                    connectStatus.textContent = 'Extension connected!';
+                    connectStatus.className = 'text-sm mt-2 text-green-600';
+                }
+            );
+        } catch (err) {
+            connectStatus.textContent = err.message || 'Something went wrong.';
+            connectStatus.className = 'text-sm mt-2 text-red-600';
+        } finally {
+            connectBtn.disabled = false;
         }
     });
 
