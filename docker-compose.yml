@@ -18,6 +18,9 @@ services:
       - FLASK_ENV=development
       - FLASK_APP=app.py
       - PYTHONUNBUFFERED=1
+      # Containers run as root (user "0:0" above) but packages are installed
+      # under /home/appuser/.local; without this, root's Python can't find them.
+      - PYTHONUSERBASE=/home/appuser/.local
       - DB_HOST=db
       - DB_USER=db
       # Must match MariaDB MYSQL_PASSWORD (single source: MYSQL_PASSWORD in .env)
@@ -49,6 +52,7 @@ services:
       - scrapbook_net
     environment:
       - PYTHONUNBUFFERED=1
+      - PYTHONUSERBASE=/home/appuser/.local
       - DB_HOST=db
       - DB_USER=db
       - DB_PASSWORD=${MYSQL_PASSWORD:-scrapbook_local_dev}
