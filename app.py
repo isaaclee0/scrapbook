@@ -588,6 +588,8 @@ def _is_auth_exempt_path(path):
     # Allow only the exact static assets required by the login page pre-auth.
     if path in ('/static/css/output.css', '/static/images/logo.png'):
         return True
+    if path.startswith('/static/images/login-bg/'):
+        return True
     if path.startswith('/public/pin-image/'):
         return True
     return False
