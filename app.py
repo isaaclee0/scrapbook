@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify, request, send_from_directory, redirect, url_for, make_response, g, Response, stream_with_context
+from flask import Flask, render_template, jsonify, request, send_from_directory, send_file, redirect, url_for, make_response, g, Response, stream_with_context
 import mysql.connector
 import os
 from mysql.connector import pooling
@@ -16,6 +16,9 @@ import time
 import base64
 import hashlib
 import mimetypes
+import io
+import zipfile
+from urllib.parse import urlparse
 from functools import wraps
 from datetime import datetime
 from contextlib import contextmanager
@@ -3750,6 +3753,57 @@ def api_audit_log():
             db.close()
         except Exception:
             pass
+
+
+EXTENSION_SOURCE_DIR = os.getenv('EXTENSION_SOURCE_DIR', '/extension-src')
+
+
+@app.route('/extension/download')
+@login_required
+def download_extension():
+    """Zip the Chrome extension's current source and serve it as a download.
+
+    Reads directly from a bind-mounted copy of the separate extension repo
+    (see EXTENSION_SOURCE_DIR) rather than a vendored copy, so this always
+    reflects the extension's actual latest code with no sync step. The
+    zipped manifest.json's externally_connectable.matches is rewritten to
+    this request's actual origin (scheme + hostname, no port — match
+    patterns don't support ports) so the downloaded extension is correctly
+    scoped to talk back to whichever Scrapbook instance served it.
+    """
+    if not os.path.isdir(EXTENSION_SOURCE_DIR):
+        return jsonify({"error": "Extension source not available on this server"}), 404
+
+    parsed = urlparse(request.host_url)
+    origin_pattern = f"{parsed.scheme}://{parsed.hostname}/*"
+
+    buffer = io.BytesIO()
+    with zipfile.ZipFile(buffer, 'w', zipfile.ZIP_DEFLATED) as zf:
+        for root, dirs, files in os.walk(EXTENSION_SOURCE_DIR):
+            dirs[:] = [d for d in dirs if not d.startswith('.') and d != 'docs']
+            for filename in files:
+                if filename.startswith('.'):
+                    continue
+                filepath = os.path.join(root, filename)
+                arcname = os.path.join(
+                    'scrapbook-chrome-extension',
+                    os.path.relpath(filepath, EXTENSION_SOURCE_DIR),
+                )
+                if filename == 'manifest.json':
+                    with open(filepath, 'r') as f:
+                        manifest = json.load(f)
+                    manifest['externally_connectable'] = {"matches": [origin_pattern]}
+                    zf.writestr(arcname, json.dumps(manifest, indent=2))
+                else:
+                    zf.write(filepath, arcname)
+
+    buffer.seek(0)
+    return send_file(
+        buffer,
+        mimetype='application/zip',
+        as_attachment=True,
+        download_name='scrapbook-chrome-extension.zip',
+    )
 
 
 @app.route('/settings')
