@@ -80,9 +80,13 @@
             .bg-scroll .bg-col:nth-child(n+3) { display: none; }
         }
         .logo {
-            text-align: center;
+            display: flex;
+            justify-content: center;
             font-size: 48px;
             margin-bottom: 16px;
+        }
+        .logo img {
+            filter: saturate(1.5) contrast(1.12) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.18));
         }
         .subtitle {
             text-align: center;
