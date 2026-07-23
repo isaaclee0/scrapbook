@@ -70,6 +70,12 @@
                 -webkit-backdrop-filter: blur(10px);
             }
         }
+        @media (max-width: 900px) {
+            .bg-scroll .bg-col:nth-child(n+4) { display: none; }
+        }
+        @media (max-width: 600px) {
+            .bg-scroll .bg-col:nth-child(n+3) { display: none; }
+        }
         .logo {
             text-align: center;
             font-size: 48px;
