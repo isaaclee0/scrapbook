@@ -271,7 +271,7 @@ Replace with:
 Start the app (see Task 7 for the full dev-server recipe if it's not
 already running) and load `/auth/login` in the browser. Expected: five
 columns of photos fill the viewport, no animation yet, login card sits on
-top (it will look visually broken/overlapping until Task 6 restyles the
+top (it will look visually broken/overlapping until Task 4 restyles the
 card — that's expected at this point).
 
 - [ ] **Step 4: Commit**
