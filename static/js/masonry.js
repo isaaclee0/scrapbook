@@ -105,6 +105,7 @@
             }
             for (i = 0; i < cards.length; i++) {
                 var col = shortestColumn();
+                cards[i].dataset.parallaxCol = col;
                 cards[i].style.left = (pad.left + col * (colWidth + GAP)) + 'px';
                 cards[i].style.top = (pad.top + colHeights[col]) + 'px';
                 colHeights[col] += heights[i] + GAP;
