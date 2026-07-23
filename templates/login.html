@@ -54,12 +54,21 @@
         .bg-col:nth-child(4) { animation-duration: 25s; }
         .bg-col:nth-child(5) { animation-duration: 31s; }
         .login-container {
+            position: relative;
+            z-index: 2;
             background: white;
             border-radius: 16px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             padding: 48px;
             max-width: 450px;
             width: 90%;
+        }
+        @supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+            .login-container {
+                background: rgba(255, 255, 255, 0.72);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+            }
         }
         .logo {
             text-align: center;
