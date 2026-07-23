@@ -39,9 +39,15 @@
             <input type="range" id="homePinSizeSlider" min="1" max="5" value="3" class="w-20 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider">
             <span id="homePinSizeValue" class="text-sm font-medium text-gray-700 min-w-[4rem]">Medium</span>
         </div>
-        <div class="home-view-switcher" role="group" aria-label="Home view">
-            <button type="button" data-view="boards" class="home-view-btn active">Boards</button>
-            <button type="button" data-view="pins" class="home-view-btn">Pins</button>
+        <div class="home-view-stack">
+            <div class="home-view-switcher" role="group" aria-label="Home view">
+                <button type="button" data-view="boards" class="home-view-btn active">Boards</button>
+                <button type="button" data-view="pins" class="home-view-btn">Pins</button>
+            </div>
+            <div class="pin-display-switcher hidden" id="pinDisplaySwitcher" role="group" aria-label="Pin display mode">
+                <button type="button" data-mode="normal" class="pin-display-btn active">Normal</button>
+                <button type="button" data-mode="display" class="pin-display-btn">Display</button>
+            </div>
         </div>
     </div>
 
@@ -496,6 +502,60 @@
         .hidden {
             display: none !important;
         }
+
+        .home-view-stack {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 6px;
+        }
+        .pin-display-switcher {
+            display: inline-flex;
+            background: #e5e7eb;
+            border-radius: 8px;
+            padding: 3px;
+            gap: 2px;
+        }
+        .pin-display-btn {
+            border: none;
+            background: transparent;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #6b7280;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .pin-display-btn:hover {
+            color: #374151;
+        }
+        .pin-display-btn.active {
+            background: white;
+            color: #111827;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+        }
+
+        #homePinsGrid.display-mode {
+            background-color: #1a1a2e;
+            border-radius: 12px;
+            padding: 8px;
+        }
+        #homePinsGrid.display-mode .pin-card {
+            background: transparent;
+            box-shadow: none;
+        }
+        #homePinsGrid.display-mode .pin-card:not([data-colors-extracted="true"]) {
+            background: transparent;
+            border: none;
+        }
+        #homePinsGrid.display-mode .pin-card:hover {
+            transform: none;
+            box-shadow: none;
+        }
+        #homePinsGrid.display-mode .pin-info {
+            display: none;
+        }
     </style>
 
     <script>
@@ -644,6 +704,28 @@
                     showHomeView(btn.getAttribute('data-view'));
                 });
             });
+
+            // Pin display mode (Normal/Display) - shared preference with board.html
+            (function () {
+                var displayMode = getPinDisplayMode();
+                document.querySelectorAll('.pin-display-btn').forEach(function (btn) {
+                    btn.classList.toggle('active', btn.getAttribute('data-mode') === displayMode);
+                    btn.addEventListener('click', function () {
+                        var mode = btn.getAttribute('data-mode');
+                        localStorage.setItem('pinDisplayMode', mode);
+                        document.querySelectorAll('.pin-display-btn').forEach(function (b) {
+                            b.classList.toggle('active', b === btn);
+                        });
+                        var homePinsGrid = document.getElementById('homePinsGrid');
+                        if (homePinsGrid) homePinsGrid.classList.toggle('display-mode', mode === 'display');
+                    });
+                });
+                var homePinsGrid = document.getElementById('homePinsGrid');
+                if (homePinsGrid && displayMode === 'display') {
+                    homePinsGrid.classList.add('display-mode');
+                }
+            })();
+
             showHomeView(getHomeView(), { persist: false });
         });
 
@@ -737,6 +819,7 @@
             const sortBoards = document.getElementById('sortBoards');
             const pinsToolbar = document.getElementById('pinsToolbar');
             const homePinsView = document.getElementById('homePinsView');
+            const pinDisplaySwitcher = document.getElementById('pinDisplaySwitcher');
 
             if (mode === 'boards') {
                 if (boardsGallery) boardsGallery.classList.remove('hidden');
@@ -744,6 +827,7 @@
                 if (sortBoards) sortBoards.classList.remove('hidden');
                 if (pinsToolbar) pinsToolbar.classList.add('hidden');
                 if (homePinsView) homePinsView.classList.add('hidden');
+                if (pinDisplaySwitcher) pinDisplaySwitcher.classList.add('hidden');
                 teardownPinsScroll();
             } else {
                 if (boardsGallery) boardsGallery.classList.add('hidden');
@@ -751,6 +835,7 @@
                 if (sortBoards) sortBoards.classList.add('hidden');
                 if (pinsToolbar) pinsToolbar.classList.remove('hidden');
                 if (homePinsView) homePinsView.classList.remove('hidden');
+                if (pinDisplaySwitcher) pinDisplaySwitcher.classList.remove('hidden');
                 startPinsFeed();
             }
 
@@ -771,6 +856,10 @@
         function pinColumnCount() {
             var size = parseInt(localStorage.getItem('boardPinSize'), 10) || 3;
             return { 1: 7, 2: 6, 3: 5, 4: 4, 5: 3 }[size] || 5;
+        }
+
+        function getPinDisplayMode() {
+            return localStorage.getItem('pinDisplayMode') === 'display' ? 'display' : 'normal';
         }
 
         function estimatePinsForScreens(screens) {
