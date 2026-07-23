@@ -1171,8 +1171,16 @@
                     });
                     var pinsGrid = document.getElementById('pinsGrid');
                     if (pinsGrid) pinsGrid.classList.toggle('display-mode', mode === 'display');
+                    if (mode === 'display') {
+                        startPinDisplayParallax();
+                    } else {
+                        stopPinDisplayParallax();
+                    }
                 });
             });
+            if (displayMode === 'display') {
+                startPinDisplayParallax();
+            }
         })();
 
         // Check if we have a highlight parameter - if so, prioritize layout stability
@@ -1219,6 +1227,62 @@
 
     function getPinDisplayMode() {
         return localStorage.getItem('pinDisplayMode') === 'display' ? 'display' : 'normal';
+    }
+
+    var pinDisplayParallaxHandler = null;
+    var pinDisplayParallaxThrottle = null;
+
+    // Offsets each display-mode card by a small amount based on how far its
+    // center sits from the viewport's vertical center, varying slightly per
+    // column. Uses each card's live position (not raw scrollY), so the
+    // effect stays perceptible throughout an arbitrarily long/infinite-
+    // scrolling page instead of saturating near the top.
+    function applyPinDisplayParallax() {
+        var pinsGrid = document.getElementById('pinsGrid');
+        if (!pinsGrid || !pinsGrid.classList.contains('display-mode')) return;
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        var viewportCenter = window.innerHeight / 2;
+        var cards = pinsGrid.querySelectorAll('.pin-card[data-parallax-col]');
+        for (var i = 0; i < cards.length; i++) {
+            var card = cards[i];
+            var col = parseInt(card.dataset.parallaxCol, 10) || 0;
+            var speed = 0.03 + (col % 3) * 0.015;
+            var rect = card.getBoundingClientRect();
+            var cardCenter = rect.top + rect.height / 2;
+            var offset = Math.max(-18, Math.min(18, (viewportCenter - cardCenter) * speed));
+            card.style.transform = 'translateY(' + offset.toFixed(1) + 'px)';
+        }
+    }
+
+    function startPinDisplayParallax() {
+        if (pinDisplayParallaxHandler) return;
+        pinDisplayParallaxHandler = function () {
+            if (pinDisplayParallaxThrottle) return;
+            pinDisplayParallaxThrottle = setTimeout(function () {
+                pinDisplayParallaxThrottle = null;
+                applyPinDisplayParallax();
+            }, 200);
+        };
+        window.addEventListener('scroll', pinDisplayParallaxHandler, { passive: true });
+        applyPinDisplayParallax();
+    }
+
+    function stopPinDisplayParallax() {
+        if (pinDisplayParallaxHandler) {
+            window.removeEventListener('scroll', pinDisplayParallaxHandler);
+            pinDisplayParallaxHandler = null;
+        }
+        if (pinDisplayParallaxThrottle) {
+            clearTimeout(pinDisplayParallaxThrottle);
+            pinDisplayParallaxThrottle = null;
+        }
+        var pinsGrid = document.getElementById('pinsGrid');
+        if (pinsGrid) {
+            var cards = pinsGrid.querySelectorAll('.pin-card[data-parallax-col]');
+            for (var i = 0; i < cards.length; i++) {
+                cards[i].style.transform = '';
+            }
+        }
     }
 
     // Infinite scroll for loading more pins on board page
