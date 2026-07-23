@@ -26,7 +26,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: staugustine1/scrappl
+          images: staugustine1/scrapbook
           tags: |
             type=ref,event=tag
             type=raw,value=latest,enable={{is_default_branch}}

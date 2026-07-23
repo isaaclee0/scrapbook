@@ -65,7 +65,7 @@ A Flask-based web application for organizing and managing personal image collect
    It imports that dump, then runs `sqldumps/reassign_isaac.sql` so all boards, sections, and pins belong to **isaac@leemail.com.au**.
 5. Bring up the rest: `docker compose up -d`.
 
-Root password defaults to `scrappl_local_root_dev` unless you set `MYSQL_ROOT_PASSWORD` in `.env`.
+Root password defaults to `scrapbook_local_root_dev` unless you set `MYSQL_ROOT_PASSWORD` in `.env`.
 
 The app and `reassign_isaac.sql` expect the logical database name **`db`**. If your dump targets another name, import into `db` (edit the dump’s `CREATE DATABASE` / `USE` lines, or create `db` and import only the tables).
 
@@ -73,7 +73,7 @@ The app and `reassign_isaac.sql` expect the logical database name **`db`**. If y
 
 ### Docker Registry Information
 
-**Docker Hub Repository**: `staugustine1/scrappl`
+**Docker Hub Repository**: `staugustine1/scrapbook`
 **Supported Architectures**: `linux/amd64`, `linux/arm64`
 
 ### Building Multi-Architecture Images
@@ -90,8 +90,8 @@ To build and push new versions to Docker Hub:
    # Build and push a specific version (replace vX.X.X with actual version)
    docker buildx build \
      --platform linux/amd64,linux/arm64 \
-     --tag staugustine1/scrappl:vX.X.X \
-     --tag staugustine1/scrappl:latest \
+     --tag staugustine1/scrapbook:vX.X.X \
+     --tag staugustine1/scrapbook:latest \
      --push .
    ```
 
@@ -99,7 +99,7 @@ To build and push new versions to Docker Hub:
    ```bash
    docker buildx build \
      --platform linux/amd64,linux/arm64 \
-     --tag staugustine1/scrappl:test \
+     --tag staugustine1/scrapbook:test \
      --load .
    ```
 
@@ -123,7 +123,7 @@ git push origin main
 git push origin --tags
 
 # Build and push Docker image
-docker buildx build --platform linux/amd64,linux/arm64 --tag staugustine1/scrappl:v1.1.2 --tag staugustine1/scrappl:latest --push .
+docker buildx build --platform linux/amd64,linux/arm64 --tag staugustine1/scrapbook:v1.1.2 --tag staugustine1/scrapbook:latest --push .
 ```
 
 ### Configuration
