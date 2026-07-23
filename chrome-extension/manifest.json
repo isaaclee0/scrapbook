@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Send to Scrappl",
+  "version": "1.3.0",
+  "description": "Right-click any image and save it to your Scrappl instance.",
+  "permissions": ["contextMenus", "storage", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html",
+  "action": {},
+  "commands": {
+    "capture-region": {
+      "suggested_key": {
+        "default": "Alt+Shift+S"
+      },
+      "description": "Select a region of the page to send to Scrappl"
+    }
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvnuOIWtxdkm1quPsqycg+jXa+W03MBUII2JkGm2Q7ZYd/fyWDR5/KSZfDhlHKwTuzFJN32cmJxYwwreG8KrF00ywK/NmiYh849FqpGjG4PzJWyiyj1/VXWVK4WOjWFRTdKZ4pmxI+JcsW5179l6M1ZxfIn48Z8GA9Im73yjuMhIV2T5F0aLKWi5oclsEbVKR4lgW9aUhVkLzmqW+uI3NbSscahXIju9Bdj9ZdfK63kwfev7rBwH6f7SlcNkRtJNkIsZwgeSikizDBQFEmSW0HKkRu0LlOvlpF3uEMsu9uMcAPDxOABsL80//41pB54MGs1qAWKUE14HIvRoYjwoZSQIDAQAB",
+  "externally_connectable": {
+    "matches": ["http://localhost/*"]
+  }
+}

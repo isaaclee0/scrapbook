@@ -83,6 +83,12 @@ COPY scripts/ ./scripts/
 COPY init.sql ./
 COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 
+# Vendored Chrome extension source, served by GET /extension/download.
+# A local dev bind mount (see docker-compose.override.yml) shadows this with
+# the sibling repo's live source; production has no such mount, so it falls
+# back to this baked-in copy.
+COPY --chown=appuser:appuser chrome-extension/ /extension-src/
+
 # Drop in the compiled CSS (overwrites the placeholder if any)
 COPY --from=builder /build/static/css/output.css ./static/css/output.css
 
