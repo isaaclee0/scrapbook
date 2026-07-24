@@ -538,7 +538,7 @@
 
         #homePinsGrid.display-mode {
             background-color: #1a1a2e;
-            border-radius: 12px;
+            border-radius: 0;
             padding: 8px;
         }
         #homePinsGrid.display-mode .pin-card {
@@ -555,6 +555,25 @@
         }
         #homePinsGrid.display-mode .pin-info {
             display: none;
+        }
+        /* Shimmer instead of the normal-mode zoom-on-hover */
+        #homePinsGrid.display-mode .pin-card:hover .pin-image {
+            transform: none;
+        }
+        #homePinsGrid.display-mode .image-container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -75%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(115deg, transparent, rgba(255, 255, 255, 0.45), transparent);
+            transform: skewX(-20deg);
+            pointer-events: none;
+            transition: left 0.65s ease;
+        }
+        #homePinsGrid.display-mode .pin-card:hover .image-container::after {
+            left: 125%;
         }
     </style>
 
@@ -718,6 +737,8 @@
                         });
                         var homePinsGrid = document.getElementById('homePinsGrid');
                         if (homePinsGrid) homePinsGrid.classList.toggle('display-mode', mode === 'display');
+                        var nav = document.getElementById('mainNav');
+                        if (nav) nav.classList.toggle('nav-dark', mode === 'display' && getHomeView() === 'pins');
                         if (mode === 'display' && getHomeView() === 'pins') {
                             startHomePinDisplayParallax();
                         } else {
@@ -848,6 +869,9 @@
                 }
             }
 
+            const nav = document.getElementById('mainNav');
+            if (nav) nav.classList.toggle('nav-dark', mode === 'pins' && getPinDisplayMode() === 'display');
+
             if (persist) setHomeView(mode);
         }
 
@@ -874,22 +898,21 @@
         var homePinDisplayParallaxHandler = null;
         var homePinDisplayParallaxThrottle = null;
 
-        // Same technique as board.html's parallax (viewport-relative, not
-        // raw scrollY, so it stays perceptible through arbitrarily long
-        // infinite-scroll feeds).
+        // Same technique as board.html's parallax: every card in a column
+        // gets the SAME offset (a bounded, smoothly-oscillating function of
+        // scroll position, not raw scrollY scaled directly), so vertical
+        // spacing between stacked pins in a column never changes and the
+        // effect never saturates/goes flat on a long feed.
         function applyHomePinDisplayParallax() {
             var homePinsGrid = document.getElementById('homePinsGrid');
             if (!homePinsGrid || !homePinsGrid.classList.contains('display-mode')) return;
             if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-            var viewportCenter = window.innerHeight / 2;
+            var scrollY = window.scrollY;
             var cards = homePinsGrid.querySelectorAll('.pin-card[data-parallax-col]');
             for (var i = 0; i < cards.length; i++) {
                 var card = cards[i];
                 var col = parseInt(card.dataset.parallaxCol, 10) || 0;
-                var speed = 0.03 + (col % 3) * 0.015;
-                var rect = card.getBoundingClientRect();
-                var cardCenter = rect.top + rect.height / 2;
-                var offset = Math.max(-18, Math.min(18, (viewportCenter - cardCenter) * speed));
+                var offset = 18 * Math.sin(scrollY * 0.002 + col * 1.05);
                 card.style.transform = 'translateY(' + offset.toFixed(1) + 'px)';
             }
         }

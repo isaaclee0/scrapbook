@@ -599,8 +599,14 @@
 
     #pinsGrid.display-mode {
         background-color: #1a1a2e;
-        border-radius: 12px;
+        border-radius: 0;
         padding: 8px;
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
     }
     #pinsGrid.display-mode .pin-card {
         background: transparent;
@@ -619,6 +625,25 @@
     }
     #pinsGrid.display-mode .image-container > span {
         display: none;
+    }
+    /* Shimmer instead of the normal-mode zoom-on-hover */
+    #pinsGrid.display-mode .pin-card:hover .pin-image {
+        transform: none;
+    }
+    #pinsGrid.display-mode .image-container::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -75%;
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(115deg, transparent, rgba(255, 255, 255, 0.45), transparent);
+        transform: skewX(-20deg);
+        pointer-events: none;
+        transition: left 0.65s ease;
+    }
+    #pinsGrid.display-mode .pin-card:hover .image-container::after {
+        left: 125%;
     }
 </style>
 <script>
@@ -789,8 +814,13 @@
         // *before* the first layout).
         (function () {
             var grid = document.getElementById('pinsGrid');
-            if (grid && localStorage.getItem('pinDisplayMode') === 'display') {
+            var displayModeOn = localStorage.getItem('pinDisplayMode') === 'display';
+            if (grid && displayModeOn) {
                 grid.classList.add('display-mode');
+            }
+            var nav = document.getElementById('mainNav');
+            if (nav && displayModeOn) {
+                nav.classList.add('nav-dark');
             }
             if (grid && window.createScrapbookMasonry) {
                 window.scrapbookMasonry = window.createScrapbookMasonry(grid, {
@@ -1171,6 +1201,11 @@
                     });
                     var pinsGrid = document.getElementById('pinsGrid');
                     if (pinsGrid) pinsGrid.classList.toggle('display-mode', mode === 'display');
+                    var nav = document.getElementById('mainNav');
+                    if (nav) nav.classList.toggle('nav-dark', mode === 'display');
+                    // Display mode changes the grid's effective width (full-
+                    // bleed), so column positions must be recomputed.
+                    if (window.scrapbookMasonry) window.scrapbookMasonry.layout();
                     if (mode === 'display') {
                         startPinDisplayParallax();
                     } else {
@@ -1232,24 +1267,24 @@
     var pinDisplayParallaxHandler = null;
     var pinDisplayParallaxThrottle = null;
 
-    // Offsets each display-mode card by a small amount based on how far its
-    // center sits from the viewport's vertical center, varying slightly per
-    // column. Uses each card's live position (not raw scrollY), so the
-    // effect stays perceptible throughout an arbitrarily long/infinite-
-    // scrolling page instead of saturating near the top.
+    // Offsets every card in a column by the SAME amount, so the vertical
+    // spacing between stacked pins in a column never changes (a per-card
+    // offset based on each card's own position made neighboring pins drift
+    // toward/away from each other while scrolling). The offset is a smooth,
+    // bounded oscillation of scroll position (not raw scrollY scaled
+    // directly), so it never saturates/goes flat on a long or infinite-
+    // scrolling page — it just keeps gently cycling. Each column gets a
+    // phase offset so columns don't all move in lockstep.
     function applyPinDisplayParallax() {
         var pinsGrid = document.getElementById('pinsGrid');
         if (!pinsGrid || !pinsGrid.classList.contains('display-mode')) return;
         if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-        var viewportCenter = window.innerHeight / 2;
+        var scrollY = window.scrollY;
         var cards = pinsGrid.querySelectorAll('.pin-card[data-parallax-col]');
         for (var i = 0; i < cards.length; i++) {
             var card = cards[i];
             var col = parseInt(card.dataset.parallaxCol, 10) || 0;
-            var speed = 0.03 + (col % 3) * 0.015;
-            var rect = card.getBoundingClientRect();
-            var cardCenter = rect.top + rect.height / 2;
-            var offset = Math.max(-18, Math.min(18, (viewportCenter - cardCenter) * speed));
+            var offset = 18 * Math.sin(scrollY * 0.002 + col * 1.05);
             card.style.transform = 'translateY(' + offset.toFixed(1) + 'px)';
         }
     }
