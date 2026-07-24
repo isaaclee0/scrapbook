@@ -12,7 +12,8 @@
  *    in => identical positions out.
  *
  * Cards are positioned with left/top, NOT transform — the .pin-card hover
- * and highlight animations already own the transform property.
+ * and highlight animations, plus display-mode's scroll-linked parallax
+ * (board.html/boards.html), already own the transform property.
  */
 (function () {
     'use strict';

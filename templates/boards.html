@@ -1081,6 +1081,12 @@
             const initialLimit = estimatePinsForScreens(1.5);
             fetchRandomPins(initialLimit, true).then(function () {
                 setupPinsInfiniteScroll();
+                // The initial startHomePinDisplayParallax() call (if display
+                // mode is on) runs before this fetch resolves, so it applies
+                // to zero cards. Re-apply now that cards actually exist, so
+                // they show their offset immediately instead of waiting for
+                // the user's first scroll.
+                applyHomePinDisplayParallax();
             });
         }
 
