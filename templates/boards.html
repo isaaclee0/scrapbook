@@ -556,28 +556,6 @@
         #homePinsGrid.display-mode .pin-info {
             display: none;
         }
-        /* Shimmer instead of the normal-mode zoom-on-hover */
-        #homePinsGrid.display-mode .pin-card:hover .pin-image {
-            transform: none;
-        }
-        #homePinsGrid.display-mode .image-container::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -75%;
-            width: 50%;
-            height: 100%;
-            background: linear-gradient(115deg, transparent, rgba(255, 255, 255, 0.45), transparent);
-            transform: skewX(-20deg);
-            pointer-events: none;
-            transition: left 0.65s ease;
-            /* .pin-image sits at z-index: 2 once loaded; without an explicit
-               z-index here the sweep paints underneath it and is invisible. */
-            z-index: 3;
-        }
-        #homePinsGrid.display-mode .pin-card:hover .image-container::after {
-            left: 125%;
-        }
     </style>
 
     <script>

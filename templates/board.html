@@ -626,37 +626,6 @@
     #pinsGrid.display-mode .image-container > span {
         display: none;
     }
-    /* Shimmer instead of the normal-mode zoom-on-hover */
-    #pinsGrid.display-mode .pin-card:hover .pin-image {
-        transform: none;
-    }
-    #pinsGrid.display-mode .image-container::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -60%;
-        width: 40%;
-        height: 100%;
-        background: linear-gradient(115deg, transparent 0%, rgba(255, 255, 255, 0.9) 50%, transparent 100%);
-        transform: skewX(-20deg);
-        pointer-events: none;
-        mix-blend-mode: screen;
-        /* .pin-image sits at z-index: 2 once loaded; without an explicit
-           z-index here the sweep paints underneath it and is invisible. */
-        z-index: 3;
-    }
-    #pinsGrid.display-mode .pin-card:hover .image-container::after {
-        animation: pinDisplayShimmer 0.9s ease;
-    }
-    @keyframes pinDisplayShimmer {
-        from {
-            left: -60%;
-        }
-
-        to {
-            left: 130%;
-        }
-    }
 </style>
 <script>
     // Reports dimensions of externally-loaded images to the server so they
