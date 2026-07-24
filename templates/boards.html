@@ -718,6 +718,11 @@
                         });
                         var homePinsGrid = document.getElementById('homePinsGrid');
                         if (homePinsGrid) homePinsGrid.classList.toggle('display-mode', mode === 'display');
+                        if (mode === 'display' && getHomeView() === 'pins') {
+                            startHomePinDisplayParallax();
+                        } else {
+                            stopHomePinDisplayParallax();
+                        }
                     });
                 });
                 var homePinsGrid = document.getElementById('homePinsGrid');
@@ -829,6 +834,7 @@
                 if (homePinsView) homePinsView.classList.add('hidden');
                 if (pinDisplaySwitcher) pinDisplaySwitcher.classList.add('hidden');
                 teardownPinsScroll();
+                stopHomePinDisplayParallax();
             } else {
                 if (boardsGallery) boardsGallery.classList.add('hidden');
                 if (boardsToolbar) boardsToolbar.classList.add('hidden');
@@ -837,6 +843,9 @@
                 if (homePinsView) homePinsView.classList.remove('hidden');
                 if (pinDisplaySwitcher) pinDisplaySwitcher.classList.remove('hidden');
                 startPinsFeed();
+                if (getPinDisplayMode() === 'display') {
+                    startHomePinDisplayParallax();
+                }
             }
 
             if (persist) setHomeView(mode);
@@ -860,6 +869,60 @@
 
         function getPinDisplayMode() {
             return localStorage.getItem('pinDisplayMode') === 'display' ? 'display' : 'normal';
+        }
+
+        var homePinDisplayParallaxHandler = null;
+        var homePinDisplayParallaxThrottle = null;
+
+        // Same technique as board.html's parallax (viewport-relative, not
+        // raw scrollY, so it stays perceptible through arbitrarily long
+        // infinite-scroll feeds).
+        function applyHomePinDisplayParallax() {
+            var homePinsGrid = document.getElementById('homePinsGrid');
+            if (!homePinsGrid || !homePinsGrid.classList.contains('display-mode')) return;
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+            var viewportCenter = window.innerHeight / 2;
+            var cards = homePinsGrid.querySelectorAll('.pin-card[data-parallax-col]');
+            for (var i = 0; i < cards.length; i++) {
+                var card = cards[i];
+                var col = parseInt(card.dataset.parallaxCol, 10) || 0;
+                var speed = 0.03 + (col % 3) * 0.015;
+                var rect = card.getBoundingClientRect();
+                var cardCenter = rect.top + rect.height / 2;
+                var offset = Math.max(-18, Math.min(18, (viewportCenter - cardCenter) * speed));
+                card.style.transform = 'translateY(' + offset.toFixed(1) + 'px)';
+            }
+        }
+
+        function startHomePinDisplayParallax() {
+            if (homePinDisplayParallaxHandler) return;
+            homePinDisplayParallaxHandler = function () {
+                if (homePinDisplayParallaxThrottle) return;
+                homePinDisplayParallaxThrottle = setTimeout(function () {
+                    homePinDisplayParallaxThrottle = null;
+                    applyHomePinDisplayParallax();
+                }, 200);
+            };
+            window.addEventListener('scroll', homePinDisplayParallaxHandler, { passive: true });
+            applyHomePinDisplayParallax();
+        }
+
+        function stopHomePinDisplayParallax() {
+            if (homePinDisplayParallaxHandler) {
+                window.removeEventListener('scroll', homePinDisplayParallaxHandler);
+                homePinDisplayParallaxHandler = null;
+            }
+            if (homePinDisplayParallaxThrottle) {
+                clearTimeout(homePinDisplayParallaxThrottle);
+                homePinDisplayParallaxThrottle = null;
+            }
+            var homePinsGrid = document.getElementById('homePinsGrid');
+            if (homePinsGrid) {
+                var cards = homePinsGrid.querySelectorAll('.pin-card[data-parallax-col]');
+                for (var i = 0; i < cards.length; i++) {
+                    cards[i].style.transform = '';
+                }
+            }
         }
 
         function estimatePinsForScreens(screens) {
