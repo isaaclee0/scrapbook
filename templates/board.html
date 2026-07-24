@@ -634,16 +634,27 @@
         content: '';
         position: absolute;
         top: 0;
-        left: -75%;
-        width: 50%;
+        left: -60%;
+        width: 40%;
         height: 100%;
-        background: linear-gradient(115deg, transparent, rgba(255, 255, 255, 0.45), transparent);
+        background: linear-gradient(115deg, transparent 0%, rgba(255, 255, 255, 0.9) 50%, transparent 100%);
         transform: skewX(-20deg);
         pointer-events: none;
-        transition: left 0.65s ease;
+        mix-blend-mode: screen;
     }
+    /* animation (not transition) so the sweep reliably replays on every
+       hover-in, not just the first time */
     #pinsGrid.display-mode .pin-card:hover .image-container::after {
-        left: 125%;
+        animation: pinDisplayShimmer 0.9s ease;
+    }
+    @keyframes pinDisplayShimmer {
+        from {
+            left: -60%;
+        }
+
+        to {
+            left: 130%;
+        }
     }
 </style>
 <script>
