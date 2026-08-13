@@ -67,8 +67,16 @@
       }
     }
 
+    function isVisibleFocusTarget(target) {
+      if (!target || !document.contains(target) || typeof target.focus !== 'function') return false;
+      if (target.disabled || (target.closest && target.closest('[hidden]'))) return false;
+      var style = window.getComputedStyle(target);
+      return style.display !== 'none' && style.visibility !== 'hidden' && style.visibility !== 'collapse' &&
+        target.getClientRects().length > 0;
+    }
+
     function focusWithoutScroll(target) {
-      if (!target || typeof target.focus !== 'function') return;
+      if (!isVisibleFocusTarget(target)) return false;
       var scrollX = window.scrollX;
       var scrollY = window.scrollY;
       try {
@@ -77,15 +85,19 @@
         target.focus();
       }
       if (window.scrollX !== scrollX || window.scrollY !== scrollY) window.scrollTo(scrollX, scrollY);
+      return document.activeElement === target;
     }
 
     function focusAfterClose(replacement, opener, recoveryTarget) {
       var fallback = document.contains(boardContent) ? boardContent :
         document.getElementById('boardPageContent') || document.body;
-      var target = replacement && document.contains(replacement) ? replacement :
-        (opener && document.contains(opener) ? opener :
-          (recoveryTarget && document.contains(recoveryTarget) ? recoveryTarget : fallback));
-      focusWithoutScroll(target);
+      var candidates = [replacement, opener, recoveryTarget, fallback];
+      for (var index = 0; index < candidates.length; index += 1) {
+        if (candidates[index] === fallback && fallback && !fallback.hasAttribute('tabindex')) {
+          fallback.setAttribute('tabindex', '-1');
+        }
+        if (candidates.indexOf(candidates[index]) === index && focusWithoutScroll(candidates[index])) return;
+      }
     }
 
     function nearbyPinFocusTarget(opener) {
@@ -98,7 +110,7 @@
       for (var candidateIndex = 0; candidateIndex < candidates.length; candidateIndex += 1) {
         var focusable = candidates[candidateIndex].matches('a[href], button, [tabindex]') ? candidates[candidateIndex] :
           candidates[candidateIndex].querySelector('a[href], button, [tabindex]');
-        if (focusable) return focusable;
+        if (isVisibleFocusTarget(focusable)) return focusable;
       }
       if (!grid.hasAttribute('tabindex')) grid.setAttribute('tabindex', '-1');
       return grid;
@@ -110,15 +122,22 @@
       }, 0);
     }
 
+    function restoreScrollPosition(scrollX, scrollY) {
+      if (window.scrollX !== scrollX || window.scrollY !== scrollY) window.scrollTo(scrollX, scrollY);
+    }
+
     function refreshAndFocus(pinId, change, opener) {
       if (!change) {
         focusAfterClose(null, opener);
         return;
       }
       var recoveryTarget = change === 'deleted' || change === 'moved' ? nearbyPinFocusTarget(opener) : null;
+      var scrollX = window.scrollX;
+      var scrollY = window.scrollY;
       window.sessionStorage.removeItem(pendingRefreshKey());
       Promise.resolve(options.refreshPinCard(pinId, change)).then(function (replacement) {
         focusAfterClose(replacement, opener, recoveryTarget);
+        restoreScrollPosition(scrollX, scrollY);
       }).catch(function () {
         if (typeof options.showToast === 'function') options.showToast('Could not refresh pin');
         focusFallbackAfterNavigation();
@@ -129,6 +148,8 @@
       var saved = window.sessionStorage.getItem(pendingRefreshKey());
       if (!saved) return;
       var recoveryTarget = state.pendingFocusTarget;
+      var scrollX = window.scrollX;
+      var scrollY = window.scrollY;
       state.pendingFocusTarget = null;
       window.sessionStorage.removeItem(pendingRefreshKey());
       try {
@@ -136,6 +157,7 @@
         if (pending && Number.isInteger(pending.pinId) && ['updated', 'moved', 'deleted'].indexOf(pending.change) !== -1) {
           Promise.resolve(options.refreshPinCard(pending.pinId, pending.change)).then(function (replacement) {
             focusAfterClose(replacement, null, recoveryTarget);
+            restoreScrollPosition(scrollX, scrollY);
           }).catch(function () {
             if (typeof options.showToast === 'function') options.showToast('Could not refresh pin');
             focusFallbackAfterNavigation();
@@ -259,7 +281,9 @@
     }
 
     function onBackdropScroll(event) {
-      if (!root.hidden && event.target === root) event.preventDefault();
+      if (root.hidden) return;
+      var path = typeof event.composedPath === 'function' ? event.composedPath() : [];
+      if (event.target !== iframe && path.indexOf(iframe) === -1) event.preventDefault();
     }
 
     function retry() {

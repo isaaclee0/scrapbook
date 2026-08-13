@@ -162,6 +162,7 @@ class PinOverlayRouteTests(unittest.TestCase):
                 self.assertEqual(mutation.count(notification), 1)
                 if 'window.location.reload()' in mutation or 'window.location.href' in mutation:
                     self.assertIn('if (PIN_OVERLAY_EMBEDDED) closePinView();', mutation)
+                    self.assertLess(mutation.index(notification), mutation.index('closePinView()'))
 
         archive = html[html.index('function checkForArchive'):html.index('</script>', html.index('function checkForArchive'))]
         archived_success = archive[archive.index('if (data.archived)'):archive.index('} else {', archive.index('if (data.archived)'))]

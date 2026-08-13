@@ -346,30 +346,65 @@ test('Open as Page leaves recovery mode for the standalone pin URL', async ({ pa
   await expect(page.getByRole('heading', { name: 'Standalone pin' })).toBeVisible();
 });
 
-test('backdrop wheel and touchmove cannot scroll the inert board', async ({ page }) => {
+test('overlay chrome wheel and touchmove cannot scroll the inert board', async ({ page }) => {
   await page.evaluate(() => window.scrollTo(0, 640));
   await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(640);
+  await page.unroute('**/pin/42?embedded=1&board_id=9*');
+  await page.route('**/pin/42?embedded=1&board_id=9*', route => route.fulfill({
+    contentType: 'text/html',
+    body: '<!doctype html><title>Never ready</title>'
+  }));
   await page.locator('#pin-42-link').evaluate(anchor => window.overlayController.open(42, anchor));
-  await expect(page.locator('#pinOverlay')).toHaveAttribute('data-state', 'open');
+  await expect(page.locator('#pinOverlay')).toHaveAttribute('data-state', 'error');
 
-  await page.mouse.move(1, 1);
-  await page.mouse.wheel(0, 500);
+  const gestureResults = await page.evaluate(() => {
+    const selectors = ['#pinOverlay', '#pinOverlayPanel', '[data-overlay-state="error"]', '[data-overlay-retry]'];
+    return selectors.flatMap(selector => ['wheel', 'touchmove'].map(type => {
+      const event = new Event(type, { bubbles: true, cancelable: true });
+      document.querySelector(selector).dispatchEvent(event);
+      return { selector, type, prevented: event.defaultPrevented };
+    }));
+  });
+  expect(gestureResults).toEqual([
+    { selector: '#pinOverlay', type: 'wheel', prevented: true },
+    { selector: '#pinOverlay', type: 'touchmove', prevented: true },
+    { selector: '#pinOverlayPanel', type: 'wheel', prevented: true },
+    { selector: '#pinOverlayPanel', type: 'touchmove', prevented: true },
+    { selector: '[data-overlay-state="error"]', type: 'wheel', prevented: true },
+    { selector: '[data-overlay-state="error"]', type: 'touchmove', prevented: true },
+    { selector: '[data-overlay-retry]', type: 'wheel', prevented: true },
+    { selector: '[data-overlay-retry]', type: 'touchmove', prevented: true }
+  ]);
   await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(640);
-  expect(await page.locator('#pinOverlay').evaluate(root => {
-    const event = new Event('touchmove', { bubbles: true, cancelable: true });
-    root.dispatchEvent(event);
-    return event.defaultPrevented;
-  })).toBe(true);
 });
 
-test('deleting the opener focuses the nearest remaining pin without scrolling', async ({ page }) => {
+test('wheel scrolling inside the iframe stays inside the iframe', async ({ page }) => {
+  await page.evaluate(() => window.scrollTo(0, 640));
+  await page.locator('#pin-42-link').evaluate(anchor => window.overlayController.open(42, anchor));
+  await expect(page.locator('#pinOverlay')).toHaveAttribute('data-state', 'open');
+  const frame = page.frames().find(candidate => candidate.url().includes('/pin/42'));
+  await frame.evaluate(() => {
+    document.body.style.height = '2400px';
+    document.body.insertAdjacentHTML('beforeend', '<div style="height:2200px"></div>');
+  });
+  const iframeBox = await page.locator('#pinOverlayFrame').boundingBox();
+  await page.mouse.move(iframeBox.x + iframeBox.width / 2, iframeBox.y + iframeBox.height / 2);
+  await page.mouse.wheel(0, 500);
+  await expect.poll(() => frame.evaluate(() => window.scrollY)).toBeGreaterThan(0);
+  await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(640);
+});
+
+test('deleting the opener skips hidden cards and focuses the nearest visible pin', async ({ page }) => {
   await page.evaluate(() => {
-    const card = document.createElement('article');
-    card.id = 'pin-43';
-    card.className = 'pin-card';
-    card.dataset.pinId = '43';
-    card.innerHTML = '<a id="pin-43-link" href="/pin/43">Open pin 43</a>';
-    document.getElementById('pinsGrid').appendChild(card);
+    for (const [id, hidden] of [[43, true], [44, false]]) {
+      const card = document.createElement('article');
+      card.id = `pin-${id}`;
+      card.className = 'pin-card';
+      card.dataset.pinId = String(id);
+      card.style.display = hidden ? 'none' : '';
+      card.innerHTML = `<a id="pin-${id}-link" href="/pin/${id}">Open pin ${id}</a>`;
+      document.getElementById('pinsGrid').appendChild(card);
+    }
     window.scrollTo(0, 640);
   });
   await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(640);
@@ -379,8 +414,52 @@ test('deleting the opener focuses the nearest remaining pin without scrolling', 
 
   await expect(page.locator('#pinOverlay')).toBeHidden();
   await expect.poll(() => page.evaluate(() => window.refreshCalls)).toEqual([{ pinId: 42, change: 'deleted' }]);
+  await expect.poll(() => page.evaluate(() => document.activeElement.id)).toBe('pin-44-link');
+  await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(640);
+});
+
+test('section move skips its hidden replacement and focuses the nearest visible pin', async ({ page }) => {
+  await page.unroute('**/api/pin/42/card');
+  await page.route('**/api/pin/42/card', route => route.fulfill({
+    contentType: 'application/json',
+    body: JSON.stringify({ success: true, pin: {
+      id: 42, board_id: 9, section_id: 8, section_name: 'Section 8', board_name: 'Fixture board',
+      title: 'Moved pin 42', image_url: '/static/images/default_pin.png', link: null, link_status: null,
+      cached_filename: null, cached_width: null, cached_height: null,
+      dominant_color_1: null, dominant_color_2: null
+    } })
+  }));
+  await page.locator('.section-circle[data-section-id="7"]').click();
+  await page.evaluate(() => {
+    const card = document.createElement('article');
+    card.id = 'pin-43';
+    card.className = 'pin-card';
+    card.dataset.pinId = '43';
+    card.dataset.sectionId = '7';
+    card.innerHTML = '<a id="pin-43-link" href="/pin/43">Open pin 43</a>';
+    document.getElementById('pinsGrid').appendChild(card);
+    document.querySelector('.spacer').style.height = '2400px';
+    window.scrollTo(0, 640);
+  });
+  await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(640);
+  await page.locator('#pin-42-link').evaluate(anchor => window.overlayController.open(42, anchor));
+  await page.frameLocator('#pinOverlayFrame').locator('#moved').click();
+  await page.frameLocator('#pinOverlayFrame').locator('#close').click();
+
+  await expect(page.locator('#pinOverlay')).toBeHidden();
+  await expect(page.locator('#pin-42')).toBeHidden();
   await expect.poll(() => page.evaluate(() => document.activeElement.id)).toBe('pin-43-link');
   await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(640);
+});
+
+test('failed focus restoration deterministically focuses the board fallback', async ({ page }) => {
+  await page.locator('#pin-42-link').evaluate(anchor => {
+    anchor.focus = () => {};
+    window.overlayController.open(42, anchor);
+  });
+  await page.locator('[data-overlay-close]').click();
+  await expect(page.locator('#pinOverlay')).toBeHidden();
+  await expect.poll(() => page.evaluate(() => document.activeElement.id)).toBe('boardPageContent');
 });
 
 test('overlay panel stays bounded on desktop and fills a 390px viewport', async ({ page }) => {
@@ -391,6 +470,10 @@ test('overlay panel stays bounded on desktop and fills a 390px viewport', async 
   expect(desktop.y).toBeGreaterThanOrEqual(0);
   expect(desktop.x + desktop.width).toBeLessThanOrEqual(desktopViewport.width);
   expect(desktop.y + desktop.height).toBeLessThanOrEqual(desktopViewport.height);
+
+  await page.setViewportSize({ width: 768, height: 720 });
+  const breakpoint = await page.locator('#pinOverlayPanel').boundingBox();
+  expect(breakpoint).toEqual({ x: 0, y: 0, width: 768, height: 720 });
 
   await page.setViewportSize({ width: 390, height: 720 });
   const mobile = await page.locator('#pinOverlayPanel').boundingBox();
