@@ -11,7 +11,7 @@
     Section: {{ pin.section_name }}
 </div>
 
-<div class="pin-lightbox">
+<div class="pin-lightbox{% if embedded %} embedded-pin-lightbox{% endif %}">
     <div class="pin-content">
         <div class="pin-header">
             <div class="title-container">
@@ -21,7 +21,7 @@
                     <button class="save-button" type="button" onclick="saveTitle()" style="display: none;">Save</button>
                 </div>
             </div>
-            <button class="close-button" onclick="window.history.back()">&times;</button>
+            <button class="close-button" onclick="closePinView()">&times;</button>
         </div>
         
         <div class="pin-body">
@@ -199,7 +199,7 @@
                 </div>
                 
                 <div class="pin-actions">
-                    <button class="button secondary-button" onclick="window.history.back()">Cancel</button>
+                    <button class="button secondary-button" onclick="closePinView()">Cancel</button>
                     <button class="button primary-button" onclick="savePin()">Save Changes</button>
                     <button class="delete-button" onclick="confirmDelete()">
                         <i class="fas fa-trash"></i>
@@ -281,6 +281,18 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     position: relative;
     z-index: 10000;
+}
+
+.embedded-pin-page .pin-lightbox {
+    background: transparent;
+    padding: 0;
+}
+
+.embedded-pin-page .pin-content {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    border-radius: 0;
 }
 
 .pin-header {
@@ -1351,8 +1363,27 @@
 
 <script>
 // Assign template variables to JS variables (JSON-safe)
+const PIN_OVERLAY_EMBEDDED = {{ embedded|tojson }};
+const PIN_OVERLAY_ID = {{ pin.id }};
 const pinId = {{ pin.id|tojson }};
 const boardId = {{ pin.board_id|tojson }};
+
+function notifyPinOverlay(type, change) {
+    if (!PIN_OVERLAY_EMBEDDED || window.parent === window) return;
+    const message = {source: 'scrappl-pin-overlay', version: 1,
+                     type: type, pinId: PIN_OVERLAY_ID};
+    if (change) message.change = change;
+    window.parent.postMessage(message, window.location.origin);
+}
+
+function closePinView() {
+    if (PIN_OVERLAY_EMBEDDED) notifyPinOverlay('close');
+    else window.history.back();
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    notifyPinOverlay('ready');
+});
 
 document.addEventListener('DOMContentLoaded', function() {
     // Board menu functionality
@@ -1429,7 +1460,9 @@ function moveToBoard(pinId, boardId) {
     .then(response => response.json())
     .then(data => {
         if (data.success) {
-            window.location.reload();
+            notifyPinOverlay('changed', 'moved');
+            if (PIN_OVERLAY_EMBEDDED) closePinView();
+            else window.location.reload();
         } else {
             showToast('Failed to move pin: ' + data.error);
         }
@@ -1451,6 +1484,7 @@ function moveToSection(pinId, sectionId) {
     .then(response => response.json())
     .then(data => {
         if (data.success) {
+            notifyPinOverlay('changed', 'updated');
             window.location.reload();
         } else {
             showToast('Failed to move pin: ' + data.error);
@@ -1479,8 +1513,9 @@ function savePin() {
     .then(response => response.json())
     .then(data => {
         if (data.success) {
-            // Redirect back to the board instead of reloading the pin page
-            window.location.href = `/board/${boardId}`;
+            notifyPinOverlay('changed', 'updated');
+            if (PIN_OVERLAY_EMBEDDED) closePinView();
+            else window.location.href = `/board/${boardId}`;
         } else {
             showToast('Failed to save changes: ' + data.error);
         }
@@ -1514,9 +1549,12 @@ function deletePin(pinId) {
     .then(response => response.json())
     .then(data => {
         if (data.success) {
-            // Redirect back to the board the user was viewing
-            const targetBoardId = data.board_id || boardId;
-            window.location.href = `/board/${targetBoardId}`;
+            notifyPinOverlay('changed', 'deleted');
+            if (PIN_OVERLAY_EMBEDDED) closePinView();
+            else {
+                const targetBoardId = data.board_id || boardId;
+                window.location.href = `/board/${targetBoardId}`;
+            }
         } else {
             showToast('Failed to delete pin: ' + data.error);
         }
@@ -1833,6 +1871,7 @@ function saveTitle() {
             if (data.success) {
                 // Update the title in the page
                 titleElement.textContent = newTitle;
+                notifyPinOverlay('changed', 'updated');
             } else {
                 showToast('Failed to update title');
                 // Revert to original title
@@ -1939,6 +1978,7 @@ function saveUrl() {
             cancelButton.style.display = 'none';
             saveButton.disabled = false;
             saveButton.innerHTML = '<i class="fas fa-check"></i> Save';
+            notifyPinOverlay('changed', 'updated');
         } else {
             showToast(data.error || 'Failed to update URL');
             saveButton.disabled = false;
@@ -2152,7 +2192,9 @@ function saveImage(imageUrl) {
     })
     .then(response => response.json())
     .then(data => {
-        if (!data.success) {
+        if (data.success) {
+            notifyPinOverlay('changed', 'updated');
+        } else {
             showToast('Failed to update image');
         }
     })
@@ -2185,7 +2227,7 @@ function checkUrlNow() {
     .then(response => response.json())
     .then(data => {
         if (data.success) {
-            // Reload the page to show updated status
+            notifyPinOverlay('changed', 'updated');
             window.location.reload();
         } else {
             showToast('Error checking URL: ' + (data.error || 'Unknown error'));
@@ -2313,4 +2355,4 @@ window.createNewSection = function() {
     });
 };
 </script>
-{% endblock %} 
+{% endblock %}

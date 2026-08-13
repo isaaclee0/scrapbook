@@ -106,6 +106,24 @@ class PinOverlayRouteTests(unittest.TestCase):
             response = self.client.get("/pin/42")
         self.assertEqual(response.status_code, 200)
 
+    def test_standalone_pin_keeps_application_chrome(self):
+        """Rendering direct links as embedded would hide normal application navigation."""
+        with patch.object(app_module, "get_db_connection", return_value=FakeConnection([PIN, [], []])):
+            response = self.client.get("/pin/42")
+        html = response.get_data(as_text=True)
+        self.assertIn('id="mainNav"', html)
+        self.assertNotIn('data-embedded-pin="true"', html)
+
+    def test_embedded_pin_marks_the_iframe_page_and_bridge(self):
+        """Omitting embed markers or close bridge would leave an overlay without its controls."""
+        with patch.object(app_module, "get_db_connection", return_value=FakeConnection([PIN, [], []])):
+            response = self.client.get("/pin/42?embedded=1&board_id=9")
+        html = response.get_data(as_text=True)
+        self.assertIn('data-embedded-pin="true"', html)
+        self.assertIn('embedded-pin-page', html)
+        self.assertIn('scrappl-pin-overlay', html)
+        self.assertIn('closePinView()', html)
+
     def test_pin_card_returns_user_scoped_pin_contract(self):
         """Dropping card fields or user scope would break the overlay client."""
         connection = FakeConnection([CARD_PIN])
