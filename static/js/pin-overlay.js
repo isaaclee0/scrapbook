@@ -16,7 +16,15 @@
     var retryButton = root.querySelector('[data-overlay-retry]');
     var openPageLink = root.querySelector('[data-overlay-open-page]');
     var readyTimeoutMs = options.readyTimeoutMs || 8000;
-    var state = { pinId: null, dirtyChange: null, opener: null, pushed: false, readyTimer: null };
+    var state = {
+      pinId: null,
+      dirtyChange: null,
+      opener: null,
+      pushed: false,
+      readyTimer: null,
+      retryCounter: 0,
+      pendingFocusTarget: null
+    };
 
     function pendingRefreshKey() {
       var url = new URL(window.location.href);
@@ -71,12 +79,29 @@
       if (window.scrollX !== scrollX || window.scrollY !== scrollY) window.scrollTo(scrollX, scrollY);
     }
 
-    function focusAfterClose(replacement, opener) {
+    function focusAfterClose(replacement, opener, recoveryTarget) {
       var fallback = document.contains(boardContent) ? boardContent :
         document.getElementById('boardPageContent') || document.body;
       var target = replacement && document.contains(replacement) ? replacement :
-        (opener && document.contains(opener) ? opener : fallback);
+        (opener && document.contains(opener) ? opener :
+          (recoveryTarget && document.contains(recoveryTarget) ? recoveryTarget : fallback));
       focusWithoutScroll(target);
+    }
+
+    function nearbyPinFocusTarget(opener) {
+      var grid = document.getElementById('pinsGrid');
+      var card = opener && typeof opener.closest === 'function' ? opener.closest('.pin-card, [data-pin-id]') : null;
+      if (!grid || !card || !grid.contains(card)) return null;
+      var cards = Array.prototype.slice.call(grid.querySelectorAll('.pin-card, [data-pin-id]'));
+      var index = cards.indexOf(card);
+      var candidates = index === -1 ? [] : cards.slice(index + 1).concat(cards.slice(0, index).reverse());
+      for (var candidateIndex = 0; candidateIndex < candidates.length; candidateIndex += 1) {
+        var focusable = candidates[candidateIndex].matches('a[href], button, [tabindex]') ? candidates[candidateIndex] :
+          candidates[candidateIndex].querySelector('a[href], button, [tabindex]');
+        if (focusable) return focusable;
+      }
+      if (!grid.hasAttribute('tabindex')) grid.setAttribute('tabindex', '-1');
+      return grid;
     }
 
     function focusFallbackAfterNavigation() {
@@ -90,9 +115,10 @@
         focusAfterClose(null, opener);
         return;
       }
+      var recoveryTarget = change === 'deleted' || change === 'moved' ? nearbyPinFocusTarget(opener) : null;
       window.sessionStorage.removeItem(pendingRefreshKey());
       Promise.resolve(options.refreshPinCard(pinId, change)).then(function (replacement) {
-        focusAfterClose(replacement, opener);
+        focusAfterClose(replacement, opener, recoveryTarget);
       }).catch(function () {
         if (typeof options.showToast === 'function') options.showToast('Could not refresh pin');
         focusFallbackAfterNavigation();
@@ -102,12 +128,14 @@
     function consumePendingRefresh() {
       var saved = window.sessionStorage.getItem(pendingRefreshKey());
       if (!saved) return;
+      var recoveryTarget = state.pendingFocusTarget;
+      state.pendingFocusTarget = null;
       window.sessionStorage.removeItem(pendingRefreshKey());
       try {
         var pending = JSON.parse(saved);
         if (pending && Number.isInteger(pending.pinId) && ['updated', 'moved', 'deleted'].indexOf(pending.change) !== -1) {
           Promise.resolve(options.refreshPinCard(pending.pinId, pending.change)).then(function (replacement) {
-            focusAfterClose(replacement, null);
+            focusAfterClose(replacement, null, recoveryTarget);
           }).catch(function () {
             if (typeof options.showToast === 'function') options.showToast('Could not refresh pin');
             focusFallbackAfterNavigation();
@@ -125,10 +153,13 @@
     function load(pinId) {
       clearReadyTimer();
       setView('loading');
-      var embeddedUrl = '/pin/' + encodeURIComponent(pinId) + '?embedded=1&board_id=' + encodeURIComponent(options.boardId);
+      var embeddedUrl = new URL('/pin/' + encodeURIComponent(pinId), window.location.origin);
+      embeddedUrl.searchParams.set('embedded', '1');
+      embeddedUrl.searchParams.set('board_id', String(options.boardId));
+      if (state.retryCounter > 0) embeddedUrl.searchParams.set('_retry', String(state.retryCounter));
       // Replacing the child location avoids adding a joint-session-history
       // entry after the board's overlay entry.
-      iframe.contentWindow.location.replace(embeddedUrl);
+      iframe.contentWindow.location.replace(embeddedUrl.pathname + embeddedUrl.search);
       openPageLink.href = '/pin/' + encodeURIComponent(pinId);
       state.readyTimer = window.setTimeout(showError, readyTimeoutMs);
     }
@@ -139,6 +170,7 @@
       state.pinId = pinId;
       state.dirtyChange = null;
       state.pushed = Boolean(pushed);
+      state.retryCounter = 0;
       load(pinId);
     }
 
@@ -147,6 +179,7 @@
       state.pinId = null;
       state.dirtyChange = null;
       state.pushed = false;
+      state.retryCounter = 0;
       setView('idle');
       state.opener = null;
     }
@@ -156,6 +189,9 @@
       var change = state.dirtyChange;
       var opener = state.opener;
       if (!pinId) return;
+      if (navigation === 'back' && (change === 'deleted' || change === 'moved')) {
+        state.pendingFocusTarget = nearbyPinFocusTarget(opener);
+      }
       hide();
       if (navigation === 'back') {
         if (!change) focusAfterClose(null, opener);
@@ -222,8 +258,15 @@
       if (event.target === root) close();
     }
 
+    function onBackdropScroll(event) {
+      if (!root.hidden && event.target === root) event.preventDefault();
+    }
+
     function retry() {
-      if (state.pinId !== null) load(state.pinId);
+      if (state.pinId !== null) {
+        state.retryCounter += 1;
+        load(state.pinId);
+      }
     }
 
     boardContent.addEventListener('click', onBoardClick);
@@ -231,6 +274,8 @@
     window.addEventListener('message', onMessage);
     document.addEventListener('keydown', onKeydown);
     root.addEventListener('click', onRootClick);
+    root.addEventListener('wheel', onBackdropScroll, { passive: false });
+    root.addEventListener('touchmove', onBackdropScroll, { passive: false });
     if (closeButton) closeButton.addEventListener('click', close);
     if (retryButton) retryButton.addEventListener('click', retry);
 
@@ -245,6 +290,8 @@
         window.removeEventListener('message', onMessage);
         document.removeEventListener('keydown', onKeydown);
         root.removeEventListener('click', onRootClick);
+        root.removeEventListener('wheel', onBackdropScroll);
+        root.removeEventListener('touchmove', onBackdropScroll);
         if (closeButton) closeButton.removeEventListener('click', close);
         if (retryButton) retryButton.removeEventListener('click', retry);
         hide();

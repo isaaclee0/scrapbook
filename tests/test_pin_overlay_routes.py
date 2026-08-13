@@ -134,6 +134,39 @@ class PinOverlayRouteTests(unittest.TestCase):
         self.assertIn('if (PIN_OVERLAY_EMBEDDED) closePinView();', section_move)
         self.assertIn('else window.location.reload();', section_move)
 
+    def test_embedded_mutation_successes_use_the_namespaced_close_abstraction(self):
+        """Reloading after an embedded mutation would discard the parent board state."""
+        with patch.object(app_module, "get_db_connection", return_value=FakeConnection([PIN, [], []])):
+            response = self.client.get("/pin/42?embedded=1&board_id=9")
+        html = response.get_data(as_text=True)
+
+        self.assertIn("source: 'scrappl-pin-overlay', version: 1", html)
+        close_bridge = html[html.index('function closePinView'):html.index("document.addEventListener('DOMContentLoaded'")]
+        self.assertIn("notifyPinOverlay('close')", close_bridge)
+        self.assertIn('else window.history.back();', close_bridge)
+
+        expectations = {
+            'function moveToBoard': ("notifyPinOverlay('changed', 'moved');", 'function moveToSection'),
+            'function moveToSection': ("notifyPinOverlay('changed', 'updated');", 'function savePin'),
+            'function savePin()': ("notifyPinOverlay('changed', 'updated');", 'function confirmDelete'),
+            'function deletePin': ("notifyPinOverlay('changed', 'deleted');", 'function setAsBoardImage'),
+            'function savePinRenamedSection': ("notifyPinOverlay('changed', 'updated');", 'function createNewBoard'),
+            'function saveTitle': ("notifyPinOverlay('changed', 'updated');", 'function enableUrlEdit'),
+            'function saveUrl': ("notifyPinOverlay('changed', 'updated');", 'function toggleToolsMenu'),
+            'function saveImage': ("notifyPinOverlay('changed', 'updated');", 'function checkUrlNow'),
+            'function checkUrlNow': ("notifyPinOverlay('changed', 'updated');", 'function checkForArchive'),
+        }
+        for start, (notification, end) in expectations.items():
+            with self.subTest(mutation=start):
+                mutation = html[html.index(start):html.index(end, html.index(start))]
+                self.assertEqual(mutation.count(notification), 1)
+                if 'window.location.reload()' in mutation or 'window.location.href' in mutation:
+                    self.assertIn('if (PIN_OVERLAY_EMBEDDED) closePinView();', mutation)
+
+        archive = html[html.index('function checkForArchive'):html.index('</script>', html.index('function checkForArchive'))]
+        archived_success = archive[archive.index('if (data.archived)'):archive.index('} else {', archive.index('if (data.archived)'))]
+        self.assertEqual(archived_success.count("notifyPinOverlay('changed', 'updated');"), 1)
+
     def test_pin_card_returns_user_scoped_pin_contract(self):
         """Dropping card fields or user scope would break the overlay client."""
         connection = FakeConnection([CARD_PIN])

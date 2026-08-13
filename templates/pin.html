@@ -1736,7 +1736,9 @@ function savePinRenamedSection() {
         .then((data) => {
             if (data.success) {
                 hidePinRenameSectionModal();
-                window.location.reload();
+                notifyPinOverlay('changed', 'updated');
+                if (PIN_OVERLAY_EMBEDDED) closePinView();
+                else window.location.reload();
             } else {
                 showToast(data.error || 'Failed to rename section');
             }
@@ -2229,7 +2231,8 @@ function checkUrlNow() {
     .then(data => {
         if (data.success) {
             notifyPinOverlay('changed', 'updated');
-            window.location.reload();
+            if (PIN_OVERLAY_EMBEDDED) closePinView();
+            else window.location.reload();
         } else {
             showToast('Error checking URL: ' + (data.error || 'Unknown error'));
             if (checkBtn) {
@@ -2275,6 +2278,7 @@ function checkForArchive() {
         if (data.success) {
             if (data.archived) {
                 // Archive found! Update the UI
+                notifyPinOverlay('changed', 'updated');
                 statusMsg.textContent = '✅ Archive found on Wayback Machine!';
                 archiveSection.innerHTML = `
                     <p>✅ This link is archived on Wayback Machine:</p>

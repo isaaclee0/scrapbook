@@ -178,7 +178,7 @@ test('changed close refreshes only its card and preserves board state', async ({
 
 test('leaves guarded pin-link interactions to the browser', async ({ page }) => {
   const cases = [
-    { button: 1 }, { ctrlKey: true }, { shiftKey: true }, { altKey: true },
+    { button: 1 }, { metaKey: true }, { ctrlKey: true }, { shiftKey: true }, { altKey: true },
     { target: '_blank' }, { download: '' }, { alreadyPrevented: true }
   ];
   for (const guards of cases) {
@@ -187,7 +187,8 @@ test('leaves guarded pin-link interactions to the browser', async ({ page }) => 
       if (guards.download !== undefined) anchor.setAttribute('download', guards.download);
       else anchor.removeAttribute('download');
       const event = new MouseEvent('click', { bubbles: true, cancelable: true, button: guards.button || 0,
-        ctrlKey: Boolean(guards.ctrlKey), shiftKey: Boolean(guards.shiftKey), altKey: Boolean(guards.altKey) });
+        metaKey: Boolean(guards.metaKey), ctrlKey: Boolean(guards.ctrlKey),
+        shiftKey: Boolean(guards.shiftKey), altKey: Boolean(guards.altKey) });
       if (guards.alreadyPrevented) event.preventDefault();
       let seenPrevented;
       const record = current => {
@@ -263,7 +264,135 @@ test('rejected persisted refresh toasts and focuses board fallback without reloa
 test('direct query close replaces only pin parameter', async ({ page }) => {
   await page.goto(`${boardUrl}?filter=favorites&pin=42`);
   await expect(page.locator('#pinOverlay')).toBeVisible();
+  const historyLength = await page.evaluate(() => history.length);
   await page.locator('[data-overlay-close]').click();
   await expect(page).toHaveURL(/\?filter=favorites$/);
   await expect(page.locator('#pinOverlay')).toBeHidden();
+  expect(await page.evaluate(() => history.length)).toBe(historyLength);
+});
+
+test('timeout offers retry and retry keeps embed parameters with a generation counter', async ({ page }) => {
+  const requests = [];
+  await page.unroute('**/pin/42?embedded=1&board_id=9*');
+  await page.route('**/pin/42?embedded=1&board_id=9*', async route => {
+    requests.push(route.request().url());
+    if (new URL(route.request().url()).searchParams.get('_retry') === '2') {
+      await route.fulfill({ path: pinFixture });
+    } else {
+      await route.fulfill({ contentType: 'text/html', body: '<!doctype html><title>Never ready</title>' });
+    }
+  });
+
+  await page.locator('#pin-42-link').click();
+  await expect(page.locator('#pinOverlay')).toHaveAttribute('data-state', 'error');
+  await expect(page.locator('[data-overlay-open-page]')).toHaveAttribute('href', '/pin/42');
+  await page.locator('[data-overlay-retry]').click();
+  await expect(page.locator('#pinOverlay')).toHaveAttribute('data-state', 'error');
+  await page.locator('[data-overlay-retry]').click();
+
+  await expect(page.locator('#pinOverlay')).toHaveAttribute('data-state', 'open');
+  expect(requests.map(request => {
+    const url = new URL(request);
+    return {
+      embedded: url.searchParams.get('embedded'),
+      boardId: url.searchParams.get('board_id'),
+      retry: url.searchParams.get('_retry')
+    };
+  })).toEqual([
+    { embedded: '1', boardId: '9', retry: null },
+    { embedded: '1', boardId: '9', retry: '1' },
+    { embedded: '1', boardId: '9', retry: '2' }
+  ]);
+});
+
+test('a valid ready message arriving after timeout recovers the overlay', async ({ page }) => {
+  await page.unroute('**/pin/42?embedded=1&board_id=9*');
+  await page.route('**/pin/42?embedded=1&board_id=9*', route => route.fulfill({
+    contentType: 'text/html',
+    body: '<!doctype html><title>Late editor</title>'
+  }));
+  await page.locator('#pin-42-link').click();
+  await expect(page.locator('#pinOverlay')).toHaveAttribute('data-state', 'error');
+
+  await page.evaluate(() => {
+    const frame = document.getElementById('pinOverlayFrame');
+    window.dispatchEvent(new MessageEvent('message', {
+      origin: window.location.origin,
+      source: frame.contentWindow,
+      data: { source: 'scrappl-pin-overlay', version: 1, type: 'ready', pinId: 42 }
+    }));
+  });
+
+  await expect(page.locator('#pinOverlay')).toHaveAttribute('data-state', 'open');
+  await expect.poll(() => page.evaluate(() => document.activeElement.id)).toBe('pinOverlayFrame');
+});
+
+test('Open as Page leaves recovery mode for the standalone pin URL', async ({ page }) => {
+  await page.unroute('**/pin/42?embedded=1&board_id=9*');
+  await page.route('**/pin/42?embedded=1&board_id=9*', route => route.fulfill({
+    contentType: 'text/html',
+    body: '<!doctype html><title>Never ready</title>'
+  }));
+  await page.route('**/pin/42', route => route.fulfill({
+    contentType: 'text/html',
+    body: '<!doctype html><title>Standalone pin</title><h1>Standalone pin</h1>'
+  }));
+  await page.locator('#pin-42-link').click();
+  await expect(page.locator('#pinOverlay')).toHaveAttribute('data-state', 'error');
+
+  await page.locator('[data-overlay-open-page]').click();
+
+  await expect(page).toHaveURL(/\/pin\/42$/);
+  await expect(page.getByRole('heading', { name: 'Standalone pin' })).toBeVisible();
+});
+
+test('backdrop wheel and touchmove cannot scroll the inert board', async ({ page }) => {
+  await page.evaluate(() => window.scrollTo(0, 640));
+  await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(640);
+  await page.locator('#pin-42-link').evaluate(anchor => window.overlayController.open(42, anchor));
+  await expect(page.locator('#pinOverlay')).toHaveAttribute('data-state', 'open');
+
+  await page.mouse.move(1, 1);
+  await page.mouse.wheel(0, 500);
+  await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(640);
+  expect(await page.locator('#pinOverlay').evaluate(root => {
+    const event = new Event('touchmove', { bubbles: true, cancelable: true });
+    root.dispatchEvent(event);
+    return event.defaultPrevented;
+  })).toBe(true);
+});
+
+test('deleting the opener focuses the nearest remaining pin without scrolling', async ({ page }) => {
+  await page.evaluate(() => {
+    const card = document.createElement('article');
+    card.id = 'pin-43';
+    card.className = 'pin-card';
+    card.dataset.pinId = '43';
+    card.innerHTML = '<a id="pin-43-link" href="/pin/43">Open pin 43</a>';
+    document.getElementById('pinsGrid').appendChild(card);
+    window.scrollTo(0, 640);
+  });
+  await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(640);
+  await page.locator('#pin-42-link').evaluate(anchor => window.overlayController.open(42, anchor));
+  await page.frameLocator('#pinOverlayFrame').locator('#deleted').click();
+  await page.frameLocator('#pinOverlayFrame').locator('#close').click();
+
+  await expect(page.locator('#pinOverlay')).toBeHidden();
+  await expect.poll(() => page.evaluate(() => window.refreshCalls)).toEqual([{ pinId: 42, change: 'deleted' }]);
+  await expect.poll(() => page.evaluate(() => document.activeElement.id)).toBe('pin-43-link');
+  await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(640);
+});
+
+test('overlay panel stays bounded on desktop and fills a 390px viewport', async ({ page }) => {
+  await page.locator('#pin-42-link').click();
+  const desktop = await page.locator('#pinOverlayPanel').boundingBox();
+  const desktopViewport = page.viewportSize();
+  expect(desktop.x).toBeGreaterThanOrEqual(0);
+  expect(desktop.y).toBeGreaterThanOrEqual(0);
+  expect(desktop.x + desktop.width).toBeLessThanOrEqual(desktopViewport.width);
+  expect(desktop.y + desktop.height).toBeLessThanOrEqual(desktopViewport.height);
+
+  await page.setViewportSize({ width: 390, height: 720 });
+  const mobile = await page.locator('#pinOverlayPanel').boundingBox();
+  expect(mobile).toEqual({ x: 0, y: 0, width: 390, height: 720 });
 });

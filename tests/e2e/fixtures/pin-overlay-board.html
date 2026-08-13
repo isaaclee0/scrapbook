@@ -14,6 +14,9 @@
     [data-overlay-state] { display: none; }
     #pinOverlay[data-state="loading"] [data-overlay-state="loading"],
     #pinOverlay[data-state="error"] [data-overlay-state="error"] { display: block; }
+    @media (max-width: 768px) {
+      #pinOverlayPanel { margin: 0; width: 100vw; height: 100vh; }
+    }
   </style>
 </head>
 <body>
