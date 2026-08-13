@@ -418,7 +418,7 @@ test('deleting the opener skips hidden cards and focuses the nearest visible pin
   await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(640);
 });
 
-test('section move skips its hidden replacement and focuses the nearest visible pin', async ({ page }) => {
+test('section update skips its hidden replacement and focuses the nearest visible pin', async ({ page }) => {
   await page.unroute('**/api/pin/42/card');
   await page.route('**/api/pin/42/card', route => route.fulfill({
     contentType: 'application/json',
@@ -443,7 +443,8 @@ test('section move skips its hidden replacement and focuses the nearest visible 
   });
   await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(640);
   await page.locator('#pin-42-link').evaluate(anchor => window.overlayController.open(42, anchor));
-  await page.frameLocator('#pinOverlayFrame').locator('#moved').click();
+  // Production moveToSection reports `updated`, not `moved`.
+  await page.frameLocator('#pinOverlayFrame').locator('#updated').click();
   await page.frameLocator('#pinOverlayFrame').locator('#close').click();
 
   await expect(page.locator('#pinOverlay')).toBeHidden();

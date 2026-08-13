@@ -131,7 +131,7 @@
         focusAfterClose(null, opener);
         return;
       }
-      var recoveryTarget = change === 'deleted' || change === 'moved' ? nearbyPinFocusTarget(opener) : null;
+      var recoveryTarget = nearbyPinFocusTarget(opener);
       var scrollX = window.scrollX;
       var scrollY = window.scrollY;
       window.sessionStorage.removeItem(pendingRefreshKey());
@@ -211,7 +211,7 @@
       var change = state.dirtyChange;
       var opener = state.opener;
       if (!pinId) return;
-      if (navigation === 'back' && (change === 'deleted' || change === 'moved')) {
+      if (navigation === 'back' && change) {
         state.pendingFocusTarget = nearbyPinFocusTarget(opener);
       }
       hide();
