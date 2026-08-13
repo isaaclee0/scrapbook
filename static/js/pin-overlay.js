@@ -18,6 +18,16 @@
     var readyTimeoutMs = options.readyTimeoutMs || 8000;
     var state = { pinId: null, dirtyChange: null, opener: null, pushed: false, readyTimer: null };
 
+    function pendingRefreshKey() {
+      var url = new URL(window.location.href);
+      url.searchParams.delete('pin');
+      return 'scrappl.pin-overlay.refresh:' + url.pathname + url.search;
+    }
+
+    function persistDirtyChange(pinId, change) {
+      window.sessionStorage.setItem(pendingRefreshKey(), JSON.stringify({ pinId: pinId, change: change }));
+    }
+
     function pinFromLocation() {
       var value = new URL(window.location.href).searchParams.get('pin');
       return value && /^\d+$/.test(value) ? Number(value) : null;
@@ -41,9 +51,40 @@
       root.setAttribute('aria-hidden', String(view === 'idle'));
     }
 
-    function focusOpener() {
-      var target = state.opener && document.contains(state.opener) ? state.opener : boardContent;
+    function focusAfterClose(replacement, opener) {
+      var target = replacement && document.contains(replacement) ? replacement :
+        (opener && document.contains(opener) ? opener : boardContent);
       if (target && typeof target.focus === 'function') target.focus();
+    }
+
+    function refreshAndFocus(pinId, change, opener) {
+      if (!change) {
+        focusAfterClose(null, opener);
+        return;
+      }
+      window.sessionStorage.removeItem(pendingRefreshKey());
+      Promise.resolve(options.refreshPinCard(pinId, change)).then(function (replacement) {
+        focusAfterClose(replacement, opener);
+      }).catch(function () {
+        if (typeof options.showToast === 'function') options.showToast('Could not refresh pin');
+        focusAfterClose(null, opener);
+      });
+    }
+
+    function consumePendingRefresh() {
+      var saved = window.sessionStorage.getItem(pendingRefreshKey());
+      if (!saved) return;
+      window.sessionStorage.removeItem(pendingRefreshKey());
+      try {
+        var pending = JSON.parse(saved);
+        if (pending && Number.isInteger(pending.pinId) && ['updated', 'moved', 'deleted'].indexOf(pending.change) !== -1) {
+          Promise.resolve(options.refreshPinCard(pending.pinId, pending.change)).then(function (replacement) {
+            focusAfterClose(replacement, null);
+          });
+        }
+      } catch (error) {
+        // Discard malformed state written by an older page.
+      }
     }
 
     function showError() {
@@ -53,7 +94,10 @@
     function load(pinId) {
       clearReadyTimer();
       setView('loading');
-      iframe.src = '/pin/' + encodeURIComponent(pinId) + '?embedded=1&board_id=' + encodeURIComponent(options.boardId);
+      var embeddedUrl = '/pin/' + encodeURIComponent(pinId) + '?embedded=1&board_id=' + encodeURIComponent(options.boardId);
+      // Replacing the child location avoids adding a joint-session-history
+      // entry after the board's overlay entry.
+      iframe.contentWindow.location.replace(embeddedUrl);
       openPageLink.href = '/pin/' + encodeURIComponent(pinId);
       state.readyTimer = window.setTimeout(showError, readyTimeoutMs);
     }
@@ -73,29 +117,18 @@
       state.dirtyChange = null;
       state.pushed = false;
       setView('idle');
-      focusOpener();
       state.opener = null;
     }
 
-    function finishClose() {
+    function finishClose(navigation) {
       var pinId = state.pinId;
       var change = state.dirtyChange;
+      var opener = state.opener;
       if (!pinId) return;
-      if (change) {
-        Promise.resolve(options.refreshPinCard(pinId, change)).catch(function () {
-          if (typeof options.showToast === 'function') options.showToast('Could not refresh pin');
-        });
-      }
-      if (state.pushed) {
-        // WebKit does not reliably complete same-document traversal while an
-        // iframe is loading, so close the visual state before traversal.
-        hide();
-        window.history.back();
-      }
-      else {
-        window.history.replaceState(window.history.state, '', urlFor(pinId, false));
-        hide();
-      }
+      hide();
+      if (navigation === 'back') window.history.back();
+      else if (navigation === 'replace') window.history.replaceState(window.history.state, '', urlFor(pinId, false));
+      if (navigation !== 'back') refreshAndFocus(pinId, change, opener);
     }
 
     function open(pinId, opener) {
@@ -103,19 +136,23 @@
       if (!Number.isInteger(numericPinId) || numericPinId <= 0) return;
       state.opener = opener || document.activeElement;
       if (pinFromLocation() !== numericPinId) {
+        // Navigate the child first so its session-history entry belongs to the
+        // board URL; the parent push must remain the most recent entry.
+        reveal(numericPinId, false);
         window.history.pushState({ scrapbookPinOverlay: true, pinId: numericPinId }, '', urlFor(numericPinId, true));
-        reveal(numericPinId, true);
+        state.pushed = true;
       } else reveal(numericPinId, Boolean(window.history.state && window.history.state.scrapbookPinOverlay));
     }
 
     function close() {
-      finishClose();
+      finishClose(state.pushed ? 'back' : 'replace');
     }
 
     function syncFromLocation() {
       var pinId = pinFromLocation();
       if (pinId) reveal(pinId, Boolean(window.history.state && window.history.state.scrapbookPinOverlay));
-      else if (state.pinId !== null) hide();
+      else if (state.pinId !== null) finishClose('none');
+      else consumePendingRefresh();
     }
 
     function onBoardClick(event) {
@@ -138,6 +175,7 @@
         setView('open');
       } else if (data.type === 'changed' && ['updated', 'moved', 'deleted'].indexOf(data.change) !== -1) {
         state.dirtyChange = data.change;
+        persistDirtyChange(state.pinId, data.change);
       } else if (data.type === 'close') close();
     }
 

@@ -54,8 +54,50 @@ listening on port 4173.
 - The static fixture’s intentional modified-click test can produce a harmless
   static-server `404 /pin/42` request; it verifies that the controller leaves
   modified clicks to the browser rather than intercepting them.
-- The fixture synchronizes history through URL/state plus a `popstate` event.
-  This avoids WebKit waiting indefinitely for Playwright's navigation waiter
-  on a same-document history traversal while still exercising the controller's
-  real `popstate` handler. The controller itself uses native `pushState` and
-  `history.back` as required.
+- The fixture uses real browser Back and Forward in both engines. Its embedded
+  page is served through Playwright route fulfillment so the harness remains
+  deterministic without requiring a running Flask application.
+
+## Fix round 1: review findings
+
+### Red evidence
+
+The browser harness was changed before controller code to use real
+`page.goBack()` and `page.goForward()` rather than synthetic `popstate`.
+
+- WebKit then failed at `page.goBack()` waiting for a same-document commit;
+  Back remained on the overlay `?pin=42` history entry. This exposed the child
+  iframe navigation being appended to the joint session history after the
+  parent `pushState`.
+- The new dirty Back test failed in Chromium with `window.refreshCalls` still
+  empty after Back. This proved the old `syncFromLocation()` close path cleared
+  dirty state without refreshing.
+
+### Green implementation
+
+- Child navigation now uses `iframe.contentWindow.location.replace(...)`.
+  It replaces the frame's document rather than appending a child history entry,
+  so the parent overlay `pushState` is the actual Back target.
+- Native Back/Forward is now tested in Chromium and WebKit. Back removes the
+  query and hides the overlay; Forward restores the query and reopens it.
+  No synthetic `popstate` is dispatched in the history test.
+- Valid mutations persist a short-lived pending refresh in `sessionStorage`.
+  This lets a dirty Back refresh once after either a normal `popstate` or a
+  browser document restoration. Non-history close paths await
+  `refreshPinCard`, then focus its returned replacement; fallback focus avoids
+  detached cards.
+- Forged-message coverage now independently validates wrong origin, source,
+  namespace, version, and pin ID, including forged `close` messages. The
+  version/pin cases use the expected iframe window source.
+- Click-guard coverage now verifies middle, Ctrl, Shift, Alt, target,
+  download, and already-prevented interactions are not intercepted.
+
+### Fix-round verification
+
+```text
+npm run test:pin-overlay
+12 passed (3.0s)
+```
+
+Both Chromium and WebKit passed the real history, dirty Back refresh/focus,
+message-validation, guarded-click, direct-close, and iframe-close scenarios.

@@ -8,45 +8,67 @@ test.beforeEach(async ({ page }) => {
   await page.goto(boardUrl);
 });
 
-test('opens in-place and reconciles history state', async ({ page }) => {
+test('real browser Back closes and Forward reopens the overlay', async ({ page }) => {
   await page.locator('.pin-card a').click();
   await expect(page).toHaveURL(/\?pin=42$/);
   await expect(page.locator('#pinOverlay')).toBeVisible();
-  await expect(page.locator('#pinOverlayFrame')).toHaveAttribute('src', '/pin/42?embedded=1&board_id=9');
-  await page.evaluate(() => {
-    history.replaceState(null, '', location.pathname);
-    window.dispatchEvent(new PopStateEvent('popstate'));
-  });
+  await expect(page.frameLocator('#pinOverlayFrame').locator('#updated')).toBeVisible();
+  await page.goBack({ waitUntil: 'commit' });
+  await expect(page).toHaveURL(/pin-overlay-board\.html$/);
   await expect(page.locator('#pinOverlay')).toBeHidden();
-  await page.evaluate(() => {
-    history.pushState({ scrapbookPinOverlay: true, pinId: 42 }, '', `${location.pathname}?pin=42`);
-    window.dispatchEvent(new PopStateEvent('popstate'));
-  });
+  await page.goForward({ waitUntil: 'commit' });
   await expect(page).toHaveURL(/\?pin=42$/);
   await expect(page.locator('#pinOverlay')).toBeVisible();
 });
 
-test('leaves modified and non-primary pin links to the browser', async ({ page }) => {
-  await page.locator('.pin-card a').click({ modifiers: ['Meta'] });
+test('leaves guarded pin-link interactions to the browser', async ({ page }) => {
+  const cases = [
+    { button: 1 }, { ctrlKey: true }, { shiftKey: true }, { altKey: true },
+    { target: '_blank' }, { download: '' }, { alreadyPrevented: true }
+  ];
+  for (const guards of cases) {
+    const prevented = await page.locator('.pin-card a').evaluate((anchor, guards) => {
+      anchor.target = guards.target || '';
+      if (guards.download !== undefined) anchor.setAttribute('download', guards.download);
+      else anchor.removeAttribute('download');
+      const event = new MouseEvent('click', { bubbles: true, cancelable: true, button: guards.button || 0,
+        ctrlKey: Boolean(guards.ctrlKey), shiftKey: Boolean(guards.shiftKey), altKey: Boolean(guards.altKey) });
+      if (guards.alreadyPrevented) event.preventDefault();
+      let seenPrevented;
+      const record = current => {
+        seenPrevented = current.defaultPrevented;
+        current.preventDefault();
+      };
+      document.getElementById('boardPageContent').addEventListener('click', record, { once: true });
+      anchor.dispatchEvent(event);
+      return seenPrevented;
+    }, guards);
+    expect(prevented).toBe(Boolean(guards.alreadyPrevented));
+  }
   await expect(page).toHaveURL(/pin-overlay-board\.html$/);
   await expect(page.locator('#pinOverlay')).toBeHidden();
 });
 
-test('rejects forged iframe messages', async ({ page }) => {
+test('rejects forged messages even when they use the iframe window source', async ({ page }) => {
   await page.locator('.pin-card a').click();
   await expect(page.locator('#pinOverlay')).toBeVisible();
   await page.evaluate(() => {
+    const iframeWindow = document.getElementById('pinOverlayFrame').contentWindow;
     const valid = { source: 'scrappl-pin-overlay', version: 1, type: 'changed', pinId: 42, change: 'updated' };
-    window.dispatchEvent(new MessageEvent('message', { data: valid, origin: 'https://evil.example', source: window }));
-    window.dispatchEvent(new MessageEvent('message', { data: valid, origin: window.location.origin, source: window }));
-    window.dispatchEvent(new MessageEvent('message', { data: { ...valid, version: 2 }, origin: window.location.origin, source: window }));
-    window.dispatchEvent(new MessageEvent('message', { data: { ...valid, pinId: 43 }, origin: window.location.origin, source: window }));
+    const dispatch = (data, origin, source) => window.dispatchEvent(new MessageEvent('message', { data, origin, source }));
+    dispatch({ ...valid, type: 'close' }, 'https://evil.example', iframeWindow);
+    dispatch({ ...valid, type: 'close' }, location.origin, window);
+    dispatch({ ...valid, type: 'close', source: 'wrong-namespace' }, location.origin, iframeWindow);
+    dispatch({ ...valid, type: 'close', version: 2 }, location.origin, iframeWindow);
+    dispatch({ ...valid, type: 'close', pinId: 43 }, location.origin, iframeWindow);
+    dispatch({ ...valid, version: 2 }, location.origin, iframeWindow);
+    dispatch({ ...valid, pinId: 43 }, location.origin, iframeWindow);
   });
   await expect.poll(() => page.evaluate(() => window.refreshCalls)).toEqual([]);
   await expect(page.locator('#pinOverlay')).toBeVisible();
 });
 
-test('refreshes once when the matching iframe reports a change and close', async ({ page }) => {
+test('refreshes once and focuses the returned replacement on iframe close', async ({ page }) => {
   await page.locator('.pin-card a').click();
   const frame = page.frameLocator('#pinOverlayFrame');
   await frame.locator('#updated').click();
@@ -54,6 +76,17 @@ test('refreshes once when the matching iframe reports a change and close', async
   await frame.locator('#close').click();
   await expect(page.locator('#pinOverlay')).toBeHidden();
   await expect.poll(() => page.evaluate(() => window.refreshCalls)).toEqual([{ pinId: 42, change: 'moved' }]);
+  await expect.poll(() => page.evaluate(() => document.activeElement.id)).toBe('pin-42');
+});
+
+test('dirty real browser Back refreshes once and focuses the returned replacement', async ({ page }) => {
+  await page.locator('.pin-card a').click();
+  await page.frameLocator('#pinOverlayFrame').locator('#updated').click();
+  await page.goBack({ waitUntil: 'commit' });
+  await expect(page).toHaveURL(/pin-overlay-board\.html$/);
+  await expect(page.locator('#pinOverlay')).toBeHidden();
+  await expect.poll(() => page.evaluate(() => window.refreshCalls)).toEqual([{ pinId: 42, change: 'updated' }]);
+  await expect.poll(() => page.evaluate(() => document.activeElement.id)).toBe('pin-42');
 });
 
 test('direct query close replaces only pin parameter', async ({ page }) => {

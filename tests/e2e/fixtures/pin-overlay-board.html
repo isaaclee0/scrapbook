@@ -39,7 +39,13 @@
       boardContent: document.getElementById('boardPageContent'),
       refreshPinCard: async (pinId, change) => {
         window.refreshCalls.push({ pinId, change });
-        return document.getElementById('pin-' + pinId);
+        const replacement = document.createElement('article');
+        replacement.id = 'pin-' + pinId;
+        replacement.className = 'pin-card';
+        replacement.tabIndex = -1;
+        replacement.textContent = 'Refreshed pin ' + pinId;
+        document.getElementById('pin-' + pinId).replaceWith(replacement);
+        return replacement;
       },
       showToast: message => window.toastCalls.push(message),
       readyTimeoutMs: 250
