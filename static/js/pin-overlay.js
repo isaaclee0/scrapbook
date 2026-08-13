@@ -11,11 +11,14 @@
 
     var root = options.root;
     var boardContent = options.boardContent;
+    var backgroundContent = options.backgroundContent || boardContent;
     var iframe = root.querySelector('iframe');
     var closeButton = root.querySelector('[data-overlay-close]');
     var retryButton = root.querySelector('[data-overlay-retry]');
     var openPageLink = root.querySelector('[data-overlay-open-page]');
     var readyTimeoutMs = options.readyTimeoutMs || 8000;
+    var controllerToken = window.crypto && typeof window.crypto.randomUUID === 'function' ?
+      window.crypto.randomUUID() : String(Date.now()) + '-' + String(Math.random());
     var state = {
       pinId: null,
       dirtyChange: null,
@@ -58,13 +61,32 @@
       root.dataset.state = view;
       root.hidden = isIdle;
       root.setAttribute('aria-hidden', String(isIdle));
+      if (closeButton) closeButton.hidden = view === 'open';
       if (isIdle) {
-        boardContent.removeAttribute('inert');
-        boardContent.removeAttribute('aria-hidden');
+        backgroundContent.removeAttribute('inert');
+        backgroundContent.removeAttribute('aria-hidden');
       } else {
-        boardContent.setAttribute('inert', '');
-        boardContent.setAttribute('aria-hidden', 'true');
+        backgroundContent.setAttribute('inert', '');
+        backgroundContent.setAttribute('aria-hidden', 'true');
       }
+    }
+
+    function isLocallyPushed(pinId) {
+      var historyState = window.history.state;
+      return Boolean(historyState && historyState.scrapbookPinOverlay === true &&
+        historyState.pinId === pinId && historyState.scrapbookPinOverlayToken === controllerToken);
+    }
+
+    function historyStateWithoutOverlay() {
+      var historyState = window.history.state;
+      if (!historyState || typeof historyState !== 'object' || !historyState.scrapbookPinOverlay) {
+        return historyState;
+      }
+      var cleaned = Object.assign({}, historyState);
+      delete cleaned.scrapbookPinOverlay;
+      delete cleaned.scrapbookPinOverlayToken;
+      delete cleaned.pinId;
+      return cleaned;
     }
 
     function isVisibleFocusTarget(target) {
@@ -219,7 +241,7 @@
         if (!change) focusAfterClose(null, opener);
         window.history.back();
       }
-      else if (navigation === 'replace') window.history.replaceState(window.history.state, '', urlFor(pinId, false));
+      else if (navigation === 'replace') window.history.replaceState(historyStateWithoutOverlay(), '', urlFor(pinId, false));
       if (navigation !== 'back') refreshAndFocus(pinId, change, opener);
     }
 
@@ -231,9 +253,10 @@
         // Navigate the child first so its session-history entry belongs to the
         // board URL; the parent push must remain the most recent entry.
         reveal(numericPinId, false);
-        window.history.pushState({ scrapbookPinOverlay: true, pinId: numericPinId }, '', urlFor(numericPinId, true));
+        window.history.pushState({ scrapbookPinOverlay: true, pinId: numericPinId,
+          scrapbookPinOverlayToken: controllerToken }, '', urlFor(numericPinId, true));
         state.pushed = true;
-      } else reveal(numericPinId, Boolean(window.history.state && window.history.state.scrapbookPinOverlay));
+      } else reveal(numericPinId, isLocallyPushed(numericPinId));
     }
 
     function close() {
@@ -242,7 +265,7 @@
 
     function syncFromLocation() {
       var pinId = pinFromLocation();
-      if (pinId) reveal(pinId, Boolean(window.history.state && window.history.state.scrapbookPinOverlay));
+      if (pinId) reveal(pinId, isLocallyPushed(pinId));
       else if (state.pinId !== null) finishClose('none');
       else consumePendingRefresh();
     }

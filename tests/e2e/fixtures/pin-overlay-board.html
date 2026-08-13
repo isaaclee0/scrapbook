@@ -20,6 +20,8 @@
   </style>
 </head>
 <body>
+  <div id="appBackgroundContent">
+  <button id="global-nav-control" type="button">Global navigation control</button>
   <main id="boardPageContent" tabindex="-1">
     <nav aria-label="Board sections">
       <button type="button" class="section-circle active" data-section-id="all">All</button>
@@ -33,6 +35,7 @@
     </div>
     <div class="spacer"></div>
   </main>
+  </div>
   <section id="pinOverlay" hidden aria-hidden="true" aria-modal="true" role="dialog" data-state="idle">
     <div id="pinOverlayPanel">
       <button type="button" data-overlay-close>Close</button>
@@ -102,20 +105,22 @@
       applyCurrentSectionFilter();
       return replacement.querySelector('a[href]') || replacement;
     }
-    window.overlayController = window.createPinOverlayController({
-      boardId: 9,
-      root: document.getElementById('pinOverlay'),
-      boardContent: document.getElementById('boardPageContent'),
-      refreshPinCard: async (pinId, change) => {
-        window.refreshCalls.push({ pinId, change });
-        if (new URL(window.location.href).searchParams.has('refreshFails')) {
-          throw new Error('fixture refresh failure');
-        }
-        return refreshBoardPinCard(pinId, change);
-      },
-      showToast: message => window.toastCalls.push(message),
-      readyTimeoutMs: 250
-    });
+    window.createFixtureOverlayController = () => window.createPinOverlayController({
+        boardId: 9,
+        root: document.getElementById('pinOverlay'),
+        boardContent: document.getElementById('boardPageContent'),
+        backgroundContent: document.getElementById('appBackgroundContent'),
+        refreshPinCard: async (pinId, change) => {
+          window.refreshCalls.push({ pinId, change });
+          if (new URL(window.location.href).searchParams.has('refreshFails')) {
+            throw new Error('fixture refresh failure');
+          }
+          return refreshBoardPinCard(pinId, change);
+        },
+        showToast: message => window.toastCalls.push(message),
+        readyTimeoutMs: 250
+      });
+    window.overlayController = window.createFixtureOverlayController();
     window.overlayController.syncFromLocation();
   </script>
 </body>

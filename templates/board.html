@@ -1052,29 +1052,6 @@
 
 </div>
 
-<section id="pinOverlay" hidden aria-hidden="true" aria-modal="true" role="dialog"
-    aria-labelledby="pinOverlayTitle" data-state="idle">
-    <div id="pinOverlayPanel">
-        <h2 id="pinOverlayTitle" class="sr-only">Pin details</h2>
-        <button type="button" class="pin-overlay-close" data-overlay-close aria-label="Close pin details">&times;</button>
-        <iframe id="pinOverlayFrame" title="Pin details" allow="fullscreen"></iframe>
-        <div class="pin-overlay-status" data-overlay-state="loading" role="status">
-            <p>Loading pin details…</p>
-        </div>
-        <div class="pin-overlay-status" data-overlay-state="error" role="alert">
-            <div>
-                <p class="text-lg font-semibold">Pin details could not be loaded.</p>
-                <div class="pin-overlay-actions">
-                    <button type="button" class="pin-overlay-action pin-overlay-action-primary" data-overlay-retry>Retry</button>
-                    <a class="pin-overlay-action" data-overlay-open-page>Open as Page</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
 <script src="{{ url_for('static', filename='js/pin-overlay.js') }}"></script>
 <script>
     // Development mode check
@@ -1373,6 +1350,7 @@
         boardId: Number(getBoardId()),
         root: document.getElementById('pinOverlay'),
         boardContent: document.getElementById('boardPageContent'),
+        backgroundContent: document.getElementById('appBackgroundContent'),
         refreshPinCard: refreshBoardPinCard,
         showToast: window.showToast,
         readyTimeoutMs: 8000
@@ -2670,4 +2648,27 @@
 
 
 </script>
+{% endblock %}
+
+{% block page_overlay %}
+<section id="pinOverlay" hidden aria-hidden="true" aria-modal="true" role="dialog"
+    aria-labelledby="pinOverlayTitle" data-state="idle">
+    <div id="pinOverlayPanel">
+        <h2 id="pinOverlayTitle" class="sr-only">Pin details</h2>
+        <button type="button" class="pin-overlay-close" data-overlay-close aria-label="Close pin details">&times;</button>
+        <iframe id="pinOverlayFrame" title="Pin details" allow="fullscreen"></iframe>
+        <div class="pin-overlay-status" data-overlay-state="loading" role="status">
+            <p>Loading pin details…</p>
+        </div>
+        <div class="pin-overlay-status" data-overlay-state="error" role="alert">
+            <div>
+                <p class="text-lg font-semibold">Pin details could not be loaded.</p>
+                <div class="pin-overlay-actions">
+                    <button type="button" class="pin-overlay-action pin-overlay-action-primary" data-overlay-retry>Retry</button>
+                    <a class="pin-overlay-action" data-overlay-open-page>Open as Page</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 {% endblock %}

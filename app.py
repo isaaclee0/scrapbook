@@ -1847,7 +1847,7 @@ def update_pin(pin_id):
     description = sanitize_string(data.get('description', '')) if 'description' in data else None
     notes = sanitize_string(data.get('notes', '')) if 'notes' in data else None
     link = sanitize_url(data.get('link', '')) if 'link' in data else None
-    image_url = sanitize_url(data.get('image_url', '')) if 'image_url' in data else None
+    raw_image_url = data.get('image_url') if 'image_url' in data else None
     
     
     try:
@@ -1877,8 +1877,20 @@ def update_pin(pin_id):
             if link is not None:
                 update_fields.append("link = %s"); update_values.append(link)
                 before_changes['link'] = current['link']; after_changes['link'] = link
-            if image_url is not None:
+            if raw_image_url is not None:
+                cached_image_id = None
+                uses_cached_image = False
+                if isinstance(raw_image_url, str) and raw_image_url.startswith('data:image/'):
+                    saved_image = save_pasted_image(raw_image_url)
+                    image_url, cached_image_id = saved_image if saved_image else (None, None)
+                    if not image_url:
+                        return jsonify({"error": "Invalid image data"}), 400
+                    uses_cached_image = cached_image_id is not None
+                else:
+                    image_url = sanitize_url(raw_image_url)
                 update_fields.append("image_url = %s"); update_values.append(image_url)
+                update_fields.append("cached_image_id = %s"); update_values.append(cached_image_id)
+                update_fields.append("uses_cached_image = %s"); update_values.append(uses_cached_image)
                 before_changes['image_url'] = current['image_url']; after_changes['image_url'] = image_url
 
             if not update_fields:

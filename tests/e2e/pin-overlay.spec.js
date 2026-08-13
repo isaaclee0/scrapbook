@@ -63,7 +63,6 @@ test('real browser Back closes and Forward reopens the overlay', async ({ page }
 
 test('clean close paths restore focus outside the hidden overlay', async ({ page }) => {
   const closePaths = [
-    async () => page.locator('[data-overlay-close]').click(),
     async () => page.keyboard.press('Escape'),
     async () => page.locator('#pinOverlay').click({ position: { x: 1, y: 1 } }),
     async () => page.frameLocator('#pinOverlayFrame').locator('#close').click()
@@ -87,8 +86,8 @@ test('clean real browser Back restores focus to the opener', async ({ page }) =>
 test('modal overlay keeps keyboard focus out of the inert board until close', async ({ page }) => {
   await page.locator('#pin-42-link').click();
   await expect(page.locator('#pinOverlay')).toHaveAttribute('data-state', 'open');
-  await expect(page.locator('#boardPageContent')).toHaveAttribute('inert', '');
-  await expect(page.locator('#boardPageContent')).toHaveAttribute('aria-hidden', 'true');
+  await expect(page.locator('#appBackgroundContent')).toHaveAttribute('inert', '');
+  await expect(page.locator('#appBackgroundContent')).toHaveAttribute('aria-hidden', 'true');
   await expect.poll(() => page.evaluate(() => document.activeElement.id)).toBe('pinOverlayFrame');
   await page.locator('#board-secondary-link').focus();
   await expect.poll(() => page.evaluate(() => document.activeElement.id)).not.toBe('board-secondary-link');
@@ -99,10 +98,10 @@ test('modal overlay keeps keyboard focus out of the inert board until close', as
       !document.getElementById('boardPageContent').contains(document.activeElement))).toBe(true);
   }
 
-  await page.locator('[data-overlay-close]').click();
+  await page.frameLocator('#pinOverlayFrame').locator('#close').click();
   await expect(page.locator('#pinOverlay')).toBeHidden();
-  await expect(page.locator('#boardPageContent')).not.toHaveAttribute('inert');
-  await expect(page.locator('#boardPageContent')).not.toHaveAttribute('aria-hidden');
+  await expect(page.locator('#appBackgroundContent')).not.toHaveAttribute('inert');
+  await expect(page.locator('#appBackgroundContent')).not.toHaveAttribute('aria-hidden');
   await expect.poll(() => page.evaluate(() => document.activeElement.id)).toBe('pin-42-link');
   await page.locator('#board-secondary-link').focus();
   await expect.poll(() => page.evaluate(() => document.activeElement.id)).toBe('board-secondary-link');
@@ -110,11 +109,62 @@ test('modal overlay keeps keyboard focus out of the inert board until close', as
   await expect(page).toHaveURL(/#section-7$/);
 });
 
+test('production wrapper isolates global chrome as well as board content', async ({ page }) => {
+  await page.locator('#pin-42-link').click();
+  await expect(page.locator('#pinOverlay')).toHaveAttribute('data-state', 'open');
+  await expect(page.locator('#appBackgroundContent')).toHaveAttribute('inert', '');
+  await expect(page.locator('#appBackgroundContent')).toHaveAttribute('aria-hidden', 'true');
+  await page.locator('#global-nav-control').focus();
+  await expect.poll(() => page.evaluate(() => document.activeElement.id)).not.toBe('global-nav-control');
+
+  await page.frameLocator('#pinOverlayFrame').locator('#close').click();
+  await expect(page.locator('#appBackgroundContent')).not.toHaveAttribute('inert');
+  await expect(page.locator('#appBackgroundContent')).not.toHaveAttribute('aria-hidden');
+  await page.locator('#global-nav-control').focus();
+  await expect.poll(() => page.evaluate(() => document.activeElement.id)).toBe('global-nav-control');
+});
+
+test('a controller recreated from an old overlay marker treats the URL as direct', async ({ page }) => {
+  await page.locator('#pin-42-link').click();
+  await expect(page).toHaveURL(/\?pin=42$/);
+  await page.evaluate(() => {
+    window.overlayController.destroy();
+    window.overlayHistoryBackCalls = 0;
+    window.history.back = () => { window.overlayHistoryBackCalls += 1; };
+    window.overlayController = window.createFixtureOverlayController();
+    window.overlayController.syncFromLocation();
+  });
+  await expect(page.locator('#pinOverlay')).toBeVisible();
+
+  await page.evaluate(() => window.overlayController.close());
+
+  await expect(page).toHaveURL(/pin-overlay-board\.html$/);
+  expect(await page.evaluate(() => window.overlayHistoryBackCalls)).toBe(0);
+});
+
+test('ready editor keeps only the child close control while recovery keeps the parent close', async ({ page }) => {
+  await page.locator('#pin-42-link').click();
+  await expect(page.locator('#pinOverlay')).toHaveAttribute('data-state', 'open');
+  await expect(page.locator('[data-overlay-close]')).toBeHidden();
+  await expect(page.frameLocator('#pinOverlayFrame').locator('#close')).toBeVisible();
+
+  await page.frameLocator('#pinOverlayFrame').locator('#close').click();
+  await page.unroute('**/pin/42?embedded=1&board_id=9*');
+  await page.route('**/pin/42?embedded=1&board_id=9*', route => route.fulfill({
+    contentType: 'text/html', body: '<!doctype html><title>Never ready</title>'
+  }));
+  await page.locator('#pin-42-link').click();
+  await expect(page.locator('#pinOverlay')).toHaveAttribute('data-state', 'error');
+  await expect(page.locator('[data-overlay-close]')).toBeVisible();
+  await page.locator('[data-overlay-close]').click();
+  await expect(page.locator('#pinOverlay')).toBeHidden();
+});
+
 test('unchanged close preserves exact scroll, section, and lazy-loaded cards without layout', async ({ page }) => {
   const before = await preparePreservedBoardState(page);
   await page.locator('#pin-42-link').evaluate(anchor => window.overlayController.open(42, anchor));
   await expect(page.locator('#pinOverlay')).toBeVisible();
-  await page.locator('[data-overlay-close]').click();
+  await page.frameLocator('#pinOverlayFrame').locator('#close').click();
   await expect(page.locator('#pinOverlay')).toBeHidden();
 
   await expect.poll(() => page.evaluate(() => ({
@@ -265,7 +315,7 @@ test('direct query close replaces only pin parameter', async ({ page }) => {
   await page.goto(`${boardUrl}?filter=favorites&pin=42`);
   await expect(page.locator('#pinOverlay')).toBeVisible();
   const historyLength = await page.evaluate(() => history.length);
-  await page.locator('[data-overlay-close]').click();
+  await page.frameLocator('#pinOverlayFrame').locator('#close').click();
   await expect(page).toHaveURL(/\?filter=favorites$/);
   await expect(page.locator('#pinOverlay')).toBeHidden();
   expect(await page.evaluate(() => history.length)).toBe(historyLength);
@@ -458,7 +508,7 @@ test('failed focus restoration deterministically focuses the board fallback', as
     anchor.focus = () => {};
     window.overlayController.open(42, anchor);
   });
-  await page.locator('[data-overlay-close]').click();
+  await page.evaluate(() => window.overlayController.close());
   await expect(page.locator('#pinOverlay')).toBeHidden();
   await expect.poll(() => page.evaluate(() => document.activeElement.id)).toBe('boardPageContent');
 });
