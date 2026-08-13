@@ -62,6 +62,59 @@ test('filters boards case-insensitively while keeping creation first', async ({ 
   ]);
 });
 
+test('scrolls a long board list without scrolling the dialog away from its field', async ({ page }) => {
+  const boards = Array.from({ length: 40 }, (_, index) => ({
+    id: index + 1,
+    name: `Board ${String(index + 1).padStart(2, '0')}`,
+  }));
+  await openExtensionDialog(page, { LIST_BOARDS: { ok: true, data: boards } });
+  await page.locator('.sb-board-input').click();
+  const listbox = page.locator('.sb-board-picker .sb-listbox');
+  await expect.poll(() => listbox.evaluate((element) => element.scrollHeight > element.clientHeight)).toBe(true);
+  const before = await page.evaluate(() => document.getElementById('scrapbook-send-dialog-host').shadowRoot
+    .querySelector('.sb-dialog').scrollTop);
+
+  await listbox.hover();
+  await page.mouse.wheel(0, 300);
+
+  await expect.poll(() => listbox.evaluate((element) => element.scrollTop)).toBeGreaterThan(0);
+  await expect.poll(() => page.evaluate(() => document.getElementById('scrapbook-send-dialog-host').shadowRoot
+    .querySelector('.sb-dialog').scrollTop)).toBe(before);
+});
+
+test('contains wheel scrolling inside the long board list at its edge', async ({ page }) => {
+  await page.setViewportSize({ width: 800, height: 400 });
+  const boards = Array.from({ length: 40 }, (_, index) => ({
+    id: index + 1,
+    name: `Board ${String(index + 1).padStart(2, '0')}`,
+  }));
+  await openExtensionDialog(page, { LIST_BOARDS: { ok: true, data: boards } });
+  await page.locator('.sb-board-input').click();
+  const listbox = page.locator('.sb-board-picker .sb-listbox');
+  await listbox.hover();
+  await listbox.evaluate((element) => { element.scrollTop = element.scrollHeight; });
+  const dialogScrollTop = await page.evaluate(() => document.getElementById('scrapbook-send-dialog-host').shadowRoot
+    .querySelector('.sb-dialog').scrollTop);
+
+  await page.mouse.wheel(0, 300);
+
+  await expect.poll(() => page.evaluate(() => document.getElementById('scrapbook-send-dialog-host').shadowRoot
+    .querySelector('.sb-dialog').scrollTop)).toBe(dialogScrollTop);
+});
+
+test('keeps long board results in the dialog flow instead of overlaying later fields', async ({ page }) => {
+  const boards = Array.from({ length: 40 }, (_, index) => ({
+    id: index + 1,
+    name: `Board ${String(index + 1).padStart(2, '0')}`,
+  }));
+  await openExtensionDialog(page, { LIST_BOARDS: { ok: true, data: boards } });
+  await page.locator('.sb-board-input').click();
+  const listBox = await page.locator('.sb-board-picker .sb-listbox').boundingBox();
+  const sectionPicker = await page.locator('.sb-section-picker').boundingBox();
+
+  expect(sectionPicker.y).toBeGreaterThanOrEqual(listBox.y + listBox.height);
+});
+
 test('selects a board with the keyboard and closes without changing it', async ({ page }) => {
   await openExtensionDialog(page);
   const board = page.locator('.sb-board-input');

@@ -113,10 +113,10 @@
       outline: none; border-color: #3b82f6; box-shadow: 0 0 0 3px rgba(59,130,246,0.1);
     }
     .sb-field textarea { min-height: 60px; resize: vertical; }
-    .sb-combobox { position: relative; }
+    .sb-combobox { min-width: 0; }
     .sb-combobox-input { width: 100%; padding: 10px; border: 2px solid #e1e5e9; border-radius: 8px; font: inherit; font-size: 13px; box-sizing: border-box; }
     .sb-combobox-input:focus { outline: none; border-color: #3b82f6; box-shadow: 0 0 0 3px rgba(59,130,246,0.1); }
-    .sb-listbox { position: absolute; z-index: 1; width: 100%; max-height: 180px; overflow-y: auto; margin-top: 4px; padding: 4px; box-sizing: border-box; background: white; border: 1px solid #d7dce1; border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,0.15); }
+    .sb-listbox { width: 100%; max-height: 180px; overflow-y: auto; overscroll-behavior: contain; margin-top: 4px; padding: 4px; box-sizing: border-box; background: white; border: 1px solid #d7dce1; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
     .sb-option { width: 100%; padding: 8px 10px; text-align: left; border: 0; border-radius: 5px; background: transparent; color: #222; font: inherit; font-size: 13px; cursor: pointer; }
     .sb-option:hover, .sb-option.sb-option-active { background: #eaf4fb; }
     .sb-option-create { color: #2472a4; font-weight: 600; }
@@ -291,7 +291,14 @@
     const onOutsidePointerDown = (event) => {
       if (!event.composedPath().includes(pickerRoot)) setOpen(false);
     };
+    const onListboxWheel = (event) => {
+      const atTop = listbox.scrollTop <= 0 && event.deltaY < 0;
+      const atBottom = listbox.scrollTop + listbox.clientHeight >= listbox.scrollHeight - 1
+        && event.deltaY > 0;
+      if (atTop || atBottom) event.preventDefault();
+    };
     document.addEventListener('pointerdown', onOutsidePointerDown, true);
+    listbox.addEventListener('wheel', onListboxWheel, { passive: false });
 
     return {
       input,
@@ -317,7 +324,10 @@
         render();
       },
       focus() { input.focus(); },
-      destroy() { document.removeEventListener('pointerdown', onOutsidePointerDown, true); },
+      destroy() {
+        document.removeEventListener('pointerdown', onOutsidePointerDown, true);
+        listbox.removeEventListener('wheel', onListboxWheel);
+      },
     };
   }
 
