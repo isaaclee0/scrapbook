@@ -82,15 +82,29 @@ class PinOverlayRouteTests(unittest.TestCase):
 
     def test_embedded_pin_accepts_matching_board(self):
         """Rejecting the supplied pin board would break a valid iframe."""
-        with patch.object(app_module, "get_db_connection", return_value=FakeConnection([PIN, [], []])):
+        connection = FakeConnection([PIN, [], []])
+        with patch.object(app_module, "get_db_connection", return_value=connection):
             response = self.client.get("/pin/42?embedded=1&board_id=9")
         self.assertEqual(response.status_code, 200)
+        self.assertEqual(connection.cursor_instance.executions[2][1], (9, 7))
 
     def test_embedded_pin_rejects_different_board(self):
         """Removing board validation would expose a pin in the wrong iframe."""
         with patch.object(app_module, "get_db_connection", return_value=FakeConnection([PIN])):
             response = self.client.get("/pin/42?embedded=1&board_id=10")
         self.assertEqual(response.status_code, 404)
+
+    def test_embedded_pin_requires_board_id(self):
+        """Accepting an unbound iframe request would bypass board validation."""
+        with patch.object(app_module, "get_db_connection", return_value=FakeConnection([PIN])):
+            response = self.client.get("/pin/42?embedded=1")
+        self.assertEqual(response.status_code, 404)
+
+    def test_standalone_pin_does_not_require_board_id(self):
+        """Applying iframe validation to standalone pins would break direct links."""
+        with patch.object(app_module, "get_db_connection", return_value=FakeConnection([PIN, [], []])):
+            response = self.client.get("/pin/42")
+        self.assertEqual(response.status_code, 200)
 
     def test_pin_card_returns_user_scoped_pin_contract(self):
         """Dropping card fields or user scope would break the overlay client."""
@@ -116,6 +130,8 @@ class PinOverlayRouteTests(unittest.TestCase):
             "dominant_color_2": "#445566",
         }})
         self.assertEqual(connection.cursor_instance.executions[0][1], (42, 7))
+        self.assertIn("p.dominant_color AS dominant_color_1", connection.cursor_instance.executions[0][0])
+        self.assertIn("p.palette_color_1 AS dominant_color_2", connection.cursor_instance.executions[0][0])
 
     def test_pin_card_returns_safe_not_found_for_missing_user_pin(self):
         """Returning a row-less card as success would leak pin existence."""

@@ -1968,7 +1968,8 @@ def view_pin(pin_id):
         print(f"view_pin: boards fetched count={len(boards)}")
 
         # Get all sections for the current board
-        cursor.execute("SELECT * FROM sections WHERE board_id = %s ORDER BY name", (pin['board_id'],))
+        cursor.execute("SELECT * FROM sections WHERE board_id = %s AND user_id = %s ORDER BY name",
+                       (pin['board_id'], user['id']))
         sections = cursor.fetchall()
         print(f"view_pin: sections fetched count={len(sections)}")
 
@@ -2034,7 +2035,8 @@ def get_pin_card(pin_id):
                        ELSE NULL
                    END AS cached_filename,
                    ci.width AS cached_width, ci.height AS cached_height,
-                   p.dominant_color_1, p.dominant_color_2
+                   p.dominant_color AS dominant_color_1,
+                   p.palette_color_1 AS dominant_color_2
             FROM pins p
             LEFT JOIN boards b ON p.board_id = b.id
             LEFT JOIN sections s ON p.section_id = s.id
