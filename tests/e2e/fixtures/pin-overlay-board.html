@@ -22,6 +22,7 @@
       <button type="button" class="section-circle active" data-section-id="all">All</button>
       <button type="button" class="section-circle" data-section-id="7">Section 7</button>
     </nav>
+    <a id="board-secondary-link" href="#section-7">Board focus check</a>
     <div id="pinsGrid">
       <article id="pin-42" class="pin-card" data-pin-id="42" data-section-id="7">
         <a id="pin-42-link" href="/pin/42">Open pin 42</a>
@@ -60,8 +61,11 @@
       card.className = 'pin-card';
       card.dataset.pinId = String(pin.id);
       card.dataset.sectionId = pin.section_id == null ? '' : String(pin.section_id);
-      card.tabIndex = -1;
-      card.textContent = pin.title;
+      const link = document.createElement('a');
+      link.id = `pin-${pin.id}-link`;
+      link.href = `/pin/${pin.id}`;
+      link.textContent = pin.title;
+      card.appendChild(link);
       return card;
     }
     function applyCurrentSectionFilter() {
@@ -93,7 +97,7 @@
       const replacement = createBoardPinCard(data.pin);
       currentCard.replaceWith(replacement);
       applyCurrentSectionFilter();
-      return replacement;
+      return replacement.querySelector('a[href]') || replacement;
     }
     window.overlayController = window.createPinOverlayController({
       boardId: 9,

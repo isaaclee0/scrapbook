@@ -46,9 +46,29 @@
     }
 
     function setView(view) {
+      var isIdle = view === 'idle';
       root.dataset.state = view;
-      root.hidden = view === 'idle';
-      root.setAttribute('aria-hidden', String(view === 'idle'));
+      root.hidden = isIdle;
+      root.setAttribute('aria-hidden', String(isIdle));
+      if (isIdle) {
+        boardContent.removeAttribute('inert');
+        boardContent.removeAttribute('aria-hidden');
+      } else {
+        boardContent.setAttribute('inert', '');
+        boardContent.setAttribute('aria-hidden', 'true');
+      }
+    }
+
+    function focusWithoutScroll(target) {
+      if (!target || typeof target.focus !== 'function') return;
+      var scrollX = window.scrollX;
+      var scrollY = window.scrollY;
+      try {
+        target.focus({ preventScroll: true });
+      } catch (error) {
+        target.focus();
+      }
+      if (window.scrollX !== scrollX || window.scrollY !== scrollY) window.scrollTo(scrollX, scrollY);
     }
 
     function focusAfterClose(replacement, opener) {
@@ -56,16 +76,7 @@
         document.getElementById('boardPageContent') || document.body;
       var target = replacement && document.contains(replacement) ? replacement :
         (opener && document.contains(opener) ? opener : fallback);
-      if (target && typeof target.focus === 'function') {
-        var scrollX = window.scrollX;
-        var scrollY = window.scrollY;
-        try {
-          target.focus({ preventScroll: true });
-        } catch (error) {
-          target.focus();
-        }
-        if (window.scrollX !== scrollX || window.scrollY !== scrollY) window.scrollTo(scrollX, scrollY);
-      }
+      focusWithoutScroll(target);
     }
 
     function focusFallbackAfterNavigation() {
@@ -196,6 +207,7 @@
       if (data.type === 'ready') {
         clearReadyTimer();
         setView('open');
+        focusWithoutScroll(iframe);
       } else if (data.type === 'changed' && ['updated', 'moved', 'deleted'].indexOf(data.change) !== -1) {
         state.dirtyChange = data.change;
         persistDirtyChange(state.pinId, data.change);

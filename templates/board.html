@@ -1593,7 +1593,7 @@
             const replacement = createBoardPinCard(data.pin);
             currentCard.replaceWith(replacement);
             applyCurrentSectionFilter();
-            return replacement;
+            return replacement.querySelector('a[href]') || replacement;
         } catch (error) {
             devError('Error refreshing pin card:', error);
             window.showToast('Pin was saved, but its board card could not be refreshed');

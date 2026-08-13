@@ -124,3 +124,97 @@ git diff --check
 - No unresolved Task 4 code concern.
 - The full Flask board page was not manually exercised against a live MariaDB instance; deterministic browser integration, Jinja parsing, and the route suite are green.
 - The working tree contains unrelated dependency artifacts, `test-results`, `AGENTS.md`, and a concurrent Task 3 report modification. They are intentionally left untouched and uncommitted by this task.
+
+## Fix round 1: reviewed focus and modal isolation
+
+### Review finding 1: production-shaped replacement focus
+
+The original fixture diverged from production by adding `tabIndex = -1` to the refreshed card. Production `createBoardPinCard()` returns a plain `div` containing its ordinary pin link, so returning the container left focus in the hidden iframe after close.
+
+The fixture was first changed to match production: a non-focusable card container with a real `/pin/42` anchor. The existing focus-and-scroll behavior was updated to expect that anchor.
+
+RED command:
+
+```text
+npm run test:pin-overlay -- --project=chromium --grep "production-shaped refreshed card"
+```
+
+Observed:
+
+```text
+Expected: "pin-42-link"
+Received: "pinOverlayFrame"
+1 failed
+```
+
+The targeted refresh now returns `replacement.querySelector('a[href]') || replacement`, and the fixture uses the identical target rule. The production-shaped card remains without a `tabindex`; the real card anchor receives focus through the controller's existing scroll-preserving focus path.
+
+GREEN command and result:
+
+```text
+npm run test:pin-overlay -- --project=chromium --grep "production-shaped refreshed card"
+1 passed
+```
+
+The real-browser-Back dirty-refresh assertion was also aligned to this production behavior: it now expects the returned pin anchor, not the non-focusable card container.
+
+### Review finding 2: modal background isolation and ready focus
+
+Added a keyboard-level test that opens the overlay and verifies:
+
+- `#boardPageContent` gains both `inert` and `aria-hidden="true"`;
+- the ready handshake moves focus to `#pinOverlayFrame` without scrolling;
+- attempting to focus a board anchor is rejected while inert;
+- repeated Tab and Shift+Tab never place parent-document focus inside the board;
+- closing removes both isolation attributes and restores opener focus; and
+- the same board anchor can then receive focus and be keyboard-activated with Enter.
+
+RED command:
+
+```text
+npm run test:pin-overlay -- --project=chromium --grep "modal overlay keeps keyboard focus"
+```
+
+Observed:
+
+```text
+Expected inert attribute: ""
+Received: null
+1 failed
+```
+
+Controller `setView()` now treats every non-idle overlay state as modal: it applies `inert` and `aria-hidden` to the board. Every transition to idle, including normal close, history close, recovery, and destroy, removes both attributes before focus restoration. The ready message moves focus to the iframe through a shared `focusWithoutScroll()` helper used by close focus too.
+
+The first post-close test iteration used Shift+Tab from the opener. Chromium passed, but headless WebKit moved focus to the document boundary rather than the prior board control due to platform keyboard-navigation behavior. The test was corrected to assert the actual contract independently of platform focus order: explicit focus is rejected while inert, then accepted and Enter-activated after close. No production change was made for that test portability correction.
+
+Focused cross-engine result:
+
+```text
+npm run test:pin-overlay -- --grep "modal overlay keeps keyboard focus"
+2 passed
+```
+
+### Fix-round verification
+
+```text
+.venv/bin/python3 -m unittest tests.test_pin_overlay_routes -v
+Ran 10 tests in 0.027s
+OK
+```
+
+```text
+npm run test:pin-overlay
+Running 24 tests using 2 workers
+24 passed (7.2s)
+```
+
+### Fix-round self-review
+
+- Production and fixture replacement cards now share the relevant DOM/focus shape; no fixture-only `tabIndex` remains.
+- Refreshed-card focus targets the existing accessible link and retains exact scroll through `preventScroll` plus the controller fallback.
+- Board isolation starts at loading, remains through open and recoverable error states, and is removed by the single idle transition used by every close path.
+- Focus enters the iframe only after a validated same-origin/matching-pin `ready` message.
+- The iframe itself is outside the inert board wrapper and is natively focusable in Chromium and WebKit.
+- No board reload, document overflow toggle, or additional layout was added.
+- Review tests exercise observable browser behavior rather than source text or a fixture-only mock contract.
+- No unresolved fix-round concern.
