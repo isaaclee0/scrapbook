@@ -1485,7 +1485,8 @@ function moveToSection(pinId, sectionId) {
     .then(data => {
         if (data.success) {
             notifyPinOverlay('changed', 'updated');
-            window.location.reload();
+            if (PIN_OVERLAY_EMBEDDED) closePinView();
+            else window.location.reload();
         } else {
             showToast('Failed to move pin: ' + data.error);
         }

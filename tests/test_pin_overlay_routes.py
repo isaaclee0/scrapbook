@@ -124,6 +124,16 @@ class PinOverlayRouteTests(unittest.TestCase):
         self.assertIn('scrappl-pin-overlay', html)
         self.assertIn('closePinView()', html)
 
+    def test_embedded_section_moves_close_through_the_bridge(self):
+        """Reloading an embedded section move would leave the parent overlay open."""
+        with patch.object(app_module, "get_db_connection", return_value=FakeConnection([PIN, [], []])):
+            response = self.client.get("/pin/42?embedded=1&board_id=9")
+        html = response.get_data(as_text=True)
+        section_move = html[html.index('function moveToSection'):html.index('function savePin')]
+        self.assertIn("notifyPinOverlay('changed', 'updated');", section_move)
+        self.assertIn('if (PIN_OVERLAY_EMBEDDED) closePinView();', section_move)
+        self.assertIn('else window.location.reload();', section_move)
+
     def test_pin_card_returns_user_scoped_pin_contract(self):
         """Dropping card fields or user scope would break the overlay client."""
         connection = FakeConnection([CARD_PIN])
