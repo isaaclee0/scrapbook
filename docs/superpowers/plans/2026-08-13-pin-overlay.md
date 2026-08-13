@@ -48,6 +48,7 @@
 - Produces: `view_pin(pin_id)` accepts `embedded=1&board_id=<int>` and rejects a mismatched board.
 - Produces: `GET /api/pin/<int:pin_id>/card` returning `{"success":true,"pin":PinCard}` or safe 404.
 - `PinCard`: `id`, `board_id`, `section_id`, `section_name`, `board_name`, `title`, `image_url`, `link`, `link_status`, `cached_filename`, `cached_width`, `cached_height`, `dominant_color_1`, `dominant_color_2`.
+- Produces: `POST /update-pin/<int:pin_id>` persists a supplied `image_url` using the same user-scoped update and audit path as title, description, notes, and link.
 
 - [ ] **Step 1: Write route fakes and failing embedded tests**
 
@@ -90,11 +91,15 @@ Pass `embedded=embedded` to `render_template()`. Standalone rendering must not r
 
 Add a success test that asserts response fields and that the cursor received `(42, 7)`. Add a missing-row test asserting status 404 and `{"error":"Pin not found","success":False}`.
 
-- [ ] **Step 5: Implement the card endpoint**
+- [ ] **Step 5: Add a failing image-persistence test, then implement the update path**
+
+Add a route test that posts `{"image_url":"/static/images/default_pin.png"}` to `/update-pin/42`, verifies a successful JSON response, and asserts the user-scoped `UPDATE pins SET image_url = %s` parameter list includes the pin ID and user ID. Extend `update_pin()` to sanitize and update `image_url` when present, include it in the select, before/after audit snapshots, and `update_fields`. Run the test first and confirm it fails because `update_pin()` returns `No fields to update`.
+
+- [ ] **Step 6: Implement the card endpoint**
 
 Add a `@login_required` GET route. Select the specified fields with joins to boards, sections, URL health, and cached images; use the same cached-file masking as `get_board_pins()`. The predicate must be `WHERE p.id = %s AND p.user_id = %s`. Return the row under `pin`, return safe JSON 404, and close resources in `finally`.
 
-- [ ] **Step 6: Verify and commit**
+- [ ] **Step 7: Verify and commit**
 
 Run: `python -m unittest tests.test_pin_overlay_routes -v`
 
