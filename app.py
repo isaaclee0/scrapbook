@@ -1847,12 +1847,13 @@ def update_pin(pin_id):
     description = sanitize_string(data.get('description', '')) if 'description' in data else None
     notes = sanitize_string(data.get('notes', '')) if 'notes' in data else None
     link = sanitize_url(data.get('link', '')) if 'link' in data else None
+    image_url = sanitize_url(data.get('image_url', '')) if 'image_url' in data else None
     
     
     try:
         with tx(dictionary=True) as (db, cursor):
             cursor.execute(
-                "SELECT title, description, notes, link FROM pins WHERE id = %s AND user_id = %s",
+                "SELECT title, description, notes, link, image_url FROM pins WHERE id = %s AND user_id = %s",
                 (pin_id, user['id']),
             )
             current = cursor.fetchone()
@@ -1876,6 +1877,9 @@ def update_pin(pin_id):
             if link is not None:
                 update_fields.append("link = %s"); update_values.append(link)
                 before_changes['link'] = current['link']; after_changes['link'] = link
+            if image_url is not None:
+                update_fields.append("image_url = %s"); update_values.append(image_url)
+                before_changes['image_url'] = current['image_url']; after_changes['image_url'] = image_url
 
             if not update_fields:
                 return jsonify({"error": "No fields to update"}), 400
@@ -1953,6 +1957,11 @@ def view_pin(pin_id):
                 pass
             return "Pin not found", 404
 
+        embedded = request.args.get('embedded') == '1'
+        expected_board_id = request.args.get('board_id', type=int)
+        if embedded and (expected_board_id is None or pin['board_id'] != expected_board_id):
+            return "Pin not found", 404
+
         # Get all boards for the board selector (user-scoped)
         cursor.execute("SELECT * FROM boards WHERE user_id = %s ORDER BY name", (user['id'],))
         boards = cursor.fetchall()
@@ -1963,7 +1972,8 @@ def view_pin(pin_id):
         sections = cursor.fetchall()
         print(f"view_pin: sections fetched count={len(sections)}")
 
-        return render_template('pin.html', pin=pin, boards=boards, sections=sections)
+        return render_template('pin.html', pin=pin, boards=boards, sections=sections,
+                               embedded=embedded)
     except mysql.connector.errors.InterfaceError as e:
         # Handle "Unread result found" errors specifically
         if "Unread result found" in str(e):
@@ -2000,6 +2010,56 @@ def view_pin(pin_id):
                 db.close()
             except Exception as db_close_error:
                 print(f"view_pin: error closing db connection: {db_close_error}")
+
+
+@app.route('/api/pin/<int:pin_id>/card')
+@login_required
+def get_pin_card(pin_id):
+    """Return the user-scoped pin payload used by the board overlay."""
+    user = get_current_user()
+    db = None
+    cursor = None
+    try:
+        db = get_db_connection()
+        cursor = db.cursor(dictionary=True, buffered=True)
+        cursor.execute("""
+            SELECT p.id, p.board_id, p.section_id, s.name AS section_name,
+                   b.name AS board_name, p.title, p.image_url, p.link,
+                   uh.status AS link_status,
+                   CASE
+                       WHEN ci.cache_status = 'cached'
+                        AND ci.cached_filename IS NOT NULL
+                        AND ci.cached_filename NOT LIKE '%%.placeholder'
+                       THEN ci.cached_filename
+                       ELSE NULL
+                   END AS cached_filename,
+                   ci.width AS cached_width, ci.height AS cached_height,
+                   p.dominant_color_1, p.dominant_color_2
+            FROM pins p
+            LEFT JOIN boards b ON p.board_id = b.id
+            LEFT JOIN sections s ON p.section_id = s.id
+            LEFT JOIN url_health uh ON p.id = uh.pin_id
+            LEFT JOIN cached_images ci ON p.cached_image_id = ci.id
+            WHERE p.id = %s AND p.user_id = %s
+        """, (pin_id, user['id']))
+        pin = cursor.fetchone()
+        if not pin:
+            return jsonify({"error": "Pin not found", "success": False}), 404
+        return jsonify({"success": True, "pin": pin})
+    except Exception as e:
+        print(f"Error fetching pin card: {str(e)}")
+        return jsonify({"error": "Failed to fetch pin card", "success": False}), 500
+    finally:
+        if cursor:
+            try:
+                cursor.close()
+            except Exception:
+                pass
+        if db:
+            try:
+                db.close()
+            except Exception:
+                pass
 
 
 @app.route('/api/pin/<int:pin_id>/google-lens-url')
