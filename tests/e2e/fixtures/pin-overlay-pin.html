@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Pin editor fixture</title></head>
+<body>
+  <button id="updated">Updated</button>
+  <button id="moved">Moved</button>
+  <button id="deleted">Deleted</button>
+  <button id="close">Close</button>
+  <script>
+    const pinId = 42;
+    function notify(type, change) {
+      const message = { source: 'scrappl-pin-overlay', version: 1, type, pinId };
+      if (change) message.change = change;
+      window.parent.postMessage(message, window.location.origin);
+    }
+    document.getElementById('updated').onclick = () => notify('changed', 'updated');
+    document.getElementById('moved').onclick = () => notify('changed', 'moved');
+    document.getElementById('deleted').onclick = () => notify('changed', 'deleted');
+    document.getElementById('close').onclick = () => notify('close');
+    notify('ready');
+  </script>
+</body>
+</html>

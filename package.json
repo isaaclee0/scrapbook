@@ -4,9 +4,13 @@
   "description": "Scrappl application with Tailwind CSS",
   "scripts": {
     "build:css": "tailwindcss -i ./src/input.css -o ./static/css/output.css --minify",
-    "watch:css": "tailwindcss -i ./src/input.css -o ./static/css/output.css --watch"
+    "watch:css": "tailwindcss -i ./src/input.css -o ./static/css/output.css --watch",
+    "test:pin-overlay": "playwright test tests/e2e/pin-overlay.spec.js"
   },
   "dependencies": {
     "tailwindcss": "^3.4.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.62.1"
   }
 }
