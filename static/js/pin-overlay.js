@@ -56,7 +56,16 @@
         document.getElementById('boardPageContent') || document.body;
       var target = replacement && document.contains(replacement) ? replacement :
         (opener && document.contains(opener) ? opener : fallback);
-      if (target && typeof target.focus === 'function') target.focus();
+      if (target && typeof target.focus === 'function') {
+        var scrollX = window.scrollX;
+        var scrollY = window.scrollY;
+        try {
+          target.focus({ preventScroll: true });
+        } catch (error) {
+          target.focus();
+        }
+        if (window.scrollX !== scrollX || window.scrollY !== scrollY) window.scrollTo(scrollX, scrollY);
+      }
     }
 
     function focusFallbackAfterNavigation() {
