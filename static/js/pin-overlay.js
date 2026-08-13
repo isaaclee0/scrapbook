@@ -52,9 +52,17 @@
     }
 
     function focusAfterClose(replacement, opener) {
+      var fallback = document.contains(boardContent) ? boardContent :
+        document.getElementById('boardPageContent') || document.body;
       var target = replacement && document.contains(replacement) ? replacement :
-        (opener && document.contains(opener) ? opener : boardContent);
+        (opener && document.contains(opener) ? opener : fallback);
       if (target && typeof target.focus === 'function') target.focus();
+    }
+
+    function focusFallbackAfterNavigation() {
+      window.setTimeout(function () {
+        focusAfterClose(null, null);
+      }, 0);
     }
 
     function refreshAndFocus(pinId, change, opener) {
@@ -67,7 +75,7 @@
         focusAfterClose(replacement, opener);
       }).catch(function () {
         if (typeof options.showToast === 'function') options.showToast('Could not refresh pin');
-        focusAfterClose(null, opener);
+        focusFallbackAfterNavigation();
       });
     }
 
@@ -80,6 +88,9 @@
         if (pending && Number.isInteger(pending.pinId) && ['updated', 'moved', 'deleted'].indexOf(pending.change) !== -1) {
           Promise.resolve(options.refreshPinCard(pending.pinId, pending.change)).then(function (replacement) {
             focusAfterClose(replacement, null);
+          }).catch(function () {
+            if (typeof options.showToast === 'function') options.showToast('Could not refresh pin');
+            focusFallbackAfterNavigation();
           });
         }
       } catch (error) {
@@ -126,7 +137,10 @@
       var opener = state.opener;
       if (!pinId) return;
       hide();
-      if (navigation === 'back') window.history.back();
+      if (navigation === 'back') {
+        if (!change) focusAfterClose(null, opener);
+        window.history.back();
+      }
       else if (navigation === 'replace') window.history.replaceState(window.history.state, '', urlFor(pinId, false));
       if (navigation !== 'back') refreshAndFocus(pinId, change, opener);
     }

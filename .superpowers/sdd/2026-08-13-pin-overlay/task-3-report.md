@@ -101,3 +101,44 @@ npm run test:pin-overlay
 
 Both Chromium and WebKit passed the real history, dirty Back refresh/focus,
 message-validation, guarded-click, direct-close, and iframe-close scenarios.
+
+## Fix round 2: close focus and failed refresh recovery
+
+### Red evidence
+
+Tests were added before changing the controller for all clean close controls
+(X, Escape, backdrop, and iframe close), real browser Back, and a persisted
+dirty refresh that rejects.
+
+```text
+npm run test:pin-overlay
+14 passed, 4 failed (15.8s)
+```
+
+The new clean-close test failed in Chromium and WebKit with no active element
+ID after the overlay hid. The rejected persisted-refresh test also failed:
+there was no toast in Chromium and neither engine moved focus to the board
+fallback. A follow-up run after adding the rejection catch exposed browser
+focus restoration racing the immediate fallback focus, which was corrected by
+queueing fallback focus after navigation restoration.
+
+### Green implementation
+
+- Clean history-backed closes restore connected opener focus before native
+  history traversal. X, Escape, backdrop, and iframe close share that path.
+- Persisted refresh rejection now catches, emits `Could not refresh pin`, and
+  schedules focus to the connected board-content fallback after history focus
+  restoration. The fallback lookup also handles a board DOM instance that was
+  replaced during history restoration.
+- The fixture marks board content as programmatically focusable and can force
+  `refreshPinCard` rejection deterministically.
+
+### Fix-round verification
+
+```text
+npm run test:pin-overlay
+18 passed (4.3s)
+```
+
+Chromium and WebKit both cover real Back/Forward, all clean close focus paths,
+dirty refresh focus, and failed persisted refresh toast/fallback recovery.

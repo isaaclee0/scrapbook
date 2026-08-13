@@ -16,9 +16,9 @@
   </style>
 </head>
 <body>
-  <main id="boardPageContent">
+  <main id="boardPageContent" tabindex="-1">
     <div class="spacer"></div>
-    <article id="pin-42" class="pin-card"><a href="/pin/42">Open pin 42</a></article>
+    <article id="pin-42" class="pin-card"><a id="pin-42-link" href="/pin/42">Open pin 42</a></article>
   </main>
   <section id="pinOverlay" hidden aria-hidden="true" aria-modal="true" role="dialog" data-state="idle">
     <div id="pinOverlayPanel">
@@ -39,6 +39,9 @@
       boardContent: document.getElementById('boardPageContent'),
       refreshPinCard: async (pinId, change) => {
         window.refreshCalls.push({ pinId, change });
+        if (new URL(window.location.href).searchParams.has('refreshFails')) {
+          throw new Error('fixture refresh failure');
+        }
         const replacement = document.createElement('article');
         replacement.id = 'pin-' + pinId;
         replacement.className = 'pin-card';

@@ -3,6 +3,11 @@ const { test, expect } = require('@playwright/test');
 const boardUrl = '/tests/e2e/fixtures/pin-overlay-board.html';
 const pinFixture = require('path').join(__dirname, 'fixtures/pin-overlay-pin.html');
 
+async function waitForDirtyChange(page, change) {
+  await expect.poll(() => page.evaluate(expected => Object.keys(sessionStorage)
+    .some(key => sessionStorage.getItem(key).includes(`"change":"${expected}"`)), change)).toBe(true);
+}
+
 test.beforeEach(async ({ page }) => {
   await page.route('**/pin/42?embedded=1&board_id=9*', route => route.fulfill({ path: pinFixture }));
   await page.goto(boardUrl);
@@ -19,6 +24,29 @@ test('real browser Back closes and Forward reopens the overlay', async ({ page }
   await page.goForward({ waitUntil: 'commit' });
   await expect(page).toHaveURL(/\?pin=42$/);
   await expect(page.locator('#pinOverlay')).toBeVisible();
+});
+
+test('clean close paths restore focus outside the hidden overlay', async ({ page }) => {
+  const closePaths = [
+    async () => page.locator('[data-overlay-close]').click(),
+    async () => page.keyboard.press('Escape'),
+    async () => page.locator('#pinOverlay').click({ position: { x: 1, y: 1 } }),
+    async () => page.frameLocator('#pinOverlayFrame').locator('#close').click()
+  ];
+  for (const closeOverlay of closePaths) {
+    await page.goto(boardUrl);
+    await page.locator('#pin-42-link').click();
+    await closeOverlay();
+    await expect(page.locator('#pinOverlay')).toBeHidden();
+    await expect.poll(() => page.evaluate(() => document.activeElement.id)).toBe('pin-42-link');
+  }
+});
+
+test('clean real browser Back restores focus to the opener', async ({ page }) => {
+  await page.locator('#pin-42-link').click();
+  await page.goBack({ waitUntil: 'commit' });
+  await expect(page.locator('#pinOverlay')).toBeHidden();
+  await expect.poll(() => page.evaluate(() => document.activeElement.id)).toBe('pin-42-link');
 });
 
 test('leaves guarded pin-link interactions to the browser', async ({ page }) => {
@@ -82,11 +110,23 @@ test('refreshes once and focuses the returned replacement on iframe close', asyn
 test('dirty real browser Back refreshes once and focuses the returned replacement', async ({ page }) => {
   await page.locator('.pin-card a').click();
   await page.frameLocator('#pinOverlayFrame').locator('#updated').click();
+  await waitForDirtyChange(page, 'updated');
   await page.goBack({ waitUntil: 'commit' });
   await expect(page).toHaveURL(/pin-overlay-board\.html$/);
   await expect(page.locator('#pinOverlay')).toBeHidden();
   await expect.poll(() => page.evaluate(() => window.refreshCalls)).toEqual([{ pinId: 42, change: 'updated' }]);
   await expect.poll(() => page.evaluate(() => document.activeElement.id)).toBe('pin-42');
+});
+
+test('rejected persisted refresh toasts and focuses board fallback without reload', async ({ page }) => {
+  await page.goto(`${boardUrl}?refreshFails=1`);
+  await page.locator('#pin-42-link').click();
+  await page.frameLocator('#pinOverlayFrame').locator('#updated').click();
+  await waitForDirtyChange(page, 'updated');
+  await page.goBack({ waitUntil: 'commit' });
+  await expect(page.locator('#pinOverlay')).toBeHidden();
+  await expect.poll(() => page.evaluate(() => window.toastCalls)).toEqual(['Could not refresh pin']);
+  await expect.poll(() => page.evaluate(() => document.activeElement.id)).toBe('boardPageContent');
 });
 
 test('direct query close replaces only pin parameter', async ({ page }) => {
