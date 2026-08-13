@@ -5,7 +5,8 @@
   "scripts": {
     "build:css": "tailwindcss -i ./src/input.css -o ./static/css/output.css --minify",
     "watch:css": "tailwindcss -i ./src/input.css -o ./static/css/output.css --watch",
-    "test:pin-overlay": "playwright test tests/e2e/pin-overlay.spec.js"
+    "test:pin-overlay": "playwright test tests/e2e/pin-overlay.spec.js",
+    "test:extension": "playwright test tests/e2e/extension-picker.spec.js --project=chromium"
   },
   "dependencies": {
     "tailwindcss": "^3.4.0"

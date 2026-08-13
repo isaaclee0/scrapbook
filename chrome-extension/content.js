@@ -4,9 +4,12 @@
 
   let root = null;
   let selectRoot = null;
+  let dialogCleanup = null;
 
   function closeDialog() {
     if (root) {
+      if (dialogCleanup) dialogCleanup();
+      dialogCleanup = null;
       root.remove();
       root = null;
     }
@@ -55,15 +58,16 @@
           </div>
           <div class="sb-field">
             <label>Board</label>
-            <select class="sb-board"><option value="">Loading boards...</option></select>
-          </div>
-          <div class="sb-field sb-new-board-row" style="display:none;">
-            <input type="text" class="sb-new-board-name" placeholder="New board name">
-            <button type="button" class="sb-new-board-create">Create</button>
+            <div class="sb-board-picker"></div>
           </div>
           <div class="sb-field">
             <label>Section (optional)</label>
-            <select class="sb-section"><option value="">Select a section...</option></select>
+            <div class="sb-section-picker"></div>
+          </div>
+          <div class="sb-field sb-create-row" hidden>
+            <input type="text" class="sb-create-name">
+            <button type="button" class="sb-create-submit">Create</button>
+            <button type="button" class="sb-create-cancel">Cancel</button>
           </div>
           <div class="sb-field">
             <label>Notes</label>
@@ -101,19 +105,28 @@
     .sb-preview-status { font-size: 12px; color: #666; padding: 20px 0; }
     .sb-field { margin-bottom: 12px; }
     .sb-field label { display: block; margin-bottom: 4px; color: #333; font-size: 12px; font-weight: 600; }
-    .sb-field input, .sb-field select, .sb-field textarea {
+    .sb-field input, .sb-field textarea {
       width: 100%; padding: 10px; border: 2px solid #e1e5e9; border-radius: 8px;
       font-size: 13px; box-sizing: border-box; font-family: inherit;
     }
-    .sb-field input:focus, .sb-field select:focus, .sb-field textarea:focus {
+    .sb-field input:focus, .sb-field textarea:focus {
       outline: none; border-color: #3b82f6; box-shadow: 0 0 0 3px rgba(59,130,246,0.1);
     }
     .sb-field textarea { min-height: 60px; resize: vertical; }
-    .sb-new-board-row { display: flex; gap: 8px; }
-    .sb-new-board-row input { flex: 1; }
-    .sb-new-board-row button {
+    .sb-combobox { position: relative; }
+    .sb-combobox-input { width: 100%; padding: 10px; border: 2px solid #e1e5e9; border-radius: 8px; font: inherit; font-size: 13px; box-sizing: border-box; }
+    .sb-combobox-input:focus { outline: none; border-color: #3b82f6; box-shadow: 0 0 0 3px rgba(59,130,246,0.1); }
+    .sb-listbox { position: absolute; z-index: 1; width: 100%; max-height: 180px; overflow-y: auto; margin-top: 4px; padding: 4px; box-sizing: border-box; background: white; border: 1px solid #d7dce1; border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,0.15); }
+    .sb-option { width: 100%; padding: 8px 10px; text-align: left; border: 0; border-radius: 5px; background: transparent; color: #222; font: inherit; font-size: 13px; cursor: pointer; }
+    .sb-option:hover, .sb-option.sb-option-active { background: #eaf4fb; }
+    .sb-option-create { color: #2472a4; font-weight: 600; }
+    .sb-listbox-empty { padding: 8px 10px; color: #666; font-size: 13px; }
+    .sb-create-row { display: flex; gap: 8px; align-items: center; }
+    .sb-create-row input { flex: 1; }
+    .sb-create-row button {
       padding: 8px 12px; border-radius: 6px; border: none; background: #3b82f6; color: white; cursor: pointer; font-size: 13px;
     }
+    .sb-create-cancel { background: #f5f5f5 !important; border: 1px solid #ddd !important; color: #333 !important; }
     .sb-status { font-size: 12px; min-height: 16px; margin-top: 4px; }
     .sb-status-error { color: #e74c3c; }
     .sb-status-success { color: #16a34a; }
@@ -168,6 +181,145 @@
     .rs-cancel { background: #f5f5f5; border: 1px solid #ddd; color: #333; }
   `;
 
+  function createCombobox({ root: pickerRoot, kind, placeholder, createLabel, onSelect, onCreate }) {
+    const input = document.createElement('input');
+    const listbox = document.createElement('div');
+    const listboxId = `sb-${kind}-listbox`;
+    let items = [];
+    let activeIndex = -1;
+    let open = false;
+    let selectedId = null;
+    let disabled = false;
+
+    input.type = 'text';
+    input.className = `sb-combobox-input sb-${kind}-input`;
+    input.placeholder = placeholder;
+    input.setAttribute('role', 'combobox');
+    input.setAttribute('aria-autocomplete', 'list');
+    input.setAttribute('aria-expanded', 'false');
+    input.setAttribute('aria-controls', listboxId);
+    listbox.id = listboxId;
+    listbox.className = 'sb-listbox';
+    listbox.setAttribute('role', 'listbox');
+    listbox.hidden = true;
+    pickerRoot.append(input, listbox);
+
+    const sortedItems = (nextItems) => [...(nextItems || [])]
+      .map((item) => ({ id: String(item.id), name: String(item.name) }))
+      .sort((left, right) => left.name.localeCompare(right.name, undefined, { sensitivity: 'base' }));
+
+    function visibleItems() {
+      const query = input.value.trim().toLocaleLowerCase();
+      return items.filter((item) => item.name.toLocaleLowerCase().includes(query));
+    }
+
+    function options() {
+      return [{ id: '__create__', name: createLabel, create: true }, ...visibleItems()];
+    }
+
+    function render() {
+      const choices = options();
+      listbox.innerHTML = '';
+      choices.forEach((choice, index) => {
+        const option = document.createElement('button');
+        option.type = 'button';
+        option.id = `${listboxId}-${index}`;
+        option.className = `sb-option sb-${kind}-option${choice.create ? ' sb-option-create' : ''}${index === activeIndex ? ' sb-option-active' : ''}`;
+        option.setAttribute('role', 'option');
+        option.setAttribute('aria-selected', String(choice.id === selectedId));
+        option.textContent = choice.name;
+        option.addEventListener('mousedown', (event) => event.preventDefault());
+        option.addEventListener('click', () => choose(choice));
+        listbox.appendChild(option);
+      });
+      if (choices.length === 1 && !choices[0].create) {
+        listbox.innerHTML = '<div class="sb-listbox-empty">No matches</div>';
+      }
+      input.setAttribute('aria-activedescendant', activeIndex >= 0 ? `${listboxId}-${activeIndex}` : '');
+    }
+
+    function setOpen(nextOpen) {
+      const wasOpen = open;
+      open = Boolean(nextOpen && !disabled);
+      listbox.hidden = !open;
+      input.setAttribute('aria-expanded', String(open));
+      if (open) {
+        if (!wasOpen) activeIndex = -1;
+        render();
+      }
+    }
+
+    function choose(choice) {
+      if (choice.create) {
+        setOpen(false);
+        onCreate();
+        return;
+      }
+      selectedId = choice.id;
+      input.value = choice.name;
+      setOpen(false);
+      onSelect(choice);
+    }
+
+    input.addEventListener('focus', () => setOpen(true));
+    input.addEventListener('click', () => setOpen(true));
+    input.addEventListener('input', () => {
+      if (selectedId !== null) {
+        selectedId = null;
+        onSelect(null);
+      }
+      setOpen(true);
+    });
+    input.addEventListener('keydown', (event) => {
+      const choices = options();
+      if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
+        event.preventDefault();
+        setOpen(true);
+        activeIndex = event.key === 'ArrowDown'
+          ? Math.min(activeIndex + 1, choices.length - 1)
+          : Math.max(activeIndex - 1, 0);
+        render();
+      } else if (event.key === 'Enter' && open && activeIndex >= 0) {
+        event.preventDefault();
+        choose(choices[activeIndex]);
+      } else if (event.key === 'Escape') {
+        event.preventDefault();
+        setOpen(false);
+      }
+    });
+    const onOutsidePointerDown = (event) => {
+      if (!event.composedPath().includes(pickerRoot)) setOpen(false);
+    };
+    document.addEventListener('pointerdown', onOutsidePointerDown, true);
+
+    return {
+      input,
+      setItems(nextItems) { items = sortedItems(nextItems); render(); },
+      setDisabled(nextDisabled, nextPlaceholder) {
+        disabled = Boolean(nextDisabled);
+        input.disabled = disabled;
+        if (nextPlaceholder) input.placeholder = nextPlaceholder;
+        if (disabled) setOpen(false);
+      },
+      setLoading(label) { this.setDisabled(true, label); },
+      selectById(id) {
+        const item = items.find((candidate) => candidate.id === String(id));
+        if (item) {
+          selectedId = item.id;
+          input.value = item.name;
+          render();
+        }
+      },
+      clear() {
+        selectedId = null;
+        input.value = '';
+        render();
+      },
+      focus() { input.focus(); },
+      destroy() { document.removeEventListener('pointerdown', onOutsidePointerDown, true); },
+    };
+  }
+
   function openDialog(imageSource, pageUrl, pageTitle) {
     closeDialog();
     closeSelection();
@@ -195,11 +347,12 @@
       preview: shadow.querySelector('.sb-preview'),
       previewStatus: shadow.querySelector('.sb-preview-status'),
       title: shadow.querySelector('.sb-title'),
-      board: shadow.querySelector('.sb-board'),
-      newBoardRow: shadow.querySelector('.sb-new-board-row'),
-      newBoardName: shadow.querySelector('.sb-new-board-name'),
-      newBoardCreate: shadow.querySelector('.sb-new-board-create'),
-      section: shadow.querySelector('.sb-section'),
+      boardPickerRoot: shadow.querySelector('.sb-board-picker'),
+      sectionPickerRoot: shadow.querySelector('.sb-section-picker'),
+      createRow: shadow.querySelector('.sb-create-row'),
+      createName: shadow.querySelector('.sb-create-name'),
+      createSubmit: shadow.querySelector('.sb-create-submit'),
+      createCancel: shadow.querySelector('.sb-create-cancel'),
       notes: shadow.querySelector('.sb-notes'),
       status: shadow.querySelector('.sb-status'),
     };
@@ -252,73 +405,130 @@
       els.status.className = 'sb-status sb-status-error';
     }
 
+    let boardItems = [];
+    let sectionItems = [];
+    let creatingKind = null;
+    let creationPicker = null;
+    let boardPicker;
+    let sectionPicker;
+
+    function hideCreateRow() {
+      els.createRow.hidden = true;
+      creatingKind = null;
+      els.createName.value = '';
+    }
+
+    function showCreateRow(kind) {
+      creatingKind = kind;
+      creationPicker = kind === 'board' ? boardPicker : sectionPicker;
+      els.createName.placeholder = `New ${kind} name`;
+      els.createName.value = '';
+      els.createRow.hidden = false;
+      els.createName.focus();
+    }
+
+    async function selectBoard(item) {
+      state.boardId = item ? item.id : null;
+      state.sectionId = null;
+      sectionItems = [];
+      sectionPicker.clear();
+      updateSaveEnabled();
+      if (!item) {
+        sectionPicker.setItems([]);
+        sectionPicker.setDisabled(true, 'Select a board first');
+        return;
+      }
+      const requestedBoardId = item.id;
+      sectionPicker.setItems([]);
+      sectionPicker.setLoading('Loading sections...');
+      const res = await sendToBackground({ type: 'LIST_SECTIONS', boardId: requestedBoardId });
+      if (state.boardId !== requestedBoardId) return;
+      sectionPicker.setDisabled(false, 'Select or search sections...');
+      if (!res.ok) {
+        setError(res);
+        return;
+      }
+      sectionItems = res.data || [];
+      sectionPicker.setItems(sectionItems);
+    }
+
+    boardPicker = createCombobox({
+      root: els.boardPickerRoot,
+      kind: 'board',
+      placeholder: 'Select or search boards...',
+      createLabel: '+ Create new board',
+      onSelect: selectBoard,
+      onCreate: () => showCreateRow('board'),
+    });
+    sectionPicker = createCombobox({
+      root: els.sectionPickerRoot,
+      kind: 'section',
+      placeholder: 'Select or search sections...',
+      createLabel: '+ Create new section',
+      onSelect: (item) => { state.sectionId = item ? item.id : null; },
+      onCreate: () => showCreateRow('section'),
+    });
+    sectionPicker.setDisabled(true, 'Select a board first');
+    dialogCleanup = () => {
+      boardPicker.destroy();
+      sectionPicker.destroy();
+    };
+
     async function loadBoards() {
-      els.board.innerHTML = '<option value="">Loading boards...</option>';
+      boardPicker.setLoading('Loading boards...');
       const res = await sendToBackground({ type: 'LIST_BOARDS' });
       if (!res.ok) {
         setError(res);
-        els.board.innerHTML = '<option value="">Select a board...</option>';
+        boardPicker.setDisabled(false, 'Select or search boards...');
         return;
       }
-      els.board.innerHTML = '';
-      els.board.appendChild(new Option('Select a board...', ''));
-      els.board.appendChild(new Option('+ New board...', '__new__'));
-      (res.data || []).forEach((b) => els.board.appendChild(new Option(b.name, String(b.id))));
+      boardItems = res.data || [];
+      boardPicker.setItems(boardItems);
+      boardPicker.setDisabled(false, 'Select or search boards...');
     }
 
-    els.board.addEventListener('change', async () => {
-      if (els.board.value === '__new__') {
-        els.newBoardRow.style.display = 'flex';
-        els.board.value = '';
-        state.boardId = null;
-        els.section.innerHTML = '<option value="">Select a section...</option>';
-        updateSaveEnabled();
-        return;
-      }
-      state.boardId = els.board.value || null;
-      state.sectionId = null;
-      updateSaveEnabled();
-      if (!state.boardId) {
-        els.section.innerHTML = '<option value="">Select a section...</option>';
-        return;
-      }
-      els.section.innerHTML = '<option value="">Loading sections...</option>';
-      const requestedBoardId = state.boardId;
-      const res = await sendToBackground({ type: 'LIST_SECTIONS', boardId: requestedBoardId });
-      if (state.boardId !== requestedBoardId) return; // board changed again while this was in flight
-      if (!res.ok) {
-        setError(res);
-        els.section.innerHTML = '<option value="">Select a section...</option>';
-        return;
-      }
-      els.section.innerHTML = '';
-      els.section.appendChild(new Option('Select a section...', ''));
-      (res.data || []).forEach((s) => els.section.appendChild(new Option(s.name, String(s.id))));
+    els.createCancel.addEventListener('click', () => {
+      hideCreateRow();
+      creationPicker.focus();
     });
-
-    els.section.addEventListener('change', () => {
-      state.sectionId = els.section.value || null;
+    els.createName.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        hideCreateRow();
+        creationPicker.focus();
+      } else if (event.key === 'Enter') {
+        event.preventDefault();
+        els.createSubmit.click();
+      }
     });
-
-    els.newBoardCreate.addEventListener('click', async () => {
-      const name = els.newBoardName.value.trim();
-      if (!name) return;
-      els.newBoardCreate.disabled = true;
-      const res = await sendToBackground({ type: 'CREATE_BOARD', name });
-      els.newBoardCreate.disabled = false;
+    els.createSubmit.addEventListener('click', async () => {
+      const name = els.createName.value.trim();
+      if (!name || !creatingKind) return;
+      els.createSubmit.disabled = true;
+      const isBoard = creatingKind === 'board';
+      const res = await sendToBackground(isBoard
+        ? { type: 'CREATE_BOARD', name }
+        : { type: 'CREATE_SECTION', boardId: state.boardId, name });
+      els.createSubmit.disabled = false;
       if (!res.ok) {
         setError(res);
         return;
       }
-      const board = res.data;
-      const option = new Option(board.name, String(board.board_id), true, true);
-      els.board.insertBefore(option, els.board.children[2] || null);
-      els.board.value = String(board.board_id);
-      state.boardId = String(board.board_id);
-      els.newBoardRow.style.display = 'none';
-      els.newBoardName.value = '';
-      els.section.innerHTML = '<option value="">Select a section...</option>';
-      updateSaveEnabled();
+      if (isBoard) {
+        const board = { id: res.data.board_id, name: res.data.name };
+        boardItems = [...boardItems, board];
+        boardPicker.setItems(boardItems);
+        boardPicker.selectById(board.id);
+        hideCreateRow();
+        await selectBoard({ id: String(board.id), name: board.name });
+      } else {
+        const section = res.data.section;
+        sectionItems = [...sectionItems, section];
+        sectionPicker.setItems(sectionItems);
+        sectionPicker.selectById(section.id);
+        state.sectionId = String(section.id);
+        hideCreateRow();
+      }
     });
 
     els.save.addEventListener('click', async () => {
@@ -491,7 +701,7 @@
 
   chrome.runtime.onMessage.addListener((message) => {
     if (message.type === 'OPEN_DIALOG') {
-      openDialog({ srcUrl: message.srcUrl }, message.pageUrl, message.pageTitle);
+      openDialog({ srcUrl: message.srcUrl, dataUrl: message.dataUrl }, message.pageUrl, message.pageTitle);
     } else if (message.type === 'START_REGION_CAPTURE') {
       startRegionSelection(message.pageUrl, message.pageTitle);
     }
