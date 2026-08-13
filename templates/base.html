@@ -60,6 +60,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <script src="{{ url_for('static', filename='js/extension_handoff.js') }}"></script>
     <script>
         // Must live in <head> so img onerror can call it before body scripts run.
         // Cached image failed → try original URL → then placeholder.
@@ -1566,6 +1567,20 @@
             setupAddContentModal();
         }
 
+        function prefillExtensionHandoff() {
+            const handoff = window.ScrapplExtensionHandoff && window.ScrapplExtensionHandoff.take();
+            if (!handoff) return;
+
+            showAddContentDialog();
+            document.getElementById('content-input').value = handoff.sourceUrl;
+            document.getElementById('title-input').value = handoff.title;
+            window.setAddContentImage(handoff.imageDataUrl);
+            window.updateSaveButton();
+        }
+
+        window.addEventListener('scrappl:extension-handoff', prefillExtensionHandoff);
+        document.addEventListener('DOMContentLoaded', prefillExtensionHandoff);
+
         function setupCustomDropdowns() {
             const currentBoardAdd = document.getElementById('current-board-add');
             const boardMenuAdd = document.getElementById('board-menu-add');
@@ -1760,6 +1775,12 @@
                 detailsSection.style.display = 'block';
                 updateSaveButton();
             }
+
+            window.setAddContentImage = function (dataUrl) {
+                currentImageUrl = dataUrl;
+                contentType = 'image';
+                showImagePreview(dataUrl);
+            };
 
             function showTextContent(text) {
                 textPreviewContent.textContent = text;
