@@ -6,6 +6,7 @@
   <style>
     body { margin: 0; font-family: sans-serif; }
     .spacer { height: 1400px; }
+    .section-circle.active { font-weight: 700; }
     #pinOverlay[hidden] { display: none; }
     #pinOverlay { position: fixed; inset: 0; background: rgba(0, 0, 0, .3); }
     #pinOverlayPanel { margin: 5vh auto; width: min(90vw, 900px); height: 80vh; background: white; }
@@ -17,8 +18,16 @@
 </head>
 <body>
   <main id="boardPageContent" tabindex="-1">
+    <nav aria-label="Board sections">
+      <button type="button" class="section-circle active" data-section-id="all">All</button>
+      <button type="button" class="section-circle" data-section-id="7">Section 7</button>
+    </nav>
+    <div id="pinsGrid">
+      <article id="pin-42" class="pin-card" data-pin-id="42" data-section-id="7">
+        <a id="pin-42-link" href="/pin/42">Open pin 42</a>
+      </article>
+    </div>
     <div class="spacer"></div>
-    <article id="pin-42" class="pin-card"><a id="pin-42-link" href="/pin/42">Open pin 42</a></article>
   </main>
   <section id="pinOverlay" hidden aria-hidden="true" aria-modal="true" role="dialog" data-state="idle">
     <div id="pinOverlayPanel">
@@ -32,7 +41,60 @@
   <script src="../../../static/js/pin-overlay.js"></script>
   <script>
     window.refreshCalls = [];
+    window.layoutCalls = [];
     window.toastCalls = [];
+    window.activeSectionFilter = 'all';
+    window.scrapbookMasonry = {
+      layout: () => window.layoutCalls.push('layout')
+    };
+    document.querySelectorAll('.section-circle').forEach(circle => {
+      circle.addEventListener('click', () => {
+        document.querySelectorAll('.section-circle').forEach(item => item.classList.remove('active'));
+        circle.classList.add('active');
+        window.activeSectionFilter = circle.dataset.sectionId;
+      });
+    });
+    function createBoardPinCard(pin) {
+      const card = document.createElement('article');
+      card.id = `pin-${pin.id}`;
+      card.className = 'pin-card';
+      card.dataset.pinId = String(pin.id);
+      card.dataset.sectionId = pin.section_id == null ? '' : String(pin.section_id);
+      card.tabIndex = -1;
+      card.textContent = pin.title;
+      return card;
+    }
+    function applyCurrentSectionFilter() {
+      document.querySelectorAll('.pin-card').forEach(card => {
+        card.style.display = window.activeSectionFilter === 'all' ||
+          card.dataset.sectionId === window.activeSectionFilter ? '' : 'none';
+      });
+      window.scrapbookMasonry.layout();
+    }
+    async function refreshBoardPinCard(pinId, change) {
+      const existingCard = document.getElementById(`pin-${pinId}`);
+      if (change === 'deleted') {
+        if (existingCard) {
+          existingCard.remove();
+          applyCurrentSectionFilter();
+        }
+        return null;
+      }
+      const response = await fetch(`/api/pin/${pinId}/card`);
+      if (!response.ok) throw new Error('fixture card refresh failed');
+      const data = await response.json();
+      const currentCard = document.getElementById(`pin-${pinId}`);
+      if (!currentCard) return null;
+      if (Number(data.pin.board_id) !== 9) {
+        currentCard.remove();
+        applyCurrentSectionFilter();
+        return null;
+      }
+      const replacement = createBoardPinCard(data.pin);
+      currentCard.replaceWith(replacement);
+      applyCurrentSectionFilter();
+      return replacement;
+    }
     window.overlayController = window.createPinOverlayController({
       boardId: 9,
       root: document.getElementById('pinOverlay'),
@@ -42,13 +104,7 @@
         if (new URL(window.location.href).searchParams.has('refreshFails')) {
           throw new Error('fixture refresh failure');
         }
-        const replacement = document.createElement('article');
-        replacement.id = 'pin-' + pinId;
-        replacement.className = 'pin-card';
-        replacement.tabIndex = -1;
-        replacement.textContent = 'Refreshed pin ' + pinId;
-        document.getElementById('pin-' + pinId).replaceWith(replacement);
-        return replacement;
+        return refreshBoardPinCard(pinId, change);
       },
       showToast: message => window.toastCalls.push(message),
       readyTimeoutMs: 250

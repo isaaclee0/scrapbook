@@ -8,8 +8,43 @@ async function waitForDirtyChange(page, change) {
     .some(key => sessionStorage.getItem(key).includes(`"change":"${expected}"`)), change)).toBe(true);
 }
 
+async function preparePreservedBoardState(page) {
+  await page.locator('.section-circle[data-section-id="7"]').click();
+  await page.evaluate(() => {
+    const grid = document.getElementById('pinsGrid');
+    for (const id of [43, 44]) {
+      const card = document.createElement('article');
+      card.id = `pin-${id}`;
+      card.className = 'pin-card';
+      card.dataset.pinId = String(id);
+      card.dataset.sectionId = '7';
+      card.textContent = `Lazy-loaded pin ${id}`;
+      grid.appendChild(card);
+    }
+    window.scrollTo(0, 640);
+  });
+  await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(640);
+  return page.evaluate(() => ({
+    scrollY: window.scrollY,
+    activeSection: document.querySelector('.section-circle.active').dataset.sectionId,
+    cardCount: document.querySelectorAll('.pin-card').length
+  }));
+}
+
 test.beforeEach(async ({ page }) => {
   await page.route('**/pin/42?embedded=1&board_id=9*', route => route.fulfill({ path: pinFixture }));
+  await page.route('**/api/pin/42/card', route => route.fulfill({
+    contentType: 'application/json',
+    body: JSON.stringify({
+      success: true,
+      pin: {
+        id: 42,
+        board_id: 9,
+        section_id: 7,
+        title: 'Refreshed pin 42'
+      }
+    })
+  }));
   await page.goto(boardUrl);
 });
 
@@ -47,6 +82,72 @@ test('clean real browser Back restores focus to the opener', async ({ page }) =>
   await page.goBack({ waitUntil: 'commit' });
   await expect(page.locator('#pinOverlay')).toBeHidden();
   await expect.poll(() => page.evaluate(() => document.activeElement.id)).toBe('pin-42-link');
+});
+
+test('unchanged close preserves exact scroll, section, and lazy-loaded cards without layout', async ({ page }) => {
+  const before = await preparePreservedBoardState(page);
+  await page.locator('#pin-42-link').evaluate(anchor => window.overlayController.open(42, anchor));
+  await expect(page.locator('#pinOverlay')).toBeVisible();
+  await page.locator('[data-overlay-close]').click();
+  await expect(page.locator('#pinOverlay')).toBeHidden();
+
+  await expect.poll(() => page.evaluate(() => ({
+    scrollY: window.scrollY,
+    activeSection: document.querySelector('.section-circle.active').dataset.sectionId,
+    cardCount: document.querySelectorAll('.pin-card').length,
+    refreshCalls: window.refreshCalls,
+    layoutCalls: window.layoutCalls
+  }))).toEqual({ ...before, refreshCalls: [], layoutCalls: [] });
+});
+
+test('changed close refreshes only its card and preserves board state', async ({ page }) => {
+  let cardRequests = 0;
+  await page.route('**/api/pin/42/card', async route => {
+    cardRequests += 1;
+    await route.fulfill({
+      contentType: 'application/json',
+      body: JSON.stringify({
+        success: true,
+        pin: {
+          id: 42,
+          board_id: 9,
+          section_id: 7,
+          section_name: 'Section 7',
+          board_name: 'Fixture board',
+          title: 'Updated pin 42',
+          image_url: '/static/images/default_pin.png',
+          link: null,
+          link_status: null,
+          cached_filename: null,
+          cached_width: null,
+          cached_height: null,
+          dominant_color_1: null,
+          dominant_color_2: null
+        }
+      })
+    });
+  });
+  const before = await preparePreservedBoardState(page);
+  await page.locator('#pin-42-link').evaluate(anchor => window.overlayController.open(42, anchor));
+  const frame = page.frameLocator('#pinOverlayFrame');
+  await frame.locator('#updated').click();
+  await frame.locator('#close').click();
+  await expect(page.locator('#pinOverlay')).toBeHidden();
+
+  await expect.poll(() => cardRequests).toBe(1);
+  await expect.poll(() => page.evaluate(() => ({
+    scrollY: window.scrollY,
+    activeSection: document.querySelector('.section-circle.active').dataset.sectionId,
+    cardCount: document.querySelectorAll('.pin-card').length,
+    refreshCalls: window.refreshCalls,
+    layoutCalls: window.layoutCalls,
+    cardText: document.getElementById('pin-42').textContent.trim()
+  }))).toEqual({
+    ...before,
+    refreshCalls: [{ pinId: 42, change: 'updated' }],
+    layoutCalls: ['layout'],
+    cardText: 'Updated pin 42'
+  });
 });
 
 test('leaves guarded pin-link interactions to the browser', async ({ page }) => {
@@ -97,7 +198,9 @@ test('rejects forged messages even when they use the iframe window source', asyn
 });
 
 test('refreshes once and focuses the returned replacement on iframe close', async ({ page }) => {
-  await page.locator('.pin-card a').click();
+  await page.evaluate(() => window.scrollTo(0, 640));
+  await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(640);
+  await page.locator('#pin-42-link').evaluate(anchor => window.overlayController.open(42, anchor));
   const frame = page.frameLocator('#pinOverlayFrame');
   await frame.locator('#updated').click();
   await frame.locator('#moved').click();
@@ -105,6 +208,7 @@ test('refreshes once and focuses the returned replacement on iframe close', asyn
   await expect(page.locator('#pinOverlay')).toBeHidden();
   await expect.poll(() => page.evaluate(() => window.refreshCalls)).toEqual([{ pinId: 42, change: 'moved' }]);
   await expect.poll(() => page.evaluate(() => document.activeElement.id)).toBe('pin-42');
+  await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(640);
 });
 
 test('dirty real browser Back refreshes once and focuses the returned replacement', async ({ page }) => {

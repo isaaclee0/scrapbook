@@ -626,6 +626,111 @@
     #pinsGrid.display-mode .image-container > span {
         display: none;
     }
+
+    #pinOverlay[hidden] { display: none; }
+
+    #pinOverlay {
+        position: fixed;
+        inset: 0;
+        z-index: 10000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.75);
+    }
+
+    #pinOverlayPanel {
+        position: relative;
+        width: 90vw;
+        max-width: 1200px;
+        height: 90vh;
+        overflow: hidden;
+        border-radius: 16px;
+        background: #fff;
+        box-shadow: 0 24px 64px rgba(0, 0, 0, 0.35);
+    }
+
+    #pinOverlayFrame {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: 0;
+        background: #fff;
+    }
+
+    .pin-overlay-close {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        z-index: 2;
+        width: 40px;
+        height: 40px;
+        border: 0;
+        border-radius: 9999px;
+        background: rgba(255, 255, 255, 0.92);
+        color: #111827;
+        font-size: 28px;
+        line-height: 1;
+        cursor: pointer;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+    }
+
+    .pin-overlay-status {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        background: #fff;
+        color: #374151;
+        text-align: center;
+    }
+
+    #pinOverlay[data-state="loading"] [data-overlay-state="loading"],
+    #pinOverlay[data-state="error"] [data-overlay-state="error"] {
+        display: flex;
+    }
+
+    .pin-overlay-actions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    .pin-overlay-action {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 40px;
+        padding: 8px 16px;
+        border: 1px solid #d1d5db;
+        border-radius: 8px;
+        background: #fff;
+        color: #111827;
+        font-weight: 600;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .pin-overlay-action-primary {
+        border-color: #111827;
+        background: #111827;
+        color: #fff;
+    }
+
+    @media (max-width: 768px) {
+        #pinOverlayPanel {
+            width: 100vw;
+            max-width: none;
+            height: 100vh;
+            max-height: none;
+            border-radius: 0;
+        }
+    }
 </style>
 <script>
     // Reports dimensions of externally-loaded images to the server so they
@@ -650,6 +755,7 @@
         }).catch(() => {});
     }
 </script>
+<div id="boardPageContent" tabindex="-1">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <div class="mb-8">
         <div class="mb-6 flex items-center justify-between">
@@ -944,8 +1050,32 @@
     </div>
 </div>
 
+</div>
+
+<section id="pinOverlay" hidden aria-hidden="true" aria-modal="true" role="dialog"
+    aria-labelledby="pinOverlayTitle" data-state="idle">
+    <div id="pinOverlayPanel">
+        <h2 id="pinOverlayTitle" class="sr-only">Pin details</h2>
+        <button type="button" class="pin-overlay-close" data-overlay-close aria-label="Close pin details">&times;</button>
+        <iframe id="pinOverlayFrame" title="Pin details" allow="fullscreen"></iframe>
+        <div class="pin-overlay-status" data-overlay-state="loading" role="status">
+            <p>Loading pin details…</p>
+        </div>
+        <div class="pin-overlay-status" data-overlay-state="error" role="alert">
+            <div>
+                <p class="text-lg font-semibold">Pin details could not be loaded.</p>
+                <div class="pin-overlay-actions">
+                    <button type="button" class="pin-overlay-action pin-overlay-action-primary" data-overlay-retry>Retry</button>
+                    <a class="pin-overlay-action" data-overlay-open-page>Open as Page</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
+
+<script src="{{ url_for('static', filename='js/pin-overlay.js') }}"></script>
 <script>
     // Development mode check
     const IS_DEVELOPMENT = {% if is_development %}true{% else %} false{% endif %};
@@ -979,6 +1109,7 @@
         healthCheckedPins: 0,
         uncachedPins: [],
         abortController: null,  // For cancelling fetch requests
+        eventSource: null,      // Active board progress stream
         pendingTimeouts: []     // Track all pending timeouts for cleanup
     };
 
@@ -999,6 +1130,11 @@
     // Cleanup function to stop all processing when navigating away
     function stopAllProcessing() {
         console.log('🛑 Stopping all background processing...');
+
+        if (processingState.eventSource) {
+            processingState.eventSource.close();
+            processingState.eventSource = null;
+        }
 
         // Abort any pending fetch requests
         if (processingState.abortController) {
@@ -1225,20 +1361,23 @@
             startAutomaticProcessing();
         }, 2500); // Delay longer to ensure highlight completes first
 
-        // Save scroll position when clicking on a pin (still set this up)
-        saveScrollOnPinClick();
     } else {
         // Normal flow - no highlight
-        restoreScrollPosition();
-
-        // Save scroll position when clicking on a pin
-        saveScrollOnPinClick();
-
         // Start automatic processing after board loads
         setTimeout(() => {
             startAutomaticProcessing();
         }, 1000);
     }
+
+    window.pinOverlayController = window.createPinOverlayController({
+        boardId: Number(getBoardId()),
+        root: document.getElementById('pinOverlay'),
+        boardContent: document.getElementById('boardPageContent'),
+        refreshPinCard: refreshBoardPinCard,
+        showToast: window.showToast,
+        readyTimeoutMs: 8000
+    });
+    window.pinOverlayController.syncFromLocation();
 });
 
     function getPinDisplayMode() {
@@ -1341,9 +1480,6 @@
                                     }
 
                                     currentOffset += data.pins.length;
-
-                                    // Reattach scroll handlers to new pin links
-                                    saveScrollOnPinClick();
                                 }
                             }
                         })
@@ -1427,6 +1563,44 @@
         return div;
     }
 
+    async function refreshBoardPinCard(pinId, change) {
+        const cardId = `pin-${pinId}`;
+        const existingCard = document.getElementById(cardId);
+
+        if (change === 'deleted') {
+            if (existingCard) {
+                existingCard.remove();
+                applyCurrentSectionFilter();
+            }
+            return null;
+        }
+
+        try {
+            const response = await fetch(`/api/pin/${pinId}/card`);
+            if (!response.ok) throw new Error(`Card refresh failed with status ${response.status}`);
+            const data = await response.json();
+            if (!data.success || !data.pin) throw new Error('Card refresh returned invalid data');
+
+            const currentCard = document.getElementById(cardId);
+            if (!currentCard) return null;
+
+            if (Number(data.pin.board_id) !== Number(getBoardId())) {
+                currentCard.remove();
+                applyCurrentSectionFilter();
+                return null;
+            }
+
+            const replacement = createBoardPinCard(data.pin);
+            currentCard.replaceWith(replacement);
+            applyCurrentSectionFilter();
+            return replacement;
+        } catch (error) {
+            devError('Error refreshing pin card:', error);
+            window.showToast('Pin was saved, but its board card could not be refreshed');
+            return existingCard;
+        }
+    }
+
     // Single source of truth for the container aspect-ratio. Matches the
     // Jinja capping rules in board.html (height clamped between width/2 and
     // width*2) so server-side and JS-rendered pins lay out identically.
@@ -1448,35 +1622,6 @@
         const div = document.createElement('div');
         div.textContent = text;
         return div.innerHTML;
-    }
-
-    // Save scroll position when clicking on pins
-    function saveScrollOnPinClick() {
-        const pinLinks = document.querySelectorAll('.pin-card a');
-        pinLinks.forEach(link => {
-            link.addEventListener('click', function () {
-                const boardId = getBoardId();
-                if (boardId) {
-                    sessionStorage.setItem(`board_${boardId}_scroll`, window.scrollY);
-                }
-            });
-        });
-    }
-
-    // Restore scroll position when returning to board
-    function restoreScrollPosition() {
-        const boardId = getBoardId();
-        if (boardId) {
-            const savedScroll = sessionStorage.getItem(`board_${boardId}_scroll`);
-            if (savedScroll !== null) {
-                // Small delay to ensure content is loaded
-                setTimeout(() => {
-                    window.scrollTo(0, parseInt(savedScroll));
-                    // Clear the saved position after restoring
-                    sessionStorage.removeItem(`board_${boardId}_scroll`);
-                }, 100);
-            }
-        }
     }
 
     // Debug function accessible from browser console
