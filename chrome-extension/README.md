@@ -1,22 +1,16 @@
 # Send to Scrappl
 
-Chrome extension: right-click any image on any page → "Send to Scrappl" →
-save it to a board in your self-hosted [Scrappl](https://github.com/) instance
-without leaving the page.
+Chrome extension: right-click any image or capture a region → "Send to Scrappl" →
+open Scrappl's native Add Pin dialog in a new tab with the image and page details ready.
 
 ## Setup
 
-1. Generate a personal access token in your Scrappl instance under
-   **Settings → API Tokens**.
-2. Load this extension unpacked: `chrome://extensions` → enable
+1. Load this extension unpacked: `chrome://extensions` → enable
    **Developer mode** → **Load unpacked** → select this directory.
-3. Click the extension's **Details → Extension options**, enter your
-   Scrappl instance's base URL and the token, and save.
-4. Right-click any image on any page → **Send to Scrappl**.
+2. Sign in to `https://scrappl.com` in Chrome.
+3. Right-click any image on any page → **Send to Scrappl**.
 
-In the save dialog, click a board or section field to see its alphabetized
-list, then type to filter it. The first entry in each list lets you create a
-board or section without leaving the dialog. A section can be created after a
-board is selected (including a board created in that same dialog).
+The extension opens Scrappl immediately. Use its Extension options only to set
+a local or staging Scrappl URL for development; no API token is needed.
 
 Not published to the Chrome Web Store — personal use only.
