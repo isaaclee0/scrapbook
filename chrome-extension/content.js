@@ -122,6 +122,7 @@
     .sb-option-create { color: #2472a4; font-weight: 600; }
     .sb-listbox-empty { padding: 8px 10px; color: #666; font-size: 13px; }
     .sb-create-row { display: flex; gap: 8px; align-items: center; }
+    .sb-create-row[hidden] { display: none; }
     .sb-create-row input { flex: 1; }
     .sb-create-row button {
       padding: 8px 12px; border-radius: 6px; border: none; background: #3b82f6; color: white; cursor: pointer; font-size: 13px;

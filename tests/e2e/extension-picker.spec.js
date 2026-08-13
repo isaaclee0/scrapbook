@@ -100,6 +100,7 @@ test('enables an alphabetized section picker only after selecting a board', asyn
   });
   const section = page.locator('.sb-section-input');
   await expect(section).toBeDisabled();
+  await expect(page.locator('.sb-create-row')).toBeHidden();
 
   await page.locator('.sb-board-input').click();
   await page.getByRole('option', { name: 'Alpha', exact: true }).click();
