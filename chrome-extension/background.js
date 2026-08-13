@@ -162,6 +162,11 @@ async function handleMessage(message) {
         method: 'POST',
         body: JSON.stringify({ name: message.name }),
       });
+    case 'CREATE_SECTION':
+      return apiFetch('/create-section', {
+        method: 'POST',
+        body: JSON.stringify({ board_id: message.boardId, name: message.name }),
+      });
     case 'ADD_PIN': {
       const { baseUrl } = await getConfig();
       const result = await apiFetch('/add-pin', {

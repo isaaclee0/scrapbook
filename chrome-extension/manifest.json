@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Send to Scrappl",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "Right-click any image and save it to your Scrappl instance.",
   "permissions": ["contextMenus", "storage", "scripting"],
   "host_permissions": ["<all_urls>"],
