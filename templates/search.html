@@ -498,7 +498,7 @@ let totalBoardCount = {{ total_board_count or 0 }};
 function loadMorePins() {
     if (isLoadingPins || !hasMorePins) return;
     
-    const query = new URLSearchParams(window.location.search).get('q') || '{{ query }}';
+    const query = new URLSearchParams(window.location.search).get('q') || {{ query|tojson }};
     const loadingIndicator = document.getElementById('searchLoadingIndicator');
     const pinsGrid = document.getElementById('pinsGrid');
     
@@ -541,7 +541,7 @@ function loadMorePins() {
 function loadMoreBoards() {
     if (isLoadingBoards || !hasMoreBoards) return;
     
-    const query = new URLSearchParams(window.location.search).get('q') || '{{ query }}';
+    const query = new URLSearchParams(window.location.search).get('q') || {{ query|tojson }};
     const boardsContainer = document.getElementById('boardsContainer');
     
     if (!boardsContainer) return;

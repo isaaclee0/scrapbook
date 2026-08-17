@@ -1569,7 +1569,7 @@ function deletePin(pinId) {
 function setAsBoardImage() {
     const pinId = {{ pin.id }};
     const boardId = {{ pin.board_id }};
-    const imageUrl = "{{ display_image_url }}";
+    const imageUrl = {{ display_image_url|tojson }};
     
     // Close the tools menu
     const toolsMenu = document.getElementById('toolsMenu');
@@ -1596,8 +1596,8 @@ function setAsBoardImage() {
 function setAsSectionImage() {
     const pinId = {{ pin.id }};
     const sectionId = {{ pin.section_id if pin.section_id else 'null' }};
-    const sectionName = "{{ pin.section_name if pin.section_name else '' }}";
-    const imageUrl = "{{ display_image_url }}";
+    const sectionName = {{ (pin.section_name if pin.section_name else '')|tojson }};
+    const imageUrl = {{ display_image_url|tojson }};
     
     if (!sectionId) {
         showToast('This pin is not in a section.');
@@ -1878,14 +1878,14 @@ function saveTitle() {
             } else {
                 showToast('Failed to update title');
                 // Revert to original title
-                titleElement.textContent = '{{ pin.title }}';
+                titleElement.textContent = {{ pin.title|tojson }};
             }
         })
         .catch(error => {
             console.error('Error:', error);
             showToast('Failed to update title');
             // Revert to original title
-            titleElement.textContent = '{{ pin.title }}';
+            titleElement.textContent = {{ pin.title|tojson }};
         });
     }
 }
@@ -1917,7 +1917,7 @@ function cancelUrlEdit() {
     const cancelButton = document.querySelector('.cancel-url-button');
     
     if (urlDisplay && urlEdit && statusIcon && saveButton && cancelButton) {
-        urlEdit.value = '{{ pin.link }}'; // Reset to original value
+        urlEdit.value = {{ pin.link|tojson }}; // Reset to original value
         urlDisplay.style.display = 'flex';
         urlEdit.style.display = 'none';
         statusIcon.style.display = 'flex';
@@ -2015,7 +2015,7 @@ document.addEventListener('click', function(e) {
 
 // Open image in fullscreen
 function openFullscreen() {
-    const imageUrl = "{{ display_image_url }}";
+    const imageUrl = {{ display_image_url|tojson }};
     
     // Create fullscreen overlay
     const overlay = document.createElement('div');

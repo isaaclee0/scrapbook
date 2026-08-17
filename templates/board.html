@@ -1156,7 +1156,7 @@
     function showRenameBoardModal() {
         document.getElementById('renameBoardModal').classList.add('active');
         const textarea = document.getElementById('newBoardName');
-        textarea.value = '{{ board.name }}';
+        textarea.value = {{ board.name|tojson }};
         textarea.focus();
         // Auto-resize textarea to fit content
         autoResizeTextarea(textarea);

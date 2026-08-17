@@ -1,3 +1,5 @@
+import json
+import re
 import unittest
 from unittest.mock import patch
 
@@ -113,6 +115,26 @@ class PinOverlayRouteTests(unittest.TestCase):
         html = response.get_data(as_text=True)
         self.assertIn('id="mainNav"', html)
         self.assertNotIn('data-embedded-pin="true"', html)
+
+    def test_pin_text_is_json_encoded_when_embedded_in_javascript(self):
+        """HTML-escaping JS strings would show entities after resets and section moves."""
+        pin = {
+            **PIN,
+            "title": "Artist's sketch",
+            "section_name": "Artist's ideas",
+        }
+        with patch.object(app_module, "get_db_connection",
+                          return_value=FakeConnection([pin, [], []])):
+            response = self.client.get("/pin/42")
+
+        html = response.get_data(as_text=True)
+        section_literal = re.search(r"const sectionName = (.+?);", html).group(1)
+        title_literals = re.findall(r"titleElement\.textContent = (.+?);", html)
+        self.assertEqual(json.loads(section_literal), "Artist's ideas")
+        self.assertIn("Artist's sketch", [
+            json.loads(value) for value in title_literals if value.startswith('"')
+        ])
+        self.assertNotIn("Artist&amp;#", html)
 
     def test_embedded_pin_marks_the_iframe_page_and_bridge(self):
         """Omitting embed markers or close bridge would leave an overlay without its controls."""

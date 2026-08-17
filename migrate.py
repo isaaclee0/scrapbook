@@ -15,7 +15,17 @@ Or via Docker:
 import mysql.connector
 import os
 import sys
+import json
 from datetime import datetime
+
+
+LEGACY_HTML_MIGRATION = '2026-08-18-normalize-legacy-html-entities'
+LEGACY_TEXT_COLUMNS = {
+    'boards': ('name',),
+    'sections': ('name',),
+    'pins': ('title', 'description', 'notes'),
+    'api_tokens': ('name',),
+}
 
 # ANSI color codes for pretty output
 class Colors:
@@ -99,6 +109,110 @@ def execute_sql(cursor, sql, success_msg, skip_msg=None):
         else:
             error(f"Error: {e}")
             return False
+
+
+def decode_legacy_html_entities(value):
+    """Reverse every layer added by the old storage-time html.escape call."""
+    if not isinstance(value, str):
+        return value
+
+    decoded = value
+    while True:
+        next_value = (decoded
+                      .replace('&quot;', '"')
+                      .replace('&#x27;', "'")
+                      .replace('&lt;', '<')
+                      .replace('&gt;', '>')
+                      .replace('&amp;', '&'))
+        if next_value == decoded:
+            return decoded
+        decoded = next_value
+
+
+def decode_legacy_json_value(value):
+    if isinstance(value, dict):
+        return {key: decode_legacy_json_value(item) for key, item in value.items()}
+    if isinstance(value, list):
+        return [decode_legacy_json_value(item) for item in value]
+    if isinstance(value, str):
+        return decode_legacy_html_entities(value)
+    return value
+
+
+def _decode_json_document(value):
+    if value is None:
+        return None
+    if isinstance(value, (bytes, bytearray)):
+        value = value.decode('utf-8')
+    document = json.loads(value) if isinstance(value, str) else value
+    return json.dumps(decode_legacy_json_value(document), ensure_ascii=False)
+
+
+def migrate_legacy_html_entities(cursor):
+    """Normalize text escaped by pre-2.5.9 releases, exactly once."""
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS schema_migrations (
+            name VARCHAR(191) PRIMARY KEY,
+            applied_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
+    """)
+    cursor.execute("SELECT 1 FROM schema_migrations WHERE name = %s", (LEGACY_HTML_MIGRATION,))
+    if cursor.fetchone():
+        return 0
+
+    changed_rows = 0
+    for table, columns in LEGACY_TEXT_COLUMNS.items():
+        if not table_exists(cursor, table):
+            continue
+
+        cursor.execute(f"SELECT id, {', '.join(columns)} FROM {table}")
+        for row in cursor.fetchall() or []:
+            row_id, *values = row
+            decoded = [decode_legacy_html_entities(value) for value in values]
+            if decoded == values:
+                continue
+            assignments = ', '.join(f"{column} = %s" for column in columns)
+            cursor.execute(
+                f"UPDATE {table} SET {assignments} WHERE id = %s",
+                tuple(decoded) + (row_id,),
+            )
+            changed_rows += 1
+
+    if table_exists(cursor, 'audit_log'):
+        cursor.execute(
+            "SELECT id, actor_email, before_data, after_data, metadata FROM audit_log"
+        )
+        for row_id, actor_email, before_data, after_data, metadata in cursor.fetchall() or []:
+            decoded_values = (
+                decode_legacy_html_entities(actor_email),
+                _decode_json_document(before_data),
+                _decode_json_document(after_data),
+                _decode_json_document(metadata),
+            )
+            original_values = (
+                actor_email,
+                before_data.decode('utf-8') if isinstance(before_data, (bytes, bytearray)) else before_data,
+                after_data.decode('utf-8') if isinstance(after_data, (bytes, bytearray)) else after_data,
+                metadata.decode('utf-8') if isinstance(metadata, (bytes, bytearray)) else metadata,
+            )
+            comparable_original = tuple(
+                json.dumps(value, ensure_ascii=False) if isinstance(value, (dict, list)) else value
+                for value in original_values
+            )
+            if decoded_values == comparable_original:
+                continue
+            cursor.execute("""
+                UPDATE audit_log
+                SET actor_email = %s, before_data = %s, after_data = %s, metadata = %s
+                WHERE id = %s
+            """, decoded_values + (row_id,))
+            changed_rows += 1
+
+    cursor.execute(
+        "INSERT INTO schema_migrations (name) VALUES (%s)",
+        (LEGACY_HTML_MIGRATION,),
+    )
+    return changed_rows
 
 def migrate_database():
     """Main migration function"""
@@ -446,6 +560,15 @@ def migrate_database():
         else:
             warning("api_tokens table already exists")
 
+        # Migration Step 15: Normalize text escaped before storage by older releases.
+        info("\nStep 15: Normalize legacy HTML entities")
+        normalized_rows = migrate_legacy_html_entities(cursor)
+        if normalized_rows:
+            success(f"Normalized {normalized_rows} rows containing legacy HTML entities")
+        else:
+            warning("Legacy HTML entity migration already applied or no rows needed changes")
+        conn.commit()
+
         # Migration Step 12: Summary
         info("\nStep 12: Migration summary")
         cursor.execute("SELECT COUNT(*) FROM users")
@@ -480,4 +603,3 @@ def migrate_database():
 if __name__ == "__main__":
     success_flag = migrate_database()
     sys.exit(0 if success_flag else 1)
-
