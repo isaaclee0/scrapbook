@@ -130,9 +130,6 @@ def sanitize_string(s, max_length=None):
     s = str(s)
     s = unicodedata.normalize('NFKC', s)
     
-    # Remove any HTML entities
-    s = html.escape(s)
-    
     # Remove any control characters
     s = ''.join(char for char in s if unicodedata.category(char)[0] != 'C')
     
@@ -144,6 +141,11 @@ def sanitize_string(s, max_length=None):
         s = s[:max_length]
     
     return s
+
+
+def decode_legacy_html_entities(s):
+    """Decode text that older versions escaped before storing in the database."""
+    return html.unescape(s) if isinstance(s, str) else s
 
 def sanitize_url(url, max_length=2048):
     if not isinstance(url, str):
@@ -1156,6 +1158,8 @@ def board(board_id):
             ORDER BY s.name
         """, (user['id'], board_id))
         sections = cursor.fetchall()
+        for section in sections:
+            section['name'] = decode_legacy_html_entities(section.get('name'))
         
         # Check if this is a featured view (from search) - load all pins if so
         is_featured = request.args.get('featured') or request.args.get('highlight')
