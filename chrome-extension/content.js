@@ -79,11 +79,24 @@
     controls.addEventListener('mousedown', (event) => event.stopPropagation());
     shadow.querySelector('.rs-use').addEventListener('click', async () => {
       if (!rect) return;
-      controls.style.display = 'none';
-      const crop = await sendToBackground({ type: 'CAPTURE_REGION', rect: { ...rect, devicePixelRatio: window.devicePixelRatio || 1 } });
-      const handoff = crop.ok && await sendToBackground({ type: 'OPEN_HANDOFF', dataUrl: crop.dataUrl, pageUrl, pageTitle });
-      if (handoff && handoff.ok) cleanup();
-      else { error.textContent = 'Could not send this capture to Scrappl.'; error.style.display = 'block'; controls.style.display = 'flex'; }
+      const captureRoot = selectRoot;
+      const captureRect = { ...rect, devicePixelRatio: window.devicePixelRatio || 1 };
+      captureRoot.style.display = 'none';
+      try {
+        // Let the browser paint without the tint, border, hint, or controls.
+        await new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+        if (!captureRoot.isConnected) return;
+        const crop = await sendToBackground({ type: 'CAPTURE_REGION', rect: captureRect });
+        const handoff = crop.ok && await sendToBackground({ type: 'OPEN_HANDOFF', dataUrl: crop.dataUrl, pageUrl, pageTitle });
+        if (!captureRoot.isConnected) return;
+        if (handoff && handoff.ok) { cleanup(); return; }
+      } catch (captureError) {
+        // Restore the selection below so a failed request can be retried.
+      }
+      captureRoot.style.display = '';
+      error.textContent = 'Could not send this capture to Scrappl.';
+      error.style.display = 'block';
+      controls.style.display = 'flex';
     });
     document.addEventListener('keydown', onKeyDown, true);
   }

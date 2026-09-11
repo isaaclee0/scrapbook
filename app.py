@@ -3836,9 +3836,8 @@ EXTENSION_SOURCE_DIR = os.getenv('EXTENSION_SOURCE_DIR', '/extension-src')
 def download_extension():
     """Zip the Chrome extension's current source and serve it as a download.
 
-    Reads directly from a bind-mounted copy of the separate extension repo
-    (see EXTENSION_SOURCE_DIR) rather than a vendored copy, so this always
-    reflects the extension's actual latest code with no sync step. The
+    Reads the extension source bundled into the production image at
+    EXTENSION_SOURCE_DIR, or an explicitly configured development mount. The
     zipped manifest.json's externally_connectable.matches is rewritten to
     this request's actual origin (scheme + hostname, no port — match
     patterns don't support ports) so the downloaded extension is correctly
