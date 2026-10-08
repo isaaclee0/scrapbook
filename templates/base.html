@@ -1923,6 +1923,13 @@
             if (input) input.value = '';
         }
 
+        function insertAlphabeticalOption(list, button) {
+            const nextOption = Array.from(list.querySelectorAll('.board-option-add, .section-option-add'))
+                .find(option => (option.dataset.boardId || option.dataset.sectionId) &&
+                    button.textContent.localeCompare(option.textContent, undefined, { sensitivity: 'base' }) < 0);
+            list.insertBefore(button, nextOption || null);
+        }
+
         async function createInlineBoard() {
             const input = document.getElementById('inline-board-name');
             const boardName = input ? input.value.trim() : '';
@@ -1950,7 +1957,7 @@
                         button.onclick = function () {
                             selectBoard(data.board_id, data.name || boardName);
                         };
-                        boardListAdd.prepend(button);
+                        insertAlphabeticalOption(boardListAdd, button);
                     }
 
                     // Hide form and show list
@@ -2034,7 +2041,7 @@
                     button.onclick = function () {
                         selectSection(data.section.id, data.section.name);
                     };
-                    sectionListAdd.appendChild(button);
+                    insertAlphabeticalOption(sectionListAdd, button);
 
                     // Hide form and show list
                     cancelInlineSection();

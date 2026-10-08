@@ -1323,7 +1323,7 @@ def search():
                     LIMIT 1) as random_pin_image_url
             FROM boards b
             WHERE b.name LIKE %s AND b.user_id = %s
-            ORDER BY b.created_at DESC
+            ORDER BY b.name, b.id
             LIMIT 10
         """
         cursor.execute(board_sql, (user['id'], search_term, user['id']))
@@ -1486,7 +1486,7 @@ def search_boards_api():
                     LIMIT 1) as random_pin_image_url
             FROM boards b
             WHERE b.name LIKE %s AND b.user_id = %s
-            ORDER BY b.created_at DESC
+            ORDER BY b.name, b.id
             LIMIT %s OFFSET %s
         """
         
@@ -1537,7 +1537,7 @@ def add_content():
     try:
         db = get_db_connection()
         cursor = db.cursor(dictionary=True)
-        cursor.execute("SELECT * FROM boards WHERE user_id = %s", (user['id'],))
+        cursor.execute("SELECT * FROM boards WHERE user_id = %s ORDER BY name, id", (user['id'],))
         boards = cursor.fetchall()
         return render_template('add_content.html', boards=boards)
     except mysql.connector.Error as e:
@@ -1626,7 +1626,7 @@ def get_sections(board_id):
         cursor.execute("SELECT id FROM boards WHERE id = %s AND user_id = %s", (board_id, user['id']))
         if not cursor.fetchone():
             return jsonify({"error": "Board not found"}), 404
-        cursor.execute("SELECT * FROM sections WHERE board_id = %s", (board_id,))
+        cursor.execute("SELECT * FROM sections WHERE board_id = %s ORDER BY name, id", (board_id,))
         sections = cursor.fetchall()
     except mysql.connector.Error as e:
         print(f"Database error in get_board_sections: {str(e)}")
