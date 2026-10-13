@@ -101,7 +101,10 @@ For an existing production stack, retain its named volumes and secrets, back up
 the maintained compose file, pull the patch image, and recreate only `web` and
 `cache-worker` using `docker compose up -d --no-deps`. Start web first so its
 idempotent migration completes before starting the updated worker. No volume
-reset or global retry reset is part of this upgrade.
+reset or global retry reset is part of this upgrade. For Portainer-managed stacks,
+use its update flow or explicitly supply its saved stack variables to Compose;
+they may be stored separately from the compose file. See
+[the 2.6.1 deployment report](docs/operations/2026-10-13-cache-worker-release.md).
 
 ### Docker Registry Information
 

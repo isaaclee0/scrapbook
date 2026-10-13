@@ -20,5 +20,5 @@ Preserve all pins, cache files, database records and volumes. No global retry re
 - [x] Implement stdlib-only `python scripts/cache_worker.py --healthcheck`, checking heartbeat age and process existence. Test missing/corrupt/stale/dead process, legitimate sleeps and long batch progress.
 - [x] Set worker-specific health checks in both maintained compose files.
 - [x] Run `.venv/bin/python -m unittest discover -s tests -q`, plus disposable MariaDB integration and Docker health checks using production Python/dependencies.
-- [ ] Review diff, release a patch version through Git and multiarch Docker Hub, back up and update the existing Portainer stack file without printing secrets, recreate only web/worker.
-- [ ] Verify worker Docker health, actual queue results, unchanged record/volume counts, and public HTTP health. Record any terminal or exhausted failures honestly.
+- [x] Review diff, release a patch version through Git and multiarch Docker Hub, back up and update the existing Portainer stack file without printing secrets, recreate only web/worker.
+- [x] Verify worker Docker health, actual queue results, unchanged record/volume counts, and public HTTP health. Record any terminal or exhausted failures honestly.
