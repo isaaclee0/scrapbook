@@ -17,6 +17,7 @@ from datetime import datetime, timedelta
 
 # Add the parent directory to Python path to import from app.py
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from image_retention import retained_cache_filenames
 
 try:
     from app import get_db_connection
@@ -359,6 +360,32 @@ class ImageCacheService:
         except Exception as e:
             logger.warning(f"event_bus publish failed for {event_type} pin={payload.get('pin_id')}: {e}")
 
+    def _attach_cache(self, cursor, pin_id, image_url, cache_id, primary_color=None, secondary_color=None, pin=None):
+        """Attach only to matching attachments; project metadata under the pin lock.
+
+        Call after network work in a transaction. Gallery mutations lock the
+        same pin, so a completed request for an old cover cannot replace a new
+        cover's cache or colours.
+        """
+        if pin is None:
+            cursor.execute('SELECT image_url, board_id FROM pins WHERE id = %s FOR UPDATE', (pin_id,))
+            pin = cursor.fetchone()
+        if not pin:
+            return None
+        cursor.execute('''UPDATE pin_images SET cached_image_id = %s, uses_cached_image = TRUE
+                          WHERE pin_id = %s AND image_url = %s''', (cache_id, pin_id, image_url))
+        if pin['image_url'] != image_url:
+            return None
+        if primary_color and secondary_color:
+            cursor.execute('''UPDATE pins SET cached_image_id = %s, uses_cached_image = TRUE,
+                              dominant_color = %s, palette_color_1 = %s
+                              WHERE id = %s AND image_url = %s''',
+                           (cache_id, primary_color, secondary_color, pin_id, image_url))
+        else:
+            cursor.execute('''UPDATE pins SET cached_image_id = %s, uses_cached_image = TRUE
+                              WHERE id = %s AND image_url = %s''', (cache_id, pin_id, image_url))
+        return pin['board_id']
+
     def _cache_image(self, pin_id, image_url, quality_level='low', board_id=None):
         """Download and cache an image or extract frame from video"""
         db = None
@@ -388,6 +415,9 @@ class ImageCacheService:
                 existing_path = os.path.join(self.cache_dir, cached_record['cached_filename'])
 
             if cached_record and cached_record['cache_status'] == 'cached' and existing_path and os.path.exists(existing_path):
+                db.start_transaction()
+                cursor.execute('SELECT image_url, board_id FROM pins WHERE id = %s FOR UPDATE', (pin_id,))
+                current_pin = cursor.fetchone()
                 # Update last accessed time
                 cursor.execute("""
                     UPDATE cached_images
@@ -395,17 +425,13 @@ class ImageCacheService:
                     WHERE id = %s
                 """, (cached_record['id'],))
 
-                # Update pin to use cached image
-                cursor.execute("""
-                    UPDATE pins
-                    SET cached_image_id = %s, uses_cached_image = TRUE
-                    WHERE id = %s
-                """, (cached_record['id'], pin_id))
+                current_board_id = self._attach_cache(cursor, pin_id, image_url, cached_record['id'], pin=current_pin)
 
                 db.commit()
                 logger.info(f"Image already cached: {cached_record['cached_filename']}")
-                self._publish(board_id, "pin_cached",
-                              {"pin_id": pin_id, "cached_filename": cached_record['cached_filename']})
+                if current_board_id is not None:
+                    self._publish(current_board_id, "pin_cached", {"pin_id": pin_id,
+                                  "cached_filename": cached_record['cached_filename'], "image_url": image_url})
                 return cached_record['id']
             
             # Determine if this is a video URL
@@ -481,6 +507,10 @@ class ImageCacheService:
                     
                     logger.info(f"Cached image: {cached_filename} ({file_size} bytes, {width}x{height})")
             
+            # Hold the pin lock only for persistence, never during downloads.
+            db.start_transaction()
+            cursor.execute('SELECT image_url, board_id FROM pins WHERE id = %s FOR UPDATE', (pin_id,))
+            current_pin = cursor.fetchone()
             # Save to database
             if cached_record:
                 # Update existing record
@@ -501,35 +531,26 @@ class ImageCacheService:
                 """, (image_url, cached_filename, file_size, width, height, quality_level))
                 cache_id = cursor.lastrowid
             
-            # Update pin to use cached image and save extracted colors
-            if primary_color and secondary_color:
-                cursor.execute("""
-                    UPDATE pins 
-                    SET cached_image_id = %s, uses_cached_image = TRUE,
-                        dominant_color_1 = %s, dominant_color_2 = %s, colors_extracted = TRUE
-                    WHERE id = %s
-                """, (cache_id, primary_color, secondary_color, pin_id))
-                logger.info(f"Extracted colors for pin {pin_id}: {primary_color}, {secondary_color}")
-            else:
-                cursor.execute("""
-                    UPDATE pins 
-                    SET cached_image_id = %s, uses_cached_image = TRUE 
-                    WHERE id = %s
-                """, (cache_id, pin_id))
+            current_board_id = self._attach_cache(cursor, pin_id, image_url, cache_id, primary_color, secondary_color, pin=current_pin)
             
             db.commit()
             logger.info(f"Successfully cached {'video frame' if is_video else 'image'} for pin {pin_id}")
-            self._publish(board_id, "pin_cached",
-                          {"pin_id": pin_id, "cached_filename": cached_filename})
-            if primary_color and secondary_color:
-                self._publish(board_id, "pin_colored",
-                              {"pin_id": pin_id, "c1": primary_color, "c2": secondary_color})
+            if current_board_id is not None:
+                self._publish(current_board_id, "pin_cached", {"pin_id": pin_id,
+                              "cached_filename": cached_filename, "image_url": image_url})
+                if primary_color and secondary_color:
+                    self._publish(current_board_id, "pin_colored", {"pin_id": pin_id,
+                                  "c1": primary_color, "c2": secondary_color, "image_url": image_url})
             return cache_id
             
         except requests.RequestException as e:
+            if db:
+                db.rollback()
             logger.error(f"Failed to download {'video' if self._is_video_url(image_url) else 'image'} {image_url}: {e}")
             self._mark_cache_failed(image_url, quality_level, str(e))
         except Exception as e:
+            if db:
+                db.rollback()
             logger.error(f"Failed to cache {'video' if self._is_video_url(image_url) else 'image'} {image_url}: {e}")
             self._mark_cache_failed(image_url, quality_level, str(e))
         finally:
@@ -759,12 +780,19 @@ class ImageCacheService:
                     
                     # Update dimensions in database
                     if width and height:
+                        db.start_transaction()
+                        cursor.execute('SELECT image_url FROM pins WHERE id = %s FOR UPDATE', (pin_id,))
+                        current_pin = cursor.fetchone()
+                        cursor.execute('''UPDATE pin_images SET width = %s, height = %s
+                                          WHERE pin_id = %s AND image_url = %s
+                                          AND (width IS NULL OR width = 0 OR height IS NULL OR height = 0)''',
+                                       (width, height, pin_id, image_url))
                         if cache_id:
                             cursor.execute("""
                                 UPDATE cached_images 
                                 SET width = %s, height = %s, updated_at = CURRENT_TIMESTAMP
-                                WHERE id = %s
-                            """, (width, height, cache_id))
+                                WHERE id = %s AND original_url = %s
+                            """, (width, height, cache_id, image_url))
                         else:
                             # Create a cached_images record with dimensions only
                             url_hash = hashlib.md5(image_url.encode()).hexdigest()[:16]
@@ -776,17 +804,25 @@ class ImageCacheService:
                                 VALUES (%s, %s, 0, %s, %s, 'low', 'pending')
                             """, (image_url, placeholder_filename, width, height))
                             cache_id = cursor.lastrowid
+                            # Keep the ordered gallery's cover projection in sync.
+                            # Pending records provide dimensions, not display bytes.
+                            cursor.execute('''UPDATE pin_images SET cached_image_id = %s,
+                                              uses_cached_image = FALSE
+                                              WHERE pin_id = %s AND image_url = %s''',
+                                           (cache_id, pin_id, image_url))
                             
-                            # Link pin to the cache record
-                            cursor.execute("""
-                                UPDATE pins SET cached_image_id = %s WHERE id = %s
-                            """, (cache_id, pin_id))
+                            # Do not attach a completed old-cover probe to a changed pin.
+                            if current_pin and current_pin['image_url'] == image_url:
+                                cursor.execute("""
+                                    UPDATE pins SET cached_image_id = %s WHERE id = %s AND image_url = %s
+                                """, (cache_id, pin_id, image_url))
                         
                         db.commit()
                         processed += 1
                         logger.info(f"Updated dimensions for pin {pin_id}: {width}x{height}")
                         
                 except Exception as e:
+                    db.rollback()
                     logger.error(f"Error processing dimensions for pin {pin_id}: {e}")
                     continue
             
@@ -821,8 +857,13 @@ class ImageCacheService:
             """, (days_old,))
             
             old_images = cursor.fetchall()
+            retained = retained_cache_filenames(cursor)
+            cleaned = 0
             
             for image in old_images:
+                filename = image['cached_filename']
+                if filename in retained or filename.startswith('gallery/'):
+                    continue
                 # Delete file
                 file_path = os.path.join(self.cache_dir, image['cached_filename'])
                 if os.path.exists(file_path):
@@ -834,6 +875,7 @@ class ImageCacheService:
                     SET cache_status = 'expired' 
                     WHERE id = %s
                 """, (image['id'],))
+                cleaned += 1
                 
                 # Update pins that used this cached image
                 cursor.execute("""
@@ -843,7 +885,7 @@ class ImageCacheService:
                 """, (image['id'],))
             
             db.commit()
-            logger.info(f"Cleaned up {len(old_images)} old cached images")
+            logger.info(f"Cleaned up {cleaned} old cached images")
             
         except Exception as e:
             logger.error(f"Error cleaning up old cache: {e}")
@@ -878,4 +920,4 @@ def main():
         cache_service.stop_workers()
 
 if __name__ == "__main__":
-    main() 
+    main()

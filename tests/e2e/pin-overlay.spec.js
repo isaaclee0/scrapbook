@@ -76,6 +76,34 @@ test('clean close paths restore focus outside the hidden overlay', async ({ page
   }
 });
 
+test('Escape closes a ready overlay when keyboard focus is inside the editor', async ({ page }) => {
+  await page.locator('#pin-42-link').click();
+  await expect(page.locator('#pinOverlay')).toHaveAttribute('data-state', 'open');
+  await expect.poll(() => page.evaluate(() => document.activeElement.id)).toBe('pinOverlayFrame');
+  await page.frameLocator('#pinOverlayFrame').locator('#updated').focus();
+  await page.keyboard.press('Escape');
+  await expect(page.locator('#pinOverlay')).toBeHidden();
+  await expect.poll(() => page.evaluate(() => document.activeElement.id)).toBe('pin-42-link');
+});
+
+test('Escape closes an inner native dialog before closing the pin overlay', async ({ page }) => {
+  await page.locator('#pin-42-link').click();
+  await expect(page.locator('#pinOverlay')).toHaveAttribute('data-state', 'open');
+  const frame = page.frames().find(candidate => candidate.url().includes('/pin/42'));
+  await frame.evaluate(() => {
+    const dialog = document.createElement('dialog');
+    dialog.id = 'inner-dialog';
+    dialog.innerHTML = '<button>Inner control</button>';
+    document.body.appendChild(dialog);
+    dialog.showModal();
+  });
+  await page.keyboard.press('Escape');
+  await expect(page.frameLocator('#pinOverlayFrame').locator('#inner-dialog')).toBeHidden();
+  await expect(page.locator('#pinOverlay')).toBeVisible();
+  await page.keyboard.press('Escape');
+  await expect(page.locator('#pinOverlay')).toBeHidden();
+});
+
 test('clean real browser Back restores focus to the opener', async ({ page }) => {
   await page.locator('#pin-42-link').click();
   await page.goBack({ waitUntil: 'commit' });
@@ -319,6 +347,17 @@ test('direct query close replaces only pin parameter', async ({ page }) => {
   await expect(page).toHaveURL(/\?filter=favorites$/);
   await expect(page.locator('#pinOverlay')).toBeHidden();
   expect(await page.evaluate(() => history.length)).toBe(historyLength);
+});
+
+test('direct selected-image opening preserves filters and clears selection on close', async ({ page }) => {
+  await page.goto(`${boardUrl}?filter=favorites&pin=42&image=103`);
+  await expect(page.locator('#pinOverlay')).toHaveAttribute('data-state', 'open');
+  const frame = page.frames().find(candidate => candidate.url().includes('/pin/42'));
+  expect(new URL(frame.url()).searchParams.get('image')).toBe('103');
+  await expect(page.locator('[data-overlay-open-page]')).toHaveAttribute('href', '/pin/42?image=103');
+  await page.frameLocator('#pinOverlayFrame').locator('#close').click();
+  await expect(page).toHaveURL(/\?filter=favorites$/);
+  await expect(page.locator('#pinOverlay')).toBeHidden();
 });
 
 test('timeout offers retry and retry keeps embed parameters with a generation counter', async ({ page }) => {

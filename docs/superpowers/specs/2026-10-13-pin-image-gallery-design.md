@@ -1,7 +1,7 @@
 # Pin image gallery
 
 **Date:** 2026-10-13
-**Status:** Interaction direction agreed in discussion; proposed details below are for review. No implementation is included.
+**Status:** Implemented and verified on 2026-10-13, with static board indicators reflecting the user's final interaction choice. Verification is tracked in `../plans/2026-10-13-pin-image-gallery.md`.
 
 ## Purpose
 
@@ -17,9 +17,9 @@ notes remain plain text.
   with more than one image.
 - The opened pin supports arrows, an image-position indicator, and mobile
   swiping. Images do not advance automatically in the opened pin.
-- Desktop board cards can cycle through images while hovered.
-- Mobile board cards remain on the cover. Tapping opens the pin to browse its
-  gallery. There is no press-and-hold preview or swipe gesture on board cards.
+- Board cards remain on the cover. Clicking or tapping opens the pin to browse
+  its gallery. There is no hover cycling, press-and-hold preview, or swipe
+  gesture on board cards.
 - Adding images is separate from editing notes. Upload, drag-and-drop, and
   pasting into an image-add area all add gallery images.
 
@@ -28,27 +28,9 @@ notes remain plain text.
 ### Board cards
 
 Show a small stack icon and total image count for pins with multiple images.
-During a desktop preview, show the current position, such as `2 / 3`.
-Single-image pins do not show gallery controls or a stack indicator.
-
-On a device with a fine pointer and hover support, begin previewing after
-500 ms of uninterrupted pointer hover. Advance to the next image, then
-continue every two seconds, wrapping through the gallery while hovered.
-Only the hovered card previews. Restore its cover and total-count indicator
-when the pointer leaves.
-
-Keep the existing card dimensions, cover-derived colours, and board layout
-fixed throughout a preview. Fit alternate images within that fixed area
-without cropping. Previewing must not update the pin's stored cover,
-dimensions, colour metadata, or board scroll position.
-
-Clicking a preview opens the image currently shown; ordinary opening starts
-on the cover. Capture the image identity before restoring the preview card.
-An unavailable or removed requested image falls back to the cover.
-
-Stop preview timers when the document becomes hidden, the card is removed,
-or a pin is opened. Disable automatic previews for reduced-motion users.
-Keyboard and touch users can open the pin to access all images.
+Single-image pins do not show gallery controls or a stack indicator. The cover
+and board layout stay fixed. Clicking or tapping the card opens the pin on its
+cover; arrows and swipes inside the opened pin browse the other images.
 
 ### Opened pin
 
@@ -110,16 +92,16 @@ must use a common gallery service so the collection and cover projection
 change atomically. Existing pins migrate idempotently to a one-image
 collection, excluding the default placeholder.
 
-Keep gallery presentation and desktop preview behaviour in small JavaScript
-modules instead of extending the large inline scripts in the pin and board
+Keep gallery presentation in a small JavaScript module instead of extending
+the large inline scripts in the pin and board
 templates. Pass an optional selected image ID through the overlay opening
 flow and validate that it belongs to the requested pin. Preserve existing
 same-origin messaging, access checks, and board scroll behaviour.
 
 Board queries return image counts without loading every attachment. Fetch a
-gallery when opening a pin or after the hover delay. Load alternate image
-bytes on demand; use preview-sized images for board cycling and retain a
-readable version for the opened pin. Invalidate gallery data after edits.
+gallery when opening a pin. Load alternate image bytes on demand; use
+preview-sized cover images for boards and retain a readable version for the
+opened pin. Invalidate gallery data after edits.
 The initial board render, subsequently loaded cards, and refreshed cards
 must show consistent indicators.
 
@@ -139,8 +121,6 @@ endpoint or database schema specification.
 
 ## Error handling
 
-- A failed hover fetch leaves the cover and stack count visible. Do not show
-  disruptive notifications merely because a preview failed.
 - An image that cannot load shows a local error in the opened gallery while
   retaining working navigation to the other images.
 - For multiple uploads, show success or failure per file and allow retrying
@@ -161,21 +141,19 @@ endpoint or database schema specification.
   pins and their containers preserves the gallery, order, and cover.
 - Exercise desktop arrows, keyboard navigation, mobile swipes, accessible
   buttons, readable fullscreen images, and unaffected text-field input.
-- Verify the hover delay, cycling, reset, selected-image opening, timer
-  cleanup, reduced-motion behaviour, and absence of previews on touch input.
-- Confirm alternate aspect ratios never move board cards or overwrite
-  cover metadata; opening and closing preserves board position and filters.
+- Verify stack counts and static cover behavior on desktop and touch input.
+- Confirm opening and closing preserves board position and filters, and
+  cover metadata is protected from stale asynchronous updates.
 - Check indicators and cover changes on server-rendered, dynamically loaded,
   and refreshed cards. Existing one-image creation paths must remain valid.
 
 ## Scope
 
 The initial feature adds and manages images in an existing pin, supports the
-opened gallery, and provides board indicators and desktop hover previews.
+opened gallery, and provides board indicators.
 Existing pin-creation and extension capture flows continue to create one
 image; users can add more after opening the resulting pin. Other pin lists
-continue to show the cover and open the gallery, with board-specific hover
-previews limited to the board view in this first version.
+continue to show the cover and open the gallery.
 
 Rich text notes, per-image captions or source links, video/PDF attachments,
 recipe text recognition, merging separate pins into a gallery, and capturing

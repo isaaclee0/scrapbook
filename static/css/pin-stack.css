@@ -1,0 +1,23 @@
+.pin-card [data-gallery-count] {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    z-index: 4;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 8px;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, .72);
+    color: white;
+    font: 600 12px/1.2 system-ui, sans-serif;
+    pointer-events: none;
+}
+.pin-card [data-gallery-count]::before {
+    content: '';
+    width: 10px;
+    height: 9px;
+    border: 1px solid currentColor;
+    border-radius: 1px;
+    box-shadow: -2px -2px 0 -1px rgba(0, 0, 0, .72), -2px -2px 0 0 currentColor;
+}

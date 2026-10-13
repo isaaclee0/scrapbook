@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="csrf-token" content="fixture-token"><title>Pin gallery</title>
+<link rel="stylesheet" href="/static/css/pin-gallery.css">
+<style>body{font-family:system-ui;margin:20px}.pin-gallery{max-width:650px}.pin-image-container{height:330px;position:relative}.pin-image{width:100%;height:100%;object-fit:contain}textarea{display:block;width:90%;height:160px;margin-top:30px}</style></head>
+<body><main data-pin-gallery data-pin-id="42" class="pin-gallery"><div class="pin-image-container"><img class="pin-image" src="/static/images/default_pin.png" alt="Cake and recipe"></div><div class="tools-menu"><button type="button">Set as board image</button></div></main>
+<label>Notes<textarea class="notes-textarea"></textarea></label>
+<script>window.notifications=[];window.notifyPinOverlay=(...args)=>window.notifications.push(args);window.escapeCloseCount=0;document.addEventListener('keydown',event=>{if(event.key!=='Escape'||event.defaultPrevented)return;if(window.pinGallery?.handleEscape(event)){event.stopImmediatePropagation();return}window.escapeCloseCount+=1});const originalFetch=window.fetch;window.fetch=(url,options={})=>{if(options.method==='POST'){options.headers=new Headers(options.headers);options.headers.set('X-CSRF-Token','fixture-token')}return originalFetch(url,options)};</script>
+<script src="/static/js/pin-gallery.js"></script></body></html>

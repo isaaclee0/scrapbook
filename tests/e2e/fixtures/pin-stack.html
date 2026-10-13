@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pin stack fixture</title>
+  <link rel="stylesheet" href="/static/css/pin-stack.css">
+  <style>
+    body { margin: 30px; }
+    .pin-card { width: 240px; margin: 20px; }
+    .image-container { position: relative; aspect-ratio: 3/4; overflow: hidden; background: #eeeeee; }
+    .pin-image { position: absolute; width: 100%; height: 100%; object-fit: cover; }
+    #pinOverlay[hidden] { display: none; }
+    #pinOverlay { position: fixed; inset: 0; background: white; }
+    iframe { width: 80%; height: 80%; }
+  </style>
+</head>
+<body>
+  <main id="boardPageContent"><div id="pinsGrid">
+    <article id="pin-42" class="pin-card" data-pin-id="42" data-image-count="3" data-image-url="/cover.svg" style="--dominant-color: #123456">
+      <a href="/pin/42"><div class="image-container"><img class="pin-image" src="/cover.svg" alt="Cover"><span data-gallery-count aria-label="3 images">3</span></div><p>Cake and recipe</p></a>
+    </article>
+  </div></main>
+  <section id="pinOverlay" hidden data-state="idle"><button data-overlay-close>Close</button><a data-overlay-open-page>Open as Page</a><button data-overlay-retry>Retry</button><iframe title="Pin details"></iframe></section>
+  <script src="/static/js/pin-overlay.js"></script>
+  <script>
+    window.overlayController = window.createPinOverlayController({ boardId: 9, root: document.getElementById('pinOverlay'), boardContent: document.getElementById('boardPageContent'), refreshPinCard: () => null });
+    window.overlayController.syncFromLocation();
+  </script>
+</body>
+</html>

@@ -21,6 +21,7 @@
       window.crypto.randomUUID() : String(Date.now()) + '-' + String(Math.random());
     var state = {
       pinId: null,
+      imageId: null,
       dirtyChange: null,
       opener: null,
       pushed: false,
@@ -32,6 +33,7 @@
     function pendingRefreshKey() {
       var url = new URL(window.location.href);
       url.searchParams.delete('pin');
+      url.searchParams.delete('image');
       return 'scrappl.pin-overlay.refresh:' + url.pathname + url.search;
     }
 
@@ -44,10 +46,20 @@
       return value && /^\d+$/.test(value) ? Number(value) : null;
     }
 
-    function urlFor(pinId, includePin) {
+    function imageIdFrom(value) {
+      return value && /^\d+$/.test(String(value)) && Number.isSafeInteger(Number(value)) && Number(value) > 0 ? Number(value) : null;
+    }
+
+    function imageFromLocation() {
+      return imageIdFrom(new URL(window.location.href).searchParams.get('image'));
+    }
+
+    function urlFor(pinId, includePin, imageId) {
       var url = new URL(window.location.href);
       if (includePin) url.searchParams.set('pin', String(pinId));
       else url.searchParams.delete('pin');
+      if (includePin && imageId) url.searchParams.set('image', String(imageId));
+      else url.searchParams.delete('image');
       return url.pathname + (url.search || '') + url.hash;
     }
 
@@ -86,6 +98,7 @@
       delete cleaned.scrapbookPinOverlay;
       delete cleaned.scrapbookPinOverlayToken;
       delete cleaned.pinId;
+      delete cleaned.imageId;
       return cleaned;
     }
 
@@ -200,18 +213,21 @@
       var embeddedUrl = new URL('/pin/' + encodeURIComponent(pinId), window.location.origin);
       embeddedUrl.searchParams.set('embedded', '1');
       embeddedUrl.searchParams.set('board_id', String(options.boardId));
+      if (state.imageId) embeddedUrl.searchParams.set('image', String(state.imageId));
       if (state.retryCounter > 0) embeddedUrl.searchParams.set('_retry', String(state.retryCounter));
       // Replacing the child location avoids adding a joint-session-history
       // entry after the board's overlay entry.
       iframe.contentWindow.location.replace(embeddedUrl.pathname + embeddedUrl.search);
-      openPageLink.href = '/pin/' + encodeURIComponent(pinId);
+      openPageLink.setAttribute('href', '/pin/' + encodeURIComponent(pinId) +
+        (state.imageId ? '?image=' + encodeURIComponent(state.imageId) : ''));
       state.readyTimer = window.setTimeout(showError, readyTimeoutMs);
     }
 
-    function reveal(pinId, pushed) {
+    function reveal(pinId, pushed, imageId) {
       if (!pinId) return;
-      if (state.pinId === pinId && !root.hidden) return;
+      if (state.pinId === pinId && state.imageId === imageId && !root.hidden) return;
       state.pinId = pinId;
+      state.imageId = imageId || null;
       state.dirtyChange = null;
       state.pushed = Boolean(pushed);
       state.retryCounter = 0;
@@ -221,6 +237,7 @@
     function hide() {
       clearReadyTimer();
       state.pinId = null;
+      state.imageId = null;
       state.dirtyChange = null;
       state.pushed = false;
       state.retryCounter = 0;
@@ -245,18 +262,19 @@
       if (navigation !== 'back') refreshAndFocus(pinId, change, opener);
     }
 
-    function open(pinId, opener) {
+    function open(pinId, opener, imageId) {
       var numericPinId = Number(pinId);
+      var selectedImageId = imageIdFrom(imageId);
       if (!Number.isInteger(numericPinId) || numericPinId <= 0) return;
       state.opener = opener || document.activeElement;
-      if (pinFromLocation() !== numericPinId) {
+      if (pinFromLocation() !== numericPinId || imageFromLocation() !== selectedImageId) {
         // Navigate the child first so its session-history entry belongs to the
         // board URL; the parent push must remain the most recent entry.
-        reveal(numericPinId, false);
+        reveal(numericPinId, false, selectedImageId);
         window.history.pushState({ scrapbookPinOverlay: true, pinId: numericPinId,
-          scrapbookPinOverlayToken: controllerToken }, '', urlFor(numericPinId, true));
+          imageId: selectedImageId, scrapbookPinOverlayToken: controllerToken }, '', urlFor(numericPinId, true, selectedImageId));
         state.pushed = true;
-      } else reveal(numericPinId, isLocallyPushed(numericPinId));
+      } else reveal(numericPinId, isLocallyPushed(numericPinId), selectedImageId);
     }
 
     function close() {
@@ -265,7 +283,7 @@
 
     function syncFromLocation() {
       var pinId = pinFromLocation();
-      if (pinId) reveal(pinId, isLocallyPushed(pinId));
+      if (pinId) reveal(pinId, isLocallyPushed(pinId), imageFromLocation());
       else if (state.pinId !== null) finishClose('none');
       else consumePendingRefresh();
     }
@@ -278,7 +296,7 @@
       var match = url.pathname.match(/^\/pin\/(\d+)$/);
       if (!match || url.origin !== window.location.origin) return;
       event.preventDefault();
-      open(Number(match[1]), anchor);
+      open(Number(match[1]), anchor, url.searchParams.get('image'));
     }
 
     function onMessage(event) {

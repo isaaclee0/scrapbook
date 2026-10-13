@@ -1,0 +1,40 @@
+.pin-gallery { flex:1 1 0; min-width:0; min-height:0; display:flex; flex-direction:column; background:#f8f8f8; overflow:auto; }
+.pin-lightbox:has(.pin-gallery) .title-container { min-width:0; }
+.pin-lightbox:has(.pin-gallery) .editable-title { min-width:0; }
+.pin-lightbox:has(.pin-gallery) .title-buttons { flex-shrink:0; }
+.pin-gallery [hidden], .gallery-fullscreen [hidden] { display:none !important; }
+.pin-gallery .pin-image-container { flex:1 0 220px; padding:16px; }
+.pin-gallery .pin-image { height:100%; max-height:100%; object-fit:contain; }
+.pin-gallery button { cursor:pointer; }
+.pin-gallery button:disabled { cursor:default; opacity:.45; }
+.pin-gallery button:focus-visible,.gallery-add:focus-visible,.pin-gallery:focus-visible { outline:3px solid #2563eb; outline-offset:2px; }
+.gallery-navigation { display:flex; align-items:center; justify-content:center; gap:14px; padding:6px 12px; flex-shrink:0; }
+.gallery-navigation button { width:40px; height:36px; border:1px solid #d5d5d5; border-radius:8px; background:white; font-size:27px; line-height:1; }
+.gallery-navigation span { font-size:14px; min-width:55px; text-align:center; }
+.gallery-thumbnails { display:flex; gap:8px; padding:8px 16px; overflow-x:auto; flex-shrink:0; }
+.gallery-thumbnails button { position:relative; width:64px; height:64px; flex-shrink:0; padding:3px; border:2px solid transparent; border-radius:8px; background:white; }
+.gallery-thumbnails button[aria-pressed="true"] { border-color:#2563eb; }
+.gallery-thumbnails img { width:100%; height:100%; object-fit:contain; border-radius:4px; }
+.gallery-thumbnails span { position:absolute; bottom:1px; left:1px; right:1px; font-size:10px; background:#fff; color:#333; border-radius:3px; }
+.gallery-actions { display:flex; flex-wrap:wrap; gap:6px; padding:8px 16px; flex-shrink:0; }
+.gallery-actions button,.gallery-add button,.gallery-status button,.gallery-upload-results button,.gallery-image-error button { border:1px solid #d5d5d5; border-radius:6px; background:white; color:#333; padding:7px 10px; font:inherit; font-size:12px; }
+.gallery-add { margin:8px 16px; border:1px dashed #9aa2ad; border-radius:8px; padding:10px; display:flex; flex-wrap:wrap; align-items:center; gap:10px; flex-shrink:0; }
+.gallery-add span { font-size:12px; color:#555; }
+.gallery-add.is-dragging { border-color:#2563eb; background:#eaf2ff; }
+.gallery-upload-results { margin:0; padding:0 16px; list-style:none; font-size:12px; flex-shrink:0; }
+.gallery-upload-results li { padding:3px 0; overflow-wrap:anywhere; }
+.gallery-status { color:#9b2929; font-size:13px; padding:8px 16px; flex-shrink:0; }
+.gallery-status:empty { display:none; }
+.gallery-status button { margin-left:8px; }
+.gallery-image-error { position:absolute; left:20px; right:20px; bottom:16px; background:rgba(255,255,255,.96); border:1px solid #ccc; border-radius:8px; padding:12px; display:flex; justify-content:center; gap:10px; align-items:center; font-size:13px; }
+.pin-gallery .pin-image-container:focus-within .image-hover-controls { opacity:1; }
+.gallery-fullscreen { position:fixed; inset:0; width:100vw; height:100dvh; max-width:none; max-height:none; margin:0; padding:0; border:0; color:white; background:#111; z-index:100001; }
+.gallery-fullscreen::backdrop { background:#111; }
+.gallery-fullscreen-toolbar { height:58px; display:flex; justify-content:flex-end; align-items:center; gap:8px; padding:8px 16px; box-sizing:border-box; }
+.gallery-fullscreen-toolbar button,.gallery-fullscreen-error button { color:#222; background:#fff; border:0; border-radius:7px; padding:10px 14px; cursor:pointer; }
+.gallery-fullscreen-viewport { height:calc(100% - 58px); width:100%; overflow:auto; position:relative; display:grid; place-items:center; overscroll-behavior:contain; }
+.gallery-fullscreen-viewport img { display:block; width:auto; height:auto; max-width:100%; max-height:100%; object-fit:contain; }
+.gallery-fullscreen.is-enlarged .gallery-fullscreen-viewport { display:block; cursor:grab; touch-action:none; }
+.gallery-fullscreen.is-enlarged img { width: max(100%, 1000px); height:auto; max-width:none; max-height:none; }
+.gallery-fullscreen-error { position:absolute; top:16px; left:16px; background:#222; padding:14px; }
+@media(max-width:768px) { .pin-body:has(.pin-gallery) { overflow-y:auto; } .pin-gallery { flex:none; overflow:visible; } .pin-gallery .pin-image-container { height:35vh; min-height:180px; flex:none; } .pin-gallery .image-hover-controls { opacity:1; } .pin-body:has(.pin-gallery) .pin-details { flex:none; overflow:visible; } .pin-body:has(.pin-gallery) .pin-details-content { overflow:visible; } .gallery-actions button { min-height:36px; } }

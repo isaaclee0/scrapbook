@@ -214,6 +214,39 @@ def migrate_legacy_html_entities(cursor):
     )
     return changed_rows
 
+
+def migrate_pin_images(cursor):
+    """Create the gallery schema and backfill legacy covers under pin locks.
+
+    The initialization marker keeps repeated startup migrations from reviving a
+    removed attachment. The caller commits the backfill as one transaction.
+    """
+    from pin_gallery import ensure_pin_images
+
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS pin_images (
+            id INT AUTO_INCREMENT PRIMARY KEY,
+            pin_id INT NOT NULL,
+            image_url TEXT NOT NULL,
+            preview_url TEXT,
+            width INT NOT NULL DEFAULT 0,
+            height INT NOT NULL DEFAULT 0,
+            cached_image_id INT DEFAULT NULL,
+            uses_cached_image BOOLEAN NOT NULL DEFAULT FALSE,
+            position INT NOT NULL DEFAULT 0,
+            FOREIGN KEY (pin_id) REFERENCES pins(id) ON DELETE CASCADE,
+            UNIQUE KEY unique_pin_image_position (pin_id, position),
+            INDEX idx_pin_images_cached_image_id (cached_image_id)
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
+    """)
+    if not column_exists(cursor, 'pins', 'images_initialized'):
+        cursor.execute('ALTER TABLE pins ADD COLUMN images_initialized BOOLEAN NOT NULL DEFAULT FALSE')
+    cursor.execute('SELECT id FROM pins WHERE images_initialized = FALSE ORDER BY id')
+    pins = cursor.fetchall() or []
+    for row in pins:
+        ensure_pin_images(cursor, {'id': row['id'] if isinstance(row, dict) else row[0]})
+    return len(pins)
+
 def migrate_database():
     """Main migration function"""
     log("\n" + "="*60, Colors.BOLD)
@@ -567,6 +600,12 @@ def migrate_database():
             success(f"Normalized {normalized_rows} rows containing legacy HTML entities")
         else:
             warning("Legacy HTML entity migration already applied or no rows needed changes")
+        conn.commit()
+
+        # Migration Step 16: Related pin images and durable gallery initialization.
+        info("\nStep 16: Pin image galleries")
+        initialized_pins = migrate_pin_images(cursor)
+        success(f"Gallery schema ready; initialized {initialized_pins} legacy pins")
         conn.commit()
 
         # Migration Step 12: Summary

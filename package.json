@@ -6,6 +6,7 @@
     "build:css": "tailwindcss -i ./src/input.css -o ./static/css/output.css --minify",
     "watch:css": "tailwindcss -i ./src/input.css -o ./static/css/output.css --watch",
     "test:pin-overlay": "playwright test tests/e2e/pin-overlay.spec.js",
+    "test:pin-gallery": "playwright test tests/e2e/pin-gallery.spec.js tests/e2e/pin-stack.spec.js tests/e2e/pin-overlay.spec.js",
     "test:extension": "playwright test tests/e2e/extension-handoff.spec.js tests/e2e/extension-region-handoff.spec.js --project=chromium"
   },
   "dependencies": {

@@ -17,6 +17,11 @@
     document.getElementById('moved').onclick = () => notify('changed', 'moved');
     document.getElementById('deleted').onclick = () => notify('changed', 'deleted');
     document.getElementById('close').onclick = () => notify('close');
+    document.addEventListener('keydown', event => {
+      if (event.key !== 'Escape' || event.defaultPrevented || document.querySelector('dialog[open]')) return;
+      event.preventDefault();
+      notify('close');
+    });
     notify('ready');
   </script>
 </body>

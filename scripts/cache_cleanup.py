@@ -39,6 +39,7 @@ from PIL import Image
 
 from app import get_db_connection
 from scripts.image_cache_service import ImageCacheService
+from image_retention import retained_cache_filenames
 
 logging.basicConfig(
     level=logging.INFO,
@@ -84,12 +85,13 @@ def _process_and_save(service, image_bytes, quality_level, dest_path):
     return file_size, width, height
 
 
-def recover_legacy(cursor, service, execute, stats):
+def recover_legacy(cursor, service, execute, stats, retained_filenames=None):
     """Phase 1: recover pins whose only surviving cache copy is a legacy
     full-resolution file. Returns the set of legacy md5 stems this phase
     claimed, so Phase 2 doesn't also count them as redundant-purge
     candidates (which would double-count in dry-run mode, since nothing
     is actually deleted until --execute)."""
+    retained = retained_cache_filenames(cursor) if retained_filenames is None else retained_filenames
     legacy_files = {}
     for name in os.listdir(CACHE_DIR):
         m = LEGACY_RE.match(name)
@@ -116,6 +118,11 @@ def recover_legacy(cursor, service, execute, stats):
         legacy_name = legacy_files.get(stem)
         if not legacy_name:
             continue
+        new_filename = f"{stem[:16]}_low.webp"
+        # Either file may be the only readable copy of an attachment or undo.
+        if legacy_name in retained or new_filename in retained:
+            claimed_stems.add(stem)
+            continue
 
         healthy = (
             pin['cache_status'] == 'cached'
@@ -133,7 +140,6 @@ def recover_legacy(cursor, service, execute, stats):
         except OSError as e:
             logger.error(f"Cannot stat legacy file {legacy_path} for pin {pin['pin_id']}: {e}")
             continue
-        new_filename = f"{stem[:16]}_low.webp"
         new_path = os.path.join(CACHE_DIR, new_filename)
 
         stats['recover_count'] += 1
@@ -166,12 +172,15 @@ def recover_legacy(cursor, service, execute, stats):
                 cache_status    = 'cached',
                 updated_at      = NOW()
         """, (pin['image_url'], new_filename, new_size, width, height))
-        cache_id = cursor.lastrowid
+        cursor.execute("SELECT id FROM cached_images WHERE original_url=%s AND quality_level='low'", (pin['image_url'],))
+        cache_id = cursor.fetchone()['id']
 
         cursor.execute(
             "UPDATE pins SET cached_image_id=%s, uses_cached_image=TRUE WHERE image_url=%s",
             (cache_id, pin['image_url']),
         )
+        cursor.execute("UPDATE pin_images SET cached_image_id=%s, uses_cached_image=TRUE WHERE image_url=%s",
+                       (cache_id, pin['image_url']))
 
         try:
             os.remove(legacy_path)
@@ -181,13 +190,13 @@ def recover_legacy(cursor, service, execute, stats):
     return claimed_stems
 
 
-def purge_legacy(execute, recovered_stems, stats):
+def purge_legacy(execute, recovered_stems, stats, retained_filenames):
     """Phase 2: delete every legacy full-resolution file not claimed by
     Phase 1 (i.e. the pin that used it already has a healthy modern-format
     cache, or the file has no owning pin at all)."""
     for name in sorted(os.listdir(CACHE_DIR)):
         m = LEGACY_RE.match(name)
-        if not m or m.group(1) in recovered_stems:
+        if not m or m.group(1) in recovered_stems or name in retained_filenames:
             continue
         path = os.path.join(CACHE_DIR, name)
         size = os.path.getsize(path)
@@ -202,16 +211,19 @@ def purge_legacy(execute, recovered_stems, stats):
                 stats['errors'] += 1
 
 
-def reprocess_oversized(cursor, service, execute, stats):
+def reprocess_oversized(cursor, service, execute, stats, retained_filenames=None):
     """Phase 3: re-encode oversized modern-named files down to the
     correct size in WebP; delete modern-named files with no DB row at
     all (fully orphaned, not just oversized)."""
+    retained = retained_cache_filenames(cursor) if retained_filenames is None else retained_filenames
     cursor.execute("SELECT id, cached_filename FROM cached_images WHERE cached_filename IS NOT NULL")
     filename_to_id = {row['cached_filename']: row['id'] for row in cursor.fetchall()}
 
     for name in sorted(os.listdir(CACHE_DIR)):
         m = MODERN_RE.match(name)
         if not m:
+            continue
+        if name in retained:
             continue
         url_hash, quality_level, _ext = m.groups()
         if quality_level not in QUALITY_MAX_SIDE:
@@ -251,6 +263,8 @@ def reprocess_oversized(cursor, service, execute, stats):
 
         old_size = len(data)
         new_filename = f"{url_hash}_{quality_level}.webp"
+        if new_filename in retained:
+            continue
         new_path = os.path.join(CACHE_DIR, new_filename)
 
         stats['reprocess_count'] += 1
@@ -347,10 +361,11 @@ def main():
     db = get_db_connection()
     cursor = db.cursor(dictionary=True)
     try:
-        recovered_stems = recover_legacy(cursor, service, execute, stats)
+        retained = retained_cache_filenames(cursor)
+        recovered_stems = recover_legacy(cursor, service, execute, stats, retained)
         db.commit()
-        purge_legacy(execute, recovered_stems, stats)
-        reprocess_oversized(cursor, service, execute, stats)
+        purge_legacy(execute, recovered_stems, stats, retained)
+        reprocess_oversized(cursor, service, execute, stats, retained)
         db.commit()
     finally:
         cursor.close()

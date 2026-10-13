@@ -175,7 +175,6 @@ class PinOverlayRouteTests(unittest.TestCase):
             'function savePinRenamedSection': ("notifyPinOverlay('changed', 'updated');", 'function createNewBoard'),
             'function saveTitle': ("notifyPinOverlay('changed', 'updated');", 'function enableUrlEdit'),
             'function saveUrl': ("notifyPinOverlay('changed', 'updated');", 'function toggleToolsMenu'),
-            'function saveImage': ("notifyPinOverlay('changed', 'updated');", 'function checkUrlNow'),
             'function checkUrlNow': ("notifyPinOverlay('changed', 'updated');", 'function checkForArchive'),
         }
         for start, (notification, end) in expectations.items():
@@ -224,41 +223,5 @@ class PinOverlayRouteTests(unittest.TestCase):
         self.assertEqual(response.status_code, 404)
         self.assertEqual(response.get_json(), {"error": "Pin not found", "success": False})
 
-    def test_update_pin_persists_supplied_image_url_for_current_user(self):
-        """Ignoring image_url would leave an image replacement unsaved."""
-        connection = FakeConnection([PIN, None])
-        with patch.object(app_module, "get_db_connection", return_value=connection), \
-             patch.object(app_module, "record_audit"):
-            response = self.client.post(
-                "/update-pin/42",
-                json={"image_url": "/static/images/default_pin.png"},
-                headers={"Authorization": "Bearer test-token"},
-            )
-        self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.get_json(), {"success": True, "pin_id": 42})
-        update_query, update_params = connection.cursor_instance.executions[1]
-        self.assertIn("UPDATE pins SET image_url = %s", update_query)
-        self.assertIn("cached_image_id = %s", update_query)
-        self.assertEqual(update_params, ("/static/images/default_pin.png", None, False, 42, 7))
-
-    def test_update_pin_persists_uploaded_data_image_and_replaces_cached_reference(self):
-        """Sanitizing a file upload to empty or retaining its old cache would show the stale image."""
-        connection = FakeConnection([PIN, None])
-        uploaded_data_url = "data:image/png;base64,aW1hZ2UtYnl0ZXM="
-        with patch.object(app_module, "get_db_connection", return_value=connection), \
-             patch.object(app_module, "save_pasted_image",
-                          return_value=("/cached/replacement_pasted.png", 84)) as save_image, \
-             patch.object(app_module, "record_audit"):
-            response = self.client.post(
-                "/update-pin/42",
-                json={"image_url": uploaded_data_url},
-                headers={"Authorization": "Bearer test-token"},
-            )
-
-        self.assertEqual(response.status_code, 200)
-        save_image.assert_called_once_with(uploaded_data_url)
-        update_query, update_params = connection.cursor_instance.executions[1]
-        self.assertIn("image_url = %s", update_query)
-        self.assertIn("cached_image_id = %s", update_query)
-        self.assertIn("uses_cached_image = %s", update_query)
-        self.assertEqual(update_params, ("/cached/replacement_pasted.png", 84, True, 42, 7))
+    # Image replacement/default removal now exercise real SQL and decoded uploads
+    # in test_gallery_integration instead of a two-query persistence stub.

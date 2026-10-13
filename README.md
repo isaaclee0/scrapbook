@@ -6,6 +6,7 @@ A Flask-based web application for organizing and managing personal image collect
 
 - **Board Management**: Create and organize boards to categorize your images
 - **Section Organization**: Add sections within boards for better organization
+- **Pin Galleries**: Keep up to 20 related images in one pin, choose its cover, and browse with arrows or mobile swipes. Board cards show a stack count; open a pin to browse its images. Add images by upload, drop, or paste; notes stay plain text.
 - **Image Scraping**: Automatically extract images from websites
 - **Search Functionality**: Search through boards and pins
 - **URL Health Monitoring**: Track broken links and find archived versions
@@ -300,4 +301,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## Support
 
-For issues and questions, please open an issue on GitHub. 
+For issues and questions, please open an issue on GitHub.

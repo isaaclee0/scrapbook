@@ -31,6 +31,12 @@ env/
 ENV/
 env.bak/
 venv.bak/
+.venv/
+
+# Installed frontend dependencies and browser test output
+node_modules/
+test-results/
+playwright-report/
 
 # IDE
 .vscode/

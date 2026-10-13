@@ -75,6 +75,7 @@ CREATE TABLE IF NOT EXISTS pins (
     image_url TEXT NOT NULL,
     cached_image_id INT DEFAULT NULL,
     uses_cached_image BOOLEAN DEFAULT FALSE,
+    images_initialized BOOLEAN NOT NULL DEFAULT FALSE,
     dominant_color VARCHAR(7) DEFAULT NULL,
     palette_color_1 VARCHAR(7) DEFAULT NULL,
     palette_color_2 VARCHAR(7) DEFAULT NULL,
@@ -92,6 +93,23 @@ CREATE TABLE IF NOT EXISTS pins (
     INDEX idx_pins_created_at (created_at),
     INDEX idx_pins_updated_at (updated_at),
     INDEX idx_pins_title (title(100))
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Ordered gallery attachments. Uploaded files are durable user content; a cache
+-- reference is optional and intentionally has no cascading cache foreign key.
+CREATE TABLE IF NOT EXISTS pin_images (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    pin_id INT NOT NULL,
+    image_url TEXT NOT NULL,
+    preview_url TEXT,
+    width INT NOT NULL DEFAULT 0,
+    height INT NOT NULL DEFAULT 0,
+    cached_image_id INT DEFAULT NULL,
+    uses_cached_image BOOLEAN NOT NULL DEFAULT FALSE,
+    position INT NOT NULL DEFAULT 0,
+    FOREIGN KEY (pin_id) REFERENCES pins(id) ON DELETE CASCADE,
+    UNIQUE KEY unique_pin_image_position (pin_id, position),
+    INDEX idx_pin_images_cached_image_id (cached_image_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Cached images table (for image optimization)
@@ -180,4 +198,4 @@ INSERT IGNORE INTO sections (board_id, user_id, name)
 SELECT b.id, @default_user_id, 'Tasks' 
 FROM boards b 
 WHERE b.name = 'To Do' 
-AND NOT EXISTS (SELECT 1 FROM sections s WHERE s.board_id = b.id AND s.name = 'Tasks'); 
+AND NOT EXISTS (SELECT 1 FROM sections s WHERE s.board_id = b.id AND s.name = 'Tasks');

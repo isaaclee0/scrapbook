@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/pin-stack.css') }}">
 <!-- Styles must precede the pin grid: cards are absolutely positioned
      and hidden until the masonry engine places them, and card heights are
      measured at layout time — the rules below must be active before the
@@ -738,6 +739,7 @@
     // the server-rendered value is the single source of truth, which is what
     // keeps the masonry layout from shifting after image load.
     function reportImageDimensions(imgElement) {
+        if (imgElement && imgElement.hasAttribute('data-gallery-cover-preview')) return;
         if (!imgElement || !imgElement.naturalWidth || !imgElement.naturalHeight) return;
         const isExternal = !imgElement.src.startsWith(window.location.origin + '/cached/');
         if (!isExternal) return;
@@ -749,7 +751,8 @@
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
                 width: imgElement.naturalWidth,
-                height: imgElement.naturalHeight
+                height: imgElement.naturalHeight,
+                image_url: pinCard.getAttribute('data-image-url')
             }),
             keepalive: true
         }).catch(() => {});
@@ -852,6 +855,7 @@
             style="--dominant-color: {{ pin.dominant_color_1 }}; --secondary-color: {{ pin.dominant_color_2 }};"
             data-colors-extracted="true" data-has-db-colors="true" {% else %} data-has-db-colors="false" {% endif %}
             data-pin-id="{{ pin.id }}" id="pin-{{ pin.id }}" data-image-url="{{ pin.image_url }}"
+            data-image-count="{{ pin.image_count or 0 }}"
             data-cached-width="{{ pin.cached_width or '' }}"
             data-cached-height="{{ pin.cached_height or '' }}" {% if pin.cached_filename %}
             data-cached-url="/cached/{{ pin.cached_filename }}" data-has-cached="true" {% else %}
@@ -867,7 +871,13 @@
                 {% endif %}
                     <!-- Skeleton loader that shows before image loads -->
                     <div class="skeleton-loader"></div>
-                    {% if pin.cached_filename %}
+                    {% if pin.cover_preview_url %}
+                    <img src="{{ pin.cover_preview_url }}" alt="{{ pin.title }}"
+                        class="pin-image group-hover:scale-105 transition-transform duration-300" loading="lazy"
+                        data-original-url="{{ pin.image_url }}" data-gallery-cover-preview
+                        onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none';"
+                        onerror="handlePinImageError(this)">
+                    {% elif pin.cached_filename %}
                     <img src="/cached/{{ pin.cached_filename }}" alt="{{ pin.title }}"
                         class="pin-image group-hover:scale-105 transition-transform duration-300" loading="lazy"
                         data-original-url="{{ pin.image_url }}"
@@ -879,6 +889,9 @@
                         data-original-url="{{ pin.image_url }}"
                         onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none'; reportImageDimensions(this);"
                         onerror="handlePinImageError(this)">
+                    {% endif %}
+                    {% if pin.image_count and pin.image_count > 1 %}
+                    <span data-gallery-count aria-label="{{ pin.image_count }} images">{{ pin.image_count }}</span>
                     {% endif %}
                     {% if pin.section_name %}
                     <span
@@ -1489,6 +1502,7 @@
         }
 
         div.setAttribute('data-pin-id', pin.id);
+        div.setAttribute('data-image-count', Math.max(0, Number(pin.image_count) || 0));
         div.setAttribute('data-image-url', pin.image_url || '');
         div.setAttribute('data-section-id', pin.section_id != null ? String(pin.section_id) : '');
         div.setAttribute('data-cached-width', pin.cached_width || '');
@@ -1502,7 +1516,7 @@
             div.setAttribute('data-has-cached', 'false');
         }
 
-        const imageSrc = pin.cached_filename ? `/cached/${pin.cached_filename}` : (pin.image_url || '/static/images/default_pin.png');
+        const imageSrc = pin.cover_preview_url || (pin.cached_filename ? `/cached/${pin.cached_filename}` : (pin.image_url || '/static/images/default_pin.png'));
 
         // Server-side aspect-ratio is the single source of truth for layout
         // stability. Compute it here using the same caps as the Jinja template
@@ -1527,9 +1541,11 @@
                      alt="${escapeHtml(pin.title || '')}"
                      class="pin-image group-hover:scale-105 transition-transform duration-300"
                      loading="lazy"
-                     data-original-url="${pin.image_url || ''}"
-                     onload="this.classList.add('loaded'); if(this.previousElementSibling) this.previousElementSibling.style.display='none'; reportImageDimensions(this);"
+                     data-original-url="${escapeHtml(pin.image_url || '')}"
+                     ${pin.cover_preview_url ? 'data-gallery-cover-preview' : ''}
+                     onload="this.classList.add('loaded'); if(this.previousElementSibling) this.previousElementSibling.style.display='none'; ${pin.cover_preview_url ? '' : 'reportImageDimensions(this);'}"
                      onerror="handlePinImageError(this)">
+                ${Number(pin.image_count) > 1 ? `<span data-gallery-count aria-label="${Number(pin.image_count)} images">${Number(pin.image_count)}</span>` : ''}
                 ${pin.section_name ? `<span class="absolute top-2 left-2 px-2 py-1 bg-black bg-opacity-70 text-white text-xs rounded-full">${escapeHtml(pin.section_name.replace(/-/g, ' '))}</span>` : ''}
             </div>
             <div class="pin-info">
@@ -1805,7 +1821,7 @@
             try { evt = JSON.parse(e.data); } catch { return; }
 
             if (evt.type === 'pin_cached') {
-                updateCachedPinsInDOM([{ id: evt.pin_id, cached_filename: evt.cached_filename }]);
+                updateCachedPinsInDOM([{ id: evt.pin_id, cached_filename: evt.cached_filename, image_url: evt.image_url }]);
                 processingState.cachedPins++;
                 if (processingState.boardUncachedCount > 0) {
                     processingState.boardUncachedCount--;
@@ -1814,7 +1830,7 @@
                 resetNoProgressTimer();
                 devLog(`📁 pin ${evt.pin_id} cached (${processingState.boardUncachedCount} uncached est.)`);
             } else if (evt.type === 'pin_colored') {
-                updateExtractedPinsInDOM([{ id: evt.pin_id, color1: evt.c1, color2: evt.c2 }]);
+                updateExtractedPinsInDOM([{ id: evt.pin_id, color1: evt.c1, color2: evt.c2, image_url: evt.image_url }]);
                 processingState.extractedPins++;
                 updateProcessingStatus();
             }
@@ -1840,6 +1856,7 @@
         cachedPins.forEach(cachedPin => {
             const pinElement = document.querySelector(`[data-pin-id="${cachedPin.id}"]`);
             if (pinElement) {
+                if (cachedPin.image_url && cachedPin.image_url !== pinElement.getAttribute('data-image-url')) return;
                 const currentHasCached = pinElement.getAttribute('data-has-cached') === 'true';
 
                 if (!currentHasCached) {
@@ -1877,6 +1894,7 @@
         extractedPins.forEach(extractedPin => {
             const pinElement = document.querySelector(`[data-pin-id="${extractedPin.id}"]`);
             if (pinElement) {
+                if (extractedPin.image_url && extractedPin.image_url !== pinElement.getAttribute('data-image-url')) return;
                 const currentHasColors = pinElement.getAttribute('data-has-db-colors') === 'true';
 
                 if (!currentHasColors && extractedPin.color1 && extractedPin.color2) {
@@ -1976,6 +1994,7 @@
 
     function extractColorsFromPin(pinCard, img, callback) {
         try {
+            const originalImageUrl = pinCard.getAttribute('data-image-url');
             // Only extract colors from cached images (external URLs blocked by CORS)
             const hasCachedImage = pinCard.getAttribute('data-has-cached') === 'true';
             const cachedUrl = pinCard.getAttribute('data-cached-url');
@@ -1999,6 +2018,10 @@
 
             tempImg.onload = function () {
                 try {
+                    if (!document.contains(pinCard) || pinCard.getAttribute('data-image-url') !== originalImageUrl) {
+                        callback(false);
+                        return;
+                    }
                     ctx.drawImage(tempImg, 0, 0, 50, 50);
                     const colors = extractDominantColorsFromCanvas(canvas);
 
@@ -2011,7 +2034,7 @@
                     // Save to database
                     const pinId = pinCard.getAttribute('data-pin-id');
                     if (pinId) {
-                        saveColorsToDatabase(pinId, colors.primary, colors.secondary);
+                        saveColorsToDatabase(pinId, colors.primary, colors.secondary, originalImageUrl);
                     }
 
                     callback(true); // Success
@@ -2076,7 +2099,7 @@
         return { primary, secondary };
     }
 
-    function saveColorsToDatabase(pinId, color1, color2) {
+    function saveColorsToDatabase(pinId, color1, color2, imageUrl) {
         fetch(`/save-pin-colors/${pinId}`, {
             method: 'POST',
             headers: {
@@ -2084,7 +2107,8 @@
             },
             body: JSON.stringify({
                 dominant_color_1: color1,
-                dominant_color_2: color2
+                dominant_color_2: color2,
+                image_url: imageUrl
             })
         })
             .then(response => response.json())

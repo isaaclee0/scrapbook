@@ -3,6 +3,7 @@
 {% set display_image_url = '/cached/' ~ pin.cached_filename if pin.cached_filename else pin.image_url %}
 
 {% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/pin-gallery.css') }}">
 <!-- Debug information -->
 <div style="display: none;">
     Pin ID: {{ pin.id }}
@@ -21,14 +22,15 @@
                     <button class="save-button" type="button" onclick="saveTitle()" style="display: none;">Save</button>
                 </div>
             </div>
-            <button class="close-button" onclick="closePinView()">&times;</button>
+            <button class="close-button" onclick="closePinView()" aria-label="Close pin">&times;</button>
         </div>
         
         <div class="pin-body">
+            <div class="pin-gallery" data-pin-gallery data-pin-id="{{ pin.id }}">
             <div class="pin-image-container">
-                <img src="{{ display_image_url }}" alt="{{ pin.title }}" class="pin-image" data-original-url="{{ pin.image_url }}" onerror="handlePinImageError(this)">
+                <img src="{{ display_image_url }}" alt="{{ pin.title }}" class="pin-image" data-original-url="{{ pin.image_url }}">
                 <div class="image-hover-controls">
-                    <button class="image-control-btn fullscreen-btn" onclick="openFullscreen()" title="Fullscreen">
+                    <button class="image-control-btn fullscreen-btn" onclick="openFullscreen()" title="Fullscreen" aria-label="Fullscreen selected image">
                         <i class="fas fa-expand"></i>
                     </button>
                     <div class="tools-dropdown">
@@ -58,6 +60,7 @@
                 </div>
             </div>
             
+            </div><!-- pin gallery -->
             <div class="pin-details">
                 <div class="pin-details-content">
                     <!-- Board Selector -->
@@ -1381,6 +1384,17 @@ function closePinView() {
     else window.history.back();
 }
 
+document.addEventListener('keydown', function (event) {
+    if (!PIN_OVERLAY_EMBEDDED || event.key !== 'Escape' || event.defaultPrevented) return;
+    if (window.pinGallery?.handleEscape(event)) {
+        event.stopImmediatePropagation();
+        return;
+    }
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    closePinView();
+});
+
 document.addEventListener('DOMContentLoaded', function () {
     notifyPinOverlay('ready');
 });
@@ -1569,7 +1583,7 @@ function deletePin(pinId) {
 function setAsBoardImage() {
     const pinId = {{ pin.id }};
     const boardId = {{ pin.board_id }};
-    const imageUrl = {{ display_image_url|tojson }};
+    const imageUrl = window.pinGallery?.readableUrl() || {{ display_image_url|tojson }};
     
     // Close the tools menu
     const toolsMenu = document.getElementById('toolsMenu');
@@ -1597,7 +1611,7 @@ function setAsSectionImage() {
     const pinId = {{ pin.id }};
     const sectionId = {{ pin.section_id if pin.section_id else 'null' }};
     const sectionName = {{ (pin.section_name if pin.section_name else '')|tojson }};
-    const imageUrl = {{ display_image_url|tojson }};
+    const imageUrl = window.pinGallery?.readableUrl() || {{ display_image_url|tojson }};
     
     if (!sectionId) {
         showToast('This pin is not in a section.');
@@ -2013,198 +2027,39 @@ document.addEventListener('click', function(e) {
     }
 });
 
-// Open image in fullscreen
+// Image-specific tools use the gallery's selected stable image identity.
 function openFullscreen() {
-    const imageUrl = {{ display_image_url|tojson }};
-    
-    // Create fullscreen overlay
-    const overlay = document.createElement('div');
-    overlay.style.cssText = `
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.95);
-        z-index: 99999;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: zoom-out;
-    `;
-    
-    const img = document.createElement('img');
-    img.src = imageUrl;
-    img.style.cssText = `
-        max-width: 95%;
-        max-height: 95%;
-        object-fit: contain;
-        box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-    `;
-    
-    const closeBtn = document.createElement('button');
-    closeBtn.innerHTML = '&times;';
-    closeBtn.style.cssText = `
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        background: rgba(255, 255, 255, 0.9);
-        border: none;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        font-size: 32px;
-        line-height: 1;
-        color: #333;
-        cursor: pointer;
-        transition: all 0.2s;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-        padding-bottom: 3px;
-    `;
-    
-    closeBtn.onmouseover = function() {
-        this.style.background = 'white';
-        this.style.transform = 'scale(1.1)';
-    };
-    
-    closeBtn.onmouseout = function() {
-        this.style.background = 'rgba(255, 255, 255, 0.9)';
-        this.style.transform = 'scale(1)';
-    };
-    
-    const removeOverlay = function() {
-        overlay.remove();
-    };
-    
-    overlay.addEventListener('click', removeOverlay);
-    closeBtn.addEventListener('click', function(e) {
-        e.stopPropagation();
-        removeOverlay();
-    });
-    
-    img.addEventListener('click', function(e) {
-        e.stopPropagation();
-    });
-    
-    overlay.appendChild(img);
-    overlay.appendChild(closeBtn);
-    document.body.appendChild(overlay);
+    window.pinGallery?.fullscreen(document.querySelector('.fullscreen-btn'));
 }
 
-// Search Google with image
 async function searchGoogleImage() {
-    // Close the tools menu
-    const toolsMenu = document.getElementById('toolsMenu');
-    if (toolsMenu) {
-        toolsMenu.classList.remove('active');
-    }
-
+    document.getElementById('toolsMenu')?.classList.remove('active');
+    const selected = window.pinGallery?.current();
+    if (!selected) return;
     try {
-        const response = await fetch(`/api/pin/${pinId}/google-lens-url`);
+        const response = await fetch(`/api/pin/${pinId}/google-lens-url?image=${encodeURIComponent(selected.id)}`);
         const data = await response.json();
-
-        if (!response.ok || !data.google_search_url) {
-            throw new Error(data.error || 'Could not generate Google image search link');
-        }
-
+        if (!response.ok || !data.google_search_url) throw new Error(data.error || 'Could not generate image search link');
         window.open(data.google_search_url, '_blank', 'noopener');
     } catch (error) {
-        console.error('Error launching Google image search:', error);
-        showToast('Could not open Google image search for this pin.');
+        showToast(error.message || 'Could not open Google image search.');
     }
 }
 
-// Image editing functions
+// Retained names for existing callers; the gallery module saves and notifies once.
 function changeImage() {
-    // Close the tools menu
-    const toolsMenu = document.getElementById('toolsMenu');
-    if (toolsMenu) {
-        toolsMenu.classList.remove('active');
-    }
-    
-    const input = document.createElement('input');
-    input.type = 'file';
-    input.accept = 'image/*';
-    
-    input.onchange = function(event) {
-        const file = event.target.files[0];
-        if (file) {
-            const reader = new FileReader();
-            reader.onload = function(e) {
-                const imageElement = document.querySelector('.pin-image');
-                if (imageElement) {
-                    imageElement.src = e.target.result;
-                    // Save the new image
-                    saveImage(e.target.result);
-                }
-            };
-            reader.readAsDataURL(file);
-        }
-    };
-    
-    input.click();
+    window.pinGallery?.replace();
 }
-
 function removeImage() {
-    // Close the tools menu
-    const toolsMenu = document.getElementById('toolsMenu');
-    if (toolsMenu) {
-        toolsMenu.classList.remove('active');
-    }
-    
-    const dialog = document.createElement('div');
-    dialog.className = 'confirmation-dialog-overlay';
-    dialog.innerHTML = `
-        <div class="confirmation-dialog error-dialog">
-            <h3>Remove Image</h3>
-            <p>Are you sure you want to remove this image? It will be replaced with the default image.</p>
-            <div class="confirmation-dialog-actions">
-                <button class="button secondary-button" onclick="this.closest('.confirmation-dialog-overlay').remove()">Cancel</button>
-                <button class="button primary-button" onclick="confirmRemoveImage()">Remove</button>
-            </div>
-        </div>
-    `;
-    document.body.appendChild(dialog);
+    document.getElementById('toolsMenu')?.classList.remove('active');
+    return window.pinGallery?.remove();
 }
-
 function confirmRemoveImage() {
-    document.querySelector('.confirmation-dialog-overlay').remove();
-    
-    const imageElement = document.querySelector('.pin-image');
-    if (imageElement) {
-        // Set to default image
-        imageElement.src = '/static/images/default_pin.png';
-        // Save the change
-        saveImage('/static/images/default_pin.png');
-    }
+    document.querySelector('.confirmation-dialog-overlay')?.remove();
+    return removeImage();
 }
-
 function saveImage(imageUrl) {
-    fetch(`/update-pin/{{ pin.id }}`, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            image_url: imageUrl
-        })
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.success) {
-            notifyPinOverlay('changed', 'updated');
-        } else {
-            showToast('Failed to update image');
-        }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        showToast('Failed to update image');
-    });
+    return window.pinGallery?.saveImage(imageUrl);
 }
 
 function checkUrlNow() {
@@ -2311,6 +2166,7 @@ function checkForArchive() {
 {% endblock %}
 
 {% block extra_js %}
+<script src="{{ url_for('static', filename='js/pin-gallery.js') }}"></script>
 <script>
 // Override the base.html createNewSection function for pin pages
 window.createNewSection = function() {

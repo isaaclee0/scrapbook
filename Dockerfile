@@ -73,10 +73,8 @@ COPY --from=builder /root/.local /home/appuser/.local
 WORKDIR /app
 
 # Copy only the files the app actually needs at runtime.
-# audit_helpers.py and csrf.py are required imports — without them app.py
-# fails immediately at startup with ImportError.
 COPY app.py auth_utils.py email_service.py audit_helpers.py csrf.py \
-     event_bus.py migrate.py VERSION requirements.txt ./
+     event_bus.py pin_gallery.py image_retention.py migrate.py VERSION requirements.txt ./
 COPY templates/ ./templates/
 COPY static/ ./static/
 COPY scripts/ ./scripts/

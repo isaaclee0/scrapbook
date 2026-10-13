@@ -1,10 +1,11 @@
-from flask import Flask, render_template, jsonify, request, send_from_directory, send_file, redirect, url_for, make_response, g, Response, stream_with_context
+from flask import Flask, Request, render_template, jsonify, request, send_from_directory, send_file, redirect, url_for, make_response, g, Response, stream_with_context
 import mysql.connector
 import os
 from mysql.connector import pooling
 import random
 import threading
 from werkzeug.routing import BaseConverter
+from werkzeug.exceptions import RequestEntityTooLarge
 import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin, quote
@@ -30,6 +31,13 @@ from email_service import send_otp_email, send_welcome_email
 from audit_helpers import record_audit, snapshot_board, snapshot_pin, snapshot_section
 from csrf import issue_csrf_token, require_csrf
 import event_bus
+from pin_gallery import (
+    GalleryError, MAX_IMAGES, MAX_UPLOAD_BYTES, MAX_UPLOAD_PIXELS,
+    ensure_pin_images as gallery_ensure_pin_images,
+    list_images as gallery_list_images,
+    mutate_gallery, save_upload as gallery_save_upload,
+    snapshot_images, restore_images,
+)
 
 # This base image's /etc/mime.types doesn't know .webp, which makes
 # send_from_directory fall back to application/octet-stream (forcing a
@@ -51,7 +59,21 @@ try:
 except FileNotFoundError:
     VERSION = 'unknown'
 
+class ScrapplRequest(Request):
+    @property
+    def max_content_length(self):
+        if self.endpoint == 'upload_pin_image':
+            return MAX_UPLOAD_BYTES + 1024 * 1024
+        return super().max_content_length
+
+
 app = Flask(__name__, static_folder='static')
+app.request_class = ScrapplRequest
+
+
+@app.errorhandler(413)
+def image_request_too_large(error):
+    return jsonify(error='Image must be 20 MiB or smaller.'), 413
 
 # Redis configuration
 if REDIS_AVAILABLE:
@@ -348,77 +370,55 @@ def update_pin_dimensions(pin_id, image_url):
     Creates a cached_images record if one doesn't exist, with dimensions only.
     This is used for immediate dimension availability before full caching completes.
     """
-    db = None
-    cursor = None
     try:
         dimensions = calculate_image_dimensions(image_url)
         if not dimensions:
             return False
-        
         width, height = dimensions
-        db = get_db_connection()
-        cursor = db.cursor(dictionary=True)
-        
-        # First, check if a cached_images record already exists for this URL
-        cursor.execute("""
-            SELECT id, width, height FROM cached_images 
-            WHERE original_url = %s AND quality_level = 'low'
-            LIMIT 1
-        """, (image_url,))
-        cached_record = cursor.fetchone()
-        
-        if cached_record:
-            cache_id = cached_record['id']
-            # Only update dimensions if they're not already set
-            if not cached_record['width'] or not cached_record['height']:
+        with tx(dictionary=True) as (_, cursor):
+            cursor.execute('''SELECT image_url, cached_image_id, uses_cached_image
+                FROM pins WHERE id = %s FOR UPDATE''', (pin_id,))
+            pin = cursor.fetchone()
+            if not pin or pin['image_url'] != image_url:
+                return False
+
+            if pin['cached_image_id']:
+                cursor.execute('SELECT id, width, height FROM cached_images WHERE id = %s',
+                               (pin['cached_image_id'],))
+            else:
+                cursor.execute('''SELECT id, width, height FROM cached_images
+                    WHERE original_url = %s AND quality_level = 'low' LIMIT 1''', (image_url,))
+            cached_record = cursor.fetchone()
+            if cached_record:
+                cache_id = cached_record['id']
+                width = cached_record['width'] or width
+                height = cached_record['height'] or height
+                if not cached_record['width'] or not cached_record['height']:
+                    cursor.execute('''UPDATE cached_images SET width = %s, height = %s,
+                        updated_at = CURRENT_TIMESTAMP WHERE id = %s''', (width, height, cache_id))
+            else:
+                import hashlib
+                url_hash = hashlib.md5(image_url.encode()).hexdigest()[:16]
+                placeholder_filename = f"{url_hash}_pending.placeholder"
                 cursor.execute("""
-                    UPDATE cached_images 
-                    SET width = %s, height = %s, updated_at = CURRENT_TIMESTAMP
-                    WHERE id = %s
-                """, (width, height, cache_id))
-        else:
-            # Create a new cached_images record with dimensions only
-            # The actual image caching will happen in the background
-            import hashlib
-            url_hash = hashlib.md5(image_url.encode()).hexdigest()[:16]
-            placeholder_filename = f"{url_hash}_pending.placeholder"
-            
-            cursor.execute("""
-                INSERT INTO cached_images 
-                (original_url, cached_filename, file_size, width, height, quality_level, cache_status)
-                VALUES (%s, %s, 0, %s, %s, 'low', 'pending')
-            """, (image_url, placeholder_filename, width, height))
-            cache_id = cursor.lastrowid
-        
-        # Link the pin to the cached_images record
-        cursor.execute("""
-            UPDATE pins 
-            SET cached_image_id = %s 
-            WHERE id = %s AND cached_image_id IS NULL
-        """, (cache_id, pin_id))
-        
-        db.commit()
+                    INSERT INTO cached_images
+                    (original_url, cached_filename, file_size, width, height, quality_level, cache_status)
+                    VALUES (%s, %s, 0, %s, %s, 'low', 'pending')
+                """, (image_url, placeholder_filename, width, height))
+                cache_id = cursor.lastrowid
+
+            cursor.execute('UPDATE pins SET cached_image_id = %s WHERE id = %s', (cache_id, pin_id))
+            # Cover projection reads the gallery on subsequent edits. Keep its
+            # cache reference current. Leave gallery dimensions untouched: this
+            # helper uses estimates, and zero dimensions fall back to the cache
+            # as background decoding replaces those estimates with real sizes.
+            cursor.execute('''UPDATE pin_images SET cached_image_id = %s, uses_cached_image = %s
+                WHERE pin_id = %s AND image_url = %s''',
+                (cache_id, pin['uses_cached_image'], pin_id, image_url))
         return True
-        
     except Exception as e:
         print(f"Error updating pin dimensions: {e}")
-        if db:
-            try:
-                db.rollback()
-            except Exception:
-                pass
         return False
-    finally:
-        if cursor:
-            try:
-                cursor.close()
-            except Exception:
-                pass
-        if db:
-            try:
-                db.close()
-            except Exception:
-                pass
 
 # Database connection pool configuration
 dbconfig = {
@@ -466,10 +466,10 @@ def get_db_connection():
 
 
 @contextmanager
-def tx(dictionary=False):
+def tx(dictionary=False, isolation_level=None):
     """
     Transactional context manager. The pool default is autocommit=True; this
-    helper explicitly disables autocommit for the duration of the block so all
+    helper explicitly starts a transaction for the duration of the block so all
     statements run inside a single transaction that either commits as a whole
     or rolls back on exception.
 
@@ -478,12 +478,16 @@ def tx(dictionary=False):
             cursor.execute(...)
             cursor.execute(...)
 
-    Pass dictionary=True for a dict cursor.
+    Pass dictionary=True for a dict cursor. Snapshot mutations use explicit
+    READ COMMITTED isolation so a prior ownership read cannot stale the audit.
     """
     db = get_db_connection()
-    db.autocommit = False
-    cursor = db.cursor(dictionary=dictionary, buffered=True)
+    cursor = None
     try:
+        # Pool wrappers forward methods; assigning their autocommit attribute
+        # does not change the underlying MySQL connection's mode.
+        db.start_transaction(isolation_level=isolation_level)
+        cursor = db.cursor(dictionary=dictionary, buffered=True)
         yield db, cursor
         db.commit()
     except Exception:
@@ -494,12 +498,8 @@ def tx(dictionary=False):
         raise
     finally:
         try:
-            cursor.close()
-        except Exception:
-            pass
-        try:
-            # Restore the pool default before returning the connection.
-            db.autocommit = True
+            if cursor:
+                cursor.close()
         except Exception:
             pass
         try:
@@ -1188,7 +1188,8 @@ def board(board_id):
                 # Then null out cached_filename for non-cached/placeholder rows so
                 # the template doesn't try to <img src> a missing file.
                 cursor.execute("""
-                    SELECT p.*, s.name as section_name,
+                    SELECT p.*, (SELECT COUNT(*) FROM pin_images gi WHERE gi.pin_id = p.id) AS image_count,
+                   (SELECT gi.preview_url FROM pin_images gi WHERE gi.pin_id = p.id ORDER BY gi.position, gi.id LIMIT 1) AS cover_preview_url, s.name as section_name,
                            CASE
                                WHEN ci.cache_status = 'cached'
                                 AND ci.cached_filename IS NOT NULL
@@ -1197,7 +1198,7 @@ def board(board_id):
                                ELSE NULL
                            END AS cached_filename,
                            ci.cache_status,
-                           ci.width as cached_width, ci.height as cached_height
+                           COALESCE(NULLIF((SELECT gi.width FROM pin_images gi WHERE gi.pin_id = p.id ORDER BY gi.position, gi.id LIMIT 1), 0), ci.width) AS cached_width, COALESCE(NULLIF((SELECT gi.height FROM pin_images gi WHERE gi.pin_id = p.id ORDER BY gi.position, gi.id LIMIT 1), 0), ci.height) AS cached_height
                     FROM pins p
                     LEFT JOIN sections s ON p.section_id = s.id
                     LEFT JOIN cached_images ci ON p.cached_image_id = ci.id
@@ -1208,7 +1209,8 @@ def board(board_id):
             else:
                 # Fallback query without cached images
                 cursor.execute("""
-                    SELECT p.*, s.name as section_name, 
+                    SELECT p.*, (SELECT COUNT(*) FROM pin_images gi WHERE gi.pin_id = p.id) AS image_count,
+                   (SELECT gi.preview_url FROM pin_images gi WHERE gi.pin_id = p.id ORDER BY gi.position, gi.id LIMIT 1) AS cover_preview_url, s.name as section_name,
                            NULL as cached_filename, NULL as cache_status
                     FROM pins p 
                     LEFT JOIN sections s ON p.section_id = s.id 
@@ -1220,7 +1222,8 @@ def board(board_id):
             # Fallback to basic query if there are any issues
             print(f"Warning: Could not check cached_images table, using fallback query: {e}")
             cursor.execute("""
-                SELECT p.*, s.name as section_name, 
+                SELECT p.*, (SELECT COUNT(*) FROM pin_images gi WHERE gi.pin_id = p.id) AS image_count,
+                   (SELECT gi.preview_url FROM pin_images gi WHERE gi.pin_id = p.id ORDER BY gi.position, gi.id LIMIT 1) AS cover_preview_url, s.name as section_name,
                        NULL as cached_filename, NULL as cache_status
                 FROM pins p 
                 LEFT JOIN sections s ON p.section_id = s.id 
@@ -1345,9 +1348,10 @@ def search():
         
         # Optimized: Single query with all joins, limit to first 10 pins for initial load
         pin_sql = """
-            SELECT p.*, b.name as board_name, s.name as section_name,
+            SELECT p.*, (SELECT COUNT(*) FROM pin_images gi WHERE gi.pin_id = p.id) AS image_count,
+                   (SELECT gi.preview_url FROM pin_images gi WHERE gi.pin_id = p.id ORDER BY gi.position, gi.id LIMIT 1) AS cover_preview_url, b.name as board_name, s.name as section_name,
                    ci.cached_filename, ci.cache_status,
-                   ci.width as cached_width, ci.height as cached_height
+                   COALESCE(NULLIF((SELECT gi.width FROM pin_images gi WHERE gi.pin_id = p.id ORDER BY gi.position, gi.id LIMIT 1), 0), ci.width) AS cached_width, COALESCE(NULLIF((SELECT gi.height FROM pin_images gi WHERE gi.pin_id = p.id ORDER BY gi.position, gi.id LIMIT 1), 0), ci.height) AS cached_height
             FROM pins p
             LEFT JOIN boards b ON p.board_id = b.id 
             LEFT JOIN sections s ON p.section_id = s.id
@@ -1413,9 +1417,10 @@ def search_pins_api():
         
         # Optimized: Single query with all joins, with pagination
         pin_sql = """
-            SELECT p.*, b.name as board_name, s.name as section_name,
+            SELECT p.*, (SELECT COUNT(*) FROM pin_images gi WHERE gi.pin_id = p.id) AS image_count,
+                   (SELECT gi.preview_url FROM pin_images gi WHERE gi.pin_id = p.id ORDER BY gi.position, gi.id LIMIT 1) AS cover_preview_url, b.name as board_name, s.name as section_name,
                    ci.cached_filename, ci.cache_status,
-                   ci.width as cached_width, ci.height as cached_height
+                   COALESCE(NULLIF((SELECT gi.width FROM pin_images gi WHERE gi.pin_id = p.id ORDER BY gi.position, gi.id LIMIT 1), 0), ci.width) AS cached_width, COALESCE(NULLIF((SELECT gi.height FROM pin_images gi WHERE gi.pin_id = p.id ORDER BY gi.position, gi.id LIMIT 1), 0), ci.height) AS cached_height
             FROM pins p
             LEFT JOIN boards b ON p.board_id = b.id 
             LEFT JOIN sections s ON p.section_id = s.id
@@ -1792,6 +1797,7 @@ def add_pin():
                 """, (board_id, section_id, title, description, notes, image_url, source_url, user['id']))
 
             pin_id = cursor.lastrowid
+            gallery_ensure_pin_images(cursor, {'id': pin_id})
 
             # Seed a url_health row so the new pin is tracked immediately, mirroring
             # update_pin. Without this the pin counts as "has link" but "unchecked",
@@ -1829,6 +1835,121 @@ def add_pin():
         print(f"Error adding pin: {str(e)}")
         return jsonify({"error": "Failed to add pin"}), 500
 
+def _owned_gallery_pin(cursor, pin_id, user_id):
+    cursor.execute('SELECT * FROM pins WHERE id = %s AND user_id = %s FOR UPDATE',
+                   (pin_id, user_id))
+    pin = cursor.fetchone()
+    if not pin:
+        raise GalleryError('Pin not found', 404)
+    return pin
+
+
+def _gallery_json(images):
+    return jsonify(success=True, images=images, image_count=len(images))
+
+
+def _record_gallery_change(cursor, pin, user, before, action):
+    record_audit(cursor, action='pin.images.' + action, entity_type='pin',
+                 entity_id=pin['id'], user_id=user['id'],
+                 actor_email=user.get('email'), before={'images': before},
+                 after={'images': snapshot_images(cursor, pin['id'])},
+                 metadata={'route': request.path}, ip_address=request.remote_addr)
+
+
+def _invalidate_pin_views(user_id):
+    if redis_client:
+        # Invalidate after commit so another reader cannot repopulate old covers.
+        try:
+            for key in redis_client.scan_iter(match=f"view:{user_id}:*"):
+                redis_client.delete(key)
+        except Exception:
+            app.logger.warning('Could not invalidate image view cache', exc_info=True)
+
+
+@app.route('/api/pin/<int:pin_id>/images', methods=['GET'])
+@login_required
+def get_pin_images(pin_id):
+    user = get_current_user()
+    try:
+        with tx(dictionary=True, isolation_level='READ COMMITTED') as (_, cursor):
+            pin = _owned_gallery_pin(cursor, pin_id, user['id'])
+            gallery_ensure_pin_images(cursor, pin)
+            images = gallery_list_images(cursor, pin)
+        return _gallery_json(images)
+    except GalleryError as error:
+        return jsonify(error=error.message), error.status
+    except Exception:
+        app.logger.exception('Could not load pin gallery')
+        return jsonify(error='Could not load images. Please try again.'), 500
+
+
+@app.route('/api/pin/<int:pin_id>/images', methods=['POST'])
+@login_required
+@require_csrf
+def upload_pin_image(pin_id):
+    user = get_current_user()
+    # Enforce a request bound before Werkzeug parses the multipart body.
+    if request.content_length and request.content_length > MAX_UPLOAD_BYTES + 1024 * 1024:
+        return jsonify(error='Image must be 20 MiB or smaller.'), 413
+    try:
+        with tx(dictionary=True, isolation_level='READ COMMITTED') as (_, cursor):
+            pin = _owned_gallery_pin(cursor, pin_id, user['id'])
+            file = request.files.get('file')
+            if file is None:
+                raise GalleryError('Choose an image to upload.', 400)
+            replace_id = request.form.get('replace_id')
+            if replace_id is not None:
+                try:
+                    replace_id = int(replace_id)
+                except (ValueError, TypeError):
+                    raise GalleryError('Invalid image ID.', 400)
+            gallery_ensure_pin_images(cursor, pin)
+            before = snapshot_images(cursor, pin_id)
+            if replace_id is None and len(before) >= MAX_IMAGES:
+                raise GalleryError(f'A pin can contain up to {MAX_IMAGES} images.', 400)
+            if replace_id is not None and replace_id not in {item['id'] for item in before}:
+                raise GalleryError('Image not found.', 404)
+            upload = gallery_save_upload(file, os.path.join(app.root_path, 'static', 'cached_images', 'gallery'),
+                                         MAX_UPLOAD_BYTES, MAX_UPLOAD_PIXELS)
+            action = 'replace' if replace_id is not None else 'add'
+            images = mutate_gallery(cursor, pin, action, image_id=replace_id, upload=upload)
+            _record_gallery_change(cursor, pin, user, before, action)
+        _invalidate_pin_views(user['id'])
+        return _gallery_json(images)
+    except GalleryError as error:
+        return jsonify(error=error.message), error.status
+    except RequestEntityTooLarge:
+        return jsonify(error='Image must be 20 MiB or smaller.'), 413
+    except Exception:
+        app.logger.exception('Could not upload pin image')
+        return jsonify(error='Could not save image. Please try again.'), 500
+
+
+@app.route('/api/pin/<int:pin_id>/images/manage', methods=['POST'])
+@login_required
+@require_csrf
+def manage_pin_images(pin_id):
+    data = request.get_json(silent=True)
+    if not isinstance(data, dict) or data.get('action') not in ('cover', 'remove', 'reorder'):
+        return jsonify(error='Choose a valid image action.'), 400
+    user = get_current_user()
+    try:
+        with tx(dictionary=True, isolation_level='READ COMMITTED') as (_, cursor):
+            pin = _owned_gallery_pin(cursor, pin_id, user['id'])
+            gallery_ensure_pin_images(cursor, pin)
+            before = snapshot_images(cursor, pin_id)
+            images = mutate_gallery(cursor, pin, data['action'], image_id=data.get('image_id'),
+                                    image_ids=data.get('image_ids'))
+            _record_gallery_change(cursor, pin, user, before, data['action'])
+        _invalidate_pin_views(user['id'])
+        return _gallery_json(images)
+    except GalleryError as error:
+        return jsonify(error=error.message), error.status
+    except Exception:
+        app.logger.exception('Could not update pin images')
+        return jsonify(error='Could not update images. Please try again.'), 500
+
+
 @app.route('/update-pin/<int:pin_id>', methods=['POST'])
 @login_required
 @require_csrf
@@ -1850,7 +1971,7 @@ def update_pin(pin_id):
     try:
         with tx(dictionary=True) as (db, cursor):
             cursor.execute(
-                "SELECT title, description, notes, link, image_url FROM pins WHERE id = %s AND user_id = %s",
+                "SELECT * FROM pins WHERE id = %s AND user_id = %s FOR UPDATE",
                 (pin_id, user['id']),
             )
             current = cursor.fetchone()
@@ -1875,31 +1996,44 @@ def update_pin(pin_id):
                 update_fields.append("link = %s"); update_values.append(link)
                 before_changes['link'] = current['link']; after_changes['link'] = link
             if raw_image_url is not None:
-                cached_image_id = None
-                uses_cached_image = False
+                gallery_ensure_pin_images(cursor, current)
+                before_images = snapshot_images(cursor, pin_id)
                 if isinstance(raw_image_url, str) and raw_image_url.startswith('data:image/'):
-                    saved_image = save_pasted_image(raw_image_url)
-                    image_url, cached_image_id = saved_image if saved_image else (None, None)
-                    if not image_url:
+                    try:
+                        encoded = raw_image_url.split(',', 1)[1]
+                        if len(encoded) > ((MAX_UPLOAD_BYTES + 2) // 3) * 4:
+                            raise GalleryError('Image must be 20 MiB or smaller.', 413)
+                        image_bytes = base64.b64decode(encoded, validate=True)
+                    except (ValueError, IndexError):
                         return jsonify({"error": "Invalid image data"}), 400
-                    uses_cached_image = cached_image_id is not None
+                    upload = gallery_save_upload(io.BytesIO(image_bytes), os.path.join(app.root_path, 'static', 'cached_images', 'gallery'),
+                                                 MAX_UPLOAD_BYTES, MAX_UPLOAD_PIXELS)
+                    image_url = upload['image_url']
                 else:
                     image_url = sanitize_url(raw_image_url)
-                update_fields.append("image_url = %s"); update_values.append(image_url)
-                update_fields.append("cached_image_id = %s"); update_values.append(cached_image_id)
-                update_fields.append("uses_cached_image = %s"); update_values.append(uses_cached_image)
-                before_changes['image_url'] = current['image_url']; after_changes['image_url'] = image_url
+                    upload = {'image_url': image_url, 'cached_image_id': None, 'uses_cached_image': False}
+                before_changes['image_url'] = current['image_url']
+                before_changes['images'] = before_images
+                if not image_url or image_url == '/static/images/default_pin.png':
+                    if before_images:
+                        mutate_gallery(cursor, current, 'remove', image_id=before_images[0]['id'])
+                else:
+                    mutate_gallery(cursor, current, 'replace' if before_images else 'add',
+                                   image_id=before_images[0]['id'] if before_images else None, upload=upload)
+                after_changes['image_url'] = current['image_url']
+                after_changes['images'] = snapshot_images(cursor, pin_id)
 
-            if not update_fields:
+            if not update_fields and raw_image_url is None:
                 return jsonify({"error": "No fields to update"}), 400
 
             update_values.append(pin_id)
             update_values.append(user['id'])
 
-            cursor.execute(
-                f"UPDATE pins SET {', '.join(update_fields)} WHERE id = %s AND user_id = %s",
-                tuple(update_values),
-            )
+            if update_fields:
+                cursor.execute(
+                    f"UPDATE pins SET {', '.join(update_fields)} WHERE id = %s AND user_id = %s",
+                    tuple(update_values),
+                )
 
             if link is not None:
                 cursor.execute("DELETE FROM url_health WHERE pin_id = %s", (pin_id,))
@@ -1916,7 +2050,11 @@ def update_pin(pin_id):
                          metadata={'route': request.path},
                          ip_address=request.remote_addr)
 
+        if raw_image_url is not None:
+            _invalidate_pin_views(user['id'])
         return jsonify({'success': True, 'pin_id': pin_id})
+    except GalleryError as error:
+        return jsonify(error=error.message), error.status
     except mysql.connector.Error as e:
         print(f"Database error updating pin: {str(e)}")
         return jsonify({"error": "Database error occurred"}), 500
@@ -1937,7 +2075,8 @@ def view_pin(pin_id):
 
         # Get pin details with board and section names (user-scoped)
         cursor.execute("""
-            SELECT p.*, b.name as board_name, s.name as section_name,
+            SELECT p.*, (SELECT COUNT(*) FROM pin_images gi WHERE gi.pin_id = p.id) AS image_count,
+                   (SELECT gi.preview_url FROM pin_images gi WHERE gi.pin_id = p.id ORDER BY gi.position, gi.id LIMIT 1) AS cover_preview_url, b.name as board_name, s.name as section_name,
                    uh.status as link_status, uh.archive_url,
                    CASE
                        WHEN ci.cache_status = 'cached'
@@ -2034,6 +2173,8 @@ def get_pin_card(pin_id):
         cursor = db.cursor(dictionary=True, buffered=True)
         cursor.execute("""
             SELECT p.id, p.board_id, p.section_id, s.name AS section_name,
+                   (SELECT COUNT(*) FROM pin_images gi WHERE gi.pin_id = p.id) AS image_count,
+                   (SELECT gi.preview_url FROM pin_images gi WHERE gi.pin_id = p.id ORDER BY gi.position, gi.id LIMIT 1) AS cover_preview_url,
                    b.name AS board_name, p.title, p.image_url, p.link,
                    uh.status AS link_status,
                    CASE
@@ -2043,7 +2184,7 @@ def get_pin_card(pin_id):
                        THEN ci.cached_filename
                        ELSE NULL
                    END AS cached_filename,
-                   ci.width AS cached_width, ci.height AS cached_height,
+                   COALESCE(NULLIF((SELECT gi.width FROM pin_images gi WHERE gi.pin_id = p.id ORDER BY gi.position, gi.id LIMIT 1), 0), ci.width) AS cached_width, COALESCE(NULLIF((SELECT gi.height FROM pin_images gi WHERE gi.pin_id = p.id ORDER BY gi.position, gi.id LIMIT 1), 0), ci.height) AS cached_height,
                    p.dominant_color AS dominant_color_1,
                    p.palette_color_1 AS dominant_color_2
             FROM pins p
@@ -2091,8 +2232,18 @@ def get_google_lens_url(pin_id):
         if not pin or not pin.get('image_url'):
             return jsonify({"error": "Pin image not found"}), 404
 
+        image_id = request.args.get('image', type=int)
+        if 'image' in request.args:
+            if not image_id:
+                return jsonify(error='Image not found'), 404
+            cursor.execute('SELECT image_url FROM pin_images WHERE id = %s AND pin_id = %s', (image_id, pin_id))
+            if not cursor.fetchone():
+                return jsonify(error='Image not found'), 404
         serializer = _temp_image_link_serializer()
-        token = serializer.dumps({"pin_id": pin_id})
+        token_data = {'pin_id': pin_id}
+        if image_id:
+            token_data['image_id'] = image_id
+        token = serializer.dumps(token_data)
         public_image_url = url_for('serve_temp_public_pin_image', token=token, _external=True)
         google_search_url = f"https://lens.google.com/uploadbyurl?url={quote(public_image_url, safe='')}"
 
@@ -2139,7 +2290,11 @@ def serve_temp_public_pin_image(token):
     try:
         db = get_db_connection()
         cursor = db.cursor(dictionary=True, buffered=True)
-        cursor.execute("SELECT image_url FROM pins WHERE id = %s", (pin_id,))
+        image_id = sanitize_integer(payload.get('image_id'))
+        if image_id:
+            cursor.execute('SELECT image_url FROM pin_images WHERE id = %s AND pin_id = %s', (image_id, pin_id))
+        else:
+            cursor.execute("SELECT image_url FROM pins WHERE id = %s", (pin_id,))
         pin = cursor.fetchone()
         if not pin:
             return "Image not found", 404
@@ -2352,7 +2507,7 @@ def update_section(section_id):
 def delete_section(section_id):
     user = get_current_user()
     try:
-        with tx(dictionary=True) as (db, cursor):
+        with tx(dictionary=True, isolation_level='READ COMMITTED') as (db, cursor):
             cursor.execute("""
                 SELECT s.id, s.board_id FROM sections s
                 JOIN boards b ON s.board_id = b.id
@@ -2480,7 +2635,7 @@ def move_board(board_id):
         if target_board_id == board_id:
             return jsonify({"error": "Cannot convert a board into a section of itself"}), 400
 
-        with tx(dictionary=True) as (db, cursor):
+        with tx(dictionary=True, isolation_level='READ COMMITTED') as (db, cursor):
             cursor.execute("SELECT id, name FROM boards WHERE id = %s AND user_id = %s",
                            (board_id, user['id']))
             source_board = cursor.fetchone()
@@ -2542,7 +2697,7 @@ def move_board(board_id):
 def delete_board(board_id):
     user = get_current_user()
     try:
-        with tx() as (db, cursor):
+        with tx(isolation_level='READ COMMITTED') as (db, cursor):
             cursor.execute("SELECT id FROM boards WHERE id = %s AND user_id = %s",
                            (board_id, user['id']))
             if not cursor.fetchone():
@@ -2769,7 +2924,8 @@ def random_pin():
         
         # Get the random pin with a single efficient query (user-scoped)
         cursor.execute("""
-            SELECT p.*, b.name as board_name, s.name as section_name
+            SELECT p.*, (SELECT COUNT(*) FROM pin_images gi WHERE gi.pin_id = p.id) AS image_count,
+                   (SELECT gi.preview_url FROM pin_images gi WHERE gi.pin_id = p.id ORDER BY gi.position, gi.id LIMIT 1) AS cover_preview_url, b.name as board_name, s.name as section_name
             FROM pins p
             LEFT JOIN boards b ON p.board_id = b.id
             LEFT JOIN sections s ON p.section_id = s.id
@@ -2909,7 +3065,8 @@ def get_random_pins():
         total = cursor.fetchone()['count']
 
         query = f"""
-            SELECT p.*, s.name as section_name, b.name as board_name,
+            SELECT p.*, (SELECT COUNT(*) FROM pin_images gi WHERE gi.pin_id = p.id) AS image_count,
+                   (SELECT gi.preview_url FROM pin_images gi WHERE gi.pin_id = p.id ORDER BY gi.position, gi.id LIMIT 1) AS cover_preview_url, s.name as section_name, b.name as board_name,
                    CASE
                        WHEN ci.cache_status = 'cached'
                         AND ci.cached_filename IS NOT NULL
@@ -2918,7 +3075,7 @@ def get_random_pins():
                        ELSE NULL
                    END AS cached_filename,
                    ci.cache_status,
-                   ci.width as cached_width, ci.height as cached_height
+                   COALESCE(NULLIF((SELECT gi.width FROM pin_images gi WHERE gi.pin_id = p.id ORDER BY gi.position, gi.id LIMIT 1), 0), ci.width) AS cached_width, COALESCE(NULLIF((SELECT gi.height FROM pin_images gi WHERE gi.pin_id = p.id ORDER BY gi.position, gi.id LIMIT 1), 0), ci.height) AS cached_height
             FROM pins p
             LEFT JOIN sections s ON p.section_id = s.id
             LEFT JOIN boards b ON p.board_id = b.id
@@ -2934,7 +3091,8 @@ def get_random_pins():
         except Exception as query_err:
             print(f"Random pins query error, retrying without cached_images join: {query_err}")
             fallback_query = f"""
-                SELECT p.*, s.name as section_name, b.name as board_name,
+                SELECT p.*, (SELECT COUNT(*) FROM pin_images gi WHERE gi.pin_id = p.id) AS image_count,
+                   (SELECT gi.preview_url FROM pin_images gi WHERE gi.pin_id = p.id ORDER BY gi.position, gi.id LIMIT 1) AS cover_preview_url, s.name as section_name, b.name as board_name,
                        NULL as cached_filename, NULL as cache_status,
                        NULL as cached_width, NULL as cached_height
                 FROM pins p
@@ -3008,7 +3166,8 @@ def get_board_pins(board_id):
         # for layout stability. Mask the cached_filename when the file isn't
         # actually on disk yet.
         query = """
-            SELECT p.*, s.name as section_name, b.name as board_name,
+            SELECT p.*, (SELECT COUNT(*) FROM pin_images gi WHERE gi.pin_id = p.id) AS image_count,
+                   (SELECT gi.preview_url FROM pin_images gi WHERE gi.pin_id = p.id ORDER BY gi.position, gi.id LIMIT 1) AS cover_preview_url, s.name as section_name, b.name as board_name,
                    CASE
                        WHEN ci.cache_status = 'cached'
                         AND ci.cached_filename IS NOT NULL
@@ -3017,7 +3176,7 @@ def get_board_pins(board_id):
                        ELSE NULL
                    END AS cached_filename,
                    ci.cache_status,
-                   ci.width as cached_width, ci.height as cached_height
+                   COALESCE(NULLIF((SELECT gi.width FROM pin_images gi WHERE gi.pin_id = p.id ORDER BY gi.position, gi.id LIMIT 1), 0), ci.width) AS cached_width, COALESCE(NULLIF((SELECT gi.height FROM pin_images gi WHERE gi.pin_id = p.id ORDER BY gi.position, gi.id LIMIT 1), 0), ci.height) AS cached_height
             FROM pins p
             LEFT JOIN sections s ON p.section_id = s.id
             LEFT JOIN boards b ON p.board_id = b.id
@@ -3050,7 +3209,8 @@ def get_board_pins(board_id):
             # cached_images table may not exist on older installs — retry without that join
             print(f"Board pins query error, retrying without cached_images join: {query_err}")
             fallback_query = """
-                SELECT p.*, s.name as section_name, b.name as board_name,
+                SELECT p.*, (SELECT COUNT(*) FROM pin_images gi WHERE gi.pin_id = p.id) AS image_count,
+                   (SELECT gi.preview_url FROM pin_images gi WHERE gi.pin_id = p.id ORDER BY gi.position, gi.id LIMIT 1) AS cover_preview_url, s.name as section_name, b.name as board_name,
                        NULL as cached_filename, NULL as cache_status,
                        NULL as cached_width, NULL as cached_height
                 FROM pins p
@@ -3458,146 +3618,85 @@ def debug_url_health(board_id):
 @login_required
 def save_pin_colors(pin_id):
     user = get_current_user()
+    data = request.get_json(silent=True) or {}
+    first, second = data.get('dominant_color_1'), data.get('dominant_color_2')
+    if not all(isinstance(value, str) and re.fullmatch(r'#[0-9a-fA-F]{6}', value)
+               for value in (first, second)):
+        return jsonify(error='Two valid hex colours are required.'), 400
     try:
-        data = request.get_json()
-        dominant_color_1 = data.get('dominant_color_1')
-        dominant_color_2 = data.get('dominant_color_2')
-        
-        if not dominant_color_1 or not dominant_color_2:
-            return jsonify({"error": "Both colors are required"}), 400
-        
-        db = get_db_connection()
-        cursor = db.cursor(dictionary=True)
-
-        # Verify pin belongs to user and capture board_id for the SSE event
-        cursor.execute("SELECT id, board_id FROM pins WHERE id = %s AND user_id = %s", (pin_id, user['id']))
-        row = cursor.fetchone()
-        if not row:
-            return jsonify({"error": "Pin not found"}), 404
-        board_id = row['board_id']
-
-        # Update the pin with extracted colors
-        cursor.execute("""
-            UPDATE pins
-            SET dominant_color_1 = %s,
-                dominant_color_2 = %s,
-                colors_extracted = TRUE
-            WHERE id = %s
-        """, (dominant_color_1, dominant_color_2, pin_id))
-
-        db.commit()
-
+        with tx(dictionary=True) as (_, cursor):
+            pin = _owned_gallery_pin(cursor, pin_id, user['id'])
+            if data.get('image_url') and data['image_url'] != pin['image_url']:
+                return jsonify(error='The cover image changed. Reload this pin.'), 409
+            cursor.execute('UPDATE pins SET dominant_color = %s, palette_color_1 = %s WHERE id = %s AND image_url = %s',
+                           (first, second, pin_id, pin['image_url']))
         try:
-            event_bus.publish(board_id, "pin_colored",
-                              {"pin_id": pin_id, "c1": dominant_color_1, "c2": dominant_color_2})
-        except Exception as e:
-            print(f"[colors] pin {pin_id} publish failed: {e}")
+            event_bus.publish(pin['board_id'], 'pin_colored', {
+                'pin_id': pin_id, 'c1': first, 'c2': second, 'image_url': pin['image_url']})
+        except Exception:
+            app.logger.warning('Could not publish pin colours', exc_info=True)
+        return jsonify(success=True, pin_id=pin_id)
+    except GalleryError as error:
+        return jsonify(error=error.message), error.status
+    except Exception:
+        app.logger.exception('Could not save pin colours')
+        return jsonify(error='Failed to save colours'), 500
 
-        return jsonify({
-            'success': True,
-            'pin_id': pin_id
-        })
-    except Exception as e:
-        print(f"Error saving pin colors: {str(e)}")
-        return jsonify({"error": "Failed to save colors"}), 500
-    finally:
-        cursor.close()
-        db.close()
 
 @app.route('/save-pin-dimensions/<int:pin_id>', methods=['POST'])
 @login_required
 def save_pin_dimensions(pin_id):
-    """
-    Store image dimensions reported by the browser after a successful load.
-    Used for pins whose images can't be fetched server-side (e.g. Pinterest CDN).
-    On the next page load the stored dims are rendered into the aspect-ratio CSS
-    property, so no layout shift occurs.
-    """
+    """Accept dimensions only for the cover the browser actually measured."""
     user = get_current_user()
-    db = None
-    cursor = None
+    data = request.get_json(silent=True) or {}
+    width = sanitize_integer(data.get('width'), min_value=1, max_value=20000)
+    height = sanitize_integer(data.get('height'), min_value=1, max_value=20000)
+    if not width or not height:
+        return jsonify(error='Invalid dimensions'), 400
     try:
-        data = request.get_json()
-        width = sanitize_integer(data.get('width'), min_value=1, max_value=20000)
-        height = sanitize_integer(data.get('height'), min_value=1, max_value=20000)
-
-        if not width or not height:
-            return jsonify({"error": "Invalid dimensions"}), 400
-
-        db = get_db_connection()
-        cursor = db.cursor(dictionary=True)
-
-        # Fetch pin + its cached_images record (if any) in one query
-        cursor.execute("""
-            SELECT p.id, p.image_url, p.cached_image_id, p.board_id,
-                   ci.cached_filename, ci.cache_status
-              FROM pins p
-              LEFT JOIN cached_images ci ON ci.id = p.cached_image_id
-             WHERE p.id = %s AND p.user_id = %s
-        """, (pin_id, user['id']))
-        pin = cursor.fetchone()
-        if not pin:
-            return jsonify({"error": "Pin not found"}), 404
-
-        image_url = pin['image_url'] or ''
-        cache_id = pin['cached_image_id']
-        board_id = pin['board_id']
-
-        # Determine whether a real local file already exists
-        already_cached = (
-            pin['cached_filename']
-            and not pin['cached_filename'].endswith('.placeholder')
-            and pin['cache_status'] == 'cached'
-        )
-
-        if cache_id:
-            # Update dims on the existing record (even if already_cached, dims may need fixing)
-            cursor.execute(
-                "UPDATE cached_images SET width=%s, height=%s, updated_at=NOW() WHERE id=%s",
-                (width, height, cache_id)
-            )
-        else:
-            # No record yet — create a dims-only placeholder so the template
-            # renders the correct aspect-ratio on the very next page load.
-            url_hash = hashlib.md5(image_url.encode()).hexdigest()[:16]
-            placeholder = f"{url_hash}_dims_only.placeholder"
-            cursor.execute("""
-                INSERT INTO cached_images
-                    (original_url, cached_filename, file_size, width, height, quality_level, cache_status)
-                VALUES (%s, %s, 0, %s, %s, 'low', 'pending')
-                ON DUPLICATE KEY UPDATE width=%s, height=%s, updated_at=NOW()
-            """, (image_url, placeholder, width, height, width, height))
-            cache_id = cursor.lastrowid
-            cursor.execute(
-                "UPDATE pins SET cached_image_id=%s WHERE id=%s AND cached_image_id IS NULL",
-                (cache_id, pin_id)
-            )
-
-        db.commit()
-
-        # Queue a background caching job if the file isn't already on disk.
-        # ImageCacheService resizes/encodes and updates cached_images + pins
-        # once complete, so future page loads serve from /cached/ and never
-        # touch the external URL. The service looks up the pending row we
-        # just wrote above by (image_url, quality_level='low'), so cache_id
-        # doesn't need to be passed explicitly.
+        with tx(dictionary=True) as (_, cursor):
+            pin = _owned_gallery_pin(cursor, pin_id, user['id'])
+            image_url = pin['image_url'] or ''
+            if data.get('image_url') and data['image_url'] != image_url:
+                return jsonify(error='The cover image changed. Reload this pin.'), 409
+            # Uploaded originals already have trustworthy decoded dimensions.
+            # Never attach a browser-measured preview or an old cache to them.
+            if image_url.startswith('/cached/gallery/'):
+                return jsonify(success=True)
+            cache_id = pin['cached_image_id']
+            cached = None
+            if cache_id:
+                cursor.execute('SELECT cached_filename, cache_status FROM cached_images WHERE id = %s', (cache_id,))
+                cached = cursor.fetchone()
+            already_cached = bool(cached and cached['cache_status'] == 'cached' and
+                                  cached['cached_filename'] and not cached['cached_filename'].endswith('.placeholder'))
+            if cached:
+                cursor.execute('UPDATE cached_images SET width=%s, height=%s, updated_at=NOW() WHERE id=%s',
+                               (width, height, cache_id))
+            else:
+                placeholder = hashlib.md5(image_url.encode()).hexdigest()[:16] + '_dims_only.placeholder'
+                cursor.execute("""
+                    INSERT INTO cached_images
+                        (original_url, cached_filename, file_size, width, height, quality_level, cache_status)
+                    VALUES (%s, %s, 0, %s, %s, 'low', 'pending')
+                    ON DUPLICATE KEY UPDATE id=LAST_INSERT_ID(id), width=%s, height=%s, updated_at=NOW()
+                """, (image_url, placeholder, width, height, width, height))
+                cache_id = cursor.lastrowid
+                cursor.execute('UPDATE pins SET cached_image_id=%s WHERE id=%s AND image_url=%s',
+                               (cache_id, pin_id, image_url))
+            cursor.execute('UPDATE pin_images SET width=%s, height=%s, cached_image_id=%s WHERE pin_id=%s AND position=0 AND image_url=%s',
+                           (width, height, cache_id, pin_id, image_url))
         if not already_cached and image_url.startswith('http'):
             try:
-                cache_service = _get_cache_service()
-                cache_service.queue_image_for_caching(pin_id, image_url, 'low', board_id)
-            except Exception as e:
-                print(f"Failed to queue image for caching: {e}")
-
-        return jsonify({'success': True})
-
-    except Exception as e:
-        print(f"Error saving pin dimensions: {e}")
-        return jsonify({"error": "Failed to save dimensions"}), 500
-    finally:
-        if cursor:
-            cursor.close()
-        if db:
-            db.close()
+                _get_cache_service().queue_image_for_caching(pin_id, image_url, 'low', pin['board_id'])
+            except Exception:
+                app.logger.warning('Could not queue image for caching', exc_info=True)
+        return jsonify(success=True)
+    except GalleryError as error:
+        return jsonify(error=error.message), error.status
+    except Exception:
+        app.logger.exception('Could not save pin dimensions')
+        return jsonify(error='Failed to save dimensions'), 500
 
 
 @app.route('/delete-pin/<int:pin_id>', methods=['POST'])
@@ -3606,7 +3705,7 @@ def save_pin_dimensions(pin_id):
 def delete_pin(pin_id):
     user = get_current_user()
     try:
-        with tx() as (db, cursor):
+        with tx(isolation_level='READ COMMITTED') as (db, cursor):
             cursor.execute("SELECT id FROM pins WHERE id = %s AND user_id = %s",
                            (pin_id, user['id']))
             if not cursor.fetchone():
@@ -4012,6 +4111,8 @@ def _undo_board_delete(cursor, user_id, before):
             ),
         )
     for p in pins:
+        if int(p.get('user_id') or 0) != int(user_id):
+            raise PermissionError('snapshot pin belongs to another user')
         cursor.execute(
             """
             INSERT INTO pins (id, image_url, title, board_id, section_id,
@@ -4024,6 +4125,8 @@ def _undo_board_delete(cursor, user_id, before):
                 p.get('link'), p['user_id'], p.get('created_at'),
             ),
         )
+        if 'images' in p:
+            restore_images(cursor, p['id'], p['images'])
     return {'board_id': board['id'], 'sections_restored': len(sections), 'pins_restored': len(pins)}
 
 
@@ -4045,6 +4148,8 @@ def _undo_pin_delete(cursor, user_id, before):
             p.get('link'), p['user_id'], p.get('created_at'),
         ),
     )
+    if 'images' in p:
+        restore_images(cursor, p['id'], p['images'])
     return {'pin_id': p['id']}
 
 

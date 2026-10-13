@@ -7,6 +7,7 @@ is committed atomically with the underlying mutation.
 import json
 import uuid
 from typing import Any, Optional
+from pin_gallery import snapshot_images
 
 
 def _to_json(obj: Any) -> Optional[str]:
@@ -79,32 +80,39 @@ def record_audit(
 
 def snapshot_board(cursor, board_id: int) -> Optional[dict]:
     """Capture a full board snapshot (board row + sections + pins) for undo."""
-    cursor.execute("SELECT * FROM boards WHERE id = %s", (board_id,))
+    cursor.execute("SELECT * FROM boards WHERE id = %s FOR UPDATE", (board_id,))
     board = _row_to_dict(cursor, cursor.fetchone())
     if not board:
         return None
 
-    cursor.execute("SELECT * FROM sections WHERE board_id = %s", (board_id,))
+    cursor.execute("SELECT * FROM sections WHERE board_id = %s ORDER BY id FOR UPDATE", (board_id,))
     sections = _rows_to_dicts(cursor, cursor.fetchall())
 
-    cursor.execute("SELECT * FROM pins WHERE board_id = %s", (board_id,))
+    cursor.execute("SELECT * FROM pins WHERE board_id = %s ORDER BY id FOR UPDATE", (board_id,))
     pins = _rows_to_dicts(cursor, cursor.fetchall())
+    for pin in pins:
+        pin['images'] = snapshot_images(cursor, pin['id'])
 
     return {"board": board, "sections": sections, "pins": pins}
 
 
 def snapshot_pin(cursor, pin_id: int) -> Optional[dict]:
-    cursor.execute("SELECT * FROM pins WHERE id = %s", (pin_id,))
-    return _row_to_dict(cursor, cursor.fetchone())
+    cursor.execute("SELECT * FROM pins WHERE id = %s FOR UPDATE", (pin_id,))
+    pin = _row_to_dict(cursor, cursor.fetchone())
+    if pin:
+        pin['images'] = snapshot_images(cursor, pin_id)
+    return pin
 
 
 def snapshot_section(cursor, section_id: int) -> Optional[dict]:
     """Capture a section snapshot in the same {section, pins} shape used by
     snapshot_board so the audit-undo code can treat them uniformly."""
-    cursor.execute("SELECT * FROM sections WHERE id = %s", (section_id,))
+    cursor.execute("SELECT * FROM sections WHERE id = %s FOR UPDATE", (section_id,))
     section = _row_to_dict(cursor, cursor.fetchone())
     if not section:
         return None
-    cursor.execute("SELECT * FROM pins WHERE section_id = %s", (section_id,))
+    cursor.execute("SELECT * FROM pins WHERE section_id = %s ORDER BY id FOR UPDATE", (section_id,))
     pins = _rows_to_dicts(cursor, cursor.fetchall())
+    for pin in pins:
+        pin['images'] = snapshot_images(cursor, pin['id'])
     return {"section": section, "pins": pins}
