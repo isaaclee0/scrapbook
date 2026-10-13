@@ -47,6 +47,8 @@ def add_cached_images_table():
                 cache_status ENUM('pending', 'cached', 'failed', 'expired') DEFAULT 'pending',
                 retry_count INT DEFAULT 0,
                 last_retry_at TIMESTAMP NULL,
+                failure_kind VARCHAR(32) NULL,
+                last_error VARCHAR(512) NULL,
                 UNIQUE KEY unique_url_quality (original_url(500), quality_level),
                 INDEX idx_cached_images_original_url (original_url(500)),
                 INDEX idx_cached_images_status (cache_status),
@@ -66,6 +68,8 @@ def add_cached_images_table():
         try:
             cursor.execute("""
                 ALTER TABLE cached_images 
+                ADD COLUMN IF NOT EXISTS failure_kind VARCHAR(32) NULL,
+                ADD COLUMN IF NOT EXISTS last_error VARCHAR(512) NULL,
                 ADD COLUMN IF NOT EXISTS retry_count INT DEFAULT 0,
                 ADD COLUMN IF NOT EXISTS last_retry_at TIMESTAMP NULL
             """)

@@ -521,6 +521,13 @@ def migrate_database():
         else:
             warning("cached_images already has retry columns")
 
+        # Failure metadata is additive; do not reset existing retry budgets.
+        for column, definition in [('failure_kind', 'VARCHAR(32) NULL'),
+                                   ('last_error', 'VARCHAR(512) NULL')]:
+            if not column_exists(cursor, 'cached_images', column):
+                cursor.execute(f'ALTER TABLE cached_images ADD COLUMN {column} {definition}')
+                success(f'Added cached_images.{column}')
+
         # Migration Step 11: Ensure all indexes exist
         info("\nStep 11: Performance indexes")
         indexes = [

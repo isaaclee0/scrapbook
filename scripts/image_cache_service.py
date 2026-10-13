@@ -5,15 +5,13 @@ import os
 import sys
 import requests
 import hashlib
-import time
-from PIL import Image
+from PIL import Image, UnidentifiedImageError
 import io
 import subprocess
 import tempfile
 import threading
 import queue
 import logging
-from datetime import datetime, timedelta
 
 # Add the parent directory to Python path to import from app.py
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -43,6 +41,42 @@ except ImportError:
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
+
+# Use the same DB clock and predicate for counts, batch selection and downloads.
+# A missing row is eligible; old failures retain their existing retry budget.
+RETRY_ELIGIBLE_SQL = """
+    COALESCE(ci.retry_count, 0) < 3
+    AND (ci.failure_kind IS NULL OR ci.failure_kind = 'retryable')
+    AND (ci.last_retry_at IS NULL OR
+         TIMESTAMPDIFF(SECOND, ci.last_retry_at, NOW()) >=
+         POWER(2, COALESCE(ci.retry_count, 0)) * 3600)
+"""
+CACHE_QUEUE_SQL = f"""
+    FROM pins p
+    LEFT JOIN cached_images attached ON p.cached_image_id = attached.id
+    LEFT JOIN cached_images ci ON ci.original_url = p.image_url AND ci.quality_level = 'low'
+    WHERE p.image_url LIKE 'http%%'
+      AND (attached.id IS NULL OR attached.cache_status IS NULL OR attached.cache_status != 'cached')
+      AND ((ci.cache_status = 'cached') OR ({RETRY_ELIGIBLE_SQL}))
+"""
+
+
+def count_eligible_images():
+    db = get_db_connection()
+    try:
+        cursor = db.cursor()
+        try:
+            cursor.execute('SELECT COUNT(*) ' + CACHE_QUEUE_SQL)
+            return cursor.fetchone()[0]
+        finally:
+            cursor.close()
+    finally:
+        db.close()
+
+
+class UnsupportedContent(ValueError):
+    """The URL supplies content this cache cannot turn into an image."""
+
 
 class ImageCacheService:
     def __init__(self, cache_dir='static/cached_images', max_workers=6):
@@ -165,7 +199,7 @@ class ImageCacheService:
         
         return False
     
-    def _extract_video_frame(self, video_url, output_path, timestamp='00:00:01'):
+    def _extract_video_frame(self, video_url, output_path, timestamp='00:00:01', progress_callback=None):
         """Extract a frame from video using ffmpeg"""
         if not self.ffmpeg_available:
             raise Exception("ffmpeg not available for video processing")
@@ -179,12 +213,16 @@ class ImageCacheService:
                 # Download video to temp file
                 logger.info(f"Downloading video: {video_url}")
                 response = self.session.get(video_url, headers=self._headers_for_url(video_url), timeout=60, stream=True)
-                response.raise_for_status()
-                
-                # Write video data to temp file
-                with open(temp_video_path, 'wb') as f:
-                    for chunk in response.iter_content(chunk_size=8192):
-                        f.write(chunk)
+                try:
+                    response.raise_for_status()
+                    content_type = response.headers.get('content-type', '').lower()
+                    if content_type.startswith(('text/', 'application/pdf', 'application/json')):
+                        raise UnsupportedContent(f"Not a video: {content_type}")
+                    with open(temp_video_path, 'wb') as f:
+                        for chunk in self._download_chunks(response, progress_callback):
+                            f.write(chunk)
+                finally:
+                    response.close()
                 
                 # Extract frame using ffmpeg
                 logger.info(f"Extracting frame at {timestamp} from video")
@@ -219,6 +257,13 @@ class ImageCacheService:
             logger.error(f"Failed to extract video frame: {e}")
             raise
     
+    def _download_chunks(self, response, progress_callback=None):
+        for chunk in response.iter_content(chunk_size=65536):
+            if chunk:
+                if progress_callback:
+                    progress_callback()
+                yield chunk
+
     def _headers_for_url(self, url):
         """Return request headers with an appropriate Referer for known CDNs."""
         headers = dict(self.session.headers)
@@ -269,19 +314,25 @@ class ImageCacheService:
             try:
                 if task is None:  # Stop signal
                     break
-                pin_id, image_url, quality_level, board_id = task
-                self._cache_image(pin_id, image_url, quality_level, board_id)
+                pin_id, image_url, quality_level, board_id, on_complete, progress = task
+                result = None
+                try:
+                    result = self._cache_image(pin_id, image_url, quality_level, board_id, progress)
+                finally:
+                    if on_complete:
+                        on_complete(result)
             except Exception as e:
                 logger.error(f"Error in worker thread: {e}")
             finally:
                 self.task_queue.task_done()
 
-    def queue_image_for_caching(self, pin_id, image_url, quality_level='low', board_id=None):
+    def queue_image_for_caching(self, pin_id, image_url, quality_level='low', board_id=None,
+                                on_complete=None, progress_callback=None):
         """Queue an image for background caching"""
         if not self.running:
             self.start_workers()
 
-        self.task_queue.put((pin_id, image_url, quality_level, board_id))
+        self.task_queue.put((pin_id, image_url, quality_level, board_id, on_complete, progress_callback))
         logger.info(f"Queued image for caching: pin_id={pin_id}, url={image_url[:50]}...")
     
     def _generate_cache_filename(self, original_url, quality_level):
@@ -289,66 +340,23 @@ class ImageCacheService:
         url_hash = hashlib.md5(original_url.encode()).hexdigest()[:16]
         return f"{url_hash}_{quality_level}.webp"
     
-    def _get_retry_count(self, image_url, quality_level):
-        """Get current retry count for an image"""
+    def _should_retry(self, image_url, quality_level):
+        db = get_db_connection()
         try:
-            db = get_db_connection()
             cursor = db.cursor(dictionary=True)
-            
-            cursor.execute("""
-                SELECT retry_count, last_retry_at FROM cached_images 
-                WHERE original_url = %s AND quality_level = %s
-            """, (image_url, quality_level))
-            
-            result = cursor.fetchone()
-            cursor.close()
+            try:
+                cursor.execute(f"""
+                    SELECT ({RETRY_ELIGIBLE_SQL}) AS eligible
+                    FROM cached_images ci
+                    WHERE original_url = %s AND quality_level = %s
+                """, (image_url, quality_level))
+                record = cursor.fetchone()
+                return record is None or bool(record['eligible'])
+            finally:
+                cursor.close()
+        finally:
             db.close()
-            
-            if result:
-                return result['retry_count'] or 0, result['last_retry_at']
-            return 0, None
-            
-        except Exception as e:
-            logger.error(f"Error getting retry count: {e}")
-            return 0, None
-    
-    def _should_retry(self, image_url, quality_level, max_retries=3):
-        """Check if we should retry caching this image"""
-        retry_count, last_retry = self._get_retry_count(image_url, quality_level)
 
-        try:
-            db = get_db_connection()
-            cursor = db.cursor(dictionary=True)
-            cursor.execute("""
-                SELECT cache_status, updated_at FROM cached_images
-                WHERE original_url = %s AND quality_level = %s
-            """, (image_url, quality_level))
-            record = cursor.fetchone()
-            cursor.close()
-            db.close()
-            if record and record['cache_status'] == 'pending' and record['updated_at']:
-                stale_cutoff = datetime.now() - timedelta(hours=1)
-                if record['updated_at'] < stale_cutoff:
-                    return True
-        except Exception as e:
-            logger.warning(f"Could not check pending staleness: {e}")
-
-        if retry_count >= max_retries:
-            logger.info(f"Max retries ({max_retries}) exceeded for {image_url}")
-            return False
-        
-        # If we've retried recently, use exponential backoff
-        if last_retry:
-            # Wait time: 1 hour * (2^retry_count)
-            wait_hours = 1 * (2 ** retry_count)
-            next_retry_time = last_retry + timedelta(hours=wait_hours)
-            
-            if datetime.now() < next_retry_time:
-                logger.info(f"Too soon to retry {image_url}, next retry at {next_retry_time}")
-                return False
-        
-        return True
-    
     def _publish(self, board_id, event_type, payload):
         """Best-effort publish to the per-board SSE stream. Silent on failure
         because cache writes have already succeeded — losing a notification
@@ -386,20 +394,37 @@ class ImageCacheService:
                               WHERE id = %s AND image_url = %s''', (cache_id, pin_id, image_url))
         return pin['board_id']
 
-    def _cache_image(self, pin_id, image_url, quality_level='low', board_id=None):
-        """Download and cache an image or extract frame from video"""
-        db = None
+    def _cache_image(self, pin_id, image_url, quality_level='low', board_id=None, progress_callback=None):
+        """Serialize a URL across web and worker processes without blocking the queue."""
+        lock_name = 'scrappl-cache:' + hashlib.sha256(f'{quality_level}:{image_url}'.encode()).hexdigest()[:48]
+        db = get_db_connection()
+        cursor = None
+        acquired = False
+        try:
+            cursor = db.cursor()
+            cursor.execute('SELECT GET_LOCK(%s, 0)', (lock_name,))
+            acquired = cursor.fetchone()[0] == 1
+            if not acquired:
+                return None
+            return self._cache_image_locked(pin_id, image_url, quality_level, board_id, progress_callback, db)
+        finally:
+            try:
+                if acquired:
+                    cursor.execute('SELECT RELEASE_LOCK(%s)', (lock_name,))
+                    cursor.fetchone()
+            finally:
+                if cursor:
+                    cursor.close()
+                db.close()
+
+    def _cache_image_locked(self, pin_id, image_url, quality_level, board_id, progress_callback, db):
+        """Download and persist while holding the per-URL advisory lock."""
         cursor = None
         try:
-            # Check retry logic first
-            if not self._should_retry(image_url, quality_level):
-                return None
-            
             # Check if already cached
             cached_filename = self._generate_cache_filename(image_url, quality_level)
             cached_path = os.path.join(self.cache_dir, cached_filename)
             
-            db = get_db_connection()
             cursor = db.cursor(dictionary=True)
             
             # Check if already in database
@@ -434,6 +459,18 @@ class ImageCacheService:
                                   "cached_filename": cached_record['cached_filename'], "image_url": image_url})
                 return cached_record['id']
             
+            if cached_record and cached_record['cache_status'] == 'cached':
+                # Missing bytes are not a valid cache. Keep the retry history so
+                # an exhausted row is retired without another network attempt.
+                cursor.execute("""UPDATE cached_images SET cache_status = 'failed',
+                                  last_error = 'Cached file missing'
+                                  WHERE id = %s""", (cached_record['id'],))
+                db.commit()
+
+            # Reusing valid bytes above is safe even for legacy rows with retries.
+            if not self._should_retry(image_url, quality_level):
+                return None
+
             # Determine if this is a video URL
             is_video = self._is_video_url(image_url)
             
@@ -456,7 +493,7 @@ class ImageCacheService:
                 
                 try:
                     # Extract frame using ffmpeg
-                    self._extract_video_frame(image_url, temp_frame_path)
+                    self._extract_video_frame(image_url, temp_frame_path, progress_callback=progress_callback)
                     
                     # Load the extracted frame
                     with Image.open(temp_frame_path) as img:
@@ -481,15 +518,14 @@ class ImageCacheService:
                 # Download regular image
                 logger.info(f"Downloading image: {image_url}")
                 response = self.session.get(image_url, headers=self._headers_for_url(image_url), timeout=30, stream=True)
-                response.raise_for_status()
-                
-                # Check content type
-                content_type = response.headers.get('content-type', '').lower()
-                if not content_type.startswith('image/'):
-                    raise ValueError(f"Not an image: {content_type}")
-                
-                # Read image data
-                image_data = response.content
+                try:
+                    response.raise_for_status()
+                    content_type = response.headers.get('content-type', '').lower()
+                    if not content_type.startswith('image/'):
+                        raise UnsupportedContent(f"Not an image: {content_type}")
+                    image_data = b''.join(self._download_chunks(response, progress_callback))
+                finally:
+                    response.close()
                 if len(image_data) == 0:
                     raise ValueError("Empty image data")
                 
@@ -518,7 +554,8 @@ class ImageCacheService:
                     UPDATE cached_images 
                     SET cached_filename = %s, file_size = %s, width = %s, height = %s,
                         cache_status = 'cached', updated_at = CURRENT_TIMESTAMP,
-                        last_accessed = CURRENT_TIMESTAMP, retry_count = 0, last_retry_at = NULL
+                        last_accessed = CURRENT_TIMESTAMP, retry_count = 0, last_retry_at = NULL,
+                        failure_kind = NULL, last_error = NULL
                     WHERE id = %s
                 """, (cached_filename, file_size, width, height, cached_record['id']))
                 cache_id = cached_record['id']
@@ -528,6 +565,11 @@ class ImageCacheService:
                     INSERT INTO cached_images 
                     (original_url, cached_filename, file_size, width, height, quality_level, cache_status, retry_count)
                     VALUES (%s, %s, %s, %s, %s, %s, 'cached', 0)
+                    ON DUPLICATE KEY UPDATE
+                    id = LAST_INSERT_ID(id), cached_filename = VALUES(cached_filename),
+                    file_size = VALUES(file_size), width = VALUES(width), height = VALUES(height),
+                    cache_status = 'cached', retry_count = 0, last_retry_at = NULL,
+                    failure_kind = NULL, last_error = NULL, last_accessed = CURRENT_TIMESTAMP
                 """, (image_url, cached_filename, file_size, width, height, quality_level))
                 cache_id = cursor.lastrowid
             
@@ -547,21 +589,20 @@ class ImageCacheService:
             if db:
                 db.rollback()
             logger.error(f"Failed to download {'video' if self._is_video_url(image_url) else 'image'} {image_url}: {e}")
-            self._mark_cache_failed(image_url, quality_level, str(e))
+            status = e.response.status_code if e.response is not None else None
+            # Throttling, timeout and authentication/CDN blocks may be temporary.
+            kind = 'http_permanent' if status in (400, 404, 405, 410, 422) else 'retryable'
+            self._mark_cache_failed(image_url, quality_level, str(e), kind)
         except Exception as e:
             if db:
                 db.rollback()
             logger.error(f"Failed to cache {'video' if self._is_video_url(image_url) else 'image'} {image_url}: {e}")
-            self._mark_cache_failed(image_url, quality_level, str(e))
+            kind = 'unsupported' if isinstance(e, (UnsupportedContent, UnidentifiedImageError)) else 'retryable'
+            self._mark_cache_failed(image_url, quality_level, str(e), kind)
         finally:
             if cursor:
                 try:
                     cursor.close()
-                except Exception:
-                    pass
-            if db:
-                try:
-                    db.close()
                 except Exception:
                     pass
         
@@ -594,110 +635,69 @@ class ImageCacheService:
         img.thumbnail(max_size, Image.Resampling.LANCZOS)
         return img
     
-    def _mark_cache_failed(self, image_url, quality_level, error_msg):
-        """Mark an image as failed to cache with retry tracking"""
+    def _mark_cache_failed(self, image_url, quality_level, error_msg, failure_kind='retryable'):
+        """Persist the attempt without changing pins or overwriting a concurrent success."""
+        db = get_db_connection()
         try:
-            db = get_db_connection()
             cursor = db.cursor()
-            
-            # Get current retry count
-            retry_count, _ = self._get_retry_count(image_url, quality_level)
-            new_retry_count = retry_count + 1
-            
-            cursor.execute("""
-                INSERT INTO cached_images 
-                (original_url, cached_filename, quality_level, cache_status, retry_count, last_retry_at)
-                VALUES (%s, %s, %s, 'failed', %s, CURRENT_TIMESTAMP)
-                ON DUPLICATE KEY UPDATE 
-                cache_status = 'failed', 
-                retry_count = %s,
-                last_retry_at = CURRENT_TIMESTAMP,
-                updated_at = CURRENT_TIMESTAMP
-            """, (image_url, f"failed_{quality_level}", quality_level, new_retry_count, new_retry_count))
-            
-            db.commit()
-            logger.warning(f"Marked {'video' if self._is_video_url(image_url) else 'image'} as failed (attempt {new_retry_count}): {image_url} - {error_msg}")
-            
-        except Exception as e:
-            logger.error(f"Failed to mark image as failed: {e}")
-        finally:
-            if 'cursor' in locals():
+            try:
+                cursor.execute("""
+                    INSERT INTO cached_images
+                    (original_url, cached_filename, quality_level, cache_status,
+                     retry_count, last_retry_at, failure_kind, last_error)
+                    VALUES (%s, %s, %s, 'failed', 1, CURRENT_TIMESTAMP, %s, %s)
+                    ON DUPLICATE KEY UPDATE
+                    retry_count = IF(cache_status = 'cached', retry_count, COALESCE(retry_count, 0) + 1),
+                    last_retry_at = IF(cache_status = 'cached', last_retry_at, CURRENT_TIMESTAMP),
+                    failure_kind = IF(cache_status = 'cached', failure_kind, VALUES(failure_kind)),
+                    last_error = IF(cache_status = 'cached', last_error, VALUES(last_error)),
+                    cache_status = IF(cache_status = 'cached', cache_status, 'failed')
+                """, (image_url, f"failed_{quality_level}", quality_level, failure_kind, error_msg[:512]))
+                db.commit()
+                logger.warning('Cache failure (%s): %s - %s', failure_kind, image_url, error_msg)
+            finally:
                 cursor.close()
-            if 'db' in locals():
-                db.close()
-    
-    def cache_all_external_images(self, limit=None, board_id=None, process_dimensions=False):
-        """Cache all external images for pins that don't have cached versions"""
-        try:
-            db = get_db_connection()
-            cursor = db.cursor(dictionary=True)
-            
-            # Get all pins with external images that aren't cached and haven't exceeded retry limits
-            query = """
-                SELECT p.id, p.image_url, p.board_id
-                FROM pins p 
-                LEFT JOIN cached_images ci ON p.cached_image_id = ci.id 
-                WHERE p.image_url LIKE 'http%%' 
-                AND (p.cached_image_id IS NULL OR ci.cache_status != 'cached')
-                AND (ci.retry_count IS NULL OR ci.retry_count < 3 OR 
-                     ci.last_retry_at < DATE_SUB(NOW(), INTERVAL POWER(2, ci.retry_count) HOUR))
-            """
-            
-            params = []
-            if board_id:
-                query += " AND p.board_id = %s"
-                params.append(board_id)
-            
-            query += """
-                ORDER BY
-                    CASE
-                        WHEN ci.cache_status = 'pending' THEN 0
-                        WHEN p.cached_image_id IS NULL THEN 1
-                        ELSE 2
-                    END,
-                    p.created_at DESC
-            """
-            
-            if limit:
-                query += f" LIMIT {limit}"
-            
-            cursor.execute(query, params)
-            pins = cursor.fetchall()
-            
-            board_message = f" for board {board_id}" if board_id else ""
-            logger.info(f"Found {len(pins)} pins with external images to cache{board_message}")
-            
-            for pin in pins:
-                is_video = self._is_video_url(pin['image_url'])
-                media_type = "video" if is_video else "image"
-                logger.info(f"Queuing {media_type} for caching: pin {pin['id']} - {pin['image_url'][:60]}...")
-
-                self.queue_image_for_caching(pin['id'], pin['image_url'], 'low', pin.get('board_id'))
-                time.sleep(0.1)  # Small delay to avoid overwhelming the queue
-            
-            # Wait for all tasks to complete
-            self.task_queue.join()
-            
-            cursor.close()
-            db.close()
-            
-            if process_dimensions:
-                self.process_missing_dimensions(board_id=board_id)
-            
-        except Exception as e:
-            logger.error(f"Error caching all external images: {e}")
         finally:
-            if 'cursor' in locals() and cursor:
-                try:
-                    cursor.close()
-                except:
-                    pass
-            if 'db' in locals() and db:
-                try:
-                    db.close()
-                except:
-                    pass
-    
+            db.close()
+
+    def cache_all_external_images(self, limit=None, board_id=None, process_dimensions=False,
+                                  progress_callback=None):
+        """Select eligible work before LIMIT; report actual results, not queue deltas."""
+        db = get_db_connection()
+        try:
+            cursor = db.cursor(dictionary=True)
+            try:
+                query = 'SELECT p.id, p.image_url, p.board_id ' + CACHE_QUEUE_SQL
+                params = []
+                if board_id is not None:
+                    query += ' AND p.board_id = %s'
+                    params.append(board_id)
+                query += " ORDER BY COALESCE(ci.retry_count, 0), p.created_at DESC, p.id DESC"
+                if limit is not None:
+                    query += ' LIMIT %s'
+                    params.append(int(limit))
+                cursor.execute(query, params)
+                pins = cursor.fetchall()
+            finally:
+                cursor.close()
+        finally:
+            db.close()
+
+        results = {'selected': len(pins), 'cached': 0, 'failed_or_skipped': 0}
+        completed = queue.Queue()
+        logger.info('Found %s eligible pins to cache', len(pins))
+        for pin in pins:
+            self.queue_image_for_caching(pin['id'], pin['image_url'], 'low', pin.get('board_id'),
+                                         on_complete=completed.put, progress_callback=progress_callback)
+        for _ in pins:
+            cache_id = completed.get()
+            results['cached' if cache_id is not None else 'failed_or_skipped'] += 1
+            if progress_callback:
+                progress_callback()
+        if process_dimensions:
+            self.process_missing_dimensions(board_id=board_id)
+        return results
+
     def process_missing_dimensions(self, board_id=None, limit=100):
         """Process dimensions for pins that have cached images but missing dimensions"""
         db = None

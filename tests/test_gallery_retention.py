@@ -61,6 +61,10 @@ class CacheCursor(SqliteCursor):
     def execute(self, query, params=()):
         query = re.sub(r'DATE_SUB\(NOW\(\), INTERVAL %s DAY\)', "datetime('now', '-' || %s || ' days')", query)
         query = query.replace('NOW()', 'CURRENT_TIMESTAMP')
+        if 'GET_LOCK(' in query or 'RELEASE_LOCK(' in query:
+            # SQLite has no session locks; cross-process locks are exercised by test_cache_mysql.
+            return super().execute('SELECT 1')
+        query = query.replace('id = LAST_INSERT_ID(id),', '')
         query = query.replace('ON DUPLICATE KEY UPDATE', 'ON CONFLICT(original_url, quality_level) DO UPDATE SET')
         query = re.sub(r'VALUES\((\w+)\)', r'excluded.\1', query)
         super().execute(query, params)
@@ -103,6 +107,7 @@ class CacheMaintenanceTests(unittest.TestCase):
             CREATE TABLE cached_images (id INTEGER PRIMARY KEY, original_url TEXT,
                 cached_filename TEXT, file_size INTEGER, width INTEGER, height INTEGER,
                 quality_level TEXT DEFAULT 'low', cache_status TEXT DEFAULT 'cached',
+                failure_kind TEXT, last_error TEXT,
                 updated_at TEXT, last_accessed TEXT DEFAULT '2000-01-01',
                 retry_count INTEGER DEFAULT 0, last_retry_at TEXT,
                 UNIQUE(original_url, quality_level));
@@ -267,6 +272,8 @@ class CacheMaintenanceTests(unittest.TestCase):
             self.db.execute("UPDATE pins SET image_url='https://example.test/new-cover.png' WHERE id=1")
             class Response:
                 content = buffer.getvalue()
+                def iter_content(self, chunk_size): yield self.content
+                def close(self): pass
                 headers = {'content-type': 'image/png'}
                 def raise_for_status(self): pass
             return Response()
@@ -289,6 +296,8 @@ class CacheMaintenanceTests(unittest.TestCase):
         Image.new('RGB', (600, 900), 'red').save(buffer, 'PNG')
         class Response:
             content = buffer.getvalue()
+            def iter_content(self, chunk_size): yield self.content
+            def close(self): pass
             headers = {'content-type': 'image/png'}
             def raise_for_status(self): pass
         with patch.object(image_cache_service, 'get_db_connection', return_value=self.connection), \

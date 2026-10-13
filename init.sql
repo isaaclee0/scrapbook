@@ -127,6 +127,8 @@ CREATE TABLE IF NOT EXISTS cached_images (
     cache_status ENUM('pending', 'cached', 'failed', 'expired') DEFAULT 'pending',
     retry_count INT DEFAULT 0,
     last_retry_at TIMESTAMP NULL,
+    failure_kind VARCHAR(32) NULL,
+    last_error VARCHAR(512) NULL,
     UNIQUE KEY unique_url_quality (original_url(500), quality_level),
     INDEX idx_cached_images_original_url (original_url(500)),
     INDEX idx_cached_images_status (cache_status),

@@ -36,6 +36,12 @@ services:
     image: staugustine1/scrapbook:latest
     restart: unless-stopped
     command: ["python", "scripts/cache_worker.py"]
+    healthcheck:
+      test: ["CMD", "python", "scripts/cache_worker.py", "--healthcheck"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
     volumes:
       - cached_images:/app/static/cached_images
     networks:

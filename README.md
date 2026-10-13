@@ -72,6 +72,37 @@ The app and `reassign_isaac.sql` expect the logical database name **`db`**. If y
 
 ## Building and Deployment
 
+### Cache worker health and retries
+
+The `cache-worker` service uses `python scripts/cache_worker.py --healthcheck`.
+Apply its healthcheck block from `docker-compose.example.yml` when updating an
+existing Portainer stack; the image's default HTTP health check is for the web service.
+A local heartbeat records loop activity, download chunks and completed tasks.
+Intentional sleeps refresh it; blocked processing stops refreshing it. The default
+maximum inactivity is 300 seconds (`CACHE_WORKER_HEALTH_MAX_AGE`).
+
+Queue counts and batches use the same URL/quality retry policy as downloads:
+fewer than 3 failed attempts and an elapsed exponential cooldown (2 hours after
+the first failure, 4 after the second). HTML/PDF content, unsupported image bytes
+and permanent HTTP responses are terminal. Timeout, throttling and server errors
+remain retryable within that budget. Nullable `failure_kind` and `last_error`
+columns are added automatically on startup; existing retry counts are preserved.
+MariaDB advisory locks prevent web and worker processes retrying the same URL
+simultaneously. Empty or unsuccessful batches back off for 300 seconds by default.
+Logs report actual successful results separately from failures/skips and eligible
+queue size. Eligible zero does not mean all images cached.
+
+Run unit tests with `.venv/bin/python -m unittest discover -s tests -q`.
+`tests/test_cache_mysql.py` documents the opt-in disposable MariaDB tests; they
+also verify real image downloads and cross-connection locking. Never point those
+tests at the production database.
+
+For an existing production stack, retain its named volumes and secrets, back up
+the maintained compose file, pull the patch image, and recreate only `web` and
+`cache-worker` using `docker compose up -d --no-deps`. Start web first so its
+idempotent migration completes before starting the updated worker. No volume
+reset or global retry reset is part of this upgrade.
+
 ### Docker Registry Information
 
 **Docker Hub Repository**: `staugustine1/scrapbook`
