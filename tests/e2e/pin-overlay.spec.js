@@ -3,6 +3,20 @@ const { test, expect } = require('@playwright/test');
 const boardUrl = '/tests/e2e/fixtures/pin-overlay-board.html';
 const pinFixture = require('path').join(__dirname, 'fixtures/pin-overlay-pin.html');
 
+async function prepareStandalonePin(context) {
+  // Run the real template's close controls and navigation bridge without a database.
+  const source = require('fs').readFileSync(require('path').join(__dirname, '../../templates/pin.html'), 'utf8');
+  const controls = source.match(/<button\b[^>]*onclick="closePinView\(\)"[^>]*>[\s\S]*?<\/button>/g).join('');
+  const bridge = source.slice(source.indexOf('function notifyPinOverlay'), source.indexOf("document.addEventListener('DOMContentLoaded'"));
+  const standalone = await context.newPage();
+  await standalone.route('**/pin/42', route => route.fulfill({
+    contentType: 'text/html',
+    body: `${controls}<script>const PIN_OVERLAY_EMBEDDED = false; const PIN_OVERLAY_ID = 42; const boardId = 9; ${bridge}</script>`
+  }));
+  await standalone.route('**/board/9', route => route.fulfill({ contentType: 'text/html', body: '<h1>Pin board</h1>' }));
+  return standalone;
+}
+
 async function waitForDirtyChange(page, change) {
   await expect.poll(() => page.evaluate(expected => Object.keys(sessionStorage)
     .some(key => sessionStorage.getItem(key).includes(`"change":"${expected}"`)), change)).toBe(true);
@@ -46,6 +60,25 @@ test.beforeEach(async ({ page }) => {
     })
   }));
   await page.goto(boardUrl);
+});
+
+for (const control of ['Close pin', 'Cancel']) {
+  test(`standalone ${control} returns a directly opened pin to its board`, async ({ context }) => {
+    const standalone = await prepareStandalonePin(context);
+    await standalone.goto('/pin/42');
+    await standalone.getByRole('button', { name: control, exact: true }).click();
+    await expect(standalone).toHaveURL('/board/9');
+    await expect(standalone.getByRole('heading', { name: 'Pin board' })).toBeVisible();
+  });
+}
+
+test('standalone close preserves Back to the in-app page that opened it', async ({ context }) => {
+  const standalone = await prepareStandalonePin(context);
+  await standalone.route('**/search?q=cake', route => route.fulfill({ contentType: 'text/html', body: '<a href="/pin/42">Open pin</a>' }));
+  await standalone.goto('/search?q=cake');
+  await standalone.getByRole('link', { name: 'Open pin' }).click();
+  await standalone.getByRole('button', { name: 'Close pin', exact: true }).click();
+  await expect(standalone).toHaveURL('/search?q=cake');
 });
 
 test('real browser Back closes and Forward reopens the overlay', async ({ page }) => {

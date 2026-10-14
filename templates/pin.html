@@ -3,7 +3,7 @@
 {% set display_image_url = '/cached/' ~ pin.cached_filename if pin.cached_filename else pin.image_url %}
 
 {% block content %}
-<link rel="stylesheet" href="{{ url_for('static', filename='css/pin-gallery.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/pin-gallery.css', v=VERSION) }}">
 <!-- Debug information -->
 <div style="display: none;">
     Pin ID: {{ pin.id }}
@@ -27,39 +27,27 @@
         
         <div class="pin-body">
             <div class="pin-gallery" data-pin-gallery data-pin-id="{{ pin.id }}">
-            <div class="pin-image-container">
-                <img src="{{ display_image_url }}" alt="{{ pin.title }}" class="pin-image" data-original-url="{{ pin.image_url }}">
-                <div class="image-hover-controls">
-                    <button class="image-control-btn fullscreen-btn" onclick="openFullscreen()" title="Fullscreen" aria-label="Fullscreen selected image">
-                        <i class="fas fa-expand"></i>
-                    </button>
-                    <div class="tools-dropdown">
-                        <button class="image-control-btn tools-btn" onclick="toggleToolsMenu()" title="Tools">
-                            <i class="fas fa-ellipsis-v"></i>
+                <div class="pin-image-container">
+                    <img src="{{ display_image_url }}" alt="{{ pin.title }}" class="pin-image" data-original-url="{{ pin.image_url }}">
+                    <div class="image-hover-controls">
+                        <button class="image-control-btn fullscreen-btn" onclick="openFullscreen()" title="Fullscreen" aria-label="Fullscreen selected image">
+                            <i class="fas fa-expand"></i>
                         </button>
-                        <div class="tools-menu" id="toolsMenu">
-                            <button class="tool-menu-item" onclick="changeImage()">
-                                <i class="fas fa-sync-alt"></i> Change Image
-                            </button>
-                            <button class="tool-menu-item" onclick="setAsBoardImage()">
-                                <i class="fas fa-image"></i> Set as Board Image
-                            </button>
-                            {% if pin.section_id %}
-                            <button class="tool-menu-item" onclick="setAsSectionImage()">
-                                <i class="fas fa-folder-open"></i> Set as Section Cover
-                            </button>
-                            {% endif %}
-                            <button class="tool-menu-item" onclick="searchGoogleImage()">
-                                <i class="fab fa-google"></i> Search Google with Image
-                            </button>
-                            <button class="tool-menu-item remove-item" onclick="removeImage()">
-                                <i class="fas fa-trash"></i> Remove Image
-                            </button>
-                        </div>
                     </div>
                 </div>
-            </div>
-            
+                <div class="gallery-extra-actions" data-gallery-extra-actions hidden>
+                    <button class="tool-menu-item" onclick="setAsBoardImage()">
+                        <i class="fas fa-image"></i> Set as Board Image
+                    </button>
+                    {% if pin.section_id %}
+                    <button class="tool-menu-item" onclick="setAsSectionImage()">
+                        <i class="fas fa-folder-open"></i> Set as Section Cover
+                    </button>
+                    {% endif %}
+                    <button class="tool-menu-item" onclick="searchGoogleImage()">
+                        <i class="fab fa-google"></i> Search Google with Image
+                    </button>
+                </div>
             </div><!-- pin gallery -->
             <div class="pin-details">
                 <div class="pin-details-content">
@@ -1380,8 +1368,17 @@ function notifyPinOverlay(type, change) {
 }
 
 function closePinView() {
-    if (PIN_OVERLAY_EMBEDDED) notifyPinOverlay('close');
-    else window.history.back();
+    if (PIN_OVERLAY_EMBEDDED) {
+        notifyPinOverlay('close');
+        return;
+    }
+    // Direct links may have no previous page, or only an initial blank tab.
+    const referrer = document.referrer ? new URL(document.referrer) : null;
+    if (window.history.length > 1 && referrer?.origin === window.location.origin) {
+        window.history.back();
+    } else {
+        window.location.replace(`/board/${boardId}`);
+    }
 }
 
 document.addEventListener('keydown', function (event) {
@@ -2166,7 +2163,7 @@ function checkForArchive() {
 {% endblock %}
 
 {% block extra_js %}
-<script src="{{ url_for('static', filename='js/pin-gallery.js') }}"></script>
+<script src="{{ url_for('static', filename='js/pin-gallery.js', v=VERSION) }}"></script>
 <script>
 // Override the base.html createNewSection function for pin pages
 window.createNewSection = function() {

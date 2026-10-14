@@ -43,6 +43,104 @@ async function prepare(page, options = {}) {
   return requests;
 }
 
+async function openActions(page) {
+  await page.getByRole('button', { name: 'Image actions', exact: true }).click();
+}
+
+test('compact controls preserve image space and stay on one row with twenty images', async ({ page }) => {
+  await page.setViewportSize({ width: 805, height: 827 });
+  await prepare(page, { ids: Array.from({ length: 20 }, (_, i) => i + 1) });
+  await expect(page.locator('[data-gallery-position]')).toHaveText('1 / 20');
+  const gallery = page.locator('[data-pin-gallery]');
+  const before = await gallery.boundingBox();
+  const surface = await page.locator('.pin-image-container').boundingBox();
+  expect(surface.height / before.height).toBeGreaterThan(0.8);
+  await expect(page.getByRole('button', { name: 'Remove image', exact: true })).toBeHidden();
+  await openActions(page);
+  await expect(page.getByRole('button', { name: 'Remove image', exact: true })).toBeVisible();
+  expect((await gallery.boundingBox()).height).toBe(before.height);
+  await page.keyboard.press('Escape');
+  await expect(page.getByRole('button', { name: 'Image actions', exact: true })).toBeFocused();
+  expect(await page.evaluate(() => window.escapeCloseCount)).toBe(0);
+  await page.getByRole('button', { name: 'Previous image', exact: true }).click();
+  await expect(page.locator('[data-gallery-position]')).toHaveText('20 / 20');
+  await expect(page.getByRole('button', { name: 'Select image 20', exact: true })).toBeInViewport();
+});
+
+test('image actions dismiss on outside click and keyboard exit', async ({ page }) => {
+  await prepare(page);
+  await openActions(page);
+  await expect(page.getByRole('button', { name: 'Replace image', exact: true })).toBeFocused();
+  await page.locator('textarea').click();
+  await expect(page.getByRole('button', { name: 'Image actions', exact: true })).toHaveAttribute('aria-expanded', 'false');
+  await openActions(page);
+  await page.getByRole('button', { name: 'Set as board image', exact: true }).focus();
+  await page.keyboard.press('Tab');
+  await expect(page.getByRole('button', { name: 'Image actions', exact: true })).toHaveAttribute('aria-expanded', 'false');
+});
+
+test('file drag feedback appears over the image without taking layout space', async ({ page }) => {
+  await prepare(page);
+  const surface = page.locator('.pin-image-container');
+  const original = await surface.boundingBox();
+  await surface.evaluate(el => { const data = new DataTransfer(); data.items.add(new File(['drop'], 'drop.png', { type: 'image/png' })); el.dispatchEvent(new DragEvent('dragover', { bubbles: true, dataTransfer: data })); });
+  await expect(page.getByText('Drop images to add', { exact: true })).toBeVisible();
+  expect(await surface.boundingBox()).toEqual(original);
+  await surface.evaluate(el => { const data = new DataTransfer(); data.items.add(new File(['drop'], 'drop.png', { type: 'image/png' })); el.dispatchEvent(new DragEvent('drop', { bubbles: true, dataTransfer: data })); });
+  await expect(page.getByText('Drop images to add', { exact: true })).toBeHidden();
+  await expect(page.getByText('Image added', { exact: true })).toBeVisible();
+});
+
+test('upload feedback overlays the image and success disappears without moving focus', async ({ page }, testInfo) => {
+  await page.clock.install();
+  await prepare(page);
+  const surface = page.locator('.pin-image-container');
+  const before = await surface.boundingBox();
+  let finishUpload;
+  const uploadGate = new Promise(resolve => { finishUpload = resolve; });
+  await page.route('**/api/pin/42/images', async route => {
+    if (route.request().method() === 'POST') await uploadGate;
+    await route.fallback();
+  });
+  await page.locator('[data-pin-gallery]').focus();
+  await page.locator('[data-gallery-files]').setInputFiles({ name: 'image.png', mimeType: 'image/png', buffer: png });
+  await expect(page.getByText('Uploading image…', { exact: true })).toBeVisible();
+  expect(await surface.boundingBox()).toEqual(before);
+  finishUpload();
+  const added = page.getByText('Image added', { exact: true });
+  await expect(added).toBeVisible();
+  const feedback = await added.boundingBox();
+  expect(feedback.y).toBeGreaterThan(before.y);
+  expect(feedback.y + feedback.height).toBeLessThan(before.y + before.height);
+  expect(await surface.boundingBox()).toEqual(before);
+  await expect(page.locator('[data-pin-gallery]')).toBeFocused();
+  await expect(page.getByText('image.png: Added', { exact: true })).toHaveCount(0);
+  await page.screenshot({ path: testInfo.outputPath('upload-toast.png') });
+  await page.clock.runFor(4000);
+  await expect(added).toBeHidden();
+  await expect(page.locator('[data-pin-gallery]')).toBeFocused();
+  expect(await surface.boundingBox()).toEqual(before);
+});
+
+test('a new upload restarts the success toast lifetime and batches get one summary', async ({ page }) => {
+  await page.clock.install();
+  await prepare(page);
+  await page.locator('[data-gallery-files]').setInputFiles({ name: 'first.png', mimeType: 'image/png', buffer: png });
+  await expect(page.getByText('Image added', { exact: true })).toBeVisible();
+  await page.clock.runFor(2400);
+  await page.locator('[data-gallery-files]').setInputFiles([
+    { name: 'second.png', mimeType: 'image/png', buffer: png },
+    { name: 'third.png', mimeType: 'image/png', buffer: png }
+  ]);
+  const summary = page.getByText('2 images added', { exact: true });
+  await expect(summary).toBeVisible();
+  await expect(page.locator('[data-gallery-position]')).toHaveText('1 / 6');
+  await page.clock.runFor(1000);
+  await expect(summary).toBeVisible();
+  await page.clock.runFor(3000);
+  await expect(summary).toBeHidden();
+});
+
 test('arrows, keyboard and thumbnails wrap without adding history or capturing notes keys', async ({ page }, testInfo) => {
   await prepare(page);
   await expect(page.locator('[data-gallery-position]')).toHaveText('1 / 3');
@@ -64,26 +162,30 @@ test('arrows, keyboard and thumbnails wrap without adding history or capturing n
 test('selected original opens fullscreen with zoom and focus restoration', async ({ page }) => {
   await prepare(page, { query: '?image=2' });
   await expect(page.locator('[data-gallery-position]')).toHaveText('2 / 3');
+  await openActions(page);
   await page.getByRole('button', { name: 'Fullscreen image' }).click();
   await expect(page.getByRole('dialog').locator('img')).toHaveAttribute('src', '/original-2.png');
   await page.getByRole('button', { name: 'Enlarge image' }).click();
   await expect(page.getByRole('button', { name: 'Fit image' })).toBeVisible();
   await page.keyboard.press('Escape');
   await expect(page.getByRole('dialog')).toHaveCount(0);
-  await expect(page.getByRole('button', { name: 'Fullscreen image' })).toBeFocused();
+  await expect(page.getByRole('button', { name: 'Image actions', exact: true })).toBeFocused();
   await expect(page.locator('[data-gallery-position]')).toHaveText('2 / 3');
 });
 
 test('cover is explicit and reorder keeps cover first, selection survives and failures retry', async ({ page }) => {
   const requests = await prepare(page, { query: '?image=3', fail: 'cover' });
+  await openActions(page);
   await page.getByRole('button', { name: 'Move image earlier' }).click();
   await expect(page.locator('[data-gallery-position]')).toHaveText('2 / 3');
+  await openActions(page);
   await expect(page.getByRole('button', { name: 'Move image earlier' })).toBeDisabled();
   await page.getByRole('button', { name: 'Make cover' }).click();
   await expect(page.getByText('Please retry this file or action', { exact: true })).toBeVisible();
   await expect(page.locator('[data-gallery-position]')).toHaveText('2 / 3');
   await page.getByRole('button', { name: 'Retry action' }).click();
   await expect(page.locator('[data-gallery-position]')).toHaveText('1 / 3');
+  await openActions(page);
   await page.getByRole('button', { name: 'Remove image', exact: true }).click();
   await expect(page.locator('[data-gallery-position]')).toHaveText('1 / 2');
   expect(requests[0].image_ids).toEqual([1, 3, 2]);
@@ -91,15 +193,20 @@ test('cover is explicit and reorder keeps cover first, selection survives and fa
 });
 
 test('multi-file add reports failures per file and retries, replacement preserves identity', async ({ page }) => {
+  await page.clock.install();
   await prepare(page, { fail: 'bad.png', query: '?image=2' });
   await page.locator('[data-gallery-files]').setInputFiles([{ name: 'bad.png', mimeType: 'image/png', buffer: png }, { name: 'good.png', mimeType: 'image/png', buffer: png }]);
-  await expect(page.getByText('good.png: Added', { exact: true })).toBeVisible();
+  await expect(page.getByText('Image added', { exact: true })).toBeVisible();
+  await page.clock.runFor(4000);
+  await expect(page.getByText('Image added', { exact: true })).toBeHidden();
   await expect(page.getByRole('button', { name: 'Retry bad.png' })).toBeVisible();
   await page.getByRole('button', { name: 'Retry bad.png' }).click();
-  await expect(page.getByText('bad.png: Added', { exact: true })).toBeVisible();
+  await expect(page.getByText('Image added', { exact: true })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Retry bad.png' })).toHaveCount(0);
   await expect(page.locator('[data-gallery-position]')).toHaveText('2 / 5');
   await page.locator('[data-gallery-replacement]').setInputFiles({ name: 'replace.png', mimeType: 'image/png', buffer: png });
   await expect(page.locator('.pin-image')).toHaveAttribute('src', '/display-99.png');
+  await expect(page.getByText('Image replaced', { exact: true })).toBeVisible();
   await expect(page.locator('[data-gallery-position]')).toHaveText('2 / 5');
 });
 
@@ -108,9 +215,11 @@ test('paste is scoped to add area, drop adds files, horizontal swipe leaves vert
   await page.locator('textarea').evaluate(el => { const data = new DataTransfer(); data.items.add(new File(['paste'], 'note.png', {type:'image/png'})); el.dispatchEvent(new ClipboardEvent('paste', { bubbles: true, clipboardData: data })); });
   expect(requests).toHaveLength(0);
   await page.locator('[data-gallery-add]').evaluate(el => { const data = new DataTransfer(); data.items.add(new File(['paste'], 'paste.png', {type:'image/png'})); el.dispatchEvent(new ClipboardEvent('paste', { bubbles: true, clipboardData: data })); });
-  await expect(page.getByText('paste.png: Added', { exact: true })).toBeVisible();
+  await expect(page.locator('[data-gallery-position]')).toHaveText('1 / 4');
+  await expect(page.getByText('Image added', { exact: true })).toBeVisible();
   await page.locator('[data-gallery-add]').evaluate(el => { const data = new DataTransfer(); data.items.add(new File(['drop'], 'drop.png', {type:'image/png'})); el.dispatchEvent(new DragEvent('drop', { bubbles: true, dataTransfer: data })); });
-  await expect(page.getByText('drop.png: Added', { exact: true })).toBeVisible();
+  await expect(page.locator('[data-gallery-position]')).toHaveText('1 / 5');
+  await expect(page.getByText('Image added', { exact: true })).toBeVisible();
   const surface = page.locator('.pin-image-container');
   const swipe = async (dx, dy) => surface.evaluate((el, delta) => { el.dispatchEvent(new PointerEvent('pointerdown', { bubbles:true, pointerId:1, pointerType:'touch', clientX:200, clientY:200 })); el.dispatchEvent(new PointerEvent('pointerup', { bubbles:true, pointerId:1, pointerType:'touch', clientX:200+delta[0], clientY:200+delta[1] })); }, [dx, dy]);
   await swipe(5, 90);
@@ -123,6 +232,7 @@ test('empty galleries have no placeholder attachment and added images enable too
   await prepare(page, { ids: [] });
   await expect(page.locator('[data-gallery-position]')).toHaveText('No images');
   await expect(page.getByRole('button', { name: 'Next image', exact: true })).toBeHidden();
+  await openActions(page);
   await expect(page.getByRole('button', { name: 'Remove image', exact: true })).toBeDisabled();
   await expect(page.getByRole('button', { name: 'Set as board image', exact: true })).toBeDisabled();
   await page.locator('[data-gallery-files]').setInputFiles({ name: 'first.png', mimeType:'image/png', buffer:png });
@@ -170,6 +280,7 @@ test('readable cover source preserves a healthy cache when the original has expi
   await prepare(page,{imageStatus:url=>url==='/original-1.png'?404:200});
   await expect.poll(()=>page.locator('.pin-image').evaluate(el=>el.complete && el.naturalWidth>0)).toBe(true);
   expect(await page.evaluate(()=>window.pinGallery.readableUrl())).toBe('/display-1.png');
+  await openActions(page);
   await page.getByRole('button',{name:'Fullscreen image',exact:true}).click();
   await expect(page.getByRole('dialog').locator('img')).toHaveAttribute('src','/display-1.png');
   await expect.poll(()=>page.getByRole('dialog').locator('img').evaluate(el=>el.complete && el.naturalWidth>0)).toBe(true);
@@ -180,6 +291,7 @@ test('fullscreen source failures retry original first and recover without closin
   let originalHealthy=false;
   await prepare(page,{imageStatus:url=>['/display-1.png','/preview-1.png'].includes(url)||(url==='/original-1.png'&&!originalHealthy)?404:200});
   await expect(page.getByRole('button',{name:'Retry image',exact:true})).toBeVisible();
+  await openActions(page);
   await page.getByRole('button',{name:'Fullscreen image',exact:true}).click();
   await expect(page.getByRole('button',{name:'Retry original',exact:true})).toBeVisible();
   originalHealthy=true;
@@ -209,6 +321,7 @@ test('mobile layout fits, and enlarged recipes scroll and pan', async ({ page },
   await prepare(page, { query: '?image=2' });
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   await page.screenshot({ path: testInfo.outputPath('gallery-mobile.png'), fullPage:true });
+  await openActions(page);
   await page.getByRole('button', { name:'Fullscreen image' }).click();
   await page.getByRole('button', { name:'Enlarge image' }).click();
   const viewport = page.locator('.gallery-fullscreen-viewport');
@@ -225,6 +338,7 @@ test('mobile layout fits, and enlarged recipes scroll and pan', async ({ page },
 
 test('embedded Escape consumes fullscreen and confirmation before forwarding close, respecting inner handlers', async ({ page }) => {
   await prepare(page);
+  await openActions(page);
   await page.getByRole('button', { name: 'Fullscreen image', exact:true }).click();
   await page.keyboard.press('Escape');
   await expect(page.getByRole('dialog')).toHaveCount(0);

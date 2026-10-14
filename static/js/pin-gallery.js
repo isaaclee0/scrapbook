@@ -17,26 +17,57 @@
     root.setAttribute('role', 'region');
     root.setAttribute('aria-label', 'Pin images');
     root.tabIndex = 0;
+    root.dataset.galleryAdd = '';
+    const toolbar = document.createElement('div');
+    toolbar.className = 'gallery-toolbar';
+    root.appendChild(toolbar);
     const controls = document.createElement('div');
     controls.className = 'gallery-navigation';
     controls.innerHTML = '<button type="button" data-gallery-previous aria-label="Previous image">‹</button><span data-gallery-position aria-live="polite" aria-atomic="true">Loading images…</span><button type="button" data-gallery-next aria-label="Next image">›</button>';
-    root.appendChild(controls);
     const thumbs = document.createElement('div');
     thumbs.className = 'gallery-thumbnails';
     thumbs.setAttribute('aria-label', 'Choose an image');
-    root.appendChild(thumbs);
+    toolbar.append(thumbs, controls);
+    const picker = document.createElement('button');
+    picker.type = 'button';
+    picker.className = 'gallery-icon-button';
+    picker.dataset.galleryPicker = '';
+    picker.setAttribute('aria-label', 'Add images');
+    picker.title = 'Add images · or drop/paste into the gallery';
+    picker.textContent = '+';
+    const menuToggle = document.createElement('button');
+    menuToggle.type = 'button';
+    menuToggle.className = 'gallery-icon-button';
+    menuToggle.setAttribute('aria-label', 'Image actions');
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuToggle.setAttribute('aria-controls', 'gallery-actions');
+    menuToggle.title = 'Image actions';
+    menuToggle.textContent = '⋯';
+    toolbar.append(picker, menuToggle);
     const actions = document.createElement('div');
+    actions.id = 'gallery-actions';
     actions.className = 'gallery-actions';
+    actions.hidden = true;
+    actions.setAttribute('role', 'group');
+    actions.setAttribute('aria-label', 'Image actions');
     actions.innerHTML = '<button type="button" data-gallery-cover>Make cover</button><button type="button" data-gallery-earlier aria-label="Move image earlier">Move earlier</button><button type="button" data-gallery-later aria-label="Move image later">Move later</button><button type="button" data-gallery-replace>Replace image</button><button type="button" data-gallery-remove>Remove image</button><button type="button" data-gallery-fullscreen>Fullscreen image</button>';
-    root.appendChild(actions);
-    const add = document.createElement('div');
-    add.className = 'gallery-add';
-    add.dataset.galleryAdd = '';
-    add.tabIndex = 0;
-    add.setAttribute('role', 'group');
-    add.setAttribute('aria-label', 'Add images: choose files, drop files or paste images here');
-    add.innerHTML = '<button type="button" data-gallery-picker>Add images</button><span>Drop files or focus here and paste images</span><input type="file" accept="image/*" multiple data-gallery-files hidden><input type="file" accept="image/*" data-gallery-replacement hidden>';
-    root.appendChild(add);
+    const extraActions = root.querySelector('[data-gallery-extra-actions]');
+    if (extraActions) { extraActions.hidden = false; actions.appendChild(extraActions); }
+    toolbar.appendChild(actions);
+    toolbar.insertAdjacentHTML('beforeend', '<input type="file" accept="image/*" multiple data-gallery-files hidden><input type="file" accept="image/*" data-gallery-replacement hidden>');
+    const dropHint = document.createElement('div');
+    dropHint.className = 'gallery-drop-hint';
+    dropHint.textContent = 'Drop images to add';
+    dropHint.hidden = true;
+    surface.appendChild(dropHint);
+    const uploadToast = document.createElement('div');
+    uploadToast.className = 'gallery-upload-toast';
+    uploadToast.setAttribute('role', 'status');
+    uploadToast.setAttribute('aria-atomic', 'true');
+    uploadToast.innerHTML = '<span class="gallery-upload-icon" aria-hidden="true"></span><span></span>';
+    surface.appendChild(uploadToast);
+    let uploadToastTimer;
+    const uploadProgress = { pending: 0, added: 0, replaced: 0 };
     const uploads = document.createElement('ul');
     uploads.className = 'gallery-upload-results';
     uploads.setAttribute('aria-live', 'polite');
@@ -77,10 +108,11 @@
         $('[data-gallery-earlier]').disabled = busy || !ready || position <= 1;
         $('[data-gallery-later]').disabled = busy || !ready || position <= 0 || position === images.length - 1;
         for (const action of ['replace', 'remove', 'fullscreen']) $(`[data-gallery-${action}]`).disabled = busy || !ready || !active;
-        root.querySelectorAll('.tools-menu button, .fullscreen-btn').forEach(button => {
+        root.querySelectorAll('[data-gallery-extra-actions] button, .fullscreen-btn').forEach(button => {
             button.disabled = busy || !ready || !active;
         });
         $('[data-gallery-picker]').disabled = !ready;
+        thumbs.hidden = images.length < 2;
         // Keep keyboard focus on its selected thumbnail when the saved collection changes.
         const focusedId = document.activeElement && document.activeElement.dataset.galleryThumbnail;
         thumbs.replaceChildren();
@@ -90,6 +122,7 @@
             button.dataset.galleryThumbnail = item.id;
             button.setAttribute('aria-label', `Select image ${i + 1}`);
             button.setAttribute('aria-pressed', String(item === active));
+            button.title = `Image ${i + 1}${i === 0 ? ' · Cover' : ''}`;
             const thumbnail = document.createElement('img');
             const sources = [...new Set([item.preview_url, item.display_url, item.image_url].filter(Boolean))];
             const key = JSON.stringify([item.id, ...sources]);
@@ -108,7 +141,8 @@
             button.appendChild(thumbnail);
             if (i === 0) {
                 const badge = document.createElement('span');
-                badge.textContent = 'Cover';
+                badge.textContent = '★';
+                badge.setAttribute('aria-hidden', 'true');
                 button.appendChild(badge);
             }
             button.addEventListener('click', () => select(item.id));
@@ -118,9 +152,23 @@
             const focused = Array.from(thumbs.children).find(button => button.dataset.galleryThumbnail === focusedId);
             (focused || root).focus({ preventScroll: true });
         }
+        // Scroll only the thumbnail strip, never the enclosing page or pin.
+        const selectedThumb = thumbs.querySelector('[aria-pressed="true"]');
+        if (selectedThumb && !thumbs.hidden) {
+            const item = selectedThumb.getBoundingClientRect(), strip = thumbs.getBoundingClientRect();
+            if (item.left < strip.left) thumbs.scrollLeft -= strip.left - item.left;
+            else if (item.right > strip.right) thumbs.scrollLeft += item.right - strip.right;
+        }
     }
 
+    function closeActions(restoreFocus = false) {
+        if (actions.hidden) return;
+        actions.hidden = true;
+        menuToggle.setAttribute('aria-expanded', 'false');
+        if (restoreFocus) menuToggle.focus({ preventScroll: true });
+    }
     function select(id) {
+        closeActions();
         selectedId = id;
         render();
     }
@@ -200,29 +248,55 @@
         [ids[position], ids[position + delta]] = [ids[position + delta], ids[position]];
         manage({ action: 'reorder', image_ids: ids });
     }
+    function showUploadToast(message, uploading = false) {
+        clearTimeout(uploadToastTimer);
+        uploadToast.lastElementChild.textContent = message;
+        uploadToast.firstElementChild.textContent = uploading ? '' : '✓';
+        uploadToast.classList.toggle('is-uploading', uploading);
+        uploadToast.classList.toggle('is-visible', Boolean(message));
+        if (message && !uploading) {
+            uploadToastTimer = setTimeout(() => uploadToast.classList.remove('is-visible'), 3000);
+        }
+    }
+    function updateUploadFeedback() {
+        const { pending, added, replaced } = uploadProgress;
+        if (pending) showUploadToast(pending === 1 ? 'Uploading image…' : `Uploading ${pending} images…`, true);
+        else if (added && replaced) showUploadToast('Images saved');
+        else if (added) showUploadToast(added === 1 ? 'Image added' : `${added} images added`);
+        else if (replaced) showUploadToast(replaced === 1 ? 'Image replaced' : `${replaced} images replaced`);
+        else showUploadToast('');
+    }
     function uploadFiles(files, replaceId = null) {
         Array.from(files).forEach(file => {
             const row = document.createElement('li');
-            uploads.appendChild(row);
-            const attempt = () => enqueue(async () => {
-                row.textContent = `${file.name}: Uploading…`;
-                const form = new FormData();
-                form.append('file', file);
-                if (replaceId !== null) form.append('replace_id', replaceId);
-                try {
-                    await save(endpoint, { method: 'POST', body: form });
-                    row.textContent = `${file.name}: ${replaceId === null ? 'Added' : 'Replaced'}`;
-                } catch (error) {
-                    row.textContent = `${file.name}: ${error.message} `;
-                    const retry = document.createElement('button');
-                    retry.type = 'button';
-                    retry.textContent = 'Retry';
-                    retry.setAttribute('aria-label', `Retry ${file.name}`);
-                    retry.onclick = attempt;
-                    row.appendChild(retry);
-                }
-            });
-            row.textContent = `${file.name}: Waiting…`;
+            const attempt = () => {
+                if (!uploadProgress.pending) { uploadProgress.added = 0; uploadProgress.replaced = 0; }
+                uploadProgress.pending++;
+                if (row.contains(document.activeElement)) root.focus({ preventScroll: true });
+                row.remove();
+                updateUploadFeedback();
+                return enqueue(async () => {
+                    const form = new FormData();
+                    form.append('file', file);
+                    if (replaceId !== null) form.append('replace_id', replaceId);
+                    try {
+                        await save(endpoint, { method: 'POST', body: form });
+                        uploadProgress[replaceId === null ? 'added' : 'replaced']++;
+                    } catch (error) {
+                        row.textContent = `${file.name}: ${error.message} `;
+                        const retry = document.createElement('button');
+                        retry.type = 'button';
+                        retry.textContent = 'Retry';
+                        retry.setAttribute('aria-label', `Retry ${file.name}`);
+                        retry.onclick = attempt;
+                        row.appendChild(retry);
+                        uploads.appendChild(row);
+                    } finally {
+                        uploadProgress.pending--;
+                        updateUploadFeedback();
+                    }
+                });
+            };
             attempt();
         });
     }
@@ -297,6 +371,11 @@
         // Native dialogs close through their own cancel default action. Do not
         // prevent that action or forward the same key to the enclosing pin.
         if (document.querySelector('dialog[open]')) return true;
+        if (!actions.hidden) {
+            event.preventDefault();
+            closeActions(true);
+            return true;
+        }
         const visible = element => element.getClientRects().length > 0 && getComputedStyle(element).visibility !== 'hidden';
         const confirmations = Array.from(document.querySelectorAll('.confirmation-dialog-overlay')).filter(visible);
         if (confirmations.length) {
@@ -339,19 +418,53 @@
     $('[data-gallery-later]').onclick = () => reorder(1);
     $('[data-gallery-replace]').onclick = chooseReplacement;
     $('[data-gallery-remove]').onclick = removeSelected;
-    $('[data-gallery-fullscreen]').onclick = () => fullscreen($('[data-gallery-fullscreen]'));
+    $('[data-gallery-fullscreen]').onclick = () => fullscreen(menuToggle);
     $('[data-gallery-picker]').onclick = () => $('[data-gallery-files]').click();
     $('[data-gallery-files]').onchange = event => { uploadFiles(event.target.files); event.target.value = ''; };
     $('[data-gallery-replacement]').onchange = event => { if (current()) uploadFiles(event.target.files, current().id); event.target.value = ''; };
-    add.addEventListener('dragover', event => { event.preventDefault(); add.classList.add('is-dragging'); });
-    add.addEventListener('dragleave', () => add.classList.remove('is-dragging'));
-    add.addEventListener('drop', event => { event.preventDefault(); add.classList.remove('is-dragging'); if (ready) uploadFiles(event.dataTransfer.files); });
-    add.addEventListener('paste', event => {
+    menuToggle.onclick = () => {
+        if (!actions.hidden) { closeActions(); return; }
+        actions.style.maxHeight = `${Math.min(420, Math.max(0, toolbar.getBoundingClientRect().top - root.getBoundingClientRect().top - 12))}px`;
+        actions.hidden = false;
+        menuToggle.setAttribute('aria-expanded', 'true');
+        actions.querySelector('button:not(:disabled)')?.focus({ preventScroll: true });
+    };
+    actions.addEventListener('click', event => {
+        // Close before the action can disable its button or open a native dialog.
+        if (event.target.closest('button:not(:disabled)')) closeActions(true);
+    }, true);
+    document.addEventListener('pointerdown', event => {
+        if (!actions.contains(event.target) && !menuToggle.contains(event.target)) closeActions();
+    });
+    document.addEventListener('focusin', event => {
+        // Safari focuses this tabindex ancestor when a menu button is clicked.
+        // Outside pointer presses are handled separately, before focus changes.
+        if (!actions.contains(event.target) && event.target !== menuToggle && event.target !== root) closeActions();
+    });
+    window.addEventListener('resize', () => closeActions());
+    const hasFiles = event => Array.from(event.dataTransfer?.types || []).includes('Files');
+    root.addEventListener('dragover', event => {
+        if (!hasFiles(event)) return;
+        event.preventDefault();
+        if (ready) { closeActions(); dropHint.hidden = false; }
+    });
+    root.addEventListener('dragleave', event => {
+        if (!root.contains(event.relatedTarget)) dropHint.hidden = true;
+    });
+    root.addEventListener('drop', event => {
+        dropHint.hidden = true;
+        if (!hasFiles(event)) return;
+        event.preventDefault();
+        if (ready) uploadFiles(event.dataTransfer.files);
+    });
+    root.addEventListener('paste', event => {
+        if (event.target.closest('input, textarea, [contenteditable="true"]')) return;
         const files = Array.from(event.clipboardData?.files || []).filter(file => file.type.startsWith('image/'));
         if (files.length && ready) { event.preventDefault(); uploadFiles(files); }
     });
     root.addEventListener('keydown', event => {
-        if (event.target.closest('input, textarea, [contenteditable="true"], [data-gallery-add]')) return;
+        if (event.key === 'Escape' && !actions.hidden) { event.preventDefault(); closeActions(true); return; }
+        if (event.target.closest('input, textarea, [contenteditable="true"]') || actions.contains(event.target)) return;
         if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') { event.preventDefault(); navigate(event.key === 'ArrowLeft' ? -1 : 1); }
     });
     let gesture = null;

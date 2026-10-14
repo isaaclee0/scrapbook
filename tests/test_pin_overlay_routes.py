@@ -165,7 +165,6 @@ class PinOverlayRouteTests(unittest.TestCase):
         self.assertIn("source: 'scrappl-pin-overlay', version: 1", html)
         close_bridge = html[html.index('function closePinView'):html.index("document.addEventListener('DOMContentLoaded'")]
         self.assertIn("notifyPinOverlay('close')", close_bridge)
-        self.assertIn('else window.history.back();', close_bridge)
 
         expectations = {
             'function moveToBoard': ("notifyPinOverlay('changed', 'moved');", 'function moveToSection'),
