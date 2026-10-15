@@ -124,7 +124,16 @@ def refresh_session_token(old_token: str) -> Optional[str]:
     
     if not payload:
         return None
-    
+
+    return refresh_verified_session(payload) or old_token
+
+
+def refresh_verified_session(payload: Dict) -> Optional[str]:
+    """Refresh an already verified session payload, or return None if not due.
+
+    Callers must first validate the signature, expiry, and session token type
+    with verify_token. This allows a request to reuse that validation result.
+    """
     # Check if token is within 7 days of expiring
     exp_timestamp = payload.get('exp')
     if exp_timestamp:
@@ -135,7 +144,7 @@ def refresh_session_token(old_token: str) -> Optional[str]:
         if days_until_expiry < 7:
             return generate_session_token(payload['user_id'], payload['email'])
     
-    return old_token  # Return old token if not time to refresh yet
+    return None
 
 
 def generate_otp() -> str:

@@ -21,8 +21,9 @@ class RouteCursor:
 class GalleryRouteTests(unittest.TestCase):
     def setUp(self):
         self.client = app_module.app.test_client()
-        self.client.set_cookie('session_token', 'gallery-test')
-        self.headers = {'X-CSRF-Token': issue_csrf_token('gallery-test')}
+        session_token = app_module.generate_session_token(7, 'owner@example.test')
+        self.client.set_cookie('session_token', session_token)
+        self.headers = {'X-CSRF-Token': issue_csrf_token(session_token)}
         self.cursor = RouteCursor({'id': 42, 'user_id': 7, 'image_url': '/cached/cake.png'})
         user_patch = patch.object(app_module, 'get_current_user', return_value={'id': 7, 'email': 'owner@example.test'})
         user_patch.start()

@@ -54,8 +54,9 @@ class GalleryIntegrationTests(unittest.TestCase):
                 VALUES (43,8,9,'Private','https://example.test/private.png');
         ''')
         self.client = app_module.app.test_client()
-        self.client.set_cookie('session_token', 'gallery-test')
-        self.headers = {'X-CSRF-Token': issue_csrf_token('gallery-test')}
+        session_token = app_module.generate_session_token(7, 'owner@example.test')
+        self.client.set_cookie('session_token', session_token)
+        self.headers = {'X-CSRF-Token': issue_csrf_token(session_token)}
         self.temp = tempfile.TemporaryDirectory()
         self.events = []
         self.addCleanup(self.temp.cleanup)

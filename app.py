@@ -26,7 +26,7 @@ import traceback
 from itsdangerous import URLSafeTimedSerializer, BadSignature, SignatureExpired
 
 # Import authentication modules
-from auth_utils import generate_magic_link_token, generate_session_token, verify_token, refresh_session_token, generate_otp, store_otp, verify_otp, hash_api_token, generate_api_token
+from auth_utils import generate_magic_link_token, generate_session_token, verify_token, refresh_verified_session, generate_otp, store_otp, verify_otp, hash_api_token, generate_api_token
 from email_service import send_otp_email, send_welcome_email
 from audit_helpers import record_audit, snapshot_board, snapshot_pin, snapshot_section
 from csrf import issue_csrf_token, require_csrf
@@ -106,15 +106,8 @@ def cache_view(timeout=300):
             if not redis_client:
                 return f(*args, **kwargs)
             # Include user_id in key so each user has their own cached view
-            token = request.cookies.get('session_token')
-            user_id = 'anon'
-            if token:
-                try:
-                    payload = verify_token(token, token_type='session')
-                    if payload:
-                        user_id = str(payload.get('user_id', 'anon'))
-                except Exception:
-                    pass
+            user = get_current_user()
+            user_id = str(user['id']) if user else 'anon'
             qs = request.query_string.decode('utf-8')
             cache_key = f"view:{user_id}:{request.path}{'?' + qs if qs else ''}"
             cached_data = redis_client.get(cache_key)
@@ -511,6 +504,15 @@ def tx(dictionary=False, isolation_level=None):
 # AUTHENTICATION FUNCTIONS
 # ============================================================================
 
+def _get_session_payload():
+    """Verify the cookie once per request, including caching a failed result."""
+    if not hasattr(g, '_session_payload'):
+        token = request.cookies.get('session_token')
+        g._session_payload = verify_token(token, token_type='session') if token else None
+        g.invalid_session_cookie = bool(token) and g._session_payload is None
+    return g._session_payload
+
+
 def get_current_user():
     """
     Get the currently authenticated user from a Bearer API token or session
@@ -534,11 +536,7 @@ def _resolve_current_user():
     if auth_header.startswith('Bearer '):
         return _get_user_from_api_token(auth_header[len('Bearer '):].strip())
 
-    token = request.cookies.get('session_token')
-    if not token:
-        return None
-
-    payload = verify_token(token, token_type='session')
+    payload = _get_session_payload()
     if not payload:
         return None
 
@@ -570,6 +568,7 @@ def _get_user_from_api_token(token):
 def _is_auth_exempt_path(path):
     """Return True for routes that must remain accessible without session auth."""
     always_public_paths = {
+        '/auth/logout',
         '/health',
         '/favicon.ico',
         '/robots.txt',
@@ -583,7 +582,7 @@ def _is_auth_exempt_path(path):
     if path.startswith('/auth/login'):
         return True
     # Allow only the static assets required by the login page pre-auth.
-    if path in ('/static/css/output.css', '/static/images/logo.png'):
+    if path in ('/static/css/output.css', '/static/images/logo.png', '/static/js/extension_handoff.js'):
         return True
     if path.startswith('/static/images/login-bg/'):
         return True
@@ -602,17 +601,8 @@ def refresh_token_if_needed():
     if _is_auth_exempt_path(request.path):
         return
     
-    token = request.cookies.get('session_token')
-    if token:
-        # Try to refresh the token if it's close to expiring
-        new_token = refresh_session_token(token)
-        if new_token and new_token != token:
-            # Store the refreshed token to set in after_request
-            g.refreshed_token = new_token
-        else:
-            g.refreshed_token = None
-    else:
-        g.refreshed_token = None
+    payload = _get_session_payload()
+    g.refreshed_token = refresh_verified_session(payload) if payload else None
 
     # Enforce auth globally for all protected routes/requests.
     user = get_current_user()
@@ -624,9 +614,12 @@ def refresh_token_if_needed():
 @app.after_request
 def set_refreshed_token_cookie(response):
     """
-    Set refreshed token cookie if token was refreshed in before_request
+    Clear rejected cookies or persist a session refreshed in before_request.
+    Login and logout skip refresh, so their cookie responses are left intact.
     """
-    if hasattr(g, 'refreshed_token') and g.refreshed_token:
+    if getattr(g, 'invalid_session_cookie', False):
+        response.delete_cookie('session_token', path='/')
+    elif getattr(g, 'refreshed_token', None):
         set_session_cookie(response, g.refreshed_token)
     return response
 
@@ -1019,7 +1012,7 @@ def logout():
     Logout user by clearing session cookie
     """
     response = make_response(redirect(url_for('login_page')))
-    response.set_cookie('session_token', '', expires=0)
+    response.delete_cookie('session_token', path='/')
     return response
 
 @app.route('/health')
