@@ -34,6 +34,7 @@
     picker.dataset.galleryPicker = '';
     picker.setAttribute('aria-label', 'Add images');
     picker.title = 'Add images · or drop/paste into the gallery';
+    picker.setAttribute('aria-haspopup', 'dialog');
     picker.textContent = '+';
     const menuToggle = document.createElement('button');
     menuToggle.type = 'button';
@@ -300,6 +301,176 @@
             attempt();
         });
     }
+    function openAddImage() {
+        if (!ready || document.querySelector('.gallery-add-dialog')) return;
+        closeActions();
+        const dialog = document.createElement('dialog');
+        dialog.className = 'gallery-add-dialog';
+        dialog.setAttribute('aria-labelledby', 'gallery-add-heading');
+        dialog.innerHTML = `
+            <form novalidate>
+                <h2 id="gallery-add-heading">Add an image</h2>
+                <p class="gallery-add-intro">Add an image URL, or copy and paste an image here.</p>
+                <label for="gallery-image-url">Image URL</label>
+                <input id="gallery-image-url" type="url" placeholder="https://…" autocomplete="off" spellcheck="false" maxlength="2048" aria-describedby="gallery-url-help" autofocus>
+                <p id="gallery-url-help" class="gallery-add-help">Use a link directly to an image.</p>
+                <div class="gallery-paste-area" tabindex="0" role="group" aria-label="Paste or drop images here">
+                    <div data-paste-prompt><span class="gallery-paste-symbol" aria-hidden="true">▧</span><strong>Paste an image here</strong><span>or drag and drop</span></div>
+                    <div class="gallery-add-preview" hidden></div>
+                </div>
+                <div class="gallery-add-source"><button type="button" data-computer-upload>Upload from computer</button><span data-selection-count></span></div>
+                <input type="file" accept="image/*" multiple hidden data-dialog-files>
+                <p class="gallery-add-error" role="alert" hidden></p>
+                <div class="gallery-add-footer"><button type="button" data-cancel>Cancel</button><button type="submit" data-submit disabled>Add image</button></div>
+            </form>`;
+        const form = dialog.querySelector('form');
+        const urlInput = dialog.querySelector('input[type="url"]');
+        const preview = dialog.querySelector('.gallery-add-preview');
+        const pasteArea = dialog.querySelector('.gallery-paste-area');
+        const prompt = dialog.querySelector('[data-paste-prompt]');
+        const selectionCount = dialog.querySelector('[data-selection-count]');
+        const error = dialog.querySelector('[role="alert"]');
+        const submit = dialog.querySelector('[data-submit]');
+        const cancel = dialog.querySelector('[data-cancel]');
+        const fileInput = dialog.querySelector('[data-dialog-files]');
+        let files = [], objectUrls = [], imageUrl = '', previewTimer, generation = 0, saving = false;
+        function showError(message = '') {
+            error.textContent = message;
+            error.hidden = !message;
+        }
+        function clearPreview() {
+            clearTimeout(previewTimer);
+            generation++;
+            objectUrls.forEach(url => URL.revokeObjectURL(url));
+            objectUrls = [];
+            files = [];
+            imageUrl = '';
+            preview.replaceChildren();
+            preview.hidden = true;
+            prompt.hidden = false;
+            selectionCount.textContent = '';
+            submit.disabled = true;
+            submit.textContent = 'Add image';
+            showError();
+        }
+        function stageFiles(incoming) {
+            if (saving) return;
+            const selected = Array.from(incoming).filter(file => file.type.startsWith('image/'));
+            if (!selected.length) { showError('Choose an image file to add.'); return; }
+            clearPreview();
+            urlInput.value = '';
+            files = selected;
+            for (const [index, file] of files.entries()) {
+                const thumbnail = document.createElement('img');
+                const url = URL.createObjectURL(file);
+                objectUrls.push(url);
+                thumbnail.src = url;
+                thumbnail.alt = `Selected image ${index + 1}`;
+                preview.appendChild(thumbnail);
+            }
+            preview.hidden = false;
+            prompt.hidden = true;
+            selectionCount.textContent = files.length === 1 ? '1 image selected' : `${files.length} images selected`;
+            submit.textContent = files.length === 1 ? 'Add image' : `Add ${files.length} images`;
+            submit.disabled = false;
+        }
+        urlInput.addEventListener('input', () => {
+            clearPreview();
+            const value = urlInput.value.trim();
+            if (!value) return;
+            try {
+                const parsed = new URL(value);
+                if (!['http:', 'https:'].includes(parsed.protocol) || parsed.username || parsed.password || /[\s\\\x00-\x1f\x7f]/.test(value)) throw new Error();
+            } catch (_) { showError('Enter an image URL starting with http:// or https://.'); return; }
+            const version = generation;
+            selectionCount.textContent = 'Loading preview…';
+            previewTimer = setTimeout(() => {
+                const candidate = document.createElement('img');
+                candidate.alt = 'Image preview';
+                candidate.onload = () => {
+                    if (!dialog.open || generation !== version) return;
+                    imageUrl = value;
+                    preview.hidden = false;
+                    prompt.hidden = true;
+                    selectionCount.textContent = '1 image selected';
+                    submit.disabled = false;
+                };
+                candidate.onerror = () => {
+                    if (!dialog.open || generation !== version) return;
+                    selectionCount.textContent = '';
+                    preview.replaceChildren();
+                    showError('Couldn’t load that image. Check the image URL or upload it from your computer.');
+                };
+                preview.appendChild(candidate);
+                candidate.src = value;
+            }, 250);
+        });
+        dialog.addEventListener('paste', event => {
+            const pasted = Array.from(event.clipboardData?.files || []).filter(file => file.type.startsWith('image/'));
+            if (pasted.length) { event.preventDefault(); stageFiles(pasted); }
+        });
+        dialog.addEventListener('dragover', event => {
+            if (hasFiles(event)) { event.preventDefault(); if (!saving) pasteArea.classList.add('is-dragging'); }
+        });
+        dialog.addEventListener('dragleave', event => {
+            if (!dialog.contains(event.relatedTarget)) pasteArea.classList.remove('is-dragging');
+        });
+        dialog.addEventListener('drop', event => {
+            if (!hasFiles(event)) return;
+            event.preventDefault();
+            pasteArea.classList.remove('is-dragging');
+            stageFiles(event.dataTransfer.files);
+        });
+        dialog.querySelector('[data-computer-upload]').onclick = () => fileInput.click();
+        fileInput.onchange = () => { stageFiles(fileInput.files); fileInput.value = ''; };
+        cancel.onclick = () => dialog.close();
+        dialog.addEventListener('keydown', event => {
+            if (event.key !== 'Tab') return;
+            const focusable = dialog.querySelectorAll('button:not(:disabled), input:not(:disabled):not([hidden]), [tabindex="0"]');
+            const first = focusable[0], last = focusable[focusable.length - 1];
+            if (event.shiftKey && document.activeElement === first) {
+                event.preventDefault();
+                last.focus();
+            } else if (!event.shiftKey && document.activeElement === last) {
+                event.preventDefault();
+                first.focus();
+            }
+        });
+        dialog.addEventListener('cancel', event => { if (saving) event.preventDefault(); });
+        dialog.addEventListener('close', () => { clearPreview(); dialog.remove(); picker.focus({ preventScroll: true }); });
+        form.onsubmit = event => {
+            event.preventDefault();
+            if (saving || submit.disabled) return;
+            if (files.length) {
+                const selected = files;
+                dialog.close();
+                uploadFiles(selected);
+                return;
+            }
+            if (!imageUrl) return;
+            const data = new FormData();
+            data.append('image_url', imageUrl);
+            saving = true;
+            showError();
+            form.querySelectorAll('button, input').forEach(control => { control.disabled = true; });
+            submit.textContent = 'Adding…';
+            enqueue(async () => {
+                try {
+                    await save(endpoint, { method: 'POST', body: data });
+                    dialog.close();
+                    showUploadToast('Image added');
+                } catch (failure) {
+                    showError(failure.message);
+                    form.querySelectorAll('button, input').forEach(control => { control.disabled = false; });
+                    submit.textContent = 'Add image';
+                    submit.focus({ preventScroll: true });
+                } finally { saving = false; }
+            });
+        };
+        document.body.appendChild(dialog);
+        dialog.showModal();
+        urlInput.focus();
+    }
     function chooseReplacement() {
         if (current() && !busy) $('[data-gallery-replacement]').click();
         document.getElementById('toolsMenu')?.classList.remove('active');
@@ -419,7 +590,7 @@
     $('[data-gallery-replace]').onclick = chooseReplacement;
     $('[data-gallery-remove]').onclick = removeSelected;
     $('[data-gallery-fullscreen]').onclick = () => fullscreen(menuToggle);
-    $('[data-gallery-picker]').onclick = () => $('[data-gallery-files]').click();
+    $('[data-gallery-picker]').onclick = openAddImage;
     $('[data-gallery-files]').onchange = event => { uploadFiles(event.target.files); event.target.value = ''; };
     $('[data-gallery-replacement]').onchange = event => { if (current()) uploadFiles(event.target.files, current().id); event.target.value = ''; };
     menuToggle.onclick = () => {

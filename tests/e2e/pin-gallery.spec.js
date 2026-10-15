@@ -353,3 +353,114 @@ test('embedded Escape consumes fullscreen and confirmation before forwarding clo
   await page.keyboard.press('Escape');
   expect(await page.evaluate(()=>window.escapeCloseCount)).toBe(1);
 });
+
+test('add image box opens without a file chooser and Escape restores the plus button', async ({ page }) => {
+  await prepare(page);
+  let choosers = 0;
+  page.on('filechooser', () => choosers++);
+  const surface = await page.locator('.pin-image-container').boundingBox();
+  await page.getByRole('button', { name: 'Add images', exact: true }).click();
+  const dialog = page.getByRole('dialog', { name: 'Add an image', exact: true });
+  await expect(dialog).toBeVisible();
+  await expect(dialog.getByLabel('Image URL', { exact: true })).toBeFocused();
+  await expect(dialog.getByRole('button', { name: 'Upload from computer', exact: true })).toBeVisible();
+  await expect(dialog.getByRole('button', { name: 'Add image', exact: true })).toBeDisabled();
+  expect(choosers).toBe(0);
+  expect(await page.locator('.pin-image-container').boundingBox()).toEqual(surface);
+  await page.keyboard.press('Shift+Tab');
+  await expect(dialog.getByRole('button', { name: 'Cancel', exact: true })).toBeFocused();
+  await page.keyboard.press('Escape');
+  await expect(dialog).toHaveCount(0);
+  await expect(page.getByRole('button', { name: 'Add images', exact: true })).toBeFocused();
+  expect(await page.evaluate(() => window.escapeCloseCount)).toBe(0);
+});
+
+test('add image box previews and saves an image URL, preserving errors for retry', async ({ page }) => {
+  const requests = await prepare(page, { fail: 'recipe.png' });
+  await page.route('https://images.example.test/**', route => route.fulfill({ contentType: 'image/png', body: png }));
+  await page.getByRole('button', { name: 'Add images', exact: true }).click();
+  const dialog = page.getByRole('dialog', { name: 'Add an image', exact: true });
+  await dialog.getByLabel('Image URL', { exact: true }).fill('https://images.example.test/recipe.png');
+  await expect(dialog.getByRole('button', { name: 'Add image', exact: true })).toBeEnabled();
+  await expect(dialog.getByRole('img', { name: 'Image preview', exact: true })).toBeVisible();
+  expect(requests).toHaveLength(0);
+  await dialog.getByRole('button', { name: 'Add image', exact: true }).click();
+  await expect(dialog.getByRole('alert')).toContainText('Please retry');
+  await expect(dialog.getByLabel('Image URL', { exact: true })).toHaveValue('https://images.example.test/recipe.png');
+  await expect(dialog.getByRole('button', { name: 'Add image', exact: true })).toBeFocused();
+  await dialog.getByRole('button', { name: 'Add image', exact: true }).click();
+  await expect(dialog).toHaveCount(0);
+  await expect(page.locator('[data-gallery-position]')).toHaveText('1 / 4');
+  await expect(page.getByText('Image added', { exact: true })).toBeVisible();
+  expect(requests[1].upload).toContain('name="image_url"\r\n\r\nhttps://images.example.test/recipe.png');
+});
+
+test('add image box reports invalid or unloadable URLs without saving', async ({ page }) => {
+  const requests = await prepare(page);
+  await page.route('https://images.example.test/**', route => route.fulfill({ status: 404, body: 'missing' }));
+  await page.getByRole('button', { name: 'Add images', exact: true }).click();
+  const dialog = page.getByRole('dialog', { name: 'Add an image', exact: true });
+  await dialog.getByLabel('Image URL', { exact: true }).fill('javascript:alert(1)');
+  await expect(dialog.getByRole('alert')).toContainText('http');
+  await expect(dialog.getByRole('button', { name: 'Add image', exact: true })).toBeDisabled();
+  await dialog.getByLabel('Image URL', { exact: true }).fill('https://images.example.test/missing.png');
+  await expect(dialog.getByRole('alert')).toContainText('load');
+  await expect(dialog.getByRole('button', { name: 'Add image', exact: true })).toBeDisabled();
+  await dialog.getByRole('button', { name: 'Cancel', exact: true }).click();
+  expect(requests).toHaveLength(0);
+});
+
+test('add image box previews pasted images from the URL field before confirmation', async ({ page }) => {
+  const requests = await prepare(page);
+  await page.getByRole('button', { name: 'Add images', exact: true }).click();
+  const dialog = page.getByRole('dialog', { name: 'Add an image', exact: true });
+  await dialog.getByLabel('Image URL', { exact: true }).evaluate((el, bytes) => {
+    const data = new DataTransfer();
+    data.items.add(new File([new Uint8Array(bytes)], 'clipboard.png', { type: 'image/png' }));
+    el.dispatchEvent(new ClipboardEvent('paste', { bubbles: true, clipboardData: data }));
+  }, [...png]);
+  await expect(dialog.getByRole('img', { name: 'Selected image 1', exact: true })).toBeVisible();
+  expect(requests).toHaveLength(0);
+  await dialog.getByRole('button', { name: 'Add image', exact: true }).click();
+  await expect(dialog).toHaveCount(0);
+  await expect(page.locator('[data-gallery-position]')).toHaveText('1 / 4');
+  expect(requests[0].upload).toContain('filename="clipboard.png"');
+});
+
+test('add image box supports optional computer uploads and fits mobile', async ({ page }, testInfo) => {
+  await page.setViewportSize({ width: 390, height: 700 });
+  const requests = await prepare(page);
+  await page.getByRole('button', { name: 'Add images', exact: true }).click();
+  const dialog = page.getByRole('dialog', { name: 'Add an image', exact: true });
+  const bounds = await dialog.boundingBox();
+  expect(bounds.x).toBeGreaterThanOrEqual(12);
+  expect(bounds.x + bounds.width).toBeLessThanOrEqual(378);
+  expect(bounds.y + bounds.height).toBeLessThanOrEqual(700);
+  const chooserPromise = page.waitForEvent('filechooser');
+  await dialog.getByRole('button', { name: 'Upload from computer', exact: true }).click();
+  const chooser = await chooserPromise;
+  await chooser.setFiles([{ name: 'one.png', mimeType: 'image/png', buffer: png }, { name: 'two.png', mimeType: 'image/png', buffer: png }]);
+  await expect(dialog.getByRole('img', { name: 'Selected image 2', exact: true })).toBeVisible();
+  expect(requests).toHaveLength(0);
+  await page.screenshot({ path: testInfo.outputPath('add-image-mobile.png') });
+  await dialog.getByRole('button', { name: 'Add 2 images', exact: true }).click();
+  await expect(page.locator('[data-gallery-position]')).toHaveText('1 / 5');
+  await expect(page.getByText('2 images added', { exact: true })).toBeVisible();
+});
+
+test('add image box stages dropped images and cancel discards the selection', async ({ page }) => {
+  const requests = await prepare(page);
+  await page.getByRole('button', { name: 'Add images', exact: true }).click();
+  const dialog = page.getByRole('dialog', { name: 'Add an image', exact: true });
+  await dialog.getByLabel('Paste or drop images here', { exact: true }).evaluate((el, bytes) => {
+    const data = new DataTransfer();
+    data.items.add(new File([new Uint8Array(bytes)], 'drop.png', { type: 'image/png' }));
+    el.dispatchEvent(new DragEvent('drop', { bubbles: true, dataTransfer: data }));
+  }, [...png]);
+  await expect(dialog.getByRole('img', { name: 'Selected image 1', exact: true })).toBeVisible();
+  await dialog.getByRole('button', { name: 'Cancel', exact: true }).click();
+  await page.getByRole('button', { name: 'Add images', exact: true }).click();
+  await expect(page.getByRole('dialog').getByRole('button', { name: 'Add image', exact: true })).toBeDisabled();
+  await expect(page.getByRole('dialog').getByRole('img')).toHaveCount(0);
+  expect(requests).toHaveLength(0);
+});

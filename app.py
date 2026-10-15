@@ -1895,8 +1895,25 @@ def upload_pin_image(pin_id):
         with tx(dictionary=True, isolation_level='READ COMMITTED') as (_, cursor):
             pin = _owned_gallery_pin(cursor, pin_id, user['id'])
             file = request.files.get('file')
+            remote_image = None
             if file is None:
-                raise GalleryError('Choose an image to upload.', 400)
+                if 'image_url' not in request.form:
+                    raise GalleryError('Choose an image to upload or enter an image URL.', 400)
+                image_url = request.form['image_url'].strip()
+                try:
+                    parsed = urlparse(image_url)
+                    valid_url = (len(image_url) <= 2048 and parsed.scheme in ('http', 'https')
+                                 and parsed.hostname and parsed.username is None and parsed.password is None
+                                 and not any(char.isspace() or ord(char) < 32 or ord(char) == 127
+                                             or char == '\\' for char in image_url))
+                    parsed.port  # Reject malformed or out-of-range ports.
+                except ValueError:
+                    valid_url = False
+                if not valid_url:
+                    raise GalleryError('Enter a valid http:// or https:// image URL (up to 2048 characters).', 400)
+                # Store the remote reference, as for existing pin covers. URL
+                # previews load in the browser; this route never fetches URLs.
+                remote_image = {'image_url': image_url}
             replace_id = request.form.get('replace_id')
             if replace_id is not None:
                 try:
@@ -1909,8 +1926,9 @@ def upload_pin_image(pin_id):
                 raise GalleryError(f'A pin can contain up to {MAX_IMAGES} images.', 400)
             if replace_id is not None and replace_id not in {item['id'] for item in before}:
                 raise GalleryError('Image not found.', 404)
-            upload = gallery_save_upload(file, os.path.join(app.root_path, 'static', 'cached_images', 'gallery'),
-                                         MAX_UPLOAD_BYTES, MAX_UPLOAD_PIXELS)
+            upload = remote_image or gallery_save_upload(
+                file, os.path.join(app.root_path, 'static', 'cached_images', 'gallery'),
+                MAX_UPLOAD_BYTES, MAX_UPLOAD_PIXELS)
             action = 'replace' if replace_id is not None else 'add'
             images = mutate_gallery(cursor, pin, action, image_id=replace_id, upload=upload)
             _record_gallery_change(cursor, pin, user, before, action)

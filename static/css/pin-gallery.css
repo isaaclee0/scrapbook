@@ -1,7 +1,7 @@
 .pin-gallery { position:relative; flex:1 1 0; min-width:0; min-height:0; display:flex; flex-direction:column; background:#f8f8f8; overflow:hidden; }
 .pin-lightbox:has(.pin-gallery) .title-container, .pin-lightbox:has(.pin-gallery) .editable-title { min-width:0; }
 .pin-lightbox:has(.pin-gallery) .title-buttons { flex-shrink:0; }
-.pin-gallery [hidden], .gallery-fullscreen [hidden] { display:none !important; }
+.pin-gallery [hidden], .gallery-fullscreen [hidden], .gallery-add-dialog [hidden] { display:none !important; }
 .pin-gallery .pin-image-container { flex:1 1 0; min-height:180px; padding:16px; box-sizing:border-box; position:relative; overflow:hidden; }
 .pin-gallery .pin-image { display:block; width:100%; height:100%; max-height:100%; object-fit:contain; }
 .pin-gallery button { cursor:pointer; }
@@ -49,6 +49,31 @@
 .gallery-fullscreen.is-enlarged .gallery-fullscreen-viewport { display:block; cursor:grab; touch-action:none; }
 .gallery-fullscreen.is-enlarged img { width: max(100%, 1000px); height:auto; max-width:none; max-height:none; }
 .gallery-fullscreen-error { position:absolute; top:16px; left:16px; background:#222; padding:14px; }
+.gallery-add-dialog { width:420px; max-width:calc(100vw - 32px); max-height:calc(100dvh - 32px); box-sizing:border-box; margin:auto; padding:24px; overflow-y:auto; border:1px solid #e1e4e7; border-radius:16px; background:#fff; color:#343a40; box-shadow:0 18px 64px #17232f33; font:inherit; }
+.gallery-add-dialog::backdrop { background:#17232f55; }
+.gallery-add-dialog h2 { margin:0 0 8px; font-size:21px; line-height:1.25; font-weight:600; letter-spacing:-.3px; }
+.gallery-add-intro { margin:0 0 20px; font-size:13px; line-height:1.6; color:#626972; }
+.gallery-add-dialog label { display:block; margin-bottom:7px; font-size:13px; font-weight:600; }
+.gallery-add-dialog input[type="url"] { display:block; width:100%; box-sizing:border-box; height:42px; padding:10px 12px; border:1px solid #cdd4da; border-radius:7px; background:#fff; color:#343a40; font:inherit; font-size:14px; }
+.gallery-add-help { margin:6px 0 16px; color:#707780; font-size:11px; line-height:1.5; }
+.gallery-paste-area { min-height:144px; display:flex; align-items:center; justify-content:center; box-sizing:border-box; padding:16px; border:1px dashed #b7c4ce; border-radius:10px; background:#f6f8fa; text-align:center; }
+.gallery-paste-area.is-dragging { border-color:#597890; background:#eaf2f8; }
+.gallery-paste-area [data-paste-prompt] { display:flex; flex-direction:column; gap:4px; color:#747c84; font-size:12px; }
+.gallery-paste-area strong { font-size:14px; font-weight:500; color:#4a5d6c; }
+.gallery-paste-symbol { font-size:29px; line-height:1.2; color:#8a9ca9; margin-bottom:6px; }
+.gallery-add-preview { display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:8px; width:100%; max-height:200px; overflow-y:auto; }
+.gallery-add-preview img { width:80px; height:96px; object-fit:contain; border-radius:4px; }
+.gallery-add-preview img:only-child { width:100%; height:auto; max-height:200px; }
+.gallery-add-source { display:flex; align-items:center; justify-content:space-between; gap:8px; margin-top:10px; }
+.gallery-add-source button { min-height:36px; padding:3px 0; background:none; border:0; color:#49697f; font:inherit; font-size:12px; text-decoration:underline; text-underline-offset:3px; }
+.gallery-add-source span { color:#707780; font-size:11px; text-align:right; }
+.gallery-add-error { margin:12px 0 0; color:#9b2929; font-size:12px; line-height:1.5; }
+.gallery-add-footer { display:flex; justify-content:flex-end; gap:8px; margin-top:24px; padding-top:16px; border-top:1px solid #eceeef; }
+.gallery-add-footer button { min-height:40px; padding:9px 16px; border:1px solid #d5dce1; border-radius:7px; background:#fff; color:#52606b; font:inherit; font-size:13px; }
+.gallery-add-footer [type="submit"] { background:#49697f; border-color:#49697f; color:#fff; }
+.gallery-add-dialog button { cursor:pointer; }
+.gallery-add-dialog button:disabled { opacity:.45; cursor:default; }
+.gallery-add-dialog :focus-visible { outline:2px solid #597890; outline-offset:2px; }
 @media(max-width:768px) {
     .pin-body:has(.pin-gallery) { overflow-y:auto; }
     .pin-gallery { flex:none; }
@@ -60,4 +85,6 @@
     .gallery-navigation button, .gallery-icon-button { width:40px; height:44px; }
     .gallery-thumbnails button { width:40px; height:40px; }
     .gallery-actions button { min-height:44px; }
+    .gallery-add-dialog { padding:20px; }
+    .gallery-add-dialog button { min-height:44px; }
 }
