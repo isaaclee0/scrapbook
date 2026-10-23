@@ -38,13 +38,14 @@
     picker.textContent = '+';
     const menuToggle = document.createElement('button');
     menuToggle.type = 'button';
-    menuToggle.className = 'gallery-icon-button';
+    menuToggle.className = 'image-control-btn gallery-menu-toggle';
     menuToggle.setAttribute('aria-label', 'Image actions');
     menuToggle.setAttribute('aria-expanded', 'false');
     menuToggle.setAttribute('aria-controls', 'gallery-actions');
     menuToggle.title = 'Image actions';
     menuToggle.textContent = '⋯';
-    toolbar.append(picker, menuToggle);
+    toolbar.appendChild(picker);
+    surface.querySelector('.image-hover-controls').appendChild(menuToggle);
     const actions = document.createElement('div');
     actions.id = 'gallery-actions';
     actions.className = 'gallery-actions';
@@ -54,7 +55,7 @@
     actions.innerHTML = '<button type="button" data-gallery-cover>Make cover</button><button type="button" data-gallery-earlier aria-label="Move image earlier">Move earlier</button><button type="button" data-gallery-later aria-label="Move image later">Move later</button><button type="button" data-gallery-replace>Replace image</button><button type="button" data-gallery-remove>Remove image</button><button type="button" data-gallery-fullscreen>Fullscreen image</button>';
     const extraActions = root.querySelector('[data-gallery-extra-actions]');
     if (extraActions) { extraActions.hidden = false; actions.appendChild(extraActions); }
-    toolbar.appendChild(actions);
+    surface.appendChild(actions);
     toolbar.insertAdjacentHTML('beforeend', '<input type="file" accept="image/*" multiple data-gallery-files hidden><input type="file" accept="image/*" data-gallery-replacement hidden>');
     const dropHint = document.createElement('div');
     dropHint.className = 'gallery-drop-hint';
@@ -595,7 +596,10 @@
     $('[data-gallery-replacement]').onchange = event => { if (current()) uploadFiles(event.target.files, current().id); event.target.value = ''; };
     menuToggle.onclick = () => {
         if (!actions.hidden) { closeActions(); return; }
-        actions.style.maxHeight = `${Math.min(420, Math.max(0, toolbar.getBoundingClientRect().top - root.getBoundingClientRect().top - 12))}px`;
+        const surfaceBounds = surface.getBoundingClientRect();
+        const menuBottom = menuToggle.getBoundingClientRect().bottom;
+        actions.style.top = `${menuBottom - surfaceBounds.top + 8}px`;
+        actions.style.maxHeight = `${Math.min(420, Math.max(0, surfaceBounds.bottom - menuBottom - 20))}px`;
         actions.hidden = false;
         menuToggle.setAttribute('aria-expanded', 'true');
         actions.querySelector('button:not(:disabled)')?.focus({ preventScroll: true });

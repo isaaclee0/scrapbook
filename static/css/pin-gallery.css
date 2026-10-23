@@ -18,7 +18,8 @@
 .gallery-thumbnails button[aria-pressed="true"] { border-color:#597890; }
 .gallery-thumbnails img { width:100%; height:100%; object-fit:contain; border-radius:2px; }
 .gallery-thumbnails span { position:absolute; bottom:0; right:0; width:12px; height:12px; line-height:12px; font-size:9px; text-align:center; background:#fff; color:#526b7c; border-radius:3px 0 2px 0; }
-.gallery-actions { position:absolute; z-index:30; bottom:calc(100% + 6px); right:10px; display:flex; flex-direction:column; width:230px; max-width:calc(100% - 20px); max-height:420px; overflow-y:auto; padding:6px; box-sizing:border-box; border:1px solid #e1e4e7; border-radius:10px; background:#fff; box-shadow:0 6px 24px #0002; }
+.pin-gallery .gallery-menu-toggle { font-size:24px; }
+.gallery-actions { position:absolute; z-index:30; top:64px; right:16px; display:flex; flex-direction:column; width:230px; max-width:calc(100% - 32px); max-height:420px; overflow-y:auto; padding:6px; box-sizing:border-box; border:1px solid #e1e4e7; border-radius:10px; background:#fff; box-shadow:0 6px 24px #0002; }
 .gallery-actions button { display:flex; align-items:center; gap:8px; width:100%; min-height:36px; padding:8px 10px; border:0; border-radius:5px; background:transparent; color:#343a40; font:inherit; font-size:13px; text-align:left; white-space:normal; }
 .gallery-actions button:hover:not(:disabled) { background:#f0f4f7; }
 .gallery-actions [data-gallery-remove] { color:#a23b3b; }
